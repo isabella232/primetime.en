@@ -1,8 +1,10 @@
 ---
+
 description: The can play videos that have multiple profiles with different bit rates, switching between them to provide more than one quality level based on the available bandwidth. WRITER: Note that the text here is nearly identical to the text in c_psdk_abr-control-quality.xml. So if you update here, please update there, too. Or figure out a good way to put the text into the phrase library. Or maybe not--this file doesn't appear anywhere except in the original android, android_1.2, and the original dhls ditamaps. So I think it's basically obsolete. -elf Sept '15
 seo-description: The can play videos that have multiple profiles with different bit rates, switching between them to provide more than one quality level based on the available bandwidth. WRITER: Note that the text here is nearly identical to the text in c_psdk_abr-control-quality.xml. So if you update here, please update there, too. Or figure out a good way to put the text into the phrase library. Or maybe not--this file doesn't appear anywhere except in the original android, android_1.2, and the original dhls ditamaps. So I think it's basically obsolete. -elf Sept '15
 seo-title: Multiple bit rates
 title: Multiple bit rates
+
 ---
 
 # Multiple bit rates
