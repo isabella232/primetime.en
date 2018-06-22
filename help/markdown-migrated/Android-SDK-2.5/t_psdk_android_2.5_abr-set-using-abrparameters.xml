@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="set-abr-using-abrparameters"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Configure adaptive bit rates using ABRControlParameters</title> 
+  <shortdesc>You can set ABR control values only with 
+	 <codeph>ABRControlParameters</codeph>, but you can construct a new one at
+	 any time. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_A6059E4CD0F5498BA68495C7081410B8"> 
+		<p> The following conditions apply to 
+		  <codeph>ABRControlParameters</codeph>: 
+		<ul id="ul_19DC1A31AB8B4EF99E291F9555AED223"> 
+		  <li id="li_514961DE176B4A58BE1F5E639EC66836">At construction time, you
+			 must provide values for all parameters. 
+		  </li> 
+		  <li id="li_EF43CA6592344126AD0AEE5F08966F57">After the construction,
+			 you cannot change individual values. 
+		  </li> 
+		  <li id="li_F0B2CCD4DD02496CAA610A1AEF8F9740">If the parameters that you
+			 specify are outside of the allowed range, an 
+			 <codeph>ArgumentError</codeph> is thrown. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </context> 
+	 <steps id="steps_76CB21BBBC824D618079409EF65B0FBA"> 
+		<step id="step_2965F5CD27D54848A273B4A2076B3F38"> 
+		  <cmd>Determine your initial, minimum, and maximum bit rates. 
+		  </cmd> 
+		</step> 
+		<step id="step_67974DDA184648A5BE6A624EED9A09A1"> 
+		  <cmd>Determine the ABR policy: 
+		  </cmd> 
+		  <info> 
+			 <ul id="ul_B28634667FC64C01A5433C45CEE0B7E6"> 
+				<li
+				 id="li_54B43AF60E114C23AD223E4F9CE9C610"><codeph>ABR_CONSERVATIVE</codeph> 
+				</li> 
+				<li
+				 id="li_F1B062FA09524970AFCE7A49C7690BCB"><codeph>ABR_MODERATE</codeph> 
+				</li> 
+				<li
+				 id="li_D9AFC558186E498F9AB7F5497B325B63"><codeph>ABR_AGGRESSIVE</codeph> 
+				</li> 
+			 </ul> 
+		  </info> 
+		</step> 
+		<step id="step_E40B23F5095B4D8CB7CECDCA2EBEB06F"> 
+		  <cmd>Set the ABR parameter values in the 
+			 <codeph>ABRControlParameters</codeph> constructor and assign the
+			 values to the Media Player. 
+		  </cmd> 
+		  <info> 
+			 <codeblock>public ABRControlParameters(int initialBitRate,
+  int minBitRate,
+  int maxBitRate,
+  ABRControlParameters.ABRPolicy abrPolicy,
+  int minTrickPlayBitRate,
+  int maxTrickPlayBitRate,
+  int maxTrickPlayBandwidthUsage,
+  int maxPlayoutRate);</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_abr-for-quality"> 
+  <title>Adaptive bit rates (ABR) for video quality</title> 
+  <shortdesc> HLS and DASH streams provide different bit rate encodings (profiles) for the same
+		short burst of video. <ph conkeyref="phrases/primetime-sdk-name"/> can select the quality
+		level for each burst based on  the available bandwidth. </shortdesc> 
+  <conbody> 
+	 <p> 
+		<ph conkeyref="phrases/primetime-sdk-name"/> constantly monitors the bit
+		rate to ensure that the content is played at the optimal bit rate for the
+		current network connection. 
+	 </p> 
+	 <p> You can set the adaptive bit-rate (ABR) switching policy and the
+		initial, minimum, and maximum bit rates for a multiple-bit-rate (MBR) stream. 
+		<ph conkeyref="phrases/primetime-sdk-name"/> automatically switches to
+		the bit rate that provides the best playback experience in the specified
+		configuration. 
+	 </p> 
+	 <table id="table_AF838E082235406AA359BF1C1A77F85F"> 
+		<tgroup cols="2"><colspec colname="col01" colnum="1"
+		  colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="3.45*"/> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col01">Initial bit rate 
+				</entry> 
+				<entry colname="col2">
+				  <p>The desired playback bit rate (in bits per second) for the
+					 first segment. When playback starts, the closest profile, which is equal to or
+					 greater than the initial bit rate, is used for the first segment. 
+				  </p>
+				  <p> If a minimum bit rate is defined, and the initial bit rate is
+					 lower than the minimum rate, 
+					 <ph conkeyref="phrases/primetime-sdk-name"/> selects the
+					 profile with the lowest bit rate above the minimum bit rate. If the initial
+					 rate is above the maximum rate, 
+					 <ph conkeyref="phrases/primetime-sdk-name"/> selects the
+					 highest rate below the maximum rate. 
+				  </p> 
+				  <p>If the initial bit rate is zero or undefined, the initial bit
+					 rate is determined by the ABR policy. 
+				  </p>
+				  <p><codeph>getABRInitialBitRate</codeph> returns an integer value that represents the
+								byte-per-second profile. </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01">Minimum bit rate 
+				</entry> 
+				<entry colname="col2">
+				  <p>The lowest allowed bit rate to which the ABR can switch. ABR
+					 switching ignores profiles with a bit rate that is lower than this bit rate. 
+				  </p>
+				  <p><codeph>getABRMinBitRate</codeph> returns an integer value that represents the
+								bits-per-second profile. </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01">Maximum bit rate 
+				</entry> 
+				<entry colname="col2">
+				  <p>The highest allowed bit rate to which the ABR can switch. ABR
+					 switching ignores profiles with a bit rate higher than this bit rate. 
+				  </p>
+				  <p><codeph>getABRMaxBitRate</codeph> returns an integer value that represents the
+								bits-per-second profile. </p> 
+				</entry> 
+			 </row> 
+			 <row > 
+				<entry colname="col01">ABR switching policy 
+				</entry> 
+				<entry colname="col2"> Playback switches gradually to the highest-bit-rate profile when
+							possible. You can set the policy for ABR switching, which determines how
+							quickly <ph conkeyref="phrases/primetime-sdk-name"/> switches between
+							profiles. The default is <codeph>ABR_MODERATE</codeph>. <p>When <ph
+									conkeyref="phrases/primetime-sdk-name"/> decides to switch to a
+								higher bit rate, the player selects the ideal bit rate profile to
+								switch to based on the current ABR policy: <ul
+									id="ul_AC9C99D84A3B4A8DBD1A05CC05DEE771">
+									<li id="li_B79C0AA2CBFB42FF98A257CEC9C400BA"
+											><codeph>ABR_CONSERVATIVE</codeph>: Switches to the
+										profile with the next higher bit rate when the bandwidth is
+										50% higher than the current bit rate. </li>
+									<li id="li_38CC3A95D8634F359D0F7C273D0108C0"
+											><codeph>ABR_MODERATE</codeph>: Switches to the next
+										higher bit rate profile when the bandwidth is 20% higher
+										than the current bit rate. </li>
+									<li id="li_E845C035420D4B3FB2B179F448F8CA85"
+											><codeph>ABR_AGGRESSIVE</codeph>: Switches immediately
+										to the highest bit-rate profile when the bandwidth is higher
+										than the current bit rate. </li>
+								</ul></p><p>If the initial bit rate is zero or is not specified, but
+								a policy is specified, playback starts with the lowest bit rate
+								profile for conservative, the profile closest to the median bit rate
+								of available profiles for moderate, and the highest bit rate profile
+								for aggressive. </p><p>The policy works in the constraints of the
+								minimum and maximum bit rates, if these rates are specified.
+									</p><p><codeph>getABRPolicy</codeph> returns the current setting
+								from the <codeph>ABRControlParameters</codeph> enum: <ul
+									id="ul_bd4_5kb_cz">
+									<li><codeph>ABR_CONSERVATIVE</codeph></li>
+									<li><codeph>ABR_MODERATE</codeph></li>
+									<li><codeph>ABR_AGGRESSIVE</codeph></li>
+								</ul></p>
+						</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p>Keep the following information in mind: 
+	 <ul id="ul_05F3B92E1B524782B317502383D3A68A"> 
+		<li id="li_BF1C15E2023D4BA4B7C8C7CD50D545E8" >The 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> failover mechanism might
+		  override your settings, because 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> favors a continuous
+		  playback experience over strictly adhering to your control parameters. 
+		</li> 
+		<li id="li_14BCCAF79EEA40AC985D2015E3080F79" >When the
+		  bit rate changes, 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> dispatches 
+		  <codeph>onProfileChanged</codeph> events in 
+		  <codeph>PlaybackEventListener</codeph>.
+		</li>
+		<li id="li_35B1808E70234C8F87DD72871C224E3C">You can change your ABR
+		  settings at any time, and the player switches to use the profile that most
+		  closely matches the most recent settings. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>For example, if a stream has the following profiles: 
+	 <ul id="ul_6A5A6684626F409BBE96E536500477FC"> 
+		<li id="li_88049490AD4247A8BE4A76105BE3305F">1: 300000 
+		</li> 
+		<li id="li_F2506EBEC4B84822ABA314FE1538F866">2: 700000 
+		</li> 
+		<li id="li_BCC6400E5369447D9486E7F6E8268EFE">3: 1500000 
+		</li> 
+		<li id="li_A29AC860B8374611984199461BB8C7C2">4: 2400000 
+		</li> 
+		<li id="li_32AE98C8B3DF4E5EB7603B11E26D753E">5: 4000000 
+		</li> 
+	 </ul> If you specify a range of 300000 to 2000000, 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> considers only profiles 1, 2
+	 and 3. This allows applications to adjust to various network conditions, such
+	 as switching from wi-fi to 3G or to various devices such as a phone, a tablet,
+	 or a desktop computer. 
+	 </p>
+	 <p >To set ABR control parameters, set the parameters on
+		the 
+		<codeph>ABRControlParameter</codeph> class. 
+	 </p> 
+  </conbody> 
+</concept> 

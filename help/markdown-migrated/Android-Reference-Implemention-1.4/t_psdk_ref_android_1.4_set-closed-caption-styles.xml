@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_set-custom-start-time-ref-player"> 
+  <title>Set closed caption styles in the reference implementation</title> 
+  <taskbody> 
+	 <context id="context_81E10AF828D1401B8A2F54AB16E961F6">
+		<p>You can use the Closed Captions panel in the Settings interface to
+		  edit the closed caption styles in the reference implementation.
+		</p>
+	 </context>
+	 <steps id="steps_4B1F32EA5CCA46318F7EC34432E4ACCE"> 
+		<step id="step_E1956991FD044687B33D0A0AA2B6AFAB"> 
+		  <cmd>Open the Primetime Settings dialog. 
+		  </cmd> 
+		</step> 
+		<step id="step_D21B023F3F114C50A375269699D2C690">
+		  <cmd>Select 
+			 <uicontrol>Closed Captions style</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <fig id="fig_5C7A4E8F0390404F97E667364DB8B0A6"> 
+			 </fig> 
+			 <image href="images/cc-configuration.jpg" align="left"
+			  id="image_BFA1D963AEEE422DBCF21BD64163673B"></image>
+		  </info>
+		</step>
+		<step id="step_99BDF01DB7254CDCB093FAE0F4D89742">
+		  <cmd>Edit the 
+			 <uicontrol>Font</uicontrol>, 
+			 <uicontrol>Font color</uicontrol>, 
+			 <uicontrol>Background color</uicontrol>, 
+			 <uicontrol>Edge color</uicontrol>, 
+			 <uicontrol>Size</uicontrol>, 
+			 <uicontrol>Font edge</uicontrol>, 
+			 <uicontrol>Font opacity</uicontrol>, and 
+			 <uicontrol>Background opacity</uicontrol> values. 
+		  </cmd>
+		  <info>See 
+			 <xref
+			  href="http://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-reference-Closed_caption_styling_options"
+			  format="html" scope="external">Closed caption styling options</xref> for more
+			 information.
+		  </info>
+		</step>
+	 </steps> 
+	 <result id="result_922E83F223514AF1A4756E7F76B9F559">The Settings application automatically saves
+			and updates the values in <codeph>SharedPreferences</codeph>. </result>
+  </taskbody> 
+</task> 

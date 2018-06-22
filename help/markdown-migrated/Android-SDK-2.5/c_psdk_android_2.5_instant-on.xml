@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="instant_on-concept"> 
+  <title>Instant On</title> 
+  <shortdesc>Enabling instant on means that one or more channels are preloaded.
+	 When users select a channel or switch channels, the content plays immediately.
+	 The buffering is complete by the time the user starts watching. 
+  </shortdesc> 
+  <conbody> 
+	 <p>Without Instant On, <ph conkeyref="phrases/primetime-sdk-name"/> initializes the media to be
+			played but does not start buffering the stream until the application calls
+				<codeph>play</codeph>. The user sees no content until buffering is complete. With
+			Instant On, you can launch multiple media player (or media-player item loader)
+			instances, and <ph conkeyref="phrases/primetime-sdk-name"/> starts buffering the streams
+			immediately. When a user changes the channel and the stream has buffered properly,
+			calling <codeph>play</codeph> on the new channel starts playback immediately. </p> 
+	 <p>Although there are no limits to the number of 
+		<codeph>MediaPlayer</codeph> and 
+		<codeph>MediaPlayerItemLoader</codeph> instances that <ph conkeyref="phrases/primetime-sdk-name"/> can run,
+		running more instances consumes more resources. Application performance can be
+		affected by the number of instances that are running. For more information
+		about 
+		<codeph>MediaPlayerItemLoader</codeph>, see 
+		<xref
+		 href="t_psdk_android_2.5_media-resource-load.xml#load-a-media-resource"
+		 format="dita" scope="local"><?xm-replace_text Load a media resource in the media player?></xref>.
+		
+	 </p> 
+	 <note type="important"><ph conkeyref="phrases/primetime-sdk-name"/> does not support a single
+				<codeph>QoSProvider</codeph> to work with both <codeph>itemLoader</codeph> and
+				<codeph>MediaPlayer</codeph>. If the customer uses Instant On, the application needs
+			to maintain two QoS instances and manage both instances for the information.  </note>
+		<p>For more information about <codeph>MediaPlayerItemLoader</codeph>, see <xref
+				href="t_psdk_android_2.5_media-resource-load-using-mediaplayeritemloader.xml#use-mediaplayeritemloader"
+				format="dita" scope="local"
+				><?xm-replace_text Load a media resource using MediaPlayerItemLoader?></xref>.</p> 
+  </conbody> 
+</concept> 

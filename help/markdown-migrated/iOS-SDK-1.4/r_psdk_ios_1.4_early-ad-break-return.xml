@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_04314B9AF78449048AB2327CF6EF0E7D"> 
+  <title>Implement an early ad break return</title> 
+  <shortdesc>For live stream ad insertion, you might need to exit from an ad
+	 break before all the ads in the break are played to completion. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_D35A42C14AB94A55B5587F56712C78CA"> 
+		<p>Here are some examples for an early ad break return:
+		<ul id="ul_385BCAD203DA4E058883F4729DCEC9E6">
+		  <li id="li_B2A5D0556054466DAB608087DAB836E0">The duration of the ad
+			 break in certain sports events. 
+			 <p>Although a default duration is provided, if the game resumes
+				before the break finishes, the ad break must be exited. 
+			 </p>
+		  </li>
+		  <li id="li_CFA51898C54F408D8A7F419D4F5C8F56">An emergency signal during
+			 an ad break in a live stream. 
+		  </li>
+		</ul>
+		</p> 
+		<p>The ability to exit from an ad break early is identified through a
+		  custom tag in the manifest known as a splice-in or a cue-in tag. 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> allows the application to
+		  subscribe to these splice-in tags to provide a splice-in opportunity. 
+		</p> 
+	 </refsyn> 
+	 <section id="section_AE9126531F974E11B3090A595F0444BA"> 
+		<ul id="ul_4EA46A5EEE6F47328EF89196E00CB5CA"> 
+		  <li id="li_86EC1147A9404F149F25B779FFB4D266">To use the 
+			 <codeph>#EXT-X-CUE-IN</codeph> tag as a splice-in opportunity and
+			 implement an early ad break return: 
+			 <ol id="ol_FA959517AD4F4BA1A450C5539FD6DECD"> 
+				<li id="li_0216640AF6F846D482DB3C506B1B5EA1">Subscribe to the tag. 
+				  <p> 
+					 <codeblock outputclass="syntax objective-c">[PTSDKConfig setSubscribedTags:[NSArray arrayWithObject:@"#EXT-X-CUE-IN"]];</codeblock> 
+				  </p> 
+				</li> 
+				<li id="li_8EDD543BC99A4E3F8F1B2AEBAB126603">Add the cue-in
+				  opportunity resolver. 
+				  <p> 
+					 <codeblock outputclass="syntax objective-c">// self.player is the PTMediaPlayer instance created for content and ad playback
+PTDefaultMediaPlayerClientFactory *clientFactory = self.player.mediaPlayerClientFactory;
+     
+// Set cue in opportunity resolver
+[clientFactory registerOpportunityResolver:[PTDefaultAdSpliceInOpportunityResolver adSpliceInOpportunityResolverWithTag:@"#EXT-X-CUE-IN"]];</codeblock> 
+				  </p> 
+				</li> 
+			 </ol> 
+		  </li> 
+		  <li id="li_7E2EE3C25A9743DDA66A9E2BCB717369">To share the same tag for
+			 splice-out and splice-in: 
+			 <ol id="ol_75D0F9D229944F87A17204A5A83BC80E"> 
+				<li id="li_7E97C77DF1F9473DA82B2DB0E4BC21B3">If the application is
+				  sharing the same cue to indicate cue-out/splice-out and cue-in/splice-in,
+				  extend 
+				  <codeph>PTDefaultAdOpportunityResolver</codeph> and implement the
+				  
+				  <codeph>preparePlacementOpportunity</codeph> method. 
+				  <note type="tip">The following code assumes that the app has an
+					 implementation for the 
+					 <codeph>isCueInOpportunity</codeph> method. 
+					 <p> 
+						<codeblock outputclass="syntax objective-c">- (PTPlacementOpportunity *)preparePlacementOpportunity:(PTTimedMetadata *)timedMetadata
+{
+    if ([self isCueInOpportunity:timedMetadata])
+    {
+        return [PTPlacementOpportunity advertisementSpliceInOpportunityWithTimedMetadata:timedMetadata];
+    }
+    else
+    {
+        return [super preparePlacementOpportunity:timedMetadata];
+    }
+}</codeblock> 
+					 </p> 
+				  </note> 
+				</li> 
+				<li id="li_E9C05D2978E9442E84348EB036D6B1D2">Register the extended
+				  opportunity resolver on the 
+				  <codeph>PTDefaultMediaPlayerClientFactory</codeph> instance. 
+				  <p> 
+					 <codeblock outputclass="syntax objective-c">// self.player is the PTMediaPlayer instance created for content and ad playback
+PTDefaultMediaPlayerClientFactory *clientFactory = self.player.mediaPlayerClientFactory;
+     
+// Clear existing resolver and register the new opportunity resolver
+[clientFactory clearOpportunityResolvers];
+[clientFactory registerOpportunityResolver:[[PTDefaultExtendedAdOpportunityResolver new] autorelease]];</codeblock> 
+				  </p> 
+				</li> 
+			 </ol> 
+		  </li> 
+		</ul> 
+	 </section> 
+  </refbody> 
+</reference> 

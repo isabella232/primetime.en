@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="t_psdk_android_respond-to-clicks"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Respond to clicks on ads</title> 
+  <shortdesc>When a user clicks on an ad or a related button, your application must respond. <ph
+			conkeyref="phrases/primetime-sdk-name"/> provides you with information about the
+		destination URL for the click. </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_66B4ED422D574CA88FE23A7A4859F5A3"> 
+		<step id="step_2B70D728C28746B491AAA346FEACD78D">
+				<cmd>To set up an event listener for <ph conkeyref="phrases/primetime-sdk-name"/>,
+					and provide the click-through information, register an
+						<codeph>AdClickedEventListener.onAdClicked</codeph>. </cmd>
+				<info>When a user clicks on an ad or a related button, <ph
+						conkeyref="phrases/primetime-sdk-name"/> dispatches this notification,
+					including information about the destination for the click. </info>
+			</step> 
+		<step 
+		 id="step_9C1F01E772854C4094A23B6B1DE1B6A0"> 
+		  <cmd>Monitor user interactions on clickable ads. 
+		  </cmd> 
+		</step> 
+		<step id="step_0C819AFCB493472F97CA5E16D3C81BC2">
+				<cmd>When the user touches or clicks the ad or button, to notify <ph
+						conkeyref="phrases/primetime-sdk-name"/>, call <codeph>notifyClick</codeph>
+					on the <codeph>MediaPlayerView</codeph>. </cmd>
+			</step> 
+		<step id="step_49E7766DA2B64F78A12DE9CB9C90B198">
+				<cmd>Listen for the <codeph>onAdClick(AdClickEvent event)</codeph> event from <ph
+						conkeyref="phrases/primetime-sdk-name"/>. </cmd>
+			</step> 
+		<step id="step_A18FE8D5733A4A2389055A7638352CCB">
+				<cmd>To retrieve the click-through URL and related information, use the getter
+					methods for the <codeph>AdClickEvent</codeph> instance. </cmd>
+			</step> 
+		<step id="step_DDE46CA0B6A843CB8D659A2C88C37F55"> 
+		  <cmd>Pause the video. 
+		  </cmd> 
+		  <info >For more information about pausing the video,
+			 see 
+			 <xref keyref="pausing-resuming-playback"/>. 
+		  </info> 
+		</step> 
+		<step id="step_EC5B58BF91B94BC48096EF9A3E1E1E59"> 
+		  <cmd>Use the click-through information to display the ad click-through
+			 URL and the related information. 
+		  </cmd> 
+		  <info>You could, for example, display the information in one of the
+			 following ways: 
+			 <ul id="ul_CCC3E54ADB7C48C99F1C1938B1401B1E"> 
+				<li id="li_B562A6CFDE014D108722696CFE380D27">In your application by
+				  opening the click-through URL in a browser. 
+				  <p>On desktop platforms, the video ad playback area is used to
+					 invoke click-through URLs at user clicks. 
+				  </p> 
+				</li> 
+				<li id="li_6A99B5E7DA0C48A1A133500D5BA6483A">Redirect users to
+				  their external mobile web browser. 
+				  <p>On mobile devices, the video ad playback area is used for
+					 other functions, such as hiding and showing controls, pausing playback,
+					 expanding to full screen, and so on. On these devices, a separate view, such as
+					 a sponsor button, is used to launch the click-through URL. 
+				  </p> 
+				</li> 
+			 </ul> 
+		  </info> 
+		</step> 
+		<step id="step_F1E03204B3FE47B4AD9ADB79B7761240"> 
+		  <cmd>Close the browser window in which the click-through information is
+			 displayed and resume playing the video. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+	 <example id="example_2D93228E510D438C8AB5559897817A47"> 
+		<p>For example:
+				<codeblock outputclass="syntax java">private AdStartedEventListener adStartedEventListener = new AdStartedEventListener() {
+    @Override
+    public void onAdStarted(AdPlaybackEvent adPlaybackEvent) {
+        Ad ad = adPlaybackEvent.getAd();
+        if (ad == null) {
+            return;
+        }
+
+        _pubOverlay.startAd(adPlaybackEvent.getAdBreak(), ad);
+
+        if (areClickableAdsEnabled() &amp;&amp; ad.isClickable()) {
+            _isClickableAdPlaying = true;
+            _playerClickableAdFragment.show();
+        }
+
+    }
+};
+
+private AdCompletedEventListener adCompletedEventListener = new AdCompletedEventListener() {
+    @Override
+    public void onAdCompleted(AdPlaybackEvent adPlaybackEvent) {
+        Ad ad = adPlaybackEvent.getAd();
+        _pubOverlay.stopAd(adPlaybackEvent.getAdBreak(), ad);
+
+        _isClickableAdPlaying = false;
+        if (ad.isClickable()) {
+            _playerClickableAdFragment.hide();
+        }
+    }
+};
+
+private AdClickedEventListener adClickedEventListener = new AdClickedEventListener() {
+    @Override
+    public void onAdClicked(AdClickEvent adClickEvent) {
+        AdClick adClick = adClickEvent.getAdClick();
+        Ad ad = adClickEvent.getAd();
+
+        String url = adClick.getUrl();
+        if (url == null || url.trim().equals("")) {
+        } else {
+            Uri uri = Uri.parse(url);
+            Intent intent = new Intent(ACTION_VIEW, uri);
+            try {
+                startActivity(intent);
+            } catch (Exception e) {
+            }
+        }
+
+    }
+};
+</codeblock>
+			</p> 
+	 </example> 
+  </taskbody> 
+</task> 

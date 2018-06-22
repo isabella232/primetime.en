@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_android_subscribe-custom-tags"> 
+  <title>Custom tags</title> 
+  <shortdesc>Media streams can carry additional metadata in the form of tags in the
+		playlist/manifest file, and this file indicates the placement of advertising. You can
+		specify custom tag names and be notified when certain tags appear in the manifest file. </shortdesc> 
+  <conbody> 
+	 <section id="section_E99299152089418FBA56F5F09FC547B0"> 
+		<title>HLS content tags</title> 
+		<note type="important">This feature is not available for Safari on Apple
+		  computers, because 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> uses the video tag, rather
+		  than Flash or MSE, to play HLS content. 
+		</note> 
+		<p><ph conkeyref="phrases/primetime-sdk-name"/> provides out-of-the-box
+		  support for specific #EXT advertising tags. Your application can use custom
+		  tags to enhance the advertising workflow or to support blackout scenarios. To
+		  support advanced workflows, 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> allows you to specify and
+		  subscribe to additional tags in the manifest. You can be notified when these
+		  tags appear in the manifest file. 
+		</p> 
+		<note type="tip">You can subscribe to custom tags both for VOD and
+		  live/linear streams. 
+		</note> 
+		<note type="other" othertype="Limitation">When HLS is played by using the
+		  Video tag in Safari, and not by using Flash Fallback, this feature will not be
+		  available in Safari. 
+		</note> 
+	 </section> 
+	 <section id="section_AD032318AEF5418393D2B1DF36B0BABB"> 
+		<title>Using custom HLS tags</title> 
+		<p>Here is an example of a customized VOD asset: 
+		</p> 
+		<codeblock>#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:7
+ 
+#EXT-X-ASSET:AID=10
+ 
+#EXTINF:9.9766,
+seg1.ts
+ 
+#EXTINF:9.9766,
+seg2.ts
+ 
+#EXTINF:9.9766,
+seg3.ts
+ 
+#EXT-X-AD:DURATION=10
+#EXTINF:9.9766,
+seg4.ts
+ 
+#EXTINF:9.9766,
+seg5.ts
+ 
+#EXT-X-ENDLIST</codeblock> 
+		<p>Your application can set up the following scenarios: 
+		</p> 
+		<ul id="ul_6D4B0E5F269047CF9A70249D7B771995"> 
+		  <li id="li_4B591E79A49B482C88C80A9D7BEBC18A">A notification when 
+			 <codeph>#EXT-X-ASSET</codeph> tags, or any other set of custom tag
+			 names to which you have subscribed, exist in the file. 
+		  </li> 
+		  <li id="li_F9A306443020436F8A10B23A771DB543">Insert ads when an 
+			 <codeph>#EXT-X-AD</codeph> tag, or any other custom tag name, is
+			 found in the stream. 
+		  </li> 
+		</ul> 
+		<p>You can subscribe to any of the following tags as custom tags: 
+		  <codeph>EXT-PROGRAM-DATE-TIME</codeph>, 
+		  <codeph>EXT-X-START</codeph>, 
+		  <codeph>EXT-X-AD</codeph>, 
+		  <codeph>EXT-X-CUE</codeph>, 
+		  <codeph>EXT-X-ENDLIST</codeph>. You are notified with a 
+		  <codeph>TimedMetadata</codeph> event during parsing of manifest files. 
+		</p> 
+		<p>There are some advertising tags, such as 
+		  <codeph>EXT-X-CUE</codeph>, to which you are already subscribed. These
+		  ad tags are also used by the default opportunity generator. You can specify
+		  which ad tags are used by the default opportunity generator by setting the 
+		  <codeph>adTags</codeph> property. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

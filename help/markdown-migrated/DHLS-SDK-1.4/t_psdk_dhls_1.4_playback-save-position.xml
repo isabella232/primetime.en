@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_playback_save_position"> 
+  <title>Save the video position and resume later</title> 
+  <shortdesc>You can save the current playback position in a video and resume
+	 playing at the same position in a future session. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_D90436A1DCD349ABA925BFB67D547935"> 
+		<p>Dynamically inserted ads differ between user sessions, so saving the
+		  position 
+		  <b>with</b> spliced ads refers to a different position in a future
+		  session. 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> provides methods to
+		  retrieve the playback position while ignoring spliced ads. 
+		</p> 
+	 </context> 
+	 <steps id="steps_F964C48192164464A0F79C496071B91C"> 
+		<step id="step_115ACA53A6C64495B2CEE0753E04C223"> 
+		  <cmd>When the user quits a video, your application retrieves and saves
+			 the position in the video. 
+		  </cmd> 
+		  <info> 
+			 <note type="tip">Ad durations are not included. 
+			 </note> 
+			 <p> Ad breaks can vary in each session due to ad patterns, frequency capping, and so on. The
+						current time of the video in one session might be different in a future
+						session. When saving a position in the video, the application retrieves the
+						local time <ph>. Use the <codeph>localTime</codeph> property to read this
+							position</ph>, which you can save on the device or in a database on the
+						server. </p> 
+			 <codeblock >var resumeTime:Number = player.localTime;
+// save the resumeTime to a persistent location</codeblock> 
+			 <p> For example, if the user is at the 20th minute of the video, and this position includes five
+						minutes of ads, <codeph>currentTime</codeph> will <codeph>be</codeph> 1200
+						seconds, while <codeph>localTime</codeph> at this position will
+							<codeph>be</codeph> 900 seconds. </p> 
+		  </info> 
+		  <stepxmp/> 
+		</step> 
+		<step 
+		 id="step_5E7C030A287B4DDF93D49ED238AB3632"> 
+		  <cmd>Restore the user session when player activity resumes. 
+		  </cmd> 
+		  <info>
+					<ph><ph conkeyref="phrases/primetime-sdk-name"/> does not resume playback
+						between <ph conkeyref="phrases/primetime-sdk-name"/> initializations because
+						it does not save any information locally. Your application must implement
+						this logic.</ph>
+				</info> 
+		  <stepxmp> 
+			 <codeblock >// retrieve the resumeTime from the persistent location
+var resumeTime:Number:Number = ...;</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_46D4846277434F13B390B1AC7ACE339E"> 
+		  <cmd> To resume the video at the same position: </cmd> 
+		  <info>
+			 <ul id="ul_B3BAE9855967462797209CE625F0E79C">
+				<li id="li_F0B02DECB3F04A2D9256B168D171A01F">To resume playing the video from the position that
+							was saved from a previous session, use <codeph>seekToLocal</codeph>.
+								<note type="tip">This method is called only with local time values.
+								If the method is called with current time results, incorrect
+								behavior occurs. </note>
+						</li>
+				<li id="li_B20090D3F8A646E1A02D5CC763A98F1C">To seek to the current time, use
+								<codeph>seek</codeph>. </li>
+			 </ul> 
+		  </info> 
+		</step> 
+		<step id="step_8C4D9E639199404F8C32C49DD8D3735B">
+				<cmd>When your application receives the <codeph>onStatusChanged</codeph> status
+					change event, seek to the saved local time. </cmd>
+			</step> 
+		<step id="step_121E7C58F08E4A6688878BF2460F5A91"> 
+		  <cmd>Provide the ad breaks as specified in the ad policy interface. 
+		  </cmd> 
+		</step> 
+		<step id="step_93E86CC8EEFF4326A177DEE6ADC99FA4"> 
+		  <cmd> Implement a custom ad policy selector by extending the default ad
+			 policy selector. 
+		  </cmd> 
+		</step> 
+		<step id="step_379B22E277E9439E8D5C857DE435615F"> 
+		  <cmd>Provide the ad breaks that must be presented to the user by
+			 implementing 
+			 <codeph>selectAdBreaksToPlay</codeph>. 
+		  </cmd> 
+		  <info><ph>When the player enters the PREPARED status, all ads are already resolved, so the
+							<codeph>AdPolicyInfo.adBreakTimelineItem</codeph> property contains all
+						ad breaks before the local time position.</ph>Your application can decide to
+					play a pre-roll ad break and resume to the specified local time, play a mid-roll
+					ad break and resume to the specified local time, or play no ad breaks. </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="r_psdk_notifications-errors"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>ERROR notification codes</title> 
+  <shortdesc>This table provides detailed information about ERROR type
+	 notifications. 
+  </shortdesc> 
+  <refbody> 
+	 <section id="section_D29404228F5E4B818642CBA6A0D39546"> 
+		<p> Most errors contain relevant metadata, for example, the URL of the
+		  resource that failed to download. Some notifications contain metadata to
+		  specify whether the problem occurred in the main video content, in the
+		  alternate audio content, or in an ad. 
+		</p> 
+		<table frame="all" colsep="1" rowsep="1"
+		 id="table_8B61210A406A45ACBE37FC29729DDE22"> 
+		  <tgroup cols="5" colsep="1" rowsep="1" outputclass="FormatA"> 
+			 <colspec colnum="1" colname="1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="2" colwidth="1.43*"/> 
+			 <colspec colnum="3" colname="3" colwidth="2.04*"/> 
+			 <colspec colnum="4" colname="4" colwidth="1.55*"/> 
+			 <colspec colnum="5" colname="5" colwidth="1.72*"/> 
+			 <thead> 
+				<row rowsep="1"> 
+				  <entry colname="1">Code 
+				  </entry> 
+				  <entry colname="2">Name 
+				  </entry> 
+				  <entry colname="3">InnerNotification 
+				  </entry> 
+				  <entry colname="4">Metadata Keys 
+				  </entry> 
+				  <entry colname="5">Comments 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row rowsep="1" > 
+				  <entry namest="1" nameend="5"><b>DRM</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>100000 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>DRM_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> 
+				  </entry> 
+				  <entry colname="4"><codeph>MAJOR_DRM_CODE 
+					 </codeph><codeph>MINOR_DRM_CODE 
+					 </codeph><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"/> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="1" nameend="5"><b>Playback</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="1"><codeph>101000 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>PLAYBACK_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"/> 
+				  <entry colname="4"/> 
+				  <entry colname="5"> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101001 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>NATIVE_PLAYBACK_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION </codeph><codeph>INTERNAL_ERROR </codeph><codeph>URL
+								</codeph>
+							</entry> 
+				  <entry colname="5"> 
+				  </entry> 
+				</row> 
+				<row rowsep="1">
+							<entry colname="1"><codeph>101008 </codeph>
+							</entry>
+							<entry colname="2"><codeph>SEEK_ERROR </codeph>
+							</entry>
+							<entry colname="3">None </entry>
+							<entry colname="4"><codeph>DESCRIPTION</codeph>
+							</entry>
+							<entry colname="5">
+								<p>An error has occurred while performing a seek operation. </p>
+							</entry>
+						</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101009 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>PAUSE_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">None 
+				  </entry> 
+				  <entry colname="4">
+								<p>None </p>
+							</entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while performing a pause operation. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101101 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AUDIO_TRACK_CHANGE_FAIL 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"><codeph>PLAYER_NOT_READY 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="4">None 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>  
+					 </p> 
+					 <p>  
+					 </p><!-- workaround for PDF having too much negative kerning in column 2  -->
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="1" nameend="5"><b>Invalid resource 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>102000 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>INVALID_MEDIA_PLAYER_ITEM 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">
+								<p>None </p>
+							</entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="1" nameend="5"><b>Ad processing 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>104001 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_RESOLVER_METADATA_ INVALID 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">
+								<codeph>AD_NOT_INSERTED</codeph>
+							</entry> 
+				  <entry colname="4">
+								<p>None </p>
+							</entry> 
+				  <entry colname="5"> 
+					 <p>Ad resolving failed due to invalid ad-metadata format. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>104005 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_INSERTION_FAIL 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">
+								<codeph>AD_NOT_INSERTED </codeph>
+							</entry> 
+				  <entry colname="4">
+								<p>None </p>
+							</entry> 
+				  <entry colname="5"> 
+					 <p>Ad resolving phase has failed. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>104006 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_UNREACHABLE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry namest="1" nameend="5"><b>Native</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>106000 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>NATIVE_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">None 
+				  </entry> 
+				  <entry colname="4">
+								<codeph>INTERNAL_ERROR </codeph>
+							</entry> 
+				  <entry colname="5"> 
+					 <p >A low-level iOS error occurred. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry namest="1" nameend="5"><b>Configuration</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>107002 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>SET_CC_VISIBILITY_ ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4">
+								<p>None </p>
+							</entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while attempting to change the
+						visibility of the CC tracks. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>107003 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>SET_CC_STYLING_ ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">
+								<codeph>NATIVE_ERROR </codeph>
+							</entry> 
+				  <entry colname="4">
+								<p>None </p>
+							</entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while attempting to change the styling
+						options for the CC tracks. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry namest="1" nameend="5"><b>iOS unique</b>
+							</entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170000 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_HLS_VERSION_ INCOMPATIBLE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"> 
+					 <codeph>AD_ASSET</codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>The HLS version of the ads are highter than the HLS version
+						of the content. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170001 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>ARGUMENT_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Argument error 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170002 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>M3U8_PARSER_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Could not parse m3u8. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170003 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>WEBVTT_PARSER_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Could not parse Webvtt. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170004 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>HLS_SEGMENT_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph><codeph>URL 
+					 </codeph><codeph>INTERNAL_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Segment exceeds specified bandwidth for variant. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170005 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>MBR_MEDIASEQUENCE_OFFSYNC 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>The media sequence number is not on sync on all the HLS
+						streams of this MBR. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170006 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>MISSING_FILE_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph><codeph>URL 
+					 </codeph><codeph>INTERNAL_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Missing file or not responding. 
+					 </p> 
+					 <p>HTTP 404: File not found. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170007 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_EMPTY_RESPONSE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"><codeph>AD_INSERTION_FAIL 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Could not retrieve ads. Empty response. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170008 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_TIMEOUT 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"><codeph>AD_INSERTION_FAIL 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Could not retrieve ads. Timeout error. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170009 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>SUBTITLES_TRACK_CHANGE_FAIL 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"><codeph>PLAYER_NOT_READY 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Error while changing the subtitles track. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170010 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>SITECATALYST_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Site catalyst error. See description. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>170011 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_TARGET_DURATION_INCOMPATIBLE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"> 
+					 <codeph>AD_ASSET</codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>The TARGET DURATION of the ad is higher than the TARGET
+						DURATION of the content. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry namest="1" nameend="4"> 
+					 <note>adID and source (URL) can be retrieved through the <codeph>PTAdAsset</codeph> in the
+									notification metadata with the <codeph>AD_ASSET</codeph> key. </note> 
+				  </entry> 
+				  <entry colname="5"> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </refbody> 
+</reference> 

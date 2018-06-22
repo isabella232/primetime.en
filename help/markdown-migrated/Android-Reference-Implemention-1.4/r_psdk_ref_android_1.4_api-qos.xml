@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_psdk_ref_api-qos"> 
+  <title>Related API documentation</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_D80E79E90097407389517B7921CB5511"> 
+		<ul id="ul_82F73748C2BC4CC6BAF1B5CB75C28E5B" > 
+		  <li id="li_0DA1577D3BDA4F90A63FB550278D1370"><xref
+			 href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.html"
+			 format="html" scope="external">Class QosManager</xref> 
+		  </li> 
+		  <li id="li_7D84DC00089448DEBF6E2010216BCDDD"><xref
+			 href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManagerOn.html"
+			 format="html" scope="external">Class QosManagerOn</xref> 
+		  </li> 
+		  <li id="li_7DE258935A404E3ABA01C13D52846C31"><xref
+			 href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.QosManagerEventListener.html"
+			 format="html" scope="external">QosManagerEventListener</xref> 
+		  </li> 
+		  <li id="li_E66C20CAF82C4FD6827622A77F4593FE"><xref
+			 href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.QosItem.html"
+			 format="html" scope="external">QosItem</xref> 
+		  </li> 
+		</ul> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

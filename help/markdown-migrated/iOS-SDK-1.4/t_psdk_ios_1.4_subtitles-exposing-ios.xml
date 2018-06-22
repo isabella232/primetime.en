@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ios_exposing-subtitles"> 
+  <title>Expose subtitles</title> 
+  <shortdesc>The 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+	 notifies your player client about the availability of internal AVAsset’s 
+	 <codeph>availableMediaCharacteristicsWithMediaSelectionOptions</codeph> by
+	 using the 
+	 <codeph>PTMediaPlayerMediaSelectionOptionsAvailableNotification</codeph>
+	 notification.
+  </shortdesc>
+  <taskbody> 
+	 <context id="context_CB9C71ACA43546D1B4D77F1BF86ED503"> 
+		<p>You can access the available subtitles through the 
+		  <codeph>PTMediaPlayerItem</codeph> property's 
+		  <codeph>subtitlesOptions</codeph>. 
+		</p> 
+		<p>To expose subtitles: 
+		</p> 
+	 </context> 
+	 <steps id="steps_72C7A8C512B246B18CEA760DE0B38D06"> 
+		<step id="step_E737B4A3475B44A88DDFF8696B68C758"> 
+		  <cmd>Register the client as a listener for the 
+			 <codeph>PTMediaPlayerMediaSelectionOptionsAvailableNotification</codeph>
+			 notification. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">[[NSNotificationCenter defaultCenter] 
+  addObserver:self selector:@selector(onMediaPlayerItemMediaSelectionOptionsAvailable:) 
+  name:PTMediaPlayerMediaSelectionOptionsAvailableNotification object:self.player];</codeblock> When your client receives this notification, the subtitles are
+			 ready in the 
+			 <codeph>PTMediaPlayerItem</codeph>. 
+		  </info> 
+		</step> 
+		<step id="step_A0AD926D8EA94BD1B5175FDDC11E714B"> 
+		  <cmd> Implement the 
+			 <codeph>onMediaPlayerItemMediaSelectionOptionsAvailable</codeph>
+			 method similar to the following example: 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">- (void) onMediaPlayerItemMediaSelectionOptionsAvailable:(NSNotification *) notification {
+    NSArray* subtitlesOptions = self.player.currentItem.subtitlesOptions;
+    NSArray* audioOptions = self.player.currentItem.audioOptions;
+}</codeblock> 
+		  </info> 
+		  <info> 
+			 <p>For information about alternate audio tracks, see 
+				<xref keyref="alternate-audio" format="dita"
+				scope="local">Alternate Audio</xref>. 
+			 </p> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

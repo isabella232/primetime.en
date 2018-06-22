@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="separate-clickable-ad-process"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Separate the clickable ad process</title> 
+  <shortdesc>You should separate your player’s UI logic from the process that
+	 manages ad clicks. One way to do this is to implement multiple fragments for an
+	 activity. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_89B93644BDFA471EBCCE62637299A098"> 
+		<step id="step_996D0190A53D4F52A2C089AC0C210305">
+				<cmd>Implement one fragment to contain the <codeph>MediaPlayer</codeph>. </cmd>
+				<info>
+					<p>This fragment should call <codeph>notifyClick()</codeph> and will be responsible for video
+                        playback.
+                        <codeblock outputclass="syntax java">public class PlayerFragment extends SherlockFragment {
+    ...
+    public void notifyAdClick () {
+        _mediaPlayer.notifyClick();
+    }
+    ...
+}
+</codeblock>
+                    </p>
+				</info>
+			</step> 
+		<step id="step_4C0BD06CE39841BCBD7E433787B2E181">
+				<cmd>Implement a different fragment to display a UI element that indicates that an
+					ad is clickable, monitor that UI element, and communicate user clicks to the
+					fragment that contains the <codeph>MediaPlayer</codeph>. </cmd>
+				<info>
+					<p>This fragment should declare an interface for fragment communication. The
+						fragment captures the interface implementation during its
+							<codeph>onAttach()</codeph> lifecycle method and can call the interface
+						methods to communicate with the activity. </p>
+					<codeblock outputclass="syntax java">public class PlayerClickableAdFragment extends SherlockFragment {
+    private ViewGroup viewGroup;
+    private Button button;
+    OnAdUserInteraction callback;
+    @Override
+    public View onCreateView(LayoutInflater inflater, 
+                             ViewGroup container, 
+                             Bundle savedInstanceState) {
+        // the custom fragment is defined by a custom button
+        viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_player_clickable_ad, 
+                                                 container, false);
+        button = (Button) viewGroup.findViewById(R.id.clickButton);
+
+        // register a click listener to detect user interaction
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // send the event back to the activity
+                callback.onAdClick();
+            }
+        });
+        viewGroup.setVisibility(View.INVISIBLE);
+        return viewGroup;
+    }
+
+    public void hide() {
+        viewGroup.setVisibility(View.INVISIBLE);
+    }
+
+    public void show() {
+        viewGroup.setVisibility(View.VISIBLE);    
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        // attaches the interface implementation
+        // if the container activity does not implement the methods 
+        // from the interface an exception will be thrown
+        try {
+            callback = (OnAdUserInteraction) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                + " must implement OnAdUserInteraction");
+        }    
+    }
+
+    // user defined interface that allows fragment communication
+    // must be implemented by the container activity
+    public interface OnAdUserInteraction {
+        public void onAdClick();
+    }
+}
+</codeblock>
+				</info>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

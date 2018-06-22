@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="partial-adbreak-insertion"> 
+  <title>Disable pre-roll ads</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <conbody> 
+	 <p>To disable pre-roll, change the default opportunity generators to not
+		make the pre-roll call. The default opportunity generators is: 
+		<codeblock>@inheritDoc
+*/
+override protected function doRetrieveGenerators(item:MediaPlayerItem):Vector.&lt;OpportunityGenerator&gt; {
+var result:Vector.&lt;OpportunityGenerator&gt; = new Vector.&lt;OpportunityGenerator&gt;();
+result.push(new AdSignalingModeOpportunityGenerator());
+result.push(new SpliceOutOpportunityGenerator());
+return result;
+}</codeblock>
+	 </p>
+	 <p>To disable the pre-roll on live streams, change the above to include
+		only the SpliceOutOpportunityGenerator: 
+		<codeblock>@inheritDoc
+*/
+override protected function doRetrieveGenerators(item:MediaPlayerItem):Vector.&lt;OpportunityGenerator&gt; {
+var result:Vector.&lt;OpportunityGenerator&gt; = new Vector.&lt;OpportunityGenerator&gt;();
+if (preroll_enabled == true) { result.push(new AdSignalingModeOpportunityGenerator()); }
+
+result.push(new SpliceOutOpportunityGenerator());
+return result;
+}</codeblock>
+	 </p>
+  </conbody> 
+</concept> 

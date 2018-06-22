@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_psdk_ref_android_1.4_android"> 
+<title>Guide to Primetime reference implementation for TVSDK 1.4 for Android</title> 
+<topicref collection-type="unordered" format="dita" href="c_psdk_ref_android_1.4_title-page.xml"
+		scope="local">
+		<topicref collection-type="family" format="dita"
+			href="c_psdk_ref_android_1.4_how-to-use-ref-player.xml"
+			 scope="local">
+			<topicref format="dita" href="c_psdk_ref_android_1.4_ref-player-structure.xml"
+				 scope="local"/>
+			<topicref collection-type="unordered" format="dita"
+				href="c_psdk_ref_android_1.4_using-feature-managers.xml"
+				 scope="local">
+				<topicref format="dita"
+					href="c_psdk_ref_android_1.4_creating-feature-managers.xml"
+					scope="local"/>
+				<topicref format="dita" href="c_psdk_ref_android_1.4_turning-features-on-off.xml"
+					 scope="local"/>
+				<topicref format="dita" href="c_psdk_ref_android_1.4_handling-events.xml"
+					 scope="local"/>
+			</topicref>
+		</topicref>
+		<topicref collection-type="family" format="dita"
+			href="t_psdk_ref_android_1.4_set-up-dev-environment.xml"
+			 scope="local">
+			<topicref format="dita" href="t_psdk_ref_android_1.4_download-prereqs-android.xml"
+				 scope="local"/>
+			<topicref format="dita" href="t_psdk_ref_android_1.4_install-the-ref-player-project.xml"
+				 scope="local"/>
+			<topicref collection-type="unordered" format="dita"
+				href="c_psdk_ref_android_1.4_exploring-code.xml" 
+				scope="local">
+				<topicref format="dita" href="c_psdk_ref_android_1.4_player-fragment.xml"
+					 scope="local"/>
+				<topicref format="dita"
+					href="c_psdk_ref_android_1.4_about-psdk-feature-managers.xml"
+					 scope="local"/>
+				<topicref format="dita" href="c_psdk_ref_android_1.4_config-provider.xml"
+					 scope="local"/>
+				<topicref format="dita" href="c_psdk_ref_android_1.4_settings-activity.xml"
+					 scope="local"/>
+				<topicref collection-type="unordered" format="dita"
+					href="c_psdk_ref_android_1.4_catalog-format.xml" 
+					scope="local">
+					<topicref format="dita" href="r_psdk_ref_android_1.4_json-pt-ads.xml"
+						 scope="local"/>
+					<topicref format="dita"
+						href="r_psdk_ref_android_1.4_json-direct-ad-breaks.xml"
+						 scope="local"/>
+					<topicref format="dita"
+						href="r_psdk_ref_android_1.4_json-custom-ad-markers.xml"
+						 scope="local"/>
+					<topicref format="dita"
+						href="r_psdk_ref_android_1.4_json-entitlement-resource-id.xml"
+						locktitle="yes" 
+						scope="local"/>
+				</topicref>
+				<topicref format="dita"
+					href="r_psdk_ref_android_1.4_example-json-feed-format.xml"
+					 scope="local"/>
+			</topicref>
+		</topicref>
+		<topicref collection-type="unordered" format="dita"
+			href="c_psdk_ref_android_1.4_video-playback.xml"
+			 scope="local">
+			<topicref collection-type="family" format="dita"
+				href="t_psdk_ref_android_1.4_enable-video-playback.xml"
+				 scope="local">
+				<topicref format="dita" href="r_psdk_ref_android_1.4_api-hls-playback.xml"
+					 scope="local"/>
+			</topicref>
+			<topicref format="dita"
+				href="t_psdk_ref_android_1.4_configure-buffer-control-parameters.xml"
+				 print="no" scope="local">
+				<topicref format="dita" href="t_psdk_ref_android_1.4_use-settings-buffer-control.xml"
+					scope="local"/>
+				<topicref format="dita" href="r_psdk_ref_android_1.4_api-buffer-control.xml"
+					 scope="local"/>
+			</topicref>
+			<topicref collection-type="family" format="dita"
+				href="c_psdk_ref_android_1.4_content-protection.xml"
+				 scope="local">
+				<topicref format="dita" href="t_psdk_ref_android_1.4_add-content-protection.xml"
+					 scope="local"/>
+				<topicref format="dita" href="r_psdk_ref_android_1.4_api-content-protection.xml"
+					 scope="local"/>
+			</topicref>
+			<topicref collection-type="family" format="dita" href="c_psdk_ref_android_1.4_mbr.xml"
+				 scope="local">
+				<topicref format="dita" href="t_psdk_ref_android_1.4_disable-abr.xml"
+					scope="local"/>
+				<topicref format="dita" href="t_psdk_ref_android_1.4_configure-for-low-bit-rate.xml"
+					 scope="local"/>
+			</topicref>
+			<topicref collection-type="family" format="dita" href="c_psdk_ref_android_1.4_dvr.xml"
+				 scope="local">
+				<topicref format="dita" href="c_psdk_ref_android_1.4_dvr-without-ad-insertion.xml"
+					 scope="local"/>
+				<topicref format="dita" href="c_psdk_ref_android_1.4_dvr-with-ad-insertion.xml"
+					 scope="local"/>
+				<topicref format="dita" href="t_psdk_ref_android_1.4_dvr_custom-start-point.xml"
+					 scope="local"/>
+				<topicref format="dita" href="t_psdk_ref_android_1.4_set-custom-start-time-dvr.xml"
+					 scope="local"
+				/>
+			</topicref>
+			<topicref collection-type="family" format="dita"
+				href="t_psdk_ref_android_1.4_qos-statistics.xml"
+				 scope="local">
+				<topicref format="dita" href="t_psdk_ref_android_1.4_qos-enable-disable.xml"
+					 scope="local"/>
+				<topicref format="dita" href="r_psdk_ref_android_1.4_api-qos.xml"
+					 scope="local"/>
+			</topicref>
+		</topicref>
+		<topicref collection-type="family" format="dita"
+			href="c_psdk_ref_android_1.4_ad-insertion.xml"  scope="local">
+			<topicref format="dita" href="c_psdk_ref_android_1.4_ad-insertion-types.xml"
+				 scope="local"/>
+			<topicref format="dita" href="t_psdk_ref_android_1.4_add-advertising.xml"
+				 scope="local"/>
+			<topicref format="dita" href="c_psdk_ref_android_1.4_clickable-ads.xml"
+				 print="no" scope="local"/>
+			<topicref format="dita" href="r_psdk_ref_android_1.4_aps-callbacks-ad-insertion.xml"
+				 scope="local"/>
+		</topicref>
+		<topicref collection-type="family" format="dita"
+			href="c_psdk_ref_android_1.4_closed-captions.xml" 
+			print="no" scope="local">
+			<topicref format="dita" href="t_psdk_ref_android_1.4_cc-enable.xml"
+				 scope="local"/>
+			<topicref format="dita" href="c_psdk_ref_android_1.4_implement-chooser-dialog.xml"
+				 scope="local"/>
+			<topicref format="dita" href="t_psdk_ref_android_1.4_cc-visibility-style.xml"
+				 scope="local"/>
+			<topicref format="dita" href="t_psdk_ref_android_1.4_set-closed-caption-styles.xml"
+				 scope="local"/>
+			<topicref format="dita" href="r_psdk_ref_android_1.4_cc-apis-callbacks.xml"
+				 scope="local"/>
+		</topicref>
+		<topicref collection-type="family" format="dita"
+			href="c_psdk_ref_android_1.4_late-binding-audio.xml" 
+			scope="local">
+			<topicref format="dita" href="t_psdk_ref_android_1.4_aa_enable.xml"
+				 scope="local"/>
+			<topicref format="dita" href="t_psdk_ref_android_1.4_select-audio-tracks.xml"
+				 scope="local"/>
+			<topicref format="dita" href="r_psdk_ref_android_1.4_aa-api-callbacks.xml"
+				 scope="local"/>
+		</topicref>
+		<topicref collection-type="family" format="dita"
+			href="c_psdk_ref_android_1.4_paytvpass-entitlement.xml"
+			 scope="local">
+			<topicref format="dita" href="c_psdk_ref_android_1.4_entitlement-overvivew.xml"
+				locktitle="yes"  scope="local"/>
+			<topicref format="dita" href="t_psdk_ref_android_1.4_integrate-pass.xml" locktitle="yes"
+				 scope="local"/>
+			<topicref format="dita" href="t_psdk_ref_android_1.4_pass-analytics-setup.xml"
+				locktitle="yes"  scope="local"/>
+			<topicref format="dita" href="r_psdk_ref_android_1.4_pass-apis-callbacks.xml"
+				 scope="local"/>
+		</topicref>
+		<topicref href="c_psdk_ref_android_1.4_video-analytics.xml" 
+			format="dita" scope="local" collection-type="family">
+			<topicref href="t_psdk_ref_android_1.4_create-video-analytics-manager.xml"
+				 format="dita" scope="local"/>
+			<topicref href="t_psdk_ref_android_1.4_configure-video-analytics-manager.xml"
+				 format="dita" scope="local"/>
+			<topicref href="r_psdk_ref_android_1.4_va-apis-callbacks.xml"
+				 locktitle="yes" format="dita" scope="local"/>
+		</topicref>
+		<topicref format="dita" href="t_psdk_ref_android_1.4_build-custom-ui.xml"
+			 scope="local"/>
+		<topicref format="dita" href="c_psdk_ref_android_1.4_troubleshooting.xml"
+			 scope="local"/>
+	</topicref> 
+<reltable id="reltable_09B4F38876C04D40B0DBF352C772AEEE"> 
+  <relrow> 
+	 <relcell> 
+		<topicref href="c_psdk_ref_android_1.4_video-analytics.xml"/> 
+	 </relcell> 
+	 <relcell> 
+		<topicref format="html" scope="external"
+					href="http://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-concept-Set_up_video_analytics"
+					navtitle="Set up video analytics"/> 
+	 </relcell> 
+  </relrow> 
+</reltable> 
+</map> 

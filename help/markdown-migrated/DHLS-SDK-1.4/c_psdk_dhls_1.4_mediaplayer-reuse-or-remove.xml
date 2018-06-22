@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_reuse-or-remove-mediaplayer"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Reuse or remove a MediaPlayer instance</title> 
+  <shortdesc>You can reset, reuse, or release a 
+	 <codeph>MediaPlayer</codeph> instance that you no longer need. 
+  </shortdesc> 
+</concept> 

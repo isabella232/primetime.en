@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="trick_play_limitations"> 
+  <title>Limitations and behavior for trick play</title> 
+  <shortdesc>There are some limitations and some issues in the way trick play
+	 mode behaves. 
+  </shortdesc> 
+  <conbody> 
+	 <section  
+	 id="section_8B88E281A0FA4661B4C2C70A0ABED57C"> 
+		<p>Here are the limitations for trick play mode:
+		<ul id="ul_DF0767C7569947518D95E2CD8A821BAC"> 
+		  <li id="li_FE868B49E2E64F8B885AEA0B56CBC9BB"> The master playlist must
+			 contain I-frame-only segments. Only the key frames from the I-frame track are
+			 displayed on the screen. 
+		  </li> 
+		  <li id="li_09FAEC1C61074712B2244BADEBA7AB2E">The audio track and closed
+			 captions are disabled. 
+		  </li> 
+		  <li id="li_ECAF8BD03B63489F87FF231CE3645FB0">Adaptive bit rate (ABR) logic is disabled. <ph
+							conkeyref="phrases/primetime-sdk-name"/> selects one bit rate between
+						the lowest provided rate and 800 kbps and uses that rate during the entire
+						trick-play session.</li> 
+		  <li id="li_B657735B6BC245A2801B4C3123E2A193">Play and pause are enabled.</li> 
+		  <li id="li_9E7F47F2A97A4371BD5CABED7AED9499">Seek is disallowed. To seek, call
+							<codeph>pause</codeph> to exit trick play mode and then call
+							<codeph>seek</codeph>.</li> 
+		  <li id="li_ADEFDEDD5DBB419889B0FF38140F1BDB">You can go from trick play mode into any allowed
+						playback rate (play or pause).</li> 
+		  <li id="li_0554BCEF6D304807A60D8AEA37B77895">When ads are incorporated in the stream: <ul
+							id="ul_7404A6A34B624455B601074AD510EE45">
+							<li id="li_B227CBA40053471DB2390911D4BCD66A">You can go to trick play
+								only while playing the main content. An error is dispatched if you
+								try to switch to trick play during an ad break. </li>
+							<li id="li_E61D5811E93849EDA5EC3C1AF3A0E148">After commencing trick play
+								mode, ad breaks are ignored and no ad events are fired. </li>
+							<li id="li_9750A4F28E4649349D7F5F41FA65888A">The timeline exposed by <ph
+									conkeyref="phrases/primetime-sdk-name"/> to the player
+								application is not modified even if ad breaks are skipped. </li>
+							<li id="li_D0F81645BAB9477A931689F3E8B37324">The current time value
+								jumps forward (on fast forward) or backward (on fast rewind) with
+								the duration of the skipped ad break. This jump behavior for the
+								current time allows the stream duration to remain unmodified during
+								trick play. Your player application can <ph>get the local time
+									value</ph> to track the time relative only to the main content.
+								No time jumps are performed on the values returned for the local
+								time when skipping an ad. </li>
+							<li id="li_8B338230C2AD4CB9B6376757D0DC2A7F">The
+									<codeph>MediaPlayerEvent.AD_BREAK_SKIPPED</codeph> event is
+								dispatched immediately before an ad break is about to be skipped.
+								Your player can use this event to implement custom logic related to
+								the skipped ad breaks. </li>
+							<li id="li_9D08F1110C87493EBCB255FC3F586D59">Exiting trick play invokes
+								the same ad playback policy as when exiting seek. <p>Therefore, as
+									in seeking, the behavior depends on whether your application's
+									playback policy is different from the default. The default is
+									that the last skipped ad break is played at the point where you
+									come out of trick play mode. </p></li>
+						</ul></li> 
+		</ul> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

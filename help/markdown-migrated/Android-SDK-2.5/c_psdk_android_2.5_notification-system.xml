@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_notification-system"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Notifications and events for player status, activity, errors, and logging</title>
+  
+  <shortdesc><codeph>MediaPlayerStatus</codeph> objects provide information about changes in player
+		status. <codeph>Notification</codeph> objects provide information about warnings and errors.
+		Errors that stop the playback of the video also cause a change in the status of the player.
+		You implement event listeners to capture and respond to events
+			(<codeph>MediaPlayerEvent</codeph> objects). </shortdesc> 
+  <conbody> 
+  	<p>Your application can retrieve notification and status information. Using this information, you
+			could also create a logging system for diagnostics and validation. </p>
+  </conbody> 
+</concept> 

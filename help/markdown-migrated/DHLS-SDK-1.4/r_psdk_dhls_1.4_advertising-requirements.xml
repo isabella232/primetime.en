@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="r_psdk_android_requirements-for-advertising"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title> Advertising requirements</title> 
+  <shortdesc>
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_7CF7E082FB874C549B1383D95CF80370">
+		<p>To incorporate ads in your video content, ensure that the advertising
+		  and main video content meets the following requirements: 
+		</p> 
+		<ul id="ul_26CD8E0A639645F88324E4FF0600E759"> 
+		  <li id="li_BC0355419A69458EB8211ECBC6820D5F">The advertising content's
+			 HLS version cannot be higher than the main content's HLS version. 
+		  </li> 
+		  <li 
+			id="li_07FA79D14B544280B0758215407E25BF">Ads do not have to be multiplexed
+			 (with no restrictions), regardless of whether the main content is multiplexed. 
+		  </li> 
+		</ul> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

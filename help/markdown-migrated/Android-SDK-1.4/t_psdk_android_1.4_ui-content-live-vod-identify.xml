@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="identify-content-live-vod"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Identify whether the content is live or VOD</title> 
+  <shortdesc>In some cases, you need to know whether the media content is live or VOD.</shortdesc> 
+  <taskbody> 
+	 <steps id="steps_CDA35A3ECE5D4CB0A330303891959E56"> 
+		<step id="step_0C328EAA2B07482191BA217BFB28CC9D">
+				<cmd>Ensure that the player is in at least the PREPARED state. </cmd>
+			</step> 
+		<step id="step_A6A348DB9AD44700ACA019FF2539C5A5"> 
+		  <cmd>Determine whether the 
+			 <codeph>MediaPlayerItem</codeph> content is live (true) or VOD
+			 (false). 
+		  </cmd> 
+		  <info> 
+			 <codeblock  outputclass="syntax java">boolean isLive();</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

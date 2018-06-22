@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<reference id="r_psdk_android_timeline-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Timeline classes </title> 
+  <shortdesc>These classes provide information about the timeline of the
+	 particular media, including the placement of ads. 
+  </shortdesc> 
+  <refbody> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_6752E908BA6546549619994A3F7D5F87"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="26*"/> 
+		  <colspec colnum="2" colname="2" colwidth="74*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1">Name 
+				</entry> 
+				<entry colname="2"> 
+				  <p>Description 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1" > 
+				<entry colname="1">
+							<xref
+								href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTPlacementOpportunity.html"
+								format="html" scope="external">PTPlacementOpportunity</xref>
+						</entry> 
+				<entry colname="2">An opportunity class represents a point of interest on the timeline. </entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><xref
+								href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTimeline.html"
+								format="html" scope="external">PTTimeline</xref>
+						</entry> 
+				<entry colname="2">Class that represents the timeline of the content, including ad breaks. </entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </refbody> 
+</reference> 

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_events_order_ad_playback"> 
+  <title>Order of advertising events</title> 
+  <shortdesc>When your playback includes advertising, 
+	 <ph conkeyref="phrases/primetime-sdk-name"></ph> dispatches
+	 events/notifications in generally expected sequences. Your player can implement
+	 actions based on events in the expected sequence. 
+  </shortdesc> 
+  <conbody> 
+	 <section  
+	  id="section_6A672A7FBF6C496E8FF83DDF61511996"> 
+		<p>When playing ads, the order of events is: 
+		<ul id="ul_8D90537C40E24B839D831B20F1B2A810"> 
+		  <li id="li_666495768E244535A7922D6D440C7384"
+							><codeph>AdPlaybackEventListener.onAdBreakStart</codeph>
+					</li> 
+		  <li id="li_32C9E830732940E2B5F114BC312C89F2">The following are
+			 dispatched for every ad in the ad break: 
+			 <ul id="ul_1EF55409758A4BC59211333AEFF99BB7"> 
+				<li id="li_E55F18A9033B43D18F2DE7E660CF17F7"
+								><codeph>AdPlaybackEventListener.onAdStart</codeph></li> 
+				<li id="li_D9964DF4860641089B5B5C383C637719"
+									><codeph>AdPlaybackEventListener.onAdProgress</codeph> (multiple
+								times during an ad's playback)</li> 
+				<li id="li_F26E791E3A4A4F1BB535E2AD58FFE75F"><codeph>AdPlaybackEventListener.onAdClick</codeph>
+								(for each click)</li> 
+				<li id="li_DCF23AEA55F04EA58C52D33827AC2C58"
+								><codeph>AdPlaybackEventListener.onAdStart</codeph></li> 
+			 </ul> 
+		  </li> 
+		  <li id="li_75F5D13C0B9C4BD1925E7CF825F7F58F"
+							><codeph>AdPlaybackEventListener.onAdBreakComplete</codeph></li> 
+		</ul> 
+		</p> 
+		<p>The following example shows a typical progression of ad playback
+		  events: 
+		</p> 
+		<codeblock outputclass="syntax java">mediaPlayer.addEventListener(MediaPlayer.Event.AD_PLAYBACK, 
+  new MediaPlayer.AdPlaybackEventListener() {
+    @Override	
+    public void onAdBreakStart(AdBreak adBreak) { ... }
+    @Override
+    public void onAdStart(AdBreak adBreak, Ad ad) { ... }
+    @Override
+    public void onAdProgress(AdBreak adBreak, Ad ad, int percentage) { ... }	
+    @Override
+    public void onAdComplete(AdBreak adBreak, Ad ad) { ... }
+    @Override
+    public void onAdBreakComplete(AdBreak adBreak) { ... }
+    @Override
+    public void onAdClick(AdBreak adBreak, Ad ad, AdClick adClick) { ... }
+});</codeblock> 
+	 </section> 
+	 <section id="section_69E3CCBC57BB48399799876E83908348"> 
+		<p>When playing ads, the order of events is: <ul id="ul_17A8F43FB547464DB252C8927290E7BE">
+					<li id="li_98B8F223C87F413DBE51CAF9F154110C"
+							><codeph>AdPlaybackEventListener.onAdBreakStart</codeph>
+					</li>
+					<li id="li_C4DA96CD97F7431985B0FBA72EDCC7C1">The following are dispatched for
+						every ad in the ad break: <ul id="ul_ECAA65904D3346748E4D97D679AFEC2F">
+							<li id="li_28F2BE6E2B0A4A4984DD32834E2990ED"
+									><codeph>AdPlaybackEventListener.onAdStart</codeph>
+							</li>
+							<li id="li_B8D7833B96A5495FB81FB6685530C2CF"
+									><codeph>AdPlaybackEventListener.onAdProgress</codeph> (multiple
+								times during an ad's playback) </li>
+							<li id="li_BE45976966B64FEFA88F6959ECCF27E5"
+									><codeph>AdPlaybackEventListener.onAdClick</codeph> (for each
+								click) </li>
+							<li id="li_37FA139802334C6BBD3486A606680BF3"
+									><codeph>AdPlaybackEventListener.onAdStart</codeph>
+							</li>
+						</ul>
+					</li>
+					<li id="li_05D4A8823C6C4B01BFDCEA6A1E6B1289"
+							><codeph>AdPlaybackEventListener.onAdBreakComplete</codeph>
+					</li>
+				</ul></p> 
+		<p>The following example shows a typical progression of ad playback
+		  events: 
+		</p> 
+		<codeblock outputclass="syntax java">mediaPlayer.addEventListener(MediaPlayer.Event.AD_PLAYBACK, 
+  new MediaPlayer.AdPlaybackEventListener(){
+    @Override	
+    public void onAdBreakStart(AdBreak adBreak) { ... }
+    @Override
+    public void onAdStart(AdBreak adBreak, Ad ad) { ... }
+    @Override
+    public void onAdProgress(AdBreak adBreak, Ad ad, int percentage) { ... }	
+    @Override
+    public void onAdComplete(AdBreak adBreak, Ad ad) { ... }
+    @Override
+    public void onAdBreakComplete(AdBreak adBreak) { ... }
+    @Override
+    public void onAdClick(AdBreak adBreak, Ad ad, AdClick adClick) { ... }
+});</codeblock> 
+	 </section> 
+  </conbody> 
+</concept> 

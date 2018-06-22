@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="c_psdk_ref_android-not-ready-yet"> 
+  <title>Guide to the Primetime reference implementation for <ph conref="../../phrase_library.xml#c_psdk_phrase-library/primetime-sdk-name"/> 1.3 for
+	 Android</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody>
+	 <p><i>This guide will be available shortly. We will send out a notice when
+		  it is ready.</i>
+	 </p>
+  </conbody> 
+</concept>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_events-order-drm"> 
+  <title>Order of loader events</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> dispatches <codeph>MediaPlayerEvent.LOAD_INFORMATION_AVAILABLE</codeph> when
+    loader events occur. </shortdesc> 
+  <conbody/> 
+   
+</concept> 

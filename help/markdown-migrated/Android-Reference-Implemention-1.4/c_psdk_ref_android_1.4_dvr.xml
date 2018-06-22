@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ref_dvr"> 
+  <title>DVR</title> 
+  <shortdesc>The reference implementation demonstrates how to set up a player
+	 for DVR playback with ads. 
+  </shortdesc> 
+  <conbody> 
+	 <p>You can configure the player for DVR with and without ad insertion. 
+	 </p> 
+  </conbody> 
+</concept> 

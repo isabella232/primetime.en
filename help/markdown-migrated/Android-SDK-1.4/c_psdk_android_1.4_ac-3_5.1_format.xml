@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ac3_5.1"> 
+  <title>AC-3 5.1 format</title> 
+  <shortdesc>The Audio Codec 3 (AC-3, also known as Dolby Digital®) 5.1 format, allows content providers to compress the size of multichannel audio files without impairing the sound quality. AC-3 is a 5.1 format, which means that it provides five full-bandwidth channels for a richer user experience. </shortdesc> 
+  <conbody> 
+	 <p>For more information, see <xref
+			href="http://www.dolby.com/us/en/technologies/dolby-digital.html"
+			scope="external" format="html">Dolby Digital 5.1</xref>. </p> 
+	 <note  type="important"><ph conkeyref="phrases/primetime-sdk-name"/>
+		version 1.4 supports the AC-3 5.1 format only on Amazon FireTV.
+	 </note> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> supports the following AC-3 5.1 features: <ul>
+			<li>AC-3 surround audio </li>
+			<li>Mixed/unmixed streams for surround audio type </li>
+			<li>Ability to query the device to see if the surround audio codec is available on the device. <p>The results determine which preferred audio codec type is selected. The manifest with audio codec type that the device is not going to use is discarded. For example, if the AC-3 format has been selected, profiles with the Advanced Audio Coding (AAC) format are not considered. </p></li>
+			<li>Passthrough mode <p>In passthrough mode, instead of decoding the media from the AC-3 5.1 format to a multichannel pulse-code modulation (PCM) format, the TVSDK gets modified or unmodified (depending on the device) Dolby media from the Decoder. This media is sent to the audio device (speaker or receiver) so that the audio device can decode and play back the Dolby surround stream.  </p></li>
+			</ul></p> 
+  	<p><ph conkeyref="phrases/primetime-sdk-name"/> supports the AC-3 5.1 features only on the device Amazon Fire TV 1st generation.</p>
+	 <p>The following AC-3 5.1 features are not supported: <ul>
+			<li>Multichannel AAC audio </li>
+			<li>ABR across different codecs (AAC - AC3) </li>
+			</ul></p> 
+	 <section> 
+		<title>Selecting supported media</title> 
+		<p>Here is the typical workflow that occurs when <ph conkeyref="phrases/primetime-sdk-name"/> finds a manifest with AC-3 and AAC media: <ol>
+				<li><ph conkeyref="phrases/primetime-sdk-name"
+					/> queries which codec the device can support. </li>
+				<li>The codec with the higher quality is selected. <p>The order of quality is AC-3 &gt; AAC. </p></li>
+				<li><ph conkeyref="phrases/primetime-sdk-name"
+					/> ignores profiles with other audio codec types. </li>
+				</ol><note type="tip"
+				> The application cannot obtain information about ignored profiles. </note></p> 
+	 </section> 
+	 <section> 
+		<title>Determining the output mode</title> 
+		<p>While processing AC-3 media, if an Android device is connected to the speaker system, the decision to play content in surround mode or stereo mode depends on how the device is configured. <table>
+				<tgroup cols="3">
+					<colspec colnum="1" colname="col1" colwidth="*"/>
+					<colspec colnum="2" colname="col2" colwidth="*"/>
+					<colspec colnum="3" colname="col3" colwidth="*"/>
+					<thead>
+						<row>
+							<entry colname="col1"> </entry>
+							<entry colname="col2">Surround sound </entry>
+							<entry colname="col3">Stereo speaker </entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry colname="col1">Device configuration Dolby on (or auto) </entry>
+							<entry colname="col2">Device configuration Dolby on (or auto) </entry>
+							<entry colname="col3">Stereo mode </entry>
+						</row>
+						<row>
+							<entry colname="col1">Device configuration Dolby off </entry>
+							<entry colname="col2">Stereo mode </entry>
+							<entry colname="col3">Stereo mode </entry>
+						</row>
+					</tbody>
+				</tgroup>
+				</table></p> 
+	 </section> 
+  </conbody> 
+</concept> 

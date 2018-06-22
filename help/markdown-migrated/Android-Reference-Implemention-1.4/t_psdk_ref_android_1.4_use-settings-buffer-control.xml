@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_use-settings-buffer-control"> 
+  <title>Edit the initial buffer time and play buffer time for the reference
+	 implementation</title> 
+  <taskbody> 
+	 <context id="t">You can use the Buffer control panel on the Settings interface to edit the initial
+			buffer time and play buffer time. When you edit these parameters through the Settings
+			interface, the configuration in <codeph>SharedPreferences</codeph> is updated and the
+			player is updated. </context>
+	 <steps id="steps_E535A0DB350544A4A4792B8432DC1287"> 
+		<step id="step_8BB473F2D4F74561B44C8B478AEC486A">
+		  <cmd>Open the Primetime Settings dialog. 
+		  </cmd> 
+		</step>
+		<step id="step_A824C653B9AD454EA6BFC61750A7C56B">
+		  <cmd>Select 
+			 <uicontrol>Buffer control</uicontrol>.
+		  </cmd>
+		  <info>
+			 <fig id="fig_EC2F9A5C944D4D8BB59E8D7A958CE58A">
+						<image href="images/buffercontrol-config.jpg"
+							id="image_E3D416AE433743F9BBAC80281516986B"/>
+					</fig>
+		  </info>
+		</step> 
+		<step id="step_E39260B2626B481E93A2095E8CF2B6B8">
+		  <cmd>Enter values for 
+			 <uicontrol>Initial buffer time</uicontrol> and 
+			 <uicontrol>Play buffer time</uicontrol>. 
+		  </cmd>
+		  <stepresult>The Settings application automatically saves and updates the values in
+						<codeph>SharedPreferences</codeph>. </stepresult>
+		</step>
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_create-psdk-lib-folder"> 
+  <title>Create and populate the TVSDK library folder</title> 
+  <taskbody> 
+	 <steps id="steps_EF9FBE08C4E445B793993F89A00DCD67"> 
+		<step id="step_D1E9C7EF74FE4ADC984E6591E64DD401">
+		  <cmd>Create a 
+			 <filepath>libs</filepath> folder within the <ph conref="../../phrase_library.xml#c_psdk_phrase-library/primetime-sdk-name"/> Primetime Reference
+			 project folder.
+		  </cmd> 
+		  <info>For example, 
+			 <filepath>samples/PrimetimeReference/src/libs</filepath>.
+		  </info>
+		</step>
+		<step id="step_405C8E8D9B1B41BAB8F1DDF08988F07C">
+		  <cmd>Create a 
+			 <filepath>libs-external</filepath> folder within the <ph conref="../../phrase_library.xml#c_psdk_phrase-library/primetime-sdk-name"/> Primetime
+			 Reference project folder.
+		  </cmd> 
+		  <info>For example, 
+			 <filepath>samples/PrimetimeReference/src/libs-external</filepath>.
+		  </info>
+		</step>
+		<step id="step_011E4B3D23E8416AB843F5715AC15EA8">
+		  <cmd>Copy the following SWC files from the <ph conref="../../phrase_library.xml#c_psdk_phrase-library/primetime-sdk-name"/> FlashRuntime bundle to
+			 the specified folder.
+		  </cmd>
+		  <info>
+			 <ul id="ul_F98962A56CC944A6B079B86D5DAB9816">
+				<li id="li_A8DE959513E5468289B98DB3E38CB2F1">Copy 
+				  <filepath>psdk.swc</filepath> from 
+				  <filepath>frameworks/Player</filepath> to 
+				  <filepath>libs</filepath>.
+				</li>
+				<li id="li_4A1E64CC677540169211212EFA9ED77F">Copy 
+				  <filepath>psdk-va.swc</filepath> from 
+				  <filepath>frameworks/va</filepath> to 
+				  <filepath>libs</filepath>.
+				</li>
+				<li id="li_1C294F72F3AA4F488B570F2923132DD9">Copy 
+				  <filepath>AppMeasurement.swc</filepath> from 
+				  <filepath>frameworks/Player</filepath> to 
+				  <filepath>libs-external</filepath>.
+				</li>
+				<li id="li_E0EDE066A8CC4318BC9C65F234AEC031">Copy 
+				  <filepath>VideoHeartbeat.swc</filepath> from 
+				  <filepath>frameworks/Player</filepath> to 
+				  <filepath>libs-external</filepath>.
+				</li>
+				<li id="li_23BD19652C6C4CA8AC884500E2684A01">Copy 
+				  <filepath>VisitorAPI.swc</filepath> from 
+				  <filepath>frameworks/Player</filepath> to 
+				  <filepath>libs-external</filepath>.
+				</li>
+			 </ul>
+		  </info>
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

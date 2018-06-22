@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_psdk_ref_api-content-protection"> 
+  <title>Related API documentation</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_D80E79E90097407389517B7921CB5511"> 
+		<ul id="ul_82F73748C2BC4CC6BAF1B5CB75C28E5B" > 
+		  <li id="li_0DA1577D3BDA4F90A63FB550278D1370"><xref
+			 href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/DrmManager.html"
+			 format="html" scope="external">Class DrmManager</xref> 
+		  </li> 
+		  <li id="li_7DE258935A404E3ABA01C13D52846C31"><xref
+			 href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/DrmManager.DrmManagerEventListener.html"
+			 format="html" scope="external">DrmManagerEventListener</xref> 
+		  </li> 
+		</ul> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

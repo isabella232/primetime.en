@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_content_resolvers_intro"> 
+  <title>Customize opportunity detectors and content resolvers</title> 
+  <shortdesc>An opportunity detector is a <ph conkeyref="phrases/primetime-sdk-name"/> component
+		that detects custom tags in a stream and identifies placement opportunities. These
+		opportunities are sent to the content resolver, which customizes the content/ad insertion
+		workflow based on the placement opportunity properties and metadata.  </shortdesc> 
+  <conbody> 
+	 <p >
+			<ph conkeyref="phrases/primetime-sdk-name"/> includes  a default opportunity detector:
+				<ul id="ul_A36B8677892D4760B28C1A7D4AAD7FFA">
+				<li id="li_913DB2D73FF743F3BCF04D9FB6CAC3F1">
+					<codeph>PTOpportunityResolver</codeph>, which understands default ad cues </li>
+			</ul>
+		</p> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> also includes a default content resolver that
+			provides content to be inserted based on the metadata key in the player item:  <ul
+				id="ul_4F50FF22914A45EC831ED7014A63B664">
+				<li id="li_F0215E92ECB04806BF4C185D0300766E"><codeph>PTContentResolver</codeph>
+				</li>
+			</ul>
+		</p> 
+	 <p>You can override the default opportunity detectors and content resolvers
+		to customize the advertising workflow in the following ways: 
+	 <ul id="ul_51878FC5AD5A4953866D56DC93F682AF"> 
+		<li id="li_6F4592960AD844ABA152D10E9EF2D6F8">Add support for custom tag
+		  detection
+		</li> 
+		<li id="li_BFE89DE70D0C4CDB89D9C0B052866C05">Recognize custom tags for ad
+		  insertion
+		</li> 
+		<li id="li_79A84CAFA6F1466DBBB1DBAFC6F1CB47">Create a customized ad
+		  provider
+		</li> 
+		<li id="li_BD2FC745579C49178FE753A82190F3F3">Black out content
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

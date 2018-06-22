@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_B7AED97D9E4B4189BB8DA16EAE7A3F77"> 
+  <title>Implement a custom opportunity/content resolver</title> 
+  <shortdesc>You can implement your resolvers based on the default resolvers. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_F244881DA8914112B30A4AC8E21A5C7D"> 
+		<p> 
+		  <fig id="fig_CC41E2A66BDB4115821F33737B46A09B"><image
+			 href="images/ios_psdk_content_resolver.png"
+			 id="image_BAAE6831862F48A0BFE6D2D1EF97E2B3"></image>
+		  </fig>
+		</p> 
+	 </context> 
+	 <steps id="steps_5F45556A37194407A545223779F682E3"> 
+		<step id="step_D3956F5409AB44E6860D8064252C692F"> 
+		  <cmd>Develop a custom ad resolver by extending the 
+			 <codeph>PTContentResolver</codeph> abstract class. 
+		  </cmd> 
+		  <info><codeph>PTContentResolver</codeph> is an interface that must be
+			 implemented by a content resolver class. An abstract class with the same name
+			 is also available and handles the configuration automatically (getting the
+			 delegate). 
+			 <note type="tip"><codeph>PTContentResolver</codeph> is exposed
+				through the 
+				<codeph>PTDefaultMediaPlayerClientFactory</codeph> class. Clients
+				can register a new content resolver by extending the 
+				<codeph>PTContentResolver</codeph> abstract class. By default, and
+				unless specifically removed, a 
+				<codeph>PTDefaultAdContentResolver</codeph> is registered in the 
+				<codeph>PTDefaultMediaPlayerClientFactory</codeph>. 
+			 </note> 
+		  </info> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">@protocol PTContentResolver &lt;NSObject&gt;
+@required
++ (BOOL)shouldHandleOpportunity:(PTPlacementOpportunity *)opportunity; 
+//Detector returns YES/NO if it should handle the following placement opportunity
+- (void)configWithPlayerItem:(PTMediaPlayerItem *)item 
+              delegate:(id&lt;PTContentResolverDelegate&gt; delegate);
+- (void)process:(PTPlacementOpportunity *)opportunity;
+- (void)timeout:(PTPlacementOpportunity *)opportunity; 
+//The timeout method gets invoked if the <ph conkeyref="phrases/primetime-sdk-name"></ph> decides that the 
+//PTContentResolver is taking too much time to respond.
+@end
+ 
+@interface PTContentResolver : NSObject &lt;PTContentResolver&gt;
+ 
+@property (readonly) id&lt;PTContentResolverDelegate&gt; delegate;
+@property (readonly) PTMediaPlayerItem *playerItem;
+ 
+- (BOOL)shouldHandleOpportunity:(PTPlacementOpportunity *)opportunity;
+- (void)configWithPlayerItem:(PTMediaPlayerItem *)item 
+               delegate:(id&lt;PTContentResolverDelegate&gt;) delegate;
+- (void)process:(NSArray *)opportunities;
+- (void)cancel:(NSArray *)opportunities;
+@end</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_6F138591E50943EE81D12B42FA90F331"> 
+		  <cmd> Implement 
+			 <codeph>shouldResolveOpportunity</codeph> and return 
+			 <codeph>YES</codeph> if it should handle the received 
+			 <codeph>PTPlacementOpportunity</codeph>. 
+		  </cmd> 
+		</step> 
+		<step id="step_D74F626CE8B34B34BD6C955D3FA9D869"> 
+		  <cmd>Implement 
+			 <codeph>resolvePlacementOpportunity</codeph>, which starts loading
+			 the alternate content or ads. 
+		  </cmd> 
+		</step> 
+		<step id="step_5C4F9D8FA2404B4AB9C17BE6D39C6EFF"> 
+		  <cmd>After the ads are loaded, prepare a 
+			 <codeph>PTTimeline</codeph> with the information about the content to
+			 insert. 
+		  </cmd> 
+		  <info> 
+			 <p>Here is some useful information about timelines: 
+			 <ul id="ul_AC04F2A0DC90482588BA77C18E9E52AD">
+				<li id="li_BB97721614674DF4A96CBAFC66AB2FFF">There can be multiple 
+				  <codeph>PTAdBreak</codeph>s of pre-roll, mid-roll, and post-roll
+				  types.
+				  <ul id="ul_E5A11F23C1FB4B5EADC13099EBD2A137">
+					 <li id="li_796742822FD54ABAB2C04576F4B62034">A 
+						<codeph>PTAdBreak</codeph> has the following: 
+						<ul id="ul_931499CB35C44EA0B54D5AABAD0C74CE">
+						  <li id="li_200CA14C0C244E339EE551F08A86D913">A 
+							 <codeph>CMTimeRange</codeph> with the start time and
+							 duration of the break. 
+							 <p>This is set as the range property of 
+								<codeph>PTAdBreak</codeph>. 
+							 </p>
+						  </li>
+						  <li
+							id="li_722A6B2A582E4DE68D3900B0449C7797"><codeph>NSArray</codeph> of 
+							 <codeph>PTAd</codeph>s. 
+							 <p>This is set as the ads property of 
+								<codeph>PTAdBreak</codeph>. 
+							 </p>
+						  </li>
+						</ul>
+					 </li>
+				  </ul>
+				</li>
+				<li id="li_72F079AE8C2E44B9A1D23B3FD9EBF41B">A 
+				  <codeph>PTAd</codeph> represents the ad, and each 
+				  <codeph>PTAd</codeph> has the following:
+				  <ul id="ul_A72B7951D41C49CEBBEE80C1D2C3839C">
+					 <li id="li_995059FB50DC47F880B88339EA41DDD1">A 
+						<codeph>PTAdHLSAsset</codeph> set as the primary asset
+						property of the ad. 
+					 </li>
+					 <li id="li_C02AC9FC1B7F4EE990C9B073F0BEF2D0">Possibly multiple 
+						<codeph>PTAdAsset</codeph> instances as clickable ads or
+						banner ads. 
+					 </li>
+				  </ul>
+				</li>
+			 </ul>
+			 </p> 
+		  </info>
+		  <stepxmp>For example: 
+			 <codeblock outputclass="syntax objective-c">NSMutableArray *ptBreaks = [[[NSMutableArray alloc] init] autorelease];
+  
+// Prepare the primary asset of the ad - links to ad m3u8
+PTAdHLSAsset *ptAdAsset = [[[PTAdHLSAsset alloc] init] autorelease];
+ptAdAsset.source = AD_SOURCE_M3U8;
+ptAdAsset.id = FAKE_NUMBER_ID;
+ptAdAsset.format = @"video";
+  
+// Prepare the ad itself.
+PTAd *ptAd = [[[PTAd alloc] init] autorelease];
+ptAd.primaryAsset = ptAdAsset;
+ptAd.primaryAsset.ad = ptAd;
+  
+// Prepare the break and add the ad created above.
+PTAdBreak *ptBreak = [[[PTAdBreak alloc] init] autorelease];
+ptBreak.relativeRange = CMTimeRangeMake(BREAK_START_TIME, BREAK_DURATION_VALUE);
+[ptBreak addAd:ptAd];
+  
+// Add the break to array of breaks.
+[ptBreaks addObject:adBreak];
+  
+// Once all breaks have been prepared, they can be set on timeline
+PTTimeline *_timeline = [[PTTimeline alloc] init];
+_timeline.adBreaks = ptBreaks;</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_C14D143FF2C440F9A5B984147AAC2663"> 
+		  <cmd>Call 
+			 <codeph>didFinishResolvingPlacementOpportunity</codeph>, which
+			 provides the 
+			 <codeph>PTTimeline</codeph>. 
+		  </cmd> 
+		</step> 
+		<step id="step_125574C8F3A5490F867DD48B4A44459A"> 
+		  <cmd>Register your custom content/ad resolver to the default media
+			 player factory by calling 
+			 <codeph>registerContentResolver</codeph>. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">//Remove default content/ad resolver
+[[PTDefaultMediaPlayerFactory defaultFactory] clearContentResolvers];
+ 
+//Create an instance of your content/ad resolver (id &lt;PTContentResolver&gt;)
+CustomContentResolver *contentResolver = [[CustomContentResolver alloc] init];
+ 
+//Set custom content/ad resolver
+[[PTDefaultMediaPlayerFactory defaultFactory] registerContentResolver:[contentResolver autorelease]];</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_3CDE4977B91D4E7EB5B5328F42C7EECB"> 
+		  <cmd>If you implemented a custom opportunity resolver, register it to
+			 the default media player factory. 
+		  </cmd> 
+		  <info> 
+			 <note type="tip">You do not have to register a custom opportunity
+				resolver to register a custom content/ad resolver. 
+			 </note> 
+		  </info> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">//Remove default opportunity resolver
+[[PTDefaultMediaPlayerFactory defaultFactory] clearOpportunityResolvers];
+ 
+//Create an instance of your opportunity resolver (id &lt;PTOpportunityResolver&gt;)
+CustomOpportunityResolver *opportunityResolver = [[CustomOpportunityResolver alloc] init];
+ 
+//Set custom opportunity resolver
+[[PTDefaultMediaPlayerFactory defaultFactory] 
+           registerOpportunityResolver:[opportunityResolver autorelease]];</codeblock> 
+		  </stepxmp> 
+		</step> 
+	 </steps> 
+	 <result id="result_274993842F5F41B49965E5819B73252D">When the player loads
+		the content, and it is determined to be of type VOD or LIVE, one of the
+		following occurs:
+		<ul id="ul_21659862B63046B0A2F97443A92FF9B0"> 
+		  <li id="li_5F5E01178588439E802F4430736B5402">If the content is VOD, the
+			 custom content resolver is used to get the ad timeline of the entire video. 
+		  </li> 
+		  <li id="li_F95CDCA2E6DB4A61B3190EA37CE38EE5">If the content is LIVE,
+			 the custom content resolver is called each time a placement opportunity (cue
+			 point) is detected in the content. 
+		  </li> 
+		</ul> 
+	 </result> 
+  </taskbody> 
+</task> 

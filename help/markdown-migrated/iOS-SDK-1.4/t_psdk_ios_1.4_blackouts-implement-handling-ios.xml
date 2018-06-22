@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_implement_blackout_handling_ios"> 
+  <title>Implement blackout handling</title> 
+  <shortdesc>The 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+	 provides APIs and sample code for handling blackout periods. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_514018320C2E4EFABBDD0F2F7BDE9532"> 
+		<p>To implement blackout handling and provide alternate content during
+		  the blackout: 
+		</p> 
+	 </context> 
+	 <steps id="steps_27F9BA55255A46CD89987AC1B208F0B6"> 
+		<step id="step_45C430E9FD0F43BB9A9B0A02A86EC5FB"> 
+		  <cmd>Set up your app to subscribe to blackout tags in a live stream
+			 manifest. 
+			 <draft-comment>Q: The "for example" comment in the following doesn't
+				exactly match the code. What's correct? 
+			 </draft-comment> 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">- (void) createMediaPlayer:(PTMediaPlayerItem *)item
+{
+    [PTSDKConfig setSubscribedTags:[NSArray arrayWithObject:&lt;INSERT-BLACKOUT-TAG&gt;]];
+    // For example: 
+    // [PTSDKConfig setSubscribedTags:[NSArray arrayWithObject:@"#EXT-OATCLS-SCTE35"]];
+}</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_5149EFE46437455DA3BA2297C0D5BA76"> 
+		  <cmd>Add a notification listener for 
+			 <codeph>PTTimedMetadataChangedNotification</codeph>. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">- (void)addobservers
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onMediaPlayerSubscribedTagIdentified:) 
+      name:PTTimedMetadataChangedNotification object:self.player.currentItem];
+}</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_03C55252607147A387A3FD1CF3A11EA6"> 
+		  <cmd> Implement a listener method for 
+			 <codeph>PTTimedMetadata</codeph> objects in foreground. 
+		  </cmd> 
+		  <info>For example: 
+			 <codeblock outputclass="syntax objective-c">- (void)onMediaPlayerSubscribedTagIdentified:(NSNotification *)notification
+{
+    NSDictionary *userInfo = [notification userInfo];
+    PTTimedMetadata *timedMetadata = [(PTTimedMetadata *)[userInfo objectForKey:PTTimedMetadataKey] 
+      retain];
+  
+ if ([timedMetadata.name isEqualToString:&lt;INSERT-BLACKOUT-TAG&gt;])
+    {
+     // handle tag. For example: store it in a dictionary keyed by time to be handled when 
+     //   playback time = timedMetadata time.
+        NSNumber *timedMetadataStartTime = 
+          [NSNumber numberWithInt:(int)CMTimeGetSeconds(timedMetadata.time)];
+        [timedMetadataCollection setObject:timedMetadata forKey:timedMetadataStartTime];
+    }
+ 
+    [timedMetadata release];
+}</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_CBF4E033CF3C45CC8AB4FE686D5B0114"> 
+		  <cmd>Handle 
+			 <codeph>TimedMetadata</codeph> objects with constant updates during
+			 playback. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">- (void)onMediaPlayerTimeChange:(NSNotification *)notification
+{
+    @synchronized(self)
+    {
+        CMTimeRange seekableRange = self.player.seekableRange;
+        if (CMTIMERANGE_IS_VALID(seekableRange))
+        {
+            _currentTime = (int) CMTimeGetSeconds(self.player.currentTime);
+            if (isnan(_currentTime))
+            {
+                _currentTime = 0;
+            }
+            [self handleCollectionAtTime:_currentTime];
+        }
+    }
+}</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_8FC1FB6893964A11A0B3CFD59C18B185"> 
+		  <cmd>Add the 
+			 <codeph>PTTimedMetadata</codeph> handler to switch to alternate
+			 content and return to main content as indicated by the 
+			 <codeph>PTTimedMetadata</codeph> object and its playback time. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">- (void)handleCollectionAtTime:(int)currentTime
+{
+    NSArray *allKeys = nil;
+    NSMutableArray * timedMetadatasToDelete = [[[NSMutableArray alloc]init]autorelease];
+ 
+    if (!_inBlackout &amp;&amp; timedMetadataCollection)
+    {
+        allKeys = [timedMetadataCollection allKeys];
+        int count = [allKeys count];
+        for (int i=count-1; i&gt;-1; i--)
+        {
+            NSNumber *currTimedMetadataTime = allKeys[i];
+            PTTimedMetadata *currTimedMetadata = 
+              [timedMetadataCollection objectForKey:currTimedMetadataTime];
+ 
+            if (currentTime == [currTimedMetadataTime integerValue] &amp;&amp; 
+                               currTimedMetadata.name == &lt;INSERT-BLACKOUT-TAG&gt; &amp;&amp; 
+                               [self isBlackoutStart: currTimedMetadata])
+            {
+                                PTAdMetadata *newItemAdMetadata = 
+                                  [self createAlternateMediaMetadata];           
+   
+            // 1. Turn off preroll on the alternate media item.
+                newItemAdMetadata.enableLivePreroll = NO;
+ 
+                            PTMediaPlayerItem *newItem = 
+                              [[PTMediaPlayerItem alloc]initWithUrl:
+                                &lt;INSERT-ALTERNATE-STREAM-URL mediaId:&lt;INSERT-ALTERNATE-STREAM-
+                                 MEDIA-ID&gt; metadata:newItemAdMetadata];
+ 
+ 
+           // 2. Register the current (original playback item) in background.
+                [self.player registerCurrentItemAsBackgroundItem];
+                     
+           // 3. Replace the current playback item with the alternate stream.
+                 [self.player replaceCurrentItemWithPlayerItem:newItem];
+                    
+           // 4. Reset observers.
+                [self removeObservers];
+                [self addobservers];
+ 
+           // 5. Register listener on the subscribed tags in background item.
+                [[NSNotificationCenter defaultCenter] addObserver:self 
+                   selector:@selector(onSubscribedTagInBackground:) 
+                    name:PTTimedMetadataChangedInBackgroundNotification 
+                      object:self.player.currentItem];
+ 
+           // 6. Register listener on the error in background item.
+                         [[NSNotificationCenter defaultCenter] 
+                            addObserver:self selector:@selector(onBackgroundManifestError:) 
+                            name:PTBackgroundManifestErrorNotification  
+                              object:self.player.currentItem];
+             
+           // 7. Resume playback
+                     [self.player play];
+ 
+                    // 8. Set boolean to true to handle blackout end.
+                  _inBlackout = YES;
+                  break;
+            }
+        }
+    }
+    else if (_inBlackout &amp;&amp; backgroundTimedMetadataCollection)
+    {
+        allKeys = [backgroundTimedMetadataCollection allKeys];
+        int count = [allKeys count];
+        for (int i=count-1; i&gt;-1; i--)
+        {
+            NSNumber *currTimedMetadataTime = allKeys[i];
+            PTTimedMetadata *currTimedMetadata = 
+              [backgroundTimedMetadataCollection objectForKey:allKeys[i]];
+ 
+            if (currentTime == ([currTimedMetadataTime integerValue] &amp;&amp; 
+              currTimedMetadata.name == &lt;INSERT-BLACKOUT-TAG&gt;  &amp;&amp; 
+              [self isBlackoutEnd:currTimedMetadata] )
+            {     
+                               // 1. Come out of blackout. Unregister background item.
+                           [self.player unregisterCurrenBackgroundItem];
+ 
+                    PTMetadata *metadata = [self createMetadata];
+                    PTAdMetadata *adMetadata = 
+                      (PTAdMetadata *)[currMetadata metadataForKey:PTAdResolvingMetadataKey];
+                          adMetadata.enableLivePreroll = NO;
+             
+                            PTMediaPlayerItem *item = 
+                              [[[PTMediaPlayerItem alloc] initWithUrl:&lt;INSERT-ORIGINAL-URL&gt; 
+                                mediaId:&lt;INSERT-ORIGINAL-MEDIAID&gt; metadata:metadata autorelease];
+ 
+                                // 2. Switch back to original item.
+                    [self.player replaceCurrentItemWithPlayerItem:item];
+                    self.player.autoPlay = YES;
+                    [self removeObservers];
+ 
+                    // 3. Remove background item listener.
+                    [[NSNotificationCenter defaultCenter] removeObserver:self 
+                       name:PTTimedMetadataChangedInBackgroundNotification 
+                    object:self.player.currentItem];
+                     
+                               [[NSNotificationCenter defaultCenter] removeObserver:self 
+                                  name:PTBackgroundManifestErrorNotification
+                    object:self.player.currentItem];
+                    [self addobservers];
+                    [self.player play];
+ 
+                            // 4. Update boolean to correctly maintain the current state.
+                    _inBlackout = NO;
+                    break;
+            }
+        }
+    }
+}</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_449B8E49DE594D6589843741AA66F55E"> 
+		  <cmd>Implement a listener method for 
+			 <codeph>PTTimedMetadata</codeph> objects in the background. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">- (void)onSubscribedTagInBackground:(NSNotification *)notification
+{
+    NSDictionary *userInfo = [notification userInfo];
+    PTTimedMetadata *timedMetadata = [(PTTimedMetadata *)
+      [userInfo objectForKey:PTTimedMetadataKey] retain];
+ 
+    if ([timedMetadata.name isEqualToString:&lt;INSERT-BLACKOUT-TAG&gt;])
+    {
+        NSNumber *timedMetadataStartTime = 
+          [NSNumber numberWithInt:(int)CMTimeGetSeconds(timedMetadata.time)];
+        [backgroundTimedMetadataCollection 
+           setObject:timedMetadata forKey:timedMetadataStartTime];
+    }
+ 
+    [timedMetadata release];
+}</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_6C001F527AB34B90B521508EF87B884B"> 
+		  <cmd>Implement a listener method for background errors. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">- (void) onBackgroundManifestError:(NSNotification *)notification
+{
+    NSLog (@"onBackgroundManifestError");
+}</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_89AC99DB75714E79942F8F91650B411C"> 
+		  <cmd>If the blackout range is on the DVR in the playback stream, update
+			 the non-seekable ranges. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">// This sample assumes that blackoutStartTimedMetadata is the PTTimedMetadata 
+// object that indicated "blackout start", and assuming blackoutEndTimedMetadata is the 
+// PTTimedMetadataObject that indicated "blackout end". Since in this case they are both 
+// in DVR, both are notified to the application before playback starts. This is the right 
+// time for the application to set this range in DVR as non-seekable range.
+ 
+CMTime ignoreRangeStart = blackoutStartTimedMetadata.time;
+CMTime ignoreRangeDuration = CMTimeMakeWithSeconds(CMTimeMakeWithSeconds 
+  (CMTimeGetSeconds(blackoutEndTimedMetadata.time) -  
+     CMTimeGetSeconds(blackoutStartTimedMetadata.time)), 
+       blackoutEndTimedMetadata.time.timescale);
+ 
+CMTimeRange ignoreRange = CMTimeRangeMake(ignoreRangeStart, ignoreRangeDuration);
+NSArray *ignoreRangeArray = [NSArray arrayWithObject:[NSValue valueWithCMTimeRange:ignoreRange]];
+PTBlackoutMetadata *blackoutMetadata = 
+  [[PTBlackoutMetadata alloc]initWithNonSeekableRanges:ignoreRangeArray];
+PTMetadata *currMetadata = self.item.metadata;
+ 
+if (currMetadata)
+{
+    [currMetadata setMetadata:blackoutMetadata forKey:PTBlackoutMetadataKey]
+}</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

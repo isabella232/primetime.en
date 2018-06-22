@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<reference id="r_psdk_dhls_text-format-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Video Analytics classes</title> 
+  <shortdesc>These classes provide the interface between the 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+	 and Adobe Video Analytics. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_B7B66F86B95A484EA2CC2F2BA9EFED76"
+	  >Package: 
+		<xref
+		 href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/videoanalytics/package-detail.html"
+		 format="html" scope="external"
+		 >com.adobe.mediacore.videoanalytics</xref> 
+	 </refsyn> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_F771D1719BE84241955D45C280BBB52A"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="2" colwidth="1.16*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1">Name 
+				</entry> 
+				<entry colname="2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/videoanalytics/VideoAnalyticsConfigParameters.html"
+									format="html" scope="external"
+									>VideoAnalyticsConfigParameters</xref></codeph>
+						</entry> 
+				<entry colname="2">Contains property metadata specific to Video Analytics tracking in the <ph
+								conkeyref="phrases/primetime-sdk-name"
+								><?xm-replace_text Phrase?></ph>. </entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/videoanalytics/VideoAnalyticsProvider.html"
+									format="html" scope="external"
+								>VideoAnalyticsProvider</xref></codeph>
+						</entry> 
+				<entry colname="2"> Attaches the <codeph>MediaPlayer</codeph> instance to the VideoHeartbeat
+							module for tracking the playback.</entry> 
+			 </row> 
+			 <row rowsep="0"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/videoanalytics/VideoAnalyticsMetadata.html"
+									format="html" scope="external"
+								>VideoAnalyticsMetadata</xref></codeph>
+						</entry> 
+				<entry colname="2"> Contains property metadata specific to Video Analytics.</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </refbody> 
+</reference> 

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_playback_customize"> 
+  <title>Customize playback with ads</title> 
+  <shortdesc>When playback reaches an ad break, passes an ad break, or ends in
+	 an ad break, 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> defines some default behavior
+	 for the positioning of the current playhead. 
+  </shortdesc> 
+  <conbody> 
+	 <note type="tip">You can override the default behavior by using the
+				<codeph>PTAdPolicySelector</codeph> class. </note> 
+	 <p>The default behavior varies, depending on whether the user passes the ad break during normal
+			playback or by seeking in a video. </p> 
+	 <p>You can customize ad playback behavior in the following ways: 
+	 </p> 
+	 <p> 
+	 <ul id="ul_D20E40AE092D4516937BD7E18ACA2409"> 
+		<li id="li_7D2A6B7717E54B2DA08234E7F9A45B66">Save the position where the
+		  user stopped watching the video and resume playing at the same position in a
+		  future session. 
+		</li> 
+		<li id="li_A1FBF1F028984C12956F66750450F446">If an ad break is presented
+		  to the user, display no additional ads for a number of minutes, even if the
+		  user seeks to a new position. 
+		</li> 
+		<li id="li_6B6FC23F681A4CBCB670E562D93131C6">If the content fails to play
+		  after a few minutes, restart the stream or fail over to a different source for
+		  the same content. 
+		  <p>On the failover playback session, to allow the user to skip ads and
+			 resume to the previous failed position, you can disable pre-roll and/or
+			 mid-roll ads. 
+			 <ph conkeyref="phrases/primetime-sdk-name"/> provides methods to
+			 enable skipping pre-roll and mid-roll ads. 
+		  </p> 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

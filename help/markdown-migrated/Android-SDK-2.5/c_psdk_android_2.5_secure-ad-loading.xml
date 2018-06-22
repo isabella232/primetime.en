@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_fdy_qnw_hz"> 
+  <title>Secure Ad loading over HTTPS</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <conbody> 
+	 <p>Adobe Primetime provides an option to request first call to the
+		Primetime ad server and CRS related calls over HTTPS. 
+	 </p> 
+	 <p>The feature is not enabled by default. Use the following to enable
+		secure ad loading. 
+	 </p> 
+	 <codeblock>AuditudeSettings auditudeSettings = new AuditudeSettings();
+auditudeSettings. getForceHttpsConfiguration().setAdServerCalls(true);</codeblock> 
+  </conbody> 
+</concept> 

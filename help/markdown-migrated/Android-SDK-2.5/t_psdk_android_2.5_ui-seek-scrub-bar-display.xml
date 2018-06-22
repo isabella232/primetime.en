@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="display-seek-scrub-bar"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Display a seek scrub bar with the current playback position</title> 
+  <shortdesc> <ph conkeyref="phrases/primetime-sdk-name"/> supports seeking to a specific position (time) where the
+	 stream is a sliding-window playlist, in video on demand (VOD) and live streams.
+	 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_8AEC7882837D45AB8741E7688123428D"> 
+		<note type="tip">Seeking in a live stream is allowed only for DVR. 
+		</note> 
+	 </context> 
+	 <steps id="steps_80269139A63A441AABAF68DCFDCEED38"> 
+		<step id="step_F51B0CE7083F46669E9B63AFAED257F8"> 
+		  <cmd>Set up callbacks for seeking. 
+		  </cmd> 
+		  <info> 
+			 <p>Seeking is asynchronous, so <ph conkeyref="phrases/primetime-sdk-name"/> dispatches the following
+				seek-related events: 
+			 </p> 
+			 <ul id="ul_07FC8EFB4BE0418A94D6DB40C454125F"> 
+				<li
+				 id="li_CFFDC836EB924ECDAEC80A616D7E514E"><codeph>MediaPlayerEvent.SEEK_BEGIN</codeph>,
+				  where the seek starts. 
+				</li> 
+				<li
+				 id="li_DA27771982FA4C058B71FD9BCB1F2815"><codeph>MediaPlayerEvent.SEEK_END</codeph>,
+				  where the seek is successful. 
+				</li> 
+				<li
+				 id="li_68344DC70C6D44EFB7C6213F843039DF"><codeph>MediaPlayerEvent.OPERATION_FAILED</codeph>,
+				  where the seek has failed. 
+				</li> 
+			 </ul> 
+		  </info> 
+		</step> 
+		<step id="step_E031A2E029504D05845665444CC88E3C">
+				<cmd>Wait for the player to be in a valid status for seeking. </cmd>
+				<info>The valid statuses are PREPARED, COMPLETE, PAUSED, and PLAYING. </info>
+			</step> 
+		<step id="step_B125958BF61041DA86D75E7A27AC7CF5">
+				<cmd> Use the native <codeph>SeekBar</codeph> to set
+						<codeph>OnSeekBarChangeListener</codeph>, which determines when the user is
+					scrubbing. </cmd>
+			</step> 
+		<step id="step_963EFCB851AD42CD94AD3D28F641E064"> 
+		  <cmd>Pass the requested seek position (milliseconds) to the 
+			 <codeph>MediaPlayer.seek</codeph> method. 
+		  </cmd> 
+		  <info>
+			 <p>
+				<codeblock outputclass="syntax java">void seek(long position) throws MediaPlayerException;</codeblock>
+			 </p> 
+			 <p>You can seek only in the asset’s seekable duration. For video on
+				demand, that is from 0 through the asset's duration. 
+			 </p>
+			 <note type="tip">This step moves the play head to a new position in
+				the stream, but the final computed position might differ from the specified
+				seek position. 
+			 </note>
+		  </info> 
+		</step> 
+		<step id="step_8E570BBF1F1C4564AF3043DD3010961D"> 
+		  <cmd>Listen for 
+			 <codeph>MediaPlayerEvent.OPERATION_FAILED</codeph> and take
+			 appropriate actions. 
+		  </cmd> 
+		  <info> 
+			 <p>This event passes the appropriate warning. Your application
+				determines how to proceed, and the options include trying the seek again or
+				continuing playback from the previous position. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_C07A9BDEE76E442D9C9CE58B1B812C39"> 
+		  <cmd>Wait for <ph conkeyref="phrases/primetime-sdk-name"/> to call the 
+			 <codeph>MediaPlayerEvent.SEEK_END</codeph> callback. 
+		  </cmd> 
+		</step> 
+		<step id="step_520AF10FAA2546C58C0E7B1F1A8636F2">
+				<cmd>Retrieve the final adjusted play position using the callback's position
+					parameter. </cmd>
+				<info>
+					<p>This is important because the actual start position after the seek can be
+						different from the requested position. Rules, including playback behavior is
+						affected if a seek or other repositioning ends in the middle of an ad break
+						or skips ad breaks, might apply. </p>
+				</info>
+			</step> 
+		<step id="step_FEFC78C8517C4344A0A17F11B10666DB"> 
+		  <cmd>Use the position information when displaying a seek scrub bar. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+	 <example id="example_EEB73818260C43C8B5AE12BA68548AB7"> 
+		<p><b>Seeking Example</b> 
+		</p> 
+		<p>In this example, the user scrubs the seek bar to seek to the desired position.
+				<codeblock outputclass="syntax java">//Use the native SeekBar to set an OnSeekBarChangeListener to
+// see when the user is scrubbing.
+seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int progress, boolean isFromUser) {
+        if (isFromUser) {
+            // Update the seek bar thumb with the position provided by the user.
+            setPosition(progress);
+        }
+    }
+
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+        isSeeking = true;
+    }
+
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+        isSeeking = false;
+
+        // Retrieve the playback range.
+        TimeRange playbackRange = mediaPlayer.getPlaybackRange();
+
+        // Make sure to seek inside the playback range.
+        long seekPosition = Math.min(Math.round(seekBar.getProgress()),
+        playbackRange.getDuration());
+    
+        // Perform seek.
+        seek(playbackRange.getBegin() + seekPosition);
+    }
+};
+</codeblock>
+			</p> 
+	 </example> 
+  </taskbody> 
+</task> 

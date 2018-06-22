@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_events_summary"> 
+  <title>Primetime player events summary</title> 
+  <shortdesc>Your application can monitor the activity in your player and the
+  	changing state of the player by listening for events dispatched by 
+  	<ph conkeyref="phrases/primetime-sdk-name"/>.
+	 
+  </shortdesc> 
+</concept> 

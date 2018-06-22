@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="set-up-event-listeners"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Implement event listeners and callbacks</title> 
+  <shortdesc>Event handlers allow 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> to respond to events. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_E9F89BF6BD114C7FAC5DB033C6F9C704"> 
+		<p>When an event occurs, 
+		  <ph conkeyref="phrases/primetime-sdk-name"/>'s event mechanism calls
+		  your registered event handler and passes the event information to the handler. 
+		</p> 
+		<p><ph conkeyref="phrases/primetime-sdk-name"/> defines listeners as
+		  public internal interfaces in the 
+		  <codeph>MediaPlayer</codeph> interface. 
+		</p> 
+		<p> Your application must implement event listeners for 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> events that affect your
+		  application. 
+		</p>
+		<p>For a complete list of the events for video analytics, see <xref
+					href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/c_vhl_track-core-vid-playback.html"
+					format="html" scope="external">Track Core Video Playback</xref>. </p> 
+	 </context> 
+	 <steps id="steps_5526ABFD4C9649AFA07A7AD909EFDD85"> 
+		<step id="step_8C68AA8243874FC9B8B3460FA25973B9"> 
+		  <cmd>Determine for which events your application must listen. 
+		  </cmd> 
+		  <info> 
+			 <ul id="ul_DB0AE31547B04225A3FD609894FE82A2"> 
+				<li id="li_1DA966F9830E46BE91AEB515242EF2D9"><b>Required
+					 events</b>: Listen for all playback events. 
+				  <note type="important">The playback event 
+					 <codeph>onStateChanged</codeph> provides the player state,
+					 including errors. Any of the states might affect your player's next step. 
+				  </note> 
+				</li> 
+				<li id="li_1932D92B9EEB408F8CFA28E7AEDEFB7E"><b>Other events</b>:
+				  Optional, depending on your application. 
+				  <p> For example, if you incorporate advertising in your playback,
+					 implement the 
+					 <codeph>AdPlaybackEventListener</codeph> callbacks. 
+				  </p> 
+				</li> 
+			 </ul> 
+		  </info> 
+		</step> 
+		<step id="step_E78D28A623564B73A58141D07B9CBC3F"> 
+		  <cmd>Implement event listeners for each event. 
+		  </cmd> 
+		  <info> 
+			 <ph conkeyref="phrases/primetime-sdk-name"/> returns parameter values
+			 to your event-listener callbacks. These values, provide relevant information
+			 about the event that you can use in your listeners to perform appropriate
+			 actions. 
+		  </info> 
+		  <info><codeph>MediaPlayer.EventListener</codeph> lists all the callback
+			 interfaces. Each interface displays the callback name and parameters that are
+			 returned for each event. 
+		  </info> 
+		  <stepxmp> For example:
+					<codeblock outputclass="syntax java">MediaPlayer.PlaybackEventListener.onStateChanged(
+  MediaPlayer.PlayerState state, MediaPlayerNotification notification)</codeblock>
+				</stepxmp> 
+		</step> 
+		<step id="step_7C86186BF4E84BF3A9375E93BC9264A4"> 
+		  <cmd>Register your callback listeners with the 
+			 <codeph>MediaPlayer</codeph> object by using 
+			 <codeph>MediaPlayer.addEventListener</codeph>.
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax java">mediaPlayer.addEventListener(MediaPlayer.Event.PLAYBACK, 
+  new MediaPlayer.PlaybackEventListener() {
+    @Override
+    public void onStateChanged(
+        MediaPlayer.PlayerState state, 
+        MediaPlayerNotification notification) {...}
+}</codeblock> 
+		  </stepxmp> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

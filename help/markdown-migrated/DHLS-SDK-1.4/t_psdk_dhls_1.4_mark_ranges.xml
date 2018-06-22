@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_mark_ranges_dhls">
+    <title>Mark ranges</title>
+    <shortdesc/>
+    <taskbody>
+        <context>
+            <p>Mark <codeph>TimeRanges</codeph> between the <codeph>begin</codeph> and
+                    <codeph>end</codeph> in <codeph>localTime</codeph> as an
+                    <codeph>AdBreak</codeph> from the timeline. Other Ad settings are ignored. </p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Mark time ranges.</cmd>
+                <info>
+                    <codeblock outputclass="syntax json">{   
+    "properties": [],
+    "stream": {
+        "manifests": [ {
+            "url": "http://d398890tia84ty.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
+            "type": "hls"
+        } ],
+        "metadata": {
+            "time-ranges": {
+                "type": "mark",
+                "adjust-seek-position" : true,   
+                "time-range-list": [ {
+                    "begin": 0,
+                    "end": 15000
+                },
+                {
+                    "begin": 69000,
+                    "end": 99000
+                },
+                {
+                    "begin": 251000,
+                    "end": 281000
+                },
+                {
+                    "begin": 514000,
+                    "end": 544000
+                } ]
+
+            }
+        }           
+    },   
+    "title": "VOD - MARK TimeRanges and no ads",
+    "thumbnail": {
+        "large": "http://example.com",
+        "small": "http://example.com"
+    },
+    "type": "vod",
+    "id": "vod_004"
+}
+</codeblock>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

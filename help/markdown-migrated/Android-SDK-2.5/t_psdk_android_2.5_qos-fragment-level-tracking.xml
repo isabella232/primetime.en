@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="t_psdk_android_fragment-level-tracking"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Track at the fragment level using load information</title> 
+  <shortdesc> You can read quality of service (QoS) information about
+	 downloaded resources, such as fragments and tracks, from the 
+	 <codeph>LoadInformation</codeph> class. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_357D405055F84CE2834A551C125BFEA4"> 
+		<step id="step_9942447DE10F444E8A53578002176355"> 
+		  <cmd>Implement and register the 
+			 <codeph>MediaPlayerEvent.LOAD_INFORMATION_AVAILABLE</codeph> event
+			 listener. 
+		  </cmd> 
+		</step> 
+		<step id="step_EAC49E9C534349629A98AA54FE167F05">
+				<cmd>Call <codeph>event.getLoadInformation()</codeph> to read the relevant data from
+					the <codeph>event</codeph> parameter that is passed to the callback. </cmd>
+				<info>For more about <codeph>LoadInformation</codeph>, see <xref
+						href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/index.html"
+						format="html" scope="external">2.5 for Android (Java)</xref> API docs.
+				</info>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

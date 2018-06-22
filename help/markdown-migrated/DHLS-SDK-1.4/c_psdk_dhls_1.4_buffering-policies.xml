@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_buffering-configuration"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Buffering time policies</title> 
+  <shortdesc id="buffering-policies">Depending on your environment (including
+	 the device, the operating system, or the network conditions), you can set
+	 different buffering policies for your player, such as changing the minimum
+	 duration for initial buffering and for ongoing playback buffering. 
+  </shortdesc> 
+  <conbody> 
+	 <p>After you call 
+		<codeph>play</codeph>, the media player begins buffering the video. When
+		the media player has buffered the amount of video specified by the initial
+		buffer time, playback begins. This process improves the start-up time because
+		the player does not wait for the entire playback buffer to fill before starting
+		playback. Instead, after the few initial seconds are buffered, playback begins.
+		
+	 </p> 
+	 <p>While the video is being rendered, <ph conkeyref="phrases/primetime-sdk-name"/> continues to
+			buffer new fragments until it is has buffered the amount that is specified by the
+			playback buffer time. If the current buffer length drops below the playback buffer time,
+			the player will download additional fragments. Once the current buffer length is above
+			the playback buffer time by a few seconds, <ph conkeyref="phrases/primetime-sdk-name"/>
+			will stop downloading fragments.</p> 
+	 <note type="tip"> If the initial buffer value is high, it might give your
+		user a long initial buffering time before starting. That might provide smooth
+		playback for a longer time; however, if network conditions are poor, initial
+		playback could be delayed. 
+	 </note> 
+  </conbody> 
+</concept> 

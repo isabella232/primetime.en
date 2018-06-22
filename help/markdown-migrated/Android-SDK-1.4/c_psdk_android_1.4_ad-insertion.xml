@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="ad-insertion"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Advertising</title> 
+  <shortdesc> You can insert ads in your VOD and live/linear content by using the <ph
+			conkeyref="phrases/auditude-name-long"/> interface. </shortdesc> 
+  <conbody> 
+	 <p><ph conkeyref="phrases/auditude-name"/> works with 
+		<ph conkeyref="phrases/primetime-sdk-name"/> to identify ad
+		opportunities, resolve ads, and insert resolved ads in your video streams. 
+	 </p> 
+  </conbody> 
+</concept> 

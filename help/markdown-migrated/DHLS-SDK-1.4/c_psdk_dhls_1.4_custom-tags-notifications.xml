@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_android_notifications-for-ads"> 
+  <title>Notifications for manifest tags</title> 
+  <shortdesc>The <codeph>MediaPlayerItem.timedMetadata</codeph> property gives you access to all the
+			<codeph>TimedMetadata</codeph> objects created from playlist/manifest tags or from ID3
+		tags within the media stream. The <codeph>MediaPlayerItem.hasTimedMetadata</codeph> property
+		indicates whether a subscribed custom tag is present in the current media.</shortdesc> 
+  <conbody> 
+	 <p >You can monitor timed metadata by listening for the
+		following events, which notify your application of related activity: 
+	 <ul id="ul_75702B708AF34A5BA1A3EFEE72B83C92"> 
+		<li id="li_F276D19C62A5422C93456CA15C75FCCF"><codeph>MediaPlayerItemEvent.ITEM_CREATED</codeph>:
+					The initial list of <codeph>TimedMetadata</codeph> objects is available after
+					the <codeph>MediaPlayerItem</codeph> is created. This event notifies your
+					application when this happens. </li> 
+		<li id="li_754C27C6B36B44FF86D072ABE8843364"><codeph>MediaPlayerItemEvent.ITEM_UPDATED</codeph>:
+					For live/linear streams where the manifest/playlist refreshes periodically,
+					additional custom tags might appear in the updated playlist/manifest, so
+					additional TimedMetadata objects might be added to the
+						<codeph>MediaPlayerItem.timedMetadata</codeph> property. This event notifies
+					your application when this happens. </li> 
+		<li id="li_95A2EA3AD2B34B9DAC2A65B0FAFADD06"
+						><codeph>TimedMetadataEvent.TIMED_METADATA_AVAILABLE</codeph>: Every time
+					that a new <codeph>TimedMetadata</codeph> object is created, this event is
+					dispatched by the <codeph>MediaPlayer</codeph>. This event is not dispatched for
+					the <codeph>TimedMetadata</codeph> object created during the initialization
+					phase. </li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

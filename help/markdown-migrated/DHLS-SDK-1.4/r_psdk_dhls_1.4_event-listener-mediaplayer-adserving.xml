@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="mediaplayer-adserving_eventlistener"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Ad serving/timed metadata events</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> dispatches ad-serving events in response
+		to timed metadata operations.</shortdesc> 
+  <refbody> 
+	 <refsyn>To be notified about all such related events, register event listeners with the
+				<codeph>MediaPlayer</codeph> object for the following events. <table frame="all"
+				colsep="1" rowsep="1">
+				<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA">
+					<colspec colnum="1" colname="1" colwidth="1.00*"/>
+					<colspec colnum="2" colname="2" colwidth="1.00*"/>
+					<thead>
+						<row rowsep="1">
+							<entry colname="1">Event </entry>
+							<entry colname="2">Meaning </entry>
+						</row>
+					</thead>
+					<tbody>
+						<row rowsep="1">
+							<entry colname="1"><codeph>TimedMetadataEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimedMetadataEvent.html#TIMED_METADATA_ID3_ADDED"
+										format="html" scope="external"
+										>TIMED_METADATA_ID3_ADDED</xref></codeph></entry>
+							<entry colname="2">An ID3 timed metadata was processed. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph>TimedMetadataEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimedMetadataEvent.html#TIMED_METADATA_SKIPPED"
+										format="html" scope="external"
+									>TIMED_METADATA_SKIPPED</xref></codeph></entry>
+							<entry colname="2">A timed metadata was processed and no opportunity was
+								detected. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph>TimedMetadataEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_2.3/com/adobe/tvsdk/mediacore/events/TimedMetadataEvent.html#TIMED_METADATA_AVAILABLE"
+										format="http" scope="external"
+										>TIMED_METADATA_AVAILABLE</xref></codeph></entry>
+							<entry colname="2">Timed metadata is available and no opportunity was
+								detected. </entry>
+						</row>
+						<row rowsep="0">
+							<entry colname="1"><codeph>TimedMetadataEvent.<xref
+										href="http://help.stage.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_2.3/com/adobe/tvsdk/mediacore/events/TimedMetadataEvent.html#TIMED_METADATA_IN_BACKGROUND"
+										format="http" scope="external"
+										>TIMED_METADATA_IN_BACKGROUND</xref></codeph></entry>
+							<entry colname="2">Timed metadata was processed and no opportunity was
+								detected in the background manifest. </entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table></refsyn> 
+  </refbody> 
+</reference> 

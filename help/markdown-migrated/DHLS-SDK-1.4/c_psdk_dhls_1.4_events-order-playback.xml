@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_events-order-playback"> 
+  <title>Order of playback events</title> 
+  <shortdesc> 
+	 <ph conkeyref="phrases/primetime-sdk-name"></ph> dispatches
+	 events/notifications in generally expected sequences. Your player can implement
+	 actions based on events in the expected sequence. 
+  </shortdesc> 
+  <conbody> 
+	 <section  id="section_6E34A6C7936245D88DEB3315DA64598B"> 
+		<p> The following examples show the order of some events that include
+		  playback events. 
+		</p> 
+		<ul id="ul_AF377B03ECC546F1B3670A631CDBE7CB"> 
+		  <li id="li_463C4D2ECF62487E9C7A25A8DB8A00E1">When successfully loading a media resource through
+						<codeph>MediaPlayer.replaceCurrentResource</codeph>, the order of events is:
+						<ul id="ul_BEDF69CB1B70471AA31F02BB796873D5">
+						<li id="li_E64FA2D30D6442419BF2BA33F3CFDB02"
+								><codeph>MediaPlayerStatusChangeEvent.STATUS_CHANGED</codeph> with
+							status <codeph>MediaPlayerStatus.INITIALIZING</codeph>
+						</li>
+						<li id="li_C03AA7B89E534DE48C0E76DE5C81DCFA"
+								><codeph>MediaPlayerItemEvent.ITEM_CREATED</codeph>
+						</li>
+						<li id="li_F0EB8AC72ACC4E478C8685747D86B5C7"
+								><codeph>MediaPlayerStatusChangeEvent.STATUS_CHANGED</codeph> with
+							status <codeph>MediaPlayerStatus.INITIALIZED</codeph>
+						</li>
+					</ul></li> 
+		  <li id="li_4FEBF23581B048D2A79EA7865F1F721D">When preparing for
+			 playback through 
+			 <codeph>MediaPlayer.prepareToPlay</codeph>, the order of events is: 
+			 <ul id="ul_15BA4E56DB884A908C0A9CD41E5E810A"> 
+				<li id="li_F81BB16FAE6A4AC7B5543555896955FB"
+								><codeph>MediaPlayerStatusChangeEvent.STATUS_CHANGED</codeph> with
+							status <codeph>MediaPlayerStatus.PREPARING</codeph>
+						</li> 
+				<li id="li_ADA7D2F6A7C548ECBDC051DE14A96060"><codeph>TimelineEvent.TIMELINE_UPDATED</codeph> if
+							ads were inserted </li> 
+				<li id="li_5FDC84B48C13466CB324E3DC0EDC34D9"
+								><codeph>MediaPlayerStatusChangeEvent.STATUS_CHANGED</codeph> with
+							status <codeph>MediaPlayerStatus.PREPARED</codeph>
+						</li> 
+			 </ul> 
+		  </li> 
+		  <li id="li_0D81695F9E55401C907BEB8E9778BC41">For live/linear streams, during playback as the
+					playback window advances and additional opportunities are resolved, the order of
+					events is: <ul id="ul_1D333DBFD05A420C9E97D9127BBE2246">
+						<li id="li_95FC5C0EB346422C820D0456CF5E4861"
+								><codeph>MediaPlayerItemEvent.ITEM_UPDATED</codeph>
+						</li>
+						<li id="li_A425E785D8964433AC14C1A683B8CBC1"
+								><codeph>TimelineEvent.TIMELINE_UPDATED</codeph> if ads were
+							inserted </li>
+					</ul></li> 
+		</ul> 
+	 </section> 
+	 <section id="section_76C13548AF934868B70757CA5489E516"> 
+		<p>The following example shows a typical progression of events: 
+		</p> 
+		<codeblock outputclass="syntax actionscript">mediaPlayer.addEventListener(MediaPlayerItemEvent.ITEM_CREATED, onItemCreated);
+public function onItemCreated(event:MediaPlayerItemEvent):void {
+    var item:MediaPlayerItem = event.item;
+    ...
+}
+mediaPlayer.addEventListener(MediaPlayerItemEvent.ITEM_UPDATED, onItemUpdated);
+public function onItemUpdated(event:MediaPlayerItemEvent):void {
+    var item:MediaPlayerItem = event.item;
+    ...
+}
+mediaPlayer.addEventListener(MediaPlayerStatusChangeEvent.STATUS_CHANGED, 
+                             onStatusChanged);
+public function onStatusChanged(event:MediaPlayerStatusChangeEvent):void {
+    switch(event.status){
+        case MediaPlayerStatus.INITIALIZING:
+        case MediaPlayerStatus.INITIALIZED:
+        ...
+    }
+    ...
+}
+mediaPlayer.addEventListener(TimeChangeEvent.TIME_CHANGED, onTimeChanged);
+public function onTimeChanged(event:TimeChangeEvent):void {
+    var timeInMilliseconds:Number = event.time;
+    ...
+}</codeblock> 
+	 </section> 
+  </conbody> 
+</concept> 

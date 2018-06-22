@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="instant_on-concept"> 
+  <title>Instant on</title> 
+  <shortdesc>The term instant on refers to preloading one or more channels so
+	 that a user selecting a channel or switching channels sees content playing
+	 immediately. The buffering is already done by the time the user starts
+	 watching. 
+  </shortdesc> 
+  <conbody> 
+	 <p> Without instant on, <ph conkeyref="phrases/primetime-sdk-name"/> initializes the media to be
+			played but does not start buffering the stream until the application calls
+				<codeph>play</codeph>. The user sees no content until buffering is complete. With
+			instant on, you can launch multiple media player (or media-player item loader)
+			instances, and <ph conkeyref="phrases/primetime-sdk-name"/> starts buffering the streams
+			immediately. </p> 
+	 <p>When a user changes the channel and the stream has buffered properly,
+		calling 
+		<codeph>play</codeph> on the new channel starts playback immediately. 
+	 </p> 
+	 <p>Although there are no limits to the number of <codeph>MediaPlayer</codeph> instances that <ph
+				conkeyref="phrases/primetime-sdk-name"/> can run, running more instances consumes
+			more resources. Application performance can be affected by the number of instances
+			running. For more information about these instances, see <xref
+				keyref="media-resource-load-using-mediaplayeritemloader"/>. </p> 
+  </conbody> 
+</concept> 

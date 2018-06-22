@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_def_qos-enable-disable"> 
+  <title>Enable or disable QoS statistics reporting</title> 
+  <taskbody> 
+	 <steps id="steps-unordered_4D20791AC3F24C2CBFA747D6782FDB2E"> 
+		<step id="step_A8E36C30A84D43C8B0E07D91650F6782"> 
+		  <cmd>Create a QosManager or enable QoS reporting using the
+			 ManagerFactory. 
+		  </cmd> 
+		  <choices id="choices_53C04F5263CD4C0B86E0E60A47551330"> 
+			 <choice id="choice_53C27189F10040D2BBB13348C7404DA1">To create a QosManager:
+						<codeblock>// This application needs to use the advertising workflow feature
+QoSManager qosManager = new QosManagerOn();</codeblock>
+					</choice> 
+			 <choice id="choice_AF0DDFE5A40E4757BAEDA7351DE7010B">To use a ManagerFactory to enable the
+						display of QoS statistics: <codeblock>qosManager = ManagerFactory.getQosManager(<b>true</b>, config, mediaPlayer);</codeblock>
+						<note>Changing the boolean to <codeph>false</codeph> disables QoS reporting.
+						</note>
+					</choice> 
+		  </choices> 
+		</step> 
+		<step id="step_A8BFF7A849E9425595713668BA8DADEB" > 
+		  <cmd>Add event listeners: 
+		  </cmd> 
+		  <info> 
+			 <codeblock >qosManager.addEventListener(qosManagerEventListener);</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_D2E064DD0022466E95C45D3664346FFD" >
+		  <cmd>Create the QoS provider and attach it to the player activity
+			 context:
+		  </cmd>
+		  <info> 
+			 <codeblock >qosManager.createQOSProvider(getActivity());</codeblock> 
+		  </info>
+		</step>
+	 </steps> 
+	 <postreq id="postreq_81659FE029DD468B9C5953A1F4933F21">
+
+		<note>When the player activity is going to be destroyed, make sure to
+		  call 
+		  <xref
+			href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.html#destroyQOSProvider()"
+			format="html" scope="external">qosManager.destroyQOSProvider</xref> to clean up
+		  the QOS provider by detaching it from the media player. 
+		</note> 
+	 </postreq> 
+  </taskbody> 
+</task> 

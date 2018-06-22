@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="display-seek-scrub-bar"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Display a seek scrub bar with the current playback position</title> 
+  <shortdesc>
+		<ph conkeyref="phrases/primetime-sdk-name"/> supports seeking to a specific position (time)
+		where the stream is a sliding-window playlist, in both video on demand (VOD) and live
+		streams. </shortdesc> 
+  <taskbody> 
+	 <context id="context_5304B355209C4ED791DBB22DA7C7DC5E"> 
+		<note type="important" >Seeking in a live stream is
+		  allowed only for DVR. 
+		</note> 
+	 </context> 
+	 <steps id="steps_86B69320829D4BDF9A76779E6F08DBE5"> 
+		<step id="step_CD4C65142DAD4C2D9C48FADB7A420D2D"> 
+		  <cmd>Set up callbacks for seeking. 
+		  </cmd> 
+		  <info> 
+			 <p>Seeking is asynchronous, so 
+				<ph conkeyref="phrases/primetime-sdk-name"/> dispatches the
+				following seek-related events: 
+			 </p> 
+			 <ul  id="ul_059749694B2545218D7B5994842BCA0F"> 
+				<li
+				 id="li_B9A3AB664E5E4A21BE3DE201F8DA040A"><codeph>SeekEvent.SEEK_BEGIN</codeph>
+				  - Seek starting. 
+				</li> 
+				<li id="li_F6D421D13C1B4DBA9ABA5A36A9363451"><codeph>SeekEvent.SEEK_END</codeph> - Seek
+							successful. </li> 
+				<li
+				 id="li_CC3EDB7561584449B12CFAD7389CC44E"><codeph>SeekEvent.SEEK_POSITION_ADJUSTED</codeph>
+				  - 
+				  <ph conkeyref="phrases/primetime-sdk-name"/> readjusted the seek
+				  position provided by the user. 
+				</li> 
+			 </ul> 
+		  </info> 
+		</step> 
+		<step id="step_8E2EF2D0D4A44345A5FC020A800ABCB9">
+				<cmd>Wait for the player to be in a valid status for seeking. </cmd>
+				<info>
+					<p>Valid states are PREPARED, COMPLETED, PAUSED, and PLAYING. </p>
+				</info>
+			</step> 
+		<step id="step_9A12F7BCA9364FA0BE2FA6DAC88F4784" > 
+		  <cmd>Listen for the appropriate event to see when the user is
+			 scrubbing. 
+		  </cmd> 
+		</step> 
+		<step id="step_947E420A9B9C48EF8B742230ACA9BC1A" >
+		  <cmd>Pass the requested seek position (milliseconds) to the 
+			 <codeph>MediaPlayer.seek</codeph> method.
+		  </cmd>
+		  <info>
+			 <codeblock  outputclass="syntax actionscript">function seek(position:Number):void;</codeblock>
+			 <p>You can seek only in the asset’s seekable duration. For video on
+				demand, the duration is from 0 through the asset's duration. 
+			 </p>
+			 <note type="tip">This moves the play head to a new position in the
+				stream, but the final computed position might differ from the specified seek
+				position. 
+			 </note>
+		  </info>
+		</step>
+		<step id="step_457078B066B24A52AFD0F2F686D34FF0" >
+		  <cmd>Wait for 
+			 <ph conkeyref="phrases/primetime-sdk-name"/> to dispatch the 
+			 <codeph>SeekEvent.SEEK_END</codeph> event.
+		  </cmd>
+		</step>
+		<step id="step_A11D59EF24284EEAB26D24FCAAA360FA" importance="optional"
+		 >
+		  <cmd>Retrieve the final adjusted play position using
+			 event.actualPosition.
+		  </cmd>
+		  <info> 
+			 <p>This is important because the actual start position after the seek
+				can be different from the requested position. Various rules might apply,
+				including: 
+			 <ul id="ul_82DC35B3593548F195CE27F7A8E236D2"> 
+				<li id="li_89FD16B3119E4EE695E1E895248D4193">Playback behavior is
+				  affected if a seek or other repositioning ends in the middle of an ad break or
+				  skips ad breaks. 
+				</li> 
+				<li  id="li_3E0BF1816A094517ABA1182D43ECE552">If you
+				  seek near a segment boundary, the seek position is adjusted to the beginning of
+				  the segment. 
+				</li> 
+			 </ul> 
+			 </p> 
+		  </info>
+		</step> 
+		<step id="step_23840089A430443A8C6598DE4D157953"> 
+		  <cmd>Use the position information when displaying a seek scrub bar. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

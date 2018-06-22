@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_trick_play_implement"> 
+  <title>Implement fast forward and rewind</title> 
+  <shortdesc>When users fast forward or fast rewind through the media, they are
+	 in the 
+	 <term>trick play</term> mode. To enter trick play mode, you need to set the
+	 
+	 <codeph>MediaPlayer</codeph> playback rate to a value other than 1. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_95877D761D324FBCB5867D52828CF96C"> 
+		<p>To switch the speed, you must set one value. 
+		</p> 
+	 </context> 
+	 <steps id="steps_2F6B39DEDAC14B139C8CBC7BE32A0E9A"> 
+		<step id="step_684C22AA677245EFB9D8ABDA2655D4F2">
+				<cmd> Move from normal play mode (1x) to trick play mode by  setting the
+						<codeph>rate</codeph> property on the <codeph>MediaPlayer</codeph> to an
+					allowed value. </cmd>
+				<info>
+					<ul id="ul_F1CF8A8A656B4FD385EAC13CA46E6158">
+						<li id="li_A181DBF1E7CA4F73BDA0F312E022700E">The
+								<codeph>MediaPlayerItem</codeph> class defines the allowed playback
+							rates. </li>
+						<li id="li_3A7BE5908C124396BDE6940ECE03C196"><ph
+								conkeyref="phrases/primetime-sdk-name"/> selects the closest allowed
+							rate if the specified rate is not allowed. </li>
+					</ul>
+					<p> When the trickplay rate is changed from 0 (pause) or 1 (normal play) to a
+						rate that is greater than 1 or less than -1, all the ads on the timeline are
+						removed. There is only one period on the entire timeline that facilitates a
+						trickplay action to allow the content to be fast forwarded and rewound
+						without stopping at any ad position. This action is enabled by a timeline
+						detachment action on <ph conkeyref="phrases/primetime-sdk-name"/> to remove
+						all the resolved adBreaks. When trickplay resumes at 0 or 1, the adBreaks
+						are first restored by the timeline attachment action. </p>
+					<p>Remember the following information: <ul
+							id="ul_9976081DEE4B4A34B946671A1B7C2369">
+							<li id="li_593B28639D33447C8F604EDF095CB573">If the trickplay action is
+								to rewind the content, the playback resumes when rate is changed to
+								1. </li>
+							<li id="li_B36306847B1C4257B457FDCAB368301A">If the trickplay action is
+								to fast forward the content, the last skipped adBreak plays at the
+								resume position. </li>
+						</ul>
+					</p>
+				</info>
+				<stepxmp>
+					<p>This example sets the player's internal playback rate to the requested rate.
+					</p>
+				</stepxmp>
+				<stepxmp>
+					<codeblock outputclass="syntax actionscript">private function onPlaybackRateChange(event:IndexChangeEvent):void {
+    var newRateIndex:int = event.newIndex;
+    var newRate:Number = _playbackRates[newRateIndex];
+
+    _player.rate = newRate;
+}
+</codeblock>
+				</stepxmp>
+			</step> 
+		<step id="step_8D8EB8BEC5204910BDAF6375428AC9AD"> 
+		  <cmd>You can optionally listen for rate-change events, which let you
+			 know when you requested a rate change and when a rate change actually happens. 
+		  </cmd> 
+		  <info> 
+			 <p> 
+				<ph conkeyref="phrases/primetime-sdk-name"/> dispatches the
+				following events related to trick play: 
+			 <ul id="ul_BF2FD8D3775F44F09D9C302EF43E50B2"> 
+				<li id="li_7B46D406A3204E469E0B5F8086866C2A"
+									><codeph>mediacore.events.PlaybackRateEvent.RATE_SELECTED</codeph>
+								when the <codeph>rate</codeph> value changes to a different value. </li> 
+				<li id="li_1D78616C3484466A860D7B9FEC4A77BE"
+									><codeph>mediacore.events.PlaybackRateEvent.RATE_PLAYING</codeph>
+								when playback resumes at the selected rate. </li> 
+			 </ul><ph conkeyref="phrases/primetime-sdk-name"/> dispatches both of
+			 these events when the player returns from trick-play mode to normal play mode. 
+			 </p> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_events_order_ad_playback"> 
+  <title>Order of advertising events</title> 
+  <shortdesc>When your playback includes advertising, <ph conkeyref="phrases/primetime-sdk-name"/> dispatches
+	 events/notifications in generally expected sequences. Your player can implement
+	 actions based on events in the expected sequence. 
+  </shortdesc> 
+  <conbody> 
+	 <section id="section_14D78B5608DD4639B166F4872F6FBC62"> 
+		<p>When playing ads, the order of events is: 
+		<ul id="ul_C7F5BD2509FF4F6DB2A9916FE965E9D5"> 
+		  <li
+			id="li_8F8291930B5B4377936D54845D0DD30B"><codeph>MediaPlayerEvent.AD_START</codeph>
+			 
+		  </li> 
+		  <li id="li_2AE96E08754547D0AE4B7FD9C034A459">The following are
+			 dispatched for every ad in the ad break: 
+			 <ul id="ul_53E00C7F563C4DAB8626860C8AC9E5B6"> 
+				<li
+				 id="li_357246FEA8724794A59DA7EFF6F5DD47"><codeph>MediaPlayerEvent.AD_START</codeph>
+				  
+				</li> 
+				<li
+				 id="li_8D007F106A374B4F9039D9CF3A78C1CF"><codeph>MediaPlayerEvent.AD_PROGRESS</codeph>
+				  (multiple times) 
+				</li> 
+				<li
+				 id="li_2EEE16BD912540BDB946C6579AB629AA"><codeph>MediaPlayerEvent.AD_CLICK</codeph>
+				  (for each click) 
+				</li> 
+				<li
+				 id="li_1C37680E15F64436A97F183193DB9C25"><codeph>MediaPlayerEvent.AD_COMPLETE</codeph>
+				  
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li
+			id="li_186F6227C1EC47819A82A6C3693BFA2C"><codeph>MediaPlayerEvent.AD_BREAK_COMPLETE</codeph>
+			 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_69E3CCBC57BB48399799876E83908348"> 
+		<p>When playing ads, the order of events is: 
+		<ul id="ul_17A8F43FB547464DB252C8927290E7BE"> 
+		  <li
+			id="li_98B8F223C87F413DBE51CAF9F154110C"><codeph>AdPlaybackEventListener.onAdBreakStart</codeph>
+			 
+		  </li> 
+		  <li id="li_C4DA96CD97F7431985B0FBA72EDCC7C1">The following are
+			 dispatched for every ad in the ad break: 
+			 <ul id="ul_ECAA65904D3346748E4D97D679AFEC2F"> 
+				<li
+				 id="li_28F2BE6E2B0A4A4984DD32834E2990ED"><codeph>AdPlaybackEventListener.onAdStart</codeph>
+				  
+				</li> 
+				<li
+				 id="li_B8D7833B96A5495FB81FB6685530C2CF"><codeph>AdPlaybackEventListener.onAdProgress</codeph>
+				  (multiple times during an ad's playback) 
+				</li> 
+				<li
+				id="li_BE45976966B64FEFA88F6959ECCF27E5"><codeph>AdPlaybackEventListener.onAdClick</codeph>
+				  (for each click) 
+				</li> 
+				<li
+				id="li_37FA139802334C6BBD3486A606680BF3"><codeph>AdPlaybackEventListener.onAdStart</codeph>
+				  
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li
+		  id="li_05D4A8823C6C4B01BFDCEA6A1E6B1289"><codeph>AdPlaybackEventListener.onAdBreakComplete</codeph>
+			 
+		  </li> 
+		</ul> 
+		</p> 
+		<p>The following example shows a typical progression of ad playback
+		  events: 
+		</p> 
+		<codeblock outputclass="syntax java">mediaPlayer.addEventListener(MediaPlayerEvent.AD_START, new
+  MediaPlayer.AdStartedEventListener(){
+    @Override	
+    public void onAdBreakStart(AdBreak adBreak) { ... }
+    @Override
+    public void onAdStart(AdBreak adBreak, Ad ad) { ... }
+    @Override
+    public void onAdProgress(AdBreak adBreak, Ad ad, int percentage) { ... }	
+    @Override
+    public void onAdComplete(AdBreak adBreak, Ad ad) { ... }
+    @Override
+    public void onAdBreakComplete(AdBreak adBreak) { ... }
+    @Override
+    public void onAdClick(AdBreak adBreak, Ad ad, AdClick adClick) { ... }
+});</codeblock> 
+	 </section> 
+  </conbody> 
+</concept> 

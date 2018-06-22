@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<concept id="c_psdk_ios_digital-rights-management-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Digital Rights Management classes</title> 
+  <shortdesc>This provide information about Digital Rights Management (DRM)
+	 activity.
+  </shortdesc> 
+  <conbody> 
+	 <table frame="all" colsep="1" rowsep="1" id="table_u5t_mp2_2m"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="50*"/> 
+		  <colspec colnum="2" colname="2" colwidth="50*"/> 
+		  <tbody> 
+			 <row rowsep="1"> 
+				<entry colname="1"><b>Class</b>
+				</entry> 
+				<entry colname="2"><b>Description</b>
+				</entry> 
+			 </row> 
+			 <row rowsep="0"> 
+				<entry colname="1"><codeph><xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTDRMMetadataInfo.html"
+					 format="html" scope="external">PTDRMMetadataInfo</xref></codeph>
+				</entry> 
+				<entry colname="2">Represents a specific DRM metadata instance.
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup>
+	 </table>
+  </conbody>
+</concept> 

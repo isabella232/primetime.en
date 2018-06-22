@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="alternate-audio-implement"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Access alternate audio tracks</title> 
+  <shortdesc>Late-binding audio uses <codeph>MediaPlayer</codeph> to play a video that is specified
+		in an M3U8 HLS playlist and that can contain several alternate audio streams. </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_A7A20D7A14364050A9D727E61D249B1C"> 
+		<step id="step_2A0A4D00308B46DF8919BF6A49E4A9C3">
+				<cmd>Wait for the <codeph>MediaPlayer</codeph> to be in at least the PREPARED
+					status. </cmd>
+			</step> 
+		<step id="step_50E1B0BF7F9E4E40AD25BC0EAF29BF77"
+		 > 
+		  <cmd>Listen for these events: 
+		  </cmd> 
+		  <info> 
+			 <ul id="ul_AA6C9ABDD21A44F4A55BE42AEFAFB243"> 
+				<li id="li_F6F8959CF4D34C879462FFDA5FDF5559"><codeph>MediaPlayerItemEvent.ITEM_CREATED</codeph>:
+							The initial list of audio tracks is available.</li> 
+				<li id="li_BA8A2B650D2840EC9DD58F329C41C879"
+							><codeph>MediaPlayerItemEvent.AUDIO_UPDATED</codeph>: Audio tracks
+							changed during playback </li> 
+			 </ul> 
+		  </info> 
+		</step> 
+		<step id="step_3B6DE78DE55D4738A2D7AD98017B8437">
+				<cmd>Get the available audio tracks from the <codeph>MediaPlayerItem</codeph>
+					instance. </cmd>
+			</step> 
+		<step id="step_4D20D0674E584727BFFF7B4935C50159"> 
+		  <cmd>(Optional) Present the available tracks to the user. 
+		  </cmd> 
+		</step> 
+		<step id="step_A9CCC83B79474A5BB314041284F0D162">
+				<cmd>Set the selected audio track on the <codeph>MediaPlayerItem</codeph> instance.
+				</cmd>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

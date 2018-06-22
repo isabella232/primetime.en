@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_events_custom_ad"> 
+  <title>Custom ad events</title> 
+  <shortdesc>The <ph conkeyref="phrases/primetime-sdk-name"/>
+		player dispatches events to display custom ad loading status or to ignore an ad that is
+		taking too long to load or has errors. These events are defined in
+			<codeph>events.CustomAdEvents</codeph>.</shortdesc> 
+  <refbody> 
+	 <table id="table_718700E0F0B042F882ED131F79E01D4E"> 
+		<tgroup cols="2"><colspec colnum="1" colname="col1"
+		  colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.47*"/><thead> 
+			 <row> 
+				<entry colname="col1">Event 
+				</entry> 
+				<entry colname="col2">Definition 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row > 
+				<entry colname="col1"><codeph>AdClickThru</codeph>
+						</entry> 
+				<entry colname="col2">The number of times the viewer clicked a custom ad.  </entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><codeph>AdError</codeph></entry> 
+				<entry colname="col2">An error occurred with the custom ad. 
+				</entry> 
+			 </row> 
+			 <row > 
+				<entry colname="col1"><codeph>AdLoaded</codeph>
+						</entry> 
+				<entry colname="col2">The custom ad has loaded.  
+				</entry> 
+			 </row> 
+			 <row > 
+				<entry colname="col1"><codeph>AdLoading</codeph>
+						</entry> 
+				<entry colname="col2">The custom ad is loading. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><codeph>AdPaused</codeph></entry> 
+				<entry colname="col2">The custom ad has paused. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><codeph>AdResumed</codeph></entry> 
+				<entry colname="col2">The custom ad has continued playing after a
+				  pause. 
+				</entry> 
+			 </row> 
+			 <row > 
+				<entry colname="col1"><codeph>AdPlaying</codeph>
+						</entry> 
+				<entry colname="col2">The custom ad is playing.  </entry> 
+			 </row> 
+			 <row > 
+				<entry colname="col1"><codeph>AdProgress</codeph>
+						</entry> 
+				<entry colname="col2"> 
+				  <p>The custom ad player notifies the 
+					 <ph
+					 conkeyref="phrases/primetime-sdk-name"></ph>
+					 player about the progress of the custom ad.   
+				  </p> 
+				  <p>The 
+					 <codeph>currentTime</codeph> and<codeph> totalTime</codeph> of
+					 the ad are passed with this event. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">AdStarted </entry> 
+				<entry colname="col2">The custom ad has started playing and is
+				  displayed to the viewer.  
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">AdStopped </entry> 
+				<entry colname="col2">The custom ad has finished playing. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <section id="section_027774C2A47C453BA9DED61C6F8567C3"> 
+		<p> 
+		</p> 
+	 </section> 
+  </refbody> 
+</reference> 

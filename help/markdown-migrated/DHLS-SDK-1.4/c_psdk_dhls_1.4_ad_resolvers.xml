@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_e4q_rth_tp">
+ <title>Ad resolvers</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <codeblock outputclass="syntax actionscript">if (resource.metadata != null) {
+    if (resource.metadata.containsKey(DefaultMetadataKeys.CUSTOM_DELETE_RANGES_METADATA_KEY)
+            || resource.metadata.containsKey(DefaultMetadataKeys.CUSTOM_REPLACE_RANGES_METADATA_KEY)
+            || resource.metadata.containsKey(DefaultMetadataKeys.CUSTOM_AD_MARKERS_METADATA_KEY))
+    {
+        // Use the CustomRangesOpportunityGenerator for custom ranges opportunities
+        result.push(new CustomRangesOpportunityGenerator()); 
+        if (resource.metadata.containsKey(DefaultMetadataKeys.CUSTOM_DELETE_RANGES_METADATA_KEY))  {
+            result.push(new AdSignalingModeOpportunityGenerator());      
+            // Manifest cue mode ignores replace range
+            result.push(new SpliceOutOpportunityGenerator());
+        }
+        return result;
+    }
+}</codeblock>
+ </conbody>
+</concept>

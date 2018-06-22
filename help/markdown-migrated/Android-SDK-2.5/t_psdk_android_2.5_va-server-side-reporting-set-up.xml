@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<task id="t_psdk_va_set-up-server-side-reporting"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Set up video analytics reporting on the server side</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_9995EBEB1B1D4BC79E60EC18EC1D1BE9">Your Adobe
+		representative will handle most aspects of the server-side setup for Adobe
+		Analytics reporting. For more information, see 
+		<xref
+		 href="http://microsite.omniture.com/t2/help/en_US/reference/#Report_Suite_Manager"
+		 type="" scope="external" format="html">Analytics Help and Reference - Report
+		  Suite Manager</xref>. 
+	 </context> 
+	 <steps id="steps_43CF7EA582A7449895ED1AAB28508BCF"> 
+		<step id="step_C03B77C7C8CB4041AD532DB5E5766696"> 
+		  <cmd>To enable the conversion level for the Report Suite ID (RSID): 
+		  </cmd> 
+		  <substeps id="substeps_0008D2BCC8DD4C0290B0CCF93A4FD9D4"> 
+			 <substep id="substep_82C97F5A47D541C9A8B5196C956B3BF3"> 
+				<cmd>Access 
+				  <uicontrol>Admin Tools</uicontrol>. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_464BFBA5A4EF407D9942887784BC0971"> 
+				<cmd>Select 
+				  <uicontrol>Report Suites</uicontrol>. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_55065E9BA0CE4294820D6D80BC9A0213"> 
+				<cmd>Select the RSID that you want to set up. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_9CE3FD22FD65418F8D23E7ECFDC786D5"> 
+				<cmd>Click 
+				  <menucascade><uicontrol>Edit
+						Settings</uicontrol><uicontrol>General 
+					 </uicontrol><uicontrol>General Account
+						Settings</uicontrol></menucascade>. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_0AB3353D595C424181D28BBDA385DFB8"> 
+				<cmd>In the 
+				  <uicontrol>Conversion Level</uicontrol> combo box, select 
+				  <uicontrol>Enabled, no Shopping Cart</uicontrol>. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_B237E8DEBB954667B797EC18960431BE"> 
+				<cmd>Click 
+				  <uicontrol>Save</uicontrol>. 
+				</cmd> 
+			 </substep> 
+		  </substeps> 
+		</step> 
+		<step id="step_B2E74AD1A45F480090F59D7E818BC295"> 
+		  <cmd>To enable video tracking: 
+		  </cmd> 
+		  <substeps id="substeps_91239BFD42C74AC3AC3C97C234DC724D"> 
+			 <substep id="substep_1E9C5FCF878B49A482EC387F7D066B8B"> 
+				<cmd>Access 
+				  <uicontrol>Admin Tools</uicontrol>. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_E0C0F9B8DCCC42EF9727E35C0418422A"> 
+				<cmd>Select 
+				  <uicontrol>Report Suites</uicontrol> 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_50AACB234E7A4C7CBB238EF1A46D6DBE"> 
+				<cmd>Select the RSID to set up. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_5ECD3845E7284EA6BAEBBEBD4BB749DB"> 
+				<cmd>Click 
+				  <menucascade><uicontrol>Video
+						Management</uicontrol><uicontrol>Edit Settings</uicontrol><uicontrol>Video
+						Reporting</uicontrol></menucascade>. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_E708133BCF374FB88E48923601BC61D0"> 
+				<cmd>Select the settings and click 
+				  <uicontrol>Save</uicontrol>. 
+				</cmd> 
+			 </substep> 
+		  </substeps> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

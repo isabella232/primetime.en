@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_159A210A6F0147BD84718F1E903692B2"> 
+  <title>Implement VPAID 2.0 integration</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_14AAD8A84CF1450A86E91230DE4DC7A1"> 
+		<p>To add VPAID 2.0 support in your iOS application: 
+		</p> 
+	 </context> 
+	 <steps id="steps_CDE8C38F348F423DA3314FD78356EBDC"> 
+		<step id="step_26DDE43450484391B5D86DF5D6468A87" importance="optional"> 
+		  <cmd>(Optional) Add a listener for custom ad events. 
+		  </cmd> 
+		  <info> 
+			 <codeblock>[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onMediaPlayerCustomAdNotification:) name:PTMediaPlayerCustomAdNotification object:self.player];</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_EEF52D094CA84686B376E46740FD3D86"> 
+		  <cmd>(Optional) Display the notification. 
+		  </cmd> 
+		  <info> 
+			 <codeblock>-(void)onMediaPlayerCustomAdNotification:(NSNotification *)notification{    PTCustomAdNotificationObject *notificationObject = [notification.userInfo objectForKey:PTCustomAdNotificationObjectKey];    if (notificationObject)   
+{        NSLog(@"ViewController:: Custom Ad Notification Received: %ld", notificationObject.type);    }
+
+}</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="display-banner-ads"> 
+  <title>Display banner ads</title> 
+  <shortdesc>To display banner ads, you need to create banner instances and
+	 allow <ph conkeyref="phrases/primetime-sdk-name"/> to listen for ad-related events. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_F8FA813A9E6A459080D888A072033E9C"> 
+		<p><ph conkeyref="phrases/primetime-sdk-name"/> provides a list of companion banner ads that are associated with
+		  a linear ad through the 
+		  <codeph>AdPlaybackEventListener.onAdBreakStart</codeph> event. 
+		</p> 
+		<p>Manifests can specify companion banner ads by: 
+		<ul id="ul_65FA60CB3BB743A2A53E77B2324C0206"> 
+		  <li id="li_1045325182FD4B48946A0B7B3009854D">An HTML snippet 
+		  </li> 
+		  <li id="li_79C93221C7AF412FA7896E279E6CC351">The URL of an iFrame page 
+		  </li> 
+		  <li id="li_A64E358C47B94033BF829D530A1B4913">The URL of a static image
+			 or an Adobe Flash SWF file 
+		  </li> 
+		</ul> 
+		</p> 
+		<p>For each companion ad, <ph conkeyref="phrases/primetime-sdk-name"/> indicates which types are available for
+		  your application. 
+		</p> 
+	 </context> 
+	 <steps id="steps_9D6FF9E8358C4191AF0D137EF6F89482"> 
+		<step id="step_87B9D4D86CDE48B9838BBA0D1500B177"> 
+		  <cmd>Add a listener for the 
+			 <codeph>AdPlaybackEventListener.onAdBreakStart</codeph> event that
+			 does the following: 
+		  </cmd> 
+		  <info>
+			 <ul id="ul_4C04D6CEB998403CAFF7E2BA731CE423">
+				<li id="li_04DCA80DCE0047C78DE6F01E4BCE984F">Clears existing ads in
+				  the banner instance. 
+				</li>
+				<li id="li_02C6212EA84547849DBBE5022ABBAD39">Gets the list of
+				  companion ads from 
+				  <codeph>Ad.getCompanionAssets</codeph>. 
+				</li>
+				<li id="li_BBCF73B4804149569C25922348DF033F">If the list of
+				  companion ads is not empty, iterate over the list for banner instances. 
+				  <p> Each banner instance (an 
+						<codeph>AdAsset</codeph>) contains information, such as
+					 width, height, resource type (html, iframe, or static), and data that is
+					 required to display the companion banner. 
+				  </p>
+				</li>
+				<li id="li_C939B37DD64F4DE7986CFF3A37B50BDA">If a video ad has no
+				  companion ads booked with it, the list of companion assets contains no data for
+				  that video ad. 
+				</li>
+				<li id="li_003BAA4DD10340069A251C3C84ADE09D">To show a standalone
+				  display ad, add the logic to your script to run a normal DFP (DoubleClick for
+				  Publishers) display ad tag in the appropriate banner instance. 
+				</li>
+				<li id="li_E5B06A31EDEF4F4183BA956F358EA665">Sends the banner
+				  information to a function on your page that displays the banners in an
+				  appropriate location. 
+				  <p>This is usually a 
+					 <codeph>div</codeph>, and your function uses the 
+					 <codeph>div ID</codeph> to display the banner. 
+				  </p>
+				</li>
+			 </ul>
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

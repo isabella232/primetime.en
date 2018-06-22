@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_configuring-advertising"> 
+  <title>Configure clickable ads</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_118E1EC6D13E426CB31E4F415D47D6A5"> 
+		<p>The general workflow is as follows: 
+		<ol id="ol_07B2DEE1C9CB450D9111C5741C63E58C"> 
+		  <li id="li_4D1CB4D058BA47D181D86422F812C0AD">When an ad creative
+			 starts, the <ph conref="../../phrase_library.xml#c_psdk_phrase-library/primetime-sdk-name"/> determines if the ad is clickable. 
+		  </li> 
+		  <li id="li_E02060BB1ABC49CCA670D1AD01C589E1">If the ad is clickable,
+			 the player shows a button: "Click here for more info." 
+		  </li> 
+		  <li id="li_6F7BF8F3AB12451F818753626FA01163">If the user clicks the
+			 button, playback is paused and the device launches the default browser and
+			 loads the URL returned from the <ph conref="../../phrase_library.xml#c_psdk_phrase-library/primetime-sdk-name"/>. 
+		  </li> 
+		</ol> 
+		</p> 
+		<p><?xm-replace_text Paragraph?>
+		</p> 
+	 </context> 
+	 <steps id="steps_3119B20A464341628D1099B80A079C6F"> 
+		<step id="step_D043B398D12948838D1B2726919DE07A"> 
+		  <cmd><?xm-replace_text Step?>
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

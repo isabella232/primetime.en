@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<task id="t_psdk_android_set-closed-captions-styles"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Set closed-caption styles</title> 
+  <shortdesc>You can style the closed-caption text with 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+	 methods. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_D60C19B719B04C43B252DE648148A63B"> 
+		<step id="step_3F06E01D84D345A4AEA7301D8E534FCD">
+				<cmd>Wait for the MediaPlayer to have at least the PREPARED status  (see <xref
+						keyref="ui-state-prepared-wait-for" type="s"/>). </cmd>
+			</step>
+		<step id="step_34F4FA2E29114E9F8F92CF64F69B076C"> 
+		  <cmd>To change the styling settings, do one of the following: 
+		  </cmd> 
+		  <choices id="choices_79C1B42611B04BC9B2DCEB85F8F18567"> 
+			 <choice id="choice_F578ACF742B6415F9161B9BF9019B10B">Use the 
+				<codeph>ClosedCaptionStylesBuilder</codeph> helper class (operates
+				on 
+				<codeph>ClosedCaptionStyles</codeph> behind the scenes). 
+			 </choice> 
+			 <choice id="choice_E6D018980CD0405A83AB284D397354E3">Use the
+							<codeph>ClosedCaptionStyles</codeph> class directly.  </choice> 
+		  </choices> 
+		  <info> Setting the closed-caption style is an asynchronous operation so
+			 it might take up to a few seconds for the changes to appear on the screen. 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

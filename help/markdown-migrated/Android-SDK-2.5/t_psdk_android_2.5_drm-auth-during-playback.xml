@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="drm-during-playback-task"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>DRM authentication during playback</title> 
+  <shortdesc>When the DRM metadata for a video is included in the media stream,
+	 you can perform authentication during playback. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_65111E3A90E4466D978E2A54CBC252C8"> 
+		<p>With license rotation, an asset is encrypted with multiple DRM
+		  licenses. Each time that new DRM metadata is discovered, the 
+		  <codeph>DRMHelper</codeph> methods are used to check whether the DRM
+		  metadata requires DRM authentication. 
+		</p> 
+		<note type="tip">Before starting playback, determine whether you are
+		  dealing with a domain bound license and whether domain authentication is
+		  required. If yes, complete the domain authentication and join the domain. 
+		</note> 
+	 </context> 
+	 <steps id="steps_67D0E271C7D1402BB2D8641B6CFD7C64"> 
+		<step id="step_4BD76DC81D9245918E6CBB71E86CB162"> 
+		  <cmd>When new DRM Metadata is discovered in an asset, an event is
+			 dispatched at the application layer. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax java">mediaPlayer.addEventListener(MediaPlayerEvent.DRM_METADATA, 
+                             drmMetadataInfoEventListener);
+
+DRMMetadataInfoEventListener drmMetadataInfoEventListener = 
+  new DRMMetadataInfoEventListener() {
+    @Override
+    public void onDRMMetadataInfo(DRMMetadataInfoEvent drmMetadataInfoEvent) {
+        ...
+    }
+};</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_98854006AB354F12B6CA7ABBBE95B0CA"> 
+		  <cmd>Use the 
+			 <codeph>DRMMetadata</codeph> to check whether authentication is
+			 needed. 
+		  </cmd> 
+		  <info>
+			 <ul id="ul_B9D4ACD801044D859A1CE1E33BC2D702">
+				<li id="li_796A21837ED34CD781C7BBC397F8F9DF">If authentication is
+				  not required, you do not need to do anything, and playback continues
+				  uninterrupted. 
+				</li>
+				<li id="li_C581F9F794F441C3AB899DD7F73A8A8F">If authentication is
+				  required, complete DRM authentication. 
+				  <p>Since this operation is asynchronous and is handled in a
+					 different thread, it has no impact on the user interface nor on video playback.
+					 
+				  </p>
+				</li>
+			 </ul>
+		  </info>
+		</step> 
+		<step id="step_58E875E0D63B446B9EE8E8AE5EB1DBB9"> 
+		  <cmd>If authentication fails, the user cannot continue viewing the
+			 video, and playback stops. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+	 <example id="example_939B95F831A245869F9248E2767F260C">
+		<p>For example:
+                <codeblock outputclass="syntax java">DRMMetadataInfoEventListener drmMetadataInfoEventListener = 
+  new DRMMetadataInfoEventListener() {
+    @Override
+    public void onDRMMetadataInfo(DRMMetadataInfoEvent drmMetadataInfoEvent) {
+        final DRMMetadataInfo drmMetadataInfo = 
+          drmMetadataInfoEvent.getDRMMetadataInfo();
+
+        if (drmMetadataInfo == null || 
+          !DRMHelper.isAuthNeeded(drmMetadataInfo.getDRMMetadata())) {
+            return;
+        }
+
+        // Perform DRM auth.
+        // Possible logic might take into consideration a threshold between the 
+        // current player time and the DRM metadata start time. For the time being, 
+        // we resolve it as soon as we receive the DRM metadata.
+
+        DRMManager drmManager = _mediaPlayer.getDRMManager();
+        if (drmManager == null) {
+            return;
+        }
+
+        SharedPreferences sharedPreferences = 
+          PreferenceManager.getDefaultSharedPreferences(getActivity());
+        String authUser = sharedPreferences.getString(PrimetimeReference.SETTINGS_DRM_USERNAME, 
+          getResources().getString(R.string.drmUsername));
+        String authPass = sharedPreferences.getString(PrimetimeReference.SETTINGS_DRM_PASSWORD, 
+          getResources().getString(R.string.drmPassword));
+
+        DRMHelper.performDrmAuthentication(drmManager, drmMetadataInfo.getDRMMetadata(), 
+          authUser, authPass, new DRMAuthenticationListener() {
+
+            @Override
+            public void onAuthenticationStart() {
+                ...
+            }
+
+            @Override
+            public void onAuthenticationError(int major, 
+                                              int minor, 
+                                              String erroString, 
+                                              String serverErrorURL) {
+                if (getActivity() == null) {
+                    return;
+                }
+                _handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        showToast(getString(R.string.drmAuthenticationError));
+                        getActivity().finish();
+                    }
+                });
+            }
+
+            @Override
+            public void onAuthenticationComplete(byte[] authenticationToken) {
+            }
+
+        });
+    }
+};
+</codeblock>
+            </p> 
+	 </example> 
+  </taskbody> 
+</task> 

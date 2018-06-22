@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="t_psdk_android_display-duration-time"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Display the duration, current time, and remaining time of the
+	 video</title> 
+  <shortdesc>You can use <ph conkeyref="phrases/primetime-sdk-name"/> to retrieve information about the player's
+	 position in the media and display it on the seek bar. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_1A4BC86276C24FC19EF8914EB0D6E27D"> 
+		<step id="step_A21C8DB075954983BFBD6E5E1DC4A669"> 
+		  <cmd>Wait for the player to be in at least the PREPARED state.
+		  </cmd> 
+		</step> 
+		<step id="step_C9BE1F167E144BFDA103130770E6D5CD"> 
+		  <cmd>Retrieve the current playhead time by using the 
+			 <codeph>MediaPlayer.getCurrentTime</codeph> method. 
+		  </cmd> 
+		  <info> 
+			 <p>This returns the current playhead position on the virtual timeline
+				in milliseconds. The time is calculated relative to the resolved stream that
+				might contain multiple instances of alternate content, such as multiple ads or
+				ad breaks spliced into the main stream. For live/linear streams, the returned
+				time is always in the playback window range. 
+			 </p> 
+			 <codeblock outputclass="syntax java">long getCurrentTime() throws MediaPlayerException;</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_8C7E70F425E4463EB6A00B3185FEB5C6"> 
+		  <cmd>Retrieve the playback range of the stream and determine the
+			 duration. 
+		  </cmd> 
+		  <substeps id="substeps_D87DA2A66E0341E0B0BB9F04912AE998"> 
+			 <substep id="substep_FF82547F005843729CC61BEF25FD0548"> 
+				<cmd>Use the 
+				  <codeph>MediaPlayer.getPlaybackRange</codeph> method to get the
+				  virtual timeline time range. 
+				</cmd> 
+				<info> 
+				  <codeblock outputclass="syntax java">TimeRange getPlaybackRange() throws MediaPlayerException;</codeblock> 
+				</info> 
+			 </substep> 
+			 <substep id="substep_ED9C02FDDA084820AC995F485B0F0467"> 
+				<cmd>Use the 
+				  <codeph>MediaPlayer.getPlaybackRange</codeph> method to get the
+				  virtual timeline time range. 
+				</cmd> 
+				<info> 
+				  <p>
+				  <ul id="ul_3D1041CA5A9E4A9289CFA1DF938DB926">
+					 <li id="li_59A37FAACA9A49698B794DA64164D447">For VOD, the range
+						always begins with zero and the end value equals the sum of the main content
+						duration and the durations of additional content in the stream (ads). 
+					 </li>
+					 <li id="li_9370BE5CFC8D4B5F9FECB385B8DBF105">For a linear/live
+						asset, the range represents the playback window range. This range changes
+						during playback. 
+					 </li>
+				  </ul>
+				  </p> 
+				  <p><ph conkeyref="phrases/primetime-sdk-name"/> calls the <codeph>ITEM_Updated</codeph> callback to indicate that the media item was
+								refreshed and that its attributes, including the playback range,
+								were updated. </p> 
+				</info> 
+			 </substep> 
+		  </substeps> 
+		</step> 
+		<step id="step_1618297DA1CB4E8CA3254573F271F8E0">
+				<cmd>Use the methods that are available on <codeph>MediaPlayer</codeph> and on the
+						<codeph>SeekBar</codeph> class in the Android SDK to set up the seek-bar
+					parameters. </cmd>
+				<info>For example, here is a possible layout that contains the seek bar and two
+						<codeph>TextView</codeph> elements.
+					<codeblock outputclass="syntax xml">&lt;LinearLayout
+ android:id="@+id/controlBarLayout"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_alignParentBottom="true"
+ android:background="@android:color/black"
+ android:orientation="horizontal" &gt;
+ &lt;TextView
+    android:id="@+id/playerCurrentTimeText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:text="00:00"
+    android:textColor="@android:color/white" /&gt;
+ &lt;SeekBar
+    android:id="@+id/playerSeekBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1" /&gt;
+ &lt;TextView
+    android:id="@+id/playerTotalTimeText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:text="00:00"
+    android:textColor="@android:color/white" /&gt;
+&lt;/LinearLayout&gt;</codeblock>
+				</info>
+			</step> 
+		<step id="step_B41106A16E654373815B7639F89C4800"> 
+		  <cmd>Use a timer to periodically retrieve the current time and update
+			 the seek bar, as shown in the figure: 
+		  </cmd> 
+		  <info> 
+			 <p>
+				<fig frame="all" id="fig_689CEDDD02094C0C8E91C5195F8EAD3F"> 
+				  <image href="images/seek-bar.jpg" height="89.001pt"
+				  width="477.000pt" align="left" placement="break"
+				  id="image_0DF8BF4D81ED4FBE943C50BECA51370C"/> 
+				</fig>
+			 </p> 
+			 <p> The following example uses the <codeph>Clock.java</codeph> helper class, which is available
+						in <codeph>ReferencePlayer</codeph>, as the timer. This class sets an event
+						listener and triggers an <codeph>onTick</codeph> event every second, or
+						another timeout value that you can specify.
+						<codeblock outputclass="syntax java">playbackClock = new Clock(PLAYBACK_CLOCK, CLOCK_TIMER);
+playbackClockEventListener = new Clock.ClockEventListener() {
+    @Override
+    public void onTick(String name) {
+        // Timer event is received. Update the seek bar here.
+    }
+};
+playbackClock.addClockEventListener(playbackClockEventListener);</codeblock>
+					</p>
+			 <p>On every clock tick, this example retrieves the media player's current position and updates
+						the seek bar. It uses the two <codeph>TextView</codeph> elements to mark the
+						current time and the playback range end position as numeric values.
+						<codeblock outputclass="syntax java">@Override
+public void onTick(String name) {
+    if (mediaPlayer != null &amp;&amp; 
+      mediaPlayer.getStatus() == MediaPlayerStatus.PLAYING) {
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                seekBar.setProgress((int) mediaPlayer.getCurrentTime());
+                currentTimeText.setText(timeStampToText(mediaPlayer.getCurrentTime()));
+                totalTimeText.setText(timeStampToText(mediaPlayer.getPlaybackRange().getEnd()));
+            }
+        });
+    }
+}
+</codeblock>
+					</p>
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

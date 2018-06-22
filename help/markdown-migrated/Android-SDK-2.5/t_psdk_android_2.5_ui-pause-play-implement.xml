@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="implement-pause-play"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Play and pause a video</title> 
+  <shortdesc>You can add pause and play buttons to pause or play your video. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_83EA2653FACE42B3B8EB90EACCE46AA0"> 
+		<step id="step_3B23D8774BEE444E8C8A1D3D7A6182E9"> 
+		  <cmd>To create a pause or play button:
+		  </cmd> 
+		  <substeps id="substeps_091C94698AF14948826908F7C24CF810"> 
+			 <substep id="substep_37D7D2D9C29045889B438B3A38DDE6A1"> 
+				<cmd>Wait for the player to be in at least the prepared state. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_234F2685B4FC4669AD204E035B35B22E"> 
+				<cmd>To start playback, call the 
+				  <codeph>play</codeph> method: 
+				</cmd> 
+				<info> 
+				  <codeblock outputclass="syntax java">void play() throws MediaPlayerException;</codeblock> 
+				</info> 
+			 </substep> 
+			 <substep id="substep_F2F91786E7BF4704ABCD6F1AA84D5483">
+						<cmd>To pause playback, call the <codeph>pause()</codeph> method: </cmd>
+						<info>
+							<codeblock outputclass="syntax java">void pause() throws MediaPlayerException;</codeblock>
+						</info>
+					</substep> 
+		  </substeps> 
+		</step> 
+		<step id="step_673B4189CF3B49B39A4C1F2026B0A2FB">
+				<cmd>Use the status changed event callback to check for errors or to take other
+					appropriate actions. </cmd>
+				<info>
+					<p><ph conkeyref="phrases/primetime-sdk-name"/> calls this callback for
+							<codeph>pause()</codeph> or <codeph>play()</codeph> and passes
+						information about the status change, including the new status, such as
+						paused or playing. </p>
+				</info>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

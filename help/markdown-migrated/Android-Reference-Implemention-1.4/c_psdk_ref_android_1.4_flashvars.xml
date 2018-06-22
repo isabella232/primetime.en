@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_24FB7644FA454C6680BA2BD83FE6723F"> 
+  <title>FlashVars</title> 
+  <shortdesc>You can use a JSON file or FlashVars for configuration. 
+  </shortdesc> 
+  <conbody> 
+	 <p>You can pass configuration parameters directly to the reference
+		implementation from the ReferencePlayer.mxml file. You need to specify, in the
+		ReferencePlayer.mxml file which method of configuration to use. 
+	 </p> 
+	 <p>To use FlashVars, change the compiler options in the 
+		<codeph>referenceplayer.html</codeph> file to use FLASHVARS. 
+	 </p> 
+	 <p>The default behavior is to use the JSON catalog file. 
+	 </p> 
+  </conbody> 
+</concept> 

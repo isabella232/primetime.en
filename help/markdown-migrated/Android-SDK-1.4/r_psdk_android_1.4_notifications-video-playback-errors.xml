@@ -1,0 +1,899 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="notifications-NATIVE-ERROR"> 
+  <title>NATIVE_ERROR: Video playback values</title> 
+  <shortdesc>The Video Encoder interface of the AVE returns these video
+	 playback notifications in the NATIVE_ERROR metadata object. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn> 
+		<table> 
+		  <tgroup cols="3"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.49*"/><colspec
+			 colnum="3" colname="col3" colwidth="1.75*"/><thead> 
+				<row> 
+				  <entry colname="col1">Value for NATIVE_ERROR_CODE metadata key </entry> 
+				  <entry colname="col2">Value for NATIVE_ERROR_NAME metadata key </entry> 
+				  <entry colname="col3">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">-1 
+				  </entry> 
+				  <entry colname="col2"><codeph>END_OF_PERIOD</codeph> 
+				  </entry> 
+				  <entry colname="col3">End of period. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">0 
+				  </entry> 
+				  <entry colname="col2"><codeph>SUCCESS</codeph> 
+				  </entry> 
+				  <entry colname="col3">Operation successful. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">1 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>ASYNC_OPERATION_IN_PROGRESS</codeph> 
+				  </entry> 
+				  <entry colname="col3">Asynchronous operation. The operation
+					 request has been made. Success/failure information will be available later. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">2 
+				  </entry> 
+				  <entry colname="col2"><codeph>EOF</codeph> 
+				  </entry> 
+				  <entry colname="col3">Operation not possible due to end of file
+					 (EOF) condition. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3 
+				  </entry> 
+				  <entry colname="col2"><codeph>DECODER_FAILED</codeph> 
+				  </entry> 
+				  <entry colname="col3">The decoder failed at runtime. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">4 
+				  </entry> 
+				  <entry colname="col2"><codeph>DEVICE_OPEN_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3">Failed to open hardware decoder. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">5 
+				  </entry> 
+				  <entry colname="col2"><codeph>FILE_NOT_FOUND 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Resource cannot be located. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">6 
+				  </entry> 
+				  <entry colname="col2"><codeph>GENERIC_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Generic error. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">7 
+				  </entry> 
+				  <entry colname="col2"><codeph>IRRECOVERABLE_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">An error condition that the Video Engine
+					 cannot recover from. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">8 
+				  </entry> 
+				  <entry colname="col2"><codeph> LOST_CONNECTION_RECOVERABLE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Network error, trying to recover. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">9 
+				  </entry> 
+				  <entry colname="col2"><codeph> NO_FIXED_SIZE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> The size of the resource cannot be
+					 determined. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">10 
+				  </entry> 
+				  <entry colname="col2"><codeph> NOT_IMPLEMENTED 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Feature not implemented. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">11 
+				  </entry> 
+				  <entry colname="col2"><codeph> OUT_OF_MEMORY 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Out of memory. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">12 
+				  </entry> 
+				  <entry colname="col2"><codeph> PARSE_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Error while parsing the media file. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">13 
+				  </entry> 
+				  <entry colname="col2"><codeph> SIZE_UNKNOWN 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">The resource has a size, but it is unknown.
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">14 
+				  </entry> 
+				  <entry colname="col2"><codeph> UNDER_FLOW 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Underflow condition. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">15 
+				  </entry> 
+				  <entry colname="col2"><codeph> UNSUPPORTED_CONFIG 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Configuration is not supported. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">16 
+				  </entry> 
+				  <entry colname="col2"><codeph> UNSUPPORTED_OPERATION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Operation is not supported. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">17 
+				  </entry> 
+				  <entry colname="col2"><codeph> WAITING_FOR_INIT 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Not yet initialized. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">18 
+				  </entry> 
+				  <entry colname="col2"><codeph> INVALID_PARAMETER 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Invalid parameter. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">19 
+				  </entry> 
+				  <entry colname="col2"><codeph>INVALID_OPERATION</codeph> 
+				  </entry> 
+				  <entry colname="col3">Operation not permitted. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">20 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>OP_ONLY_ALLOWED_IN_PAUSED_STATE</codeph> 
+				  </entry> 
+				  <entry colname="col3">The operation is allowed only while paused.
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">21 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>OP_INVALID_WITH_AUDIO_ONLY_FILE</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Operation cannot be used on audio only
+					 files. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">22 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>PREVIOUS_STEP_SEEK_IN_PROGRESS</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Previous seek operation is still in
+					 progress. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">23 
+				  </entry> 
+				  <entry colname="col2"><codeph> SOURCE_NOT_SPECIFIED 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Resource not specified. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">24 
+				  </entry> 
+				  <entry colname="col2"><codeph>RANGE_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Specified value is out of range. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">25 
+				  </entry> 
+				  <entry colname="col2"><codeph>INVALID_SEEK_TIME</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Invalid seek time. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">26 
+				  </entry> 
+				  <entry colname="col2"><codeph>FILE_STRUCTURE_INVALID</codeph> 
+				  </entry> 
+				  <entry colname="col3"> The file specified does not conform to the
+					 expected syntax. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">27 
+				  </entry> 
+				  <entry colname="col2"><codeph>COMPONENT_CREATION_FAILURE</codeph>
+					 
+				  </entry> 
+				  <entry colname="col3"> An essential component could not be
+					 created. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">28 
+				  </entry> 
+				  <entry colname="col2"><codeph>DRM_INIT_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Failed to create DRM context. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">29 
+				  </entry> 
+				  <entry colname="col2"><codeph> CONTAINER_NOT_SUPPORTED 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Container type is not supported. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">30 
+				  </entry> 
+				  <entry colname="col2"><codeph>SEEK_FAILED</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Seek failed. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">31 
+				  </entry> 
+				  <entry colname="col2"><codeph>CODEC_NOT_SUPPORTED</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Unsupported codec. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">32 
+				  </entry> 
+				  <entry colname="col2"><codeph>NETWORK_UNAVAILABLE</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Network is not available. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">33 
+				  </entry> 
+				  <entry colname="col2"><codeph>NETWORK_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Error getting data from the Network. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">34 
+				  </entry> 
+				  <entry colname="col2"><codeph>OVERFLOW</codeph> 
+				  </entry> 
+				  <entry colname="col3">Overflow. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">35 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>VIDEO_PROFILE_NOT_SUPPORTED</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Unsupported video profile. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">36 
+				  </entry> 
+				  <entry colname="col2"><codeph>PERIOD_NOT_LOADED</codeph> 
+				  </entry> 
+				  <entry colname="col3"> An operation was attempted on a HOLD
+					 period or a period that has not yet been loaded. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">37 
+				  </entry> 
+				  <entry colname="col2"><codeph>INVALID_REPLACE_DURATION</codeph> 
+				  </entry> 
+				  <entry colname="col3"> The replace duration specified is invalid
+					 or extends past the end of the stream. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">38 
+				  </entry> 
+				  <entry colname="col2"><codeph>CALLED_FROM_WRONG_THREAD</codeph> 
+				  </entry> 
+				  <entry colname="col3"> API can't be called from the wrong thread.
+					 Mostly, for API elements that should be called from Main thread only. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">39 
+				  </entry> 
+				  <entry colname="col2"><codeph>FRAGMENT_READ_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Fragment read error. No failover present.
+					 Engine will try to read the next fragment. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">40 
+				  </entry> 
+				  <entry colname="col2"><codeph>ABORTED</codeph> 
+				  </entry> 
+				  <entry colname="col3"> The operation was aborted by an explicit
+					 Abort or Destroy call. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">41 
+				  </entry> 
+				  <entry colname="col2"><codeph>UNSUPPORTED_HLS_VERSION</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Cannot play this version of HLS media. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">42 
+				  </entry> 
+				  <entry colname="col2"><codeph>CANNOT_FAIL_OVER</codeph> 
+				  </entry> 
+				  <entry colname="col3">Cannot fail over. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">43 
+				  </entry> 
+				  <entry colname="col2"><codeph>HTTP_TIME_OUT</codeph> 
+				  </entry> 
+				  <entry colname="col3"> HTTP download has timed out. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">44 
+				  </entry> 
+				  <entry colname="col2"><codeph> NETWORK_DOWN 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> The user's network connection is down.
+					 Playback could stop any moment and will resume when the connection is
+					 available. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">45 
+				  </entry> 
+				  <entry colname="col2"><codeph>NO_USABLE_BITRATE_PROFILE</codeph> 
+				  </entry> 
+				  <entry colname="col3"> No usable bit rate profile found in the
+					 stream. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">46 
+				  </entry> 
+				  <entry colname="col2"><codeph>BAD_MANIFEST_SIGNATURE</codeph> 
+				  </entry> 
+				  <entry colname="col3"> The manifest has a bad signature. It
+					 failed the manifest signing test. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">47 
+				  </entry> 
+				  <entry colname="col2"><codeph>CANNOT_LOAD_PLAYLIST</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Cannot load a playlist. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">48 
+				  </entry> 
+				  <entry colname="col2"><codeph>REPLACEMENT_FAILED</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Replacement specified in an Insert API
+					 could not succeed. This means that the insertion succeeded but replacement did
+					 not. Replacement could fail if the manifest to be replaced has been removed
+					 from the timeline. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">49 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>SWITCH_TO_ASYMMETRIC_PROFILE</codeph> 
+				  </entry> 
+				  <entry colname="col3"> DRM is switching to an asymmetric profile.
+					 All the profiles are expected to be aligned in duration. If not, this warning
+					 will be thrown, and there may be jumps in the playback. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">50 
+				  </entry> 
+				  <entry colname="col2"><codeph>LIVE_WINDOW_MOVED_BACKWARD</codeph>
+					 
+				  </entry> 
+				  <entry colname="col3"> Live window is expected to move forward
+					 only. If not, this warning will be thrown, and the window will not be read.
+					 Because of that, there may be jumps (or stop / long pause) in the playback. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">51 
+				  </entry> 
+				  <entry colname="col2"><codeph>CURRENT_PERIOD_EXPIRED</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Live window moved beyond the current
+					 period. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">52 
+				  </entry> 
+				  <entry colname="col2"><codeph>CONTENT_LENGTH_MISMATCH</codeph> 
+				  </entry> 
+				  <entry colname="col3"> The content-length reported by the HTTP
+					 server did not match the actual media size. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">53 
+				  </entry> 
+				  <entry colname="col2"><codeph>PERIOD_HOLD</codeph> 
+				  </entry> 
+				  <entry colname="col3"> The media reader is unable to read further
+					 because it has reached the time set by setHoldAt API. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">54 
+				  </entry> 
+				  <entry colname="col2"><codeph> LIVE_HOLD 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> The media reader is unable to load
+					 segments because it has reached the end of the live window. Segment loading
+					 will resume when the server ads new media to the live window. This state is
+					 usually reached if: 
+					 <ul id="ul_FCFF658EDA4144E59970B317D6DEB624"> 
+						<li id="li_2F6EEEB782D54CD999BC7CC7C0B78B48">The bufferTime
+						  is too high (equal to or higher than the live window duration). 
+						</li> 
+						<li id="li_25CE97115ED64E44AA89977FB5F0DCF7">A combination of
+						  one or more of insert/erase API replaced more media than it added. 
+						</li> 
+						<li id="li_1B14716B2157492AB1859306D1250523">The next period
+						  is a live period with a pending media replacement (due to InsertBy API call) 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">55 
+				  </entry> 
+				  <entry colname="col2"><codeph> BAD_MEDIA_INTERLEAVING 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> The audio and video interleaving in the
+					 media is not done properly. This is a packaging error. The warning is
+					 dispatched when the difference exceeds two seconds. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">56 
+				  </entry> 
+				  <entry colname="col2"><codeph>DRM_NOT_AVAILABLE</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">57 
+				  </entry> 
+				  <entry colname="col2"><codeph>PLAYBACK_NOT_AUTHORIZED</codeph> 
+				  </entry> 
+				  <entry colname="col3"> HLS playback has not been enabled in the
+					 Flash Player. See AuthorizedFeatures.enableHLSPlayback. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">58 
+				  </entry> 
+				  <entry colname="col2"><codeph>BAD_MEDIA_SAMPLE_FOUND</codeph> 
+				  </entry> 
+				  <entry colname="col3"> The decoder received a bad sample that
+					 cannot be decoded. This is usually not a fatal error but indicates that there
+					 may be glitches in the audio/video. Too many instances of this error indicate a
+					 bad encoding or bad file. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">59 
+				  </entry> 
+				  <entry colname="col2"><codeph>RANGE_SPANS_READ_HEAD</codeph> 
+				  </entry> 
+				  <entry colname="col3"> After playback has started, the
+					 Insert/Replace range should not contain the read head. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">60 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>POSTROLL_WITH_LIVE_NOT_ALLOWED</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Post-roll insertions are not allowed on a
+					 live media. They are, however, allowed after the server marks the media as
+					 complete. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">61 
+				  </entry> 
+				  <entry colname="col2"><codeph>INTERNAL_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> A very rare issue that should never
+					 happen. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">62 
+				  </entry> 
+				  <entry colname="col2"><codeph>SPS_PPS_FOUND_OUTSIDE_AVCC</codeph>
+					 
+				  </entry> 
+				  <entry colname="col3"> The stream does not follow the packaging
+					 recommendation of always putting H264 SPS/PPS in an AVCC. Seek / playback
+					 issues might be seen. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">63 
+				  </entry> 
+				  <entry colname="col2"><codeph>PARTIAL_REPLACEMENT</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Replacement specified in an Insert API was
+					 only partially done. This happens when replaceDuration spans over the timeline
+					 duration. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">64 
+				  </entry> 
+				  <entry colname="col2"><codeph>RENDITION_M3U8_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Rendition playlist had an error loading.
+					 This is only for AVE, not for FlashPlayer. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">65 
+				  </entry> 
+				  <entry colname="col2"><codeph>NULL_OPERATION</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Operation does not do anything. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">66 
+				  </entry> 
+				  <entry colname="col2"><codeph>SEGMENT_SKIPPED_ON_FAILURE</codeph>
+					 
+				  </entry> 
+				  <entry colname="col3"> Segment cannot be played and is skipped on
+					 failure. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">67 
+				  </entry> 
+				  <entry colname="col2"><codeph>INCOMPATIBLE_RENDER_MODE</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Incompatible render mode. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">68 
+				  </entry> 
+				  <entry colname="col2"><codeph> PROTOCOL_NOT_SUPPORTED 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> The Web protocol used in the URL is not
+					 supported. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">69 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>PARSE_ERROR_INCOMPATIBLE_VERSION</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Error while parsing media file. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">70 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>MANIFEST_FILE_UNEXPECTEDLY_CHANGED</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Manifest file was changed in an unexpected
+					 manner. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">71 
+				  </entry> 
+				  <entry colname="col2"><codeph>CANNOT_SPLIT_TIMELINE</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Cannot perform a split operation on a
+					 timeline. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">72 
+				  </entry> 
+				  <entry colname="col2"><codeph>CANNOT_ERASE_TIMELINE</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Cannot perform an erase operation on a
+					 timeline. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">73 
+				  </entry> 
+				  <entry colname="col2"><codeph>DID_NOT_GET_NEXT_FRAGMENT</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Did not get the next fragment. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">74 
+				  </entry> 
+				  <entry colname="col2"><codeph>NO_TIMELINE</codeph> 
+				  </entry> 
+				  <entry colname="col3"> No timeline present in an internal data
+					 structure. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">75 
+				  </entry> 
+				  <entry colname="col2"><codeph>LISTENER_NOT_FOUND</codeph> 
+				  </entry> 
+				  <entry colname="col3"> No listener found in an internal data
+					 structure. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">76 
+				  </entry> 
+				  <entry colname="col2"><codeph>AUDIO_START_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Unable to start audio. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">77 
+				  </entry> 
+				  <entry colname="col2"><codeph>NO_AUDIO_SINK</codeph> 
+				  </entry> 
+				  <entry colname="col3"> No audio sink present in an internal data
+					 structure. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">78 
+				  </entry> 
+				  <entry colname="col2"><codeph>FILE_OPEN_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Unable to open file. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">79 
+				  </entry> 
+				  <entry colname="col2"><codeph>FILE_WRITE_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Unable to write to a file. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">80 
+				  </entry> 
+				  <entry colname="col2"><codeph>FILE_READ_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Unable to read from a file. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">81 
+				  </entry> 
+				  <entry colname="col2"><codeph>ID3PARSE_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3"> There was an error parsing ID3 data. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">82 
+				  </entry> 
+				  <entry colname="col2"><codeph> SECURITY_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Loading the content failed because of
+					 security restrictions. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">83 
+				  </entry> 
+				  <entry colname="col2"><codeph>TIMELINE_TOO_SHORT</codeph> 
+				  </entry> 
+				  <entry colname="col3"> The timeline duration is too short. If
+					 this is a live stream, frequent buffering may happen. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">84 
+				  </entry> 
+				  <entry colname="col2"><codeph>AUDIO_ONLY_STREAM_START</codeph> 
+				  </entry> 
+				  <entry colname="col3"> The stream has been switched to an
+					 audio-only stream. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">85 
+				  </entry> 
+				  <entry colname="col2"><codeph>AUDIO_ONLY_STREAM_END</codeph> 
+				  </entry> 
+				  <entry colname="col3"> The stream has been switched from
+					 audio-only to a stream with video. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">87 
+				  </entry> 
+				  <entry colname="col2"><codeph> KEY_NOT_FOUND 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Key cannot be found. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">88 
+				  </entry> 
+				  <entry colname="col2"><codeph>INVALID_KEY</codeph> 
+				  </entry> 
+				  <entry colname="col3">The key is invalid. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">89 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>KEY_SERVER_NOT_FOUND</codeph> 
+				  </entry> 
+				  <entry colname="col3">Key server does not return a key. 
+				  </entry> 
+				</row> 
+				<row > 
+				  <entry colname="col1">90 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>MAIN_MANIFEST_UPDATE_TO_BE_HANDLED</codeph> 
+				  </entry> 
+				  <entry colname="col3">Cannot handle main manifest update. 
+				  </entry> 
+				</row> 
+				<row > 
+				  <entry colname="col1">91 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph> UNREPORTED_TIME_DISCONTINUITY_FOUND</codeph> 
+				  </entry> 
+				  <entry colname="col3">Unreported time (PTS) discontinuity found. 
+				  </entry> 
+				</row> 
+				<row > 
+				  <entry colname="col1">92 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>UNMATCHED_AV_DISCONTINUITY_FOUND</codeph> 
+				  </entry> 
+				  <entry colname="col3">Unmatched Audio and Video discontinuity
+					 found. 
+				  </entry> 
+				</row> 
+				<row > 
+				  <entry colname="col1">93 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>TRICKPLAY_ENDED_DUE_TO_ERROR</codeph> 
+				  </entry> 
+				  <entry colname="col3">There was an error while playing media in 
+					 <i>trick play</i> mode. Trick play mode is ended and the stream
+					 is paused. Call 
+					 <codeph>Play()</codeph> to play the media in normal mode. 
+				  </entry> 
+				</row> 
+				<row > 
+				  <entry colname="col1">95 
+				  </entry> 
+				  <entry colname="col2"><codeph>LIVE_WINDOW_MOVED_AHEAD</codeph> </entry> 
+				  <entry colname="col3"
+								>The player is out of the live window and must seek forward to catch up. </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

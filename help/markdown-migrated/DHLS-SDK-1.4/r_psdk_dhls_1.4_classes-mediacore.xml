@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="r_psdk_android_mediacore-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Mediacore classes</title> 
+  <shortdesc>These classes describe your media player and its resources. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_28F6F355518E4E61BC45A22D7BBCDEAB">Package:  <xref
+				href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/package-detail.html"
+				format="html" scope="external">com.adobe.mediacore</xref></refsyn> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_2801E01282A948E6917910CA2FD1E05C"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="38*"/> 
+		  <colspec colnum="2" colname="2" colwidth="62*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1"> 
+				  <p>Name 
+				  </p> 
+				</entry> 
+				<entry colname="2"> 
+				  <p>Description 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/ABRControlParameters.html"
+									format="html" scope="external">ABRControlParameters</xref>
+							</codeph></entry> 
+				<entry colname="2">Class that encapsulates all adaptive bit rate
+				  control parameters. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/BufferControlParameters.html"
+									format="html" scope="external"
+								>BufferControlParameters</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that encapsulates all buffer control
+				  parameters. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/ClosedCaptionStyles.html"
+									format="html" scope="external"
+								>ClosedCaptionsStyles</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that defines all styling properties for
+				  text in closed captions. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/ClosedCaptionsVisibility.html"
+									format="html" scope="external"
+								>ClosedCaptionsVisibility</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that controls whether closed captions are
+				  visible. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/ContentFactory.html"
+									format="html" scope="external">ContentFactory</xref>
+							</codeph></entry> 
+				<entry colname="2">Factory base class for creating and managing various components used in
+							advertising workflow. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph>
+								<xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/DefaultAdPolicySelector.html"
+									format="html" scope="external"
+								>DefaultAdPolicySelector</xref></codeph></entry> 
+				<entry colname="2">Default implementation for ad playback behaviors. Interface allowing
+							applications to customize ad behaviors.</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/DefaultContentFactory.html"
+									format="html" scope="external"
+								>DefaultContentFactory</xref></codeph>
+						</entry> 
+				<entry colname="2">Default implementation of <codeph>MediaPlayerClient</codeph> factory
+							providing support both for Metadata and <ph
+								conref="phrase_library_dhls_1.4.xml#c_psdk_phrase-library/auditude-name-long"
+								><?xm-replace_text Phrase?></ph> ad resolving process. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/DefaultMediaPlayer.html"
+									format="html" scope="external"
+								>DefaultMediaPlayer</xref></codeph></entry> 
+				<entry colname="2">Default class implementation of <codeph>MediaPlayer</codeph> interface. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/DefaultMediaPlayerConfig.html"
+									format="html" scope="external">DefaultMediaPlayerConfig</xref>
+							</codeph></entry> 
+				<entry colname="2">Configuration class for default implementation
+				  of the media player. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/DefaultMediaPlayerItemConfig.html"
+									format="html" scope="external"
+									>DefaultMediaPlayerItemConfig</xref></codeph>
+						</entry> 
+				<entry colname="2">Default media player item configuration class.  </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/DefaultMediaPlayerItemLoader.html"
+									format="html" scope="external"
+									>DefaultMediaPlayerItemLoader</xref></codeph>
+						</entry> 
+				<entry colname="2">Default media player item loader.  </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayer.html"
+									format="html" scope="external">MediaPlayer</xref></codeph>
+						</entry> 
+				<entry colname="2">Public interface for the <codeph>DefaultMediaPlayer</codeph> class. Includes
+							enumerations for Event, PlayerState, and Visibility.  </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerConfig.html"
+									format="html" scope="external">MediaPlayerConfig</xref>
+							</codeph></entry> 
+				<entry colname="2">Media player configuration class. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerContext.html"
+									format="html" scope="external"
+								>MediaPlayerContext</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that provides additional context to media
+				  player. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerItem.html"
+									format="html" scope="external">MediaPlayerItem</xref></codeph>
+						</entry> 
+				<entry colname="2">Interface that represents audio-video media. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/DefaultMediaPlayerItemConfig.html"
+									format="html" scope="external"
+									>DefaultMediaPlayerItemConfig</xref></codeph>
+						</entry> 
+				<entry colname="2">Default media player item configuration class.</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerItemLoader.html"
+									format="html" scope="external"
+								>MediaPlayerItemLoader</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that loads a media player resource and creates the corresponding
+								<codeph>MediaPlayerItem</codeph> object. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerStatus.html"
+									format="html" scope="external">MediaPlayerStatus</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that contains the supported statuses of
+				  the media player. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerView.html"
+									format="html" scope="external">MediaPlayerView</xref></codeph>
+						</entry> 
+				<entry colname="2">Class for the view that will be used by the <codeph>MediaPlayer</codeph> for
+							video rendering. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaResource.html"
+									format="html" scope="external"
+							>MediaResource</xref></codeph></entry> 
+				<entry colname="2">Class that wraps all information about a media
+				  resource. Includes enumeration for Type of media resource. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaResourceType.html"
+									format="html" scope="external"
+							>MediaResourceType</xref></codeph></entry> 
+				<entry colname="2">Class that contains the supported media resource
+				  types. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/PSDKConfig.html"
+									format="html" scope="external">PSDKConfig</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that encapsulates the custom tags used by the media player when
+							performing the ad placement, in addition to the default cue tags. It
+							also includes the tag names that the application wants to be notified
+							about. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/TextFormat.html"
+									format="html" scope="external">TextFormat</xref></codeph>
+						</entry> 
+				<entry colname="2">Interface that encapsulates different attributes
+				  describing a text style (for example, the closed captions style). 
+				</entry> 
+			 </row> 
+			 <row rowsep="0" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/Version.html"
+									format="html" scope="external">Version</xref></codeph></entry> 
+				<entry colname="2">Class that provides the 
+				  <ph
+				  conkeyref="phrases/primetime-sdk-name"></ph>
+				  version and description. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </refbody> 
+</reference> 

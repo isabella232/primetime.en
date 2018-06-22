@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="metadata-for-ad-insertion"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Ad insertion metadata</title> 
+  <shortdesc>To allow the ad resolver to work, ad providers, such as 
+	 <ph conkeyref="phrases/auditude-name-long"/>, require configuration values
+	 to enable your connection to the provider. 
+  </shortdesc> 
+  <conbody> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> includes the <ph conkeyref="phrases/auditude-name"/> library. For your content to include
+			advertising from the <ph conkeyref="phrases/auditude-name"/> server, your application
+			must provide the following required <codeph>AuditudeSettings</codeph> information: <ul
+				id="ul_91F987370197444ABBB8E3E9A5339568">
+				<li id="li_9542EBEAFCCF4426AF312C97AD215D1B"><codeph>mediaID</codeph>, which is a
+					unique identifier for the video to be played. <p>The publisher assigns the
+						mediaID when submitting video content and ad information to the <ph
+							conkeyref="phrases/auditude-name-long"/> server. This ID is used by <ph
+							conkeyref="phrases/auditude-name"/> to retrieve related advertising
+						information for the video from the server. </p>
+				</li>
+				<li id="li_72FEACD9EDDD4AD088ED1C7985431C78"
+						>(Optional)<codeph>defaultMediaId</codeph>, which specifies the ads that are
+					served when the following conditions are met: <ul
+						id="ul_61B3A523CF5044A59FE2B7E5E749B4F9">
+						<li id="li_D761364414EC4529A7CEB25D5638F7F9">Your request to the ad server
+							is invalid, or the content is incorrectly configured. </li>
+						<li id="li_703A9AB10F9E4D5885FD2678F3F8AFE7">
+							<ph conkeyref="phrases/auditude-name"/> is experiencing delays in
+							propagating the data. </li>
+						<li id="li_4BFFD82E71EB4F388ADC94428A3FAA7B">One of the <ph
+								conkeyref="phrases/auditude-name"/> back-end processes is
+							malfunctioning or is unavailable. </li>
+					</ul>
+					<note type="tip">Adobe recommends using <codeph>defaultMediaId</codeph>. </note>
+				</li>
+				<li id="li_0D2F1E6D2E64499DB359C05E50504E04">Your <codeph>zoneID</codeph>, which is
+					assigned by Adobe, identifies your company or website. </li>
+				<li id="li_1C79406ED62D43B2902F5D5F82FDB76C">The domain of your assigned ad server. </li>
+				<li id="li_CAC1547B832A4CA2BB3685C7EF08A98D">Other targeting parameters. <p>You can
+						include these parameters depending on your needs and the needs of the ad
+						provider. </p>
+				</li>
+			</ul>
+		</p> 
+  </conbody> 
+</concept> 

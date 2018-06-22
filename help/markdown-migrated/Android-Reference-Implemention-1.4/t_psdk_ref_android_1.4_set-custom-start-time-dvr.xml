@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_set-custom-start-time-ref-player"> 
+  <title>Set a custom start time in the reference implementation</title> 
+  <taskbody> 
+	 <context id="context_81E10AF828D1401B8A2F54AB16E961F6"> 
+		<p>You can use the DVR controls panel in the Settings interface to enable
+		  and edit the start position in the reference implementation. When you edit
+		  these parameters, the configuration in SharedPreferences is updated and the
+		  player is updated. 
+		</p> 
+	 </context> 
+	 <steps id="steps_4B1F32EA5CCA46318F7EC34432E4ACCE"> 
+		<step id="step_E1956991FD044687B33D0A0AA2B6AFAB"> 
+		  <cmd>Open the Primetime Settings dialog. 
+		  </cmd> 
+		</step> 
+		<step id="step_D21B023F3F114C50A375269699D2C690"> 
+		  <cmd>Select 
+			 <uicontrol>DVR controls</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <fig id="fig_5C7A4E8F0390404F97E667364DB8B0A6"><image
+				href="images/dvr-configuration.jpg" id="image_0208274748374D838B1C2745FAED48E7"
+				align="left"></image> 
+			 </fig> 
+		  </info> 
+		</step> 
+		<step id="step_99BDF01DB7254CDCB093FAE0F4D89742"> 
+		  <cmd><b>Custom start time control</b> must be 
+			 <uicontrol>ON</uicontrol> if you want to choose a custom position in
+			 the DVR window when entering the stream. 
+		  </cmd> 
+		</step> 
+		<step id="step_90A202222D064F69B4E97A4694FB64C1"> 
+		  <cmd>Set the custom start time in 
+			 <b>Choose custom start time</b>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="android_set-up-metadata-ad-insertion"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Set up ad insertion metadata</title> 
+  <shortdesc>Use the helper class <codeph>AuditudeSettings</codeph>, which extends the
+			<codeph>MetadataNode</codeph> class, to set up <ph
+			conkeyref="phrases/auditude-name-long"/> metadata. </shortdesc> 
+  <taskbody> 
+	 <context id="context_91093655B3904CAD8CAECC1C6BBC5780"> 
+		<note type="tip"><ph conkeyref="phrases/auditude-name-long"/> was
+		  previously known as 
+		  <ph conkeyref="phrases/auditude-name-previously-known-as"/>. 
+		</note> 
+		<p>Advertising metadata is in the <codeph>MediaResource.Metadata</codeph> property. When starting
+				the playback of a new video, your application is responsible for setting the correct
+				advertising metadata. </p> 
+	 </context> 
+	 <steps id="steps_B75CB5432A724E24AA2B13BBC9C026C8"> 
+		<step id="step_3EF0782767A740DC804FD2561DE67E77">
+				<cmd>Build the <codeph>AuditudeSettings</codeph> instance. </cmd>
+				<info>
+					<codeblock outputclass="syntax java">AuditudeSettings auditudeSettings = new AuditudeSettings();</codeblock>
+				</info>
+			</step> 
+		<step id="step_656FBF1F516447C49C19AF9DD667497F">
+				<cmd>Set the <ph conkeyref="phrases/auditude-name-long"/>
+					<codeph>mediaID</codeph>, <codeph>zoneID</codeph>, <codeph>domain</codeph>, and
+					the optional targeting parameters. </cmd>
+				<info>
+					<codeblock outputclass="syntax java">auditudeSettings.setZoneId("yourZoneId");
+auditudeSettings.setMediaId("yourVideoId");
+auditudeSettings.setDefaultMediaId("defVideoId");
+auditudeSettings.setDomain("yourAuditudeDomain");
+
+// Optionally set user agent 
+auditudeSettings.setUserAgent("yourUserAgent");
+
+Metadata targetingParameters = new Metadata();
+targetingParameters.setValue("desired_param", "desired_value");
+auditudeSettings.setTargetingParameters(targetingParameters);</codeblock>
+					<note type="tip">The media ID is consumed by <ph
+							conkeyref="phrases/primetime-sdk-name"/> as a string, that is converted
+						to an md5 value, and is used for the <codeph>u</codeph> value in the <ph
+							conkeyref="phrases/auditude-name"/> URL request. For example: <p>
+							<codeblock>http://ad.auditude.com/adserver?
+  <i><b>u</b>=c76d04ee31c91c4ce5c8cee41006c97d</i> 
+  &amp;z=114100
+  &amp;l=20150206141527
+  &amp;of=1.4
+  &amp;tm=15
+  &amp;g=1000002</codeblock>
+						</p>
+					</note>
+				</info>
+			</step> 
+		<step id="step_A06649482F514606BC7F43E3E7FFFF1D">
+				<cmd>Create a <codeph>MediaResource</codeph> instance by using the media stream URL
+					and the previously created advertising metadata. </cmd>
+				<info>
+					<codeblock outputclass="syntax java">MediaResource mediaResource = new MediaResource(
+"http://example.com/media/test_media.m3u8", MediaResource.Type.HLS, Metadata);</codeblock>
+				</info>
+			</step> 
+		<step id="step_08B287E999C542F0B05EDCB40FE3C629">
+				<cmd>Load the <codeph>MediaResource</codeph> object through the
+						<codeph>MediaPlayer.replaceCurrentResource</codeph> method. </cmd>
+				<info>
+					<p>The <codeph>MediaPlayer</codeph> starts loading and processing the media
+						stream manifest. </p>
+				</info>
+			</step> 
+		<step id="step_DEEAFF8D6E7545639DEF6C384ED232F4">
+				<cmd>When the <codeph>MediaPlayer</codeph> transitions to the
+						<codeph>INITIALIZED</codeph> status, get the media stream characteristics in
+					the form of a <codeph>MediaPlayerItem</codeph> instance through the
+						<codeph>MediaPlayer.CurrentItem</codeph> method. </cmd>
+			</step> 
+		<step id="step_3B3354EC0ED2471392E6A2399726E763">
+				<cmd>(Optional) Query the <codeph>MediaPlayerItem</codeph> instance to see whether
+					the stream is live, regardless of whether it has alternate audio tracks, or
+					whether the stream is protected. </cmd>
+				<info>
+					<p>This information can help you prepare the UI for the playback. For example,
+						if you know there are two audio tracks, you can include a UI control that
+						toggles between these tracks. </p>
+				</info>
+			</step> 
+		<step 
+		id="step_84EA40C8FC774541B3C425A3C861A278"> 
+		  <cmd>Call 
+			 <codeph>MediaPlayer.prepareToPlay</codeph> to start the advertising
+			 workflow. 
+		  </cmd> 
+		  <info> After the ads have been resolved and placed on the timeline, the
+						<codeph>MediaPlayer</codeph> transitions to the <codeph>PREPARED</codeph>
+					state. </info> 
+		</step> 
+		<step id="step_B0DD38AD13394EB398CDD741FD659E79">
+				<cmd>Call <codeph>MediaPlayer.play</codeph> to start the playback. </cmd>
+			</step> 
+	 </steps> 
+	 <result id="result_F9990FB055774BC4A7767B758EEB399A"> 
+		<ph conkeyref="phrases/primetime-sdk-name"/> now includes ads when your
+		media plays. 
+	 </result> 
+  </taskbody> 
+</task> 

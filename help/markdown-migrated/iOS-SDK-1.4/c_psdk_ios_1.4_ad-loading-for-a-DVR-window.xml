@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ios_ad-loading-for-a-dvr-window"> 
+  <title>Ad loading for a DVR window</title> 
+  <shortdesc>You can decide whether to resolve only the ads that occur after
+	 the user’s current live point or to also resolve ads that occur before the
+	 current live point. 
+  </shortdesc> 
+  <conbody> 
+	 <p>When a user starts to view content at the beginning of a DVR stream, 
+		<ph
+		 conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+		resolves all ads for the stream at that time. However, when the user starts to
+		view content at a point after the beginning of the stream, you can decide
+		whether to resolve only the ads that occur after the user’s current live point
+		or to also resolve ads that occurred before the current live point. 
+	 </p> 
+	 <note type="tip">Resolving ads after the current live point is faster, but
+		if the user seeks backwards, this option prevents the player from playing ads
+		that appeared earlier. 
+	 </note> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_include-vpaid"> 
+  <title>Implement VPAID 2.0 integration</title> 
+  <shortdesc>To add VPAID 2.0 support, add a custom ad view and appropriate listeners.  </shortdesc> 
+  <taskbody> 
+	 <context> 
+		<p>To add VPAID 2.0 support: 
+		</p> 
+	 </context> 
+<steps> 
+<step><cmd>Add the custom ad view to the player interface.</cmd> 
+<info><codeblock outputclass="syntax java">_playerFrame.addView(mediaPlayer.createCustomAdView());</codeblock> 
+</info></step> 
+ 
+<step   importance="optional"> 
+		  <cmd>Add a listener for custom ad events.</cmd> 
+<info><codeblock outputclass="syntax java">mediaplayer.addEventListener(MediaPlayer.Event.CUSTOM_AD, 
+  _customAdEventListener);</codeblock> 
+</info></step> 
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_notification-system-overview"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Notification content</title> 
+  <shortdesc><codeph>MediaPlayerNotification</codeph> provides information that
+	 is related to the player’s status. 
+  </shortdesc> 
+  <conbody> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> provides a chronological list of 
+		<codeph>MediaPlayerNotification</codeph> notifications, and each
+		notification contains the following information: 
+	 <ul id="ul_47BCBEA82C224148B1177E385F239965"> 
+		<li id="li_B7DD9C4B2BD04DBC882400AF517D1E65">A time stamp 
+		</li> 
+		<li id="li_148401F901224C6EA5A7F1438B6940FE">Diagnostic metadata that
+		  consists of the following elements: 
+		  <ul id="ul_6BBEECB0D14049C4A31860292CDF48D4"> 
+			 <li id="li_C9F672A2E9AA45FC8E2D7ADD8884CD51"> 
+				<codeph>type</codeph>: INFO, WARN, or ERROR. 
+			 </li> 
+			 <li id="li_6D5D3768A3F34735A8EDD38590A85DD2"> 
+				<codeph>code</codeph>: A numerical representation of the
+				notification. 
+			 </li> 
+			 <li id="li_E092B80C46744576B8A876A508EFDBE9">
+							<codeph>name</codeph>: A human-readable description of the notification,
+							such as SEEK_ERROR </li> 
+			 <li id="li_F4C1D093985C455CB2BA96E30D28CC65"> 
+				<codeph>metadata</codeph>: Key/value pairs that contain
+				relevant information about the notification. For example, a key named 
+				<codeph>URL</codeph> provides a value that is a URL related to the
+				notification. 
+			 </li> 
+			 <li id="li_C4F02747927B475887AC14E9BB65D76F"> 
+				<codeph>innerNotification</codeph>: A reference to another
+				
+				<codeph>MediaPlayerNotification</codeph> object that directly
+				impacts this notification. 
+			 </li> 
+		  </ul>
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>You can store this information locally for later analysis or send it to
+		a remote server for logging and graphical representation. 
+	 </p> 
+  </conbody> 
+</concept> 

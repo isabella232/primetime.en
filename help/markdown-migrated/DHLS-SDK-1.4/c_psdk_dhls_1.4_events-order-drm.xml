@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_events-order-drm"> 
+  <title>DRM events</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> dispatches digital
+	 rights management (DRM) events in response to DRM-related operations such as
+	 when new DRM metadata becomes available. Your player can implement actions in
+	 response to these events. 
+  </shortdesc> 
+  <conbody> 
+	 <p>To be notified about all DRM-related events, listen for the following:
+			<codeblock outputclass="syntax actionscript">DRMMetadataInfoEvent.DRM_METADATA_INFO_AVAILABLE</codeblock>
+		</p> 
+	 <p>The following example shows a typical progression: 
+	 </p> 
+	 <codeblock outputclass="syntax actionscript">mediaPlayer.addEventListener(DRMMetadataInfoEvent.DRM_METADATA_INFO_AVAILABLE, 
+                             onDRMMetadataInfoAvailable);  
+private function onDRMMetadataInfoAvailable(event:DRMMetadataInfoEvent){
+    var drmMetadataInfo:DRMMetadataInfo = event.drmMetadataInfo;
+    ...
+}
+</codeblock> 
+  </conbody> 
+</concept> 

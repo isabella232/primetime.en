@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_configure-web-server"> 
+  <title>Configure the web server to debug and run builds</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <taskbody> 
+	 <prereq id="prereq_B8AECF15BC9E45ADB14F9D56BFD4C2A0"> 
+		<p>Adobe Flash Player requires an authorization token to enable advanced
+		  features required by the Primetime reference implementation. The Primetime
+		  reference implementation loads this token at runtime. Request a Flash Player
+		  authorization token from your Adobe Enablement Representative for your web
+		  server domain. For example, if your domain is www.yourhost.com, the token is
+		  hashed to www.yourhost.com. 
+		</p> 
+	 </prereq> 
+	 <steps id="steps_BBF1194507F54D1BB335EE8BCFFDD2EA"> 
+		<step id="step_250DFD751C00445895E954C96845D566">
+		  <cmd>Download and install a web server of your choice, for example 
+			 <xref href="http://httpd.apache.org/download.cgi"
+			  format="html" scope="external">Apache's HTTP Server</xref> or 
+			 <xref href="http://wiki.nginx.org/Install" scope="external"
+			 format="html">Nginx</xref>.
+		  </cmd>
+		</step>
+		<step id="step_9E7D7F345FD94905BE0FF212CB6E1ABA"> 
+		  <cmd>Under the root directory for your web server, create two
+			 directories: 
+		  </cmd> 
+		  <info> 
+			 <ul id="ul_C5B82365AAD243B1A585214DA6D05CA1"> 
+				<li
+				id="li_2A042F9A5A434E68B0FAD07B1680CAE9"><filepath>pmp-desktop</filepath>: this
+				  is where you configure the project output files. 
+				</li> 
+				<li
+				id="li_111918569D8848C7A75354DB99AE22BD"><filepath>pmp-desktop/token</filepath>:
+				  this is where you add the Flash Player authorization token. 
+				</li> 
+			 </ul> 
+		  </info> 
+		</step> 
+		<step id="step_16208D3E45534438BD31340D540648B5"> 
+		  <cmd>Place the Flash Player authorization token you received from your
+			 Adobe Enablement Representative in the 
+			 <filepath>token</filepath> directory. 
+		  </cmd> 
+		</step> 
+		<step id="step_0C034112495A4439B60924502DA1B1DC"> 
+		  <cmd>Rename the token to 
+			 <filepath>token.dat</filepath>. 
+		  </cmd> 
+		</step> 
+		<step id="step_4F4B3E570D014734B9E22F2DAE6F7B40"> 
+		  <cmd>Verify the token is accessible from 
+			 <filepath>http://www.yourhost.com/pmp-desktop/token/token.dat</filepath>,
+			 where 
+			 <filepath>www.yourhost.com</filepath> is your domain. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

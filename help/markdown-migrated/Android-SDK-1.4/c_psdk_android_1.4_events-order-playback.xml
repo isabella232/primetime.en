@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_events-order-playback"> 
+  <title>Order of playback events</title> 
+  <shortdesc> 
+	 <ph conkeyref="phrases/primetime-sdk-name"></ph> dispatches
+	 events/notifications in generally expected sequences. Your player can implement
+	 actions based on events in the expected sequence. 
+  </shortdesc> 
+  <conbody> 
+	 <section  
+	  id="section_E70BFC1D44EE4BAD8FA2A875552EFA0D"> 
+		<p> The following examples show the order of some events that include
+		  playback events. 
+		</p> 
+		<ul id="ul_D06EB34FB1C24751BA72D7ABBBEFA3EF"> 
+		  <li id="li_5C8FE15BFC7544CF92558B0DF625CF1A">When successfully loading
+			 a media resource through 
+			 <codeph>MediaPlayer.replaceCurrentItem</codeph>, the order of events
+			 is: 
+			 <ul id="ul_AB78FD9782244139BB891073782EB22D"> 
+				<li id="li_491D081ADFEF4094B397995D81F38F93"
+								><codeph>MediaPlayer.PlaybackEventListener.onStateChanged</codeph>
+							with state <codeph>MediaPlayer.PlayerState.INITIALIZING</codeph>
+						</li> 
+				<li id="li_FEEE4D46812E4F1EBE22BF5C94383D3F"
+								><codeph>MediaPlayer.PlaybackEventListener.onStateChanged</codeph>
+							with state <codeph>MediaPlayer.PlayerState.INITIALIZED</codeph>
+						</li> 
+			 </ul> 
+			 <note type="tip">Load your media resource on the main thread. If you
+				load a media resource on a background thread, this operation or subsequent 
+				<ph conkeyref="phrases/primetime-sdk-name"></ph> operations, or
+				both, might throw an error (for example, 
+				<codeph>IllegalStateException</codeph>) and exit. 
+			 </note> 
+		  </li> 
+		  <li id="li_70BD6DFC9CCA43BCBD67EB7F8857919A">When preparing for
+			 playback through 
+			 <codeph>MediaPlayer.prepareToPlay</codeph>, the order of events is: 
+			 <ul id="ul_86A5A88E1AF547D3A429E7D580FFDFFE"> 
+				<li id="li_634B1F4D85094EA8BDE5D74F06D9B75F"
+								><codeph>MediaPlayer.PlaybackEventListener.onStateChanged</codeph>
+							with state <codeph>MediaPlayer.PlayerState.PREPARING</codeph>
+						</li> 
+				<li id="li_8D5EE8F500B045CA82A43BF0E1A48A3B"
+								><codeph>MediaPlayer.PlaybackEventListener.onTimelineUpdated</codeph>
+							if ads were inserted </li> 
+				<li id="li_7218401547FE438DB8E726073F480F57"
+								><codeph>MediaPlayer.PlaybackEventListener.onStateChanged</codeph>
+							with state <codeph>MediaPlayer.PlayerState.PREPARED</codeph>
+						</li> 
+			 </ul> 
+		  </li> 
+		  <li id="li_2A87542AADDA4BAAB4E65E5F6149E499">For live/linear streams,
+			 during playback as the playback window advances and additional opportunities
+			 are resolved, the order of events is: 
+			 <ul id="ul_6041A396F6864498975E7D167FCC0648"> 
+				<li id="li_FD7CB9FAA42F46E094304F9DE97BAE0E"
+								><codeph>MediaPlayer.PlaybackEventListener.onUpdated</codeph>
+						</li> 
+				<li id="li_751F639ECC174952B562BF1A2908B301"
+								><codeph>MediaPlayer.PlaybackEventListener.onTimelineUpdated</codeph>
+							if ads were inserted </li> 
+				<li id="li_4D7144808CB440068AC8288A4F6FEB33"><codeph>MediaPlayerItemEvent.ITEM_UPDATED</codeph>
+						</li> 
+				<li id="li_68376702323A4C56BB432C4C1B85524B"><codeph>TimelineEvent.TIMELINE_UPDATED</codeph> if
+							ads were inserted </li> 
+			 </ul> 
+		  </li> 
+		</ul> 
+		<p>The following example shows a typical progression of events: 
+		</p> 
+		<codeblock outputclass="syntax java">mediaPlayer.addEventListener(MediaPlayer.Event.PLAYBACK, 
+  new MediaPlayer.PlaybackEventListener() {
+    @Override
+    public void onPrepared() {...}
+    @Override
+    public void onUpdated() {...}
+    @Override
+    public void onPlayStart() {...}
+    @Override
+    public void onPlayComplete() {...}
+    @Override
+    public void onSizeAvailable(long height, long width) {...}
+    @Override
+    public void onStateChanged(MediaPlayer.PlayerState state, 
+      MediaPlayerNotification notification) {...}
+});</codeblock> 
+	 </section> 
+	 <section id="section_76C13548AF934868B70757CA5489E516"> 
+		<p>The following example shows a typical progression of events: 
+		</p> 
+		<codeblock outputclass="syntax java">mediaPlayer.addEventListener(MediaPlayer.Event.PLAYBACK, 
+  new MediaPlayer.PlaybackEventListener() {
+    @Override
+    public void onPrepared() {...}
+    @Override
+    public void onUpdated() {...}
+    @Override
+    public void onPlayStart() {...}
+    @Override
+    public void onPlayComplete() {...}
+    @Override
+    public void onSizeAvailable(long height, long width) {...}
+    @Override
+    public void onStateChanged(MediaPlayer.PlayerState state, 
+      MediaPlayerNotification notification) {...}
+});</codeblock> 
+	 </section> 
+  </conbody> 
+</concept> 

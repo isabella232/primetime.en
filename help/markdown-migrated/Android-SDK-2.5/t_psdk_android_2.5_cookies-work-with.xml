@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_cookies_work_with"> 
+  <title>Work with cookies</title> 
+  <shortdesc>You can use 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> to send arbitrary data in
+	 cookie headers for session management, gate access, and so on. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_D676CD1F5B1843F38A68F3B7C4D1CF3F"> 
+		<p>Here is a sample request to the key server with some authentication: 
+		<ol id="ol_9242B8C5370D41179DA74D6C6E7E9B46"> 
+		  <li id="li_A5232E2B8BC14CD48141A606ABE6BB23">Your customer logs in to
+			 your website in a browser and their login shows that this customer is allowed
+			 to view content. 
+		  </li> 
+		  <li id="li_86A0A265308D4EDD811510C59B2A6C40">Based on what is expected
+			 by the license server, your application generates an authentication token. 
+			 <p>This value is passed to 
+				<ph conkeyref="phrases/primetime-sdk-name"/>. 
+			 </p> 
+		  </li> 
+		  <li id="li_96ADD88B0A90471B8A5F1F9CAF0FC5FE"><ph
+			 conkeyref="phrases/primetime-sdk-name"/> sets this value in the cookie header. 
+		  </li> 
+		  <li id="li_20C9AE9D854F457D93B0543F55A352B0">When 
+			 <ph conkeyref="phrases/primetime-sdk-name"/> makes a request to the
+			 key server to get a key to decrypt the content, the request contains the
+			 authentication value in the cookie header. 
+			 <p>The key server knows that the request is valid. 
+			 </p> 
+		  </li> 
+		</ol> 
+		</p> 
+		<p>To work with cookies: 
+		</p> 
+	 </context> 
+	 <steps id="steps_14A5814BAC904D5688557BC169AD019F"> 
+		<step id="step_5D3DE82686124D4A90618171D9C808AA"> 
+		  <cmd>Create a 
+			 <codeph>cookieManager</codeph> and add your cookies for the URIs to
+			 your cookieStore. 
+		  </cmd> 
+		  <info> 
+			 <p>For example: 
+				<codeblock outputclass="syntax java">CookieManager cookieManager=new CookieManager();
+CookieHandler.setDefault(cookieManager); 
+HttpCookie cookie=new HttpCookie("lang","fr");
+cookie.setDomain("twitter.com"); 
+cookie.setPath("/");
+cookie.setVersion(0);
+cookieManager.getCookieStore().add(newURI("http://twitter.com/"),cookie);</codeblock> 
+			 </p> 
+			 <note type="tip">When 302 redirect is enabled, the ad request may be
+				redirected to a domain that is different from the domain to which the cookie
+				belongs. 
+			 </note> 
+			 <p><ph conkeyref="phrases/primetime-sdk-name"/> queries this 
+				<codeph>cookieManager</codeph> at runtime, checks whether there are
+				any cookies associated with the URL, and automatically uses those cookies. 
+			 </p> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+  <task id="task_D79E80EE6C414554937F6FD64DDB7FDF"> 
+	 <title>Get string value for cookie when cookies are updated </title> 
+	 <shortdesc><?xm-replace_text Short Description?>
+	 </shortdesc> 
+	 <taskbody> 
+		<context id="context_60C8483FDBF44F58B58AC779D73B209E"> 
+		  <p>The event MediaPlayerEvent.COOKIES_UPDATED is called when C++
+			 cookies are updated. This cookiesUpdatedEvent has a method getCookieString()
+			 that returns a string value for the cookie. 
+		  </p> 
+		  <p>A sample code snippet is below: 
+			 <codeblock>private final CookiesUpdatedEventListener cookiesUpdatedEventListener = new CookiesUpdatedEventListener() 
+{
+@Override
+public void onCookiesUpdated(CookiesUpdatedEvent cookiesUpdatedEvent)
+	{
+ String cookieStr = cookiesUpdatedEvent.getCookieString(); 
+	logger.i(LOG_TAG + "::MediaPlayer.CookiesUpdatedEventListener#onCookiesUpdated()", "cookieStr " + cookieStr); 
+	} 
+};</codeblock> 
+		  </p> 
+		</context> 
+	 </taskbody> 
+  </task> 
+</task> 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<?Fm Condition DITA-Prolog AsIs NO_OVERRIDE hide AsIs?>
+<?Fm Condition DITA-Comment AsIs NO_OVERRIDE hide AsIs?>
+<?Fm Condition FM8_SYSTEM_HIDEELEMENT Dark%20Grey NO_OVERRIDE hide AsIs?>
+<?Fm Condition FM8_TRACK_CHANGES_ADDED Forest%20Green SINGLE_UNDERLINE show AsIs?>
+<?Fm Condition FM8_TRACK_CHANGES_DELETED Red STRIKETHROUGH show AsIs?>
+<?Fm BoolCondExpr "" State 0?>
+<?Fm TagBoolCondExpr Default%20Expression?>
+<?Fm TrackChange Off PreviewState PREVIEW_OFF_TRACK_CHANGE ?>
+<concept id="c_psdk_dhls_titlepage_1.4"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>TVSDK 1.4 for Desktop HLS Programmer's Guide</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <conbody> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+  </conbody> 
+</concept> 

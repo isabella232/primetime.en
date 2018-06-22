@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<reference id="r_psdk_dhls_events-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Events classes</title> 
+  <shortdesc>These classes describe events that the 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+	 dispatches to your media player in response to various activities. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_2BD3818AA0DB488AA8B242F0F4783AA4">Package: 
+		<xref
+		 href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/package-detail.html"
+		 format="html" scope="external"
+		 >com.adobe.mediacore.events</xref> 
+	 </refsyn> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_B542FF31CAAA405F9BBD5AFD89810BCD"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="38*"/> 
+		  <colspec colnum="2" colname="2" colwidth="62*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1">Name 
+				</entry> 
+				<entry colname="2">Meaning 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdBreakPlaybackEvent.html"
+									format="html" scope="external"
+								>AdBreakPlaybackEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. An ad break started or completed. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdClickEvent.html"
+									scope="external" format="html">AdClickEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. The user clicked an ad. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdPlaybackEvent.html"
+									format="html" scope="external"
+							>AdPlaybackEvent</xref></codeph></entry> 
+				<entry colname="2">Class. The player played an ad. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/BufferEvent.html"
+									format="html" scope="external">BufferEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. The player started or stopped buffering. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/CustomAdEvent.html"
+									format="html" scope="external">CustomAdEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. The player displays custom ad loading
+				  status and can ignore ads that have errors or are taking too long to load.
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/DRMMetadataInfoEvent.html"
+									format="html" scope="external"
+								>DRMMetadataInfoEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. New DRM metadata is associated with the
+				  current item. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/LoadInformationEvent.html"
+									format="html" scope="external"
+								>LoadInformationEvent</xref></codeph>
+						</entry> 
+				<entry colname="2"> Class. Download information is available for
+				  the current media stream being played. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerItemEvent.html"
+									format="html" scope="external"
+								>MediaPlayerItemEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. A media player item has been created. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerItemLoaderEvent.html"
+									format="html" scope="external"
+								>MediaPlayerItemLoaderEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. A load operation has completed. Dispatched by
+								<codeph>MediaPlayerItemLoader</codeph> to notify its clients. </entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerStatusChangeEvent.html"
+									format="html" scope="external"
+									>MediaPlayerStatusChangeEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. The media player status changed. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerViewEvent.html"
+									format="html" scope="external"
+								>MediaPlayerViewEvent</xref></codeph>
+						</entry> 
+				<entry colname="2"> Class. The <codeph>MediaPlayerView</codeph> was clicked. </entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/PlaybackRateEvent.html"
+									format="html" scope="external">PlaybackRateEvent</xref></codeph>
+						</entry> 
+				<entry colname="2"> Class. The media player's playback rate
+				  changes. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/ProfileEvent.html"
+									format="html" scope="external">ProfileEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. The media player’s adaptive bit rate
+				  switching algorithm has switched to another profile due to network or machine
+				  conditions. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/SeekEvent.html"
+									format="html" scope="external">SeekEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. The player started seeking or the seek
+				  operation completed. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/SizeAvailableEvent.html"
+									format="html" scope="external"
+								>SizeAvailableEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. The video size is available. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimeChangeEvent.html"
+									format="html" scope="external">TimeChangeEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. The media player’s status changed. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimedMetadataEvent.html"
+									format="html" scope="external"
+								>TimedMetadataEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. A timed metadata is processed by the
+				  opportunity detector. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimelineEvent.html"
+									format="html" scope="external">TimelineEvent</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. The media player timeline has changed. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </refbody> 
+</reference> 

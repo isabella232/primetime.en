@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_select-tracks-for-"> 
+  <title>Select the audio tracks</title> 
+  <taskbody> 
+	 <context id="context_A4B4E06D8BA04F20B0212122B9511478"> 
+		<p>To select audio tracks for late-binding audio, implement <xref
+					href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IAAConfig.html"
+					format="html" scope="external">IAAConfig</xref>. <table
+					id="table_4900A45C80AE41F1B0BFCB18FA1C4427">
+					<tgroup cols="2">
+						<colspec colnum="1" colname="col1" colwidth="1.00*"/>
+						<colspec colnum="2" colname="col2" colwidth="2.96*"/>
+						<thead>
+							<row>
+								<entry colname="col1">To... </entry>
+								<entry colname="col2">Call... </entry>
+							</row>
+						</thead>
+						<tbody>
+							<row>
+								<entry colname="col1">Get a list of available AA tracks </entry>
+								<entry colname="col2"><xref
+										href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManager.html#getAudioTracks()"
+										scope="external" format="html">getAudioTracks()</xref>
+								</entry>
+							</row>
+							<row>
+								<entry colname="col1">Get the current selected track </entry>
+								<entry colname="col2"><xref
+										href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManager.html#getSelectedAudioTrack()"
+										format="html" scope="external"
+										>getSelectedAudioTrack()</xref>
+								</entry>
+							</row>
+							<row>
+								<entry colname="col1">Select an AA track </entry>
+								<entry colname="col2"><xref
+										href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManager.html#selectAlternateAudioTrack(int)"
+										format="html" scope="external"
+										>selectAlternateAudioTrack()</xref>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+			</p> 
+		<p>The following code sample illustrates how the reference implementation
+		  gets the audio tracks from the <ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/> and assigns the selected track to the
+		  associated media item: 
+		</p> 
+		<codeblock outputclass="syntax java">/**
+ * Displays a chooser dialog, allowing the user to select the desired
+ * alternate audio track.
+ */
+private void displayAlternateAudioDialog() {
+    PrimetimeReference.logger.i(LOG_TAG + "#selectAlternateAudio",
+      "Displaying alternate audio chooser dialog.");
+    final int selectedAlternateAudio = aaManager.getSelectedAudioTrackIndex();
+    if (selectedAlternateAudio != AAManagerOn.INVALID_AUDIO_TRACK) {
+        final String items[] = aaManager.getAudioTracks();
+        new AlertDialog.Builder(getActivity())
+          .setTitle(R.string.PlayerControlAADialogTitle)
+          .setSingleChoiceItems(items, selectedAlternateAudio,
+          new DialogInterface.OnClickListener() {
+              public void onClick(DialogInterface dialog, int whichButton) {
+                  boolean result = 
+                    aaManager.selectAlternateAudioTrack(whichButton);
+                  if (result) {
+                      PrimetimeReference.logger.i(LOG_TAG
+                                                  + "#selectAlternateAudio",
+                                                  "Audio track selection successful");
+                  } else {
+                      PrimetimeReference.logger.i(LOG_TAG
+                                            + "#selectAlternateAudio",
+                                            "Audio track selection failed");
+                  }
+                  // Dismiss dialog.
+                  dialog.cancel();
+              }
+          }).setNegativeButton(R.string.PlayerControlCCDialogCancel,
+                               new DialogInterface.OnClickListener() {
+              public void onClick(DialogInterface dialog,
+                                    int whichButton) {
+                                // Just cancel the dialog.
+              }
+          }).show();
+
+    } else {
+        PrimetimeReference.logger.i(LOG_TAG + "#selectAlternateAudioFailed",
+                "Unable to detect the currently selected audio track.");
+        Toast.makeText(getActivity(),
+                "Unable to detect the currently selected audio track",
+                Toast.LENGTH_SHORT).show();
+    }
+}
+</codeblock> 
+	 </context> 
+	 <steps id="steps_F685F4E8A5914AFB8E0CFF6E5D7EF076"> 
+		<step id="step_298545CAA3E1426496FE61A325E8480E"> 
+		  <cmd> 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="video-analytics"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Video analytics</title> 
+  <shortdesc>You can track video use by integrating 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> with Adobe Analytics. 
+  </shortdesc> 
+  <conbody> 
+	 <p>Video tracking in 
+		<ph conkeyref="phrases/primetime-sdk-name"/> uses the 
+		<b>Adobe Analytics Video Essentials</b> service, which provides video
+		engagement metrics, such as video views, video completes, ad impressions, time
+		spent on video, and so on. For more information about this service, contact
+		your Adobe representative. 
+	 </p> 
+	 <p>The following procedure summarizes the steps to activate video tracking
+		in your player:
+	 </p> 
+	 <ol id="ol_F33052E1A2E94AF38CBA9048C2E65D46"> 
+		<li id="li_C9480F0682004DE8AA7AE1BF8C761D51">Initialize and/or configure the following video
+				tracking components: <ul id="ul_EFFD5629DD5E4CFBB2DA7047C4FE5DA4">
+					<li id="li_AA8E8FCC6A5F421FA1C8B0E91E915CFD"><b>AppMeasurement library</b> -
+						Contains the low-level data collection core logic. This is where the video
+						heartbeat data is accumulated and sent over the network. </li>
+					<li id="li_7C298C12DEDF4CF49E45F611AE8FD372"><b>Video heartbeat library</b> -
+						Contains the video-heartbeat data collection core logic. The video heartbeat
+						library accesses a subset of the <codeph>AppMeasurement</codeph> library
+						APIs. <note type="tip">Your app does not interact directly with the video
+							heartbeat code. Instead, the app uses <ph
+								conkeyref="phrases/primetime-sdk-name"/> APIs to configure your
+							player's video tracking capabilities. </note>
+					</li>
+					<li id="li_A371A93EF5ED46C2A36D8E6BBF0B4FC6"><b>VisitorID Library</b> - Uniquely
+						identifies visitors to the web page that hosts the video player. </li>
+				</ul>
+				<note type="important">The <ph conkeyref="phrases/primetime-sdk-name"/> built-in
+					video tracking capability depends on a properly configured
+						<codeph>AppMeasurement</codeph> instance. The tracking elements assume that
+					the <codeph>AppMeasurement</codeph> library is already instantiated and
+					configured before configuring and activating video tracking. <ph
+						conkeyref="phrases/primetime-sdk-name"/> video tracking capabilities depend
+					on the existence of a fully functional and properly configured instance of the
+						<codeph>AppMeasurement</codeph> library. </note>
+			</li> 
+		<li id="li_C8F7D201FEA94B98AE0C1986503651D9">Set up video analytics
+		  reporting on the server side by using Adobe Analytics Admin Tools. 
+		</li> 
+	 </ol> 
+  </conbody> 
+</concept> 

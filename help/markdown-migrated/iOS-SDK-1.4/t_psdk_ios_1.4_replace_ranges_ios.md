@@ -1,0 +1,75 @@
+---
+description: 
+seo-description: 
+seo-title: Replace ranges
+title: Replace ranges
+---
+
+# Replace ranges
+
+To implement the`codeph  PTTimeRangeCollection` and delete ranges of content as ads:
+>1. Prepare `codeph  PTTimeRangeCollection`.
+>   
+>1. Set the type of the `codeph  PTTimeRangeCollection` to `codeph  PTTimeRangeCollectionTypeReplaceRanges`.
+>   This step notifies  that the provided ranges need to be replaced with alternate content (ads).
+>   
+>   ```
+>   #define PSDK_TIMESCALE 100000 
+>         
+>   NSArray *ranges =  @[ 
+>    [PTReplacementRange replacementRangeWithRange:CMTimeRangeMake(CMTimeMakeWithSeconds 
+>    (0, PSDK_TIMESCALE),CMTimeMakeWithSeconds(60, AD_TIMESCALE))  
+>    replacementDuration:CMTimeMakeWithSeconds(30, AD_TIMESCALE)], 
+>    [PTReplacementRange replacementRangeWithRange:CMTimeRangeMake(CMTimeMakeWithSeconds 
+>    (120, PSDK_TIMESCALE),CMTimeMakeWithSeconds(60, AD_TIMESCALE))  
+>    replacementDuration:CMTimeMakeWithSeconds(30, AD_TIMESCALE)] 
+>                       ]; 
+>         
+>   PTTimeRangeCollection *timeRangeCollection = 
+>    [[PTTimeRangeCollection alloc] initWithRanges:ranges 
+>    type:PTTimeRangeCollectionTypeReplaceRanges];
+>   ```
+>   >[!TIP]
+>   >
+>   >The argument`codeph  replacementDuration` is optional. If it is not defined, the `codeph  AdServer` determines the duration of the ad break.
+>   
+>   
+>1. Create the `codeph  PTAdMetadata` and set the `codeph  PTTimeRangeCollection`.
+>   ```
+>   //Create the PTPlayerItem metadata 
+>   PTMetadata *metadata = [[PTMetadata alloc] init]; 
+>     
+>   //Create the Ad metadata 
+>   PTAuditudeMetadata *adMetadata = [[PTAuditudeMetadata alloc] init]; 
+>   adMetadata.timeRangeCollection = timerangeCollection; 
+>   adMetadata.zoneId = adZoneId; 
+>   adMetadata.domain = adDomain; 
+>   adMetadata.signalingMode = PTAdSignalingModeCustomRanges; 
+>     
+>   //Set Ad metadata 
+>   [metadata setMetadata:adMetadata forKey:PTAdResolvingMetadataKey]; 
+>     
+>   //Create PTMediaPlayerItem 
+>   PTMediaPlayerItem *playerItem = [[[PTMediaPlayerItem alloc] initWithUrl:mediaUrl 
+>                                                                   mediaId:mediaId 
+>                                                                  metadata:metadata];
+>   ```
+>   >[!TIP]
+>   >
+>   >Although the`codeph  signalingMode` is set as `codeph  PTAdSignalingModeCustomRanges`, this ad signaling mode is set automatically when setting the `codeph  PTTimeRangeCollection` of type `codeph  PTTimeRangeCollectionTypeReplace`.
+>   
+>   
+>1. Create the player and start playback.
+>   ```
+>   //Create PTMediaPlayer using the created PTMediaPlayer 
+>   PTMediaPlayer *player = [PTMediaPlayer playerWithMediaPlayerItem:playerItem]; 
+>     
+>   //Add player to the player UIView 
+>   [self.playerView addSubview:(UIView *)player.view]; 
+>     
+>   //Start playback 
+>   [player play];
+>   ```
+>   
+>   
+>   

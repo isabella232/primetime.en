@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="companion-banner-ads"> 
+  <title>Companion banner ads</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> supports companion banner ads, which are ads that accompany a linear ad and often
+		remain on the page after the linear ad ends. Your application is responsible for displaying
+		the companion banners that are provided with a linear ad. </shortdesc> 
+  <conbody/> 
+</concept> 

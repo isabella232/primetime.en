@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="t_psdk_android_release-mediaplayer-instance"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Release a MediaPlayer instance and resources</title> 
+  <shortdesc>You should release a <codeph>MediaPlayer</codeph> instance and resources when you no
+		longer need the <codeph>MediaResource</codeph>. </shortdesc> 
+  <taskbody> 
+	 <context id="context_196B57A0F07B4C1F96FE3E236A910EBB"> 
+		<p >When you release a 
+		  <codeph>MediaPlayer</codeph> object, the underlying hardware resources
+		  that are associated with this 
+		  <codeph>MediaPlayer</codeph> object are deallocated. 
+		</p> 
+		<p>Here are some reasons to release a <codeph>MediaPlayer</codeph>: <ul
+					id="ul_A640C04524984D22B1142BF9847E71ED">
+					<li id="li_C7C09279252D4937AFBBA614C04471DA">Holding unnecessary resources can
+						affect performance. </li>
+					<li id="li_62257BD67DBA4357A96B55745C03E4A6">If multiple instances of the same
+						video-codec are not supported on a device, playback failure might occur for
+						other applications. </li>
+				</ul>
+			</p> 
+	 </context> 
+	 <steps id="steps_B3F93EC6A81A49F78FE00C7F5A2E4BF4"> 
+		<step id="step_B4548F9E0D744044B87E4D30A938716B"> 
+		  <cmd>Release the 
+			 <codeph>MediaPlayer</codeph>. 
+		  </cmd> 
+		  <info> 
+			 <codeblock  outputclass="syntax actionscript">function release():void;</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+	 <result 
+	  id="result_C4EEEFE472784372883CF7B3474891C2">After the 
+		<codeph>MediaPlayer</codeph> instance is released, you can no longer use
+		it. If any method of the 
+		<codeph>MediaPlayer</codeph> interface is called after it is released, an
+		
+		<codeph>IllegalStateException</codeph> is thrown. 
+	 </result> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_fcd_w4p_xz">
+    <title>Add a QoS Provider instance to mediaPlayerItemLoader</title>
+    <shortdesc/>
+    <taskbody>
+        <context>
+            <p/>
+        </context>
+        <steps>
+            <step>
+                <cmd>Create and attach a QoS Provider to a <codeph>mediaPlayerItemLoader</codeph>
+                    instance</cmd>
+                <info>
+                    <codeblock>// Create an instance of QoSProvider 
+private QOSProvider _qosProvider = new QOSProvider(this._context); 
+
+// Attach the QoSProvider instance to the mediaPlayerItemLoaderInstance 
+// (before calling load API on mediaPlayerItemLoader instance) 
+_qosProvider.attachMediaPlayerItemLoader(this._loader); </codeblock>
+                </info>
+            </step>
+        </steps>
+        <postreq id="postreq_b51_cpp_xz">Once the playback starts, use the
+                <codeph>_qosProvider</codeph> to get <codeph>timeToLoad</codeph> and
+                <codeph>timeToPrepare</codeph> QoSdata. The remaining QoS metrics can be retrieved
+            by using the <codeph>QoSProvider</codeph> attached to the <codeph>mediaPlayer</codeph>.
+                <p>For more information about <codeph>MediaPlayerItemLoader</codeph>, see <xref
+                    href="t_psdk_android_2.5_media-resource-load-using-mediaplayeritemloader.xml#use-mediaplayeritemloader"
+                    format="dita" scope="local"
+                    ><?xm-replace_text Load a media resource using MediaPlayerItemLoader?></xref>.</p></postreq>
+    </taskbody>
+</task>

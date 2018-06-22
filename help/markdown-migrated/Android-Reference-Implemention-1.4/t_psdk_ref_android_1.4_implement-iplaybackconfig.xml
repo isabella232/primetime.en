@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_implement-iplaybackconfig"> 
+  <title>Implement IPlaybackConfig</title> 
+  <taskbody> 
+	 <context id="context_5636421F9DC545AAA83C3152262BAB95">
+		<p>To configure buffer parameters, you can implement 
+		  <xref
+			href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html"
+			format="html" scope="external"
+			platform="android"><apiname>IPlaybackConfig</apiname></xref><xref
+		  href="http://help.adobe.com/en_US/primetime/reference_implementation/dhls/asdoc/com/adobe/primetime/reference/configuration/IPlaybackConfig.html"
+		  format="html" scope="external"
+		  platform="dhls"><apiname>IPlaybackConfig</apiname></xref> 
+		  <apiname>getInitBufferTime()</apiname> and 
+		  <apiname>getBufferTime()</apiname>.
+		</p>
+		<p>The reference implementation uses SharedPreferences for the
+		  configuration source. 
+		</p>
+		<p>To see how the reference implementation reads the configuration
+		  information from SharedPreferences using 
+		  <xref
+			href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html"
+			format="html" scope="external"
+			platform="android"><apiname>IPlaybackConfig</apiname></xref><xref
+		  href="http://help.adobe.com/en_US/primetime/reference_implementation/dhls/asdoc/com/adobe/primetime/reference/configuration/IPlaybackConfig.html"
+		  format="html" scope="external"
+		  platform="dhls"><apiname>IPlaybackConfig</apiname></xref> 
+		  <apiname>getInitBufferTime()</apiname> and 
+		  <apiname>getBufferTime()</apiname>, refer to the 
+		  <codeph>ConfigProvider.java</codeph> file:
+		  <codeblock outputclass="syntax java" platform="android">	/**
+	 * {inheritDoc}
+	 */
+	@Override
+	public long getInitBufferTime() {
+		long initBufferTime = PreferencesUtils.getLongPreference(preferences,
+				PlaybackManager.SETTINGS_BUFFER_INIT,
+				PlaybackManager.DEFAULT_INIT_BUFFER);
+		return initBufferTime;
+	}
+
+	/**
+	 * {inheritDoc}
+	 */
+	@Override
+	public long getBufferTime() {
+		long playBufferTime = PreferencesUtils.getLongPreference(preferences,
+				PlaybackManager.SETTINGS_BUFFER_TIME,
+				PlaybackManager.DEFAULT_BUFFER_TIME);
+		return playBufferTime;
+	}</codeblock>
+		</p>
+	 </context>
+	 <steps id="steps_85E299B4C19E4F0ABA4640D8D48288D7"> 
+		<step id="step_9867787CD45941309DF5AD58262ED9A2">
+		  <cmd>
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

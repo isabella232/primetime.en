@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_handle_blackouts"> 
+  <title>Handle blackouts in live streams</title> 
+  <shortdesc>You can handle blackouts in live video streams and provide alternate content during a
+		blackout.  </shortdesc> 
+  <conbody> 
+	 <p>When a blackout occurs in a live stream, your player uses event handlers
+		to detect the blackout and provide alternate content to those users who are
+		ineligible to watch the main stream. Your player detects the start and end of
+		the blackout period, switches playback from the main stream to an alternate
+		stream, and switches back to the main stream when the blackout period ends. 
+	 </p> 
+	 <p>To handle blackouts in live streams:  <ol>
+				<li>Set up your app to detect blackout tags by subscribing to blackout tags in a
+					live-stream manifest.  <p><ph conkeyref="phrases/primetime-sdk-name"/> does not
+						detect blackout tags on its own; you must subscribe to blackout tags to
+						receive notification when the tags are encountered during manifest file
+						parsing. </p>
+				</li>
+				<li>Create event listeners for tags to which your player is subscribed<ph> (in this
+						case, PLAYBACK and BLACKOUTS tags)</ph>.  <p>When a tag occurs that your
+						player has subscribed to (for example, a blackout tag) in either the
+						foreground (main content) or background (alternate content) stream
+						manifests, <ph conkeyref="phrases/primetime-sdk-name"/> dispatches a
+							<codeph>TimedMetadataEvent</codeph> and creates a
+							<codeph>TimedMetadataObject</codeph> for the
+							<codeph>TimedMetadataEvent</codeph>. </p>
+				</li>
+				<li>Implement handlers for the timed metadata events for both the foreground and the
+					background streams. <p>In these handlers, get the start and end times for the
+						blackout period from the timed metadata event objects. </p>
+				</li>
+				<li>Create methods for switching content at the start and end of the blackout
+					period. <p>When the blackout period starts, switch the main content to the
+						background and switch the alternate content to become the main stream.
+						Continue to fetch and parse the original manifest in the background and keep
+						checking for the "blackout end" tag, so that the player can rejoin the
+						original stream when the blackout ends. </p>
+				</li>
+				<li>Update nonseekable ranges if the blackout range is in DVR on the playback
+					stream. <p>Track and handle the <codeph>TimedMetadata</codeph> on the background
+						stream, by preparing and updating blackout nonseekable ranges. </p>
+				</li>
+			</ol>
+		</p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_cookies_work_with"> 
+  <title>Work with cookies</title> 
+  <shortdesc>You can use <ph conkeyref="phrases/primetime-sdk-name"/> to send arbitrary data in
+		cookie headers for session management, gate access, and so on.  </shortdesc> 
+  <taskbody> 
+	 <context id="context_2D049ACC449D4C00B9FF7236171C451D"> 
+		<p>Here is a example with some type of authentication when making requests to the key server: <ol
+					id="ol_2AC5D596FCF4496091A5A783F5568A26">
+					<li id="li_9F8BB84BDB9D438BA7D851728099938D">Your customer logs into your
+						website in a browser and their login shows that they are allowed to view
+						content. </li>
+					<li id="li_3D9B3B366F9049EDB8C218D56E4ABFE4">Your application generates an
+						authentication token, based on what is expected by the license server. Pass
+						that value to <ph conkeyref="phrases/primetime-sdk-name"/>. </li>
+					<li id="li_A970C93350F7464CA6EB777572B73CFA"><ph
+							conkeyref="phrases/primetime-sdk-name"/> sets that value in the cookie
+						header. </li>
+					<li id="li_B497C8F0450444AA89E0A28BF62B9946">When <ph
+							conkeyref="phrases/primetime-sdk-name"/> makes a request to the key
+						server to get a key to decrypt the content, that request contains the
+						authentication value in the cookie header, so the key server knows that the
+						request is valid. </li>
+				</ol></p> 
+		<p>To work with cookies: 
+		</p> 
+	 </context> 
+	 <steps id="steps_14E3151FE4F74971AE2EF0D60F071703"> 
+		<step id="step_0DC0F9CCD0944E488C2CD656F788D06C">
+				<cmd>Create a <codeph>cookieManager</codeph> and add your cookies for the URIs to
+					your <codeph>cookieStore</codeph>. </cmd>
+				<info>
+					<p>For example: <note type="important">When 302 redirect is enabled, the ad
+							request may be redirected to a domain that is different from the domain
+							to which the cookie belongs.
+						</note><codeblock outputclass="syntax java">CookieManager cookieManager= new CookieManager();
+CookieHandler.setDefault(cookieManager); 
+HttpCookie cookie=new HttpCookie("lang","fr");
+cookie.setDomain("twitter.com"); 
+cookie.setPath("/");
+cookie.setVersion(0);
+cookieManager.getCookieStore().add(newURI("http://twitter.com/"),cookie);</codeblock>
+					</p>
+					<p><ph conkeyref="phrases/primetime-sdk-name"/> queries this cookieManager at
+						runtime, checks whether there are any cookies associated with the URL, and
+						uses those automatically. </p>
+					<p>Another option is to use <codeph>cookieHeaders</codeph> in
+							<codeph>NetworkConfiguration</codeph> to set an arbitrary cookie header
+						string to be used for requests. By default, this cookie header is sent only
+						with key requests. To send the cookie header with all requests, use the
+							<codeph>NetworkConfiguration</codeph> method
+							<codeph>setUseCookieHeadersForAllRequests</codeph>:
+						<codeblock outputclass="syntax java">NetworkConfiguration networkConfiguration = new NetworkConfiguration();
+
+Metadata cookie = new MetadataNode();
+cookie.setValue("reqPayload", “1234567”);
+networkConfiguration.setCookieHeaders(cookie);
+networkConfiguration.setUseCookieHeadersForAllRequests( true );
+
+// Set NetworkConfiguration as Metadata:                                                                  
+MetadataNode resourceMetadata = new MetadataNode(); 
+resourceMetadata.setNode(DefaultMetadataKeys.NETWORK_CONFIGURATION.getValue(), 
+                         networkConfiguration);
+
+// Call MediaResource.createFromURL to set the metadata:
+MediaResource resource = MediaResource.createFromURL(url, resourceMetadata);
+ // Load the resource
+mediaPlayer.replaceCurrentItem(resource);</codeblock>
+					</p>
+				</info>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

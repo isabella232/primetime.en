@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="va_access-video-analytics-reports"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Access video analytics reports</title> 
+  <shortdesc> Video analytics reports are routed to the Adobe Analytics
+	 reporting platforms. 
+  </shortdesc> 
+  <taskbody><context>For more information on Adobe Analytics setup, see the 
+			 <xref href="http://microsite.omniture.com/t2/help/en_US/reference/"
+			  format="html" scope="external">Adobe Analytics</xref> documentation. 
+		  </context> 
+	 <steps> 
+			 <step> 
+				<cmd>Select the video-tracking enabled RSID. 
+				</cmd> 
+			 </step> 
+			 <step> 
+				<cmd>Select 
+				  <menucascade><uicontrol>Video</uicontrol><uicontrol>Video
+						Engagement</uicontrol><uicontrol>Video Overview</uicontrol></menucascade>. 
+				</cmd> 
+			 </step> 
+			 <step> 
+				<cmd>Select a video clip. 
+				</cmd> 
+ 
+			 </step> 
+		   
+		   
+	 </steps> 
+  </taskbody> 
+</task> 

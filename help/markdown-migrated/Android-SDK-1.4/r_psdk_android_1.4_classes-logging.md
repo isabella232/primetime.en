@@ -1,0 +1,38 @@
+---
+---
+
+[com.adobe.mediacore.logging](http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/package-summary.html)
+<table frame="all" colsep="1" rowsep="1" id="table_389797D3CEF14EA2862E0B20C6E6CC41"> 
+ <tgroup cols="2" colsep="1" rowsep="1" class="FormatA"> 
+  <colspec colnum="1" colname="1" colwidth="27*" /> 
+  <colspec colnum="2" colname="2" colwidth="73*" /> 
+  <thead> 
+   <tr rowsep="1"> 
+    <th colname="1" class="entry"> <p>Name </p> </th> 
+    <th colname="2" class="entry"> <p>Description </p> </th> 
+   </tr> 
+  </thead> 
+  <tbody> 
+   <tr rowsep="1"> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/Log.html" format="html" scope="external">Log</a> </span></td> 
+    <td colname="2">Class. Provides access to the log system. </td> 
+   </tr> 
+   <tr rowsep="1"> 
+    <td colname="1" rowsep="0"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/LogEntry.html" format="html" scope="external">LogEntry</a> </span></td> 
+    <td colname="2" rowsep="0">Class. Defines an entry log and holds information about a log message. </td> 
+   </tr> 
+   <tr rowsep="1"> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/LogFactory.html" format="html" scope="external">LogFactory</a> </span></td> 
+    <td colname="2">Interface. Enables custom logging. </td> 
+   </tr> 
+   <tr rowsep="1"> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/Logger.html" format="html" scope="external">Logger</a> </span></td> 
+    <td colname="2">Interface. The methods required to implement a custom logger for the 
+     <ph conkeyref="phrases/primetime-sdk-name">
+      Phrase
+     </ph>. </td> 
+   </tr> 
+  </tbody> 
+ </tgroup> 
+</table>
+

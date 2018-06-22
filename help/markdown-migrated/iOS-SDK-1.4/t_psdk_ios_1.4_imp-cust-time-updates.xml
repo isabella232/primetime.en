@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_72E47EBF127F4283BF832EF6380FEC6D"> 
+  <title>Implement custom time updates</title> 
+  <shortdesc>In some analytics implementations, the client application might
+	 want to provide a different playhead position than the position that is
+	 reported by the 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"></ph>’s
+	 
+	 <codeph>localTime</codeph> value. For example, during a linear stream
+	 playback, each program’s playhead can be provided relative to its start time. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_5C133F43880C4FBFBAA7AF9AF8FA169A"> 
+		<note type="tip">Override this method only if you want to provide a
+		  playhead position that is different from the default position. 
+		</note> 
+	 </context> 
+	 <steps id="steps_2B7B237EBCA444E38C388E567B591E63"> 
+		<step id="step_02D21DA0E91E47B5BC5E4147B8DD4909"> 
+		  <cmd>To override the default playhead position: 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">vaTrackingMetadata.currentTimeUpdateBlock = ^CMTime () {
+    NSInteger random = arc4random() % 500; 
+    return CMTimeMakeWithSeconds(random, 1);
+};</codeblock> 
+			 <note type="important">In this code sample, 500 is only a sample
+				value. You need to use a different value for your custom playhead position. 
+			 </note> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

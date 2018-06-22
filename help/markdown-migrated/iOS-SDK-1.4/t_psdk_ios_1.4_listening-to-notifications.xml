@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ios_listening-to-notifications"> 
+  <title>Listening to notifications</title> 
+  <taskbody> 
+	 <context id="context_CB9C71ACA43546D1B4D77F1BF86ED503"> 
+		<p>There are two ways to listen to the 
+		  <codeph>PTNotification</codeph> notification in the 
+		  <codeph>PTMediaPlayer</codeph>: 
+		</p> 
+	 </context> 
+	 <steps id="steps_72C7A8C512B246B18CEA760DE0B38D06"> 
+		<step id="step_E737B4A3475B44A88DDFF8696B68C758"> 
+		  <cmd>Manually check the 
+			 <codeph>PTNotificationHistory</codeph> of the 
+			 <codeph>PTMediaPlayerItem</codeph> with a timer and check the
+			 differences: 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">//Access to the PTMediaPlayerItem 
+PTMediaPlayerItem *item = self.player.currentItem;
+PTNotificationHistory *notificationHistory = item.notificationHistory;
+
+//Get the list of notification events from the notification History 
+NSArray *notifications = notificationHistory.notificationItems;</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_6223EE77CA65493E8C4CFF5F53FA20A1"> 
+		  <cmd>Use the posted 
+			 <xref
+			  href="https://developer.apple.com/library/mac/%23documentation/Cocoa/Reference/Foundation/Classes/NSNotification_Class/Reference/Reference.html"
+			  format="html" scope="external">NSNotification</xref> of the 
+			 <codeph>PTMediaPlayerPTMediaPlayerNewNotificationEntryAddedNotification</codeph>.
+			 
+		  </cmd> 
+		</step> 
+		<step id="step_AC575EC103C34336B7BD24B637DF786D"> 
+		  <cmd>Register to the 
+			 <codeph>NSNotification</codeph> by using the instance of the 
+			 <codeph>PTMediaPlayer</codeph> from which you want to get
+			 notifications: 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">//Register to the NSNotification
+
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onMediaPlayerNotification:) 
+  name:PTMediaPlayerNewNotificationEntryAddedNotification object:self.player];</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

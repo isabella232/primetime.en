@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_manifest-update-architecture"> 
+  <title>Live master-manifest update architecture</title> 
+  <shortdesc>Here is some information and examples about how the 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+	 accommodates updated master manifests. 
+  </shortdesc> 
+  <conbody> 
+	 <p>By default, this feature is turned off. If your application turns it on
+		by setting an update frequency in minutes, the following steps occur after
+		every update interval: 
+	 </p> 
+	 <p> 
+	 <ol id="ol_C39100C821DF44D78B466D42BCFE159B"> 
+		<li id="li_BB13FAB5A59144C1A56800839568EAE2">The 
+		  <ph
+			conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+		  checks the master manifest's last modified time and etag to determine whether
+		  the file has been updated. 
+		  <p>If both the time and etag have changed, the file is deemed as
+			 modified. 
+		  </p>
+		</li> 
+		<li id="li_93E4FE90352A45A79D066366E5F8CB2E">The 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+		  parses and analyzes the new manifest and takes appropriate action based on the
+		  nature of the update. 
+		</li> 
+		<li id="li_D6572020F2284035966F903EA78F11B5">If the current playing bit
+		  rate matches the bit rate of the modified manifest, the 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+		  switches to the new profile.
+		  <p>The new profile could be from a different server or the same server,
+			 at the same bit rate. In this case, the transition is smooth. 
+		  </p>
+		</li> 
+		<li id="li_342F953BCEA048EB8B19FD749705D29D">If the current playing bit
+		  rate is no longer present in the new manifest, the 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+		  tries to find a bit rate in the current profile that also exists in the new
+		  manifest. 
+		  <ul id="ul_9E3131BBCBD0430190AFC85E76584FDE"> 
+			 <li id="li_F0EC05A00C1840728EE96D1CA76D5181"> If a match is found,
+				the player first switches to the matching bit rate profile in the existing
+				manifest and switches to the matching bit rate profile in the updated manifest.
+				This ensures that the transition is smooth. 
+			 </li> 
+			 <li id="li_E33F3E321EC748F4BBA88B7E8EE52A86">If there is no bit rate
+				in common between the previous manifest and the new manifest, or if the 
+				<ph
+				conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+				cannot switch to the bit rate that matches, the 
+				<ph
+				conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+				switches directly to the lowest bit rate profile of the new manifest and uses
+				ABR to switch to any allowable bit rate based on bandwidth. This may cause a
+				slight glitch in playback but should have minimal impact. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="li_1F114888D4B647259D29E32E28659744">If the update is successful,
+		  the 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+		  dispatches a 
+		  <codeph>MediaPlayerItemEvent.MASTER_UPDATED</codeph> event. 
+		</li> 
+		<li id="li_A336C5F57DD249B997C352D0AB51FB4D">If the update is not
+		  successful, playback continues with the set-up from before this update. 
+		</li> 
+	 </ol> 
+	 </p> 
+	 <example id="example_DB55F2B9D98741628C9B973E47A0B6A0">
+		<title>Example 1</title>
+		<p>The following bit rates are broadcasting live: 
+		<ul id="ul_5FEAAA0487174806B2E98907DDDF56BB">
+		  <li id="li_527A30F6048846DE9F3F84EF0A462612">500k
+		  </li>
+		  <li id="li_9AF3BE2AF2304AD089B2E5A8C51115C3">900k
+		  </li>
+		  <li id="li_2BCB7728FD344D5E895329A6B21CAF2D">2100k
+		  </li>
+		</ul> The 2100k stream has some issues, so it needs to be restarted. The
+		master manifest is updated to contain only 500k and 900k. Shortly afterwards,
+		the users watching this program at 2100k will experience a bit rate switch down
+		to 900k. The users watching at 900k continue to watch at 900k. Later, the 2100k
+		stream resumes, and it is added back in the master manifest. A while later, the
+		users who are watching at 900k, and have the bandwidth, are switched to 2100k. 
+		</p>
+	 </example>
+	 <example id="example_485E9A9F373D454CADE5395DEC734E5D">
+		<title>Example 2</title>
+		<p>The following bit rates are broadcasting live: 
+		<ul id="ul_F37D58DA86E34414B9215B6F6C599836">
+		  <li id="li_B1B64723C7034053A934AB9E30F7C3DB">500k
+		  </li>
+		  <li id="li_8FD087BDF4A542578DB29DBBF0318172">900k
+		  </li>
+		  <li id="li_BD5ADB52DB66412BA27948F0B85F7530">2100k
+		  </li>
+		</ul>All of these bit rates need to be restarted. There are two temporal
+		streams set up for this, at 400k and 1500k. The users are switched to 400k,
+		which is the lowest bit rate of the new configuration. Some of the users are
+		switched to 1500k when their bandwidth is sufficient. Later, the three bit
+		rates are back up and the master manifest is updated. Users automatically
+		switch back to watch at 500k, which is the lowest bandwidth in the revised
+		(original) manifest. A while later, users are switched to the highest bandwidth
+		(900k or 1200k) that their network allows. 
+		</p>
+	 </example>
+  </conbody> 
+</concept> 

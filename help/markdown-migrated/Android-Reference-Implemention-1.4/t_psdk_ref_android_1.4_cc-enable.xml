@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_cc-enable"> 
+  <title>Enable or disable closed captions</title> 
+  <shortdesc>The CCManager handles the display and visibility of the closed
+	 captions, along with procuring the tracks from the <ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/> and assigning those
+	 tracks to the selected media item. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps-unordered id="steps-unordered_4D20791AC3F24C2CBFA747D6782FDB2E"> 
+		<step id="step_C6439C952DC44D14BAC78B8DE2015B17"> 
+		  <cmd>To create a closed caption manager: 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax java" >// This application needs to use the closed captioning feature
+CCManager ccManager = new CCManagerOn();</codeblock>CCManager uses ICCConfig to retrieve the configuration. ICCConfig
+			 contains methods to get the configuration information related to closed
+			 captioning only. 
+		  </info> 
+		</step> 
+		<step id="step_164A1D83EDB8467489938A19A61C3E48"> 
+		  <cmd>To enable closed captioning using the ManagerFactory, add the
+			 following line to the 
+			 <filepath>PlayerFragment.java</filepath> file: 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax java" >ccManager = ManagerFactory.getCCManager(<b>true</b>, config, mediaPlayer);</codeblock> To disable closed captions: 
+			 <codeblock outputclass="syntax java" >ccManager = ManagerFactory.getCCManager(<b>false</b>, config, mediaPlayer);</codeblock> 
+		  </info> 
+		</step> 
+	 </steps-unordered> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_flexunit-libs"> 
+  <title>Troubleshooting compilation errors</title> 
+  <shortdesc>If you experience compilation errors due to missing Flash library
+	 classes, such as 
+	 <codeph>flash.events.Event</codeph>, it is possible that IntelliJ IDEA is
+	 building with the wrong 
+	 <codeph>playerglobal.swc</codeph>, even though the project configuration is
+	 correct.
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_999775BACCC147809EA53506A9C8E86E">
+		<p> To fix this problem: 
+		</p>
+	 </context>
+	 <steps id="steps_2C35E7EE2E97439783869D613CC19E21"> 
+		<step id="step_C097E69809174B0F848688D7B096222E">
+		  <cmd>From the top menu, select 
+			 <menucascade><uicontrol>File</uicontrol><uicontrol>Project
+				  Structure</uicontrol></menucascade>.
+		  </cmd> 
+		</step>
+		<step id="step_6EB02C23D146415C916A3A39759F299D">
+		  <cmd>Under 
+			 <uicontrol>Platform Settings</uicontrol>, select 
+			 <uicontrol>SDKs</uicontrol>.
+		  </cmd>
+		</step>
+		<step id="step_C36176A043C644FABF4A24595302F8CB">
+		  <cmd>Select the Flex SDK.
+		  </cmd>
+		  <info>The name of the Flex SDK will be either 
+			 <filepath>flex_sdk_4.6</filepath> for Windows or 
+			 <filepath>flex_sdk_4-2</filepath> for Mac.
+		  </info>
+		</step>
+		<step id="step_7EB7A5FF94304850B66FD092BDD76C65">
+		  <cmd><?xm-replace_text Step?>
+		  </cmd>
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult>
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

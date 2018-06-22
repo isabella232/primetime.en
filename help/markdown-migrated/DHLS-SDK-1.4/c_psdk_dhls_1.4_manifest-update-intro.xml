@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="manifest-update-intro"> 
+  <title>Live master-manifest update</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/>
+	 can detect changed playback information in master m3u8 manifests for live
+	 streaming and update the playback information while the stream is playing. 
+<ph conkeyref="phrases/primetime-sdk-name"/>
+	 supports a dynamic set of bit rate profiles as the profiles appear or disappear
+	 from the master manifest, including non-overlapping profile bit rates between
+	 updates. 
+  </shortdesc> 
+  <conbody> 
+	 <p>The following features are supported:<ul> 
+		<li>Profile count (increasing or decreasing)</li> 
+		<li>Profile bit rates (overlapping or not overlapping)</li> 
+		<li>Profiles with URLs on the same (or different) servers</li> 
+		<li>Any failover structure</li> 
+	 </ul></p>
+ 
+	 <p>All of the following conditions must be met:<ul>
+			<li>Stream is live.</li>
+			<li>Both the time and the etag change.</li>
+			<li>All rendition information remains the same (except that URLs may vary).</li>
+			<li>The DRM access information remains the same.</li>
+			<li>Segments are packaged around the same PTS and frame boundaries in a small error range.</li>
+			</ul></p> 
+  </conbody> 
+</concept> 

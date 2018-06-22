@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ios_primetime-ad-serving-metadata"> 
+  <title>Primetime ad server metadata</title> 
+  <shortdesc><ph
+	 conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+	 supports resolving and inserting ads for VOD and live/linear streams. 
+  </shortdesc> 
+  <conbody> 
+	 <note type="other" othertype="Prequisite"> 
+		<p>Before you can include advertising in your video content, provide the
+		  following metadata information: 
+		</p> 
+		<ul id="ul_hyl_zvd_cm"> 
+		  <li id="li_B3E83BDDC4854E4B9FC4453138E45D4D">A 
+			 <codeph>mediaID</codeph>, which identifies the specific content to
+			 play.
+		  </li> 
+		  <li id="li_1CC40119A6FA4483B843C311DC644790">Your 
+			 <codeph>zoneID</codeph>, which identifies your company or website.
+		  </li> 
+		  <li id="li_09C40710C25F4CEBAEEE4F664FD346C1">Your ad server domain,
+			 which specifies the domain of your assigned ad server.
+		  </li> 
+		  <li id="li_10359D1ADBD04EBDBE3F4530760F134D">Other targeting
+			 parameters.
+		  </li> 
+		</ul> 
+	 </note> 
+  </conbody> 
+</concept> 

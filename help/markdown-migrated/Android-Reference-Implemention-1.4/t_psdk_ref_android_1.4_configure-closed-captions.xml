@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_configure-closed-captions"> 
+  <title>Configure closed captions</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_062EEFE7A72C4D728C5EC3678F26212C"> 
+		<step id="step_49DFD13CD9B749749782BE9709FFE665">
+		  <cmd><?xm-replace_text Step?>
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

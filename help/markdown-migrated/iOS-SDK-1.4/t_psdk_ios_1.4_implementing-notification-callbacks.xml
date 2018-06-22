@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ios_implementing-notification-callbacks"> 
+  <title>Implementing notification callbacks</title> 
+  <shortdesc>You can implement notification callbacks. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_72C7A8C512B246B18CEA760DE0B38D06"> 
+		<step id="step_E737B4A3475B44A88DDFF8696B68C758"> 
+		  <cmd>Implement the notification callback by getting the 
+			 <codeph>PTNotification</codeph> from the 
+			 <codeph>NSNotification</codeph> user information and reading its
+			 values by using 
+			 <codeph>PTMediaPlayerNotificationKey</codeph>: 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c" >- (void) onMediaPlayerNotification:(NSNotification *) nsnotification {
+    PTNotification *notification = [nsnotification.userInfo objectForKey:PTMediaPlayerNotificationKey];
+    NSLog(@"Notification: %@", notification);
+}</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

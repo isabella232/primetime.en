@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ios_configure-ui"> 
+  <title>Configure the player user interface</title> 
+  <shortdesc>With the 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>,
+	 you can control the basic playback experience for live and video on demand
+	 (VOD). Instead of configuring the player for you, 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+	 provides methods and properties on the player instance that you can use to
+	 configure the player user interface. 
+  </shortdesc> 
+  <conbody> 
+  </conbody> 
+</concept> 

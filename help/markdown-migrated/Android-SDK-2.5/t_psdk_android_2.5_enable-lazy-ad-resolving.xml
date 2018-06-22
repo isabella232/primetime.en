@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_enable-lazy-ad-resolve-resolving"> 
+  <title>Enable lazy ad resolving</title> 
+  <shortdesc>You can enable or disable the Lazy Ad Resolving feature using the existing Lazy Ad
+		Loading mechanism (Lazy Ad Resolving is enabled by default). </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>Lazy</keyword> 
+		  <keyword>Ad resolving</keyword> 
+		  <keyword>Ad loading</keyword>
+				<keyword>delayLoading</keyword> 
+		</keywords> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_4D6F770357AF423A9CB5B4BE0DF59AA1"> 
+		<p>You can enable or disable Lazy Ad Resolving by calling <codeph><xref
+						href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/metadata/AdvertisingMetadata.html#setDelayAdLoading-boolean-"
+						format="html" scope="external"
+					>AdvertisingMetadata.setDelayLoading</xref></codeph> with <codeph>true</codeph>
+				or <codeph>false</codeph>.</p> 
+	 </context> 
+	 <steps id="steps_02358582A23949EE949D941AF30C2ACB"> 
+		<step id="step_6A72A9BFA2094FB08CA7B2D5F00EC159">
+				<cmd>Use the Boolean <codeph>hasDelayAdLoading</codeph> and
+						<codeph>setDelayAdLoading</codeph> methods in
+						<codeph>AdvertisingMetadata</codeph> to control the timing of ad resolution
+					and the placement of ads on the timeline: </cmd>
+				<info>
+					<ul id="ul_njd_jdc_fy">
+						<li id="li_D09FE074156040DB87AEDDD4BE28BCBE">If
+								<codeph>hasDelayAdLoading</codeph> returns false, <ph
+								conkeyref="phrases/primetime-sdk-name"
+							/> waits until all ads are resolved and placed before transitioning to
+							the PREPARED state. </li>
+						<li id="li_C8948E1E8BBB4F43A62F65ACFA1886DD">If
+								<codeph>hasDelayAdLoading</codeph> returns true, <ph
+								conkeyref="phrases/primetime-sdk-name"
+							/> resolves only the initial ads and transitions to the PREPARED state.
+							The remaining ads are resolved and placed during playback. </li>
+						<li id="li_AB937D32E6FF43CEB5D8EBD06DBA504B">When
+								<codeph>hasPreroll</codeph> or <codeph>hasLivePreroll</codeph>
+							return false, <ph
+								conkeyref="phrases/primetime-sdk-name"
+							/> assumes that there is no preroll ad and starts the playback of the
+							content immediately. These default to true. </li>
+					</ul>
+					<p>APIs relevant to lazy ad resolution:
+						<codeblock>Class:
+   com.adobe.mediacore.metadata.AdvertisingMetadata
+
+Methods:
+[…]
+    public final boolean hasDelayAdLoading() // Check if Lazy Ad Resolving enabled
+    public final void setDelayAdLoading()    // Enable or disable Lazy Ad Resolving
+    public final boolean hasPreroll()        // Check for existence of pre-roll ads
+    public final void setPreroll()           // Set pre-roll true or false
+    public final boolean hasLivePreroll()    // Check for live pre-roll ads
+    public final void setLivePreroll()       // Set live pre-roll true or false
+[…]</codeblock>
+					</p>
+					<p/>
+				</info>
+			</step> 
+		<step id="step_52448C29D4BF407D983029C4530341C1">
+				<cmd>To accurately reflect ads as cues on a scrub bar, listen for the
+						<codeph>TimelineEvent</codeph> event and redraw the scrub bar every time
+					that you receive this event. </cmd>
+				<info>
+					<p>When Lazy Ad Resolving is enabled for VOD streams, not all ads are placed on
+						the timeline when your player enters the PREPARED state, so your player must
+						explicitly redraw the scrub bar. </p>
+					<p><ph
+							conkeyref="phrases/primetime-sdk-name"
+						/> optimizes the dispatch of this event to minimize the number of times that
+						you must redraw the scrub bar; therefore, the number of timeline events is
+						not related to the number of ad breaks to be placed on the timeline. For
+						example, if you have five ad breaks, you might not receive exactly five
+						events. </p>
+				</info>
+				<stepxmp>
+					<codeblock outputclass="syntax java">mediaPlayer.addEventListener
+    (MediaPlayerEvent.TIMELINE_UPDATED, timelineUpdatedEventListener);
+/**
+ * ...
+ */
+public void onTimelineUpdated(TimelineEvent event) {
+
+    for (PlaybackManagerEventListener listener : eventListeners) {
+        listener.onUpdate(getLocalSeekRange(), event.getTimeline());
+    }
+}
+</codeblock>
+				</stepxmp>
+			</step> 
+	 </steps> 
+	 <result id="result_CA6ACB5E36DE4113A133C3D2FC7980FF">
+		<p>To verify whether the Lazy Ad Resolving feature is enabled or disabled, call
+					<codeph>AdvertisingMetadata.hasDelayAdLoading</codeph>. A return value of
+					<codeph>true</codeph> means that Lazy Ad Resolving is enabled;
+					<codeph>false</codeph> means that the feature is disabled. </p>
+	 </result>
+  </taskbody> 
+</task> 

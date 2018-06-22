@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ios_video-analytics-workflow"> 
+  <title>Listening to logs</title> 
+  <taskbody> 
+	 <context id="context_CB9C71ACA43546D1B4D77F1BF86ED503">To register for
+		listening to logs:
+	 </context> 
+	 <steps id="steps_72C7A8C512B246B18CEA760DE0B38D06"> 
+		<step id="step_378E0CBCD74441809F4449A9BD374058"> 
+		  <cmd>Implement a custom class that follows the protocol 
+			 <codeph>PTLogger</codeph>:
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">@implementation PTConsoleLogger
+
++ (PTConsoleLogger *) consoleLogger {
+    return [[[PTConsoleLogger alloc] init] autorelease];
+}
+
+- (void)logEntry:(PTLogEntry *)entry {
+    //Log the message to the console using NSLog 
+    NSLog(@"[%@] %@", entry.tag, entry.message);
+}
+
+@end</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_F59FF23FDE324E2C94CCFCDB47027FB7"> 
+		  <cmd>To register the instance to receive logging entries, add an
+			 instance of the 
+			 <codeph>PTLogger</codeph> to the 
+			 <codeph>PTLoggerFactory</codeph>:
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax objective-c">PTConsoleLogger *logger = [PTConsoleLogger consoleLogger];
+// Either use the addLogger method:
+[[PTLogFactory sharedInstance] addLogger:(logger)]
+
+//Or replace the preceding line with this macro for ease of use
+//PTLogAddLogger(logger);
+</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+	 <example id="example_3738B5A8B4C048D28695E62297CF39E3">Here is an example
+		of filtering logs by using the 
+		<codeph>PTLogEntry</codeph> type:
+		<codeblock outputclass="syntax objective-c">@implementation PTConsoleLogger
+
++ (PTConsoleLogger *) consoleLogger {
+    return [[[PTConsoleLogger alloc] init] autorelease];
+}
+
+- (id) init {
+    self = [super init];
+
+    if (self) {
+        self.logLevel = PTLogEntryTypeInfo;
+    }
+
+    return self;
+}
+
+- (void)logEntry:(PTLogEntry *) entry {
+    //Filtering the entry by log level 
+    if (entry.type &lt; _logLevel) {
+        return;
+    }
+
+    //Log the message to the console using NSLog NSLog(@"[%@] %@", entry.tag, entry.message);
+}
+
+@end</codeblock>
+	 </example> 
+  </taskbody> 
+</task> 

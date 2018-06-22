@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ref_dvr-without-ad-insertion"> 
+  <title>DVR without ad insertion</title> 
+  <shortdesc>By default, a live stream with DVR support exposes a seekable
+	 range in which the viewer can pause and seek. 
+  </shortdesc> 
+  <conbody> 
+	 <p>You can enhance the player control bar for DVR with the following
+		additional features: 
+	 <ul id="ul_FEBAF3F6173740CCA3F0172625036B1E"> 
+		<li id="li_DD20A4B567184CF2B261044601CE74DB">Hide the current playback
+		  timestamp and remaining timestamp on the sides of the control bar. 
+		</li> 
+		<li id="li_C22252D202124099B2604E79359FCB2A">Highlight the seekable range
+		  in the control bar. 
+		</li> 
+		<li id="li_74933D70BD5A4163BF3EB4E39DCFC779">Change the duration of the
+		  control bar to be the seekable range of the stream instead of the playback
+		  range of the stream. 
+		  <p>The seekable range is a subset of the playable range in which ads
+			 can be inserted safely. 
+		  </p>
+		</li> 
+		<li id="li_CEF6E7B6BB4142F1963F53FB4E3A1708">Choose a custom starting
+		  point for when to enter a stream. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p> 
+	 </p> 
+  </conbody> 
+</concept> 

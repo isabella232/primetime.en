@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="use-mediaplayeritemloader"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Load a media resource using MediaPlayerItemLoader</title> 
+  <shortdesc>Using 
+	 <codeph>MediaPlayerItemLoader</codeph> helps you obtain information about a
+	 media stream without instantiating a 
+	 <codeph>MediaPlayer</codeph> instance. This is especially useful in
+	 pre-buffering streams so that playback can begin without delay.
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_5C1484ADFE4C40DAB19ED363D3FB61C5">
+			<p>The <codeph>MediaPlayerItemLoader</codeph> class helps you exchange a media resource
+				for the current <codeph>MediaPlayerItem</codeph> without attaching a view to a
+					<codeph>MediaPlayer</codeph> instance, which would allocate video decoding
+				hardware resources. Additional steps are necessary for DRM-protected content, but
+				this manual does not describe them. </p>
+			<note type="important"><ph conkeyref="phrases/primetime-sdk-name"/> does not support a
+				single <codeph>QoSProvider</codeph> to work with both <codeph>itemLoader</codeph>
+				and <codeph>MediaPlayer</codeph>. If your application uses Instant On, the
+				application needs to maintain two <codeph>QoS</codeph> instances and manage both
+				instances for the information. See <xref keyref="instant-on"/> for more
+				information.</note>
+		</context> 
+	 <steps id="steps_A5F234FE152F4725B2B0A18443B1D6EB"> 
+		<step id="step_58EF95CBE99741C5AB354D92CAFD6590"> 
+		  <cmd>Create an instance of 
+			 <codeph>MediaPlayerItemLoader</codeph>.
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax java">private MediaPlayerItemLoader createLoader() {
+    MediaPlayerItemLoader itemLoader =  
+      new MediaPlayerItemLoader(this, new MediaPlayerItemLoader.LoaderListener() {
+        public void onError(PSDKErrorCode mediaErrorCode, String description) {
+            //Do something
+        }
+
+        public void onLoadComplete(MediaPlayerItem playerItem) {
+            loader.prepareBuffer();
+        }
+
+        public void onBufferingBegin() {
+            //Do something
+        }
+
+        public void onBufferPrepared() {
+            mPlayer.reset();
+        } 
+    });
+
+    itemLoader.setKeepRebufferingForLive(true);
+    return itemLoader;
+}
+</codeblock> 
+			 <note type="tip">Create a separate instance of 
+				<codeph>MediaPlayerItemLoader</codeph> for each resource. Do not
+				use one 
+				<codeph>MediaPlayerItemLoader</codeph> instance to load multiple
+				resources.
+			 </note> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_DA3B21D759834D8DBBA08D7AFDA4B13C">
+				<cmd>Implement the <codeph>ItemLoaderListener</codeph> class to receive
+					notifications from the <codeph>MediaPlayerItemLoader</codeph> instance. </cmd>
+				<stepxmp>
+					<codeblock outputclass="syntax java">private MediaPlayerItemLoader createLoader() {
+    MediaPlayerItemLoader itemLoader =  
+      new MediaPlayerItemLoader(this, new MediaPlayerItemLoader.LoaderListener() {
+        public void onError(PSDKErrorCode mediaErrorCode, String description) {
+            //Do something
+        }
+        public void onLoadComplete(MediaPlayerItem playerItem) {
+            loader.prepareBuffer();
+        }
+        public void onBufferingBegin() {
+            //Do something
+        }
+        public void onBufferPrepared() {
+            mPlayer.reset();
+        } 
+    } );
+ 
+    itemLoader.setKeepRebufferingForLive(true);
+    return itemLoader;
+}</codeblock>
+					<p>In the <codeph>onLoadComplete()</codeph> callback, do one of the following: <ul
+							id="ul_5A7D1AEC0BB144DF9EAAE70207A66C50">
+							<li id="li_3E50391B94414441A454DC7CAD18AB41">Ensure that anything that
+								might affect buffering, for example, selecting WebVTT or audio
+								tracks, is complete and call <codeph>prepareBuffer()</codeph> to
+								take advantage of instant on. </li>
+							<li id="li_40D36063B9F345038A300F08D3F8F7FF">Attach the item to the
+									<codeph>MediaPlayer</codeph> instance by using
+									<codeph>replaceCurrentItem()</codeph>. </li>
+						</ul>If you call <codeph>prepareBuffer()</codeph>, you receive the
+						BUFFER_PREPARED event in your <codeph>onBufferPrepared</codeph> handler when
+						the preparation is finished.  </p>
+				</stepxmp>
+			</step>
+		<step id="step_78744332569C422C9D43CEE46060D749"> 
+		  <cmd>Call 
+			 <codeph>load</codeph> on the 
+			 <codeph>MediaPlayerItemLoader</codeph> instance and pass the resource
+			 to be loaded, and optionally the content ID, and a 
+			 <codeph>MediaPlayerItemConfig</codeph> instance.
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax java">loader = createLoader();
+MediaResource res = new MediaResource(mVideoUrl, MediaResource.Type.HLS, metadata);
+loader.load(res, 233, getConfig());</codeblock> 
+		  </stepxmp> 
+		</step>
+		<step importance="optional" id="step_8852A26D26F843AEBF576AFF7D389F22">
+				<cmd>To buffer from a point other than the beginning of the stream, call
+						<codeph>prepareBuffer()</codeph> with the position (in milliseconds) at
+					which to start buffering. </cmd>
+			</step>
+		<step id="step_CDEFF74965B54672899BA1AB44B575D5">
+				<cmd>Use the <codeph>replaceCurrentItem()</codeph> and <codeph>play()</codeph>
+					methods of <codeph>MediaPlayer</codeph> to start playing from that point. </cmd>
+			</step>
+		<step id="step_5C3ED654DDA84D20A4175B21D65B44FB"> 
+		  <cmd>Wait for idle status and call 
+			 <codeph>replaceCurrentItem</codeph>.
+		  </cmd> 
+		</step> 
+		<step id="step_4F4B21C10DF346FDBE3B785849263D91"> 
+		  <cmd>Play the item.
+		  </cmd> 
+		  <info>
+			 <ul id="ul_82E0AD852D5F4AADA1B9A9BEA1CE03A2">
+				<li id="li_A49F16A4DA024ED7A9CB1E07B95AACE8">If the item is loaded
+				  but not buffered: 
+				  <ol id="ol_4C58CFCBB428443CA91A6BDF8807BD22"> 
+					 <li id="li_8B96BEF30CF74B2F8417FC101F26AB68">Wait for
+						initialized status.
+					 </li> 
+					 <li id="li_E741D2FA7E4C4FC196D2C97035E0FD16">Call <codeph>prepareToPlay()</codeph>. </li> 
+					 <li id="li_4FF1CF2B3AD648D1ADB7A383290BF6E4">Wait for the
+						PREPARED status.
+					 </li> 
+					 <li id="li_78C4315EC48E4E888D0840F6501DB1C9">Call <codeph>play()</codeph>. </li> 
+				  </ol>
+				</li>
+			 </ul>
+			 <ul id="ul_112011569B1C42BABA58B8A8DA01DDFF">
+				<li id="li_841CFEFC17C84E6ABF60DCA2D44639C8">If the item is
+				  buffered:
+				  <ol id="ol_EDAB59B0E8364A0DBF971DD0BE13F6C7"> 
+					 <li id="li_C3B948FC8B9D4C22BBC5E4502C832B33">Wait for the
+						buffer prepared event.
+					 </li> 
+					 <li id="li_637A1B00B5F04A60A82AAAAC5239B09D">Call <codeph>play()</codeph>. </li> 
+				  </ol>
+				</li>
+			 </ul>
+		  </info> 
+		</step>
+	 </steps> 
+  </taskbody> 
+</task> 

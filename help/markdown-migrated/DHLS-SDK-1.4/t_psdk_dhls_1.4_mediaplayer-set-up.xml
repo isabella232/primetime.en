@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="set-up-the-mediaplayer"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Set up the MediaPlayer</title> 
+  <shortdesc>The 
+	 <codeph>MediaPlayer</codeph> interface encapsulates the functionality and
+	 behavior of a media player. 
+	 <draft-comment audience="writer">WRITER: The Android/DHLS procedures are
+		very similar, but diff enough to be easier to put into separate files for now. 
+	 </draft-comment> 
+  </shortdesc> 
+  <taskbody> 
+	 <context> 
+		<p><ph conkeyref="phrases/primetime-sdk-name"/>
+		  provides a single implementation of the 
+		  <codeph>MediaPlayer</codeph> interface: the DefaultMediaPlayer class.
+		  When you need video-playback functionality, instantiate 
+		  <codeph>DefaultMediaPlayer</codeph>. 
+		</p> 
+		<note>Interact with the 
+		  <codeph>DefaultMediaPlayer</codeph> instance only with the methods
+		  exposed by the 
+		  <codeph>MediaPlayer</codeph> interface. 
+		</note> 
+	 </context> 
+	 <steps> 
+		<step> 
+		  <cmd> Instantiate a 
+			 <codeph>MediaPlayerContext</codeph> using the application-loaded 
+			 <codeph>authorizedFeatures</codeph> instance (see <xref keyref="get-signed-token"/>). 
+		  </cmd> 
+		  <info> 
+<codeblock outputclass="syntax actionscript">var context:MediaPlayerContext = 
+    new MediaPlayerContext(authorizedFeatures)</codeblock> 
+		  </info> 
+		</step> 
+		<step> 
+		  <cmd>Instantiate a 
+			 <codeph>MediaPlayer</codeph> using the public create factory method,
+			 passing a 
+			 <codeph>MediaPlayerContext</codeph> context object: 
+		  </cmd> 
+		  <info> 
+<codeblock outputclass="syntax actionscript">public static function create(context:Context):MediaPlayer</codeblock> 
+		  </info> 
+		  <stepresult> This returns a generic 
+			 <codeph>MediaPlayer</codeph> interface. 
+		  </stepresult> 
+		</step> 
+		<step> 
+		  <cmd>Instantiate a 
+			 <codeph>MediaPlayerView</codeph> and specify the StageVideo instance
+			 to be used: 
+		  </cmd> 
+		  <info> 
+<codeblock outputclass="syntax actionscript">var view:MediaPlayerView = 
+    MediaPlayerView.create(stage.stageVideos[0] )</codeblock> 
+		  </info> 
+		</step> 
+		<step> 
+		  <cmd>Associate the 
+			 <codeph>MediaPlayerView</codeph> instance with the newly created
+			 view: 
+		  </cmd> 
+		  <info>
+<codeblock outputclass="syntax actionscript">mediaPlayer.view = view;</codeblock>
+			 <draft-comment>Q: Oh? Suddenly there's a lowercase mediaPlayer; where
+				did that come from? -elf June 28 '16
+			 </draft-comment>
+		  </info>
+		</step> 
+		<step> 
+		  <cmd>Place the 
+			 <codeph>MediaPlayerView</codeph> instance on the device's screen: 
+		  </cmd> 
+		  <info> 
+<codeblock outputclass="syntax actionscript">container.addChild(view)</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+	 <result>The 
+		<codeph>MediaPlayer</codeph> instance is now available and properly
+		configured to display video content on the device screen. 
+	 </result> 
+  </taskbody> 
+</task> 

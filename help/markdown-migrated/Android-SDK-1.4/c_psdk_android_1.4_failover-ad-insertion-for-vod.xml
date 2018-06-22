@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_failover-ad-insertion-for-vod"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Advertising insertion and failover for VOD</title> 
+  <shortdesc>The video-on-demand (VOD) ad-insertion process consists of the ad
+  	resolving, ad insertion, and ad playback phases. For ad tracking, 
+  	<ph conkeyref="phrases/primetime-sdk-name"/>
+  	must inform a remote tracking server about the playback progress of each
+  	ad. When unexpected situations arise, it takes appropriate action.
+  </shortdesc> 
+</concept> 

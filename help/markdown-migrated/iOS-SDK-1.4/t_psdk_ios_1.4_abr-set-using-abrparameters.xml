@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="set-abr-using-abrparameters"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title><ph>Configure adaptive bit rates</ph></title> 
+  <shortdesc/> 
+  <taskbody> 
+	 <context id="context_A6059E4CD0F5498BA68495C7081410B8"> 
+		<p >To configure 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> adaptive bit-rate
+		  parameters: 
+		</p> 
+	 </context> 
+	 <steps id="steps_76CB21BBBC824D618079409EF65B0FBA"> 
+		<step  id="step_8DF6C379D81F46D2ABEB7F26B8E9769C"> 
+		  <cmd>Configure an instance of 
+			 <codeph>PTABRControlParameters</codeph> to set the initial, minimum,
+			 and maximum bit-rate settings. 
+		  </cmd> 
+		  <info> 
+			 <p>The default values are displayed in the following code snippet, but your application can set
+						any integer value for each of these parameters. <note type="important">
+							Specify the bit-rate settings in bits-per-second (bps).
+						</note><codeblock outputclass="syntax objective-c">// ARC (add autorelease for non-ARC)
+PTABRControlParameters *abrMetaData = 
+    [[PTABRControlParameters alloc] init]; 
+
+abrMetaData.initialBitRate = -1;
+abrMetaData.minBitRate = 0;
+abrMetaData.maxBitRate = INT_MAX;</codeblock>
+					</p> 
+		  </info> 
+		</step> 
+		<step  id="step_F61FE998A7EC4FB2A3F038F7A98A9E52"> 
+		  <cmd>Update your 
+			 <codeph>PTMediaPlayer</codeph> instance with the configured 
+			 <codeph>PTABRControlParameters</codeph> instance. 
+		  </cmd> 
+		  <info> 
+			 <codeblock  outputclass="syntax objective-c">// assuming self.player is the PTMediaPlayer instance
+self.player.abrControlParameters = abrMetaData;</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+	 <postreq  id="postreq_BE70288E183D4B75BE3797B5BC99D6C3">
+
+		<p>Remember the following: <ul id="ul_B789666D8D664DB5996D6CEB8DC02858">
+					<li id="li_B0D3AB9ED9DB45A79C86B07D4782450F">The application must set the
+							<codeph>abrControlParameters</codeph> property on
+							<codeph>PTMediaPlayer</codeph> before configuring a
+							<codeph>PTMediaPlayerItem</codeph> instance for the initial and minimum
+						bitrate settings to take effect. <p>After content playback starts, setting a
+							new instance only affects the maximum bitrate setting.</p></li>
+					<li id="li_A6DFA482ACB54AD3AE7A068F153EFC08">To update the maximum bitrate
+						setting during playback, create a new
+							<codeph>PTABRControlParameters</codeph> instance and set it on the
+						player instance. </li>
+					<li id="li_CA4EEBDDF0AD42E6B4063B08FA3D94C8">You can update the maximum bitrate
+						setting during playback only on iOS 8.0 and later. For earlier versions, the
+							<codeph>maxBitrate</codeph> value that was set before content playback
+						started is used. </li>
+				</ul></p> 
+	 </postreq> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_considerations"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Considerations and best practices</title> 
+  <shortdesc>To use 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> most effectively, you should
+	 consider certain details of its operation and follow certain best practices. 
+  </shortdesc> 
+  <conbody> 
+	 <section id="section_tvsdk_considerations"> 
+		<title>Considerations</title> 
+		<p>Remember the following information when using <ph conkeyref="phrases/primetime-sdk-name"/>: <ul
+					id="ul_3245D84ED68A40789A5DA47F8A5E7A1A">
+					<li id="li_275BE2463B7E4671A1CDBDD0F53C2004">Adobe Primetime does not work on
+						emulators or simulators. <p>You must use real devices for testing. </p>
+					</li>
+					<li id="li_0BD237F0B4D84860AF192B6E9225B826">Playback is supported only for HTTP
+						Live Streaming (HLS) content. </li>
+					<li id="li_354B8A19BB024C8C88F55BEE2CCC1CB3">Main video content can be
+						multiplexed, where video and audio streams are in the same rendition, or
+						nonmultiplexed, where video and audio streams are in separate renditions. </li>
+					<li id="li_E69C9AD9C83447CE8E93B7AAA7136171">The <ph
+							conkeyref="phrases/primetime-sdk-name"/> API is implemented in
+						ActionScript. </li>
+					<li id="li_4D9F75C3E8084C14B648671B440C9F77">Video playback requires the Adobe
+						Video Engine (AVE). This affects how and when media resources can be
+						accessed: <ul id="ul_97ADB80C5B3C4207BD3846A2377C24C5">
+							<li id="li_DBE1E106B5B14A8C8E3360A534741CD2"> Closed captioning is
+								supported to the extent provided by the AVE. </li>
+							<li id="li_5CE58D30D56E4F5D8BE24AC63FAD3087">Depending on encoder
+								precision, the actual encoded media duration might differ from the
+								durations that are recorded in the stream resource manifest.
+									<p>There is no reliable way to resynchronize between the ideal
+									virtual timeline and the actual playout timeline. Progress
+									tracking of the stream playback for ad management and Video
+									Analytics must use the actual playout time, so reporting and
+									user interface behavior might not precisely track the media and
+									advertisement content. </p>
+							</li>
+							<li id="li_2860B155452C49D98DEF244BCBA2EE35">The incoming user agent
+								name for all HTTP requests from <ph
+									conkeyref="phrases/primetime-sdk-name"/> on this platform is
+								assigned the following string pattern:
+								<codeblock>"Adobe Flash Player"</codeblock>
+							</li>
+						</ul>
+					</li>
+				</ul></p> 
+	 </section> 
+	 <section id="section_tvsdk_best_practices"> 
+		<title>Best practices</title> 
+		<p >Here are recommended practices for 
+		  <ph conkeyref="phrases/primetime-sdk-name"/>: 
+		<ul id="ul_4F634F0578424A1A8DBC2B5DCBE55744"> 
+		  <li id="li_70CF24FFB04B4E22A76BC1DCCC9CFEC9">Use HLS version 3.0 or
+			 above for program content. 
+		  </li> 
+		  <li id="li_1AF6D45652CE46F38F2606C68FC67EE7">For <ph conkeyref="phrases/primetime-sdk-name"/>
+						1.4 for DHLS, lazy ad loading is enabled by default. <p>For content with no
+							pre-roll or mid-roll, you can use
+								<codeph>AdvertisingMetadata.delayAdLoading</codeph> to accelerate
+							content loading even more. </p>
+					</li> 
+		</ul> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

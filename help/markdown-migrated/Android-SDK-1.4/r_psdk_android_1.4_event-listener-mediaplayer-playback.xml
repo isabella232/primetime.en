@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference
+ id="r_psdk_android_mediaplayer-playbackeventlistener"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Playback events</title> 
+	<shortdesc><ph conkeyref="phrases/primetime-sdk-name"/>
+	 dispatches playback events when media playback operations occur, such as a
+	 video starting to play. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn> 
+		<p>To be notified about all playback-related events, register an implementation of
+					<codeph>MediaPlayer.PlaybackEventListener</codeph>, including the following
+				event callbacks.     </p> 
+		<table frame="all" colsep="1" rowsep="1"> 
+		  <tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+			 <colspec colnum="1" colname="1" colwidth="1*"/> 
+			 <colspec colnum="2" colname="2" colwidth="2*"/> 
+			 <thead> 
+				<row rowsep="1"> 
+				  <entry colname="1">Event 
+				  </entry> 
+				  <entry colname="2">Meaning 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row rowsep="1"> 
+				  <entry namest="1" nameend="2"><b>Playback</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"> 
+					 <xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onPlayComplete()"
+					 format="html" scope="external">onPlayComplete</xref> 
+				  </entry> 
+				  <entry colname="2">The end of a media source has been reached. 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"> 
+					 <xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onPlayStart()"
+					 format="html" scope="external">onPlayStart</xref> 
+				  </entry> 
+				  <entry colname="2">Playback of a media source has started. 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"> 
+					 <xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onRateSelected(float)"
+					 format="html" scope="external">onRateSelected</xref> (float rate) 
+				  </entry> 
+					<entry colname="2">The user or <ph conkeyref="phrases/primetime-sdk-name"/> has selected a new
+								playback rate, such as fast forward, rewind, or resume playing at a
+								normal speed. </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onRatePlaying(float)"
+					 format="html" scope="external">onRatePlaying</xref> (float rate) 
+				  </entry> 
+				  <entry colname="2"> A new playback rate is visible on the screen.
+					 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry namest="1" nameend="2"><b>Media</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"> 
+					 <xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onPrepared()"
+					 format="html" scope="external">onPrepared</xref> 
+				  </entry> 
+				  <entry colname="2">The media player has successfully prepared the
+					 media. 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"> 
+					 <xref
+					 	href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onSizeAvailable(long,%20long)"
+					 format="html" scope="external">onSizeAvailable</xref> (long height, long width)
+					 
+				  </entry> 
+				  <entry colname="2">The size of the media is available. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="1" nameend="2"><b>Media Player</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onStateChanged(com.adobe.mediacore.MediaPlayer.PlayerState,com.adobe.mediacore.MediaPlayerNotification)"
+					 format="html" scope="local">onStateChanged</xref> (<xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlayerState.html"
+					 format="html" scope="external">MediaPlayer.PlayerState</xref> state, 
+					 <xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayerNotification.html"
+					 format="html" scope="external">MediaPlayerNotification</xref> notification) 
+				  </entry> 
+				  <entry colname="2">The state of the media player has changed. Your application should handle
+								errors in this callback. </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"> 
+					 <xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onProfileChanged(long,%20long)"
+					 format="html" scope="external">onProfileChanged</xref> (long profile, long
+					 time) 
+				  </entry> 
+				  <entry colname="2"> The media player’s current profile has
+					 changed. Use the 
+					 <codeph>Profile</codeph> property to get the new profile that
+					 is being played. Use the 
+					 <codeph>time</codeph> property to get the time when this event
+					 occurred. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="1" nameend="2"><b>MediaplayerItem</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onUpdated()"
+					 format="html" scope="external">onUpdated</xref> 
+				  </entry> 
+				  <entry colname="2">The media player has successfully updated the
+					 media in either of these cases: 
+					 <ul> 
+						<li>When a manifest refresh occurs for a live asset.</li> 
+						<li>When a VOD or live asset has closed captioning and activity is first 
+							discovered for a closed captioning track. 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="1" nameend="2"><b>Manifest and Timeline</b></entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"> 
+					 <xref
+					  href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onTimedMetadata(com.adobe.mediacore.metadata.TimedMetadata)"
+					  format="html" scope="external">onTimedMetadata</xref> (<xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/TimedMetadata.html"
+					 format="html" scope="external">TimedMetadata</xref> timedMetadata) 
+				  </entry> 
+				  <entry colname="2">A new timed metadata is discovered in the
+					 manifest. 
+				  </entry> 
+				</row> 
+				<row rowsep="0" > 
+				  <entry colname="1"><xref
+					 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onTimelineUpdated()"
+					 format="html" scope="external">onTimelineUpdated</xref> 
+				  </entry> 
+				  <entry colname="2">The media player has added or removed ads, so it has an updated timeline.
+									<p>The manifest refreshed for a live asset and old ad breaks
+									were removed from the timeline or new ad opportunities (cue
+									points) were discovered. The media player tries to resolve and
+									place any new ads on the timeline. </p><p> Use this event to
+									check whether the timeline has any updates (VOD does not change
+									during playback). You can then retrieve the timeline using <xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.html#getTimeline()"
+										format="html" scope="external"
+										>MediaPlayer.getTimeline</xref>. </p>
+							</entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

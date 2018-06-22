@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<reference id="r_psdk_dhls_error-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Error classes</title> 
+  <shortdesc>These classes provide information when the <ph conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph> is misused.
+  </shortdesc> 
+  <refbody>
+	 <refsyn id="refsyn_33F02E4CF8F94CABB6385C168F9CAC3F"> 
+		<p>Package: 
+		  <xref
+			href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/errors/package-detail.html"
+			format="html" scope="external"
+			>com.adobe.mediacore.errors</xref>
+		</p>
+	 </refsyn> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_C6D7271B712243599385BEC9456F0816"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="30*"/> 
+		  <colspec colnum="2" colname="2" colwidth="70*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1">Name 
+				</entry> 
+				<entry colname="2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/errors/IllegalStateException.html"
+									format="html" scope="external">IllegalStateException</xref>
+							</codeph></entry> 
+				<entry colname="2"> Class that describes an error thrown by <ph conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+				  classes when an API is misused. 
+				</entry> 
+			 </row> 
+			 <row rowsep="0"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/errors/MediaError.html"
+									format="html" scope="external"
+							>MediaError</xref></codeph></entry> 
+				<entry colname="2">Class. Provides a notification code and additional metadata about a media
+							error.</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup>
+	 </table>
+  </refbody>
+</reference> 

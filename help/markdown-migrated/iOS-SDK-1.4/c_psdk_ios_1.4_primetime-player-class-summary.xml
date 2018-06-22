@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+<concept id = "c_psdk_ios_primetime-player-class-summary"
+    xmlns:ditaarch = "http://dita.oasis-open.org/architecture/2005/">
+<title>Primetime Player classes summary</title>
+<shortdesc>You can use the Primetime Player Objective-C API to customize the behavior of the player. </shortdesc>
+<conbody></conbody></concept>

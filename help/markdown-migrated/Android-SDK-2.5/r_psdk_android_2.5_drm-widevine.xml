@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="drm-widevine-ref"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Widevine DRM</title> 
+  <shortdesc>You can use the Android native Widevine DRM with DASH streams.</shortdesc> 
+  <refbody>
+		<section><p>Call the following <codeph>com.adobe.mediacore.drm.DRMManager</codeph> API before starting play:
+        <codeblock outputclass="syntax java">public static void setProtectionData(
+    String drm, 
+    String licenseServerURL,  
+    Map&lt;String, String> requestProperties)</codeblock> Arguments:<ul>
+          <li><codeph>drm</codeph> -  <codeph>"com.widevine.alpha"</codeph> for Widevine.</li>
+          <li><codeph>licenseServerURL</codeph> - The URL of the Widevine license server that
+            receives license requests.</li>
+          <li><codeph>requestProperties</codeph> - Contains extra headers to include in the outgoing
+            license request.</li>
+        </ul> For example, when using content packaged for Expressplay DRM, use the following code
+        before playing:
+        <codeblock outputclass="syntax java">DRMManager.setProtectionData(
+  "com.widevine.alpha", 
+  "https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=<i>token</i>", 
+  null);
+</codeblock></p>
+			</section>
+	</refbody> 
+</reference> 

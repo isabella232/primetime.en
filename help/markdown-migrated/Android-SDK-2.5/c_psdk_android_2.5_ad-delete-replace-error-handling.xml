@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_ad_delete_replace_error_handling_dhls"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Ad deletion and replacement error handling</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> handles time range errors according to the specific problem
+	 by merging or reordering the improperly defined time ranges. 
+  </shortdesc> 
+  <conbody> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> manages 
+		<codeph>timeRanges</codeph> errors through default merging and reordering
+		processes. First, the player sorts customer-defined time ranges by the 
+		<i>begin</i> time. Based on this sorting order, if there are subsets and
+		intersections among the ranges, <ph conkeyref="phrases/primetime-sdk-name"/> merges adjacent ranges and joins these
+		ranges.
+	 </p> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> handles time-range errors with the following options: 
+	 <ul id="ul_36EC1ABA8A394B7F9D4CD58292A099D9"> 
+		<li id="li_CE0BF89235F74756A363FB7E5EAE740B"><b>Out of order</b> 
+		  <p><ph conkeyref="phrases/primetime-sdk-name"/> reorders the time ranges.
+		  </p>
+		</li> 
+		<li id="li_F06FE5DB550446C4A60FBFDB3EC04E24"><b>Subset</b>
+		  <p><ph conkeyref="phrases/primetime-sdk-name"/> merges the time-range subsets. 
+		  </p>
+		</li> 
+		<li id="li_FB9BA1D4442746DDAEC86CEF7AEB03F3"><b>Intersect 
+		  </b>
+		  <p><ph conkeyref="phrases/primetime-sdk-name"/> merges the intersecting time ranges. 
+		  </p>
+		</li> 
+		<li id="li_63BB16844B2D485CAAF3A78CA432FA4B"><b>Replace ranges conflict 
+		  </b>
+		  <p><ph conkeyref="phrases/primetime-sdk-name"/> selects the replace duration from the earliest 
+			 <codeph>timeRange</codeph> that appears in the conflicting group.
+		  </p>
+		</li> 
+	 </ul>
+	 </p> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> handles signaling-mode conflicts with ad metadata in the following
+		ways:
+	 </p> 
+	 <p> 
+	 <ul id="ul_34C425FC54974576BB91E63FC7067B95"> 
+		<li id="li_02F31EB0056B4FF89F6730CD27AA4EA0">If the ad signaling mode
+		  conflicts with the time-range metadata, the time-range metadata always has
+		  priority. 
+		  <p>For example, if the ad signaling mode is set as server map or
+			 manifest cues, and there are also MARK time rangesin the ad metadata, the
+			 resulting behavior is that the ranges are marked, and no ads are inserted.
+		  </p>
+		</li> 
+		<li id="li_14B0A9479CF84C89898735667D0D9268">For REPLACE ranges, if the
+		  signaling mode is set as the server map or manifest cues, the ranges are
+		  replaced as specified in the REPLACE ranges, and there is no ad insertion
+		  through server map or manifest cues. 
+		  <p>For more information, see the 
+			 <i>Signaling Mode / Metadata Combination Behaviors</i> table in 
+			 <xref
+			  href="c_psdk_android_2.5_signaling-mode-metadata-combos-android.xml#c_psdk_signaling-mode-metadata-combos-android"
+			  format="dita" scope="local"><?xm-replace_text Effect on ad insertion and deletion from ad signaling mode...?></xref>.
+		  </p>
+		</li> 
+	 </ul>
+	 </p> 
+	 <p>Remember the following:
+	 <ul id="ul_FEA0CC30FD4C474F97FBA2DFC44A30EB">
+		<li id="li_BC43B52109A44D399804BE606B16DC1A">When the server does not
+		  return valid 
+		  <codeph>AdBreaks</codeph>, <ph conkeyref="phrases/primetime-sdk-name"/> generates and processes a 
+		  <codeph>NOPTimelineOperation</codeph> for the empty AdBreak, and no ad
+		  plays.
+		</li>
+		<li id="li_A14A5EEE13634AABB9103598F4CE3609">Although C3 ad
+		  delete/replacement is intended to be supported only for VOD, if specified in
+		  the ad metadata, time ranges are also processed for live streams.
+		</li>
+	 </ul>
+	 </p> 
+  </conbody>
+</concept> 

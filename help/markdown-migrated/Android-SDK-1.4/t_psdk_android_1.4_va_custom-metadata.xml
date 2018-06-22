@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_va_custom-metadata"> 
+  <title>Implement custom metadata support</title> 
+  <shortdesc>You can provide custom metadata on content, ads, and chapter
+	 tracking calls by using callback functions. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_259A3CD6F8E6424AAD20AEADF811DB61"> 
+		<p>Callback functions are invoked just before the tracking call is made,
+		  so your application can attach the metadata that is specific to an ad or
+		  chapter. 
+		</p> 
+	 </context> 
+	 <steps id="steps_3E03C1C37E8F41309EE3B7E3842867D6"> 
+		<step id="step_BEB7B0D28141464CB4BDD4D374AB9193"> 
+		  <cmd>Invoke callback functions for content, ads, and chapters. 
+		  </cmd> 
+		  <info> 
+			 <codeblock  outputclass="syntax java">// Video Metadata Block
+vaMetadata.setVideoMetadataBlock(new VideoAnalyticsMetadata.VideoMetadataBlock() {
+    @Override
+    public HashMap&lt;String, String&gt; call() {
+        HashMap&lt;String, String&gt; result = new HashMap&lt;String, String&gt;();
+        result.put("myvideoid", "1234");
+        result.put("mysdkversion", Version.getVersion());
+ 
+        return result;
+    }
+});
+ 
+// Ad Metadata Block invoked on every ad start
+vaMetadata.setAdMetadataBlock(new VideoAnalyticsMetadata.AdMetadataBlock() {
+    @Override
+    public HashMap&lt;String, String&gt; call(Ad ad) {
+        HashMap&lt;String, String&gt; result = new HashMap&lt;String, String&gt;();
+        result.put("myadid", "ad-1234");
+        result.put("myad-sdkversion", Version.getVersion());
+ 
+        return result;
+    }
+});
+ 
+// Chapter Metadata Block invoked on every chapter start
+vaMetadata.setChapterMetadataBlock(new VideoAnalyticsMetadata.ChapterMetadataBlock() {
+    @Override
+    public HashMap&lt;String, String&gt; call(VideoAnalyticsChapterData chapter) {
+        HashMap&lt;String, String&gt; result = new HashMap&lt;String, String&gt;();
+        result.put("mychapterid", "chapter-1234");
+        result.put("mychapter-sdkversion", Version.getVersion());
+ 
+        return result;
+    }
+});</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

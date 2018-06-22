@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_android_psdkconfig-methods"> 
+  <title>Config class methods for tags</title> 
+  <shortdesc>You can configure custom tag names in <ph conkeyref="phrases/primetime-sdk-name"/>
+		globally with the <codeph>MediaPlayerItemConfig</codeph> class <ph>or stream-based with the
+				<codeph>MediaPlayerItemConfig</codeph> class</ph>.  </shortdesc> 
+  <conbody> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> applies the global
+		configuration automatically to any media stream that does not specify a
+		stream-specific configuration. 
+	 </p> 
+	 <p>Both <codeph>PSDKConfig</codeph> and <codeph>MediaPlayerItemConfig</codeph> expose these
+			methods to manage the custom tags: <table id="table_B37A6C75270D47BC99258F2884AD6905">
+				<tgroup cols="2">
+					<colspec colnum="1" colname="col1" colwidth="*"/>
+					<colspec colnum="2" colname="col2" colwidth="*"/>
+					<tbody>
+						<row>
+							<entry namest="col1" nameend="col2"><b>Subscribe to specific custom
+									tags</b>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>public function get
+									subscribeTags():Vector.&lt;String&gt;</codeph>
+							</entry>
+							<entry colname="col2">Retrieves the current list of subscribed tags.
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>public function set
+									subscribeTags():Vector.&lt;String&gt;</codeph>
+							</entry>
+							<entry colname="col2">Sets the list of subscribed tags that will be
+								exposed to the application. <p>Your application is also
+									automatically subscribed to all tags transmitted through
+										<codeph>adTags</codeph>. </p>
+							</entry>
+						</row>
+						<row>
+							<entry namest="col1" nameend="col2"><b>Customize the ad tags used by the
+									default opportunity detector </b>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>public function get
+									adTags():Vector.&lt;String&gt;</codeph></entry>
+							<entry colname="col2"> Retrieves the current list of ad tags. </entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>public function set
+									adTags():Vector.&lt;String&gt;</codeph></entry>
+							<entry colname="col2"> Sets the list of ad tags that will be used by
+								default opportunity generator. </entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p> 
+	 <p>Remember the following: 
+	 <ul id="ul_3380C8570A694ED195F4D71F00103A1F"> 
+		<li id="li_C3F67CA4C892420099278D8F292318C1">The setter methods do not allow the tags parameter to
+					contain null values. <p>If encountered, <ph
+							conkeyref="phrases/primetime-sdk-name"/> throws an
+							<codeph>IllegalArgumentException</codeph>. </p>
+				</li> 
+		<li id="li_1FBA3EE7EA2B48AA9343E1BC58D415FD">The custom tag name must contain the # prefix. <p>For
+						example, <codeph>#EXT-X-ASSET</codeph> is a correct custom tag name, but
+							<codeph>EXT-X-ASSET</codeph> is incorrect. </p>
+				</li> 
+		<li id="li_389DDD0E19D042C385C43C17E7B2575C">You cannot change the
+		  configuration after the media stream has been loaded. 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

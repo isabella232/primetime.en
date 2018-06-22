@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_trick_play_apis"> 
+  <title>Rate-change API elements</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> includes methods,
+	 properties, and events to determine valid rates, current rates, whether trick
+	 play is supported, and other functionality related to fast forward and rewind. 
+  </shortdesc> 
+  <refbody> 
+	 <section id="section_36576E92DE6343AEBD0BBD662502365D">Use the following
+		API elements to change play rates: 
+		<ul id="ul_57927A021525487A8BFAA94297BF387D"> 
+		  <li id="li_04DC8E0182E044528768A45E57B2FF71"
+			><codeph>MediaPlayer.rate</codeph> property with setter and
+			 getter functions 
+		  </li> 
+		  <li 
+			id="li_9B8EDBA3AE7049BE9071B51D1890E04E"><codeph>MediaPlayer.localTime
+				property</codeph> with getter function 
+		  </li> 
+		  <li id="li_27446C762E844CFAB455BBFD911EACB1"
+			><codeph>mediacore.events.PlaybackRateEvent.RATE_SELECTED</codeph>
+			 
+		  </li> 
+		  <li id="li_763B2398F0DC448A9F24A04065BAB573"
+			><codeph>mediacore.events.PlaybackRateEvent.RATE_PLAYING</codeph>
+			 
+		  </li> 
+		  <li id="li_7C47409D3C8A487EBD7EC5236F8E10D3"
+			><codeph>MediaPlayerItem.IsTrickPlaySupported</codeph> property
+			 with getter function 
+		  </li> 
+		  <li id="li_199ACDAAA258493F89F877B0B2E1EE87"
+			><codeph>AdBreakPlaybackEvent.AD_BREAK_SKIPPED</codeph> 
+		  </li> 
+		  <li id="li_F80FBF1F6F2E40E2AA01FE9BC2B06ADC"
+			><codeph>MediaPlayerItem.availablePlaybackRates</codeph>
+			 property with getter function - specifies valid rates. 
+		  </li> 
+		</ul> 
+		<p> 
+		<table id="table_116AB065BF23492D95B06A0FFD6AAFB1"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.12*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.00*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Rate value 
+				  </entry> 
+				  <entry colname="col2">Effect on playback 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 2.0, 4.0, 8.0, 16.0, 32.0, 64.0<ph
+					 >, 128.0</ph> 
+				  </entry> 
+				  <entry colname="col2">Switches to fast-forward mode with the
+					 specified multiplier faster than normal (for example, 4 is 4 times faster than
+					 normal) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">-2.0, -4.0, -8.0, -16.0, –32.0, -64.0 
+					 <ph >, –128.0 
+					 </ph> 
+				  </entry> 
+				  <entry colname="col2">Switches to fast-rewind mode 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 1.0 
+				  </entry> 
+				  <entry colname="col2">Switches to normal play mode (calling 
+					 <codeph>play</codeph> is the same as setting the rate property
+					 to 1.0) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">0.0 
+				  </entry> 
+				  <entry colname="col2">Pauses (calling <codeph>pause</codeph> is the same as setting the rate
+									property to 0.0) </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		</p> 
+	 </section> 
+  </refbody> 
+</reference> 

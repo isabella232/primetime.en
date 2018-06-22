@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="closed-caption-available-current-2.5"
+	xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+	<title>Select a current caption track from among available tracks</title>
+	<shortdesc id="t_psdk_closed-caption-current-available">You can select a track from a list of
+		currently available closed-caption tracks. This becomes the current track, which is
+		displayed when visibility is on. Some tracks might not be available initially, so listen for
+		the event that indicates that more have become available. </shortdesc>
+	<taskbody>
+		<context id="context_q2h_jrq_hz"/>
+		<steps id="steps_r2h_jrq_hz">
+			<step>
+				<cmd>Wait for the media player to be in at least the <codeph>PREPARED</codeph>
+					status.</cmd>
+			</step>
+			<step>
+				<cmd>Listen for these events: </cmd>
+				<choices id="choices_s2h_jrq_hz">
+					<choice><codeph>MediaPlayerEvent.STATUS_CHANGED</codeph> with status
+							<codeph>MediaPlayerStatus.INITIALIZED</codeph>: The initial list of
+						closed-caption tracks is available. </choice>
+				</choices>
+			</step>
+			<step>
+				<cmd>Get a list of all currently available closed-caption tracks. </cmd>
+				<info>For example:
+					<codeblock outputclass="syntax java">List&lt;ClosedCaptionsTrack&gt; ccTracks =
+  mediaPlayer.getCurrentItem().getClosedCaptionsTracks();</codeblock>
+				</info>
+			</step>
+			<step>
+				<cmd>Select an available track to be the current track. </cmd>
+				<info> For example:
+					<codeblock outputclass="syntax java">// Select the initial CC track.
+for (int i = 0; i &lt; ccTracks.size(); i++) {
+    ClosedCaptionsTrack track = ccTracks.get(i);
+    if (track.getName().equals(INITIAL_CC_TRACK)) {
+       <b>mediaPlayer.getCurrentItem().selectClosedCaptionsTrack(track);</b>
+          selectedClosedCaptionsIndex = i;
+    }
+}</codeblock></info>
+			</step>
+			<step>
+				<cmd>Implement a listener for the event that indicates that more tracks are
+					available. When <ph conkeyref="phrases/primetime-sdk-name"/> dispatches the event, retrieve the current list of
+					available tracks. </cmd>
+				<info>Retrieve the list each time that the event occurs to ensure that you always
+					have the most current list. </info>
+			</step>
+		</steps>
+	</taskbody>
+</task>

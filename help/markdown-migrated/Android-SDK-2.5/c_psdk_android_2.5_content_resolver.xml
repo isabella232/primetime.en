@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_content_resolvers_intro"> 
+  <title>Customize opportunity generators and content resolvers</title> 
+  <shortdesc>An opportunity generator identifies placement opportunities by
+	 custom tags in a stream, ad signaling mode custom markers, and so on. The
+	 opportunity generator sends these placement opportunities to the content
+	 resolver, which customizes the content/ad insertion workflow based on the
+	 placement opportunity's properties and metadata. 
+  </shortdesc> 
+  <conbody> 
+	 <p> <ph conkeyref="phrases/primetime-sdk-name"/> includes the following default opportunity generators: 
+	 <ul id="ul_7A86563F744F416D89DD31397C83D041"> 
+		<li id="li_43614148CB4F4640B89DBB373B9CEC77"><codeph>ManifestCuesOpportunityGenerator</codeph>
+					generates opportunities from the default ad cues (<codeph>#EXT-X-CUE</codeph>). </li> 
+		<li
+		id="li_5ED79C4A611A45A2994048E1E9416585"><codeph>AdSignalingModeOpportunityGenerator</codeph>
+		  generates an initial opportunity for the specified ad signaling mode. This
+		  ignores any cues or timed metadata information.
+		</li> 
+		<li
+		id="li_6192E40FBA5C4A7FB2136BAD058A7D19"><codeph>CustomMarkerOpportunityGenerator</codeph>
+		  generates opportunities to replace baked-in C3 ads.
+		</li> 
+		<li
+		id="li_717FFC5D73044CFE85404548DA2E969A"><codeph>AuditudeResolver</codeph>’s
+		  opportunity generator produces opportunities when lazy ad resolving is on.
+		</li> 
+	 </ul>
+	 </p> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> also includes default content resolvers: 
+	 <ul id="ul_4317E21DD56E43F2A6572C7314170654"> 
+		<li
+		id="li_E28F8A1F349B46FC8D218C5B355F1EE6"><codeph>CustomRangeResolver</codeph>
+		</li> 
+		<li
+		id="li_32740D5219554FF7B2C3D2A243601221"><codeph>JSONResolver</codeph>
+		</li> 
+		<li
+		id="li_3D1F79D5B57642B1B8EF10D5B54329CF"><codeph>AuditudeResolver</codeph>,
+		  which can communicate with 
+		  <ph conkeyref="phrases/auditude-name"/>.
+		</li> 
+	 </ul>
+	 </p> 
+	 <p>You can override the default opportunity generators and content
+		resolvers to customize the advertising workflow in ways such as the following: 
+	 <ul id="ul_7D3136CD0AA34699AF68613FC31565F4"> 
+		<li id="li_35B31304ED57466DAFF9A447A3FA9E25">Recognize custom tags for ad
+		  insertion
+		  <p>For more information, see 
+			 <xref keyref="content_resolver"/>.
+		  </p>
+		</li> 
+		<li id="li_909BA51E20864AF48DA680065A585ACB">Create a customized ad
+		  provider.
+		</li> 
+		<li id="li_F039CD6CF9A6427C9B4CC79EE0D2C0F9">Black out content.
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_qos-statistics"> 
+  <title>Display QoS playback and device statistics</title> 
+  <shortdesc>You can set up your player to read playback and device statistics from the
+			<codeph>QoSProvider</codeph> as often as needed. </shortdesc> 
+  <taskbody> 
+	 <context id="context_789E6B8F764C4322B37DB1ED62C48F7A">The <codeph>QoSProvider</codeph> class
+			provides various statistics, including the frame rate, the profile bit rate, the total
+			time spent in buffering, the number of buffering attempts, the time it took to get the
+			first byte from the first video fragment, the time it took to render the first frame,
+			the currently buffered length, and the buffer time. <p>The reference implementation
+				provides a <codeph>QoSManager</codeph> class where you can enable the display of the
+				QoS overlay. You can also enable the QoS visibility in the Settings user interface:
+					<fig id="fig_57972F9FE252499DA96B2705AC8F8E8C">
+					<image placement="break" align="left"
+						id="image_03489E202C73461CBA18B13AEA100B5A"
+						href="images/qos-configuration.jpg"/>
+				</fig>
+			</p><p>The <codeph>QoSManager</codeph> tracks QoS statistics by getting device
+				information, attaching to the media player, and updating with the latest QoS
+				information. </p>
+		</context> 
+  </taskbody> 
+</task> 

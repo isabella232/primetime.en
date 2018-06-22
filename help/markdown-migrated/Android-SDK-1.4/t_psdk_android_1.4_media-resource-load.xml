@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="load-a-media-resource"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Load a media resource in the MediaPlayer</title> 
+  <shortdesc> Load a resource by directly instantiating a MediaResource and
+	 loading the video content to be played. 
+	 <ph >This is one way of loading a media
+		resource.</ph> 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_3EA43F434D10427CBC5B85F279EFBCD9"> 
+		<step id="step_D571C6B1A54D474DBB52A38124E1276C"> 
+		  <cmd> Set your MediaPlayer's playable item with the new resource to be
+			 played. 
+		  </cmd> 
+		  <info> 
+			 <p >Replace your existing MediaPlayer's currently
+				playable item by calling 
+				<codeph>MediaPlayer.replaceCurrentItem</codeph> and passing an
+				existing 
+				<codeph>MediaResource</codeph> instance. 
+			 </p>
+		  </info> 
+		</step> 
+		<step id="step_6E3265FA1926440391C496175D5C6F2F">
+				<cmd>Register an implementation of the
+						<codeph>MediaPlayer.PlaybackEventListener</codeph> interface with the
+						<codeph>MediaPlayer</codeph> instance. </cmd>
+				<info>
+					<ul id="ul_E96E002D858D431D86E2B01A5B6E74EE">
+						<li id="li_580ED89D26074E799E90A016F15FECB3"><codeph>onPrepared</codeph>
+						</li>
+						<li id="li_5D9D242D59F1448FBF1553686F191629"
+							><codeph>onStateChanged</codeph>, and check for INITIALIZED and ERROR.
+						</li>
+					</ul>
+				</info>
+			</step> 
+		<step id="step_CBE9F256C0DD4BA09CF1DA0DCEF69B8F" >
+		  <cmd>When the state of the media player changes to INITIALIZED, you can
+			 call 
+			 <codeph>MediaPlayer.prepareToPlay</codeph>
+		  </cmd>
+		  <info> The INITIALIZED state indicates that the media has been
+			 successfully loaded. Calling 
+			 <codeph>prepareToPlay</codeph> starts the advertising resolution and
+			 placement process, if any. 
+		  </info>
+		</step>
+		<step id="step_7345B0FA652C423284431163158B96F6" >
+		  <cmd>When 
+			 <ph conkeyref="phrases/primetime-sdk-name"/> calls the 
+			 <codeph>onPrepared</codeph> callback, the media stream has
+			 successfully loaded and is prepared for playback.
+		  </cmd>
+		  <info>When the media stream is loaded, a 
+			 <codeph>MediaPlayerItem</codeph> is created.
+		  </info>
+		</step>
+	 </steps> 
+	 <result id="result_37B432AC35A348BFB83763F4BD93D1F3">
+		<p>If a failure occurs, the <codeph>MediaPlayer</codeph> switches to the ERROR status. It also
+				notifies your application by calling your
+					<codeph>PlaybackEventListener.onStateChanged</codeph>callback. </p> 
+		<p >This passes several parameters:
+		<ul id="ul_92025E1D7E284A8A8AF868D8DBD886FF">
+		  <li id="li_665A395560DD4118A9514EFA0C0853BB">A 
+			 <parmname>state</parmname> parameter of type 
+			 <codeph>MediaPlayer.PlayerState</codeph> with the value of 
+			 <codeph>MediaPlayer.PlayerState.ERROR</codeph>. 
+		  </li>
+		  <li id="li_4F61A5BFB6874BCB9868C6D80F3D2CC1">A 
+			 <parmname>notification</parmname> parameter of type 
+			 <codeph>MediaPlayerNotification</codeph> that contains diagnostic
+			 information about the error event. 
+		  </li>
+		</ul>
+		</p> 
+	 </result> 
+	 <example id="example_3774607C6F08473282CF0CB7F3D82373"> 
+		<p>The following simplified sample code illustrates the process of
+		  loading a media resource: 
+		</p> 
+		<codeblock outputclass="syntax java">// mediaResource is a properly configured MediaResource instance
+// mediaPlayer is a MediaPlayer instance
+// register a PlaybackEventListener implementation with the MediaPlayer 
+instancemediaPlayer.addEventListener(
+  MediaPlayer.Event.PLAYBACK,
+  new MediaPlayer.PlaybackEventListener()) {
+    @Overridepublic void onPrepared() {
+        // at this point, the resource is successfully loaded and available
+        // and the MediaPlayer is ready to start the playback
+        // once the resource is loaded, the MediaPlayer is able to
+        // provide a reference to the current "playable item"
+
+        MediaPlayerItem playerItem = mediaPlayer.CurrentItem();
+
+        if (playerItem != null) {    
+            // here we can take a look at the properties of the    
+            // loaded stream
+        }
+    } @Overridepublic void onStateChanged(
+        MediaPlayer.PlayerState state, 
+        MediaPlayerNotification notification) {
+        if (state == MediaPlayer.PlayerState.ERROR) {
+            // something bad happened - the resource cannot be loaded   
+            // details about the problem are provided via the 
+            // MediaPlayerNotification instance
+        } 
+        elseif (state == MediaPlayer.PlayerState.INITIALIZED) {    
+            mediaPlayer.prepareToPlay();
+        }
+    }
+    // implementation of the other methods in the PlaybackEventListener interface...
+}
+</codeblock> 
+	 </example> 
+  </taskbody> 
+</task> 

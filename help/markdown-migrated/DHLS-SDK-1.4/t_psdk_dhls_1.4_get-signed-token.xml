@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="get-signed-token"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Load your signed token</title> 
+  <shortdesc>The Flash Runtime 
+	 <ph conkeyref="phrases/primetime-sdk-name"/>
+	 needs a signed token to validate that you have the right to call the 
+	 <ph conkeyref="phrases/primetime-sdk-name"/>
+	 API on the domain where your application resides. 
+	  
+	 <draft-comment>Q: REVIEWER: Please review this, in particular to be sure
+		that the events mentioned are the correct ones. -elf 27 June '16
+	 </draft-comment>
+  </shortdesc> 
+  <taskbody> 
+	 <steps> 
+		<step> 
+		  <cmd>Get a signed token from your Adobe representative for each of your
+			 domains (where each domain could be a specific domain or a wildcard domain). 
+		  </cmd> 
+		  <info>To get a token, provide Adobe with either the domain where your
+			 application will be stored or loaded, or, preferably, the domain as a SHA256
+			 hash. In return, Adobe provides you with a signed token for each domain. These
+			 tokens take one of these forms: 
+			 <ul> 
+				<li>An 
+				  <filepath>.xml</filepath> file acting as the token for a single
+				  domain or wildcard domain. 
+				  <note> A token for a wildcard domain covers that domain and all
+					 of its subdomains. For example, a wildcard token for the domain 
+					 <filepath>mycompany.com</filepath> would also cover 
+					 <filepath>vids.mycompany.com</filepath> and 
+					 <filepath>private.vids.mycompany.com</filepath>; a wildcard
+					 token for 
+					 <filepath>vids.mycompany.com</filepath> would also cover 
+					 <filepath>private.vids.mycompany.com</filepath>. 
+					 <i>Wildcard domain tokens are supported only for certain Flash
+						Player versions.</i> 
+					 <draft-comment audience="writer">WRITER: When .swf files are
+						fixed to accept wildcards, move this note after the /ul. (June 24) 
+					 </draft-comment> 
+				  </note> 
+				</li> 
+				<li>A 
+				  <filepath>.swf</filepath> file containing token information for
+				  multiple domains (not including wildcards)<ph product="future">(single or
+					 wildcard)</ph>, which your application can load dynamically. 
+				</li> 
+			 </ul> 
+		  </info> 
+		</step> 
+		<step> 
+		  <cmd>Store the token file in the same location or domain as your
+			 application. 
+		  </cmd> 
+		  <info>By default, <ph conkeyref="phrases/primetime-sdk-name"/>
+			 looks for the token in this location. Alternatively, you can specify the
+			 token's name and location in 
+			 <codeph>flash_vars</codeph> in your HTML file. 
+		  </info> 
+		</step> 
+		<step> 
+		  <cmd>If your token file is a single XML file: 
+		  </cmd> 
+		  <substeps> 
+			 <substep> 
+				<cmd> Use 
+				  <codeph>utils.AuthorizedFeaturesHelper.loadFrom</codeph> to
+				  download the data stored at the specified URL (the token file) and extract the 
+				  <codeph>authorizedFeatures</codeph> information from it. 
+				</cmd> 
+				<info> 
+				  <p>This step can vary. For example, you might want to perform
+					 authentication before starting the application, or you might receive the token
+					 directly from your content management system (CMS). 
+				  </p> 
+				</info> 
+			 </substep> 
+			 <substep> 
+				<cmd><ph conkeyref="phrases/primetime-sdk-name"/>
+				  dispatches a 
+				  <codeph>COMPLETED</codeph> event if the load is successful or a 
+				  <codeph>FAILED</codeph> event otherwise. Take appropriate action
+				  when you detect either event. 
+				</cmd> 
+				<info> 
+				  <p>This must be successful for your application to provide the
+					 required 
+					 <codeph>authorizedFeatures</codeph> objects to <ph conkeyref="phrases/primetime-sdk-name"/>
+					 in the form of a 
+					 <codeph>MediaPlayerContext</codeph>. 
+				  </p> 
+				</info> 
+			 </substep> 
+		  </substeps> 
+		  <stepxmp> 
+			 <p>This example shows how you can use a single-token <filepath>.xml</filepath> file. </p> 
+			 <codeblock outputclass="syntax actionscript">private function loadDirectTokenURL():void {
+    var url:String = constructAuthorizedFeatureTokenURL();
+    _logger.debug("#onApplicationComplete Loading token from [{0}].", url);
+    _authorizedFeatureHelper = new AuthorizedFeaturesHelper();
+    _authorizedFeatureHelper.addEventListener(Event.COMPLETE, 
+        onFeatureComplete);
+    _authorizedFeatureHelper.addEventListener(ErrorEvent.ERROR, 
+        onFeatureError);
+     _authorizedFeatureHelper.loadFrom(url);
+ }</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step> 
+		  <cmd>If your token is a 
+			 <filepath>.swf</filepath> file: 
+		  </cmd> 
+		  <substeps> 
+			 <substep> 
+				<cmd>Define a 
+				  <codeph>Loader</codeph> class to dynamically load the 
+				  <filepath>.swf</filepath> file. 
+				</cmd> 
+			 </substep> 
+			 <substep> 
+				<cmd>Set the 
+				  <codeph>LoaderContext</codeph> to specify the loading to be in
+				  the current application domain, which allows <ph conkeyref="phrases/primetime-sdk-name"/>
+				  to choose the correct token within the 
+				  <filepath>.swf</filepath> file. If 
+				  <codeph>LoaderContext</codeph> is not specified, the default
+				  action of 
+				  <codeph>Loader.load</codeph> is to load the .swf in the child
+				  domain of the current domain. 
+				</cmd> 
+			 </substep> 
+			 <substep> 
+				<cmd>Listen for the COMPLETE event, which <ph conkeyref="phrases/primetime-sdk-name"/>
+				  dispatches if the load is successful. 
+				</cmd> 
+				<info>Also listen for the ERROR event and take appropriate action. 
+				</info> 
+			 </substep> 
+			 <substep> 
+				<cmd>If the load is successful, use the 
+				  <codeph>AuthorizedFeaturesHelper</codeph> to get a 
+				  <codeph>ByteArray</codeph> that contains the PCKS-7 encoded
+				  security data. 
+				</cmd> 
+				<info>This data is used through AVE V11 API to get authorization
+				  acknowledgment from the Flash Runtime Player. If the byte array has no content,
+				  instead use the procedure to look for a single-domain token file. 
+				</info> 
+			 </substep> 
+			 <substep> 
+				<cmd>Use 
+				  <codeph>AuthorizedFeatureHelper.loadFeatureFromData</codeph> to
+				  get the required data from the byte array. 
+				</cmd> 
+			 </substep> 
+			 <substep> 
+				<cmd>Unload the 
+				  <filepath>.swf</filepath> file. 
+				</cmd> 
+			 </substep> 
+		  </substeps> 
+		  <stepxmp> 
+			 <p>The following examples show how you could use a multiple-token 
+				<filepath>.swf</filepath> file. 
+			 </p> 
+			 <p><b>Multiple-token example 1:</b> 
+			 </p> 
+<codeblock outputclass="syntax actionscript">private function onApplicationComplete(event:FlexEvent):void {
+    var url:String = constructAuthorizedFeatureTokenURLFromSwf();  
+    _loader = new Loader();
+    var swfUrl:URLRequest = new URLRequest(url);
+    var loaderContext:LoaderContext = 
+        new LoaderContext(false, ApplicationDomain.currentDomain, null);
+    _loader.contentLoaderInfo.addEventListener(Event.COMPLETE, 
+        modEventHandler);
+    _loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, 
+        errEventHandler);
+    _loader.contentLoaderInfo.addEventListener(ProgressEvent.PROGRESS, 
+        onProgressHandler);
+    _loader.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.
+        UNCAUGHT_ERROR, uncaughtEventHandler);
+    _logger.debug("# Loading token swf with context from [{0}].", url);
+    _loader.load(swfUrl, loaderContext);
+}
+ 
+private function modEventHandler(e:Event):void {
+    _logger.debug("loadSWF with domainID {0}", 
+    SecurityDomain.currentDomain.domainID);
+    var loader : Loader = e.currentTarget.loader as Loader;
+    var myAuthorizedTokensLoaderClass:Class = 
+        loader.contentLoaderInfo.applicationDomain.
+        getDefinition("AuthorizedTokensLoader") as Class;
+    var myTokens:Object = new myAuthorizedTokensLoaderClass();
+    _authorizedFeatureHelper = new AuthorizedFeaturesHelper();
+    _authorizedFeatureHelper.addEventListener(Event.COMPLETE, onFeatureComplete);
+    _authorizedFeatureHelper.addEventListener(ErrorEvent.ERROR, onFeatureError);
+    var byteArray:ByteArray = myTokens.
+        FetchToken(SecurityDomain.currentDomain.domainID);
+    if (myTokens == null || byteArray == null || byteArray.length == 0)
+        loadDirectTokenURL();
+    else {
+        _logger.debug("token bytearry size {0}", byteArray.length);
+        _authorizedFeatureHelper.loadFeatureFromData(byteArray);
+    }
+    _loader.unload();
+}
+</codeblock> 
+			 <p><b>Multiple-token example 2:</b> 
+			 </p> 
+<codeblock outputclass="syntax actionscript">private function tokenSwfLoadedHandler(e:Event):void {
+    trace("loadSWF with domainID {0}", SecurityDomain.currentDomain.domainID);
+    var loader : Loader = e.currentTarget.loader as Loader;
+    var myAuthorizedTokensLoaderClass:Class = 
+      loader.contentLoaderInfo.applicationDomain.
+      getDefinition("AuthorizedTokensLoader") as Class;
+    var myTokens:Object = new myAuthorizedTokensLoaderClass();
+    authorizedFeatureHelper = new AuthorizedFeaturesHelper();
+    authorizedFeatureHelper.addEventListener(Event.COMPLETE, onFeatureComplete);
+    authorizedFeatureHelper.addEventListener(ErrorEvent.ERROR, onFeatureError);
+    var byteArray:ByteArray = 
+        myTokens.FetchToken(SecurityDomain.currentDomain.domainID);
+    var myDomains:Array = ["domain.com"];
+    if (byteArray == null || byteArray.length == 0) {
+        // check for wildcard tokens
+        if (myTokens.hasOwnProperty("FetchWildCardToken") == true) {
+            // contains wildcard domains
+            for each (var domain:String in myDomains) {
+                byteArray = myTokens.FetchWildCardToken(domain);
+                if (byteArray != null &amp;&amp; byteArray.length != 0) {
+                    break;
+                }
+            };
+        }
+    }
+
+    if (myTokens == null || byteArray == null || byteArray.length == 0)
+        loadDirectTokenURL();
+    else {
+        trace("token bytearry size {0}", byteArray.length);
+        authorizedFeatureHelper.loadFeatureFromData(byteArray);
+    }
+    _loader.unload();
+}
+
+private function loadDirectTokenURL():void {
+    trace("#onApplicationComplete Loading token from [{0}].", tokenUrl);
+    authorizedFeatureHelper = new AuthorizedFeaturesHelper();
+    authorizedFeatureHelper.addEventListener(Event.COMPLETE, onFeatureComplete);
+    authorizedFeatureHelper.addEventListener(ErrorEvent.ERROR, onFeatureError);
+    authorizedFeatureHelper.loadFrom(tokenUrl);
+}</codeblock> 
+		  </stepxmp> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_psdk_ref_pass-apis-callbacks"> 
+  <title>Related API documentation</title>
+	<shortdesc>The Video Analytics Manager exposes these classes to implement video tracking in your
+		player.</shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_D80E79E90097407389517B7921CB5512"> 
+		<ul > 
+		  <li><codeph><xref
+				href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/VAManager.html"
+				format="html" scope="external">VAManager</xref></codeph>
+		  </li> 
+		  <li><codeph><xref
+				href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/VAManagerOn.html"
+				format="html" scope="external">VAManagerOn</xref></codeph>
+		  </li>
+	  	  <li><codeph><xref
+				href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IVAConfig.html"
+				format="html" scope="external">IVAConfig</xref></codeph>
+		  </li> 
+		</ul> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

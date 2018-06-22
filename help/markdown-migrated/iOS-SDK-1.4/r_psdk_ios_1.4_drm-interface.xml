@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="drm-overview-ref"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Primetime DRM interface overview</title> 
+  <shortdesc>The key client-side element of the Primetime digital rights management (DRM) system is
+		the DRM Manager.  </shortdesc> 
+  <refbody> 
+	 <section id="section_4DD54E085AB345FE9BE00865E56B28DB"> 
+		<p><ph conkeyref="phrases/drm-short"/> provides a scalable, efficient workflow to implement
+				content protection in <ph conkeyref="phrases/primetime-sdk-name"/> applications. You
+				protect and manage the rights to your video content by creating a license for each
+				digital media file. </p> 
+		<p><ph conkeyref="phrases/primetime-sdk-name"/> supports <ph conkeyref="phrases/drm-short"/>
+				integration as custom DRM workflows. This means that your application must implement
+				the DRM authentication workflows before playing the stream by using the Flash
+				DRMManager. To enable this, the MediaPlayer provides you with the DRM manager for
+				authentication. </p> 
+		<p > Refer to the DRM sample player code included
+		  in the 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> package. 
+		</p> 
+		<p>These are the most important API elements for working with DRM: 
+		<ul id="ul_DBC56B4C422B4190B95AC9629C170A90"> 
+		  <li id="li_782BDA8121F04C9596779280C0953A7B"> 
+			 <p>A reference in the media player to the DRM manager object that implements the DRM subsystem:
+							<codeblock outputclass="synax objective-c">@property (readonly, nonatomic) DRMManager *drmManager</codeblock>
+						</p> 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_F986DB1EDD6F44CD8E57419CCA0921E8">
+			<p><ph conkeyref="phrases/primetime-sdk-name"/> issues a
+					<codeph>PTMediaPlayerItemDRMMetadataChanged</codeph> notification when the DRM
+				metadata changes. This metadata is used as input for almost all functions of the
+					<codeph>DRMManager</codeph> class. </p>
+		</section> 
+	 <section  id="section_223DCF63BAB6438792A85352A79044CC"> 
+		<p>If the DRM-protected stream is multiple bit-rate (MBR) encoded, the
+		  DRM metadata that is used for the variant playlist should be the same as the
+		  metadata that is used in all the bit-rate streams. 
+		</p> 
+		<note importance="high" type="tip">When referencing DRM-protected asset
+		  URLs in your iOS app, the query string parameter 
+		  <codeph>?faxs=1</codeph> must be appended to the (MBR) set-level M3U8
+		  URL. For example: 
+		  <codeblock outputclass="syntax html">https://your.domain.com/hls/[...]/index.m3u8?faxs=1</codeblock>The 
+		  <codeph>faxs=1</codeph> query string parameter signals that the content
+		  is DRM protected, and triggers the DRM decryption workflow accordingly in the
+		  iOS 
+		  <ph conkeyref="phrases/primetime-sdk-name"/>. You can also append the 
+		  <codeph>faxs=1</codeph> tag on DRM-protected HLS asset URLs that are
+		  destined for other platforms; it is observed as required on iOS or treated as a
+		  non-op in players on other platforms. 
+		</note> 
+	 </section> 
+	 <section id="section_F58941D68EB94A5EBD1C7454D2A1B17A"> 
+		<p>For more information about DRM, see the <xref href="http://help.adobe.com/en_US/primetime/drm"
+					format="html" scope="external">
+					<ph conkeyref="phrases/drm-long"/> documentation</xref>. </p> 
+	 </section> 
+  </refbody> 
+</reference> 

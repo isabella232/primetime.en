@@ -1,0 +1,1715 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_psdk_notifications-drm-ve"> 
+  <title>NATIVE_ERROR: DRM values </title> 
+  <shortdesc>The Video Encoder interface of the Adobe video engine returns
+	 these DRM notifications in the 
+	 <codeph>NATIVE_ERROR</codeph> metadata object. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_877310743F8849B7BA5D8747F0604170">
+		<p>When reporting DRM errors to Adobe, ensure that you include the 
+		  <codeph>NATIVE_SUBERROR_CODE</codeph> and 
+		  <codeph>DRM_ERROR_STRING</codeph> for troubleshooting assistance. 
+		</p> 
+		<note type="tip">This list provides <ph conkeyref="phrases/primetime-sdk-name"/>-specific information about the
+		  errors. For complete descriptions, see 
+		  <xref
+			href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html#3300"
+			format="html" scope="external">ActionScript Run-Time Errors ActionScript
+			 Reference for the Adobe Flash Platform</xref>. 
+		</note> 
+		<table id="table_CD59A859865F4FFDBAA249C89C74770A"> 
+		  <tgroup cols="3"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.12*"/><colspec
+			 colnum="3" colname="col3" colwidth="2.95*"/><thead> 
+				<row> 
+				  <entry colname="col1">Value for NATIVE_- ERROR_CODE metadata key 
+				  </entry> 
+				  <entry colname="col2">Value for NATIVE_ERROR_NAME metadata key 
+				  </entry> 
+				  <entry colname="col3">Meaning 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 3300 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_InvalidVoucher</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <ul id="ul_516E4CB32D624B22892DDB9266CB04CA"> 
+						<li id="li_348FC0F38B11417994119B61C9244076">What the
+						  distributor's software should do: 
+						  <ul id="ul_7AFD45CF92454BA4927783FAA628FBC4"> 
+							 <li id="li_0D9CCE61612643648C12DCDDD252E52A">If you are
+								using Google Chrome, and you are in Incognito mode, and your Flash Player
+								version is less than 11.6, this error might occur. 
+								<p>We recommend that the player check the browser's
+								  version number and advise the user to exit Incognito mode. 
+								</p>
+							 </li> 
+							 <li id="li_1DC6B755BD0840D48BEC92568FD330BA">Request the
+								license again. 
+								<p>If the request is successful, you do not need to log
+								  or escalate. If the request is unsuccessful, log the content that caused the
+								  error. 
+								  <codeph>subErrorId</codeph> contains a line error if
+								  present. 
+								</p>
+							 </li> 
+						  </ul> 
+						</li> 
+						<li id="li_060B5D60C9BB419CBFA7B062FBCF2632">What the
+						  distributor should do: 
+						  <ul id="ul_FADB29DBF0DA4A0E8E54134AEB7DCD8A"> 
+							 <li id="li_FC5B1C04D21E4AECB0EBD9ADD3198504">If retries
+								are unsuccessful on configurations other than Chrome with Flash less than
+								version 11.6, a failure might have occurred in the packaging. 
+							 </li> 
+							 <li id="li_A720ECE591254021879B335B81B1F76D">Check
+								whether the issue is specific to certain content and repackage. 
+							 </li> 
+						  </ul> 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><ph id="ec-3301">3301</ph> 
+				  </entry> 
+				  <entry colname="col2"><codeph>AAXS_AuthenticationFailed</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The server failed to authenticate or authorize the client. 
+					 </p> 
+					 <ul id="ul_BE77AC1848FB4C09B6318359ACF1B8EE"> 
+						<li id="li_6FB37D317D174E8488C5070D20CD241C">The
+						  distributor’s software should take any action necessary to re-establish user’s
+						  credentials or guide the user to acquire access to the content. 
+						</li> 
+						<li id="li_BE071D59805B42D38E3E7650BC936417">The distributor
+						  should confirm that distributor’s authorization and authentication mechanism is
+						  working correctly. 
+						  <p>If the distributors are not planning to use the
+							 authentication or authorization features, they should check whether the policy
+							 of the offending content requires authentication and see Diagnosing policy /
+							 license discrepancies. 
+						  </p>
+						</li> 
+					 </ul> 
+					 <p>For more information about this error code, see 
+						<xref href="https://forums.adobe.com/thread/1277149"
+						 format="https" scope="external">DRM error 3301 causes and resolution</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3302 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_RequireSSL</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>On Access 4.0 and above, this error is thrown on iOS when
+						the remote key URL does not use HTTPS as the scheme. HTTPS is required. 
+					 </p> 
+					 <ul id="ul_3D47777BBCA14B67B107FBBE3E37E40C"> 
+						<li id="li_7F7BBB27AE754CC39ABAAF9269739C49">If distributor
+						  is using a version older than Access v4, or the version at least 4 but the
+						  platform is not iOS, the distributor's software should log the error. 
+						  <p>The error is thrown only on iOS.
+						  </p>
+						</li> 
+						<li id="li_D83C427D2A0D47408F723EF7195070B6">If the
+						  distributor's software is at least Adobe Access version 4, and the platform is
+						  iOS, distributors must change the remote key server URL that they are using to
+						  HTTPS. 
+						  <p>If they were only using HTTP, distributors might have to
+							 set up an HTTPS server. Otherwise, the distributors need to submit the logged
+							 information to Adobe and escalate the issue. 
+						  </p>
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3303 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_ContentExpired</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The content you are viewing has expired according to the
+						rules set by the content provider. subErrorId contains a client-specific error
+						or line error. 
+					 </p> 
+					 <p> 
+					 <ul id="ul_1E4B3B8AE87A4E79997553BB2A0E52B9"> 
+						<li id="li_EE3F2EEBF73743B9A38E4FCB7531E275">The
+						  distributor's software should attempt to reacquire license from the server once
+						  to determine whether a new non-expired license is available. 
+						  <p>If no license is available or the license has expired,
+							 allow the user to acquire new license, or inform user that the content cannot
+							 be watched.If the content has been packaged with a policy that has a lapsed
+							 expiration/end date, the license server logs report a 
+							 <codeph>PolicyEvaluationException</codeph> and state that
+							 the Policy End Date has lapsed (Server Error code 303). Check the server's log
+							 files to verify. 
+						  </p> 
+						  <p>If possible, customers should check the policy that they
+							 used during packaging to see whether it has expired. The Java command line tool
+							 is: 
+							 <codeblock>java -jar libs/AdobePolicyManager.jar 
+  detail demo.pol</codeblock> 
+						  </p> 
+						</li> 
+						<li id="li_50DBE680D8F04E7DA3E29C65A93188E7">The distributor
+						  should confirm whether license expiration dates are configured as intended. 
+						</li> 
+					 </ul> 
+					 </p> 
+					 <p>For more information about this error code, see 
+						<xref href="https://forums.adobe.com/thread/1300813"
+						 format="https" scope="external">3303 (Content Expired) with AMS/FMS using a
+						  Live Stream?</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3304 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_AuthorizationFailed</codeph> 
+				  </entry> 
+				  <entry colname="col3">For more information about this error code,
+					 see 
+					 <xref href="https://forums.adobe.com/thread/1277149"
+					  format="https" scope="external">DRM error 3301 causes and resolution</xref>. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><ph id="ec-3305">3305</ph> 
+				  </entry> 
+				  <entry colname="col2"><codeph>
+						AAXS_ServerConnectionFailed</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The connection to the license or domain servers timed out,
+						either due to network delay or the client being offline. Normally subErrorId
+						contains HTTP return code. 
+					 </p> 
+					 <ul id="ul_938C7D8F07F64B4FA71A09DDF37E2E64"> 
+						<li id="li_6648EA0049094E369BD9AE9CCA6B148D">The
+						  distributor's software should attempt a network connection to a known good
+						  server. 
+						  <p>If the attempt fails, prompt the user to reconnect to
+							 the network. If the attempt is successful, log it.
+						  </p>
+						</li> 
+						<li id="li_2ECA2C04BA08449DA3AD79A52EFAA229">The distributor
+						  should verify that any license and domain servers in use are online and visible
+						  from the client's network. 
+						</li> 
+					 </ul> 
+					 <p>For more information about this error code, see 
+						<xref href="https://forums.adobe.com/thread/1284947"
+						 format="https" scope="external">DRM 3305 [ServerConnectionFailed] causes and
+						  resolution</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3306 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_ClientUpdateRequire</codeph> 
+				  </entry> 
+				  <entry colname="col3"> Use a newer version of <ph conkeyref="phrases/primetime-sdk-name"/> for Android. 
+					 <p>The current client cannot complete the requested action, but
+						an updated client might be able to complete the request. 
+					 </p> 
+					 <p>This can have several causes: 
+					 <ul id="ul_2EC4D42D5273439FA1AFDA1A2578B3D6"> 
+						<li id="li_FCA926F5FAED4E7190BE855545AB6ACF">A shared domain
+						  was used that is not available on this client. This is likely the case when
+						  playback works on Chrome, but not any other browser and vice versa. 
+						  <p> 
+							 <note type="tip">Chrome uses a different PHDS/PHLS key
+								than the other browsers use. For more information, see 
+								<xref
+								 href="https://adobeprimetime.zendesk.com/agent/tickets/2891" format="https"
+								 scope="external"><?xm-replace_text https://adobeprimetime.zendesk.com/agent/tickets/2891?></xref>.
+								
+							 </note> 
+						  </p> 
+						</li> 
+						<li id="li_3B633FB699234DCEA136E9BE3CC3386D">The application
+						  is trying to add multiple DRMSessions when running on an iOS version that is
+						  earlier than 5.0. 
+						</li> 
+						<li id="li_F7ED993AF0B941A7A27216B4D587A999">The metadata has
+						  a version of 3 or higher when only version 2 is supported. 
+						</li> 
+					 </ul> 
+					 </p> 
+					 <ul id="ul_EE4AE6AD4F1745A5B5623E53B599DB62"> 
+						<li id="li_7A83869D4262443DA35FA1DF8D3097DD">The
+						  distributor's software should alert the user and abort the operation. 
+						  <p>If the software has a way of determining whether an
+							 upgrade is available, direct the user to that upgrade in the appropriate manner
+							 for the platform. 
+						  </p>
+						</li> 
+						<li id="li_AF9C2711FDE54DA196EB9D2864632000">If the issue
+						  occurs because of a shared domain, the distributor will need to check with
+						  Adobe for an updated runtime or library. 
+						  <p>For Flash runtime, the distributor can force the upgrade
+							 in their application directly. In the case of a library, the distributor will
+							 need to obtain an updated library, rebuild their application and deploy it to
+							 their users. 
+						  </p>
+						  <p>If the issue occurs because of multiple DRMSessions, the
+							 distributor will need to update their application to check the iOS version
+							 number prior to adding multiple DRMSessions. Or they can restrict distribution
+							 of their application to iOS v5 and above. 
+						  </p> 
+						  <p>if the issue occurs because the metadata version is
+							 higher than version 2, the issue is probably corrupted metadata. They can try
+							 rebuilding the metadata and looking at the results. If they continue to see the
+							 problem, log the issue and escalate to Adobe. 
+						  </p> 
+						</li> 
+					 </ul> 
+					 <p>For more information about this error code, see 
+						<xref href="https://forums.adobe.com/thread/1266675"
+						format="https" scope="external">How to remedy a 3306 DRMErrorEvent Error
+						  Code</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3307 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_InternalFailure</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>This generally represents a bug in Adobe Access code and is
+						unexpected, unless there's a known bug, as below. subErrorId contains a
+						client-specific error or line error. 
+					 </p> 
+					 <ul id="ul_79F4A9655A2148519B1E9509C41F78C3"> 
+						<li id="li_0E093AB4D6BD489B852279E6C1525A15">If the browser
+						  is Chrome on Windows and Flash version is 11.6 (SWF version 19 or greater), the
+						  distributor's software should assume that the user pressed 
+						  <uicontrol>Deny</uicontrol> on the infobar and treat the
+						  same as a 3368. 
+						</li> 
+						<li id="li_0215D1089B344861A2C0A73E1067CFEF">If 3307 occurs
+						  when browser is not Chrome or Flash version is not 11.6, the distributor should
+						  escalate to Adobe. 
+						</li> 
+					 </ul> 
+					 <note type="important"><codeph>3307:1107296344
+						  (FailedToGetBrokerHandle)</codeph> might happen with Chrome browser versions
+						24-28. 
+					 </note> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3308 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_WrongLicenseKey</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>This error is throw whenever the license being used contains
+						the wrong key to decrypt the content. subErrorId contains a client-specific
+						error or line error. 
+					 </p> 
+					 <p>There seem to only be two ways of generating this bug: 
+					 <ul id="ul_1C955BD74C7843809D1B5A0CDCA5ED7B"> 
+						<li id="li_18F0A7FDA6584887AD9DB3EDE54080D8">The customer has
+						  modified the standard Adobe tooling for generating licenses (for example, the
+						  licenser server Java framework). 
+						  <p>In this case, the license contains a bad key which might
+							 not correspond to any content. 
+						  </p>
+						</li> 
+						<li id="li_21D04ED1F1FA464785BC297D385766FF">The customer has
+						  issued multiple licenses with the same license ID. 
+						  <p>In this case, there are multiple licenses that are
+							 available on the client that match the content metadata and the Access code has
+							 selected the wrong one for use. 
+						  </p>
+						</li> 
+					 </ul> 
+					 </p> 
+					 <ul id="ul_64AEE62BE36946F290067CF475A36ECA"> 
+						<li id="li_9EEB2B11A4DA41E78C5840D8FAA81F0D">The
+						  distributor's software should attempt to reacquire license from the server. 
+						  <ul id="ul_ACADC5518B054D0A853AEED2B675DB23"> 
+							 <li id="li_394835C8731048A5BF7D9370AC12448C">If no
+								license is available or license is expired, provide workflow for user to
+								acquire new license, or inform user that the content cannot be watched and log
+								the issue. 
+							 </li> 
+							 <li id="li_3FE50518BE53405F9563FA620F7EAD5F">If this was
+								a domain bound content (for AIR), provide a way for the user to join the
+								domain. 
+							 </li> 
+						  </ul> 
+						</li> 
+						<li id="li_C80B353C1AEA4E9398241420CB491E84">The distributor
+						  should: 
+						  <ul id="ul_B5C50009374C4EED9B2B050B48F5F0F6"> 
+							 <li id="li_D5E6B760E0BC4B5C949ED1544B398838">Verify that
+								they have not customized the license issuance portions of the Access License
+								server. 
+							 </li> 
+							 <li id="li_AA8F4E4B6DDD40BA8807C0920A92186B">Verify that
+								they are issuing unique license IDs for all licenses. 
+							 </li> 
+							 <li id="li_A2C53FE779AC4FDDB65E00A2C4F43EC4">Escalate the
+								issue with Adobe. 
+							 </li> 
+						  </ul> 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3309 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_CorruptedAdditionalHeader 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>This will occur if the header is larger than 65536 bytes. 
+					 </p> 
+					 <ul id="ul_82C0F688519B4F43A764D59A891F1903"> 
+						<li id="li_E66AC9149A0649E88A79C5289C12C395">The
+						  distributor's software should Log which piece of content caused the error. 
+						</li> 
+						<li id="li_1C5916A33E7B4DC9968105B9BD20A727">The distributor
+						  should confirm that error is reproducible with specific pieces of content.
+						  Repackage broken content. 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3310 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_AppIDMismatch 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">The Android application does not match the
+					 one in use. 
+					 <p>The correct AIR application or Flash SWF is not being used. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3311 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_AppVersionMismatch 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Not in use. This issue might still be
+					 generated by the version 1.x stack in AIR. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3312 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_LicenseIntegrity 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> To fix this, redownload the license from
+					 the server. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3313 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_WriteMicrosafeFailed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>This issue occurs when the system cannot write to the file
+						system. 
+						<codeph>subErrorId</codeph> contains a client-specific error
+						or line error. 
+					 </p> 
+					 <p>On Microsoft Windows, error 3313 might be thrown by Active X
+						or NPAPI plug flash player when the encrypted content has a licenseID or a
+						policyID that is too long. This is because of the maximum path length in
+						Windows. (Pepper plugin does not have this problem.) 
+					 </p> 
+					 <p>See watson 3549660 
+					 </p> 
+					 <ul id="ul_DFD527D1E1224A439766DF7BED878E3B"> 
+						<li id="li_FAF8FD98A4E8478CA7A92F770676ADFC">The
+						  distributor's software should prompt the user to confirm that their user
+						  directory is not locked nor on a volume that is full or locked. 
+						</li> 
+						<li id="li_6D1136EA750A459BBECEEE5F73F527BB">If the
+						  distributor is using AIR, rather than Flash, the issue might be caused by a
+						  path length limitation. 
+						  <p>Distributors should shorten the name of their AIR
+							 applicaiton to something reasonable. Also, publish contents again with a
+							 shorter 
+							 <codeph>licenseID</codeph> and a 
+							 <codeph>policyID</codeph>. 
+						  </p>
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3314 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_CorruptedDRMMetadata 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>This error often indicates that the content was packaged
+						with test PKI certs, and the player is built with production PKI or vice versa.
+						subErrorId contains a client-specific error or line error. 
+					 </p> 
+					 <ul id="ul_A122EF304CAF48A8B4DA1E3F4413E29B"> 
+						<li id="li_A9A1A5B23E884C22A71E2DE7535FEB3B">The
+						  distributor's software should log which piece of content caused the error. 
+						</li> 
+						<li id="li_7AD7F13A4B1B4998A7E49664E7645815">The distributor
+						  should confirm that the error is reproducible with specific pieces of content. 
+						  <p>You might have to repackage broken content. 
+						  </p> 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3315 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_PermissionDenied 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>There are known bugs in which this error code is thrown when
+						a 3305 is intended. For more information, see 
+						<xref href="https://forums.adobe.com/thread/1284947"
+						format="https" scope="external">DRM 3305 [ServerConnectionFailed] causes and
+						  resolution</xref>. 
+					 </p> 
+					 <p>Remote SWF loaded by AIR is not allowed to access Flash
+						Access functionality. This error code can also be thrown if a security error
+						occurs during network access. Examples include the destination server does not
+						the client to connect by using crossdomain.xml, or the crossdomain.xml is not
+						reachable. 
+					 </p> 
+					 <p>For more information, see 
+						<xref href="https://forums.adobe.com/thread/1266592"
+						format="https" scope="external">DRM error 3315 possible root cause and
+						  resolution</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3316 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NOTUSED_MOVED 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Was 
+					 <codeph>ADOBECPSHIM_MinorErr_MissingAdobeCPModule</codeph>.
+					 Moved to 3344 due to conflict with Flash error code. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3317 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_LoadAdobeCPFailed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <note type="important">This is a rare error and usually does
+						not occur in a production environment. 
+					 </note> 
+					 <p>If the error does occur, you can do one of the following: 
+					 <ul id="ul_BC435E61623444BB98A86216531DC892"> 
+						<li id="li_FA433D0758B642D2AFDCF04906B3FE18">If you are using
+						  AIR, reinstall it. 
+						</li> 
+						<li id="li_F08D9AAFF46244F8842DEE5FD9CBBE0A">If you are using
+						  
+						  <ph conkeyref="phrases/flash-player-short"/>, download the 
+						  <codeph>AdobeCP</codeph> modules again. 
+						</li> 
+					 </ul> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3318 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_IncompatibleAdobeCPVersion 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Not applicable for Android. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3319 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_MissingAdobeCPGetAPI 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Not applicable for Android. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3320 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_HostAuthenticateFailed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Not applicable for Android.
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><ph id="ec-3221">3321</ph> 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_I15nFailed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The process of provisioning the client with keys failed.
+						subErrorId contains a client-specific, server-specific or line error. 
+					 </p> 
+					 <ul id="ul_98D919B9060A441AACB6106F6D8E8DA7"> 
+						<li id="li_DCAB00A8AC4A426CBBD377374B3F71AE">The
+						  distributor's software should retry the operation at least once. 
+						  <p>If you are using Google Chrome on Windows, provide an
+							 explanation about how to allow plugin access that is not in a sandbox. For more
+							 information see 
+							 <xref
+							  href="http://helpx.adobe.com/adobe-access/kb/error-3321.html" format="html"
+							  scope="external">Google Chrome's unsandbox access denied</xref>. 
+						  </p> 
+						</li> 
+						<li id="li_7FB7681FE32D444BB1BDBA3E5953A2C3">The distributor
+						  should complete one of the following tasks: 
+						  <ul id="ul_486B64F187C44AE3B4775953A6142836"> 
+							 <li id="li_095B1D4CD051427CB2BFA7082B454056">If the error
+								is consistent across platforms, you should escalate the issue with Adobe. 
+							 </li> 
+							 <li id="li_0C6EB7B912FA41E59657216498DA3515">If the error
+								is confined to Chrome on Windows, guide the user to allow unsandboxed plugin
+								access. 
+							 </li> 
+						  </ul> 
+						  <p>Distributors should update their SWF to version 19 or
+							 later, and the Chrome-specific 3321 error, a 3368 error is thrown. Error 3368
+							 can be handled more specifically by the distributor's software. This change was
+							 introduced in Chrome Stable channel version 26.0.1410.43. 
+						  </p> 
+						  <note type="tip">Error 
+							 <codeph>3321:1090519056</codeph> might happen with 
+							 <ph conkeyref="phrases/flash-player-short"/> versions
+							 11.1 to 11.6. We recommend that you upgrade to the latest 
+							 <ph conkeyref="phrases/flash-player-short"/> version. 
+						  </note> 
+						</li> 
+					 </ul> 
+					 <p>For more information, see 
+						<xref href="https://forums.adobe.com/thread/1277138"
+						 format="https" scope="external">DRM error 3321 Causes &amp; Resolution</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col3"><b>Global Store corruption
+						errors</b> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><ph id="ec-3322">3322</ph> 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_DeviceBindingFailed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The device does not appear to match the configuration that
+						was present when initialized. subErrorId contains a client-specific or line
+						error. 
+					 </p> 
+					 <p>The distributor's software should complete one of the
+						following tasks: 
+					 <ul id="ul_444401051A2E407B95BC44491E9BB71C"> 
+						<li id="li_93493EA05DB44CB1AEC368663F1ABA8D"> 
+						  <p>If the device is not using 
+							 <ph conkeyref="phrases/flash-player-short"/>, and is
+							 using AIR, iOS, and so on, call 
+							 <codeph>DRMManager.resetDRMVouchers()</codeph>. 
+						  </p> 
+						  <p>If the issue occurs on iOS in a development phase, ask
+							 the developer to confirm whether the issue is observed when switching between
+							 builds that were downloaded from third-party, pre-release distribution systems
+							 (for example, HockeyApp) and a local build from Xcode. Attributes of a previous
+							 installation are not entirely overwritten when switching between a build
+							 distributed from HockeyApp and a build from Xcode. This situation might trigger
+							 the 3322 error. 
+						  </p> 
+						  <p>To resolve this issue, the developer should remove the
+							 older build from the device before installing the new build. 
+						  </p> 
+						</li> 
+						<li id="li_A5C9633F11584C788A2D9A23CC18FA6D">If the device is
+						  using 
+						  <ph conkeyref="phrases/flash-player-short"/>, and it is
+						  unusable from a 3322 or 3346 error codes, see the instructions from Adobe about
+						  how to programmatically reset your DRM license store on 
+						  <xref
+						  href="https://forums.adobe.com/message/5535907#5535907" format="https"
+						  scope="external">DRM Error 3322/3346/3368 in Chrome (Info-Bar Problems)</xref>.
+						  
+						</li> 
+					 </ul> 
+					 </p> 
+					 <p>This error is not expected to occur frequently. In corporate
+						environments that uses roaming profiles, if a user was viewing content that is
+						protected by DRM, the chances error 3322 occurring increases as the user logs
+						in from different machines. If possible, distributor should try to get this
+						information from user. 
+					 </p> 
+					 <p>If the error occurs frequently, escalate to Adobe. You must
+						notify Adobe whether resetting license store did (or did not) solve the problem
+						and tell Adobe on which browsers the error is occurring. 
+					 </p> 
+					 <p>For more information, see the following articles: 
+					 <ul id="ul_C468409D1EA046178CA7F54DCDCB84EA"> 
+						<li id="li_20C8CA3853574CE486F21E7A3667DAB9"><xref
+						  href="https://forums.adobe.com/message/5520902" format="https"
+						  scope="external"><?xm-replace_text https://forums.adobe.com/message/5520902?></xref>
+						  
+						</li> 
+						<li id="li_6E6F1BD6FE7843449B3E2F06F342EFF7"><xref
+						  href="https://forums.adobe.com/message/5535911" format="https"
+						  scope="external"><?xm-replace_text https://forums.adobe.com/message/5535911?></xref>
+						  
+						</li> 
+						<li id="li_2BE40E513A0C4BAD900C7B69FEF5D690"><xref
+						  href="https://forums.adobe.com/message/5748618" format="https"
+						  scope="external"><?xm-replace_text https://forums.adobe.com/message/5748618?></xref>
+						  
+						</li> 
+						<li id="li_9C2BD122E3874E2893DD43E082A877E0"><xref
+						  href="https://forums.adobe.com/message/6061165" format="https"
+						  scope="external"><?xm-replace_text https://forums.adobe.com/message/6061165?></xref>
+						  
+						</li> 
+					 </ul> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3323 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_CorruptGlobalStateStore 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Files used by the DRM client have been modified
+						unexpectedly. subErrorId contains a client-specific or line error. 
+					 </p> 
+					 <ul id="ul_96EA771046CA4B2B9FAE24D493F43FF2"> 
+						<li id="li_D2693CD8EFEF46108828BA17E3F54FF6">The
+						  distributor's software should guide the user to reset in the same way as for
+						  3322. 
+						</li> 
+						<li id="li_0149B82436B64E28AC2B8C9B0EB09898">If the
+						  GlobalStore is failing at a rate greater than the expected failure rate of the
+						  hard drives of your user base, escalate the issue to Adobe. 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3324 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_MachineTokenInvalid 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 Reset DRM local storage for this application. Call
+						 DRMManager.resetDRM. 
+					 <p>The license server might not be able to connect to the
+						Certificate Revocation List (CRL) server to refresh its CRL files, or the
+						client machine is requesting a license/authentication that has been revoked by
+						the license server. 
+					 </p> 
+					 <p>In the server logs, an error code 111 is
+						MachineTokenInvalid. However, at the client level, error code 111 is translated
+						to error code 3324. 
+					 </p> 
+					 <p>The DRM license server administrator should check whether
+						the customer's license server has ever been able to retrieve the Adobe CRL
+						files. If the customer is using Tomcat, the customer can check the<filepath>
+						  tomcat/temp/</filepath> directory to see whether there are 4 CRL files. 
+					 </p> 
+					 <ul id="ul_23B7F1A104AF49E79EA87DB8E15E337E"> 
+						<li id="li_855D87F251184FE688A8D5FA0F6C9EF5">If the files are
+						  in this directory, double-click the files in Windows Explorer and in the CRL
+						  viewer application, determine whether any of the files have expired. 
+						</li> 
+						<li id="li_58EC4EDA2B5146188A0FF7B33C91E2FD">If there are no
+						  files in tomcat/temp/, then it can be assumed this license server has never
+						  been able to reach the Adobe CRL server due to a firewall/routing issue. 
+						</li> 
+					 </ul> 
+					 <p>For more information, see 
+						<xref
+						href="http://help.adobe.com/en_US/primetime/drm/5.3/secure_deployment_guidelines/index.html#concept-Firewall_rules"
+						format="http" scope="external">Firewall rules</xref>. 
+					 </p> 
+					 <p>If the CRL files are not available or have expired, you must
+						confirm whether the license server can be reached. Open a network sniffer on
+						the customer's license server, restart the server, and have a client attempt to
+						request a license from the server. You can observe the network traffic to see
+						whether calls to the following URL endpoints are successful: 
+						<note type="tip">You can also enter the following CRL URLs in
+						  a browser to see whether you can manually download each file. 
+						</note> 
+					 <ul id="ul_9B65C7ABBDEC4AC9BF3755FFD3587971"> 
+						<li id="li_6867A9050E8D421C9138AC853D1784C9"><xref
+						  href="http://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl"
+						  format="http"
+						  scope="external">crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl</xref>
+						  
+						</li> 
+						<li id="li_6431689260554EAFAFDA2EC31798DCB5"><xref
+						  href="http://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl" format="http"
+						  scope="external">crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl</xref> 
+						</li> 
+						<li id="li_2939674D0F854ADEB67E45FD216288A2"><xref
+						  href="http://crl2.adobe.com/Adobe/FlashAccessRootCA.crl" format="http"
+						  scope="external">crl2.adobe.com/Adobe/FlashAccessRootCA.crl</xref> 
+						</li> 
+						<li id="li_96386E00BE9D4CB99D100057A5F7C6DD"><xref
+						  href="http://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl"
+						  format="http" scope="external">crl3.adobe.com/AdobeSystemsIncorporated
+							 FlashAccessRuntime/LatestCRL.crl</xref> 
+						</li> 
+					 </ul> 
+					 </p> 
+					 <p>If the firewall rules are open and there are no current 3324
+						errors, there might have been a temporary network issue. Check the customer's
+						server logs, which are probably in the 
+						<codeph>/tomcat/logs/</codeph> directory, to determine
+						whether an error occurred when the license server tried to fetch the
+						Certificate Revocation Lists. 
+						<note type="important">An error might occur when a large
+						  number (or a burst) of clients report a 3324 error to a temporary network issue
+						  when renewing a CRL file. When the network issue was resolved, the 3324 issues
+						  were also resolved. 
+						</note> 
+					 </p> 
+					 <p>If all 4 of the CRL files exist in the 
+						<filepath>tomcat/temp/</filepath> directory, and clients are
+						still getting 3324 error codes, there might be file access issues to the CRL
+						files. To resolve this issue, you might want to review the logs and purge the
+						existing CRL files. 
+					 </p> 
+					 <p>If there are no server issues, prompt the user to reset in
+						as described in 3322. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col3"><b>Server Store corruption
+						errors</b> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3325 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_CorruptServerStateStore 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Files used by the DRM client have been modified
+						unexpectedly. 
+						<codeph>subErrorId</codeph> contains a client-specific or
+						line error. 
+					 </p> 
+					 <ul id="ul_860D2402DA61460AB0D938F1116F6D64"> 
+						<li id="li_CF368C43452B4265B62ADA3E223894BA">The
+						  distributor's software should retry the operation again, because AdobeCP has
+						  deleted the offending server store internally, and a retry should succeed. If
+						  retry fails, log the issue. 
+						</li> 
+						<li id="li_51A5803A1F754970BB4EBD6494F5DC96">If retries are
+						  failing at a rate greater than the expected failure rate of the hard drives of
+						  your user base, escalate the issue to Adobe. 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3326 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_StoreTamperingDetected 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Call 
+					 <codeph>DRMManager.resetDRM</codeph>. 
+					 <p>The License store has been tampered/corrupted and can no
+						longer be used. 
+					 </p> 
+					 <p>The distributor's software should guide the user to reset in
+						the same way as described in 3322. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3327 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_ClockTamperingDetected 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Fix the clock or acquire 
+					 <codeph>Authn/Lic/Domain</codeph> license again. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1"
+				  nameend="col3"><b>Authentication/License/Domain server errors</b> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3328 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_ServerErrorTryAgain 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>This is a server-side error where the server was unable to
+						complete the request from the client. This error can occur when, for example,
+						the server is busy, HTTP/500, the server does not have the needed key to
+						decrypt the request, and so on. 
+					 </p> 
+					 <p>On the client, there is no way to determine what went wrong.
+						The customer must review the Adobe Access server logs, which are usually called
+						
+						<codeph>AdobeFlashAccess.log</codeph>, to determine what went
+						wrong. There is always a descriptive stack trace in the log to indicate the
+						problem. 
+						<codeph>subErrorId</codeph> contains a server-specific or
+						line error. 
+					 </p> 
+					 <p>The distributor should look at server logs to identify which
+						server is sending this error. For 3328 errors that has a sub-error code 101,
+						the server cannot decrypt the request. The customer must validate that the
+						license / transport server certificates that are installed on the license
+						server match and correspond with the certificates that is used during
+						packaging. 
+					 </p> 
+					 <p>In addition, if customers are using the Reference
+						Implementation, they must ensure that there are no typos in the 
+						<codeph>flashaccess-refimpl.properties</codeph> file where
+						the primary and additional certificates are specified. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3329 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_ApplicationSpecificError 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The application-specific sub error code is not known to
+						Flash Access. 
+						<codeph>subErrorId</codeph> contains a server-specific error
+						from the publishers customized license server. The server returned an error in
+						the application-specific namespace. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3330 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NeedAuthentication 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>This error occurs when the content is configured to ask
+						clients to authenticate before getting the licenses. 
+					 </p> 
+					 <ul id="ul_712D29B8B5A6401FB014C4A283918E32"> 
+						<li id="li_2D56905EB50D4FDEAD69CA8EAE38AD1A">The
+						  distributor's software should authenticate the user and then acquire the
+						  license again. 
+						  <p>If your service does not intend to use authentication,
+							 log the identify of the content that is causing this error. 
+						  </p>
+						</li> 
+						<li id="li_B3BCF899B8BE41C7A4F7CF84B0503483">This error
+						  should not require an escalation, unless the content is not supposed to be
+						  configured to require authentication. 
+						  <p>In this case, repackage the offending content with
+							 proper policy. If the content is packaged correctly, see Diagnosing policy /
+							 license discrepancies. 
+						  </p>
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col1" nameend="col3"> 
+					 <b>License Enforcement errors that aren't covered above</b> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3331 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_ContentNotYetValid 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The acquired license is not yet valid. To resolve this
+						issue, check whether the client clock is not set correctly. To set the client
+						clock, repackage the content or modify the license server configuration. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3332 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_CachedLicenseExpired 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Reacquire license from the server. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3333 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_PlaybackWindowExpired 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>You must notify users that they cannot play this content
+						till the policy expires. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3334 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_InvalidDRMPlatform 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>This platform is not allowed to playback the content
+						because, for example, the content provider has configured Adobe Access to deny
+						content to Adobe Access on a platform or a shared domain-bound license is bound
+						to a shared domain token that is meant for a different partition. 
+					 </p> 
+					 <p>CDM might throw this error if content was not packaged by
+						using an appropriate (CDM feature gated) packager certification. 
+					 </p> 
+					 <p>If the content is packaged with an incorrect PHDS/PHLS
+						certificate, the content might work in Chrome but not other browsers (or vice
+						versa). 
+						<note type="tip">This is because Chrome uses different
+						  PHDS/PHLS certificates. 
+						</note>To confirm which certificate is being used, dump the
+						details of the content metadata and look for the 
+						<i>recipient certificates</i>. For more information, see 
+						<xref
+						href="https://adobeprimetime.zendesk.com/agent/tickets/2891" format="https"
+						scope="external"><?xm-replace_text https://adobeprimetime.zendesk.com/agent/tickets/2891?></xref>.
+						
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3335 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_InvalidDRMVersion 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Upgrade to the latest version of the <ph conkeyref="phrases/primetime-sdk-name"/>
+					 for Android. 
+					 <p>To resolve this issue, complete one of the following tasks: 
+					 <ul id="ul_BF1742948BC9461CB8686DE70124D3CD"> 
+						<li id="li_690D440C94CC45A0AE55EC319B1C4C23">Upgrade AIR 
+						</li> 
+						<li id="li_CDD20251C881466E88BE7BBB53D61EBC">For 
+						  <ph conkeyref="phrases/flash-player-short"/>, upgrade the
+						  AdobeCP module and retry playback. 
+						</li> 
+					 </ul> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3336 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_InvalidRuntimePlatform 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>This platform is not allowed to playback the content
+						because, for example, the content provider has configured Access to deny
+						content to FP/AIR on a platform. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3337 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_InvalidRuntimeVersion 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 Upgrade to the latest version of <ph conkeyref="phrases/primetime-sdk-name"/> for Android.
+					 <p>This occurs if the content or the server is configured to
+						deny playback to a particular version of the Flash or AIR runtimes. 
+					 </p> 
+					 <ul id="ul_B0732D941256483CABBDD30C9BF43249"> 
+						<li id="li_72782B1D638F48C0B87084689FB9C798">If the user is
+						  on an operating system on which Flash can be upgraded, the distributor's
+						  software should prompt the user to upgrade Flash and try again. Otherwise
+						  advise the user to use a different machine. 
+						</li> 
+						<li id="li_1E3FD93CE39E43F2B7D961299B1211DA">If error 3337s
+						  is suspected, identify whether it is occurring for specific content and
+						  repackage that content. If content is packaged correctly see Diagnosing policy
+						  / license discrepancies 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3338 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_UnknownConnectionType 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Unable to detect the connection type, and the policy
+						requires you to turn on Output Protection. This issue is expected only if the
+						content is packaged to require digital or analog output protection. 
+					 </p> 
+					 <p>An issue in versions of 
+						<ph conkeyref="phrases/flash-player-short"/> older than
+						version 11.8.800.168 caused error 3338 to occasionally occur on content for
+						which the policy indicated that content protection is 
+						<codeph>USE IF AVAILABLE</codeph>. This issue is fixed in
+						version 11.8.800.168 and later. 
+					 </p> 
+					 <ul id="ul_4B6CA26A53F84838B5B95400925464D4"> 
+						<li id="li_CBD890F467E449EBB5116E1561252058">The
+						  distributor's software select a variant of the content that does not require
+						  output protection (for example SD variant of an HD stream). 
+						  <p>If error 3338 is occurring on 
+							 <codeph>USE_IF_AVAILABLE 
+							 </codeph> content, check for player version number. If
+							 the player version is less than 11.8.800.168, advise the user to upgrade 
+							 <ph conkeyref="phrases/flash-player-short"/>. If error
+							 3338 is occurring on versions above 11.8.800.168, log which content caused the
+							 error. 
+						  </p>
+						</li> 
+						<li id="li_62886C1D96264B129928A7E29E6C70E1">The distributor
+						  should check which content is causing this error and validate that the
+						  content's policy is setting 
+						  <codeph>NO_PROTECTION</codeph> or 
+						  <codeph>USE_IF_AVAILABLE</codeph> for analog and digital
+						  outputs. 
+						  <p>If content is inadvertently packaged with 
+							 <codeph>NO_OUTPUT</codeph> or 
+							 <codeph>REQUIRED</codeph>, repackage the content. If
+							 content is packaged correctly see Diagnosing policy / license discrepancies.
+							 Otherwise escalate to Adobe. 
+						  </p>
+						</li> 
+					 </ul> 
+					 <p>For more information, see 
+						<xref href="https://forums.adobe.com/message/5518688"
+						 format="https" scope="external">Getting unexpected 3338 errors when your DRM
+						  policy is set to USE_IF_AVAILABLE?</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3339 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NoAnalogPlaybackAllowed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Unable to play back on analog device. To
+					 resolve the issue, connect a digital device. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3340 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NoAnalogProtectionAvail 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Unable to play back content because the
+					 connected analog external display device (monitor/TV) does not have the correct
+					 capabilities (for example, the device does not have Macrovision or ACP). 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3341 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NoDigitalPlaybackAllowed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Unable to play back content on a digital
+					 device. 
+					 <note type="important">This issue should not happen in a
+						production environment, because content publishers should not disallow digital
+						playback. 
+					 </note> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3342 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NoDigitalProtectionAvail 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> The connected digital external display
+					 device (monitor/TV) does not have the correct capabilities. For example, the
+					 device does not have HDCP. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3343 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_IntegrityVerificationFailed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Not applicable for Android.
+					 </p>
+					 <p>This error is currently known to happen initially after a
+						new version of Flash is released. It occurs because Flash upgraded while Flash
+						was open, which puts Flash in a bad state until browser restarts. 
+					 </p> 
+					 <ul id="ul_A0AC4A77550E40409A04BD33748EA987"> 
+						<li id="li_F41C1ABD838D41ABB0DF65093E664A29">The
+						  distributor's software should complete the following tasks: 
+						  <ul id="ul_79B2AB1372074D448F129851AA24F985"> 
+							 <li id="li_B93EDD263D78434FAF198A01938D3508">Recommend
+								that the user close or quit all browsers and then reopen. 
+							 </li> 
+							 <li id="li_ADFBCFA66AD849E18DB390455458528E">Check if the
+								version of Flash is current. 
+								<p>If the version is not current, advise the customer
+								  to upgrade, close all tabs in their browser, and reopen. 
+								</p> 
+							 </li> 
+						  </ul> 
+						</li> 
+						<li id="li_281B54582B5949AEA7D166246917EE41">If error appears
+						  to occur after a successful browser restart, escalate to Adobe. 
+						  <p>When a new version is released, we recommend that you
+							 contact Adobe Support to see whether the background updates issue has been
+							 fixed. 
+						  </p>
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3344 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_MissingAdobeCPModule 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Not applicable for Android. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3345 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_DRMNoAccessError 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Not applicable for Android. 
+					 </p>
+					 <p>This error occurs when part of Flash or AIR was not
+						installed correctly. 
+					 </p> 
+					 <p>The distributor's software should do one of the following: 
+					 <ul id="ul_D1188E2D4FDF4BD89A04F5629D75D981"> 
+						<li id="li_B33FBCA5D4534D668B86A5E93DB3A809">Ask the user to
+						  uninstall and reinstall AIR. 
+						</li> 
+						<li id="li_B7D2388E9FA84C26AF1C87B48AF9EF16">For 
+						  <ph conkeyref="phrases/flash-player-short"/>, call 
+						  <codeph>System.update</codeph>. 
+						</li> 
+					 </ul> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3346 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_MigrationFailed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <ul id="ul_518AD4931CC64EB3A962DD451E6C5067"> 
+						<li id="li_3C44F0740B08490E9C62D89C40B57DC2">The
+						  distributor's software should do one of the following: 
+						  <ul id="ul_7D90526684BF4EB2BBADCF598AA13086"> 
+							 <li id="li_D15B4BEDAF7340F6B9BC886DF6E346EC">If AIR, call
+								
+								<codeph>DRMManager.resetDRMVouchers()</codeph> 
+							 </li> 
+							 <li id="li_40A51D35408249CFA28DBC49FDA3408B">If Flash has
+								is unusable because of errors 3322 or 3346 error code, users should go to 
+								<xref
+								href="http://forums.adobe.com/message/5535907#5535907" format="http"
+								scope="external"><?xm-replace_text http://forums.adobe.com/message/5535907#5535907?></xref>
+								and follow the Adobe article's instructions to programmatically reset their DRM
+								license store. 
+							 </li> 
+						  </ul> 
+						</li> 
+						<li id="li_0464471E4A094C80BF2986694341921A">If this error
+						  occurs frequently, the distributor should provide the details about the
+						  frequency player version and the browser version to Adobe. 
+						</li> 
+					 </ul> 
+					 <p>For more information, see the following forum articles: 
+					 <ul id="ul_44E0077FEAA749CC9549BF3846065304"> 
+						<li id="li_2BE3B2443380415DA73B7AA3B6547B31"><xref
+						  href="https://forums.adobe.com/message/5520902" format="https"
+						  scope="external">DRM Error 3322/3346/3368 in Chrome (Info-Bar Problems)</xref> 
+						</li> 
+						<li id="li_4E5C7414756644E1AB78BE7B8112228C"><xref
+						  href="https://forums.adobe.com/message/5535911" format="https"
+						  scope="external">3322 or 3346 error after hardware change</xref> 
+						</li> 
+					 </ul> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3347 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_InsufficientDeviceCapabilites
+						
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The primary meaning of this error is that the license has a
+						constraint which the clients' DRM certificate indicates it cannot satisfy. The
+						following "hardware capabilities” are defined when the clients DRM certificate
+						is issued: 
+					 <ul id="ul_1EB6F1469C244CF0BA52C212495C053D"> 
+						<li id="li_646043CE045C4DE2BBC939E1F4963DFE"><b>Non-User
+							 Accessible Bus</b>. If 
+						  <b>true</b>, the decrypted media never flows across a bus
+						  or into main memory where an application can access to it. 
+						  <p>If 
+							 <b>false</b>, content might be accessible to the
+							 application after decryption. 
+						  </p>
+						</li> 
+						<li id="li_02AAECAF4D35447BA10554541B46DE67"><b>Hardware Root
+							 of Trust</b>. If 
+						  <b>true</b>, all software that is loaded at boot time on
+						  the device was validated against a key or digest that is only available in
+						  hardware. 
+						  <p>Both of these constraints are checked on the client side
+							 when the license is opened against the DRM certificate for the client and
+							 failure is immediate. These constraints can also be checked on the server side
+							 prior to issuing the license. 
+						  </p>
+						</li> 
+					 </ul> 
+					 </p> 
+					 <p>The secondary meaning of this error is that the license has
+						the “Jailbreak Enforcement" policy set and a jailbreak has been detected on the
+						device. This check is done periodically on the client side and cannot be
+						checked on the server side. 
+					 </p> 
+					 <p>The distributors can update the policies and remove the
+						restrictions. For device capability policies, issue the policy update command
+						with the 
+						<codeph>-devCapabilitiesV1</codeph> flag and no arguments.
+						For jailbreak enforcement, set 
+						<codeph>policy.enforceJailbreak=false</codeph>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3348 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_HardStopIntervalExpired 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Hard stop interval expired. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3349 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_ServerVersionTooHigh 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">The server is running at a version that is
+					 higher than the highest version that is supported by client. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3350 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_ServerVersionTooLow 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">The server is running at a version that is
+					 lower than the minimum version that is supported by client. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3351 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_DomainTokenInvalid 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3">Domain token was invalid. To resolve this
+					 issue, register with the domain again. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3352 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_DomainTokenTooOld 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> The domain token is older than the token
+					 that is required by the license. To resolve the issue, register with the domain
+					 again. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3353 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_DomainTokenTooNew 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> The domain token is newer than the token
+					 that is required by the license. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3354 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_DomainTokenExpired 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Domain token has expired. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3355 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_DomainJoinFailed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Domain join failed. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3356 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NoCorrespondingRoot 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> A root license for a V3 leaf license was
+					 not found. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3357 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NoValidEmbeddedLicense 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> No valid embedded license was found. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3358 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NoACPProtectionAvail 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Cannot play back because the connected
+					 analog device does not have ACP protection. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3359 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NoCGMSAProtectionAvail 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Cannot play back because connected analog
+					 device does not have CGMS-A protection. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3360 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_DomainRegistrationRequired 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Content requires domain registration. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3361 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NotRegisteredToDomain 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Machine is not registered to the domain
+					 for the specified metadata. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3362 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_OperationTimeoutError 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> Asynchronous operation took longer than 
+					 <codeph>maxOperationTimeout</codeph>. Only returned by iOS
+					 DRMNative Framework. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3363 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_UnsupportedIOSPlaylistError 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> The M3U8 playlist passed in had
+					 unsupported content. Only returned by iOS DRMNative Framework. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3364 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_NoDeviceId 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The framework requested the device ID, but the returned
+						value was empty.
+					 </p> 
+					 <p>The user should not select the 
+						<uicontrol>Allow identifiers for protected
+						  content</uicontrol> check box in Chrome settings. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3365 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_IncognitoModeNotAllowed 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>This browser/platform combination does not allow
+						DRM-protected playback in Incognito mode. 
+					 </p> 
+					 <p>The distributor's software should advise the user to exit
+						Incognito mode or use a different browser. For more information, see 
+						<xref href="https://forums.adobe.com/thread/1266622"
+						 format="https" scope="external">DRM error 3365 cause and resolution</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3366 
+				  </entry> 
+				  <entry colname="col2"><codeph> AAXS_BadParameter 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The host runtime called the Access library with a bad
+						parameter. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3367 
+				  </entry> 
+				  <entry colname="col2"><codeph>AAXS_BadSignature 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> m3u8 manifest signing failed. Only
+					 returned by iOS DRMNative Framework or AVE. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3368 
+				  </entry> 
+				  <entry colname="col2"><codeph>AAXS_UserSettingsNoAccess</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The user cancelled the operation or has entered settings
+						that disallow access to the system. 
+					 </p> 
+					 <p>This error is only thrown when the SWF version is 19 or
+						later. For backward compatibility, 3321 is thrown when the SWF is version 18 or
+						earlier. 
+					 </p> 
+					 <p>The distributor's software should guide the user to an
+						explanation of how to allow unsandboxed plugin access. For more information,
+						see 
+						<xref
+						href="http://helpx.adobe.com/adobe-access/kb/error-3321.html" format="html"
+						scope="external">Google Chrome's unsandbox access denied</xref> and 
+						<xref href="https://forums.adobe.com/message/5520902"
+						 format="https" scope="external">DRM Error 3322/3346/3368 in Chrome (Info-Bar
+						  Problems)</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3369 
+				  </entry> 
+				  <entry colname="col2"><codeph>AAXS_InterfaceNotAvailable</codeph>
+					 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>A required browser interface is not available. This issue
+						occurs only on Pepper. There could be a mismatch between the Flash plugin and
+						the browser version. 
+					 </p> 
+					 <p>The distributer's software should guide the user to ensure
+						that they have the latest version of the browser installed. 
+					 </p> 
+					 <p> If the incidences of this error are increasing, and
+						corresponds to a browser update being released, escalate to Adobe. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3370 
+				  </entry> 
+				  <entry
+				  colname="col2"><codeph>AAXS_ContentIdSettingsNoAccess</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The user has disabled the 
+						<uicontrol>Allow identifiers for protected
+						  content</uicontrol> setting. 
+					 </p> 
+					 <note type="tip">This error appeared with Pepper versions
+						13.0.0.x or greater. 
+					 </note> 
+					 <p>The distributor's software should guide the user to enable
+						the 
+						<uicontrol>Allow identifiers for protected
+						  content</uicontrol> setting. 
+					 </p> 
+					 <p>The distributor's operations team should guide the user to
+						enable the 
+						<uicontrol>Allow identifiers for protected
+						  content</uicontrol> setting. 
+					 </p> 
+					 <p>For more information, see 
+						<xref href="https://forums.adobe.com/message/6518323#6518323"
+						format="https" scope="external"><?xm-replace_text https://forums.adobe.com/message/6518323#6518323?></xref>.
+						
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3371 
+				  </entry> 
+				  <entry
+				  colname="col2"><codeph>AAXS_NoOPConstraintInPixel</codeph><codeph>Constraints</codeph>
+					 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Malformed resolution based on output protection constraints
+						in the license. 
+					 </p> 
+					 <p>The distributor's software should display an error message.
+						Ask user to report the problem to the distributor with a content title. 
+					 </p> 
+					 <p>The distributor should repackage content with a valid
+						policy. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3372 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>AAXS_ResolutionLargerThanMaxResolution</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The content's resolution is larger than the maximum
+						resolution that is specified in the output-protection constraint. 
+					 </p> 
+					 <p>If the distributor's operations team sees this error in
+						their logs, they should review the resolution-based output protection policy,
+						and if necessary, repackage the content. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3373 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>AAXS_MinorErr_DisplayResolutionLargerThanConstrain</codeph>
+					 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The content's resolution is larger than the resolution that
+						is specified by the currently active output-protection constraint. 
+					 </p> 
+					 <p>If the distributor's operations team sees this error in
+						their logs, they should review the resolution-based output protection policy,
+						and if necessary, repackage the content. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">3374 
+				  </entry> 
+				  <entry
+					colname="col2"><codeph>AAXS_MinorErr_ClientCommProcessFailed</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Failed during client-side communication processing, for
+						example, request generation, response processing, bad auth token, and so on. 
+					 </p> 
+					 <p>If the distributor's operations team sees this error in
+						their logs, they should review the resolution-based output protection policy,
+						and if necessary, repackage content. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

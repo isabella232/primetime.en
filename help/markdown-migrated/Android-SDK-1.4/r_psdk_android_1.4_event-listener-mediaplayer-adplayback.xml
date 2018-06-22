@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="mediaplayer-adplaybackeventlistener"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Ad playback events</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> dispatches
+	 ad-playback events in response to ad-related operations such as when an ad
+	 starts playing. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn>To be notified about all ad-playback related events, register an implementation of
+				<codeph>MediaPlayer.AdPlaybackEventListener</codeph> including the following
+			callbacks.  <note type="tip">When ads are inserted into or removed from the media, <ph
+					conkeyref="phrases/primetime-sdk-name"/> dispatches the playback event <xref
+					href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onTimelineUpdated()"
+					format="html" scope="external">onTimelineUpdated</xref>. </note>
+			<table frame="all" colsep="1" rowsep="1">
+				<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA">
+					<colspec colnum="1" colname="1" colwidth="1.00*"/>
+					<colspec colnum="2" colname="2" colwidth="1.31*"/>
+					<thead>
+						<row rowsep="1">
+							<entry colname="1">Event </entry>
+							<entry colname="2">Meaning </entry>
+						</row>
+					</thead>
+					<tbody>
+						<row rowsep="1">
+							<entry colname="1"><codeph><xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.AdPlaybackEventListener.html#onAdBreakComplete(com.adobe.mediacore.timeline.advertising.AdBreak)"
+										format="html" scope="external">onAdBreakComplete</xref>
+									(AdBreak adBreak) </codeph></entry>
+							<entry colname="2">An ad break has played completely. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph>onAdBreakSkipped</codeph></entry>
+							<entry colname="2">An ad break was skipped during playback. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph><xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.AdPlaybackEventListener.html#onAdBreakStart(com.adobe.mediacore.timeline.advertising.AdBreak)"
+										format="html" scope="external">onAdBreakStart</xref>
+									(AdBreak adBreak)</codeph></entry>
+							<entry colname="2">An ad break has started. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph><xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.AdPlaybackEventListener.html#onAdClick(com.adobe.mediacore.timeline.advertising.AdBreak,%20com.adobe.mediacore.timeline.advertising.Ad,%20com.adobe.mediacore.timeline.advertising.AdClick)"
+										format="html" scope="external">onAdClick</xref> (AdBreak
+									adBreak, Ad ad, AdClick adClick)  </codeph></entry>
+							<entry colname="2">The user has clicked the ad. Provides information to
+								your application about the ad that the user clicked, in response to
+								your application calling <codeph>notifyClick</codeph> on the
+									<codeph>MediaPlayerView</codeph>. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph><xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.AdPlaybackEventListener.html#onAdComplete(com.adobe.mediacore.timeline.advertising.AdBreak)"
+										format="html" scope="external">onAdComplete</xref> (AdBreak
+									adBreak, Ad ad) </codeph></entry>
+							<entry colname="2">An ad has played completely. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph><xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.AdPlaybackEventListener.html#onAdProgress(com.adobe.mediacore.timeline.advertising.AdBreak,com.adobe.mediacore.timeline.advertising.Ad,%20int)"
+										format="html" scope="external">onAdProgress</xref> (AdBreak
+									adBreak, Ad ad, int percentage)</codeph>
+							</entry>
+							<entry colname="2">Ad playback has progressed. Dispatched multiple times
+								while an ad plays. </entry>
+						</row>
+						<row rowsep="0">
+							<entry colname="1"><codeph><xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.AdPlaybackEventListener.html#onAdStart(com.adobe.mediacore.timeline.advertising.AdBreak,%20com.adobe.mediacore.timeline.advertising.Ad)"
+										format="html" scope="local">onAdStart</xref> (AdBreak
+									adBreak, Ad ad)</codeph></entry>
+							<entry colname="2">An ad has started. </entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</refsyn> 
+  </refbody> 
+</reference> 

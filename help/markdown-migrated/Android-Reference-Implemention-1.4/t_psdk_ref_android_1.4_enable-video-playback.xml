@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_enable-video-playback"> 
+  <title>Enable video playback</title> 
+  <shortdesc>Create a <codeph>PlaybackManager</codeph> that handles the HLS stream setup and
+		playback operation. No other configuration is required.  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_B6246101990941F3AE8AA959934E1B6C"> 
+		<step id="step_4411884913104310A3B15A4D1DF7C85A">
+				<cmd>Create the media player object by making sure the following code exists in
+						<filepath>PlayerFragment.java</filepath>: </cmd>
+				<info>
+					<codeblock outputclass="syntax java">private MediaPlayer createMediaPlayer() {
+        MediaPlayer mediaPlayer = DefaultMediaPlayer.create(getActivity().getApplicationContext());
+        return mediaPlayer;</codeblock>
+					<draft-comment>I've duplicated this information. It also exists in the
+						PlayerFragment section, just before the Feature manager section. I figured
+						that I should have it here as well, in case they jump directly to this
+						section. </draft-comment>
+				</info>
+			</step> 
+		<step id="step_F5DB63911F4245E79CEAFAC6E42A0041">
+				<cmd>Create the playback manager through the <codeph>ManagerFactory</codeph>: </cmd>
+				<info>
+					<codeblock outputclass="syntax java">playbackManager = ManagerFactory.getPlaybackManager(config, mediaPlayer);</codeblock>
+				</info>
+			</step> 
+		<step id="step_2DEDED057A6D427DBADA7CC86D056674">
+				<cmd>Implement the <codeph>PlaybackManagerEventListener</codeph> in the
+						<codeph>PlayerFragment</codeph> to handle the playback events: </cmd>
+				<info>
+					<codeblock outputclass="syntax java">private final PlaybackManagerEventListener playbackManagerEventListener = 
+  new PlaybackManagerEventListener() </codeblock>
+				</info>
+			</step> 
+		<step id="step_CE0A8CE68D954ED3813C7CC4BC9275F1">
+				<cmd>Register the event listener in the <codeph>PlayerFragment</codeph>: </cmd>
+				<info>
+					<codeblock>playbackManager.addEventListener(playbackManagerEventListener);</codeblock>
+				</info>
+			</step> 
+		<step id="step_E59694F9D3C049DABD5C8AA087E94AD2">
+				<cmd>Set up the video resource: </cmd>
+				<info>
+					<codeblock>playbackManager.setupVideo(url, adsManager); </codeblock>
+				</info>
+			</step> 
+		<step id="step_D5E38F12F31243269BBC4F41CD53FD89">
+				<cmd>Set up the control bar operations in the <codeph>PlayerFragment</codeph>: </cmd>
+				<info>
+					<codeblock>controlBar.pressPlay() {
+    playbackManager.play(); 
+}</codeblock>
+				</info>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

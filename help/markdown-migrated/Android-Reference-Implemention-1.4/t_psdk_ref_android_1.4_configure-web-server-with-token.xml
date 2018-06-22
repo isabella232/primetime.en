@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_configure-web-server-with-token"> 
+  <title>Configure your web server with the authorization token</title> 
+  <taskbody> 
+	 <steps id="steps_AEFBC246D2C844D3ABFAD59D7FFBACBD"> 
+		<step id="step_13BDCEBEB1E34276ADE02AB729F46C67"> 
+		  <cmd>Follow the steps in 
+			 <xref
+			  href="file:///C:/Users/paraki/Perforce/theoden_1666/primetime/users/documentation/XML/PSDKs/task/t_psdk_ref_configure-web-server.xml"
+			  format="xml"><?xm-replace_text t_psdk_ref_configure-web-server.xml?></xref> to
+			 set up a web server that hosts your authorization token. 
+		  </cmd> 
+		</step> 
+		<step id="step_3DFB24387DBD420AADF9509C0BD3AA49"> 
+		  <cmd>Copy the provided token, found in 
+			 <filepath>samples/PrimetimeReference/src/token/hlsaf_localhost.dat</filepath>,
+			 to your web root folder under 
+			 <filepath>/token/hlsaf_localhost.dat</filepath>. 
+		  </cmd> 
+		  <info>The token must be accessible from 
+			 <filepath>http://localhost/token/hlsaf_localhost.dat</filepath>. 
+		  </info> 
+		</step> 
+	 </steps> 
+	 <result id="result_D6A5ADC7A49B4ACD870ABC176ED7EE3C">If you want to host
+		the token in a different location, you can change the location of where the
+		tests will load the authorization token by editing the configuration file 
+		<filepath>source/ReferenceCoreTest/ReferenceCoreTest-build-config.xml</filepath>.
+		
+		<ul id="ul_AF53D9F48F634C4585D8920FE83A4DB6"> 
+		  <li id="li_7CF43F29D1254E92A13F65082B81B7F4">Change the server where
+			 the token is hosted by editing the value of parameter 
+			 <codeph>CONFIG::LoaderURL</codeph>. 
+		  </li> 
+		  <li id="li_CD75EBCE183249049AFF3985E3F2BD49">Change the path where the
+			 token is found by editing the value of parameter 
+			 <codeph>CONFIG::TokenURL</codeph>. 
+		  </li> 
+		</ul> 
+		<p> 
+		  <note> 
+			 <codeph>CONFIG::TokenURL</codeph> must begin with a forward-slash
+			 (<codeph>/</codeph>). 
+		  </note> 
+		</p> 
+	 </result> 
+  </taskbody> 
+</task> 

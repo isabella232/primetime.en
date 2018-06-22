@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="lifecycle-states-mediaplayer-object"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Lifecycle and statuses of the MediaPlayer object</title> 
+  <shortdesc>The status of the media player determines which actions are legal. </shortdesc> 
+  <conbody> 
+	 <p>For working with media player statuses: <ul id="ul_9E98AEE7F8D9465AAACC97F31E51E2A3">
+				<li id="li_2DA00F07F0AE44A8AE124D333323372B">You can retrieve the current status of
+					the <codeph>MediaPlayer</codeph> object with
+						<codeph>MediaPlayer.getStatus()</codeph>.  </li>
+				<li id="li_2D108E97ADFD429190B50FA6FE4B07CA">The list of statuses is defined in the <xref
+						href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/com/adobe/mediacore/MediaPlayerStatus.html"
+						format="html" scope="external">MediaPlayerStatus</xref> enum. </li>
+			</ul>
+		</p> 
+	 <p>Status-transition diagram for the lifecycle of a <codeph>MediaPlayer</codeph> instance: <fig
+				frame="all" id="fig_A6425F24C7734DC681D992859D2A6743">
+				<image href="images/media_player_statuses.png"
+					id="image_89B0165D5E5E4FF88917FC08B8370E25"/>
+			</fig>
+		</p> 
+	 <p>The following table provides details about the lifecycle and statuses of the media player:
+				<table id="table_82757A0043EB4AACA474E6B30326A6B7">
+				<tgroup cols="2">
+					<colspec colnum="1" colname="col1" colwidth="1.00*"/>
+					<colspec colnum="2" colname="col2" colwidth="2.74*"/>
+					<thead>
+						<row>
+							<entry colname="col1">Status </entry>
+							<entry colname="col2">Occurs when </entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry colname="col1">IDLE </entry>
+							<entry colname="col2">
+								<p>The media player's initial status. The player is created and is
+									waiting for you to specify a media player item. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1">INITIALIZING </entry>
+							<entry colname="col2">
+								<p>Your application calls <codeph>MediaPlayer.replaceCurrentItem()</codeph>. </p>
+								<p>The media player item is loading. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1">INITIALIZED </entry>
+							<entry colname="col2">
+								<p>TVSDK successfully set the media-player item. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1">PREPARING </entry>
+							<entry colname="col2">
+								<p>Your application calls <codeph>MediaPlayer.prepareToPlay()</codeph>. The media player is
+									loading the media player item and any associated resources. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1">PREPARED </entry>
+							<entry colname="col2">
+								<p>TVSDK has prepared the media stream and has attempted to perform
+									ad resolving and ad insertion (if enabled). The content is
+									prepared and ads have been inserted in the timeline, or the the
+									ad procedure failed. </p>
+								<p>Buffering or playback can begin. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1">PLAYING/PAUSED </entry>
+							<entry colname="col2">
+								<p>As the application plays and pauses the media, the media player
+									moves between these statuses. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1">SUSPENDED </entry>
+							<entry colname="col2">
+								<p>If the application navigates away from the playback, shuts down
+									the device, or switches applications while the player is playing
+									or paused, the media player is suspended and resources are
+									released. </p>
+								<p>Calling <codeph>MediaPlayer.restore()</codeph> returns the player to the status the
+									player was in before it was SUSPENDED. The exception is if the
+									player is SEEKING when suspended is called, the player is PAUSED
+									and then SUSPENDED. </p>
+								<note type="important">
+									<p>Remember the following information: <ul
+											id="ul_1B21668994D1474AAA0BE839E0D69B00">
+											<li id="li_08459A3AB03C45588D73FA162C27A56C">The <codeph>MediaPlayer</codeph>
+												automatically calls <codeph>suspend</codeph> only
+												when the surface object that is used by the
+												<codeph>MediaPlayerView</codeph> is destroyed. </li>
+											<li id="li_B9926AA2E7B9441490F37D24AE2678A1">The <codeph>MediaPlayer</codeph>
+												automatically calls <codeph>restore()</codeph> only
+												when a new surface object that is used by the
+												<codeph>MediaPlayerView</codeph> is created. </li>
+										</ul>
+									</p>
+								</note>
+								<p>If you always want playback to be paused when the MediaPlayer is restored, have your
+									application call <codeph>MediaPlayer.pause()</codeph> in the
+									Android Activity's <codeph>onPause()</codeph> method. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1">COMPLETE </entry>
+							<entry colname="col2">
+								<p>The player has reached the end of the stream, and playback has
+									stopped. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1">RELEASED </entry>
+							<entry colname="col2">
+								<p>Your application released the media player, which also releases
+									any associated resources. You can no longer use this instance.
+								</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1">ERROR </entry>
+							<entry colname="col2">
+								<p>An error occurred during the process. An error also might affect
+									what the application can do next. For more information, see
+										<xref
+										href="t_psdk_android_2.5_error-handling-set-up.xml#set-up-error-handling"
+										format="dita" scope="local"
+										><?xm-replace_text Set up error handling?></xref>. </p>
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p> 
+	 <note type="tip">You can use the status to provide feedback on the process, or example, a spinner
+			while waiting for the next status change, or take the next steps in playing the media,
+			such as waiting for the appropriate status before calling the next method. </note> 
+	 <p>For example:
+			<codeblock outputclass="syntax java">mediaPlayer.addEventListener(MediaPlayerEvent STATUS_CHANGED, new StatusChangeEventListener() {
+    @Override 
+    public void onStatusChanged(MediaPlayerStatusChangeEvent event) {
+        switch(event.getStatus()) {
+            case INITIALIZED:
+                mediaPlayer.prepareToPlay();
+                break;
+            case PREPARING:
+                showBufferingSpinner();
+                break;
+            case PREPARED:
+                hideBufferingSpinner();
+                mediaPlayer.play();
+                break;
+            ...               
+        }
+        ...
+    }
+});
+</codeblock>
+		</p> 
+  </conbody> 
+</concept> 

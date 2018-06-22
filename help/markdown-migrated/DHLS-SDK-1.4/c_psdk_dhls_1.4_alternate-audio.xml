@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="alternate-audio"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Alternate audio</title> 
+  <shortdesc> Alternate, or late-binding, audio allows you to switch among
+	 available audio tracks for a video track. This way, users can select a language
+	 track when the video is played. 
+  </shortdesc> 
+  <conbody> 
+	 <section id="section_E4F9DC28A2944BD08B4190A7F98A8365"> 
+		<p>When 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> creates the 
+		  <codeph>MediaPlayerItem</codeph> instance for the current video, it
+		  creates an 
+		  <codeph>AudioTrack</codeph> item for each available audio track. The
+		  item contains a 
+		  <codeph>name</codeph> property, a string that typically contains a
+		  user-recognizable description of the language of that track. The item also
+		  contains information about whether to use that track by default. 
+		</p> 
+		<p>When it is time to play the video, you can ask for a list of available
+		  audio tracks, optionally let the user choose one, and set the video to play
+		  with the selected track. 
+		</p> 
+		<p>Although rare, if an additional audio track becomes available after it creates the
+					<codeph>MediaPlayerItem</codeph>, <ph conkeyref="phrases/primetime-sdk-name"/>
+				fires a <codeph>MediaPlayerItem.AUDIO_UPDATED</codeph> event.</p> 
+	 </section> 
+	 <section id="section_87C42C30BA8C4F58A2DAB7CE07FCD3DE"> 
+		<title>Added APIs</title> 
+		<p>The following APIs have been added to support alternate audio: 
+		</p> 
+		<p><codeph><b>hasAlternateAudio</b></codeph> 
+		</p> 
+		<p>If the specified media has an alternate audio track, other than default track, this boolean
+				function returns <codeph>true</codeph>. If there is no alternate audio track, the
+				function returns <codeph>false</codeph>.
+				<codeblock outputclass="syntax cpp">bool MediaPlayerItemImpl::hasAlternateAudio() const {
+    return _hasAlternateAudio;
+}</codeblock>
+			</p> 
+		<p><b><codeph>getAudioTracks</codeph></b> 
+		</p> 
+		<p>This function returns list of all the current available audio tracks in a specified media.
+				<codeblock outputclass="syntax cpp">virtual PSDKErrorCode getAudioTracks(PSDKImmutableArray&lt;AudioTrack>*&amp; out) const {
+    if (_audioTracks) {
+        out = _audioTracks;
+        out->addRef();
+        return kECSuccess;
+    }
+    return kECDataNotAvailable;
+}
+</codeblock>
+			</p> 
+		<p><codeph><b>getSelectedAudioTrack</b></codeph> 
+		</p> 
+		<p>This function that returns the currently selected alternate audio track and properties such as
+				language. The auto-selection of track can also be extracted.
+				<codeblock outputclass="syntax cpp">PSDKErrorCode MediaPlayerItemImpl::getSelectedAudioTrack(AudioTrack &amp;out) const {
+    out = _currentAudioTrack;
+    return kECSuccess;
+}</codeblock>
+			</p> 
+		<p><codeph><b>selectAudioTrack</b></codeph> 
+		</p> 
+		<p>This function selects an alternate audio track to play.
+				<codeblock outputclass="syntax cpp">PSDKErrorCode MediaPlayerItemImpl::selectAudioTrack(const AudioTrack &amp;audioTrack) {
+    _lastPlayedAudioTrack = _currentAudioTrack;
+    if(_mediaPlayer &amp;&amp; _mediaPlayer-&gt;_trickPlay)
+        return kECUnsupportedOperation;
+    _currentAudioTrack = audioTrack;
+    PSDKErrorCode result = kECSuccess;
+    if (_currentAudioTrack) {
+        media::TimeLine* timeline = NULL;
+        if (_mediaPlayer-&gt;_fragHttpStreamer)
+            _mediaPlayer-&gt;_fragHttpStreamer-&gt;GetTimeLine(&amp;timeline);
+        if (timeline) {
+            for (int32_t i = timeline-&gt;GetFirstPeriodIndex(); i &lt;= timeline-&gt;GetLastPeriodIndex(); i++){
+                media::ErrorCode error = selectTrack(timeline,_mediaPlayer-&gt;_fragHttpStreamer, i, audioTrack.getName(), media::kSTTAudioIndex);
+                return _mediaPlayer-&gt;convertToPSDKError(error);
+            }
+        }
+    }  
+    return result;
+}</codeblock>
+			</p> 
+	 </section> 
+  </conbody> 
+</concept> 

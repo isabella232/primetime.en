@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_configure-for-low-bit-rate"> 
+  <title>Configure for low bit rates</title> 
+  <shortdesc>For some low bit-rate playback rates, the <ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>, by default,
+	 switches to the audio-only stream and the playback appears frozen. You can
+	 configure the player so that it never encounters a situation where it switches
+	 to audio-only. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_CA2D3AD30DAE43EF8D13C33FD968F7F1"> 
+		<step id="step_8B747E8EC5D24AD8AACCBED51BBC0F8E">
+				<cmd>Implement the <xref
+						href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html"
+						format="html" scope="external">IPlaybackConfig</xref> interface: </cmd>
+				<info>
+					<ul id="ul_219F28A9BF3E40F29856D5E2AD9EC98F">
+						<li id="li_B38AB1053FC8473A983BBD28582FFC4A">Ensure that <xref
+								href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html#getABRMinBitRate()"
+								format="html" scope="external">getABRMinBitRate</xref> is higher
+							than the audio-only bit rate (higher than 64000). </li>
+						<li id="li_EDFFEA00AF984D5C8BB8F4FADCC1C1E8">Ensure that <xref
+								href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html#isABRControlEnabled()"
+								format="html" scope="external">isABRControlEnabled</xref> is on. </li>
+					</ul>
+				</info>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

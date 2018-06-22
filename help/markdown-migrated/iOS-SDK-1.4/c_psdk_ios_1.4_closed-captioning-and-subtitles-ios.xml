@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ios_subtitles-and-closed-captioning"> 
+  <title>Subtitles and closed captioning</title> 
+  <shortdesc> Closed captions and subtitles have some unique differences, and
+	 you enable them in different ways. 
+  </shortdesc> 
+  <conbody> 
+	 <p>Subtitle streams run in parallel with the main content. Closed captions
+		are part of the data packets of the MPEG-2 video streams. 
+	 </p>
+	 <p>You should be aware of the following requirements for closed captions
+		and subtitles:
+	 <ul id="ul_32A3BCA3306744998E7CE6BCAF4E10F9">
+		<li id="li_21EDFC1EF3264982B3A76066385B32F1"><b>Closed captions</b>
+		  <ul id="ul_B8AB7C790A2D4DB1A2EEB106456F4B90"> 
+			 <li id="li_FA24D19B528C49C4ACAA86E9651F64E2">Closed captions are
+				typically in the same language as the audio and also represent background
+				sounds as text. 
+			 </li> 
+			 <li id="li_22EBCAB00A8D4D758D7F9DD8636FD6CC">Closed captions are part
+				of the data packets of the MPEG-2 video streams in the video transmission
+				stream. 
+			 </li> 
+			 <li id="li_32F4710745A54883AE5170B5B09823BA">Closed captions are
+				supported to the extent provided by the AV Foundation framework. 
+			 </li> 
+		  </ul>
+		</li>
+	 </ul>
+	 <ul id="ul_028CECA7EFE8489F83385247FEC8293C">
+		<li id="li_99782DBBAA1A4E16801A8C08537CBE41"><b>Subtitles</b>
+		  <ul id="ul_0FE3698194484C35A2AAA2EDE1005D96"> 
+			 <li id="li_EF64558396574B319E6D0A6E78CCF295">Subtitles are typically
+				in a different language and do not include background sounds. 
+			 </li> 
+			 <li id="li_5EC0D4069AC04F2BB7FD3C2F0511C88B">Subtitles are in streams
+				that run in parallel with the main content.
+				<p> The 
+				  <codeph>PTMediaPlayer</codeph> plays the main content and ads,
+				  where the main content could be live/linear or VOD, and ads could be pre-roll,
+				  mid-roll, or post-roll. 
+				</p>
+			 </li> 
+		  </ul>
+		  <p>Here are some additional requirements for subtitles in iOS: 
+		  <ul id="ul_u4g_yk4_dm"> 
+			 <li id="li_C183E2ABD6FA4E6E9BF0B0FB5899FF0A">For timestamps, the 
+				<codeph>X-TIMESTAMP-MAP</codeph> value, which is specified in the
+				header section of the 
+				<codeph>WebVTT</codeph> file, must match the video timestamp. 
+			 </li> 
+			 <li id="li_27386B85B91F4EFBA9E8E2F637FCBD52">For the system, you must
+				use iOS 6.1 or later. 
+			 </li> 
+		  </ul> 
+		  </p>
+		</li>
+	 </ul>
+	 </p> 
+	 <note type="important">The requirements for subtitles do not apply to
+		closed captions. 
+	 </note>
+  </conbody> 
+</concept> 

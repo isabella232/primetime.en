@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="notification-setup"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Set up your notification system</title> 
+  <shortdesc>You can listen for notifications and you can add your own notifications to the
+		notification history. </shortdesc> 
+  <taskbody> 
+	 <context> The core of the Primetime Player notification system is the Notification class, which
+			represents a standalone notification. <p>The NotificationHistory class provides a
+				mechanism for accumulating notifications. It stores a log of notification
+					(<codeph>NotificationHistoryItem</codeph>) objects that represents a collection
+				of Notifications. </p>
+			<p>To receive notifications: </p><ul>
+				<li>Listen for notifications </li>
+				<li>Add notifications to the notification history </li>
+			</ul></context> 
+	 <steps> 
+		<step > 
+		  <cmd>Listen for state changes. 
+		  </cmd> 
+		</step> 
+		<step>
+				<cmd>Implement the <codeph>MediaPlayer.StatusChangeEvent.STATUS_CHANGED</codeph>
+					event listener. </cmd>
+			</step> 
+		<step >
+				<cmd><ph conkeyref="phrases/primetime-sdk-name"/> passes a
+						<codeph>MediaPlayer.StatusChangeEvent</codeph> instance to the event
+					listener, which contains two parameters:</cmd>
+				<info>
+					<ul>
+						<li>The new state (<codeph>MediaPlayer.Status</codeph>) </li>
+						<li>A <codeph>MediaPlayerNotification</codeph> object </li>
+					</ul>
+				</info>
+			</step> 
+	 </steps> 
+	 <result/> 
+  </taskbody> 
+</task> 

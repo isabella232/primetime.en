@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="t_psdk_ref_add-content-protection"> 
+  <title>Add content protection to the player</title> 
+  <taskbody> 
+	 <context id="context_E273571D8F604D35A6D5CA0858E2391D"> 
+		<p>You can add content protection to the player by creating a playback
+		  manager or by using the manager factory. 
+		</p> 
+	 </context> 
+	 <steps-unordered id="steps-unordered_4D20791AC3F24C2CBFA747D6782FDB2E"> 
+		<step id="step_C6439C952DC44D14BAC78B8DE2015B17"> 
+		  <cmd>To create a content protection manager: 
+		  </cmd> 
+		  <substeps id="substeps_C5108975F9F84B4FAF5414258EADE38F"> 
+			 <substep id="substep_4135A3A3110343EDA3DFA2F6C8BFAD4E"> 
+				<cmd>Initialize the DRM system. 
+				</cmd> 
+				<info> 
+				  <p >The following code example shows calling
+									<codeph>loadDRMServices</codeph> in the application
+									<codeph>onCreate()</codeph> function, to ensure that any
+								initialization required for the DRM system is initiated prior to
+								playback starting. </p> 
+				  <codeblock outputclass="syntax java" >@Override
+ public void onCreate() {
+     super.onCreate(); 
+     DrmManager.loadDRMServices(getApplicationContext());
+ }</codeblock> 
+				</info> 
+			 </substep> 
+			 <substep id="substep_E13703FC15CF4267AAE4636193BD8802"> 
+				<cmd>Preload the DRM licenses. 
+				</cmd> 
+				<info> 
+				  <p >The following code example shows loading
+					 the 
+					 <codeph>VideoItems</codeph> when the content list has finished
+					 loading. This will result in the DRM licenses being acquired from the license
+					 server and cached locally, so that when playback starts, the content will load
+					 with minimum delay. 
+				  </p> 
+				  <codeblock outputclass="syntax java">DrmManager.preLoadDrmLicenses(item.getUrl(), 
+  new MediaPlayerItemLoader.LoaderListener() {
+
+    @Override
+    public void onLoadComplete(MediaPlayerItem item) {
+        Player.logger.w(LOG_TAG + "::DRMPreload#onLoadComplete", item.getResource().getUrl());
+    }
+
+    @Override
+    public void onError(MediaErrorCode errorCode, String s) {
+        Player.logger.e(LOG_TAG + "::DRMPreload#onError", s);
+    }
+}
+</codeblock> 
+				  <note>You can set Precache DRM licenses to ON in the Settings user interface to precache DRM
+								licenses when loading content. However, best practice is to preload
+								a specific item instead of precaching all the licenses in the
+								catalog. <fig id="fig_8A8C561A305040FE89D7141FC9894B82">
+									<image href="images/precache-drm-licenses.jpg"
+										id="image_m2q_tvg_4v"/>
+								</fig>
+							</note>
+				</info> 
+			 </substep> 
+		  </substeps> 
+		</step> 
+		<step id="step_164A1D83EDB8467489938A19A61C3E48" >
+				<cmd>To use <codeph>ManagerFactory</codeph> to implement DRM error handling, make
+					sure the following line of code is in the <filepath 
+						>PlayerFragment.java</filepath> file: </cmd>
+				<info>
+					<codeblock outputclass="syntax java" >drmManager = ManagerFactory.getDrmManager(config, mediaPlayer);</codeblock>
+				</info>
+			</step> 
+	 </steps-unordered> 
+  </taskbody> 
+</task> 

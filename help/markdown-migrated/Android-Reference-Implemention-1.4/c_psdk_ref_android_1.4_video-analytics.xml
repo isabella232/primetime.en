@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_mhp_3vs_zr">
+ <title>Video Analytics</title>
+ <shortdesc>You can easily track video by integrating a <ph
+      conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>-based app with
+    your Adobe Analytics account.</shortdesc>
+ <conbody>
+  <p>The integration of Adobe Primetime <ph
+    conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/> with Adobe
+   Analytics allows you to track video data in your Android applications. This integration between
+   the <ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/> is referred
+   to herein as <i>video analytics</i>. </p>
+  <p>This section of the reference implementation guide summarizes how video analytics has been
+   implemented in the Primetime Android Reference Implementation, and describes how you can enable
+   and configure video analytics in your <ph
+    conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>-based player based
+   on the reference implementation. </p>
+  <p>The video analytics implementation is disabled by default in the reference implementation.
+   Before you can track video data, you need to have a working Adobe Analytics account. You then
+   have to configure the video analytics component of the reference implementation with your Adobe
+   Analytics account information.</p>
+ </conbody>
+</concept>

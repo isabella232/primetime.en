@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_5513523E21E84301BFB85CF3F2F0D03F"> 
+  <title>Custom ad requirements</title> 
+  <shortdesc>Video Player Ad-Serving Interface Definition (VPAID) provides a common interface to
+		play video ads. VPAID provides a rich media experience for users and allows publishers to
+		better target ads, track ad impressions, and monetize video content.  </shortdesc> 
+  <conbody> 
+	 <section id="section_9A358902CBC24999BA34206EE2029616"> 
+		<p>The 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"></ph>
+		  supports the following features: 
+		<ul id="ul_8804461F81754CBFBB5AE8E47A8FEE4C"> 
+		  <li id="li_3786564D7F8245BEBB464992B5C40BFB">Version 1.0 and 2.0 of the
+			 VPAID specification 
+		  </li> 
+		  <li id="li_407E9DA530894F52831582D700E731D1">Linear VPAID ads on
+			 video-on-demand (VOD) content 
+		  </li> 
+		  <li id="li_85678E065B954D028F9AB633A8115534">Flash VPAID ads <p> VPAID ads must be Flash-based,
+							and the ad response must identify the media type of the VPAID ad as
+								<codeph>application/x-shockwave-flash</codeph>. </p></li> 
+		</ul> 
+		</p> 
+		<p>The following features are not supported: 
+		<ul id="ul_110154247AAF444A9142F2D658906EE9"> 
+		  <li id="li_06D6FA026C54409B982B9ABAA480833D">Nonlinear ads such as
+			 overlay ads and dynamic companion ads 
+		  </li> 
+		  <li id="li_B5B3B822A3804E9B83CB038B41BA5BC4">Preloading VPAID ads 
+		  </li> 
+		  <li id="li_1C515D3FF23D48B9B597339992511938">VPAID ads in live content 
+		  </li> 
+		  <li id="li_33AA8D061BCE42CEBBC594FE5EF03EA8">JavaScript VPAID ads 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_5F55C0101CD44A65BCFE1D124CBDF239"> 
+		<title>Loading status</title> 
+		<p>The 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"></ph>
+		  dispatches the following events: 
+		<ul id="ul_F46803A60EC74393AB8BA44C4A15287A">
+		  <li id="li_4474113744F34D2284D51EDB77CC9245"><codeph>AdLoading</codeph>
+			 
+		  </li> 
+		  <li id="li_69261F5E0890425AB11FC76C9C9AB722"><codeph>AdLoaded</codeph> 
+		  </li> 
+		  <li id="li_C47A196F2A324FE89A8FBE9EE4F54C8E"><codeph>AdStarted</codeph>
+			 
+		  </li> 
+		  <li id="li_C4A099F1D220438993BC9F2B9D0D8B07"><codeph>AdPlaying</codeph>
+			 
+		  </li> 
+		  <li id="li_475815D582E14F8F8B1C0273B3D72CAC"><codeph>AdStopped</codeph>
+			 
+		  </li>
+		</ul> 
+		</p> 
+		<p>After the 
+		  <codeph>AdStopped</codeph> event, the 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"></ph>
+		  resumes the video content. 
+		</p> 
+		<note type="tip">If you specify a value of zero, 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"></ph>
+		  attempts to load the ad until it loads or an error has occurred. 
+		</note> 
+	 </section> 
+	 <section id="section_3EA452F420884335AE90DF23C17E416A"> 
+		<title>Ignorning ads</title> 
+		<p>If the ad takes too long to load or there are errors in the ad, the 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"></ph>
+		  can ignore the ad, and the next ad in the ad pod is automatically played. 
+		</p> 
+		<p>If the 
+		  <codeph>AuditudeSettings.customAdLoadTimeout</codeph> setting specifies
+		  a number of seconds greater than zero, the 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"></ph>
+		  attempts to load the ad to the specified duration. If it cannot load the ad,
+		  the ad is skipped. For example, if you configure 
+		  <codeph>AuditudeSettings.customAdLoadTimeout:5</codeph>, the 
+		  <ph
+		  conkeyref="phrases/primetime-sdk-name"></ph>
+		  attempts to load the ad for a maximum of 5 seconds. If the ad still does not
+		  load, it is ignored. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

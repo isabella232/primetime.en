@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_live-linear-client-ad-resolving"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Live/linear ad resolving and insertion</title> 
+  <shortdesc>For live/linear content, <ph conkeyref="phrases/primetime-sdk-name"/> replaces a chunk
+		of the main stream content with an ad break of the same duration, so that the timeline
+		duration remains the same.  </shortdesc> 
+  <conbody> 
+	 <p>Before and during playback, 
+		<ph conkeyref="phrases/primetime-sdk-name"/> resolves known ads, replaces
+		parts of the main content with ad breaks of the same duration, and recomputes
+		the virtual timeline, if necessary. The positions of the ad breaks are
+		specified by cue points that are defined by the manifest. 
+	 </p> 
+	 <p> 
+		<ph conkeyref="phrases/primetime-sdk-name"/> inserts ads in the following
+		ways: 
+	 </p> 
+	 <ul id="ul_96102B4A192F46DDB89EAA1E248F1211"> 
+		<li id="li_5FF13D2B6A8D47A18D3676378FEA08CE"><b>Pre-roll</b>, at the beginning of the content. </li> 
+		<li id="li_7EE98D9B5A944D9BA0125452B8DE2460"><b>Mid-roll</b>, in the middle of the content. </li> 
+	 </ul> 
+	 <p> 
+		<ph conkeyref="phrases/primetime-sdk-name"/> accepts the ad break even if
+		the duration is longer or shorter than the cue point replacement duration. By
+		default, 
+		<ph conkeyref="phrases/primetime-sdk-name"/> supports the 
+		<codeph>#EXT-X-CUE</codeph> cue as a valid ad marker when resolving and
+		placing ads. This marker requires the metadata field 
+		<codeph>DURATION</codeph> in seconds and the cue's unique ID. For
+		example: 
+		<codeblock>#EXT-X-CUE:DURATION=27,ID="..."</codeblock> 
+	 </p> 
+	 <p >You can define and subscribe to
+		additional cues (tags). 
+	 </p> 
+	 <p>After playback starts, the video engine periodically refreshes the manifest file. <ph
+				conkeyref="phrases/primetime-sdk-name"/> resolves any new ads and inserts the ads
+			when a cue point is encountered in the live or linear stream that was defined in the
+			manifest. After ads are resolved and inserted, <ph
+				conkeyref="phrases/primetime-sdk-name"/> computes the virtual timeline again and
+			dispatches a <codeph>TimelineItemsUpdatedEventListener.onTimelineUpdated</codeph> event. </p> 
+  </conbody> 
+</concept> 

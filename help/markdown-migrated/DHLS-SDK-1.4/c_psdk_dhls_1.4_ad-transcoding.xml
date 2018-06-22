@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_ad-transcoding"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Repackage incompatible ads using Adobe Creative Repackaging
+	 Service</title> 
+  <shortdesc> Some third-party ads (or creatives) cannot be stitched into the HTTP Live Streaming
+		(HLS) content stream because their video format is incompatible with HLS. <ph
+			conkeyref="phrases/ad-insert-name"/> and <ph conkeyref="phrases/primetime-sdk-name"/>
+		can optionally attempt to repackage incompatible ads into compatible M3U8 videos. </shortdesc> 
+  <conbody> 
+	 <p>Ads served from various third parties, such as an agency ad server, your
+		inventory partner, or an ad network, are often delivered in incompatible
+		formats, such as progressive-download MP4. 
+	 </p> 
+	 <p>When <ph conkeyref="phrases/primetime-sdk-name"/> first encounters an incompatible ad, the
+			player ignores the ad and issues a request to the <ph conkeyref="phrases/crs-name"/>
+				(<ph conkeyref="phrases/crs-acronym"/>), which is part of the <ph
+				conkeyref="phrases/ad-insert-name"/> back end, to repackage the ad into a compatible
+			format. <ph conkeyref="phrases/crs-acronym"/> attempts to generate multiple-bit-rate
+			M3U8 renditions of the ad and stores these renditions on the Primetime Content Delivery
+			Network (CDN). The next time <ph conkeyref="phrases/primetime-sdk-name"/> receives an ad
+			response that points to that ad, the player uses the HLS-compatible M3U8 version from
+			the CDN. </p> 
+	 <p>To enable this optional feature, contact your Adobe representative. 
+	 </p> 
+	 <p>For more information about CRS, see 
+		<xref href="http://help.adobe.com/en_US/primetime/crs/index.html"
+		 format="html" scope="external">Creative Packaging Service (CRS)</xref>. 
+	 </p> 
+  </conbody> 
+</concept> 

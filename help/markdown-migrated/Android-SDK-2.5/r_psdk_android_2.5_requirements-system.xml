@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="reference_req_system"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>System and software requirements</title> 
+  <shortdesc>To use <ph conkeyref="phrases/primetime-sdk-name"/>, ensure that your hardware, operating system, and application versions all
+		meet the minimum requirements listed below. </shortdesc> 
+  <refbody> 
+	 <table frame="all" colsep="1" rowsep="1" id="table_964554E5CAB24FA2A3E57ABABC36D9C2">
+			<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA">
+				<colspec colnum="1" colname="1" colwidth="17*"/>
+				<colspec colnum="2" colname="2" colwidth="83*"/>
+				<tbody>
+					<row rowsep="1">
+						<entry colname="1">Operating system </entry>
+						<entry colname="2">Android 4.0 or later (minimum API level 14) </entry>
+					</row>
+					<row rowsep="1">
+						<entry colname="1">CPU </entry>
+						<entry colname="2">1 GHz Single Core or equivalent </entry>
+					</row>
+					<row rowsep="1">
+						<entry colname="1">RAM </entry>
+						<entry colname="2">256 MB </entry>
+					</row>
+					<row rowsep="1">
+						<entry colname="1">GPU </entry>
+						<entry colname="2">Hardware GPU required for playback </entry>
+					</row>
+					<row rowsep="0">
+						<entry colname="1">Architecture </entry>
+						<entry colname="2">x86 via Houdini, ARM64, ARMv7, and ARMv8 </entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table> 
+  </refbody> 
+</reference> 

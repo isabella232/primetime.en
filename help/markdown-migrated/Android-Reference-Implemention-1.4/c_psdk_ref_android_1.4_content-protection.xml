@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ref_content-protection"> 
+  <title>DRM content protection</title> 
+  <shortdesc>The Primetime player supports <ph
+			conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/drm-short">AAXS</ph> integration
+		as custom DRM workflows. This means that your application must implement the DRM
+		authentication workflows before playing the stream. </shortdesc> 
+  <conbody> 
+	 <p>To enable this, <ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"
+			/> provides you with the DRM manager for authentication. The reference implementation
+			provides an example of the following workflows: <ul
+				id="ul_9A5F9B3A3DE244E3885C22C91DE62900">
+				<li id="li_CDFCD3A70DF046B1AF51369BC19102A0">How to load and play back HLS streams
+					with Access content protection, optimized for low error rates and quick start
+					up. </li>
+				<li id="li_91257621FBA342D6A3A5846B59CE75DD">How to load and play back HLS streams
+					with AES128 content protection. </li>
+				<li id="li_81C0F1D569AB43E3A648B955F72A8905">How to load and play back HLS streams
+					with PHLS content protection, optimized for low error rates and quick start up.
+				</li>
+			</ul>
+		</p> 
+	 <p>All DRM-protected content is handled automatically by the DRM libraries built into the <ph
+				conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>.
+			However, you can expose error handling, optimization of device individualization, and
+			license acquisition using <ph
+				conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/> API
+			callbacks. </p> 
+  </conbody> 
+</concept> 

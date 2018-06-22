@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_stage-video-and-overlays"> 
+  <title>StageVideo and HTML Overlays</title> 
+  <shortdesc>You can use HTML overlays with <codeph>StageVideo</codeph> to display UI elements in
+		the Flash display list video plane. This plane is above the <codeph>StageVideo</codeph>
+		plane, so <codeph>StageVideo</codeph> always displays behind any Flash display list
+		elements. </shortdesc> 
+  <conbody> 
+	 <p>HTML overlays are UI elements that you can display in the Flash display plane on video that is
+			rendered by <codeph>StageVideo</codeph> on its own plane. Before Flash 15, you could not
+			use HTML overlays when hardware acceleration was not available. Starting in Flash 15,
+			HTML overlays display when <codeph>StageVideo</codeph> falls back to software rendering. </p> 
+	 <note type="important">Depending upon your system's capabilities,
+		performance can degrade to a greater or lesser degree when you use HTML
+		overlays.
+	 </note> 
+	 <p>Consider the following information: 
+	 <ul id="ul_E97A867B65634F16B31D1F360FF6E30B"> 
+		<li id="li_C3D83873C81A4BC6AA9811EF8631FDA8">In Flash Player 15:
+		  <ul id="ul_fnd_y42_jp"> 
+			 <li id="li_3818A1AD92954842AB0FCF8D5ED3E89B">You can use HTML
+				overlays whether hardware acceleration is available.
+			 </li> 
+			 <li id="li_C544735B53C342C78F91E53994D9B8A8">To use HTML overlays,
+				set 
+				<codeph>wmode</codeph> to 
+				<codeph>opaque</codeph>.
+			 </li> 
+		  </ul>
+		</li> 
+		<li id="li_4A2D08D02EEA40B4B876AD7659D4D988">In Flash Player 14:
+		  <ul id="ul_rty_v42_jp"> 
+			 <li id="li_AC48D78241A24B98A8D9109684FCB943">When hardware acceleration is available,
+								<codeph>StageVideo</codeph> resides below the Flash display list, so
+							you can use HTML overlays. </li> 
+			 <li id="li_9E92216B6F1C4A808DD2BF3B877D53C8">When hardware
+				acceleration is not available, video is rendered on top of all other elements
+				in the browser, which prevents the use of HTML overlays. 
+			 </li> 
+		  </ul>
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Here are the minimum browser requirements to use HTML overlays with
+			<codeph>StageVideo</codeph>: <ul id="ul_7CE9C34C8D434DD38363163727B2B57B">
+				<li id="li_264B13C702F04972840A2C8F3C31CD5D">Firefox version 4 and later </li>
+				<li id="li_A05B0C2F3F1B49DE9166FDFCB8CC1A02">Safari version 4 and later </li>
+				<li id="li_99E68A7657364E55B0D1C7DED4B83AEC">Internet Explorer: <ul
+						id="ul_F82D548EAE734DC4AFCCD28CF2C20D37">
+						<li id="li_AFB8B10A32BE4C9DA89722BD201D6410">Version 9+ on Windows 7 and
+							later </li>
+						<li id="li_9998707B39DE4B248C75C0EC436619DD">Version 10+ on Windows XP </li>
+					</ul>
+				</li>
+				<li id="li_EA6397AEA8364C8E81CC72159320178F">Chrome version 26 and later <note
+						type="important">Chrome Pepper on Windows XP and Windows Vista is not
+						supported. </note>
+				</li>
+			</ul>
+		</p> 
+  </conbody> 
+</concept> 

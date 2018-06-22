@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="mediaplayer-adplaybackeventlistener"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Ad playback events</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> dispatches
+	 ad-playback events in response to ad-related operations such as when an ad
+	 starts playing. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn>To be notified about all ad-playback related events,  register listeners with the
+				<codeph>MediaPlayer</codeph> object for the following events.  <note type="tip">When
+				ads are inserted into or removed from the media, <ph
+					conkeyref="phrases/primetime-sdk-name"/> dispatches the playback event
+						<codeph>TimelineEvent.<xref
+						href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimelineEvent.html#TIMELINE_UPDATED"
+						format="html" scope="external">TIMELINE_UPDATED</xref></codeph>.
+				</note><table frame="all" colsep="1" rowsep="1">
+				<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA">
+					<colspec colnum="1" colname="1" colwidth="1.00*"/>
+					<colspec colnum="2" colname="2" colwidth="1.31*"/>
+					<thead>
+						<row rowsep="1">
+							<entry colname="1">Event </entry>
+							<entry colname="2">Meaning </entry>
+						</row>
+					</thead>
+					<tbody>
+						<row rowsep="1">
+							<entry colname="1"><codeph>AdBreakPlaybackEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdBreakPlaybackEvent.html#AD_BREAK_COMPLETED"
+										format="html" scope="external">AD_BREAK_COMPLETED</xref>
+								</codeph></entry>
+							<entry colname="2">An ad break has played completely. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph>AdBreakPlaybackEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdBreakPlaybackEvent.html#AD_BREAK_SKIPPED"
+										format="http" scope="external"
+									>AD_BREAK_SKIPPED</xref></codeph></entry>
+							<entry colname="2">An ad break was skipped during playback.</entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph>AdBreakPlaybackEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdBreakPlaybackEvent.html#AD_BREAK_STARTED"
+										format="html" scope="external">AD_BREAK_STARTED</xref>
+								</codeph></entry>
+							<entry colname="2">An ad break has started. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph>AdClickEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdClickEvent.html#AD_CLICK"
+										format="html" scope="external">AD
+								_CLICK</xref></codeph></entry>
+							<entry colname="2">The user has clicked the ad. Provides information to
+								your application about the ad that the user clicked, in response to
+								your application calling <codeph>notifyClick</codeph> on the
+									<codeph>MediaPlayerView</codeph>. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph>AdPlaybackEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdPlaybackEvent.html#AD_COMPLETED"
+										format="html" scope="external">AD _COMPLETED</xref></codeph>
+							</entry>
+							<entry colname="2">An ad has played completely. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph>AdPlaybackEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdPlaybackEvent.html#AD_PROGRESS"
+										format="html" scope="external">AD _PROGRESS</xref></codeph>
+							</entry>
+							<entry colname="2">Ad playback has progressed. Dispatched multiple times
+								while an ad plays. </entry>
+						</row>
+						<row rowsep="1">
+							<entry colname="1"><codeph>AdPlaybackEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdPlaybackEvent.html#AD_STARTED"
+										format="html" scope="external">AD _SEEK</xref></codeph>
+							</entry>
+							<entry colname="2">A seek has occurred across ad boundaries or within an
+								ad. </entry>
+						</row>
+						<row rowsep="0">
+							<entry colname="1"><codeph>AdPlaybackEvent.<xref
+										href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/AdPlaybackEvent.html#AD_STARTED"
+										format="html" scope="external">AD
+								_STARTED</xref></codeph></entry>
+							<entry colname="2">An ad has started. </entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</refsyn> 
+  </refbody> 
+</reference> 

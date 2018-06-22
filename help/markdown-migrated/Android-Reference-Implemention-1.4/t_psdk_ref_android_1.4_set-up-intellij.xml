@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_set-up-intellij"> 
+  <title>IntelliJ setup instructions</title> 
+  <shortdesc>If you are using IntelliJ, set up your environment as follows. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_8A7EFF4DBBD9453080B142F9A210AB93"> 
+		<step id="step_73563F80C1E54FD087CB977DE8D07A36"> 
+		  <cmd>Download and install IntelliJ IDEA Ultimate from 
+			 <xref href="http://www.jetbrains.com/idea/download/" format="html"
+			  scope="external">http://www.jetbrains.com/idea/download/</xref>. 
+		  </cmd> 
+		  <info>Make sure to keep the Flash/Flex plug-in enabled during
+			 installation. 
+		  </info> 
+		</step> 
+		<step id="step_72451405A77746D2A4111AF43D14F49F"> 
+		  <cmd>Start IntelliJ. 
+		  </cmd> 
+		</step> 
+		<step id="step_2406322AC7874E79B6EA50C845B376DA"> 
+		  <cmd>Select 
+			 <uicontrol>Open Project</uicontrol> and navigate to 
+			 <filepath>/projects/intellij</filepath> within your Primetime
+			 Reference project folder. 
+		  </cmd> 
+		</step> 
+		<step id="step_FFE76CDEA9B74ADBA61D683396012F44"> 
+		  <cmd>Click 
+			 <uicontrol>OK</uicontrol>. 
+		  </cmd> 
+		  <stepresult>The workspace opens. 
+		  </stepresult> 
+		</step> 
+		<step id="step_9F741DBD5BCA48C8BFC135FC3E3755C7"> 
+		  <cmd>Add a new Flex/AIR SDK. 
+		  </cmd> 
+		  <info> 
+			 <ol id="ol_B5534FEC6A144CEAA4E78BC09D943363"> 
+				<li id="li_24F83B4800F6453D9D1F1A1527C3CD51">From the top menu,
+				  select 
+				  <menucascade><uicontrol>File</uicontrol><uicontrol>Project
+						Structure</uicontrol></menucascade> 
+				</li> 
+				<li id="li_B0080B4E2DB44BDDBE6756D3006155B8">Under Project
+				  Settings, select 
+				  <uicontrol>Project</uicontrol>. 
+				</li> 
+				<li id="li_A963F4F1EA4E4676A6A55E8193400BEE">Select 
+				  <uicontrol>New...</uicontrol> to add the new Flex/AIR SDK. 
+				</li> 
+				<li id="li_312080CB88A84ACEBEA0246E5C5612C9">Set the new Flex/AIR
+				  SDK to your Flex SDK directory (<filepath>flex_sdk_4.6</filepath>):
+				  <p> 
+					 <fig id="fig_dlh_jrz_zn"> 
+						<image
+						 href="images/psdk_hls_ref_intelliJ-Project-Structure1.png"
+						 id="image_qxb_mrz_zn"/> 
+					 </fig> 
+				  </p> 
+				</li> 
+				<li id="li_11169F8B40DC43E0862406CE6CF62D7D">Click 
+				  <uicontrol>Apply</uicontrol> to save your changes. 
+				</li> 
+			 </ol> 
+		  </info> 
+		</step> 
+		<step id="step_C96439934D98471A9BB922C9301304FC"> 
+		  <cmd>Set the Flex/AIR SDK you just added to the project to each
+			 module's build configuration. 
+		  </cmd> 
+		  <info> 
+			 <ol id="ol_60FB958F81344DE4AB8A556CC4DA8580"> 
+				<li id="li_D121B3C7A41749CE91A39E83288B61E3">From the top menu,
+				  select 
+				  <menucascade><uicontrol>File</uicontrol><uicontrol>Project
+						Structure</uicontrol></menucascade>. 
+				</li> 
+				<li id="li_800FEC91C62C476DBC2B182334242017">Under Project
+				  Settings, select 
+				  <uicontrol>Modules</uicontrol>. 
+				</li> 
+				<li id="li_7711904CFF1945909167AA60C2D2636B">For each module, click
+				  the arrow (Mac) or 
+				  <uicontrol>+</uicontrol> (Windows) next to the project name to
+				  expand the build configuration. 
+				</li> 
+				<li id="li_A481AB84DAB84610B8709967211B71C5">Select the module's
+				  build configuration. 
+				</li> 
+				<li id="li_62C9D601AA374FE28E36247071E1218F">Select the 
+				  <uicontrol>Dependencies</uicontrol> tab. 
+				</li> 
+				<li id="li_26CF0311AC4A45BFAE1A423FA1FE3B56">Select the desired
+				  Flex/AIR SDK from the drop-down menu: 
+				  <fig id="fig_tms_srz_zn"> 
+					 <image
+					  href="images/psdk_hls_ref_intelliJ-Project-Structure-Dependencies1.png"
+					  id="image_hnw_trz_zn"/> 
+				  </fig> 
+				</li> 
+				<li id="li_BFB758BE53374468A55826FC6682ADFC">Repeat steps 3.
+				  through 6. for each module in the list. 
+				</li> 
+				<li id="li_42883B340EA64F9B9A27F20CE4306417">Click 
+				  <uicontrol>OK</uicontrol> at the bottom of the window to accept
+				  the changes. 
+				</li> 
+			 </ol> 
+		  </info> 
+		</step> 
+		<step id="step_247C148FC7EC402BB0711F6DE4FFFB3B"> 
+		  <cmd>From the top menu, select 
+			 <menucascade><uicontrol>Build</uicontrol><uicontrol>Rebuild
+				  Project</uicontrol></menucascade>. 
+		  </cmd> 
+		  <info> 
+			 <note>The test project, ReferenceCoreTest, will not compile or run
+				without first configuring the FlexUnit libraries. See "Setup FlexUnit
+				Libraries" to compile the unit tests. 
+			 </note> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

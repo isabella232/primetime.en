@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<reference id="r_psdk_android_timeline-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Timeline classes </title> 
+  <shortdesc>These classes provide information about the timeline of the
+	 particular media, including the placement of ads. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_7A08BDA0C7B24A56BE6D5A07C962BDC1">Package: <xref
+				href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/package-summary.html"
+				format="html" scope="external">com.adobe.mediacore.timeline</xref></refsyn> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_6752E908BA6546549619994A3F7D5F87"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="26*"/> 
+		  <colspec colnum="2" colname="2" colwidth="74*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1">Name 
+				</entry> 
+				<entry colname="2"> 
+				  <p>Description 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/PlacementOpportunity.html"
+									format="html" scope="external"
+								>PlacementOpportunity</xref></codeph>
+						</entry> 
+				<entry colname="2">An opportunity class represents a point of interest on the timeline. </entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><xref
+								href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/Timeline.html"
+								format="html" scope="external">Timeline</xref>
+						</entry> 
+				<entry colname="2">Interface that provides an iterator for processing timeline markers.
+							Represents the timeline of the content, including ad breaks. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/TimelineItem.html"
+									format="html" scope="external">TimelineItem</xref>
+							</codeph>
+						</entry> 
+				<entry colname="2">Class. Generic immutable representation of a
+				  timeline item. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/TimelineMarker.html"
+									format="html" scope="external">TimelineMarker</xref>
+							</codeph>
+						</entry> 
+				<entry colname="2">Interface that represents a marker on the timeline. This marks a region of
+							interest on the actual timeline. Currently, the regions of interest are
+							the ads, which you might want to mark, for example, with a different
+							color on the scrub bar UI. Each marker is defined by a position and a
+							duration (each expressed in milliseconds). </entry> 
+			 </row> 
+			 <row rowsep="0" > 
+				<entry colname="1"><xref
+				  href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/TimelineOperation.html"
+				  format="html" scope="external" >TimelineOperation</xref> 
+				</entry> 
+				<entry colname="2">Base class for all operations that affect the
+				  timeline. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </refbody> 
+</reference> 

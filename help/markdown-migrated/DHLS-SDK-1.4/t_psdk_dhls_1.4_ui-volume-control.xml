@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="volume-control"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Provide volume control</title> 
+  <shortdesc>You can set up a user interface control for sound volume. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_ECBCA405518940A28F5E6FDA0B571F36"> 
+		<step id="step_A30A2303EE894308B0879451B2BDB17E">
+				<cmd> Wait for the MediaPlayer instance to be in a valid status for this command. </cmd>
+				<info>Any state except for except RELEASED is valid. </info>
+			</step> 
+		<step id="step_8D5AD350DB7F49A58FD8E2D3E07CEBC3">
+				<cmd>Call the volume set method on the <codeph>MediaPlayer</codeph> instance to set
+					the audio volume. </cmd>
+				<info>
+					<p>
+						<codeblock outputclass="syntax actionscript">public function set volume(value:Number):void</codeblock>
+					</p>
+					<p>The value for the volume represents the requested volume expressed as a
+						proportion of the maximum volume, where 0 is silent and 1 is the maximum
+						volume. </p>
+					<p>
+						<table id="table_144A2B1260374FBE8D976194F602DDC7">
+							<tgroup cols="2">
+								<colspec colnum="1" colname="col1" colwidth="1.00*"/>
+								<colspec colnum="2" colname="col2" colwidth="2.67*"/>
+								<thead>
+									<row>
+										<entry colname="col1">If the specified volume is </entry>
+										<entry colname="col2">The resulting volume is </entry>
+									</row>
+								</thead>
+								<tbody>
+									<row>
+										<entry colname="col1">Less than 0 </entry>
+										<entry colname="col2">0 </entry>
+									</row>
+									<row>
+										<entry colname="col1">Between 0 and 1 </entry>
+										<entry colname="col2">The specified volume </entry>
+									</row>
+									<row>
+										<entry colname="col1">Greater than 1 </entry>
+										<entry colname="col2">The value divided by 100 and set to
+											one of the following values: <ul
+												id="ul_8C2282F0EDC44A408820F5768709214F">
+												<li id="li_B00BC6F4812D4000891358F762C8E492">The
+												result if it is between 0 and 1 </li>
+												<li id="li_03B7F30662554F299320040CAC2DEB7A">1 if
+												the result is greater than 1 </li>
+											</ul>
+											<note type="tip">This logic handles values that are
+												supplied from clients based on earlier versions of
+												the <ph conkeyref="phrases/primetime-sdk-name"/>,
+												where volume values ranged from 0 to 100. </note>
+										</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+					</p>
+				</info>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

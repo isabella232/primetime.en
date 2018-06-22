@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<concept id="c_psdk_ios_sample-handlers"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Sample handlers for notifications</title> 
+  <conbody>
+	 <p>The following code snippets illustrate some of the ways you can use
+		notifications.
+	 </p> 
+	 <p>Fetch the 
+		<codeph>PTAdBreak</codeph> instance using 
+		<codeph>PTMediaPlayerAdBreakKey</codeph>:
+		<codeblock outputclass="syntax objective-c">
+ - (void) onMediaPlayerAdBreakStarted:(NSNotification *) notification {
+   // Fetch the PTAdBreak instance using PTMediaPlayerAdBreakKey
+   PTAdBreak *adBreak = [notification.userInfo objectForKey:PTMediaPlayerAdBreakKey];
+   ...
+   ...
+}
+</codeblock>
+	 </p> 
+	 <p>Set 
+		<codeph>subtitlesOptions</codeph> and 
+		<codeph>audioOptions</codeph>:
+	 </p> 
+	 <codeblock outputclass="syntax objective-c">
+ - (void) onMediaPlayerItemMediaSelectionOptionsAvailable:(NSNotification \*) notification {
+   //SubtitlesOptions and audioOptions are set and accessible now.
+   NSArray* subtitlesOptions = self.player.currentItem.subtitlesOptions; 
+   NSArray* audioOp tions = self.player.currentItem.audioOptions;
+   ...
+   ...
+}
+</codeblock> 
+	 <p>Fetch the 
+		<codeph>PTAd</codeph> instance using 
+		<codeph>PTMediaPlayerAdKey</codeph>:
+	 </p> 
+	 <codeblock outputclass="syntax objective-c">
+ - (void) onMediaPlayerAdPlayStarted:(NSNotification \*)  notification {
+   // Fetch the PTAdinstance using PTMediaPlayerAdKey
+   PTAd *ad = [notification.userInfo objectForKey:PTMediaPlayerAdKey];
+   ...
+   ...
+}
+</codeblock>
+  </conbody>
+</concept> 

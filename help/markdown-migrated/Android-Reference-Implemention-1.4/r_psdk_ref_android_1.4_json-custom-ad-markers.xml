@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_psdk_ref_json-custom-ad-markers"> 
+  <title>JSON object for custom ad markers</title> 
+  <refbody> 
+	 <refsyn id="refsyn_EC2BAB6C46514BCBB392CAB90286A85A"> 
+		<p>The code block below defines the "details" JSON object when the type
+		  is custom ad markers. 
+		</p> 
+		<p>The MetadataNode returned by IFeedItemAdapter:getStreamMetadata()
+		  contains 2 entries - an entry with key of type
+		  com.adobe.mediacore.metadata.DefaultMetadataKeys.CUSTOM_AD_MARKERS_METADATA_KEY
+		  and value of of an instance of the MetadataNode returned by
+		  TimeRangeCollection.toMetadata(). The second entry has a key of type
+		  com.adobe.mediacore.metadata.DefaultMetadataKeys.METADATA_KEY_ADJUST_SEEK_ENABLED
+		  with the value of the "adjust-seek-position" attribute below. 
+		</p> 
+		<p> 
+		  <codeblock>
+“metadata”: {
+    “ad” :  {
+        “type”: “custom ad markers”,
+        “details”: {
+            "adjust-seek-position": true,
+            "time-ranges": [
+                {
+                    "begin": 5000,
+                    "end":15000
+                },
+                {
+                    "begin": 120000,
+                    "end":135000
+                }
+            ]
+        }
+    }
+}
+</codeblock> 
+		</p> 
+		<p> 
+		<table id="table_BBD08759C38C434B89CB1C429E64D1E9"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="3.85*"/><thead> 
+				<row> 
+				  <entry colname="col1">Property 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">adjust-seek-position 
+				  </entry> 
+				  <entry colname="col2">true or false, used to set the value of the
+					 key
+					 com.adobe.mediacore.metadata.DefaultMetadataKeys.METADATA_KEY_ADJUST_SEEK_ENABLED
+					 in the MetadataNode. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">time-ranges 
+				  </entry> 
+				  <entry colname="col2">An array of JSON Objects indicating the
+					 time range for each ad marker. Each JSON Object entry maps to an instance of
+					 com.adobe.mediacore.utils.TimeRange. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">time-ranges.begin 
+				  </entry> 
+				  <entry colname="col2">Value in ms indicating the start time of
+					 the ad marker. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">time-ranges.end 
+				  </entry> 
+				  <entry colname="col2">Value in ms indicating the end time of the
+					 ad marker. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		</p> 
+		<p>Refer to the <ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/> documentation for further information on how custom
+		  ad markers work. 
+		</p> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

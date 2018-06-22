@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_failover-missing-segment"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Missing segment failover</title> 
+  <shortdesc>When a segment is missing, for example when a particular segment fails to download, <ph
+			conkeyref="phrases/primetime-sdk-name"/> attempts to recover through a variety of
+		failover attempts. If it cannot recover, it issues an error.  </shortdesc> 
+  <conbody> 
+	 <p>If a segment is missing on the server because, for example, the manifest
+	 	file is not present, the segment cannot be downloaded, and so on, 
+	 	<ph conkeyref="phrases/primetime-sdk-name"/>
+		attempts to fail over by trying the following options: 
+	 </p> 
+	 <ol> 
+		<li>Attempt a failover to the same segment, at the same bit rate, in a variant file.</li> 
+		<li>Switch to an alternate bit rate (ABR switch) in the same file.</li> 
+		<li>Cycle through every available bit rate in every available variant.</li> 
+		<li>Skip the segment and issue a warning.</li> 
+	 </ol> 
+  	<p>When <ph conkeyref="phrases/primetime-sdk-name"/> cannot obtain an alternative segment, it
+			triggers a <codeph>CONTENT_ERROR</codeph> error notification. This notification contains
+			an inner notification with the code <codeph>DOWNLOAD_ERROR</codeph> code. If the stream
+			with the problem is an alternate audio track, <ph conkeyref="phrases/primetime-sdk-name"
+			/> generates the <codeph>AUDIO_TRACK_ERROR</codeph> error notification. </p> 
+	 <p>If the video engine is continuously unable to obtain segments, it limits continuous segment
+			skips to 5, after which playback is stopped and <ph
+				conkeyref="phrases/primetime-sdk-name"/> issues a <codeph>NATIVE_ERROR</codeph> with
+			the code 5. </p> 
+	 <note type="restriction">
+		<p>The adaptive bit rate (ABR) control parameters are not taken into consideration 
+		   when a failover occurs. This is because the failover mechanism is designed to use any of the 
+		   currently available playlists, regardless of their bit-rate profile, as backup streams. 
+		</p>
+		<p>During a failover operation, there can be a profile switch. If an
+		  error occurs during the download of one of the playlist segments, ABR control
+		  parameters such as min/max allowed bit rate are ignored. 
+		</p>
+	 </note> 
+  </conbody> 
+</concept> 

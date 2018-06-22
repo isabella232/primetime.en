@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_buffering-configuration"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Buffering</title> 
+  <shortdesc>To provide a smoother viewing experience, 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+	 sometimes buffers the video stream. 
+	 <ph >You can configure the way the player
+		buffers.</ph> 
+  </shortdesc> 
+  <conbody> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"
+				><?xm-replace_text Phrase?></ph> defines a playback buffer length of at least 30
+			seconds and an initial buffer time within that, before the media starts playing, of at
+			least 2 seconds. After the application calls <codeph>play</codeph> but before playback
+			begins, <ph
+				conkeyref="phrases/primetime-sdk-name"
+				><?xm-replace_text Phrase?></ph> buffers the media up to the initial time to give a
+			smooth start when it actually starts playing. </p> 
+	 <p>You can alter the buffer times by defining new buffering policies and you can alter when the
+			initial buffering occurs by using instant-on. </p> 
+  </conbody> 
+</concept> 

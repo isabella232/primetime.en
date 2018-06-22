@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_m3c_xvx_hz">
+ <title>Applying creative selection rules</title>
+ <shortdesc></shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>creative selection rules</keyword>
+        <keyword>AdobeTVSDKConfig</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+ <conbody>
+    <p><ph conkeyref="phrases/primetime-sdk-name"/> applies creative selection rules in the following ways:</p>
+  <ul id="ul_fwg_zvx_hz">
+   <li><ph conkeyref="phrases/primetime-sdk-name"/> applies
+    all <codeph>default</codeph> rules first, followed by the zone-specific rules. </li>
+   <li><ph conkeyref="phrases/primetime-sdk-name"/> ignores
+    any rules that are not defined for the current zone ID.</li>
+   <li>Once <ph conkeyref="phrases/primetime-sdk-name"/>
+    applies the default rules, the zone-specific rules can further change the creative priorities
+    based on the <codeph>host</codeph> (domain) matches on the creative selected by the
+     <codeph>default</codeph> rules.</li>
+   <li>In the included sample rules file with additional zone rules, once <ph
+     conkeyref="phrases/primetime-sdk-name"/> applies the
+     <codeph>default</codeph> rules, if the M3U8 creative domain does not contain
+     <filepath>my.domain.com</filepath> or <filepath>a.bcd.com</filepath> and the ad zone is
+     <codeph>1234</codeph>, the creatives are re-ordered and the Flash VPAID creative is played
+    first if available. Otherwise an MP4 ad is played, and so on down to JavaScript.</li>
+   <li>If an ad creative is selected that <ph
+     conkeyref="phrases/primetime-sdk-name"/> cannot play
+    natively (<filepath>.mp4</filepath>, <filepath>.flv</filepath>, etc.), <ph
+     conkeyref="phrases/primetime-sdk-name"/> issues a
+    repackaging request.</li>
+  </ul>
+  <p>Note that the ad types that can be handled by <ph
+    conkeyref="phrases/primetime-sdk-name"/> are still defined
+   through the <codeph>validMimeTypes</codeph> setting in
+    <codeph>AuditudeSettings</codeph>.<draft-comment author="kenny">In Android 2.5 API docs, I see a
+     <codeph>setValidMimeTypes</codeph> but not a <codeph>getValidMimeTypes</codeph>.
+   </draft-comment></p>
+ </conbody>
+</concept>

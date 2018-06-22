@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_set-up-dev-environment"> 
+  <title>Set up your development environment</title> 
+  <taskbody> 
+	 <context id="context_C534B300645C471A8E513AB98C543B14" >
+		<p>The <ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/> Primetime
+				Reference Android project is configured in such a way that it is compatible with
+				Eclipse without any major configuration or IDE changes. To setup the Primetime
+				Reference project, first follow the instructions to configure Eclipse and then
+				follow the steps to build the project. </p>
+	 </context>
+  </taskbody> 
+</task> 

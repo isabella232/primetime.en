@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ios_set-up-the-mediaplayer"> 
+  <title>Set up the PTMediaPlayer</title> 
+  <shortdesc>The 
+	 <codeph>PTMediaPlayer</codeph> interface encapsulates the functionality and
+	 behavior of a media player object. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_98FB9BC5ACB5443F8868884E762ACEC1"> 
+		<p>To set up your 
+		  <codeph>PTMediaPlayer</codeph>: 
+		</p> 
+	 </context> 
+	 <steps id="steps_0017AAD77CEE445D990BE2451EE0DB77"> 
+		<step id="step_09E1BCA98ED14FA9914E910819953E7B"> 
+		  <cmd>Fetch the media's URL from your user interface, for example, in a
+			 text field. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">NSURL *url = [NSURL URLWithString:textFieldURL.text];</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_DAA6EA04F2D248019E30FCD9520EAA9D"> 
+		  <cmd>Create 
+			 <codeph>PTMetadata</codeph>. 
+		  </cmd> 
+		  <info>Assume that your method 
+			 <codeph>createMetada</codeph> prepares metadata (see 
+			 <xref keyref="ad-insertion"/>). 
+		  </info> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">PTMetadata *metadata = [self createMetadata]</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_DAC6A12997954FDFB5AD7D2C98C16358"> 
+		  <cmd>Create 
+			 <codeph>PTMediaPlayerItem</codeph> by using your 
+			 <codeph>PTMetadata</codeph> instance. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">PTMediaPlayerItem *item = [[[PTMediaPlayerItem alloc]
+       initWithUrl:url mediaId:yourMediaID metadata:metadata] autorelease];</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_BE01D72C4B73425DA48B59943B576687"> 
+		  <cmd>Add observers to notifications that 
+			 <ph
+			 conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+			 dispatches. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">[self addObservers]</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_8D98F110D3804CEBA7AD7DAD5E83E7EB"> 
+		  <cmd>Create 
+			 <codeph>PTMediaPlayer</codeph> using your new 
+			 <codeph>PTMediaPlayerItem</codeph>. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">PTMediaPlayer *player = [PTMediaPlayer playerWithMediaPlayerItem:item];</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_AFE664313BCA4C83A90162A0AEC7D111"> 
+		  <cmd>Set properties on your player. 
+		  </cmd> 
+		  <stepxmp> Here are some of the available 
+			 <codeph>PTMediaPlayer</codeph> properties: 
+			 <codeblock outputclass="syntax objective-c">player.autoPlay                    = YES; 
+player.closedCaptionDisplayEnabled = YES;
+player.videoGravity                = PTMediaPlayerVideoGravityResizeAspect; 
+player.allowsAirPlayVideo          = YES;</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_C9F09124691A486DA29C6DA9446369C0"> 
+		  <cmd>Set the player's view property. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">CGRect playerRect = self.adPlayerView.frame; 
+playerRect.origin = CGPointMake(0, 0);
+playerRect.size = CGSizeMake(self.adPlayerView.frame.size.width, 
+                             self.adPlayerView.frame.size.height);
+
+[player.view setFrame:playerRect];
+[player.view setAutoresizingMask: 
+      ( UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight )];</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_FAF185C73BEC40C59F3BFF564C0A2A36"> 
+		  <cmd>Add the player's view in the current view's subview. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">[self.adPlayerView  setAutoresizesSubviews:YES]; 
+[self.adPlayerView addSubview:(UIView *)player.view];</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step id="step_4C8841311CBB4B18B406CDA06C9AC438"> 
+		  <cmd>Call 
+			 <codeph>play</codeph> to start media playback. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax objective-c">[player play];</codeblock> 
+		  </stepxmp> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

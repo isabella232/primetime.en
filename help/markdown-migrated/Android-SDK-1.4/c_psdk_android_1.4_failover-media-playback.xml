@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_failover-media-playback"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Media playback and failover</title> 
+	<shortdesc>For live and video-on-demand (VOD) media, 
+		<ph conkeyref="phrases/primetime-sdk-name"/>
+	 starts playback by downloading the playlist associated with the
+	 middle-resolution bit rate and downloads the media segments defined by that
+	 playlist. It quickly selects the high-resolution bit rate playlist and its associated media
+	 and continues the downloading process. 
+  </shortdesc> <conbody><p> </p></conbody>
+</concept> 

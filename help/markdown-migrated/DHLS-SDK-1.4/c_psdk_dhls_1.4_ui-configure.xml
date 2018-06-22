@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="concept_configure_player_UI"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Configure the player user interface</title> 
+  <shortdesc>With <ph conkeyref="phrases/primetime-sdk-name"/> you can control the basic playback
+		experience for live and video on demand (VOD). <ph conkeyref="phrases/primetime-sdk-name"/>
+		provides methods and properties on the player instance that you can use to configure the
+		player user interface. </shortdesc> 
+</concept> 

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_control-visibility"> 
+  <title>Configure visibility options</title> 
+  <shortdesc>Edit the PlayerFragment.java file to control visibility of the
+	 chooser dialog to the end user. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_F076344E0BA045E7BD2595A3B6898349"> 
+		<draft-comment>Mansi, I completely guessed at what is important here and
+		  what the user might do or not do in this file. Is this even necessary? Or
+		  should this be more about the configuration file? The IAAConfig.java file is
+		  not populated yet in the build? 
+		</draft-comment> 
+	 </context> 
+  </taskbody> 
+</task> 

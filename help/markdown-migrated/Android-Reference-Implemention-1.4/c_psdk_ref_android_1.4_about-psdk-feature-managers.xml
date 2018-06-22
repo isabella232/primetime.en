@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ref_about-feature-managers"> 
+  <title>Feature managers</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <conbody> 
+	 <p>Feature managers provide a way for you to control individual features
+		without traversing the entire 
+		<ph
+		 conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/> in
+		search of code for one feature that could be scattered in multiple locations.
+		Feature managers condense code into one class per feature. The feature managers
+		wait for triggers from 
+		<ph
+		 conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>
+		events and then inform the class that uses the feature manager to handle the
+		result. The feature manager provides the required information to the class. 
+	 </p> 
+	 <p>The feature managers perform the following tasks: 
+	 <ul id="ul_1C4D9E3468E340E29A92316B71754240"> 
+		<li id="li_DCDF93B2A21F4FE9A5103C071A881F6E"><b>Triggers 
+			 <ph
+			  conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>
+			 features. 
+		  </b>These are function calls to trigger a 
+		  <ph
+			conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>
+		  feature. For example, 
+		  <codeph>PlaybackManager.play()</codeph> is called when the player
+		  application needs to start the video playback. 
+		</li> 
+		<li id="li_140B66B1CB9347D6A1FFEE0ACDDA7441"><b>Listens to 
+			 <ph
+			  conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>
+			 events.</b> The feature manager needs to listen to 
+		  <ph
+			conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>
+		  events to acquire information from the 
+		  <ph
+			conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>.
+		  For example, 
+		  <codeph>AdsManager</codeph> listens to 
+		  <ph
+			conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>
+		  Ads events to be notified when ad breaks start. 
+		</li> 
+		<li id="li_4B0722186A754168B29CF943B01B3282"><b>Dispatches events to the
+			 handler. 
+		  </b>After the feature managers receive and process the events from the 
+		  <ph
+			conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>,
+		  they notify the client side to handle the event. For example, after 
+		  <codeph>AdsManager</codeph> receives an ad break start event, it tells
+		  the player fragment to reflect this change in the UI (disable the scrub bar,
+		  show the ad overlay, etc.). 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>The Primetime reference implementation includes the following feature
+		managers: 
+	 <table id="table_7BDB52705ECF437FBE475D6B215B7413"> 
+		<tgroup cols="4"><colspec colnum="1" colname="col1"
+		  colwidth="1.55*"/><colspec colname="col02" colnum="2"
+		  colwidth="1.45*"/><colspec colnum="3" colname="col2" colwidth="4.03*"/><colspec
+		  colname="col3" colnum="4" colwidth="1.00*"/><thead> 
+			 <row> 
+				<entry colname="col1">Feature manager 
+				</entry> 
+				<entry colname="col02">Default file 
+				</entry> 
+				<entry colname="col2">Feature 
+				</entry> 
+				<entry colname="col3"> 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"><xref
+				  href="c_psdk_ref_video-playback.xml">Video playback</xref> 
+				</entry> 
+				<entry colname="col02">PlaybackManager 
+				</entry> 
+				<entry colname="col2">HLS playback and control, DVR playback and
+				  control, buffer control, and multi-bit rate handling. 
+				</entry> 
+				<entry colname="col3">Required 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><xref
+				  href="c_psdk_ref_content-protection.xml">DRM content protection</xref> 
+				</entry> 
+				<entry colname="col02">DrmManager 
+				</entry> 
+				<entry colname="col2">Content protection. 
+				</entry> 
+				<entry colname="col3">Required 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><xref href="c_psdk_ref_ad-insertion.xml">Ad
+					 insertion</xref> 
+				</entry> 
+				<entry colname="col02">AdsManager 
+				</entry> 
+				<entry colname="col2">Ad insertion, including 
+				  <ph
+					conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auditude-name-long"><?xm-replace_text Phrase?></ph>,
+				  direct ad break, and custom ad break. 
+				</entry> 
+				<entry colname="col3">Optional 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><xref
+				  href="c_psdk_ref_closed-captions.xml">Closed captions 
+				  </xref> 
+				</entry> 
+				<entry colname="col02">CCManager 
+				</entry> 
+				<entry colname="col2">Closed captioning and VTT subtitles. 
+				</entry> 
+				<entry colname="col3">Optional 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><xref
+				  href="c_psdk_ref_late-binding-audio.xml">Late-binding audio</xref> 
+				</entry> 
+				<entry colname="col02">AAManager 
+				</entry> 
+				<entry colname="col2">Late binding audio. 
+				</entry> 
+				<entry colname="col3">Optional 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><xref href="t_psdk_ref_qos-statistics.xml">QoS</xref>
+							</entry> 
+				<entry colname="col02">QosManager 
+				</entry> 
+				<entry colname="col2">QoS statistics. 
+				</entry> 
+				<entry colname="col3">Optional 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Entitlement 
+				</entry> 
+				<entry colname="col02">EntitlementManager
+				</entry> 
+				<entry colname="col2"><ph
+				  conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auth-name"/> entitlement
+				  integration.
+				</entry> 
+				<entry colname="col3">Optional
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 </p> 
+	 <p>The reference implementation contains basic default classes, listed
+		above, and corresponding classes with the suffix of On. The default classes
+		provide the default 
+		<ph
+		 conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>
+		behaviors while the classes with the On suffix include all the code required to
+		trigger the 
+		<ph
+		 conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>
+		feature and listen to 
+		<ph
+		 conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>
+		events for that feature. 
+	 </p> 
+	 <ul id="ul_34B51F82D4014A379865ED0FB902B92A"> 
+		<li id="li_8C13CFE953AC4B4E82B67CE642A85C01">For optional features, the
+		  default code operates as if the feature is turned off. 
+		</li> 
+		<li id="li_720BC5E8E11941C5AE0AC4AFC1A9A00F">Classes with the On suffix
+		  operate as if the feature is turned on. 
+		</li> 
+	 </ul> 
+	 <p> 
+	 </p> 
+  </conbody> 
+</concept> 

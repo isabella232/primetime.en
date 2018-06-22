@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="r_psdk_android_mediaplayer-methods-for-accessing-mediaresource"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>MediaPlayer methods for accessing MediaResource information</title> 
+  <shortdesc>The methods in the 
+	 <codeph>MediaPlayerItem</codeph> class allow you to obtain information
+	 about the content stream represented by a loaded MediaResource. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_24293D4222FB48A596C4DCAA2ADB2EE9"> 
+		<table frame="all" colsep="1" rowsep="1"
+		 id="table_77B55D506FE24326A03D97AA087231FF"> 
+		  <tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+			 <colspec colnum="1" colname="2" colwidth="41*"/> 
+			 <colspec colnum="2" colname="3" colwidth="46*"/> 
+			 <thead> 
+				<row rowsep="1"> 
+				  <entry colname="2">Method 
+				  </entry> 
+				  <entry colname="3">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Live stream 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get isLive():Boolean;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>True if the stream is live; false if it is VOD. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>DRM protected</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get isProtected():Boolean; </codeph></entry> 
+				  <entry colname="3"> 
+					 <p>True if the stream is DRM protected. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get drmMetadataInfos():
+									Vector.&lt;DRMMetadataInfo&gt;;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Lists all the DRM metadata objects discovered in the
+						manifest. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Closed captions</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get hasClosedCaptions():Boolean;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>True if closed-caption tracks are available. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get
+									closedCaptionsTracks():Vector.&lt;ClosedCaptionsTrack&gt;;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Provides a list of available closed-caption tracks. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get
+									selectedClosedCaptionsTrack():ClosedCaptionsTrack</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Retrieves the current closed caption track selected with 
+						<codeph>SelectClosedCaptionsTrack</codeph>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>selectClosedCaptionsTrack (closedCaptionsTrack:
+									com.adobe.mediacore.info:ClosedCaptionsTrack ) </codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Sets a closed-caption track to be the current closed-caption
+						track. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Alternate audio tracks 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get hasAlternateAudio():Boolean;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>True if the stream has alternate audio tracks. 
+					 </p> 
+					 <note type="tip">The main (default) audio track is also part of
+						the alternate audio track list. 
+					 </note> 
+					 <p><ph conkeyref="phrases/primetime-sdk-name"/> for Desktop HLS considers the main audio track
+									to be one of the items in the alternate audio track list.
+									Because of this, the only case where
+										<codeph>MediaPlayerItem.hasAlternateAudio</codeph> returns
+									false is when the stream has no audio at all. If the content has
+									only one audio track, this method returns true, and <codeph>get
+										AudioTracks</codeph> returns a list with a single element
+									(the default audio track). </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>function get
+								audioTracks():Vector.&lt;AudioTrack&gt;;</codeph></entry> 
+				  <entry colname="3">Provides a list of available alternate audio
+					 tracks. 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get
+								audioTracks():Vector.&lt;AudioTrack&gt;;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Provides a list of available alternate audio tracks. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get selectedAudioTrack():AudioTrack;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Retrieves the audio track selected with 
+						<codeph>selectAudioTrack</codeph>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>selectAudioTrack(audioTrack: AudioTrack )</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Selects an audio track to be the current audio track. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Timed metadata</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get hasTimedMetadata():Boolean;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>True if the stream has associated timed metadata. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get
+								timedMetadata():Vector.&lt;TimedMetadata&gt;;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Provides a list of the timed metadata objects associated
+						with the stream. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get isDynamic():Boolean;</codeph>
+							</entry> 
+				  <entry colname="3"> 
+					 <p>True if the stream is a multiple bit rate (MBR) stream. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get profiles():Vector.&lt;Profile&gt;;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Provides a list of the associated bit rate profiles. For
+						each profile, you can retrieve its bit rate and the height and width of the
+						profile. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry namest="2" nameend="3"> 
+					 <b>Trick play 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get isTrickPlaySupported():Boolean;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>True if the player supports fast forward, rewind, and
+						resume. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get
+									availablePlaybackRates():Vector.&lt;Number&gt;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Provides the list of available playback rates in the context
+						of the trick-play feature. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry namest="2" nameend="3"> 
+					 <b>Media player 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get player():MediaPlayer</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Returns the media player currently associated with this
+						player. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Media resource</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="2"><codeph>function get resource():MediaResource;</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Returns the media resource associated with this item. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="0" > 
+				  <entry colname="2"><codeph>function get resourceId():int</codeph></entry> 
+				  <entry colname="3"> 
+					 <p>Returns the media identifier associated with this item. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

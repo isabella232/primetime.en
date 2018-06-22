@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<reference id="r_psdk_android_info-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Info classes</title> 
+  <shortdesc>These classes provide information about the media. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_8A082B039B1048559BC0A9413526846F">Package: <xref
+				href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/package-detail.html"
+				format="html" scope="external">com.adobe.mediacore.info</xref></refsyn> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_BC74F0C72F7C443B92C9B28750D812A6"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="30*"/> 
+		  <colspec colnum="2" colname="2" colwidth="70*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1"> 
+				  <p>Name 
+				  </p> 
+				</entry> 
+				<entry colname="2"> 
+				  <p>Description 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/AudioTrack.html"
+									format="html" scope="external">AudioTrack</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that extends Track to define the audio track abstraction.</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/ClosedCaptionsTrack.html"
+									format="html" scope="external"
+								>ClosedCaptionsTrack</xref></codeph></entry> 
+				<entry colname="2">Class that extends Track to define the closed caption abstraction. A closed
+							captions track is defined uniquely by its name AND it's service type.
+							Different service types can share the same name.</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/DefaultCCTypes.html"
+									format="html" scope="external">DefaultCCTypes</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that contains the default closed
+				  captioning tracks types. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/DefaultPlaybackRates.html"
+									format="html" scope="external"
+								>DefaultPlaybackRates</xref></codeph>
+						</entry> 
+				<entry colname="2"> Class containing the default playback rates. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/DRMMetadataInfo.html"
+									format="html" scope="external">DRMMetadataInfo</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that defines the DRM metadata abstraction.
+				  
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/Profile.html"
+									format="html" scope="external">Profile</xref></codeph></entry> 
+				<entry colname="2">Class that contains media profile information,
+				  such as the height, width, and bit rate. 
+				</entry> 
+			 </row> 
+			 <row rowsep="0" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/Track.html"
+									format="html" scope="external">Track</xref></codeph></entry> 
+				<entry colname="2">Class that defines the track abstraction to use in defining
+								<codeph>AudioTrack</codeph> and
+							<codeph>ClosedCaptionsTrack</codeph>. </entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </refbody> 
+</reference> 

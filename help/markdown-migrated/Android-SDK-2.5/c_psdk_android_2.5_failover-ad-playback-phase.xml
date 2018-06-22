@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_failover-ad-playback-phase"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Ad-playback phase</title> 
+  <shortdesc> <ph conkeyref="phrases/primetime-sdk-name"/> downloads the ad segments and renders them on the device's
+	 screen. 
+  </shortdesc> 
+  <conbody> 
+	 <p>Now, <ph conkeyref="phrases/primetime-sdk-name"/> has resolved ads, positioned the ads on the timeline, and
+		attempts to render the content on the screen. 
+	 </p> 
+	 <p>The following main classes of errors might occur during the following
+		phases:
+	 <ul id="ul_0A3733247EBC4862ACC716824C2493B6"> 
+		<li id="li_9C53D0CBAF05410F977D7EBCB0B8EBC3">When connecting to the host
+		  server. 
+		</li> 
+		<li id="li_6A8345EE32CB49D889ACD14856E8EB63">When downloading the
+		  manifest file. 
+		</li> 
+		<li id="li_05C4E2733AD9486FBE82C9E3CFD32684">When downloading the media
+		  segments. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> forwards the triggered events to your application, including
+		notification events that are triggered when:
+	 <ul id="ul_8E08713DF63E4B07B0A82FCA8CE56877"> 
+		<li id="li_BD44F4CF59BE4D3B9229664D6BB833A4">A failover happens. 
+		</li> 
+		<li id="li_73F6E611974E40AB90CCBC6BACF76C98">The profile is changed
+		  because of the failover algorithm. 
+		</li> 
+		<li id="li_A56C48379CF44373A4B19027619D581A">All failover options have
+		  been considered, and no additional action can be taken automatically. 
+		  <p>Your application needs to take the appropriate action. 
+		  </p> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Regardless of whether errors occur, <ph conkeyref="phrases/primetime-sdk-name"/> calls 
+		<codeph>onAdBreakComplete</codeph> for each 
+		<codeph>onAdBreakStart</codeph> and 
+		<codeph>onAdComplete</codeph> for every 
+		<codeph>onAdStart</codeph>. However, if segments could not be downloaded,
+		there might be gaps in the timeline. When the gaps are large enough, the values
+		in the playhead position and the reported ad progress might exhibit
+		discontinuities. 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ref_handling-events"> 
+  <title>Handling events</title> 
+  <shortdesc>If the application needs to handle events dispatched from the
+	 feature manager, it needs to register the manager in the PlayerFragment.java
+	 file.
+  </shortdesc> 
+  <conbody> 
+	 <p>For example:
+	 </p>
+	 <codeblock>private final AdsManager.AdsManagerEventListener adsManagerEventListener = 
+  new AdsManager.AdsManagerEventListener() {
+
+    // add the ads functionality...
+
+}
+
+//Register the listener
+adsManager.addEventListener(adsManagerEventListener);</codeblock> 
+  </conbody> 
+</concept>

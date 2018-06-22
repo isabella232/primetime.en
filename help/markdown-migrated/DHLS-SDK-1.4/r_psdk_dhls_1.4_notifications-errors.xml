@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="r_psdk_notifications-errors"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>ERROR notification codes</title> 
+  <shortdesc>This table provides detailed information about ERROR type notifications.</shortdesc> 
+  <refbody> 
+	 <section id="section_D29404228F5E4B818642CBA6A0D39546"> 
+		<p> Most errors contain relevant metadata, for example, the URL of the resource that failed to
+				download. Some notifications contain metadata to specify whether the problem
+				occurred in the main video content, in the alternate audio content, or in an ad.</p> 
+		<table frame="all" colsep="1" rowsep="1"
+		 id="table_8B61210A406A45ACBE37FC29729DDE22"> 
+		  <tgroup cols="5" colsep="1" rowsep="1" outputclass="FormatA"> 
+			 <colspec colnum="1" colname="1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="2" colwidth="1.43*"/> 
+			 <colspec colnum="3" colname="3" colwidth="2.04*"/> 
+			 <colspec colnum="4" colname="4" colwidth="1.55*"/> 
+			 <colspec colnum="5" colname="5" colwidth="1.72*"/> 
+			 <thead> 
+				<row rowsep="1"> 
+				  <entry colname="1">Code 
+				  </entry> 
+				  <entry colname="2">Name 
+				  </entry> 
+				  <entry colname="3">InnerNotification 
+				  </entry> 
+				  <entry colname="4">Metadata Keys 
+				  </entry> 
+				  <entry colname="5">Comments 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row rowsep="1" > 
+				  <entry namest="1" nameend="5"><b>DRM</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>100000 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>DRM_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> 
+				  </entry> 
+				  <entry colname="4"><codeph>MAJOR_DRM_CODE 
+					 </codeph><codeph>MINOR_DRM_CODE 
+					 </codeph><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"><ph >Refer also to
+						106000 (<codeph>NATIVE_ERROR</codeph>).</ph> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="1" nameend="5"><b>Playback</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="1"><codeph>101000 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>PLAYBACK_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">
+								<p>None </p>
+							</entry> 
+				  <entry colname="4"><codeph >DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101004 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>CONTENT_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"><codeph>DOWNLOAD_ERROR </codeph>
+							</entry> 
+				  <entry colname="4"> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An Error has occurred while downloading a fragment or
+						segment(both video and audio). 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101006 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>SECURITY_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> 
+				  </entry> 
+				  <entry colname="4"><codeph>URL 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101008</codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>PAUSE_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">None 
+				  </entry> 
+				  <entry colname="4"> 
+					 <codeph >DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while performing a pause operation. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101009 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>SEEK_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">None 
+				  </entry> 
+				  <entry colname="4"><codeph >NATIVE_ERROR_CODE 
+					 </codeph><codeph >DESIRED_SEEK_POSITION 
+					 </codeph><codeph >DESIRED_SEEK_PERIOD 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while performing a seek operation. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101102 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>PERIOD_INFO_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while retrieving information about a
+						content period. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101103 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>RETRIEVE_TIME_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while attempting to retrieve the
+						playback position. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101104 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>GET_QOS_DATA_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while attempting to retrieve the QOS
+						information. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>101200 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>DOWNLOAD_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>URL 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while attempting to download data. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="1" nameend="5"><b>Invalid resource 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>102100 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>RESOURCE_LOAD_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph><codeph>RESOURCE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while loading a resource item. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>102101 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>RESOURCE_PLACEMENT_ FAILED 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>CONTENT_ID 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while placing a resource on the
+						playback timeline. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="1" nameend="5"><b>Ad processing 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>104000 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_RESOLVER_FAIL 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"><codeph>AD_METADATA _INVALID 
+					 </codeph><codeph>AD_RESOLVER_INITIALIZATION_FAIL 
+					 </codeph><codeph>AD_RESOLVER_RESOLVE_FAIL 
+					 </codeph><codeph>AD_RESOLVER_SERVER_UNREACHABLE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> None 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>104001 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_RESOLVER_METADATA_ INVALID 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">
+								<p>None</p>
+							</entry> 
+				  <entry colname="4"> </entry> 
+				  <entry colname="5"> 
+					 <p>Ad resolving failed due to invalid ad-metadata format. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>104003 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_RESOLVER_RESOLVE_ FAIL 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>NATIVE_ERROR_CODE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Ad plugin failed to resolve ads. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>104005 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_INSERTION_FAIL 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"><ph>None</ph>
+							</entry> 
+				  <entry colname="4"><codeph>PROPOSED_AD_BREAK</codeph>
+							</entry> 
+				  <entry colname="5"> 
+					 <p>Ad resolving phase has failed. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>104006 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AD_UNREACHABLE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry namest="1" nameend="5"><b>Native</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>106000 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>NATIVE_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3">None 
+				  </entry> 
+				  <entry colname="4"><codeph> RUNTIME_CODE</codeph>
+								<codeph>RUNTIME_CODE_MESSAGE</codeph>
+								<codeph> RESOURCE_URL</codeph>
+								<codeph> RESOURCE_TYPE</codeph>
+								<codeph> RESOURCE_ID</codeph>
+								<p><b>DRM details:</b>
+								</p>
+								<codeph>DRM_ERROR_STRING</codeph>
+								<codeph> RUNTIME_SUBERROR_CODE</codeph>
+							</entry> 
+				  <entry colname="5"> 
+					 <p >The low-level AVE library issued an
+						error. 
+					 </p> 
+					 <p>See <xref
+										href="http://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-concept-Details_for_the_NATIVEERROR_notification"
+										format="html" scope="external">Details for the NATIVE_ERROR
+										notifications</xref> for information about the values for
+									these metadata keys. </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>106001 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>ENGINE_CREATION_ ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while instantiating the AVE low-level
+						library. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>106002 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>ENGINE_RELEASE_ ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while releasing the AVE low-level
+						library. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>106003 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>ENGINE_RESOURCES_ RELEASE_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while releasing the GPU resources
+						utilised by the AVE library. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>106004 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>ENGINE_RESET_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while resetting the AVE library. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>106005 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>ENGINE_SET_ VIEW_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"><codeph>DESCRIPTION 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error has occurred while attaching a view to the AVE
+						library. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry namest="1" nameend="5"><b>Alternate audio</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1"><codeph>109000 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>AUDIO_TRACK_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"><codeph>DOWNLOAD_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="4"><codeph>AUDIO_TRACK_NAME 
+					 </codeph><codeph>AUDIO_TRACK_LANGUAGE 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>An error related to an audio track occurred. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry namest="1" nameend="5"><b>Generic</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="0" > 
+				  <entry colname="1"><codeph>199999 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="2"><codeph>GENERIC_ERROR 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="3"> None 
+				  </entry> 
+				  <entry colname="4"> None 
+				  </entry> 
+				  <entry colname="5"> 
+					 <p>Marks a generic error event. Not actually issued by 
+						<ph conkeyref="phrases/primetime-sdk-name"/>. It's just a
+						marker for the end of the range of numerical codes corresponding to 
+						<ph conkeyref="phrases/primetime-sdk-name"/> error events. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </refbody> 
+</reference> 

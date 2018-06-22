@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_302-redirect-disable-enable"> 
+  <title>Disable or enable 302 redirect optimization</title> 
+  <shortdesc>Use the 
+	 <codeph>useRedirectedUrl</codeph> property to turn 302 redirect on (true)
+	 or off (false). 
+  </shortdesc> 
+  <taskbody> 
+	 <example id="example_B886777252B745AAB48B1FCC42C97A25">For example:
+			<codeblock outputclass="syntax actionscript">// Set useRedirectedUrl property to true
+var networkConfiguration = new NetworkConfiguration();
+networkConfiguration.useRedirectedUrl = true;
+ 
+//Set NetworkConfiguration as Metadata:
+var result:Metadata = new Metadata();
+result.setMetadata(DefaultMetadataKeys.NETWORK_CONFIGURATION_KEY, 
+                   networkConfiguration);
+ 
+var mediaResource = new MediaResource( url, MediaResourceType.HLS, result);
+ 
+// load the resource
+mediaPlayer.replaceCurrentResource( mediaResource, mediaPlayerItemConfig );</codeblock></example> 
+  </taskbody> 
+</task> 

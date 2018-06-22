@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<concept id="c_psdk_dhls_titlepage_1.4"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>TVSDK 1.4 for Desktop HLS Programmer's Guide</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <conbody> 
+	 <p><?xm-replace_text Paragraph?>
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_settingsactivity-for-cc"> 
+  <title>Configure closed caption visibility and style</title> 
+  <shortdesc>The SettingsActivity sets the default caption track that is the
+	 default for the entire player application. The CCManager refers to this
+	 configuration setting when it sets up the initial track for the media item. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_993EB4CED0534EFCBF1BFBD08F78EF30"> 
+		<p>Edit the SettingsActivity.java file to configure the closed captions
+		  visibility and style. 
+		</p> 
+	 </context> 
+	 <steps id="steps_74D48155BD7E46E4ADAF17874E2320A9"> 
+		<step id="step_414BC2E1214D40459642CEC696B4A0DC"> 
+		  <cmd>Set closed caption visibility summary. 
+		  </cmd> 
+		</step> 
+		<step id="step_0D555617E71645E789604DF0A5B5AED0"> 
+		  <cmd>Convert the preference header ID to the preference key string for
+			 that category. 
+		  </cmd> 
+		</step> 
+		<step id="step_1CEEFF8827DD4EE49F4D550E47058C36"> 
+		  <cmd>Update the header summary. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

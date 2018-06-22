@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="t_psdk_qosprovider_tracking"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Read QOS playback, buffering, and device statistics</title> 
+  <shortdesc> You can read playback, buffering, and device statistics from the 
+	 <codeph>QOSProvider</codeph> class. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_49F8FBE2E7DF422399761BF4F389EFE7"> 
+		<p>The 
+		  <codeph>QOSProvider</codeph> class provides various statistics,
+		  including information about buffering, bit rates, frame rates, time data, and
+		  so on. It also provides information about the device, such as the manufacturer,
+		  model, operating system, SDK version, manufacturer's device ID, and screen
+		  size/density. 
+		</p> 
+	 </context> 
+	 <steps id="steps_77E17064AC3F4D58AFCB874ACF2B984A"> 
+		<step id="step_0AB792858C30431DB60E80F689C29257"> 
+		  <cmd>Instantiate a media player. 
+		  </cmd> 
+		</step> 
+		<step id="step_627BEAB9B0E040D78DAFEDEBF6C95EA7"> 
+		  <cmd>Create a 
+			 <codeph>QOSProvider</codeph> object and attach it to the media
+			 player. 
+		  </cmd> 
+		  <info> 
+			 <p>The 
+				<codeph>QOSProvider</codeph> constructor takes a player context so
+				that it can retrieve device-specific information. 
+				<codeblock outputclass="syntax java">// Create Media Player.
+_mediaQosProvider = new QOSProvider(getActivity().getApplicationContext());
+_mediaQosProvider.attachMediaPlayer(_mediaPlayer);</codeblock> 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_0D9521ADFB0F48638C935CB43F70CD88"> 
+		  <cmd importance="optional">(Optional) Read the playback statistics. 
+		  </cmd> 
+		  <info> 
+			 <p>One solution to read playback statistics is to have a timer, that
+				periodically fetches the new QoS values from the 
+				<codeph>QOSProvider</codeph>. 
+			 </p>
+			 <p>For example:
+						<codeblock outputclass="syntax java">_playbackClock = new Clock(PLAYBACK_CLOCK, 1000); // every 1 second
+_playbackClockEventListener = new Clock.ClockEventListener() {
+    @Override
+    public void onTick(String name) {
+        getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                PlaybackInformation playbackInformation = 
+                  _mediaQosProvider.getPlaybackInformation(); 
+                setQosItem("Frame rate", (int) playbackInformation.getFrameRate()); 
+                setQosItem("Dropped frames", (int) playbackInformation.getDroppedFrameCount());
+                setQosItem("Bitrate", (int) playbackInformation.getBitrate());
+                setQosItem("Buffering time", (int) playbackInformation.getBufferingTime()); 
+                setQosItem("Buffer length", (int) playbackInformation.getBufferLength()); 
+                setQosItem("Buffer time", (int) playbackInformation.getBufferTime()); 
+                setQosItem("Empty buffer count", (int) playbackInformation.getEmptyBufferCount()); 
+                setQosItem("Time to load", (int) playbackInformation.getTimeToLoad()); 
+                setQosItem("Time to start", (int) playbackInformation.getTimeToStart());
+                setQosItem("Time to prepare", (int) playbackInformation.getTimeToPrepare());
+                setQosItem("Perceived Bandwidth", (int) playbackInformation.getPerceivedBandwidth());  
+                playbackInformation.getPerceivedBandwidth());
+            }
+        });
+    };
+};
+</codeblock>
+					</p> 
+		  </info> 
+		</step> 
+		<step id="step_CADB225E027246DB91F97C70EF7C93A3" importance="optional"> 
+		  <cmd>(Optional) Read the device-specific information. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax java">// Show device information
+DeviceInformation deviceInfo = new QOSProvider(parent.getApplicationContext()).
+                               getDeviceInformation();
+tv = (TextView) view.findViewById(R.id.aboutDeviceModel);
+tv.setText(parent.getString(R.string.aboutDeviceModel) + " " + 
+  deviceInfo.getManufacturer() + " - " + deviceInfo.getModel());
+
+tv = (TextView) view.findViewById(R.id.aboutDeviceSoftware);
+tv.setText(parent.getString(R.string.aboutDeviceSoftware) + " " + 
+  deviceInfo.getOS() + ", SDK: " + deviceInfo.getSDK());
+
+tv = (TextView) view.findViewById(R.id.aboutDeviceResolutin);
+String orientation = parent.getResources().getConfiguration().orientation == 
+  Configuration.ORIENTATION_LANDSCAPE ? "landscape" : "portrait";
+tv.setText(parent.getString(R.string.aboutDeviceResolution) + " " + 
+  deviceInfo.getWidthPixels() + "x" + deviceInfo.getHeightPixels() + 
+  " (" + orientation + ")");
+</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

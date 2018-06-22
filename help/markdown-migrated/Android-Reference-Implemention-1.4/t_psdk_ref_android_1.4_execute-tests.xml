@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_execute-tests"> 
+  <title>Execute tests</title> 
+  <taskbody> 
+	 <steps id="steps_1C82217E5F674D00BBECF8C620A4297C"> 
+		<step id="step_740BE9DA60274B23B5A1121966EB84A7">
+		  <cmd>Choose 
+			 <menucascade><uicontrol>Run</uicontrol><uicontrol>Edit
+				  Confiurations...</uicontrol> 
+			 </menucascade>from the top menu to open the Run Configuration dialog.
+			 
+		  </cmd>
+		</step>
+		<step id="step_A7A40A105D6E4053B0CDFD9899A01077">
+		  <cmd>Click the 
+			 <uicontrol>Add New Configuration</uicontrol> button (green 
+			 <uicontrol>+</uicontrol> symbol in upper-left corner) and select 
+			 <uicontrol>FlexUnit</uicontrol>. 
+		  </cmd>
+		</step>
+		<step id="step_CB2423A09ECC4DE994F214106558AEFC">
+		  <cmd>Name the configuration 
+			 <uicontrol>ReferenceCoreTest</uicontrol>. 
+		  </cmd>
+		</step>
+		<step id="step_6D26E9C281CD4098825F944F0529DB2C">
+		  <cmd>Set 
+			 <uicontrol>Build configuration</uicontrol> to 
+			 <uicontrol>ReferenceCoreTest</uicontrol>. 
+		  </cmd>
+		</step>
+		<step id="step_0115DEA14CE24E52A594D3315E7E2B21">
+		  <cmd>Set 
+			 <uicontrol>Test</uicontrol> to 
+			 <uicontrol>Class or suite</uicontrol>.
+		  </cmd>
+		</step>
+		<step id="step_50A39B49704947A183BBD2BF8EC9A333">
+		  <cmd>Set 
+			 <uicontrol>Class</uicontrol> to 
+			 <uicontrol>flexUnitTests.ReferenceCoreTests</uicontrol>. 
+		  </cmd>
+		</step>
+		<step id="step_1E9BF31FD9EC4DC9A711CD75141B78D5">
+		  <cmd>Set 
+			 <uicontrol>Launch with</uicontrol> to the latest Flash Player
+			 Projector content debugger. 
+		  </cmd>
+		  <info>You can download the latest projector debugger file from Adobe at
+			 
+			 <xref href="http://www.adobe.com/support/flashplayer/downloads.html"
+			  format="html"
+			  scope="external">http://www.adobe.com/support/flashplayer/downloads.html</xref>.
+			 
+		  </info>
+		</step>
+		<step id="step_39EB98FC50E746A693455D9738925804">
+		  <cmd>Keep 
+			 <uicontrol>Place output folder in the local-trusted
+				sandbox</uicontrol> selected. 
+		  </cmd>
+		</step>
+		<step id="step_7F764D93BA0B47E8A6C88F0295AE452C">
+		  <cmd>Click 
+			 <uicontrol>OK</uicontrol> to save the configuration.
+		  </cmd>
+		</step>
+		<step id="step_D77074E6A9F64FC89A0E2295B5E7E86E">
+		  <cmd>Select 
+			 <menucascade><uicontrol>Run</uicontrol><uicontrol>Run...</uicontrol></menucascade>
+			 from the top menu. 
+		  </cmd>
+		</step>
+		<step id="step_AD26C8B571C440E0B90FD776DB35A5B1">
+		  <cmd>Select 
+			 <uicontrol>ReferenceCoreTests</uicontrol> to execute the tests. 
+		  </cmd>
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

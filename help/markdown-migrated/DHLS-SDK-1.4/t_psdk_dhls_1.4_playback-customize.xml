@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_playback_custom_setup"> 
+  <title>Set up customized playback</title> 
+  <shortdesc>You can customize or override ad behaviors. 
+  </shortdesc> 
+  <taskbody> 
+	 <prereq id="prereq_37A141A99E4E451495A2EC9034DC6FB9"> 
+		<p>Before you can customize or override ad behaviors, register the ad
+		  policy instance with 
+		  <ph conkeyref="phrases/primetime-sdk-name"/>. 
+		</p> 
+	 </prereq> 
+	 <context id="context_9A1A9FD61CF1431988BC087577ECC73A"> 
+		<p >To customize ad behaviors, do one of the
+		  following: 
+		</p> 
+		<ul id="ul_51823D4B88BE4C4FA94ED3A3E2BFF8EE"> 
+		  <li id="li_E74FB160E74948B0B9C9FADB669D3687">Implement the <codeph>AdPolicySelector</codeph>
+					interface and all its methods. <p>This option is recommended if you need to
+						override <b>all</b> the default ad behaviors. </p>
+				</li> 
+		  <li id="li_9D08BD6FFB914ECBB4FE8E6CE2BF52F0"> Extend the
+						<codeph>DefaultAdPolicySelector</codeph> class and provide implementations
+					for only those behaviors that require customization. <p>This option is
+						recommended if you need to override only <b>some</b> of the default
+						behaviors. </p>
+				</li> 
+		</ul> 
+		<p >For both options, complete the following
+		  tasks: 
+		</p> 
+	 </context> 
+	 <steps id="steps_8825205535D94587BF18FF8552206496"> 
+		<step  id="step_12F4DE8D2DE24208A0265D71D44B8672"> 
+		  <cmd> Implement your own custom ad policy selector. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock outputclass="syntax actionscript">public class CustomAdPolicySelector implements AdPolicySelector {
+    // your own customization here
+}</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step  id="step_7534D72C49CC4EB29ACAC4A48255074A"> 
+		  <cmd> Extend the content factory to use the custom ad policy selector. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock  outputclass="syntax actionscript">public class CustomContentFactory extends DefaultContentFactory {
+    /**
+     * @inheritDoc
+     */
+    override protected function doRetrieveAdPolicySelector(item:MediaPlayerItem):AdPolicySelector {
+        return new CustomAdPolicySelector(item);
+    }
+}</codeblock> 
+			 <codeblock outputclass="syntax actionscript">psdkutils::PSDKSharedPointer&lt;psdk::ContentFactory&gt; factory;
+psdkFactory-&gt;createDefaultContentFactory(&amp;factory);
+psdkutils::PSDKSharedPointer&lt;psdk::AdPolicySelector&gt; defaultAdPolicySelector;
+factory-&gt;retrieveAdPolicySelector(item, &amp;defaultAdPolicySelector);</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step  id="step_17BF65BD97A74570B3DF37955F9D935B"> 
+		  <cmd> Register the new content factory to be used by 
+			 <ph conkeyref="phrases/primetime-sdk-name"/> in the advertising
+			 workflow. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock  outputclass="syntax actionscript">PSDKConfig.advertisingFactory = new CustomContentFactory();</codeblock> 
+		  </stepxmp> 
+		  <info> 
+			 <note type="tip"> If the custom content factory was registered for a specific stream through the
+							<codeph>MediaPlayerItemConfig</codeph> class, it will be cleared when
+						the <codeph>MediaPlayer</codeph> instance is deallocated. Your application
+						must register it each time a new playback session is created. </note> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

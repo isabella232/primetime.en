@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_config-buffering-instant-on"> 
+  <title>Configure buffering for instant-on playback</title> 
+  <shortdesc>With instant on, users can switch channels and the playback starts immediately without
+		waiting time. When you enable instant on, <ph conkeyref="phrases/primetime-sdk-name"/>
+		buffers one or more channels before playback begins.  </shortdesc> 
+  <taskbody> 
+	 <context id="context_E7DD899821DF437181D79C16E7BBD224"/>
+	 <steps id="steps_451861EA40F840B385BECB6CB9DF8A23"> 
+		<step id="step_2E202891AE32460B9E13BBEA28104124">
+				<cmd>Confirm that the resource has loaded and is ready for playing by verifying that
+					the state is PREPARED. </cmd>
+			</step> 
+		<step id="step_E4384F0F9FC9410BA358571AF1C8C896"> 
+		  <cmd>Before calling 
+			 <codeph>play</codeph>, call 
+			 <codeph>prepareBuffer</codeph> for each 
+			 <codeph>MediaPlayer</codeph> instance. 
+		  </cmd> 
+		  <info>This enables instant on, which means that <ph conkeyref="phrases/primetime-sdk-name"/>
+					starts buffering without actually playing the media resource. <ph
+						conkeyref="phrases/primetime-sdk-name"/> dispatches the
+						<codeph>BUFFERING_COMPLETED</codeph> event when the buffer is full. </info> 
+		  <info> 
+			 <note>By default, <codeph>prepareBuffer</codeph> and <codeph>prepareToPlay</codeph> set up the
+						media stream to start playing from the beginning. To start at another
+						position, pass the position (in milliseconds) into
+							<codeph>prepareToPlay</codeph>.  </note> 
+			 <codeblock outputclass="syntax java">@Override
+public void onStateChanged(MediaPlayer.PlayerState state, 
+                           MediaPlayerNotification notification) {
+    switch (state) {
+        case INITIALIZED:
+            // By default, prepareToPlay and prepareBuffer buffer and start playing
+            // from the beginning of the stream. To start at another position,
+            // pass it into prepareToPlay. This example starts 5 seconds into the stream.
+            _mediaPlayer.prepareToPlay(5000);
+            break;
+        case PREPARING:
+            break;
+        case PREPARED:
+            _mediaPlayer.prepareBuffer();
+            break;
+        ...
+    }
+}</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_2DAD7971D140418280E7402B790463FB">
+				<cmd>When you receive the <codeph>BUFFERING_COMPLETE</codeph> event, start playing
+					the item or display visual feedback to indicate that the content is completely
+					buffered. </cmd>
+				<info>If you call <codeph>play</codeph>, playback should begin immediately.
+					<codeblock outputclass="syntax java">void onBufferPrepared(const psdk::PSDKEvent *ev) {
+    mediaPlayer-&gt;play();
+}</codeblock>
+				</info>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

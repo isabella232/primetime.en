@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="blackout_apis"> 
+  <title>Blackout API elements</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> provides API elements
+	 that are useful when implementing blackouts, including methods, metadata, and
+	 notifications. 
+  </shortdesc> 
+  <conbody> 
+	 <p>You can use the following when implementing a blackout solution in your
+		player. 
+	 <ul id="ul_7515575EDBDE4CB19942A328E4C7AEDF">
+		<li id="li_B860CDA7E5D749F29979E5633EAA2670" > 
+		  <b >PTMediaPlayer</b> 
+		  <ul id="ul_EA7D426101394A6CA6E670F07FCA9586"> 
+			 <li id="li_81E32FE9ED674AF4A011AC022062ED99"
+								><codeph>registerCurrentItemAsBackgroundItem</codeph>
+							<p>Saves the currently loaded resource as the background resource. If
+									<codeph>replaceCurrentItemWithPlayerItem</codeph> is called
+								after this method, <ph conkeyref="phrases/primetime-sdk-name"/>
+								continues to download the background item’s manifest until you call
+									<codeph>unregisterCurrentBackgroundItem</codeph> ,
+									<codeph>stop</codeph>, or <codeph>reset</codeph> . </p></li> 
+			 <li id="li_DCEC39432DCF4658B34D09F5F6C6B071"><codeph>unregisterCurrentBackgroundItem</codeph>
+							<p>Sets the background item to nil and stops fetching and parsing the
+								background manifest. </p></li> 
+		  </ul> 
+		</li>
+		<li id="li_AA5B0FE12E514907886AFE1E2C3F4576" ><b
+		  >PTMetadata.PTBlackoutMetadata</b>
+		  <p> A 
+			 <codeph>PTMetadata</codeph> class that is specific to blackouts. 
+		  </p>
+		  <p>This allows you to set nonseekable ranges (an array of 
+			 <codeph>CMTimeRanges</codeph>) on 
+			 <ph conkeyref="phrases/primetime-sdk-name"/>. 
+			 <ph conkeyref="phrases/primetime-sdk-name"/> checks for these ranges
+			 every time the user seeks. If it is set and the user seeks into a nonseekable
+			 range, 
+			 <ph conkeyref="phrases/primetime-sdk-name"/> forces the viewer to the
+			 end of the nonseekable range.
+		  </p> 
+		</li>
+		<li id="li_8DA7F9E40BF3497482A1EAA173F656DF"><b>START HERE NEXT</b>
+					<b>PTAdMetadata</b>
+					<p>Enable or disable pre-roll on a live stream by setting <codeph>enableLivePreroll</codeph> to YES or NO. If NO, <ph conkeyref="phrases/primetime-sdk-name"/> does not make an explicit ad server call for pre-roll ads before the content playback and so does not play the pre-roll.
+						This has no impact on the mid-rolls. The default is YES. </p>
+				</li> 
+		<li id="li_CF319A607EDE4682859DE4C3C421A085">
+					<b>NSNotifications</b>
+					<ul id="ul_E0E2E396BF0749158B1F16B3FB921766">
+						<li id="li_7A3505C915A94F64B1A922F3CABCC712"
+								><codeph>PTTimedMetadataChangedInBackgroundNotification</codeph> -
+							Posted when <ph conkeyref="phrases/primetime-sdk-name"/> detects a
+							subscribed tag in the background manifest   and a new
+								<codeph>PTTimedMetadata</codeph> instance is prepared from it.  The
+							notification’s object is the <codeph>PTMediaPlayerItem</codeph> instance
+							that is currently playing. You can fetch the
+								<codeph>PTTimedMetadata</codeph> instance from the notification's
+								<codeph>userInfo</codeph> dictionary using the
+								<codeph>PTTimedMetadataKey</codeph> key. </li>
+						<li id="li_26A531A8EF384B51A56854470D259301"
+								><codeph>PTBackgroundManifestErrorNotification</codeph> - Posted
+							when the media player completely fails to load the background manifest,
+							that is, all of the stream URLs return either an error or an invalid
+							response. The notification’s object is the
+								<codeph>PTMediaPlayerItem</codeph> instance that is currently
+							playing. </li>
+					</ul>
+				</li> 
+		<li id="li_F192F8B0F8F14CB5B9342DFBD4E23F03">
+					<b>PTNotification</b>
+					<ul id="ul_4A917DD8145D43A380A34C8C9F68E885">
+						<li id="li_DFE1EE26CB1C4581B77952C9B01664CC"
+								><codeph>BACKGROUND_MANIFEST_WARNING</codeph>
+							<ul id="ul_13E487559FB84D9D869D9824FA85C54B">
+								<li id="li_068D21F17D2D4C8C9485D4AA5DFCBE9F">Code: 204000 </li>
+								<li id="li_8AC9E09F000A49859DE8153A0A6F4349">Type: Warning </li>
+								<li id="li_5BFD34423C8B437199F1C0B2766811EE">Error in background
+									manifest download. </li>
+							</ul>
+						</li>
+						<li id="li_8D59CC0FEA18424F8569757141EACB6F">
+							<codeph>INVALID_SEEK_WARNING</codeph>
+							<p>Dispatched when a seek is attempted in a nonseekable range  (in
+									<codeph>nonSeekableRanges</codeph> set in
+									<codeph>PTBlackoutMetadata</codeph>). </p></li>
+					</ul></li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

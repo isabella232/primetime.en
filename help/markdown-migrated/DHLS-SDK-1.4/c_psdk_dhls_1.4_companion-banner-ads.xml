@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="companion-banner-ads"> 
+  <title>Companion banner ads</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> supports companion
+	 banner ads, which are ads that accompany a linear ad and often remain on the
+	 page after the linear ad ends. Your application is responsible for displaying
+	 the companion banners that are provided with a linear ad. 
+  </shortdesc> 
+  <conbody> 
+	 <p >When displaying companion ads, follow these
+		recommendations:
+	 <ul id="ul_58EF49B82CB843418737833DB5A8FD88"> 
+		<li id="li_972A16C21153444EA1B5FFF95F787D65">Attempt to present as many
+		  of a video ad's companion banner ads as will fit in your player's layout. 
+		</li> 
+		<li id="li_A8E08BC7BA4A4EE9ABCC3EC2B18AC408">Present a companion banner
+		  only if you have a location that exactly matches its specified height and
+		  width. 
+		  <note type="tip">Do not resize the banner. 
+		  </note>
+		</li> 
+		<li id="li_35CB36A9D9D34BD49793648ADF62024A">Present the companion
+		  banner(s) as soon as possible after the ad begins.
+		</li> 
+		<li id="li_EAD0356FCAFD4189988C30CF54C750DF">Do not overlay the main
+		  ad/video container with companion banners. 
+		</li> 
+		<li id="li_AA9F2D010403445AA6F7357E2EFA6408">Continue to display
+		  companion banners after the ad ends. 
+		  <p>The standard is to display each companion banner until you have a
+			 replacement for this banner. 
+		  </p>
+		</li> 
+	 </ul>
+	 </p> 
+  </conbody> 
+</concept> 

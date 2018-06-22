@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_multi_initial_placementinfos_android"> 
+  <title>Multiple initial PlacementInformations </title> 
+	<shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> can set up multiple initial
+      <codeph>PlacementInformation</codeph>s. </shortdesc> 
+  <conbody> 
+	 <p> 
+		<codeblock outputclass="syntax java">ArrayList&lt;PlacementInformation&gt; placementInformations = new ArrayList&lt;PlacementInformation&gt;();
+CustomRangeHelper customRangeHelper = new CustomRangeHelper(mediaPlayerItem.getResource().getMetadata());
+ 
+if (customRangeHelper.hasRanges() == null) {
+    if (adSignalingMode == AdSignalingMode.SERVER_MAP) {
+        placementInformations.add(new PlacementInformation(Type.SERVER_MAP, PlacementInformation.UNKNOWN_DURATION, 0));
+    } else if (adSignalingMode == AdSignalingMode.MANIFEST_CUES) {
+        placementInformations.add(new PlacementInformation(Type.PRE_ROLL, timeMapping.getTime(), PlacementInformation.UNKNOWN_DURATION));
+    }
+}
+else if (customRangeHelper.hasRanges() == CustomRangeHelper.MARK_RANGE) {
+    placementInformations.add(new PlacementInformation(Type.CUSTOM_TIME_RANGES, 
+      PlacementInformation.Mode.MARK, PlacementInformation.UNKNOWN_DURATION, 0));
+}
+else if (customRangeHelper.hasRanges() == CustomRangeHelper.DELETE_RANGE) {
+    placementInformations.add(new PlacementInformation(Type.CUSTOM_TIME_RANGES, 
+      PlacementInformation.Mode.DELETE, PlacementInformation.UNKNOWN_DURATION, 0));
+    if (adSignalingMode == AdSignalingMode.SERVER_MAP) {
+        placementInformations.add(new PlacementInformation(Type.SERVER_MAP, 
+          PlacementInformation.UNKNOWN_DURATION, 0));
+    } else if (adSignalingMode == AdSignalingMode.MANIFEST_CUES) {
+        placementInformations.add(new PlacementInformation(Type.PRE_ROLL, 
+          timeMapping.getTime(), PlacementInformation.UNKNOWN_DURATION));
+    }
+}
+else if (customRangeHelper.hasRanges() == CustomRangeHelper.REPLACE_RANGE) {
+    placementInformations.add(new PlacementInformation(Type.CUSTOM_TIME_RANGES, 
+      PlacementInformation.Mode.DELETE, PlacementInformation.UNKNOWN_DURATION, 0));
+    placementInformations.add(new PlacementInformation(Type.CUSTOM_TIME_RANGES, 
+      PlacementInformation.Mode.REPLACE, PlacementInformation.UNKNOWN_DURATION, 0));
+}
+return  placementInformations;</codeblock> 
+	 </p> 
+  </conbody> 
+</concept> 

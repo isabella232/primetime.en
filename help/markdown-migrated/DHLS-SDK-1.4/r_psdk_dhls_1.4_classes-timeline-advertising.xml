@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="r_psdk_android_timeline-advertising-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Timeline advertising classes</title> 
+  <shortdesc>These classes provide information about ads that occur within a
+	 timeline. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_90EFD3476651457CA87888AC0C2CA6A3">Package:  <xref
+				href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/package-detail.html"
+				format="html" scope="external">com.adobe.mediacore.timeline.advertising</xref>
+		</refsyn> 
+	 <refsyn id="refsyn_D7BD0946DB514610A8C1F9F6491FC777">Package: <xref
+				href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/package-detail.html"
+				format="html" scope="external"
+				>com.adobe.mediacore.timeline.advertising.policy</xref>
+		</refsyn> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_1A59E777BA99466793D586286F19E933"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="30*"/> 
+		  <colspec colnum="2" colname="2" colwidth="70*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1">Name 
+				</entry> 
+				<entry colname="2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/Ad.html"
+									format="html" scope="external">Ad</xref></codeph></entry> 
+				<entry colname="2">Class that defines the Ad abstraction and holds all ad information. It is
+							defined by a unique ID, a duration, and a
+							<codeph>MediaResource</codeph>. The <codeph>MediaResource</codeph>
+							contains the URL where the actual ad content resides. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdAsset.html"
+									format="html" scope="external">AdAsset</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that represents an asset to be displayed.  Class representing an ad
+							asset.</entry> 
+			 </row> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdBreak.html"
+									format="html" scope="external">AdBreak</xref></codeph></entry> 
+				<entry colname="2">Class that gives a unified view on several ads that will be played at some
+							point during playback.</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdBreakPolicy.html"
+									format="html" scope="external">AdBreakPolicy</xref></codeph>
+						</entry> 
+				<entry colname="2">Enumeration that defines the ad playback policy
+				  related to the user bypassing ads while seeking. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdBreakTimelineItem.html"
+									format="html" scope="external"
+								>AdBreakTimelineItem</xref></codeph>
+						</entry> 
+				<entry colname="2">Timeline item associated with the specific ad break. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdBreakWatchedPolicy.html"
+									format="html" scope="external"
+								>AdBreakWatchedPolicy</xref></codeph>
+						</entry> 
+				<entry colname="2">Enumeration class for possible policies on when to mark an ad break as having
+							been watched. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdClick.html"
+									format="html" scope="external">AdClick</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that represents a click instance associated with an asset. This
+							instance contains information about the click-through URL and the title
+							that can be used to provide additional information to the user.</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicy.html"
+									format="html" scope="external">AdPolicy</xref></codeph>
+						</entry> 
+				<entry colname="2">Enumeration class for possible policies on where to resume playing an ad
+							break after seeking or trick-play mode. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicyMode.html"
+									format="html" scope="external">AdPolicyMode</xref></codeph>
+						</entry> 
+				<entry colname="2">Enumeration class that lists ways in which the player is playing, such as
+							seeking or normal play. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1">
+							<codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicySelector.html"
+									format="html" scope="external">AdPolicyInfo</xref></codeph>
+						</entry> 
+				<entry colname="2">Interface that defines properties for <codeph>AdPolicySelector</codeph> API
+							calls. These properties provide the context for enforcing each ad
+							behavior.  </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1">
+							<codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicySelector.html"
+									format="html" scope="external"
+							>AdPolicySelector</xref></codeph></entry> 
+				<entry colname="2">An ad policy selector interface for enforcing ad behaviors. Applications can
+							conform to this interface by implementing all the required methods or by
+							extending the existing default policy selector class to customize
+							specific behaviors. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdTimelineItem.html"
+									format="html" scope="external">AdTimelineItem</xref></codeph>
+						</entry> 
+				<entry colname="2">Timeline item associated with a specific ad. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AuditudeAdResolver.html"
+									scope="external" format="html"
+								>AuditudeAdResolver</xref></codeph>
+						</entry> 
+				<entry colname="2">Class that handles primetime ad resolving in the <ph
+								conref="phrase_library_dhls_1.4.xml#c_psdk_phrase-library/auditude-name-long"
+								><?xm-replace_text Phrase?></ph> process. </entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdType.html"
+									format="html" scope="external">AdType</xref></codeph>
+						</entry> 
+				<entry colname="2">Enumeration of all ad types supported by the 
+				  <ph
+					conkeyref="phrases/primetime-sdk-name"></ph>.
+				  
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/MetadataAdResolver.html"
+									format="html" scope="external"
+								>MetadataAdResolver</xref></codeph>
+						</entry> 
+				<entry colname="2">Class.  </entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </refbody> 
+</reference> 

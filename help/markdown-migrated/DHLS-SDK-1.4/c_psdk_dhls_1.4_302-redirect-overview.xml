@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="redirect-overview"> 
+  <title>HTTP 302 redirect optimization</title> 
+  <shortdesc>302 redirect optimization minimizes the number of 302 redirect
+	 responses, which allows your application to load balance more effectively. 
+  </shortdesc> 
+  <conbody> 
+	 <p> If a main manifest request is redirected, and 302 optimization is
+		enabled in your player, subsequent requests made for assets from that manifest
+		will use the final domain location, which avoids additional 302 responses. 
+	 </p>
+	 <p  >This feature is disabled by default, and
+		you can change this setting.
+	 </p>
+	 <p  > If you enable this feature, it works
+		correctly only if 
+		<i>all</i> of the following conditions are true; otherwise, no redirect
+		optimization occurs, and 302 responses continue to occur: 
+	 <ul id="ul_D96DD2D8307448C69172A8E717FA3D1E"> 
+		<li id="li_9FCB741E708840F3835725A5F0327360">Your application was
+		  compiled for 
+		  <ph conkeyref="phrases/flash-player-long"/> 11.8, using 
+		  <codeph>-swf-version</codeph> 21 or higher. 
+		</li> 
+		<li id="li_7BE220DBDB1647EB82051CB694637CD9">Your end users have 
+		  <ph conkeyref="phrases/flash-player-long"/> 11.8 or later installed. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <note  type="important">To ensure that cookies are passed
+		with ad requests, disable 302 redirect. When 302 redirect is enabled, the ad
+		request might be redirected to a domain that is different from the domain from
+		which the cookie originated. 
+	 </note> 
+  </conbody> 
+</concept> 

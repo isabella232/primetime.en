@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="qos-statistics"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Quality of service statistics</title> 
+  <shortdesc>Quality of service (QoS) offers a detailed view into how the video
+	 engine is performing. 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> provides detailed statistics
+	 about playback, buffering, and devices. 
+  </shortdesc> 
+  <conbody/> 
+</concept> 

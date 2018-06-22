@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="t_psdk_android_pausing-resuming-playback"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Pause and resume playback</title> 
+  <shortdesc>When a user clicks an ad, your application should pause playback
+	 of the main video content. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_E15C2DE566F64388ADCBC4276045A28C"> 
+		<step id="step_BE290B8CEDCC4B84A7671200B7408749"> 
+		  <cmd>Override the 
+			 <codeph>onPause</codeph> and 
+			 <codeph>onResume</codeph> from Android Activity. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax java">@Override
+public void onResume() {
+    super.onResume();
+    requestAudioFocus();
+    if (_lastKnownStatus == MediaPlayerStatus.PAUSED) {
+        _mediaPlayer.play();
+    }
+}
+...
+
+@Override
+public void onPause() {
+    super.onPause();
+    if (_mediaPlayer != null) {
+        if (_mediaPlayer.getStatus() == MediaPlayerStatus.PLAYING ||
+          _mediaPlayer.getStatus() == MediaPlayerStatus.PAUSED) {
+            _savedPlayerStatus = _mediaPlayer.getStatus();
+            _lastKnownTime = _mediaPlayer.getCurrentTime();
+        }
+        if (_mediaPlayer.getStatus() == MediaPlayerStatus.PLAYING) {
+            _mediaPlayer.pause();
+            _lastKnownStatus = MediaPlayerStatus.PAUSED;
+        }
+    }
+}
+abandonAudioFocus();
+</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

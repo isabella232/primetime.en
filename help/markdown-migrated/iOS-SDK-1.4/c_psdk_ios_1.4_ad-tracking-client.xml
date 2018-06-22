@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_client-ad-tracking"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Client ad tracking</title> 
+  <shortdesc>
+  <ph conkeyref="phrases/primetime-sdk-name"/> automatically tracks ads for VOD and live/linear
+  streaming. </shortdesc> 
+  <conbody> 
+	 <p>Notifications are used to inform your application about an ad's
+		progress, including information about when an ad begins and when it ends. 
+	 </p> 
+  </conbody> 
+</concept> 

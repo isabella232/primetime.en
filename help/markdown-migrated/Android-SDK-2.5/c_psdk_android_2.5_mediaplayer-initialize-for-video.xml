@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="initialize-mediaplayer-for-video-task"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Initialize the media player for a specific video</title> 
+  <shortdesc>For each new video content, initialize a <codeph>MediaResource</codeph> instance with
+  information about the video content and load the media resource. </shortdesc> 
+</task> 

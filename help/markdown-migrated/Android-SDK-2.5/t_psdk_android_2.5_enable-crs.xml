@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_e3g_ywp_xz">
+    <title>Enable CRS in TVSDK applications</title>
+    <shortdesc/>
+    <prolog>
+        <metadata>
+            <keywords>
+                <keyword>Enable CRS</keyword>
+                <keyword>Enable creative repackaging service</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>To enable CRS in your <ph conkeyref="phrases/primetime-sdk-name"/> applications, you
+                must set the following information in your Auditude settings:</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Enable CRS in <codeph>AuditudeSettings</codeph>.</cmd>
+                <info>
+                    <codeblock>...
+auditudeSettings.setCreativeRepackagingEnabled(true);
+auditudeSettings.setCreativeRepackagingFormat("application/x-mpegURL"); </codeblock>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

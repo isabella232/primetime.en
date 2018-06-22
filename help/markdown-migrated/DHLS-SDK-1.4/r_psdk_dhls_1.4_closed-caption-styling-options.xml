@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="r_psdk_closed-caption-styling-options"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Closed caption styling options</title> 
+  <shortdesc>You can specify several caption styling options, and these options
+	 override the style options in the original captions. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_8834C325EE574694898381BF9E26A47F"> 
+		<codeblock  outputclass="syntax actionscript" >public function TextFormat(
+   font:String = default, 
+   size:String = default, 
+   fontEdge:String = default, 
+   fontColor:String = default, 
+   backgroundColor:String = default, 
+   fillColor:String = default, 
+   edgeColor:String = default, 
+   fontOpacity:int, 
+   backgroundOpacity:int, 
+   fillOpacity:int)</codeblock> 
+		<note type="tip">In options that define default values (for example, <codeph>DEFAULT</codeph>),
+				that value refers to what the setting was when the caption was originally specified. </note> 
+		<table frame="all" colsep="1" rowsep="1"
+		 id="table_87205DEFEE384AF4AF83952B15E18A42"> 
+		  <tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+			 <colspec colnum="1" colname="1" colwidth="25*"/> 
+			 <colspec colnum="2" colname="2" colwidth="75*"/> 
+			 <thead> 
+				<row rowsep="1"> 
+				  <entry colname="1">Format 
+				  </entry> 
+				  <entry colname="2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row rowsep="1"> 
+				  <entry colname="1">Font 
+				  </entry> 
+				  <entry colname="2"> 
+					 <p>The font type. 
+					 </p> 
+					 <p>Can be set only to a value that is defined by the <codeph>ClosedCaptionStyles.FONT</codeph>
+									array and represents, for example, monospaced with or without
+									serifs.
+									<codeblock outputclass="syntax actionscript">public static const FONT :Array = [
+ AVCaptionStyle.DEFAULT,
+ AVCaptionStyle.MONOSPACE_WITH_SERIFS,
+ AVCaptionStyle.MONOSPACED_WITHOUT_SERIFS,
+ AVCaptionStyle.PROPORTIONAL_WITH_SERIFS,
+ AVCaptionStyle.PROPORTIONAL_WITHOUT_SERIFS,
+ AVCaptionStyle.CASUAL,
+ AVCaptionStyle.CURSIVE,
+ AVCaptionStyle.SMALL_CAPITALS
+ ];</codeblock>
+								</p> 
+					 <note type="tip">The actual fonts that are available on a
+						device might vary, and substitutions are used when necessary. Monospace with
+						serifs is typically used as a substitute, although this substitution can be
+						system specific. 
+					 </note> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="1">Size 
+				  </entry> 
+				  <entry colname="2"> 
+					 <p>The caption's size. 
+					 </p> 
+					 <p> Can be set only to a value defined by the  <codeph>ClosedCaptionStyles.FONT_SIZE</codeph>
+									array: <ul compact="yes"
+										id="ul_544BFC7A46474A74839477108F1AB1E9">
+										<li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B">
+											<codeph>MEDIUM</codeph>  - The standard size </li>
+										<li id="li_4F8CEDE54965430EB707DD3D5B2E3F87">
+											<codeph>LARGE</codeph>  - Approximately 30% larger than
+											medium </li>
+										<li id="li_D78D823883F54D869118BAB58257E377">
+											<codeph>SMALL</codeph>  - Approximately 30% smaller than
+											medium </li>
+										<li id="li_9299C13408584A38835F8D91BD048083">
+											<codeph>DEFAULT</codeph>  - The default size for the
+											caption; the same as medium </li>
+									</ul></p> 
+					 <note  type="tip">You can change the font size
+						of WebVTT captions by changing the size parameter for the 
+						<codeph>DefaultMediaPlayer.ccStyles setter</codeph> function.
+						
+					 </note> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1">Font edge 
+				  </entry> 
+				  <entry colname="2"> 
+					 <p>The effect used for the font edge, such as raised or none. 
+					 </p> 
+					 <p>Can be set only to a value that is defined by the
+										<codeph>ClosedCaptionStyles.FONT_EDGE</codeph> array.
+									<codeblock outputclass="syntax actionscript">public static const FONT_EDGE :Array = [
+    AVCaptionStyle.DEFAULT,
+    AVCaptionStyle.NONE,
+    AVCaptionStyle.RAISED,
+    AVCaptionStyle.DEPRESSED,
+    AVCaptionStyle.UNIFORM,
+    AVCaptionStyle.LEFT_DROP_SHADOW,
+    AVCaptionStyle.RIGHT_DROP_SHADOW
+ ];</codeblock>
+								</p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="1">Font color 
+				  </entry> 
+				  <entry colname="2"> 
+					 <p>The font color. 
+					 </p> 
+					 <p>Can be set only to a value defined by the <codeph>ClosedCaptionStyles.COLOR</codeph> array.
+									<codeblock outputclass="syntax actionscript">public static const COLOR :Array = [
+    AVCaptionStyle.DEFAULT,
+    AVCaptionStyle.BLACK,
+    AVCaptionStyle.GRAY,
+    AVCaptionStyle.WHITE,
+    AVCaptionStyle.BRIGHT_WHITE,
+    AVCaptionStyle.RED,
+    AVCaptionStyle.DARK_RED,
+    AVCaptionStyle.BRIGHT_RED,
+    AVCaptionStyle.GREEN,
+    AVCaptionStyle.DARK_GREEN,
+    AVCaptionStyle.BRIGHT_GREEN,
+    AVCaptionStyle.BLUE,
+    AVCaptionStyle.DARK_BLUE,
+    AVCaptionStyle.BRIGHT_BLUE,
+    AVCaptionStyle.YELLOW,
+    AVCaptionStyle.DARK_YELLOW,
+    AVCaptionStyle.BRIGHT_YELLOW,
+    AVCaptionStyle.MAGENTA,
+    AVCaptionStyle.DARK_MAGENTA,
+    AVCaptionStyle.BRIGHT_MAGENTA,
+    AVCaptionStyle.CYAN,
+    AVCaptionStyle.DARK_CYAN,
+    AVCaptionStyle.BRIGHT_CYAN   ];</codeblock></p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1">Edge color </entry> 
+				  <entry colname="2"> 
+					 <p>The color of the edge effect. 
+					 </p> 
+					 <p>Can be set to any of the values that are available for the
+						font color. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="1">Background color 
+				  </entry> 
+				  <entry colname="2"> 
+					 <p>The background character cell color. 
+					 </p> 
+					 <p>Can be set only to values that are available for the font
+						color. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1">Fill color</entry> 
+				  <entry colname="2"> 
+					 <p>The color of the background of the window in which the text
+						is located. 
+					 </p> 
+					 <p>Can be set to any of the values that are available for the
+						font color. 
+					 </p> 
+					 <note  type="important">This does not apply
+						to WebVTT captions, because WebVTT does not use this feature. 
+					 </note> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="1">Font opacity 
+				  </entry> 
+				  <entry colname="2"> 
+					 <p>The opacity of the text. 
+					 </p> 
+					 <p>Expressed as a percentage from 0 (fully transparent) to 100 (fully opaque).
+										<codeph>DEFAULT_OPACITY</codeph> for the font is 100. </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="1">Background opacity 
+				  </entry> 
+				  <entry colname="2"> 
+					 <p>The opacity of the background character cell. 
+					 </p> 
+					 <p>Expressed as a percentage from 0 (fully transparent) to 100 (fully opaque).
+										<codeph>DEFAULT_OPACITY</codeph> for the background is 100. </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1" > 
+				  <entry colname="1">Fill opacity </entry> 
+				  <entry colname="2"> 
+					 <p>The opacity of the background of the caption window. 
+					 </p> 
+					 <p>Expressed as a percentage from 0 (fully transparent) to 100
+						(fully opaque). 
+						<codeph>DEFAULT_OPACITY</codeph> for fill is 0. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

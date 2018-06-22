@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_build-custom-ui"> 
+  <title>Build a custom user interface</title> 
+  <shortdesc>You can easily build a custom user interface based on the
+	 reference implementation framework. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_962F02736BBC458193A01D357F5A3635"> 
+		<p>The UI components of the following features are already integrated: 
+		<ul id="ul_F61A97D0E3F84A06953655A9591EE620"> 
+		  <li id="li_0567CFF477064635AAC0BD45CB81803E">Clickable ads 
+		  </li> 
+		  <li id="li_A41D86EEFE8045838AE4CDB4D56AD89E">Ad overlays 
+		  </li> 
+		  <li id="li_77EFA5F3867345D3A6AC58AF13BBEDF9">Late-binding audio 
+		  </li> 
+		  <li id="li_CCE3BBB352F641C48FADF09731D5DE29">Closed captions 
+		  </li> 
+		  <li id="li_9F771E9B278449B28D9970C94E4156ED">Listeners for all of the
+			 above components 
+		  </li> 
+		</ul> 
+		</p> 
+	 </context> 
+	 <steps id="steps_679A39FBBBC34761880B038BAE95785B"> 
+		<step id="step_C0D5F273D82D4E7694C0967A6CEFA2D4">
+				<cmd>Edit the <filepath>PlayerFragment.java</filepath> file to initialize the UI
+					components that you want to use in your player. </cmd>
+				<info> </info>
+			</step> 
+		<step id="step_5DEDB645D168437A8A83243348C93A46">
+				<cmd>Edit the <filepath>res/player/player_fragment.xml</filepath> file to customize
+					the user interface. </cmd>
+			</step> 
+		<step id="step_A3367AF5CFC9457C812AE76A9A21288D"> 
+		  <cmd>Build the project. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+	 <postreq id="postreq_BAE35C1F4ED94507A3BD28903C5C350E">
+
+		<note>To make UI changes to the seek bar, you can edit the <xref
+					href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/MarkableSeekBar.html"
+					format="html" scope="external">MarkableSeekBar</xref> class. The
+					<codeph>MarkableSeekBar</codeph> class handles the slider, thumb of the slider,
+				ad marker holder, cue markers, buffer range, and seek range backgrounds. </note> 
+	 </postreq> 
+  </taskbody> 
+</task> 

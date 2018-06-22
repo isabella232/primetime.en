@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_billing"> 
+  <title>Billing metrics</title> 
+  <shortdesc>To accommodate customers who want to pay only for what they use,
+	 rather than a fixed rate regardless of actual use, Adobe collects usage metrics
+	 and uses these metrics to determine how much to bill the customers. 
+  </shortdesc> 
+  <conbody> 
+	 <p>Every time the player generates a stream start event, <ph conkeyref="phrases/primetime-sdk-name"/> starts to
+		send HTTP messages periodically to Adobe's billing system. The period, known as
+		billable duration, can be different for standard VOD, pro VOD (mid-roll ads
+		enabled), and live content. The default duration for each content type is 30
+		minutes, but your contract with Adobe determines the actual values. 
+	 </p> 
+	 <p>The messages contain the following information: 
+	 <ul id="ul_jdg_5tr_bw"> 
+		<li id="li_464147759F57415F921B009FE8B978D1">Content type (live, linear,
+		  or VOD) 
+		</li> 
+		<li id="li_3B4355AFF9FF41AC8174BC8E5B02D9B0">Content URL 
+		</li> 
+		<li id="li_9FDE884166AF43A18EEF676590B828C0">Whether ads are enabled 
+		</li> 
+		<li id="li_7DC4B54742D14EF5A629C264748209C0">Whether mid-roll ads are
+		  enabled (VOD only) 
+		</li> 
+		<li id="li_B77EA8251EC44C29BEB9274A12820533">Whether the stream is
+		  protected by DRM 
+		</li> 
+		<li id="li_7F9CF93A9C024FFA9A4888EB72A24CCE">The <ph conkeyref="phrases/primetime-sdk-name"/> version and
+		  platform 
+		</li> 
+	 </ul>Adobe preconfigures this arrangement, but you can work with your Adobe
+	 Enablement representative to change the arrangement, work with your Adobe
+	 Enablement representative. 
+	 </p> 
+	 <p>To monitor the statistics that <ph conkeyref="phrases/primetime-sdk-name"/> sends to Adobe, obtain the URL from
+		your Adobe Enablement representative, and use a network capture tool, like
+		Charles, to see the data. 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="events-order-timed-metadata"> 
+  <title>Timed metadata events</title> 
+  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> dispatches timed
+	 metadata events and generates timed metadata whenever default or custom tags
+	 are encountered or when a playlist changes in a manifest. Events are dispatched
+	 in the order in which they appear in the manifest.
+  </shortdesc> 
+  <conbody> 
+	 <p>Your player implements actions based on the following events:  <ul
+				id="ul_468207B11B6A4245A96468985DC2ED15">
+				<li id="li_E9C85976347042E89B27C6E931C1A840"
+						><codeph>TimedMetadataEvent.TIMED_METADATA_ID3_ADDED</codeph>: Dispatched
+					when an ID3 timed metadata was processed. </li>
+				<li id="li_100FC0EE76564958B89635BBE64466E0"
+						><codeph>TimedMetadataEvent.TIMED_METADATA_SKIPPED</codeph>: Dispatched when
+					timed metadata was processed and no opportunity was detected. </li>
+			</ul></p> 
+  </conbody> 
+</concept> 

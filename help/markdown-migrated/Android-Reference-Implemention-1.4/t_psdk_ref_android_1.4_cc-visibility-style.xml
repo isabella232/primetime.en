@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_cc-visibility-style"> 
+  <title>Configure closed caption and style</title> 
+  <taskbody> 
+	 <context id="context_4989A9FB6AB940148128DC7EB8D32765"> 
+		<p>To configure closed caption style, implement <xref
+					href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/ICCConfig.html"
+					format="html" scope="external">ICCConfig</xref> and the associated methods that
+				control closed caption style. </p> 
+	 </context> 
+  </taskbody> 
+</task> 

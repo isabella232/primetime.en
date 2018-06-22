@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_lazy-ad-resolving"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Lazy ad resolving</title> 
+  <shortdesc>Ad resolving and ad loading can cause an unacceptable delay for a user waiting for
+		playback to start. The Lazy Ad Loading and Lazy Ad Resolving features can reduce this
+		startup delay. </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>Lazy</keyword> 
+		  <keyword>Ad resolving</keyword> 
+		  <keyword>Ad loading</keyword> 
+		</keywords> </metadata>
+  </prolog> 
+  <conbody>
+		<p>
+			<ul id="ul_xgb_cwx_fz">
+				<li>Basic ad resolving and loading process:<ol id="ol_f1p_2fs_fz">
+						<li><ph
+								conkeyref="phrases/primetime-sdk-name"
+							/> downloads a manifest (playlist) and <i>resolves</i> all of the
+							ads.</li>
+						<li><ph
+								conkeyref="phrases/primetime-sdk-name"/>
+							<i>loads</i> all of the ads and places them on the timeline.</li>
+						<li><ph
+								conkeyref="phrases/primetime-sdk-name"
+						/> moves the player into the PREPARED status, and content playback
+							begins.</li>
+					</ol><p>The player uses the URLs in the manifest to obtain the ad content
+						(creatives), ensures that the ad content is in a format that <ph
+							conkeyref="phrases/primetime-sdk-name"
+						/> can play, and <ph
+							conkeyref="phrases/primetime-sdk-name"
+						/> places the ads on the timeline. This basic process of resolving and
+						loading ads can cause an unacceptably long delay for a user waiting to play
+						their content, especially if the manifest contains several ad URLs.</p></li>
+				<li><i>Lazy Ad Loading</i>:<ol id="ol_gdf_pqs_fz">
+						<li><ph conkeyref="phrases/primetime-sdk-name" /> downloads a playlist and <i>resolves</i> all of the ads.</li>
+						<li><ph conkeyref="phrases/primetime-sdk-name" /> <i>loads</i> pre-roll ads, moves the player into the PREPARED
+							status, and content playback begins.</li>
+						<li><ph conkeyref="phrases/primetime-sdk-name" /> <i>loads</i> the remaining ads and puts them on the timeline as
+							playback occurs.</li>
+					</ol>This feature improves upon the basic process by putting the player into the
+					PREPARED status before all ads are loaded.</li>
+				<li>
+					<p><i>Lazy Ad Resolving</i>: <ol id="ol_ct5_mrs_fz">
+							<li><ph
+									conkeyref="phrases/primetime-sdk-name"
+								/> downloads the playlist.</li>
+							<li><ph
+									conkeyref="phrases/primetime-sdk-name"
+								/> resolves and loads any pre-roll ads, moves the player into the
+								PREPARED status, and content playback begins.</li>
+							<li><ph
+									conkeyref="phrases/primetime-sdk-name"
+								/> resolves and loads the remaining ads and puts them on the
+								timeline as playback occurs.</li>
+						</ol>Lazy Ad Resolving builds on Lazy Ad Loading to allow for even faster
+						start up. After <ph
+							conkeyref="phrases/primetime-sdk-name"
+						/> places any pre-roll ads, it moves the player into the PREPARED status, and
+						then resolves additional ads and places them on the timeline. </p>
+				</li>
+			</ul>
+		</p> 
+	 <note type="important">Factors to consider with Lazy Ad Resolving:<p>
+				<ul id="ul_08F21C12113645DCAF5BBC7832337937">
+					<li>Lazy Ad Resolving is enabled by default. If you disable it, all ads are resolved before
+						playback starts. </li>
+					<li id="li_9AF2FC98BA02436D8B9C20AB21E385DC">Lazy Ad Resolving does not allow seeking or
+						trickplay until after all the ads are resolved:<ul id="ul_cct_xrs_fz">
+							<li>The player must wait for the
+									<codeph>kEventAdResolutionComplete</codeph> event before
+								allowing seeking or trick play.</li>
+							<li>If the user attempts to perform seek or trick play operations while ads are still being
+								resolved, <ph
+									conkeyref="phrases/primetime-sdk-name"
+								/> throws the <codeph>kECLazyAdResolutionInProgress</codeph>
+								error.</li>
+							<li>If necessary, the player should update the scrub bar, <i>after</i>
+								receiving the <codeph>kEventAdResolutionComplete</codeph> event. </li>
+						</ul>
+					</li>
+					<li>Lazy Ad Resolving is for VOD only. It will not work with LIVE streams.</li>
+					<li id="li_68583A5D23944FFE84954BCF93CC474D">Lazy Ad Resolving is incompatible with the
+							<i>Instant On</i> feature. <p>For more information about Instant On, see
+								<xref keyref="instant-on"/>. </p></li>
+					<li>While Lazy Ad Resolving results in playback starting much faster, if an ad
+						break occurs in the first 60 seconds of playback, it may not get
+						resolved.</li>
+					<li>Lazy ad resolution does not affect pre-roll ads.</li>
+				</ul>
+			</p></note> 
+  </conbody> 
+</concept> 

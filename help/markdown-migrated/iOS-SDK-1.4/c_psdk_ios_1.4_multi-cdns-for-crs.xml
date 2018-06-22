@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ad-transcoding"> 
+  <title>Multiple CDN support for CRS ad delivery</title> 
+  <shortdesc>While the default Creative Repackaging Service (CRS) scenario is
+	 to use one Content Data Network (CDN), you can deploy CRS assets on more than
+	 one CDN. 
+  </shortdesc> 
+  <conbody> 
+	 <p>You can use multiple CDNs for the following reasons: <ul id="ul_zz4_zsj_yx">
+				<li id="li_8B9001428EC141728B894AC87211784A">A requirement to scale up for large
+					viewing events. </li>
+				<li id="li_D6B933BFE7CD46C18CAE9FF3A0AFD380">A requirement to match the CDN source
+					of the CRS asset with the CDN source of the main content.</li>
+			</ul></p> 
+	 <p>You can transform the default URL that is provided by the CRS by using 
+		<ph
+		 conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+		URL Transformer APIs. 
+	 </p> 
+	 <p>Here are the API additions in 
+		<ph
+		 conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>:
+		
+	 <ul id="ul_g4f_nsj_yx"> 
+		<li id="li_648DA18E46524EE3B3956813DC486713"><codeph>PTURLTransformer</codeph>
+					<p>A protocol that describes the methods that are required to transform the CRS
+						ad URLs that are requested by <ph
+							conkeyref="phrases/primetime-sdk-name"
+							><?xm-replace_text Phrase?></ph>. Applications can implement this
+						protocol and provide implementations for the required methods. </p>
+				</li> 
+		<li id="li_D2179AB6133F4F19BCFA6C3CCFB1FA33">
+					<codeph>PTDefaultURLTransformer</codeph>
+					<p>The default URL transformer instance that is created in <ph
+							conkeyref="phrases/primetime-sdk-name"
+							><?xm-replace_text Phrase?></ph> and that implements the
+							<codeph>PTURLTransformer</codeph> protocol.  Applications can override
+						this class or add a post URL transformation handler. This handler is useful
+						when the application wants to make changes to the URL request after the
+						default transformation has been applied. </p>
+				</li> 
+		<li id="li_9510497EDF474270BA89456C5A740D84"><codeph>PTNetworkConfiguration
+						setURLTransformer:defaultTransformer</codeph>
+					<p>A setter method that is provided on the
+							<codeph>PTNetworkConfiguration</codeph>  metadata instance to set the
+							<codeph>PTURLTransformer</codeph> implementation. </p></li> 
+	 </ul> 
+	 </p> 
+	 <note type="important">Your app implementations must check for the
+				<codeph>PTURLTransformerInputType</codeph> enumeration and only transform URLs of
+			type <codeph>PTURLTransformerInputTypeCRSCreative</codeph> for CRS. </note> 
+	 <p>The following code sample shows how your application can change the default host component to a
+			different string (for example, <codeph>cdn.mycrsdomain.com</codeph>):
+			<codeblock outputclass="syntax objective-c">// The sample code below uses Non-ARC code
+PTNetworkConfiguration *networkConfiguration = [[[PTNetworkConfiguration alloc] init] autorelease];
+  
+PTDefaultURLTransformer *defaultTransformer = [[[PTDefaultURLTransformer alloc] init] autorelease];
+    [defaultTransformer addPostURLTransformHandler:^NSString *(NSString *url, PTURLTransformerInputType type) {
+        if (type == PTURLTransformerInputTypeCRSCreative) {
+            return [url stringByReplacingOccurrencesOfString:[NSURL URLWithString:url].host 
+              withString:@"cdn.mycrsdomain.com"];
+        }
+            return url;
+    }];
+ 
+[networkConfiguration setURLTransformer:defaultTransformer];
+  
+// metadata is the PTMetadata instance set on a PTMediaPlayerItem instance.
+[metadata setMetadata:[self getNetworkConfiguration] forKey:PTNetworkConfigurationMetadataKey];</codeblock>
+		</p> 
+  </conbody> 
+</concept> 

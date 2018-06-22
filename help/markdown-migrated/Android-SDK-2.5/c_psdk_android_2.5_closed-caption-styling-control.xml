@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_control-closed-caption-styling"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Control closed-caption styling</title> 
+  <shortdesc> You can provide styling information for closed caption tracks
+	 using the 
+	 <codeph>TextFormat</codeph> class, which sets the style for closed captions
+	 that are displayed by your player. 
+  </shortdesc> 
+  <conbody> 
+	 <p>This class encapsulates closed caption styling information such as the
+		font type, size, color, and background opacity. 
+	 </p> 
+  </conbody> 
+</concept> 

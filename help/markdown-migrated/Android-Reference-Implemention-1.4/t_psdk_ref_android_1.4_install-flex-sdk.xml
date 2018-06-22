@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="task_497D8E2F76AC4898B434BF84B76B535E"> 
+  <title>Install and set up the Flex SDK</title> 
+  <shortdesc>The Desktop HLS version of the Primetime reference implementation
+	 requires Adobe Flex SDK 4.6.0. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_BCDEC99F5CD943F6BF7B1620EA3AF0BC"> 
+		<step id="step_95B0FA8DA3A84039B149C5473A025B33"> 
+		  <cmd>Download the Flex SDK from 
+			 <xref href="http://www.adobe.com/devnet/flex/flex-sdk-download.html"
+			  format="html"
+			  scope="external">http://www.adobe.com/devnet/flex/flex-sdk-download.html</xref>.
+			 
+		  </cmd> 
+		</step> 
+		<step id="step_2878AAE05D0F4437863E703AC7017FB9"> 
+		  <cmd>Unpack the archive file to a location of your choice. 
+		  </cmd> 
+		  <info> When you unpack the archive, it will create a parent directory
+			 of 
+			 <codeph>flex_sdk_4.6</codeph>. 
+		  </info> 
+		</step> 
+		<step id="step_2DADA770425B4F28AFDC5FAB51BA057C"> 
+		  <cmd>Download the 
+			 <codeph>playerglobal.swc</codeph>, version 11.9 or later, from 
+			 <xref href="http://www.adobe.com/support/flashplayer/downloads.html"
+			  format="html"
+			  scope="external">http://www.adobe.com/support/flashplayer/downloads.html</xref>.
+			 
+		  </cmd> 
+		  <info>The Primetime SDK libraries use classes and objects in the latest
+			 Flash Player release, so it is necessary to add the latest version of the Flash
+			 Player's 
+			 <filepath>playerglobal.swc</filepath> to the Flex SDK. After you
+			 download the swc, do the following: 
+		  </info> 
+		  <substeps id="substeps_FE6040F5B78D4A679CAB57655E552D1D"> 
+			 <substep id="substep_6F10040C4BC44308920F6B09D182355E"> 
+				<cmd>If you haven't already done so, download and install the
+				  corresponding Flash Player debugger from 
+				  <xref
+					href="http://www.adobe.com/support/flashplayer/downloads.html" format="html"
+					scope="external">http://www.adobe.com/support/flashplayer/downloads.html</xref>.
+				  
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_177D4456A5884F688B42DC186B6A6036"> 
+				<cmd>Create a folder in your Flex SDK's 
+				  <filepath>frameworks/lib/player</filepath> path with the version
+				  number of the 
+				  <filepath>playerglobal.swc</filepath> as the name. 
+				</cmd> 
+				<info>For example, 
+				  <filepath>11.9</filepath>. 
+				</info> 
+			 </substep> 
+			 <substep id="substep_65D70DCF8F334043BFC7EF3118B3ECE5"> 
+				<cmd>Move the 
+				  <filepath>playerglobal.swc</filepath> into this folder and rename
+				  the file to 
+				  <filepath>playerglobal.swc</filepath>. 
+				</cmd> 
+			 </substep> 
+		  </substeps> 
+		  <info> 
+			 <note> If you are using a Flash Player version that is newer than
+				11.9, you might need to change the target player version under the Dependencies
+				tab of the build configuration for each project. 
+			 </note> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

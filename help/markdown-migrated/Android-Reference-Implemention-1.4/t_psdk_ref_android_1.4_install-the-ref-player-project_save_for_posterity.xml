@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="t_psdk_ref_install-the-ref-player-project"> 
+  <title>Build the Primetime Reference Implementation</title> 
+  <shortdesc>The Primetime Reference Implementation is an Android application
+	 built around the <ph conref="../../phrase_library.xml#c_psdk_phrase-library/primetime-sdk-name"/> and AVE frameworks. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_460359F6114A448493F72CB7416F8045"> 
+		<p>To setup and build the Primetime Reference Implementation in Eclipse: 
+		</p> 
+	 </context> 
+	 <steps id="steps_EC40096FE94340859C52A6B608DD7FAC"> 
+		<step id="step_2E603FB45A364C05B068A3E95FDDB3B2"> 
+		  <cmd>Extract the Primetime Reference Implementation from the <ph conref="../../phrase_library.xml#c_psdk_phrase-library/primetime-sdk-name"/>  
+			 package to a directory of your choice. 
+		  </cmd> 
+		  <info>You can find the Reference Implementation in the
+						<filepath>samples/PrimetimeReference</filepath> directory. </info>
+		</step> 
+		<step id="step_088CB23531104213953CB840CB9753AA"> 
+		  <cmd>Launch Eclipse. 
+		  </cmd> 
+		</step> 
+		<step id="step_B48C729A55464DC583A9DC60D8D9ABFD"> 
+		  <cmd>Select 
+			 <menucascade><uicontrol>File</uicontrol><uicontrol>Import</uicontrol></menucascade>.
+			 
+		  </cmd> 
+		</step> 
+		<step id="step_F2FD554806884A178C9216A1D1762278"> 
+		  <cmd>Select 
+			 <menucascade><uicontrol>Android</uicontrol><uicontrol>Existing
+				  Android Code Into Workspace</uicontrol></menucascade>. 
+		  </cmd> 
+		</step> 
+		<step id="step_2142DCB6C3C547B4AAD7A9503BDE768B"> 
+		  <cmd>Click 
+			 <uicontrol>Next</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_99A10595B81A47AA9076C9C7AF58A382"> 
+		  <cmd>Use the 
+			 <uicontrol>Browse</uicontrol> button to populate the Root Directory
+			 field with the location of the extracted Primetime Reference Implementation
+			 files (from Step 1). 
+		  </cmd> 
+		</step> 
+		<step id="step_435D2B251788430799FA6C1E89D21207"> 
+		  <cmd>Select the following projects to import: 
+			 <uicontrol>appcompat</uicontrol>, 
+			 <uicontrol>PrimetimeReference</uicontrol>, and 
+			 <uicontrol>PrimetimeReference/tests</uicontrol>.
+		  </cmd> 
+		</step> 
+		<step id="step_2B0DA02FAE0948A88CCA250B139118DC"> 
+		  <cmd>Click 
+			 <uicontrol>Finish</uicontrol>. 
+		  </cmd> 
+		  <info>If you didn’t modify your <menucascade>
+						<uicontrol>Project</uicontrol>
+					</menucascade> settings before importing projects, your project builds
+					automatically at this point.  If necessary, select <menucascade>
+						<uicontrol>Project</uicontrol>
+						<uicontrol>Build Project</uicontrol>
+					</menucascade> to build the project.<note>The <uicontrol>tests</uicontrol>
+						project may encounter errors at this point, due to an order dependency that
+						is fixed in the next step.</note></info> 
+		</step> 
+		<step id="step_0728A21AE6DC4715A19B19365E39A9EB"> 
+		  <cmd>Associate the tests project with the player project: 
+		  </cmd> 
+		  <substeps id="substeps_A43333FA9646479C91C275AB1817A6E0"> 
+			 <substep id="substep_F253DF237BAA458AAAFDEA927771859E"> 
+				<cmd>Right-click 
+				  <uicontrol>tests</uicontrol> and choose 
+				  <uicontrol>Properties</uicontrol>. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_1C4AB56B6ADE48DF997BE39402CC1295"> 
+				<cmd>Select <uicontrol>Java Build Path</uicontrol>. </cmd> 
+			 </substep>
+					<substep>
+						<cmd>Choose the <uicontrol>Projects</uicontrol> tab.</cmd>
+					</substep>
+					<substep>
+						<cmd>Click <uicontrol>Add...</uicontrol>.</cmd>
+					</substep>
+					<substep>
+						<cmd>Select <uicontrol>CatalogActivity</uicontrol></cmd>
+					</substep>
+					<substep>
+						<cmd>Click <uicontrol>OK</uicontrol> to close the <uicontrol>Required
+								Project Selection</uicontrol> dialog.</cmd>
+					</substep> 
+			 <substep id="substep_7606481A3D844DD8809161EE6C409401"> 
+				<cmd>Click <uicontrol>OK</uicontrol> to close <uicontrol>Properties</uicontrol>. </cmd> 
+			 </substep> 
+		  </substeps> 
+		</step> 
+		<step id="step_350C8D1AECD8477EB22389E87B133744"> 
+		  <cmd>Re-build the project. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

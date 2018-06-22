@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_content_resolver_opp_detect_impl"> 
+  <title>Implement a custom opportunity generator</title> 
+  <shortdesc>You can implement your own opportunity generators by implementing
+	 the 
+	 <codeph>OpportunityGenerator</codeph> class. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_72816FF809874437AB406B6CF8187708"> 
+		<step id="step_232D579BC3DB488EA907C8841591977B"> 
+		  <cmd>Implement your custom 
+			 <codeph>ContentFactory</codeph> by implementing the 
+			 <codeph>ContentFactory</codeph> interface and overriding 
+			 <codeph>retrieveGenerators</codeph>. 
+		  </cmd> 
+		  <info> 
+			 <p>For example: 
+				<codeblock outputclass="syntax java">class MyContentFactory extends ContentFactory {
+    @Override
+    public List&lt;OpportunityGenerator&gt; retrieveGenerators(MediaPlayerItem item) {
+        List&lt;OpportunityGenerator&gt; generators = new ArrayList&lt;OpportunityGenerator&gt;();
+        generators.add(MyOpportunityGenerator(item));
+        return generators;
+    }
+    ...
+}</codeblock> 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_8626556178DA420986DD63128C627964"> 
+		  <cmd>Register the 
+			 <codeph>ContentFactory</codeph> to the 
+			 <codeph>MediaPlayer</codeph>. 
+		  </cmd> 
+		  <info> 
+			 <p>For example: 
+				<codeblock outputclass="syntax java">// register the custom content factory with media player
+MediaPlayerItemConfig config =  new MediaPlayerItemConfig();
+config.setAdvertisingFactory(new MyContentFactory());
+
+// this config will should be later passed while loading the resource
+mediaPlayer.replaceCurrentResource(resource, config);
+
+// OR use MediaPlayerItemLoader to pre-load a resource
+id = 23;
+itemLoader.load(resource, id, config);</codeblock> 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_17BEA3AFACB049CBBD60A9885138B661"> 
+		  <cmd> Create a custom opportunity generator class that implements the 
+			 <codeph>OpportunityGenerator</codeph> class. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax java">public class CustomOpportunityGenerator implements OpportunityGenerator 
+{...}</codeblock> 
+		  </info> 
+		  <substeps id="substeps_353C9699E2D345C3A6ADAA261ABCCBEF"> 
+			 <substep id="substep_56D9EF23B17643D785E44360ACF53AEA"> 
+				<cmd> In the custom opportunity generator, override 
+				  <codeph>doConfigure</codeph>, 
+				  <codeph>doUpdate</codeph> and 
+				  <codeph>doCleanup</codeph>: 
+				</cmd> 
+				<info> 
+				  <p> 
+					 <codeblock outputclass="syntax java">@Override
+ public void configure(MediaPlayerItem item, Context context, 
+ OpportunityGeneratorClient client, AdSignalingMode mode, long playhead, TimeRange playbackRange) {
+}
+
+protected void update(long playhead, TimeRange playbackRange){
+}
+
+protected void cleanup(){
+}</codeblock> 
+				  </p> 
+				  <p>To obtain the timed metadata: 
+					 <codeblock outputclass="syntax java">List&lt;TimedMetadata&gt; tList = getItem().getTimedMetadata();
+</codeblock> 
+				  </p> 
+				</info> 
+			 </substep> 
+			 <substep id="substep_1EA9B891944C417C922B9BE7E8307629"> 
+				<cmd>For each 
+				  <codeph>TimedMetadata</codeph> or group of 
+				  <codeph>TimedMetadata</codeph>, create an opportunity with the
+				  following attributes: 
+				</cmd> 
+				<info> 
+				  <codeblock outputclass="syntax java">Opportunity(
+  String id,                      // Can be id from timedMetadata 
+  Placement placementInformation, // Placement object containing Type, time, duration
+  Metadata metadataSettings,      // Ad metadata with targeting params sent to the ad provider
+  Metadata customParams           // Metadata for customizing resolving and/or tracking process.
+);
+</codeblock> 
+				</info> 
+			 </substep> 
+			 <substep id="substep_93D3551087E34A5C8BB4C818E6D79BDD"> 
+				<cmd>For each opportunity created, call 
+				  <codeph>resolve</codeph> on the 
+				  <codeph>OpportunityGeneratorClient:getClient().resolve(opportunity);</codeph>.
+				  
+				</cmd> 
+			 </substep> 
+		  </substeps> 
+		</step> 
+	 </steps> 
+	 <example id="example_7A46377EBE79458E87423EB95D0568D4"> 
+		<p> This is a sample custom placement opportunity detector: 
+		</p> 
+		<codeblock outputclass="syntax java">public class MyOpportunityGenerator implements OpportunityGenerator {
+
+
+     @Override
+      public void configure(MediaPlayerItem item, Context context, 
+      OpportunityGeneratorClient client, AdSignalingMode mode, long playhead, TimeRange playbackRange) {
+      }
+
+        MediaPlayerItem item = getItem();
+        MediaPlayerItemConfig itemConfig = item.getConfig();
+
+        if (itemConfig == null || itemConfig.getAdvertisingMetadata() == null) {
+            // no ad metadata, no ads
+            return;
+        }
+
+        AdvertisingMetadata metadata = item.getConfig().getAdvertisingMetadata();
+
+
+        AdSignalingMode mode = itemConfig.getAdSignalingMode();
+
+        if (mode == AdSignalingMode.CUSTOM_RANGES)
+        {
+            // don't override custom ad ranges
+            return;
+        }
+
+        Placement.Type pType = (mode == AdSignalingMode.MANIFEST_CUES) ? 
+                  Placement.Type.PRE_ROLL : Placement.Type.SERVER_MAP;
+        Placement.Mode pMode = Placement.Mode.DEFAULT;
+        Placement placement = new Placement(pType, playhead, 
+                  Placement.UNKNOWN_DURATION, pMode);
+
+        Opportunity opportunity = new Opportunity("initialOpportunity", placement, 
+                  metadata, null);
+
+        OpportunityGeneratorClient client = getClient();
+        client.resolve(opportunity);
+    }
+
+    @Override
+    protected void update(long playhead, TimeRange playbackRange) {
+
+	...
+	timedMetadataList = getItem().getTimedMetadata();
+        for (TimedMetadata timedMetadata : timedMetadataList) {
+         if (isOpportunity(timedMetadata)) {   // check if given timedMetadata should 
+                                               // be considered as an opportunity
+		// create a PlacementOpportunity object and add it to the opportunities list
+                Opportunity opportunity = new Opportunity("id", placement, metadata, null);
+                client.resolve(opportunity)
+          }
+        }
+    }
+
+    @Override
+    protected void cleanup() {}
+}</codeblock> 
+	 </example> 
+  </taskbody> 
+</task> 

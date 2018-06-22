@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="display-banner-ads"> 
+  <title>Display banner ads</title> 
+  <shortdesc>To display banner ads, you need to create banner instances and
+	 allow 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> to listen for ad-related
+	 events. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_F8FA813A9E6A459080D888A072033E9C"> 
+		<p><ph conkeyref="phrases/primetime-sdk-name"/> provides a list of companion banner ads that are
+				associated with a linear ad through the
+					<codeph>PTMediaPlayerAdPlayStartedNotification</codeph> notification event. </p> 
+		<p>Manifests can specify companion banner ads by: 
+		<ul id="ul_65FA60CB3BB743A2A53E77B2324C0206"> 
+		  <li id="li_1045325182FD4B48946A0B7B3009854D">An HTML snippet 
+		  </li> 
+		  <li id="li_79C93221C7AF412FA7896E279E6CC351">The URL of an iFrame page 
+		  </li> 
+		  <li id="li_A64E358C47B94033BF829D530A1B4913">The URL of a static image
+			 or an Adobe Flash SWF file 
+		  </li> 
+		</ul> 
+		</p> 
+		<p>For each companion ad, 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> indicates which types are
+		  available for your application. 
+		</p> 
+	 </context> 
+	 <steps id="steps_9D6FF9E8358C4191AF0D137EF6F89482"> 
+		<step  id="step_94F255858C6A4E12B195570B29006371"> 
+		  <cmd>Create 
+			 <ph >a 
+				<codeph >PTAdBannerView</codeph></ph> instance for
+			 each companion ad slot on your page. 
+		  </cmd> 
+		  <info> 
+			 <p>Ensure that the following information has been provided: 
+			 </p> 
+			 <ul id="ul_00AF12E47FE546368092C4CCF0955021"> 
+				<li id="li_F5A25BB474024EBEA8BB519BA3188CE9">To prevent the
+				  retrieval of companion ads of different sizes, a banner instance that specifies
+				  the width and height. 
+				</li> 
+				<li id="li_A7BAB527057349578F93232B9E508FB7">Standard banner sizes.
+				  
+				</li> 
+			 </ul> 
+		  </info> 
+		</step> 
+		<step id="step_87B9D4D86CDE48B9838BBA0D1500B177">
+				<cmd>Add an observer for the <codeph>PTMediaPlayerAdStartedNotification</codeph>
+					that does the following: </cmd>
+				<substeps id="substeps_320896E7E5E74C4EBF32A5CA2522D5ED">
+					<substep id="substep_6D81DC410E9F4D6697A53A3311ADA66A">
+						<cmd>Clears existing ads in the banner instance. </cmd>
+					</substep>
+					<substep id="substep_1E2FDAE3480B46AE809409C5F47BC08F">
+						<cmd>Gets the list of companion ads from
+								<codeph>Ad.getCompanionAssets</codeph>
+							<codeph>PTAd.companionAssets</codeph>. </cmd>
+					</substep>
+					<substep id="substep_CB14BDDBF8E04E6A83DE24BBB28320C8">
+						<cmd>If the list of companion ads is not empty, iterate over the list for
+							banner instances. </cmd>
+						<info> Each banner instance ( a <codeph>PTAdAsset</codeph>) contains
+							information, such as width, height, resource type (html, iframe, or
+							static), and data that is required to display the companion banner.
+						</info>
+					</substep>
+					<substep id="substep_7EEA51026D34481DB7FF7C48A9C2D036">
+						<cmd>If a video ad has no companion ads booked with it, the list of
+							companion assets contains no data for that video ad. </cmd>
+						<info>To show a standalone display ad, add the logic to your script to run a
+							normal DFP (DoubleClick for Publishers) display ad tag in the
+							appropriate banner instance. </info>
+					</substep>
+					<substep id="substep_F28B189269D34AE8BABB0B839F67783F">
+						<cmd>Sends the banner information to a function on your page that displays
+							the banners in an appropriate location. </cmd>
+						<info>
+							<p>This is usually a <codeph>div</codeph>, and your function uses the
+									<codeph>div ID</codeph> to display the banner. For example: </p>
+							<codeblock outputclass="syntax objective-c">- (void) onMediaPlayerAdPlayStarted:(NSNotification *) notification {
+    _currentAd  = [notification.userInfo  objectForKey:PTMediaPlayerAdKey]; 
+    if (_currentAd != nil) {
+        [self removeAllBanners]; // remove any existing PTAdBannerView views
+
+        // banners
+        if (_currentAd.companionAssets &amp;&amp; _currentAd.companionAssets.count &gt; 0) {
+            PTAdAsset *bannerAsset = [_currentAd.companionAssets objectAtIndex:0];
+
+            PTAdBannerView *bannerView = [[PTAdBannerView alloc] initWithAsset:bannerAsset]; 
+            bannerView.player = self.player;
+            bannerView.delegate = self;
+
+            bannerView.frame = CGRectMake(0.0, 0.0, bannerAsset.width, bannerAsset.height); 
+            [_adBannerView.bannerView addSubview:bannerView];
+        }
+    }
+}</codeblock>
+						</info>
+					</substep>
+				</substeps>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

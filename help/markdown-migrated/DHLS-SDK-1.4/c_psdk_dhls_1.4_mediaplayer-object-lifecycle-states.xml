@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept
+ id="c_psdk_android_lifecycle-states-mediaplayer-object"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>MediaPlayer object lifecycle</title> 
+  <shortdesc>From the moment that you create the <codeph>MediaPlayer</codeph> instance to the moment
+		when you terminate (reuse or remove) it, this instance completes a series of transitions
+		between statuses. </shortdesc> 
+  <conbody> 
+	 <p >Some operations are permitted only when the player is in
+		a particular state. For example, calling 
+		<codeph>play</codeph> in IDLE is not allowed. You can call this status
+		only after the player reaches the PREPARED state. 
+	 </p> 
+	 <p>To work with statuses: <ul id="ul_91E5504173694388A13C472857A6FF9F">
+				<li id="li_19F5315AAB8C4C9693A93CD11687E49A">You can retrieve the current state of the
+						<codeph>MediaPlayer</codeph> object by using the
+						<codeph>MediaPlayer.status</codeph> property. <p>
+						<codeblock outputclass="syntax actionscript">function get status():String;</codeblock>
+					</p>
+				</li>
+				<li id="li_F5284450444A47C19967080AB8F0A066">The list of statuses is defined in
+						<codeph>MediaPlayer.PlayerStatus</codeph>. </li>
+			</ul>
+		</p> 
+	 <p>State-transition diagram for the lifecycle of a <codeph>MediaPlayer</codeph> instance: <fig
+				frame="all" id="fig_1C55DE3F186F4B36AFFDCDE90379534C">
+				<image href="images/player-state-transitions-diagram-flash-1_2_web.png"
+					placement="break" id="image_D6ACF1771BE04A99BEA15AF386E5B872"/>
+			</fig>
+		</p> 
+	 <p>The following table provides additional details: <table
+				id="table_426F0093E4214EA88CD72A7796B58DFD">
+				<tgroup cols="2">
+					<colspec colnum="1" colname="col1" colwidth="1.00*"/>
+					<colspec colnum="2" colname="col2" colwidth="1.41*"/>
+					<thead>
+						<row>
+							<entry colname="col1">
+								<codeph>MediaPlayerStatus</codeph></entry>
+							<entry colname="col2">Occurs when </entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry colname="col1"><codeph>IDLE</codeph></entry>
+							<entry colname="col2">
+								<p> Your application requested a new media player by instantiating
+										<codeph>MediaPlayer</codeph>. The newly created player is
+									waiting for you to specify a media player item. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>INITIALIZING</codeph></entry>
+							<entry colname="col2">
+								<p>Your application called
+										<codeph>MediaPlayer.replaceCurrentResource</codeph>, and the
+									media player is loading. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>INITIALIZED</codeph></entry>
+							<entry colname="col2">
+								<p><ph conkeyref="phrases/primetime-sdk-name"/> successfully set the
+									media player item. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>PREPARING</codeph></entry>
+							<entry colname="col2">
+								<p>Your application called
+										<codeph>MediaPlayer.prepareToPlay</codeph>. The media player
+									is loading the media player item and the associated resources. </p>
+								<note type="tip">Some buffering of the main media might occur. </note>
+								<p><ph conkeyref="phrases/primetime-sdk-name"/> is preparing the
+									media stream and attempting to perform ad resolving and ad
+									insertion, (if enabled). </p>
+								<note type="tip">To set the start time to a non-zero value, call
+										<codeph>prepareToPlay(startTime)</codeph> with the time in
+									milleseconds. </note>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>PREPARED</codeph></entry>
+							<entry colname="col2">
+								<p>The content is prepared and ads have been inserted in the
+									timeline, or the ad procedure failed. Buffering or playback can
+									begin. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>PLAYING</codeph></entry>
+							<entry colname="col2">
+								<p>Your application has called <codeph>play</codeph>, so <ph
+										conkeyref="phrases/primetime-sdk-name"/> is trying to play
+									the video. Some buffering might occur before the video actually
+									plays. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>PAUSED</codeph></entry>
+							<entry colname="col2">
+								<p>As your application plays and pauses the media, the media player
+									moves between this state and PLAYING. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>SEEKING</codeph></entry>
+							<entry colname="col2">
+								<p>The media player is seeking to the correct position while paused
+									or playing. To determine when seeking has started or ended,
+									listen for the <codeph>SeekEvent.SEEK_BEGIN</codeph> and
+										<codeph>SeekEvent.SEEK_END</codeph> events. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>COMPLETED</codeph></entry>
+							<entry colname="col2">
+								<p>The player reached the end of the stream, and playback has
+									stopped. </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>RELEASED</codeph></entry>
+							<entry colname="col2">
+								<p>Your application has released the media player, which also
+									releases any associated resources. You can no longer use this
+									instance </p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col1"><codeph>ERROR</codeph></entry>
+							<entry colname="col2">
+								<p>An error occurred during the process. An error also might affect
+									what your application can do next. </p>
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table></p> 
+	 <note type="tip">You can use the status to provide feedback on the process (for example, a spinner
+			while waiting for the next status change) or to take the next step in playing the media,
+			such as waiting for the appropriate status before calling the next method. </note> 
+  </conbody> 
+</concept> 

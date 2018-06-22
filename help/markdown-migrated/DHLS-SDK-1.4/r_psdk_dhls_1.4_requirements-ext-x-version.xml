@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="reference_req_ext_x_version"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>#EXT-X-VERSION requirements</title> 
+  <shortdesc>The version of 
+	 <codeph>#EXT-X-VERSION</codeph> in the 
+	 <filepath>.m3u8</filepath> file affects what features are available to your
+	 application and what 
+	 <codeph>EXT</codeph> tags are valid in your playlist/manifest. 
+  </shortdesc> 
+  <refbody> 
+	 <section id="section_8850183988124049A001758F117AD3A6"> 
+		<p>Here is some information about the 
+		  <codeph>#EXT-X-VERSION</codeph> tag, which specifies the HLS protocol
+		  version: 
+		</p> 
+		<ul id="ul_6E57CF3546134B98BB0AB485877AF26D">
+		  <li id="li_D39C94714ABA43FC870C4B5A07E6885F" >The
+			 version must match the features and attributes in the HLS playlist; otherwise,
+			 playback errors might occur. 
+			 <p>For more information, see 
+				<xref
+				 href="https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1"
+				 format="html" scope="external">HTTP Live Streaming specification</xref>. 
+			 </p>
+		  </li>
+		  <li 
+			id="li_81026714077D4E119853D0AE0084296C">The version must match the features
+			 and attributes in the HLS playlist; otherwise, playback errors might occur. 
+			 <p>For more information, see 
+				<xref
+				 href="https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1"
+				 format="html" scope="external">HTTP Live Streaming specification</xref>. 
+			 </p> 
+		  </li> 
+		  <li id="li_BEE7D96C6ABF46E2BCFACA64DA2D9067">Adobe recommends using at least version 2 for
+					playback in <ph conkeyref="phrases/primetime-sdk-name"/>-based clients.
+						<p>Clients and servers must implement the versions in the following way:
+							<table frame="all" colsep="1" rowsep="1"
+							id="table_62EB98EDD9DE49EC84CB1C7D59BC40E6">
+							<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA">
+								<colspec colnum="1" colname="1" colwidth="26*"/>
+								<colspec colnum="2" colname="2" colwidth="74*"/>
+								<thead>
+									<row rowsep="1">
+										<entry colname="1">Use at least this version </entry>
+										<entry colname="2">To use these features </entry>
+									</row>
+								</thead>
+								<tbody>
+									<row rowsep="1">
+										<entry colname="1"><codeph>EXT-X-VERSION:2</codeph>
+										</entry>
+										<entry colname="2">The IV attribute of the
+												<codeph>EXT-X-KEY</codeph> tag. </entry>
+									</row>
+									<row rowsep="1">
+										<entry colname="1"><codeph>EXT-X-VERSION:3</codeph>
+										</entry>
+										<entry colname="2">
+											<ul id="ul_C9500D3F934848639C204BF248F139FF">
+												<li id="li_535A7E3FABCB46FE872A7EA5DE2A1784"
+												>Floating-point <codeph>EXTINF</codeph> duration
+												values <p>The duration tags
+												(<codeph>#EXTINF:</codeph>&lt;duration&gt;,&lt;title&gt;)
+												in version 2 were rounded to integer values.
+												Version 3 and above require durations to be exact
+												in floating point. </p>
+												</li>
+											</ul>
+										</entry>
+									</row>
+									<row rowsep="0">
+										<entry colname="1">
+											<p><codeph>EXT-X-VERSION:4</codeph>
+											</p>
+										</entry>
+										<entry colname="2">
+											<p>
+												<ul id="ul_83D61E909D0C413FBDAB7A4A0BE1F03C">
+												<li id="li_5071F2BE2DB74BBFB1F23B3B30C5CFD6">The
+												<codeph>EXT-X-BYTERANGE</codeph> tag </li>
+												<li id="li_A093F448567D475AB44656D4600BCBD6">The
+												<codeph>EXT-X-I-FRAME-STREAM-INF</codeph> tag </li>
+												<li id="li_1084AE3B10FD4EB387D25EEDDFBBC8CD">The
+												<codeph>EXT-X-I-FRAMES-ONLY</codeph> tag </li>
+												<li id="li_4FEFA36E300C403DBB77BB4DA46DB4EB">The
+												<codeph>EXT-X-MEDIA</codeph> tag </li>
+												<li id="li_E53D81AED45C47AEA346FA3A1B191E5C">The
+												<codeph>AUDIO</codeph> and <codeph>VIDEO</codeph>
+												attributes of the
+												<codeph>EXT-X-STREAM-INF</codeph> tag </li>
+												<li id="li_2E99A4971B8046F3845CF3D4D363CCCF"><ph
+												conkeyref="phrases/primetime-sdk-name"/> alternate
+												audio </li>
+												</ul>
+											</p>
+										</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table></p></li> 
+		</ul> 
+	 </section> 
+  </refbody> 
+</reference> 

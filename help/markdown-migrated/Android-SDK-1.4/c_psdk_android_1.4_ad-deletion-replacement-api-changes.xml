@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ad-deletion-replacement-api-changes-android"> 
+  <title>Ad deletion and replacement API changes</title> 
+  <shortdesc>These changes in the Android 
+  	<ph conkeyref="phrases/primetime-sdk-name"/>
+	 API support ad deletion and replacement. 
+  </shortdesc> 
+  <conbody> 
+	 <ul> 
+		<li><codeph>AdSignalingMode</codeph> 
+		  <p>New Custom Time Range Ad Signaling Mode 
+		  </p> 
+		</li> 
+		<li><codeph>AdvertisingMetadata</codeph> 
+		  <p>New 
+			 <codeph>setTimeRanges(TimeRangeCollection timeRanges, Metadata
+				options)</codeph>: Sets the time ranges to mark, delete, or replace when
+			 processing metadata 
+		  </p> 
+		</li> 
+		<li><codeph>ContentResolver</codeph> 
+		  <ul> 
+			 <li>New 
+				<codeph>public final boolean canResolve(PlacementOpportunity
+				  placementOpportunity) 
+				</codeph> 
+			 </li> 
+			 <li>New 
+				<codeph>protected abstract boolean
+				  doCanResolve(PlacementOpportunity placementOpportunity) 
+				</codeph> 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li>New 
+		  <codeph>ContentRemoval</codeph> class 
+		  <p><codeph>TimelineOperation</codeph> class that defines the time range
+			 to be removed from the timeline 
+		  </p> 
+		</li> 
+		<li><codeph>AuditudeResolver</codeph> 
+		  <ul> 
+			 <li>New 
+				<codeph>private LinkedList&lt;AuditudeRequest&gt; _requestQueue 
+				</codeph> 
+			 </li> 
+			 <li>New 
+				<codeph>void startConsumer()</codeph>: Starts processing the 
+			 	<ph conkeyref="phrases/auditude-name"/>
+				request queue and ensures that each request is issued at 
+				<codeph>MIN_INIT_REQUEST_INTERVAL</codeph> intervals 
+			 </li> 
+			 <li>New <codeph>processReplacementRange()</codeph>: Extracts time-ranges
+				from the ad metadata and generates <codeph>PlacementInformations</codeph>, 
+			 	and creates a <ph conkeyref="phrases/auditude-name"/>
+				request containing the <codeph>PlacementInformations</codeph>.</li> 
+			 <li>New <codeph>canDoResolver()</codeph>: Checks if placement opportunity
+				has <ph conkeyref="phrases/auditude-name"/> metadata</li> 
+		  </ul> 
+		</li> 
+		<li>New 
+		  <codeph>CustomRangeHelper</codeph> 
+		  <p>Helper class that extracts time range metadata from ad metadata, and
+			 removes subsets/overlaps/invalid time ranges. 
+		  </p> 
+		</li> 
+		<li>New 
+		  <codeph>DeleteContentResolver</codeph> 
+		  <p>Content resolver that resolves Placement opportunities of 
+			 <codeph>PlacementInformation.Mode.DELETE</codeph> 
+		  </p> 
+		</li> 
+		<li>New 
+		  <codeph>NopTimelineOperation</codeph> 
+		  <p>New timeline operation for when no ad break placement or replacement
+			 needs to be done. This class is used to distinguish between this and when an
+			 error occurs during the resolving process. 
+		  </p> 
+		</li> 
+		<li><codeph>TimelineOperationQueue</codeph>
+		  
+		  <p>Checks if the Timeline Operation is a 
+			 <codeph>NopTimelineOperation</codeph> before processing. 
+		  </p> 
+		</li> 
+		<li><codeph>CustomAdMarkersContentResolver</codeph>
+		  
+		  <p>New 
+			 <codeph>canDoResolve()</codeph>: Checks if a placement opportunity is
+			 of type 
+			 <codeph>Mode.MARK</codeph> 
+		  </p> 
+		</li> 
+		<li><codeph>MetadataResolver</codeph> 
+		  <p>New 
+			 <codeph>canDoResolve()</codeph>: Checks if a placement opportunity is
+			 of type 
+			 <codeph>Mode.INSERT</codeph> 
+		  </p> 
+		</li> 
+		<li><codeph>DefaultMetadataKeys</codeph> 
+		  <p>New 
+			 <codeph>TIME_RANGES_METADATA_KEY("time_ranges_metadata_key")</codeph>
+			 
+		  </p> 
+		</li> 
+		<li><codeph>PlacementInformation</codeph> 
+		  <ul> 
+			 <li>New Mode <codeph>enum (INSERT, DELETE, REPLACE, MARK)</codeph></li> 
+			 <li>New Type <codeph>CUSTOM_TIME_RANGES</codeph></li> 
+		  </ul> 
+		</li> 
+		<li><codeph>TimeRange</codeph> 
+		  <p>New 
+			 <codeph>compareTo(TimeRange timeRange)</codeph>: So can sort
+			 TimeRanges based on begin time 
+		  </p> 
+		</li> 
+		<li>New 
+		  <codeph>ReplacementTimeRange</codeph> 
+		  <p>Extends the 
+			 <codeph>TimeRange</codeph> class that represents a replacement
+			 timerange, with a 
+			 <codeph>begin</codeph>, 
+			 <codeph>end</codeph>, and 
+			 <codeph>replacement-duration</codeph> parameter. 
+		  </p> 
+		</li> 
+		<li><codeph>TimeRangeCollection</codeph> 
+		  <ul> 
+			 <li>New 
+				<codeph>MARK_RANGES, DELETE_RANGES, REPLACE_RANGES 
+				</codeph> 
+			 </li> 
+			 <li>Renamed 
+				<codeph>CUSTOM_AD_MARKERS</codeph> to 
+				<codeph>MARK_RANGES</codeph> 
+			 </li> 
+			 <li>Modified 
+				<codeph>toMetadata(Metadata options)</codeph> to put
+				delete/mark/replace ranges into ad metadata. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li><codeph>MediaPlayerNotification</codeph>
+		  
+		  <ul> 
+			 <li>New 
+				<codeph>UNDEFINED_TIME_RANGES</codeph>: When the ad signaling mode
+				is Server Map or Manifest Cues, and replace ranges are also in the ad metadata,
+				replace ranges are ignored. 
+			 </li> 
+			 <li>New 
+				<codeph>REPLACE_RANGES_NOT_AVAILABLE</codeph>: When ad signaling
+				mode is Custom Time Ranges and replace ranges are not available, a warning will
+				be dispatched. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li><codeph>AdvertisingFactory</codeph> 
+		  <p>New 
+			 <codeph>public abstract List&lt;ContentResolver&gt;
+				createContentResolvers(MediaPlayerItem item)</codeph> 
+		  </p> 
+		</li> 
+		<li><codeph>DefaultAdvertisingFactory</codeph>
+		  
+		  <p>New 
+			 <codeph>public List&lt;ContentResolver&gt;
+				createContentResolvers(MediaPlayerItem item)</codeph> 
+		  </p> 
+		</li> 
+		<li><codeph>DefaultContentResolverFactory</codeph>
+		  
+		  <p>New 
+			 <codeph>public static List&lt;ContentResolver&gt;
+				createContentResolvers(MediaResource resource, Context context)</codeph> 
+		  </p> 
+		</li> 
+		<li><codeph>DefaultMediaPlayer</codeph> 
+		  <ul> 
+			 <li>In 
+				<codeph>prepareToPlay()</codeph>: Makes an initial seek to 0,
+				because if range 
+				<codeph>[0,n]</codeph> is deleted, the media player will not
+				automatically play. 
+			 </li> 
+			 <li>In 
+				<codeph>prepareToPlay()</codeph>: Loops through the list of initial
+				placement informations for 
+				<codeph>mediaplayerclient</codeph> to resolve. 
+			 </li> 
+			 <li>In 
+				<codeph>extractAdSignalingMode()</codeph>: Accommodate for the new
+				Custom Time Range mode. 
+			 </li> 
+			 <li>New 
+				<codeph>private static List&lt;PlacementInformation&gt;
+				  createInitalPlacementInformations()</codeph>: Generates the initial placement
+				informations for the ad signaling mode and content resolvers (derived from ad
+				metadata). 
+			 </li> 
+			 <li>In 
+				<codeph>ContentPlacementCompletedListener</codeph>: Checks to see
+				if 
+				<codeph>mediaPlayerClient</codeph> is 
+				<codeph>doneInitialResolving</codeph> before calling 
+				<codeph>endAdResolving</codeph>. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li><codeph>MediaPlayerClient</codeph> 
+		  <ul> 
+			 <li>New 
+				<codeph>List&lt;ContentResolver&gt; _contentResolvers</codeph> 
+			 </li> 
+			 <li>New 
+				<codeph>int _reservations</codeph> 
+			 </li> 
+			 <li>New 
+				<codeph>lookupContentResolver(PlacementOpportunity
+				  placementOpportunity)</codeph>: Looks up which resolver can resolve the 
+				<codeph>PlacementOpportunity</codeph>. 
+			 </li> 
+			 <li>Modified code to create
+				multiple content resolvers. 
+			 </li> 
+			 <li>New 
+				<codeph>public boolean doneInitialResolving()</codeph>: Checks if
+				there are any opportunities left to be resolved. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li><codeph>VideoEngineTimeline</codeph> 
+		  <ul> 
+			 <li>New 
+				<codeph>removeContent(TimelineOperation
+				  timelineOperation)</codeph>: Removes a given range of content from timeline. 
+			 </li> 
+			 <li>New 
+				<codeph>removeContentByLocalTime(long begin, long end)</codeph>:
+				Removes content by local time given 
+				<codeph>begin</codeph> and 
+				<codeph>end</codeph>. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li><codeph>DefaultOpportunityDetectorFactory</codeph>
+		  
+		  <p>Modified 
+			 <codeph>createOpportunityDetector</codeph>: For VOD streams, only
+			 return a new 
+			 <codeph>SpliceOutOpportunityDetector</codeph> if there are no MARK or
+			 REPLACE ranges (as those ranges have priority over the signaling mode). 
+		  </p> 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept> 

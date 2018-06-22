@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "technicalContent/dtd/generalTask.dtd">
+<task id="t_psdk_create-a-video-player"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Content playback options</title> 
+  <shortdesc> 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> provides tools for creating an
+	 advanced video player application (your 
+	 <keyword>Primetime player</keyword>), which you can integrate with other
+	 Primetime components. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_A81BFAB6FD994DE1AD5A9A76C49B3477">Use your platform's
+		tools to create a player and connect it to the media player view in 
+		<ph conkeyref="phrases/primetime-sdk-name"/>, which has methods to play
+		and manage videos. For example, 
+		<ph conkeyref="phrases/primetime-sdk-name"/> provides play and pause
+		methods. You can create user interface buttons on your platform and set the
+		buttons to call those 
+		<ph conkeyref="phrases/primetime-sdk-name"/> methods. 
+	 </context> 
+  </taskbody> 
+</task> 

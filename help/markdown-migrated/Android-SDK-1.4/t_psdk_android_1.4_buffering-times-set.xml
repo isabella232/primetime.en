@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="t_psdk_android_set-buffering-times"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Set buffering times</title> 
+  <shortdesc>The <codeph>MediaPlayer</codeph> provides methods to set and get the initial buffering
+		time and playback buffering time. </shortdesc> 
+  <taskbody> 
+	 <context id="context_E49B732A7EC84BF8A7BE86238BE382D5"> 
+		<note type="tip">If you do not set the buffer control parameters before beginning playback, the
+				media player defaults to 2 seconds for the initial buffer and 30 seconds for the
+				ongoing playback buffer time. </note> 
+	 </context> 
+	 <steps id="steps_A762653DB72D4181A29BFDE9DC45A1F1"> 
+		<step id="step_AC0DC2B5BC1A40188DA008118A819E10"
+		 > 
+		  <cmd>Set up the 
+			 <codeph>BufferControlParameters</codeph> object, which encapsulates
+			 the initial buffer time and playback buffer time control parameters: 
+		  </cmd> 
+		  <info> 
+			 <p >This class provides two factory methods: 
+			 <ul id="ul_9A09CD00EB2744F79057A038AC62B0A0"> 
+				<li id="li_51A636C852FF416DB768EB20C9F1FF30">To set the initial buffer time equal to the play
+								buffer time:
+								<codeblock outputclass="syntax java">public static BufferControlParameters createSimple(
+    long bufferTime)</codeblock>
+							</li> 
+				<li id="li_D57EB6997FC44DAB9D07E7054352F216">To set both the initial and play buffer times:
+								<codeblock outputclass="syntax java">public static BufferControlParameters createDual(
+    long initialBuffer,  
+    long bufferTime)</codeblock>
+							</li> 
+			 </ul> 
+			 </p> 
+			 <p >These methods throw an 
+				<codeph>IllegalArgumentException</codeph> if the parameters are not
+				valid, such as when: 
+			 <ul id="ul_A0CB09F10B884E729B9030EF765AF95F"> 
+				<li id="li_DDE893AFD1A84CB2ABA4EA6F0B33D406">The initial buffer
+				  time is less than zero. 
+				</li> 
+				<li id="li_48667155D74940F8B131413F19F5974E">The initial buffer
+				  time is greater than the buffer time. 
+				</li> 
+			 </ul> 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_F46D578809034BCE951651F1169E5C3D">
+				<cmd>To set the buffer parameter values, use this <codeph>MediaPlayer</codeph>
+					method: </cmd>
+				<info>
+					<codeblock outputclass="syntax java">void setBufferControlParameters(BufferControlParameters params)</codeblock>
+				</info>
+			</step> 
+		<step id="step_1CD79142133546E6A593868F1D4F07B1">
+				<cmd>To get the current buffer parameter values, use this
+						<codeph>MediaPlayer</codeph> method: </cmd>
+				<info>
+					<codeblock outputclass="syntax java">
+BufferControlParameters getBufferControlParameters() 
+</codeblock>
+					<p>If the AVE cannot set the specified values, the media player enters the
+							<codeph>ERROR</codeph> state with the error code
+							<codeph>SET_BUFFER_PARAMETERS_ERROR</codeph>. </p>
+				</info>
+			</step> 
+	 </steps> 
+	 <example id="example_B5C5004188574D8D8AB8525742767280"> 
+		<p>For example, to set the initial buffer to 2 seconds and the playback buffer time to 30 seconds: </p> 
+		<codeblock  outputclass="syntax java">mediaPlayer.setBufferControlParameters(BufferControlParameters.createDual(2000, 30000));</codeblock> 
+		<p>The Primetime reference implementation demonstrates this feature; use the application’s
+				settings to set the buffer values. </p> 
+	 </example> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_about-ad-insertion"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Inserting ads</title> 
+  <shortdesc>Ad insertion resolves ads for video-on-demand (VOD) 
+	 <ph>, for live streaming, and for linear streaming</ph> with ad tracking
+	 and ad playback. 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> makes the required requests to
+	 the ad server, receives information about ads for the specified content, and
+	 places the ads in the content in phases. 
+  </shortdesc> 
+  <conbody> 
+	 <p>An 
+		<term>ad break</term> contains one or more ads that play in sequence. 
+		<ph conkeyref="phrases/primetime-sdk-name"/> inserts ads in the main
+		content as members of one or more ad breaks. 
+	 </p> 
+  </conbody> 
+  <concept id="concept_A1CAE17B731646A3A4F690201D30F386">
+	 <title>Disable pre-roll ads</title> 
+	 <shortdesc><?xm-replace_text Short Description?>
+	 </shortdesc>
+	 <conbody>
+		<p>To disable pre-roll, change the default opportunity generators to not
+		  make the pre-roll call. The default opportunity generators is: 
+		  <codeblock>@inheritDoc
+*/
+override protected function doRetrieveGenerators(item:MediaPlayerItem):Vector.&lt;OpportunityGenerator&gt; {
+var result:Vector.&lt;OpportunityGenerator&gt; = new Vector.&lt;OpportunityGenerator&gt;();
+result.push(new AdSignalingModeOpportunityGenerator());
+result.push(new SpliceOutOpportunityGenerator());
+return result;
+}</codeblock>
+		</p>
+		<p>To disable the pre-roll on live streams, change the above to include
+		  only the SpliceOutOpportunityGenerator: 
+		  <codeblock>@inheritDoc
+*/
+override protected function doRetrieveGenerators(item:MediaPlayerItem):Vector.&lt;OpportunityGenerator&gt; {
+var result:Vector.&lt;OpportunityGenerator&gt; = new Vector.&lt;OpportunityGenerator&gt;();
+if (preroll_enabled == true) { result.push(new AdSignalingModeOpportunityGenerator()); }
+
+result.push(new SpliceOutOpportunityGenerator());
+return result;
+}</codeblock>
+		</p>
+	 </conbody>
+  </concept>
+</concept> 

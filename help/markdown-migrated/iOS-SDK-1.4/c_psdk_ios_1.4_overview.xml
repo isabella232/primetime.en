@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="overview"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Overview</title> 
+  <shortdesc> The Adobe Primetime Software Development Kit (<ph
+	 conkeyref="phrases/primetime-sdk-name"/>) is a toolkit that allows you to add
+	 advanced video playback functionality to your applications. 
+  </shortdesc> 
+  <conbody> 
+	 <p>
+	 <ul id="ul_04BE6D3195F341D5B43B58C72591487D">
+		<li id="li_084E03CE13B643C1BC1F5FC0D1E24C49">For a list of the features
+		  that are supported by 
+		  <ph conkeyref="phrases/primetime-sdk-name"/>, see 
+		  <xref keyref="overview-of-the-player"/>.
+		</li>
+		<li id="li_C1255ECF1BF84B3BBEC4574D7E8FB267">For specific hardware and
+		  software requirements for using 
+		  <ph conkeyref="phrases/primetime-sdk-name"/>, see 
+		  <xref keyref="requirements"/>.
+		</li>
+	 </ul>
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_playback_custom_setup"> 
+  <title>Set up customized playback</title> 
+  <shortdesc>You can customize or override ad behaviors. 
+  </shortdesc> 
+  <taskbody> 
+	 <prereq id="prereq_37A141A99E4E451495A2EC9034DC6FB9"> 
+		<p>Before you customize or override ad behaviors, register the ad policy
+		  instance with <ph conkeyref="phrases/primetime-sdk-name"/>. 
+		</p> 
+	 </prereq> 
+	 <context id="context_9A1A9FD61CF1431988BC087577ECC73A"> 
+		<ul id="ul_51823D4B88BE4C4FA94ED3A3E2BFF8EE"> 
+		  <li id="li_E74FB160E74948B0B9C9FADB669D3687">Implement the 
+			 <codeph>AdPolicySelector</codeph> interface and all its methods. 
+			 <p>This option is recommended if you need to override 
+				<b>all</b> the default ad behaviors. 
+			 </p> 
+		  </li> 
+		  <li id="li_9D08BD6FFB914ECBB4FE8E6CE2BF52F0">Extend the 
+			 <codeph>DefaultAdPolicySelector</codeph> class and provide
+			 implementations for only those behaviors that require customization. 
+			 <p>This option is recommended if you need to override only 
+				<b>some</b> of the default behaviors. 
+			 </p> 
+		  </li> 
+		</ul> 
+		<p>To customize ad behaviors: 
+		</p> 
+	 </context> 
+	 <steps id="steps_8825205535D94587BF18FF8552206496"> 
+		<step id="step_747C2AFD33A0414A8364D0C76757E3CD"> 
+		  <cmd>Implement the 
+			 <codeph>AdPolicySelector</codeph> interface and all of its methods. 
+		  </cmd> 
+		</step> 
+		<step id="step_5F6B60CA23B347D7B3B8C58A9460CC5B"> 
+		  <cmd> Assign the policy instance to be used by <ph conkeyref="phrases/primetime-sdk-name"/> through the
+			 advertising factory. 
+		  </cmd> 
+		  <info> 
+			 <note type="attention">Custom ad policies that are registered at the
+				beginning of playback are cleared when the 
+				<codeph>MediaPlayer</codeph> instance is deallocated. Your
+				application must register a policy selector instance each time a new playback
+				session is created. 
+			 </note> 
+			 <p>For example:
+						<codeblock outputclass="syntax java">class CustomContentFactory extends ContentFactory {
+    ...
+    @Override
+    public AdPolicySelector retrieveAdPolicySelector(MediaPlayerItem mediaPlayerItem) {
+        return new CustomAdPolicySelector(mediaPlayerItem);
+    }
+    ...
+}
+
+// register the custom content factory with media player
+MediaPlayerItemConfig config =  new MediaPlayerItemConfig();
+config.setAdvertisingFactory(new CustomContentFactory());
+
+// this config will should be later passed while loading the resource
+mediaPlayer.replaceCurrentResource(resource, config);</codeblock>
+					</p>
+		  </info> 
+		</step> 
+		<step id="step_A86F837F4085430EA3A51B9913E0FE17"> 
+		  <cmd>Implement your customizations. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

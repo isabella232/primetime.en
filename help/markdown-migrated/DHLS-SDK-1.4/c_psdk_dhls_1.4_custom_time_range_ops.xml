@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_custom_time_range_ops"> 
+  <title>Custom time range operations</title> 
+  <shortdesc>Ad deletion and replacement are implemented with custom markers that identify different types of time ranges in a VOD stream: mark, delete, and replace. For each  custom time range, you can perform associated operations, including deleting or replacing ad content. </shortdesc> 
+  <conbody> 
+	 <p>For ad deletion and replacement, <ph conkeyref="phrases/primetime-sdk-name"/>
+		includes the following 
+		<i>custom time range operation</i> modes: 
+	 <ul> 
+		<li>MARK - Dispatches 
+		  <codeph>AdBreak</codeph> events for the marked regions. (This was
+		  called 
+		  <codeph>customAdMarker</codeph> in previous versions of <ph conkeyref="phrases/primetime-sdk-name"/>.)
+		  Ad insertion is not allowed in this mode. 
+		</li> 
+		<li>DELETE - For this mode, the
+		  app uses the 
+		  <codeph>TimeRangeCollection</codeph> class to define time regions for
+		  C3 Ad Deletion. Ad insertion is allowed in this mode. 
+		</li> 
+		<li>REPLACE - In this mode, the app replaces a <codeph>timeRange</codeph> with an <ph
+						conkeyref="phrases/auditude-name-long"/>
+					<codeph>AdBreak</codeph>. The replace operation starts where the C3 Ad deletion
+					occurs, and ends at the indicated time (shorter or longer than the original time
+					range). </li> 
+	 </ul> 
+	 </p> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> provides a 
+		<codeph>CustomRangesOpportunityGenerator</codeph> class to
+		generate placement opportunities for the MARK and DELETE ranges. For the
+		REPLACE mode, <ph conkeyref="phrases/primetime-sdk-name"/>
+		generates two placement opportunities for each time range: 
+	 <ul> 
+		<li>The 
+		  <codeph>CustomRangeResolver</codeph> generates placement opportunities
+		  for DELETE 
+		</li> 
+		<li>The 
+		  <codeph>AuditudeAdResolver</codeph> generates placement opportunities
+		  for INSERT 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

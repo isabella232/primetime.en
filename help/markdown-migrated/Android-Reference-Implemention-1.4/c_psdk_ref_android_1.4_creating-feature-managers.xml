@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ref_creating-feature-managers"> 
+  <title>Creating feature managers by passing configuration information to the MediaPlayer</title> 
+  <shortdesc><ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"
+		/> features are driven by configuration and implemented through the
+			<codeph>MediaPlayer</codeph>.  </shortdesc> 
+  <conbody> 
+	 <p> 
+	 <ul id="ul_DC3A8D76D34E4F32911E0D4A9D23C200"> 
+		<li id="li_B6552F7C1D5D480CAC8DC96E4EB55F44">Configuration is the list of specific settings for
+					the feature, such as initial bit rate of ABR control and default closed
+					captioning visibility. <p>Feature managers need to get the configurations in
+						order to determine the feature behavior.  </p><p> In the Primetime reference
+						implementation, the configuration is stored in shared preferences, but you
+						can store the configuration in whatever way makes sense for your
+						environment. </p>
+				</li> 
+		<li id="li_8E6B8362695440ECB4394058CBB9EEE0"><codeph>MediaPlayer</codeph> is the <ph
+						conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"
+					/> media player object that contains the video resource. <p>Feature managers
+						register <ph
+							conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"
+						/> event listeners to this player object, retrieve data from the playback
+						session and trigger <ph
+							conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"
+						/> features to the playback session. </p>
+				</li> 
+	 </ul> 
+	 </p> 
+	 <p>Each feature has a corresponding configuration interface. For example,
+				<codeph>CCManager</codeph> uses <codeph>ICCConfig</codeph> to retrieve the
+			configuration. <codeph>ICCConfig</codeph> contains methods to get the configuration
+			information related to closed captioning only. </p> 
+	 <p>The following example shows the <filepath>ICCConfig.java</filepath> file, configured to receive
+			information about closed caption visibility, font style, and font edge from the
+				<codeph>MediaPlayer</codeph>: </p> 
+	 <codeblock outputclass="syntax java" >// Constructor of CCManager
+<b>public CCManager(ICCConfig ccConfig, MediaPlayer mediaPlayer) {...}</b>
+ 
+// ICCConfig methods
+<b>public interface ICCConfig {</b>
+ 
+    /**
+     * Get the closed captioning visibility config
+     *
+     * @return true if visibility is set to true, false otherwise
+     */
+   <b> public boolean getCCVisibility();</b>
+ 
+    /**
+     * Get the closed captioning font style
+     *
+     * @return TextFormat.Font object represents font style
+     */
+    <b>public TextFormat.Font getCCFont();</b>
+ 
+ 
+    /**
+     * Get the closed captioning font edge
+     *
+     * @return TextFormat.FontEdge represents of font edge
+     */
+    <b>public TextFormat.FontEdge getCCFontEdge();</b>
+...
+}</codeblock> 
+	 <p>An application that uses a <ph
+				conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"
+			/> feature can create its feature manager with a configuration provider and a
+				<codeph>MediaPlayer</codeph> object. For example: </p> 
+	 <codeblock outputclass="syntax java" >// This application needs to use the advertising workflow feature
+AdsManager adsManager = new AdsManagerOn();</codeblock> 
+	 <p>Feature manager configuration API docs: <xref
+				href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/package-summary.html"
+				format="html" scope="external">Javadoc</xref>
+		</p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_failover-missing-segment"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Missing segment failover</title> 
+  <shortdesc>When a segment is missing, for example when a particular segment
+	 fails to download, <ph conkeyref="phrases/primetime-sdk-name"/> attempts to recover through a variety of failover
+	 attempts. If it cannot recover, it issues an error. 
+  </shortdesc> 
+  <conbody> 
+	 <p>If a segment is missing on the server because, for example, the manifest
+		file is not present, the segment cannot be downloaded, and so on, <ph conkeyref="phrases/primetime-sdk-name"/>
+		attempts to fail over by attempting the following options: 
+	 </p> 
+	 <ol id="ol_D1E2FBFFA78248F59458B7A8912FB7BD"> 
+		<li id="li_AD23954EF79F4F42A229943EDDABF7CA">Attempt a failover to the
+		  same segment, at the same bit rate, in a variant file. 
+		</li> 
+		<li id="li_D7AE0D5B49694D27A2E7EC548659B90E">Switch to an alternate bit
+		  rate (ABR switch) in the same file. 
+		</li> 
+		<li id="li_3C86BA99E42244AD89D84D20A98BB46A">Cycle through every
+		  available bit rate in every available variant. 
+		</li> 
+		<li id="li_B21AA6D18DC6431E99B395D6CAFC758F">Skip the segment and issue a
+		  warning. 
+		</li> 
+	 </ol> 
+	 <p>When <ph conkeyref="phrases/primetime-sdk-name"/> cannot obtain an alternative segment, it triggers a 
+		<codeph>CONTENT_ERROR</codeph> error notification. This notification
+		contains an inner notification with the 
+		<codeph>DOWNLOAD_ERROR</codeph> code. If the stream with the problem is
+		an alternate audio track, <ph conkeyref="phrases/primetime-sdk-name"/> generates the 
+		<codeph>AUDIO_TRACK_ERROR</codeph> error notification. 
+	 </p> 
+	 <p>If the video engine is continuously unable to obtain segments, it limits
+		continuous segment skips to 5, after which playback is stopped and <ph conkeyref="phrases/primetime-sdk-name"/> issues
+		a 
+		<codeph>NATIVE_ERROR</codeph> with the code 5. 
+	 </p> 
+	 <note type="restriction"> 
+		<p> Here are some restrictions you should be aware of:
+		<ul id="ul_798C6578C8EB49C382C3836128FA460F"> 
+		  <li id="li_9B63D9B5C81043BDAFA8AE16E62F36A8">The adaptive bit rate
+			 (ABR) control parameters are not taken into consideration when a failover
+			 occurs. 
+			 <p>This is because the failover mechanism is designed to use any of
+				the currently available playlists, regardless of their bit rate profile, as
+				backup streams. 
+			 </p> 
+		  </li> 
+		  <li id="li_4CDF388472DA4FC0B4FD7437CC47009F">During a failover
+			 operation, there can be a profile switch. 
+			 <p>If an error occurs during the download of one of the playlist
+				segments, ABR control parameters such as min/max allowed bit rate are ignored. 
+			 </p> 
+		  </li> 
+		</ul> 
+		</p> 
+	 </note> 
+  </conbody> 
+</concept> 

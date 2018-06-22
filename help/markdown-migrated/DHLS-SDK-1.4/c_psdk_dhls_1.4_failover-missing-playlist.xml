@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="failover-missing-playlist"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Missing playlist failover</title> 
+  <shortdesc>When an entire playlist is missing, for example, when the M3U8
+	 file specified in a top-level manifest file does not download, 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> attempts to recover. If it
+	 cannot be recovered, your application determines the next step. 
+  </shortdesc> 
+  <conbody> 
+	 <p>If the playlist that is associated with the middle-resolution bit rate
+		is missing, 
+		<ph conkeyref="phrases/primetime-sdk-name"/> searches for a variant
+		playlist at the same resolution. If it finds the same resolution, it starts
+		downloading the variant playlist and the segments from the matching position.
+		If 
+		<ph conkeyref="phrases/primetime-sdk-name"/> does not find the same
+		resolution playlist, it will try to cycle through other bitrate playlists and
+		their variants. An immediately lower bitrate is the first choice, then its
+		variant, and so on. If all of the lower bitrate playlists and their variants
+		are exhausted in the attempt to find a valid playlist, 
+		<ph conkeyref="phrases/primetime-sdk-name"/> will go to the top bitrate
+		and count down from there. If a valid playlist cannot be found, the process
+		fails, and the player moves to the ERROR state. 
+	 </p> 
+	 <p>Your application can determine how to handle this situation. For
+		example, you might want to close the player activity and direct the user to the
+		catalog activity. The event of interest is the 
+		<codeph>STATUS_CHANGED</codeph> event, and the corresponding callback is
+		the 
+		<codeph>onStatusChange</codeph> method. Here is code that monitors
+		whether the player changes its internal state to ERROR: 
+	 </p> 
+	 <p>For more information, see the 
+		<codeph>PSDKDemo</codeph> file. Event listeners are attached to the
+		MediaPlayer instance.
+		<codeblock outputclass="syntax actionscript">case MediaPlayerStatus.ERROR:
+Alert.show(event.error.toString(), “Error occurred”);
+break;</codeblock>
+	 </p>
+	 <p> If the client side network is down, you can use this code to verify. 
+	 </p> 
+	 <p> 
+		<codeblock>psdkutils::PSDKString
+getNetworkDownVerificationUrl() const { return
+_networkDownVerificationUrl; }</codeblock> 
+	 </p> 
+	 <p> API will provide the url that is used to verify if the client side
+		network is down. This should be a valid url, which returns http response code
+		200 on http requests. 
+	 </p> 
+	 <p> 
+		<codeblock>psdkutils::PSDKErrorCode
+ setNetworkDownVerificationUrl(psdkutils::PSDKString value) { 
+_networkDownVerificationUrl = value; return psdkutils::kECSuccess; }</codeblock> 
+	 </p> 
+	 <p> If setNetworkDownVerificationUrl is not set, TVSDK uses the
+		MainManifest url by default to figure if the network is down. 
+	 </p> 
+  </conbody> 
+</concept> 

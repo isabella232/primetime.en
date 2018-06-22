@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ios_display-current-remaining-time"> 
+  <title>Display the current time and remaining time</title> 
+  <shortdesc>You can display the current and remaining time of the content that
+	 is being played. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_CB9C71ACA43546D1B4D77F1BF86ED503"/> 
+	 <steps id="steps_72C7A8C512B246B18CEA760DE0B38D06"> 
+		<step id="step_E737B4A3475B44A88DDFF8696B68C758"> 
+		  <cmd>To implement a display that shows the current and remaining time
+			 of the active content, use the following sample code: 
+		  </cmd>
+		  <choices id="choices_0E5B9321E1394EA0BE91ECFABF3025B8">
+			 <choice id="choice_F14E26B4D91C4551900A423489EE8768">
+				<codeblock outputclass="syntax objective-c">// 1. Register for the PTMediaPlayerTimeChangeNotification
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onMediaPlayerTimeChange:) 
+  name:PTMediaPlayerTimeChangeNotification object:self.player];
+
+...
+
+// 2. Create labels for displaying current and remaining time
+_timeCurrentLabel = [[UILabel alloc] initWithFrame:CGRectMake(50.0, 16.0, 50.0, 21.0)];
+_timeCurrentLabel.text = @"00:00:00";
+_timeCurrentLabel.font = [UIFont boldSystemFontOfSize:12.0];
+_timeCurrentLabel.numberOfLines = 1;
+_timeCurrentLabel.textAlignment = UITextAlignmentCenter;
+_timeCurrentLabel.backgroundColor = [UIColor clearColor];
+_timeCurrentLabel.textColor = 
+  [UIColor colorWithRed:209.0/255.0 green:209.0/255.0 blue:209.0/255.0 alpha:1.0];
+[self addSubview:_timeCurrentLabel];
+
+_timeRemainingLabel = [[UILabel alloc] initWithFrame:CGRectMake(485.0, 16.0, 50.0, 21.0)];
+_timeRemainingLabel.text = @"00:00:00";
+_timeRemainingLabel.font = [UIFont boldSystemFontOfSize:12.0];
+_timeRemainingLabel.numberOfLines = 1;
+_timeRemainingLabel.textAlignment = UITextAlignmentCenter;
+_timeRemainingLabel.backgroundColor = [UIColor clearColor];
+_timeRemainingLabel.textColor = 
+  [UIColor colorWithRed:209.0/255.0 green:209.0/255.0 blue:209.0/255.0 alpha:1.0];
+
+...
+
+// 3. This method is called whenever the player time changes 
+(PTMediaPlayerTimeChangeNotification) - (void) onMediaPlayerTimeChange:(NSNotification *)notification {
+    //The seekable range provides the playback range of a stream 
+    CMTimeRange seekableRange = self.player.seekableRange;
+
+    //Verify if the seekableRange is a valid CMTimeRange 
+    if (CMTIMERANGE_IS_VALID(seekableRange)) {
+        double  duration = CMTimeGetSeconds(seekableRange.duration);
+        double currentTime = CMTimeGetSeconds(self.player.currentItem.currentTime); 
+        if (CMTIME_IS_INDEFINITE(self.player.currentItem.duration)) {
+            //If the duration is indefinite then the content is live. 
+            [_timeCurrentLabel setText:[NSString stringWithFormat:@"--:--"]]; 
+            [_timeRemainingLabel setText:[NSString stringWithFormat:@"Live"]];
+        }
+        else {
+            [_timeCurrentLabel setText:[self timeFormatter:currentTime]]; 
+            [_timeRemainingLabel setText:[self timeFormatter:(duration - currentTime)]];
+        }
+    }
+}
+</codeblock>
+			 </choice>
+		  </choices> 
+		</step>
+		<step id="step_0B421F5C9A85496B967E0D5AD1948D2B">
+		  <cmd>To implement a display that show the progress of an ad and the
+			 remaining time, use the following sample code: 
+		  </cmd>
+		  <choices id="choices_D6A60F13E7F64E969B80EFCEB8C4144F">
+			 <choice id="choice_7FAA058E0900475690EDF4AA90D8C9B3">
+				<codeblock>double adBreakDurationLeft;
+double adBreakDuration;
+float currentAdPosition;
+(void)onMediaPlayerAdBreakStarted:(NSNotification *) notification
+{
+PTAdBreak *adBreak = [notification.userInfo objectForKey:PTMediaPlayerAdBreakKey];
+self.adBreakDuration = CMTimeGetSeconds(adBreak.range.duration);
+self.adBreakDurationLeft = self.adBreakDuration;
+}
+(void)onMediaPlayerAdBreakCompleted:(NSNotification *) notification
+{
+self.adBreakDuration = 0.0f;
+self.adBreakDurationLeft = 0.0f;
+}
+(void)onMediaPlayerAdPlayStarted:(NSNotification *) notification
+{
+self.currentAdPosition = 0;
+}
+(void)onMediaPlayerAdPlayProgress:(NSNotification *) notification
+{
+PTAd *ad = [notification.userInfo objectForKey:PTMediaPlayerAdKey];
+CMTime progress = [(NSValue *)[notification.userInfo objectForKey:PTMediaPlayerAdProgressKey] CMTimeValue];
+if (ad != nil) { // remaining ad playback time in milliseconds self.currentAdPosition = CMTimeGetSeconds(progress); double timeLeft = self.adBreakDurationLeft - (double)self.currentAdPosition; float currentprogress = 1.0f - (timeLeft/self.adBreakDuration); } 
+}
+(void)onMediaPlayerAdPlayCompleted:(NSNotification *) notification
+{
+PTAd *ad = [notification.userInfo objectForKey:PTMediaPlayerAdKey];
+self.adBreakDurationLeft = self.adBreakDurationLeft - ad.primaryAsset.duration;
+}</codeblock>
+			 </choice>
+		  </choices>
+		</step> 
+	 </steps> 
+	 <example id="example_D2FC658F27FC42A0B3E1AEC99B36788B"> 
+	 </example> 
+  </taskbody> 
+</task> 

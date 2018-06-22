@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_about-mediaplayeritem-class"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>About the MediaPlayerItem class</title> 
+  <shortdesc>After you successfully load the <codeph>MediaResource</codeph> object, <ph
+			conkeyref="phrases/primetime-sdk-name"/> creates an instance of the
+			<codeph>MediaPlayerItem</codeph> class to provide access to that resource. </shortdesc> 
+  <conbody> 
+	 <p>The <codeph>MediaResource</codeph> represents a request that is issued by the application layer
+			to the <codeph>MediaPlayer</codeph> instance to load content. </p> 
+	 <p>The <codeph>MediaPlayer</codeph> resolves the media resource, loads the associated manifest
+			file, and parses the manifest. This is the asynchronous part of the resource loading
+			process. The <codeph>MediaPlayerItem</codeph> instance is produced after the resource
+			has been resolved, and this instance is a resolved version of a
+				<codeph>MediaResource</codeph>. <ph conkeyref="phrases/primetime-sdk-name"/>
+			provides access to the newly created <codeph>MediaPlayerItem</codeph> instance through
+				<codeph>MediaPlayer.CurrentItem</codeph>. </p> 
+	 <note type="tip">You must wait for the resource to be successfully loaded
+		before accessing the media player item. 
+	 </note> 
+  </conbody> 
+</concept> 

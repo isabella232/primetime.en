@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ios_receiving-custom-hls-tag-notifications"> 
+  <title>Add listeners for timed metadata notifications</title> 
+  <shortdesc>To receive notifications about tags in the manifest, implement the appropriate
+		notification listener(s). </shortdesc> 
+  <taskbody> 
+	 <context id="context_2E383D86FC844995B0E6B6F10BF5423E"> 
+		<p>You can monitor timed metadata by listening for the following events, which notify your
+				application of related activity:  <ul id="ul_D9A85E244D794B6AB65BE2AB17953B49">
+					<li id="li_E96B9481502B47838D07965DD2ED426C"
+							><codeph>PTTimedMetadataChangedNotification</codeph>: Each time a unique
+						subscribed tag is identified during parsing of the content, <ph
+							conkeyref="phrases/primetime-sdk-name"/> prepares a new
+							<codeph>PTTimedMetadata</codeph> object and dispatches this
+						notification. <p>The object contains the name of the tag to which you
+							subscribed, the local time in the playback where this tag will appear,
+							and other data. </p>
+					</li>
+					<li id="li_754C27C6B36B44FF86D072ABE8843364"
+								><ph><codeph>PTMediaPlayerTimeChangeNotification</codeph></ph>: For
+						live/linear streams where the manifest/playlist refreshes periodically,
+						additional custom tags might appear in the updated playlist/manifest, so
+						additional <codeph>TimedMetadata</codeph> objects might be added to the
+							<codeph>MediaPlayerItem.timedMetadata</codeph> property. <p>This event
+							notifies your application when this happens. </p>
+					</li>
+				</ul>
+			</p> 
+	 </context> 
+	 <steps id="steps_72C7A8C512B246B18CEA760DE0B38D06"> 
+		<step  id="step_62B526EB46E742F79982FECD4406E71E"> 
+		  <cmd>Retrieve the timed metadata in one of the following ways. 
+		  </cmd> 
+		  <choices id="choices_D645459A80984CDFB71CE75D85EC843D"> 
+			 <choice id="choice_F56E4B9527B541BDA2D1D1C0088338CA">Set your
+				application to add itself as a listener to the 
+				<codeph >PTTimedMetadataChangedNotification</codeph>
+				notification and fetch the object using 
+				<codeph>PTTimedMetadataKey</codeph>. 
+				<codeblock outputclass="syntax objective-c">[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTimedMetadataChanged:) 
+  name:PTTimedMetadataChangedNotification object:self.player.currentItem];
+
+- (void) onTimedMetadataChanged:(NSNotification *) notification {
+    NSDictionary *timedMetadataUserInfo = [[NSDictionary alloc]initWithDictionary: notification.userInfo];
+    PTTimedMetadata *newTimedMetadata = [timedMetadataUserInfo objectForKey: PTTimedMetadataKey];
+}</codeblock> 
+			 </choice> 
+			 <choice id="choice_A8DCCAD95EB14610980DC71833552B96">Access the 
+				<codeph>timedMetadataCollection</codeph> property of 
+				<codeph>PTMediaPlayerItem</codeph>, which consists of all the 
+				<codeph>PTTimedMetadata</codeph> objects that have been notified so
+				far. 
+			 </choice> 
+		  </choices> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

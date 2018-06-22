@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_opportunity_generator_dhls">
+ <title>Opportunity Generator</title>
+ <shortdesc/>
+ <conbody>
+  <codeblock outputclass="syntax actionscript">if (resource.metadata != null) {
+ // push in the CustomRangeResolver before other resolvers
+    if (resource.metadata.containsKey(DefaultMetadataKeys.CUSTOM_DELETE_RANGES_METADATA_KEY)
+        result.push(new CustomRangeResolver());
+    else if (resource.metadata.containsKey(DefaultMetadataKeys.CUSTOM_REPLACE_RANGES_METADATA_KEY))
+        result.push(new CustomRangeResolver());
+    if (resource.metadata.containsKey(DefaultMetadataKeys.CUSTOM_AD_MARKERS_METADATA_KEY)) {
+        result.push(new CustomAdResolver());    // no ad insertion with mark ranges
+    }
+    else if (resource.metadata.containsKey(DefaultMetadataKeys.AUDITUDE_METADATA_KEY)) {
+        if (_auditudeResolver == null) {
+              _auditudeResolver = new AuditudeResolver();
+        }
+        result.push(_auditudeResolver);
+    }
+    else if (resource.metadata.containsKey(DefaultMetadataKeys.JSON_METADATA_KEY)) {
+        result.push(new MetadataResolver());
+    }
+}</codeblock>
+ </conbody>
+</concept>

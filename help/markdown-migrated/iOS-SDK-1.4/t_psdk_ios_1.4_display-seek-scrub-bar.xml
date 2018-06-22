@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ios_display-seek-scrub-bar"> 
+  <title>Display a seek scrub bar with the current playback time
+	 position</title> 
+  <shortdesc>You can display the current and remaining time of the content that
+	 is being played. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_CB9C71ACA43546D1B4D77F1BF86ED503"/> 
+	 <steps id="steps_72C7A8C512B246B18CEA760DE0B38D06"> 
+		<step id="step_E737B4A3475B44A88DDFF8696B68C758"> 
+		  <cmd>To implement a scrub bar, use the following sample code: 
+		  </cmd> 
+		  <info>
+			 <codeblock outputclass="syntax objective-c">// 1. Register for the PTMediaPlayerTimeChangeNotification
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onMediaPlayerTimeChange:) 
+  name:PTMediaPlayerTimeChangeNotification object:self.player];
+
+...
+
+_positionSlider = [[UISlider alloc] initWithFrame:CGRectMake(105.0, 14.0, 370, 24)]; 
+[_positionSlider addTarget:self action:@selector(sliderThumbReleased:) 
+  forControlEvents:UIControlEventTouchUpInside];
+
+...
+
+// 2. Cover the event where the user moves to a different location in the stream
+- (void)sliderThumbReleased:(id)sender {
+    double  sliderTime = [_positionSlider  value]; 
+    CMTimeRange seekableRange = self.player.seekableRange;
+    if (CMTIMERANGE_IS_VALID(seekableRange)) {
+        double start = CMTimeGetSeconds(seekableRange.start); 
+        double duration = CMTimeGetSeconds(seekableRange.duration);
+
+        CMTime newTime = CMTimeMakeWithSeconds((sliderTime * duration) + start, AD_TIMESCALE); 
+        [self.player seekToTime:newTime];
+    }
+}
+
+...
+
+// 3. This method is called whenever the player time changes 
+(PTMediaPlayerTimeChangeNotification)
+- (void) onMediaPlayerTimeChange:(NSNotification *)notification {
+    CMTimeRange seekableRange = self.player.seekableRange;
+
+    if (CMTIMERANGE_IS_VALID(seekableRange)) {
+        double start = CMTimeGetSeconds(seekableRange.start); 
+        double duration = CMTimeGetSeconds(seekableRange.duration);
+        double currentTime = CMTimeGetSeconds(self.player.currentItem.currentTime);
+
+        if (duration &gt; 0) {
+            //Set the position slider value on the current playback time 
+            [_positionSlider setValue:((currentTime - start) / duration)];
+        }
+    }
+}
+</codeblock>
+		  </info>
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

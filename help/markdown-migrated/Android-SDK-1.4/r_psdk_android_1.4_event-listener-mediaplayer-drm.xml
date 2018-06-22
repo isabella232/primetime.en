@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="r_psdk_amediaplayer-drmeventlistener"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>DRM events</title> 
+	<shortdesc><ph conkeyref="phrases/primetime-sdk-name"/>
+	 dispatches digital rights management (DRM) events in response to DRM-related
+	 operations such as when new DRM metadata becomes available. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn>To be notified about all DRM-related events, register an implementation of
+				<codeph>MediaPlayer.DRMEventListener</codeph> that includes the following callback.
+				<table frame="all" colsep="1" rowsep="1">
+				<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA">
+					<colspec colnum="1" colname="1" colwidth="3*"/>
+					<colspec colnum="2" colname="2" colwidth="1*"/>
+					<thead>
+						<row rowsep="1">
+							<entry colname="1">Event </entry>
+							<entry colname="2">Meaning </entry>
+						</row>
+					</thead>
+					<tbody>
+						<row rowsep="0">
+							<entry colname="1"><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.DRMEventListener.html#onDRMMetadata(DRMMetadataInfo)"
+									format="html" scope="external">onDRMMetadata</xref>
+								<codeph>(DRMMetadataInfo drmMetadataInfo) </codeph>
+							</entry>
+							<entry colname="2">New DRM metadata is available. </entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</refsyn> 
+  </refbody> 
+</reference> 

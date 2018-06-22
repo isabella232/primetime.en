@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ad-node-structure-android"> 
+  <title>Advertising Node Structure with TimeRanges</title> 
+  <shortdesc/> 
+  <conbody> 
+	 <p> 
+		<fig id="fig_CD71214FBF8945729FC34CD2F0047EF8">
+				<image href="images/psdk_ad-node-structure_web.png"
+					id="image_ABD2687ADE654A34AE316B9809322897"/>
+			</fig> 
+	 </p> 
+  </conbody> 
+</concept> 

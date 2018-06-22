@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ref_pass-analytics-setup">
+    <title>Configure Adobe Analytics Reporting</title>
+    <shortdesc>You can set up the Reference Implementation to use Adobe Analytics
+        reporting.</shortdesc>
+    <taskbody>
+        <context>
+            <p>The Reference Implementation is configured to send <ph
+                    conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auth-name"/> event data
+                to Adobe Analytics using the Adobe Mobile Library bundled within the Primetime SDK.
+                To enable and use the event data sent from the application, you must first create an
+                Adobe Analytics account. Once the account is created:<ol id="ol_o33_pd5_xp">
+                    <li>Configure the application with your account information; and</li>
+                    <li>Create processing rules to customize how the event data is displayed within
+                        your reports.</li>
+                </ol> The table below presents the data sent to Adobe Analytics:</p>
+            <table id="table_qys_x25_xp">
+                <tgroup cols="3">
+                    <tbody>
+                        <row>
+                            <entry>Action Name</entry>
+                            <entry><codeph>a.media.pass.event.MvpdSelection</codeph></entry>
+                            <entry>The user selected a Multi-channel Video Programming Distirbutor
+                                (MVPD) in a selection dialog</entry>
+                        </row>
+                        <row>
+                            <entry>Context Data </entry>
+                            <entry><codeph>a.media.pass.MvpdId (String) </codeph></entry>
+                            <entry>The user-selected MVPD</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.ClientType</codeph></entry>
+                            <entry>(String) The client type as either "flash", "html5", "ios", or
+                                "android"</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Action Name</entry>
+                            <entry><codeph>a.media.pass.event.AuthenticationDetection</codeph></entry>
+                            <entry>An Authentication workflow completed</entry>
+                        </row>
+                        <row>
+                            <entry>Context Data </entry>
+                            <entry><codeph>a.media.pass.Successful</codeph></entry>
+                            <entry>(Boolean) Whether the token request was successful, true or
+                                false</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.MvpdId</codeph></entry>
+                            <entry>(String) The user-selected MVPD</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.Guid</codeph></entry>
+                            <entry>(String) A tracking ID</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.Cached</codeph></entry>
+                            <entry>(Boolean) Token already in cache, true or false</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.ClientType</codeph></entry>
+                            <entry>(String) The client type as either "flash", "html5", "ios", or
+                                "android"</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Action Name</entry>
+                            <entry><codeph>a.media.pass.event.AuthorizationDetection</codeph></entry>
+                            <entry>An Authorization workflow completed</entry>
+                        </row>
+                        <row>
+                            <entry>Context Data </entry>
+                            <entry><codeph>a.media.pass.Successful</codeph></entry>
+                            <entry>(Boolean) Whether the token request was successful, true or
+                                false</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.MvpdId</codeph></entry>
+                            <entry>(String) The user selected MVPD</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.Guid</codeph></entry>
+                            <entry>(String) A tracking ID</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.Cached</codeph></entry>
+                            <entry>(Boolean) Token already in cache, true or false</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.Error</codeph></entry>
+                            <entry>(String) The error if the authorization attempt failed</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.ErrorDetails</codeph></entry>
+                            <entry>(String) Further error details</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry><codeph>a.media.pass.ClientType</codeph></entry>
+                            <entry>(String) The client type as either "flash", "html5", "ios", or
+                                "android"</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </context>
+        <steps>
+            <step>
+                <cmd>Configure the application for use with Adobe Marketing Cloud.</cmd>
+                <info>To enable sending Primetime <ph
+                        conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auth-name"/> data to
+                    Adobe Analytics, an <filepath>ADBMobileConfig.json</filepath> configuration file
+                    must be added to the Reference Implementation at compile time. Note that this is
+                    exactly the same configuration file used by the Primetime SDK to send Video
+                    Analytics data to the Marketing Cloud. Please consult the <xref
+                        href="http://microsite.omniture.com/t2/help/en_US/reference/" format="html"
+                        scope="external">Adobe Marketing Cloud documentation</xref> for more
+                    information on configuring an application with your Adobe Analytics
+                    account.</info>
+            </step>
+            <step>
+                <cmd>Create processing rules.</cmd>
+                <info>The <ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auth-name"/>
+                    event data sent by the Reference Implementation will not automatically appear in
+                    your analytics reports. You must first make use of the data by creating
+                    processing rules. Please consult the <xref
+                        href="http://microsite.omniture.com/t2/help/en_US/reference/processing_rules.html"
+                        format="html" scope="external">Adobe Analytics documentation on creating
+                        processing rules</xref>.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

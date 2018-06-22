@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="enter-a-stream"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Enter a stream at a specific time</title> 
+  <shortdesc>By default, when starting playback, VOD media starts at 0 and live media starts at the
+		client live point <codeph>(DefaultMediaPlayer.LIVE_POINT)</codeph>.  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_632BBD815BF04B0AAA7D5662A101F16E"> 
+		<step id="step_0CF27944C1CC4AFE81E41DF09D24F223" > 
+		  <cmd>Pass a position to 
+			 <codeph>MediaPlayer.prepareToPlay</codeph>. 
+		  </cmd> 
+		  <info> 
+			 <p><ph conkeyref="phrases/primetime-sdk-name"/> considers the given
+				position to be the starting point for the asset. No seek operation is required.
+				If the position is not inside the seekable range, 
+				<ph conkeyref="phrases/primetime-sdk-name"/> uses the default
+				position. 
+			 </p> 
+			 <p>For example: 
+				<codeblock  outputclass="syntax actionscript">var seekableRange:TimeRange=_mediaPlayer.seekableRange;
+if (seekableRange.contains(desiredSeekPosition) {
+    _mediaPlayer.seek(desiredSeekPosition);
+}</codeblock> 
+			 </p> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

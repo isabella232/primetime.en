@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="t_psdk_android_inspect-playback-timeline"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Inspect the playback timeline</title> 
+  <shortdesc>You can obtain a description of the timeline associated with the
+  	currently selected item being played by <ph conkeyref="phrases/primetime-sdk-name"/>.
+	 This is most useful when your application displays a custom scrub-bar control
+	 in which the content sections that correspond to ad content are identified. 
+  </shortdesc> 
+  <taskbody> 
+	 <context> 
+		<p>Here is an example implementation as seen in the following screen shot.  <fig frame="all">
+					<image href="images/inspect-playback.jpg" height="230.400pt" width="368.641pt"
+						align="left" placement="break"/>
+				</fig>
+			</p> 
+	 </context> 
+	 <steps> 
+		<step>
+				<cmd>Access the <codeph>Timeline</codeph> object in the <codeph>MediaPlayer</codeph>
+					using the <codeph>get</codeph> method. </cmd>
+				<info>
+					<p>The <codeph>Timeline</codeph> class encapsulates the information that is
+						related to the contents of the timeline that is associated with the media
+						item that is currently loaded by the <codeph>MediaPlayer</codeph> instance.
+						The <codeph>Timeline</codeph> class provides access to a read-only view of
+						the underlying timeline. The <codeph>Timeline</codeph> class provides a
+						getter method  for obtaining all placed <codeph>TimelineMarker</codeph>
+						objects. </p>
+				</info>
+			</step> 
+		<step> 
+		  <cmd>Iterate through the list of 
+			 <codeph>TimelineMarkers</codeph> and use the returned information to
+			 implement your timeline. 
+		  </cmd> 
+		  <info> 
+			 <p>A 
+				<codeph>TimelineMarker</codeph> object contains two pieces of
+				information: 
+			 </p> 
+			 <ul> 
+				<li>Position of the marker on the timeline (in milliseconds)</li> 
+				<li>Duration of the marker on the timeline (in milliseconds)</li> 
+			 </ul> 
+		  </info> 
+		</step> 
+	 </steps> 
+	 <example> 
+		<codeblock outputclass="syntax actionscript">// access the timeline object
+var timeline:Timeline = mediaPlayer.timeline;
+
+// iterate through the list of TimelineMarkers
+var markers:Vector.&lt;TimelineMarker&gt; = timeline.timelineMarkers;
+markers.forEach(function(item:TimelineMarker, 
+                         index:int, 
+                         vector:Vector.&lt;TimelineMarker&gt;):void {
+   
+    // the start position of the marker
+    var startPos:Number = item.time;
+
+    // the duration of the marker
+    var duration:Number = item.duration;
+
+    // draw the marker on the scrub-bar
+}</codeblock> 
+	 </example> 
+  </taskbody> 
+</task> 

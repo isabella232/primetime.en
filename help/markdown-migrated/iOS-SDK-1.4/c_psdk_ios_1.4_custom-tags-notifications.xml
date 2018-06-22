@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="c_psdk_android_notifications-for-ads"> 
+  <title>Notifications for manifest tags</title> 
+  <shortdesc>The 
+	 <ph ><ph conref="phrase_library_ios.xml#c_psdk_phrase-library/primetime-sdk-name"><?xm-replace_text Phrase?></ph></ph><ph
+	 platform="dhls">MediaPlayerItem.timedMetadata property</ph> gives you access to
+	 all the TimedMetadata objects created from playlist/manifest tags or from ID3
+	 tags within the media stream. 
+	 <ph platform="dhls">The MediaPlayerItem.hasTimedMetadata property indicates
+		whether a subscribed custom tag is present in the current media.</ph> 
+	 <draft-comment>Q: To do-- I got this Short Description paragraph too late
+		to check on the names of these things for Android and iOS. Come back later and
+		figure it out, or ask. 
+	 </draft-comment> 
+  </shortdesc> 
+  <conbody> 
+	 <draft-comment>WRITER: The DHLS version following is newer and probably
+		more useful, but didn't have time to figure out the equivalent Android &amp;
+		iOS version, so left them as they were for now. (1.3) Also didn't have time to
+		figure out where to put the possibly-useful DHLS references within the
+		Android/iOS version (that now won't appear int he doc). 
+	 </draft-comment> 
+	 <p platform="dhls">You can monitor timed metadata by listening for the
+		following events, which notify your application of related activity: 
+	 <ul id="ul_75702B708AF34A5BA1A3EFEE72B83C92"> 
+		<li
+		id="li_F276D19C62A5422C93456CA15C75FCCF">MediaPlayerItemEvent.ITEM_CREATED: The
+		  initial list of TimedMetadata objects is available after the MediaPlayerItem is
+		  created. This event notifies your application when this happens. 
+		</li> 
+		<li
+		id="li_754C27C6B36B44FF86D072ABE8843364">MediaPlayerItemEvent.ITEM_UPDATED: For
+		  live/linear streams where the manifest/playlist refreshes periodically,
+		  additional custom tags might appear in the updated playlist/manifest, so
+		  additional TimedMetadata objects might be added to the
+		  MediaPlayerItem.timedMetadata property. This event notifies your application
+		  when this happens. 
+		</li> 
+		<li
+		id="li_95A2EA3AD2B34B9DAC2A65B0FAFADD06">TimedMetadataEvent.TIMED_METADATA_AVAILABLE:
+		  Every time that a new TimedMetadata object is created, this event is dispatched
+		  by the MediaPlayer. This event is not dispatched for the TimedMetadata object
+		  created during the initialization phase. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p >The event 
+		<codeph
+		platform="android">MediaPlayer.PlaybackEventListener.onTimedMetadata</codeph><codeph
+		platform="dhls">events.TimedMetadataEvent</codeph><codeph
+		>PTTimedMetadataChangedNotification</codeph> notifies your
+		application at the first occurrence in the manifest of each tag that matches a
+		subscribed tag name. 
+		<draft-comment>Q: I guessed about the DHLS event. 
+		</draft-comment> 
+	 </p> 
+	 <p >When the <ph conref="phrase_library_ios.xml#c_psdk_phrase-library/primetime-sdk-name"><?xm-replace_text Phrase?></ph> encounters the first occurrence of
+		a subscribed tag in the 
+		<codeph>m3u8</codeph> playlist, it creates a new 
+		<codeph platform="android dhls">TimedMetadata</codeph><codeph
+		>PTTimedMetadata</codeph> object for this tag. 
+	 </p> 
+	 <p platform="android">The 
+		<codeph>MediaPlayerItem.hasTimedMetadata</codeph> indicates when this
+		information is available, and you can retrieve it with 
+		<codeph>MediaPlayerItem.getTimedMetadata</codeph>. 
+		<draft-comment>Q: The iOS version says this; what's the equivalent for
+		  Android? "The PTTimedMetadata is added to the timedMetadataCollection in
+		  PTMediaPlayerItem and the <ph conref="phrase_library_ios.xml#c_psdk_phrase-library/primetime-sdk-name"><?xm-replace_text Phrase?></ph> issues a PTTimedMetadataChangedNotification
+		  notification and includes this new object in the notification’s userInfo
+		  dictionary." 
+		</draft-comment> 
+	 </p> 
+	 <p >The 
+		<codeph>PTTimedMetadata</codeph> is added to the 
+		<codeph>timedMetadataCollection</codeph> in 
+		<codeph>PTMediaPlayerItem</codeph> and the <ph conref="phrase_library_ios.xml#c_psdk_phrase-library/primetime-sdk-name"><?xm-replace_text Phrase?></ph> issues a 
+		<codeph>PTTimedMetadataChangedNotification</codeph> notification and
+		includes this new object in the notification’s 
+		<codeph>userInfo</codeph> dictionary. 
+	 </p> 
+	 <example id="example_4F0FD28F92DF4F7FBD7E8C3E78081EB1"> 
+		<codeblock outputclass="syntax java" platform="android">/**
+ * Interface definition of a set of callback to be invoked during playback.
+ */
+ interface PlaybackEventListener extends EventListener { 
+	/**
+	 * Called when a new timed metadata is discovered in the manifest.
+	 * @param timedMetadata the object encapsulating the metadata information,
+	 * such as the relative time, type, tag name and id etc.
+	 */
+	void onTimedMetadata(TimedMetadata timedMetadata);
+	...
+}</codeblock> 
+	 </example> 
+  </conbody> 
+</concept> 

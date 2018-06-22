@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="control_video_view"> 
+  <title>Control the position and size of the video view</title> 
+  <shortdesc>You can control the position and size of the video view using the
+			<codeph>MediaPlayerView</codeph> object.  </shortdesc> 
+  <taskbody> 
+	 <context> 
+		<p><ph conkeyref="phrases/primetime-sdk-name"/>
+		  by default attempts to maintain the aspect ratio of the video view whenever the
+		  size or the position of the video changes (due to a change made by the
+		  application, or by a profile switch, or a content switch, etc.). 
+		</p> 
+		<p>You can override the default aspect ratio behavior by specifying a different 
+		  <i>scale policy</i>. Specify the scale policy using the 
+		  <codeph>MediaPlayerView</codeph> object's 
+		  <codeph>scalePolicy</codeph> property. The 
+		  <codeph>MediaPlayerView</codeph>'s default scale policy is set with an
+		  instance of the 
+		  <codeph>MaintainAspectRatioScalePolicy</codeph> class. To reset the
+		  scale policy, replace the default instance of 
+		  <codeph>MaintainAspectRatioScalePolicy</codeph> on 
+		  <codeph>MediaPlayerView.scalePolicy</codeph> with your own policy. (You
+		  cannot set the 
+		  <codeph>scalePolicy</codeph> property to a null value.) 
+		</p> 
+	 </context> 
+	 <steps> 
+		<step> 
+		  <cmd>Implement the 
+			 <codeph>MediaPlayerViewScalePolicy</codeph> interface to create your
+			 own scale policy. 
+		  </cmd> 
+		  <info>The <codeph>MediaPlayerViewScalePolicy</codeph> has one method: <codeblock outputclass="syntax actionscript">public function adjust(viewPort:Rectangle,
+  videoWidth:Number, videoHeight:Number):Rectangle;</codeblock>
+					<note><ph conkeyref="phrases/primetime-sdk-name"/> uses a
+							<codeph>StageVideo</codeph> object for displaying the video, and because
+							<codeph>StageVideo</codeph> objects are not on the display list, the
+							<codeph>viewPort</codeph> parameter contains the absolute coordinates of
+						the video. <p>For example:
+							<codeblock outputclass="syntax actionscript">public class CustomScalePolicy implements MediaPlayerViewScalePolicy {
+    /**
+     * Default constructor.
+     */
+    public function CustomScalePolicy() {
+    }
+
+    public function adjust(viewPort:Rectangle, 
+                           videoWidth:Number, 
+                           videoHeight:Number):Rectangle {
+        return customAdjustment();
+    }
+
+    public function customAdjustment():Rectangle {
+        /* Your custom adjustment here */
+        [...]
+    }
+}</codeblock>
+						</p></note>
+				</info> 
+		</step> 
+		<step> 
+		  <cmd>Assign your implementation to the 
+			 <codeph>MediaPlayerView</codeph> property. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax actionscript">var view:MediaPlayerView = MediaPlayerView.create(stage.stageVideos[0]);
+view.scalePolicy = new CustomScalePolicy();</codeblock> 
+		  </info> 
+		</step> 
+		<step> 
+		  <cmd>Add your view to the Media Player's 
+			 <codeph>view</codeph> property. 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax actionscript">addChild(view);
+
+mediaPlayer.view = view;</codeblock> 
+		  </info> 
+		</step> 
+	 </steps> 
+	 <example><b>For example: Scale the video to fill the entire video view, without maintaining aspect
+				ratio:</b>
+			<codeblock outputclass="syntax actionscript">package com.adobe.mediacore.samples.utils {
+    import com.adobe.mediacore.view.MediaPlayerViewScalePolicy;
+    import flash.geom.Rectangle;
+
+    /**
+    * A very simple custom scale policy - the video will fill the entire
+    * allocated space. The aspect ratio will not be kept.
+    */
+    public class CustomScalePolicy implements MediaPlayerViewScalePolicy {
+
+        /**
+        * Default constructor.
+        */
+        public function CustomScalePolicy() {
+        }
+
+        public function adjust(viewPort:Rectangle,
+                               videoWidth:Number, 
+                               videoHeight:Number):Rectangle {
+            return viewPort;
+        }
+    }
+}
+
+var view:MediaPlayerView = MediaPlayerView.create(stage.stageVideos[0]);
+view.scalePolicy = new CustomScalePolicy();
+addChild(view);
+mediaPlayer.view = view;</codeblock>
+		</example> 
+  </taskbody> 
+</task> 

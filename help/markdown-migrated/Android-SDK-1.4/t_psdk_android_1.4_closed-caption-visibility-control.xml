@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="control-closed-caption-visibility"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Control closed-caption visibility</title> 
+  <shortdesc>You can control the visibility of closed captions. When visibility
+	 is on, the currently selected track is displayed. If you change which track is
+	 current, the visibility setting remains the same. 
+  </shortdesc> 
+  <taskbody> 
+	 <context> 
+		<note type="tip"> If closed caption text is displayed when the player
+		  enters the seek mode, the text no longer displays after the seek completes.
+		  Instead, after a few seconds, 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> displays the next closed
+		  caption text in the video after the ending seek position. 
+		</note> 
+		<note>The visibility values for closed captions are defined in
+					<codeph>MediaPlayer.Visibility</codeph>.
+				<codeblock outputclass="syntax java">enum Visibility {
+    VISIBLE, 
+    INVISIBLE
+}</codeblock>
+			</note> 
+	 </context> 
+	 <steps> 
+		<step>
+				<cmd>Wait for the MediaPlayer to have at least the PREPARED state (see <xref
+						keyref="ui-state-prepared-wait-for"/>). </cmd>
+			</step> 
+		<step> 
+		  <cmd>To get the current visibility setting for closed captions, use the
+			 getter method in MediaPlayer, which returns a visibility value. 
+		  </cmd> 
+		  <stepxmp> 
+			 <codeblock  outputclass="syntax java">Visibility getCCVisibility() throws IllegalStateException;</codeblock> 
+		  </stepxmp> 
+		</step> 
+		<step>
+				<cmd>To change the visibility for closed captions, use the setter method, passing a
+					visibility value from <codeph>MediaPlayer.Visibility</codeph>. </cmd>
+				<stepxmp>For example:
+					<codeblock outputclass="syntax java">mediaPlayer.setCCVisibility(Visibility.VISIBLE);</codeblock>
+				</stepxmp>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

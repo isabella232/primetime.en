@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<reference id="r_psdk_android_logging-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Logging classes</title> 
+  <shortdesc>These classes enable you to customize logging. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_E81D5F82CC3D47BA81B25D2F4CA4EED5">Package: <xref
+				href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/package-detail.html"
+				format="html" scope="external">com.adobe.mediacore.logging</xref>
+		</refsyn> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_389797D3CEF14EA2862E0B20C6E6CC41"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="27*"/> 
+		  <colspec colnum="2" colname="2" colwidth="73*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1"> 
+				  <p>Name 
+				  </p> 
+				</entry> 
+				<entry colname="2"> 
+				  <p>Description 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/BaseLogger.html"
+									format="html" scope="external">BaseLogger</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. Base implementation class of logger
+				  interface. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/DefaultLogger.html"
+									format="html" scope="external">DefaultLogger</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. Default logger sends all incoming message
+				  to trace. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/Log.html"
+									format="html" scope="external">Log</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. Provides access to the log system. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/LogFactory.html"
+									format="html" scope="external">LogFactory</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. Default logging factory.</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/Logger.html"
+									format="html" scope="external">Logger</xref></codeph>
+						</entry> 
+				<entry colname="2">Interface. The methods required to implement a custom logger for the <ph
+								conkeyref="phrases/primetime-sdk-name"
+								><?xm-replace_text Phrase?></ph>. </entry> 
+			 </row> 
+			 <row rowsep="0" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/NullLogger.html"
+									format="html" scope="external">NullLogger</xref></codeph>
+						</entry> 
+				<entry colname="2">Class. Logger that logs nothing.</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </refbody> 
+</reference> 

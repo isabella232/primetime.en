@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="notification-callbacks"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Listen for Primetime Player events</title> 
+  <shortdesc>Events from <ph conkeyref="phrases/primetime-sdk-name"/> indicate the status of the player, errors that occur, the completion
+		of actions that you have requested, such as a video starting to play, or actions that occur
+		implicitly, such as an ad completing. </shortdesc> 
+  <conbody> 
+	 <p>Because your application needs to respond to many of these events, you need to implement
+			event-handling routines and register these routines with <ph
+				conkeyref="phrases/primetime-sdk-name"/>. The routines call the relevant <ph
+				conkeyref="phrases/primetime-sdk-name"/> methods to respond appropriately. </p> 
+	 <p>More information about events: <ul id="ul_8642075E92DD454FB0BB03B30C1981A6">
+				<li id="li_5B9ACAE061EB4ECDBC7002C055836EB3">The real-time nature of video playback
+					requires asynchronous (non-blocking) activity for many <ph conkeyref="phrases/primetime-sdk-name"/> operations. </li>
+				<li id="li_273E919845E948659DE5837DBD7041B5"><ph conkeyref="phrases/primetime-sdk-name"/> supports an event-driven video
+					player. <p>It provides events that correspond to all important steps in the
+						playing process. You register those events with your platform's event
+						mechanism and create event handlers that will be called when those events
+						occur. <term>Event Handlers</term> are also known as callback routines or
+						event listeners. <ph conkeyref="phrases/primetime-sdk-name"/> provides a complete range of methods that can be used
+						by the event handlers. </p>
+				</li>
+				<li id="li_5A148EDF27DC403A8E38EDB21CAA193E">Your application generally initiates
+					non-blocking operations, such as requesting that a video start playing. <p><ph conkeyref="phrases/primetime-sdk-name"/>
+						communicates asynchronously with your application by dispatching events,
+						such as when the video starts playing and an event when the video finishes.
+						Other events can indicate status changes in your player and error
+						conditions. Your event handlers take appropriate actions. </p>
+				</li>
+			</ul>
+		</p> 
+  </conbody> 
+</concept> 

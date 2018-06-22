@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ref_exploring-code"> 
+  <title>Explore the code</title> 
+  <shortdesc>The Primetime reference implementation has some especially
+	 important files that you use to configure your player. 
+  </shortdesc> 
+  <conbody> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_ios_subscribing-to-custom-hls-tags"> 
+  <title>Subscribe to custom tags</title> 
+  <shortdesc>
+		<ph conkeyref="phrases/primetime-sdk-name"/> prepares <codeph>PTTimedMetadata</codeph>
+		objects for subscribed tags each time these objects are encountered in the content manifest. </shortdesc> 
+  <taskbody> 
+	 <prereq id="prereq_97F61DC7EF5B4886B40F6BA733DA850C"> 
+		<p>Before the playback starts, you must subscribe to the tags. 
+		</p> 
+	 </prereq> 
+	 <context id="context_4A7DAA0F94244CEB83989280609474D9"> 
+		<p>To be notified about custom tags in HLS manifests: 
+		</p> 
+	 </context> 
+	 <steps id="steps_6A14089118AF4B628BB8FB4D02D4F3C1"> 
+		<step id="step_39E5B7DBA6624B42B9A62E94BD8F2D74">
+				<cmd>Set the custom ad tag names globally by passing an array that contains the
+					custom tags to <codeph>setSubscribedTags</codeph> in
+						<codeph>PTSDKConfig</codeph>. </cmd>
+				<info>
+					<note type="important">You must include the <codeph>#</codeph> prefix when
+						working with HLS streams. </note>
+					<p>For example:
+						<codeblock outputclass="syntax objective-c">NSArray *customHLSTags = [NSArray arrayWithObjects:@"#EXT-OATCLS-SCTE35",@"#EXT_CUSTOM_TAG2",nil];
+[PTSDKConfig  setSubscribedTags:customHLSTags];</codeblock>
+					</p>
+				</info>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ac3_5.1"> 
+  <title>AC-3 5.1 format</title> 
+  <shortdesc>The Audio Codec 3 (AC-3, also known as Dolby Digital®) 5.1 format,
+	 allows content providers to compress the size of multichannel audio files
+	 without impairing the sound quality. AC-3 is a 5.1 format, which means that it
+	 provides five full-bandwidth channels for a richer user experience. 
+  </shortdesc> 
+  <conbody> 
+	 <p>For more information, see 
+		<xref href="http://www.dolby.com/us/en/technologies/dolby-digital.html"
+		 scope="external" format="html">Dolby Digital 5.1</xref>. 
+	 </p> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> supports the following AC-3 5.1 features: 
+	 <ul id="ul_DB8821A59F294AA289E6BC2E225DF551"> 
+		<li id="li_CA7A70043E3A4A1DB29A2C51E00D4CD8">AC-3 surround audio 
+		</li> 
+		<li id="li_C8CB35C6F2CA4368A5CB2DCF28B3F004">Mixed/unmixed streams for
+		  surround audio type 
+		</li> 
+		<li id="li_5CE3307ADC9344708CB8A16FF643DB87">Ability to query the device
+		  to see if the surround audio codec is available on the device. 
+		  <p>The results determine which preferred audio codec type is selected.
+			 The manifest with audio codec type that the device is not going to use is
+			 discarded. For example, if the AC-3 format has been selected, profiles with the
+			 Advanced Audio Coding (AAC) format are not considered. 
+		  </p>
+		</li> 
+		<li id="li_56A985B23E154C1A930680241573FE35">Passthrough mode 
+		  <p>In passthrough mode, instead of decoding the media from the AC-3 5.1
+			 format to a multichannel pulse-code modulation (PCM) format, the <ph conkeyref="phrases/primetime-sdk-name"/> gets
+			 modified or unmodified (depending on the device) Dolby media from the Decoder.
+			 This media is sent to the audio device (speaker or receiver) so that the audio
+			 device can decode and play back the Dolby surround stream. 
+		  </p>
+		</li> 
+	 </ul>
+	 </p> 
+	 <note type="important"><ph conkeyref="phrases/primetime-sdk-name"/> supports the AC-3 5.1 features only on the
+		device Amazon Fire TV 1st generation.
+	 </note> 
+	 <p>The following AC-3 5.1 features are not supported: 
+	 <ul id="ul_30DB19872DD2421A8F72E5DA673CDD1E"> 
+		<li id="li_7B7C3D6C82FA493AAACE798B521AF63C">Multichannel AAC audio 
+		</li> 
+		<li id="li_C8E45D3A1E4148A69E1757A478B89A26">ABR across different codecs
+		  (AAC - AC3) 
+		</li> 
+	 </ul>
+	 </p> 
+	 <section id="section_0D7E717BE18B418D817EE017EF2375D1"> 
+		<title>Selecting supported media</title> 
+		<p>Here is the typical workflow that occurs when <ph conkeyref="phrases/primetime-sdk-name"/> finds a manifest
+		  with AC-3 and AAC media: 
+		<ol id="ol_49589AE23A5347D294259021EF295932"> 
+		  <li id="li_C1233F5B1DBF4A138D85E3C871294688"><ph conkeyref="phrases/primetime-sdk-name"/> queries which codec
+			 the device can support. 
+		  </li> 
+		  <li id="li_501112F3976946189C991FFAA819D698">The codec with the higher
+			 quality is selected. 
+			 <p>Here is the order in which quality is selected:
+			 <ol id="ol_E7EC888A6B944AECBAB1003E7D318F12">
+				<li id="li_09012E25E6D94740820231FF20EB0C11">AC-3
+				</li>
+				<li id="li_52813CAC59BB4CE5A13B8383D1181031">AAC
+				</li>
+			 </ol> 
+			 </p>
+		  </li> 
+		  <li id="li_3B640C5FC14848A8A94AC8EF209CE2CC"><ph conkeyref="phrases/primetime-sdk-name"/> ignores profiles
+			 with other audio codec types. 
+		  </li> 
+		</ol>
+		<note type="tip"> The application cannot obtain information about ignored
+		  profiles. 
+		</note>
+		</p> 
+	 </section> 
+	 <section id="section_D2AFBF33D3904AC2A7C653A60C3A0CD3"> 
+		<title>Determining the output mode</title> 
+		<p>While processing AC-3 media, if an Android device is connected to the
+		  speaker system, the decision to play content in surround mode or stereo mode
+		  depends on how the device is configured. 
+		<table id="table_D502BA77AAB4455E86DD0F6B417C5629"> 
+		  <tgroup cols="3"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <colspec colnum="3" colname="col3" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1"> 
+				  </entry> 
+				  <entry colname="col2">Surround sound 
+				  </entry> 
+				  <entry colname="col3">Stereo speaker 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Device configuration Dolby on (or auto) 
+				  </entry> 
+				  <entry colname="col2">Device configuration Dolby on (or auto) 
+				  </entry> 
+				  <entry colname="col3">Stereo mode 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Device configuration Dolby off 
+				  </entry> 
+				  <entry colname="col2">Stereo mode 
+				  </entry> 
+				  <entry colname="col3">Stereo mode 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table>
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

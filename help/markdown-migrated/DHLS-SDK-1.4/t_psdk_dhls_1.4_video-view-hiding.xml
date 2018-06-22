@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_hiding_frame"> 
+  <title>Hide a video view</title> 
+  <shortdesc>After a <codeph>MediaPlayer</codeph> view has been used to play video, you can hide it
+		and display it again by using a <ph
+			conkeyref="phrases/primetime-sdk-name"/> method
+		or manually. </shortdesc> 
+  <taskbody> 
+	 <prereq id="prereq_9FCB3EAAC293498A8CE88504E221F7FC"> You must pause a
+		video before clearing it or moving it from the display. 
+	 </prereq> 
+	 <steps-unordered id="steps-unordered_E40D5CEC39E04E54AF4E5B943F44BAD5"> 
+		<step id="step_2803D07B2D8943A98D83C0490C20B8B4"> 
+		  <cmd>Option 1: Clear the video frame with 
+			 <codeph>MediaPlayer.clearVideo</codeph>​ and replace the frame later.
+			 
+		  </cmd> 
+		  <substeps id="substeps_EE6FA877681043B889522CCD95E5D9BC"> 
+			 <substep id="substep_60008F65750C49469371C171FFA72985"> 
+				<cmd>Pause the video that you want to hide. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_8B0925F35B854392947C8F04AEA7C664"> 
+				<cmd>Remove the displayed video frame by calling 
+				  <codeph>MediaPlayer.clearVideo</codeph>. 
+				</cmd> 
+			 </substep> 
+			 <substep id="substep_952DAC7E5E9842D5962AA51826D494E8">
+						<cmd>To reset the <codeph>MediaPlayer</codeph> so that it can be played
+							again, call <codeph>replaceCurrentResource</codeph> or
+								<codeph>replaceCurrentItem</codeph>. </cmd>
+					</substep> 
+		  </substeps> 
+		</step> 
+		<step id="step_473113B67E1F445C8C4454CA94E38AD5">
+				<cmd>Option 2: Move the <codeph>MediaPlayer</codeph> view off the screen and move it
+					back later without having to replace it. </cmd>
+				<substeps id="substeps_8964D963750B49F78F0A82380B9FBE50">
+					<substep id="substep_2659911CB516447C83DA7403EE57C034">
+						<cmd>Pause the video that you want to hide. </cmd>
+					</substep>
+					<substep id="substep_1246049DFB75497EBF9B75DE816847BD">
+						<cmd>Move the view out of the stage. For example: </cmd>
+						<stepxmp>
+							<codeblock>view.x = -300;
+view.y = -300;</codeblock>
+						</stepxmp>
+					</substep>
+					<substep id="substep_24307F6569054C209BEDFF7BB5FD957F">
+						<cmd>To display the video again, move the view back into the stage. </cmd>
+					</substep>
+				</substeps>
+			</step> 
+	 </steps-unordered> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="id3-metadata-retrieve"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>ID3 tags</title> 
+  <shortdesc>ID3 tags provide information about an audio or video file, such as
+	 the title of the file or the name of the artist. 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> detects ID3 tags at the
+	 transport stream (TS) segment level in HLS streams and dispatches an event. The
+	 application can extract data from the tag. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_6B1E9DC4E358468FB1E66FF393604C48"> 
+		<p > 
+		  <note type="important"><ph conkeyref="phrases/primetime-sdk-name"/>
+			 recognizes ID3 metadata (version 2.3.0 or 2.4.0) in audio (AAC) and video
+			 (H.264) streams, in any of its possible encodings (ASCII, UTF8, UTF16-BE, or
+			 UTF16-LE). It ignores ID3 tags that are not in one of the recognized versions
+			 or formats. Unspecified encoding is treated as UTF8. 
+		  </note> 
+		</p> 
+		<p >When 
+		  <ph conkeyref="phrases/primetime-sdk-name"/> detects ID3 metadata, it
+		  issues a notification with the following data: 
+		<ul id="ul_9A7FC61737CD466EAE2F68EF93590D25"> 
+		  <li id="li_634A1AED91424F8482A7033C835A3961">InfoCode = 303007 
+		  </li> 
+		  <li id="li_9A41020FF4044BF8ABAA2420E4A63C06">TYPE = ID3 
+		  </li> 
+		  <li id="li_7381DDF239FB4D24807843F215E3A91E">NAME = not present 
+		  </li> 
+		  <li id="li_773770C27BBF4D9CA13AAD1709BD3786">ID = 0 
+		  </li> 
+		</ul> 
+		</p> 
+	 </context> 
+	 <steps id="steps_7FF66E4698284BA7B9B3CEA6330C41E0"> 
+		<step id="step_DC80A07B06DC42EDAF613FEDDD8B0867">
+				<cmd>Implement an event listener for
+						<codeph>TimedMetadataEvent.TIMED_METADATA_ID3_ADDED</codeph>  and register
+					it with the <codeph>MediaPlayer</codeph> object. </cmd>
+				<info>
+					<p><ph conkeyref="phrases/primetime-sdk-name"/> calls this listener when it
+						detects ID3 metadata. </p>
+					<note> Custom ad cues use the same <codeph>onTimedMetadata</codeph> event to
+						indicate detection of a new tag. This should not cause any confusion because
+						custom ad cues are detected at the manifest level, and ID3 tags are embedded
+						in the stream. For more information, see <xref
+							keyref="custom-tags-configure"/>. </note>
+				</info>
+			</step> 
+		<step id="step_F7FB74785F814A14BFAA449051AA8516">
+				<cmd>Retrieve the metadata.</cmd>
+				<info>
+					<codeblock outputclass="syntax actionscript">private function onID3Metadata(event:TimedMetadataEvent):void {
+    var timedMetadata:TimedMetadata = event.timedMetadata;
+    var metadata:Metadata = timedMetadata.metadata;
+    var keys:Vector.&lt;String> = metadata.keySet();
+    for (var i:int = keys.length - 1; i >= 0; --i) {
+        var value:ByteArray = metadata.getByteArray(keys[i]);
+        _logger.info("#onTimedMetadata Detected dictionary data key: [{0}], 
+                     value: [{1}] of length {2} bytes at time [{3}].", 
+                     keys[i], 
+                     value.toString(), 
+                     value.length, 
+                     event.timedMetadata.time);
+    }
+}
+</codeblock>
+				</info>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

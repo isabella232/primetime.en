@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="load-media-resource-using-mediaplayeritemloader"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Load a media resource using MediaPlayerItemLoader</title> 
+  <shortdesc>Another way to resolve a media resource is with 
+	 <codeph>MediaPlayerItemLoader</codeph>. This is useful when you want to
+	 obtain information about a particular media stream without instantiating a 
+	 <codeph>MediaPlayer</codeph> instance. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_43736748ECD549F9B761A1712905934C"> 
+		<p>Through the 
+		  <codeph>MediaPlayerItemLoader</codeph> class, you can exchange a media
+		  resource for the corresponding 
+		  <codeph>MediaPlayerItem</codeph> without attaching a view to a 
+		  <codeph>MediaPlayer</codeph> instance, which would lead to the
+		  allocation of the video decoding hardware resources. The process of obtaining
+		  the 
+		  <codeph>MediaPlayerItem</codeph> instance is asynchronous. 
+		</p> 
+	 </context> 
+	 <steps id="steps_EEF20CA1E70546DBB8CF6405EF88331D"> 
+		<step id="step_1BF2F18439584450BB6EC8EB57A631DD" >
+		  <cmd>Implement the 
+			 <codeph>MediaPlayerItemLoader.LoaderListener</codeph> callback
+			 interface. 
+		  </cmd>
+		  <info>This interface defines two methods:
+			 <ul id="ul_4E8A71713B9D468F9CBE2CE7FBCFF89D">
+				<li
+				 id="li_962ED6C4B54A46D3B35A6ED272185AA3"><codeph>LoaderListener.onError</codeph>
+				  callback function
+				  <p><ph conkeyref="phrases/primetime-sdk-name"/> uses this to
+					 inform your application that an error has occurred. 
+					 <ph conkeyref="phrases/primetime-sdk-name"/> provides an error
+					 code as parameters and a description string that contains diagnostic
+					 information. 
+				  </p>
+				</li>
+				<li
+				 id="li_88309B97E16E40ABAB07D9044D5E476A"><codeph>LoaderListener.onError</codeph>
+				  callback function
+				  <p><ph conkeyref="phrases/primetime-sdk-name"/> uses this to
+					 inform your application that the requested information is available in the form
+					 of a 
+					 <codeph>MediaPlayerItem</codeph> instance that is passed on as
+					 a parameter to the callback.
+				  </p>
+				</li>
+			 </ul>
+		  </info>
+		</step> 
+		<step id="step_1AA3C851FDC140ADB24E9743A1679D4B" >
+		  <cmd>Register this instance to 
+			 <ph conkeyref="phrases/primetime-sdk-name"/> by passing it as a
+			 parameter to the constructor of the 
+			 <codeph>MediaPlayerItemLoader</codeph>. 
+		  </cmd>
+		</step>
+		<step id="step_4F5C4747BC714585B002C7B8893B26AB" >
+		  <cmd>Call 
+			 <codeph >MediaPlayerItemLoader.load</codeph>,
+			 passing an instance of a 
+			 <codeph>MediaResource</codeph> object. 
+		  </cmd>
+		  <info>
+			 <p>The URL of the <codeph>MediaResource</codeph> object must point to the stream for which you
+						want to obtain information. For example:
+						<codeblock outputclass="syntax java">// instantiate the listener interface
+MediaPlayerItemLoader.LoaderListener _itemLoaderListener =
+  new MediaPlayerItemLoader.LoaderListener() {
+    @Override
+    public void onError(MediaErrorCode mediaErrorCode, String description) {
+        // something went wrong - look at the error code and description
+    }
+    @Override
+        public void onLoadComplete(MediaPlayerItem playerItem) {
+        // information is available - look at the data in the "playerItem" object
+    }
+}
+
+// instantiate the MediaPlayerItemLoader object (pass the listener as parameter)
+MediaPlayerItemLoader itemLoader = new MediaPlayerItemLoader(_itemLoaderListener);
+
+// create the MediaResource instance and set the URL to point to the actual media stream
+MediaResource mediaResource = 
+  MediaResource.createFromUrl("http://test.com/test_media.m3u8", null);
+
+// load the media resource
+itemLoader.load(mediaResource);
+</codeblock></p>
+		  </info>
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

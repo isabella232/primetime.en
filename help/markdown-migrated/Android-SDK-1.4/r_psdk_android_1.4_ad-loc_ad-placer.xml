@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_721F23CA7D5844DEA42B2451F1DC76F3"> 
+  <title>Ad insertion and placement</title> 
+  <shortdesc>There are a few ways to determine ad insertion and ad placement. 
+  </shortdesc> 
+  <refbody>
+	 <section id="section_1F7581B987704E318E064082190E8243">
+		<title>Ad insertion</title>
+		<p>Here is an overview of the process used to determine ad insertion:
+		<ol id="ol_C1C197BC1EE040668C324C039AB89A5C">
+		  <li id="li_3E7F0201576949BF8E65F904903C7D53"><b>Opportunity
+				detection</b>: The 
+			 <ph
+			  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+			 uses stream information to detect possible and desired locations for ads. 
+		  </li>
+		  <li id="li_78551BAC1A534CE3B292290390BDECD9"><b>Ad resolution</b>: The 
+			 <ph
+			  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+			 communicates with an advertisement server to retrieve the ads to splice into
+			 the content. 
+		  </li>
+		  <li id="li_DB69747BCFB34D2CB88DA5B851D7A186"><b>Ad placement</b>: The 
+			 <ph
+			  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+			 loads the specified ads and places them in ad breaks on the content timeline at
+			 the specified locations and recomputes the virtual timeline, if necessary. 
+		  </li>
+		</ol>
+		</p>
+	 </section> 
+	 <section id="section_B9D63F7409A2447F9FF209289BE5D3D5">
+		<title>Ad placement</title>
+		<p>The <ph conkeyref="phrases/primetime-sdk-name"
+					><?xm-replace_text Phrase?></ph> can get locations for possible ad placement
+				from the following sources: <ul id="ul_082A730F7BBB4273A4712341AAFD0D52">
+					<li id="li_279E5A4AE851453A9481A0C66A9792EE">
+						<p><b>Manifest metadata/cues</b>
+						</p>
+						<p>The <ph
+								conkeyref="phrases/primetime-sdk-name"
+								><?xm-replace_text Phrase?></ph> detects the cues, extracts the
+							necessary information from these cues, and communicates with an
+							advertising server to get the corresponding ads. This source is common
+							for live/linear streams. </p>
+						<p>The <ph
+								conkeyref="phrases/primetime-sdk-name"
+								><?xm-replace_text Phrase?></ph> usually replaces main content with
+							the ads at the location that is indicated by the metadata/cues;
+							otherwise, the client would drop more and more behind the actual live
+							point.  </p>
+					</li>
+					<li id="li_868580E024E240C896678B5763028824">
+						<p><b>The advertising server map</b>
+						</p>
+						<p>Usually, metadata about these streams is registered in the advertising
+							server before playback. The <ph
+								conkeyref="phrases/primetime-sdk-name"
+								><?xm-replace_text Phrase?></ph> retrieves the ad timeline and
+							corresponding ads from the server. This source is common for VOD
+							streams. </p>
+						<p>The <ph
+								conkeyref="phrases/primetime-sdk-name"
+								><?xm-replace_text Phrase?></ph> usually inserts the resolved ads
+							into the main content as indicated by the server map. </p>
+					</li>
+				</ul>
+				<note>By default, the <ph
+						conkeyref="phrases/primetime-sdk-name"
+						><?xm-replace_text Phrase?></ph> uses manifest cues for live/linear streams
+					and advertising server maps for VOD streams. However, to support full-event
+					replay for live events, your application must take extra steps.</note>
+			</p>
+	 </section>
+  </refbody> 
+</reference>

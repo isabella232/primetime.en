@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="c_psdk_android_failover-ad-playback-phase"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Ad-playback phase</title> 
+  <shortdesc> 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> downloads the ad segments and
+	 renders them on the device's screen. 
+  </shortdesc> 
+  <conbody> 
+	 <p>At this point, 
+		<ph conkeyref="phrases/primetime-sdk-name"/> has resolved ads, positioned
+		them on the timeline, and attempts to render the content on the screen. 
+	 </p> 
+	 <p>The following main classes of errors might occur in this phase: 
+	 <ul id="ul_0A3733247EBC4862ACC716824C2493B6"> 
+		<li id="li_9C53D0CBAF05410F977D7EBCB0B8EBC3">Errors when connecting to
+		  the host server 
+		</li> 
+		<li id="li_6A8345EE32CB49D889ACD14856E8EB63">Errors when downloading the
+		  manifest file 
+		</li> 
+		<li id="li_05C4E2733AD9486FBE82C9E3CFD32684">Errors when downloading the
+		  media segments 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>For all three error classes, 
+		<ph conkeyref="phrases/primetime-sdk-name"/> forwards triggered events to
+		your application, including: 
+	 <ul id="ul_8E08713DF63E4B07B0A82FCA8CE56877"> 
+		<li id="li_BD44F4CF59BE4D3B9229664D6BB833A4">Notification events
+		  triggered when a failover happens. 
+		</li> 
+		<li id="li_73F6E611974E40AB90CCBC6BACF76C98">Notification events when the
+		  profile is changed because of the failover algorithm. 
+		</li> 
+		<li id="li_A56C48379CF44373A4B19027619D581A">Notification events
+		  triggered when all failover options have been considered, and no additional
+		  action can be taken automatically. 
+		  <p>Your application needs to take the appropriate action. 
+		  </p> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Whether or not errors occur, <ph conkeyref="phrases/primetime-sdk-name"/> calls
+				<codeph>AdBreakPlaybackEvent.AD_BREAK_COMPLETE</codeph> for each
+				<codeph>AdBreakPlaybackEvent.AD_BREAK_STARTED</codeph> and
+				<codeph>AdPlaybackEvent.AD_COMPLETED</codeph> for every
+				<codeph>AdPLaybackEvent.AD_STARTED</codeph>. However, if segments could not be
+			downloaded, there might be gaps in the timeline. When the gaps are large enough, the
+			values in the playhead position and the reported ad progress might exhibit
+			discontinuities. </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_nielsen-analytics-integration-android"> 
+  <title>Use Nielsen Analytics</title> 
+  <shortdesc> You can integrate the Nielsen Analytics module to track user activity.</shortdesc>
+	<conbody>
+		<p>Nielsen Analytics is a third party analytics library. You can integrate Nielsen Analytics into
+			your player to track user activity in both live and VOD streams. The Nielsen tracker is
+			a separate module, so you can activate and disable it as required in your application. </p>
+	</conbody> 
+</concept> 

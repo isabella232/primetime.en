@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<reference id="r_psdk_utility-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Utility classes</title> 
+  <shortdesc>These classes provide ways to process various types of
+	 information. 
+  </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_BA2A7691BCF146C1AC57153EFC137919">Package: <xref
+				href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/package-summary.html"
+				format="html" scope="external">com.adobe.mediacore.utils</xref>
+		</refsyn> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_E3773325E3A146C1929C13511AEF39A0"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="38*"/> 
+		  <colspec colnum="2" colname="2" colwidth="62*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1">Class name 
+				</entry> 
+				<entry colname="2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/DateUtils.html"
+									format="html" scope="external">DateUtils</xref>
+							</codeph>
+						</entry> 
+				<entry colname="2">Methods for processing dates. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/NumberUtils.html"
+									format="html" scope="external">NumberUtils</xref>
+							</codeph></entry> 
+				<entry colname="2">Helper methods related to numbers. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/StringUtils.html"
+									format="html" scope="external">StringUtils</xref>
+							</codeph></entry> 
+				<entry colname="2">Helper methods related to strings. 
+				</entry> 
+			 </row> 
+			 <row rowsep="1" > 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/TimeRange.html"
+									format="html" scope="external">TimeRange</xref>
+							</codeph>
+						</entry> 
+				<entry colname="2">Methods for creating and interpreting time
+				  ranges. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </refbody> 
+</reference> 

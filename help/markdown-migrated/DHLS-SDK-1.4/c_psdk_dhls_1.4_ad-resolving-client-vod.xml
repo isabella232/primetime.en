@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="vod-client-ad-resolving"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>VOD ad resolving and insertion</title> 
+  <shortdesc>For video-on-demand (VOD) content, 
+	 <ph conkeyref="phrases/primetime-sdk-name"/> inserts ad breaks by splicing
+	 the ads in the main content so that the timeline duration increases. 
+  </shortdesc> 
+  <conbody> 
+	 <p>Before playback, 
+		<ph conkeyref="phrases/primetime-sdk-name"/> resolves known ads, inserts
+		ad breaks in the main content as described by a timeline that is returned from 
+		<ph conkeyref="phrases/auditude-name-long"/>, and recomputes the virtual
+		timeline, if necessary. 
+	 </p> 
+	 <p><ph conkeyref="phrases/primetime-sdk-name"/> inserts ads in the
+		following ways: 
+	 </p> 
+	 <ul id="ul_59BB6CCCF5DD4CA38EB4DE54ABB3528C"> 
+		<li id="li_B98B103FE9994475A4853A14EAEED774"><b>Pre-roll</b>, which is
+		  before the content. 
+		</li> 
+		<li 
+		 id="li_B5B80BFF324045BD972444636679D54E"><b>Mid-roll</b>, which is in the
+		  content. 
+		</li> 
+		<li id="li_ABA048242CC14815BBF4A1ACF5034C92"><b>Post-roll</b>, which is
+		  after the content. 
+		</li> 
+	 </ul> 
+	 <note type="important" >When implementing a custom
+				<codeph>AdPolicySelector</codeph>, a different policy can be given to each type of
+				<codeph>AdBreakTimelineItem</codeph> (pre-roll, mid-roll, or post-roll) in
+				<codeph>AdPolicyInfo</codeph>, based on the type of the
+				<codeph>AdBreakTimelineItem</codeph>. For example, you can keep mid-roll content
+			after it has played but remove pre-roll content after it has played. </note> 
+	 <p>After playback starts, 
+		<ph >no additional changes can occur in
+		  the content. Ads cannot be:</ph> 
+	 <ul id="ul_7CE6DFE2F1954B1A88E3FE96F0A2D513"> 
+		<li id="li_7FEC6C240A6D41878E7FC7913040A2E8">Inserted 
+		</li> 
+		<li id="li_27DCE5BF83F54874B95A7B816B305F0B">Deleted 
+		  <p>For example, you cannot delete built-in ads from the content to
+			 offer an ad-free experience. 
+		  </p> 
+		</li> 
+		<li 
+		 id="li_CC732F61AA254CE5BEC3B0EF1A6E0153">Replaced 
+		  <p>For example, you cannot replace built-in ads with targeted ads. 
+		  </p> 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody> 
+</concept> 

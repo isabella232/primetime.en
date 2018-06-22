@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_psdk_enable-lazy-ad-resolve-resolving">
+	<title>Enable lazy ad resolving</title>
+	<shortdesc>You can enable or disable the Lazy Ad Resolving feature, currently a beta feature and only available on 1.5 builds of <ph conkeyref="phrases/primetime-sdk-name"/> for iOS, using the existing Lazy Ad Loading mechanism. Lazy Ad Resolving is disabled by default on iOS.</shortdesc>
+	<prolog>
+		<metadata>
+			<keywords>
+				<keyword>Lazy</keyword>
+				<keyword>Ad resolving</keyword>
+				<keyword>Ad loading</keyword>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>You can enable or disable Lazy Ad Resolving by setting the <codeph>delayAdLoading</codeph> property on calling <codeph><xref href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html" format="html" scope="external">PTAuditudeMetadata</xref></codeph>
+				to <codeph>YES</codeph> or <codeph>NO</codeph>. The default is NO. This property must be set prior to initializing the playback.</p>
+			<note type="tip">The property is only available on 1.5 builds of <ph conkeyref="phrases/primetime-sdk-name"/> for iOS.</note>
+		</context>
+		<steps>
+			<step>
+				<cmd>Set the Boolean <codeph>delayAdLoading</codeph> property in <codeph>PTAuditudeMetadata</codeph>
+					<draft-comment>to control the timing of ad resolution and the placement of ads on the timeline:</draft-comment>
+				</cmd>
+				<info>
+					<ul>
+						<li>If <codeph>delayAdLoading </codeph> is <codeph>NO</codeph>, <ph conkeyref="phrases/primetime-sdk-name"/> waits until all ads are resolved and placed on the timeline before transitioning to the READY state.</li>
+						<li>If <codeph>delayAdLoading</codeph> is <codeph>YES</codeph>, <ph conkeyref="phrases/primetime-sdk-name"/> resolves only the pre-roll ads and transitions to the READY state. The remaining ads are resolved and placed on the timeline during playback at or before the expected
+							playback time of an ad break.</li>
+					</ul>
+					<p>APIs relevant to lazy ad resolution:</p>
+					<codeblock>Class:
+     PTAuditudeMetadata
+
+Property:
+     @property (non atomic, assign) BOOL delayAdLoading;
+</codeblock>
+				</info>
+			</step>
+			<step>
+				<cmd>To accurately reflect ads as cues on a scrub bar, listen for the <codeph>PTMediaPlayerTimelineChangedNotification</codeph> notification and redraw the scrub bar every time that you receive this notification.</cmd>
+				<info>
+					<p>When Lazy Ad Resolving is enabled for VOD streams, not all ads are placed on the timeline when your player enters the READY state, so your player must explicitly redraw the scrub bar.</p>
+				</info>
+			</step>
+		</steps>
+	</taskbody>
+</task>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "technicalContent/dtd/task.dtd">
+<task id="state_prepared_wait"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Wait for a valid status</title> 
+  <shortdesc>Before you can use most of the <ph conkeyref="phrases/primetime-sdk-name"/> player methods, the player must be in a valid
+		status. </shortdesc> 
+  <taskbody> 
+	 <context id="context_0DF521BAD4934F90B4024F1C52E72CD7">Waiting for the player to be in the correct
+			status ensures that the media resource has successfully loaded. If the player is not in
+			at least the required status, many player methods throw
+				<codeph>MediaPlayerException</codeph>. <p>The required status is usually PREPARED.
+				When this occurs, the callback routine for
+					<codeph>StatusChangeEventListener.onStatusChanged()</codeph> executes. </p>
+		</context> 
+	 <steps id="steps_EC7C86CEDB25474E98430AF074FE4876"> 
+		<step id="step_4F086196B564437FAD65B8B4D24E0FEF">
+				<cmd>To confirm that the status is <codeph>PREPARED</codeph>, check
+						<codeph>MediaPlayer.MediaPlayerStatus</codeph>. </cmd>
+			</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

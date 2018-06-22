@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B5525585BA714A5EB7C2E0370BF916C3"> 
+  <title>Clickable ads</title> 
+  <shortdesc>Clickable ads are set up through 
+	 <ph
+	  conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auditude-name-long"><?xm-replace_text Phrase?></ph>
+	 (previously known as 
+	 <ph
+	  conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auditude-name-previously-known-as"><?xm-replace_text Phrase?></ph>).
+	 You set up the destination for your ad creatives through 
+	 <ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auditude-name"><?xm-replace_text Phrase?></ph>
+	 and then use the 
+	 <ph
+	  conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/> to
+	 get the external URL from the 
+	 <ph conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auditude-name"><?xm-replace_text Phrase?></ph>
+	 response. 
+  </shortdesc> 
+  <conbody> 
+	 <p>You can either enable clickable ads in the Primetime reference implementation through the
+			Setting user interface or by implementing <xref
+				href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IAdConfig.html"
+				format="html" scope="external">IAdConfig isClickableAdsEnabled()</xref>. </p> 
+	 <p >You can enable clickable ads in the Primetime
+		reference implementation by clicking 
+		<uicontrol>ON</uicontrol> in the 
+		<uicontrol>Enable clickable ads</uicontrol> panel in the Settings user
+		interface.
+	 </p> 
+	 <p > 
+		<fig id="fig_B638E8E7B60F468C92D1843A943F20CE">
+				<image href="images/clickableads-configuration.jpg"
+					id="image_CD52E8B19CDA4C98A3BCC1526833ACE2"/>
+			</fig> 
+	 </p> 
+	 <p>The reference implementation demonstrates how to handle a clickable ad
+		during an ad break. 
+	 </p> 
+	 <p>You can implement various workflows, depending on your player user
+		interface. The general workflow for the Primetime reference implementation is
+		as follows: 
+	 <ol id="ol_07B2DEE1C9CB450D9111C5741C63E58C"> 
+		<li id="li_4D1CB4D058BA47D181D86422F812C0AD">When an ad creative starts,
+		  the 
+		  <ph
+		  conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>
+		  determines if the ad is clickable. 
+		</li> 
+		<li id="li_E02060BB1ABC49CCA670D1AD01C589E1">If the ad is clickable, the
+		  player shows a button: 
+		  <uicontrol>Click here for more info. 
+		  </uicontrol> 
+		</li> 
+		<li id="li_6F7BF8F3AB12451F818753626FA01163">If the user clicks the
+		  button, playback is paused and the device launches the default browser and
+		  loads the URL returned from the 
+		  <ph
+		  conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/primetime-sdk-name"/>. 
+		</li> 
+	 </ol> 
+	 </p> 
+	 <p>There are three components that the reference implementation uses to
+		handle clickable ads: 
+	 </p> 
+	 <ul id="ul_027AB90ED0D146488122262D7CB269BB"> 
+		<li id="li_10E41F61B7BD44DCAFF0947B95AB0DD5"><b>Clickable Ad Fragment</b>
+				<p>This fragment sits on top of the video player fragment and contains the clickable
+					button that notifies the player fragment to handle the click action. It only
+					appears while the clickable ad plays. </p>
+			</li> 
+		<li id="li_8EE647EF490E4543AFB4E89CF52C6F87"><b>AdsManagerOn</b> 
+		  <p>This is the feature manager that handles the advertisement workflow.
+			 
+		  </p> 
+		</li> 
+		<li id="li_1B4589EA3E10474FB1992194A6B86F30"><b>Player Fragment</b>
+				<p>This fragment checks if the current ad is clickable by calling isClickable() and
+					shows the ad if it returns true. After it receives the event that is dispatched
+					when a user clicks the "Click here for more info" button, it calls adsManager to
+					trigger the clickable ad feature. </p>
+				<codeblock outputclass="syntax java">/**
+ * Show ad break progress when each ad creative starts
+ * If this is a clickable ad, show the clickable ad fragment
+ */
+@Override
+public void onAdStarted(AdBreak adBreak, Ad ad) {
+    adOverlay.startAd(adBreak, ad);
+    if (adsManager.isClickableAdsEnabled() &amp;&amp; ad.isClickable()) {
+        playerClickableAdFragment.show();
+    }
+}
+
+/**
+ * Hide ad break progress when each ad ends
+ * Hide the clickable ad fragment
+ */
+@Override
+public void onAdCompleted(AdBreak adBreak, Ad ad) {
+    adOverlay.stopAd(adBreak, ad);
+    playerClickableAdFragment.hide();
+}
+</codeblock>
+				<p>This event handler is executed when the <codeph>AdsManagerOn</codeph> displatches
+					an <codeph>AD_STARTED</codeph> event. It determines the clickability of an ad
+					and if it is clickable, registers an event listener to detect any mouse clicks.
+				</p>
+			</li> 
+	 </ul> 
+	 <p> 
+		<note>If an ad has been properly configured with a click-through URL in
+		  Ad Serving but the "More info" button does not show up, check the 
+		  <ph
+			conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auditude-name-long"><?xm-replace_text Phrase?></ph>
+		  ad request result to see if the click-through URL is included in the ad
+		  response. You can find the 
+		  <ph
+			conref="../../phrase_library_ref_impl.xml#c_psdk_phrase-library/auditude-name-long"><?xm-replace_text Phrase?></ph>
+		  ad request URL, 
+		  <filepath>ad.auditude.com/adserver</filepath>, in the log. 
+		</note> 
+	 </p> 
+  </conbody> 
+</concept> 

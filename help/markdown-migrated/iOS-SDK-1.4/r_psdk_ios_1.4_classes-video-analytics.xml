@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd"[
+  <!-- Begin Document Specific Declarations -->
+  <!-- End Document Specific Declarations -->
+]>
+<reference id="r_psdk_dhls_text-format-classes"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Video Analytics classes</title> 
+  <shortdesc>These classes provide the interface between the 
+	 <ph
+	  conkeyref="phrases/primetime-sdk-name"><?xm-replace_text Phrase?></ph>
+	 and Adobe Video Analytics. 
+  </shortdesc> 
+  <refbody> 
+	 <table frame="all" colsep="1" rowsep="1"
+	  id="table_F771D1719BE84241955D45C280BBB52A"> 
+		<tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+		  <colspec colnum="1" colname="1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="2" colwidth="1.16*"/> 
+		  <thead> 
+			 <row rowsep="1"> 
+				<entry colname="1">Name 
+				</entry> 
+				<entry colname="2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row rowsep="1"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/vhl_tvsdk_ios/Classes/PTVideoAnalyticsTracker.html"
+									format="html" scope="external"
+								>PTVideoAnalyticsTracker</xref></codeph>
+						</entry> 
+				<entry colname="2"> Attaches the <codeph>PTMediaPlayer</codeph> instance to the VideoHeartbeat
+							module for tracking the playback. </entry> 
+			 </row> 
+			 <row rowsep="0"> 
+				<entry colname="1"><codeph><xref
+									href="http://help.adobe.com/en_US/primetime/api/psdk/vhl_tvsdk_ios/Classes/PTVideoAnalyticsTrackingMetadata.html"
+									format="html" scope="external"
+									>PTVideoAnalyticsTrackingMetadata</xref></codeph>
+						</entry> 
+				<entry colname="2"> Contains property metadata specific to VideoHeartbeat tracking in the <ph
+								conkeyref="phrases/primetime-sdk-name"
+								><?xm-replace_text Phrase?></ph>. </entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </refbody> 
+</reference> 

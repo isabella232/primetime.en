@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_psdk_ref_json-entitlement-resource-id">
+	<title>JSON object for entitlement resource ID</title>
+	<refbody>
+		<refsyn id="refsyn_CA0D14A08B3E4FCCB4EDC8A6029E1942">
+			<p>The following code block provides an example of a JSON object when the entitlement
+				resource ID is a simple text string. In this case, the resource ID is the string
+				"resource". </p>
+			<p>
+				<codeblock outputclass="syntax json">"metadata" : {
+"entitlement" : {
+"id" : "resource"
+}
+}</codeblock>
+			</p>
+			<p>The following code block provides an example of a JSON object when the entitlement
+				resource ID is an HTML-encoded mRSS string.</p>
+			<codeblock>&lt;rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+&lt;channel>
+&lt;title>REF_ADOBE&lt;/title>
+&lt;item>
+&lt;title>Adobe Primetime Reference&lt;/title>
+&lt;guid>1234&lt;/guid>
+&lt;media:rating scheme="urn:v-chip">TV-PG&lt;/media:rating>
+&lt;/item>
+&lt;/channel>
+&lt;/rss></codeblock>
+			<p>The following mRSS string is used as the resource id.</p>
+			<codeblock outputclass="syntax json">"metadata" : {
+    "entitlement" : {
+        "id" : "&amp;lt;rss version=&amp;quot;2.0&amp;quot;
+        xmlns:media=&amp;quot;
+        http://search.yahoo.com/mrss/&amp;quot;
+        &amp;gt;&amp;lt;channel&amp;gt;&amp;lt;title&amp;gt;REF_ADOBE&amp;lt;/title&amp;gt;&amp;lt;item&amp;gt;
+        &amp;lt;title&amp;gt;Adobe Primetime Reference&amp;lt;/title&amp;gt;&amp;lt;guid&amp;gt;
+        1234&amp;lt;/guid&amp;gt;&amp;lt;media:rating scheme=&amp;quot;urn:v-chip&amp;quot;&amp;gt;
+        TV-PG&amp;lt;/media:rating&amp;gt;&amp;lt;/item&amp;gt;&amp;lt;/channel&amp;gt;&amp;lt;/rss&amp;gt;"
+        }
+}
+</codeblock>
+		</refsyn>
+	</refbody>
+</reference> 

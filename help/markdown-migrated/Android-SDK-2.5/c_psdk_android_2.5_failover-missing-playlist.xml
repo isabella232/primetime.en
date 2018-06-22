@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
+<concept id="failover-missing-playlist"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>Missing playlist failover</title> 
+  <shortdesc>When an entire playlist is missing, for example, when the M3U8
+	 file that is specified in a top-level manifest file does not download, <ph conkeyref="phrases/primetime-sdk-name"/>
+	 attempts to recover. If it cannot be recovered, your application determines the
+	 next step. 
+  </shortdesc> 
+  <conbody> 
+	 <p>If the playlist that is associated with the middle-resolution bit rate is missing, <ph conkeyref="phrases/primetime-sdk-name"/>
+			searches for a variant playlist at the same resolution. If it finds the same resolution,
+			<ph conkeyref="phrases/primetime-sdk-name"/> starts downloading the variant playlist and the segments from the matching
+			position. If the player does not find the same resolution playlist, it will try to cycle
+			through other bitrate playlists and their variants. An immediately lower bitrate is the
+			first choice, then its variant, and so on. If all of the lower bitrate playlists and
+			their variants are exhausted in the attempt to find a valid playlist, <ph conkeyref="phrases/primetime-sdk-name"/> will go to
+			the top bitrate and count down from there. If a valid playlist cannot be found, the
+			process fails, and the player moves to the ERROR state. </p> 
+	 <p>Your application can determine how to handle this situation. For example, you might want to
+			close the player activity and direct the user to the catalog activity. The event of
+			interest is the <codeph>STATUS_CHANGED</codeph> event, and the corresponding callback is
+			the <codeph>onStatusChanged</codeph> method. Here is code that monitors whether the
+			player changes its internal status to <codeph>ERROR</codeph>: </p> 
+	 <codeblock outputclass="syntax java">...
+case ERROR:
+getActivity().finish(); // this is where we close the current activity (the Player activity)
+break;
+...</codeblock> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_psdk_ref_apis-callbacks-ad-insertion"> 
+  <title>Related API documentation</title> 
+  <refbody> 
+	 <refsyn id="refsyn_D80E79E90097407389517B7921CB5511"> 
+		<ul id="ul_82F73748C2BC4CC6BAF1B5CB75C28E5B" > 
+		  <li id="li_0DA1577D3BDA4F90A63FB550278D1370"><xref
+			 href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AdsManager.html"
+			 format="html" scope="external">Class AdsManager</xref> 
+		  </li> 
+		  <li id="li_7D84DC00089448DEBF6E2010216BCDDD"><xref
+			 href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AdsManagerOn.html"
+			 format="html" scope="external">Class AdsManagerOn</xref> 
+		  </li>
+				<li id="li_ED4923A8AC8949CEA0064914F40FC837"><xref
+						href="http://help.adobe.com/en_US/primetime/reference_implementation/dhls/asdoc/com/adobe/primetime/reference/events/AdsManagerEvent.html"
+						format="html" scope="external">AdsManagerEvent</xref>
+				</li> 
+		  <li id="li_7DE258935A404E3ABA01C13D52846C31"><xref
+			 href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AdsManager.AdsManagerEventListener.html"
+			 format="html" scope="external">AdsManagerEventListener</xref> 
+		  </li> 
+		  <li id="li_E66C20CAF82C4FD6827622A77F4593FE"><xref
+			 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/metadata/Metadata.html"
+			 format="html" scope="external">mediacore.metadata.Metadata</xref> 
+		  </li> 
+		  <li id="li_E98E245A45B24C81B364C371939DD25C"><xref
+			 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/timeline/advertising/AdBreak.html"
+			 format="html" scope="external">mediacore.timeline.advertising.AdBreak</xref> 
+		  </li> 
+		  <li id="li_354DDDB9E0DE4DFC8BD76A22C3F4AFD6"><xref
+			 href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/timeline/advertising/Ad.html"
+			 format="html" scope="external">mediacore.timeline.advertising.Ad</xref> 
+		  </li> 
+		</ul> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

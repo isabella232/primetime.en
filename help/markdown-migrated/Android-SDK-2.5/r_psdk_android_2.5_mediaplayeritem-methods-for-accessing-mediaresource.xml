@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "technicalContent/dtd/reference.dtd">
+<reference id="r_psdk_android_mediaplayer-methods-for-accessing-mediaresource"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
+  <title>MediaPlayerItem methods for accessing MediaResource
+	 information</title> 
+  <shortdesc>The methods in the <codeph>MediaPlayerItem</codeph> class allow you to obtain
+		information about the content stream represented by a loaded <codeph>MediaResource</codeph>. </shortdesc> 
+  <refbody> 
+	 <refsyn id="refsyn_05B3EF1364DD4880881B1309B6E718AD"> 
+		<table frame="all" colsep="1" rowsep="1"
+		 id="table_F6006A9167044AC087A6ECB20B8CCD5D"> 
+		  <tgroup cols="2" colsep="1" rowsep="1" outputclass="FormatA"> 
+			 <colspec colnum="1" colname="2" colwidth="41*"/> 
+			 <colspec colnum="2" colname="3" colwidth="46*"/> 
+			 <thead> 
+				<row rowsep="1"> 
+				  <entry colname="2">Method 
+				  </entry> 
+				  <entry colname="3">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Ad tags</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>List&lt;String&gt;
+						getAdTags()</codeph> 
+				  </entry> 
+				  <entry colname="3">Provides the list of ad tags that are used for
+					 the ad placement process. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Live stream 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>boolean isLive();</codeph> 
+				  </entry> 
+				  <entry colname="3">True if the stream is live; false if it is
+					 VOD. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>DRM protected</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>boolean isProtected();</codeph> 
+				  </entry> 
+				  <entry colname="3">True if the stream is DRM protected. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>List&lt;DRMMetadataInfo&gt;
+						getDRMMetadataInfos();</codeph> 
+				  </entry> 
+				  <entry colname="3">Lists all the DRM metadata objects discovered
+					 in the manifest. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Closed captions</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>boolean hasClosedCaptions();</codeph> 
+				  </entry> 
+				  <entry colname="3">True if closed-caption tracks are available. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>List&lt;ClosedCaptionsTrack&gt;
+						getClosedCationsTracks();</codeph> 
+				  </entry> 
+				  <entry colname="3">Provides a list of available closed-caption
+					 tracks. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>ClosedCaptionsTrack get
+						SelectedClosedCaptionsTrack();</codeph> 
+				  </entry> 
+				  <entry colname="3">Retrieves the current closed caption track
+					 selected with 
+					 <codeph>SelectClosedCaptionsTrack</codeph>. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph> selectClosedCaptionsTrack (
+						ClosedCaptionsTrack closedCaptionsTrack)</codeph> 
+				  </entry> 
+				  <entry colname="3">Sets a closed-caption track to be the current
+					 closed-caption track. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Alternate audio tracks 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>boolean hasAlternateAudio();</codeph> 
+				  </entry> 
+				  <entry colname="3"> True if the stream has alternate audio
+					 tracks. 
+					 <note>The main (default) audio track is also part of the
+						alternate audio track list. 
+					 </note> 
+					 <p><ph conkeyref="phrases/primetime-sdk-name"/> for Android considers the main audio track to be one
+						of the items in the alternate audio track list. Because of this, the only case
+						where 
+						<codeph>MediaPlayerItem.hasAlternateAudio</codeph> returns
+						false is when the stream has no audio at all. If the content has only one audio
+						track, this method returns true, and 
+						<codeph>MediaPlayerItem.getAudioTracks</codeph> returns a
+						list with a single element (the default audio track). 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>List&lt;AudioTrack&gt;
+						getAudioTracks();</codeph> 
+				  </entry> 
+				  <entry colname="3">Provides a list of available alternate audio
+					 tracks. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>AudioTrack
+						getSelectedAudioTrack();</codeph> 
+				  </entry> 
+				  <entry colname="3">Retrieves the audio track selected with 
+						<codeph>selectAudioTrack</codeph>. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph> selectAudioTrack ( AudioTrack
+						audioTrack )</codeph> 
+				  </entry> 
+				  <entry colname="3">Selects an audio track to be the current audio
+					 track. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Timed metadata</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>boolean hasTimedMetadata();</codeph> 
+				  </entry> 
+				  <entry colname="3">True if the stream has associated timed
+					 metadata. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>List&lt;TimedMetadata&gt;
+						getTimedMetadata();</codeph> 
+				  </entry> 
+				  <entry colname="3">Provides a list of the timed metadata objects
+					 associated with the stream. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Multiple profiles (bit rates) 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>boolean isDynamic();</codeph> 
+				  </entry> 
+				  <entry colname="3">True if the stream is a multiple bit rate
+					 (MBR) stream. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>List&lt;Profile&gt;
+						getProfiles();</codeph> 
+				  </entry> 
+				  <entry colname="3">Provides a list of the associated bit rate
+					 profiles. For each profile, you can retrieve its bit rate and the height and
+					 width of the profile. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>Profile getSelectedProfile()</codeph> 
+				  </entry> 
+				  <entry colname="3">Retrieves the currently selected profile. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Trick play 
+					 </b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>boolean
+						isTrickPlaySupported();</codeph> 
+				  </entry> 
+				  <entry colname="3">True if the player supports fast forward,
+					 rewind, and resume. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>List&lt; Float&gt;
+						getAvailablePlaybackRates()</codeph> 
+				  </entry> 
+				  <entry colname="3"> Provides the list of available playback rates
+					 in the context of the trick-play feature. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>Float
+						getSelectedPlaybackRate()</codeph>
+				  </entry> 
+				  <entry colname="3">Retrieves the currently selected playback
+					 rate. 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>MediaPlayerItemConfig
+						getConfig()</codeph> 
+				  </entry> 
+				  <entry colname="3">Returns the <codeph>MediaPlayerItemConfig</codeph> instance associated with
+								this item. </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry namest="2" nameend="3"> 
+					 <b>Media resource</b> 
+				  </entry> 
+				</row> 
+				<row rowsep="1"> 
+				  <entry colname="2"><codeph>MediaResource getResource();</codeph> 
+				  </entry> 
+				  <entry colname="3">Returns the media resource associated with
+					 this item. 
+				  </entry> 
+				</row> 
+				<row rowsep="0"> 
+				  <entry colname="2"><codeph>int getResourceId()</codeph> 
+				  </entry> 
+				  <entry colname="3">Returns the media identifier associated with
+					 this item. This ID is set when the item is loaded using 
+					 <codeph>MediaPlayerItemLoader.load</codeph>.
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </refsyn> 
+  </refbody> 
+</reference> 

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_psdk_ref_troubleshooting"> 
+  <title>Troubleshooting</title> 
+  <conbody> 
+	 <ul id="ul_2CB9EA0A510044E0B33AB4395731DBE3"> 
+		<li id="li_2003B83CBCEA46438236F5F3BAF3022E"> For some older devices that
+		  are running API level 10 or older, logcat is unable to open the log device
+		  because of a permissions issue. The following exception appears: 
+		  <codeph>java.lang.Exception: logcat returns error: Unable to open log
+			 device '/dev/log/main': Permission denied</codeph> 
+		  <p><b>Workaround:</b> 
+		  </p> 
+		  <ol id="ol_DBA1723806C14C3CB9ADA88A2EF62511"> 
+			 <li id="li_4AF0BE9E1CF64563A7E5B4131E8F5F9B">Open <filepath>AndroidManifest.xml</filepath> under
+						the <filepath>CatalogActivity</filepath> project in the workspace. </li> 
+			 <li id="li_9DC6823E36E642C5B372F34B61EB28C5">Add the following permission to the
+							<filepath>AndroidManfest.xml</filepath> file:
+						<codeblock>android.permission.READ_LOGS</codeblock>
+					</li> 
+		  </ol> 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept> 
