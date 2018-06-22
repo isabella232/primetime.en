@@ -10,7 +10,7 @@ title: Feature managers
 Feature managers provide a way for you to control individual features without traversing the entire  in search of code for one feature that could be scattered in multiple locations. Feature managers condense code into one class per feature. The feature managers wait for triggers from  events and then inform the class that uses the feature manager to handle the result. The feature manager provides the required information to the class.
 
 The feature managers perform the following tasks:
-* **Triggers features.** These are function calls to trigger a  feature. For example, `codeph PlaybackManager.play()` is called when the player application needs to start the video playback.
+* **Triggers  features. **These are function calls to trigger a  feature. For example, `codeph PlaybackManager.play()` is called when the player application needs to start the video playback.
 * **Listens to  events.** The feature manager needs to listen to  events to acquire information from the . For example, `codeph AdsManager` listens to  Ads events to be notified when ad breaks start.
 * **Dispatches events to the handler. **After the feature managers receive and process the events from the , they notify the client side to handle the event. For example, after `codeph AdsManager` receives an ad break start event, it tells the player fragment to reflect this change in the UI (disable the scrub bar, show the ad overlay, etc.).
 
