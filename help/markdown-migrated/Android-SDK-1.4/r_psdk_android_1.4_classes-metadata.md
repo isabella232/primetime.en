@@ -8,14 +8,14 @@
   <colspec colnum="2" colname="2" colwidth="69*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/AdvertisingMetadata.html" format="html" scope="external">AdvertisingMetadata</a> </span></td> 
-    <td colname="2">Class that provides properties that should be configured for resolving ads for a given media item. All the required properties must be set to configure the player for successfully resolving ads. </td> 
+    <td colname="2">Class that provides properties that should be configured for resolving ads for a given media item. All the required properties must be set to configure the player for successfully resolving ads.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph">AuditudeMetadata</span> </td> 
@@ -40,7 +40,7 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/MetadataNode.html" format="html" scope="external">MetadataNode</a> </span></td> 
-    <td colname="2">Generic data-structure-like class for storing arbitrary key-value pairs. </td> 
+    <td colname="2">Generic data-structure-like class for storing arbitrary key-value pairs.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/TimedMetadata.html" format="html" scope="external">TimedMetadata</a> </span></td> 

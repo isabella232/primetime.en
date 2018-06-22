@@ -8,16 +8,16 @@
   <colspec colnum="3" colname="col2" colwidth="5.04*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry"> Property </th> 
-    <th colname="col02" class="entry">Type </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Property</th> 
+    <th colname="col02" class="entry">Type</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr>
   </thead> 
   <tbody> 
    <tr> 
     <td colname="col1"> <span class="codeph">metadataId</span> </td> 
     <td colname="col02"><span class="codeph">NSString</span> </td> 
-    <td colname="col2"> Unique identifier of the timed metadata. This value is usually extracted from the cue/tag ID attribute. Otherwise, a unique random value is provided. </td> 
+    <td colname="col2">Unique identifier of the timed metadata. This value is usually extracted from the cue/tag ID attribute. Otherwise, a unique random value is provided.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">name</span> </td> 
@@ -27,15 +27,15 @@
    <tr> 
     <td colname="col1"><span class="codeph">time</span> </td> 
     <td colname="col02"><span class="codeph">CMTime</span></td> 
-    <td colname="col2">The time position, in milliseconds, relative to the start of the main content where this timed metadata is present in the stream. </td> 
+    <td colname="col2">The time position, in milliseconds, relative to the start of the main content where this timed metadata is present in the stream.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">type</span> </td> 
     <td colname="col02"> <span class="codeph">PTTimedMetadataType</span></td> 
     <td colname="col2">The type of the timed metadata. 
      <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
-      <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - indicates that the timed metadata was created from a tag in the playlist/manifest. </li> 
-      <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - indicates that the timed metadata was created from an ID3 tag in the media stream. </li> 
+      <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - indicates that the timed metadata was created from a tag in the playlist/manifest.</li> 
+      <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - indicates that the timed metadata was created from an ID3 tag in the media stream.</li> 
      </ul> </td> 
    </tr> 
   </tbody> 
@@ -62,8 +62,8 @@ Remember the following:
   <colspec colnum="2" colname="col2" colwidth="*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry"> Element </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Element</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr>
   </thead> 
   <tbody> 
@@ -72,23 +72,23 @@ Remember the following:
      <ph>
       TAG, ID3
      </ph> </td> 
-    <td colname="col2">Possible types for the timed metadata. </td> 
+    <td colname="col2">Possible types for the timed metadata.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">@property (nonatomic, assign) CMTime time</span> </td> 
-    <td colname="col2">The time position, relative to the start of the main content, where this metadata was inserted in the stream. </td> 
+    <td colname="col2">The time position, relative to the start of the main content, where this metadata was inserted in the stream.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">@property (nonatomic, assign) PTTimedMetadataType type</span> </td> 
-    <td colname="col2">Returns the type of the timed metadata. </td> 
+    <td colname="col2">Returns the type of the timed metadata.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">@property (nonatomic, retain) NSString *metadataId</span> </td> 
-    <td colname="col2">Returns the ID extracted from the cue/tag attributes. Otherwise, a unique random value is provided. </td> 
+    <td colname="col2">Returns the ID extracted from the cue/tag attributes. Otherwise, a unique random value is provided.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">@property (nonatomic, retain) NSString *name</span> </td> 
-    <td colname="col2">Returns the name of the cue, which is usually the HLS tag name. </td> 
+    <td colname="col2">Returns the name of the cue, which is usually the HLS tag name.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

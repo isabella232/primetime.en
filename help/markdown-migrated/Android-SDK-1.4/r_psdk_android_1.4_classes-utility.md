@@ -8,26 +8,26 @@
   <colspec colnum="2" colname="2" colwidth="62*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Class name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Class name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/DateUtils.html" format="html" scope="external">DateUtils</a> </span> </td> 
-    <td colname="2">Methods for processing dates. </td> 
+    <td colname="2">Methods for processing dates.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/NumberUtils.html" format="html" scope="external">NumberUtils</a> </span></td> 
-    <td colname="2">Helper methods related to numbers. </td> 
+    <td colname="2">Helper methods related to numbers.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/StringUtils.html" format="html" scope="external">StringUtils</a> </span></td> 
-    <td colname="2">Helper methods related to strings. </td> 
+    <td colname="2">Helper methods related to strings.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/TimeRange.html" format="html" scope="external">TimeRange</a> </span> </td> 
-    <td colname="2">Methods for creating and interpreting time ranges. </td> 
+    <td colname="2">Methods for creating and interpreting time ranges.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

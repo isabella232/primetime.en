@@ -11,14 +11,14 @@
   <colspec colnum="2" colname="2" colwidth="63*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Package </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Package</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/scte35/package-detail.html" format="html" scope="external">com.adobe.mediacore.utils.scte35</a> </td> 
-    <td colname="2">Contains classes that help to process SCTE 35 byte arrays and splice information. </td> 
+    <td colname="2">Contains classes that help to process SCTE 35 byte arrays and splice information.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/scte35/commands/package-detail.html" format="html" scope="external">com.adobe.mediacore.utils.scte35.commands</a> </td> 
@@ -29,11 +29,11 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/scte35/data/package-detail.html" format="html" scope="external">com.adobe.mediacore.utils.scte35.data</a> </td> 
-    <td colname="2">Contains classes that define structures and components. </td> 
+    <td colname="2">Contains classes that define structures and components.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/scte35/descriptors/package-detail.html" format="html" scope="external">com.adobe.mediacore.utils.scte35.descriptors</a> </td> 
-    <td colname="2">Contains classes such as enumerations and command extensions. </td> 
+    <td colname="2">Contains classes such as enumerations and command extensions.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

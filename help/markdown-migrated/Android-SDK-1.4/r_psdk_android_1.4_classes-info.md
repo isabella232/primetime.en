@@ -8,8 +8,8 @@
   <colspec colnum="2" colname="2" colwidth="70*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry"> <p>Name </p> </th> 
-    <th colname="2" class="entry"> <p>Description </p> </th> 
+    <th colname="1" class="entry"> <p>Name</p> </th> 
+    <th colname="2" class="entry"> <p>Description</p> </th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -23,7 +23,7 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/Profile.html" format="html" scope="external">Profile</a> </span></td> 
-    <td colname="2">Class that contains media profile information, such as the height, width, and bit rate. </td> 
+    <td colname="2">Class that contains media profile information, such as the height, width, and bit rate.</td> 
    </tr> 
    <tr rowsep="0"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/Track.html" format="html" scope="external">Track</a> </span></td> 

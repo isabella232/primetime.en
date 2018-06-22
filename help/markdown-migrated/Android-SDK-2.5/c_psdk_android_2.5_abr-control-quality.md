@@ -15,21 +15,21 @@ constantly monitors the bit rate to ensure that the content is played at the opt
   <colspec colnum="2" colname="col2" colwidth="3.45*" /> 
   <tbody> 
    <tr> 
-    <td colname="col01">Initial bit rate </td> 
-    <td colname="col2"> <p>The desired playback bit rate (in bits per second) for the first segment. </p> <p>When playback starts, the closest profile, which is equal to or greater than the initial bit rate, is used for the first segment. If a minimum bit rate is defined, and the initial bit rate is lower than the minimum rate, 
+    <td colname="col01">Initial bit rate</td> 
+    <td colname="col2"> <p>The desired playback bit rate (in bits per second) for the first segment.</p> <p>When playback starts, the closest profile, which is equal to or greater than the initial bit rate, is used for the first segment. If a minimum bit rate is defined, and the initial bit rate is lower than the minimum rate, 
       <ph conkeyref="phrases/primetime-sdk-name" /> selects the profile with the lowest bit rate above the minimum bit rate. If the initial rate is above the maximum rate, 
       <ph conkeyref="phrases/primetime-sdk-name" /> selects the highest rate below the maximum rate. If the initial bit rate is zero or undefined, the initial bit rate is determined by the ABR policy. </p> <p><span class="codeph">getABRInitialBitRate</span> returns an integer value that represents the byte-per-second profile. </p> </td> 
    </tr> 
    <tr> 
-    <td colname="col01">Minimum bit rate </td> 
-    <td colname="col2"> <p>The lowest allowed bit rate to which the ABR can switch. </p> <p>ABR switching ignores profiles with a bit rate that is lower than this bit rate. <span class="codeph">getABRMinBitRate</span> returns an integer value that represents the bits-per-second profile. </p> </td> 
+    <td colname="col01">Minimum bit rate</td> 
+    <td colname="col2"> <p>The lowest allowed bit rate to which the ABR can switch.</p> <p>ABR switching ignores profiles with a bit rate that is lower than this bit rate. <span class="codeph">getABRMinBitRate</span> returns an integer value that represents the bits-per-second profile. </p> </td> 
    </tr> 
    <tr> 
-    <td colname="col01">Maximum bit rate </td> 
-    <td colname="col2"> <p>The highest allowed bit rate to which the ABR can switch. </p> <p>ABR switching ignores profiles with a bit rate higher than this bit rate. <span class="codeph">getABRMaxBitRate</span> returns an integer value that represents the bits-per-second profile. </p> </td> 
+    <td colname="col01">Maximum bit rate</td> 
+    <td colname="col2"> <p>The highest allowed bit rate to which the ABR can switch.</p> <p>ABR switching ignores profiles with a bit rate higher than this bit rate. <span class="codeph">getABRMaxBitRate</span> returns an integer value that represents the bits-per-second profile. </p> </td> 
    </tr> 
    <tr> 
-    <td colname="col01">ABR switching policy </td> 
+    <td colname="col01">ABR switching policy</td> 
     <td colname="col2"> <p>Playback switches gradually to the highest-bit-rate profile when possible. You can set the policy for ABR switching, which determines how quickly 
       <ph conkeyref="phrases/primetime-sdk-name" /> switches between profiles. The default is <span class="codeph">ABR_MODERATE</span>. </p> <p>When 
       <ph conkeyref="phrases/primetime-sdk-name" /> decides to switch to a higher bit rate, the player selects the ideal bit rate profile to switch to based on the current ABR policy: 
@@ -37,7 +37,7 @@ constantly monitors the bit rate to ensure that the content is played at the opt
        <li id="li_B79C0AA2CBFB42FF98A257CEC9C400BA"><span class="codeph">ABR_CONSERVATIVE</span>: Switches to the profile with the next higher bit rate when the bandwidth is 50% higher than the current bit rate. </li> 
        <li id="li_38CC3A95D8634F359D0F7C273D0108C0"><span class="codeph">ABR_MODERATE</span>: Switches to the next higher bit rate profile when the bandwidth is 20% higher than the current bit rate. </li> 
        <li id="li_E845C035420D4B3FB2B179F448F8CA85"><span class="codeph">ABR_AGGRESSIVE</span>: Switches immediately to the highest bit-rate profile when the bandwidth is higher than the current bit rate. </li> 
-      </ul> </p> <p>If the initial bit rate is zero, or is not specified but a policy is specified, playback starts with the lowest bit rate profile for a conservative policy, the profile closest to the median bit rate of available profiles for a moderate policy, and the highest bit rate profile for an aggressive policy. </p> <p>The policy works in the constraints of the minimum and maximum bit rates, if these rates are specified. </p> <p> <span class="codeph">getABRPolicy</span> returns the current setting from the <span class="codeph">ABRControlParameters</span> enum: <span class="codeph">ABR_CONSERVATIVE</span>, <span class="codeph">ABR_MODERATE</span>, or <span class="codeph">ABR_AGGRESSIVE</span>. </p> <p>For more information, see <a keyref="api-enum-control"></a>. </p> </td> 
+      </ul> </p> <p>If the initial bit rate is zero, or is not specified but a policy is specified, playback starts with the lowest bit rate profile for a conservative policy, the profile closest to the median bit rate of available profiles for a moderate policy, and the highest bit rate profile for an aggressive policy.</p> <p>The policy works in the constraints of the minimum and maximum bit rates, if these rates are specified.</p> <p> <span class="codeph">getABRPolicy</span> returns the current setting from the <span class="codeph">ABRControlParameters</span> enum: <span class="codeph">ABR_CONSERVATIVE</span>, <span class="codeph">ABR_MODERATE</span>, or <span class="codeph">ABR_AGGRESSIVE</span>. </p> <p>For more information, see <a keyref="api-enum-control"></a>. </p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 

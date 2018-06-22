@@ -18,18 +18,18 @@
     <td> 
      <codeblock>
        (range.begin, 
-      <discoiqbr /> range.end) 
+       range.end) 
      </codeblock> </td> 
     <td> 
      <codeblock>
        (range.begin, 
-      <discoiqbr /> range.end) 
+       range.end) 
      </codeblock> </td> 
     <td> 
      <codeblock>
        (range.begin, 
-      <discoiqbr /> range.end, 
-      <discoiqbr /> replaceDuration) 
+       range.end, 
+       replaceDuration) 
      </codeblock> </td> 
    </tr> 
    <tr> 
@@ -37,21 +37,21 @@
     <td> 
      <codeblock>
        placement = 
-      <discoiqbr /> new Placement( 
-      <discoiqbr /> PlacementType.CUSTOM_RANGE, 
-      <discoiqbr /> range.begin, 
-      <discoiqbr /> range.end - 
-      <discoiqbr /> range.begin, 
-      <discoiqbr /> PlacementMode.MARK ); 
+       new Placement( 
+       PlacementType.CUSTOM_RANGE, 
+       range.begin, 
+       range.end - 
+       range.begin, 
+       PlacementMode.MARK ); 
      </codeblock> </td> 
     <td> 
      <codeblock>
        placement = 
-      <discoiqbr /> new Placement( 
-      <discoiqbr /> PlacementType.CUSTOM_RANGE, 
-      <discoiqbr /> range.begin, 
-      <discoiqbr /> range.end - range.begin, 
-      <discoiqbr /> PlacementMode.DELETE ); 
+       new Placement( 
+       PlacementType.CUSTOM_RANGE, 
+       range.begin, 
+       range.end - range.begin, 
+       PlacementMode.DELETE ); 
      </codeblock> </td> 
     <td> N/A (automatic CustomRange signaling mode) </td> 
    </tr> 
@@ -60,22 +60,22 @@
     <td> 
      <codeblock>
        placement = 
-      <discoiqbr />new Placement( 
-      <discoiqbr /> PlacementType.CUSTOM_RANGE, 
-      <discoiqbr /> range.begin, 
-      <discoiqbr /> range.end - range.begin, 
-      <discoiqbr /> PlacementMode.MARK 
-      <discoiqbr />); 
+      new Placement( 
+       PlacementType.CUSTOM_RANGE, 
+       range.begin, 
+       range.end - range.begin, 
+       PlacementMode.MARK 
+      ); 
      </codeblock> </td> 
     <td> 
      <codeblock>
        placement = 
-      <discoiqbr /> new Placement( 
-      <discoiqbr /> PlacementType.CUSTOM_RANGE, 
-      <discoiqbr /> range.begin, 
-      <discoiqbr /> range.end - range.begin, 
-      <discoiqbr /> PlacementMode.DELETE 
-      <discoiqbr />); 
+       new Placement( 
+       PlacementType.CUSTOM_RANGE, 
+       range.begin, 
+       range.end - range.begin, 
+       PlacementMode.DELETE 
+      ); 
      </codeblock> </td> 
     <td> N/A (automatic CustomRange signaling mode) </td> 
    </tr> 
@@ -84,39 +84,39 @@
     <td> 
      <codeblock>
        placement = 
-      <discoiqbr /> new Placement( 
-      <discoiqbr /> PlacementType.CUSTOM_RANGE, 
-      <discoiqbr /> range.begin, 
-      <discoiqbr /> range.end - range.begin, 
-      <discoiqbr /> PlacementMode.MARK 
-      <discoiqbr />); 
+       new Placement( 
+       PlacementType.CUSTOM_RANGE, 
+       range.begin, 
+       range.end - range.begin, 
+       PlacementMode.MARK 
+      ); 
      </codeblock> </td> 
     <td> 
      <codeblock>
        placement = 
-      <discoiqbr /> new Placement( 
-      <discoiqbr /> PlacementType.CUSTOM_RANGE, 
-      <discoiqbr /> range.begin, 
-      <discoiqbr /> range.end - range.begin, 
-      <discoiqbr /> PlacementMode.DELETE 
-      <discoiqbr />); 
+       new Placement( 
+       PlacementType.CUSTOM_RANGE, 
+       range.begin, 
+       range.end - range.begin, 
+       PlacementMode.DELETE 
+      ); 
      </codeblock> </td> 
     <td> 
      <codeblock>
        placement1 = 
-      <discoiqbr /> new Placement( 
-      <discoiqbr /> PlacementType.CUSTOM_RANGE, 
-      <discoiqbr /> range.begin, 
-      <discoiqbr /> range.end - range.begin, 
-      <discoiqbr /> PlacementMode.MARK 
-      <discoiqbr />); 
-      <discoiqbr />placement2 = placement = 
-      <discoiqbr /> new Placement(/ 
-      <discoiqbr /> PlacementType.MID_ROLL( 
-      <discoiqbr /> PlacementType.PRE_ROLL), 
-      <discoiqbr /> rangeDuration, 
-      <discoiqbr /> placementMode 
-      <discoiqbr />); 
+       new Placement( 
+       PlacementType.CUSTOM_RANGE, 
+       range.begin, 
+       range.end - range.begin, 
+       PlacementMode.MARK 
+      ); 
+      placement2 = placement = 
+       new Placement(/ 
+       PlacementType.MID_ROLL( 
+       PlacementType.PRE_ROLL), 
+       rangeDuration, 
+       placementMode 
+      ); 
      </codeblock> </td> 
    </tr> 
   </tbody> 
@@ -140,18 +140,18 @@
     <td> 
      <codeblock>
        (range.begin, 
-      <discoiqbr /> range.end) 
+       range.end) 
      </codeblock> </td> 
     <td> 
      <codeblock>
        (range.begin, 
-      <discoiqbr /> range.end) 
+       range.end) 
      </codeblock> </td> 
     <td> 
      <codeblock>
        (range.begin, 
-      <discoiqbr /> range.end, 
-      <discoiqbr /> replaceDuration) 
+       range.end, 
+       replaceDuration) 
      </codeblock> </td> 
    </tr> 
    <tr> 
@@ -160,11 +160,11 @@
     <td> 
      <codeblock>
        placement = 
-      <discoiqbr /> new Placement( 
-      <discoiqbr />PlacementType.SERVER_MAP, 
-      <discoiqbr />Placement.UNKNOWN_TIME, 
-      <discoiqbr />Placement.UNKNOWN_DURATION, 
-      <discoiqbr />PlacementMode.DEFAULT); 
+       new Placement( 
+      PlacementType.SERVER_MAP, 
+      Placement.UNKNOWN_TIME, 
+      Placement.UNKNOWN_DURATION, 
+      PlacementMode.DEFAULT); 
      </codeblock> </td> 
     <td> N/A (automatic <span class="codeph"> CustomRange </span> signaling mode) </td> 
    </tr> 
@@ -174,11 +174,11 @@
     <td> 
      <codeblock>
        placement = 
-      <discoiqbr /> new Placement( 
-      <discoiqbr />PlacementType.PRE_ROLL, 
-      <discoiqbr />playhead, 
-      <discoiqbr />Placement.UNKNOWN_DURATION, 
-      <discoiqbr />PlacementMode.DEFAULT); 
+       new Placement( 
+      PlacementType.PRE_ROLL, 
+      playhead, 
+      Placement.UNKNOWN_DURATION, 
+      PlacementMode.DEFAULT); 
      </codeblock> </td> 
     <td> N/A (automatic <span class="codeph"> CustomRange </span> signaling mode) </td> 
    </tr> 

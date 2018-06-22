@@ -7,12 +7,12 @@
   <colspec colnum="2" colname="col2" colwidth="1.86*" /> 
   <tbody> 
    <tr> 
-    <td colname="col1">Content segment key frames </td> 
-    <td colname="col2">Each content segment must begin with a key frame. </td> 
+    <td colname="col1">Content segment key frames</td> 
+    <td colname="col2">Each content segment must begin with a key frame.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">Sequence numbers in live/linear video </td> 
-    <td colname="col2">Must match between all bit-rate renditions for the main content at any given time. </td> 
+    <td colname="col1">Sequence numbers in live/linear video</td> 
+    <td colname="col2">Must match between all bit-rate renditions for the main content at any given time.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

@@ -13,8 +13,8 @@ title: API elements for ad playback
   <colspec colnum="2" colname="col2" colwidth="2*" /> 
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">API element </th> 
-    <th colname="col2" class="entry"> Content that supports advertising </th> 
+    <th colname="col1" class="entry">API element</th> 
+    <th colname="col2" class="entry">Content that supports advertising</th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -24,11 +24,11 @@ title: API elements for ad playback
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">AdBreakPolicy</span></td> 
-    <td colname="col2">Enumerates possible playback policies for ad breaks. </td> 
+    <td colname="col2">Enumerates possible playback policies for ad breaks.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">AdPolicy</span></td> 
-    <td colname="col2">Enumerates possible playback policies for ads. </td> 
+    <td colname="col2">Enumerates possible playback policies for ads.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">AdPolicySelector</span> </td> 
@@ -44,9 +44,9 @@ title: API elements for ad playback
     <td colname="col1"><span class="codeph">MediaPlayer</span></td> 
     <td colname="col2"> 
      <ul id="ul_37700A741403448A8760FDDA68B099AA"> 
-      <li id="li_B465170D449E49489C5924572BEEB4A5"><span class="codeph">getLocalTime</span>. <p>This is the local time of the playback, excluding the placed ad breaks. </p> </li> 
-      <li id="li_D9D68CF428904BB2B84E1BCE828A90DC"><span class="codeph">seekToLocal</span>. <p>Here, the seek occurs relative to a local time in the stream. </p> </li> 
-      <li id="li_9DBCA75537DC4824AA66B53A3FA28812"><span class="codeph">getTimeline.convertToLocalTime</span>. <p>The virtual position on the timeline is converted to the local position. </p></li> 
+      <li id="li_B465170D449E49489C5924572BEEB4A5"><span class="codeph">getLocalTime</span>. <p>This is the local time of the playback, excluding the placed ad breaks.</p> </li> 
+      <li id="li_D9D68CF428904BB2B84E1BCE828A90DC"><span class="codeph">seekToLocal</span>. <p>Here, the seek occurs relative to a local time in the stream.</p> </li> 
+      <li id="li_9DBCA75537DC4824AA66B53A3FA28812"><span class="codeph">getTimeline.convertToLocalTime</span>. <p>The virtual position on the timeline is converted to the local position.</p></li> 
      </ul> <p type="important">Note:  <span class="codeph">getLocalTime</span> in <span class="codeph">MediaPlayer</span> returns the current time relative to the original content, without dynamically spliced ads. <span class="codeph">getLocalTime</span> in <span class="codeph">AdBreak</span> returns the start time of the break relative to the original content. </p> </td> 
    </tr> 
    <tr> 

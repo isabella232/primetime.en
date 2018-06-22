@@ -13,7 +13,7 @@ title: Get information about profile switch
 >1. When the event occurs, check the following properties for information about the switch:
 >* `codeph  profile`: Identifier for the new profile being used.
 >* `codeph  time`: The stream time at which the switch occurred.
-<table id="table_E400FD9C57FF40CBAC14AF6847CD8301"> 
+><table id="table_E400FD9C57FF40CBAC14AF6847CD8301"> 
  <tgroup cols="2"> 
   <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
   <colspec colnum="2" colname="col2" colwidth="3.98*" /> 
@@ -28,10 +28,10 @@ title: Get information about profile switch
     <td colname="col1"> <span class="codeph"> Reason </span> </td> 
     <td colname="col2"> 
      <ul id="ul_37DDE3F297634ED6B47DF5D73F969369"> 
-      <li id="li_E374B029E1AF40689D70A9D30E057C5B">Network Adaptation </li> 
-      <li id="li_753862EEF1C9474EA8E20C89F5EF5D8D">Seek </li> 
-      <li id="li_EC14923F92CF4D11A47928A8D2DE6D8B">Profile Not Supported </li> 
-      <li id="li_695AB4A89C9D4833AF6D8B6424FC912B">Failover </li> 
+      <li id="li_E374B029E1AF40689D70A9D30E057C5B">Network Adaptation</li> 
+      <li id="li_753862EEF1C9474EA8E20C89F5EF5D8D">Seek</li> 
+      <li id="li_EC14923F92CF4D11A47928A8D2DE6D8B">Profile Not Supported</li> 
+      <li id="li_695AB4A89C9D4833AF6D8B6424FC912B">Failover</li> 
      </ul> </td> 
    </tr> 
    <tr> 

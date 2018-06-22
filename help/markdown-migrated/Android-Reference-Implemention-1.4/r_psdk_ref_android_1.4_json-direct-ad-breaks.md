@@ -42,7 +42,7 @@
 >```
 >
 >
-<table id="table_4A1BCE4375C7406B8F3215E7D3FB3670"> 
+><table id="table_4A1BCE4375C7406B8F3215E7D3FB3670"> 
  <tgroup cols="2"> 
   <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
   <colspec colnum="2" colname="col2" colwidth="3.85*" /> 
@@ -97,7 +97,7 @@
 >```
 >
 >
-<table id="table_16DF81FEB31C4F9693CFDFA0884DE57F"> 
+><table id="table_16DF81FEB31C4F9693CFDFA0884DE57F"> 
  <tgroup cols="2"> 
   <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
   <colspec colnum="2" colname="col2" colwidth="3.85*" /> 

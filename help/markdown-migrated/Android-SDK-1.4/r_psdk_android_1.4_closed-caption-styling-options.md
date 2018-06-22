@@ -20,7 +20,7 @@
 >>
 >>In options that define default values (for example,`codeph  DEFAULT`), that value refers to what the setting was when the caption was originally specified.
 >
-<table frame="all" colsep="1" rowsep="1" id="table_87205DEFEE384AF4AF83952B15E18A42"> 
+><table frame="all" colsep="1" rowsep="1" id="table_87205DEFEE384AF4AF83952B15E18A42"> 
  <tgroup cols="2" colsep="1" rowsep="1" class="FormatA"> 
   <colspec colnum="1" colname="1" colwidth="25*" /> 
   <colspec colnum="2" colname="2" colwidth="75*" /> 
@@ -33,11 +33,11 @@
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"> Font </td> 
-    <td colname="2"> <p>The font type. </p> <p>Can be set only to a value that is defined by the <span class="codeph"> TextFormat.Font </span> enumeration and represents, for example, monospaced with or without serifs. </p> <p type="tip">Note:  The actual fonts that are available on a device might vary, and substitutions are used when necessary. Monospace with serifs is typically used as a substitute, although this substitution can be system specific. </p> </td> 
+    <td colname="2"> <p>The font type.</p> <p>Can be set only to a value that is defined by the <span class="codeph"> TextFormat.Font </span> enumeration and represents, for example, monospaced with or without serifs. </p> <p type="tip">Note:  The actual fonts that are available on a device might vary, and substitutions are used when necessary. Monospace with serifs is typically used as a substitute, although this substitution can be system specific. </p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> Size </td> 
-    <td colname="2"> <p>The caption's size. </p> <p> Can be set only to a value defined by the <span class="codeph"> TextFormat.Size </span> enumeration: 
+    <td colname="2"> <p>The caption's size.</p> <p> Can be set only to a value defined by the <span class="codeph"> TextFormat.Size </span> enumeration: 
       <ul compact="yes" id="ul_544BFC7A46474A74839477108F1AB1E9"> 
        <li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B"> <span class="codeph"> MEDIUM </span> - The standard size </li> 
        <li id="li_4F8CEDE54965430EB707DD3D5B2E3F87"> <span class="codeph"> LARGE </span> - Approximately 30% larger than medium </li> 
@@ -48,35 +48,35 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> Font edge </td> 
-    <td colname="2"> <p>The effect used for the font edge, such as raised or none. </p> <p>Can be set only to a value that is defined by the <span class="codeph"> TextFormat.FontEdge </span> enumeration. </p> </td> 
+    <td colname="2"> <p>The effect used for the font edge, such as raised or none.</p> <p>Can be set only to a value that is defined by the <span class="codeph"> TextFormat.FontEdge </span> enumeration. </p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> Font color </td> 
-    <td colname="2"> <p>The font color. </p> <p>Can be set only to a value defined by the <span class="codeph"> TextFormat.Color </span> enumeration. </p> </td> 
+    <td colname="2"> <p>The font color.</p> <p>Can be set only to a value defined by the <span class="codeph"> TextFormat.Color </span> enumeration. </p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> Edge color </td> 
-    <td colname="2"> <p>The color of the edge effect. </p> <p>Can be set to any of the values that are available for the font color. </p> </td> 
+    <td colname="2"> <p>The color of the edge effect.</p> <p>Can be set to any of the values that are available for the font color.</p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> Background color </td> 
-    <td colname="2"> <p>The background character cell color. </p> <p>Can be set only to values that are available for the font color. </p> </td> 
+    <td colname="2"> <p>The background character cell color.</p> <p>Can be set only to values that are available for the font color.</p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> Fill color </td> 
-    <td colname="2"> <p>The color of the background of the window in which the text is located. </p> <p>Can be set to any of the values that are available for the font color. </p> </td> 
+    <td colname="2"> <p>The color of the background of the window in which the text is located.</p> <p>Can be set to any of the values that are available for the font color.</p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> Font opacity </td> 
-    <td colname="2"> <p>The opacity of the text. </p> <p>Expressed as a percentage from 0 (fully transparent) to 100 (fully opaque). <span class="codeph"> DEFAULT_OPACITY </span> for the font is 100. </p> </td> 
+    <td colname="2"> <p>The opacity of the text.</p> <p>Expressed as a percentage from 0 (fully transparent) to 100 (fully opaque). <span class="codeph"> DEFAULT_OPACITY </span> for the font is 100. </p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> Background opacity </td> 
-    <td colname="2"> <p>The opacity of the background character cell. </p> <p>Expressed as a percentage from 0 (fully transparent) to 100 (fully opaque). <span class="codeph"> DEFAULT_OPACITY </span> for the background is 100. </p> </td> 
+    <td colname="2"> <p>The opacity of the background character cell.</p> <p>Expressed as a percentage from 0 (fully transparent) to 100 (fully opaque). <span class="codeph"> DEFAULT_OPACITY </span> for the background is 100. </p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> Fill opacity </td> 
-    <td colname="2"> <p>The opacity of the background of the caption window. </p> <p>Expressed as a percentage from 0 (fully transparent) to 100 (fully opaque). <span class="codeph"> DEFAULT_OPACITY </span> for fill is 0. </p> </td> 
+    <td colname="2"> <p>The opacity of the background of the caption window.</p> <p>Expressed as a percentage from 0 (fully transparent) to 100 (fully opaque). <span class="codeph"> DEFAULT_OPACITY </span> for fill is 0. </p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 

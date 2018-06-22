@@ -7,8 +7,8 @@
   <colspec colnum="2" colname="2" colwidth="61*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Class name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Class name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -18,7 +18,7 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaPlayerNotifications.html" format="html" scope="external">PTMediaPlayerNotifications</a> </td> 
-    <td colname="2">Lists all the notifications dispatched by the Primetime Player framework. </td> 
+    <td colname="2">Lists all the notifications dispatched by the Primetime Player framework.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTNotification.html" format="html" scope="external">PTNotification</a> </td> 

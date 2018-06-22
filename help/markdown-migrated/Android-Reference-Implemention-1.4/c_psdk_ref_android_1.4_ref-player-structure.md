@@ -15,8 +15,8 @@ In Java, classes are structured in a hierarchy. For example, all the UI-related 
   <colspec colnum="2" colname="col2" colwidth="1.35*" /> 
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">Package </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Package</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -26,15 +26,15 @@ In Java, classes are structured in a hierarchy. For example, all the UI-related 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/advertising/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.advertising</a> </td> 
-    <td colname="col2">Contains code for custom ads. </td> 
+    <td colname="col2">Contains code for custom ads.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.config</a> </td> 
-    <td colname="col2">Contains the interface code required for configuring the feature managers. </td> 
+    <td colname="col2">Contains the interface code required for configuring the feature managers.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/drm/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.drm</a> </td> 
-    <td colname="col2">Contains helper classes for DRM. </td> 
+    <td colname="col2">Contains helper classes for DRM.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/feeds/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.feeds</a> </td> 
@@ -42,7 +42,7 @@ In Java, classes are structured in a hierarchy. For example, all the UI-related 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/logging/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.logging</a> </td> 
-    <td colname="col2">Provides classes for logging locally and remotely. </td> 
+    <td colname="col2">Provides classes for logging locally and remotely.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.manager</a> </td> 
@@ -54,27 +54,27 @@ In Java, classes are structured in a hierarchy. For example, all the UI-related 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/catalog/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.ui.catalog</a> </td> 
-    <td colname="col2">Contains UI code for the catalog. </td> 
+    <td colname="col2">Contains UI code for the catalog.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/log/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.ui.log</a> </td> 
-    <td colname="col2">Contains UI code for the log. </td> 
+    <td colname="col2">Contains UI code for the log.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.ui.player</a> </td> 
-    <td colname="col2">Contains UI code for the player. </td> 
+    <td colname="col2">Contains UI code for the player.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/settings/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.ui.settings</a> </td> 
-    <td colname="col2">Contains UI code for settings. </td> 
+    <td colname="col2">Contains UI code for settings.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.utils</a> </td> 
-    <td colname="col2">Contains general utility classes. </td> 
+    <td colname="col2">Contains general utility classes.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/http/package-summary.html" format="html" scope="external">com.adobe.primetime.reference.utils.http</a> </td> 
-    <td colname="col2">Contains HTTP-specific utility classes. </td> 
+    <td colname="col2">Contains HTTP-specific utility classes.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

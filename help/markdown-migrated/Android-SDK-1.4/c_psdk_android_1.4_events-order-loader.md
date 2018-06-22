@@ -13,18 +13,18 @@ title: Loader events
   <colspec colnum="2" colname="2" colwidth="59*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Event </th> 
-    <th colname="2" class="entry">Meaning </th> 
+    <th colname="1" class="entry">Event</th> 
+    <th colname="2" class="entry">Meaning</th> 
    </tr>
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph">onLoadComplete (mediaPlayerItem playerItem)</span></td> 
-    <td colname="2">Media resource loading completed successfully. </td> 
+    <td colname="2">Media resource loading completed successfully.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph">onError</span> </td> 
-    <td colname="2">A problem occurred with media resource loading. </td> 
+    <td colname="2">A problem occurred with media resource loading.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

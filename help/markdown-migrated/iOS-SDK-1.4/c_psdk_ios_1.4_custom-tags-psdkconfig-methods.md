@@ -19,22 +19,22 @@ applies the global configuration automatically to any media stream that does not
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">subscribedTags</span> </td> 
-    <td colname="col2"> Retrieves the current list of subscribed tags. </td> 
+    <td colname="col2">Retrieves the current list of subscribed tags.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">setSubscribedTags</span> </td> 
-    <td colname="col2"> Sets the list of subscribed tags that will be exposed to the application. </td> 
+    <td colname="col2">Sets the list of subscribed tags that will be exposed to the application.</td> 
    </tr> 
    <tr> 
-    <td namest="col1" nameend="col2"><b>Customize the ad tags used by the default opportunity detector </b> </td> 
+    <td namest="col1" nameend="col2"><b>Customize the ad tags used by the default opportunity detector</b> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph">adTags</span> </td> 
-    <td colname="col2"> Retrieves the current list of ad tags. </td> 
+    <td colname="col2">Retrieves the current list of ad tags.</td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph">setAdTags</span> </td> 
-    <td colname="col2"> Sets the list of ad tags that will be used by default opportunity generator. </td> 
+    <td colname="col2">Sets the list of ad tags that will be used by default opportunity generator.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

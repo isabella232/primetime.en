@@ -10,8 +10,8 @@ Package: [com.adobe.mediacore.errors](http://help.adobe.com/en_US/primetime/api/
   <colspec colnum="2" colname="2" colwidth="70*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 

@@ -8,16 +8,16 @@
   <colspec colnum="3" colname="col2" colwidth="5.04*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry"> Property </th> 
-    <th colname="col02" class="entry">Type </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Property</th> 
+    <th colname="col02" class="entry">Type</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr>
   </thead> 
   <tbody> 
    <tr> 
     <td colname="col1"><span class="codeph">content</span> </td> 
     <td colname="col02">String</td> 
-    <td colname="col2">The raw content of the timed metadata. If the type is TAG, the value represents the entire attribute list of the cue/tag. If the type id ID3, it is null. </td> 
+    <td colname="col2">The raw content of the timed metadata. If the type is TAG, the value represents the entire attribute list of the cue/tag. If the type id ID3, it is null.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">id</span> </td> 
@@ -31,21 +31,21 @@
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">name</span></td> 
-    <td colname="col02">String </td> 
+    <td colname="col02">String</td> 
     <td colname="col2">The name of the timed metadata. If the type is <span class="codeph">TAG</span>, the value represents the cue/tag name. If the type is <span class="codeph">ID3</span>, it is null. </td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">time</span> </td> 
     <td colname="col02">Number</td> 
-    <td colname="col2">The time position, in milliseconds, relative to the start of the main content where this timed metadata is present in the stream. </td> 
+    <td colname="col2">The time position, in milliseconds, relative to the start of the main content where this timed metadata is present in the stream.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">type</span> </td> 
     <td colname="col02">String</td> 
     <td colname="col2">The type of the timed metadata. 
      <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
-      <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - indicates that the timed metadata was created from a tag in the playlist/manifest. </li> 
-      <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - indicates that the timed metadata was created from an ID3 tag in the media stream. </li> 
+      <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - indicates that the timed metadata was created from a tag in the playlist/manifest.</li> 
+      <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - indicates that the timed metadata was created from an ID3 tag in the media stream.</li> 
      </ul></td> 
    </tr> 
   </tbody> 
@@ -72,26 +72,26 @@ Remember the following:
   <colspec colnum="2" colname="col2" colwidth="*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry"> Element </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Element</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr>
   </thead> 
   <tbody> 
    <tr> 
     <td colname="col1"><span class="codeph">TAG, ID3 ID3, TAG</span></td> 
-    <td colname="col2">Possible types for the timed metadata. </td> 
+    <td colname="col2">Possible types for the timed metadata.</td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph">public function TimedMetadata(type:String, time:Number, id:String, name:String, content:String, metadata:Metadata)</span> </td> 
-    <td colname="col2">Default constructor (time is the local stream time). </td> 
+    <td colname="col2">Default constructor (time is the local stream time).</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">content:String</span> </td> 
-    <td colname="col2"> The raw content of the source tag of this timed metadata.</td> 
+    <td colname="col2">The raw content of the source tag of this timed metadata.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">time:Number</span> </td> 
-    <td colname="col2">The time position, relative to the start of the main content, where this metadata was inserted in the stream. </td> 
+    <td colname="col2">The time position, relative to the start of the main content, where this metadata was inserted in the stream.</td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph">metadata:Metadata</span> </td> 
@@ -99,15 +99,15 @@ Remember the following:
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">type:String</span> </td> 
-    <td colname="col2">Returns the type of the timed metadata. </td> 
+    <td colname="col2">Returns the type of the timed metadata.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">id:String</span></td> 
-    <td colname="col2">Returns the ID extracted from the cue/tag attributes. Otherwise, a unique random value is provided. </td> 
+    <td colname="col2">Returns the ID extracted from the cue/tag attributes. Otherwise, a unique random value is provided.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">name:String</span> </td> 
-    <td colname="col2">Returns the name of the cue, which is usually the HLS tag name. </td> 
+    <td colname="col2">Returns the name of the cue, which is usually the HLS tag name.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

@@ -7,8 +7,8 @@
   <colspec colnum="2" colname="2" colwidth="1.16*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 

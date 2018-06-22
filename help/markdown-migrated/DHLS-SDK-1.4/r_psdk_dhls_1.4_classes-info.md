@@ -8,8 +8,8 @@
   <colspec colnum="2" colname="2" colwidth="70*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry"> <p>Name </p> </th> 
-    <th colname="2" class="entry"> <p>Description </p> </th> 
+    <th colname="1" class="entry"> <p>Name</p> </th> 
+    <th colname="2" class="entry"> <p>Description</p> </th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -23,19 +23,19 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/DefaultCCTypes.html" format="html" scope="external">DefaultCCTypes</a></span> </td> 
-    <td colname="2">Class that contains the default closed captioning tracks types. </td> 
+    <td colname="2">Class that contains the default closed captioning tracks types.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/DefaultPlaybackRates.html" format="html" scope="external">DefaultPlaybackRates</a></span> </td> 
-    <td colname="2"> Class containing the default playback rates. </td> 
+    <td colname="2">Class containing the default playback rates.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/DRMMetadataInfo.html" format="html" scope="external">DRMMetadataInfo</a></span> </td> 
-    <td colname="2">Class that defines the DRM metadata abstraction. </td> 
+    <td colname="2">Class that defines the DRM metadata abstraction.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/Profile.html" format="html" scope="external">Profile</a></span></td> 
-    <td colname="2">Class that contains media profile information, such as the height, width, and bit rate. </td> 
+    <td colname="2">Class that contains media profile information, such as the height, width, and bit rate.</td> 
    </tr> 
    <tr rowsep="0"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/Track.html" format="html" scope="external">Track</a></span></td> 

@@ -7,12 +7,12 @@
   <colspec colnum="2" colname="col2" colwidth="1.86*" /> 
   <tbody> 
    <tr> 
-    <td colname="col1">Adobe Access DRM </td> 
-    <td colname="col2">If the DRM-protected stream is multiple bit rate (MBR), the DRM encryption key used for the MBR should be the same as the key used in all the bit-rate streams. </td> 
+    <td colname="col1">Adobe Access DRM</td> 
+    <td colname="col2">If the DRM-protected stream is multiple bit rate (MBR), the DRM encryption key used for the MBR should be the same as the key used in all the bit-rate streams.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">Ad variant manifests </td> 
-    <td colname="col2">Must have the same bit-rate renditions as the renditions of the main content. </td> 
+    <td colname="col1">Ad variant manifests</td> 
+    <td colname="col2">Must have the same bit-rate renditions as the renditions of the main content.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

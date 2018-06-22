@@ -8,22 +8,22 @@
   <colspec colnum="2" colname="2" colwidth="63*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/DefaultSCTE35TagDecoder.html" format="html" scope="external"> DefaultSCTE35TagDecoder</a></span> </td> 
-    <td colname="2">Class. Generic decoder for SCTE35 packets encoded as Base64 strings. </td> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/DefaultSCTE35TagDecoder.html" format="html" scope="external">DefaultSCTE35TagDecoder</a></span> </td> 
+    <td colname="2">Class. Generic decoder for SCTE35 packets encoded as Base64 strings.</td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/DefaultTextTagDecoder.html" format="html" scope="external"> DefaultTextTagDecoder</a></span> </td> 
-    <td colname="2">Class. Generic parser for HLS tags. </td> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/DefaultTextTagDecoder.html" format="html" scope="external">DefaultTextTagDecoder</a></span> </td> 
+    <td colname="2">Class. Generic parser for HLS tags.</td> 
    </tr> 
    <tr rowsep="0"> 
-    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/TagDecoder.html" format="html" scope="external"> TagDecoder</a></span> </td> 
-    <td colname="2"> Base class for decoders supporting various custom tags. </td> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/TagDecoder.html" format="html" scope="external">TagDecoder</a></span> </td> 
+    <td colname="2">Base class for decoders supporting various custom tags.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

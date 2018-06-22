@@ -18,7 +18,7 @@ title: Digital Rights Management classes
    </tr> 
    <tr rowsep="0"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTDRMMetadataInfo.html" format="html" scope="external">PTDRMMetadataInfo</a></span> </td> 
-    <td colname="2">Represents a specific DRM metadata instance. </td> 
+    <td colname="2">Represents a specific DRM metadata instance.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

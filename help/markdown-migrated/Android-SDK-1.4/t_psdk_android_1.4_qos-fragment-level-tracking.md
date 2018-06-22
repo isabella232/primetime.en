@@ -12,7 +12,7 @@ title: Track at the fragment level using load information
 >1. Register the event listener, which  calls every time a fragment has downloaded.
 >   
 >1. Read the data of interest from the `codeph  LoadInfo` parameter that is passed to the callback.
-<table id="table_06BD536A23AB4A73B510998426BAE143"> 
+><table id="table_06BD536A23AB4A73B510998426BAE143"> 
  <tgroup cols="3"> 
   <colspec colname="col01" colnum="1" colwidth="1.17*" /> 
   <colspec colnum="2" colname="col1" colwidth="1.00*" /> 
@@ -28,7 +28,7 @@ title: Track at the fragment level using load information
    <tr> 
     <td colname="col01"> <span class="codeph"> downloadDuration </span> </td> 
     <td colname="col1"> <span class="codeph"> long </span> </td> 
-    <td colname="col2"> <p>The duration of the download in milliseconds. </p> <p> 
+    <td colname="col2"> <p>The duration of the download in milliseconds.</p> <p> 
       <ph conkeyref="phrases/primetime-sdk-name" /> does not differentiate between the time it took the client to connect to the server and the time it took to download the full fragment. For example, if a 10 MB segment takes 8 seconds to download, 
       <ph conkeyref="phrases/primetime-sdk-name" /> provides that information, but does not tell you that it took 4 seconds until the first byte and another 4 seconds to download the entire fragment. </p> </td> 
    </tr> 
@@ -68,9 +68,9 @@ title: Track at the fragment level using load information
     <td colname="col2"> What 
      <ph conkeyref="phrases/primetime-sdk-name" /> downloaded. One of the following: 
      <ul id="ul_9C3BDEBD878544DA95C7FF81114F9B5C"> 
-      <li id="li_A093552B492A44FD8B30785E465F6886">MANIFEST - A playlist/manifest </li> 
-      <li id="li_DEF9AC71AA564F9BB4C5D4E834432EE5">FRAGMENT - A fragment </li> 
-      <li id="li_57821F47B6F04CD38570BCE6447A01B8">TRACK - A fragment associated with a specific track </li> 
+      <li id="li_A093552B492A44FD8B30785E465F6886">MANIFEST - A playlist/manifest</li> 
+      <li id="li_DEF9AC71AA564F9BB4C5D4E834432EE5">FRAGMENT - A fragment</li> 
+      <li id="li_57821F47B6F04CD38570BCE6447A01B8">TRACK - A fragment associated with a specific track</li> 
      </ul> Sometimes it might not be possible to detect the type of the resource. If this occurs, FILE is returned. </td> 
    </tr> 
    <tr> 

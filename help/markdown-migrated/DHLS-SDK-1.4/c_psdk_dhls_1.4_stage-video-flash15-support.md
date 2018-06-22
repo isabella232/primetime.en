@@ -19,7 +19,7 @@ Consider the following information about the Flash 15 StageVideo fallback to sof
   
   
 
-**HTML Overlays **
+**HTML Overlays**
 
 In Flash 15 and later, you can maintain a seamless display of HTML overlays when hardware StageVideo becomes unavailable and falls back to software StageVideo. To enable this feature, set `codeph wmode=opaque`.
 

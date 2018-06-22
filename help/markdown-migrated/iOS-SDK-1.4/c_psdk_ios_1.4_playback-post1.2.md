@@ -26,7 +26,7 @@ The following table describes how  handles ads and ad breaks during playback:
   <colspec colnum="3" colname="col3" colwidth="*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">Video activity </th> 
+    <th colname="col1" class="entry">Video activity</th> 
     <th colname="col2" class="entry">Default 
      <ph conkeyref="phrases/primetime-sdk-name" /> behavior policy </th> 
     <th colname="col3" class="entry">Customization available through <span class="codeph">PTAdPolicySelector</span> </th> 
@@ -34,44 +34,44 @@ The following table describes how  handles ads and ad breaks during playback:
   </thead> 
   <tbody> 
    <tr> 
-    <td colname="col1">During normal play, an ad break is encountered. </td> 
+    <td colname="col1">During normal play, an ad break is encountered.</td> 
     <td colname="col2"></td> 
     <td colname="col3">Specify a different policy for the ad break by using <span class="codeph">selectPolicyForAdBreak</span>. </td> 
    </tr> 
    <tr> 
-    <td colname="col1">Your application seeks forward over ad break(s) into main content. </td> 
-    <td colname="col2"> Plays the last unwatched ad break that was skipped over and resumes playback at the desired seek position when the break(s) playback is complete. </td> 
+    <td colname="col1">Your application seeks forward over ad break(s) into main content.</td> 
+    <td colname="col2">Plays the last unwatched ad break that was skipped over and resumes playback at the desired seek position when the break(s) playback is complete.</td> 
     <td colname="col3">Select which skipped break to play by using <span class="codeph">selectAdBreaksToPlay</span>. </td> 
    </tr> 
    <tr> 
-    <td colname="col1">Your application seeks backward over ad break(s) into main content. </td> 
-    <td colname="col2"> Skips to the desired seek position without playing ad breaks. </td> 
+    <td colname="col1">Your application seeks backward over ad break(s) into main content.</td> 
+    <td colname="col2">Skips to the desired seek position without playing ad breaks.</td> 
     <td colname="col3">Select which skipped break to play by using <span class="codeph">selectAdBreaksToPlay</span>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td> 
    </tr> 
    <tr> 
-    <td colname="col1">Your application seeks forward into an ad break. </td> 
-    <td colname="col2"> Plays from the beginning of the ad in which the seek ended. </td> 
+    <td colname="col1">Your application seeks forward into an ad break.</td> 
+    <td colname="col2">Plays from the beginning of the ad in which the seek ended.</td> 
     <td colname="col3">Specify a different ad policy for the ad break and for the specific ad where the seek ended by using <span class="codeph">selectPolicyForSeekIntoAd</span>. </td> 
    </tr> 
    <tr> 
-    <td colname="col1">Your application seeks backward into an ad break. </td> 
-    <td colname="col2"> Plays from the beginning of the ad in which the seek ended. </td> 
+    <td colname="col1">Your application seeks backward into an ad break.</td> 
+    <td colname="col2">Plays from the beginning of the ad in which the seek ended.</td> 
     <td colname="col3">Specify a different ad policy for the ad break and for the specific ad in which the seek ended by using <span class="codeph">selectPolicyForSeekIntoAd</span>. </td> 
    </tr> 
    <tr> 
-    <td colname="col1">Your application seeks forward or backward over watched ad break(s) into main content. </td> 
-    <td colname="col2"> If the last ad break skipped has already been watched, skips to the user-selected seek position. </td> 
+    <td colname="col1">Your application seeks forward or backward over watched ad break(s) into main content.</td> 
+    <td colname="col2">If the last ad break skipped has already been watched, skips to the user-selected seek position.</td> 
     <td colname="col3">Select which of the skipped breaks to play using <span class="codeph">selectAdBreaksToPlay</span> and determine which breaks have already been watched by using <span class="codeph">PTAdBreak.isWatched</span>. <p> <p type="important">Note: By default, 
        <ph conkeyref="phrases/primetime-sdk-name" /> marks an ad break as watched immediately after entering the first ad in the ad break. </p> </p> </td> 
    </tr> 
    <tr> 
-    <td colname="col1">Your application seeks forward or backward over one or more ad breaks and drops into a watched ad break. </td> 
-    <td colname="col2"> Skips the ad break and seeks to the position immediately following the ad break. </td> 
+    <td colname="col1">Your application seeks forward or backward over one or more ad breaks and drops into a watched ad break.</td> 
+    <td colname="col2">Skips the ad break and seeks to the position immediately following the ad break.</td> 
     <td colname="col3">Specify a different ad policy for the ad break (with the watched status set to true) and for the specific ad where the seek ended by using <span class="codeph">selectPolicyForSeekIntoAd</span>. </td> 
    </tr> 
    <tr> 
-    <td colname="col1">Your application seeks forward over ads that were inserted using custom ad markers. </td> 
-    <td colname="col2">Skips to the user-selected seek position. </td> 
+    <td colname="col1">Your application seeks forward over ads that were inserted using custom ad markers.</td> 
+    <td colname="col2">Skips to the user-selected seek position.</td> 
     <td colname="col3"></td> 
    </tr> 
   </tbody> 

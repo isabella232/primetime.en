@@ -132,7 +132,7 @@ The Reference Implementation integration of the  service works out-of-the-box as
 >       This example uses the top six MVPDs instead of the actual nine just to keep the example simple. Notice how the result list contains the intersection of the first two lists and has the same ordering as the second list. Also, notice that AT&amp;T U-verse is not in the final list, as only the first matching six MVPDs are taken.
 >       
 >       
-<table id="table_jfv_pyt_xp"> 
+>    <table id="table_jfv_pyt_xp"> 
  <tgroup cols="3"> 
   <thead> 
    <tr> 
@@ -145,41 +145,41 @@ The Reference Implementation integration of the  service works out-of-the-box as
    <tr> 
     <td> 
      <ul id="ul_tnh_dzt_xp"> 
-      <li>Comcast XFINITY </li> 
-      <li>TWC </li> 
-      <li>Mediacom </li> 
-      <li>RCN </li> 
-      <li>Dish </li> 
-      <li>AT&amp;T U-verse </li> 
-      <li>CableOne </li> 
-      <li>Brighthouse </li> 
-      <li>Atlantic Broadband </li> 
-      <li>WOW! </li> 
-      <li>MetroCast </li> 
-      <li>DirectTV </li> 
-      <li>Cox </li> 
+      <li>Comcast XFINITY</li> 
+      <li>TWC</li> 
+      <li>Mediacom</li> 
+      <li>RCN</li> 
+      <li>Dish</li> 
+      <li>AT&amp;T U-verse</li> 
+      <li>CableOne</li> 
+      <li>Brighthouse</li> 
+      <li>Atlantic Broadband</li> 
+      <li>WOW!</li> 
+      <li>MetroCast</li> 
+      <li>DirectTV</li> 
+      <li>Cox</li> 
       <li>Cablevision Optimum</li> 
      </ul> </td> 
     <td> 
      <ol id="ol_xp4_2zt_xp"> 
-      <li>Comcast XFINITY </li> 
-      <li>DirectTV </li> 
-      <li>Dish </li> 
-      <li>TWC </li> 
-      <li>Cox </li> 
-      <li>Charter </li> 
-      <li>Verizon FiOS </li> 
-      <li>Cablevision Optimum </li> 
+      <li>Comcast XFINITY</li> 
+      <li>DirectTV</li> 
+      <li>Dish</li> 
+      <li>TWC</li> 
+      <li>Cox</li> 
+      <li>Charter</li> 
+      <li>Verizon FiOS</li> 
+      <li>Cablevision Optimum</li> 
       <li>AT&amp;T U-verse</li> 
      </ol> </td> 
     <td> 
      <ol id="ol_ggx_2zt_xp"> 
-      <li>Comcast XFINITY </li> 
-      <li>DirectTV </li> 
-      <li>Dish </li> 
-      <li>TWC </li> 
-      <li>Cox </li> 
-      <li>Cablevision Optimum </li> 
+      <li>Comcast XFINITY</li> 
+      <li>DirectTV</li> 
+      <li>Dish</li> 
+      <li>TWC</li> 
+      <li>Cox</li> 
+      <li>Cablevision Optimum</li> 
      </ol> </td> 
    </tr> 
   </tbody> 

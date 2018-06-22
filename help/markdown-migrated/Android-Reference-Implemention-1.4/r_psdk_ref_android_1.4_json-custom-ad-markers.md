@@ -31,32 +31,32 @@
 >```
 >
 >
-<table id="table_BBD08759C38C434B89CB1C429E64D1E9"> 
+><table id="table_BBD08759C38C434B89CB1C429E64D1E9"> 
  <tgroup cols="2">
   <colspec colnum="1" colname="col1" colwidth="1.00*" />
   <colspec colnum="2" colname="col2" colwidth="3.85*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">Property </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Property</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr>
   </thead> 
   <tbody> 
    <tr> 
-    <td colname="col1">adjust-seek-position </td> 
-    <td colname="col2">true or false, used to set the value of the key com.adobe.mediacore.metadata.DefaultMetadataKeys.METADATA_KEY_ADJUST_SEEK_ENABLED in the MetadataNode. </td> 
+    <td colname="col1">adjust-seek-position</td> 
+    <td colname="col2">true or false, used to set the value of the key com.adobe.mediacore.metadata.DefaultMetadataKeys.METADATA_KEY_ADJUST_SEEK_ENABLED in the MetadataNode.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">time-ranges </td> 
-    <td colname="col2">An array of JSON Objects indicating the time range for each ad marker. Each JSON Object entry maps to an instance of com.adobe.mediacore.utils.TimeRange. </td> 
+    <td colname="col1">time-ranges</td> 
+    <td colname="col2">An array of JSON Objects indicating the time range for each ad marker. Each JSON Object entry maps to an instance of com.adobe.mediacore.utils.TimeRange.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">time-ranges.begin </td> 
-    <td colname="col2">Value in ms indicating the start time of the ad marker. </td> 
+    <td colname="col1">time-ranges.begin</td> 
+    <td colname="col2">Value in ms indicating the start time of the ad marker.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">time-ranges.end </td> 
-    <td colname="col2">Value in ms indicating the end time of the ad marker. </td> 
+    <td colname="col1">time-ranges.end</td> 
+    <td colname="col2">Value in ms indicating the end time of the ad marker.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

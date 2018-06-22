@@ -15,7 +15,7 @@ There are two places within the Reference Implementation that you must configure
 >   This file is provided by your Adobe representative. It is not included in the Primetime SDK bundle by default. For more information on the settings in this config file, see the Android Programmer's Guide here:[Initialize and configure video analytics](http://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-task-Initialize_and_configure_video_analytics_).
 >   
 >1. Configure run-time options in the Reference Implementation settings menu
-<table id="table_lsq_hg5_zr"> 
+><table id="table_lsq_hg5_zr"> 
  <tgroup cols="2"> 
   <thead> 
    <tr> 

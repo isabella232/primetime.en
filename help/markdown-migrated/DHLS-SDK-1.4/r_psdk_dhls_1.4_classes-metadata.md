@@ -8,13 +8,13 @@
   <colspec colnum="2" colname="2" colwidth="69*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/metadata/AdSignalingMode.html" format="html" scope="external"> AdSignalingMode</a></span> </td> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/metadata/AdSignalingMode.html" format="html" scope="external">AdSignalingMode</a></span> </td> 
     <td colname="2"> Enumeration class exposing the supported signaling modes in the 
      <ph conkeyref="phrases/primetime-sdk-name">
       Phrase
@@ -36,7 +36,7 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/metadata/DefaultMetadataKeys.html" format="html" scope="external">DefaultMetadataKeys</a></span> </td> 
-    <td colname="2">Class. </td> 
+    <td colname="2">Class.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/metadata/Metadata.html" format="html" scope="external">Metadata</a></span> </td> 
@@ -48,15 +48,15 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/metadata/MetadataUtils.html" format="html" scope="external">MetadataUtils</a></span> </td> 
-    <td colname="2">Class of methods for working with metadata. </td> 
+    <td colname="2">Class of methods for working with metadata.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/metadata/TimedMetadata.html" format="html" scope="external">TimedMetadata</a></span> </td> 
     <td colname="2">Class for the raw representation of the timed metadata inserted into a media stream.</td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/metadata/TimedMetadataType.html" format="html" scope="external"> TimedMetadataType</a></span> </td> 
-    <td colname="2"> Class containing the supported types for timed metadata (in the playlist or stream), such as ID3 metadata or tags.</td> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/metadata/TimedMetadataType.html" format="html" scope="external">TimedMetadataType</a></span> </td> 
+    <td colname="2">Class containing the supported types for timed metadata (in the playlist or stream), such as ID3 metadata or tags.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

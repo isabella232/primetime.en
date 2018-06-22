@@ -26,7 +26,7 @@ title: Media player classes
      </ul> </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTDefaultMediaPlayerClientFactory.html" format="html" scope="external"> PTDefaultMediaPlayerClientFactory</a></span> </td> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTDefaultMediaPlayerClientFactory.html" format="html" scope="external">PTDefaultMediaPlayerClientFactory</a></span> </td> 
     <td colname="2"> Default implementation of <span class="codeph">PTMediaPlayerClientFactory</span> in the 
      <ph conkeyref="phrases/primetime-sdk-name">
       Phrase
@@ -34,23 +34,23 @@ title: Media player classes
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaPlayer.html" format="html" scope="external">PTMediaPlayer</a></span> </td> 
-    <td colname="2">Defines the root component for the Primetime Player framework. <p>Applications create an instance of this class to play back a media. This component dispatches notifications to let your application know the status of the player at any given time. </p> </td> 
+    <td colname="2">Defines the root component for the Primetime Player framework. <p>Applications create an instance of this class to play back a media. This component dispatches notifications to let your application know the status of the player at any given time.</p> </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTMediaPlayerClientFactory.html" format="html" scope="external"> PTMediaPlayerClientFactory</a></span> </td> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTMediaPlayerClientFactory.html" format="html" scope="external">PTMediaPlayerClientFactory</a></span> </td> 
     <td colname="2"> Protocol that describes the methods that a custom media player client factory should implement to provide the available <span class="codeph">PTOpportunityResolver</span> , <span class="codeph">PTContentResolver</span> and <span class="codeph">PTAdPolicySelector</span> instances. </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaPlayerItem.html" format="html" scope="external">PTMediaPlayerItem</a></span> </td> 
-    <td colname="2">Represents a specific audio-video media. </td> 
+    <td colname="2">Represents a specific audio-video media.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaPlayerView.html" format="html" scope="external">PTMediaPlayerView</a></span> </td> 
-    <td colname="2">Manages the view component of the Primetime Player framework. </td> 
+    <td colname="2">Manages the view component of the Primetime Player framework.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaProfile.html" format="html" scope="external">PTMediaProfile</a></span> </td> 
-    <td colname="2">Represents the profile of a single stream in the variant playlist. </td> 
+    <td colname="2">Represents the profile of a single stream in the variant playlist.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaSelectionOption.html" format="html" scope="external">PTMediaSelectionOption</a></span> </td> 
@@ -62,14 +62,14 @@ title: Media player classes
      </ul> </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTOpportunityResolver.html" format="html" scope="external">PTOpportunityResolver</a> </span> class, <span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTOpportunityResolver.html" format="html" scope="external"> PTOpportunityResolver</a> protocol</span> </td> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTOpportunityResolver.html" format="html" scope="external">PTOpportunityResolver</a> </span> class, <span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTOpportunityResolver.html" format="html" scope="external">PTOpportunityResolver</a> protocol</span> </td> 
     <td colname="2">Class used for processing in-manifest cues that will be used as placements for the 
      <ph conref="phrase_library_ios.xml#c_psdk_phrase-library/auditude-name-long">
       Phrase
      </ph> process. </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTOpportunityResolverDelegate.html" format="html" scope="external"> PTOpportunityResolverDelegate</a></span> </td> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTOpportunityResolverDelegate.html" format="html" scope="external">PTOpportunityResolverDelegate</a></span> </td> 
     <td colname="2"> Protocol that describes the methods that the custom opportunity resolver ( <span class="codeph">PTOpportunityResolver</span> ) should use to communicate to the delegate the status of the resolving of the opportunity. </td> 
    </tr> 
    <tr rowsep="1"> 
@@ -88,7 +88,7 @@ title: Media player classes
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTextStyleRule.html" format="html" scope="external">PTTextStyleRule</a></span> </td> 
-    <td colname="2">Defines constants that represent text style attribute keys that form the dictionary of rules. </td> 
+    <td colname="2">Defines constants that represent text style attribute keys that form the dictionary of rules.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

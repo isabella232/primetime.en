@@ -7,24 +7,24 @@
   <colspec colnum="2" colname="2" colwidth="83*" /> 
   <tbody> 
    <tr rowsep="1"> 
-    <td colname="1">Operating system </td> 
-    <td colname="2">Android 4.0 or later (minimum API level 14) </td> 
+    <td colname="1">Operating system</td> 
+    <td colname="2">Android 4.0 or later (minimum API level 14)</td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1">CPU </td> 
-    <td colname="2">1 GHz Single Core or equivalent </td> 
+    <td colname="1">CPU</td> 
+    <td colname="2">1 GHz Single Core or equivalent</td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1">RAM </td> 
-    <td colname="2">256 MB </td> 
+    <td colname="1">RAM</td> 
+    <td colname="2">256 MB</td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1">GPU </td> 
-    <td colname="2">Hardware GPU required for playback </td> 
+    <td colname="1">GPU</td> 
+    <td colname="2">Hardware GPU required for playback</td> 
    </tr> 
    <tr rowsep="0"> 
-    <td colname="1">Architecture </td> 
-    <td colname="2">x86 via Houdini, ARM64, ARMv7, and ARMv8 </td> 
+    <td colname="1">Architecture</td> 
+    <td colname="2">x86 via Houdini, ARM64, ARMv7, and ARMv8</td> 
    </tr> 
   </tbody> 
  </tgroup> 

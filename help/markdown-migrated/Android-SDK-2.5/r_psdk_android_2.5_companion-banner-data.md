@@ -9,30 +9,30 @@
   <colspec colnum="2" colname="col2" colwidth="3.74*" /> 
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">Available information </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Available information</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr> 
-    <td colname="col1">width </td> 
-    <td colname="col2">Width of the companion banner in pixels. </td> 
+    <td colname="col1">width</td> 
+    <td colname="col2">Width of the companion banner in pixels.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">height </td> 
-    <td colname="col2">Height of the companion banner in pixels. </td> 
+    <td colname="col1">height</td> 
+    <td colname="col2">Height of the companion banner in pixels.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">resource type </td> 
+    <td colname="col1">resource type</td> 
     <td colname="col2">The resource type for this companion banner: 
      <ul id="ul_A067787FE49E4B6095BE0AC1D447DBB3"> 
-      <li id="li_02B7224C67004095B3F6E50FD21E507E">html: The data is in HTML code. </li> 
-      <li id="li_5F37E14472424F808C6094F42009E676">iframe: The data is an iframe URL (src). </li> 
+      <li id="li_02B7224C67004095B3F6E50FD21E507E">html: The data is in HTML code.</li> 
+      <li id="li_5F37E14472424F808C6094F42009E676">iframe: The data is an iframe URL (src).</li> 
      </ul> </td> 
    </tr> 
    <tr> 
-    <td colname="col1">static URL </td> 
-    <td colname="col2"> <p>Sometimes, the companion banner also has a <span class="codeph">staticURL</span> that is a direct URL to the image or to a <span class="codeph">.swf</span> (flash banner). </p> <p>If you do not want to use html or iframe, you can use a direct URL to an image or swf to display the banner in the Flash stage instead. In this case, you can use the <span class="codeph">staticURL</span> to display the banner. </p> <p type="important">Note: You must check whether the static URL is a valid string, because this property might not always be available. </p> </td> 
+    <td colname="col1">static URL</td> 
+    <td colname="col2"> <p>Sometimes, the companion banner also has a <span class="codeph">staticURL</span> that is a direct URL to the image or to a <span class="codeph">.swf</span> (flash banner). </p> <p>If you do not want to use html or iframe, you can use a direct URL to an image or swf to display the banner in the Flash stage instead. In this case, you can use the <span class="codeph">staticURL</span> to display the banner. </p> <p type="important">Note: You must check whether the static URL is a valid string, because this property might not always be available.</p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 

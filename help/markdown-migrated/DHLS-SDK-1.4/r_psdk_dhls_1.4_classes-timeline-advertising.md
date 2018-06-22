@@ -9,8 +9,8 @@
   <colspec colnum="2" colname="2" colwidth="70*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -28,15 +28,15 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdBreakPolicy.html" format="html" scope="external">AdBreakPolicy</a></span> </td> 
-    <td colname="2">Enumeration that defines the ad playback policy related to the user bypassing ads while seeking. </td> 
+    <td colname="2">Enumeration that defines the ad playback policy related to the user bypassing ads while seeking.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdBreakTimelineItem.html" format="html" scope="external">AdBreakTimelineItem</a></span> </td> 
-    <td colname="2">Timeline item associated with the specific ad break. </td> 
+    <td colname="2">Timeline item associated with the specific ad break.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdBreakWatchedPolicy.html" format="html" scope="external">AdBreakWatchedPolicy</a></span> </td> 
-    <td colname="2">Enumeration class for possible policies on when to mark an ad break as having been watched. </td> 
+    <td colname="2">Enumeration class for possible policies on when to mark an ad break as having been watched.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdClick.html" format="html" scope="external">AdClick</a></span> </td> 
@@ -44,11 +44,11 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicy.html" format="html" scope="external">AdPolicy</a></span> </td> 
-    <td colname="2">Enumeration class for possible policies on where to resume playing an ad break after seeking or trick-play mode. </td> 
+    <td colname="2">Enumeration class for possible policies on where to resume playing an ad break after seeking or trick-play mode.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicyMode.html" format="html" scope="external">AdPolicyMode</a></span> </td> 
-    <td colname="2">Enumeration class that lists ways in which the player is playing, such as seeking or normal play. </td> 
+    <td colname="2">Enumeration class that lists ways in which the player is playing, such as seeking or normal play.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> <span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicySelector.html" format="html" scope="external">AdPolicyInfo</a></span> </td> 
@@ -56,11 +56,11 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> <span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicySelector.html" format="html" scope="external">AdPolicySelector</a></span></td> 
-    <td colname="2">An ad policy selector interface for enforcing ad behaviors. Applications can conform to this interface by implementing all the required methods or by extending the existing default policy selector class to customize specific behaviors. </td> 
+    <td colname="2">An ad policy selector interface for enforcing ad behaviors. Applications can conform to this interface by implementing all the required methods or by extending the existing default policy selector class to customize specific behaviors.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdTimelineItem.html" format="html" scope="external">AdTimelineItem</a></span> </td> 
-    <td colname="2">Timeline item associated with a specific ad. </td> 
+    <td colname="2">Timeline item associated with a specific ad.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AuditudeAdResolver.html" scope="external" format="html">AuditudeAdResolver</a></span> </td> 
@@ -76,7 +76,7 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/MetadataAdResolver.html" format="html" scope="external">MetadataAdResolver</a></span> </td> 
-    <td colname="2">Class. </td> 
+    <td colname="2">Class.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

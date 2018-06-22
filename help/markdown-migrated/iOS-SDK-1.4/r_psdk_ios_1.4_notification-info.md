@@ -14,11 +14,11 @@ Most informational notifications contain relevant metadata, for example, the URL
   <colspec colnum="5" colname="5" colwidth="29*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Code </th> 
-    <th colname="2" class="entry">Name </th> 
-    <th colname="3" class="entry">Inner Notification </th> 
-    <th colname="4" class="entry">Metadata Keys </th> 
-    <th colname="5" class="entry">Comments </th> 
+    <th colname="1" class="entry">Code</th> 
+    <th colname="2" class="entry">Name</th> 
+    <th colname="3" class="entry">Inner Notification</th> 
+    <th colname="4" class="entry">Metadata Keys</th> 
+    <th colname="5" class="entry">Comments</th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -26,69 +26,69 @@ Most informational notifications contain relevant metadata, for example, the URL
     <td namest="1" nameend="5"><b>Playback</b> </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph">300000 </span> </td> 
-    <td colname="2"><span class="codeph">PLAYBACK_START </span> </td> 
-    <td colname="3">None </td> 
-    <td colname="4">None </td> 
-    <td colname="5">Playback has started. </td> 
+    <td colname="1"><span class="codeph">300000</span> </td> 
+    <td colname="2"><span class="codeph">PLAYBACK_START</span> </td> 
+    <td colname="3">None</td> 
+    <td colname="4">None</td> 
+    <td colname="5">Playback has started.</td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph">300001 </span> </td> 
-    <td colname="2"><span class="codeph">PLAYBACK_COMPLETE </span> </td> 
-    <td colname="3">None </td> 
-    <td colname="4">None </td> 
-    <td colname="5">Playback has completed. </td> 
+    <td colname="1"><span class="codeph">300001</span> </td> 
+    <td colname="2"><span class="codeph">PLAYBACK_COMPLETE</span> </td> 
+    <td colname="3">None</td> 
+    <td colname="4">None</td> 
+    <td colname="5">Playback has completed.</td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph">300002 </span> </td> 
-    <td colname="2"><span class="codeph">SEEK_START </span> </td> 
-    <td colname="3">None </td> 
-    <td colname="4"> <p> None </p> </td> 
-    <td colname="5">A seek operation was initiated. </td> 
+    <td colname="1"><span class="codeph">300002</span> </td> 
+    <td colname="2"><span class="codeph">SEEK_START</span> </td> 
+    <td colname="3">None</td> 
+    <td colname="4"> <p>None</p> </td> 
+    <td colname="5">A seek operation was initiated.</td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph">300003 </span> </td> 
-    <td colname="2"><span class="codeph">SEEK_COMPLETE </span> </td> 
-    <td colname="3">None </td> 
-    <td colname="4"> <p>None </p> </td> 
-    <td colname="5">A seek operation completed. </td> 
+    <td colname="1"><span class="codeph">300003</span> </td> 
+    <td colname="2"><span class="codeph">SEEK_COMPLETE</span> </td> 
+    <td colname="3">None</td> 
+    <td colname="4"> <p>None</p> </td> 
+    <td colname="5">A seek operation completed.</td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph">300005 </span> </td> 
-    <td colname="2"><span class="codeph">PLAYER_STATE_CHANGE </span> </td> 
-    <td colname="3"> <p>None </p> </td> 
-    <td colname="4"> <p>None </p> </td> 
-    <td colname="5">The player state has changed. When state is ERROR, the inner notification is the error notification object that triggered the switch to the ERROR state. </td> 
+    <td colname="1"><span class="codeph">300005</span> </td> 
+    <td colname="2"><span class="codeph">PLAYER_STATE_CHANGE</span> </td> 
+    <td colname="3"> <p>None</p> </td> 
+    <td colname="4"> <p>None</p> </td> 
+    <td colname="5">The player state has changed. When state is ERROR, the inner notification is the error notification object that triggered the switch to the ERROR state.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td namest="1" nameend="5"><b>Adaptive bit rates (ABR)</b> </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph">302000 </span> </td> 
-    <td colname="2"><span class="codeph">BITRATE_CHANGE </span> </td> 
-    <td colname="3"> <p>None </p> </td> 
-    <td colname="4"><span class="codeph">BITRATE </span> </td> 
-    <td colname="5">The bit rate of the video changed. </td> 
+    <td colname="1"><span class="codeph">302000</span> </td> 
+    <td colname="2"><span class="codeph">BITRATE_CHANGE</span> </td> 
+    <td colname="3"> <p>None</p> </td> 
+    <td colname="4"><span class="codeph">BITRATE</span> </td> 
+    <td colname="5">The bit rate of the video changed.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td namest="1" nameend="5"><b>Late-binding audio (LBA)</b> </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph">304000 </span> </td> 
-    <td colname="2"><span class="codeph">AUDIO_TRACK_CHANGE </span> </td> 
-    <td colname="3"> <p>None </p> </td> 
-    <td colname="4"> <p>None </p> </td> 
-    <td colname="5"> <p>The audio track has changed. </p> </td> 
+    <td colname="1"><span class="codeph">304000</span> </td> 
+    <td colname="2"><span class="codeph">AUDIO_TRACK_CHANGE</span> </td> 
+    <td colname="3"> <p>None</p> </td> 
+    <td colname="4"> <p>None</p> </td> 
+    <td colname="5"> <p>The audio track has changed.</p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td namest="1" nameend="5"><b>Subtitles</b> </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph">307000 </span> </td> 
-    <td colname="2"><span class="codeph">SUBTITLES_TRACK_CHANGE </span> </td> 
-    <td colname="3"> <p>None </p> </td> 
-    <td colname="4"> <p>None </p> </td> 
-    <td colname="5"> <p>The subtitles track changed. </p> </td> 
+    <td colname="1"><span class="codeph">307000</span> </td> 
+    <td colname="2"><span class="codeph">SUBTITLES_TRACK_CHANGE</span> </td> 
+    <td colname="3"> <p>None</p> </td> 
+    <td colname="4"> <p>None</p> </td> 
+    <td colname="5"> <p>The subtitles track changed.</p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 

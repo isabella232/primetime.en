@@ -17,7 +17,7 @@
    <tr> 
     <td colname="col1"> <span class="codeph"> id </span> </td> 
     <td colname="col02"> long </td> 
-    <td colname="col2"> <p>Unique identifier of the timed metadata. </p> <p>This value is usually extracted from the cue/tag ID attribute. Otherwise, a unique random value is provided. Use <span class="codeph"> getId </span>. </p> </td> 
+    <td colname="col2"> <p>Unique identifier of the timed metadata.</p> <p>This value is usually extracted from the cue/tag ID attribute. Otherwise, a unique random value is provided. Use <span class="codeph"> getId </span>. </p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> metadata </span> </td> 
@@ -39,8 +39,8 @@
     <td colname="col02"> Type </td> 
     <td colname="col2"> <p>The type of the timed metadata. Use <span class="codeph"> getType </span>. 
       <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
-       <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - indicates that the timed metadata was created from a tag in the playlist/manifest. </li> 
-       <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - indicates that the timed metadata was created from an ID3 tag in the media stream. </li> 
+       <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - indicates that the timed metadata was created from a tag in the playlist/manifest.</li> 
+       <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - indicates that the timed metadata was created from an ID3 tag in the media stream.</li> 
       </ul> </p> </td> 
    </tr> 
   </tbody> 
@@ -74,31 +74,31 @@ Remember the following:
   <tbody> 
    <tr> 
     <td colname="col1"> <span class="codeph"> public enum Type {TAG, ID3} </span> </td> 
-    <td colname="col2"> <p>Possible types for the timed metadata. </p> </td> 
+    <td colname="col2"> <p>Possible types for the timed metadata.</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> public TimedMetadata(Type type, long time, long id, String name, Metadata metadata); </span> </td> 
-    <td colname="col2"> <p>Default constructor (time is the local stream time). </p> </td> 
+    <td colname="col2"> <p>Default constructor (time is the local stream time).</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> public long getTime(); </span> </td> 
-    <td colname="col2"> <p>The time position, relative to the start of the main content, where this metadata was inserted in the stream. </p> </td> 
+    <td colname="col2"> <p>The time position, relative to the start of the main content, where this metadata was inserted in the stream.</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> public Metadata getMetadata(); </span> </td> 
-    <td colname="col2"> <p>The metadata inserted in the stream. </p> </td> 
+    <td colname="col2"> <p>The metadata inserted in the stream.</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> public Type getType(); </span> </td> 
-    <td colname="col2"> <p>Returns the type of the timed metadata. </p> </td> 
+    <td colname="col2"> <p>Returns the type of the timed metadata.</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> public long getId(); </span> </td> 
-    <td colname="col2"> <p>Returns the ID extracted from the cue/tag attributes. Otherwise, a unique random value is provided. </p> </td> 
+    <td colname="col2"> <p>Returns the ID extracted from the cue/tag attributes. Otherwise, a unique random value is provided.</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> public String getName(); </span> </td> 
-    <td colname="col2"> <p>Returns the name of the cue, which is usually the HLS tag name. </p> </td> 
+    <td colname="col2"> <p>Returns the name of the cue, which is usually the HLS tag name.</p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 

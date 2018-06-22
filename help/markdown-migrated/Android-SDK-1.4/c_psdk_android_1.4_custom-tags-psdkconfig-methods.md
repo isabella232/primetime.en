@@ -26,7 +26,7 @@ applies the global configuration automatically to any media stream that does not
     <td colname="col2"> Sets the list of subscribed tags that will be exposed to the application. <p>Your application is also automatically subscribed to all tags transmitted through <span class="codeph"> setAdTags </span>. </p> </td> 
    </tr> 
    <tr> 
-    <td namest="col1" nameend="col2"> <b>Customize the ad tags used by the default opportunity detector </b> </td> 
+    <td namest="col1" nameend="col2"> <b>Customize the ad tags used by the default opportunity detector</b> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <span class="codeph"> public final String[] getAdTags(); </span> </td> 

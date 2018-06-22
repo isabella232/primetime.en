@@ -15,8 +15,8 @@ Notification objects provide information related to the player's status.  provid
   <colspec colnum="2" colname="2" colwidth="80*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Element </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Element</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -31,10 +31,10 @@ Notification objects provide information related to the player's status.  provid
     <td colname="1"><span class="codeph">code</span></td> 
     <td colname="2">The numerical representation assigned to the notification. 
      <ul id="ul_31AB497C6FFA452496DD09B0D78687B9"> 
-      <li id="li_53E75022C50246E0982E315D04EFD8B3">Error notification events, from 100000 to 199999 </li> 
-      <li id="li_11AE91D1325E4F718228E662C9C55F9A">Warning notification events, from 200000 to 299999 </li> 
-      <li id="li_6D3EA03845294DC2BAD1ACF507639E51">Information notification events, from 300000 to 399999 </li> 
-     </ul> <p>Each top-level range, such as errors, is divided into subranges, such as 101000 through 101999 representing playback errors. </p> </td> 
+      <li id="li_53E75022C50246E0982E315D04EFD8B3">Error notification events, from 100000 to 199999</li> 
+      <li id="li_11AE91D1325E4F718228E662C9C55F9A">Warning notification events, from 200000 to 299999</li> 
+      <li id="li_6D3EA03845294DC2BAD1ACF507639E51">Information notification events, from 300000 to 399999</li> 
+     </ul> <p>Each top-level range, such as errors, is divided into subranges, such as 101000 through 101999 representing playback errors.</p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph">name</span></td> 

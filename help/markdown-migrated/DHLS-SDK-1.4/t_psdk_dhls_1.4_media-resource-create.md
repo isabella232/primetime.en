@@ -8,20 +8,20 @@ title: Create a media resource
 # Create a media resource
 
 >1. Create a `codeph MediaResource` by passing information about the media to the `codeph MediaResource` constructor.
-<table id="table_DD0D5D9129D54F73881399B9B4FF546A"> 
+><table id="table_DD0D5D9129D54F73881399B9B4FF546A"> 
  <tgroup cols="2">
   <colspec colnum="1" colname="col1" colwidth="1.00*" />
   <colspec colnum="2" colname="col2" colwidth="2.99*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">Constructor Parameter </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Constructor Parameter</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr>
   </thead> 
   <tbody> 
    <tr> 
     <td colname="col1"><span class="codeph">url</span></td> 
-    <td colname="col2"> <p>A string that represents the URL of the manifest/playlist of the media. </p> </td> 
+    <td colname="col2"> <p>A string that represents the URL of the manifest/playlist of the media.</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">type</span> </td> 

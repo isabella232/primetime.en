@@ -8,14 +8,14 @@
   <colspec colnum="2" colname="2" colwidth="63*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/resolvers/ContentResolver.html" format="html" scope="external">ContentResolver</a></span> </td> 
-    <td colname="2">Base class for various content resolvers. </td> 
+    <td colname="2">Base class for various content resolvers.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/resolvers/ContentResolverClient.html" format="html" scope="external">ContentResolverClient</a></span> </td> 

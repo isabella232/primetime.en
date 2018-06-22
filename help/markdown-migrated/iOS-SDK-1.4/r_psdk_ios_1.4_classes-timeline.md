@@ -7,18 +7,18 @@
   <colspec colnum="2" colname="2" colwidth="74*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry"> <p>Description </p> </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry"> <p>Description</p> </th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"> <a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTPlacementOpportunity.html" format="html" scope="external">PTPlacementOpportunity</a> </td> 
-    <td colname="2">An opportunity class represents a point of interest on the timeline. </td> 
+    <td colname="2">An opportunity class represents a point of interest on the timeline.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTimeline.html" format="html" scope="external">PTTimeline</a> </td> 
-    <td colname="2">Class that represents the timeline of the content, including ad breaks. </td> 
+    <td colname="2">Class that represents the timeline of the content, including ad breaks.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

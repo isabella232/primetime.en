@@ -19,12 +19,12 @@ These are the most important API elements for working with DRM:
 <a id="section_4204CE2731A44F67A3664AEDE8CCCA47"></a>
 
 Additional relevant API elements:
-* [flash.net.drm.DRMManager ](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/DRMManager.html)
-* [flash.net.drm.DRMContentData ](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/DRMContentData.html)
-* [flash.net.drm.DRMVoucher ](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/DRMVoucher.html)
+* [flash.net.drm.DRMManager](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/DRMManager.html)
+* [flash.net.drm.DRMContentData](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/DRMContentData.html)
+* [flash.net.drm.DRMVoucher](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/DRMVoucher.html)
 * [flash.net.drm.AuthenticationMethod](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/drm/AuthenticationMethod.html)
-* [flash.events.DRMStatusEvent ](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/DRMStatusEvent.html)
-* [flash.events.DRMErrorEvent ](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/DRMErrorEvent.html)
+* [flash.events.DRMStatusEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/DRMStatusEvent.html)
+* [flash.events.DRMErrorEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/DRMErrorEvent.html)
 
 <a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>
 

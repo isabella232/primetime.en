@@ -9,8 +9,8 @@
   <colspec colnum="2" colname="2" colwidth="61*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Class name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Class name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -32,7 +32,7 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph">MediaPlayerNotification.<a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayerNotification.NotificationCode.html" format="html" scope="external">NotificationCode</a></span> </td> 
-    <td colname="2">Returns the description associated with the provided notification code. </td> 
+    <td colname="2">Returns the description associated with the provided notification code.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/session/NotificationHistory.html" format="html" scope="external">NotificationHistory</a> </td> 
@@ -48,7 +48,7 @@
    </tr> 
    <tr rowsep="0"> 
     <td colname="1"><span class="codeph">MediaPlayerNotification.<a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayerNotification.EntryType.html" format="html" scope="external">EntryType</a></span> </td> 
-    <td colname="2">Class that contains the supported notifications types. </td> 
+    <td colname="2">Class that contains the supported notifications types.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

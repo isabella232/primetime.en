@@ -8,7 +8,7 @@ title: Create a media resource
 # Create a media resource
 
 >1. Create a `codeph  MediaResource` by passing information about the media to the `codeph  MediaResource` constructor.
-<table id="table_22886D6770FB45E99D35D0B90E6CC302"> 
+><table id="table_22886D6770FB45E99D35D0B90E6CC302"> 
  <tgroup cols="2"> 
   <colspec colnum="1" colname="col1" colwidth="1*" /> 
   <colspec colnum="2" colname="col2" colwidth="4*" /> 

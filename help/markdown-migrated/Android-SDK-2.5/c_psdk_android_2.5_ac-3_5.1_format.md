@@ -53,20 +53,20 @@ Here is the typical workflow that occurs when  finds a manifest with AC-3 and AA
   <thead> 
    <tr> 
     <th colname="col1" class="entry"> </th> 
-    <th colname="col2" class="entry">Surround sound </th> 
-    <th colname="col3" class="entry">Stereo speaker </th> 
+    <th colname="col2" class="entry">Surround sound</th> 
+    <th colname="col3" class="entry">Stereo speaker</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr> 
-    <td colname="col1">Device configuration Dolby on (or auto) </td> 
-    <td colname="col2">Device configuration Dolby on (or auto) </td> 
-    <td colname="col3">Stereo mode </td> 
+    <td colname="col1">Device configuration Dolby on (or auto)</td> 
+    <td colname="col2">Device configuration Dolby on (or auto)</td> 
+    <td colname="col3">Stereo mode</td> 
    </tr> 
    <tr> 
-    <td colname="col1">Device configuration Dolby off </td> 
-    <td colname="col2">Stereo mode </td> 
-    <td colname="col3">Stereo mode </td> 
+    <td colname="col1">Device configuration Dolby off</td> 
+    <td colname="col2">Stereo mode</td> 
+    <td colname="col3">Stereo mode</td> 
    </tr> 
   </tbody> 
  </tgroup> 

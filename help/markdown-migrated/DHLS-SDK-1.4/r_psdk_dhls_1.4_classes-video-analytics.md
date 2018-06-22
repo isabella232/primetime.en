@@ -8,8 +8,8 @@
   <colspec colnum="2" colname="2" colwidth="1.16*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -26,7 +26,7 @@
    </tr> 
    <tr rowsep="0"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/videoanalytics/VideoAnalyticsMetadata.html" format="html" scope="external">VideoAnalyticsMetadata</a></span> </td> 
-    <td colname="2"> Contains property metadata specific to Video Analytics.</td> 
+    <td colname="2">Contains property metadata specific to Video Analytics.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

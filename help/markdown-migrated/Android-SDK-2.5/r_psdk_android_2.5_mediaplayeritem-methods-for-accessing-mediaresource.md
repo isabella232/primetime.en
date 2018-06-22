@@ -20,7 +20,7 @@
     <td colname="3"> Provides the list of ad tags that are used for the ad placement process. </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td namest="2" nameend="3"> <b>Live stream </b> </td> 
+    <td namest="2" nameend="3"> <b>Live stream</b> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="2"> <span class="codeph"> boolean isLive(); </span> </td> 
@@ -57,7 +57,7 @@
     <td colname="3"> Sets a closed-caption track to be the current closed-caption track. </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td namest="2" nameend="3"> <b>Alternate audio tracks </b> </td> 
+    <td namest="2" nameend="3"> <b>Alternate audio tracks</b> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="2"> <span class="codeph"> boolean hasAlternateAudio(); </span> </td> 
@@ -88,7 +88,7 @@
     <td colname="3"> Provides a list of the timed metadata objects associated with the stream. </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td namest="2" nameend="3"> <b>Multiple profiles (bit rates) </b> </td> 
+    <td namest="2" nameend="3"> <b>Multiple profiles (bit rates)</b> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="2"> <span class="codeph"> boolean isDynamic(); </span> </td> 
@@ -103,7 +103,7 @@
     <td colname="3"> Retrieves the currently selected profile. </td> 
    </tr> 
    <tr rowsep="1"> 
-    <td namest="2" nameend="3"> <b>Trick play </b> </td> 
+    <td namest="2" nameend="3"> <b>Trick play</b> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="2"> <span class="codeph"> boolean isTrickPlaySupported(); </span> </td> 

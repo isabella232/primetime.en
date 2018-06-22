@@ -8,14 +8,14 @@
   <colspec colnum="2" colname="2" colwidth="63*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
-    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/NetworkConfiguration.html" format="html" scope="external"> NetworkConfiguration</a></span> </td> 
-    <td colname="2">Class that provides access to system network configuration. </td> 
+    <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/NetworkConfiguration.html" format="html" scope="external">NetworkConfiguration</a></span> </td> 
+    <td colname="2">Class that provides access to system network configuration.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

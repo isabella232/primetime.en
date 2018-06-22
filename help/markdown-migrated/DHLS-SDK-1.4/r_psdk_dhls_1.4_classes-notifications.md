@@ -8,8 +8,8 @@
   <colspec colnum="2" colname="2" colwidth="61*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Class name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Class name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -19,7 +19,7 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/notifications/NotificationCode.html" format="html" scope="external">NotificationCode</a></span> </td> 
-    <td colname="2">Returns the description associated with the provided notification codeand provides numeric constants for notification objects. </td> 
+    <td colname="2">Returns the description associated with the provided notification codeand provides numeric constants for notification objects.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/notifications/NotificationHistory.html" format="html" scope="external">NotificationHistory</a></span> </td> 
@@ -31,7 +31,7 @@
    </tr> 
    <tr rowsep="0"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/notifications/NotificationType.html" format="html" scope="external">NotificationType</a></span> </td> 
-    <td colname="2">Class that contains the supported notifications types. </td> 
+    <td colname="2">Class that contains the supported notifications types.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

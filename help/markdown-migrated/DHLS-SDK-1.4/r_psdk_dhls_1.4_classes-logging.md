@@ -8,22 +8,22 @@
   <colspec colnum="2" colname="2" colwidth="73*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry"> <p>Name </p> </th> 
-    <th colname="2" class="entry"> <p>Description </p> </th> 
+    <th colname="1" class="entry"> <p>Name</p> </th> 
+    <th colname="2" class="entry"> <p>Description</p> </th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/BaseLogger.html" format="html" scope="external">BaseLogger</a></span> </td> 
-    <td colname="2">Class. Base implementation class of logger interface. </td> 
+    <td colname="2">Class. Base implementation class of logger interface.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/DefaultLogger.html" format="html" scope="external">DefaultLogger</a></span> </td> 
-    <td colname="2">Class. Default logger sends all incoming message to trace. </td> 
+    <td colname="2">Class. Default logger sends all incoming message to trace.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/Log.html" format="html" scope="external">Log</a></span> </td> 
-    <td colname="2">Class. Provides access to the log system. </td> 
+    <td colname="2">Class. Provides access to the log system.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/LogFactory.html" format="html" scope="external">LogFactory</a></span> </td> 

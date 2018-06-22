@@ -8,22 +8,22 @@
   <colspec colnum="2" colname="2" colwidth="63*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"> <span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/operations/AdBreakPlacement.html" format="html" scope="external">AdBreakPlacement</a></span> </td> 
-    <td colname="2">Ad break placement operation class. </td> 
+    <td colname="2">Ad break placement operation class.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/operations/NopTimelineOperation.html" format="html" scope="external">NopTimelineOperation</a></span> </td> 
-    <td colname="2">Class indicating a NOP operation on the timeline. </td> 
+    <td colname="2">Class indicating a NOP operation on the timeline.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/operations/TimelineOperation.html" format="html" scope="external">TimelineOperation</a></span> </td> 
-    <td colname="2">Base class for all operations that affect the timeline. </td> 
+    <td colname="2">Base class for all operations that affect the timeline.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

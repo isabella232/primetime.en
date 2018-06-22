@@ -38,7 +38,7 @@ The following example shows the `filepath  ICCConfig.java` file, configured to r
  * @return true if visibility is set to true, false otherwise 
  */ 
  
-<b> public boolean getCCVisibility();</b> 
+<b>public boolean getCCVisibility();</b> 
  
  /** 
  * Get the closed captioning font style 

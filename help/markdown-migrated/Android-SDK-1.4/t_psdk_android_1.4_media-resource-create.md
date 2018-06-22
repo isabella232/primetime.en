@@ -8,7 +8,7 @@ title: Create a media resource
 # Create a media resource
 
 >1. Create a `codeph  MediaResource` by passing information about the media to the `codeph  MediaResource` constructor.
-<table id="table_DD0D5D9129D54F73881399B9B4FF546A"> 
+><table id="table_DD0D5D9129D54F73881399B9B4FF546A"> 
  <tgroup cols="2"> 
   <colspec colnum="1" colname="col1" colwidth="1.00*" /> 
   <colspec colnum="2" colname="col2" colwidth="2.99*" /> 
@@ -20,18 +20,18 @@ title: Create a media resource
   </thead> 
   <tbody> 
    <tr> 
-    <td colname="col1"> <p>url </p> </td> 
-    <td colname="col2"> <p>A string that represents the URL of the manifest/playlist of the media. </p> </td> 
+    <td colname="col1"> <p>url</p> </td> 
+    <td colname="col2"> <p>A string that represents the URL of the manifest/playlist of the media.</p> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>type </p> </td> 
+    <td colname="col1"> <p>type</p> </td> 
     <td colname="col2"> <p>One of the following members of the <span class="codeph"> MediaResource.Type </span> enumeration that corresponds to the indicated file type: 
       <ul id="ul_72636C41CA7E4538A3BE11A79E0282FC"> 
        <li id="li_070960200DEB40E992C58FCB8909AEA3"> <span class="codeph"> HLS </span> - M3U8 </li> 
       </ul> </p> </td> 
    </tr> 
    <tr> 
-    <td colname="col1"> <p>metadata </p> </td> 
+    <td colname="col1"> <p>metadata</p> </td> 
     <td colname="col2"> <p>An instance of the <span class="codeph"> Metadata </span> class, which might contain custom information about the content to be loaded. </p> <p>Examples of content are alternate or ad content to place inside the main content. If using advertising, set up <span class="codeph"> AuditudeSettings </span>. For more information, see <a href="c_psdk_android_1.4_ad-insertion-metadata.xml" format="dita" scope="local"> Ad Insertion Metadata </a>. </p> </td> 
    </tr> 
   </tbody> 

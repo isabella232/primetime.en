@@ -23,9 +23,9 @@ title: Details for the NATIVE_ERROR notification
        Native error code from the AVE. 
      </ph> These codes represent the following: 
      <ul id="ul_330C626DE27B45A09E8851CC24768A07"> 
-      <li id="li_0845A9BBB55545BDB49BD4F4802C0E54">DRM errors (codes 3300 to 3367). These are the same as the equivalent Flash Player error codes. </li> 
-      <li id="li_98A571480C154CF0AE1DC101FF0834C4">Video playback errors (-1 to 89). </li> 
-      <li id="li_D7C19955DEF94DA88B822C8C57D6D2F4">Cryptography errors (300 to 307). </li> 
+      <li id="li_0845A9BBB55545BDB49BD4F4802C0E54">DRM errors (codes 3300 to 3367). These are the same as the equivalent Flash Player error codes.</li> 
+      <li id="li_98A571480C154CF0AE1DC101FF0834C4">Video playback errors (-1 to 89).</li> 
+      <li id="li_D7C19955DEF94DA88B822C8C57D6D2F4">Cryptography errors (300 to 307).</li> 
      </ul> </td> 
    </tr> 
    <tr> 

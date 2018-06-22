@@ -7,14 +7,14 @@
   <colspec colnum="2" colname="2" colwidth="69*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAdMetadata.html" format="html" scope="external">PTAdMetadata</a> </td> 
-    <td colname="2">Class that provides properties that should be configured for resolving ads for a given media item. All the required properties must be set to configure the player for successfully resolving ads. </td> 
+    <td colname="2">Class that provides properties that should be configured for resolving ads for a given media item. All the required properties must be set to configure the player for successfully resolving ads.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html" format="html" scope="external">PTAuditudeMetadata</a> </td> 
@@ -32,11 +32,11 @@
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTimedMetadata.html" format="html" scope="external">PTTimedMetadata</a> </td> 
-    <td colname="2">Class that represents a custom HLS tag in the stream. </td> 
+    <td colname="2">Class that represents a custom HLS tag in the stream.</td> 
    </tr> 
    <tr rowsep="0"> 
     <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTrackingMetadata.html" format="html" scope="external">PTTrackingMetadata</a> </td> 
-    <td colname="2">Defines a base class for all tracking and analytics related metadata. </td> 
+    <td colname="2">Defines a base class for all tracking and analytics related metadata.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

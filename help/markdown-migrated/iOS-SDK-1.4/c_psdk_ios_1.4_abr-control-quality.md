@@ -17,18 +17,18 @@ You can set the adaptive bit-rate (ABR) switching policy and the initial, minimu
   <colspec colnum="2" colname="col2" colwidth="3.45*" /> 
   <tbody> 
    <tr> 
-    <td colname="col01">Initial bit rate </td> 
-    <td colname="col2"> <p>The desired playback bit rate (in bits per second) for the first segment. When playback starts, the closest profile, which is equal to or greater than the initial bit rate, is used for the first segment. </p> <p> If a minimum bit rate is defined, and the initial bit rate is lower than the minimum rate, 
+    <td colname="col01">Initial bit rate</td> 
+    <td colname="col2"> <p>The desired playback bit rate (in bits per second) for the first segment. When playback starts, the closest profile, which is equal to or greater than the initial bit rate, is used for the first segment.</p> <p> If a minimum bit rate is defined, and the initial bit rate is lower than the minimum rate, 
       <ph conkeyref="phrases/primetime-sdk-name" /> selects the profile with the lowest bit rate above the minimum bit rate. If the initial rate is above the maximum rate, 
-      <ph conkeyref="phrases/primetime-sdk-name" /> selects the highest rate below the maximum rate. </p> <p>If the initial bit rate is zero or undefined, the initial bit rate is determined by the ABR policy. </p> </td> 
+      <ph conkeyref="phrases/primetime-sdk-name" /> selects the highest rate below the maximum rate. </p> <p>If the initial bit rate is zero or undefined, the initial bit rate is determined by the ABR policy.</p> </td> 
    </tr> 
    <tr> 
-    <td colname="col01">Minimum bit rate </td> 
-    <td colname="col2"> <p>The lowest allowed bit rate to which the ABR can switch. ABR switching ignores profiles with a bit rate that is lower than this bit rate. </p> </td> 
+    <td colname="col01">Minimum bit rate</td> 
+    <td colname="col2"> <p>The lowest allowed bit rate to which the ABR can switch. ABR switching ignores profiles with a bit rate that is lower than this bit rate.</p> </td> 
    </tr> 
    <tr> 
-    <td colname="col01">Maximum bit rate </td> 
-    <td colname="col2"> <p>The highest allowed bit rate to which the ABR can switch. ABR switching ignores profiles with a bit rate higher than this bit rate. </p> </td> 
+    <td colname="col01">Maximum bit rate</td> 
+    <td colname="col2"> <p>The highest allowed bit rate to which the ABR can switch. ABR switching ignores profiles with a bit rate higher than this bit rate.</p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 

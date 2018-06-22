@@ -9,10 +9,10 @@
     <td colname="col2">Include and set the <span class="codeph">RESOLUTION</span> property for each ABR stream in the manifest file. You must use Flash Player 14 or later.</td> 
    </tr> 
    <tr> 
-    <td colname="col2">If the DRM-protected stream is multiple bit rate (MBR), the DRM encryption key used for the MBR should be the same as the key used in all the bit-rate streams. </td> 
+    <td colname="col2">If the DRM-protected stream is multiple bit rate (MBR), the DRM encryption key used for the MBR should be the same as the key used in all the bit-rate streams.</td> 
    </tr> 
    <tr> 
-    <td colname="col2"> Must have the same bit-rate renditions as the renditions of the main content. </td> 
+    <td colname="col2">Must have the same bit-rate renditions as the renditions of the main content.</td> 
    </tr> 
   </tbody> 
  </tgroup> 

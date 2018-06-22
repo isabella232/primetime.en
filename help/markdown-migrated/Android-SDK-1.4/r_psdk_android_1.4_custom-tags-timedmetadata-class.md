@@ -39,8 +39,8 @@
     <td colname="col02"> Type </td> 
     <td colname="col2"> The type of the timed metadata. Use <span class="codeph"> getType </span>. 
      <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
-      <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - indicates that the timed metadata was created from a tag in the playlist/manifest. </li> 
-      <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - indicates that the timed metadata was created from an ID3 tag in the media stream. </li> 
+      <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - indicates that the timed metadata was created from a tag in the playlist/manifest.</li> 
+      <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - indicates that the timed metadata was created from an ID3 tag in the media stream.</li> 
      </ul> </td> 
    </tr> 
   </tbody> 

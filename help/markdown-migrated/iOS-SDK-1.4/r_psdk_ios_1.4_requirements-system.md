@@ -7,8 +7,8 @@
   <colspec colnum="2" colname="2" colwidth="83*" /> 
   <tbody> 
    <tr rowsep="0"> 
-    <td colname="1">Operating system </td> 
-    <td colname="2">iOS 6.0 or later </td> 
+    <td colname="1">Operating system</td> 
+    <td colname="2">iOS 6.0 or later</td> 
    </tr> 
   </tbody> 
  </tgroup> 

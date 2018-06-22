@@ -67,46 +67,46 @@ Each feed entry is a JSON object with a given set of attributes:
   <colspec colnum="2" colname="col2" colwidth="3.85*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">Property </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Property</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr>
   </thead> 
   <tbody> 
    <tr> 
     <td colname="col1"><span class="codeph">id</span> </td> 
-    <td colname="col2">A unique identifier/guide for the content as set by the feed publishing system. </td> 
+    <td colname="col2">A unique identifier/guide for the content as set by the feed publishing system.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">title</span> </td> 
-    <td colname="col2">A title for the content. </td> 
+    <td colname="col2">A title for the content.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">description</span> </td> 
-    <td colname="col2">A description of the content. </td> 
+    <td colname="col2">A description of the content.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">categories</span> </td> 
-    <td colname="col2">A list of categories tagged for the content that can be used by the application to enhance the user's experience. Read into the properties for the content. </td> 
+    <td colname="col2">A list of categories tagged for the content that can be used by the application to enhance the user's experience. Read into the properties for the content.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">keywords</span> </td> 
-    <td colname="col2">A list of comma separated keywords, can be used by the application to enhance the user's experience. Read into the properties for the content. </td> 
+    <td colname="col2">A list of comma separated keywords, can be used by the application to enhance the user's experience. Read into the properties for the content.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">isLive</span> </td> 
-    <td colname="col2">true or false, indicating if it is a Live or VOD stream. </td> 
+    <td colname="col2">true or false, indicating if it is a Live or VOD stream.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">content</span> </td> 
-    <td colname="col2">An array of JSON objects with alternate formats for the content along with the corresponding URLs. For example, there could be urls for the f4m and m3u8 formats. The JSON object attributes are described further below. </td> 
+    <td colname="col2">An array of JSON objects with alternate formats for the content along with the corresponding URLs. For example, there could be urls for the f4m and m3u8 formats. The JSON object attributes are described further below.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">thumbnails</span> </td> 
-    <td colname="col2">An array of JSON objects with urls for different sizes of thumbnails. The JSON object attributes are defined below. </td> 
+    <td colname="col2">An array of JSON objects with urls for different sizes of thumbnails. The JSON object attributes are defined below.</td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">metadata</span> </td> 
-    <td colname="col2">A JSON object defining metadata for the content, currently this metadata is limited to ad related metadata. The metadata object is defined below. </td> 
+    <td colname="col2">A JSON object defining metadata for the content, currently this metadata is limited to ad related metadata. The metadata object is defined below.</td> 
    </tr> 
   </tbody> 
  </tgroup> 
@@ -133,18 +133,18 @@ The following code block defines the JSON objects that form the array of **conte
   <colspec colnum="2" colname="col2" colwidth="3.85*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">Property </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Property</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr>
   </thead> 
   <tbody> 
    <tr> 
     <td colname="col1"><span class="codeph">format</span> </td> 
-    <td colname="col2"> <p>Needs to be m3u8 format for Android. </p> </td> 
+    <td colname="col2"> <p>Needs to be m3u8 format for Android.</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"><span class="codeph">url</span> </td> 
-    <td colname="col2">The url to the video stream for the given format. </td> 
+    <td colname="col2">The url to the video stream for the given format.</td> 
    </tr> 
   </tbody> 
  </tgroup> 
@@ -179,26 +179,26 @@ The following code block defines the JSON objects that form the array of **thumb
   <colspec colnum="2" colname="col2" colwidth="3.85*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">Property </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Property</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr>
   </thead> 
   <tbody> 
    <tr> 
-    <td colname="col1">format </td> 
-    <td colname="col2">A string indicating the format of the thumbnail file, for example, JPEG, PNG, etc. </td> 
+    <td colname="col1">format</td> 
+    <td colname="col2">A string indicating the format of the thumbnail file, for example, JPEG, PNG, etc.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">height </td> 
-    <td colname="col2">The height of the thumbnail. In the reference application, the thumbnail with smallest height and width is returned as the small thumbnail and the one with the largest width and height is returned as the large thumbnail. </td> 
+    <td colname="col1">height</td> 
+    <td colname="col2">The height of the thumbnail. In the reference application, the thumbnail with smallest height and width is returned as the small thumbnail and the one with the largest width and height is returned as the large thumbnail.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">width </td> 
-    <td colname="col2">The width of the thumbnail. In the reference application, the thumbnail with smallest height and width is returned as the small thumbnail and the one with the largest width and height is returned as the large thumbnail. </td> 
+    <td colname="col1">width</td> 
+    <td colname="col2">The width of the thumbnail. In the reference application, the thumbnail with smallest height and width is returned as the small thumbnail and the one with the largest width and height is returned as the large thumbnail.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">url </td> 
-    <td colname="col2">The url to the thumbnail file. </td> 
+    <td colname="col1">url</td> 
+    <td colname="col2">The url to the thumbnail file.</td> 
    </tr> 
   </tbody> 
  </tgroup> 
@@ -228,22 +228,22 @@ The following code block defines the **metadata object**:
   <colspec colnum="2" colname="col2" colwidth="3.85*" />
   <thead> 
    <tr> 
-    <th colname="col1" class="entry">Property </th> 
-    <th colname="col2" class="entry">Description </th> 
+    <th colname="col1" class="entry">Property</th> 
+    <th colname="col2" class="entry">Description</th> 
    </tr>
   </thead> 
   <tbody> 
    <tr> 
-    <td colname="col1">ad </td> 
-    <td colname="col2">Ad-related metadata. </td> 
+    <td colname="col1">ad</td> 
+    <td colname="col2">Ad-related metadata.</td> 
    </tr> 
    <tr> 
-    <td colname="col1">type </td> 
-    <td colname="col2"> <p> Value can be Primetime Ads, Direct Ad Breaks, or Custom Ad Markers. </p> <p>The PSDK provides built-in support for the following types of metadata: Auditude-related metadata for Primetime Ad Serving (Primetime Ads), direct ad-breaks with ad urls (Direct Ad Breaks), and custom ad markers that provide the TimeRange for each ad marker (Custom Ad Markers). Each type has a built-in <span class="codeph">AdProvider</span> in the PSDK that processes the metadata. </p> <p>The JSON format for each of these have been define below. </p> </td> 
+    <td colname="col1">type</td> 
+    <td colname="col2"> <p>Value can be Primetime Ads, Direct Ad Breaks, or Custom Ad Markers.</p> <p>The PSDK provides built-in support for the following types of metadata: Auditude-related metadata for Primetime Ad Serving (Primetime Ads), direct ad-breaks with ad urls (Direct Ad Breaks), and custom ad markers that provide the TimeRange for each ad marker (Custom Ad Markers). Each type has a built-in <span class="codeph">AdProvider</span> in the PSDK that processes the metadata. </p> <p>The JSON format for each of these have been define below.</p> </td> 
    </tr> 
    <tr> 
-    <td colname="col1">details </td> 
-    <td colname="col2">Includes the ad metadata attributes. Both types of ad metadata have their own set of attributes defined below. For the built-in types, the attributes included define the data expected by the PSDK for that type. </td> 
+    <td colname="col1">details</td> 
+    <td colname="col2">Includes the ad metadata attributes. Both types of ad metadata have their own set of attributes defined below. For the built-in types, the attributes included define the data expected by the PSDK for that type.</td> 
    </tr> 
    <tr> 
     <td colname="col1">entitlement</td> 

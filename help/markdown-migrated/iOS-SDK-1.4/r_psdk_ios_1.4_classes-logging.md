@@ -7,14 +7,14 @@
   <colspec colnum="2" colname="2" colwidth="73*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry"> <p>Name </p> </th> 
-    <th colname="2" class="entry"> <p>Description </p> </th> 
+    <th colname="1" class="entry"> <p>Name</p> </th> 
+    <th colname="2" class="entry"> <p>Description</p> </th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1" rowsep="0"> <a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTLogEntry.html" format="html" scope="external">PTLogEntry</a> </td> 
-    <td colname="2" rowsep="0">Class that defines an entry log and holds information about a log message. </td> 
+    <td colname="2" rowsep="0">Class that defines an entry log and holds information about a log message.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> <a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTLogFactory.html" format="html" scope="external">PTLogFactory</a> </td> 

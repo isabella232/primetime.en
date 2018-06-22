@@ -18,11 +18,11 @@ handles time-range errors with the following options:
   merges the time-range subsets.
   
   
-* **Intersect **
+* **Intersect**
   merges the intersecting time ranges.
   
   
-* **Replace ranges conflict **
+* **Replace ranges conflict**
   selects the replace duration from the earliest `codeph timeRange` that appears in the conflicting group.
   
   

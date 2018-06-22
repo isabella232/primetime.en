@@ -21,8 +21,8 @@ State-transition diagram for the lifecycle of a MediaPlayer instance:
   <colspec colnum="2" colname="col2" colwidth="1.41*" /> 
   <thead> 
    <tr> 
-    <th colname="col1" class="entry"> PTMediaPlayerStatus </th> 
-    <th colname="col2" class="entry">Occurs when </th> 
+    <th colname="col1" class="entry">PTMediaPlayerStatus</th> 
+    <th colname="col2" class="entry">Occurs when</th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -41,7 +41,7 @@ State-transition diagram for the lifecycle of a MediaPlayer instance:
    </tr> 
    <tr> 
     <td colname="col1"> <p> <span class="codeph">PTMediaPlayerStatusReady</span> </p> </td> 
-    <td colname="col2"> <p>The content is prepared and ads have been inserted in the timeline, or the ad procedure failed. Buffering or playback can begin. </p> </td> 
+    <td colname="col2"> <p>The content is prepared and ads have been inserted in the timeline, or the ad procedure failed. Buffering or playback can begin.</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <p><span class="codeph">PTMediaPlayerStatusPlaying</span> </p> </td> 
@@ -54,15 +54,15 @@ State-transition diagram for the lifecycle of a MediaPlayer instance:
    </tr> 
    <tr> 
     <td colname="col1"> <p><span class="codeph">PTMediaPlayerStatusCompleted</span> </p> </td> 
-    <td colname="col2"> <p>The player reached the end of the stream, and playback has stopped. </p> </td> 
+    <td colname="col2"> <p>The player reached the end of the stream, and playback has stopped.</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <p><span class="codeph">PTMediaPlayerStatusStopped</span> </p> </td> 
-    <td colname="col2"> <p>Your application has released the media player, which also releases any associated resources. You can no longer use this instance </p> </td> 
+    <td colname="col2"> <p>Your application has released the media player, which also releases any associated resources. You can no longer use this instance</p> </td> 
    </tr> 
    <tr> 
     <td colname="col1"> <p><span class="codeph">PTMediaPlayerStatusError</span> </p> </td> 
-    <td colname="col2"> <p>An error occurred during the process. An error also might affect what your application can do next. </p> </td> 
+    <td colname="col2"> <p>An error occurred during the process. An error also might affect what your application can do next.</p> </td> 
    </tr> 
   </tbody> 
  </tgroup> 

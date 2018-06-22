@@ -10,7 +10,7 @@ title: Parallel downloads
 Parallel downloads allows video-on-demand (VOD) files to be played, optimizes the available bandwidth usage from a server, lowers the probability of getting into buffer under-run situations, and minimizes the delay between download and playback.
 
 <!-- Removed as part of "no DASH use cases" for 2.5.1, May 31st, 2017 release.
-<p>Parallel downloads allows DASH video-on-demand (VOD) files to be played, optimizes the available bandwidth usage from a server, lowers the probability of getting into buffer under-run situations, and minimizes the delay between download and playback. </p> -->
+<p>Parallel downloads allows DASH video-on-demand (VOD) files to be played, optimizes the available bandwidth usage from a server, lowers the probability of getting into buffer under-run situations, and minimizes the delay between download and playback.</p> -->
 Without parallel downloads,  issues a request for the video segment, and after the video segment is loaded, it requests one or two audio segments. With parallel downloads, the audio and video segments are downloaded simultaneously, not sequentially. Also, because there are two connections and two HTTP requests per segment in parallel, the data reaches the screen faster.
 
 >[!NOTE] {type="restriction"}
@@ -18,7 +18,7 @@ Without parallel downloads,  issues a request for the video segment, and after t
 >This feature applies only to content where the audio and video are encoded into different files (unmuxed content) and does not apply to MP4 content, which is always muxed. HLS content is often unmuxed, especially with alternate audio.
 <!-- See comment above (DASH use case removed).
 <note type="restriction">
- This feature applies only to content where the audio and video are encoded into different files (unmuxed content) and does not apply to MP4 content, which is always muxed. Most DASH content is unmuxed, and HLS content is often unmuxed, especially with alternate audio. 
+ This feature applies only to content where the audio and video are encoded into different files (unmuxed content) and does not apply to MP4 content, which is always muxed. Most DASH content is unmuxed, and HLS content is often unmuxed, especially with alternate audio.
 </note> -->
 The HTTP connection might experience delays at the following stages:
 * When establishing the TCP/IP connection to server

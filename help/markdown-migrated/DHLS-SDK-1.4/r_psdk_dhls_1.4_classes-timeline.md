@@ -9,7 +9,7 @@
   <thead> 
    <tr rowsep="1"> 
     <th colname="1" class="entry"> Name </th> 
-    <th colname="2" class="entry"> <p>Description </p> </th> 
+    <th colname="2" class="entry"> <p>Description</p> </th> 
    </tr> 
   </thead> 
   <tbody> 
@@ -18,7 +18,7 @@
     <td colname="2"> Interface that defines the protocol that you must implement if you want to create a content-tracking module that is designed to integrate with the 
      <ph conkeyref="phrases/primetime-sdk-name">
        Phrase 
-     </ph> library. <p>This interface requires that you define the way progress events are reported to the remote tracking system. </p> </td> 
+     </ph> library. <p>This interface requires that you define the way progress events are reported to the remote tracking system.</p> </td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"> <span class="codeph"> <a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/Opportunity.html" format="html" scope="external"> Opportunity </a> </span> </td> 

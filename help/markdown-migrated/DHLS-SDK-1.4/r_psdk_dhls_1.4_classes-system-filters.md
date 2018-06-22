@@ -8,26 +8,26 @@
   <colspec colnum="2" colname="2" colwidth="63*" /> 
   <thead> 
    <tr rowsep="1"> 
-    <th colname="1" class="entry">Name </th> 
-    <th colname="2" class="entry">Description </th> 
+    <th colname="1" class="entry">Name</th> 
+    <th colname="2" class="entry">Description</th> 
    </tr> 
   </thead> 
   <tbody> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/filters/DefaultMediaResourceFilter.html" format="html" scope="external">DefaultMediaResourceFilter</a></span> </td> 
-    <td colname="2">Class. </td> 
+    <td colname="2">Class.</td> 
    </tr> 
    <tr rowsep="1"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/filters/DefaultTimedMetadataFilter.html" format="html" scope="external">DefaultTimedMetadataFilter</a></span> </td> 
-    <td colname="2">Class. </td> 
+    <td colname="2">Class.</td> 
    </tr> 
    <tr rowsep="0"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/filters/MediaResourceFilter.html" format="html" scope="external">MediaResourceFilter</a></span> </td> 
-    <td colname="2">Class implementing basic media resource filtering implementation. </td> 
+    <td colname="2">Class implementing basic media resource filtering implementation.</td> 
    </tr> 
    <tr rowsep="0"> 
     <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/filters/TimedMetadataFilter.html" format="html" scope="external">TimedMetadataFilter</a></span> </td> 
-    <td colname="2"> Base class for all tag filters. </td> 
+    <td colname="2">Base class for all tag filters.</td> 
    </tr> 
   </tbody> 
  </tgroup> 
