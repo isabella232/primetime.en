@@ -1,0 +1,30 @@
+---
+description: When a user clicks on an ad, a companion banner ad, or a related button, your application must respond. provides you with information about the destination URL for the click.
+seo-description: When a user clicks on an ad, a companion banner ad, or a related button, your application must respond. provides you with information about the destination URL for the click.
+seo-title: Respond to clicks on ads
+title: Respond to clicks on ads
+uuid: ee18dc00-def8-4c85-a555-d4fa3c8f72f9
+index: n
+internal: n
+snippet: y
+translate: y
+---
+
+# Respond to clicks on ads
+
+
+>1. To set up an event listener for  <!-- PH element: phrases/primetime-sdk-name --> , and provide the click-through information, add an observer for ` PTMediaPlayerAdClickNotification`.
+>   When a user clicks on an ad, a companion banner ad, or a related button, <!-- PH element: phrases/primetime-sdk-name --> dispatches this notification, including information about the destination for the click.>
+>1. Monitor user interactions on clickable ads.
+>1. When the user touches or clicks the ad or button, to notify  <!-- PH element: phrases/primetime-sdk-name --> , use ` [_player notifyClick:_currentAd.primaryAsset];`.
+>1. Listen for the ` PTMediaPlayerAdClickNotification` event from  <!-- PH element: phrases/primetime-sdk-name --> .
+>1. To retrieve the click-through URL and related information, use the ` PTMediaPlayerAdClickURLKey` object.
+>1. Pause the video.
+>1. Use the click-through information to display the ad click-through URL and the related information.
+>       You could, for example, display the information in one of the following ways:>    
+>    * In your application by opening the click-through URL in a browser. On desktop platforms, the video ad playback area is used to invoke click-through URLs at user clicks.
+
+>    * Redirect users to their external mobile web browser. On mobile devices, the video ad playback area is used for other functions, such as hiding and showing controls, pausing playback, expanding to full screen, and so on. On these devices, a separate view, such as a sponsor button, is used to launch the click-through URL.
+
+>    
+>1. Close the browser window in which the click-through information is displayed and resume playing the video.
