@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
-<concept id="c_psdk_android_working-with-mediaplayer-objects"
- xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
-  <title>Work with MediaPlayer objects</title> 
-  <shortdesc>The <codeph>PTMediaPlayer</codeph> object represents your media player. A
-			<codeph>PTMediaPlayerItem</codeph> represents audio or video on your player.</shortdesc> 
-</concept> 

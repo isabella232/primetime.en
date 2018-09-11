@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "technicalContent/dtd/concept.dtd">
-<concept id="c_psdk_requirements"
- xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"> 
-  <title>Requirements</title> 
-  <shortdesc><ph conkeyref="phrases/primetime-sdk-name"/> requires specific properties for media
-  content, manifest content, DRM, and software versions. </shortdesc> 
-</concept> 
