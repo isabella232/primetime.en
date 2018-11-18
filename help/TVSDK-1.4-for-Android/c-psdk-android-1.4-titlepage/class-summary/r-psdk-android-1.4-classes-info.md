@@ -1,0 +1,44 @@
+---
+description: These classes provide information about the media.
+seo-description: These classes provide information about the media.
+seo-title: Info classes
+title: Info classes
+uuid: 48fd7d86-e114-4439-9f10-606c5934d79b
+index: y
+internal: n
+snippet: y
+---
+
+# Info classes{#info-classes}
+
+These classes provide information about the media.
+
+ Package: [com.adobe.mediacore.info](http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/package-summary.html) 
+
+<table frame="all" colsep="1" rowsep="1" id="table_BC74F0C72F7C443B92C9B28750D812A6"> 
+ <thead> 
+  <tr rowsep="1"> 
+   <th colname="1" class="entry"> <p>Name </p> </th> 
+   <th colname="2" class="entry"> <p>Description </p> </th> 
+  </tr> 
+ </thead>
+ <tbody> 
+  <tr rowsep="1"> 
+   <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/AudioTrack.html" format="html" scope="external"> AudioTrack</a></span></td> 
+   <td colname="2">Class that extends <span class="codeph"> Track</span> to define the audio track abstraction. </td> 
+  </tr> 
+  <tr rowsep="1"> 
+   <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/ClosedCaptionsTrack.html" format="html" scope="external"> ClosedCaptionsTrack</a> <a href="http://help.adobe.com/en_US/primetime/api/psdk/html5/AdobePSDK.ClosedCaptionsTrack.html" format="html" scope="external"> ClosedCaptionsTrack</a></span> </td> 
+   <td colname="2">Class that extends <span class="codeph"> Track</span> to define the closed caption abstraction. Class that defines the <span class="codeph"> ClosedCaptions</span> abstraction. A closed captions track is defined uniquely by its name AND it's service type. Different service types can share the same name.</td> 
+  </tr> 
+  <tr rowsep="1"> 
+   <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/Profile.html" format="html" scope="external"> Profile</a> </span></td> 
+   <td colname="2"> Class that contains media profile information, such as the height, width, and bit rate. </td> 
+  </tr> 
+  <tr rowsep="0"> 
+   <td colname="1"><span class="codeph"><a href="http://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/Track.html" format="html" scope="external"> Track</a> </span></td> 
+   <td colname="2">Class that defines the track abstraction to use in defining <span class="codeph"> AudioTrack</span> and <span class="codeph"> ClosedCaptionsTrack</span>. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
