@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Customize playback with ads{#customize-playback-with-ads}
+# Customize playback with ads overview{#customize-playback-with-ads}
 
 When playback reaches an ad break, passes an ad break, or ends in an ad break, TVSDK defines some default behavior for the positioning of the current playhead.
 

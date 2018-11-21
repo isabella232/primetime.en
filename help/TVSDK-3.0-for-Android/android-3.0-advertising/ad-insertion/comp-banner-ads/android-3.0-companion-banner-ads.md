@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Companion banner ads{#companion-banner-ads}
+# Companion banner ads overview{#companion-banner-ads}
 
 TVSDK supports companion banner ads, which are ads that accompany a linear ad and often remain on the page after the linear ad ends. Your application is responsible for displaying the companion banners that are provided with a linear ad.
 

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Add custom ad markers{#add-custom-ad-markers}
+# Add custom ad markers overview{#add-custom-ad-markers}
 
 By using custom ad markers, you can mark specific sections of the main content as ad-related content periods.
 

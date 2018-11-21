@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Custom tags{#custom-tags}
+# Custom tags overview{#custom-tags}
 
 Media streams can carry additional metadata in the form of tags in the playlist/manifest file, and this file indicates the placement of advertising. You can specify custom tag names and be notified when certain tags appear in the manifest file.
 

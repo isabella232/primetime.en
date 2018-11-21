@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Alternate audio{#alternate-audio}
+# Alternate audio overview{#alternate-audio}
 
 Alternate audio allows you to switch among available audio tracks for a video track. Users can select their preferred language track when the video is played.
 

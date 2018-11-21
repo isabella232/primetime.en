@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Ad insertion metadata{#ad-insertion-metadata}
+# Ad insertion metadata overview{#ad-insertion-metadata}
 
 To allow the ad resolver to work, ad providers, such as Adobe Primetime ad decisioning, require configuration values to enable your connection to the provider.
 

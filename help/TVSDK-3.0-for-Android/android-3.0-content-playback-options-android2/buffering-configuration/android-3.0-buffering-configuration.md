@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Buffering{#buffering}
+# Buffering overview{#buffering}
 
 To provide a smoother viewing experience, TVSDK sometimes buffers the video stream. You can configure how the player buffers.
 

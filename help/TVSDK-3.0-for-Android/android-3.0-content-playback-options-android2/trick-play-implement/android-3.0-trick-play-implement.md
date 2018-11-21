@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Implement fast forward and rewind{#implement-fast-forward-and-rewind}
+# Implement fast forward and rewind overview {#implement-fast-forward-and-rewind}
 
 When users fast forward or fast rewind through the media, they are in the trick play mode. To enter trick play mode, set the MediaPlayer playback rate to a value other than 1.
 

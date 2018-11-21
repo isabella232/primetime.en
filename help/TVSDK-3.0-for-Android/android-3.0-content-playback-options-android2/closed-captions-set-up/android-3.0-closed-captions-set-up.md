@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Work with closed captions{#work-with-closed-captions}
+# Work with closed captions overview{#work-with-closed-captions}
 
 Closed captioning displays the audio portion of a video as text on the screen when the sound is inaudible or the viewer is hard of hearing.
 

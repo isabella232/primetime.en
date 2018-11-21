@@ -10,6 +10,3 @@ snippet: y
 ---
 
 # Work with MediaPlayer objects{#work-with-mediaplayer-objects}
-
-The MediaPlayer object represents your media player. A MediaPlayerItem represents audio or video on your player.
-

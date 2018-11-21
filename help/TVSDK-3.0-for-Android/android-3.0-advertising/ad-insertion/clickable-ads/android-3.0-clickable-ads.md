@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Clickable ads{#clickable-ads}
+# Clickable ads overview{#clickable-ads}
 
 TVSDK provides you with information so that you can act on click-through ads. As you create your player UI, you must decide how to respond when a user clicks on a clickable ad.
 
