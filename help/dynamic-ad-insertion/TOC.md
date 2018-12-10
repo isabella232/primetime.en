@@ -7,6 +7,7 @@ user-guide: null
 
 # Table of Contents {#table-of-contents}
 
++ [Manifest Server Debugging Tool](manifest-server-debugging-tool.md)
 + Manifest Server API for Ad Insertion
    + [Overview of Manifest Server interactions](msapi_topics/ms-overview.md)
    + [Get started with Manifest Server](msapi_topics/ms-getting-started/ms-getting-started.md)
