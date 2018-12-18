@@ -10,7 +10,7 @@ user-guide: null
 + [Manifest Server Debugging Tool](manifest-server-debugging-tool.md)
 + Manifest Server API for Ad Insertion
    + [Overview of Manifest Server interactions](msapi_topics/ms-overview.md)
-   + [Get started with Manifest Server](msapi_topics/ms-getting-started/ms-getting-started.md)
+   + Get started with Manifest Server
       + [Send a command to the Manifest Server](msapi_topics/ms-getting-started/ms-sending-cmd.md)
       + [Manifest server query parameters](msapi_topics/ms-getting-started/ms-api-query-params.md)
    + [Ad insertion requests](msapi_topics/ms-insert-ads/ms-insert-ads.md)
