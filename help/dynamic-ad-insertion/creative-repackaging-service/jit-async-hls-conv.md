@@ -4,9 +4,6 @@ seo-description: CRS provides just-in-time (JIT) and asynchronous repackaging an
 seo-title: Main Uses of CRS
 title: Main Uses of CRS
 uuid: df2caa67-bc94-4146-9b93-14edc060c3d5
-index: y
-internal: n
-snippet: y
 ---
 
 # Main Uses of CRS{#main-uses-of-crs}
@@ -23,10 +20,10 @@ In HLS-to-HLS conversion, CRS reformats an HLS ad creative into appropriate size
 
 The sequence for JIT repackaging is as follows:
 
-1. The manifest server fetches an ad. 
-1. If the ad format is HLS, the manifest server inserts the ad into the content stream. 
-1. If the format is not HLS (for example, MP4, FLV, or WebM), the manifest server looks for a transcoded version on the CDN server. If it finds one, it inserts the transcoded ad into the content stream. 
-1. If the format is not HLS and the CDN server has no transcoded version, the manifest server passes the ad to CRS, which transcodes the ad creative and stores the result on the CDN server for later use. 
+1. The manifest server fetches an ad.
+1. If the ad format is HLS, the manifest server inserts the ad into the content stream.
+1. If the format is not HLS (for example, MP4, FLV, or WebM), the manifest server looks for a transcoded version on the CDN server. If it finds one, it inserts the transcoded ad into the content stream.
+1. If the format is not HLS and the CDN server has no transcoded version, the manifest server passes the ad to CRS, which transcodes the ad creative and stores the result on the CDN server for later use.
 1. The manifest server returns the content without the ad.
 
 ## Asynchronous Repackaging {#section_ACDFB43FDA4B445CB9F2A107FEB4F2F7}
@@ -40,4 +37,3 @@ To avoid buffering and delay, a client downloads a video in small chunks. If the
 >[!NOTE]
 >
 >CRS produces HLS version 3, regardless of which HLS version it receives.
-

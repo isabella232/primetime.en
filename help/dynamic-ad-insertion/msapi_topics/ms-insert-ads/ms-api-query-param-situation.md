@@ -4,9 +4,6 @@ seo-description: Beyond the basic query parameters, optional query parameters en
 seo-title: Optional query parameters by client and situation
 title: Optional query parameters by client and situation
 uuid: e3fae41e-9f7d-4f01-9a01-52a1d5f5dad5
-index: y
-internal: n
-snippet: y
 ---
 
 # Optional query parameters by client and situation{#optional-query-parameters-by-client-and-situation}

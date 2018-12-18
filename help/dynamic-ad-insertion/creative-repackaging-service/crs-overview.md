@@ -4,9 +4,6 @@ seo-description: The creative repackaging service (CRS) ensures that a non-HLS a
 seo-title: Overview of CRS
 title: Overview of CRS
 uuid: 3ae75fa7-397f-47ba-8e3d-50543ca25458
-index: y
-internal: n
-snippet: y
 ---
 
 # Overview of CRS{#overview-of-crs}
@@ -31,4 +28,3 @@ Your Adobe technical account manager can also change some CRS default behaviors 
 * Ad target duration.
 
   The manifest server detects the target ad duration from the content playlist and sends it to CRS. Adobe can change this behavior so that CRS always uses a fixed duration that you specify for your account.
-

@@ -4,14 +4,11 @@ seo-description: If the client requests tracking information, the manifest serve
 seo-title: VMAP format for tracking URLs
 title: VMAP format for tracking URLs
 uuid: e3173fad-caa2-49cb-9a65-631573812e52
-index: y
-internal: n
-snippet: y
 ---
 
 # VMAP format for tracking URLs{#vmap-format-for-tracking-urls}
 
-If the client requests tracking information, the manifest server sends back a formatted file. Its format and contents depend on the value of the query parameter pttrackingversion
+If the client requests tracking information, the manifest server sends back a formatted file. Its format and contents depend on the value of the query parameter `pttrackingversion`
 
 ## Single VMAP format {#vmap}
 
@@ -380,4 +377,3 @@ The VMAP file that the manifest server sends if `pttrackingversion=vmap` has the
 <vmap:Extensions/> 
 </vmap:AdBreak></vmap:VMAP>
 ```
-

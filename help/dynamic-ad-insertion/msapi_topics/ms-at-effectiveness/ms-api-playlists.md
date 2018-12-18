@@ -4,9 +4,6 @@ seo-description: The manifest server returns master playlists in M3U8 format, co
 seo-title: EXT-X-MARKER Directive
 title: EXT-X-MARKER Directive
 uuid: e349bf89-b196-47b4-a362-9913fa28b2c6
-index: y
-internal: n
-snippet: y
 ---
 
 # EXT-X-MARKER Directive{#ext-x-marker-directive}
@@ -25,27 +22,27 @@ For details on the EXT-X-MARKER tag, see [Adobe Primetime HTTP Live Streaming Pr
 
 The draft standard at  http_live_stream_spec  describes the contents and format of variant playlists. The EXT-X-MARKER tag directs the client to invoke a callback. It contains the following components: 
 
-* ** ID ** Unique identifier (string) for this callback event within the context of the program stream.
+* **ID** Unique identifier (string) for this callback event within the context of the program stream.
 
-* ** TYPE ** Type (string) of the callback event: PodBegin, PodEnd, PrerollPodBegin, PrerollPodEnd, or AdBegin
+* **TYPE** Type (string) of the callback event: PodBegin, PodEnd, PrerollPodBegin, PrerollPodEnd, or AdBegin
 
-* ** DURATION ** Length of time (in seconds) from the start of the segment carrying the tag for which the directive remains valid.
+* **DURATION** Length of time (in seconds) from the start of the segment carrying the tag for which the directive remains valid.
 
-* ** OFFSET ** Optional. The offset (in seconds) relative to the beginning of the segment playback, when the callback must be invoked.
+* **OFFSET** Optional. The offset (in seconds) relative to the beginning of the segment playback, when the callback must be invoked.
 
-    * `PodBegin` and `PrerollPodBegin` contain beacon information in the DATA attribute and are fired at start of the segment. So the `OFFSET` tag is not available here. 
+  * `PodBegin` and `PrerollPodBegin` contain beacon information in the DATA attribute and are fired at start of the segment. So the `OFFSET` tag is not available here. 
     
-    * `AdBegin` contains beacon information in the DATA attribute and impression tags are fired at start of that segment. So the `OFFSET` tag is not available here either. 
+  * `AdBegin` contains beacon information in the DATA attribute and impression tags are fired at start of that segment. So the `OFFSET` tag is not available here either. 
     
-    * `PodEnd` and `PrerollPodEnd` contain beacon information in the DATA attribute but are fired at end of the current segment because these tags are expected to be fired at end of last segment of last ad in the pod. In this case, `OFFSET` is set to `<duration of segment>` to specify that the beacon be fired at end of the current segment.
+  * `PodEnd` and `PrerollPodEnd` contain beacon information in the DATA attribute but are fired at end of the current segment because these tags are expected to be fired at end of last segment of last ad in the pod. In this case, `OFFSET` is set to `<duration of segment>` to specify that the beacon be fired at end of the current segment.
 
-* ** DATA ** Base64-encoded string enclosed in double quotes containing the data to pass to the application when invoking the callback. It contains ad tracking information that conforms to VMAP1.0 and VAST3.0 specifications.
+* **DATA** Base64-encoded string enclosed in double quotes containing the data to pass to the application when invoking the callback. It contains ad tracking information that conforms to VMAP1.0 and VAST3.0 specifications.
 
-* ** COUNT ** Number of ads that will be stitched in the ad break.
+* **COUNT** Number of ads that will be stitched in the ad break.
 
   Only Applicable if the TYPE component is set to PodBegin or PrerollPodBegin.
 
-* ** BREAKDUR ** Total duration (in seconds) of the filled ad break.
+* **BREAKDUR** Total duration (in seconds) of the filled ad break.
 
   Only Applicable if the TYPE component is set to PodBegin or PrerollPodBegin.
 
@@ -67,7 +64,7 @@ The manifest server includes EXT-X-MARKER tags in the following segments:
 * The first segment of the ad, to track the start/complete/progress of an individual ad within an ad pod. 
 * The last segment in the ad break, to track the end of an ad pod.
 
-The manifest server sends a VMAP1.0-conformant XML document to track the start and end of each ad break. It is a filtered version of the actual VMAP1.0 response returned by the ad server, and primarily contains the tracking events as shown here: 
+The manifest server sends a `VMAP1.0-conformant` XML document to track the start and end of each ad break. It is a filtered version of the actual VMAP1.0 response returned by the ad server, and primarily contains the tracking events as shown here: 
 
 ```xml
 <?xml version="1.0"?> 
@@ -252,4 +249,3 @@ For each ad creative the manifest server inserts into the program content, it se
 </AdTrackingFragments> 
 
 ```
-

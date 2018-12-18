@@ -4,9 +4,6 @@ seo-description: If the client requests tracking information in JSON format, the
 seo-title: JSON formats for tracking URLs
 title: JSON formats for tracking URLs
 uuid: 4b17639b-c0de-4ef4-931b-aa7c4c036c0a
-index: y
-internal: n
-snippet: y
 ---
 
 # JSON formats for tracking URLs{#json-formats-for-tracking-urls}
@@ -33,7 +30,9 @@ The JSON file that the manifest server sends if `pttrackingversion=v1` has the f
 
 ## JSON format for tracking version 2 {#json_v2}
 
-The JSON file that the manifest server sends if `pttrackingversion=v2` has the format of the following example, which comes from a typical JSON block. It has been shortened to avoid unnecessary repetition, so that the structure is clearer. An ellipsis (three dots, separated by spaces) indicates omitted information within some URLs and between some code blocks. Unshortened URLs appear on multiple lines, though they appear on a single line in the JSON file.
+The JSON file that the manifest server sends if `pttrackingversion=v2` has the format of the following example, which comes from a typical JSON block. 
+
+It has been shortened to avoid unnecessary repetition, so that the structure is clearer. An ellipsis (three dots, separated by spaces) indicates omitted information within some URLs and between some code blocks. Unshortened URLs appear on multiple lines, though they appear on a single line in the JSON file.
 
 ```
 { 

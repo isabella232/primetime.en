@@ -4,9 +4,6 @@ seo-description: You can use the CRS repackaging API to transcode non-HLS ad cre
 seo-title: Repackaging API
 title: Repackaging API
 uuid: 03cd2428-510a-4b99-8496-059a48d5abba
-index: y
-internal: n
-snippet: y
 ---
 
 # Repackaging API{#repackaging-api}
@@ -21,15 +18,15 @@ This request requires a username and password. You can obtain these from your Ad
 
 To submit a transcoding request to CRS, send an HTTP message as follows:
 
-* **URL - ** [!DNL http://id3.auditude.com/repackage] 
+* **URL -** [!DNL http://id3.auditude.com/repackage] 
 
-* **Method - ** `POST` 
+* **Method -** `POST` 
 
-* **Auth - ** `Digest` 
+* **Auth -** `Digest` 
 
-* **Header - ** `Content-Type: text/xml` 
+* **Header -** `Content-Type: text/xml` 
 
-* **Body - **XML as in the following example: 
+* **Body -** XML as in the following example: 
 
   ```xml
   <RepackageList>
@@ -51,12 +48,9 @@ To submit a transcoding request to CRS, send an HTTP message as follows:
   </RepackageList>
   ```
 
-<a id="section_5751C3807DA34DF2A9668A4A23E8E97F"></a>
-
 The `RepackageList` block in the Body can contain 1 to 300 `Repackage` blocks. If the number of `Repackage` blocks in the Body exceeds 300, then the HTTP Request will fail with the following error: 
 
 ```
-    
 <codeph>
  HTTP 413 Request Entity Too Large: Validation fail: Too many
      requests. Max limit is 300
@@ -76,20 +70,20 @@ The required and optional parameters in a `Repackage` block are as follows:
 
 * **`Format`** (optional) - Parameters to control how CRS transcodes the ad creative:
 
-    * `clientside` - Generate output compatible with the URL that TVSDK uses to communicate with the CDN.     
+   * `clientside` - Generate output compatible with the URL that TVSDK uses to communicate with the CDN.     
     
-      >[!IMPORTANT]
-      >
-      >You must provide this parameter if you want the repackaged ad to be compatible with Client Side Ad Insertion. If you do not provide this, the repackaged ad will only be compatible with Server Side Ad Insertion.
+    >[!IMPORTANT]
+    >
+    >You must provide this parameter if you want the repackaged ad to be compatible with Client Side Ad Insertion. If you do not provide this, the repackaged ad will only be compatible with Server Side Ad Insertion.
 
     * `hls` - Generate an HLS-compatible transcoded ad creative. 
     * `dash` - Generate a DASH-compatible transcoded ad creative. 
     * `id3` - Inject ID3 timed metadata tags into the transcoded ad creative. 
     * `targetdur` - Segment duration (in seconds) for the transcoded ad creative. Default is `targetdur=4`. This value should correspond to the value specified in the manifest for `<s>` in the target duration tag: `#EXT-X-TARGETDURATION:<s>`.
 
-  >[!NOTE]
-  >
-  >DASH-compatible assets are not compatible with Adobe Primetime ad insertion.
+   >[!NOTE]
+   >
+   >DASH-compatible assets are not compatible with Adobe Primetime ad insertion.
 
 >[!IMPORTANT]
 >

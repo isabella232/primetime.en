@@ -4,9 +4,6 @@ seo-description: The manifest server coordinates the systems that provide conten
 seo-title: Overview of Manifest Server interactions
 title: Overview of Manifest Server interactions
 uuid: 3e314a45-a4dd-492f-8915-19224a8fbbc7
-index: y
-internal: n
-snippet: y
 ---
 
 # Overview of Manifest Server interactions{#overview-of-manifest-server-interactions}
@@ -15,25 +12,25 @@ The manifest server coordinates the systems that provide content, provide ads, p
 
 A typical configuration contains:
 
-* The Primetime manifest server 
-* The Primetime Creative Repackaging Service (CRS) 
-* A client, controlling a video player 
-* A publisher, usually with a Content Management System (CMS) 
-* A Content Delivery Network (CDN) 
-* An ad server 
+* The Primetime manifest server
+* The Primetime Creative Repackaging Service (CRS)
+* A client, controlling a video player
+* A publisher, usually with a Content Management System (CMS)
+* A Content Delivery Network (CDN)
+* An ad server
 * A receiver for ad tracking reports
 
-The workflow varies based on a number of factors, such as if the CDN is Akamai, or if the client is performing ad tracking. For a diagram of the workflow for client-side ad tracking, see  about_notvsdk_client_ad_tracking/section_cst_flow .
+The workflow varies based on a number of factors, such as if the CDN is Akamai, or if the client is performing ad tracking.
 
-The manifest server interacts with video-delivery clients by receiving and responding to HTTP GET requests. The responses are M3U8-encoded manifests describing ad-stitched content, optionally including a JSON or VMAP structure (sidecar) containing detailed ad-tracking instructions (see [File formats](../msapi_topics/ms-list-file-formats/ms-api-file-formats.md)).
+The manifest server interacts with video-delivery clients by receiving and responding to HTTP GET requests. The responses are M3U8-encoded manifests describing ad-stitched content, optionally including a JSON or VMAP structure (sidecar) containing detailed ad-tracking instructions (see [File formats](ms-list-file-formats/ms-api-file-formats.md)).
 
 A typical workflow looks like the following:
 
-1. The publisher sends the content URL and information for the ad server to the client. 
-1. The client uses the information from the publisher to generate a manifest server URL and sends a GET request to that URL. This is known as the Bootstrap URL. 
-1. The manifest server establishes a session with the client. 
-1. The manifest server obtains content manifests from the CDN, which may include ad break information. 
-1. The manifest server redirects the client to the master/variant manifest it generated for the client. 
+1. The publisher sends the content URL and information for the ad server to the client.
+1. The client uses the information from the publisher to generate a manifest server URL and sends a GET request to that URL. This is known as the Bootstrap URL.
+1. The manifest server establishes a session with the client.
+1. The manifest server obtains content manifests from the CDN, which may include ad break information.
+1. The manifest server redirects the client to the master/variant manifest it generated for the client.
 
    >[!NOTE]
    >
@@ -62,4 +59,3 @@ If not, it replies with:
 
 * `Access-Control-Allow-Origin: *` 
 * `Access-Control-Allow-Methods: GET`
-

@@ -4,9 +4,6 @@ seo-description: Either a client video player or the manifest server can interac
 seo-title: Detailed Workflows for JIT Repackaging
 title: Detailed Workflows for JIT Repackaging
 uuid: 11b6eb3c-f6aa-4018-9b20-ab6f5910508b
-index: y
-internal: n
-snippet: y
 ---
 
 # Detailed Workflows for JIT Repackaging{#detailed-workflows-for-jit-repackaging}
@@ -14,8 +11,6 @@ snippet: y
 Either a client video player or the manifest server can interact with CRS to achieve JIT repackaging. Both use the same ad selection logic.
 
 ## JIT Repackaging Initiated by the Manifest Server {#section_1F1C1B7DD146403890C2B43E24FEF0EB}
-
-<a id="fig_E0708261F8FC4C3694C6C443AAE19EA9"></a>
 
 ![](assets/ssai_JIT-workflow_web.png)
 
@@ -50,17 +45,17 @@ A client based on TVSDK or with similar capabilities can interact with CRS to ac
 1. The ad server returns the ad to the client. 
 1. The client checks the format of the ad from the ad server:
 
-    1. If the ad creative is in HLS format, the client inserts (stitches) it into the content, and is done. 
-    1. If the ad creative is not in HLS format, the client requests one from the CDN server.     
+   1. If the ad creative is in HLS format, the client inserts (stitches) it into the content, and is done. 
+   1. If the ad creative is not in HLS format, the client requests one from the CDN server.     
     
-       >[!NOTE]
-       >
-       >In a multi-CDN setup, the manifest server uses the `ptcdn` parameter in the bootstrap URL to identify the CDN server.
+      >[!NOTE]
+      >
+      >In a multi-CDN setup, the manifest server uses the `ptcdn` parameter in the bootstrap URL to identify the CDN server.
 
 1. The client checks the response from the CDN server.
 
-    1. If the CDN provided an HLS version, the client inserts (stitches) it into the content, and is done. 
-    1. If the CDN server does not provide an HLS version, the client asks the ad server to request one from CRS. The client does not insert the ad into the content.
+   1. If the CDN provided an HLS version, the client inserts (stitches) it into the content, and is done. 
+   1. If the CDN server does not provide an HLS version, the client asks the ad server to request one from CRS. The client does not insert the ad into the content.
 
 1. Ad server requests that the non-HLS ad be transcoded to HLS. 
 1. CRS creates an HLS version and uploads it to the CDN server for future use.
