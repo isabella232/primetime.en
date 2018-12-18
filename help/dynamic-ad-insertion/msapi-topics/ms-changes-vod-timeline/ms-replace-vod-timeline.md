@@ -4,9 +4,6 @@ seo-description: The ad timeline appropriate to one playing of VOD content may b
 seo-title: Changes to VOD
 title: Changes to VOD
 uuid: e734aacd-b42e-4c8e-a16a-c7a0739a0492
-index: y
-internal: n
-snippet: y
 ---
 
 # Changes to VOD{#changes-to-vod}
@@ -15,9 +12,9 @@ The ad timeline appropriate to one playing of VOD content may be inappropriate f
 
 Situations in which you might wish to replace a VOD timeline include:
 
-* Replace local ads, but leave national ads during a C3 window. 
-* Replace burnt-in ads after the C3 window closes. 
-* Dynamically replace old C3 ads with newer ads of greater duration. 
+* Replace local ads, but leave national ads during a C3 window.
+* Replace burnt-in ads after the C3 window closes.
+* Dynamically replace old C3 ads with newer ads of greater duration.
 * Insert fewer ads or none at all.
 
 You can replace the ad timeline by submitting a new ad insertion request with the original M3U8 file and a different value of the `pttimeline` query parameter. 

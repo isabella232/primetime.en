@@ -4,9 +4,6 @@ seo-description: Client requests for ad insertion typically specify more than on
 seo-title: Multiple bit rate streams
 title: Multiple bit rate streams
 uuid: f59cb765-e000-43e0-8d3a-8149a3c5b96e
-index: y
-internal: n
-snippet: y
 ---
 
 # Multiple bit rate streams{#multiple-bit-rate-streams}
@@ -20,15 +17,15 @@ http://manifest.auditude.com/auditude/{live/vod}/{publisherAssetID}/{rendition}/
   {groupID}/{base64-encoded url of the bit rate stream}.[m3u8]?{Query parameters}
 ```
 
-* **`live/vod` ** The manifest server sets this value based on the content's playlist type: Live/linear (#EXT-X-PLAYLIST-TYPE:EVENT) or VOD (#EXT-X-PLAYLIST-TYPE:VOD)
+* **`live/vod`** The manifest server sets this value based on the content's playlist type: Live/linear (#EXT-X-PLAYLIST-TYPE:EVENT) or VOD (#EXT-X-PLAYLIST-TYPE:VOD)
 
-* **`publisherAssetID` ** Publisher's unique ID for the specific content provided in the Bootstrap URL request.
+* **`publisherAssetID`** Publisher's unique ID for the specific content provided in the Bootstrap URL request.
 
-* **`rendition` ** The manifest server sets this based on the BANDWIDTH value of the content stream, and uses it to match the bit rate of the ad to the bit rate of the content. The ad bit rate cannot exceed the bit rate of the content unless the ad rendition with the lowest bit rate does so.
+* **`rendition`** The manifest server sets this based on the BANDWIDTH value of the content stream, and uses it to match the bit rate of the ad to the bit rate of the content. The ad bit rate cannot exceed the bit rate of the content unless the ad rendition with the lowest bit rate does so.
 
-* **`groupID` ** The manifest server generates this value and uses it to ensure that it places ads consistently, no matter for which bit rate renditions the client requests ads.
+* **`groupID`** The manifest server generates this value and uses it to ensure that it places ads consistently, no matter for which bit rate renditions the client requests ads.
 
-* **`base64-encoded url of the bit rate stream` ** The manifest server URL-safe base64 encodes the content stream's absolute URL. Each stream has its own URL.
+* **`base64-encoded url of the bit rate stream`** The manifest server URL-safe base64 encodes the content stream's absolute URL. Each stream has its own URL.
 
-* **`Query parameters` ** Query parameters provided in the Bootstrap URL request.
+* **`Query parameters`** Query parameters provided in the Bootstrap URL request.
 

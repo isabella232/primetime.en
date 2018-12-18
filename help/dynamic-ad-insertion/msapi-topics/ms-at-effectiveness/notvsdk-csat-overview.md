@@ -15,21 +15,19 @@ Publishers can build HLS-compliant video players that work with the Primetime ma
 
 The manifest server provides an API to enable custom players to request the following URLs, which they can use to report ad tracking events:
 
-* Ad impression 
-* Ad quartile 
-* Ad pod progress 
+* Ad impression
+* Ad quartile
+* Ad pod progress
 * Content pod progress
 
 The manifest server API assumes that any video player using it meets the minimum requirements. See  video_player_requirements  for more details.
 
 ## Client-side tracking workflow {#section_cst_flow}
 
-<a id="fig_6D10647E4C0F4480B74C62536EEB7245"></a>
-
-![](assets/pt_ssai_notvsdk_csat_ai-workflow.png){width="6in"}
+![](assets/pt_ssai_notvsdk_csat_ai-workflow.png)
 
 1. Player obtains a manifest server URL from the publisher. 
-1. Player appends query parameters specific to its ad insertion requirements and sends an HTTP GET request to the resulting Bootstrap URL. The Bootstrap URL has the following syntax: 
+1. Player appends query parameters specific to its ad insertion requirements and sends an HTTP GET request to the resulting Bootstrap URL. The Bootstrap URL has the following syntax:
 
    ```
    http{s}://{manifest-server:port}/auditude/variant/{PublisherAssetID}/{urlSafeBase64({Content URL})}.m3u8?{query parameters}
@@ -40,7 +38,7 @@ The manifest server API assumes that any video player using it meets the minimum
    u=9a2893fd893cab27da24059ff034b78d&z=173475&pttrackingmode=simple&pttrackingversion=v2&__sid__=docExample02
    ```
 
-   The URL includes the elements described in [Send a command to the Manifest Server](../../msapi_topics/ms-getting-started/ms-sending-cmd.md#send-command). 
+   The URL includes the elements described in [Send a command to the Manifest Server](ms-getting-started/ms-sending-cmd.md#send-command). 
 
 1. The manifest server establishes a session for that player and generates a unique session ID. It creates a new variant M3U8 playlist URL, which it returns to the player as a JSON response. The JSON has the following syntax: 
 
@@ -117,7 +115,7 @@ The manifest server API assumes that any video player using it meets the minimum
 
    >[!NOTE]
    >
-   >The player selects the stream-level playlist URL to obtain the content stream. The manifest server retrieves the original playlist from the CDN. Some encoders may inject additional details into the `#EXTINF` title attribute, for example:    >
+   >The player selects the stream-level playlist URL to obtain the content stream. The manifest server retrieves the original playlist from the CDN. Some encoders may inject additional details into the `#EXTINF` title attribute, for example:
    >
    >```   >
    >#EXTINF:6.006,LTC=2017-08-23T13:25:47+00:00

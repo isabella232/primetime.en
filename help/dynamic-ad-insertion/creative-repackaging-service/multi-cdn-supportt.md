@@ -4,9 +4,6 @@ seo-description: Multi CDN allows for the setting of one or more CDN locations t
 seo-title: Multi CDN support
 title: Multi CDN support
 uuid: 2b6d71f0-61c8-486b-a35a-f7ef3a9519d2
-index: y
-internal: n
-snippet: y
 ---
 
 # Multi CDN support{#multi-cdn-support}
@@ -19,8 +16,8 @@ When the manifest server makes a look-up for transcoded requests, it uses a boot
 
 Multi CDN support is also available for the following Primetime solutions:
 
-1. TVSDK for Android 
-1. TVSDK for Desktop HLS 
+1. TVSDK for Android
+1. TVSDK for Desktop HLS
 1. TVSDK for iOS
 
 ## Enable CDN support {#section_1BA344F2300B49F291865A7461EDFEAE}
@@ -29,10 +26,10 @@ By default, CRS is disabled for all customers
 
 Contact your Adobe technical account manager to configure your CRS account to use other CDNs to host the transcoded ad assets.You will be required to provide the following information that is needed by CRS to upload the transcoded ad assets to the CDN
 
-1. CDN URL 
-1. Authentication details 
+1. CDN URL
+1. Authentication details
 1. Output URL format
 
-Also, your Adobe techincal account manager will provide you a nickname for this CDN.You need to pass this as the value of the ptcdn parameter in the Bootstrap URL.
+Also, your Adobe technical account manager will provide you a nickname for this CDN.You need to pass this as the value of the `ptcdn` parameter in the Bootstrap URL.
 
-You can have multiple CDNs configured on CRS end via Adobe Support. However, the CDN that is used to pick ad assets to be stitched via the manifest server would need to be the one that is passed as the value of the ptcdn parameter in the Bootstrap URL. 
+You can have multiple CDNs configured on CRS end via Adobe Support. However, the CDN that is used to pick ad assets to be stitched via the manifest server would need to be the one that is passed as the value of the `ptcdn` parameter in the Bootstrap URL. 

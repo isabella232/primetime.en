@@ -4,9 +4,6 @@ seo-description: You can specify or override timelines for ad breaks in VOD cont
 seo-title: VOD timeline format
 title: VOD timeline format
 uuid: 6daaf605-e5ee-48dc-a222-a5973b3d915a
-index: y
-internal: n
-snippet: y
 ---
 
 # VOD timeline format{#vod-timeline-format}
@@ -17,24 +14,21 @@ You can specify or override timelines for ad breaks in VOD content using a forma
 
 A pod is an ad break or a content segment. A timeline consists of a sequence of pods, separated by semicolons. The following types of pods exist: 
 
-* ** Ad break ** 
+### Ad break
 
   ```
   B,duration,maximum_number_of_ads,position
   ```
 
   Duration is in seconds, with precision of .001 (milliseconds); number of ads is an integer. Position is one of the following: 
-    * ** `n` ** None — no ad
-
-    * ** `p` ** Pre-roll — before the content
-
-    * ** `m` ** Mid-roll — within the content
-
-    * ** `t` ** Post-roll — after the content
+    * **n** None — no ad
+    * **p** Pre-roll — before the content
+    * **m** Mid-roll — within the content
+    * **t** Post-roll — after the content
 
   For example, `B,60,2,p` represents a one-minute break for up to 2 ads before the content.
 
-* ** Content segment (chapter) ** 
+### Content segment - chapter
 
   ```
   C,duration,number_of_lots
