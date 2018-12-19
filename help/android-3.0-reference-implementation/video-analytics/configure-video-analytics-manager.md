@@ -1,12 +1,9 @@
 ---
-description: null
-seo-description: null
+description: You can track video usage in the Primetime Android Reference Implementation by configuring it to work with your Adobe Analytics account.
+seo-description: You can track video usage in the Primetime Android Reference Implementation by configuring it to work with your Adobe Analytics account.
 seo-title: Configure Video Analytics
 title: Configure Video Analytics
 uuid: ce2ebab3-b3c8-472a-9c54-16ddb1c3cc4e
-index: y
-internal: n
-snippet: y
 ---
 
 # Configure Video Analytics{#configure-video-analytics}
@@ -19,8 +16,6 @@ There are two places within the Reference Implementation that you must configure
 
    This file is provided by your Adobe representative. It is not included in the Primetime SDK bundle by default. For more information on the settings in this config file, see the Android Programmer's Guide here: [Initialize and configure video analytics](http://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-task-Initialize_and_configure_video_analytics_).
 1. Configure run-time options in the Reference Implementation settings menu
-
-   <a id="fig_tfd_w3y_zr"></a>
 
    ![](assets/img_psdk_ref_impl_va-settings-menu.png) 
 

@@ -1,10 +1,9 @@
 ---
 seo-title: Related API documentation
 title: Related API documentation
+description: Related API documentation
+seo-description: Related API documentation
 uuid: e99172ab-3fa7-4ec1-a100-ca16b9dae569
-index: y
-internal: n
-snippet: y
 ---
 
 # Related API documentation{#related-api-documentation}

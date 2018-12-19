@@ -4,9 +4,6 @@ seo-description: The Primetime player supports Primetime DRM integration as cust
 seo-title: DRM content protection
 title: DRM content protection
 uuid: 95c446f6-8304-4d70-9bef-7368b9364025
-index: y
-internal: n
-snippet: y
 ---
 
 # DRM content protection{#drm-content-protection}
@@ -15,7 +12,7 @@ The Primetime player supports Primetime DRM integration as custom DRM workflows.
 
 To enable this, TVSDK provides you with the DRM manager for authentication. The reference implementation provides an example of the following workflows:
 
-* How to load and play back HLS streams with Access content protection, optimized for low error rates and quick start up. 
+* How to load and play back HLS streams with Access content protection, optimized for low error rates and quick start up.
 * How to load and play back HLS streams with AES128 content protection. 
 * How to load and play back HLS streams with PHLS content protection, optimized for low error rates and quick start up.
 
@@ -62,11 +59,9 @@ To create a content protection manager:
 
   >[!NOTE]
   >
-  >You can set Precache DRM licenses to ON in the Settings user interface to precache DRM licenses when loading content. However, best practice is to preload a specific item instead of precaching all the licenses in the catalog.   >
-  ><a id="fig_8A8C561A305040FE89D7141FC9894B82"></a>  >
+  >You can set Precache DRM licenses to ON in the Settings user interface to precache DRM licenses when loading content. However, best practice is to preload a specific item instead of precaching all the licenses in the catalog.
   >
-  >![](assets/precache-drm-licenses.jpg)  >
-  >
+  >![](assets/precache-drm-licenses.jpg)
 
 * To use `ManagerFactory` to implement DRM error handling, make sure the following line of code is in the [!DNL PlayerFragment.java] file: 
 

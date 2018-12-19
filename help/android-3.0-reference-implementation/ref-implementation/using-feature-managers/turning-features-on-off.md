@@ -15,7 +15,7 @@ You can turn features on or off without going through the code by using the mana
 
 The enablement argument in the example below determines whether the feature is used or not. If it is false, the feature manager is created but provides just the default functionality to the player, as if the feature manager were not created. If it is true, the feature manager is created, the feature is enabled, and the media player accepts input from the configuration file.
 
-For example, in the [!DNL com.adobe.primetime.reference.ui.player.PlayerFragment.java] file:
+For example, in the `com.adobe.primetime.reference.ui.player.PlayerFragment.java` file:
 
 ```java
 adsManager = ManagerFactory.getAdsManager( 

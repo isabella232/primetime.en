@@ -1,10 +1,9 @@
 ---
 seo-title: Download and configure prerequisite software
 title: Download and configure prerequisite software
+description: The installation process is straightforward. If you already have the JDK installed on your system, you can skip this step, but be aware that your JDK, Eclipse IDE, and OS need to be compatible.
+seo-description: The installation process is straightforward. If you already have the JDK installed on your system, you can skip this step, but be aware that your JDK, Eclipse IDE, and OS need to be compatible.
 uuid: ca29144f-8088-4c8d-93cf-aa59007da034
-index: y
-internal: n
-snippet: y
 ---
 
 # Download and configure prerequisite software{#download-and-configure-prerequisite-software}
@@ -17,7 +16,7 @@ snippet: y
    After unzipping the package, you can run Eclipse directly. There is no installer.
 1. Download the Android SDK ADT Bundle from [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html).
 
-   This bundle includes Eclipse. If you already have Eclipse installed on your system, you can download the SDK Tools for your platform from the **[!UICONTROL Use An Existing IDE]** section.
+   This bundle includes Eclipse. If you already have Eclipse installed on your system, you can download the SDK Tools for your platform from the [!UICONTROL Use An Existing IDE] section.
 
    Unpack and install to a location you will remember. You will need to reference this in a later step.
 1. Configure the Android SDK.
@@ -26,36 +25,34 @@ snippet: y
    1. Go to the tools folder, which contains a file named [!DNL android].
    1. Run the following commands:
 
-       * For Mac OS X/Unix:        
+      * For Mac OS X/Unix:        
        
-         ```       
-         chmod +x android 
-         android update sdk --no-ui
-         ```       
+        ```       
+        chmod +x android 
+        android update sdk --no-ui
+        ```       
        
-       * For Windows:        
+      * For Windows:        
        
-         ```       
-         android update sdk --no-ui
-         ```
+        ```       
+        android update sdk --no-ui
+        ```
 
-          This process takes a while. 
+        This process takes a while. 
        
 1. Configure Eclipse.
    1. Start Eclipse.
 
       On Windows, if Eclipse does not start, and the issue reported is that Eclipse cannot find a required Java file, try the following:
 
-      add `-vm C:\[path to your JDK bin]\javaw.exe` to your [!DNL eclipse.ini] file. 
+      * add `-vm C:\[path to your JDK bin]\javaw.exe` to your [!DNL eclipse.ini] file.
    1. Select  **[!UICONTROL Help]** > **[!UICONTROL Install New Software]** .
    1. Click **[!UICONTROL Add...]**.
    1. Enter `Android` for the name.
-   1. Enter [!DNL https://dl-ssl.google.com/android/eclipse/] for the **[!UICONTROL Work with]** link.
+   1. Enter `https://dl-ssl.google.com/android/eclipse/` for the **[!UICONTROL Work with]** link.
    1. Click **[!UICONTROL OK]**.
 
       You should see a dialog similar to this:
-
-      <a id="fig_A1CC171097644E4D892F7FA31B821237"></a>   
    
       ![](assets/available_software.jpg)
 
@@ -70,8 +67,6 @@ snippet: y
    1. Select the **[!UICONTROL Android]** tab.
    1. Browse to the location of the Android SDK.
    1. Click **[!UICONTROL Apply]**.
-
-      <a id="fig_EDC325C7076F4C75938FCBB5F37403BC"></a>   
    
       ![Step Result](assets/ss2.jpg)
 

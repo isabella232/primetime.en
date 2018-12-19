@@ -4,9 +4,7 @@ seo-description: The TVSDK Primetime Reference is an Android application built a
 seo-title: Build the Primetime reference implementation
 title: Build the Primetime reference implementation
 uuid: ab12660a-1563-49a4-82d9-1ab13f8a92be
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Build the Primetime reference implementation{#build-the-primetime-reference-implementation}

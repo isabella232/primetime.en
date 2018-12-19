@@ -4,9 +4,6 @@ seo-description: You can easily track video by integrating a TVSDK-based app wit
 seo-title: Overview
 title: Overview
 uuid: 19ef7bf6-951b-44c5-b899-d14f6c8047a2
-index: y
-internal: n
-snippet: y
 ---
 
 # Overview{#overview}

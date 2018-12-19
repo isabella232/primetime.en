@@ -4,9 +4,6 @@ seo-description: The Primetime reference implementation uses a JSON-based feed f
 seo-title: Catalog format
 title: Catalog format
 uuid: 6e1a526f-c0bb-403d-a792-666caf5479a5
-index: y
-internal: n
-snippet: y
 ---
 
 # Catalog format{#catalog-format}
@@ -90,24 +87,10 @@ The following code block defines the JSON objects that form the array of **conte
 ],
 ```
 
-<table id="table_FBCAE95B1A4A4904A7B92B26A84735D6"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Property </th> 
-   <th colname="col2" class="entry"> Description </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> format</span> </td> 
-   <td colname="col2"> <p>Needs to be m3u8 format for Android. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> url</span> </td> 
-   <td colname="col2"> The url to the video stream for the given format. </td> 
-  </tr> 
- </tbody> 
-</table>
+|Property|Description|
+|--- |--- |
+|format|Needs to be m3u8 format for Android.|
+|url|The url to the video stream for the given format.|
 
 The following code block defines the JSON objects that form the array of **thumbnail objects**:
 
@@ -151,34 +134,11 @@ The following code block defines the **metadata object**:
 }
 ```
 
-<table id="table_291AE420FF684160B2E6A6F91805FB28"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Property </th> 
-   <th colname="col2" class="entry"> Description </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> ad </td> 
-   <td colname="col2"> Ad-related metadata. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> type </td> 
-   <td colname="col2"> <p> Value can be Primetime Ads, Direct Ad Breaks, or Custom Ad Markers. </p> <p>The PSDK provides built-in support for the following types of metadata: Auditude-related metadata for Primetime Ad Serving (Primetime Ads), direct ad-breaks with ad urls (Direct Ad Breaks), and custom ad markers that provide the TimeRange for each ad marker (Custom Ad Markers). Each type has a built-in <span class="codeph"> AdProvider</span> in the PSDK that processes the metadata. </p> <p>The JSON format for each of these have been define below. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> details </td> 
-   <td colname="col2"> Includes the ad metadata attributes. Both types of ad metadata have their own set of attributes defined below. For the built-in types, the attributes included define the data expected by the PSDK for that type. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> entitlement</td> 
-   <td colname="col2"> Entitlement related metadata</td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> id</td> 
-   <td colname="col2"> Media resource ID used for authorization requests against the Adobe Primetime pay-TV pass service. The ID may be either a text string or a HTML-encoded mRSS string. Any media content which requires authorization must contain a valid resource ID.</td> 
-  </tr> 
- </tbody> 
-</table>
+|Property|Description|
+|--- |--- |
+|ad|Ad-related metadata.|
+|type|Value can be Primetime Ads, Direct Ad Breaks, or Custom Ad Markers. <br/><br/>The PSDK provides built-in support for the following types of metadata: Auditude-related metadata for Primetime Ad Serving (Primetime Ads), direct ad-breaks with ad urls (Direct Ad Breaks), and custom ad markers that provide the TimeRange for each ad marker (Custom Ad Markers). Each type has a built-in  AdProvider in the PSDK that processes the metadata.  <br/><br/>The JSON format for each of these have been define below.|
+|details|Includes the ad metadata attributes. Both types of ad metadata have their own set of attributes defined below. For the built-in types, the attributes included define the data expected by the PSDK for that type.|
+|entitlement|Entitlement related metadata|
+|id|Media resource ID used for authorization requests against the Adobe Primetime pay-TV pass service. The ID may be either a text string or a HTML-encoded mRSS string. Any media content which requires authorization must contain a valid resource ID.|
 

@@ -4,9 +4,6 @@ seo-description: TVSDK features are driven by configuration and implemented thro
 seo-title: Creating feature managers by passing configuration information to the MediaPlayer
 title: Creating feature managers by passing configuration information to the MediaPlayer
 uuid: 106ececd-a670-4360-b000-a31fec65233c
-index: y
-internal: n
-snippet: y
 ---
 
 # Creating feature managers by passing configuration information to the MediaPlayer{#creating-feature-managers-by-passing-configuration-information-to-the-mediaplayer}

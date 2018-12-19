@@ -17,8 +17,8 @@ The HLS standard allows multi-format streams, which means we can keep the audio 
 
 You can implement various workflows, depending on your player user interface. The general workflow for the Primetime player is as follows:
 
-1. When the end user selects a video, a list of available audio tracks for that media item is populated. 
-1. When the user taps the Settings button on the UI, the audio track options are displayed. 
+1. When the end user selects a video, a list of available audio tracks for that media item is populated.
+1. When the user taps the Settings button on the UI, the audio track options are displayed.
 1. When an audio track is selected, the track becomes the active audio track. 
 1. The end user can tap the Settings button to switch back to the original audio track.
 

@@ -4,9 +4,6 @@ seo-description: The ConfigProvider class gets the configuration for the media p
 seo-title: ConfigProvider
 title: ConfigProvider
 uuid: 2467a617-6413-4b5d-9710-894cdc751b26
-index: y
-internal: n
-snippet: y
 ---
 
 # ConfigProvider{#configprovider}

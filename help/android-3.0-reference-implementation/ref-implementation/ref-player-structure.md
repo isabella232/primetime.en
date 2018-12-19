@@ -17,70 +17,19 @@ The feature managers serve as wrappers around the TVSDK library.
 
 The Primetime reference implementation contains the following packages:  
 
-<table id="table_228CB6BB38DF4D60BD28D14ED800FED8"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Package </th> 
-   <th colname="col2" class="entry"> Description </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/PrimetimeReference.html" format="html" scope="external"> com.adobe.primetime.reference</a> </td> 
-   <td colname="col2">This class extends <span class="codeph"> android.app.Application</span>. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/advertising/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.advertising</a> </td> 
-   <td colname="col2"> Contains code for custom ads. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.config</a> </td> 
-   <td colname="col2"> Contains the interface code required for configuring the feature managers. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/drm/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.drm</a> </td> 
-   <td colname="col2"> Contains helper classes for DRM. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/feeds/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.feeds</a> </td> 
-   <td colname="col2">The adapters and item adapters for interface, platform, and reference information. Also includes the <span class="codeph"> FeedAdapterFactory</span>, <span class="codeph"> ContentRenditionInfo</span>, and <span class="codeph"> XMLParserHelper</span> code. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/logging/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.logging</a> </td> 
-   <td colname="col2"> Provides classes for logging locally and remotely. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.manager</a> </td> 
-   <td colname="col2">This is where you can find the feature managers as well as the <span class="codeph"> ManagerFactory</span>. For optional features that you can enable or disable, there are two feature managers: 
-    <ul id="ul_DB976A6E05494E10B57CE07E816FCE79"> 
-     <li id="li_0A4F951B8F4743EFA6350FFADFFFCD57">One feature manager that is the name of the feature, for example, <span class="codeph"> CCManager</span>. This feature manager is turned off and provides the default off behavior. </li> 
-     <li id="li_FA7B8BBBD3AD468F9A7397B23CBB9361">One feature manager that has On appended to the feature manager name, for example, <span class="codeph"> CCManagerOn</span>. This feature manager provides sample code for the enabled feature. </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/catalog/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.ui.catalog</a> </td> 
-   <td colname="col2"> Contains UI code for the catalog. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/log/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.ui.log</a> </td> 
-   <td colname="col2"> Contains UI code for the log. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.ui.player</a> </td> 
-   <td colname="col2"> Contains UI code for the player. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/settings/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.ui.settings</a> </td> 
-   <td colname="col2"> Contains UI code for settings. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.utils</a> </td> 
-   <td colname="col2"> Contains general utility classes. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/http/package-summary.html" format="html" scope="external"> com.adobe.primetime.reference.utils.http</a> </td> 
-   <td colname="col2"> Contains HTTP-specific utility classes. </td> 
-  </tr> 
- </tbody> 
-</table>
+|Package|Description|
+|--- |--- |
+|[`com.adobe.primetime.reference`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/PrimetimeReference.html)|This class extends  android.app.Application.|
+|[`com.adobe.primetime.reference.advertising`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/advertising/package-summary.html)|Contains code for custom ads.|
+|[`com.adobe.primetime.reference.config`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/package-summary.html)|Contains the interface code required for configuring the feature managers.|
+|[`com.adobe.primetime.reference.drm`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/drm/package-summary.html)|Contains helper classes for DRM.|
+|[`com.adobe.primetime.reference.feeds`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/feeds/package-summary.html)|The adapters and item adapters for interface, platform, and reference information. Also includes the  FeedAdapterFactory,  ContentRenditionInfo, and  XMLParserHelper code.|
+|[`com.adobe.primetime.reference.logging`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/logging/package-summary.html)|Provides classes for logging locally and remotely.|
+|[`com.adobe.primetime.reference.manager`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/package-summary.html)|This is where you can find the feature managers as well as the  ManagerFactory. For optional features that you can enable or disable, there are two feature managers: <br/><li>One feature manager that is the name of the feature, for example,  CCManager. This feature manager is turned off and provides the default off behavior.</li><li>One feature manager that has On appended to the feature manager name, for example,  CCManagerOn. This feature manager provides sample code for the enabled feature.</li></ul>|
+|[`com.adobe.primetime.reference.ui.catalog`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/catalog/package-summary.html)|Contains UI code for the catalog.|
+|[`com.adobe.primetime.reference.ui.log`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/log/package-summary.html)|Contains UI code for the log.|
+|[`com.adobe.primetime.reference.ui.player`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/package-summary.html)|Contains UI code for the player.|
+|[`com.adobe.primetime.reference.ui.settings`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/settings/package-summary.html)|Contains UI code for settings.|
+|[`com.adobe.primetime.reference.utils`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/package-summary.html)|Contains general utility classes.|
+|[`com.adobe.primetime.reference.utils.http`](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/http/package-summary.html)|Contains `HTTP-specific` utility classes.|
 

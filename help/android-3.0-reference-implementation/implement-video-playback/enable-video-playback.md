@@ -4,9 +4,6 @@ seo-description: Create a PlaybackManager that handles the HLS stream setup and 
 seo-title: Enable video playback
 title: Enable video playback
 uuid: ddc0defa-c40f-4ee6-a69f-d5eeca6c2fce
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable video playback{#enable-video-playback}
@@ -21,11 +18,7 @@ Create a PlaybackManager that handles the HLS stream setup and playback operatio
            return mediaPlayer;
    ```
 
-   <!-- 
-
-I've duplicated this information. It also exists in the PlayerFragment section, just before the Feature manager section. I figured that I should have it here as well, in case they jump directly to this section.
-
- -->
+   <!-- I've duplicated this information. It also exists in the PlayerFragment section, just before the Feature manager section. I figured that I should have it here as well, in case they jump directly to this section.-->
 
 1. Create the playback manager through the `ManagerFactory`:
 

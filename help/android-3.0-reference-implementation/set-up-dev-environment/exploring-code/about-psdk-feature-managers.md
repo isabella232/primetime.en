@@ -2,9 +2,8 @@
 seo-title: Feature managers
 title: Feature managers
 uuid: 3d78544e-4819-4122-bfd3-01522a067aa9
-index: y
-internal: n
-snippet: y
+description: Feature managers provide a way for you to control individual features without traversing the entire TVSDK in search of code for one feature that could be scattered in multiple locations.
+seo-description: Feature managers provide a way for you to control individual features without traversing the entire TVSDK in search of code for one feature that could be scattered in multiple locations.
 ---
 
 # Feature managers{#feature-managers}
@@ -13,11 +12,14 @@ Feature managers provide a way for you to control individual features without tr
 
 The feature managers perform the following tasks:
 
-* **Triggers TVSDK features.**These are function calls to trigger a TVSDK feature. For example, `PlaybackManager.play()` is called when the player application needs to start the video playback. 
+* **Triggers TVSDK features.**
+  These are function calls to trigger a TVSDK feature. For example, `PlaybackManager.play()` is called when the player application needs to start the video playback. 
 
-* **Listens to TVSDK events.** The feature manager needs to listen to TVSDK events to acquire information from the TVSDK. For example, `AdsManager` listens to TVSDK Ads events to be notified when ad breaks start. 
+* **Listens to TVSDK events.**
+  The feature manager needs to listen to TVSDK events to acquire information from the TVSDK. For example, `AdsManager` listens to TVSDK Ads events to be notified when ad breaks start. 
 
-* **Dispatches events to the handler.**After the feature managers receive and process the events from the TVSDK, they notify the client side to handle the event. For example, after `AdsManager` receives an ad break start event, it tells the player fragment to reflect this change in the UI (disable the scrub bar, show the ad overlay, etc.).
+* **Dispatches events to the handler.**
+  After the feature managers receive and process the events from the TVSDK, they notify the client side to handle the event. For example, after `AdsManager` receives an ad break start event, it tells the player fragment to reflect this change in the UI (disable the scrub bar, show the ad overlay, etc.).
 
 The Primetime reference implementation includes the following feature managers:  
 

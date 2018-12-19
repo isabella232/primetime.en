@@ -23,13 +23,13 @@ You can integrate late-binding or alternate audio streams into your player by cr
 
   ```java
   aaManager = ManagerFactory.getAAManager( 
-<b>true</b>,config, mediaPlayer);
+  <b>true</b>,config, mediaPlayer);
   ```
 
   To disable alternate audio:
 
   ```java
   aaManager = ManagerFactory.getAAManager( 
-<b>false</b>,config, mediaPlayer);
+  <b>false</b>,config, mediaPlayer);
   ```
 

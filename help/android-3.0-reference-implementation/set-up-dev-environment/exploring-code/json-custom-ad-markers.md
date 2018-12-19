@@ -11,7 +11,9 @@ snippet: y
 
 The code block below defines the "details" JSON object when the type is custom ad markers.
 
-The MetadataNode returned by IFeedItemAdapter:getStreamMetadata() contains 2 entries - an entry with key of type com.adobe.mediacore.metadata.DefaultMetadataKeys.CUSTOM_AD_MARKERS_METADATA_KEY and value of of an instance of the MetadataNode returned by TimeRangeCollection.toMetadata(). The second entry has a key of type com.adobe.mediacore.metadata.DefaultMetadataKeys.METADATA_KEY_ADJUST_SEEK_ENABLED with the value of the "adjust-seek-position" attribute below.
+The MetadataNode returned by IFeedItemAdapter:getStreamMetadata() contains 2 entries:
+1. an entry with key of type `com.adobe.mediacore.metadata.DefaultMetadataKeys.CUSTOM_AD_MARKERS_METADATA_KEY` and value of of an instance of the MetadataNode returned by `TimeRangeCollection.toMetadata()`.
+1. The second entry has a key of type `com.adobe.mediacore.metadata.DefaultMetadataKeys.METADATA_KEY_ADJUST_SEEK_ENABLED` with the value of the *adjust-seek-position* attribute below.
 
 ```
 “metadata”: {

@@ -2,9 +2,6 @@
 seo-title: How to use the Primetime reference implementation
 title: How to use the Primetime reference implementation
 uuid: 9eb262c4-d987-493a-92a4-311118c5f01e
-index: y
-internal: n
-snippet: y
 ---
 
 # How to use the Primetime reference implementation{#how-to-use-the-primetime-reference-implementation}

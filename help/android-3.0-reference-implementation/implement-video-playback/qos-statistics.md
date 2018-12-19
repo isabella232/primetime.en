@@ -4,19 +4,15 @@ seo-description: You can set up your player to read playback and device statisti
 seo-title: Display QoS playback and device statistics
 title: Display QoS playback and device statistics
 uuid: 8fc45a2f-03d4-4fa0-979b-eb816419c4f7
-index: y
-internal: n
-snippet: y
 ---
 
 # Display QoS playback and device statistics{#display-qos-playback-and-device-statistics}
 
 You can set up your player to read playback and device statistics from the QoSProvider as often as needed.
 
- The `QoSProvider` class provides various statistics, including the frame rate, the profile bit rate, the total time spent in buffering, the number of buffering attempts, the time it took to get the first byte from the first video fragment, the time it took to render the first frame, the currently buffered length, and the buffer time.
+The `QoSProvider` class provides various statistics, including the frame rate, the profile bit rate, the total time spent in buffering, the number of buffering attempts, the time it took to get the first byte from the first video fragment, the time it took to render the first frame, the currently buffered length, and the buffer time.
 
-The reference implementation provides a `QoSManager` class where you can enable the display of the QoS overlay. You can also enable the QoS visibility in the Settings user interface: 
-<a id="fig_57972F9FE252499DA96B2705AC8F8E8C"></a>
+The reference implementation provides a `QoSManager` class where you can enable the display of the QoS overlay. You can also enable the QoS visibility in the Settings user interface:
 
 ![](assets/qos-configuration.jpg)
 
@@ -24,19 +20,19 @@ The `QoSManager` tracks QoS statistics by getting device information, attaching 
 
 1. Create a QosManager or enable QoS reporting using the ManagerFactory.
 
-    * To create a QosManager:     
+   * To create a QosManager:     
     
-      ```    
-      // This application needs to use the advertising workflow feature 
-      QoSManager qosManager = new QosManagerOn();
-      ```    
+   ```    
+   // This application needs to use the advertising workflow feature 
+   QoSManager qosManager = new QosManagerOn();
+   ```    
     
     * To use a ManagerFactory to enable the display of QoS statistics:     
     
-      ```    
-      qosManager = ManagerFactory.getQosManager( 
-<b>true</b>, config, mediaPlayer);
-      ```
+    ```    
+    qosManager = ManagerFactory.getQosManager( 
+    <b>true</b>, config, mediaPlayer);
+    ```
 
 1. Add event listeners:
 
