@@ -1,11 +1,11 @@
 ---
 cloud: experience-cloud
-product: adobe
+product: primetime
 archtype: end-user
-user-guide: null
+user-guide: Primetime Video Playback Help
 ---
 
-# Table of Contents {#table-of-contents}
+# Primetime Video Playback Help {#video-playback}
 
 + [Primetime reference implementation](ref-implementation/ref-implementation.md)
    + [How to use the Primetime reference implementation](ref-implementation/how-to-use-ref-player.md)

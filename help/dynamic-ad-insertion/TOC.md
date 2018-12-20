@@ -5,7 +5,7 @@ archtype: end-user
 user-guide: Dynamic Ad Insertion Help
 ---
 
-# Dynamic Ad Insertion Help {#dynamic-ad-insertion}
+# Dynamic Ad Insertion Help {#ad-insertion}
 
 + [Manifest Server Debugging Tool](manifest-server-debugging-tool.md)
 + Manifest Server API for Ad Insertion
