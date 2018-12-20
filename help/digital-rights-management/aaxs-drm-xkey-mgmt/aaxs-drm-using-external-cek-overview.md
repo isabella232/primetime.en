@@ -4,9 +4,6 @@ seo-description: Customers can use Adobe Access (AAXS) DRM with their own Conten
 seo-title: Adobe Access DRM External CEK Overview
 title: Adobe Access DRM External CEK Overview
 uuid: ea0bba63-7743-4216-863f-392500998eb6
-index: y
-internal: n
-snippet: y
 ---
 
 # Adobe Access DRM External CEK Overview{#adobe-access-drm-external-cek-overview}

@@ -4,22 +4,19 @@ seo-description: Use the External CEK feature to vend and package licenses using
 seo-title: Using External CEK to Vend and Package Licenses
 title: Using External CEK to Vend and Package Licenses
 uuid: 1bfd8c6c-4ae9-47de-8247-085b5360127d
-index: y
-internal: n
-snippet: y
 ---
 
 # Using External CEK to Vend and Package Licenses{#using-external-cek-to-vend-and-package-licenses}
 
 Use the External CEK feature to vend and package licenses using your existing CKMS.
 
-**EncryptContentWithExternalKey.java**
+## EncryptContentWithExternalKey.java
 
 This is a command line tool that will AAXS-encrypt a video and create metadata that will *not* contain the CEK (protected with an AAXS license server's public cert). Instead, the tool embeds a CEK ID into the video's metadata.
 
 During license acquisition, the AAXS license server observes a flag in the metadata identifying that this content was protected using an External CEK. The license server will extract the CEK ID from the metadata and then query a secure repository/CKMS to retrieve the appropriate CEK.
 
-**Packaging Workflow:**
+## Packaging Workflow
 
 1. Ensure you are using Java 1.6.0_24 or later.
 1. To see the tool usage: `java -jar AdobePackager_ExternalCEK.jar`
@@ -37,7 +34,7 @@ During license acquisition, the AAXS license server observes a flag in the metad
 >* The Flash Access SDK ( `adobe-flashaccess-sdk.jar`) must be on the classpath
 >
 
-**Server Workflow:**
+## Server Workflow
 
 1. Set up the Reference Implementation according to:
 
@@ -60,4 +57,6 @@ During license acquisition, the AAXS license server observes a flag in the metad
 
     1. You may have to change your [!DNL log4j.xml] settings to log at a `DEBUG` level ( `INFO` is set by default)
 
-**Known Issues:** None
+## Known Issues
+
+None

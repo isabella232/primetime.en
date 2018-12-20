@@ -1,18 +1,16 @@
 ---
 seo-title: AAXS DRM External CEK Workflow
 title: AAXS DRM External CEK Workflow
+description: This workflow is a departure from most existing DRM systems, as it does not require the use of any central repository or Content Key Management System (CKMS)
+seo-description: This workflow is a departure from most existing DRM systems, as it does not require the use of any central repository or Content Key Management System (CKMS)
 uuid: b313594b-0feb-4f27-bf02-f04b955e2140
-index: y
-internal: n
-snippet: y
 ---
 
 # AAXS DRM External CEK Workflow{#aaxs-drm-external-cek-workflow}
 
  This workflow is a departure from most existing DRM systems, as it does not require the use of any central repository or Content Key Management System (CKMS). However, for customers that desire AAXS to work with their existing CKMS, AAXS provides a feature called "External CEK", in which the CEK is supplied externally at packaging and license issuance time. 
-<a id="fig_f4p_bdp_34"></a>
 
-![](assets/ECEK_Workflow.PNG){width="540px"}
+![](assets/ECEK_Workflow.PNG)
 
 1. (Package) The AAXS Java SDK is provided with a CEK and a CEK ID.
 1. (Package) The CEK is used to encrypt content.
