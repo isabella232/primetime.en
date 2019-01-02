@@ -6,7 +6,7 @@ title: Multi CDN support
 uuid: 2b6d71f0-61c8-486b-a35a-f7ef3a9519d2
 ---
 
-# Multi CDN support{#multi-cdn-support}
+# Multi CDN support {#multi-cdn-support}
 
 Multi CDN allows for the setting of one or more CDN locations to serve transcoded ads.
 

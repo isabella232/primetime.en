@@ -6,7 +6,7 @@ title: Support for WebVTT captions
 uuid: 1dc728b0-5aeb-4c48-8f3b-54ff4b135742
 ---
 
-# Support for WebVTT captions{#support-for-webvtt-captions}
+# Support for WebVTT captions {#support-for-webvtt-captions}
 
 The manifest server supports publisher-enabled WebVTT captions for all HLS video formats. When it receives requests to insert ads into WebVTT captioned content, it does so correctly.
 

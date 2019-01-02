@@ -13,7 +13,7 @@ internal: n
 snippet: y
 ---
 
-# Primetime Offline Packager 2.x releases{#primetime-offline-packager-x-releases}
+# Primetime Offline Packager 2.x releases {#primetime-offline-packager-x-releases}
 
 What’s new in Primetime Offline Packager 2.1 and 2.3.1 releases
 
@@ -48,25 +48,25 @@ The following issues exist in this release.
 
 Supported operating systems
 
-• Linux CentOS 6.3 64 bit
+* Linux CentOS 6.3 64 bit
 
 Hardware requirements
 
-• 3.2GHz Intel® Pentium® 4 processor (dual Intel Xeon® or faster recommended)
+* 3.2GHz Intel® Pentium® 4 processor (dual Intel Xeon® or faster recommended)
 
-• 64-bit operating systems: 4GB of RAM (8GB recommended)
+* 64-bit operating systems: 4GB of RAM (8GB recommended)
 
-• Hard Disk
+* Hard Disk
 
-(Disk-SAS) : Minimum 10GB with 7.5K RPM
+(Disk-SAS): Minimum 10GB with 7.5K RPM
 
-(Disk-SSD) : 400MBps read/write speed
+(Disk-SSD): 400MBps read/write speed
 
-(NAS) : 1 GB dedicated link
+(NAS): 1 GB dedicated link
 
 Software requirements
 
-• Oracle Java SE 1.8 or higher
+* Oracle Java SE 1.8 or higher
 
 ### Adobe Primetime Offline Packager 2.3.1 {#adobe-primetime-offline-packager-1}
 
@@ -100,27 +100,27 @@ Following issues were also fixed in this release.
 
 Supported operating systems
 
-• Linux CentOS 6.3 64 bit
+* Linux CentOS 6.3 64 bit
 
 Hardware requirements
 
-• 3.2GHz Intel® Pentium® 4 processor (dual Intel Xeon® or faster recommended)
+* 3.2GHz Intel® Pentium® 4 processor (dual Intel Xeon® or faster recommended)
 
-• 64-bit operating systems: 4GB of RAM (8GB recommended)
+* 64-bit operating systems: 4GB of RAM (8GB recommended)
 
-• 1Gb Ethernet card recommended (multiple network cards and 10Gb also supported)
+* 1Gb Ethernet card recommended (multiple network cards and 10Gb also supported)
 
-• Hard Disk
+* Hard Disk
 
-(Disk-SAS) : Minimum 10GB with 7.5K RPM
+(Disk-SAS): Minimum 10GB with 7.5K RPM
 
-(Disk-SSD) : 400MBps read/write speed
+(Disk-SSD): 400MBps read/write speed
 
-(NAS) : 1 GB dedicated link
+(NAS): 1 GB dedicated link
 
 Software requirements
 
-• Oracle Java SE 1.8 or higher
+* Oracle Java SE 1.8 or higher
 
 ### Installing Offline Packager 2.1 {#installing-offline-packager}
 

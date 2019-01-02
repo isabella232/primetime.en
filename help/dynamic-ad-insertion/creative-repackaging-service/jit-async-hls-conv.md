@@ -6,7 +6,7 @@ title: Main Uses of CRS
 uuid: df2caa67-bc94-4146-9b93-14edc060c3d5
 ---
 
-# Main Uses of CRS{#main-uses-of-crs}
+# Main Uses of CRS {#main-uses-of-crs}
 
 CRS provides just-in-time (JIT) and asynchronous repackaging and HLS-to-HLS conversion. The result of repackaging is an HLS formatted version of the original ad creative. CRS places the HLS formatted version on the content delivery network (CDN) server for use when needed.
 

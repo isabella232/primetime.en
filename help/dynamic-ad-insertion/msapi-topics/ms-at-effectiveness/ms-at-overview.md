@@ -6,7 +6,7 @@ title: Ad tracking
 uuid: 184b8c36-5e51-42a7-b905-53f2b7b15e49
 ---
 
-# Ad tracking{#ad-tracking}
+# Ad tracking {#ad-tracking}
 
 Most advertisers require some detailed information about when, for how long, and how successfully their ads were viewed. The most efficient approach is to have the client player send reports as it plays the ads, but the manifest server also supports server-side and hybrid ad tracking.
 

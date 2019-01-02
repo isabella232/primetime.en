@@ -6,7 +6,7 @@ title: Display QoS playback and device statistics
 uuid: 8fc45a2f-03d4-4fa0-979b-eb816419c4f7
 ---
 
-# Display QoS playback and device statistics{#display-qos-playback-and-device-statistics}
+# Display QoS playback and device statistics {#display-qos-playback-and-device-statistics}
 
 You can set up your player to read playback and device statistics from the QoSProvider as often as needed.
 

@@ -25,7 +25,7 @@ TVSDK 2.5 offers multiple benefits over version 1.4 in terms of performance, sec
 
 According to a third-party benchmarking study, v2.5 provides 5x reduction in startup time and 3.8x reduction in dropped frames over the industry average.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <caption>
    Table: Performance enhancements in v2.5 
  </caption> 
@@ -63,7 +63,7 @@ According to a third-party benchmarking study, v2.5 provides 5x reduction in sta
 
 The playback features improve consumer engagement by delivering the experience of linear broadcast on digital. Also, it helps you leverage native DRM such as Widevine for HD playback.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <caption>
    Table: Playback features in v2.5 
  </caption> 
@@ -89,7 +89,7 @@ The playback features improve consumer engagement by delivering the experience o
 
 The features are important to meet the studio restrictions such as HD playback over native DRM.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <caption>
    Table: Content protection in v2.5 
  </caption> 
@@ -111,7 +111,7 @@ The features are important to meet the studio restrictions such as HD playback o
 
 Direct billing enhancement does away with the need to create manual reports for billing every month. VHL 2.0 allows for a faster time to market with pre-build integration and better accuracy in tracking.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <caption>
    Table: Advertising, Analytics, and other workflow in v2.5 
  </caption> 
