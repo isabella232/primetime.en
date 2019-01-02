@@ -21,11 +21,11 @@ Use the HTTP GET command to interact with the manifest server.
     ?{query parameters}
    ```
 
-* ** PublisherAssetID ** Required. Publisher's unique ID for the specific content.
+* **PublisherAssetID** Required. Publisher's unique ID for the specific content.
 
-* ** Content URL ** Required. URL of the content M3U8 file, Base64 encoded to be safe within the manifest server URL. The content URL must point to a variant M3U8 file, even if there is only one bit rate stream.
+* **Content URL** Required. URL of the content M3U8 file, Base64 encoded to be safe within the manifest server URL. The content URL must point to a variant M3U8 file, even if there is only one bit rate stream.
 
-* ** Query parameters ** Some are required, some optional. These constitute the most varied part of the request. They tell the manifest server which sort of client is making the request and what it wants the manifest server to do.
+* **Query parameters** Some are required, some optional. These constitute the most varied part of the request. They tell the manifest server which sort of client is making the request and what it wants the manifest server to do.
 
    For example:
 

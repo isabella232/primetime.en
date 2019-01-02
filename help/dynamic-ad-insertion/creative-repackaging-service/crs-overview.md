@@ -6,7 +6,7 @@ title: Overview of CRS
 uuid: 3ae75fa7-397f-47ba-8e3d-50543ca25458
 ---
 
-# Overview of CRS{#overview-of-crs}
+# Overview of CRS {#overview-of-crs}
 
 The creative repackaging service (CRS) ensures that a non-HLS ad creative can play back properly in HLS streams. The manifest server calls on CRS when it encounters a non-HLS ad.
 

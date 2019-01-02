@@ -6,7 +6,7 @@ title: Optional query parameters by client and situation
 uuid: e3fae41e-9f7d-4f01-9a01-52a1d5f5dad5
 ---
 
-# Optional query parameters by client and situation{#optional-query-parameters-by-client-and-situation}
+# Optional query parameters by client and situation {#optional-query-parameters-by-client-and-situation}
 
 Beyond the basic query parameters, optional query parameters enable the manifest server to work with different clients and situations.
 
