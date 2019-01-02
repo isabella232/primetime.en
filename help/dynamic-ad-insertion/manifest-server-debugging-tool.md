@@ -14,7 +14,7 @@ pagelayout: video
 sidecolumn: left
 ---
 
-# Manifest Server Debugging Tool{#manifest-server-debugging-tool}
+# Manifest Server Debugging Tool {#manifest-server-debugging-tool}
 
 ## Overview of debugging tool {#overview-of-debugging-tool}
 
