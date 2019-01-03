@@ -6,7 +6,7 @@ title: Creating feature managers by passing configuration information to the Med
 uuid: 106ececd-a670-4360-b000-a31fec65233c
 ---
 
-# Creating feature managers by passing configuration information to the MediaPlayer{#creating-feature-managers-by-passing-configuration-information-to-the-mediaplayer}
+# Creating feature managers by passing configuration information to the MediaPlayer {#creating-feature-managers-by-passing-configuration-information-to-the-mediaplayer}
 
 TVSDK features are driven by configuration and implemented through the MediaPlayer.
 
