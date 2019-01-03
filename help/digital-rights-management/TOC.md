@@ -7,7 +7,7 @@ user-guide: Primetime DRM Help
 
 # Digital Rights Management Help {#drm}
 
-+ Adobe Primetime DRM Secure Deployment Guidelines
++ Adobe Primetime DRM Secure Deployment Guidelines {#guidelines}
    + [Introduction to Network Topology](secure-deployment-guidelines/overview/overview.md)
       + [Network topology overview](secure-deployment-guidelines/overview/network-topology.md)
       + [Network layer security](secure-deployment-guidelines/overview/network-topology-network-layer-sec.md)
@@ -36,7 +36,7 @@ user-guide: Primetime DRM Help
       + [Overriding policy options](secure-deployment-guidelines/issuing-licenses/override-policy-options.md)
       + [Pre-generating licenses](secure-deployment-guidelines/issuing-licenses/issuing-licenses-pre-gen.md)
       + [Managing Domains](secure-deployment-guidelines/issuing-licenses/issuing-licenses-domains.md)
-+ Adobe Primetime TVSDK-DRM Workflow
++ Adobe Primetime TVSDK-DRM Workflow {#workflow}
    + [TVSDK-DRM client-side workflow overview](tvsdk-drm-workflow/overview.md)
    + [Primetime DRM content protection options](tvsdk-drm-workflow/content-protection-options.md)
    + [Primetime DRM on the client](tvsdk-drm-workflow/drm-on-client.md)
