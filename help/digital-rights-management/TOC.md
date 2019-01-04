@@ -207,17 +207,17 @@ user-guide: Primetime DRM Help
    + [What is included with Primetime Cloud DRM](cloud-quick-start/whats-included.md)
    + [What is NOT supported by Primetime Cloud DRM](cloud-quick-start/not-supported.md)
    + [Prerequisites](cloud-quick-start/prerequisites.md)
-   + [Packaging options](cloud-quick-start/packaging-options/packaging-options.md)
+   + Packaging options {#packaging-options.md}
       + [Use the included Primetime Offline Packager](cloud-quick-start/packaging-options/use-offline-packager.md)
       + [Use a third-party encoder](cloud-quick-start/packaging-options/use-third-party-encoder.md)
       + [Use Adobe Media Server](cloud-quick-start/packaging-options/use-adobe-media-server.md)
    + [Test the packaged content](cloud-quick-start/test-packaged-content.md)
-   + [Triaging errors](cloud-quick-start/triaging-errors/triaging-errors.md)
+   + Triaging errors {#triaging-errors}
       + [Client error triaging](cloud-quick-start/triaging-errors/client-error-triaging.md)
-   + [Custom authentication/entitlement (Optional)](cloud-quick-start/custom-auth-ent/custom-auth-ent.md)
+   + Custom authentication/entitlement {#custom-auth-ent}
       + [Custom authentication/entitlement (Optional)](cloud-quick-start/custom-auth-ent/custom-overview.md)
       + [BEES Overview](cloud-quick-start/custom-auth-ent/overview.md)
-      + [BEES Workflow](cloud-quick-start/custom-auth-ent/workflow-summary/workflow-summary.md)
+      + BEES Workflow {#workflow-summary}
          + [Policy workflow details](cloud-quick-start/custom-auth-ent/workflow-summary/policy-workflow.md)
          + [Packaging workflow details](cloud-quick-start/custom-auth-ent/workflow-summary/packaging-workflow.md)
          + [Authentication workflow details](cloud-quick-start/custom-auth-ent/workflow-summary/authn-workflow.md)
@@ -228,20 +228,20 @@ user-guide: Primetime DRM Help
       + [Deploy the BEES reference implementation](cloud-quick-start/custom-auth-ent/deploy-ref-impl.md)
       + [Configure SSL on your BEES server](cloud-quick-start/custom-auth-ent/configure-ssl.md)
    + [Adobe Primetime authentication (Optional)](cloud-quick-start/primetime-authentication.md)
-   + [Creating custom DRM policies (Optional)](cloud-quick-start/creating-custom-drm-policies/creating-custom-drm-policies.md)
+   + Creating custom DRM policies {#creating-custom-drm}
+      + [Creating custom DRM policies (Optional) overview](cloud-quick-start/creating-custom-drm-policies/creating-custom-drm-policies.md)
       + [Creating Policies Dynamically for Custom Auth/Entitlement](cloud-quick-start/creating-custom-drm-policies/creating-polices-dynamically.md)
    + [Update existing DRM content to use Cloud DRM (Optional)](cloud-quick-start/update-existing-drm-to-cloud.md)
-   + [Streaming to Xbox360 (Optional)](cloud-quick-start/streaming-to-xbox360/streaming-to-xbox360.md)
+   + Streaming to Xbox360 (Optional) {#streaming-to-xbox360}
       + [Set the XSTS token in your player](cloud-quick-start/streaming-to-xbox360/set-xsts-token.md)
       + [Xbox Live XSTS token validation](cloud-quick-start/streaming-to-xbox360/xsts-token-validation.md)
       + [Create JKS for an XSTS validator](cloud-quick-start/streaming-to-xbox360/jks-for-xsts-token-validator.md)
    + [References](cloud-quick-start/references.md)
-+ Using the Adobe Primetime DRM SDK for Protecting Content - 5.3.1
-   + [Introduction](protecting-content/introduction/introduction.md)
++ Using the Adobe Primetime DRM SDK for Protecting Content - 5.3.1 {#using-drm-sdk}
+   + Introduction {#introduction}
       + [What is new in Adobe Primetime DRM](protecting-content/introduction/whats-new.md)
-      + [Usage rules](protecting-content/introduction/usage-rules/usage-rules.md)
-         + [Authentication](protecting-content/introduction/usage-rules/authentication/authentication.md)
-            + [User authentication](protecting-content/introduction/usage-rules/authentication/user-authentication.md)
+      + Usage rules and Authentication {#usage-rules}
+         + [User authentication](protecting-content/introduction/usage-rules/authentication/user-authentication.md)
          + [Time-based rules](protecting-content/introduction/usage-rules/time-rules-overview/time-rules-overview.md)
             + [Time-based rules overview](protecting-content/introduction/usage-rules/time-rules-overview/time-based-rules.md)
             + [Start date](protecting-content/introduction/usage-rules/time-rules-overview/start-date.md)
@@ -250,7 +250,7 @@ user-guide: Primetime DRM Help
             + [License caching duration](protecting-content/introduction/usage-rules/time-rules-overview/relative-license-caching-duration.md)
             + [Playback window](protecting-content/introduction/usage-rules/time-rules-overview/relative-license-playback-window.md)
          + [Requirements for Synchronization](protecting-content/introduction/usage-rules/synchronization.md)
-         + [Runtime and application restrictions](protecting-content/introduction/usage-rules/runtime-application-restrictions/runtime-application-restrictions.md)
+         + Runtime and application restrictions {#runtime-application-restrictions}
             + [Whitelist for Primetime DRM applications   allowed to play protected content...](protecting-content/introduction/usage-rules/runtime-application-restrictions/whitelist-air.md)
             + [Whitelist for Adobe® Flash® Player SWFs](protecting-content/introduction/usage-rules/runtime-application-restrictions/whitelist-flash.md)
             + [Blacklist of DRM Clients restricted from   accessing protected content](protecting-content/introduction/usage-rules/runtime-application-restrictions/blacklist-drm-clients.md)
@@ -258,14 +258,14 @@ user-guide: Primetime DRM Help
             + [Minimum security level for DRM and   runtimes](protecting-content/introduction/usage-rules/runtime-application-restrictions/min-sec-level-for-drm.md)
             + [Device capabilities required to play protected   content](protecting-content/introduction/usage-rules/runtime-application-restrictions/device-capabilities.md)
             + [Jailbreak enforcement (requires Adobe Primetime   DRM)](protecting-content/introduction/usage-rules/runtime-application-restrictions/jailbreak-enforcement.md)
-         + [Other DRM policy options](protecting-content/introduction/usage-rules/other-policy-options/other-policy-options.md)
+         + Other DRM policy options {#other-policy-options}
             + [Custom usage rules](protecting-content/introduction/usage-rules/other-policy-options/custom-usage-rules.md)
             + [Enhanced license chaining](protecting-content/introduction/usage-rules/other-policy-options/enhanced-license-chaining.md)
             + [Multiple play rights](protecting-content/introduction/usage-rules/other-policy-options/multiple-play-rights.md)
             + [Remote and local iOS key delivery](protecting-content/introduction/usage-rules/other-policy-options/remote-key-delivery.md)
          + [Device Group Domain Registration](protecting-content/introduction/usage-rules/domain-registration.md)
          + [Output protection controls](protecting-content/introduction/usage-rules/output-protection-controls.md)
-      + [Packaging Options](protecting-content/introduction/packaging-options/packaging-options.md)
+      + Packaging Options {#packaging-options}
          + [Key Rotation](protecting-content/introduction/packaging-options/key-rotation.md)
          + [Out-of-band licenses](protecting-content/introduction/packaging-options/out-of-band-licenses.md)
          + [Encrypting tracks](protecting-content/introduction/packaging-options/encrypting-tracks.md)
@@ -274,28 +274,28 @@ user-guide: Primetime DRM Help
          + [Initial portion of content in the clear](protecting-content/introduction/packaging-options/initial-portion-content-clear.md)
          + [Custom metadata](protecting-content/introduction/packaging-options/custom-metadata.md)
          + [Multiple DRM policies](protecting-content/introduction/packaging-options/multiple-policies.md)
-   + [Setting up the SDK](protecting-content/setting-up-the-sdk/setting-up-the-sdk.md)
+   + Setting up the SDK {#setting-up-the-sdk}
       + [Set up your development environment](protecting-content/setting-up-the-sdk/setup-dev-env.md)
       + [Adobe Primetime DRM credentials](protecting-content/setting-up-the-sdk/drm-credentials.md)
       + [Requesting certificates](protecting-content/setting-up-the-sdk/requesting-certs.md)
       + [Storing credentials](protecting-content/setting-up-the-sdk/storing-credentials.md)
-   + [Work with DRM policies](protecting-content/working-policies-overview/working-policies-overview.md)
+   + Work with DRM policies {#working-policies}
       + [Working with DRM policies overview](protecting-content/working-policies-overview/working-with-policies.md)
       + [Creating a DRM policy with the Java API](protecting-content/working-policies-overview/creating-policy-using-java-api.md)
       + [Updating a DRM policy with the Java API](protecting-content/working-policies-overview/updating-policy-using-java-api.md)
       + [DRM policy criticality](protecting-content/working-policies-overview/policy-criticality.md)
-      + [DRM policy update lists](protecting-content/working-policies-overview/policy-update-lists/policy-update-lists.md)
+      + DRM policy update lists {#policy-update-lists}
          + [Working with DRM Policy Update Lists](protecting-content/working-policies-overview/policy-update-lists/working-with-policy-update-lists.md)
          + [Update Policy Update Lists](protecting-content/working-policies-overview/policy-update-lists/update-policy-update-lists.md)
-   + [Package media files](protecting-content/packaging-media-overview/packaging-media-overview.md)
+   + Package media files {#packaging-media}
       + [Packaging media files overview](protecting-content/packaging-media-overview/packaging-media-files.md)
       + [Packaging Options](protecting-content/packaging-media-overview/content-packaging-options.md)
       + [Encrypting content](protecting-content/packaging-media-overview/encrypting-content.md)
       + [Examining encrypted file content](protecting-content/packaging-media-overview/examining-encrypted-file-content.md)
-   + [Pre-generating and embedding licenses](protecting-content/pre-generating-and-embedded-licenses/pre-generating-and-embedded-licenses.md)
+   + Pre-generating and embedding licenses {#pre-generating-and-embedded-licenses}
       + [Pre-generating licenses](protecting-content/pre-generating-and-embedded-licenses/pre-generating-licenses.md)
       + [Embedding licenses](protecting-content/pre-generating-and-embedded-licenses/embedding-licenses.md)
-   + [Implement a License Server](protecting-content/implementing-the-license-server/implementing-the-license-server.md)
+   + Implement a License Server {#implementing-the-license-server}
       + [License server overview](protecting-content/implementing-the-license-server/implementing-license-overview.md)
       + [License Server deployment options](protecting-content/implementing-the-license-server/license-server-deployment-options.md)
       + [Process Adobe Primetime DRM requests](protecting-content/implementing-the-license-server/processing-drm-requests.md)
@@ -310,7 +310,7 @@ user-guide: Primetime DRM Help
       + [Handle Domain De-Registration requests](protecting-content/implementing-the-license-server/handling-domain-de-registration-reqs.md)
       + [Handle License Return requests](protecting-content/implementing-the-license-server/handling-license-return-reqs.md)
       + [Handle authentication requests](protecting-content/implementing-the-license-server/handling-authentication-reqs.md)
-      + [Handle license requests](protecting-content/implementing-the-license-server/handling-license-reqs/handling-license-reqs.md)
+      + Handle license requests {#handling-license-reqs}
          + [Overview](protecting-content/implementing-the-license-server/handling-license-reqs/license-handling-classes.md)
          + [License request error handling](protecting-content/implementing-the-license-server/handling-license-reqs/license-request-errors.md)
          + [Generating licenses](protecting-content/implementing-the-license-server/handling-license-reqs/generating-licenses.md)
@@ -320,28 +320,28 @@ user-guide: Primetime DRM Help
          + [License preview](protecting-content/implementing-the-license-server/handling-license-reqs/license-preview.md)
          + [Identity-based   licenses](protecting-content/implementing-the-license-server/handling-license-reqs/identity-based-licenses.md)
          + [Updating DRM policies](protecting-content/implementing-the-license-server/handling-license-reqs/updating-policies.md)
-      + [License chaining](protecting-content/implementing-the-license-server/license-chaining/license-chaining.md)
+      + License chaining {#license-chaining}
          + [Enhanced License Chaining](protecting-content/implementing-the-license-server/license-chaining/gen-enhanced-license-chaining.md)
       + [Handle synchronization requests](protecting-content/implementing-the-license-server/handling-synch-reqs.md)
-      + [Handle FMRMS compatibility](protecting-content/implementing-the-license-server/handling-fmrms-compatibility/handling-fmrms-compatibility.md)
+      + Handle FMRMS compatibility {#handling-fmrms-compatibility}
          + [Upgrading clients](protecting-content/implementing-the-license-server/handling-fmrms-compatibility/upgrading-clients.md)
          + [Upgrading metadata](protecting-content/implementing-the-license-server/handling-fmrms-compatibility/upgrading-metadata.md)
-      + [Handling certificate updates when Adobe-issued   certificates expire](protecting-content/implementing-the-license-server/handling-cert-updates.md)
+      + [Handling certificate updates when Adobe-issued certificates expire](protecting-content/implementing-the-license-server/handling-cert-updates.md)
       + [Performance tuning](protecting-content/implementing-the-license-server/performance-tuning.md)
-   + [Revoke client credentials](protecting-content/revoking-client-creds/revoking-client-creds.md)
+   + Revoke client credentials {#revoking-client-creds}
       + [Overview](protecting-content/revoking-client-creds/revoking-creds-overview.md)
-      + [Revoking DRM client and runtime   credentials](protecting-content/revoking-client-creds/revoking-drm-client-and-runtime-creds.md)
+      + [Revoking DRM client and runtime credentials](protecting-content/revoking-client-creds/revoking-drm-client-and-runtime-creds.md)
       + [Revoking machine credentials](protecting-content/revoking-client-creds/revoking-machine-creds.md)
    + [Create video players](protecting-content/creating-video-players.md)
-+ Adobe Primetime DRM SDK 5.3.1
++ Adobe Primetime DRM SDK 5.3.1 {#drm-sdk-5-3-1}
    + [Adobe Primetime DRM SDK - An overview](drm-sdk-overview/overview.md)
    + [About Adobe Primetime DRM](drm-sdk-overview/about-adobe-access.md)
    + [Key features](drm-sdk-overview/key-features.md)
    + [Terminology and core concepts](drm-sdk-overview/terminology-and-core-concepts.md)
-   + [Content distribution workflow](drm-sdk-overview/content-distribution-workflow/content-distribution-workflow.md)
+   + Content distribution workflow {#content-distribution-workflow}
       + [Content preparation](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
       + [Content acquisition](drm-sdk-overview/content-distribution-workflow/content-acquisition.md)
-   + [Adobe Primetime DRM components](drm-sdk-overview/adobe-access-components/adobe-access-components.md)
+   + Adobe Primetime DRM components {#adobe-access-components}
       + [Java SDK, Flash Player and Adobe AIR   client](drm-sdk-overview/adobe-access-components/adobe-access-sdk.md)
       + [Java APIs for managing device group   domains](drm-sdk-overview/adobe-access-components/java-apis-for-managing-domains.md)
       + [Java APIs for protecting content](drm-sdk-overview/adobe-access-components/java-apis-for-protecting-content.md)
@@ -351,7 +351,7 @@ user-guide: Primetime DRM Help
       + [Adobe Flash Player](drm-sdk-overview/adobe-access-components/adobe-flash-player.md)
       + [Adobe AIR](drm-sdk-overview/adobe-access-components/adobe-air.md)
       + [Native iOS and Android Applications](drm-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
-      + [Deploy Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/deploy-adobe-access/deploy-adobe-access.md)
+      + Deploy Adobe Primetime DRM {#deploy-adobe-access}
          + [Configure Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/deploy-adobe-access/configure-adobe-access.md)
          + [Deploying on a 64-bit operating system](drm-sdk-overview/adobe-access-components/deploy-adobe-access/deploying-on-a-64-bit-os.md)
          + [Install Adobe Primetime DRM SDK](drm-sdk-overview/adobe-access-components/deploy-adobe-access/install-adobe-access-sdk.md)
@@ -359,51 +359,53 @@ user-guide: Primetime DRM Help
          + [Create content packaging and policy management   tools](drm-sdk-overview/adobe-access-components/deploy-adobe-access/create-content-pkgng-policy-mgmt-tools.md)
          + [Create policies and package content](drm-sdk-overview/adobe-access-components/deploy-adobe-access/create-policies-and-package-content.md)
          + [Develop applications for video playback](drm-sdk-overview/adobe-access-components/deploy-adobe-access/develop-apps-for-video-playback.md)
-      + [Additional Deployment Scenarios](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/additional-deployment-scenarios.md)
-         + [UltraViolet media and Adobe Primetime   DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
-         + [Adobe Primetime authentication and Adobe   Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
-+ Adobe Primetime DRM Reference Implementations 5.3.1
+      + Additional Deployment Scenarios {#additional-deployment-scenarios}
+         + [UltraViolet media and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
+         + [Adobe Primetime authentication and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
++ Adobe Primetime DRM Reference Implementations 5.3.1 {#drm-reference-implementation-5-3-1}
    + [About the reference implementations](drm-reference-implementations/overview.md)
    + [Typical workflow](drm-reference-implementations/typical-scenario.md)
-   + [Command-line tools](drm-reference-implementations/command-line-tools/command-line-tools.md)
-      + [Command-line tools](drm-reference-implementations/command-line-tools/command-line-tools-overview.md)
+   + Command-line tools {#command-line-tools}
+      + [Command-line tools overview](drm-reference-implementations/command-line-tools/command-line-tools-overview.md)
       + [Command-line tools requirements](drm-reference-implementations/command-line-tools/requirements.md)
       + [Install the command-line tools](drm-reference-implementations/command-line-tools/install-command-line-tools.md)
-      + [Configure and run the command-line tools](drm-reference-implementations/command-line-tools/configure-command-line-tools/configure-command-line-tools.md)
+      + Configure and run the command-line tools {#configure-and-run}
+      + [Configure and run the command-line tools overview](drm-reference-implementations/command-line-tools/configure-command-line-tools/configure-command-line-tools.md)
          + [Configure and run the command-line tools](drm-reference-implementations/command-line-tools/configure-command-line-tools/configure-command-line-overview.md)
          + [About command-line tools configuration files](drm-reference-implementations/command-line-tools/configure-command-line-tools/config-file.md)
-         + [DRM Policy Manager](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager.md)
+         + DRM Policy Manager {#policy-manager}
             + [DRM Policy Manager](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-overview.md)
             + [Policy Manager Command-line usage](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-command-line-usage.md)
             + [Configuration properties](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-config-file-properties.md)
             + [Non-SWF Application Whitelisting](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/non-swf-whitelisting.md)
             + [SWF Application Whitelisting](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/swf-whitelisting.md)
-         + [DRM Media Packager](drm-reference-implementations/command-line-tools/configure-command-line-tools/media-packager/media-packager.md)
-            + [DRM Media Packager](drm-reference-implementations/command-line-tools/configure-command-line-tools/media-packager/media-packager-overview.md)
+         + DRM Media Packager {#media-packager}
+            + [DRM Media Packager overview](drm-reference-implementations/command-line-tools/configure-command-line-tools/media-packager/media-packager-overview.md)
             + [Media Packager command-line usage](drm-reference-implementations/command-line-tools/configure-command-line-tools/media-packager/media-packager-command-line-usage.md)
             + [Configuration properties](drm-reference-implementations/command-line-tools/configure-command-line-tools/media-packager/media-pkgr-config-file-properties.md)
-         + [DRM Policy Update List Manager](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-update-list-manager/policy-update-list-manager.md)
+         + DRM Policy Update List Manager {#policy-update-list-manager}
             + [DRM Policy Update List Manager](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-update-list-manager/policy-update-list-manager-overview.md)
             + [Policy Update List Manager command-line usage](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-update-list-manager/policy-update-command-line-usage.md)
             + [Configuration properties](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-update-list-manager/policy-update-config-file-props.md)
-         + [DRM Revocation List Manager](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-revocation-list-manager/policy-revocation-list-manager.md)
+         + DRM Revocation List Manager {#policy-revocation-list-manager}
             + [DRM Revocation List Manager](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-revocation-list-manager/policy-revocation-list-manager-overview.md)
             + [Revocation List Manager command-line usage](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-revocation-list-manager/revocation-command-line-usage.md)
             + [Configuration properties](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-revocation-list-manager/revocation-config-file-props.md)
-         + [DRM License Generator](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-generator/license-generator.md)
-            + [DRM License Generator](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-generator/license-generator-overview.md)
+         + DRM License Generator {#license-generator}
+            + [DRM License Generator overview](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-generator/license-generator-overview.md)
             + [License Generator command-line usage](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-generator/license-generator-command-line-usage.md)
             + [Configuration file properties](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-generator/license-generator-config-file-props.md)
-         + [DRM License Embedder](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-embedder/license-embedder.md)
-            + [DRM License Embedder](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-embedder/license-embedder-overview.md)
+         + DRM License Embedder {#license-embedder}
+            + [DRM License Embedder overview](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-embedder/license-embedder-overview.md)
             + [License Embedder command-line usage](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-embedder/license-embedder-command-line-usage.md)
-         + [AIR Publisher ID utility](drm-reference-implementations/command-line-tools/configure-command-line-tools/air-publisher-id-utility/air-publisher-id-utility.md)
-            + [AIR Publisher ID utility](drm-reference-implementations/command-line-tools/configure-command-line-tools/air-publisher-id-utility/air-publisher-id-utility-overview.md)
+         + AIR Publisher ID utility {#air-publisher-id-utility}
+            + [AIR Publisher ID utility overview](drm-reference-implementations/command-line-tools/configure-command-line-tools/air-publisher-id-utility/air-publisher-id-utility-overview.md)
             + [AIR Publisher ID utility command-line usage](drm-reference-implementations/command-line-tools/configure-command-line-tools/air-publisher-id-utility/air-publisher-command-line-usage.md)
-   + [License server](drm-reference-implementations/license-server-and-wfp/license-server-and-wfp.md)
+   + License server {#license-server}
+      + [License server overview](drm-reference-implementations/license-server-and-wfp/license-server-and-wfp.md)
       + [License server requirements](drm-reference-implementations/license-server-and-wfp/license-server-and-wfp-reqs.md)
       + [Build the license server](drm-reference-implementations/license-server-and-wfp/impl-building-the-license-server.md)
-   + [Configuration](drm-reference-implementations/configuration/configuration.md)
+   + Configuration {#configuration}
       + [License server properties file](drm-reference-implementations/configuration/properties-file.md)
       + [Prepare passwords for the Server properties files](drm-reference-implementations/configuration/config-prep-pws-for-server-props-files.md)
       + [Prepare passwords using Ant](drm-reference-implementations/configuration/config-prep-pws-for-server-with-ant.md)
@@ -417,23 +419,24 @@ user-guide: Primetime DRM Help
    + [Troubleshooting](drm-reference-implementations/server-and-wfp-troubleshooting.md)
    + [Check whether the license server started properly](drm-reference-implementations/server-determining-ref-started.md)
    + [Determining if Reference Implementation License Server runs properly](drm-reference-implementations/server-determining-ref-running.md)
-   + [Implementing the usage models](drm-reference-implementations/impl-usage-models/impl-usage-models.md)
-      + [Implementing the usage models](drm-reference-implementations/impl-usage-models/impl-usage-models-overview.md)
+   + Implementing the usage models {#implement-usage-models}
+      + [Implementing the usage models overview](drm-reference-implementations/impl-usage-models/impl-usage-models-overview.md)
       + [Enable the usage model demo](drm-reference-implementations/impl-usage-models/enable-usage-model-demo.md)
       + [Configure usage model demo mode](drm-reference-implementations/impl-usage-models/config-server-for-demo-mode.md)
       + [Update the reference implementation DB](drm-reference-implementations/impl-usage-models/update-db.md)
       + [Usage model demo business rules](drm-reference-implementations/impl-usage-models/usage-model-biz-rules.md)
-   + [Domain registration](drm-reference-implementations/impl-domain-registration/impl-domain-registration.md)
+   + Domain registration {#implement-domain-registration}
       + [Domain registration](drm-reference-implementations/impl-domain-registration/impl-domain-registration-overview.md)
       + [Implement identity-based domain registration](drm-reference-implementations/impl-domain-registration/implement-domain-based-reg.md)
       + [Identity-based domain registration logic](drm-reference-implementations/impl-domain-registration/impl-domain-registration-id-based-domains.md)
       + [Implement anonymous domain registration](drm-reference-implementations/impl-domain-registration/implement-anon-domain-reg.md)
       + [Anonymous domain logic](drm-reference-implementations/impl-domain-registration/impl-domain-registration-anonymous-domains.md)
    + [Migrate from FMRMS 1.0 or 1.5 to Adobe   Primetime DRM 2.0 or later](drm-reference-implementations/migrating-fmrms-drm.md)
-   + [Upgrade existing deployments](drm-reference-implementations/upgrading-existing-deplys/upgrading-existing-deplys.md)
+   + Upgrade existing deployments {#upgrade-existing-deploys}
+      + [Upgrade existing deployments overview](drm-reference-implementations/upgrading-existing-deplys/upgrading-existing-deplys.md)
       + [Set up a domain server](drm-reference-implementations/upgrading-existing-deplys/upgrading-existing-deplys-setup-ds.md)
-+ DRM Quick-Start Guide
-   + [Adobe Primetime DRM Quick-Start Guide](quick-start/title-page/title-page.md)
++ DRM Quick-Start Guide {#drm-quick-start}
+   + Introduction {#introduction}
       + [Getting Started](quick-start/title-page/getting-started.md)
       + [Prerequisites](quick-start/title-page/prerequisites.md)
       + [Obtain Certificates](quick-start/title-page/obtain-certifcates.md)
@@ -443,10 +446,10 @@ user-guide: Primetime DRM Help
    + [Install Flash Player and playback test content](quick-start/install-fp-playback-test.md)
    + [Play back a locally packaged video](quick-start/playback-locally-pkgd-video.md)
    + [Next Steps](quick-start/next-steps.md)
-+ Multi-DRM Workflows
-   + [Multi-DRM Workflows](multi-drm-workflows/title-page/title-page.md)
++ Multi-DRM Workflows {#multi-drm-workflows}
+   + Multi-DRM Workflows {#introduction}
       + [Multi-DRM overview](multi-drm-workflows/title-page/overview.md)
-   + [Primetime DRM Cloud Quick-start](multi-drm-workflows/quick-start/quick-start.md)
+   + Primetime DRM Cloud Quick-start {#quick-start}
       + [Primetime DRM Cloud Quick-start overview](multi-drm-workflows/quick-start/quick-overview.md)
       + [Get Provisioned (Accounts, etc.)](multi-drm-workflows/quick-start/get-provisioned.md)
       + [Keys, IDs, and Authenticators](multi-drm-workflows/quick-start/keys-ids-and-authenticators.md)
@@ -455,42 +458,42 @@ user-guide: Primetime DRM Help
       + [Licensing](multi-drm-workflows/quick-start/handle-the-licensing.md)
       + [Playback your protected content](multi-drm-workflows/quick-start/playback-protected-content.md)
       + [Troubleshooting your quick-start](multi-drm-workflows/quick-start/troubleshoot-quickstart.md)
-   + [Workflows: Package, License, and Play](multi-drm-workflows/p-l-and-p/p-l-and-p.md)
+   + Workflows: Package, License, and Play {#package-license-play}
       + [Multi-DRM Workflow for FairPlay](multi-drm-workflows/p-l-and-p/fairplay-workflow.md)
       + [Enable ExpressPlay service for FairPlay](multi-drm-workflows/p-l-and-p/enable-expressplay-for-fairplay.md)
       + [Package your content for FairPlay](multi-drm-workflows/p-l-and-p/package-for-fairplay.md)
       + [Setting policies for FairPlay](multi-drm-workflows/p-l-and-p/setting-policies-fairplay.md)
       + [Licensing and playback for FairPlay](multi-drm-workflows/p-l-and-p/licensing-fairplay.md)
       + [Multi-DRM Workflow for Widevine and PlayReady](multi-drm-workflows/p-l-and-p/widevine-workflow.md)
-      + [Packaging content for Widevine and PlayReady](multi-drm-workflows/p-l-and-p/package-for-widevine/package-for-widevine.md)
+      + Packaging content for Widevine and PlayReady {#package-for-widevine}
          + [Package your content with Bento4](multi-drm-workflows/p-l-and-p/package-for-widevine/package-for-widevine-with-bento.md)
          + [Package your content with Adobe Offline Packager](multi-drm-workflows/p-l-and-p/package-for-widevine/package-for-widevine-with-aop.md)
       + [Using Output Protection Policies](multi-drm-workflows/p-l-and-p/setting-policies-widevine.md)
-      + [Client Key Request Workflow](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-request.md)
+      + Client Key Request Workflow {#licensing-widevine-client-key-request}
          + [Client Key Request workflow overview](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-overview.md)
          + [Expressplay tokens](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-expressplay-tokens.md)
          + [Key request workflow on Android PSDK](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-android-psdk.md)
          + [Key request workflow on HTML5 TVSDK](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-html5-tvsdk.md)
       + [Device Binding](multi-drm-workflows/p-l-and-p/licensing-widevine-client-device-binding.md)
-      + [Generic Workflows](multi-drm-workflows/p-l-and-p/generic-workflows/generic-workflows.md)
+      + Generic Workflows {#generic-workflows}
          + [Primetime Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/plp-1.md)
          + [ExpressPlay Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/package-and-play.md)
-   + [Feature Topics](multi-drm-workflows/feature-topics/feature-topics.md)
+   + Feature Topics {feature-topics}
       + [Reference Server: Sample ExpressPlay Entitlement Server (SEES)](multi-drm-workflows/feature-topics/sees-reference-server.md)
       + [Reference Service: Time-based Entitlement](multi-drm-workflows/feature-topics/sees-reference-server-time-entitlement.md)
       + [Reference Service: Device-Binding Entitlement](multi-drm-workflows/feature-topics/sees-reference-server-binding-entitlement.md)
       + [SEES Public API](multi-drm-workflows/feature-topics/sees-reference-server-public-api.md)
-   + [ExpressPlay license token request / response reference](multi-drm-workflows/license-token-req-resp-ref/license-token-req-resp-ref.md)
+   + ExpressPlay license token request / response reference {#license-token-req-resp-ref}
       + [ExpressPlay license token request / response reference   overview](multi-drm-workflows/license-token-req-resp-ref/license-req-resp-overview.md)
       + [FairPlay license token request / response](multi-drm-workflows/license-token-req-resp-ref/fairplay-license-token-request.md)
       + [PlayReady license token request / response](multi-drm-workflows/license-token-req-resp-ref/playready-license-token-request.md)
       + [Widevine license token request / response](multi-drm-workflows/license-token-req-resp-ref/widevine-license-token-request.md)
    + [Migrating from Access to Multi-DRM](multi-drm-workflows/access-vs-multi.md)
-   + [Glossary](multi-drm-workflows/glossary/glossary.md)
+   + Glossary {#glossary}
       + [Content Encryption Key](multi-drm-workflows/glossary/glossary-cek.md)
       + [Content Encryption Key Storage ID](multi-drm-workflows/glossary/glossary-ceksid.md)
       + [Content Encryption Key Storage ID](multi-drm-workflows/glossary/glossary-ceksid.md)
-+ Using the Adobe Access SDK for Protecting Content
++ Using the Adobe Access SDK for Protecting Content {#using-adobe-access-sdk}
    + [Introduction](aaxs-protecting-content/content-introduction/content-introduction.md)
       + [What is new in Adobe Access 5.2](aaxs-protecting-content/content-introduction/content-whats-new.md)
       + [Usage rules](aaxs-protecting-content/content-introduction/content-usage-rules/content-usage-rules.md)
