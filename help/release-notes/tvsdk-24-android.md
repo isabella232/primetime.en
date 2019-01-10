@@ -3,10 +3,10 @@ title: TVSDK 2.4.1 for Android Release Notes
 seo-title: TVSDK 2.4.1 for Android Release Notes
 description: TVSDK 2.4.1 for Android Release Notes describe the new and supported features and the known issues and limitations in TVSDK Android 2.4.1.
 seo-description: TVSDK 2.4.1 for Android Release Notes describe the new and supported features and the known issues and limitations in TVSDK Android 2.4.1.
-uuid: d9b15c95-688b-4151-a085-5eda53e8a947
+uuid: 929fc577-e851-4e03-9201-13280cc6137a
 topic-tags: release-notes
 products: SG_PRIMETIME
-discoiquuid: 053a6923-2b10-474b-a4ec-2457636e2009
+discoiquuid: a6dbcc4a-9e14-4452-9004-b39ed13fad6f
 index: y
 internal: n
 snippet: y

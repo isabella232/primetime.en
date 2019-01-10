@@ -1,7 +1,7 @@
 ---
 seo-title: Configuration Directory Structure
 title: Configuration Directory Structure
-uuid: e617cfbd-9bc1-4fab-b8d3-34ed953cb3e2
+uuid: 90ddd205-9dc6-4be1-ab10-ac37d93192c2
 index: y
 internal: n
 snippet: y

@@ -1,7 +1,7 @@
 ---
 seo-title: Using the DRMStatusEvent class overview
 title: Using the DRMStatusEvent class overview
-uuid: 1046f73a-be32-4f5f-9fb1-4244180de12e
+uuid: 9faf35fe-63ac-43a8-a945-4735c12efb04
 index: y
 internal: n
 snippet: y

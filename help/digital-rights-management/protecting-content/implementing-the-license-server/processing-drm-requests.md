@@ -1,7 +1,7 @@
 ---
 seo-title: Process Adobe Primetime DRM requests
 title: Process Adobe Primetime DRM requests
-uuid: 884c6a32-38e5-4855-a3cc-4438370c87da
+uuid: ee10504d-84f0-472a-b58a-2a87fdeedfc1
 index: y
 internal: n
 snippet: y

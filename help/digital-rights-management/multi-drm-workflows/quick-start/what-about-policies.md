@@ -3,7 +3,7 @@ description: Setting policies is the process of specifying conditions for when a
 seo-description: Setting policies is the process of specifying conditions for when and how a user is allowed to play protected video content.
 seo-title: Setting policies
 title: Setting policies
-uuid: 890bf8ad-7b81-4b17-a028-7bd82f586623
+uuid: 2d2672ce-5ed4-4868-aa5e-0a9e21a809b3
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: We use both the Bento4 packager and the Adobe offline packager to a
 seo-description: We use both the Bento4 packager and the Adobe offline packager to author encrypted DASH content. Bento4 takes as input unencrypted mp4 content.
 seo-title: Package your content with Bento4
 title: Package your content with Bento4
-uuid: f9be32f5-26cc-472d-a2a2-f3a0d93a07e1
+uuid: 88323a4e-d0b5-4a41-acec-7126d3e0c90b
 index: y
 internal: n
 snippet: y

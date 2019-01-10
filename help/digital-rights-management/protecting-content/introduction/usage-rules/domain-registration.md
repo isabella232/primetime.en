@@ -1,7 +1,7 @@
 ---
 seo-title: Device Group Domain Registration
 title: Device Group Domain Registration
-uuid: ebd24a85-df14-4e4a-8185-a7b37d6c02fd
+uuid: 221bf6c3-0568-443d-b761-64715a57ada6
 index: y
 internal: n
 snippet: y

@@ -1,7 +1,7 @@
 ---
 seo-title: Requirements for using Primetime DRM Key Server
 title: Requirements for using Primetime DRM Key Server
-uuid: 98a5b97e-e9b6-4489-9c5e-c997eb2f732e
+uuid: 769f9e10-7a3e-4a38-b30d-18181b666bb4
 index: y
 internal: n
 snippet: y

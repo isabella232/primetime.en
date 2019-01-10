@@ -1,7 +1,7 @@
 ---
 seo-title: Deploying the Primetime DRM Key Server overview
 title: Deploying the Primetime DRM Key Server overview
-uuid: 842fdf40-fe2b-4cfd-b27c-fef5dfcc887a
+uuid: 86630675-c15d-4f32-8212-d7343f4f92e0
 index: y
 internal: n
 snippet: y

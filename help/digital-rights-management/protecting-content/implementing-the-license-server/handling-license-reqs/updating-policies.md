@@ -1,7 +1,7 @@
 ---
 seo-title: Updating DRM policies
 title: Updating DRM policies
-uuid: 01ac765e-1ca5-4426-8ac3-aaf0757d7466
+uuid: 6f7a1432-88e4-499b-a008-6c8cf0e9c09b
 index: y
 internal: n
 snippet: y

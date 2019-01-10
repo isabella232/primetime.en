@@ -1,7 +1,7 @@
 ---
 seo-title: Prerequisites
 title: Prerequisites
-uuid: f212e3cd-db6f-4adb-ad9c-6bb636983c11
+uuid: 59a51ef8-ab54-4254-a160-2a8103a920b2
 index: y
 internal: n
 snippet: y

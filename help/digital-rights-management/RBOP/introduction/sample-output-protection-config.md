@@ -3,7 +3,7 @@ description: This section presents a sample configuration that illustrates the c
 seo-description: This section presents a sample configuration that illustrates the concepts and form of the configuration.
 seo-title: Sample RBOP Configuration
 title: Sample RBOP Configuration
-uuid: 018df53b-6505-47ed-badd-2fe1d483fc04
+uuid: fa5ead93-36c5-4ad1-947b-c4f1f2632d9b
 index: y
 internal: n
 snippet: y

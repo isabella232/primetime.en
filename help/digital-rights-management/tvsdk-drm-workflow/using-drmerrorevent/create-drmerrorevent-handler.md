@@ -1,7 +1,7 @@
 ---
 seo-title: Create a DRMErrorEvent handler
 title: Create a DRMErrorEvent handler
-uuid: 267b0ece-5764-4772-b7d1-54f3840c792e
+uuid: dde660fc-6899-47d4-97d4-46acda2db262
 index: y
 internal: n
 snippet: y

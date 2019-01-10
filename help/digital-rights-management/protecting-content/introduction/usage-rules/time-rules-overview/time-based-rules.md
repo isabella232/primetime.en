@@ -1,7 +1,7 @@
 ---
 seo-title: Time-based rules overview
 title: Time-based rules overview
-uuid: d131a064-4091-4207-a569-e582f88184bc
+uuid: 10b7766e-3b1a-4d8a-ba15-46976aa0847d
 index: y
 internal: n
 snippet: y

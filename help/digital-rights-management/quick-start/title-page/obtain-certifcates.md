@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Obtain Certificates
 title: Obtain Certificates
-uuid: d3c1c23e-f935-44b8-91f4-8e497967bdfc
+uuid: dd01931b-289e-4876-9344-dd90c3c8c162
 index: y
 internal: n
 snippet: y

@@ -1,7 +1,7 @@
 ---
 seo-title: Test the packaged content
 title: Test the packaged content
-uuid: 877ed115-68ba-4d4a-a60c-564249c54807
+uuid: 99df417a-85ce-45da-bfcf-33df2197bf5b
 index: y
 internal: n
 snippet: y

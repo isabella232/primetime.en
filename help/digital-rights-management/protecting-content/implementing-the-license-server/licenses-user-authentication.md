@@ -1,7 +1,7 @@
 ---
 seo-title: User authentication
 title: User authentication
-uuid: a0d2adc7-66eb-4bdc-b690-6ed1d6b8988d
+uuid: 5cbd76b9-ff64-4a4b-8cfd-54f05c04eaa3
 index: y
 internal: n
 snippet: y

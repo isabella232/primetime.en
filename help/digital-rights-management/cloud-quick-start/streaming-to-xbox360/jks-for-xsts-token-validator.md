@@ -1,7 +1,7 @@
 ---
 seo-title: Create JKS for an XSTS validator
 title: Create JKS for an XSTS validator
-uuid: 4615f6c2-24ad-4630-b767-9d4d406477e6
+uuid: e02b517d-0b72-4e95-92b2-09b8f785cce6
 index: y
 internal: n
 snippet: y

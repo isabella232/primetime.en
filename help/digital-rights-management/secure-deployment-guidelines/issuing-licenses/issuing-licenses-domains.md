@@ -3,7 +3,7 @@ description: To prevent users from backing up and restoring files to bypass doma
 seo-description: To prevent users from backing up and restoring files to bypass domain de-registration, you must implement some domain management approaches.
 seo-title: Managing Domains
 title: Managing Domains
-uuid: 755c3bd3-7c0a-4626-b5ac-319bd8548451
+uuid: 30b73e38-d6ed-43c6-89ba-ae8616383779
 index: y
 internal: n
 snippet: y

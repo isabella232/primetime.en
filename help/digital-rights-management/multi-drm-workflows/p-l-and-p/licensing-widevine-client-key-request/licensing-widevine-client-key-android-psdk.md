@@ -3,7 +3,7 @@ description: Client code passes data to an Android API.
 seo-description: Client code passes data to an Android API.
 seo-title: Key request workflow on Android PSDK
 title: Key request workflow on Android PSDK
-uuid: 1cc2d46c-b296-4a41-80fd-3976ab39d95a
+uuid: 575163de-0f96-434d-a3ff-7e114caf72de
 index: y
 internal: n
 snippet: y

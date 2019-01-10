@@ -1,7 +1,7 @@
 ---
 seo-title: Packaging content
 title: Packaging content
-uuid: 087a3114-3125-404a-9f25-fb35e22b4546
+uuid: 366c8470-b7ef-4a39-83c2-151ba9be9a32
 index: y
 internal: n
 snippet: y

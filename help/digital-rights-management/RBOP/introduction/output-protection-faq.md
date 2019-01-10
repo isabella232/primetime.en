@@ -3,7 +3,7 @@ description: Frequently asked questions about using resolution-based output prot
 seo-description: Frequently asked questions about using resolution-based output protection.
 seo-title: RBOP FAQ
 title: RBOP FAQ
-uuid: 89ee58d8-f6a7-4240-92c3-ad76a10748d3
+uuid: 7dcd337c-369a-474c-8768-409c48b5cee5
 index: y
 internal: n
 snippet: y

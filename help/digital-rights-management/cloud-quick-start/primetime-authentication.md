@@ -1,7 +1,7 @@
 ---
 seo-title: Adobe Primetime authentication (Optional)
 title: Adobe Primetime authentication (Optional)
-uuid: 70da9851-a3d5-4997-a6e8-d940877c3f81
+uuid: fa6225d6-e0e5-4fcc-ac26-4ff54f9f334a
 index: y
 internal: n
 snippet: y

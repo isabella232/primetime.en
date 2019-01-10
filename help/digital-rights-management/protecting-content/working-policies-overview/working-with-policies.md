@@ -1,7 +1,7 @@
 ---
 seo-title: Working with DRM policies overview
 title: Working with DRM policies overview
-uuid: 64d6c91a-974c-4f70-8ac0-ab99421529af
+uuid: 32423448-013c-4183-bea8-e14b6690abdb
 index: y
 internal: n
 snippet: y

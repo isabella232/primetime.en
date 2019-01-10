@@ -3,7 +3,7 @@ description: Replay protection prevents an attacker from replaying a license req
 seo-description: Replay protection prevents an attacker from replaying a license request message and potentially causing a denial-of-service (DoS) attack against the client.
 seo-title: Replay protection
 title: Replay protection
-uuid: f38cf3f7-89e8-4c9d-96d8-53364d3c9bee
+uuid: 93749dd3-a42c-4866-ac54-1b20d6683c42
 index: y
 internal: n
 snippet: y

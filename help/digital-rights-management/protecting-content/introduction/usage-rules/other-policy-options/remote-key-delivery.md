@@ -1,7 +1,7 @@
 ---
 seo-title: Remote and local iOS key delivery
 title: Remote and local iOS key delivery
-uuid: a0dc2fbd-94a5-44b9-9fdd-6abe2ee3fd0c
+uuid: 90f672e7-9301-4e14-adca-db2a8f951a83
 index: y
 internal: n
 snippet: y

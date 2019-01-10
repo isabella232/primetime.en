@@ -1,7 +1,7 @@
 ---
 seo-title: DRM policy update lists
 title: DRM policy update lists
-uuid: 27ecd215-644d-4e84-9ad6-5bd633c4e3b1
+uuid: 779e4df7-7d9f-4139-955a-11cfc9e0daed
 index: y
 internal: n
 snippet: y

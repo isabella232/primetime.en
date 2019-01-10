@@ -3,7 +3,7 @@ description: Common problems during testing often involve your ExpressPlay authe
 seo-description: Common problems during testing often involve your ExpressPlay authenticators, transport protocols, and required service request parameters.
 seo-title: Troubleshooting your quick-start
 title: Troubleshooting your quick-start
-uuid: 0f72f5b5-38d4-415d-ac5f-ad1b7b0de708
+uuid: 42256aa0-2efc-4602-aefc-3bab2dc58ec0
 index: y
 internal: n
 snippet: y

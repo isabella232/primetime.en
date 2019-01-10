@@ -1,7 +1,7 @@
 ---
 seo-title: Primetime DRM on the client
 title: Primetime DRM on the client
-uuid: e1cf0492-c702-409d-bdb5-44eee06df588
+uuid: 472180ad-6596-4a24-aa51-7909a75a5e10
 index: y
 internal: n
 snippet: y

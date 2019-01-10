@@ -1,7 +1,7 @@
 ---
 seo-title: Handle Domain Registration requests
 title: Handle Domain Registration requests
-uuid: db5b7879-8ee5-44de-8f87-c0bf873adc7e
+uuid: d92db6c2-5a16-41ea-a1aa-541c59780678
 index: y
 internal: n
 snippet: y

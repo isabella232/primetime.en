@@ -3,7 +3,7 @@ description: Work with your Adobe representative to obtain certificates, and to 
 seo-description: Work with your Adobe representative to obtain certificates, and to set up an administrative account at ExpressPlay. After your Adobe and ExpressPlay accounts are set up, you can begin to implement and test workflows for different DRM solutions.
 seo-title: Primetime DRM Cloud Quick-start overview
 title: Primetime DRM Cloud Quick-start overview
-uuid: b9b20387-b731-4ccd-a1b8-7fa4e8ae1fb6
+uuid: 57397454-042b-4f11-a1b2-8e7f6ab041d4
 index: y
 internal: n
 snippet: y

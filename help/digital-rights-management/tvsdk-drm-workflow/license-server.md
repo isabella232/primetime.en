@@ -1,7 +1,7 @@
 ---
 seo-title: Primetime DRM license server
 title: Primetime DRM license server
-uuid: 024dd2fe-add5-47b1-8a4d-ec5ec8a97b19
+uuid: 5be34572-327f-47ff-8b24-17b18f2e258b
 index: y
 internal: n
 snippet: y

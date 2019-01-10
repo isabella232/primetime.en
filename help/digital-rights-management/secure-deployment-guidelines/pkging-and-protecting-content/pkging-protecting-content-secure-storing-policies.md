@@ -3,7 +3,7 @@ description: The Adobe Primetime DRM SDK allows you to develop applications that
 seo-description: The Adobe Primetime DRM SDK allows you to develop applications that can be used in content packaging and policy creation.
 seo-title: Securely storing policies
 title: Securely storing policies
-uuid: f1facff7-f1ba-440f-8b6f-c11f63f07e9b
+uuid: adb7cfc2-bcd8-4013-b63f-37d0c75b9885
 index: y
 internal: n
 snippet: y

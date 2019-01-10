@@ -1,7 +1,7 @@
 ---
 seo-title: Getting Started
 title: Getting Started
-uuid: e98e035e-55f6-443b-beea-c94bfc3acbbb
+uuid: 2002cf94-c8a7-4820-a560-6d9f7f33ee97
 index: y
 internal: n
 snippet: y

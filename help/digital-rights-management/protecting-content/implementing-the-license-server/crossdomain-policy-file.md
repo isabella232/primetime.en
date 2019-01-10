@@ -1,7 +1,7 @@
 ---
 seo-title: Crossdomain DRM policy file
 title: Crossdomain DRM policy file
-uuid: 9dc6d329-251a-4331-80ba-bf45ab164e14
+uuid: cb91a85a-1825-4fd7-a25c-880cdbd5c8b8
 index: y
 internal: n
 snippet: y

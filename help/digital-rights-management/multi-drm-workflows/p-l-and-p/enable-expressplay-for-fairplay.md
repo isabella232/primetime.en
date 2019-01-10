@@ -3,7 +3,7 @@ description: The FairPlay DRM solution from Apple requires some setup when you u
 seo-description: The FairPlay DRM solution from Apple requires some setup when you use it with the ExpressPlay DRM services. This involves obtaining credentials from Apple and uploading them to ExpressPlay.
 seo-title: Enable ExpressPlay service for FairPlay
 title: Enable ExpressPlay service for FairPlay
-uuid: 3b51f836-35f0-4a39-a605-7a578d84e233
+uuid: 0fa8e857-88e2-413d-b086-27c9a5461e9c
 index: y
 internal: n
 snippet: y

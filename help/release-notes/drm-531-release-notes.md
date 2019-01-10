@@ -3,11 +3,10 @@ title: DRM 5.3.1 Release Notes
 seo-title: DRM 5.3.1 Release Notes
 description: DRM 5.3.1 Release Notes describe the new features and the known issues in DRM 5.3.1.
 seo-description: DRM 5.3.1 Release Notes describe the new features and the known issues in DRM 5.3.1.
-uuid: 4487991b-a1ea-4939-a6e1-a0b294ed4adc
+uuid: bb61b79f-a5b3-42ed-8016-495b1ac99ea6
 contentOwner: dekalra
 topic-tags: release-notes
 products: SG_PRIMETIME
-discoiquuid: 8425d0dc-ad6a-40b6-a0ba-b29f2a13693d
 index: y
 internal: n
 snippet: y
@@ -21,9 +20,9 @@ DRM 5.3.1 Release Notes describe the new features and the known issues in DRM 5.
 
 #### Version 5.3 {#version}
 
-* **Secure Stop - **You can specify whether playback stops or continues at the end of a playback window.
-* **Resolution Based Output Protection (RBOP) - **You can specify the output constraints based on pixel resolutions.
-* **CDM Gating - **In order to support HTML5, Adobe has updated the Reference Implementation license server included with the Adobe Primetime DRM (formerly Adobe Access DRM) Java SDK to be able to consume all DRM protocol messages at a single URL endpoint. This consolidation of HTTP URL methods is necessary in order to comply with the HTML5 EME (Encrypted Media Extension) specification that is in turn required to be implemented by CDM (Content Decryption Module) DRM vendors. Previously, these were the only URL endpoints exposed by the Reference Implementation license server:
+* **Secure Stop -** You can specify whether playback stops or continues at the end of a playback window.
+* **Resolution Based Output Protection (RBOP) -** You can specify the output constraints based on pixel resolutions.
+* **CDM Gating -** In order to support HTML5, Adobe has updated the Reference Implementation license server included with the Adobe Primetime DRM (formerly Adobe Access DRM) Java SDK to be able to consume all DRM protocol messages at a single URL endpoint. This consolidation of HTTP URL methods is necessary in order to comply with the HTML5 EME (Encrypted Media Extension) specification that is in turn required to be implemented by CDM (Content Decryption Module) DRM vendors. Previously, these were the only URL endpoints exposed by the Reference Implementation license server:
 
     * /flashaccess/i15n/v3 (Individualization)
     * /flashaccess/license/v5 (License Request)
@@ -34,7 +33,7 @@ Now, all requests (originating from an HTML5 CDM) can be directed to a single en
 
 This change is backwards-compatible with non-CDM platforms, such as Flash Player, Android, iOS.
 
-* **RBOP downscaling - **Specific to the HTML5 space, RBOP contains automatic downscaling capability, where if a bitrate that exceeds the allowable bitrate specified in the DRM policy, the content will be downscaled to the max allowable resolution. For example, if a 1080p stream is streamed to a client that is displaying the content on a non-HDCP compliant monitor, the DRM policy may indicate that the max resolution should be 720p. Primetime DRM will decode the 1080p stream and then downscale it to 720p before rendering it onscreen. If the browser playing the video is then dragged over to a monitor that does support HDCP, Primetime DRM will then stop downscaling the content and allow it to play back at 1080.
+* **RBOP downscaling -** Specific to the HTML5 space, RBOP contains automatic downscaling capability, where if a bitrate that exceeds the allowable bitrate specified in the DRM policy, the content will be downscaled to the max allowable resolution. For example, if a 1080p stream is streamed to a client that is displaying the content on a non-HDCP compliant monitor, the DRM policy may indicate that the max resolution should be 720p. Primetime DRM will decode the 1080p stream and then downscale it to 720p before rendering it onscreen. If the browser playing the video is then dragged over to a monitor that does support HDCP, Primetime DRM will then stop downscaling the content and allow it to play back at 1080.
 
 ## Known Issues {#known-issues}
 

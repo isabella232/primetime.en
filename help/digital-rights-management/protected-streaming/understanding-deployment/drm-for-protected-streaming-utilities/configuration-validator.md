@@ -3,7 +3,7 @@ description: Adobe recommends that if you make changes in the configuration file
 seo-description: Adobe recommends that if you make changes in the configuration file, you should run the Configuration Validator utility before you start the server. This utility can detect most configuration errors early, before they cause failures during request processing.
 seo-title: Configuration validator
 title: Configuration validator
-uuid: ed84c9cb-1415-4bcd-a273-aff04e8b5f78
+uuid: 7b44919a-0319-4675-95e2-ad1ad72ec0cb
 index: y
 internal: n
 snippet: y

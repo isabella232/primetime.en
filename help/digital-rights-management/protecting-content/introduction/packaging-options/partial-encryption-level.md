@@ -1,7 +1,7 @@
 ---
 seo-title: Partial encryption level
 title: Partial encryption level
-uuid: 866cffbd-f390-41fa-a3f9-e60fa1b96278
+uuid: dbd9ce92-c829-4cad-9ac4-c57bd4f70345
 index: y
 internal: n
 snippet: y

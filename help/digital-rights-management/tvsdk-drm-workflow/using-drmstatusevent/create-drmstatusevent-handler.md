@@ -1,7 +1,7 @@
 ---
 seo-title: Create a DRMStatusEvent handler
 title: Create a DRMStatusEvent handler
-uuid: 093b52e0-5db5-49dd-8194-3518755d2e9b
+uuid: 64f539d9-344c-4372-88b8-c8d098af9dd8
 index: y
 internal: n
 snippet: y

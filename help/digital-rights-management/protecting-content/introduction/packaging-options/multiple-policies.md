@@ -1,7 +1,7 @@
 ---
 seo-title: Multiple DRM policies
 title: Multiple DRM policies
-uuid: 2f8e1447-c338-41bd-b2af-f9fb1bd701d1
+uuid: d1159b53-fa96-430b-aaf0-50800fb22bcb
 index: y
 internal: n
 snippet: y

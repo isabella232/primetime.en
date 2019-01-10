@@ -3,7 +3,7 @@ description: The Secure Sockets Layer (SSL) is necessary only if you require sup
 seo-description: The Secure Sockets Layer (SSL) is necessary only if you require support for Flash Media Rights Management Server 1.x clients.
 seo-title: Configuring SSL
 title: Configuring SSL
-uuid: 6af031ee-8393-460e-8b75-51948750d3e0
+uuid: be547eac-f589-48ba-af14-8a7bec0e7431
 index: y
 internal: n
 snippet: y

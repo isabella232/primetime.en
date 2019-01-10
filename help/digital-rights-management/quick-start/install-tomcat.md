@@ -1,7 +1,7 @@
 ---
 seo-title: Install Tomcat
 title: Install Tomcat
-uuid: 38390c34-e9e2-4bae-a196-6acfe459518f
+uuid: f7663eda-ad18-4a6e-bb9f-01c74721b047
 index: y
 internal: n
 snippet: y

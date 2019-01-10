@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Set the XSTS token in your player
 title: Set the XSTS token in your player
-uuid: 22b4de93-429e-4575-89bd-6d6e81b3bd7d
+uuid: 8995e029-deee-4e23-9cda-a50de8c4f2c0
 index: y
 internal: n
 snippet: y

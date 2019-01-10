@@ -1,7 +1,7 @@
 ---
 seo-title: Deploy the BEES reference implementation
 title: Deploy the BEES reference implementation
-uuid: 317e7c62-50c0-4270-836e-3b7b6b7f97b7
+uuid: 5ee7b066-8ae8-48ba-a3f0-8cc14b19d5c5
 index: y
 internal: n
 snippet: y

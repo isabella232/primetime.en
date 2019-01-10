@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Requirements for Synchronization
 title: Requirements for Synchronization
-uuid: ed882a61-7a99-4618-80f9-81f2794a6c5d
+uuid: 594a4bb2-c042-4485-9cae-73b8f9f93d82
 index: y
 internal: n
 snippet: y

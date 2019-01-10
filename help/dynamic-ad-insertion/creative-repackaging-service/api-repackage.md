@@ -6,7 +6,7 @@ title: Repackaging API
 uuid: 03cd2428-510a-4b99-8496-059a48d5abba
 ---
 
-# Repackaging API{#repackaging-api}
+# Repackaging API {#repackaging-api}
 
 You can use the CRS repackaging API to transcode non-HLS ad creatives ahead of time, so an HLS version is available when you need to run it, eliminating the 2-4 minute delay associated with just-in-time (JIT) repackaging.
 

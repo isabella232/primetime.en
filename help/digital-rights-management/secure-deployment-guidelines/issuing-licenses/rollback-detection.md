@@ -3,7 +3,7 @@ description: If your implementation of Adobe Primetime DRM uses business rules t
 seo-description: If your implementation of Adobe Primetime DRM uses business rules that require the client to maintain state (for example, the playback window interval), Adobe recommends that the server keeps track of the rollback counter and use AIR or SWF whitelisting.
 seo-title: Rollback detection
 title: Rollback detection
-uuid: 7bb432cc-047f-4f85-9393-f6ac9e6338e0
+uuid: f161ed41-488a-478a-b6a8-468cf6d11e89
 index: y
 internal: n
 snippet: y

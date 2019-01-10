@@ -3,7 +3,7 @@ description: This section provides a conceptual overview of the configuration, o
 seo-description: This section provides a conceptual overview of the configuration, options, and meanings associated with output protection.
 seo-title: RBOP Concepts
 title: RBOP Concepts
-uuid: 04f275ea-88d2-4218-bebf-5d86c434fea3
+uuid: fc19c3c9-39a1-4b62-b763-101e5454a01f
 index: y
 internal: n
 snippet: y

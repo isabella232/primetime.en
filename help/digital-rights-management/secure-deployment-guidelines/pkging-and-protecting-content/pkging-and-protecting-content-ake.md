@@ -3,7 +3,7 @@ description: Asymmetric key encryption, also called public key encryption, uses 
 seo-description: Asymmetric key encryption, also called public key encryption, uses pairs of keys. One key is for encryption, and the other key is for decryption.
 seo-title: Asymmetric key encryption
 title: Asymmetric key encryption
-uuid: 35c471cc-1500-4855-ac4d-c5dcaa8d91d1
+uuid: c438efe3-aaf1-42b2-987b-feb96600d619
 index: y
 internal: n
 snippet: y

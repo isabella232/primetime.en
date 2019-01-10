@@ -1,7 +1,7 @@
 ---
 seo-title: Handle synchronization requests
 title: Handle synchronization requests
-uuid: 1f589e1e-2a66-464c-86ca-3c3633efd678
+uuid: e2623afb-7a57-402d-a8a1-07bcf6324d41
 index: y
 internal: n
 snippet: y

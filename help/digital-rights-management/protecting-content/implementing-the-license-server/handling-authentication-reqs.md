@@ -1,7 +1,7 @@
 ---
 seo-title: Handle authentication requests
 title: Handle authentication requests
-uuid: 84fa6aae-dd93-415e-bb5b-c8b286e0e28d
+uuid: abcb9cf6-668e-405c-9659-9ed1bcc33024
 index: y
 internal: n
 snippet: y

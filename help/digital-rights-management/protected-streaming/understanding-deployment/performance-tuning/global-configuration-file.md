@@ -3,7 +3,7 @@ description: This topic describes performance-related considerations. Any settin
 seo-description: This topic describes performance-related considerations. Any settings in the global configuration file called flashaccess-global.xml affect performance.
 seo-title: Global configuration file
 title: Global configuration file
-uuid: 5a1631c2-cac7-4282-9e89-7f229944be52
+uuid: 254925b5-d441-4a35-ad6f-f99db5de7591
 index: y
 internal: n
 snippet: y

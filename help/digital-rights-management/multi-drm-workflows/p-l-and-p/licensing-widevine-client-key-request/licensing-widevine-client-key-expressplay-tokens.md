@@ -3,7 +3,7 @@ description: You can generate Expressplay tokens for their encrypted content by 
 seo-description: You can generate Expressplay tokens for their encrypted content by sending token requests to the appropriate Expressplay token server.
 seo-title: Expressplay tokens
 title: Expressplay tokens
-uuid: c9fd5d7c-af57-4142-8e38-8f2a24ff3c46
+uuid: 6103e1b2-127d-4758-a589-15f0f3c73db1
 index: y
 internal: n
 snippet: y

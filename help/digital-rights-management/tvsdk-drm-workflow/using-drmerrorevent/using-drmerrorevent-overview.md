@@ -1,7 +1,7 @@
 ---
 seo-title: Using the DRMErrorEvent class overview
 title: Using the DRMErrorEvent class overview
-uuid: 73da92a5-249e-4d7d-8b43-33ae048fd7d3
+uuid: cbb9c1a7-3c50-479d-b7e5-63010a696dfa
 index: y
 internal: n
 snippet: y

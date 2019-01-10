@@ -3,7 +3,7 @@ description: The flashaccess-tenant.xml configuration file includes settings tha
 seo-description: The flashaccess-tenant.xml configuration file includes settings that apply to a specific tenant of the license server.
 seo-title: Tenant configuration file
 title: Tenant configuration file
-uuid: d9e2e5ad-e2e2-447e-9e34-2e4194a7a0bc
+uuid: bc9ee4a1-63b6-4362-9929-3e9fe8251075
 index: y
 internal: n
 snippet: y

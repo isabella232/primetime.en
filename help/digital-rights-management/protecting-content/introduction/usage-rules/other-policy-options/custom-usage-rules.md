@@ -1,7 +1,7 @@
 ---
 seo-title: Custom usage rules
 title: Custom usage rules
-uuid: e76202bc-c05e-4506-b372-bfb4beaef955
+uuid: ab2c7ac5-bd78-46bd-a7be-8a3651f24ae5
 index: y
 internal: n
 snippet: y

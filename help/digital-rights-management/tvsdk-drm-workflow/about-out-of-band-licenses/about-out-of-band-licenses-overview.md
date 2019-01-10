@@ -1,7 +1,7 @@
 ---
 seo-title: Out-of-band licenses overview
 title: Out-of-band licenses overview
-uuid: 7703231f-3f35-4cd9-88ae-cf6edc370bd4
+uuid: 82e4529a-ee1b-4c0c-8885-e0e68319d1a0
 index: y
 internal: n
 snippet: y

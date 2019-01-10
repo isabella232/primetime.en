@@ -1,7 +1,7 @@
 ---
 seo-title: Renew certificates
 title: Renew certificates
-uuid: d1ab9e81-ee87-42b7-88db-f312b9aababb
+uuid: 12a560b0-966b-424e-bfe5-22e9c10d8667
 index: y
 internal: n
 snippet: y

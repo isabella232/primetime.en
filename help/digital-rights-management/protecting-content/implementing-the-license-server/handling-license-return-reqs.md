@@ -1,7 +1,7 @@
 ---
 seo-title: Handle License Return requests
 title: Handle License Return requests
-uuid: d29c2569-d659-47ce-b8e0-3b82f123ba19
+uuid: 994df5af-476a-4ee8-b371-8900241be83d
 index: y
 internal: n
 snippet: y

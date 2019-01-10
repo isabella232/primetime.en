@@ -1,7 +1,7 @@
 ---
 seo-title: Custom authentication/entitlement overview (Optional)
 title: Custom authentication/entitlement overview (Optional)
-uuid: de3c43b2-e2bc-42cd-bc6c-9d457cd96591
+uuid: 8b5e38a5-562c-4781-ac40-4b3d6cdd97fe
 index: y
 internal: n
 snippet: y

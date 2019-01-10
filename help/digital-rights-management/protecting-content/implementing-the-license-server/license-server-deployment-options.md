@@ -1,7 +1,7 @@
 ---
 seo-title: License Server deployment options
 title: License Server deployment options
-uuid: c105bc5b-5705-4923-b169-4def3fdb7b5d
+uuid: 732b948f-8037-423e-9f85-770d6316cbae
 index: y
 internal: n
 snippet: y

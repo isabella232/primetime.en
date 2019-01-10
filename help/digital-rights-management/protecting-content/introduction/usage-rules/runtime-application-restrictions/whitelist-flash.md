@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Whitelist for Adobe® Flash® Player SWFs
 title: Whitelist for Adobe® Flash® Player SWFs
-uuid: 54c0ca61-fec0-46a2-8a3b-49c16162eea5
+uuid: 670d8ccf-5145-499f-a6e3-d5d89562291e
 index: y
 internal: n
 snippet: y

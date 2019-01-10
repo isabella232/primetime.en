@@ -3,7 +3,7 @@ description: You need to physically secure the computer on which policy manageme
 seo-description: You need to physically secure the computer on which policy management and content packaging occurs.
 seo-title: Securing the server
 title: Securing the server
-uuid: f330b5c9-ad4b-4fa2-a5fc-4d63bac58be4
+uuid: 9bf89f86-082e-40f9-8deb-c9774a9d8e02
 index: y
 internal: n
 snippet: y

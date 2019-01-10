@@ -1,7 +1,7 @@
 ---
 seo-title: Storing credentials
 title: Storing credentials
-uuid: 70a86257-9fba-47ba-bdd7-554c3067d930
+uuid: a9e9db72-c921-4c28-ad1d-3fd3c2283f14
 index: y
 internal: n
 snippet: y

@@ -1,7 +1,7 @@
 ---
 seo-title: About certificates
 title: About certificates
-uuid: cf14f45b-6378-467d-8b75-5d0822c9422e
+uuid: 0b7818b4-bd6a-4f2e-94c2-565e0d735bf8
 index: y
 internal: n
 snippet: y

@@ -1,7 +1,7 @@
 ---
 seo-title: Handling DRMAuthenticationComplete Events
 title: Handling DRMAuthenticationComplete Events
-uuid: 41356313-7ed8-427b-b0b0-26e4a438b047
+uuid: ed40300a-4287-4512-a78b-04159c122877
 index: y
 internal: n
 snippet: y

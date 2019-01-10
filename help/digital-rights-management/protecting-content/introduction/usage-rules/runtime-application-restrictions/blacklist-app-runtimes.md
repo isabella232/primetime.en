@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Blacklist of application runtimes
 title: Blacklist of application runtimes
-uuid: 1bb0227a-11b8-45a9-8188-5bb24a0661ff
+uuid: fc3c9bd6-b1e6-4534-b29c-cd9a35b80928
 index: y
 internal: n
 snippet: y

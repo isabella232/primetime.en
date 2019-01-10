@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# JSON format for URL for requesting variant manifest playlist{#json-format-for-url-for-requesting-variant-manifest-playlist}
+# JSON format for URL for requesting variant manifest playlist {#json-format-for-url-for-requesting-variant-manifest-playlist}
 
 If `pttrackingmode=simple` or `ptplayer=ios-mobileweb`, the manifest server sends back a JSON-formatted file containing Master-M3U8, a URL for the client to use to request the M3U8 file describing the content.
 

@@ -1,7 +1,7 @@
 ---
 seo-title: Running the DRM Server for Protected Streaming
 title: Running the DRM Server for Protected Streaming
-uuid: b7218e74-e17c-4b3a-834d-8ec0213001e8
+uuid: 9bbe211d-268b-43c2-9e55-7ce62de40d30
 index: y
 internal: n
 snippet: y

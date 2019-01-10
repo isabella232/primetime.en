@@ -3,7 +3,7 @@ description: One way to coordinate licensing and policy enforcement is to build 
 seo-description: One way to coordinate licensing and policy enforcement is to build these functions in to an entitlement server. Adobe provides the SEES reference entitlement server that you can work with to build your own server.
 seo-title: Reference Server  Sample ExpressPlay Entitlement Server (SEES)
 title: Reference Server  Sample ExpressPlay Entitlement Server (SEES)
-uuid: 9b5e5e8f-2d0d-422f-ae24-e7ccbfe03df5
+uuid: 99e42f76-7730-42fc-a9a9-f6396ac12c02
 index: y
 internal: n
 snippet: y

@@ -1,7 +1,7 @@
 ---
 seo-title: Create custom DRM policies (Optional)
 title: Create custom DRM policies (Optional)
-uuid: e880afdb-d44c-4f2c-8f9c-439539189f08
+uuid: 701b51d9-6dde-4c21-bc5b-09e612582968
 index: y
 internal: n
 snippet: y

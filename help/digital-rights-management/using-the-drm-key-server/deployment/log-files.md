@@ -1,7 +1,7 @@
 ---
 seo-title: Log files
 title: Log files
-uuid: bb70028d-736e-4f59-a3f8-9e1d3007546e
+uuid: ae06d20c-ced4-4174-9ecd-5f4e5fd80e15
 index: y
 internal: n
 snippet: y

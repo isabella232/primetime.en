@@ -3,7 +3,7 @@ description: You can select the following encryption options when you create a p
 seo-description: You can select the following encryption options when you create a package. However, you cannot modify the encryption options during license acquisition 
 seo-title: Key Rotation
 title: Key Rotation
-uuid: 1dbbc9a1-8703-4804-b9d1-918645fe7621
+uuid: 6ac3b828-2cd1-42df-b9ee-4daa8e553d5e
 index: y
 internal: n
 snippet: y

@@ -1,7 +1,7 @@
 ---
 seo-title: Key Server configuration files
 title: Key Server configuration files
-uuid: 6847894f-d781-4973-8b0f-e15500fd3063
+uuid: def5c1a6-decd-4cb8-9bd8-9c1c81f5a3ae
 index: y
 internal: n
 snippet: y

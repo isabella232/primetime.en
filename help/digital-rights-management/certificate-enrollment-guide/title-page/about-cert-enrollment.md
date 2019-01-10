@@ -1,7 +1,7 @@
 ---
 seo-title: About certificate enrollment roles
 title: About certificate enrollment roles
-uuid: a48094e6-c7d8-4aa4-a153-9321d4faea6c
+uuid: 100776c2-6622-4b94-bc9b-5d4a04fd3260
 index: y
 internal: n
 snippet: y

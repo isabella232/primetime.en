@@ -3,7 +3,7 @@ description: Network security vulnerabilities are among the first threats to any
 seo-description: Network security vulnerabilities are among the first threats to any Internet-facing or intranet-facing application server, and you must harden hosts on the network against these vulnerabilities.
 seo-title: Network layer security
 title: Network layer security
-uuid: f8bf7916-187d-48b3-bd8c-538d75441704
+uuid: c750c595-a784-47ce-be0b-17b8d60c5753
 index: y
 internal: n
 snippet: y

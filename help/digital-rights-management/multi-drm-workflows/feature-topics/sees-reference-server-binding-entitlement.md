@@ -3,7 +3,7 @@ description: The SEES reference server shows you how to enable the device-bindin
 seo-description: The SEES reference server shows you how to enable the device-binding entitlement service using ExpressPlay.
 seo-title: Reference Service  Device-Binding Entitlement
 title: Reference Service  Device-Binding Entitlement
-uuid: 7bbc5eec-27cf-4454-9dc0-4b9ca9cb2cc4
+uuid: 22ce2f8e-1758-4528-8caf-60d209839afe
 index: y
 internal: n
 snippet: y

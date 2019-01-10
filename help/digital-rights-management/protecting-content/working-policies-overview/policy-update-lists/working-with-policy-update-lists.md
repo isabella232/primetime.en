@@ -1,7 +1,7 @@
 ---
 seo-title: Working with DRM Policy Update Lists
 title: Working with DRM Policy Update Lists
-uuid: 94ff6661-62bd-4216-863d-f8cff083d7b2
+uuid: 41f89671-81c6-4d3d-ac31-9c2a1980517a
 index: y
 internal: n
 snippet: y

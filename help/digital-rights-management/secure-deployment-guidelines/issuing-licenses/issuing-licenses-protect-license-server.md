@@ -3,7 +3,7 @@ description: You must ensure that you are securely issuing licenses. Consider th
 seo-description: You must ensure that you are securely issuing licenses. Consider these best practices to protect the License Server 
 seo-title: Protecting the License Server
 title: Protecting the License Server
-uuid: 175dbb2c-2ecf-493a-beae-680b85f6ba2e
+uuid: 7b5de17d-d0a7-41df-9651-4ff51c9965c6
 index: y
 internal: n
 snippet: y

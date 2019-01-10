@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Approve a certificate (Account or Secondary Administrator)
 title: Approve a certificate (Account or Secondary Administrator)
-uuid: 1016976f-ae68-4a6f-9aed-03f187bc57d0
+uuid: 5b95e2e8-abe9-4aef-bcb4-9b98ba6604d1
 index: y
 internal: n
 snippet: y

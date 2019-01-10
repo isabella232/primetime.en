@@ -3,7 +3,7 @@ description: If you pre-generate licenses that include time-based usage rules, t
 seo-description: If you pre-generate licenses that include time-based usage rules, the license should include synchronization requirements to securely enforce license expiration.
 seo-title: Pre-generating licenses
 title: Pre-generating licenses
-uuid: a592f49d-420a-4d21-9f3a-01c10ec1849e
+uuid: 9d2c3b9a-455f-4ac9-aa15-b9b2a3267c9b
 index: y
 internal: n
 snippet: y

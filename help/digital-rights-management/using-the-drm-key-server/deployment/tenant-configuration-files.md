@@ -1,7 +1,7 @@
 ---
 seo-title: Tenant configuration files
 title: Tenant configuration files
-uuid: f4fd7387-b7ed-4049-8c98-b915ddff9d12
+uuid: c5d07a52-52a7-4ec3-868d-2011a89488e4
 index: y
 internal: n
 snippet: y

@@ -1,7 +1,7 @@
 ---
 seo-title: Configure SSL on your BEES server
 title: Configure SSL on your BEES server
-uuid: 05d1a3b7-b253-4ee3-bf87-20ae2d78c6ac
+uuid: 041a106e-8b21-4018-815d-b7ea48c3de03
 index: y
 internal: n
 snippet: y

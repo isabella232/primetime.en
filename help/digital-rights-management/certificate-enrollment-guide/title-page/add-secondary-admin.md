@@ -1,7 +1,7 @@
 ---
 seo-title: Create a Secondary Administrator
 title: Create a Secondary Administrator
-uuid: 2273d372-69b8-42a8-beb2-e4f57bdc5a3a
+uuid: 2a360226-2fcb-432f-bdeb-3fa9ef0019ee
 index: y
 internal: n
 snippet: y

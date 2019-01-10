@@ -1,7 +1,7 @@
 ---
 seo-title: License server overview
 title: License server overview
-uuid: 42bf8a08-fa3e-4b34-865e-56b96192738c
+uuid: 8c62376b-b159-4297-9322-75d62947e84e
 index: y
 internal: n
 snippet: y

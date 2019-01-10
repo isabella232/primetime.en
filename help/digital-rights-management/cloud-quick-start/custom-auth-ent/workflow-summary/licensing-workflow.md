@@ -3,7 +3,7 @@ description: Request a license from Primetime Cloud DRM by calling mgr.loadVouch
 seo-description: Request a license from Primetime Cloud DRM by calling mgr.loadVoucher()
 seo-title: License workflow details
 title: License workflow details
-uuid: b0389024-2eda-4e35-bbda-84206c02fc8d
+uuid: 2b2e4584-e8d7-4da4-a7ee-c0aeb4bca51d
 index: y
 internal: n
 snippet: y

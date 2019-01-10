@@ -1,7 +1,7 @@
 ---
 seo-title: Identity-based licenses
 title: Identity-based licenses
-uuid: 331bc9eb-e5a3-4786-8f7b-eb0a6c5725ee
+uuid: 32323f59-184e-4a70-bf33-ad1c34e54fd2
 index: y
 internal: n
 snippet: y

@@ -1,7 +1,7 @@
 ---
 seo-title: Initial portion of content in the clear
 title: Initial portion of content in the clear
-uuid: bc4575ea-1d6e-4bc9-8cf2-6edd79f502bb
+uuid: a535a980-dfd2-4a34-830e-26dac55993c7
 index: y
 internal: n
 snippet: y

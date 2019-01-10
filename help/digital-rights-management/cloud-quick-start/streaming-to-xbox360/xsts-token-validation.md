@@ -1,7 +1,7 @@
 ---
 seo-title: Xbox Live XSTS token validation
 title: Xbox Live XSTS token validation
-uuid: edac1f50-3722-4ed0-857a-ae8dd35fe4b2
+uuid: 9647f8ee-32d6-4bed-bae2-8b36a72d04ce
 index: y
 internal: n
 snippet: y

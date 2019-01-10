@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Overview of non-TVSDK client-side tracking{#overview-of-non-tvsdk-client-side-tracking}
+# Overview of non-TVSDK client-side tracking {#overview-of-non-tvsdk-client-side-tracking}
 
 Publishers can build HLS-compliant video players that work with the Primetime manifest server client-side ad tracking workflows. The interfaces to the manifest server for the live stream and video on demand (VOD) cases are slightly different.
 
@@ -20,7 +20,7 @@ The manifest server provides an API to enable custom players to request the foll
 * Ad pod progress
 * Content pod progress
 
-The manifest server API assumes that any video player using it meets the minimum requirements. See  video_player_requirements  for more details.
+The manifest server API assumes that any video player using it meets the minimum requirements. See video_player_requirements for more details.
 
 ## Client-side tracking workflow {#section_cst_flow}
 

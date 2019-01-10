@@ -1,7 +1,7 @@
 ---
 seo-title: Revoking machine credentials
 title: Revoking machine credentials
-uuid: 2f4e313b-3fb4-4b75-846c-d08e9a6252d5
+uuid: 3647c843-5f1a-457e-949d-10a6278b1c29
 index: y
 internal: n
 snippet: y

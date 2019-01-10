@@ -1,7 +1,7 @@
 ---
 seo-title: Deploy certificates overview
 title: Deploy certificates overview
-uuid: e532a84c-2273-47bb-8279-ad084a2ed00d
+uuid: e6413f9f-69a5-4881-bb13-47a80cf32a48
 index: y
 internal: n
 snippet: y

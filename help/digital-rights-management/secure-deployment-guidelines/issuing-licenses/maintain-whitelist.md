@@ -3,7 +3,7 @@ description: A whitelist is a list of trusted entities.
 seo-description: A whitelist is a list of trusted entities.
 seo-title: Maintain a whitelist of trusted content packagers
 title: Maintain a whitelist of trusted content packagers
-uuid: 9e11e1c0-5717-4876-85de-b08973fa7e70
+uuid: 9a132ef9-eb56-408a-939e-1acd32d83a33
 index: y
 internal: n
 snippet: y

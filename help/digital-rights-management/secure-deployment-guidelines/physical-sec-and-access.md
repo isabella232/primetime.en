@@ -3,7 +3,7 @@ description: Physically securing your Adobe Primetime DRM environment is crucial
 seo-description: Physically securing your Adobe Primetime DRM environment is crucial to preventing unauthorized access.
 seo-title: Physical security and access
 title: Physical security and access
-uuid: ef103ca7-d038-46bd-b6f8-ea2a0c0d175f
+uuid: a5b00012-f2e5-4afa-8c59-46910fa325da
 index: y
 internal: n
 snippet: y

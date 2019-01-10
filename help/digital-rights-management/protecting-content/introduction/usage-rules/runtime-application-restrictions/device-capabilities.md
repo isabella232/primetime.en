@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Device capabilities required to play protected content
 title: Device capabilities required to play protected content
-uuid: fa8f85e2-275a-4aef-84c4-d113c38a458d
+uuid: 1490711b-65d9-4716-8779-ae1da7d2c82c
 index: y
 internal: n
 snippet: y

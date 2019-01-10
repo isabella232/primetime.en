@@ -1,7 +1,7 @@
 ---
 seo-title: Encrypting script data
 title: Encrypting script data
-uuid: 9310ea24-a2b6-473e-8f6d-5c401b2fb03d
+uuid: c91e5568-194e-4f20-858b-65310049901b
 index: y
 internal: n
 snippet: y

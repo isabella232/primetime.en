@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Jailbreak enforcement (requires Adobe Primetime DRM)
 title: Jailbreak enforcement (requires Adobe Primetime DRM)
-uuid: 7f7597bb-67a1-40a7-bd52-536921a02dd8
+uuid: 5cf8ebbc-17de-44cc-90d2-0857ea62c4a4
 index: y
 internal: n
 snippet: y

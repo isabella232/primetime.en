@@ -3,7 +3,7 @@ description: Operating systems and application servers are included in your Adob
 seo-description: Operating systems and application servers are included in your Adobe Primetime DRM solution.
 seo-title: Vendor-specific security information
 title: Vendor-specific security information
-uuid: 725d7fdb-a0b8-4d88-926b-819d58c34dc8
+uuid: 331baa42-5e19-40a5-bc74-0b1a2cb9370e
 index: y
 internal: n
 snippet: y

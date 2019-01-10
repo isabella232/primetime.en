@@ -3,7 +3,7 @@ description: The configuration file for the Adobe Primetime DRM Media Packager c
 seo-description: The configuration file for the Adobe Primetime DRM Media Packager command-line tool requires a PKCS12 credential that is used during packaging.
 seo-title: Securely packaging content
 title: Securely packaging content
-uuid: 3275e614-c950-4125-8dd5-b9b05b74a0be
+uuid: 3887f48f-6c27-4eb8-b91c-4227fdd50f7b
 index: y
 internal: n
 snippet: y

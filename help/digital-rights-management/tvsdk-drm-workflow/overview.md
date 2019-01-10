@@ -1,7 +1,7 @@
 ---
 seo-title: TVSDK-DRM client-side workflow overview
 title: TVSDK-DRM client-side workflow overview
-uuid: 9cbac326-3f09-4784-a160-bcb1695bd915
+uuid: bac2ce3a-01d7-488b-88a3-ce2060b658b2
 index: y
 internal: n
 snippet: y

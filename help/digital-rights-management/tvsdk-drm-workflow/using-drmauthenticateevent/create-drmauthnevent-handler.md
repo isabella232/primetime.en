@@ -3,7 +3,7 @@ description: The DRMAuthenticateEvent object is dispatched when a Primetime obje
 seo-description: The DRMAuthenticateEvent object is dispatched when a Primetime object tries to play protected content that requires a user credential for authentication before playback (and authentication has not been performed yet). The DRMAuthenticateEvent handler is responsible for gathering the required credentials (user name, password, and type) and passing the values to the .setDRMAuthenticationCredentials() method for validation.
 seo-title: Create a DRMAuthenticateEvent handler
 title: Create a DRMAuthenticateEvent handler
-uuid: 1483d186-8e78-42c4-8a55-7faf5503b256
+uuid: 58330691-d0b5-46bd-9b1d-8dc597580d31
 index: y
 internal: n
 snippet: y

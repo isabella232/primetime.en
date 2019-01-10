@@ -3,7 +3,7 @@ description: The DRM workflows involve packaging your content, providing licensi
 seo-description: The DRM workflows involve packaging your content, providing licensing for the content, and playing back the protected content from your own video application. The workflow is generally similar for each DRM solution, but with some differences is in the details.
 seo-title: Multi-DRM Workflow for FairPlay
 title: Multi-DRM Workflow for FairPlay
-uuid: f4f73825-65da-4d73-a4b2-1ab2bf9faf96
+uuid: cd940a70-400c-435e-8322-55bd624164e1
 index: y
 internal: n
 snippet: y

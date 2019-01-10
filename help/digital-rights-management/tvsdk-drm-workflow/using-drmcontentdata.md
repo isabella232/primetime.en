@@ -1,7 +1,7 @@
 ---
 seo-title: Using the DRMContentData class
 title: Using the DRMContentData class
-uuid: b9f7d6a4-30a1-427b-b389-08f6b9998312
+uuid: e79eb5b8-4e88-43b5-a80f-5fd141dc729d
 index: y
 internal: n
 snippet: y

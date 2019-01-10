@@ -1,7 +1,7 @@
 ---
 seo-title: License request error handling
 title: License request error handling
-uuid: 9a55c4ad-65c1-4e99-a93f-06c28c2f2a8e
+uuid: 4563f546-77fe-4fb9-9ad8-a0689fe6fb4d
 index: y
 internal: n
 snippet: y

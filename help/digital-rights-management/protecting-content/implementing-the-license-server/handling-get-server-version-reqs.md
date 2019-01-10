@@ -1,7 +1,7 @@
 ---
 seo-title: Handle Get Server Version requests
 title: Handle Get Server Version requests
-uuid: f40ae907-246b-4531-a4b5-3f6463eca2fe
+uuid: 6e287f58-2ad2-428a-a76a-6847d06b0fd8
 index: y
 internal: n
 snippet: y

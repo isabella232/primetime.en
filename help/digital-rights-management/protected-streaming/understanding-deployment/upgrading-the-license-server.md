@@ -1,7 +1,7 @@
 ---
 seo-title: Upgrading the Adobe Primetime DRM Server for Protected Streaming
 title: Upgrading the Adobe Primetime DRM Server for Protected Streaming
-uuid: aa107a54-1067-475d-9db3-d0df553db14c
+uuid: 5c507ae3-d1d9-40ad-ba97-501ec92b45dc
 index: y
 internal: n
 snippet: y

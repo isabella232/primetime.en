@@ -3,7 +3,7 @@ description: When you package content, you must specify the license server URL.
 seo-description: When you package content, you must specify the license server URL.
 seo-title: Packaging content
 title: Packaging content
-uuid: bf520483-4927-4d1d-bbe8-ff48f715cd69
+uuid: 2e47a9a2-bbc6-4995-8ce5-6ca6b116349b
 index: y
 internal: n
 snippet: y

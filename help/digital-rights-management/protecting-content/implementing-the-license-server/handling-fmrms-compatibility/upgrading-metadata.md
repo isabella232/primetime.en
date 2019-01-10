@@ -1,7 +1,7 @@
 ---
 seo-title: Upgrading metadata
 title: Upgrading metadata
-uuid: 5bda479a-f5a1-4a3e-a064-3f6897d01045
+uuid: 769483e6-a2d1-46cb-afcf-557aa807037c
 index: y
 internal: n
 snippet: y

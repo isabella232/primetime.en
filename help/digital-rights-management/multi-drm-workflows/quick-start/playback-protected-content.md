@@ -3,7 +3,7 @@ description: To test your DRM solution, you need a video application that can pr
 seo-description: To test your DRM solution, you need a video application that can process the particular DRM solution you are working with. This player could be a sample player made available by Adobe, or your own TVSDK-based video application.
 seo-title: Playback your protected content
 title: Playback your protected content
-uuid: 9952ba04-8e8e-4556-97cd-a2a99b701083
+uuid: 84f73ee7-43d0-481c-a5e7-14f92169323c
 index: y
 internal: n
 snippet: y

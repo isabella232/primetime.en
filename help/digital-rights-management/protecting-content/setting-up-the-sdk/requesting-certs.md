@@ -1,7 +1,7 @@
 ---
 seo-title: Requesting certificates
 title: Requesting certificates
-uuid: abc942f9-ae98-455f-ac83-1b12f8df8d7e
+uuid: e99be9a2-1edf-4bd9-8338-84284a23ca43
 index: y
 internal: n
 snippet: y

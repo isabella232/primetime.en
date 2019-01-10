@@ -3,7 +3,7 @@ description: Licensing and playback of FairPlay-protected content requires swapp
 seo-description: Licensing and playback of FairPlay-protected content requires swapping of URL schemes, between the scheme used in the video manifest file (skd ) and the one used in ExpressPlay token requests (https ).
 seo-title: Licensing and playback for FairPlay
 title: Licensing and playback for FairPlay
-uuid: ea1aac44-3c1c-4cd0-ad3d-fcf53c20e8ed
+uuid: 8b37bf3b-ba9f-42b3-bbb3-1c089f86ed5c
 index: y
 internal: n
 snippet: y

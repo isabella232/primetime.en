@@ -3,10 +3,10 @@ title: TVSDK 3.1 for iOS Release Notes
 seo-title: TVSDK 3.1 for iOS Release Notes
 description: TVSDK 3.1 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.1
 seo-description: TVSDK 3.1 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.1
-uuid: f8ebccfd-7bd3-4f3f-9ee7-6ab44290307b
+uuid: e8305fdb-78a8-4c0b-b216-807f745a0769
 products: SG_PRIMETIME
 topic-tags: release-notes
-discoiquuid: c719d963-960e-4eff-b584-bb37b1e357e4
+discoiquuid: c470c84d-03e7-4f5b-b36a-d8866394ec8f
 index: y
 internal: n
 snippet: y

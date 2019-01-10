@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Using DRMContentData to pre-load licenses
 title: Using DRMContentData to pre-load licenses
-uuid: 9c5c51a2-a112-4fd9-a1ba-9c8a6260f8c7
+uuid: 5cedd077-0613-4677-8fb0-81237d7ac61a
 index: y
 internal: n
 snippet: y

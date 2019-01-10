@@ -1,7 +1,7 @@
 ---
 seo-title: Generating licenses
 title: Generating licenses
-uuid: ca03e8b9-0a27-4eff-aac1-efa264241df0
+uuid: f91b0cc8-e0ed-4722-947b-22eb2bfba916
 index: y
 internal: n
 snippet: y

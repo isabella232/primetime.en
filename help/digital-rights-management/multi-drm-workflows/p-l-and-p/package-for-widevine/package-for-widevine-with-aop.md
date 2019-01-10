@@ -3,7 +3,7 @@ description: Adobe Offline Packager takes as input unencrypted mp4 content.
 seo-description: Adobe Offline Packager takes as input unencrypted mp4 content.
 seo-title: Package your content with Adobe Offline Packager
 title: Package your content with Adobe Offline Packager
-uuid: 02196022-669d-424b-9538-955d54842595
+uuid: d0676147-c20f-49ea-93a6-9c8dbbbba992
 index: y
 internal: n
 snippet: y

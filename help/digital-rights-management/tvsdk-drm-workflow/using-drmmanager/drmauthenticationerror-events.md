@@ -1,7 +1,7 @@
 ---
 seo-title: Handling DRMAuthenticationError events
 title: Handling DRMAuthenticationError events
-uuid: f7523a46-4e2b-4d91-9995-bb576605289b
+uuid: c55a3e14-b02b-4c68-9d1d-d96adb6e0225
 index: y
 internal: n
 snippet: y

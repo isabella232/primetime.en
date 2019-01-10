@@ -1,7 +1,7 @@
 ---
 seo-title: Playback window
 title: Playback window
-uuid: fa34de22-eb86-4ae8-b7c8-70cd50c24f41
+uuid: a06a1e28-8f14-4231-bb88-61aa7e33cace
 index: y
 internal: n
 snippet: y

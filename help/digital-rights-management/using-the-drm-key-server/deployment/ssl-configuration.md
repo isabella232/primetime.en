@@ -1,7 +1,7 @@
 ---
 seo-title: SSL configuration
 title: SSL configuration
-uuid: 97389653-4d5f-4717-a76d-dd4e9d0601ff
+uuid: 22aece56-7c88-4f72-bf75-81a3c64781fe
 index: y
 internal: n
 snippet: y

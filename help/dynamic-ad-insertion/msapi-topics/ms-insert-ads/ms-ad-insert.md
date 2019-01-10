@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Requests for ad insertion{#requests-for-ad-insertion}
+# Requests for ad insertion {#requests-for-ad-insertion}
 
 All requests for ad insertion use the same URL structure and the same basic query parameters. Additional query parameters enable the manifest server to work with a variety of clients and situations.
 

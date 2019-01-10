@@ -1,7 +1,7 @@
 ---
 seo-title: Register a device
 title: Register a device
-uuid: cf5aad8f-c617-4a52-b501-ca89bab512d1
+uuid: e1bad373-f19b-432b-b815-f686dbabd0ee
 index: y
 internal: n
 snippet: y

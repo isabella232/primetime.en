@@ -1,7 +1,7 @@
 ---
 seo-title: Use Adobe Media Server
 title: Use Adobe Media Server
-uuid: c7a7246d-b1ec-4760-90d6-fadfeefe3b4c
+uuid: 272b9919-6ae4-4adb-aab5-28b1f92aa9fe
 index: y
 internal: n
 snippet: y

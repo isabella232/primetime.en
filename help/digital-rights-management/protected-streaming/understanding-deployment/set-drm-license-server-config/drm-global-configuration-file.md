@@ -3,7 +3,7 @@ description: The flashaccess-global.xml configuration file includes settings tha
 seo-description: The flashaccess-global.xml configuration file includes settings that apply to all tenants of the license server.
 seo-title: Global configuration file
 title: Global configuration file
-uuid: 2d80cb57-62ad-4624-ba5b-6f3e9e20735f
+uuid: 294d6cff-be07-4b4b-8aa6-943044a1c56f
 index: y
 internal: n
 snippet: y

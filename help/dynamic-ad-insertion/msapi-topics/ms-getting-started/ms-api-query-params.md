@@ -6,7 +6,7 @@ title: Manifest server query parameters
 uuid: 03632da3-ae20-427c-bd24-4794ab627cc8
 ---
 
-# Manifest server query parameters{#manifest-server-query-parameters}
+# Manifest server query parameters {#manifest-server-query-parameters}
 
 Query parameters tell the manifest server what sort of client sent the request and what that client wants the manifest server to do. Some are required and some have specific acceptable formats or values.
 

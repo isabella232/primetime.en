@@ -1,7 +1,7 @@
 ---
 seo-title: Using the DRMManager class overview
 title: Using the DRMManager class overview
-uuid: dcfba4c5-4ac1-485e-967a-bd136f09a4ea
+uuid: 71ce061b-75b6-4ab5-8bbd-cafe7c3e4592
 index: y
 internal: n
 snippet: y

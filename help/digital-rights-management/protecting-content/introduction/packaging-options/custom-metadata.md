@@ -1,7 +1,7 @@
 ---
 seo-title: Custom metadata
 title: Custom metadata
-uuid: 6f547ca7-a5be-4990-a139-c3d3112c1096
+uuid: 99bdef62-32a9-4fd0-919c-5a2594e8d17e
 index: y
 internal: n
 snippet: y

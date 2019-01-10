@@ -1,7 +1,7 @@
 ---
 seo-title: Adobe Primetime DRM credentials
 title: Adobe Primetime DRM credentials
-uuid: 3ce1e526-2c69-405c-ab86-c9c7303adcec
+uuid: 593a5157-5a8e-4916-9308-626e1ab8fad5
 index: y
 internal: n
 snippet: y

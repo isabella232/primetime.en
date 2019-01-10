@@ -1,7 +1,7 @@
 ---
 seo-title: Handling DRMStatus Events
 title: Handling DRMStatus Events
-uuid: c1c8a88f-980a-43fd-91fd-46147ca0e42b
+uuid: f1509acf-21f1-4739-889d-9de2da6acd80
 index: y
 internal: n
 snippet: y

@@ -1,7 +1,7 @@
 ---
 seo-title: Create video players
 title: Create video players
-uuid: 0fac8cb7-f311-4ff9-beb7-ec7d3c7cfc47
+uuid: 7727ab94-2b5d-419b-8251-8222fbc08781
 index: y
 internal: n
 snippet: y

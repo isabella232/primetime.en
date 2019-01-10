@@ -1,7 +1,7 @@
 ---
 seo-title: License acquisition process details
 title: License acquisition process details
-uuid: bf1bef5b-6377-4c9e-b9c6-0f72aef46d08
+uuid: 4825c49e-fa6f-4c98-9d21-a2743930ca2e
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: You can configure the Adobe Primetime DRM license server to use any
 seo-description: You can configure the Adobe Primetime DRM license server to use any network port.
 seo-title: Ports for application servers
 title: Ports for application servers
-uuid: 18da922f-8abd-4642-81f4-29c7aceb213b
+uuid: 3df7d29f-aa1b-4cf3-9f28-a9df6b013999
 index: y
 internal: n
 snippet: y

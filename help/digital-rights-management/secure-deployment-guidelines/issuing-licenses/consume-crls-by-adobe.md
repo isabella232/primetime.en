@@ -3,7 +3,7 @@ description: The SDK periodically downloads CRLs that are published by Adobe. Yo
 seo-description: The SDK periodically downloads CRLs that are published by Adobe. You must ensure that access to these files is not blocked or the enforcement of these CRLs is not prevented.
 seo-title: Consuming CRLs published by Adobe
 title: Consuming CRLs published by Adobe
-uuid: eb2960e1-6fb7-46a3-b600-aa0ea2dd737f
+uuid: 7a9088bd-dde6-4445-958c-3e7272215b3c
 index: y
 internal: n
 snippet: y

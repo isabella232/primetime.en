@@ -1,7 +1,7 @@
 ---
 seo-title: BEES Error codes
 title: BEES Error codes
-uuid: f6598554-4b80-4a10-ad1f-20327faeeb34
+uuid: 7b2d0dd1-9a43-47e3-b932-a4eaf784ae7a
 index: y
 internal: n
 snippet: y

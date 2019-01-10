@@ -3,7 +3,7 @@ description: To consume locally generated certificate revocation lists (CRLs) an
 seo-description: To consume locally generated certificate revocation lists (CRLs) and policy update lists, use Adobe Primetime DRM APIs to verify the signature.
 seo-title: Consuming locally generated CRLs
 title: Consuming locally generated CRLs
-uuid: d851222f-23a4-4b43-b3c2-72d1b4917f98
+uuid: 2e20b8ca-8606-4c27-b585-2f020b93be32
 index: y
 internal: n
 snippet: y

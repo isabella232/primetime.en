@@ -1,7 +1,7 @@
 ---
 seo-title: About device registration
 title: About device registration
-uuid: bc1f88c4-e634-4b95-95f7-e45d659c1c18
+uuid: 18dbc377-26ba-4791-a433-12a4db208e11
 index: y
 internal: n
 snippet: y

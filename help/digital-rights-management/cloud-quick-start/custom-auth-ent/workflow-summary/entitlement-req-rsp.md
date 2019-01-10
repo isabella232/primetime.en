@@ -3,7 +3,7 @@ description: null
 seo-description: null
 seo-title: Entitlement request and response details
 title: Entitlement request and response details
-uuid: 75dcc3f6-3283-47b7-85af-45b52da2ede1
+uuid: 44a53be9-6a0e-4d5b-9df0-8b03fcd993e8
 index: y
 internal: n
 snippet: y

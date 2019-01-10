@@ -1,7 +1,7 @@
 ---
 seo-title: License preview
 title: License preview
-uuid: 98531071-ffc1-4c24-a14c-82a9f5e7bdfa
+uuid: 3069aa16-5bf3-4af6-801c-ad823530d7eb
 index: y
 internal: n
 snippet: y

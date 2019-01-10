@@ -3,7 +3,7 @@ description: To package you content, you can use either Adobe Offline Packager o
 seo-description: To package you content, you can use either Adobe Offline Packager or other tools such as ExpressPlay's Bento4 packager.
 seo-title: Package your content for FairPlay
 title: Package your content for FairPlay
-uuid: 860e68b1-33fb-47e5-868b-be6c758e728b
+uuid: 92850da0-256c-4046-aa04-b4fe3034731a
 index: y
 internal: n
 snippet: y

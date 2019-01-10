@@ -1,7 +1,7 @@
 ---
 seo-title: Set up and deploy the server for Protected Streaming
 title: Set up and deploy the server for Protected Streaming
-uuid: d2278191-4e4c-4871-ae47-b3612f8399c0
+uuid: 300a1b63-0bf0-48a8-977d-212563025c19
 index: y
 internal: n
 snippet: y

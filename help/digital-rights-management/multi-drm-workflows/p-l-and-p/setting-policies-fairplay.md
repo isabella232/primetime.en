@@ -3,7 +3,7 @@ description: You can set polices for FairPlay-protected content by using an enti
 seo-description: You can set polices for FairPlay-protected content by using an entitlement server. You can set up your own, or make use of an Adobe-provided sample entitlement server.
 seo-title: Setting policies for FairPlay
 title: Setting policies for FairPlay
-uuid: 07da96c4-60c2-4f3d-a7f0-d99abd5189c0
+uuid: a956bf61-d2ef-4b69-aa3f-91a398f1c7b5
 index: y
 internal: n
 snippet: y

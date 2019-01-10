@@ -1,7 +1,7 @@
 ---
 seo-title: Delivering content
 title: Delivering content
-uuid: 0043a748-64b7-4a54-a162-916d5732b5da
+uuid: b277d369-fee3-4a20-9dd8-27b3a8a82a9e
 index: y
 internal: n
 snippet: y

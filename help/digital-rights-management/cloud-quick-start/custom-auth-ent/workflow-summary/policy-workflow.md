@@ -1,7 +1,7 @@
 ---
 seo-title: Policy workflow details
 title: Policy workflow details
-uuid: dc70bdcc-8794-4349-9d4a-ffd5add4e001
+uuid: b355fcf6-3416-440f-9b30-a155e20f9f74
 index: y
 internal: n
 snippet: y

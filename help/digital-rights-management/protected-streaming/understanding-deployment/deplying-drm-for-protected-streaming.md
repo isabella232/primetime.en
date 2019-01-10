@@ -1,7 +1,7 @@
 ---
 seo-title: Deploying the Adobe Primetime DRM Server for Protected Streaming
 title: Deploying the Adobe Primetime DRM Server for Protected Streaming
-uuid: 52f6fc13-d648-495a-b861-90fa684dfeaf
+uuid: 83ef8237-0026-4677-b42b-ea4b6de19630
 index: y
 internal: n
 snippet: y

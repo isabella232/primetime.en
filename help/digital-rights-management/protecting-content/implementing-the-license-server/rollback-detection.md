@@ -1,7 +1,7 @@
 ---
 seo-title: Rollback detection
 title: Rollback detection
-uuid: dca892c2-7041-4395-bbca-bbbbde91cd08
+uuid: ec124bac-a1d7-45be-bf09-a99d5eec5042
 index: y
 internal: n
 snippet: y

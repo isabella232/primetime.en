@@ -1,7 +1,7 @@
 ---
 seo-title: Packaging media files overview
 title: Packaging media files overview
-uuid: 03dc07cb-29c8-4090-956e-7e2192b0e12e
+uuid: 9509bcdc-ee4d-4025-9bb6-9b8ac439b926
 index: y
 internal: n
 snippet: y

@@ -3,7 +3,7 @@ description: The entitlement request and response are passed via a mutually auth
 seo-description: The entitlement request and response are passed via a mutually authenticated SSL connection between the license server and the customer's entitlement service.
 seo-title: SEES Public API
 title: SEES Public API
-uuid: ebc7dcdf-7229-4993-8342-d795f6fcb2fe
+uuid: f3a17d61-04ee-4bdb-9d64-a98066c6d1c8
 index: y
 internal: n
 snippet: y

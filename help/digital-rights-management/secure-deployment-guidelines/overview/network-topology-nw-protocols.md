@@ -3,7 +3,7 @@ description: When you configure a secure network architecture, network protocols
 seo-description: When you configure a secure network architecture, network protocols are required for interaction between Adobe Primetime DRM and other systems in your enterprise network.
 seo-title: Adobe Primetime DRM network protocols
 title: Adobe Primetime DRM network protocols
-uuid: 5e0371cf-69b2-4c47-9264-50b6294c5a21
+uuid: 8954e33c-83ac-4b40-9e45-005d4954b44e
 index: y
 internal: n
 snippet: y
