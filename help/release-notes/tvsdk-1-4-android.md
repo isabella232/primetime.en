@@ -764,7 +764,7 @@ A new API has been added to set the user agent for ad related calls, auditudeSet
 * Zendesk #1218 - 106000.33 Error with local ... If loading manifest in FragmentedHTTPStreamer::ThreadParseManifest() fails, check if URL domain is localhost and if so, change domain to 127.0.0.1 and recall ThreadParseManifest. 
 * Zendesk #3072 - Automatic switching to lower bitrates. Changed buffer length calculation to skip zero PTS payload. 
 * Zendesk #3168 - WebVTT subtitles only displayed for first 10 secs. 
-* Zendesk #3193 - Request for a Profile change API in TVSDK, PlaybackEventListener.onProfileChanged() has been added.
+* Zendesk #3193 - Request for a Profile change API in TVSDK, PlaybackEventListener.onProfileChanged() has been added. 
 
 **Version 1.4.7** (1311)
 

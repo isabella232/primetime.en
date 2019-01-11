@@ -61,7 +61,7 @@ Version 1.3.1 refers to the hotfix. Following enhancements make it a recommended
 
 ### Bug Fixes included in release 1.3.1 {#bug-fixes-included-in-release-1}
 
-* 3759167 - Not all SCTE35 cues make it to the output manifest due to timestamp anomaly while packaging. Apply pts_adjustment on the SpliceTime in the TimeSignal of SpliceInfoSection in SCTE35 message
+* 3759167 - Not all SCTE35 cues make it to the output manifest due to timestamp anomaly while packaging. Apply pts_adjustment on the SpliceTime in the TimeSignal of SpliceInfoSection in SCTE35 message.
 
 ## Known issues in release 1.3.1 {#known-issues-in-release}
 

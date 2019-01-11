@@ -16,15 +16,17 @@ The reference implementation provides a `QoSManager` class where you can enable 
 
 ![](assets/qos-configuration.jpg)
 
-The `QoSManager` tracks QoS statistics by getting device information, attaching to the media player, and updating with the latest QoS information. 
+The `QoSManager` tracks QoS statistics by getting device information, attaching to the media player, and updating with the latest QoS information.
 
 1. Create a QosManager or enable QoS reporting using the ManagerFactory.
 
    * To create a QosManager:
         * This application needs to use the advertising workflow feature 
+   
    QoSManager qosManager = new QosManagerOn();
 
-    * To use a ManagerFactory to enable the display of QoS statistics:     
+    * To use a ManagerFactory to enable the display of QoS statistics:
+    
     qosManager = ManagerFactory.getQosManager( 
     <b>true</b>, config, mediaPlayer);
 

@@ -124,7 +124,7 @@ The following features are supported:
    <th colname="col6" align="center" class="entry"> 
     <lines>
       HTML5 FF, IE, Chrome, Android Chrome
-    </lines> </th> 
+    </lines> </th>
   </tr> 
  </thead>
  <tbody> 
@@ -132,7 +132,7 @@ The following features are supported:
    <td colname="col1"> Content Protection </td> 
    <td colname="col2"> VOD + Live </td> 
    <td colname="col3"> AES-128 </td> 
-   <td colname="col6" valign="middle" align="center"> Not Supported </td> 
+   <td colname="col6" valign="middle" align="center"> Not Supported </td>
   </tr> 
   <tr> 
    <td colname="col1"> Content Protection </td> 
