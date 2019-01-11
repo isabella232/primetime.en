@@ -78,9 +78,9 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
 
 **1.4.0**
 
-* **Blackout Signaling With Alternate Content Replacement**As part of the 1.4 TVSDK update, the TVSDK also now supports going into and returning from regional blackouts against linear content. The TVSDK can now process two manifest files in parallel, main and alternate, to monitor for blackout signals even when alternate programming is being shown in place of the original programming.
+* **Blackout Signaling With Alternate Content Replacement** As part of the 1.4 TVSDK update, the TVSDK also now supports going into and returning from regional blackouts against linear content. The TVSDK can now process two manifest files in parallel, main and alternate, to monitor for blackout signals even when alternate programming is being shown in place of the original programming.
 
-* **Remove/Replace C3 Ads**Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during broadcast and is immediately pulled down for use as on demand content without proper time to “clean” the asset.
+* **Remove/Replace C3 Ads** Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during broadcast and is immediately pulled down for use as on demand content without proper time to “clean” the asset.
 
 ## Resolved issues {#resolved-issues}
 
@@ -90,13 +90,13 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
 >
 >`http://adunit.cdn.auditude.com/assets/3p/v3.1/218747/94b/c1b/94bc1b964cc67e115a5a6781c7329b90_ee92607938ffff46b083121f044c2746.m3u8`
 
-**1.4.41**
+**Version 1.4.41**
 
 * Zendesk #33777 - Localhost token SWF for DHLS distribution build expired.
 
 Updating the localhost token for PMP demo on DHLS.
 
-**1.4.38 **(891)
+**Version 1.4.38 **(891)
 
 * Zendesk #30731 - TVSDK does not playing multiple VPAID ads in an AdBreak.
 
@@ -106,11 +106,11 @@ Updating the localhost token for PMP demo on DHLS.
 
   The video player can repeat the last segment of a period when an ABR switch happens. Due to this, at times, last segment of preroll repeated. This has been fixed.
 
-**1.4.35** (879)
+**Version 1.4.35** (879)
 
 * Zendesk #26058 - Supports Native VPAID events
 
-**1.4.33** (873)
+**Version 1.4.33** (873)
 
 * Zendesk #21701 - Send the original creative URL for 1401 CRS request instead of the normalized url.
 
@@ -140,7 +140,7 @@ Updating the localhost token for PMP demo on DHLS.
 
   This issue is the same issue as in Zendesk #26592. The issue where seek operations were allowed when the media player is in the PREPARED state for VOD streams has been fixed.
 
-**1.4.32** (867)
+**Version 1.4.32** (867)
 
 * Zendesk #26592 Tracking event does not fire when the playback starts from the resume point
 
@@ -150,9 +150,7 @@ The code was not updating the pre-roll ad break item when the resume point was n
 
 The exceptions with the array methods have been fixed.
 
-** **
-
-**1.4.30** (855)
+**Version 1.4.30** (855)
 
 The following issues were resolved for TVSDK in this release:
 
@@ -186,9 +184,7 @@ This issue was resolved by tracking the bitrate changes in VideoAnalyticsTracker
 
 * Added a new API, assetDuration, to PTVideoAnalyticsTrackingMetadata to update asset duration for Live/Linear streams.
 
-** **
-
-**1.4.28** (848)
+**Version 1.4.28** (848)
 
 * Zendesk #25027 - Auditude doesn't work in 1.4.27 desktop release
 
@@ -210,9 +206,7 @@ This issue was resolved by loading the WebVTT files only when captions are requi
 
 The spurious EOC code caused the caption display to disappear. This issue was resolved by forcing the 608 captions codes RU2, RU3 and RU4 to provide the correct visibility in the current active window.
 
-** **
-
-**1.4.27** (844)
+**Version 1.4.27** (844)
 
 * Zendesk #21554 - TVSDK error beacons not fired for application-type = video/mp4
 
@@ -246,9 +240,7 @@ The Windows native networking code has been fixed to ensure that connections do 
 
 This issue was resolved by allowing clients to set custom parameters separately on Opportunity instance so that clients do not have to override OpportunityGenerator.
 
-** **
-
-**1.4.26** (839)
+**Version 1.4.26** (839)
 
 * Zendesk #18854 - Update creative selection logic based on CRS rules
 
@@ -270,9 +262,7 @@ This issue was resolved by allowing clients to set custom parameters separately 
 
     * Fixed by loading rules.xml file through the stream integrity workflow
 
-** **
-
-**1.4.24** (817)
+**Version 1.4.24** (817)
 
 * Zendesk #19851 - When the player adapts to a different bit rate it jumps a few frames back in time on the new bit rate making an awkward experience
 
@@ -302,7 +292,7 @@ The SSL-related issues were fixed, and the VHL library that is used in TVSDK has
 
 During adaptive bitrate, with the max bitrate limit, the reloading of the video intermittently shows a black screen even though the client sees updates to position, and the client behaves as though it is playing content.
 
-**1.4.23** (809)
+**Version 1.4.23** (809)
 
 * Zendesk #2887 - Post-roll ad skipping issue when Ad Rule logic applied to the TVSDK
 
@@ -342,9 +332,7 @@ The audio repeating issue was fixed.
 
 The issue where the reference player not playing any stream and was throwing an exception at start up has been fixed.
 
-** **
-
-**1.4.22** (791)
+**Version 1.4.22** (791)
 
 * Zendesk #17580 - Primetime runtime error with code 3357
 
@@ -356,9 +344,7 @@ The random 3357 errors that occurred by properly initializing the deviceID when 
 
 In this release, global ad request timeout has been added.
 
-** **
-
-**1.4.21** (782)
+**Version 1.4.21** (782)
 
 * Zendesk #19580 TVSDK waits for completion of content resolver before sending PTTimedMetadataChangedNotification notifications
 
@@ -397,9 +383,7 @@ This behavior was changed to include custom parameters from the Opportunity obje
 
 This issue was resolved by allowing the TVSDK to ignore the manifest (HLS sub profiles) that contains the AC3 codec that the TVSDK does not support (surround).
 
-** **
-
-**1.4.20** (762)
+**Version 1.4.20** (762)
 
 * Zendesk #19181 - Trick play fast forward to live point locks up stream.
 
@@ -429,9 +413,7 @@ This issue is the same as Zendesk #19181.
 
 This issue was resolved by making the player dump and reload the manifest when a track changes and by correcting the UTF8 string conversion problem that affected the double-byte WebVTT caption track names.
 
-** **
-
-**1.4.19** (1.4.19.738)
+**Version 1.4.19** (1.4.19.738)
 
 * Zendesk #18234 - Flash Player crashes playing back the streams with Unicode strings in CC
 
@@ -473,17 +455,13 @@ This issue requires Flash Player FP 20.0.0.267 or later and was resolved by sett
 
 This issue was resolved by adding a new API, adRequestTimeout, to the AuditudeSettings for an ad request timeout. Users can now override the default 10s ad request timeout.
 
-** **
-
-**1.4.18** (1.4.18.722)
+**Version 1.4.18** (1.4.18.722)
 
 * Zendesk #3324 - Primetime ads reporting does not track ad breaks when there is no ad media in a VMAP.
 
 When an ad break is empty, the ad break start and complete tracking events were not being pinged. This issue was resolved by sending ad break start pings on empty ad breaks, such as VMAP AdBreak, with a valid AdSource nod.
 
-** **
-
-**1.4.17** (1.4.17.702)
+**Version 1.4.17** (1.4.17.702)
 
 * Zendesk #17168 - Captions don't appear for 10 seconds or so after toggling visibility
 
@@ -501,9 +479,7 @@ When sometimes playing live content, there might be invalid keys in the manifest
 
 A bug in the cookie manipulation code that might truncate cookie values was fixed.
 
-** **
-
-**1.4.16** (1.4.16.684)
+**Version 1.4.16** (1.4.16.684)
 
 * Zendesk #3732 - Add support for proxies in Chrome for Stream Integrity (requires Flash Player FP 19.0.0.207 or greater)
 
@@ -551,9 +527,7 @@ The issue was resolved by handling unmuxed audio with mid-roll ad insertion. (Th
 
 This issue is the same as Zendesk #17973.
 
-** **
-
-**1.4.15** (1.4.15.678)
+**Version 1.4.15** (1.4.15.678)
 
 * Zendesk #4377: Fire AD_BREAK_SKIPPED event when skipping an ad break because of the ad policy.
 
@@ -577,9 +551,7 @@ Added a type to AdBreakTimelineItem (AdBreakTimelineItem.placementType) so that 
 
 The fix was to remove the logic to change the target buffer size to the initial buffer size when buffering begins.
 
-** **
-
-**1.14.14** (1.4.14.771)
+**Version 1.14.14** (1.4.14.771)
 
 * Zendesk #17363 - Fix README documentation for reference player
 
@@ -596,9 +568,7 @@ Partial fix for an issue where an ad does not play from the beginning after seek
 
 Provide custom parameters for each ad break.
 
-** **
-
-**1.4.13** (1.4.13.660)
+**Version 1.4.13** (1.4.13.660)
 
 * Zendesk #4037 - No Useable Profile Error (requires Flash Player 18.0.0.232 or greater)
 
@@ -647,7 +617,7 @@ Fixed crash when attempting to play a redirect ad on Mac Firefox.
 
 Fixed crashed in Windows Firefox during playback in fullscreen.
 
-**1.4.11** (1.4.11.648)
+**Version 1.4.11** (1.4.11.648)
 
 * Zendesk #1869 - Issue Changing Font Size (requires Flash Player 18.0.0.200)
 
@@ -670,9 +640,7 @@ Fixed crash in native networking mode in pepper 
 
 Fixed issues finding wildcard token when the pageDomain is different from the swf domain.
 
-** **
-
-**1.4.10** (1.4.10.642)
+**Version 1.4.10** (1.4.10.642)
 
 * Zendesk #3249 - TVSDK Web Player crashes Flash on Firefox
 
@@ -693,9 +661,7 @@ Fixed an issue on Mac Chrome where stream would start to flicker an eventually g
     * Wrappers companions with resource, unless use for display, will be ignore. (not use for tracking ) 
     * Only wrapper companions with NO resource will be used for tracking purposes. ( wrapper companion that only contain tracking )
 
-** **
-
-**1.4.9**
+**Version 1.4.9**
 
 * Zendesk #2615 - issue removing HLS view from desktop display
 
@@ -709,35 +675,29 @@ Reference player has been updated with Adobe Analytics integration
 
 mime types for HLS format had been case sensitive, this was incorrect and has been changed so they are no longer case sensitive
 
-** **
-
-**1.4.8**
+**Version 1.4.8**
 
 * Zendesk #2737 - Desktop Player - Error 106000 (requires Flash Player 17.0.0.184) 
 * Zendesk #3007 - Pre-roll ads not appearing after updating to Flash Player 17 (requires Flash Player 17.0.0.184) 
 * Zendesk #3085 - Desktop HLS Player Throws 106000 Error after 60 seconds (requires Flash Player 17.0.0.184)
 
-**1.4.7**
+**Version 1.4.7**
 
 * Zendesk #2760 - DISCONTINUITY tag ignored during TrickPlay mode (requires Flash Player version 17.0.0.158) 
 * Zendesk #2760 - DISCONTINUITY tag ignored during TrickPlay mode (requires Flash Player version 17.0.0.158)
 
-** **
-
-**1.4.6**
+**Version 1.4.6**
 
 * Zendesk #2652 - Auditude documentation for desktop HLS, Clarified Auditude media_id for desktop HLS documentation
 
-**1.4.5**
+**Version 1.4.5**
 
 * Zendesk #2256 - Access to Master Playlist, updated PSDK to dispatch timedMetadata events for subscribed tags on the master playlist. (requires Flash Player version 17.0.0.134) 
 * Zendesk #2417 - Player trying to download subtitles before playback start, WebVTT was using the wrong segment number variable for segment number matching. Bug would only show up for media that had segment indices starting at zero. (requires Flash Player version 17.0.0.134) 
 * Zendesk #2537 - Flash player crashes when using the pepper plugin with Chrome (requires Flash Player version 17.0.0.134) 
 * Zendesk #2547 - Arabic subtitles: Text should be aligned right-justified (requires Flash Player version 17.0.0.134)
 
-** **
-
-**1.4.4**
+**Version 1.4.4**
 
 * Zendesk #1561 - Re: [Adobe Primetime] Update: HLS client based failover support for PROGRAM-DATE-TIME in Desktop PSDK (requires Flash Player version 16.0.0.305 or greater) 
 * Zendesk #2197 - [Ads] Tracking ad errors 
@@ -745,9 +705,7 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 * Zendesk #2285 - Feature Request: Skip ad after a specified timeout duration 
 * Bug #3921755 - OpenSSL library update to version 1.0.1L in Flash Player (requires Flash Player version 16.0.0.305 or greater)
 
-** **
-
-**1.4.2**
+**Version 1.4.2**
 
 * Zendesk #1303 - Vertical Offset for Closed Caption (requires Flash Player version 16.0.0.235 or greater, expected release date: December 2014) 
 * Zendesk #1870 - Closed Caption Turning On & Off (requires Flash Player version 16.0.0.235 or greater, expected release date: December 2014) 
@@ -755,15 +713,11 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 * Zendesk #2199 - [VPAID] Player not responding when seeking past ad break 
 * Zendesk #2358 - Re: [Analytics] Incorrect chapter data
 
-** **
-
-**1.4.1**
+**Version 1.4.1**
 
 * Updated Blackouts API to be consistent with Android and iOS implementation.
 
-** **
-
-**1.4.0**
+**Version 1.4.0**
 
 * Zendesk #1024 - Feature to remove ad from stream via manifest 
 * Zendesk #1423 - HLS playback failure is locking up Flash Player (with no error reported) 
@@ -784,11 +738,11 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
   _playbackManager.pause();  
   }`
 
-* **1.4.13**PTPLAY-8501 - When VMAP returns two direct MP4 non transcoded ads, the same fall back ad plays twice.
+* **Version 1.4.13** PTPLAY-8501 - When VMAP returns two direct MP4 non transcoded ads, the same fall back ad plays twice.
 
-* **1.4.2**In the Flash Player version 16 release, an issue was identified with the ABR "switching down" logic, after the player gets into an empty buffering event. The issue prevents the bitrate from switching down in bad bandwidth environments once the player gets into a buffering state. To work around the issue, have your app set the BufferControlParameters.initialBufferTime to be the same as BufferControlParameters.playbackBufferTime temporarily during the buffering state (that is, on a BufferEvent.BUFFERING_BEGIN event) then reset it back to the set values on BufferEvent.BUFFERING_END event. The fix for this issue will be available in the next patch release of Flash Player verison 16.
+* **Version 1.4.2** In the Flash Player version 16 release, an issue was identified with the ABR "switching down" logic, after the player gets into an empty buffering event. The issue prevents the bitrate from switching down in bad bandwidth environments once the player gets into a buffering state. To work around the issue, have your app set the BufferControlParameters.initialBufferTime to be the same as BufferControlParameters.playbackBufferTime temporarily during the buffering state (that is, on a BufferEvent.BUFFERING_BEGIN event) then reset it back to the set values on BufferEvent.BUFFERING_END event. The fix for this issue will be available in the next patch release of Flash Player verison 16.
 
-* **1.4.0**
+* **Version 1.4.0**
 
     * PTPLAY-1634 - The same Subscribed tag has different timestamps in different live windows. When live windows move, the same tag in each of them should have the same timestamps. However, sometimes, the same tags have different timestamps.
     * PTPLAY-28 - MediaPlayer timeline does not include empty breaks.

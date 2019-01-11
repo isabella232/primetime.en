@@ -18,15 +18,15 @@ TVSDK 1.4 for iOS Release Notes describe what is new or changed, the resolved an
 
 ## New features {#new-features}
 
-### 1.4.45
+###Version 1.4.45
 
 * In order to comply with Xcode10, TVSDK has moved from “libstdc++” to “libc++”, and as a result the minimum supported version is iOS 7. Earlier it was iOS 6.
 
-### 1.4.44
+**Version 1.4.44**
 
 * No new feature or enhancements in this release.
 
-### 1.4.43
+**Version 1.4.43**
 
 * TV-like experience of being able to join in the middle of an ad without triggering partial ad's tracking.  
   Example: User joins in the middle (at 40 seconds) of a 90-second ad break consisting of three 30-second ads. This is 10 seconds into the second ad in the break.
@@ -37,38 +37,38 @@ TVSDK 1.4 for iOS Release Notes describe what is new or changed, the resolved an
 * Added enableVodPreroll property of Boolean type in PTAdMetadata interface. The property can be used to enable pre-roll on a VoD stream. If enableVodPreroll is NO, PSDK does not play pre-roll. This, however, has no impact on the midrolls. The default value of enableVodPreroll is YES.
 * closedCaptionDisplayEnabled API of PTMediaPlayer interface is marked as deprecated from iOS v1.4.43 onwards. To determine whether closed captions are available for a given PTMediaPlayerItem, examine the subtitlesOptions property of PTMediaPlayerMediaItem.
 
-### 1.4.42
+**Version 1.4.42**
 
 No new features are added in this release. For a list of issues fixed, see [Resolved issues](https://help.adobe.com/en_US/primetime/release_notes/ios/c_relnotes_ios_1.4_resolved_issues.html#c_relnotes_resolved-issues_1_4).
 
-### 1.4.41
+**Version 1.4.41**
 
 API changes:
 
 * ** isSecure **: A new API is introduced isSecure to secure the player from recording and throwing an error. The default value is true.
 * ** allowExternalRecording **: A new API is introduced to allow airplay mirroring for a secure content. Airplay mirroring is treated as recording therefore  allowExternalRecording  value must be set to 'True', to allow airplay mirroring or set to 'False' to stop the airplay mirroring for secure content. By default,  value  is true.
 
-### 1.4.40
+**Version 1.4.40**
 
 No new features.
 
-### 1.4.39
+**Version 1.4.39**
 
 * iOS  TVSDK  is certified with VHL 2.0.1 and with VHL 2.0.1 with Nielsen.
 * iOS  TVSDK  is updated to make CRS requests from new Akamai host primetime-a.akamaihd.net.
 * New hostname configuration provides CRS asset delivery via both HTTP and HTTPS (SSL) at greater scale.
 
-### 1.4.36
+**Version 1.4.36**
 
 Integrate and certify VHL 2.0 in iOS  TVSDK : Reduce the barrier in the VideoHeartbeatsLibrary implementation by decreasing the complexity of the APIs.
 
-### 1.4.34
+**Version 1.4.34**
 
 * Network Ad Information
 
   TVSDK APIs now provide additional information on third party VAST responses. Ad ID, Ad System  and  VAST Ad Extensions are provided in PTNetworkAdInfo class accessible through  networkAdInfo  property on an Ad Asset. This information can be used for integrating with other Ad Analytics platforms such as **Moat Analytics**.
 
-### 1.4.31
+**Version 1.4.31**
 
 * **Billing Metrics**To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers.
 
@@ -76,7 +76,7 @@ Integrate and certify VHL 2.0 in iOS  TVSDK : Reduce the barrier in the VideoHea
 
 * **Multi-CDN Support for CRS Ads**TVSDK now supports Multi-CDN for CRS ads. By providing FTP details for CRS ads, you can specify CDN locations, other than the default Adobe-owned CDN such as Akamai.
 
-### 1.4.29
+**Version 1.4.29**
 
 In the PTSDKConfig class, the forceHTTPS API has been added.
 
@@ -84,11 +84,11 @@ The PTSDKConfig class provides methods to enforce SSL on requests made to Adobe 
 
 **Note**: Requests to third-party domains such as Ad Tracking pixels, Content and Ad URLs, and similar requests are not modified, and it is the responsibility of the content providers and ad servers to provide URLs that are supported through HTTPS.
 
-### 1.4.18
+**Version 1.4.18**
 
 Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. For more information about VPAID 2.0, see [VPAID ad support](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html).
 
-### 1.4.17
+**Version 1.4.17**
 
 * tvOS
 
@@ -114,9 +114,7 @@ Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich
     * Ad banners
     * TV Markup Language (TVML)
 
-** **
-
-**1.4.13**
+**Version 1.4.13**
 
 **Note**: The Nielsen module has been removed from the TVSDK build, the  TVSDK  will be updated in the near future with a new Nielsen integration module.
 
@@ -124,24 +122,20 @@ Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich
 
 For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. For more information, see [Ad fallback for VAST and VMAP ads](http://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
 
-** **
-
-**1.4.9**
+**Version 1.4.9**
 
 * **Blackout Signaling With Alternate Content Replacement**
 
 As part of the 1.4 TVSDK update we also now support going into and returning from regional blackouts against linear content. The TVSDK can now process two manifest files in parallel, main and alternate, to monitor for blackout signals even when alternate programming is being shown in place of the original programming.
 
-** **
-
-**1.4.8**
+**Version 1.4.8**
 
 * **Video Heartbeats Library (VHL) updated to version 1.5**
 
-    * Ability to send metadata with video start and/or video/ad/chapter start as context data
-    * Less network traffic - Heartbeats are fewer on average and smaller in size
+  * Ability to send metadata with video start and/or video/ad/chapter start as context data
+  * Less network traffic - Heartbeats are fewer on average and smaller in size
 
-**1.4.7**
+**Version 1.4.7**
 
 * **On-Premise Individualization Support**
 
@@ -151,32 +145,28 @@ Support for on-premise installations of the Adobe Individualization Server to cu
 
 DRM Policies can now specify the highest resolution permitted, depending on the device's Output Protection capabilities. For instance "If HDCP is available, allow  content  of up to 1080p resolution to be played, and if HDCP is not available, allow  content  of up to 480p resolution to be played".
 
-** **
-
-**1.4.4**
+**Version 1.4.4**
 
 * **Video Heartbeats Library (VHL) update to version 1.4.1.1**
 
-    * Added the ability to bundle different analytics use cases, from other SDKs or players, with the Adobe Analytics Video Essentials.
-    * Ad tracking has been optimized by removing the trackAdBreakStart and trackAdBreakComplete methods. The ad break is inferred from the  trackAdStart  and trackAdComplete method calls.
-    * The  playhead  property is no longer needed when tracking ads.
-    * Added support for the Marketing Cloud Visitor ID.
+  * Added the ability to bundle different analytics use cases, from other SDKs or players, with the Adobe Analytics Video Essentials.
+  * Ad tracking has been optimized by removing the trackAdBreakStart and trackAdBreakComplete methods. The ad break is inferred from the  trackAdStart  and trackAdComplete method calls.
+  * The  playhead  property is no longer needed when tracking ads.
+  * Added support for the Marketing Cloud Visitor ID.
 
 * **Nielsen SDK Integration**
 
-The TVSDK now supports sending mTVR and MDPR ID3 beacons to the Nielsen SDK without any custom integration. In order to get started, download the 3.1.2.19 Nielsen iOS App SDK, and follow the instructions found here in the [iOS Programmers Guide](http://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-Use_Nielsen_Analytics).
+  * The TVSDK now supports sending mTVR and MDPR ID3 beacons to the Nielsen SDK without any custom integration. In order to get started, download the 3.1.2.19 Nielsen iOS App SDK, and follow the instructions found here in the [iOS Programmers Guide](http://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-Use_Nielsen_Analytics).
 
-** **
-
-**1.4.0**
+**Version 1.4.0**
 
 * **Blackout Signaling With Alternate Content Replacement**
 
-As part of the 1.4 TVSDK update, the TVSDK also now supports going into and returning from regional blackouts against linear content. The TVSDK can now process two manifest files in parallel, main and alternate, to monitor for blackout signals even when alternate programming is being shown in place of the original programming.
+  * As part of the 1.4 TVSDK update, the TVSDK also now supports going into and returning from regional blackouts against linear content. The TVSDK can now process two manifest files in parallel, main and alternate, to monitor for blackout signals even when alternate programming is being shown in place of the original programming.
 
 * **Remove/Replace C3 Ads**
 
-Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during  broadcast  and is immediately pulled down for use as  on demand  content without proper time to “clean” the asset.
+  * Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during  broadcast  and is immediately pulled down for use as  on demand  content without proper time to “clean” the asset.
 
 ## Device certification and support in 1.4 {#device-certification-and-support-in}
 
@@ -188,25 +178,25 @@ Now, no additional prep work is needed to dynamically insert new ads into video-
 >* Live trick play.
 >
 
-### 1.4.43
+###Version 1.4.43
 
 * TVSDK 1.4.43 is certified for iOS 11.
 
-**1.4.29**
+**Version 1.4.29**
 
 * TVSDK 1.4.29 has been certified for iOS 10.
 
-**1.4.28**
+**Version 1.4.28**
 
 * TVSDK 1.4.28 has been certified for iOS 10 Beta 7.
 * DRM support to force HTTPS by adding forceHTTPS and isForcingHTTPS APIs.
 * Updated VHL libraries to 1.5.8, Adobe Mobile libraries to 4.8.4, and the logger utility library to the version 7.0 deployment target.
 
-**1.4.19**
+**Version 1.4.19**
 
 This version of the TVSDK has been certified with the FairPlay Support for iOS and tvOS.
 
-**1.4.17**
+**Version 1.4.17**
 
 * tvOS
 
@@ -240,7 +230,7 @@ Comment Type: draft
 
  -->
 
-#### iOS TVSDK 1.4.45 {#ios-tvsdk}
+###Version 1.4.45 {#ios-tvsdk}
 
 * Ticket #36294 - iOS TVSDK not functional with Xcode 10
 
@@ -251,7 +241,7 @@ Comment Type: draft
 
     * Fixed the compilation issues with TVSDK on iOS 12. Apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
 
-#### 1.4.44
+**Version 1.4.44**
 
 * Ticket #34683 - Ad Playback Progress Time Is Going In Negative
 
@@ -265,7 +255,7 @@ Comment Type: draft
 
     * Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancelled check and exception handling code to make operation queue more robust.
 
-#### 1.4.43
+**Version 1.4.43**
 
 * [ZD#32990] - iOS: Content playing instead of ads on some cue-points. 'selectedMediaOptionInMediaSelectionGroup' API which was part of AVPlayerItem interface has now moved under AVMediaSelection in iOS 11. The issue got resolved using this new API.
 * [ZD#33683] TVSDK removed == suffix from the metadata strings. The issue is fixed in the parsing logic.
@@ -276,7 +266,7 @@ Comment Type: draft
 * [ZD#34865] - Pre-roll ads for livestream are truncated on iOS. Related to iOS11, and adding an additional check to confirm if the stream is pre-roll or main-content, addresses this issue.
 * [ZD#35093] - Fixed a failover scenario where, if Primary variant of the stream fails at startup (returns 404), playback does not switch to backup stream.
 
-**1.4.42 (1.4.42.118)**
+**Version 1.4.42 (1.4.42.118)**
 
 * [ZD#34385] - Playback stalls with a bad URL when returning from signal-based ad insertion.
 
@@ -293,7 +283,7 @@ Comment Type: draft
 
   Added the getCRSRulesJsonURL and setCRSRulesJsonURL APIs to the iOS  TVSDK .
 
-**1.4.41 (1.4.41.76)**
+**Version 1.4.41 (1.4.41.76)**
 
 * [ZD #34464] - Issues building Reference App with TVSDK Version 1.4.41
 
@@ -325,7 +315,7 @@ Comment Type: draft
 
   Fixed the event failure on iOS 11
 
-**1.4.40** (1.4.40.72)
+**Version 1.4.40** (1.4.40.72)
 
 * [ZD #32465] - Player cannot handle merged playlists.
 
@@ -341,7 +331,7 @@ Comment Type: draft
 
   Created parent-child relation between sequence ad and fallback ad and sorting based on parent sequence and index.
 
-**1.4.39** (1.4.39.43)
+**Version 1.4.39** (1.4.39.43)
 
 * [ZD #32178] - iOS TVSDK version is incorrect.
 
@@ -371,7 +361,7 @@ Comment Type: draft
 
   Prepare and inform audio tracks in  Ready  state.
 
-**1.4.38** (1.4.38.860)
+**Version 1.4.38** (1.4.38.860)
 
 * [ZD #29281] - iOS: Add AdSystem and Creative Id to CRS requests
 
@@ -389,7 +379,7 @@ Added Programmatic ads support in iOS.
 
 Timed metadata event is not fired for  # EXT-X-PROGRAM-DATE-TIME tag with LIVE DRM streams.
 
-**1.4.37 (1.4.37.842)**
+**Version 1.4.37 (1.4.37.842)**
 
 * [ZD #28950 ] - VOD playback issue
 
@@ -401,7 +391,7 @@ Usage of Creative Id and AdSystem in CRS request based upon CRS normalization ru
 
 * [ ZD #29462] - TremorHub ad in A&E VOD causing a crash in iOS apps
 
-**1.4.36 (1.4.36.835)**
+**Version 1.4.36 (1.4.36.835)**
 
 * [ZD #29418] - Cues with duration 0 (#EXT-X-CUE-OUT:0.000) are causing iOS TVSDK to stop or crash the playback.
 
@@ -415,7 +405,7 @@ The issue is fixed. iOS  TVSDK  is raising an exception(AUDNetworkAdInfo::initWi
 
 Include AdSystem and  CreativeId  as new parameters in the 1401 and 1403 requests (all other parameters remain the same).
 
-**1.4.35**(1.4.35.830)
+**Version 1.4.35** (1.4.35.830)
 
 * [ZD #27830] - Need to determine programmatically the difference between closed-captions and subtitle in iOS.
 
@@ -433,13 +423,13 @@ Fixed multiple crashes related to synchronization.
 
 Fixed multiple crashes related to synchronization.
 
-**1.4.34** (1.4.34.815 for iOS 6.0+)
+**Version 1.4.34** (1.4.34.815 for iOS 6.0+)
 
 * [ZD# 28481] - FER outage due to the incorrect key being appended at the end of an ad break for those FER streams
 
 For an FER stream, the key before the ad break is inserted after the end of the ad break. This issue was resolved by appending the *last seen key* at the end of the ad break.
 
-**1.4.33** (1.4.33.803 for iOS 6.0+)
+**Version 1.4.33** (1.4.33.803 for iOS 6.0+)
 
 * [ZD# 21701] Enable CRS for Sub-accounts
 
@@ -453,7 +443,7 @@ This issue was resolved by updating resource loading to look from all available 
 
 The new CDN account is unable to handle a POST CDN request. This issue was resolved by updating the code to make the cdn.auditude.com ad request to be GET instead of POST.
 
-**1.4.32** (1.4.32.792 for iOS 6.0+)
+**Version 1.4.32** (1.4.32.792 for iOS 6.0+)
 
 * [ZD# 27132] Support for decimal values for VMAP Ad Breaks.
 
@@ -463,7 +453,7 @@ When content was not segmented along the defined ad breaks, integers were causin
 
 The issue was resolved by placing the tag at the beginning of the playlist.
 
-**1.4.31** (1.4.31.785 for iOS 6.0+)
+**Version 1.4.31** (1.4.31.785 for iOS 6.0+)
 
 * [ZD# 24528] Implement TVSDK Usage Metrics for Billing
 
@@ -489,7 +479,7 @@ For more information, see [Multiple CDN support for CRS Ad Delivery](http://help
 
 This issue was resolved by providing a workaround for streams that do not have an M3U8 extension.
 
-**1.4.30** (1.4.30.754 for iOS 6.0+)
+**Version 1.4.30** (1.4.30.754 for iOS 6.0+)
 
 The following issues were resolved for TVSDK in this release:
 
@@ -531,7 +521,7 @@ This issue was resolved by updating the implementation to use the latest version
 
 This issue is the same as ZD #25908.
 
-**1.4.29** (1.4.29.743)
+**Version 1.4.29** (1.4.29.743)
 
 * [ZD# 23901] Third party ads are not playing
 
@@ -549,7 +539,7 @@ This issue was resolved by preventing TVSDK from converting empty strings to abs
 
 Support for custom headers on ts segment requests through the PTNetworkConfiguration class has been added.
 
-**1.4.28** (1.4.28.722)
+**Version 1.4.28** (1.4.28.722)
 
 * [ZD #24549] Multiple Ad tracking calls
 
@@ -567,7 +557,7 @@ This issue was resolved by correctly calculating the duration drift on event pla
 
 This issue was resolved by using local web server for subtitles when the WebVTT files are geo-restricted.
 
-**1.4.27** (1.4.27.711) for iOS 6.0+
+**Version 1.4.27** (1.4.27.711) for iOS 6.0+
 
 * [ZD #24089] - Optimizations for ad resolving on long DVR streams
 
@@ -585,13 +575,13 @@ The crash that occurred because of a deallocated media player instance, when pla
 
 The issue in the log format that caused the crash on 32-bit devices when logging is enabled has been fixed.
 
-**1.4.26** (1.4.26.702) for iOS 6.0+
+**Version 1.4.26** (1.4.26.702) for iOS 6.0+
 
 * [ZD# 20213] - TVSDK FW needs to be dynamic/modularized for XCode7
 
     * Fixed by updating the libraries with module support
 
-**1.4.25** (1.4.25.684) for iOS 6.0+
+**Version 1.4.25** (1.4.25.684) for iOS 6.0+
 
 * [ZD #19629] - Live Video Pauses when Entering Airplay to ATV 4
 
@@ -629,9 +619,7 @@ This issue was resolved by providing an option to specify the max bitrate.
 
 The symbols that were not recommended by Apple for IPv6 compatibility have been removed.
 
-**1.4.24 **(1.4.24.661) for iOS 6.0+
-
-** **
+**Version 1.4.24** (1.4.24.661) for iOS 6.0+
 
 * ZD #2548] - Primetime support for interactive advertising on mobile - VPAID 2.0
 
@@ -668,9 +656,7 @@ This issue was resolved by handling the unsafe characters and by allowing the ad
 
 This issue was resolved by updating the logic to unhide player view if a VPAID ad fails to play.
 
-** **
-
-**1.4.23** (1.4.23.641) for iOS 6.0+
+**Version 1.4.23** (1.4.23.641) for iOS 6.0+
 
 * [ZD #18016] - No response from Primetime SDK with a bad network condition
 
@@ -696,7 +682,7 @@ This issue was resolved by improving the handling of third-party VAST ad tags th
 
 The issue where the  TVSDK  that was returning a 101000 error while starting playback on Adobe Access DRM streams has been fixed.
 
-**1.4.22** (1.4.22.627) for iOS 6.0+
+**Version 1.4.22** (1.4.22.627) for iOS 6.0+
 
 * [ZD #18709] - Crash in the  TVSDK  for iOS
 
@@ -789,7 +775,7 @@ JavaScript mime type was not always being included or considered as a valid mime
 
 The issue where some of the creatives are not being repackaged has been fixed.
 
-**1.4.19** (1.4.19.563) for iOS 6.0+
+**Version 1.4.19** (1.4.19.563) for iOS 6.0+
 
 * ZD #18639] - The TVSDK uses excessive CPU/resources on a lengthy hot-recording asset
 
@@ -799,7 +785,7 @@ This issue was resolved by optimizing the DRM m3u8 playlist rewrite to cache bit
 
 This issue was resolved by updating the PTMediaPlayer.drmManager API implementation to pick up DRMManager from the DRM framework.
 
-**1.4.18** ( 1.4.18.557) for iOS 6.0+
+**Version 1.4.18** ( 1.4.18.557) for iOS 6.0+
 
 * [ZD #18844] Tracking  playhead  for live content in the iOS player.
 
@@ -809,7 +795,7 @@ This issue was resolved by allowing the applications to set their own  playhead 
 
 This issue was resolved by removing the default value for the player's name.
 
-**1.4.17** (1.4.17.545) for iOS 6.0+
+**Version 1.4.17** (1.4.17.545) for iOS 6.0+
 
 * Zendesk #2228] - Enhance the  TVSDK  to return JSON response of the fetching of a manifest
 
@@ -837,7 +823,7 @@ All of the warnings have been resolved.
 
 **Note**: tvOS-compatible libraries have been added for  TVSDK .
 
-**1.4.16** (1.4.16.1454)
+**Version 1.4.16** (1.4.16.1454)
 
 * Zendesk #3875 - Tab S Crashes during playback
 
@@ -863,7 +849,7 @@ This crash happens while calling MediaCodecList and MediaCodecInfo APIs when che
 
 This issue was resolved by providing support for the Android CTS font map.
 
-**1.4.15** (1.4.15.512) for iOS 6.0+
+**Version 1.4.15** (1.4.15.512) for iOS 6.0+
 
 **Note**: The Nielsen module has been removed from the TVSDK build, but the  TVSDK  will be updated in the near future with a new Nielsen integration module.
 
@@ -879,13 +865,13 @@ Fixed a reported crash when preparing subtitles/alternate audio.
 
 Allowed re-initializing of the video heartbeat tracker during a linear stream playback session.
 
-**1.4.14** (1.4.14.498) for iOS 6.0+
+**Version 1.4.14** (1.4.14.498) for iOS 6.0+
 
 * [ZD #17260] - Crash on playlistManagerForURL
 
 Fixed an intermittent crash due to concurrency issues.
 
-**1.4.13** (iOS 6.0+)
+**Version 1.4.13** (iOS 6.0+)
 
 * [ZD #3304] - VAST 3.0 [ERRORCODE] macro not being populated
 
@@ -901,13 +887,13 @@ Fixed a bug where the video length was being reported incorrectly.
 
 To properly support iOS 9, you need to configure the exceptions of the Application Transportation Security. For the purpose of the demo, the ATS is disabled completely.
 
-**1.4.12** (1.4.12.464) for iOS 6.0+
+**Version 1.4.12** (1.4.12.464) for iOS 6.0+
 
 * [ZD #4521] CRS Testing Client Side and SSAI
 
 Fixed incorrect reverse MD5 in 3P URL.
 
-**1.4.12** (1.4.12.463) for iOS 6.0+
+**Version 1.4.12** (1.4.12.463) for iOS 6.0+
 
 * [ZD #2751] CSAI and CRS | Enhance: Handle dynamic elements in certain media file URLs.
 
@@ -929,7 +915,7 @@ Resolved with  fix  for ZD #4279
 
 Fixed bug when an Ad asset was using a relative redirect URL
 
-**1.4.9** (1.4.9.427) for iOS 6.0+
+**Version 1.4.9** (1.4.9.427) for iOS 6.0+
 
 * [ZD #3075] Internet Reachability Issue - iOS
 
@@ -943,46 +929,46 @@ Updated PTPlaybackInformation to expose the updated indicatedBitrate. Updated BI
 
 Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad break start and complete pings for empty ad breaks 
 
-**1.4.8** (1.4.8.402)
+**Version 1.4.8** (1.4.8.402)
 
 * [ZD #3158] IOS 7 crashes in Full Event Replays
 
-** 1.4.7** (1.4.7.382)
+**Version 1.4.7** (1.4.7.382)
 
 * [ZD #2197] Tracking ad errors. Added notification for asset failed to load manifest.
 * [ZD #2894] Player Makes 4  top level  manifest requests during playback.
 * [ZD #2992] Auditude Reporting weird durations and identifiers.
 
-**1.4.6**(1.4.6.325)
+**Version 1.4.6**(1.4.6.325)
 
 * [ZD #2197] Tracking ad errors. Added notification for asset failed to load manifest
 
-**1.4.5** (1.4.5.283)
+**Version 1.4.5** (1.4.5.283)
 
 * [ZD #2141] Analytics implementation for TreeHouse app, added AdobeAnalyticsPlugin.a library to build  package .
 * Video Heartbeats Library update to 1.4.1.2
 * [PTPALY-4226] [related to ZD #2423] Performing DRM Reset can result in deletion of Application Document data.
 
-**1.4.4** (1.4.4.242)
+**Version 1.4.4** (1.4.4.242)
 
 * Video Heartbeats Library (VHL) update to 1.4.1.
 
 * [ZD #2435] TV SDK documentation on analytics needs updates
 
-**1.4.2 **(1.4.2.210 : iOS 6.0+)
+**Version 1.4.2** (1.4.2.210 : iOS 6.0+)
 
 * [ZD #1129] _player.currentItem.audioOptions returning empty
 * [ZD #2109] Primetime PSDK 1.4.1.125 doesn't work with Xcode 5.1.1
 * [ZD #2137] Crash in PSDK on iOS when DRM metadata cannot be loaded
 
-**1.4.1 **(1.4.1.125)
+**Version 1.4.1** (1.4.1.125)
 
 * [ZD #1107] CocoaLumberjack duplicate symbols
 * [ZD #1644] Modify iOS User Agent for Targeting and Reporting
 * [ZD #1850] Cocoa Lumberjack files included in iOS SDK
 * [ZD#1908] Custom Tags are ignored by PSDK if there is more than 1
 
-**1.4.0** (1.4.0.32)
+**Version 1.4.0** (1.4.0.32)
 
 * Zendesk #1024 - Feature to remove  ad  from stream via manifest
 

@@ -280,7 +280,7 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 ## Resolved issues {#resolved-issues}
 
-#### Android TVSDK 2.7 {#android-tvsdk}
+### Android TVSDK 2.7 {#android-tvsdk}
 
 * ZD#37166 - Error tracking call gets fired even when the ad is played fine.   
 * ZD#37134 - Wrong Ad IDs are returned, in case, wrapper(3P) Ad is present with multiple ads in VMAP response.

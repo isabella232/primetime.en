@@ -14,7 +14,8 @@ snippet: y
 
 The normalize rule defines a URL transformation to apply to a source creative URL obtained from a VAST/VMAP response.
 
-#### The normalize rule has the following attributes and possible values:
+## The normalize rule has the following attributes and possible values:
+
 <table id="table_ljp_tgx_hz">  
  <thead> 
   <tr> 

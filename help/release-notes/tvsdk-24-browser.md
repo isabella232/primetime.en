@@ -47,7 +47,7 @@ This release includes the following information:
 
 This release of Browser TVSDK provides new features that you can use to enhance your video applications.
 
-#### New in 2.4.12 Update (Build 204) {#new-in-update-build}
+### New in 2.4.12 Update (Build 204) {#new-in-update-build}
 
 The following addition is available as part of Browser TVSDK 2.4.12 Update (Build 204):
 
@@ -299,7 +299,7 @@ This release supports MP3 audio playback on browsers with Media Source Extension
 
 Browser TVSDK has specific requirements for the levels of platforms and software that it needs to run on. The following platforms and software levels are supported:
 
-#### Desktop configurations {#desktop-configurations}
+### Desktop configurations {#desktop-configurations}
 
 * Microsoft Windows 7:
 
@@ -449,14 +449,12 @@ Here is a list of the supported and unsupported features for this release:
    <td valign="top" width="112"><p>Playback</p> </td> 
    <td valign="top" width="112"><p>MP3 VOD</p> </td> 
    <td valign="top" width="112"><p>General Playback (Play, Pause, Seek)</p> </td> 
-   <td valign="top" width="112"><p>Not Supported</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-  </tr> 
- </tbody> 
+   <td valign="top" width="112"><p>Not Supported</p> </td>
+   <td valign="top" width="112"><p>Y</p> </td>
+   <td valign="top" width="112"><p>Y</p> </td>
+  </tr>
+ </tbody>  
 </table>
-
-** **
 
 1 The Browser TVSDK Video tag does not support streaming and DRM. The codec and container support is not the same across all browsers.
 
@@ -1325,7 +1323,7 @@ The following features are supported:
 
 ## Issues fixed {#issues-fixed}
 
-#### Issues fixed in version 2.4.12 Update (Build 204) {#issues-fixed-in-version-update-build}
+### Issues fixed in version 2.4.12 Update (Build 204) {#issues-fixed-in-version-update-build}
 
 The following issues are fixed in Browser TVSDK verison 2.4.12 Update (Build 204):
 
@@ -1393,9 +1391,7 @@ The following issues are fixed in Browser TVSDK verison 2.4.9:
 
 • **13407**: DASH streams may stall if Firefox stops sending "ontimeupdate" event during playback.
 
-• **16380**: During Muxed Audio Video Content Playback of segments having non-matching start times via MSE, Audio Sync Error between Representations accumulates on ABR switches, ultimately resulting in Error (Chromium issue
-
-#663686).
+• **16380**: During Muxed Audio Video Content Playback of segments having non-matching start times via MSE, Audio Sync Error between Representations accumulates on ABR switches, ultimately resulting in Error (Chromium issue #663686).
 
 • **17985**: On playing particular ISO-BMFF stream on Firefox browser, playback gets stuck(Firefox issue#1342913). This is fixed since Firefox v53.
 
@@ -1525,7 +1521,7 @@ The following issues were fixed in version 2.4.4:
 
 The limitations and known issues in Browser TVSDK are mentioned below.
 
-#### Table 16: Core Playback Features {#table-core-playback-features}
+### Table 16: Core Playback Features {#table-core-playback-features}
 
 <table border="1" cellpadding="1" cellspacing="0" width="100%"> 
  <tbody> 

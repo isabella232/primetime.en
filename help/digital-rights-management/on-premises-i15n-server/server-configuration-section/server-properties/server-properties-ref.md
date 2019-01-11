@@ -11,7 +11,8 @@ snippet: y
 
 <a id="section_EC8810492A454BDBA6013FE376360F4E"></a>
 
-#### Individualization Server
+## Individualization Server
+
 <table id="table_ats_tk2_jr">  
  <thead> 
   <tr> 

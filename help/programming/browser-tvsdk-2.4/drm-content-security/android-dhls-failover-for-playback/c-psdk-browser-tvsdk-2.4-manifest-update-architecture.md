@@ -30,7 +30,7 @@ By default, this feature is turned off. If your application turns it on by setti
 1. If the update is successful, the Browser TVSDK dispatches a `MediaPlayerItemEvent.MASTER_UPDATED` event. 
 1. If the update is not successful, playback continues with the set-up from before this update.
 
-### Example 1 {#example_DB55F2B9D98741628C9B973E47A0B6A0}
+## Example 1 {#example_DB55F2B9D98741628C9B973E47A0B6A0}
 
 The following bit rates are broadcasting live:
 

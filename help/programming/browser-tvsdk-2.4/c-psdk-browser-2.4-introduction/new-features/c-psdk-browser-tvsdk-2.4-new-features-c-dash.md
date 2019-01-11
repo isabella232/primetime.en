@@ -80,21 +80,17 @@ The following features are supported:
 
  -->
 
-#### DASH integrations
-|  Category  | Content type  | Feature  |   |
+## DASH integrations
+
+|  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|
-|  Integrations  | VOD + Live  | Adobe Analytics VHL integration  | ![](assets/supported15.png)
-
-|
-|  Integrations  | VOD + Live  | Billing  | ![](assets/supported15.png)
-
-|
+|  Integrations  | VOD + Live  | Adobe Analytics VHL integration  | ![](assets/supported15.png)|
+|  Integrations  | VOD + Live  | Billing  | ![](assets/supported15.png)|
 |  Integrations  | VOD + Live  | Browserify  | ![](assets/supported15.png)
 
-|
-
 #### DASH advanced ad insertion features (CSAI)
-|  Category  | Content type  | Feature  |   |
+
+|  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome   |
 |---|---|---|---|
 |  Ad Insertion  | VOD  | Ad only  | Not Supported  |
 |  Ad Insertion  | VOD  | Targeting parameters  | VOD only  |
@@ -105,7 +101,8 @@ The following features are supported:
 |  Ad Insertion  | VOD  | VPAID 2.0  | Not Supported  |
 
 #### DASH core ad insertion features (CSAI)
-|  Category  | Content type  | Feature  |   |
+
+|  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|
 |  Ad Insertion  | VOD + Live  | Pre-roll  | VOD only  |
 |  Ad Insertion  | VOD + Live  | Mid-roll  | VOD only  |
@@ -117,6 +114,7 @@ The following features are supported:
 |  Ad Insertion  | VOD + Live  | CRS v3.1  | VOD only  |
 
 #### DASH content protection features
+
 <table id="table_hrb_p2g_xx">  
  <thead> 
   <tr> 
@@ -162,58 +160,33 @@ The following features are supported:
 </table>
 
 #### DASH advanced playback features
-|  Category  | Content type  | Feature  |   |
+
+|  Category  | Content type  | Feature  | HTML5, FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|
-|  Playback  | VOD  | Playback at offset  | ![](assets/supported15.png)
-
-|
-|  Playback  | VOD  | Audio-only playback  | ![](assets/supported15.png)
-
-|
-|  Playback  | VOD  | Trick play  | ![](assets/supported15.png)
-
-|
-|  Playback  | VOD  | Smooth Trick Play  | ![](assets/supported15.png)
-
-|
+|  Playback  | VOD  | Playback at offset  | ![](assets/supported15.png)|
+|  Playback  | VOD  | Audio-only playback  | ![](assets/supported15.png)|
+|  Playback  | VOD  | Trick play  | ![](assets/supported15.png)|
+|  Playback  | VOD  | Smooth Trick Play  | ![](assets/supported15.png)|
 |  Playback  | VOD + Live  | ID3 parsing  | Not Supported  |
 |  Playback  | VOD  | Multi-period support  | VOD only  |
 |  Playback  | VOD + Live  | Tokenized streams  | Not Supported  |
-|  Playback  | VOD + Live  | Billing  | ![](assets/supported15.png)
-
-|
-|  Playback  | VOD + Live  | Browserify  | ![](assets/supported15.png)
-
-|
+|  Playback  | VOD + Live  | Billing  | ![](assets/supported15.png)|
+|  Playback  | VOD + Live  | Browserify  | ![](assets/supported15.png)|
 
 #### DASH core playback features
-|  Category  | Content type  | Feature  |   |
+
+|  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|
-|  Playback  | VOD + Live  | General playback (Play, Pause, Seek)  | ![](assets/supported15.png)
-
-|
+|  Playback  | VOD + Live  | General playback (Play, Pause, Seek)  | ![](assets/supported15.png)|
 |  Playback  | FER VOD  | General playback (Play, Pause, Seek)  | Not Supported  |
-|  Playback  | VOD + Live  | Adaptive bit rate  | ![](assets/supported15.png)
-
-|
-|  Playback  | VOD + Live  | 608/708 captions  | ![](assets/supported15.png)
-
-|
+|  Playback  | VOD + Live  | Adaptive bit rate  | ![](assets/supported15.png)|
+|  Playback  | VOD + Live  | 608/708 captions  | ![](assets/supported15.png)|
 |  Playback  | VOD + Live  | WebVTT  | VOD only  |
 |  Playback  | VOD + Live  | Failover  | VOD only  |
-|  Playback  | VOD + Live  | QoS and Player notifications  | ![](assets/supported15.png)
-
-|
-|  Playback  | VOD + Live  | Support for cookie headers  | ![](assets/supported15.png)
-
-|
-|  Playback  | VOD + Live  | Setting buffer control parameters  | ![](assets/supported15.png)
-
-|
-|  Playback  | VOD + Live  | Set adaptive bit rate controls  | ![](assets/supported15.png)
-
-|
+|  Playback  | VOD + Live  | QoS and Player notifications  | ![](assets/supported15.png)|
+|  Playback  | VOD + Live  | Support for cookie headers  | ![](assets/supported15.png)|
+|  Playback  | VOD + Live  | Setting buffer control parameters  | ![](assets/supported15.png)|
+|  Playback  | VOD + Live  | Set adaptive bit rate controls  | ![](assets/supported15.png)|
 |  Playback  | VOD + Live  | Custom tags (EventStream)  | VOD only (Inline)  |
 |  Playback  | VOD + Live  | Late-binding audio  | VOD only  |
 |  Playback  | VOD + Live  | 302 redirect  | VOD only  |
-

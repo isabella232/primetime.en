@@ -51,7 +51,7 @@ Your application must complete the following tasks:
    }
    ```
 
-### Parsing Nielsen ID3 tags {#example_3B51E9D4AF2449FAA8E804206F873ECF}
+## Parsing Nielsen ID3 tags {#example_3B51E9D4AF2449FAA8E804206F873ECF}
 
 To extract the ID3 tag for parsing, use the following on the `onMediaPlayerSubscribedTagIdentified` method: 
 

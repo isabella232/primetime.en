@@ -18,14 +18,16 @@ java -jar AdobePolicyManager.jar
 </i class="+ topic>
 ```
 
-#### Commands:
+## Commands:
+
 |  Command  | Description  |
 |---|---|
 |  `new`  | Creates a new DRM policy  |
 |  `detail`  | Describes an existing DRM policy  |
 |  `update`  | Updates an existing DRM policy  |
 
-#### Options:
+### Options:
+
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_q5h_cpy_n4">  
  <thead class="- topic/thead "> 
   <tr rowsep="1" class="- topic/row "> 

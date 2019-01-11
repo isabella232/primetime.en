@@ -14,7 +14,8 @@ snippet: y
 
 The priority rule defines the priority order of the ad creatives that will be selected for playback from a VAST/VMAP response.
 
-#### A Priority rule has the following attributes and possible values:
+## A Priority rule has the following attributes and possible values:
+
 <table id="table_ljp_tgx_hz">  
  <thead> 
   <tr> 

@@ -36,7 +36,8 @@ java -jar AdobePolicyUpdateListManager.jar -d
 
 * `filename` The name of the policy update list file.
 
-#### Command-line options
+## Command-line options
+
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_ghb_jqy_n4">  
  <thead class="- topic/thead "> 
   <tr rowsep="1" class="- topic/row "> 
