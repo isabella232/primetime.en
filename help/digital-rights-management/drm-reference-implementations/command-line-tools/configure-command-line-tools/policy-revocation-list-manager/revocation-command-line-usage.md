@@ -31,7 +31,8 @@ java -jar AdobeRevocationListManager.jar
 * `destfile` specifies the name of the file in which the revocation list properties are saved. 
 * `crlNumber` represents a non-negative version number of the Certificate Revocation List (CRL). You need to increment this number each time the CRL is updated.
 
-#### Command-line Options:
+## Command-line Options:
+
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_a3y_wqy_n4">  
  <thead class="- topic/thead "> 
   <tr rowsep="1" class="- topic/row "> 

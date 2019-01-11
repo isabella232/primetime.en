@@ -34,7 +34,7 @@ The Primetime DRM SDK provides a Java API to complete these tasks. The SDK inclu
 
 The features described below are new in this release.
 
-## 5.3 New Features {#section_F6BA874CEAE24610920BC3A4C6D20EBA}
+## New Features {#section_F6BA874CEAE24610920BC3A4C6D20EBA}
 
 * **Hard Stop -** You can specify whether playback stops or continues at the end of a playback window. 
 * **Resolution dependent output controls -** You can specify output constraints based on pixel resolutions. 

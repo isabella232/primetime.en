@@ -17,7 +17,8 @@ You can mark, delete, and replace time ranges in VOD streams by using different 
 >
 >When there is a conflict between time ranges and ad signaling modes, TVSDK gives the time ranges priority.
 
-#### Signaling Mode / Metadata Combination Behaviors
+## Signaling Mode / Metadata Combination Behaviors
+
 <table>  
  <thead> 
   <tr> 

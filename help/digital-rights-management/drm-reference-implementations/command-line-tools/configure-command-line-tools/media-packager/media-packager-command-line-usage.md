@@ -70,7 +70,8 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
 >
 >During packaging, the Media Packager can no longer generate a [!DNL .header] file by default. To generate a [!DNL .header] file, use the `-h` option during packaging.
 
-#### Options:
+## Options:
+
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_wgz_spy_n4">  
  <thead class="- topic/thead "> 
   <tr rowsep="1" class="- topic/row "> 

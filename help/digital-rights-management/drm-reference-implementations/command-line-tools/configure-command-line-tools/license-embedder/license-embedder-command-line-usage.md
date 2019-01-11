@@ -22,7 +22,8 @@ java -jar AdobeLicenseEmbedder.jar sourcefile destfile [options]
 
 The following table describes the command line options that you can specify: 
 
-#### Options:
+## Options:
+
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_hnl_2sy_n4">  
  <thead class="- topic/thead "> 
   <tr rowsep="1" class="- topic/row "> 

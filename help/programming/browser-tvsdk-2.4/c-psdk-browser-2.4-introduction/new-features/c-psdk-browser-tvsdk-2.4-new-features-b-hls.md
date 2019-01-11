@@ -81,7 +81,8 @@ Removed Nielsen row
 
  -->
 
-#### HLS integrations
+## HLS integrations
+
 <table id="table_FFFBDCBA719D4BABBD65DC2F7AC34A5A">  
  <thead> 
   <tr> 
@@ -108,7 +109,8 @@ Removed Nielsen row
  </tbody> 
 </table>
 
-#### HLS advanced ad insertion features (CSAI)
+### HLS advanced ad insertion features (CSAI)
+
 <table id="table_7F018C879D254291A6803C2F11CEC589">  
  <thead> 
   <tr> 
@@ -176,6 +178,7 @@ Removed Nielsen row
 </table>
 
 #### HLS core ad insertion features (CSAI)
+
 <table id="table_8889329FC60F4B68BA6E898B632AB59C">  
  <thead> 
   <tr> 
@@ -259,6 +262,7 @@ Removed Nielsen row
 </table>
 
 #### HLS content protection features
+
 <table id="table_613AF7D254424965AE11C5189D9A7BA8">  
  <thead> 
   <tr> 
@@ -302,6 +306,7 @@ Removed Nielsen row
 </table>
 
 #### HLS advanced playback features
+
 <table id="table_EEF70EB81AB544519E71FD8CC306CC00">  
  <thead> 
   <tr> 
@@ -394,6 +399,7 @@ Removed Nielsen row
 </table>
 
 #### HLS core playback
+
 <table id="table_0524BD3F2CD1499D95BD4A9D4F451C1B">  
  <thead> 
   <tr> 

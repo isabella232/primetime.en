@@ -18,7 +18,7 @@ DRM 5.3.1 Release Notes describe the new features and the known issues in DRM 5.
 
 ## New Features {#new-features}
 
-#### Version 5.3 {#version}
+### Version 5.3 {#version}
 
 * **Secure Stop -** You can specify whether playback stops or continues at the end of a playback window.
 * **Resolution Based Output Protection (RBOP) -** You can specify the output constraints based on pixel resolutions.
@@ -37,7 +37,7 @@ This change is backwards-compatible with non-CDM platforms, such as Flash Player
 
 ## Known Issues {#known-issues}
 
-#### Version 5.3 {#version-1}
+### Version 5.3 {#version-1}
 
 * `Hasher.bat (flashaccess-hasher.jar)` outputs log messages to `flashaccess-global.log.`You must ensure that the `flashaccess-global.log` file is in the same directory with Hasher.bat.
 

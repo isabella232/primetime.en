@@ -40,7 +40,8 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 
 <a id="section_1E22012EE4B94BB2974D3B16DE8812D9"></a>
 
-#### Token Query Parameters
+## Token Query Parameters
+
 <table id="table_ww1_hcs_pv">  
  <thead> 
   <tr> 
@@ -63,7 +64,8 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
  </tbody> 
 </table>
 
-#### License Query Parameters
+### License Query Parameters
+
 <table id="table_yfy_hcs_pv">  
  <thead> 
   <tr> 
@@ -151,6 +153,7 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 </table>
 
 #### Token Restriction Query Parameters
+
 <table id="table_rxj_2l5_pv">  
  <thead> 
   <tr> 
@@ -169,6 +172,7 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 </table>
 
 #### Correlation Query Parameters
+
 |  **Query Parameter** | **Description** | **Required?** |
 |---|---|---|
 |  `cookie`  | Arbitrary string up to 32 characters long carried in the token and logged by the token redemption server. Can be used to correlate log entries at the redemption server and those at the service provider’s servers.  | No  |
@@ -176,6 +180,7 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 <a id="section_6BFBD314C77C40C4B172ABBDD2D8D80E"></a>
 
 #### HTTP Response
+
 |  **HTTP Status Code** | **Description** | **Content-Type** | **Entity Body Contains** |
 |---|---|---|---|
 |  `200 OK`  | No error.  | `text/uri-list`  | License acquisition URL + token  |
@@ -185,6 +190,7 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 |  `50x Server Error`  | Server error  | `text/html` or `application/json`  | Error description  |
 
 #### Event Error Codes
+
 <table id="table_agj_gqx_pv">  
  <thead> 
   <tr> 

@@ -296,7 +296,7 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 ## Resolved issues {#resolved-issues}
 
-#### Android TVSDK 3.0 {#android-tvsdk}
+### Android TVSDK 3.0 {#android-tvsdk}
 
 * ZD#33740 - TVSDK throws an unneeded warning just after creating a MediaPlayer object and calling replaceCurrentResource()
 

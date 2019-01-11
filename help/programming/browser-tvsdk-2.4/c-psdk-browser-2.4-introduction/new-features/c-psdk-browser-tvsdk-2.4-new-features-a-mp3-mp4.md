@@ -24,7 +24,8 @@ Browser TVSDK supports a number of MP3 and MP4 features that you can implement t
 
 ## MP3 Audio Features {#section_C900C301291A40529D02EACC3CD4D55A}
 
-#### Core Playback
+### Core Playback
+
 <table id="table_dy5_ctf_xx">  
  <thead> 
   <tr> 
@@ -53,7 +54,8 @@ Browser TVSDK supports a number of MP3 and MP4 features that you can implement t
 
 ## MP4 Video Features {#section_1A8CBC5AA4FA4477813FD9EFF26AC104}
 
-#### Core Playback
+### Core Playback
+
 <table id="table_pkt_yyf_xx">  
  <thead> 
   <tr> 
@@ -80,7 +82,8 @@ Browser TVSDK supports a number of MP3 and MP4 features that you can implement t
  </tbody> 
 </table>
 
-#### Core Ad insertion
+### Core Ad insertion
+
 <table id="table_v2v_z1g_xx">  
  <thead> 
   <tr> 

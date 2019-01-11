@@ -17,7 +17,8 @@ Context for the current task
 
 * Update the following packager properties prior to using the configuration file to package your content:
 
-#### User-Supplied XML Configuration File Properties
+### User-Supplied XML Configuration File Properties
+
 |  Property Name  | Description  |
 |---|---|
 |  `policy_file`  |  policy file path. Adobe shall provide several pre-configured policies to choose from.  |

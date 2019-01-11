@@ -54,12 +54,12 @@ The `AdClickedEvent` contains the information necessary to process the click-thr
 1. Add event listeners for the MediaPlayer ad start, ad clicked, and ad completed notifications.
 
    ```
-   [ 
-<i>your_player</i>]().addEventListener(AdobePSDK.PSDKEventType.AD_STARTED, onAdStarted); 
-   [ 
-<i>your_player</i>]().addEventListener(AdobePSDK.PSDKEventType.AD_COMPLETED, onAdCompleted); 
-   [ 
-<i>your_player</i>]().addEventListener(AdobePSDK.PSDKEventType.AD_CLICKED, onAdClickedEvent);
+
+<i>your_player</i>().addEventListener(AdobePSDK.PSDKEventType.AD_STARTED, onAdStarted); 
+    
+<i>your_player</i>().addEventListener(AdobePSDK.PSDKEventType.AD_COMPLETED, onAdCompleted); 
+    
+<i>your_player</i>().addEventListener(AdobePSDK.PSDKEventType.AD_CLICKED, onAdClickedEvent);
    ```
 
 1. Add event handlers.
