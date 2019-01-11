@@ -88,7 +88,7 @@ The following features are supported:
 |  Integrations  | VOD + Live  | Billing  | ![](assets/supported15.png)|
 |  Integrations  | VOD + Live  | Browserify  | ![](assets/supported15.png)
 
-#### DASH advanced ad insertion features (CSAI)
+### DASH advanced ad insertion features (CSAI)
 
 |  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome   |
 |---|---|---|---|

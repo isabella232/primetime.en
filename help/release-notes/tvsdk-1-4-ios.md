@@ -18,7 +18,7 @@ TVSDK 1.4 for iOS Release Notes describe what is new or changed, the resolved an
 
 ## New features {#new-features}
 
-###Version 1.4.45
+### Version 1.4.45
 
 * In order to comply with Xcode10, TVSDK has moved from “libstdc++” to “libc++”, and as a result the minimum supported version is iOS 7. Earlier it was iOS 6.
 
@@ -178,7 +178,7 @@ DRM Policies can now specify the highest resolution permitted, depending on the 
 >* Live trick play.
 >
 
-###Version 1.4.43
+### Version 1.4.43
 
 * TVSDK 1.4.43 is certified for iOS 11.
 
@@ -230,7 +230,7 @@ Comment Type: draft
 
  -->
 
-###Version 1.4.45 {#ios-tvsdk}
+### Version 1.4.45 {#ios-tvsdk}
 
 * Ticket #36294 - iOS TVSDK not functional with Xcode 10
 

@@ -61,13 +61,13 @@ Version 1.3.1 refers to the hotfix. Following enhancements make it a recommended
 
 ### Bug Fixes included in release 1.3.1 {#bug-fixes-included-in-release-1}
 
-- 3759167 - Not all SCTE35 cues make it to the output manifest due to timestamp anomaly while packaging. Apply pts_adjustment on the SpliceTime in the TimeSignal of SpliceInfoSection in SCTE35 message
+* 3759167 - Not all SCTE35 cues make it to the output manifest due to timestamp anomaly while packaging. Apply pts_adjustment on the SpliceTime in the TimeSignal of SpliceInfoSection in SCTE35 message
 
 ## Known issues in release 1.3.1 {#known-issues-in-release}
 
-- 3717039 - When the packager is configured to produce DPI simple mode cues, it really should be looking for specific signal types, such as splice insert or placement opportunity, and converting only those to simple mode cues. It should ignore other types of signals such as program start, network start etc.
+* 3717039 - When the packager is configured to produce DPI simple mode cues, it really should be looking for specific signal types, such as splice insert or placement opportunity, and converting only those to simple mode cues. It should ignore other types of signals such as program start, network start etc.
 
-- 3718598 - When Origin Server is configured for serving protected contents with HSM access enabled the backend LunaSA client does a frequent communication with HSM module
+* 3718598 - When Origin Server is configured for serving protected contents with HSM access enabled the backend LunaSA client does a frequent communication with HSM module
 
 ## What’s new in Primetime Streaming Server 1.3 [APRIL Release] {#what-s-new-in-primetime-streaming-server-april-release}
 
@@ -149,7 +149,7 @@ Several performance enhancements has been incorporated to the JIT packaging capa
 **Install streaming server**
 
 1. Download the Java SE and JDK software from the [Oracle site](http://www.oracle.com/technetwork/java/javase/downloads/index.html)and follow the installation instructions.
-1. Extract the Adobe Primetime-Streaming Server 1.4 archive file, Primetime- StreamingServer-1-4-0-b206-12042014.zip to your disk.
+2. Extract the Adobe Primetime-Streaming Server 1.4 archive file, Primetime- StreamingServer-1-4-0-b206-12042014.zip to your disk.
 
 **Start the Primetime Streaming Server**
 

@@ -761,105 +761,105 @@ A new API has been added to set the user agent for ad related calls, auditudeSet
 
 **Version 1.4.8** (1324)
 
-   * Zendesk #1218 - 106000.33 Error with local ... If loading manifest in FragmentedHTTPStreamer::ThreadParseManifest() fails, check if URL domain is localhost and if so, change domain to 127.0.0.1 and recall ThreadParseManifest. 
-    * Zendesk #3072 - Automatic switching to lower bitrates. Changed buffer length calculation to skip zero PTS payload. 
-    * Zendesk #3168 - WebVTT subtitles only displayed for first 10 secs. 
-    * Zendesk #3193 - Request for a Profile change API in TVSDK, PlaybackEventListener.onProfileChanged() has been added.
+* Zendesk #1218 - 106000.33 Error with local ... If loading manifest in FragmentedHTTPStreamer::ThreadParseManifest() fails, check if URL domain is localhost and if so, change domain to 127.0.0.1 and recall ThreadParseManifest. 
+* Zendesk #3072 - Automatic switching to lower bitrates. Changed buffer length calculation to skip zero PTS payload. 
+* Zendesk #3168 - WebVTT subtitles only displayed for first 10 secs. 
+* Zendesk #3193 - Request for a Profile change API in TVSDK, PlaybackEventListener.onProfileChanged() has been added.
 
 **Version 1.4.7** (1311)
 
-   * Zendesk #2197 - Tracking ad errors. Added notification for asset failed to load manifest 
-    * Zendesk #2575 - PSDK ignores MARK custom in-stream ad before video 
-    * Zendesk #2719 - Win Death with auditude ads, fixed beacon tracking when redirected to relative url in auditude plugin 
-    * Zendesk #2760 - DISCONTINUITY tag ignored during TrickPlay mode 
-    * Zendesk #2805 - Player Crash at Beginning of Playback, same fix as Zendesk #2719 
-    * Zendesk #2817 - Android player - The player sometimes hangs and stops playing, fixed by extending the decode buffers from 2.0 to 3.0 seconds 
-    * Zendesk #2839 - Does Adobe Primetime PSDK support ARMv8 chipsets?, added fix for crash found on Galaxy S6. 
-    * Zendesk #2885 - Auditude Crashing playback, same fix as Zendesk #2719 
-    * Zendesk #2895 - Live HLS failure consistently after 10 minutes of playback 
-    * Zendesk #2925 - Feedback regarding Android dev build (1.4.5), on certain devices when we queue the packet to the input queue, if the PTS is negative, the decoder goes into a weird state that we always get a negative output PTS for future packets. The fix will set the input PTS to zero if it is negative to avoid this problem. 
-    * PTPLAY-4645 - Turn off RC4 cipher support in openssl. There are known exploits for RC4. This means that if an attempt is made to connect with a server that only supports RC4, it will fail.
+* Zendesk #2197 - Tracking ad errors. Added notification for asset failed to load manifest 
+* Zendesk #2575 - PSDK ignores MARK custom in-stream ad before video 
+* Zendesk #2719 - Win Death with auditude ads, fixed beacon tracking when redirected to relative url in auditude plugin 
+* Zendesk #2760 - DISCONTINUITY tag ignored during TrickPlay mode 
+* Zendesk #2805 - Player Crash at Beginning of Playback, same fix as Zendesk #2719 
+* Zendesk #2817 - Android player - The player sometimes hangs and stops playing, fixed by extending the decode buffers from 2.0 to 3.0 seconds 
+* Zendesk #2839 - Does Adobe Primetime PSDK support ARMv8 chipsets?, added fix for crash found on Galaxy S6. 
+* Zendesk #2885 - Auditude Crashing playback, same fix as Zendesk #2719 
+* Zendesk #2895 - Live HLS failure consistently after 10 minutes of playback 
+* Zendesk #2925 - Feedback regarding Android dev build (1.4.5), on certain devices when we queue the packet to the input queue, if the PTS is negative, the decoder goes into a weird state that we always get a negative output PTS for future packets. The fix will set the input PTS to zero if it is negative to avoid this problem. 
+* PTPLAY-4645 - Turn off RC4 cipher support in openssl. There are known exploits for RC4. This means that if an attempt is made to connect with a server that only supports RC4, it will fail.
 
 **Version 1.4.6 (1282)**
 
-   *  Zendesk #2192 - Bitrate doesn't always lower in poor network conditions, fixed by removing fast switch implementation. 
-    * Zendesk #2631 - Arabic subtitles on Android: Text on multiple lines appears cut-off, fixed by adjusting font size for Arabic fonts. 
-    * Zendesk #2844 - Buffering on Note 4 and Fragment download time isn't accurate.
+*  Zendesk #2192 - Bitrate doesn't always lower in poor network conditions, fixed by removing fast switch implementation. 
+* Zendesk #2631 - Arabic subtitles on Android: Text on multiple lines appears cut-off, fixed by adjusting font size for Arabic fonts. 
+* Zendesk #2844 - Buffering on Note 4 and Fragment download time isn't accurate.
 
 This issue was fixed by adding latency between video segment downloads into bandwidth calculation and having the download time calculation logic use full request cycle time.
 
-   * Zendesk #2908 - Arabic subtitles not working on Nexust 5, 6 and 7, fixed by adding 2 more fallback fonts for Arabic scripts. 
-    * PTPLAY-4627 - update Nielson appsdk to version 1.2.3.7 
-    * PTPLAY-5084 - Live Master Manifest update failover support
+* Zendesk #2908 - Arabic subtitles not working on Nexust 5, 6 and 7, fixed by adding 2 more fallback fonts for Arabic scripts. 
+* PTPLAY-4627 - update Nielson appsdk to version 1.2.3.7 
+* PTPLAY-5084 - Live Master Manifest update failover support
 
 **Version 1.4.5** (1248)
 
-   * Zendesk #1757 - Only audio played or Player crashes for some video bit rate profile, Nexus 4 and Nexus 7 crash fixed 
-    * Zendesk #2072 - TimedMetadata for AdEvent does not contain full URL just "http" 
-    * Zendesk #2192 - Bitrate doesn't always lower in poor network conditions 
-    * Zendesk #2256 - Access to Master Playlist, updated PSDK to dispatch timedMetadata events for subscribed tags on the master playlist. 
-    * Zendesk #2269 - Two different subtitle languages appear on the screen at the same time with WebVTT 
-    * Zendesk #2417 - Player trying to download subtitles before playback start, WebVTT was using the wrong segment number variable for segment number matching. Bug would only show up for media that had segment indices starting at zero. 
-    * Zendesk #2470 - PSDK not returning from SUSPENDED state when bitrate change occurs after suspension. In a special situation when smart seek is called by RestoreGPUResource (restore player from suspend state) and stream switch detected before that, smart seek is unable to complete and result into constant buffering. 
-    * Zendesk #2451 - Closed captioning 'bottom inset', added 'bottomInset' parameter to caption code 
-    * Zendesk #2480 - disabling HTTP 302 redirect optimization, Added support for setting useRedirectedUrl property 
-    * Zendesk #2486 - 3rd party beacons 
-    * Zendesk #2547 - Arabic subtitles: Text should be aligned right-justified
+* Zendesk #1757 - Only audio played or Player crashes for some video bit rate profile, Nexus 4 and Nexus 7 crash fixed 
+* Zendesk #2072 - TimedMetadata for AdEvent does not contain full URL just "http" 
+* Zendesk #2192 - Bitrate doesn't always lower in poor network conditions 
+* Zendesk #2256 - Access to Master Playlist, updated PSDK to dispatch timedMetadata events for subscribed tags on the master playlist. 
+* Zendesk #2269 - Two different subtitle languages appear on the screen at the same time with WebVTT 
+* Zendesk #2417 - Player trying to download subtitles before playback start, WebVTT was using the wrong segment number variable for segment number matching. Bug would only show up for media that had segment indices starting at zero. 
+* Zendesk #2470 - PSDK not returning from SUSPENDED state when bitrate change occurs after suspension. In a special situation when smart seek is called by RestoreGPUResource (restore player from suspend state) and stream switch detected before that, smart seek is unable to complete and result into constant buffering. 
+* Zendesk #2451 - Closed captioning 'bottom inset', added 'bottomInset' parameter to caption code 
+* Zendesk #2480 - disabling HTTP 302 redirect optimization, Added support for setting useRedirectedUrl property 
+* Zendesk #2486 - 3rd party beacons 
+* Zendesk #2547 - Arabic subtitles: Text should be aligned right-justified
 
 **Version 1.4.4** (1195)
 
-   * Zendesk #1158 - Playback fails on Huawei Valiant (Y301A1) 
-    * Zendesk #1709 - Incorrect media size and stretched video 
-    * Zendesk #1757 - Only audio played after profile switch between streams with identical spa/pps data 
-    * Zendesk #2095 - HTTP 307 status (redirection) causes Adobe player to stop the playback 
-    * Zendesk #2126 - Missing TimedMetaData event for last ADEVENT, Subscribed tags which exist after the last segment were not reported to PSDK from AVE 
-    * Zendesk #2227 - Lockups in VideoEngine nativeReset and nativePause 
-    * Bug #3921755 - OpenSSL library update to version 1.0.1L
+* Zendesk #1158 - Playback fails on Huawei Valiant (Y301A1) 
+* Zendesk #1709 - Incorrect media size and stretched video 
+* Zendesk #1757 - Only audio played after profile switch between streams with identical spa/pps data 
+* Zendesk #2095 - HTTP 307 status (redirection) causes Adobe player to stop the playback 
+* Zendesk #2126 - Missing TimedMetaData event for last ADEVENT, Subscribed tags which exist after the last segment were not reported to PSDK from AVE 
+* Zendesk #2227 - Lockups in VideoEngine nativeReset and nativePause 
+* Bug #3921755 - OpenSSL library update to version 1.0.1L
 
 **Version 1.4.3** (1173)
 
-   * Zendesk #1591 - RENDITION_M3U8_ERROR 
-    * Zendesk #1870 - Closed Caption Turning On & Off 
-    * PTPLAY-1818 - Rewind trick play stops at the ad instead of rewinding past it 
-    * PTPLAY-2736 - A previously displayed WebVTT caption is shown on the screen when a stream with WebVTT caption completes playing 
-    * PTPLAY-3773 - A mid-roll ad is not played when stream playback is started after the ad position
+* Zendesk #1591 - RENDITION_M3U8_ERROR 
+* Zendesk #1870 - Closed Caption Turning On & Off 
+* PTPLAY-1818 - Rewind trick play stops at the ad instead of rewinding past it 
+* PTPLAY-2736 - A previously displayed WebVTT caption is shown on the screen when a stream with WebVTT caption completes playing 
+* PTPLAY-3773 - A mid-roll ad is not played when stream playback is started after the ad position
 
 **Version 1.4.2**
 
-   * Zendesk #1561 - HLS client based failover support in primetime. Will use program date time to address failover 
-    * Zendesk #1590 - LoadInfo.MediaDuration is always 0 (not fixed for audio-only) 
-    * Zendesk #1626 - Potential Memory Leak in Player. Not actual Memory leak, issue was with NotificationHistory saving last 1000 notifications, this has been reduced to 100. 
-    * Zendesk #2192 - Bitrate doesn't always lower in poor network conditions
+* Zendesk #1561 - HLS client based failover support in primetime. Will use program date time to address failover 
+* Zendesk #1590 - LoadInfo.MediaDuration is always 0 (not fixed for audio-only) 
+* Zendesk #1626 - Potential Memory Leak in Player. Not actual Memory leak, issue was with NotificationHistory saving last 1000 notifications, this has been reduced to 100. 
+* Zendesk #2192 - Bitrate doesn't always lower in poor network conditions
 
 **Version 1.4.1** (1121)
 
-   * Zendesk #1951 - Lockup in VideoEngine.nativeReset() on 4.0.x devices 
-    * Zendesk #2064 - Native Crash SIGSEGV on specific intel based Android devices 
-    * Zendesk #2075 - Lockup in VideoEngine.nativeReleaseGPUResource on 4.0.x devices
+* Zendesk #1951 - Lockup in VideoEngine.nativeReset() on 4.0.x devices 
+* Zendesk #2064 - Native Crash SIGSEGV on specific intel based Android devices 
+* Zendesk #2075 - Lockup in VideoEngine.nativeReleaseGPUResource on 4.0.x devices
 
 **Version 1.4.1**
 
 Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Android 5.0 (Lollipop)
 
-   * Zendesk #1513 - Android Lollipop support 
-    * Zendesk #1709 - Incorrect media size and stretched video 
-    * Zendesk #1871 - WebVTT captions occasionally disappear then reappear when viewing a livestream with WebVTT captions 
-    * Zendesk #1996 - No timeline markers are seen in PSDK 1.4.0 
-    * Zendesk #2046 - Crash with PSDK 1.4.1.1113, fixed crash for live streams when no ads are returned from auditude 
-    * Bug #3769657 - Update the version of curl to 7.38.0 
-    * PTPLAY-1575 - When ABR playback starts with audio only stream then switches to audio/video stream, the video never renders while the audio continues 
-    * PTPLAY-2499 - Update to OpenSSL to version 1.0.1j to address recent vulnerabilities 
-    * PTPLAY-2632 - Video does not recover after mid roll Ad complete on Android Lollipop 
-    * PTPLAY-2678 - Video stalls during live longevity tests on Android Lollipop
+* Zendesk #1513 - Android Lollipop support 
+* Zendesk #1709 - Incorrect media size and stretched video 
+* Zendesk #1871 - WebVTT captions occasionally disappear then reappear when viewing a livestream with WebVTT captions 
+* Zendesk #1996 - No timeline markers are seen in PSDK 1.4.0 
+* Zendesk #2046 - Crash with PSDK 1.4.1.1113, fixed crash for live streams when no ads are returned from auditude 
+* Bug #3769657 - Update the version of curl to 7.38.0 
+* PTPLAY-1575 - When ABR playback starts with audio only stream then switches to audio/video stream, the video never renders while the audio continues 
+* PTPLAY-2499 - Update to OpenSSL to version 1.0.1j to address recent vulnerabilities 
+* PTPLAY-2632 - Video does not recover after mid roll Ad complete on Android Lollipop 
+* PTPLAY-2678 - Video stalls during live longevity tests on Android Lollipop
 
 **Version 1.4.0**
 
-   * Zendesk #1024 - Feature to remove ad from stream via manifest 
-    * Zendesk #1293 - Closed Caption Track Selection Issue. 
-    * Zendesk #1590 - LoadInfo.MediaDuration is always 0, mediaDuration is now showing the correct value. 
-    * Zendesk #1629 - player/app crashes at end of ad playback on Galaxy S4 
-    * Zendesk #1674 - ClosedCaption Not showing up, correct 708 caption display when 0x03 ETX codes are missing. 
-    * PTPLAY-2157 - Default Closed Captioning styles were returned by getters even if after a different styles has been set and verified visually on the stream. The Closed Caption style properties will now show the value they have been set to.
+* Zendesk #1024 - Feature to remove ad from stream via manifest 
+* Zendesk #1293 - Closed Caption Track Selection Issue. 
+* Zendesk #1590 - LoadInfo.MediaDuration is always 0, mediaDuration is now showing the correct value. 
+* Zendesk #1629 - player/app crashes at end of ad playback on Galaxy S4 
+* Zendesk #1674 - ClosedCaption Not showing up, correct 708 caption display when 0x03 ETX codes are missing. 
+* PTPLAY-2157 - Default Closed Captioning styles were returned by getters even if after a different styles has been set and verified visually on the stream. The Closed Caption style properties will now show the value they have been set to.
 
 ## Known issues in 1.4 {#known-issues-in}
 
@@ -880,9 +880,9 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
 * Reference Implementation - Trick play is not implemented in the sample application
 * On some Android TV devices a black frame can be seen due to a decoder reset at the following transition points:
 
-    * into and out of trickplay mode
-    * switching between late binding audio tracks
-    * from an ad to main content.
+   * into and out of trickplay mode
+   * switching between late binding audio tracks
+   * from an ad to main content.
 
 **Version 1.4.23**
 
