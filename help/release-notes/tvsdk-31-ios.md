@@ -215,7 +215,7 @@ Comment Type: draft
 
  -->
 
-#### Version 3.1 {#ios-tvsdk}
+### Version 3.1 {#ios-tvsdk}
 
 * Ticket# [36313](https://adobeprimetime.zendesk.com/agent/tickets/36313) - Intermittent unpredictable results during Linear Ad Breaks
 
