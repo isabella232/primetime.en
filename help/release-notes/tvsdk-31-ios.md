@@ -28,7 +28,7 @@ TVSDK 3.1 for iOS Release Notes describe what is new or changed, the resolved an
 
     * Fairplay Encrypted CMAF streams with AVC codec playback is now supported.
 
-###Version 3.0.1
+### Version 3.0.1
 
 * No new feature or enhancements in this release.
 
@@ -215,7 +215,7 @@ Comment Type: draft
 
  -->
 
-####Version 3.1 {#ios-tvsdk}
+#### Version 3.1 {#ios-tvsdk}
 
 * Ticket# [36313](https://adobeprimetime.zendesk.com/agent/tickets/36313) - Intermittent unpredictable results during Linear Ad Breaks
 
