@@ -34,6 +34,7 @@ It accepts a Boolean parameters val. If its value is `True`, the client uses the
 ### Version 1.4.42
 
 #### Partial Ad-Break Insertion:
+
 TV-like experience of joining in the middle of an ad without firing the tracking for the partially watched ad.
 
 Example: User joins in the middle (at 40 seconds) of a 90-second ad break consisting of three 30-second ads. This is 10 seconds into the second ad in the break.

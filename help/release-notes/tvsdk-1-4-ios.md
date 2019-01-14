@@ -18,7 +18,7 @@ TVSDK 1.4 for iOS Release Notes describe what is new or changed, the resolved an
 
 ## New features {#new-features}
 
-###Version 1.4.45
+### Version 1.4.45
 
 * In order to comply with Xcode10, TVSDK has moved from “libstdc++” to “libc++”, and as a result the minimum supported version is iOS 7. Earlier it was iOS 6.
 
@@ -178,7 +178,7 @@ DRM Policies can now specify the highest resolution permitted, depending on the 
 >* Live trick play.
 >
 
-###Version 1.4.43
+### Version 1.4.43
 
 * TVSDK 1.4.43 is certified for iOS 11.
 
@@ -204,8 +204,8 @@ This version of the TVSDK has been certified with the FairPlay Support for iOS a
 
   **Note**: Remember the following compilation guidelines:
 
-    * TVSDK tvOs support is limited to non-Adobe DRM encrypted streams. You must remove the reference to drmNativeInterface.framework in your tvOS build settings. AES encrypted streams are still supported.
-    * Apple requires all Apple TV applications to be bitcode enabled, so you must turn this flag on in your project settings.
+  * TVSDK tvOs support is limited to non-Adobe DRM encrypted streams. You must remove the reference to drmNativeInterface.framework in your tvOS build settings. AES encrypted streams are still supported.
+  * Apple requires all Apple TV applications to be bitcode enabled, so you must turn this flag on in your project settings.
 
 ## Resolved issues in 1.4 {#resolved-issues-in}
 
@@ -230,30 +230,30 @@ Comment Type: draft
 
  -->
 
-###Version 1.4.45 {#ios-tvsdk}
+### Version 1.4.45 {#ios-tvsdk}
 
 * Ticket #36294 - iOS TVSDK not functional with Xcode 10
 
-    * Fixed the compilation issues with TVSDK on XCode 10. Due to XCode 10 requirements, apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
+  * Fixed the compilation issues with TVSDK on XCode 10. Due to XCode 10 requirements, apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
 
 * Ticket #36321 - Discrepancy observed in seekable range between PTMediaPlayer and AVPlayer instance in "Playing" state.
 * Ticket #36493 - libstdc++ support on iOS 12
 
-    * Fixed the compilation issues with TVSDK on iOS 12. Apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
+  * Fixed the compilation issues with TVSDK on iOS 12. Apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
 
 **Version 1.4.44**
 
 * Ticket #34683 - Ad Playback Progress Time Is Going In Negative
 
-    * Additional checks put in to handle the case when there is a mismatch between the duration reported by the ad server and actual ad content.
+  * Additional checks put in to handle the case when there is a mismatch between the duration reported by the ad server and actual ad content.
 
 * Ticket #34801 - currentTime and localTime were not getting updated when seeking to a new position during paused status
 
-    * Player's current time can now be set to zero in case player is in paused state; earlier the current time used to be set to zero only in play state.
+  * Player's current time can now be set to zero in case player is in paused state; earlier the current time used to be set to zero only in play state.
 
 * Ticket #35037 - Playback stalls with bad URL when returning from signal-based ad insertion.
 
-    * Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancelled check and exception handling code to make operation queue more robust.
+  * Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancelled check and exception handling code to make operation queue more robust.
 
 **Version 1.4.43**
 
