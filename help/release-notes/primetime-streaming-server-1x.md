@@ -61,13 +61,13 @@ Version 1.3.1 refers to the hotfix. Following enhancements make it a recommended
 
 ### Bug Fixes included in release 1.3.1 {#bug-fixes-included-in-release-1}
 
-- 3759167 - Not all SCTE35 cues make it to the output manifest due to timestamp anomaly while packaging. Apply pts_adjustment on the SpliceTime in the TimeSignal of SpliceInfoSection in SCTE35 message
+* 3759167 - Not all SCTE35 cues make it to the output manifest due to timestamp anomaly while packaging. Apply pts_adjustment on the SpliceTime in the TimeSignal of SpliceInfoSection in SCTE35 message
 
 ## Known issues in release 1.3.1 {#known-issues-in-release}
 
-- 3717039 - When the packager is configured to produce DPI simple mode cues, it really should be looking for specific signal types, such as splice insert or placement opportunity, and converting only those to simple mode cues. It should ignore other types of signals such as program start, network start etc.
+* 3717039 - When the packager is configured to produce DPI simple mode cues, it really should be looking for specific signal types, such as splice insert or placement opportunity, and converting only those to simple mode cues. It should ignore other types of signals such as program start, network start etc.
 
-- 3718598 - When Origin Server is configured for serving protected contents with HSM access enabled the backend LunaSA client does a frequent communication with HSM module
+* 3718598 - When Origin Server is configured for serving protected contents with HSM access enabled the backend LunaSA client does a frequent communication with HSM module
 
 ## What’s new in Primetime Streaming Server 1.3 [APRIL Release] {#what-s-new-in-primetime-streaming-server-april-release}
 
@@ -136,9 +136,9 @@ Several performance enhancements has been incorporated to the JIT packaging capa
 * 1Gb Ethernet card recommended (multiple network cards and 10Gb also supported)
 * Disk:
 
-    * (Disk-SAS) : Minimum 10GB with 7.5K RPM
-    * (Disk-SSD) : 400MBps read/write
-    * (NAS) : 1 GB dedicated link
+  * (Disk-SAS) : Minimum 10GB with 7.5K RPM
+  * (Disk-SSD) : 400MBps read/write
+  * (NAS) : 1 GB dedicated link
 
 **Software requirements**
 
@@ -160,17 +160,19 @@ $./pss_start.sh
 
 To configure the Streaming Server as Live Packager or Origin Server, update the pss.xml config file placed at conf directory in the Streaming Server’s root directory:
 
-`&lt;Config&gt;  
-&lt;!-- Set this false to disable the Origin Component. --&gt;  
-&lt;OriginEnabled&gt;true&lt;/OriginEnabled&gt;  
-&lt;!-- Set this false to disable the Packager Component. --&gt;  
-&lt;PackagerEnabled&gt;true&lt;/PackagerEnabled&gt;  
-</Config>`
+```
+<Config> 
+<!-- Set this false to disable the Origin Component. --> 
+<OriginEnabled&gt;true&lt;/OriginEnabled>  
+<!-- Set this false to disable the Packager Component. -->  
+<PackagerEnabled&gt;true&lt;/PackagerEnabled>
+</Config>
+```
 
 **Stop the Primetime Streaming Server**
 
 To stop the Streaming Server, execute the following command in the Streaming Server’s root directory:  
-$./pss_stop.sh
+`$./pss_stop.sh`
 
 **Restart the Primetime Streaming Server**
 
@@ -205,9 +207,9 @@ This section applies when Primetime Streaming Server is not used and instead Pri
 * 1Gb Ethernet card recommended (multiple network cards and 10Gb also supported)
 * Disk:
 
-    * (Disk-SAS) : Minimum 10GB with 7.5K RPM
-    * (Disk-SSD) : 400MBps read/write
-    * (NAS) : 1 GB dedicated link
+  * (Disk-SAS) : Minimum 10GB with 7.5K RPM
+  * (Disk-SSD) : 400MBps read/write
+  * (NAS) : 1 GB dedicated link
 
 **Software requirements**
 
@@ -290,9 +292,9 @@ To uninstall the HTTP Origin Server, stop the HTTP Origin Server and remove the 
 * 1Gb Ethernet card recommended (multiple network cards and 10Gb also supported)
 * Disk:
 
-    * (Disk-SAS) : Minimum 10GB with 7.5K RPM
-    * (Disk-SSD) : 400MBps read/write
-    * (NAS) : 1 GB dedicated link
+  * (Disk-SAS) : Minimum 10GB with 7.5K RPM
+  * (Disk-SSD) : 400MBps read/write
+  * (NAS) : 1 GB dedicated link
 
 **Software requirements**
 
