@@ -11,7 +11,7 @@ snippet: y
 
 # Build a custom user interface{#build-a-custom-user-interface}
 
-You can easily build a custom user interface based on the reference implementation framework.
+You can build a custom user interface based on the reference implementation framework.
 
 The UI components of the following features are already integrated:
 
