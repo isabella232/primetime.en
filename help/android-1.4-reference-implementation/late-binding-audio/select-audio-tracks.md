@@ -9,13 +9,13 @@ snippet: y
 
 # Select the audio tracks{#select-the-audio-tracks}
 
-To select audio tracks for late-binding audio, implement [IAAConfig](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IAAConfig.html).  
+To select audio tracks for late-binding audio, implement [IAAConfig](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IAAConfig.html).  
 
 |  To...  | Call...  |
 |---|---|
-|  Get a list of available AA tracks  | [getAudioTracks()](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManager.html#getAudioTracks())  |
-|  Get the current selected track  | [getSelectedAudioTrack()](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManager.html#getSelectedAudioTrack())  |
-|  Select an AA track  | [selectAlternateAudioTrack()](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManager.html#selectAlternateAudioTrack(int))  |
+|  Get a list of available AA tracks  | [getAudioTracks()](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManager.html#getAudioTracks())  |
+|  Get the current selected track  | [getSelectedAudioTrack()](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManager.html#getSelectedAudioTrack())  |
+|  Select an AA track  | [selectAlternateAudioTrack()](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManager.html#selectAlternateAudioTrack(int))  |
 
 The following code sample illustrates how the reference implementation gets the audio tracks from the TVSDK and assigns the selected track to the associated media item:
 

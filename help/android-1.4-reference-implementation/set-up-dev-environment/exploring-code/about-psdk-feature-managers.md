@@ -25,12 +25,12 @@ The Primetime reference implementation includes the following feature managers:
 
 |  Feature manager  | Default file  | Feature  |  |
 |---|---|---|---|
-| [Video playback](../../implement-video-playback/video-playback.md)  | PlaybackManager  | HLS playback and control, DVR playback and control, buffer control, and multi-bit rate handling.  | Required  |
-| [DRM content protection](../../implement-video-playback/content-protection.md)  | DrmManager  | Content protection.  | Required  |
-| [Ad insertion](../../insert-ads/ad-insertion.md)  | AdsManager  | Ad insertion, including Adobe Primetime ad decisioning direct ad break, and custom ad break.  | Optional  |
-| [Closed captions](closed-captions.md)  | CCManager  | Closed captioning and VTT subtitles.  | Optional  |
-| [Late-binding audio](../../late-binding-audio/late-binding-audio.md)  | AAManager  | Late binding audio.  | Optional  |
-| [QoS](t_psdk_ref_qos-statistics.md)  | QosManager  | QoS statistics.  | Optional  |
+| [Video playback]  | PlaybackManager  | HLS playback and control, DVR playback and control, buffer control, and multi-bit rate handling.  | Required  |
+| [DRM content protection]  | DrmManager  | Content protection.  | Required  |
+| [Ad insertion]  | AdsManager  | Ad insertion, including Adobe Primetime ad decisioning direct ad break, and custom ad break.  | Optional  |
+| [Closed captions]  | CCManager  | Closed captioning and VTT subtitles.  | Optional  |
+| [Late-binding audio]  | AAManager  | Late binding audio.  | Optional  |
+| [QoS]  | QosManager  | QoS statistics.  | Optional  |
 |  Entitlement  | EntitlementManager  | Primetime authentication entitlement integration.  | Optional  |
 
 The reference implementation contains basic default classes, listed above, and corresponding classes with the suffix of On. The default classes provide the default TVSDK behaviors while the classes with the On suffix include all the code required to trigger the TVSDK feature and listen to TVSDK events for that feature.
