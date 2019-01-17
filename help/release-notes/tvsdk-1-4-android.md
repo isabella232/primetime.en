@@ -766,7 +766,7 @@ A new API has been added to set the user agent for ad related calls, auditudeSet
 * Zendesk #1218 - 106000.33 Error with local ... If loading manifest in FragmentedHTTPStreamer::ThreadParseManifest() fails, check if URL domain is localhost and if so, change domain to 127.0.0.1 and recall ThreadParseManifest. 
 * Zendesk #3072 - Automatic switching to lower bitrates. Changed buffer length calculation to skip zero PTS payload. 
 * Zendesk #3168 - WebVTT subtitles only displayed for first 10 secs. 
-* Zendesk #3193 - Request for a Profile change API in TVSDK, PlaybackEventListener.onProfileChanged() has been added.
+* Zendesk #3193 - Request for a Profile change API in TVSDK, PlaybackEventListener.onProfileChanged() has been added. 
 
 ### Version 1.4.7 (1311)
 
@@ -826,21 +826,18 @@ This issue was fixed by adding latency between video segment downloads into band
 * PTPLAY-2736 - A previously displayed WebVTT caption is shown on the screen when a stream with WebVTT caption completes playing 
 * PTPLAY-3773 - A mid-roll ad is not played when stream playback is started after the ad position
 
-### Version 1.4.2
+### Version 1.4.2 
 
 * Zendesk #1561 - HLS client based failover support in primetime. Will use program date time to address failover 
 * Zendesk #1590 - LoadInfo.MediaDuration is always 0 (not fixed for audio-only) 
 * Zendesk #1626 - Potential Memory Leak in Player. Not actual Memory leak, issue was with NotificationHistory saving last 1000 notifications, this has been reduced to 100. 
-* Zendesk #2192 - Bitrate doesn't always lower in poor network conditions.
+* Zendesk #2192 - Bitrate doesn't always lower in poor network conditions
 
 ### Version 1.4.1 (1121)
 
 * Zendesk #1951 - Lockup in VideoEngine.nativeReset() on 4.0.x devices 
 * Zendesk #2064 - Native Crash SIGSEGV on specific intel based Android devices 
 * Zendesk #2075 - Lockup in VideoEngine.nativeReleaseGPUResource on 4.0.x devices
-
-### Version 1.4.1
-
 Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Android 5.0 (Lollipop)
 
 * Zendesk #1513 - Android Lollipop support 
@@ -881,10 +878,9 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
 * Some devices have known playback issues. See [Known device issues in 1.4](http://help.adobe.com/en_US/primetime/release_notes/android/index.html#release_notes-concept-Known_issues_on_Android_devices_in_14).
 * Reference Implementation - Trick play is not implemented in the sample application
 * On some Android TV devices a black frame can be seen due to a decoder reset at the following transition points:
-
-  * into and out of trickplay mode
-  * switching between late binding audio tracks
-  * from an ad to main content.
+   * into and out of trickplay mode
+   * switching between late binding audio tracks
+   * from an ad to main content.
 
 ### Version 1.4.23
 

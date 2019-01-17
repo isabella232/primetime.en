@@ -14,7 +14,7 @@ snippet: y
 
 # TVSDK 3.1 for iOS Release Notes{#tvsdk-for-ios-release-notes}
 
-TVSDK 3.1 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.1
+TVSDK 3.1 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.1.
 
 ## New features {#new-features}
 
