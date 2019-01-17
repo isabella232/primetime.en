@@ -21,7 +21,7 @@ TVSDK 1.4 for Android Release Notes describe what is new or changed, the resolve
 
 ### Version 1.4.43
 
-**Secure Ad Loading over HTTPS**
+#### Secure Ad Loading over HTTPS
 
 Adobe Primetime provides an option to request first call to primetime ad server and CRS over HTTPS.
 
@@ -33,7 +33,9 @@ It accepts a Boolean parameters val. If its value is `True`, the client uses the
 
 ### Version 1.4.42
 
-**Partial Ad-Break Insertion:** TV-like experience of joining in the middle of an ad without firing the tracking for the partially watched ad.
+#### Partial Ad-Break Insertion:
+
+TV-like experience of joining in the middle of an ad without firing the tracking for the partially watched ad.
 
 Example: User joins in the middle (at 40 seconds) of a 90-second ad break consisting of three 30-second ads. This is 10 seconds into the second ad in the break.
 
@@ -105,14 +107,14 @@ AC-3 5.1 is supported only on Amazon FireTV.
 
 ### Version 1.4.11
 
-* **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**For VAST ads (creatives) with the fallback rule enabled, TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
+* **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103** For VAST ads (creatives) with the fallback rule enabled, TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
 
   For more information, see [Ad fallback for VAST and VMAP ads](http://help.adobe.com/en_US/primetime/psdk/android/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
 
 * **Video Heartbeats Library (VHL) updated to version 1.5**
 
-    * Ability to send metadata with video start and/or video/ad/chapter start as context data
-    * Less network traffic - Heartbeats are fewer on average and smaller in size
+  * Ability to send metadata with video start and/or video/ad/chapter start as context data
+  * Less network traffic - Heartbeats are fewer on average and smaller in size
 
 ### Version 1.4.7
 
@@ -126,9 +128,9 @@ AC-3 5.1 is supported only on Amazon FireTV.
 
 * **Video Heartbeats Library (VHL) update to version 1.4.0.1**
 
-    * Added the ability to bundle different analytics use cases, from other SDKs or players, with the Adobe Analytics Video Essentials.
-    * Ad tracking has been optimized by removing the trackAdBreakStart and trackAdBreakComplete methods. The ad break is inferred from the trackAdStart and trackAdComplete method calls.
-    * The  playhead  property is no longer needed when tracking ads.
+  * Added the ability to bundle different analytics use cases, from other SDKs or players, with the Adobe Analytics Video Essentials.
+  * Ad tracking has been optimized by removing the trackAdBreakStart and trackAdBreakComplete methods. The ad break is inferred from the trackAdStart and trackAdComplete method calls.
+  * The  playhead  property is no longer needed when tracking ads.
 
 * **Nielsen SDK Integration**The TVSDK now supports sending user tracking information to the Nielsen SDK without any custom integration. To get started, download the Nielsen Android App SDK, and follow the instructions in the [Android Programmers Guide](http://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-concept-Use_Nielsen_Analytics).
 
@@ -193,7 +195,7 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 >
 >`http://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8`
 
-**Version 1.4.43**
+### Version 1.4.43
 
 * Ticket #27143 - Unable to play 5.1 audio track on FireTV devices
 
@@ -209,30 +211,30 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 
 * Ticket #34949 - New version of video heartbeat library (VHL) integrated.
 
-**Version 1.4.42 (1791)**
+### Version 1.4.42 (1791)
 
 * Zendesk #33719: FireTV 4k Adaptive Bitrate scales slowly. Added support for ABR for FireTV 4K devices.
 * Zendesk #33338:  resetDRM  clears all data of the application.  Handled  extra case where exceptions in  non -TVSDK threads  was  causing TVSDK operation queues to fill up.
 
-**Version 1.4.41 (1776)**
+### Version 1.4.41 (1776)
 
 * Zendesk #33002 - Companion asset data from TVSDK on Fire TV. Implemented a new class AdBannerAsset which will return the Companion data as List &lt;AdBannerAsset&gt; and AdAsset::id is now a String instead of long.
 * Zendesk #32821 - Android Primetime player freezes when it encounters Presentation Timestamp (PTS) for WWE. This issue is fixed in this release.
 * Zendesk #33572 - VideoAnalyticsProvider Ad Start Crash. Using the right combination of VHL+Nielsen joint SDK version of VideoHeartbeat.jar fixed this issue.
 * Zendesk #33355 - Fire TV: Scrub back 15 second issue. Not any fix from TVSDK side and customer are verifying this at their End and 3rd party.
 
-**Version 1.4.40 (1764)**
+### Version 1.4.40 (1764)
 
 * Zendesk #33068 - Amazon lip sync issue on  new  device. Lip sync issue is fixed in this releases.
 * Zendesk #32215 - Android TVSDK 1.4.38 Security Issues [Hotlist]. Updated to the latest OpenSSL-1.1.0 and curl-7.55.1.
 * Zendesk #32920 - white blank screen within an Ad break and no Ad break completion. Fixed an issue where a VPAID container could get into a hung state and handled an issue where Facebook VPAID ads were often returning multiple CDATA blocks in a single \&lt;AdParameters\&gt; VAST node.
 
-**Version 1.4.39 (1744)**
+### Version 1.4.39 (1744)
 
 * Zendesk #28976 - Licensing request takes more than a second. While DRM Licence request calls that use POST  are  executing, Curl adds extra "Expect: 100-continue" header. Removed "Expect:" header in  TVSDK .
 * Zendesk #27707 - CSAI environments not honoring CUE IN markers for early return or return to content. Provided support for multiple opportunity generators.
 
-**Version 1.4.38 (1722)**
+### Version 1.4.38 (1722)
 
 * Zendesk #21590 - Video Performance and Tracking in Latest Origin Builds
 
@@ -242,13 +244,13 @@ Integration and certify VHL 2.0 in TVSDK to reduce the Barrier in the VideoHeart
 
 TVSDK support for the new Android Beta release.
 
-**Version 1.4.36 (1713)**
+### Version 1.4.36 (1713)
 
 * Zendesk #27392 - Content Skip on Android
 
 To accommodate decryption, the Android TVSDK was incorrectly widening the byte range of non-iframe content by 16 bytes. The widening is needed for Iframe streams but not for non-iframe streams.
 
-**Version 1.4.34 (1702)**
+### Version 1.4.34 (1702)
 
 * Zendesk #27638 - Leak in cURL INet object
 
@@ -256,7 +258,7 @@ The Posix cURL INet object was leaking while holding onto the share manager and 
 
 This issue was resolved by deleting the Posix cURL INet object from the INet deconstructor.
 
-**Version 1.4.33 (1694)**
+## Version 1.4.33 (1694)
 
 * **OpenSSL library**
 
@@ -278,7 +280,7 @@ The code was updated to make the cdn.auditude.com ad request to be GET instead o
 
 This issue was resolved by correctly restoring the playback state to play or pause when the application returns to the foreground.
 
-**Version 1.4.32 (1682)**
+### Version 1.4.32 (1682)
 
 * Zendesk #25779 - Security vulnerability found with TVSDK
 
@@ -288,29 +290,29 @@ Android 4.2 and lower has a security vulnerability when JavaScript is enabled in
 
 When the Adobe Video Engine (AVE) resumes from a SUSPENDED state, the DefaultMediaPlayer does not update its status. As a result, the DefaultMediaPlayer remains in a SUSPENDED state even though the AVE is in a PLAYING state. This issue has been resolved by setting the DefaultMediaPlayer state to PLAYING when receiving a PLAY status from the AVE, even if the current status of the DefaultMediaPlayer is SUSPENDED.
 
-**Version 1.4.31 (1675)**
+### Version 1.4.31 (1675)
 
 * Zendesk #21974 - Exceptions due to null objects
 
-    * AdIndex rarely gets incremented when null. This might be due to incorrect API calls received for pre-roll adBreak. Fixed the data types to avoid such exceptions
+  * AdIndex rarely gets incremented when null. This might be due to incorrect API calls received for pre-roll adBreak. Fixed the data types to avoid such exceptions
 
 * Zendesk #24714 - Turn off extraneous logging
 
-    * Updated the TVSDK to turn off extraneous logging
+  * Updated the TVSDK to turn off extraneous logging
 
 * Zendesk #24488 - AV Sync issues on Fire TV
 
-    * Fixed by improving the handling the AV decoder threads. Specifically, whenever the input or output frame queues are modified, the decoder thread specific to the frame's content type is run.
+  * Fixed by improving the handling the AV decoder threads. Specifically, whenever the input or output frame queues are modified, the decoder thread specific to the frame's content type is run.
 
 * Zendesk #26551 - Fix the CRS failures
 
-    * When the request is HEAD (http head), we don't need to read the content because it's empty. While it's ok to try to read it, old Android (4.0.x) hangs while we call read() and newer Android return correct value (-1) when we call read(). Based on this, changed the code to not to read content for "head"
+  * When the request is HEAD (http head), we don't need to read the content because it's empty. While it's ok to try to read it, old Android (4.0.x) hangs while we call read() and newer Android return correct value (-1) when we call read(). Based on this, changed the code to not to read content for "head"
 
 * Zendesk #26696 Null Pointer Exception when accessing TrickPlayManager
 
-    * Fixed by checking if TrickPlayManager object is not null before using it.
+  * Fixed by checking if TrickPlayManager object is not null before using it.
 
-**Version 1.4.30 (1659)**
+### Version 1.4.30 (1659)
 
 * Zendesk #22675 Asset duration does not get updated for Live/Linear streams
 
@@ -320,7 +322,7 @@ This issue was resolved by providing a new API, assetDuration, in PTVideoAnalyti
 
 The issue where a file-read buffer leak when the MediaPlayer is reset or released while downloading a file has been resolved.
 
-**Version 1.4.29 (1653)**
+### Version 1.4.29 (1653)
 
 * Zendesk #21200 - Player doesn't recover from suspended state when app was in the background
 
@@ -350,13 +352,13 @@ This issue was resolved by adding a new custom header to the whitelist on TVSDK.
 
 This issue was resolved by adding a PTS rollover handling in FragmentedHTTPStreamer when a rollover occurs in the middle of a segment.
 
-**Version 1.4.28 (1637)**
+### Version 1.4.28 (1637)
 
 * Zendesk #23618 - Ad break events fire before the ad policy is consulted
 
 This issue was resolved by not firing the AD_BREAK_START and AD_START events when the ad is skipped because of adForgiveness. The AD_BREAK_SKIPPED event is sent instead.
 
-**Version 1.4.27 (1631)**
+### Version 1.4.27 (1631)
 
 * Zendesk #23174 - Performance issue when resizing the video
 
@@ -366,12 +368,12 @@ This issue was resolved by proving a new API, MediaPlayerView.setSurfaceFixedSiz
 
 This issue occurred when the elapsed time was converted to long and not double, and this issue has been fixed.
 
-**Version 1.4.26 (1627)**
+### Version 1.4.26 (1627)
 
 * Zendesk #21436 - OpenSSL library update to version 1.0.2h Updated the OpenSSL library to OpenSSL Version 1.0.2h
 * Zendesk #23825 - Cookies are not being included in the callbacks Fixed by providing the support for android cookies.
 
-**Version 1.4.25 (1620)**
+### Version 1.4.25 (1620)
 
 * Zendesk #22900 - Live Adobe Primetime DRM stream is not playing on the Android reference player
 
@@ -385,7 +387,7 @@ The crash occurred because the application does not create a custom ad view to r
 
 This issue is the same as Zendesk #22900.
 
-**Version 1.4.24 (1612)**
+### Version 1.4.24 (1612)
 
 * Zendesk #20784 - Analytics: Triggering content completes for live video transitions
 
@@ -410,7 +412,7 @@ This issue was resolved by preloading the media codec capabilities and disabling
 
 This issue was resolved by handling multiple PMT descriptors for Sample AES encrypted HLS streams.
 
-**Version 1.4.23 (1602)**
+### Version 1.4.23 (1602)
 
 * Zendesk #18852 - Update creative selection logic based on CRS rules
 
@@ -432,7 +434,7 @@ The Invalid_Key error does not include a description from AVE, so parsing the te
 
 This crash that occurred on Android when attempting to load a manifest with multiple keys simultaneously has been fixed.
 
-**Version 1.4.22 (1581)**
+### Version 1.4.22 (1581)
 
 * Zendesk #17236 - Unreliable play head time for HLS videos with DRM
 
@@ -464,7 +466,7 @@ The logic error that was introduced by NVidia shield OP support has been fixed. 
 
 * Zendesk #21334 - TVSDK ad request timeout value for third-party ad request. A adRequestTimeout setting was added to AdvertisingMetadata that enables a global timeout for the ad call.
 
-**Version 1.4.21** (1566)
+### Version 1.4.21 (1566)
 
 * Zendesk #17781 - ADB screencapture no longer working
 
@@ -497,7 +499,7 @@ The player freeze when the audio and video are unaligned at discontinuity has be
 
 *  Bug #PTPLAY-11162 - OpenSSL library update to version 1.0.2f has been resolved.
 
-**Version 1.4.20** (1546)
+### Version 1.4.20 (1546)
 
 * Zendesk #17384 - Feature Request: ID3 metadata support for AAC playback
 
@@ -539,7 +541,7 @@ This issue was resolved by providing more complete support for ID3 v2.4 string e
 
 This issue was resolved by adding the post_roll_compelete event listener at the right place, instead of at the complete case of the status change event.
 
-**Version 1.4.19** (1521)
+### Version 1.4.19 (1521)
 
 * Zendesk #4180 - The TVSDK is not enforcing HDCP.
 
@@ -562,7 +564,7 @@ This issue was resolved by preloading the media codec information, so that you d
     * Zendesk #19483 - The TVSDK is crashing on Intel platform. 
     * Zendesk #19171 - Crashes on Asus Memo Pad 7 with Android 5.0.
 
-**Version 1.4.18** (1503)
+### Version 1.4.18 (1503)
 
 * Zendesk #3324 - Primetime ads reporting does not track ad breaks when there is no ad media in a VMAP.
 
@@ -576,7 +578,7 @@ This issue was resolved by adding setCCVisibility(Visibility.INVISIBLE); to the 
 
 This issue was resolved by applying the encoded FPS for the sleep time decision making and with a better encoded FPS prediction logic.
 
-**Version 1.4.17** (1472)
+### Version 1.4.17 (1472)
 
 * Zendesk #2231 - Error returned from fetching the manifest unavailable in MediaPlayerNotification
 
@@ -596,7 +598,7 @@ An Invalid input data Position error was occurring as a result of the heartbeat 
 
 This issue was resolved by checking the profile DRM metadata size before loading the AES key.
 
-**Version 1.4.16** (1454)
+### Version 1.4.16 (1454)
 
 * Zendesk #3875 - Tab S Crashes during playback
 
@@ -622,13 +624,13 @@ When checking whether the profile and level are supported, a crash occurs when c
 
 The issue was resolved by providing CTS font map support for Android.
 
-**Version 1.4.15 update** (1438)
+### Version 1.4.15 update (1438)
 
 * Zendesk #17437 - Long delay in VOD content startup with some AES streams.
 
 To resolve this issue, if multiple keys listed in manifest, download all AES keys in parallel.
 
-**Version 1.4.15** (1435)
+### Version 1.4.15 (1435)
 
 * Zendesk #4278 - Glitches on Android set top boxes when Adaptive bitrate changes (ABR).
 
@@ -654,7 +656,7 @@ The fix was to download all AES keys in parallel when multiple keys are listed i
 
 The fix was to specify KEY_MAX_WIDTH and KEY_MAX_HEIGHT to enable adaptive playback.
 
-**Version 1.4.14** (1415)
+### Version 1.4.14 (1415)
 
 * Zendesk #3875 - Tab S Crashes during playback.
 
@@ -664,13 +666,13 @@ An additional fix was required to prevent the crash.
 
 Fixed an additional issue where playback hangs when fallback is enabled, and the VMAP response has an empty ad break.
 
-**Version 1.4.14** (1412)
+### Version 1.4.14 (1412)
 
 * Zendesk #17245 - Fallback on Android TV isn't functioning.
 
 Removed a restriction for disabling creative repackaging on fallback ads.
 
-**1.4.13 **(1388)
+### Version 1.4.13 (1388)
 
 * Zendesk #3502 - HLS client based failover support during an ad break
 
@@ -684,7 +686,7 @@ To resolve the conflict between HttpUrlConnection and cURLm, use a third-party l
 
 Add a setter to the Opportunity settings.
 
-**Version 1.4.12** (1388)
+### Version 1.4.12 (1388)
 
 * Zendesk #2751 - CSAI and CRS | Enhance: Handle dynamic elements in certain media file URLs.
 
@@ -714,7 +716,7 @@ Added setByteArray and getByteArray API.
 
 Instant On has been updated to allow for a non zero starting point.
 
-**Version 1.4.11** (1363)
+### Version 1.4.11 (1363)
 
 * Zendesk #2076 - Frequent stutter when playing video on Motorola Xoom with Android 4.0.3
 
@@ -729,7 +731,7 @@ dispatch OperationFailedEvent with warning notification. 
         * error code 400 will be exposed if inline ad has bad creative. 
         * [ERRORCODE] macro will be URL encoded
 
-**Version 1.4.10** (1354)
+### Version 1.4.10 (1354)
 
 * Zendesk #2941 - Live assets don't have "0" in seekable range
 
@@ -749,7 +751,7 @@ GetLine for WebVTT was not respecting a &lt;CR&gt;&lt;LF&gt; adjusted length for
 
 The Android sample reference players has been enhanced with an option to turn on debug logs and email the results. This option is found under the Log menu in the reference player.
 
-**Version 1.4.9** (1332)
+### Version 1.4.9 (1332)
 
 * Zendesk #2649 - Buffer Complete occurs before initial buffer is full
 
@@ -759,14 +761,14 @@ After a seek, possible case where video engine sets state to PLAYING before vide
 
 A new API has been added to set the user agent for ad related calls, auditudeSettings.setUserAgent(“user/agent”). If no user agent is set, the default will be used. This only affects the user agent for ad related calls, the user agent for media calls is unchanged which is "Adobe Primetime"+&lt;default useragent&gt;.
 
-**Version 1.4.8** (1324)
+### Version 1.4.8 (1324)
 
 * Zendesk #1218 - 106000.33 Error with local ... If loading manifest in FragmentedHTTPStreamer::ThreadParseManifest() fails, check if URL domain is localhost and if so, change domain to 127.0.0.1 and recall ThreadParseManifest. 
 * Zendesk #3072 - Automatic switching to lower bitrates. Changed buffer length calculation to skip zero PTS payload. 
 * Zendesk #3168 - WebVTT subtitles only displayed for first 10 secs. 
 * Zendesk #3193 - Request for a Profile change API in TVSDK, PlaybackEventListener.onProfileChanged() has been added. 
 
-**Version 1.4.7** (1311)
+### Version 1.4.7 (1311)
 
 * Zendesk #2197 - Tracking ad errors. Added notification for asset failed to load manifest 
 * Zendesk #2575 - PSDK ignores MARK custom in-stream ad before video 
@@ -780,7 +782,7 @@ A new API has been added to set the user agent for ad related calls, auditudeSet
 * Zendesk #2925 - Feedback regarding Android dev build (1.4.5), on certain devices when we queue the packet to the input queue, if the PTS is negative, the decoder goes into a weird state that we always get a negative output PTS for future packets. The fix will set the input PTS to zero if it is negative to avoid this problem. 
 * PTPLAY-4645 - Turn off RC4 cipher support in openssl. There are known exploits for RC4. This means that if an attempt is made to connect with a server that only supports RC4, it will fail.
 
-**Version 1.4.6 (1282)**
+### Version 1.4.6 (1282)
 
 *  Zendesk #2192 - Bitrate doesn't always lower in poor network conditions, fixed by removing fast switch implementation. 
 * Zendesk #2631 - Arabic subtitles on Android: Text on multiple lines appears cut-off, fixed by adjusting font size for Arabic fonts. 
@@ -792,7 +794,7 @@ This issue was fixed by adding latency between video segment downloads into band
 * PTPLAY-4627 - update Nielson appsdk to version 1.2.3.7 
 * PTPLAY-5084 - Live Master Manifest update failover support
 
-**Version 1.4.5** (1248)
+### Version 1.4.5 (1248)
 
 * Zendesk #1757 - Only audio played or Player crashes for some video bit rate profile, Nexus 4 and Nexus 7 crash fixed 
 * Zendesk #2072 - TimedMetadata for AdEvent does not contain full URL just "http" 
@@ -806,7 +808,7 @@ This issue was fixed by adding latency between video segment downloads into band
 * Zendesk #2486 - 3rd party beacons 
 * Zendesk #2547 - Arabic subtitles: Text should be aligned right-justified
 
-**Version 1.4.4** (1195)
+### Version 1.4.4 (1195)
 
 * Zendesk #1158 - Playback fails on Huawei Valiant (Y301A1) 
 * Zendesk #1709 - Incorrect media size and stretched video 
@@ -816,7 +818,7 @@ This issue was fixed by adding latency between video segment downloads into band
 * Zendesk #2227 - Lockups in VideoEngine nativeReset and nativePause 
 * Bug #3921755 - OpenSSL library update to version 1.0.1L
 
-**Version 1.4.3** (1173)
+### Version 1.4.3 (1173)
 
 * Zendesk #1591 - RENDITION_M3U8_ERROR 
 * Zendesk #1870 - Closed Caption Turning On & Off 
@@ -824,21 +826,18 @@ This issue was fixed by adding latency between video segment downloads into band
 * PTPLAY-2736 - A previously displayed WebVTT caption is shown on the screen when a stream with WebVTT caption completes playing 
 * PTPLAY-3773 - A mid-roll ad is not played when stream playback is started after the ad position
 
-**Version 1.4.2**
+### Version 1.4.2 
 
 * Zendesk #1561 - HLS client based failover support in primetime. Will use program date time to address failover 
 * Zendesk #1590 - LoadInfo.MediaDuration is always 0 (not fixed for audio-only) 
 * Zendesk #1626 - Potential Memory Leak in Player. Not actual Memory leak, issue was with NotificationHistory saving last 1000 notifications, this has been reduced to 100. 
 * Zendesk #2192 - Bitrate doesn't always lower in poor network conditions
 
-**Version 1.4.1** (1121)
+### Version 1.4.1 (1121)
 
 * Zendesk #1951 - Lockup in VideoEngine.nativeReset() on 4.0.x devices 
 * Zendesk #2064 - Native Crash SIGSEGV on specific intel based Android devices 
 * Zendesk #2075 - Lockup in VideoEngine.nativeReleaseGPUResource on 4.0.x devices
-
-**Version 1.4.1**
-
 Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Android 5.0 (Lollipop)
 
 * Zendesk #1513 - Android Lollipop support 
@@ -852,7 +851,7 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
 * PTPLAY-2632 - Video does not recover after mid roll Ad complete on Android Lollipop 
 * PTPLAY-2678 - Video stalls during live longevity tests on Android Lollipop
 
-**Version 1.4.0**
+### Version 1.4.0
 
 * Zendesk #1024 - Feature to remove ad from stream via manifest 
 * Zendesk #1293 - Closed Caption Track Selection Issue. 
@@ -863,7 +862,7 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
 
 ## Known issues in 1.4 {#known-issues-in}
 
-**Version 1.4.31**
+### Version 1.4.31
 
 * PTPLAY-16803 - Closed Caption will not work with audio only content as the caption system needs video in order to work. Without video, there is no viewport dimension, and without a viewport dimension, we are unable to display any graphics for captions.
 * PTPLAY-1634 - Same Subscribed tag has different timestamps in different live windows. When live window moves, the same tag in them should have same timestamps. However, sometimes, even same tags have different timestamps.
@@ -879,19 +878,18 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
 * Some devices have known playback issues. See [Known device issues in 1.4](http://help.adobe.com/en_US/primetime/release_notes/android/index.html#release_notes-concept-Known_issues_on_Android_devices_in_14).
 * Reference Implementation - Trick play is not implemented in the sample application
 * On some Android TV devices a black frame can be seen due to a decoder reset at the following transition points:
-
    * into and out of trickplay mode
    * switching between late binding audio tracks
    * from an ad to main content.
 
-**Version 1.4.23**
+### Version 1.4.23
 
 * Closed Caption will not work with audio-only content because the caption system needs video to work. Without video, there is no viewport dimension, and without a viewport dimension, you cannot display any graphics for captions.
 
 * Starting in version 1.4.23, the TVSDK will not support Gingerbread OS 2.3. This is because the TVSDK used the following private Android libraries to gather hardware information about devices with Gingerbread OS:
 
-    * libstagefright.so
-    * libcutils.so
+  * libstagefright.so
+  * libcutils.so
 
 In the Android N release, Google has removed access to these private libraries. The Gingerbread OS currently accounts for less than 1% of Android OS market share globally, so after version 1.4.23, the Gingerbread OS will no longer be supported by the TVSDK.
 
@@ -909,17 +907,17 @@ This applies to both update and fresh install.
 
 * If your end user is running a system higher than OS 2.3, the app is installed correctly and the content plays correctly.
 
-**Version 1.4.22**
+### Version 1.4.22
 
 * The early exit from ads does not work with some of the mid-roll ads when splice-out and splice-in tag are too close to each other.
 
-**Version 1.4.2**
+### Version 1.4.2
 
 * Rewinding at an ad break is causing the stream to complete.
 
 The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during the Trick Play rewind operation when it reaches an ad boundary. The player should ignore this event when in trick play mode, otherwise the SDK handles the state correctly.
 
-**Version 1.4.0 (1086)**
+### Version 1.4.0 (1086)
 
 * PTPLAY-1634 - The same Subscribed tag has different timestamps in different live windows. When live windows move, the same tag in each of them should have the same timestamps. However, sometimes, even the same tags have different timestamps.
 * PTPLAY-2541 - COMPONENT_CREATION_FAILURE is sometimes seen after several switches to/from the alternate stream in blackouts
@@ -931,157 +929,25 @@ The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during t
 * Some devices have known playback issues. For more information, see [Known device issues in 1.4](http://help.adobe.com/en_US/primetime/1.3/release_notes/android/index.html#release_notes-concept-Known_issues_on_Android_devices_in_1_4).
 * Reference Implementation - Trick play is not implemented in the sample application
 
-<table border="1" cellpadding="4" cellspacing="0"> 
- <tbody> 
-  <tr> 
-   <th>Device</th> 
-   <th>Chipset</th> 
-   <th>Issue</th> 
-   <th>Cause</th> 
-   <th>Workaround</th> 
-  </tr> 
- </tbody> 
- <tbody> 
-  <tr> 
-   <td valign="top" width="NaN%">Droid X</td> 
-   <td valign="top" width="NaN%">TI OMAP3</td> 
-   <td valign="top" width="NaN%">ABR Delay is expected since it’s restarting the decoder.</td> 
-   <td valign="top" width="NaN%"> </td> 
-   <td valign="top" width="NaN%"> </td> 
-  </tr>  
-  <tr> 
-   <td valign="top" width="NaN%">HTC Desire (different from HTC Desire HD)</td> 
-   <td valign="top" width="NaN%">QSD8250</td> 
-   <td valign="top" width="NaN%">Can't play video. Returns VIDEO_PROFILE_NOT_SUPPORTED error.</td> 
-   <td valign="top" width="NaN%">Desire does not provide a proper HW decoder. It gives Stagefright's SW decoder.</td> 
-   <td valign="top" width="NaN%">Restart device.</td> 
-  </tr>  
-  <tr> 
-   <td valign="top" width="NaN%">HTC EVO 4G</td> 
-   <td valign="top" width="NaN%">QSD8650</td> 
-   <td valign="top" width="NaN%">No HW decoder.</td> 
-   <td valign="top" width="NaN%">Qualcomm does not have a HW decoder.</td> 
-   <td valign="top" width="NaN%">Upgrade to Android 4.x.</td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="NaN%">Kindle Fire<p>System version 6.0</p> </td> 
-   <td valign="top" width="NaN%">TI OMAP4</td> 
-   <td valign="top" width="NaN%">Does not play HLS streams. Video on AIR does not work.</td> 
-   <td valign="top" width="NaN%"> </td> 
-   <td valign="top" width="NaN%">Upgrade to system version 6.3.</td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="NaN%">Kindle Fire HD</td> 
-   <td valign="top" width="NaN%">TI OMAP4</td> 
-   <td valign="top" width="NaN%">Can get into a state where it cannot play video. Returns VIDEO_PROFILE_NOT_SUPPORTED and UNRECOVERABLE_ERROR errors.</td> 
-   <td valign="top" width="NaN%">The HW decoder gets into an unrecoverable state when the app doesn't shut down the HW decoder fully, e.g., after encountering a crash. Happens on native apps on the device as well.</td> 
-   <td valign="top" width="NaN%">Restart the device.</td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="NaN%">Kindle Fire HD 8.9</td> 
-   <td valign="top" width="NaN%">Snapdragon 800</td> 
-   <td valign="top" width="NaN%">AVE crashes after multiple ABR switches.</td> 
-   <td valign="top" width="NaN%"> </td> 
-   <td valign="top" width="NaN%"> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="NaN%">Motorola Atrix</td> 
-   <td valign="top" width="NaN%">Tegra2</td> 
-   <td valign="top" width="NaN%">Overall performance issues with AVE as opposed to AIR. Audio/video out of synch, video playback freezes after playing between 9 and 15 minutes. Crashes.</td> 
-   <td valign="top" width="NaN%">Possibly related to openGLES that we enable on AIR. Being investigated.</td> 
-   <td valign="top" width="NaN%"> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="NaN%">Nexus 7 (2nd gen)</td> 
-   <td valign="top" width="NaN%">S4Pro APQ8064 (Qualcomm)</td> 
-   <td valign="top" width="NaN%">Device hangs when a movie is paused for more than 30 minutes.</td> 
-   <td valign="top" width="NaN%">Device issue that has been reported to Google.</td> 
-   <td valign="top" width="NaN%">App should timeout so as not to allow a long pause state.</td>
-  </tr> 
-  <tr> 
-   <td valign="top" width="NaN%">Nexus S (GB)</td> 
-   <td valign="top" width="NaN%">Humming Bird</td> 
-   <td valign="top" width="NaN%">Cannot play any video using HW decoder.</td> 
-   <td valign="top" width="NaN%">There is no Stagefright-based HW decoder in Nexus S, so for Android 2.3 we are using a SW decoder.</td> 
-   <td valign="top" width="NaN%">Upgrade to ICS.</td>
-  </tr>
-  <tr> 
-   <td valign="top" width="NaN%">Nexus S (ICS)</td> 
-   <td valign="top" width="NaN%">Humming Bird</td> 
-   <td valign="top" width="NaN%">Video occasionally flickers.</td> 
-   <td valign="top" width="NaN%">Bad data can cause the decoder to get into a bad state.</td> 
-   <td valign="top" width="NaN%">Restart the device.</td> 
-  </tr>
-  <tr>
-   <td valign="top" width="NaN%">Nook tablet<p>Android OS: 2.3</p> </td> 
-   <td valign="top" width="NaN%">TI OMAP 4</td> 
-   <td valign="top" width="NaN%">Video doesn't play and app hangs.</td> 
-   <td valign="top" width="NaN%">Stagefright enters an unstable state after running the app for a few times. Calls to mediaplayer::QueryCodecs hang.</td> 
-   <td valign="top" width="NaN%">Restart the device to reset the state.</td> 
-  </tr>
-  <tr>
-   <td valign="top" width="NaN%">Samsung Galaxy ACE</td> 
-   <td valign="top" width="NaN%">Qualcomm MSM7227</td> 
-   <td valign="top" width="NaN%">Can't install SampleMediaPlayer app.</td> 
-   <td valign="top" width="NaN%">Uses ARM v6 instead of the more common ARM v7 chipset. FP/AIR does not support this device.</td> 
-   <td valign="top" width="NaN%"> </td>
-  </tr>
-  <tr>
-   <td valign="top" width="NaN%">Samsung Galaxy ACE2<p>Android OS: 2.3.6</p> </td> 
-   <td valign="top" width="NaN%">NovaThor U8500</td> 
-   <td valign="top" width="NaN%">Can't play video.</td> 
-   <td valign="top" width="NaN%">This chipset is an unknown decoder for Android pre-ICS in AVE.</td> 
-   <td valign="top" width="NaN%"> </td> 
-  </tr>
-  <tr>
-   <td valign="top" width="NaN%">Samsung Galaxy S2 (GT-I9100)</td> 
-   <td valign="top" width="NaN%">Exynos</td> 
-   <td valign="top" width="NaN%">Video performance is not up to par for this device.</td> 
-   <td valign="top" width="NaN%">The HW decoder is returning decoded frames with the wrong PTS. Looks like the decoder is using decoding time instead of presentation time.</td> 
-   <td valign="top" width="NaN%"> </td> 
-  </tr>
-  <tr>
-   <td valign="top" width="NaN%">Samsung Galaxy S2 G<p>Android OS: 2.3.6</p> </td> 
-   <td valign="top" width="NaN%">TI OMAP4</td> 
-   <td valign="top" width="NaN%">Crashes when starting video.</td> 
-   <td valign="top" width="NaN%"> </td> 
-   <td valign="top" width="NaN%">Upgrade to Android 2.3.7 or 4.x.</td> 
-  </tr>
-  <tr>
-   <td valign="top" width="NaN%">Samsung Galaxy S3 (I747)</td> 
-   <td valign="top" width="NaN%">Qualcomm MSM8960</td> 
-   <td valign="top" width="NaN%">Intermittently, video freezes and only audio plays, then becomes unresponsive.</td> 
-   <td valign="top" width="NaN%"> </td> 
-   <td valign="top" width="NaN%"> </td>
-  </tr> 
-  <tr>
-   <td valign="top" width="NaN%">Samsung Galaxy S3 I747M</td> 
-   <td valign="top" width="NaN%">SAMSUNG_M2ATT</td> 
-   <td valign="top" width="NaN%">Video freezes.</td> 
-   <td valign="top" width="NaN%">Investigating.</td> 
-   <td valign="top" width="NaN%"> </td>
-  </tr> 
-  <tr> 
-   <td valign="top" width="NaN%">Samsung Galaxy Tab 1 v10.1</td> 
-   <td valign="top" width="NaN%">Tegra 2</td> 
-   <td valign="top" width="NaN%">MBR transition might take up to three seconds.</td> 
-   <td valign="top" width="NaN%">As a fix for MBR crashes, we restart the decoder for every stream switch, which can take up to three seconds.</td> 
-   <td valign="top" width="NaN%"> </td>
-  </tr> 
-  <tr> 
-   <td valign="top" width="NaN%">Samsung Galaxy Y</td> 
-   <td valign="top" width="NaN%"> </td> 
-   <td valign="top" width="NaN%">Can't install SampleMediaPlayer app.</td> 
-   <td valign="top" width="NaN%">Uses ARM v6 instead of the more common ARM v7 chipset. FP/AIR does not support this device.</td> 
-   <td valign="top" width="NaN%"> </td>
-  </tr> 
-  <tr> 
-   <td valign="top" width="NaN%">Xoom</td> 
-   <td valign="top" width="NaN%">Tegra</td> 
-   <td valign="top" width="NaN%">A few frames are dropped for switching. The decoder is not restarted.</td> 
-   <td valign="top" width="NaN%">OMXAL limitation.</td> 
-   <td valign="top" width="NaN%"> </td>
-  </tr> 
- </tbody> 
-</table>
-
+|Device|Chipset|Issue|Cause|Workaround|
+|--- |--- |--- |--- |--- |
+|Droid X|TI OMAP3|ABR Delay is expected since it’s restarting the decoder.|||
+|HTC Desire (different from HTC Desire HD)|QSD8250|Can't play video. Returns VIDEO_PROFILE_NOT_SUPPORTED error.|Desire does not provide a proper HW decoder. It gives Stagefright's SW decoder.|Restart device.|
+|HTC EVO 4G|QSD8650|No HW decoder.|Qualcomm does not have a HW decoder.|Upgrade to Android 4.x.|
+|Kindle FireSystem version 6.0|TI OMAP4|Does not play HLS streams. Video on AIR does not work.||Upgrade to system version 6.3.|
+|Kindle Fire HD|TI OMAP4|Can get into a state where it cannot play video. Returns VIDEO_PROFILE_NOT_SUPPORTED and UNRECOVERABLE_ERROR errors.|The HW decoder gets into an unrecoverable state when the app doesn't shut down the HW decoder fully, e.g., after encountering a crash. Happens on native apps on the device as well.|Restart the device.|
+|Kindle Fire HD 8.9|Snapdragon 800|AVE crashes after multiple ABR switches.|||
+|Motorola Atrix|Tegra2|Overall performance issues with AVE as opposed to AIR. Audio/video out of synch, video playback freezes after playing between 9 and 15 minutes. Crashes.|Possibly related to openGLES that we enable on AIR. Being investigated.||
+|Nexus 7 (2nd gen)|S4Pro APQ8064 (Qualcomm)|Device hangs when a movie is paused for more than 30 minutes.|Device issue that has been reported to Google.|App should timeout so as not to allow a long pause state.|
+|Nexus S (GB)|Humming Bird|Cannot play any video using HW decoder.|There is no Stagefright-based HW decoder in Nexus S, so for Android 2.3 we are using a SW decoder.|Upgrade to ICS.|
+|Nexus S (ICS)|Humming Bird|Video occasionally flickers.|Bad data can cause the decoder to get into a bad state.|Restart the device.|
+|Nook tabletAndroid OS: 2.3|TI OMAP 4|Video doesn't play and app hangs.|Stagefright enters an unstable state after running the app for a few times. Calls to mediaplayer::QueryCodecs hang.|Restart the device to reset the state.|
+|Samsung Galaxy ACE|Qualcomm MSM7227|Can't install SampleMediaPlayer app.|Uses ARM v6 instead of the more common ARM v7 chipset. FP/AIR does not support this device.||
+|Samsung Galaxy ACE2Android OS: 2.3.6|NovaThor U8500|Can't play video.|This chipset is an unknown decoder for Android pre-ICS in AVE.||
+|Samsung Galaxy S2 (GT-I9100)|Exynos|Video performance is not up to par for this device.|The HW decoder is returning decoded frames with the wrong PTS. Looks like the decoder is using decoding time instead of presentation time.||
+|Samsung Galaxy S2 GAndroid OS: 2.3.6|TI OMAP4|Crashes when starting video.||Upgrade to Android 2.3.7 or 4.x.|
+|Samsung Galaxy S3 (I747)|Qualcomm MSM8960|Intermittently, video freezes and only audio plays, then becomes unresponsive.|||
+|Samsung Galaxy S3 I747M|SAMSUNG_M2ATT|Video freezes.|Investigating.||
+|Samsung Galaxy Tab 1 v10.1|Tegra 2|MBR transition might take up to three seconds.|As a fix for MBR crashes, we restart the decoder for every stream switch, which can take up to three seconds.||
+|Samsung Galaxy Y||Can't install SampleMediaPlayer app.|Uses ARM v6 instead of the more common ARM v7 chipset. FP/AIR does not support this device.||
+|Xoom|Tegra|A few frames are dropped for switching. The decoder is not restarted.|OMXAL limitation.||

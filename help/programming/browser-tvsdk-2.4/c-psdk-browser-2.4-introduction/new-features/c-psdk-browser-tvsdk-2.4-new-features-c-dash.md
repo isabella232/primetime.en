@@ -25,8 +25,6 @@ Browser TVSDK supports a number of DASH features that you can implement to add f
 >In the feature matrix tables below,  ![](assets/supported15.png)>
 >means that the feature is supported in the current release.
 
-<a id="section_erb_p2g_xx"></a>
-
 The following features are supported: 
 
 <!-- 
@@ -88,7 +86,7 @@ The following features are supported:
 |  Integrations  | VOD + Live  | Billing  | ![](assets/supported15.png)|
 |  Integrations  | VOD + Live  | Browserify  | ![](assets/supported15.png)
 
-### DASH advanced ad insertion features (CSAI)
+## DASH advanced ad insertion features (CSAI)
 
 |  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome   |
 |---|---|---|---|
@@ -100,7 +98,7 @@ The following features are supported:
 |  Ad Insertion  | VOD  | Companion ads, banner ads, and clickable ads  | Not Supported  |
 |  Ad Insertion  | VOD  | VPAID 2.0  | Not Supported  |
 
-#### DASH core ad insertion features (CSAI)
+## DASH core ad insertion features (CSAI)
 
 |  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|
@@ -113,7 +111,7 @@ The following features are supported:
 |  Ad Insertion  | VOD + Live  | VMAP 1.0  | VOD only  |
 |  Ad Insertion  | VOD + Live  | CRS v3.1  | VOD only  |
 
-#### DASH content protection features
+## DASH content protection features
 
 <table id="table_hrb_p2g_xx">  
  <thead> 
@@ -159,7 +157,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### DASH advanced playback features
+## DASH advanced playback features
 
 |  Category  | Content type  | Feature  | HTML5, FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|
@@ -173,7 +171,7 @@ The following features are supported:
 |  Playback  | VOD + Live  | Billing  | ![](assets/supported15.png)|
 |  Playback  | VOD + Live  | Browserify  | ![](assets/supported15.png)|
 
-#### DASH core playback features
+## DASH core playback features
 
 |  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|

@@ -26,7 +26,7 @@ The `QoSManager` tracks QoS statistics by getting device information, attaching 
    QoSManager qosManager = new QosManagerOn();
 
     * To use a ManagerFactory to enable the display of QoS statistics:
-    
+
     qosManager = ManagerFactory.getQosManager( 
     <b>true</b>, config, mediaPlayer);
 

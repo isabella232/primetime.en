@@ -136,9 +136,9 @@ Several performance enhancements has been incorporated to the JIT packaging capa
 * 1Gb Ethernet card recommended (multiple network cards and 10Gb also supported)
 * Disk:
 
-    * (Disk-SAS) : Minimum 10GB with 7.5K RPM
-    * (Disk-SSD) : 400MBps read/write
-    * (NAS) : 1 GB dedicated link
+  * (Disk-SAS) : Minimum 10GB with 7.5K RPM
+  * (Disk-SSD) : 400MBps read/write
+  * (NAS) : 1 GB dedicated link
 
 **Software requirements**
 
@@ -160,17 +160,19 @@ $./pss_start.sh
 
 To configure the Streaming Server as Live Packager or Origin Server, update the pss.xml config file placed at conf directory in the Streaming Server’s root directory:
 
-`&lt;Config&gt;  
-&lt;!-- Set this false to disable the Origin Component. --&gt;  
-&lt;OriginEnabled&gt;true&lt;/OriginEnabled&gt;  
-&lt;!-- Set this false to disable the Packager Component. --&gt;  
-&lt;PackagerEnabled&gt;true&lt;/PackagerEnabled&gt;  
-</Config>`
+```
+<Config> 
+<!-- Set this false to disable the Origin Component. --> 
+<OriginEnabled&gt;true&lt;/OriginEnabled>  
+<!-- Set this false to disable the Packager Component. -->  
+<PackagerEnabled&gt;true&lt;/PackagerEnabled>
+</Config>
+```
 
 **Stop the Primetime Streaming Server**
 
 To stop the Streaming Server, execute the following command in the Streaming Server’s root directory:  
-$./pss_stop.sh
+`$./pss_stop.sh`
 
 **Restart the Primetime Streaming Server**
 
@@ -205,9 +207,9 @@ This section applies when Primetime Streaming Server is not used and instead Pri
 * 1Gb Ethernet card recommended (multiple network cards and 10Gb also supported)
 * Disk:
 
-    * (Disk-SAS) : Minimum 10GB with 7.5K RPM
-    * (Disk-SSD) : 400MBps read/write
-    * (NAS) : 1 GB dedicated link
+  * (Disk-SAS) : Minimum 10GB with 7.5K RPM
+  * (Disk-SSD) : 400MBps read/write
+  * (NAS) : 1 GB dedicated link
 
 **Software requirements**
 
@@ -290,9 +292,9 @@ To uninstall the HTTP Origin Server, stop the HTTP Origin Server and remove the 
 * 1Gb Ethernet card recommended (multiple network cards and 10Gb also supported)
 * Disk:
 
-    * (Disk-SAS) : Minimum 10GB with 7.5K RPM
-    * (Disk-SSD) : 400MBps read/write
-    * (NAS) : 1 GB dedicated link
+  * (Disk-SAS) : Minimum 10GB with 7.5K RPM
+  * (Disk-SSD) : 400MBps read/write
+  * (NAS) : 1 GB dedicated link
 
 **Software requirements**
 
