@@ -39,7 +39,7 @@ The following procedure describes this process:
 
 1. Type the following command to package a segment of the content: 
 
-   ```
+```xml
        java -jar libs\AdobePackager.jar  
 <i class="+ topic ph hi-d="" i "="">
   test_input_FLV  
@@ -48,7 +48,7 @@ The following procedure describes this process:
                -p policy_test.pol 
  </i class="+ topic> 
 </i class="+ topic>
-   ```
+```
 
 1. Copy the two generated files to the [!DNL webapps\ROOT\Content] folder on the Tomcat server. 
 1. Go to the [!DNL Reference Implementation\Sample Video Players\Desktop\Flash Player\Release] directory and copy the contents to the [!DNL webapps\ROOT\SVP\] folder on the Tomcat server. 
