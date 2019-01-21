@@ -66,5 +66,5 @@ TVSDK receives these error codes and strings from the video engine.
 
 >[!IMPORTANT]
 >
->For a complete list of Adobe Primetime DRM client error codes, see [DRM Client Error Message Reference](http://help.adobe.com/en_US/primetime/drm/index.html#reference-DRM_Client_Error_Messages).
+>For a complete list of Adobe Primetime DRM client error codes, see [DRM Client Error Message Reference](https://help.adobe.com/en_US/primetime/drm/index.html#reference-DRM_Client_Error_Messages).
 

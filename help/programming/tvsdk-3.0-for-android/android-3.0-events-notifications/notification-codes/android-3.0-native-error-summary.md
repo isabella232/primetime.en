@@ -151,7 +151,7 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
 
 >[!TIP]
 >
->This list provides TVSDK-specific information about the errors. For complete descriptions, see [ActionScript Run-Time Errors ActionScript Reference for the Adobe Flash Platform](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html#3300).
+>This list provides TVSDK-specific information about the errors. For complete descriptions, see [ActionScript Run-Time Errors ActionScript Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html#3300).
 
 <table id="table_CD59A859865F4FFDBAA249C89C74770A"> 
  <thead> 
@@ -405,7 +405,7 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
     <ul id="ul_23B7F1A104AF49E79EA87DB8E15E337E"> 
      <li id="li_855D87F251184FE688A8D5FA0F6C9EF5">If the files are in this directory, double-click the files in Windows Explorer and in the CRL viewer application, determine whether any of the files have expired. </li> 
      <li id="li_58EC4EDA2B5146188A0FF7B33C91E2FD">If there are no files in tomcat/temp/, then it can be assumed this license server has never been able to reach the Adobe CRL server due to a firewall/routing issue. </li> 
-    </ul> <p>For more information, see <a href="http://help.adobe.com/en_US/primetime/drm/5.3/secure_deployment_guidelines/index.html#concept-Firewall_rules" format="http" scope="external"> Firewall rules</a>. </p> <p>If the CRL files are not available or have expired, you must confirm whether the license server can be reached. Open a network sniffer on the customer's license server, restart the server, and have a client attempt to request a license from the server. You can observe the network traffic to see whether calls to the following URL endpoints are successful: <p>Tip:  You can also enter the following CRL URLs in a browser to see whether you can manually download each file. </p> 
+    </ul> <p>For more information, see <a href="https://help.adobe.com/en_US/primetime/drm/5.3/secure_deployment_guidelines/index.html#concept-Firewall_rules" format="http" scope="external"> Firewall rules</a>. </p> <p>If the CRL files are not available or have expired, you must confirm whether the license server can be reached. Open a network sniffer on the customer's license server, restart the server, and have a client attempt to request a license from the server. You can observe the network traffic to see whether calls to the following URL endpoints are successful: <p>Tip:  You can also enter the following CRL URLs in a browser to see whether you can manually download each file. </p> 
      <ul id="ul_9B65C7ABBDEC4AC9BF3755FFD3587971"> 
       <li id="li_6867A9050E8D421C9138AC853D1784C9"><a href="http://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl" format="http" scope="external"> crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl</a> </li> 
       <li id="li_6431689260554EAFAFDA2EC31798DCB5"><a href="http://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl" format="http" scope="external"> crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl</a> </li> 

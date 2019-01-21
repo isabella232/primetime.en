@@ -14,7 +14,7 @@ snippet: y
 
 You can enable or disable the Lazy Ad Resolving feature using the existing Lazy Ad Loading mechanism (Lazy Ad Resolving is disabled by default).
 
-You can enable or disable Lazy Ad Resolving by calling ` [AdvertisingMetadata.setDelayLoading](http://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/metadata/AdvertisingMetadata.html#setDelayAdLoading-boolean-)` with true or false.
+You can enable or disable Lazy Ad Resolving by calling ` [AdvertisingMetadata.setDelayLoading](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/metadata/AdvertisingMetadata.html#setDelayAdLoading-boolean-)` with true or false.
 
 * Use the Boolean *hasDelayAdLoading* and *setDelayAdLoading* methods in AdvertisingMetadata to control the timing of ad resolution and the placement of ads on the timeline:
 

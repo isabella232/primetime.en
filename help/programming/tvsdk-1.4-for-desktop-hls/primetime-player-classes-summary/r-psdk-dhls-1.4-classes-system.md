@@ -13,9 +13,9 @@ snippet: y
 
 These classes provide access to system or network information.
 
- Package: [com.adobe.mediacore.system](http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/package-detail.html) 
+ Package: [com.adobe.mediacore.system](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/package-detail.html) 
 
 |  Name  | Description  |
 |---|---|
-| ` [NetworkConfiguration](http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/NetworkConfiguration.html)`  | Class that provides access to system network configuration.  |
+| ` [NetworkConfiguration](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/NetworkConfiguration.html)`  | Class that provides access to system network configuration.  |
 

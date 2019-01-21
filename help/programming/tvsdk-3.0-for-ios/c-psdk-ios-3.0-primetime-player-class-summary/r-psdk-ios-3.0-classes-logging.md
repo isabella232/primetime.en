@@ -22,15 +22,15 @@ These classes enable you to customize logging.
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colname="1" rowsep="0"> <a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTLogEntry.html" format="html" scope="external"> PTLogEntry</a> </td> 
+   <td colname="1" rowsep="0"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTLogEntry.html" format="html" scope="external"> PTLogEntry</a> </td> 
    <td colname="2" rowsep="0"> Class that defines an entry log and holds information about a log message. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"> <a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTLogFactory.html" format="html" scope="external"> PTLogFactory</a> </td> 
+   <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTLogFactory.html" format="html" scope="external"> PTLogFactory</a> </td> 
    <td colname="2"> Class that enables custom logging.</td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"> <a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTLogger.html" format="html" scope="external"> PTLogger</a> </td> 
+   <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTLogger.html" format="html" scope="external"> PTLogger</a> </td> 
    <td colname="2"> Protocol. The methods required to implement a custom logger for the TVSDK. </td> 
   </tr> 
  </tbody> 

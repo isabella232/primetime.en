@@ -110,7 +110,7 @@ var player = ptp.videoPlayer('.videoHolder', {
 
 >[!NOTE]
 >
->Depending upon the customization that you want, you can override certain functionality in the behavior or write your own behavior. For more information about which functionality can be overridden, see the [UI framwork](http://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API documentation.
+>Depending upon the customization that you want, you can override certain functionality in the behavior or write your own behavior. For more information about which functionality can be overridden, see the [UI framwork](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API documentation.
 
 ## References {#section_0A76A3F44D8A49B09FE4C83F3FACCB76}
 
@@ -767,7 +767,7 @@ Here is some additional reference information:
 
 * **Helper constructs** This construct is composed of the following:
 
-    * **Factories** To create the visual elements, you can use `ptp.factories.simpleButtonFactory`, `ptp.factories.simpleDivFactory`, `ptp.factories.simpleHRFactory`, and `ptp.factories.simpleSliderFactory`. For more information, see the [UI Framework](http://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API documentation. 
+    * **Factories** To create the visual elements, you can use `ptp.factories.simpleButtonFactory`, `ptp.factories.simpleDivFactory`, `ptp.factories.simpleHRFactory`, and `ptp.factories.simpleSliderFactory`. For more information, see the [UI Framework](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API documentation. 
     
     * **Mixins** Mixins are composable modules that can be composed in the behaviors to use common constructs. For example, many of the components would like to be aware of changes that might impact their behavior when, for example, an ad is playing. All of these elements will add an `adBreak` class.
 
@@ -799,5 +799,5 @@ Here is some additional reference information:
 
       Now `customBehavior` can use all of the methods that are exposed by `adBreakStyling`, which in this example, is `manageAdBreakStyle`. One additional use case is when a mixin can add event listeners, and in the handler, the mixin can modify the element in some way. Subsequently, the components that are using this mixin will automatically have this functionality. 
     
-    * **Utils** Some utilities, such as `ptp.elementGetter`, which is used in configuration section and `ptp.deepmerge`, can help you write or extend behaviors. For more information, see the [UI Framework](http://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API documentation.
+    * **Utils** Some utilities, such as `ptp.elementGetter`, which is used in configuration section and `ptp.deepmerge`, can help you write or extend behaviors. For more information, see the [UI Framework](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API documentation.
 

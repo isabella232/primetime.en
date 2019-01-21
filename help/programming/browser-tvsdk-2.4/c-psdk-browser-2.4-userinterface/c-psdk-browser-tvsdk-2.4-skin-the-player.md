@@ -140,10 +140,6 @@ Here are the styles for the main div:
 
 ## Control Bar {#section_B683B51EC746484B9AA90CB481D637BD}
 
-<a id="fig_FF0E55A0FB6B4ED387DCDF9664340796"></a>
-
-![](assets/control_bar.png)
-
 <table id="table_681E13F264674F849FAA2523EB65F094"> 
  <desc>
    Here are the styles for the control bar: 
@@ -166,10 +162,6 @@ Here are the styles for the main div:
 </table>
 
 ## Feature Buttons {#section_57FFD242FF674EA2867BCF6CA7F6B855}
-
-<a id="fig_BEF90ABFE781495EBF95DF6F16951D13"></a>
-
-![](assets/feature_buttons.png)
 
 >[!NOTE]
 >
@@ -201,456 +193,455 @@ Here are the styles for the main div:
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-scrub-bar .ptp-playback-progress-bar</span> </td> 
    <td colname="col2"> <p>State of the scrub bar in normal playback </p> </td> 
-  </tr> 
+  </tr>
   <tr> 
-   <td colname="col1"><span class="codeph"> ptp-scrub-bar .ptp-progress-bar-play-head</span> </td> 
-   <td colname="col2"> <p>Play head on scrub bar while playing </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> ptp-scrub-bar .ptp-ad-marker-bar</span> </td> 
-   <td colname="col2"> <p>Ad marker bar </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> ptp-scrub-bar .ptp-ad-marker</span> </td> 
-   <td colname="col2"> <p>Ad marker </p> </td> 
-  </tr> 
-  <tr> 
+   <td colname="col1"><span class="codeph"> ptp-scrub-bar .ptp-progress-bar-play-head</span> </td>
+   <td colname="col2"> <p>Play head on scrub bar while playing </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> ptp-scrub-bar .ptp-ad-marker-bar</span> </td>
+   <td colname="col2"> <p>Ad marker bar </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> ptp-scrub-bar .ptp-ad-marker</span> </td>
+   <td colname="col2"> <p>Ad marker </p> </td>
+  </tr>
+  <tr>
    <td colspan="2">The default behaviors are: 
     <ul id="ul_8D547A82793040349018BD0589A626AD"> 
      <li id="li_469F37AC9FA342A99EB3A7A40C357EBB"><span class="codeph"> scrubBarBehavior</span> </li> 
      <li id="li_DFFC973449E741F498F87648B7E3B14E"><span class="codeph"> bufferProgressBarBehavior</span> </li> 
      <li id="li_A04F9E94FAAE4F9CB3EDA82BCDBAFF1F"><span class="codeph"> playHeadBehavior</span> </li> 
-     <li id="li_CAAB67BE78F54FDD94A1989DB2C781D5"><span class="codeph"> playProgressBarBehavior</span> </li> 
-     <li id="li_F021629719A0478BA5FEFC9930CBBF1B"><span class="codeph"> seekToBarBehavior</span> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+     <li id="li_CAAB67BE78F54FDD94A1989DB2C781D5"><span class="codeph"> playProgressBarBehavior</span> </li>
+     <li id="li_F021629719A0478BA5FEFC9930CBBF1B"><span class="codeph"> seekToBarBehavior</span> </li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Play/Pause Button {#section_F1F40A948D0049C5A4D8EA5F2A475CAA}
 
-<table id="table_975C2293222A4782A8C75A6149C1AD27"> 
+<table id="table_975C2293222A4782A8C75A6149C1AD27">
  <desc>
-   Here are the styles for the play/pause button: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style (B) </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here are the styles for the play/pause button:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style (B) </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> ptp-btn-playpause</span> </td> 
-   <td colname="col2"> <p>Play pause button on control bar. </p> </td> 
-  </tr> 
-  <tr> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="codeph"> ptp-btn-playpause</span> </td>
+   <td colname="col2"> <p>Play pause button on control bar. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> ptp-btn-playpause.pause-state</span> </td>
+   <td colname="col2"> <p><span class="codeph"> ptp-btn-playpause</span> in the pause state </p> </td>
+  </tr>
+  <tr>
    <td colname="col1"><span class="codeph"> ptp-btn-playpause.pause-state</span> </td> 
-   <td colname="col2"> <p><span class="codeph"> ptp-btn-playpause</span> in the pause state </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> ptp-btn-playpause.pause-state</span> </td> 
-   <td colname="col2"> <p><span class="codeph"> ptp-btn-playpause</span> in the play state </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> playPauseButtonBehavior</span>. </td> 
-  </tr> 
- </tbody> 
+   <td colname="col2"> <p><span class="codeph"> ptp-btn-playpause</span> in the play state </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> playPauseButtonBehavior</span>. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Volume {#section_23E17BD2343948F8A2CEE1C8BEE2F874}
 
-<table id="table_8F9831F36A4D427CA31C9FFA4173170D"> 
+<table id="table_8F9831F36A4D427CA31C9FFA4173170D">
  <desc>
-   Here are the styles to configure the volume button: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style (C) </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here are the styles to configure the volume button:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style (C) </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><span class="codeph"> .ptp-volume-control</span> 
-     <ul id="ul_B12ADDFB83EA40FD8B4E92AF418AA4B4"> 
-      <li id="li_7DA8143A69ED4E7D8A560B9FF75D6BA7"><span class="codeph"> .expanded</span> </li> 
-      <li id="li_D8CCAD45D81C4850B6903FE261833AE6"><span class="codeph"> .vertical</span> </li> 
-     </ul> </p> </td> 
-   <td colname="col2"> <p>Volume control on control bar 
-     <ul id="ul_2C60F018FDCB458885738AC378C02F61"> 
-      <li id="li_6B19572B504A4BBF9C97DC29C0E92A1D">When control is in expanded form </li> 
-      <li id="li_6489E422E1944D5194CBDFC8383D2F30">When control is in vertical form </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> ptp-btn-volume</span> </td> 
-   <td colname="col2"> <p>Volume button on control bar </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> ptp-btn-volume.min-volume-state</span> </td> 
-   <td colname="col2"> <p>When volume is in minimum state </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> ptp-btn-volume.mute-state</span> </td> 
-   <td colname="col2"> <p>When volume is in mute state </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behaviors are <span class="codeph"> volumeBehavior</span> and <span class="codeph"> muteButtonBehavior</span>. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p><span class="codeph"> .ptp-volume-control</span>
+     <ul id="ul_B12ADDFB83EA40FD8B4E92AF418AA4B4">
+      <li id="li_7DA8143A69ED4E7D8A560B9FF75D6BA7"><span class="codeph"> .expanded</span> </li>
+      <li id="li_D8CCAD45D81C4850B6903FE261833AE6"><span class="codeph"> .vertical</span> </li>
+     </ul> </p> </td>
+   <td colname="col2"> <p>Volume control on control bar
+     <ul id="ul_2C60F018FDCB458885738AC378C02F61">
+      <li id="li_6B19572B504A4BBF9C97DC29C0E92A1D">When control is in expanded form </li>
+      <li id="li_6489E422E1944D5194CBDFC8383D2F30">When control is in vertical form </li>
+     </ul> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> ptp-btn-volume</span> </td>
+   <td colname="col2"> <p>Volume button on control bar </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> ptp-btn-volume.min-volume-state</span> </td>
+   <td colname="col2"> <p>When volume is in minimum state </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> ptp-btn-volume.mute-state</span> </td>
+   <td colname="col2"> <p>When volume is in mute state </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behaviors are <span class="codeph"> volumeBehavior</span> and <span class="codeph"> muteButtonBehavior</span>. </td>
+  </tr>
+ </tbody>
 </table>
 
-<table id="table_E3DC93F8FC614C30AADAE259D18F10EF"> 
+<table id="table_E3DC93F8FC614C30AADAE259D18F10EF">
  <desc>
-   Here are the styles for the volume slider: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style (D) </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here are the styles for the volume slider:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style (D) </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-volume-slider</span> </td> 
-   <td colname="col2"> <p>The volume slider. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-volume-hidden</span> </td> 
-   <td colname="col2"> <p>The volume slider in a hidden state. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> volumeSliderBehavior</span>. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-volume-slider</span> </td>
+   <td colname="col2"> <p>The volume slider. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-volume-hidden</span> </td>
+   <td colname="col2"> <p>The volume slider in a hidden state. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> volumeSliderBehavior</span>. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Rewind {#section_06EE608FC54A4CF5B5DF9DC743CFC740}
 
-<table id="table_0ACB116582D54B188E9F5B5C03D3A615"> 
+<table id="table_0ACB116582D54B188E9F5B5C03D3A615">
  <desc>
-   Here is the style for the rewind button: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style (E) </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here is the style for the rewind button:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style (E) </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-fastrewind</span> </td> 
-   <td colname="col2"> <p>The rewind button on the control bar. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> rewindButtonBehavior</span>. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-fastrewind</span> </td>
+   <td colname="col2"> <p>The rewind button on the control bar. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> rewindButtonBehavior</span>. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Time {#section_0E6549B3DF6D4C10947D445A5F8EEA7F}
 
-<table id="table_CEE62BFF5FB04FDCBBE1331E0D727EBA"> 
+<table id="table_CEE62BFF5FB04FDCBBE1331E0D727EBA">
  <desc>
-   Here is the style to display the remaining time on the control bar: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style (F) </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here is the style to display the remaining time on the control bar:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style (F) </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-txt-display-time</span> </td> 
-   <td colname="col2"> <p>Displays the remaining time on the control bar </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> timeRemainingBehavior</span>. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-txt-display-time</span> </td>
+   <td colname="col2"> <p>Displays the remaining time on the control bar </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> timeRemainingBehavior</span>. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Fast Rewind {#section_F6E6C65BD3BD493A89915DF9B92933BA}
 
-<table id="table_25BB4966B709402383AB6A6822FC1999"> 
+<table id="table_25BB4966B709402383AB6A6822FC1999">
  <desc>
-   Here is the style for the fast rewind button: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style (G) </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here is the style for the fast rewind button:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style (G) </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-fastrewind</span> </td> 
-   <td colname="col2"> <p>The fast rewind button on the control bar. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> fastRewindButtonBehavior</span>. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-fastrewind</span> </td>
+   <td colname="col2"> <p>The fast rewind button on the control bar. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> fastRewindButtonBehavior</span>. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Slow Rewind {#section_38A22BB8681B430F8C6808C3BD21FB4E}
 
-<table id="table_E623C374622A497C91E22333D77AF8F6"> 
+<table id="table_E623C374622A497C91E22333D77AF8F6">
  <desc>
-   Here is the style for the slow rewind button: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style (H) </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here is the style for the slow rewind button:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style (H) </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-slowrewind</span> </td> 
-   <td colname="col2"> <p>The slow rewind button on the control bar. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> slowRewindButtonBehavior</span>. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-slowrewind</span> </td>
+   <td colname="col2"> <p>The slow rewind button on the control bar. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> slowRewindButtonBehavior</span>. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Slow Forward {#section_92ACF092EECC4A5EAF6AA090C05E552E}
 
-<table id="table_88C1CF5DB2D84EDBA01AC62B70509B08"> 
+<table id="table_88C1CF5DB2D84EDBA01AC62B70509B08">
  <desc>
-   Here is the style for the slow forward button: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style (I) </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here is the style for the slow forward button:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style (I) </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-slowforward</span> </td> 
-   <td colname="col2"> <p>The slow forward button on the control bar. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> slowForwardButtonBehavior</span>. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-slowforward</span> </td>
+   <td colname="col2"> <p>The slow forward button on the control bar. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> slowForwardButtonBehavior</span>. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Fast Forward {#section_F90ED8B3739B49ACAB1F12DF18F0E4D6}
 
-<table id="table_F166BD1E8B934B34AF3690BBBAD894B7"> 
+<table id="table_F166BD1E8B934B34AF3690BBBAD894B7">
  <desc>
-   Here is the style for the fast forward button: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style (J) </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here is the style for the fast forward button:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style (J) </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-fastforward</span> </td> 
-   <td colname="col2"> <p>The fast forward button on the control bar. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> fastForwardButtonBehavior</span>. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-fastforward</span> </td>
+   <td colname="col2"> <p>The fast forward button on the control bar. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> fastForwardButtonBehavior</span>. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Audio Track {#section_1CDF4FA5A1C14DB6B9C96579FFA1057C}
 
-<table id="table_22FC521D786B45EB84F230894FFECE79"> 
+<table id="table_22FC521D786B45EB84F230894FFECE79">
  <desc>
-   Here are the styles to configure the audio track: 
- </desc> 
- <thead> 
-  <tr> 
+   Here are the styles to configure the audio track:
+ </desc>
+ <thead>
+  <tr>
    <th colname="col1" class="entry"> Style </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colspan="2"> <p><b>Audio Track Button (K)</b> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-audio-track</span> </td> 
-   <td colname="col2"> <p>The audio track button on the control bar. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> audioTrackButtonBehavior</span>. </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> <p><b>Audio Track Selection Panel (L)</b> </p> </td> 
-  </tr> 
-  <tr> 
+ <tbody>
+  <tr>
+   <td colspan="2"> <p><b>Audio Track Button (K)</b> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-audio-track</span> </td>
+   <td colname="col2"> <p>The audio track button on the control bar. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> audioTrackButtonBehavior</span>. </td>
+  </tr>
+  <tr>
+   <td colspan="2"> <p><b>Audio Track Selection Panel (L)</b> </p> </td>
+  </tr>
+  <tr>
    <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-panel</span> </td> 
-   <td colname="col2"> <p>The panel for selecting the audio track. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> audioTrackSelectionPanelBehavior</span>. </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> <p><b>Audio Track Selection Header (M)</b> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-header</span> </td> 
-   <td colname="col2"> <p>The header for the <span class="codeph"> ptp-audio-track-selection-panel</span>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Audio Track Selection Menu (N)</b> </p> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-menu</span> </td> 
-   <td colname="col2"> <p>The menu items in the <span class="codeph"> ptp-audio-track-selection-panel</span>. </p> </td> 
-  </tr> 
- </tbody> 
+   <td colname="col2"> <p>The panel for selecting the audio track. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> audioTrackSelectionPanelBehavior</span>. </td>
+  </tr>
+  <tr>
+   <td colspan="2"> <p><b>Audio Track Selection Header (M)</b> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-header</span> </td>
+   <td colname="col2"> <p>The header for the <span class="codeph"> ptp-audio-track-selection-panel</span>. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p><b>Audio Track Selection Menu (N)</b> </p> </td>
+   <td colname="col2"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-menu</span> </td>
+   <td colname="col2"> <p>The menu items in the <span class="codeph"> ptp-audio-track-selection-panel</span>. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Sharing {#section_B2ADC76E76304A68AD648A00A12B676E}
 
-<table id="table_3264C472809D462B8FC16680B96B1AC9"> 
+<table id="table_3264C472809D462B8FC16680B96B1AC9">
  <desc>
-   Here are the styles to configure sharing: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here are the styles to configure sharing:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colspan="2"> <p><b>Social Media Sharing Button (O)</b> </p> </td> 
-  </tr> 
-  <tr> 
+ <tbody>
+  <tr>
+   <td colspan="2"> <p><b>Social Media Sharing Button (O)</b> </p> </td>
+  </tr>
+  <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-share-video</span> </td> 
-   <td colname="col2"> <p>The social media share button on the control bar that will open up <span class="codeph"> ptp-share-video-panel</span>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> shareVideoButtonBehavior</span>. </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> <p><b>Sharing Video Panel (P)</b> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-share-video-panel</span> </td> 
-   <td colname="col2"> <p>The panel that displays the social share options. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> shareVideoPanelBehavior</span>. </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> <p><b>Sharing Video Menu (Q)</b> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-header</span> </td> 
-   <td colname="col2"> <p>The header for the <span class="codeph"> ptp-audio-track-selection-panel</span>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .share-video-panel-menu</span> </td> 
-   <td colname="col2"> <p>The menu in <span class="codeph"> ptp-share-video-panel</span> that displays all the options to share content on social media. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-share-video-panel-menu-item</span> </td> 
-   <td colname="col2"> <p>The menu item in the <span class="codeph"> share-video-panel-menu</span>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-share-video-facebook</span> </td> 
-   <td colname="col2"> <p>The menu item that allows you to share content on Facebook. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-share-video-twitter</span> </td> 
-   <td colname="col2"> <p>The menu item that allows you to share content on Twitter. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-share-video-google-plus</span> </td> 
-   <td colname="col2"> <p>The menu item that allows you to share content on Google Plus. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-share-video-linkedin</span> </td> 
-   <td colname="col2"> <p>The menu item that allows you to share content on LinkedIn. </p> </td> 
-  </tr> 
- </tbody> 
+   <td colname="col2"> <p>The social media share button on the control bar that will open up <span class="codeph"> ptp-share-video-panel</span>. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> shareVideoButtonBehavior</span>. </td>
+  </tr>
+  <tr>
+   <td colspan="2"> <p><b>Sharing Video Panel (P)</b> </p> </td>
+  </tr>
+   <td colname="col1"><span class="codeph"> .ptp-share-video-panel</span> </td>
+   <td colname="col2"> <p>The panel that displays the social share options. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> shareVideoPanelBehavior</span>. </td>
+  </tr>
+  <tr>
+   <td colspan="2"> <p><b>Sharing Video Menu (Q)</b> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-header</span> </td>
+   <td colname="col2"> <p>The header for the <span class="codeph"> ptp-audio-track-selection-panel</span>. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .share-video-panel-menu</span> </td>
+   <td colname="col2"> <p>The menu in <span class="codeph"> ptp-share-video-panel</span> that displays all the options to share content on social media. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-share-video-panel-menu-item</span> </td>
+   <td colname="col2"> <p>The menu item in the <span class="codeph"> share-video-panel-menu</span>. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-share-video-facebook</span> </td>
+   <td colname="col2"> <p>The menu item that allows you to share content on Facebook. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-share-video-twitter</span> </td>
+   <td colname="col2"> <p>The menu item that allows you to share content on Twitter. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-share-video-google-plus</span> </td>
+   <td colname="col2"> <p>The menu item that allows you to share content on Google Plus. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-share-video-linkedin</span> </td>
+   <td colname="col2"> <p>The menu item that allows you to share content on LinkedIn. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Closed Captions {#section_A01BA68218564DA0B7D6BF51F045D7AB}
 
-<table id="table_777C7034C9424F8C841DABD480FFAC47"> 
+<table id="table_777C7034C9424F8C841DABD480FFAC47">
  <desc>
-   Here are the styles to configure closed captions: 
- </desc> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Style </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   Here are the styles to configure closed captions:
+ </desc>
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Style </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colspan="2"> <p><b>Closed Captions Button (R)</b> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-btn-closed-caption</span> </td> 
-   <td colname="col2"> <p>The <span class="uicontrol"> Closed Captions</span> button on the control bar. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> closedCaptionButtonBehavior</span>. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .on-state</span> </td> 
-   <td colname="col2"> <p>The captions have been enabled for a video. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> <p><b>Closed Captions Panel (S)</b> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-closed-caption-panel</span> </td> 
-   <td colname="col2"> <p>The panel for closed captions. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> closedCaptionLanguagePanelBehavior</span>. </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"> <p><b>Closed Captions Languages (T)</b> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-closed-caption-language-panel:</span> </td> 
-   <td colname="col2"> <p>The header for the <span class="codeph"> ptp-audio-track-selection-panel</span>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-closed-caption-language-menu: </span> </td> 
-   <td colname="col2"> <p>The menu in the closed captions panel. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Closed Captions Options (U)</b> </p> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-closed-caption-options-btn</span> </td> 
-   <td colname="col2"> <p>The <span class="uicontrol"> Options</span> button in the closed captions options panel. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-closed-caption-options-panel</span> </td> 
-   <td colname="col2"> <p>The Options panel on the closed captions panel. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .ptp-closed-caption-menu-item</span> </td> 
-   <td colname="col2"> <p>The menu item in the closed captions panel. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="codeph"> .selected</span> </td> 
-   <td colname="col2"> <p>In the selected state. </p> </td> 
-  </tr> 
-  <tr> 
+ <tbody>
+  <tr>
+   <td colspan="2"> <p><b>Closed Captions Button (R)</b> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-btn-closed-caption</span> </td>
+   <td colname="col2"> <p>The <span class="uicontrol"> Closed Captions</span> button on the control bar. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> closedCaptionButtonBehavior</span>. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .on-state</span> </td>
+   <td colname="col2"> <p>The captions have been enabled for a video. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2"> <p><b>Closed Captions Panel (S)</b> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-closed-caption-panel</span> </td>
+   <td colname="col2"> <p>The panel for closed captions. </p> </td>
+  </tr>
+  <tr>
+   <td colspan="2">The default behavior is <span class="codeph"> closedCaptionLanguagePanelBehavior</span>. </td>
+  </tr>
+  <tr>
+   <td colspan="2"> <p><b>Closed Captions Languages (T)</b> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-closed-caption-language-panel:</span> </td>
+   <td colname="col2"> <p>The header for the <span class="codeph"> ptp-audio-track-selection-panel</span>. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-closed-caption-language-menu: </span> </td>
+   <td colname="col2"> <p>The menu in the closed captions panel. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p><b>Closed Captions Options (U)</b> </p> </td>
+   <td colname="col2"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-closed-caption-options-btn</span> </td>
+   <td colname="col2"> <p>The <span class="uicontrol"> Options</span> button in the closed captions options panel. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-closed-caption-options-panel</span> </td>
+   <td colname="col2"> <p>The Options panel on the closed captions panel. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .ptp-closed-caption-menu-item</span> </td>
+   <td colname="col2"> <p>The menu item in the closed captions panel. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="codeph"> .selected</span> </td>
+   <td colname="col2"> <p>In the selected state. </p> </td>
+  </tr>
+  <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-done-btn</span> </td> 
    <td colname="col2"> <p>The <span class="uicontrol"> Done</span> button in the header of the closed captions options panel. </p> </td> 
   </tr> 
@@ -963,4 +954,3 @@ Here are the styles for the main div:
   </tr> 
  </tbody> 
 </table>
-

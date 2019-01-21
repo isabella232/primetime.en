@@ -36,7 +36,7 @@ The following features are not supported:
 
 The following API elements support VPAID 2.0 ads:
 
-* The `getCustomAdView` method of `MediaPlayer` returns a `CustomAdView` object, representing the web view that renders the VPAID ad (see [API References](http://help.adobe.com/en_US/primetime/api/psdk/javadoc/index.html)).
+* The `getCustomAdView` method of `MediaPlayer` returns a `CustomAdView` object, representing the web view that renders the VPAID ad (see [API References](https://help.adobe.com/en_US/primetime/api/psdk/javadoc/index.html)).
 
 * `MediaPlayer.setCustomAdTimeout(int milliseconds)` sets the timeout on the VPAID loading process. The default timeout value is 10 seconds.
 

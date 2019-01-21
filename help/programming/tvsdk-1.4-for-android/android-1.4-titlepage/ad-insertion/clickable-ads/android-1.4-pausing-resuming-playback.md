@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Pause and resume playback{#pause-and-resume-playback}
+# Pause and resume playback {#pause-and-resume-playback}
 
 When a user clicks an ad, your application should pause playback of the main video content.
 

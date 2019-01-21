@@ -27,4 +27,4 @@ To activate this optional CRS feature, contact your Adobe representative.
 >* CRS 3.1 greatly minimizes network calls, improving video startup time.
 >
 
-For more information about CRS, see [Creative Packaging Service (CRS)](http://help.adobe.com/en_US/primetime/crs/index.html). 
+For more information about CRS, see [Creative Packaging Service (CRS)](https://help.adobe.com/en_US/primetime/crs/index.html). 
