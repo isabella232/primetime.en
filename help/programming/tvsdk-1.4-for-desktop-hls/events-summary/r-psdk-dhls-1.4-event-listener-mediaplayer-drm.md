@@ -17,5 +17,5 @@ TVSDK dispatches digital rights management (DRM) events in response to DRM-relat
 
 |  Event  | Meaning  |
 |---|---|
-| `DRMMetadataInfoEvent. [DRM_METADATA_INFO_AVAILABLE](http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/DRMMetadataInfoEvent.html#DRM_METADATA_INFO_AVAILABLE)`  | New DRM metadata is available.  |
+| `DRMMetadataInfoEvent. [DRM_METADATA_INFO_AVAILABLE](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/DRMMetadataInfoEvent.html#DRM_METADATA_INFO_AVAILABLE)`  | New DRM metadata is available.  |
 

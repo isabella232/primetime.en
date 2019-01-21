@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Requirements{#requirements}
+# Requirements {#requirements}
 
 TVSDK requires specific requirements for media content, manifest content, DRM, and software versions.
 

@@ -22,11 +22,11 @@ These classes provide information about the timeline of the particular media, in
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colname="1"> <a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTPlacementOpportunity.html" format="html" scope="external"> PTPlacementOpportunity</a> </td> 
+   <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTPlacementOpportunity.html" format="html" scope="external"> PTPlacementOpportunity</a> </td> 
    <td colname="2"> An opportunity class represents a point of interest on the timeline. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><a href="http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTimeline.html" format="html" scope="external"> PTTimeline</a> </td> 
+   <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTimeline.html" format="html" scope="external"> PTTimeline</a> </td> 
    <td colname="2"> Class that represents the timeline of the content, including ad breaks. </td> 
   </tr> 
  </tbody> 

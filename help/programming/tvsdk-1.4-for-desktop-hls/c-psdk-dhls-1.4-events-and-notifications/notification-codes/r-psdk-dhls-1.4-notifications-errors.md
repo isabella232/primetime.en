@@ -174,7 +174,7 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="2"><span class="codeph"> NATIVE_ERROR </span> </td> 
    <td colname="3"> None </td> 
    <td colname="4"><span class="codeph"> RUNTIME_CODE</span> <span class="codeph"> RUNTIME_CODE_MESSAGE</span> <span class="codeph"> RESOURCE_URL</span> <span class="codeph"> RESOURCE_TYPE</span> <span class="codeph"> RESOURCE_ID</span> <p><b>DRM details:</b> </p> <span class="codeph"> DRM_ERROR_STRING</span> <span class="codeph"> RUNTIME_SUBERROR_CODE</span> </td> 
-   <td colname="5"> <p>The low-level AVE library issued an error. </p> <p>See <a href="http://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-concept-Details_for_the_NATIVEERROR_notification" format="html" scope="external"> Details for the NATIVE_ERROR notifications</a> for information about the values for these metadata keys. </p> </td> 
+   <td colname="5"> <p>The low-level AVE library issued an error. </p> <p>See <a href="https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-concept-Details_for_the_NATIVEERROR_notification" format="html" scope="external"> Details for the NATIVE_ERROR notifications</a> for information about the values for these metadata keys. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 106001 </span> </td> 

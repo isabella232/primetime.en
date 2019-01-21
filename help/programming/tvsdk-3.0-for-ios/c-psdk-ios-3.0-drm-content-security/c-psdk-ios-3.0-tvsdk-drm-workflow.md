@@ -15,6 +15,6 @@ Primetime DRM is integrated into TVSDK, which simplifies implementing content pr
 
 For an overview and details on using Primetime DRM to implement content protection in a TVSDK application, see:
 
-* [Adobe Primetime TVSDK-DRM Workflow (HTML)](http://help.adobe.com/en_US/primetime/drm/tvsdk-drm-workflow/index.html)
-* [Adobe Primetime TVSDK-DRM Workflow (PDF)](http://help.adobe.com/en_US/primetime/drm/tvsdk-drm-workflow/drm_tvsdk_drm_workflow.pdf)
+* [Adobe Primetime TVSDK-DRM Workflow (HTML)](https://help.adobe.com/en_US/primetime/drm/tvsdk-drm-workflow/index.html)
+* [Adobe Primetime TVSDK-DRM Workflow (PDF)](https://help.adobe.com/en_US/primetime/drm/tvsdk-drm-workflow/drm_tvsdk_drm_workflow.pdf)
 

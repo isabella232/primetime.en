@@ -8,24 +8,24 @@ user-guide: Primetime Programming Help
 # Primetime Programming Help {#programming}
 
 + TVSDK 3.0 for Android {#tvsdk-3.0-for-android}
-   + [Introduction](TVSDK-3.0-for-Android/android-3.0-introduction/android-3.0-introduction.md)
-      + [Product overview, audience, and this guide](TVSDK-3.0-for-Android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-overview-prod-audience-guide.md)
-         + [Considerations and best practices](TVSDK-3.0-for-Android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-considerations.md)
-         + [Primetime TVSDK features](TVSDK-3.0-for-Android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-overview-of-the-player.md)
+   + [Introduction] {#introduction}
+      + [Product overview, audience, and this guide] {#overview-prod-audience-guide}
+         + [Considerations and best practices](tvsdk-3.0-for-android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-considerations.md)
+         + [Primetime TVSDK features](tvsdk-3.0-for-android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-overview-of-the-player.md)
       + [Requirements](TVSDK-3.0-for-Android/android-3.0-introduction/android-3.0-requirements.md)
-   + [Content playback options](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/android-3.0-content-playback-options-android2.md)
+   + [Content playback options] {#content-playback-options}
       + [Set up the Media player](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/android-3.0-mediaplayer-set-up-android.md)
-      + [Work with MediaPlayer objects](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-mediaplayerobjects-working-with.md)
+      + [Work with MediaPlayer objects] {#work-with-media-player-objects}
          + [About the MediaPlayerItem class](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-mediaplayeritem-class-about.md)
          + [Lifecycle and statuses of the MediaPlayer object](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-mediaplayer-object-lifecycle-states.md)
          + [MediaPlayerItem methods for accessing MediaResource information](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-mediaplayeritem-accessing-mediaresource.md)
          + [Reuse or remove a MediaPlayer instance](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-mediaplayer-reuse-or-remove.md)
          + [Inspect the playback timeline](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-timeline-inspect-playback.md)
          + [Suspend and Restore MediaPlayer](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-suspend-and-restore.md)
-      + [Listen for Primetime Player events](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/events-listen-for/android-3.0-events-listen-for.md)
+      + [Listen for Primetime Player events] {#listen-primetime-player-events}
          + [Implement event listeners and callbacks](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/events-listen-for/android-3.0-event-listeners-implement.md)
       + [Set up error handling](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/android-3.0-error-handling-set-up.md)
-      + [Configure the player user interface](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-configure.md)
+      + [Configure the player user interface] {#configure-player-user-interface}
          + [Wait for a valid status](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-state-prepared-wait-for.md)
          + [Play and pause a video](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-pause-play-implement.md)
          + [Identify whether the content is live or VOD](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-content-live-vod-identify.md)
@@ -34,7 +34,7 @@ user-guide: Primetime Programming Help
          + [Display a seek scrub bar with the current playback position](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-seek-scrub-bar-display.md)
          + [Construct a control bar enhanced for DVR](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-ctrl-bar-for-dvr-construct.md)
          + [Enter a stream at a specific time](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-stream-entry-control.md)
-      + [Initialize the media player for a specific video](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-mediaplayer-initialize-for-video.md)
+      + [Initialize the media player for a specific video] {#initialize-the-media-player-for-a-specific-video}
          + [Create a media resource](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-create.md)
          + [Load a media resource in the media player](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-load.md)
          + [Load a media resource using MediaPlayerItemLoader](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-mediaplayeritemloader.md)
@@ -64,8 +64,9 @@ user-guide: Primetime Programming Help
       + [Playback and failover](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/failover-for-playback/android-3.0-failover-for-playback.md)
          + [Media playback and failover](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/failover-for-playback/android-3.0-failover-media-playback.md)
          + [Advertising insertion and failover for VOD](TVSDK-3.0-for-Android/android-3.0-content-playback-options-android2/failover-for-playback/android-3.0-failover-ad-insertion-for-vod.md)
-   + [Advertising](TVSDK-3.0-for-Android/android-3.0-advertising/android-3.0-advertising.md)
-      + [Advertising requirements](TVSDK-3.0-for-Android/android-3.0-advertising/ad-insertion/android-3.0-ad-insertion.md)
+   + [Advertising] {#advertising}
+      + [Advertising requirements] {#advertising-requirements}
+         + [Overview](TVSDK-3.0-for-Android/android-3.0-advertising/ad-insertion/android-3.0-ad-insertion.md)
          + [Insert ads](TVSDK-3.0-for-Android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-insertion-about.md)
             + [Resolve and insert VOD ad](TVSDK-3.0-for-Android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-resolving-client-vod.md)
             + [Resolve and insert Live/linear ad](TVSDK-3.0-for-Android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-resolving-client-live-linear.md)
@@ -137,30 +138,30 @@ user-guide: Primetime Programming Help
             + [Normalize rules](TVSDK-3.0-for-Android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-normalize-rule.md)
             + [Sample creative selection rules](TVSDK-3.0-for-Android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-sample-rule-files.md)
             + [Apply creative selection rules](TVSDK-3.0-for-Android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-how-tvsdk-applies-csr.md)
-   + [Content protection](TVSDK-3.0-for-Android/android-3.0-content-security/android-3.0-content-security.md)
+   + [Content protection] {#content-protection}
       + [Widevine DRM](TVSDK-3.0-for-Android/android-3.0-content-security/android-3.0-drm-widevine.md)
       + [Primetime DRM interface overview](TVSDK-3.0-for-Android/android-3.0-content-security/android-3.0-drm-interface.md)
       + [DRM authentication before playback](TVSDK-3.0-for-Android/android-3.0-content-security/android-3.0-drm-auth-before-playback.md)
       + [DRM authentication during playback](TVSDK-3.0-for-Android/android-3.0-content-security/android-3.0-drm-auth-during-playback.md)
-   + [Video analytics](TVSDK-3.0-for-Android/va-integration-overview/android-3.0-video-analytics.md)
+   + [Video analytics] {#video-analytics}
       + [Integrating TVSDK with Adobe Analytics](TVSDK-3.0-for-Android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-integration-overview.md)
          + [Initialize and configure video analytics](TVSDK-3.0-for-Android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-integrate-heartbeats.md)
          + [Implement custom metadata support](TVSDK-3.0-for-Android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-custom-metadata.md)
          + [Implement chapter support](TVSDK-3.0-for-Android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-chapter-support.md)
          + [Set up video analytics reporting on the server side](TVSDK-3.0-for-Android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-server-side-reporting-set-up.md)
          + [Access video analytics reports](TVSDK-3.0-for-Android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-reports-access.md)
-   + [Events and notifications](TVSDK-3.0-for-Android/android-3.0-events-notifications/android-3.0-events-notifications.md)
+   + [Events and notifications] {#events-and-notifications}
       + [Notifications and events for player status, activity, errors, and logging](TVSDK-3.0-for-Android/android-3.0-events-notifications/android-3.0-notification-system.md)
       + [Notification codes](TVSDK-3.0-for-Android/android-3.0-events-notifications/notification-codes/android-3.0-notification-codes.md)
-         + [Details for the NATIVE_ERROR notification](TVSDK-3.0-for-Android/android-3.0-events-notifications/notification-codes/android-3.0-native-error-summary.md)
+      + [Details for the NATIVE_ERROR notification](TVSDK-3.0-for-Android/android-3.0-events-notifications/notification-codes/android-3.0-native-error-summary.md)
       + [Primetime player events summary](TVSDK-3.0-for-Android/android-3.0-events-notifications/events-summary/android-3.0-events-summary.md)
-         + [Events](TVSDK-3.0-for-Android/android-3.0-events-notifications/events-summary/android-3.0-events.md)
-   + [Billing](TVSDK-3.0-for-Android/android-3.0-billing-title/android-3.0-billing-title.md)
+      + [Events](TVSDK-3.0-for-Android/android-3.0-events-notifications/events-summary/android-3.0-events.md)
+   + [Billing] {#billing}
       + [Billing metrics](TVSDK-3.0-for-Android/android-3.0-billing-title/billing/android-3.0-billing.md)
-         + [Configure billing metrics](TVSDK-3.0-for-Android/android-3.0-billing-title/billing/android-3.0-billing-config.md)
-         + [Transmit billing metrics](TVSDK-3.0-for-Android/android-3.0-billing-title/billing/android-3.0-billing-data-format.md)
+      + [Configure billing metrics](TVSDK-3.0-for-Android/android-3.0-billing-title/billing/android-3.0-billing-config.md)
+      + [Transmit billing metrics](TVSDK-3.0-for-Android/android-3.0-billing-title/billing/android-3.0-billing-data-format.md)
 + TVSDK 3.0 for iOS {#tvsdk-3.0-for-ios}
-   + [Introduction](TVSDK-3.0-for-iOS/c-psdk-ios-3.0-introduction/c-psdk-ios-3.0-introduction.md)
+   + [Introduction] {#introduction}
       + [Element ID :overview](TVSDK-3.0-for-iOS/c-psdk-ios-3.0-introduction/c-psdk-ios-3.0-overview/c-psdk-ios-3.0-overview.md)
          + [Primetime TVSDK features](TVSDK-3.0-for-iOS/c-psdk-ios-3.0-introduction/c-psdk-ios-3.0-overview/c-psdk-ios-3.0-overview-of-the-player.md)
          + [Considerations and best practices](TVSDK-3.0-for-iOS/c-psdk-ios-3.0-introduction/c-psdk-ios-3.0-overview/c-psdk-ios-3.0-considerations.md)

@@ -29,7 +29,7 @@ Your application must provide TVSDK with the required `PTAuditudeMetadata` infor
 
 To set up the ad server metadata:
 
-1. Create an instance of [ `PTAuditudeMetadata` ](http://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html) and set its properties. 
+1. Create an instance of [ `PTAuditudeMetadata` ](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html) and set its properties. 
 
    ```
    PTAuditudeMetadata *adMetadata = [[PTAuditudeMetadata alloc] init];  

@@ -19,6 +19,6 @@ To be notified about events related to loading a media player resource, register
 
 |  Event  | Meaning  |
 |---|---|
-| `MediaPlayerItemLoader. [completed](http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerItemLoader.html#event:completed)`  | Media resource loading completed successfully.  |
-| `MediaPlayerItemLoader. [failed](http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerItemLoader.html#event:failed)`  | A problem occurred with media resource loading.  |
+| `MediaPlayerItemLoader. [completed](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerItemLoader.html#event:completed)`  | Media resource loading completed successfully.  |
+| `MediaPlayerItemLoader. [failed](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerItemLoader.html#event:failed)`  | A problem occurred with media resource loading.  |
 

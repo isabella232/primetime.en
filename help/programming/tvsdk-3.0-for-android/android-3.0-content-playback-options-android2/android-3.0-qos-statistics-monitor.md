@@ -28,7 +28,7 @@ You can read quality of service (QoS) information about downloaded resources, su
 
    >[!NOTE]
    >
-   >For more about `LoadInformation`, see [2.5 for Android (Java)](http://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/index.html) API docs.
+   >For more about `LoadInformation`, see [2.5 for Android (Java)](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/index.html) API docs.
 
 ## Read QOS playback, buffering, and device statistics {#section_D21722600F324E67A9F06234D338B243}
 

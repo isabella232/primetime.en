@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Store timed metadata objects as they are dispatched{#store-timed-metadata-objects-as-they-are-dispatched}
+# Store timed metadata objects as they are dispatched {#store-timed-metadata-objects-as-they-are-dispatched}
 
 Your application must use the appropriate TimedMetadata objects at the appropriate times.
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Details for the NATIVE_ERROR notification{#details-for-the-native-error-notification}
+# Details for the NATIVE_ERROR notification {#details-for-the-native-error-notification}
 
 When TVSDK handles a native error, it sets some or all of the following metadata key values.  
 
@@ -54,5 +54,5 @@ TVSDK receives these error codes and strings from the video engine.
 
 >[!IMPORTANT]
 >
->For a complete list of Adobe Primetime DRM client error codes, see [DRM Client Error Message Reference](http://help.adobe.com/en_US/primetime/drm/index.html#reference-DRM_Client_Error_Messages).
+>For a complete list of Adobe Primetime DRM client error codes, see [DRM Client Error Message Reference](https://help.adobe.com/en_US/primetime/drm/index.html#reference-DRM_Client_Error_Messages).
 

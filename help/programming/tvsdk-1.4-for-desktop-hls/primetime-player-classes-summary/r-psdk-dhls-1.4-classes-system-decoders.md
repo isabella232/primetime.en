@@ -13,11 +13,11 @@ snippet: y
 
 These classes provide decoding and parsing for packets and tags.
 
- Package: [com.adobe.mediacore.system.decoders](http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/package-detail.html) 
+ Package: [com.adobe.mediacore.system.decoders](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/package-detail.html) 
 
 |  Name  | Description  |
 |---|---|
-| ` [DefaultSCTE35TagDecoder](http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/DefaultSCTE35TagDecoder.html)`  | Class. Generic decoder for SCTE35 packets encoded as Base64 strings.  |
-| ` [DefaultTextTagDecoder](http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/DefaultTextTagDecoder.html)`  | Class. Generic parser for HLS tags.  |
-| ` [TagDecoder](http://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/TagDecoder.html)`  | Base class for decoders supporting various custom tags.  |
+| ` [DefaultSCTE35TagDecoder](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/DefaultSCTE35TagDecoder.html)`  | Class. Generic decoder for SCTE35 packets encoded as Base64 strings.  |
+| ` [DefaultTextTagDecoder](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/DefaultTextTagDecoder.html)`  | Class. Generic parser for HLS tags.  |
+| ` [TagDecoder](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/system/decoders/TagDecoder.html)`  | Base class for decoders supporting various custom tags.  |
 
