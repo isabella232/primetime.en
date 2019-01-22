@@ -61,7 +61,7 @@ snippet: y
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?> 
-   <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" 
+   <mx:WindowedApplication xmlns:mx="https://www.adobe.com/2006/mxml" 
        layout="absolute" 
        width="800" 
        height="500" 
@@ -128,7 +128,7 @@ snippet: y
                     height="350" 
                     autoPlay="true" 
                     bufferTime="10.0" 
-                    source="http://www.example.com/flv/Video.flv" /> 
+                    source="https://www.example.com/flv/Video.flv" /> 
    </mx:WindowedApplication> 
    
    ```

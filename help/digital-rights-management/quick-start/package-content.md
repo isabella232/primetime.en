@@ -16,7 +16,7 @@ snippet: y
 
     * `encrypt.keys.asymmetric.certfile=[license-server-certificate.cer]`: The path to your License Server Certificate (it usually ends with [!DNL .cer], [!DNL .der] or [!DNL .pem]). 
     
-    * `encrypt.license.serverurl=[license-server-url]`: Your license server URL, e.g.: [!DNL http://<License Server Hostname>:8080/flashaccessserver/sampletenant]. 
+    * `encrypt.license.serverurl=[license-server-url]`: Your license server URL, e.g.: [!DNL https://<License Server Hostname>:8080/flashaccessserver/sampletenant]. 
     
     * `encrypt.license.servercert=[transport-certificate.cer]`: The path to your Transport certificate (it usually ends with [!DNL .cer], [!DNL .der], or [!DNL .pem]). 
     
@@ -48,11 +48,11 @@ snippet: y
 
    >[!NOTE]
    >
-   >If you want to package HLS, HDS or DASH contents, you must use a different packager tool, such as [Adobe Primetime Offline Packager](http://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Primetime_Offline_Packager_Getting_Started).
+   >If you want to package HLS, HDS or DASH contents, you must use a different packager tool, such as [Adobe Primetime Offline Packager](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Primetime_Offline_Packager_Getting_Started).
 
 1. Copy the encrypted file artifacts (in this case [!DNL sample_encrypted.mp4] and [!DNL sample_encrypted.mp4.metadata]) to [!DNL <Your Content Server - Tomcat Install Dir>\webapps\ROOT].
 >At this point you have completed the packaging phase of the process. >
 >>[!NOTE]
 >>
->>For more detailed information on command-line tools for packaging content, creating policies, and more, see [Adobe Primetime DRM Command-line tools](http://help.adobe.com/en_US/primetime/drm/5.3/reference_implementations/index.html#concept-Commandline_tools). 
+>>For more detailed information on command-line tools for packaging content, creating policies, and more, see [Adobe Primetime DRM Command-line tools](https://help.adobe.com/en_US/primetime/drm/5.3/reference_implementations/index.html#concept-Commandline_tools). 
 >

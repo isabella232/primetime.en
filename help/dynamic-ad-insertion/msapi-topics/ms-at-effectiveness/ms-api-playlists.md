@@ -70,17 +70,17 @@ The manifest server sends a `VMAP1.0-conformant` XML document to track the start
 <?xml version="1.0"?> 
 <AdTrackingFragments> 
 <AdTrackingFragment> 
-<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0"> 
+<vmap:VMAP xmlns:vmap="https://www.iab.net/vmap-1.0" version="1.0"> 
     <vmap:AdBreak breakType="linear" breakId="mypre" timeOffset="start"> 
         <vmap:TrackingEvents> 
             <vmap:Tracking event="breakStart"> 
-                http://MyServer.com/breakstart.gif 
+                https://MyServer.com/breakstart.gif 
             </vmap:Tracking> 
             <vmap:Tracking event="breakEnd"> 
-                http://MyServer.com/breakend.gif 
+                https://MyServer.com/breakend.gif 
             </vmap:Tracking> 
             <vmap:Tracking event="error"> 
-                http://MyServer.com/error.gif 
+                https://MyServer.com/error.gif 
             </vmap:Tracking> 
         </vmap:TrackingEvents> 
     </vmap:AdBreak> 
@@ -95,15 +95,15 @@ For each ad creative the manifest server inserts into the program content, it se
 <?xml version="1.0"?> 
 <AdTrackingFragments> 
 <AdTrackingFragment> 
-<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+<VAST xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"  
       version="3.0"  
-      xsi:noNamespaceSchemaLocation="http://service.videoplaza.com/schema/iab/vast-3.0.xsd"> 
+      xsi:noNamespaceSchemaLocation="https://service.videoplaza.com/schema/iab/vast-3.0.xsd"> 
 <Ad id="903395"> 
     <InLine> 
       <AdSystem version="1.0">Auditude</AdSystem> 
       <AdTitle/> 
-      <Error>http://ad.qa.auditude.com/adserver/?ErrAd1=[ERRORCODE]</Error> 
-      <Impression id="urn:aeid:903395">http://ad.qa.auditude.com/adserver/e?type=adimp&amp; 
+      <Error>https://ad.qa.auditude.com/adserver/?ErrAd1=[ERRORCODE]</Error> 
+      <Impression id="urn:aeid:903395">https://ad.qa.auditude.com/adserver/e?type=adimp&amp; 
                  cid=127860991&amp; 
                  z=50183&amp; 
                  a=903395&amp; 
@@ -127,7 +127,7 @@ For each ad creative the manifest server inserts into the program content, it se
             <TrackingEvents> 
               ... 
               <Tracking event="firstQuartile"> 
-                http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS&amp; 
+                https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS&amp; 
                   a=903395&amp; 
                   a1=105&amp; 
                   ref=urn:asset:903395:105&amp; 
@@ -150,7 +150,7 @@ For each ad creative the manifest server inserts into the program content, it se
                                 ?Asset=[ASSETURI] 
               </Tracking>                
               <Tracking event="midpoint"> 
-                http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS&amp; 
+                https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS&amp; 
                   a=903395&amp; 
                   a1=105&amp; 
                   ref=urn:asset:903395:105&amp; 
@@ -173,12 +173,12 @@ For each ad creative the manifest server inserts into the program content, it se
                                 ?Asset=[ASSETURI] 
               </Tracking> 
               <Tracking event="firstQuartile"> 
-                http://www.Tweeeen.com/?ContentPosition=[CONTENTPLAYHEAD] 
+                https://www.Tweeeen.com/?ContentPosition=[CONTENTPLAYHEAD] 
                                        ?Cashcash=[CACHEBUSTING] 
                                        ?Asset=[ASSETURI] 
               </Tracking> 
               <Tracking event="midpoint"> 
-                http://www.Fiftyyyy.com/?ContentPosition=[CONTENTPLAYHEAD] 
+                https://www.Fiftyyyy.com/?ContentPosition=[CONTENTPLAYHEAD] 
                                         ?Cashcash=[CACHEBUSTING] 
                                         ?Asset=[ASSETURI] 
               </Tracking> 
@@ -186,12 +186,12 @@ For each ad creative the manifest server inserts into the program content, it se
             </TrackingEvents> 
             <VideoClicks> 
               <ClickTracking> 
-                http://www.MP4-Vid-ClickTrack.com/?ContentPosition=[CONTENTPLAYHEAD] 
+                https://www.MP4-Vid-ClickTrack.com/?ContentPosition=[CONTENTPLAYHEAD] 
                                                   ?Cashcash=[CACHEBUSTING] 
                                                   ?Asset=[ASSETURI] 
               </ClickTracking> 
               <ClickThrough> 
-                http://www.cnn.com/?ContentPosition=[CONTENTPLAYHEAD] 
+                https://www.cnn.com/?ContentPosition=[CONTENTPLAYHEAD] 
                                    ?Cashcash=[CACHEBUSTING] 
                                    ?Asset=[ASSETURI] 
               </ClickThrough> 
@@ -207,7 +207,7 @@ For each ad creative the manifest server inserts into the program content, it se
           <CompanionAds> 
             <Companion id="103" width="300" height="250"> 
               <StaticResource creativeType="image/jpeg"> 
-                http://ad.qa.auditude.com/adserver/c/z=50183; 
+                https://ad.qa.auditude.com/adserver/c/z=50183; 
                   l=1355280906; 
                   u=956c3cd141086a1da44dcae8ea4ed14a; 
                   uid=_CxLm0b1SeKD8KXco__5TQ; 
@@ -224,7 +224,7 @@ For each ad creative the manifest server inserts into the program content, it se
                   a1=103/c300x250.jpeg 
               </StaticResource> 
               <CompanionClickThrough> 
-                http://ad.qa.auditude.com/adserver/l/a=903395%3Ba1=103 
+                https://ad.qa.auditude.com/adserver/l/a=903395%3Ba1=103 
                   %3Ba2=1%3Bz=50183%3Bl=1355280906%3Bu=956c3cd141086a1da44dcae8ea4ed14a 
                   %3Bcid=127860991%3Bs=ef8c51dc%3Buid=_CxLm0b1SeKD8KXco__5TQ 
                   %3Bt=1355309735%3Bbr=1%3Bsq=1%3Bpod=id%3a1%2cctype%3al%2cptype 

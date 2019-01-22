@@ -15,8 +15,8 @@ Packaging content is the process of preparing video content for playback over th
 
 To prepare your content, you can use either Adobe Offline Packager or other tools such as ExpressPlay's Bento4 packager. Packagers both prepare the video for playback (e.g., fragmenting the original file and putting it into a manifest), and protect the video with your chosen DRM solution (PlayReady, Widevine, FairPlay, Access, etc.):
 
-* [Adobe Offline Packager](http://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Primetime_Offline_Packager_Getting_Started) 
-* [ExpressPlay Packagers](http://www.expressplay.com/developer/packaging-tools/)
+* [Adobe Offline Packager](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Primetime_Offline_Packager_Getting_Started) 
+* [ExpressPlay Packagers](https://www.expressplay.com/developer/packaging-tools/)
 
 <a id="fig_jbn_fw5_xw"></a>
 
@@ -24,7 +24,7 @@ To prepare your content, you can use either Adobe Offline Packager or other tool
 
 1. Package or otherwise obtain content to use for testing your setup.
 
-   One of the crucial points to remember for packaging is that the Key ID (Content ID) that you use in this packaging step is the same one you must provide in your subsequent license token request. The Key ID is the only item that identifies your CEK (which may be stored in your own key management database, or stored using [ExpressPlay's Key Storage Service](http://www.expressplay.com/developer/key-storage/). 
+   One of the crucial points to remember for packaging is that the Key ID (Content ID) that you use in this packaging step is the same one you must provide in your subsequent license token request. The Key ID is the only item that identifies your CEK (which may be stored in your own key management database, or stored using [ExpressPlay's Key Storage Service](https://www.expressplay.com/developer/key-storage/). 
 
    >[!NOTE]
    >
@@ -64,7 +64,7 @@ Here is a packaging example using Adobe Offline Packager for Widevine. The Packa
 
 * `widevine_key_id` - This is the identifier for the license you specified in the `key_file_path` entry. In other words, this identifies the key you use to encrypt the content. This ID is a 16-byte HEX string that you create yourself.
 
-As stated in the [Packager documentation](http://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Working_with_Offline_Packager), "As a best practice, create a configuration file that contains the common options that you want to use for generating the outputs. Then, create the output by providing specific options as a command-line argument." In this case, our config file is fairly complete, so you could create your output as follows:
+As stated in the [Packager documentation](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Working_with_Offline_Packager), "As a best practice, create a configuration file that contains the common options that you want to use for generating the outputs. Then, create the output by providing specific options as a command-line argument." In this case, our config file is fairly complete, so you could create your output as follows:
 
 ```
 java -jar OfflinePackager.jar -conf_path widevine.xml -out_path test_dash/ 

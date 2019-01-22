@@ -144,7 +144,7 @@ Complete the following steps to create a basic player using the Browser TVSDK.
 1. Create the `MediaResource`, which passes the M3U8 link (or mpd).
 
    ```js
-   var resourceUrl = "http://example.com/a/yourUrl.m3u8"; 
+   var resourceUrl = "https://example.com/a/yourUrl.m3u8"; 
    var resourceType = AdobePSDK.MediaResourceType.HLS; 
    var mediaResource = new AdobePSDK.MediaResource(resourceUrl, resourceType, null, false);
    ```

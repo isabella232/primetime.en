@@ -15,7 +15,7 @@ There are several ways to determine whether your server has started correctly. V
 
 * Check your [!DNL AdobeFlashAccess.log] file. This is where the Reference Implementation writes log information. The location of this log file is indicated by your [!DNL log4j.xml] file and can be modified to point to any location you'd like. By default, the log file will be output to the working directory where you've run catalina.
 
-* Navigate to the following URL: [!DNL http:///flashaccess/license/v4]*your server:server port*. You should see the text "License Server is setup correctly".
+* Navigate to the following URL: [!DNL https:///flashaccess/license/v4]*your server:server port*. You should see the text "License Server is setup correctly".
 
 Another way to test if your server is running correctly is to package a piece of test content, set up a sample video player, and play it. The following procedure describes this process:
 
@@ -29,7 +29,7 @@ Another way to test if your server is running correctly is to package a piece of
 
    For more information on creating policies using the Policy Manager, see [Command line usage](c_xgep_using-aaxs-ref-impl-command-line-usage.md).
 
-1. Set the `encrypt.license.serverurl` property in the [!DNL flashaccesstools.properties] file to the URL of the license server (for example, [!DNL http://localhost:8080/]). The [!DNL flashaccesstools.properties] file is located under the [!DNL \Reference Implementation\Command Line Tools] folder.
+1. Set the `encrypt.license.serverurl` property in the [!DNL flashaccesstools.properties] file to the URL of the license server (for example, [!DNL https://localhost:8080/]). The [!DNL flashaccesstools.properties] file is located under the [!DNL \Reference Implementation\Command Line Tools] folder.
 
 1. Package a piece of content by using the following command: 
 
@@ -50,9 +50,9 @@ Another way to test if your server is running correctly is to package a piece of
 1. Install Flash Player 10.1 or later.
 1. Open the web browser and navigate to the following URL:
 
-[!DNL http://localhost:8080/SVP/player.html]
+[!DNL https://localhost:8080/SVP/player.html]
 1. Navigate to the following URL, then click the Play button:
 
-[!DNL http://localhost:8080/Content/]*your_encrypted_FLV*.
+[!DNL https://localhost:8080/Content/]*your_encrypted_FLV*.
 1. If the video fails to play, check if any error codes were written in the logging pane of the Sample Video Player, or in the [!DNL AdobeFlashAccess.log] file. The location of the [!DNL AdobeFlashAccess.log] log file is indicated by your log4j.xml file, and can be modified to point to any location you'd like. By default, the log file is written to the working directory where you've run catalina.
 

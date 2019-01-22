@@ -23,7 +23,7 @@ If you use a network capture tool to monitor the statistics Browser TVSDK transm
     <sc_xml_ver>1.0</sc_xml_ver>
     <reportSuiteID>primesample2</reportSuiteID>
     <visitorID>947310128cb56f41</visitorID>
-    <pageURL>http://. . ..m3u8</pageURL>
+    <pageURL>https://. . ..m3u8</pageURL>
     <timestamp>2016-4-7T10:1:4</timestamp>
     <contextData>
         <billingMetrics>
@@ -33,7 +33,7 @@ If you use a network capture tool to monitor the statistics Browser TVSDK transm
             <midrollEnabled>true</midrollEnabled>
             <platform>Mac OSX 10.11.5</platform>
             <tvsdkVersion>2,4,0,1559</tvsdkVersion>
-            <contentURL>http://. . ..m3u8</contentURL>
+            <contentURL>https://. . ..m3u8</contentURL>
         </billingMetrics>
     </contextData>
 </request>

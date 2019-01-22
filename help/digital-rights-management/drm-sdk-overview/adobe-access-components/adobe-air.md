@@ -13,4 +13,4 @@ Adobe AIR is a cross-operating system runtime that allows content producers to e
 
 Businesses have complete control of the user interface, and they can design a user experience to reflect and reinforce their brand. With built-in support for playback of content protected with Adobe Primetime DRM SDK, Adobe AIR helps create custom, end-to-end content distribution chains.
 
-For more information on Adobe AIR, visit: [www.adobe.com/go/air](http://www.adobe.com/go/air) 
+For more information on Adobe AIR, visit: [www.adobe.com/go/air](https://www.adobe.com/go/air) 

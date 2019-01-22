@@ -17,4 +17,4 @@ When you create these applications, you can allow some users to create and modif
 
 Policies are not signed or protected from modification until they are used in packaging. If you are concerned that packaging tool users might modify policies, sign the policies to ensure that the policies cannot be modified.
 
-For more information about creating applications with the SDK, see the Primetime DRM APIs on [API Primetime API References](http://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References). 
+For more information about creating applications with the SDK, see the Primetime DRM APIs on [API Primetime API References](https://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References). 

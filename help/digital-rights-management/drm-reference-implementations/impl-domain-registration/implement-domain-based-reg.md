@@ -15,7 +15,7 @@ snippet: y
    In your [!DNL .properties] file, set: 
 
    ```
-   policy.domain.url=http://[ 
+   policy.domain.url=https://[ 
 <i>server:port</i>] 
    ```
 

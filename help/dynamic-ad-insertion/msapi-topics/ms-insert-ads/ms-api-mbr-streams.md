@@ -13,7 +13,7 @@ Client requests for ad insertion typically specify more than one bit rate in the
 The manifest server uses the information in the client's Bootstrap URL request to retrieve the content variant playlist. It generates a new variant playlist containing manifest server links to the stream-level content. The client uses these to construct ad insertion requests. The manifest server's stream-level content links have the following format: 
 
 ```
-http://manifest.auditude.com/auditude/{live/vod}/{publisherAssetID}/{rendition}/
+https://manifest.auditude.com/auditude/{live/vod}/{publisherAssetID}/{rendition}/
   {groupID}/{base64-encoded url of the bit rate stream}.[m3u8]?{Query parameters}
 ```
 

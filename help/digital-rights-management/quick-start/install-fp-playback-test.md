@@ -15,4 +15,4 @@ snippet: y
 1. Download and install Flash Player.
 1. To verify that Flash Player has installed correctly, play the default video:
 
-   `http://drmtest2.adobe.com/AccessPlayer/player.swf`
+   `https://drmtest2.adobe.com/AccessPlayer/player.swf`

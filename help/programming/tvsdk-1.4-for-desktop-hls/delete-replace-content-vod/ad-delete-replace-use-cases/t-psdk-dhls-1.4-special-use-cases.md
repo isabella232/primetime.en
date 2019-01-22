@@ -22,7 +22,7 @@ TVSDK favors custom range settings over standard ad settings. For example, if MA
        "properties": [],
        "stream": {
            "manifests": [ {
-               "url": "http://. . ./vanilla/index.m3u8",
+               "url": "https://. . ./vanilla/index.m3u8",
                "type": "hls"
            } ],
            "metadata": {
@@ -51,8 +51,8 @@ TVSDK favors custom range settings over standard ad settings. For example, if MA
        "title": "Verify 30Sec Pre-Roll, 15 Sec Mid roll Ad and 
        45 second Post-Roll can be replaced in one shot.",
        "thumbnail": {
-           "large": "http://example.com",
-           "small": "http://example.com"
+           "large": "https://example.com",
+           "small": "https://example.com"
        },
        "type": "vod",
        "id": "vod_001"

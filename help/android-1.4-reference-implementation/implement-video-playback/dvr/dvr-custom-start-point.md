@@ -16,5 +16,5 @@ You can choose a custom starting point for when to enter a DVR stream instead of
 To set the start time through the [ConfigProvider](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/ConfigProvider.html) class: 
 
 1. Enable [isCustomPositionPrefEnabled()](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/ConfigProvider.html#isCustomPositionPrefEnabled()).
-1. Set the start time in ` [retrieveStartTimePref()](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html#iretrieveStartTimePref()).`
+1. Set the start time in ` [retrieveStartTimePref()](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html#iretrieveStartTimePref()).`
 1. Check that the custom start position is enabled.

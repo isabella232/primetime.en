@@ -19,7 +19,7 @@ This example shows one possible way to manage ad clicks.
 
    ```xml
       <?xml version="1.0"?> 
-   <s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"  
+   <s:VGroup xmlns:fx="https://ns.adobe.com/mxml/2009"  
        xmlns:s="library://ns.adobe.com/flex/spark" percentWidth="100" horizontalAlign="center">     
            <fx:Declarations><fx:String id="text"/></fx:Declarations> 
            <s:Label text="{text}"  backgroundAlpha="0.75" backgroundColor="#DEDEDE"  

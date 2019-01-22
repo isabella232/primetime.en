@@ -79,7 +79,7 @@ snippet: y
    You will likely want to initially run `log4j` in debug mode. In [!DNL log4j.xml], set `debug` to true: 
 
    ```
-   <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"  
+   <log4j:configuration xmlns:log4j="https://jakarta.apache.org/log4j/"  
 <b>debug="true"</b>> 
    ... 
    

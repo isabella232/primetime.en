@@ -48,7 +48,7 @@ snippet: y
      }, 
     
      "com.microsoft.playready":{ 
-       "serverURL":"http://pr.test.expressplay.com/playready/RightsManager.asmx? 
+       "serverURL":"https://pr.test.expressplay.com/playready/RightsManager.asmx? 
                     ExpressPlayToken=[YOUR_EXPRESSPLAY_TOKEN]", 
          "httpRequestHeaders":{ 
        } 
@@ -69,7 +69,7 @@ snippet: y
    >Ensure that you update the resource type, because this is now DASH.
 
    ```js
-   var resourceUrl = "http://ptdemos.com/videos/dashdrm/stream.mpd"; 
+   var resourceUrl = "https://ptdemos.com/videos/dashdrm/stream.mpd"; 
    var resourceType = AdobePSDK.MediaResourceType.DASH;
    ```
 

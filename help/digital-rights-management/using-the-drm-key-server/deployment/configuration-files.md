@@ -16,4 +16,4 @@ The Primetime DRM Key Server requires two types of configuration files:
 
 If changes are made to the configuration files, the server must be restarted for the changes to take effect.
 
-To avoid making passwords available in clear text in the configuration files, all passwords specified in the global and tenant configuration files must be encrypted. For more information on encrypting passwords, see [*Password Scrambler* in *Using the Primetime DRM Server for Protected Streaming*](http://help.adobe.com/en_US/primetime/drm/5.3/protected_streaming/index.html#DRM-concept-Password_scrambler). 
+To avoid making passwords available in clear text in the configuration files, all passwords specified in the global and tenant configuration files must be encrypted. For more information on encrypting passwords, see [*Password Scrambler* in *Using the Primetime DRM Server for Protected Streaming*](https://help.adobe.com/en_US/primetime/drm/5.3/protected_streaming/index.html#DRM-concept-Password_scrambler). 

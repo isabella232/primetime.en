@@ -13,7 +13,7 @@ snippet: y
 
 The Audio Codec 3 (AC-3, also known as Dolby Digital®) 5.1 format, allows content providers to compress the size of multichannel audio files without impairing the sound quality. AC-3 is a 5.1 format, which means that it provides five full-bandwidth channels for a richer user experience.
 
-For more information, see [Dolby Digital 5.1](http://www.dolby.com/us/en/technologies/dolby-digital.html).
+For more information, see [Dolby Digital 5.1](https://www.dolby.com/us/en/technologies/dolby-digital.html).
 
 TVSDK supports the following AC-3 5.1 features:
 

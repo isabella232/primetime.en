@@ -112,8 +112,8 @@ Outgoing URLs allow the license server to download the CRLs from Adobe.
 
 Here is a list of the outgoing URLs that you can use:
 
-* `http://crl2.adobe.com/Adobe/FlashAccessRootCA.crl` 
-* `http://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl` 
-* `http://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl` 
-* `http://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl`
+* `https://crl2.adobe.com/Adobe/FlashAccessRootCA.crl` 
+* `https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl` 
+* `https://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl` 
+* `https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl`
 

@@ -116,7 +116,7 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
   </tr> 
   <tr> 
    <td><span class="codeph"> rental.periodEndTime</span> </td> 
-   <td>Rental end date. This value MUST be in the ‘RFC 3339’ _ date/time format in the ‘Z’ zone designator ("Zulu time") format, or an integer preceded by a '+' sign. <p>If the value is a <a href="http://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339</a> date/time format, then it represents an absolute expiration date/time for the license. An example of an RFC 3339 date/time is 2006-04-14T12:01:10Z. </p> <p> If the value is an integer preceded by a '+' sign, it is taken as a relative number of seconds from the time the token is issued. The content cannot be played after this time. Only valid if <span class="codeph"> rightsType</span> is <span class="codeph"> Rental</span>. </p> </td> 
+   <td>Rental end date. This value MUST be in the ‘RFC 3339’ _ date/time format in the ‘Z’ zone designator ("Zulu time") format, or an integer preceded by a '+' sign. <p>If the value is a <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339</a> date/time format, then it represents an absolute expiration date/time for the license. An example of an RFC 3339 date/time is 2006-04-14T12:01:10Z. </p> <p> If the value is an integer preceded by a '+' sign, it is taken as a relative number of seconds from the time the token is issued. The content cannot be played after this time. Only valid if <span class="codeph"> rightsType</span> is <span class="codeph"> Rental</span>. </p> </td> 
    <td>Yes, when <span class="codeph"> rightsType</span> is <span class="codeph"> Rental</span>. </td> 
   </tr> 
   <tr> 

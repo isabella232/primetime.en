@@ -17,4 +17,4 @@ Before running the Adobe Access Server for Protected Streaming, Adobe recommends
 
 To start Tomcat and the license server, run "catalina.bat start" or "catalina.sh start" from Tomcat's bin directory.
 
-After the server has started, verify that it is configured properly by opening *http://license-server-host:port*/flashaccessserver/*tenant-name*/flashaccess/license/v1 in a browser window. If the tenant configuration was successfully loaded, a confirmation message is displayed. 
+After the server has started, verify that it is configured properly by opening *https://license-server-host:port*/flashaccessserver/*tenant-name*/flashaccess/license/v1 in a browser window. If the tenant configuration was successfully loaded, a confirmation message is displayed. 

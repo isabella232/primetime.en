@@ -71,7 +71,7 @@ snippet: y
      <codeblock>
       cert.machine.crldp__DEV=
       
-http://onprem-individualization.com/
+https://onprem-individualization.com/
       
 CRL/onprem-individualization-ca.crl
      </codeblock> </p> <p>The License Server should automatically download this CRL, once a license request is handled. </p> <p importance="high">Note: This distribution point is <i>not</i> checked by Primetime DRM for validity. You must verify that this URL is valid. Errors resulting from an invalid URL will not appear until validation errors appear from the license server. </p> </td> 

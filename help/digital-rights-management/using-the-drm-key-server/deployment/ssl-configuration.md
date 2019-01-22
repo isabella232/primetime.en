@@ -22,8 +22,8 @@ SSLCertificateKeyFile "certs/server_key.pem"
 SSLOptions +StdEnvVars +FakeBasicAuth -ExportCertData +StrictRequire 
 SSLRequireSSL 
 ProxyRequests Off 
-ProxyPass /http://keyserver-name:port/ 
-ProxyPassReverse /http://keyserver-name:port/
+ProxyPass /https://keyserver-name:port/ 
+ProxyPassReverse /https://keyserver-name:port/
 ```
 
 The following example shows the Tomcat SSL configuration. To generate certificate and key files: 

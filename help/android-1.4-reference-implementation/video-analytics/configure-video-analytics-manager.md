@@ -14,7 +14,7 @@ There are two places within the Reference Implementation that you must configure
 
 1. Configure load-time options in the `ADBMobileConfig.json` assets file.
 
-   This file is provided by your Adobe representative. It is not included in the Primetime SDK bundle by default. For more information on the settings in this config file, see the Android Programmer's Guide here: [Initialize and configure video analytics](http://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-task-Initialize_and_configure_video_analytics_).
+   This file is provided by your Adobe representative. It is not included in the Primetime SDK bundle by default. For more information on the settings in this config file, see the Android Programmer's Guide here: [Initialize and configure video analytics](https://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-task-Initialize_and_configure_video_analytics_).
 1. Configure run-time options in the Reference Implementation settings menu
 
    ![](assets/img_psdk_ref_impl_va-settings-menu.png) 

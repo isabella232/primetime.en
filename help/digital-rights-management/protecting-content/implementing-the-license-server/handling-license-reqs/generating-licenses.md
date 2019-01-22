@@ -13,4 +13,4 @@ Iyou want to issue a leaf license to a user, the SDK must decrypt the CEK contai
 
 If an `ExternalKeyRetrieval` object is specified in the `ContentInfo` object, then the license server is expected to use the associated CEK ID to retrieve the appropriate CEK that is inserted into the license.
 
-See the [Adobe Primetime DRM External CEK Overview](http://help.adobe.com/en_US/primetime/drm/5.3/drm_xkey_mgmt/index.html#concept-Adobe_Primetime_DRM_External_CEK_Overview) for more details on how to use the External CEK workflow. 
+See the [Adobe Primetime DRM External CEK Overview](https://help.adobe.com/en_US/primetime/drm/5.3/drm_xkey_mgmt/index.html#concept-Adobe_Primetime_DRM_External_CEK_Overview) for more details on how to use the External CEK workflow. 

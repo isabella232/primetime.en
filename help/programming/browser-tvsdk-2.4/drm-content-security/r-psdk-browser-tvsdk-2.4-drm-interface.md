@@ -34,9 +34,9 @@ Here is a high-level workflow for playback of DRM-protected content:
    var protectionData = { 
        "com.adobe.primetime": { 
           "serverURL": { 
-             "individualization-request": "http://individualization.adobe.com/flashaccess/i15n/v5", 
-             "license-request": "http://example.com:8096/flashaccess/req", 
-             "license-release": "http://example.com:8096/flashaccess/req" 
+             "individualization-request": "https://individualization.adobe.com/flashaccess/i15n/v5", 
+             "license-request": "https://example.com:8096/flashaccess/req", 
+             "license-release": "https://example.com:8096/flashaccess/req" 
           }, 
           "httpRequestHeaders": { 
           } 
@@ -52,9 +52,9 @@ Here is a high-level workflow for playback of DRM-protected content:
    var protectionData = { 
        "com.adobe.primetime": { 
            "serverURL": { 
-               "individualization-request": "http://individualization.adobe.com/flashaccess/i15n/v5", 
-               "license-request": "http://example.com:8096/flashaccess/req", 
-               "license-release": "http://example.com:8096/flashaccess/req" 
+               "individualization-request": "https://individualization.adobe.com/flashaccess/i15n/v5", 
+               "license-request": "https://example.com:8096/flashaccess/req", 
+               "license-release": "https://example.com:8096/flashaccess/req" 
            }, 
            "httpRequestHeaders": { 
            } 
@@ -66,13 +66,13 @@ Here is a high-level workflow for playback of DRM-protected content:
            } 
        }, 
        "com.microsoft.playready": { 
-           "serverURL": "http://pr.test.expressplay.com/playready/RightsManager.asmx?ExpressPlayToken=<token value>", 
+           "serverURL": "https://pr.test.expressplay.com/playready/RightsManager.asmx?ExpressPlayToken=<token value>", 
            "httpRequestHeaders": { 
                "http-header-CustomData": "eyJ1c2VySWQiOiIxMjM0NS" 
            } 
        }, 
        "com.apple.fps.1_0": { 
-           "serverURL": "http://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<token value>", 
+           "serverURL": "https://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<token value>", 
            "certificateURL": "Path_To_certificate.cer", 
            "licenseResponseType": "arraybuffer", 
            "httpRequestHeaders": { 

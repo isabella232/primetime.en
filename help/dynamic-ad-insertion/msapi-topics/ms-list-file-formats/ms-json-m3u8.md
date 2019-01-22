@@ -17,7 +17,7 @@ This is the format of the JSON file containing the `Master-M3U8` URL.
 
 ```
 {
-"Master-M3U8": "http://manifest.auditude.com/auditude/variant/{publisherAssetID}/
+"Master-M3U8": "https://manifest.auditude.com/auditude/variant/{publisherAssetID}/
   {sessionId}/{Base 64 of the url of the content}.m3u8
   ?u={Ad Request Id}
   &z={Ad Zone Id}

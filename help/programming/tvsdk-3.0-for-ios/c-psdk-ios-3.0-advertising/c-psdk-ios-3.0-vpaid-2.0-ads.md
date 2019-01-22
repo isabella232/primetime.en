@@ -17,7 +17,7 @@ The following features are supported:
 
 * Version 2.0 of the VPAID specification
 
-  For more information, refer to [IAB VPAID 2.0](http://www.iab.com/wp-content/uploads/2015/06/VPAID_2_0_Final_04-10-2012.pdf). 
+  For more information, refer to [IAB VPAID 2.0](https://www.iab.com/wp-content/uploads/2015/06/VPAID_2_0_Final_04-10-2012.pdf). 
 * Linear VPAID ads on video-on-demand (VOD) content 
 * JavaScript VPAID ads
 

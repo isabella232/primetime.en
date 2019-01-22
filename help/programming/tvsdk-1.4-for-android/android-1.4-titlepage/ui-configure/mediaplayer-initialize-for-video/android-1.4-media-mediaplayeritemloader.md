@@ -51,7 +51,7 @@ Through the `MediaPlayerItemLoader` class, you can exchange a media resource for
     
    // create the MediaResource instance and set the URL to point to the actual media stream 
    MediaResource mediaResource =  
-     MediaResource.createFromUrl("http://test.com/test_media.m3u8", null); 
+     MediaResource.createFromUrl("https://test.com/test_media.m3u8", null); 
     
    // load the media resource 
    itemLoader.load(mediaResource); 

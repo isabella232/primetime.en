@@ -110,7 +110,7 @@ Here is an example of AVE warnings that were tracked using `NotificationEvent`:
  
 <ph>
   [WARN ] [psdkdemo::PSDKDemo] #onWarningAvailable metadata [description:url::= 
-   http://xyz.corp.adobe.com/pmp/assets/abc/failover/tc.1.04/content/backup-01/ 
+   https://xyz.corp.adobe.com/pmp/assets/abc/failover/tc.1.04/content/backup-01/ 
    low-res/main-stream4-4x3-info6.ts,periodIndex::=0, 
    sizeBytes::=0,downloadTime(ms)::=0,mediaDuration(ms)::=0] 
 </ph>

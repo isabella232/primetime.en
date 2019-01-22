@@ -12,7 +12,7 @@ snippet: y
  Ensure you are using Java 1.6.0_24 or later. 
 1. Fill in the needed empty paths such as `tomcatdir` and `fasterxmldir` in [!DNL build-bees.xml]
 
-   FasterXML/Jackson is included. You can also download it from [http://wiki.fasterxml.com/JacksonDownload](http://wiki.fasterxml.com/JacksonDownload).
+   FasterXML/Jackson is included. You can also download it from [https://wiki.fasterxml.com/JacksonDownload](https://wiki.fasterxml.com/JacksonDownload).
 1. Update actual jar filenames in [!DNL build.common.xml] if you want to use a different version of the Jackson libraries.
 1. Run the `all` target of [!DNL build-bees.xml]:
 

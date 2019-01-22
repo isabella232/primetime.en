@@ -20,7 +20,7 @@ You can use ExpressPlay's Bento4 packager to prepare content for any of the DRM 
 1. If you are encrypting content for  Primetime Access , acquire the  Primetime Adobe Access  SDK from Adobe, along with the required certificates (License, Transport, and Packaging certs).
 1. Supply a Content Encryption Key (CEK) and Content Encryption Key Storage ID (CEKSID) for use across the DRM systems. (You randomly generate these using OpenSSL or similar.)
 
-   The CEK is the actual key you use to encrypt your video file(s). You either store it securely on your own server in your own key management system, or you can make use of ExpressPlay's [key storage solution](http://www.expressplay.com/developer/key-storage/).
+   The CEK is the actual key you use to encrypt your video file(s). You either store it securely on your own server in your own key management system, or you can make use of ExpressPlay's [key storage solution](https://www.expressplay.com/developer/key-storage/).
 
    A CEKSID is the identifier for a particular CEK. You don't (usually) pass the encryption key around. For example, when requesting a license token, you provide the CEKSID. 
 
@@ -63,7 +63,7 @@ You can use ExpressPlay's Bento4 packager to prepare content for any of the DRM 
 
        The client should include a call to your storefront server. Adobe recommends that the client call the storefront after the user selects some content, and after the user is authenticated. Then, pass the token returned from ExpressPlay to your player to use for license requests. Introductions to implementing the DRM component of your players are here:
 
-    * [Browser TVSDK for HTML5](http://help.adobe.com/en_US/primetime/psdk/browser_tvsdk/index.html#PSDKs-reference-DRM_interface_overview) 
-    * [iOS](http://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-task-Enable_Apple_FairPlay_in_TVSDK_applications)
+    * [Browser TVSDK for HTML5](https://help.adobe.com/en_US/primetime/psdk/browser_tvsdk/index.html#PSDKs-reference-DRM_interface_overview) 
+    * [iOS](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-task-Enable_Apple_FairPlay_in_TVSDK_applications)
 
 1. With the license token in hand, the client can now derive the request URL from the token and make the license request to ExpressPlay, and then play the selected, protected content for the user.

@@ -15,7 +15,7 @@ To package you content, you can use either Adobe Offline Packager or other tools
 
 Packagers prepare the video for playback (e.g., fragmenting the original file and putting it into a manifest), and protect the video with your chosen DRM solution (in this case FairPlay):
 
-* [Adobe Offline Packager for FairPlay DRM](http://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-task-Protecting_content_using_FairPlay_DRM) 
+* [Adobe Offline Packager for FairPlay DRM](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-task-Protecting_content_using_FairPlay_DRM) 
 * [ExpressPlay Packagers - Bento4 for HLS](https://www.bento4.com/developers/hls/)
 
 <a id="fig_jbn_fw5_xw"></a>
@@ -55,7 +55,7 @@ Packagers prepare the video for playback (e.g., fragmenting the original file an
     
     * `content_id` - Default value.
 
-       As stated in the [Packager documentation](http://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Working_with_Offline_Packager), "As a best practice, create a configuration file that contains the common options that you want to use for generating the outputs. Then, create the output by providing specific options as a command-line argument."
+       As stated in the [Packager documentation](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Working_with_Offline_Packager), "As a best practice, create a configuration file that contains the common options that you want to use for generating the outputs. Then, create the output by providing specific options as a command-line argument."
 
        ```    
        java -jar OfflinePackager.jar -in_path sample.mp4 -out_type hls 

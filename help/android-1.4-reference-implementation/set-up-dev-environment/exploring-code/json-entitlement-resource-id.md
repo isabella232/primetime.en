@@ -21,7 +21,7 @@ The following code block provides an example of a JSON object when the entitleme
 The following code block provides an example of a JSON object when the entitlement resource ID is an HTML-encoded mRSS string.
 
 ```
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"> 
+<rss version="2.0" xmlns:media="https://search.yahoo.com/mrss/"> 
 <channel> 
 <title>REF_ADOBE</title> 
 <item> 
@@ -40,7 +40,7 @@ The following mRSS string is used as the resource id.
     "entitlement" : { 
         "id" : "<rss version=&quot;2.0&quot; 
         xmlns:media=&quot; 
-        http://search.yahoo.com/mrss/&quot; 
+        https://search.yahoo.com/mrss/&quot; 
         ><channel><title>REF_ADOBE</title><item> 
         <title>Adobe Primetime Reference</title><guid> 
         1234</guid><media:rating scheme=&quot;urn:v-chip&quot;> 

@@ -76,7 +76,7 @@ Follow these steps to enable ExpressPlay service for FairPlay content protection
    1. Select **[!UICONTROL Export "Your Company Name"]** and save the [!DNL .p12] file.
    
       You will be asked to assign a password to secure this file. Make a note of this password as you will need to send this with your credentials package.   
-   1. Login to your account on [www.expressplay.com](http://www.expressplay.com).
+   1. Login to your account on [www.expressplay.com](https://www.expressplay.com).
    1. Click **[!UICONTROL DRM SERVICES]** on the upper left, then select the **[!UICONTROL FairPlay]** tab.
    1. Upload your FairPlay credentials to your ExpressPlay account.
 

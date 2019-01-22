@@ -16,7 +16,7 @@ Use the HTTP GET command to interact with the manifest server.
 1. Send an `HTTP GET` request for a bootstrap URL constructed using the following pattern:
 
    ```
-   http://{manifest-server:port}/auditude/variant/
+   https://{manifest-server:port}/auditude/variant/
     {PublisherAssetID}/{Content URL (base64)}.m3u8
     ?{query parameters}
    ```
@@ -30,7 +30,7 @@ Use the HTTP GET command to interact with the manifest server.
    For example:
 
    ```
-   http://manifest.auditude.com/auditude/variant/
+   https://manifest.auditude.com/auditude/variant/
     {publisherAssetID}/{Content URL (base64)}.m3u8?
    u={Asset ID}&z={zone}&_sid_=0&pttrackingmode=simple
    &pttrackingversion=v2&live=false
