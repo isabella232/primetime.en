@@ -29,7 +29,7 @@ The release enables On-demand Profile for MPEG-DASH, adds support for the `valid
 | PTPUB-954 |Sample-AES encryption bypasses AAXS DRM by default / Error thrown with remote key delivery enabled. |
 | PTPUB-951 |Offline packager does not throw exception when key_file_path is not specified with Widevine. It throws NPE instead. |
 
-The latest documentation of Primetime Packagers is available at [http://help.adobe.com/en_US/primetime/packagers/index.html](https://help.adobe.com/en_US/primetime/packagers/index.html#Packagers-concept-Packager_Reference_Guides).
+The latest documentation of Primetime Packagers is available at [https://help.adobe.com/en_US/primetime/packagers/index.html](https://help.adobe.com/en_US/primetime/packagers/index.html#Packagers-concept-Packager_Reference_Guides).
 
 ### Known issue in version 2.3.1  {#known-issue-in-version}
 
@@ -70,12 +70,12 @@ Software requirements
 
 ### Adobe Primetime Offline Packager 2.3.1 {#adobe-primetime-offline-packager-1}
 
-1. Download the Java SE software from the [Oracle site](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the install instructions.
+1. Download the Java SE software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the install instructions.
 1. Extract the Adobe Primetime Offline Packager 2.3.1 archive file named `PrimetimeOfflinePackager-2-3-1-b47-10142016.zip` to the disk.
 
 ### Configuring the Offline Packager 2.3.1 {#configuring-the-offline-packager}
 
-The configuration instructions are available in the Primetime Offline Packager Getting Started guide at [http://help.adobe.com/en_US/primetime/packagers/offline/index.html](http://help.adobe.com/en_US/primetime/packagers/offline/index.html).
+The configuration instructions are available in the Primetime Offline Packager Getting Started guide at [https://help.adobe.com/en_US/primetime/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/packagers/offline/index.html).
 
 ## What’s new in Primetime Offline Packager 2.1 [July 2015] {#what-s-new-in-primetime-offline-packager-july}
 
@@ -124,11 +124,11 @@ Software requirements
 
 ### Installing Offline Packager 2.1 {#installing-offline-packager}
 
-1. Download the Java SE software from the [Oracle site](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the install instructions. 
+1. Download the Java SE software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the install instructions. 
 1. Extract the Adobe Primetime - Offline Packager 2.1.0 archive file, PrimetimeOfflinePackager-2-1-0-b15-07082015.zip, to your disk.
 
 ### Configuring the Offline Packager 2.1 {#configuring-the-offline-packager-1}
 
 Refer the Primetime Offline Packager Getting Started document for the configuration details available here
 
-[http://help.adobe.com/en_US/primetime/platform/offline/index.html#Platform-conceptPrimetime_Offline_Packager_Getting_Started](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Primetime_Offline_Packager_Getting_Started)
+[https://help.adobe.com/en_US/primetime/platform/offline/index.html#Platform-conceptPrimetime_Offline_Packager_Getting_Started](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Primetime_Offline_Packager_Getting_Started)

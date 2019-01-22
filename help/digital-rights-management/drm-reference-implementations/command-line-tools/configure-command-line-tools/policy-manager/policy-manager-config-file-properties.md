@@ -52,11 +52,11 @@ snippet: y
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.chaining.asymmetric.certfile</span> </td> 
-   <td colname="2" class="- topic/entry ">License server certificate whose public key is used to encrypt the root encryption key for the <a href="http://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Enhanced_License_Chaining" class="- topic/xref " format="http" scope="external"> Enhanced License Chaining</a>. This property specifies a file that only includes the certificate. <p>Note:  Both PEM or DER formats are supported. </p> </td> 
+   <td colname="2" class="- topic/entry ">License server certificate whose public key is used to encrypt the root encryption key for the <a href="https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Enhanced_License_Chaining" class="- topic/xref " format="http" scope="external"> Enhanced License Chaining</a>. This property specifies a file that only includes the certificate. <p>Note:  Both PEM or DER formats are supported. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.chaining.rootKey</span> <p class="- topic/p "><span class="codeph"> -rootKey</span> <i class="+ topic/ph hi-d/i ">root-key</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>Specifies the root encryption key for the <a href="http://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Enhanced_License_Chaining" class="- topic/xref " format="http" scope="external"> Enhanced License Chaining</a>. If no key is specified and Enhanced License Chaining is enabled, a random key is automatically generated. </p> <p>The key must be 16 bytes long and specified as hex values. Whitespace between the hex values is optional. For updates, the command-line option is not available, and the property is ignored. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Specifies the root encryption key for the <a href="https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Enhanced_License_Chaining" class="- topic/xref " format="http" scope="external"> Enhanced License Chaining</a>. If no key is specified and Enhanced License Chaining is enabled, a random key is automatically generated. </p> <p>The key must be 16 bytes long and specified as hex values. Whitespace between the hex values is optional. For updates, the command-line option is not available, and the property is ignored. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.domain.url</span> <p class="- topic/p "><span class="codeph"> -domainURL</span> <i class="+ topic/ph hi-d/i ">url</i> </p> </td> 
@@ -106,7 +106,7 @@ snippet: y
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.useRootLicense</span> </td> 
-   <td colname="2" class="- topic/entry ">Indicates whether this DRM policy has a root license. <p>For more information, see <a href="http://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Enhanced_License_Chaining" class="- topic/xref " format="http" scope="external"> Enhanced License Chaining</a>. </p> </td> 
+   <td colname="2" class="- topic/entry ">Indicates whether this DRM policy has a root license. <p>For more information, see <a href="https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Enhanced_License_Chaining" class="- topic/xref " format="http" scope="external"> Enhanced License Chaining</a>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.startDate</span> </td> 

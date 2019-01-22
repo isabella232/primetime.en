@@ -99,7 +99,7 @@ Multi-CDN Support for CRS Ads
 
 ### Version 1.4.18
 
-Primetime Android TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. For more information about VPAID 2.0, see [VPAID ad support](http://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-concept-VPAID_20_ad_support).
+Primetime Android TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. For more information about VPAID 2.0, see [VPAID ad support](https://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-concept-VPAID_20_ad_support).
 
 ### Version 1.4.17
 
@@ -109,7 +109,7 @@ AC-3 5.1 is supported only on Amazon FireTV.
 
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103** For VAST ads (creatives) with the fallback rule enabled, TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
 
-  For more information, see [Ad fallback for VAST and VMAP ads](http://help.adobe.com/en_US/primetime/psdk/android/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
+  For more information, see [Ad fallback for VAST and VMAP ads](https://help.adobe.com/en_US/primetime/psdk/android/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
 
 * **Video Heartbeats Library (VHL) updated to version 1.5**
 
@@ -132,7 +132,7 @@ AC-3 5.1 is supported only on Amazon FireTV.
   * Ad tracking has been optimized by removing the trackAdBreakStart and trackAdBreakComplete methods. The ad break is inferred from the trackAdStart and trackAdComplete method calls.
   * The  playhead  property is no longer needed when tracking ads.
 
-* **Nielsen SDK Integration**The TVSDK now supports sending user tracking information to the Nielsen SDK without any custom integration. To get started, download the Nielsen Android App SDK, and follow the instructions in the [Android Programmers Guide](http://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-concept-Use_Nielsen_Analytics).
+* **Nielsen SDK Integration**The TVSDK now supports sending user tracking information to the Nielsen SDK without any custom integration. To get started, download the Nielsen Android App SDK, and follow the instructions in the [Android Programmers Guide](https://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-concept-Use_Nielsen_Analytics).
 
 ### Version 1.4.0
 
@@ -193,7 +193,7 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 >
 >All TVSDK customers who use CRS are strongly encouraged to upgrade to TVSDK 1.4.39 or latest on iOS and Android. This upgrade is a drop-in replacement to the existing app implementation. After the upgrade, check for the CRS creative URL requests in a proxy tool (for example, Charles) to verify that the version in the path reflects version 3.1. For example:
 >
->`http://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8`
+>`https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8`
 
 ### Version 1.4.43
 
@@ -875,7 +875,7 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
 * Bug #3761170 - seekToLocal in Live with Ads cannot seek back into ad content, its best to use the currentTime APIs for Live streams
 * Bug #3763370 - Live streams with ads will occasionally show two ad markers close together when there should only be one. These ad markers represent the same ad, and only one will play
 * Bug #3763373 - The ad marker may briefly disappear when seeking past an ad in VOD streams. The ad marker restores and there is no other adverse effect on the timeline
-* Some devices have known playback issues. See [Known device issues in 1.4](http://help.adobe.com/en_US/primetime/release_notes/android/index.html#release_notes-concept-Known_issues_on_Android_devices_in_14).
+* Some devices have known playback issues. See [Known device issues in 1.4](https://help.adobe.com/en_US/primetime/release_notes/android/index.html#release_notes-concept-Known_issues_on_Android_devices_in_14).
 * Reference Implementation - Trick play is not implemented in the sample application
 * On some Android TV devices a black frame can be seen due to a decoder reset at the following transition points:
    * into and out of trickplay mode
@@ -926,7 +926,7 @@ The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during t
 * Bug #3761170 - seekToLocal in Live with Ads cannot seek back into ad content; it is best to use the currentTime APIs for Live streams
 * Bug #3763370 - Live streams with ads will occasionally show two ad markers close together when there should only be one. These ad markers represent the same ad, and only one will play
 * Bug #3763373 - The ad marker may briefly disappear when seeking past an ad in VOD streams. The ad marker restores and there is no other adverse effect on the timeline
-* Some devices have known playback issues. For more information, see [Known device issues in 1.4](http://help.adobe.com/en_US/primetime/1.3/release_notes/android/index.html#release_notes-concept-Known_issues_on_Android_devices_in_1_4).
+* Some devices have known playback issues. For more information, see [Known device issues in 1.4](https://help.adobe.com/en_US/primetime/1.3/release_notes/android/index.html#release_notes-concept-Known_issues_on_Android_devices_in_1_4).
 * Reference Implementation - Trick play is not implemented in the sample application
 
 |Device|Chipset|Issue|Cause|Workaround|

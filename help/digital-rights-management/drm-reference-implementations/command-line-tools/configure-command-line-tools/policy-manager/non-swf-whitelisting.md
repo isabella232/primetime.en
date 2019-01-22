@@ -26,5 +26,5 @@ See `policy.allowedAIRApplication.n` in *Configuration properties* for details.
 
 >[!NOTE]
 >
->Whitelisting an iOS application requires you a special approach. See [Whitelist your iOS application](http://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-task-Whitelist_your_iOS_application) in the *TVSDK for iOS Programmer's Guide*.
+>Whitelisting an iOS application requires you a special approach. See [Whitelist your iOS application](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-task-Whitelist_your_iOS_application) in the *TVSDK for iOS Programmer's Guide*.
 

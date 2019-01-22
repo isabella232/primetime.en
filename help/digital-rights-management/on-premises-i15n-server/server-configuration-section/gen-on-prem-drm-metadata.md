@@ -33,7 +33,7 @@ The output file is an On Premises DRM Metadata file that will be consumed by the
 
 ```
 java -jar libs/CreateMetadata.jar -c createMetadata.properties -indivCert i15n_transport.cer
--indivURL http://[YOURINDIVSERVER:PORT] onpremdrm.metadata
+-indivURL https://[YOURINDIVSERVER:PORT] onpremdrm.metadata
 ```
 
 .  

@@ -158,7 +158,7 @@ public class CustomContentResolver extends ContentResolver {
     private List<TimelineOperation> createAdBreakPlacementsFor(Placement placementInformation) { 
         List<Ad> ads = new ArrayList<Ad>(); 
         AdAsset adAsset = new AdAsset("101", 15000, new MediaResource( 
-          "http: . . ..m3u8", MediaResource.Type.HLS, null), null, null); 
+          "https: . . ..m3u8", MediaResource.Type.HLS, null), null, null); 
  
         Ad ad = Ad.linearFromAsset("101", adAsset, null, null, false); 
         ads.add(ad); 

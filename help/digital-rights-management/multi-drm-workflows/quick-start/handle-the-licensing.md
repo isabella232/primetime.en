@@ -99,7 +99,7 @@ Your entitlement or storefront server will request a license token from the rele
       Sample PlayReady test token:     
     
       ```    
-      {"licenseAcquisitionUrl":"http://pr.test.expressplay.com/playready/RightsManager.asmx", 
+      {"licenseAcquisitionUrl":"https://pr.test.expressplay.com/playready/RightsManager.asmx", 
       "token":"AQAAAxBbWv4AAABgV8_GaWjU80mObLQdfwEdy1lenXmcqvx5VLyqixigtwXLthzjPxq9QDT-TYbudNrMSOpUAy 
       G_2Qt8RdTGJ2_Q_xtRfnj7H6C-yt6By40IhNaSQ0nNYUsY1_MtCrHXIltlVhN2Ekr_RNyTNvCjYs0V5TqzOPY"} 
       

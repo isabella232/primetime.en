@@ -20,7 +20,7 @@ Mark `TimeRanges` between the `begin` and `end` in `localTime` as an `AdBreak` f
        "properties": [],
        "stream": {
            "manifests": [ {
-               "url": "http://d398890tia84ty.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
+               "url": "https://d398890tia84ty.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
                "type": "hls"
            } ],
            "metadata": {
@@ -49,8 +49,8 @@ Mark `TimeRanges` between the `begin` and `end` in `localTime` as an `AdBreak` f
        },   
        "title": "VOD - MARK TimeRanges and no ads",
        "thumbnail": {
-           "large": "http://example.com",
-           "small": "http://example.com"
+           "large": "https://example.com",
+           "small": "https://example.com"
        },
        "type": "vod",
        "id": "vod_004"

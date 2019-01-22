@@ -51,7 +51,7 @@ auditudeSettings.setMediaId("your-media-id");
 MediaPlayerItemConfig itemConfig =  
   new MediaPlayerItemConfig(getActivity().getApplicationContext()); 
 MediaResource mediaResource =  
-  new MediaResource("http://example.com/media/test_media.m3u8",  
+  new MediaResource("https://example.com/media/test_media.m3u8",  
                     MediaResource.Type.HLS, Metadata); 
  
 mediaPlayer.addEventListener(MediaPlayerEvent.STATUS_CHANGED,  

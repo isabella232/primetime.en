@@ -8,13 +8,13 @@ uuid: ca29144f-8088-4c8d-93cf-aa59007da034
 
 # Download and configure prerequisite software{#download-and-configure-prerequisite-software}
 
-1. Download the JDK from [http://www.oracle.com/technetwork/java/javase/downloads/](http://www.oracle.com/technetwork/java/javase/downloads/).
+1. Download the JDK from [https://www.oracle.com/technetwork/java/javase/downloads/](https://www.oracle.com/technetwork/java/javase/downloads/).
 
    The installation process is straightforward. If you already have the JDK installed on your system, you can skip this step, but be aware that your JDK, Eclipse IDE, and OS need to be compatible.
-1. Download the Eclipse IDE for Java Developers from [http://www.eclipse.org/downloads](http://www.eclipse.org/downloads).
+1. Download the Eclipse IDE for Java Developers from [https://www.eclipse.org/downloads](https://www.eclipse.org/downloads).
 
    After unzipping the package, you can run Eclipse directly. There is no installer.
-1. Download the Android SDK ADT Bundle from [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html).
+1. Download the Android SDK ADT Bundle from [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html).
 
    This bundle includes Eclipse. If you already have Eclipse installed on your system, you can download the SDK Tools for your platform from the [!UICONTROL Use An Existing IDE] section.
 

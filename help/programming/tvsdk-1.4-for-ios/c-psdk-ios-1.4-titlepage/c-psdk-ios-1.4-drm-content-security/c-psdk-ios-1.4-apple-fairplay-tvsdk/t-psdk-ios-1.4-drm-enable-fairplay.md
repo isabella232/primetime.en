@@ -25,7 +25,7 @@ You can implement Apple FairPlay Streaming, which is Apple's DRM solution, in yo
 
    >[!IMPORTANT] {importance="high"}
    >
-   >In the ExpressPlay license server scenario, to play back content, change the URL scheme in your ExpressPlay FairPlay server license request URL from `skd://` to `http://` (or `https://`).
+   >In the ExpressPlay license server scenario, to play back content, change the URL scheme in your ExpressPlay FairPlay server license request URL from `skd://` to `https://` (or `https://`).
 
 1. Register the *FairPlay* Customer Resource Loader with `registerPTAVAssetResourceLoader`.
 

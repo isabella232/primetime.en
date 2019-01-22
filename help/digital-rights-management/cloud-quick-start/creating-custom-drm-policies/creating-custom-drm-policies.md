@@ -15,7 +15,7 @@ The Primetime Cloud DRM Protection Kit comes with a few pre-configured policies 
 >
 >All policies must use ANONYMOUS authentication (not Username Password or Custom) - regardless of whether or not the Custom Auth/Entitlement workflow is used.
 
-Included with the  Policy Manager is the [!DNL flashaccesstools.properties] configuration file, which has been modified to expose only the configurable policy options that  Primetime Cloud DRM  Service supports. Setting policy options that are not supported by the  Primetime Cloud DRM  Service will result in license acquisition errors. For information on using the Primetime DRM Policy Manager, refer to: [Primetime DRM Reference Implementations: Policy Manager](http://help.adobe.com/en_US/primetime/drm/5.3/reference_implementations/index.html#concept-DRM_Policy_Manager).
+Included with the  Policy Manager is the [!DNL flashaccesstools.properties] configuration file, which has been modified to expose only the configurable policy options that  Primetime Cloud DRM  Service supports. Setting policy options that are not supported by the  Primetime Cloud DRM  Service will result in license acquisition errors. For information on using the Primetime DRM Policy Manager, refer to: [Primetime DRM Reference Implementations: Policy Manager](https://help.adobe.com/en_US/primetime/drm/5.3/reference_implementations/index.html#concept-DRM_Policy_Manager).
 
 To create a new policy, update the [!DNL flashaccesstools.properties] file as desired, and then use the command:
 

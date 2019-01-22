@@ -117,7 +117,7 @@ Android TVSDK v2.5.3 offers the following updates and API changes.
 
 * All TVSDK customers who use CRS are encouraged to upgrade their apps with TVSDK 2.5.3.85 or latest on Android. This will be a drop-in replacement to the existing app implementation. After the TVSDK upgrade, check for the CRS creative URL requests in a proxy tool (ex: Charles) and confirm that the host name and version in the path reflects as in the sample URL structure below.
 
-  `http://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784 bf3586d.m3u8`
+  `https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784 bf3586d.m3u8`
 
 * TVSDK's User Agent customizable: we have added some new API's to customize the user agents.
 
@@ -527,7 +527,7 @@ This version of TVSDK has the following issues:
 
 * [System Requirements](assets/psdk_android_2.5.pdf#page=6)
 * [TVSDK 3.0 for Android Programmer's Guide](assets/psdk_android_3.0.pdf)
-* [TVSDK Android Javadoc for API Reference]( http://help.adobe.com/en_US/primetime/api/psdk/javadoc3.0/index)
+* [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.0/index)
 * [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.5/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
 * [TVSDK 1.4 to 2.5 for Android (Java) Migration Guide](/content/help/en/primetime/migration-guides/tvsdk-14-25-android)
 * For handling screen on/off scenarios, see the `Application_Changes_for_Screen_On_Off.pdf` file included in the build.

@@ -15,7 +15,7 @@ There are several ways to determine whether your Reference Implementation Licens
 
 * Check your [!DNL AdobeFlashAccess.log] file. This is where the Reference Implementation writes log information. The location of this log file is indicated by your [!DNL log4j.xml] file and can be modified to point to any location you'd like. By default, the log file copied to the working directory where you run catalina. 
 
-* Go to the following URL: [!DNL http:///flashaccess/license/v4]*your server:server port*. You should see the text "License Server is setup correctly".
+* Go to the following URL: [!DNL https:///flashaccess/license/v4]*your server:server port*. You should see the text "License Server is setup correctly".
 
 Another way to test if your server runs correctly is to package a segment of the test content, set up a sample video player, and then play it.
 
@@ -35,7 +35,7 @@ The following procedure describes this process:
 
 1. Set the `encrypt.license.serverurl` property in the [!DNL flashaccesstools.properties] file to the URL of the license server.
 
-   For example, [!DNL http://localhost:8080/]. The [!DNL flashaccesstools.properties] file is located in the [!DNL \Reference Implementation\Command Line Tools] folder. 
+   For example, [!DNL https://localhost:8080/]. The [!DNL flashaccesstools.properties] file is located in the [!DNL \Reference Implementation\Command Line Tools] folder. 
 
 1. Type the following command to package a segment of the content: 
 
@@ -56,10 +56,10 @@ The following procedure describes this process:
 1. Install Flash Player version 10.1 or later. 
 1. Open a web browser and go to the following URL:
 
-[!DNL http://localhost:8080/SVP/player.html] 
+[!DNL https://localhost:8080/SVP/player.html] 
 1. Go to the following URL and then click **[!UICONTROL Play]**:
 
-[!DNL http://localhost:8080/Content/] *`your_encrypted_FLV`*. 
+[!DNL https://localhost:8080/Content/] *`your_encrypted_FLV`*. 
 
 1. If the video fails to play, check if any error codes are displayed in the logging pane of the Sample Video Player or added to the [!DNL AdobeFlashAccess.log] file.
 

@@ -23,7 +23,7 @@ In the media source list (for example in the `sources.js` file), you can set `fo
         "content":[ 
             { 
                 "format":"HLS",
-                "url":"http://path_to_HLS_stream.m3u8"
+                "url":"https://path_to_HLS_stream.m3u8"
             },
  
         ],

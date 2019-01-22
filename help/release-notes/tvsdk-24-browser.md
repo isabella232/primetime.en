@@ -29,19 +29,19 @@ Browser TVSDK 2.4 provides JavaScript APIs to build browser-based video applicat
 
 This release includes the following information:
 
-• [*Browser TVSDK API documentation*](http://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
+• [*Browser TVSDK API documentation*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
-• [*Browser TVSDK programming guide*](http://help.adobe.com/en_US/primetime/psdk/browser/2.4/index.html).
+• [*Browser TVSDK programming guide*](https://help.adobe.com/en_US/primetime/psdk/browser/2.4/index.html).
 
-• [*TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide*](http://help.adobe.com/en_US/primetime/conv_mig/as14_to_js24_mig/index.html).
+• [*TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide*](https://help.adobe.com/en_US/primetime/conv_mig/as14_to_js24_mig/index.html).
 
-• [*Converting from Browser TVSDK 2.4.6 to version 2.4.7*](http://help.adobe.com/en_US/primetime/conv_mig/js246_to_js247_conv_guide/index.html).
+• [*Converting from Browser TVSDK 2.4.6 to version 2.4.7*](https://help.adobe.com/en_US/primetime/conv_mig/js246_to_js247_conv_guide/index.html).
 
 • A reference implementation, which is included in the build.
 
 >[!NOTE]
 >
->*For a complete list of the security considerations for this release, see * [*Security considerations*](http://help.adobe.com/en_US/primetime/psdk/browser/2.4/index.html#PSDKs-concept-Security_considerations)*.*
+>*For a complete list of the security considerations for this release, see * [*Security considerations*](https://help.adobe.com/en_US/primetime/psdk/browser/2.4/index.html#PSDKs-concept-Security_considerations)*.*
 
 ## What's new and supported features {#what-s-new-and-supported-features}
 
@@ -73,7 +73,7 @@ The following enhancements and additions are available as part of Browser TVSDK 
 
 The following enhancements and additions are available as part of Browser TVSDK 2.4.10 release:
 
-• TVSDK provides enableLogging() to enable or disable the logging. Refer to the [*API documentation *](http://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)for usage.
+• TVSDK provides enableLogging() to enable or disable the logging. Refer to the [*API documentation *](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)for usage.
 
 • TVSDK does not anymore support Default Chapters, when using Adobe Analytics. Define and manage Chapters using your application.
 
@@ -109,7 +109,7 @@ The following enhancements and additions are available as part of Browser TVSDK 
 
 • The UI Framework now supports HLS Access DRM on Flash, Ad only, and Targeting Info workflow.
 
-• The setDRMAuthenticateData API is added to the UI Framework. To play streams protected with Adobe Access DRM, invoke this API. Alternately, drmAuthenticateData attribute can be specified in the player. See [*AdobePSDK.videoBehavior *](http://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/VideoBehavior.html)for details.
+• The setDRMAuthenticateData API is added to the UI Framework. To play streams protected with Adobe Access DRM, invoke this API. Alternately, drmAuthenticateData attribute can be specified in the player. See [*AdobePSDK.videoBehavior *](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/VideoBehavior.html)for details.
 
 #### New in 2.4.7 {#new-in-5}
 
@@ -129,7 +129,7 @@ In this tool, you can select various settings, click **Test Configuration **to v
 
 • Addition of the MediaPlayerItemConfig API to the UI Framework
 
-Various features, including advertisingMetadata, advertisingFactory, adSignalingMode, networkConfiguration, customRangeMetadata, useHardwareDecoder, subscribeTags, adTags, thumbnailScrubber, billingMetricsConfiguration, can be configured through MediaPlayerItemConfig. For more information, see the AdobePSDK.MediaPlayerItemConfig documentation in the [*Browser TVSDK API*](http://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)* * [*documentation*](http://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
+Various features, including advertisingMetadata, advertisingFactory, adSignalingMode, networkConfiguration, customRangeMetadata, useHardwareDecoder, subscribeTags, adTags, thumbnailScrubber, billingMetricsConfiguration, can be configured through MediaPlayerItemConfig. For more information, see the AdobePSDK.MediaPlayerItemConfig documentation in the [*Browser TVSDK API*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)* * [*documentation*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
 In the UI Framework, the way of passing network configurations through the player configuration has been modified.
 
@@ -169,7 +169,7 @@ DRM configurations and Analytics Tracking can be enabled through the UI Framewor
 
 This new API provides flexibility to the player app for selecting the div in which it can embed the FlashFallback.swf file.
 
-* Replaced `getVersion`API from `AdobePSDK.MediaPlayer` class with `AdobePSDK.Version` class for TVSDK version related information. For details, see `AdobePSDK.Version` API [*here*](http://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/AdobePSDK.Version.html).
+* Replaced `getVersion`API from `AdobePSDK.MediaPlayer` class with `AdobePSDK.Version` class for TVSDK version related information. For details, see `AdobePSDK.Version` API [*here*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/AdobePSDK.Version.html).
 
 #### New in 2.4.6 {#new-in-6}
 
@@ -184,7 +184,7 @@ With the help of billing, Browser TVSDK can collect player usage metrics to bill
 
 >[!NOTE]
 >
->*The deprecated enum MediaPlayer.Events and deprecated constants in Enum PSDKErrorCode have been removed in version 2.4.6. For more information, see * [*Converting from Browser TVSDK 2.4.5 to*](http://help.adobe.com/en_US/primetime/conv_mig/js245_to_js246_conv_guide/index.html)* * [*version 2.4.6*](http://help.adobe.com/en_US/primetime/conv_mig/js245_to_js246_conv_guide/index.html)*.*
+>*The deprecated enum MediaPlayer.Events and deprecated constants in Enum PSDKErrorCode have been removed in version 2.4.6. For more information, see * [*Converting from Browser TVSDK 2.4.5 to*](https://help.adobe.com/en_US/primetime/conv_mig/js245_to_js246_conv_guide/index.html)* * [*version 2.4.6*](https://help.adobe.com/en_US/primetime/conv_mig/js245_to_js246_conv_guide/index.html)*.*
 
 #### New in 2.4.5 {#new-in-7}
 
@@ -204,7 +204,7 @@ Anamorphic content playback is now supported when using MSE and Flash playback.
 
 * **Selective application of `withCredentials`**
 
-When `withCredentials` is set to true, the `Access-Control-Allow-Origin` header cannot be set to a wild card. Depending on the response of server, Browser TVSDK will selectively set the `withCredentials` attribute. For more information about this support, see [*Browser TVSDK API docs*](http://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
+When `withCredentials` is set to true, the `Access-Control-Allow-Origin` header cannot be set to a wild card. Depending on the response of server, Browser TVSDK will selectively set the `withCredentials` attribute. For more information about this support, see [*Browser TVSDK API docs*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
 #### Version 2.4.4 {#version-2}
 
@@ -236,7 +236,7 @@ The following features were new in version 2.4.2:
 
 * **API Parity**
 
-For a complete list of the API parity, see the [*TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide*](http://help.adobe.com/en_US/primetime/conv_mig/as14_to_js24_mig/index.html).
+For a complete list of the API parity, see the [*TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide*](https://help.adobe.com/en_US/primetime/conv_mig/as14_to_js24_mig/index.html).
 
 * **Sample-AES support**
 

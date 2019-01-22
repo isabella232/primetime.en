@@ -79,7 +79,7 @@ The following code block defines the JSON objects that form the array of **conte
 "content":  [
     {
         "format": "M3U8",
-        "url": "http://adobeprimetime-f.akamaihd.net/i/
+        "url": "https://adobeprimetime-f.akamaihd.net/i/
 <i>longstringofcharacters</i>/
                  Episode_,640x360_1000,640x360_700,_b.mp4.csmil/master.m3u8",
         "language": "en"
@@ -100,13 +100,13 @@ The following code block defines the JSON objects that form the array of **thumb
         "format": "JPEG",
         "height":  "90",
         "width": "160",
-        "url": "http://example.com/small.jpg"
+        "url": "https://example.com/small.jpg"
     },
     {
         "format": "JPEG",
         "height": "450",
         "width": "800",
-        "url": "http://example.com/large.jpg"
+        "url": "https://example.com/large.jpg"
     }
 ],
 

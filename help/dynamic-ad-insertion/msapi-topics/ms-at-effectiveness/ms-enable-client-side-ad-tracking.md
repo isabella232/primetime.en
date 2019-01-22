@@ -22,6 +22,6 @@ To perform client-side ad tracking, use the Tracking API URL.
 For example:
 
 ```
-http://. . .?. . .&pttrackingmode=simple&pttrackingversion=v1
+https://. . .?. . .&pttrackingmode=simple&pttrackingversion=v1
 ```
 

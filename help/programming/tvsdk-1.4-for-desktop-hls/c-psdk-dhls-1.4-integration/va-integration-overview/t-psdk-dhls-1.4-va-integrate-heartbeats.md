@@ -69,7 +69,7 @@ To configure video tracking in your player:
 
 1. Instantiate and configure the AppMeasurement component.
 
-   The AppMeasurement instance has many configuration options. For more information, see the [Adobe Analytics Developer](http://microsite.omniture.com/t2/help/en_US/reference/#Developer) documentation. The options in the following sample code ( `account`, `visitorNamespace`, and `trackingServer`) are required, and the values are provided by Adobe. 
+   The AppMeasurement instance has many configuration options. For more information, see the [Adobe Analytics Developer](https://microsite.omniture.com/t2/help/en_US/reference/#Developer) documentation. The options in the following sample code ( `account`, `visitorNamespace`, and `trackingServer`) are required, and the values are provided by Adobe. 
 
    >[!IMPORTANT]
    >

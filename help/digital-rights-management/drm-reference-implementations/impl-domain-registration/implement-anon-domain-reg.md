@@ -13,7 +13,7 @@ snippet: y
 1. Specify the domain server URL as:
 
    ```
-   http://[ 
+   https://[ 
 <i>host:port</i>]/flashaccess/domainserver/domainname/
    ```
 

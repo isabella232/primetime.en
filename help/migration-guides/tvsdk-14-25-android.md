@@ -167,7 +167,7 @@ compile files('libs/VideoHeartbeat.jar')
 
 ```
 
-Multiple minor changes are not covered in this document. For the minor API changes, refer [TVSDK 2.5 for Android Java API](http://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/index.html). The corresponding C++ API reference has detailed descriptions. For analogous C++ API documentation, see [TVSDK 2.5 for Android C++ API](http://help.adobe.com/en_US/primetime/api/psdk/cpp_2.5/index.html).
+Multiple minor changes are not covered in this document. For the minor API changes, refer [TVSDK 2.5 for Android Java API](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/index.html). The corresponding C++ API reference has detailed descriptions. For analogous C++ API documentation, see [TVSDK 2.5 for Android C++ API](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.5/index.html).
 
 Multiple examples of the API usage are covered in the reference implementation distributed with the TVSDK.
 

@@ -47,6 +47,6 @@ snippet: y
 1. To verify the set up, enter the following URL in a browser:
 
    ```
-    http://<LicenseServer>:8080/flashaccessserver/flashaccess/license/v2
+    https://<LicenseServer>:8080/flashaccessserver/flashaccess/license/v2
    ```
 

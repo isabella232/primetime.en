@@ -17,7 +17,7 @@ It is possible to use the Primetime DRM Java SDK to update the metadata programm
 
 Re-headering must update the following fields to use CloudDRM:
 
-* License Server URL (To [!DNL http://access.adobeprimetime.com/flashaccessserver/axs_prod]) 
+* License Server URL (To [!DNL https://access.adobeprimetime.com/flashaccessserver/axs_prod]) 
 * License Server Certificate (To the CloudDRM license server certificate) 
 * Transport Certificate (To the CloudDRM transport certificate) 
 * Packager Credential (To the packager credential you have activated for use with CloudDRM)

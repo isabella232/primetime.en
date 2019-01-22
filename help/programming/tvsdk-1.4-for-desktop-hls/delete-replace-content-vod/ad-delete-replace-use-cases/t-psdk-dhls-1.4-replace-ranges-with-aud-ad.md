@@ -20,7 +20,7 @@ Remove `TimeRanges` between the `begin` and `end` in `localTime` from the timeli
        "properties": [],
        "stream": {
            "manifests": [ {
-               "url": "http://. . ./cloudfront_vod_hls_tos_30fps.m3u8",
+               "url": "https://. . ./cloudfront_vod_hls_tos_30fps.m3u8",
                "type": "hls"
            } ],
            "metadata": {
@@ -61,8 +61,8 @@ Remove `TimeRanges` between the `begin` and `end` in `localTime` from the timeli
        },   
        "title": "VOD - Replace TimeRange with Auditude Ads",
        "thumbnail": {
-           "large": "http://example.com",
-           "small": "http://example.com"
+           "large": "https://example.com",
+           "small": "https://example.com"
        },
        "type": "vod",
        "id": "vod_003"

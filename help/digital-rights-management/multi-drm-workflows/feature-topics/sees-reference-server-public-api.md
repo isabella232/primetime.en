@@ -13,7 +13,7 @@ snippet: y
 
 The entitlement request and response are passed via a mutually authenticated SSL connection between the license server and the customer's entitlement service.
 
-The HTTPS URI scheme ( [http://tools.ietf.org/html/rfc7230#section-2.7.2](http://tools.ietf.org/html/rfc7230#section-2.7.2)) is used to define the entitlement endpoint, and the HTTP POST request method ( [http://tools.ietf.org/html/rfc7231#section-4.3.3](http://tools.ietf.org/html/rfc7231#section-4.3.3)) is used for the request. The entitlement endpoint, as well as a flag indicating back-end entitlement, is required and must be included in the policy at packaging time.
+The HTTPS URI scheme ( [https://tools.ietf.org/html/rfc7230#section-2.7.2](https://tools.ietf.org/html/rfc7230#section-2.7.2)) is used to define the entitlement endpoint, and the HTTP POST request method ( [https://tools.ietf.org/html/rfc7231#section-4.3.3](https://tools.ietf.org/html/rfc7231#section-4.3.3)) is used for the request. The entitlement endpoint, as well as a flag indicating back-end entitlement, is required and must be included in the policy at packaging time.
 
 ## Entitlement Request {#section_BFBFEF0795CA46D6842C479256B95F95}
 

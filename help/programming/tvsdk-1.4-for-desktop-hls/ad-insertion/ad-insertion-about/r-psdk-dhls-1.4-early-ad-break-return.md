@@ -45,23 +45,23 @@ For example, here is one marker with different types:
 #EXT-X-MEDIA-SEQUENCE:44
   
 #EXTINF:9.9,
-http://server-host/path/file44.ts
+https://server-host/path/file44.ts
 #EXTINF:4.2,
-http://server-host/path/file45.ts
+https://server-host/path/file45.ts
   
 #EXT-X-CUE:TYPE="SpliceOut",ID="1",DURATION="0",TIME="266.198",PROGRAM-ID="138",AVAIL-NUM="1",AVAILS-EXPECTED="10"
 #EXTINF:5.8,
-http://server-host/path/file46.ts
+https://server-host/path/file46.ts
 #EXTINF:9.9,
-http://server-host/path/file47.ts
+https://server-host/path/file47.ts
 ...
 #EXTINF:9.9,
-http://server-host/path/file56.ts
+https://server-host/path/file56.ts
 #EXTINF:4.2,
-http://server-host/path/file57.ts
+https://server-host/path/file57.ts
 #EXT-X-CUE:TYPE="SpliceIn",ID="1",DURATION="0",TIME="266.198",PROGRAM-ID="138"
 #EXTINF:9.9,
-http://server-host/path/file58.ts
+https://server-host/path/file58.ts
 ```
 
 In the one marker with different types example, if the duration of the `SpliceOut` type is zero, the `SpliceOut` and `SpliceIn` must work together for every ad break. Currently, a `SpliceOut` marker with a non-zero duration and doesn't need pairing `SpliceIn` markers is more typical.

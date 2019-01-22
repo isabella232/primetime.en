@@ -144,7 +144,7 @@ Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich
 
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**
 
-For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. For more information, see [Ad fallback for VAST and VMAP ads](http://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
+For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. For more information, see [Ad fallback for VAST and VMAP ads](https://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
 
 **Version 1.4.9**
 
@@ -180,7 +180,7 @@ DRM Policies can now specify the highest resolution permitted, depending on the 
 
 * **Nielsen SDK Integration**
 
-The TVSDK now supports sending mTVR and MDPR ID3 beacons to the Nielsen SDK without any custom integration. In order to get started, download the 3.1.2.19 Nielsen iOS App SDK, and follow the instructions found here in the [iOS Programmers Guide](http://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-Use_Nielsen_Analytics).
+The TVSDK now supports sending mTVR and MDPR ID3 beacons to the Nielsen SDK without any custom integration. In order to get started, download the 3.1.2.19 Nielsen iOS App SDK, and follow the instructions found here in the [iOS Programmers Guide](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-Use_Nielsen_Analytics).
 
 **Version 1.4.0**
 
@@ -200,7 +200,7 @@ Comment Type: draft
 
 <note type="note"> 
  <p>All TVSDK customers who use CRS are strongly encouraged to upgrade to TVSDK 1.4.39 or latest on iOS and Android. This upgrade is a drop-in replacement to the existing app implementation. After the upgrade, check for the CRS creative URL requests in a proxy tool (for example, Charles) to verify that the version in the path reflects version 3.1. For example:</p> 
- <p><span class="code">http://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8</span></p> 
+ <p><span class="code">https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8</span></p> 
 </note>
 
  -->
@@ -468,7 +468,7 @@ The issue was resolved by placing the tag at the beginning of the playlist.
 
 * [ZD# 24528] Implement TVSDK Usage Metrics for Billing
 
-For more information, see [Billing Metrics](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/PSDKs/concept/c_psdk_billing.html).
+For more information, see [Billing Metrics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/PSDKs/concept/c_psdk_billing.html).
 
 * [ZD# 24642] Picture-in-Picture support for  TVSDK
 
@@ -484,7 +484,7 @@ This issue was resolved by packaging the PSDKLibrary.framework as requested.
 
 * [ZD# 26364] Multi-CDN Support for CRS Ads
 
-For more information, see [Multiple CDN support for CRS Ad Delivery](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-concept-Multiple_CDN_support_for_CRS_ad_delivery).
+For more information, see [Multiple CDN support for CRS Ad Delivery](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-concept-Multiple_CDN_support_for_CRS_ad_delivery).
 
 * [ZD# 27028] Delay in playback of some streams in iOS 10.
 

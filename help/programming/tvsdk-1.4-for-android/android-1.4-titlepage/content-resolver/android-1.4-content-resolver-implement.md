@@ -133,7 +133,7 @@ Sample JSON ad server response for a live stream:
             "ads": [ { 
                 "id": 1001, 
                 "primary_asset": { 
-                    "url": "http://venkat-test.s3.amazonaws.com/ads/geico/playlist.m3u8", 
+                    "url": "https://venkat-test.s3.amazonaws.com/ads/geico/playlist.m3u8", 
                     "duration": 30000, 
                     "id": "asset1", 
                     "resource_type": "" 
@@ -147,7 +147,7 @@ Sample JSON ad server response for a live stream:
             "ads": [ { 
                 "id": 1003, 
                 "primary_asset": { 
-                    "url": "http://venkat-test.s3.amazonaws.com/ads/priceline/playlist.m3u8", 
+                    "url": "https://venkat-test.s3.amazonaws.com/ads/priceline/playlist.m3u8", 
                     "duration": 30000, 
                     "id": "asset3", 
                     "resource_type": "" 
@@ -171,7 +171,7 @@ Sample JSON ad server response for VOD:
             "ads": [ { 
                 "id": 1001, 
                 "primary_asset": { 
-                    "url": "http://venkat-test.s3.amazonaws.com/ads/geico/playlist.m3u8", 
+                    "url": "https://venkat-test.s3.amazonaws.com/ads/geico/playlist.m3u8", 
                     "duration": 30000, 
                     "id": "asset1", 
                     "resource_type": "" 
@@ -182,7 +182,7 @@ Sample JSON ad server response for VOD:
             { 
                 "id": 1002, 
                 "primary_asset": { 
-                    "url": "http://venkat-test.s3.amazonaws.com/ads/crescent/playlist.m3u8", 
+                    "url": "https://venkat-test.s3.amazonaws.com/ads/crescent/playlist.m3u8", 
                     "duration": 15000, 
                     "id": "asset2", 
                     "resource_type": "" 
@@ -196,7 +196,7 @@ Sample JSON ad server response for VOD:
             "ads": [ { 
                 "id": 1003, 
                 "primary_asset": { 
-                    "url": "http://venkat-test.s3.amazonaws.com/ads/priceline/playlist.m3u8", 
+                    "url": "https://venkat-test.s3.amazonaws.com/ads/priceline/playlist.m3u8", 
                     "duration": 30000, 
                     "id": "asset3", 
                     "resource_type": "" 
@@ -210,7 +210,7 @@ Sample JSON ad server response for VOD:
             "ads": [ { 
                 "id": 1004, 
                 "primary_asset": { 
-                    "url": "http://venkat-test.s3.amazonaws.com/ads/camry/playlist.m3u8", 
+                    "url": "https://venkat-test.s3.amazonaws.com/ads/camry/playlist.m3u8", 
                     "duration": 15000, 
                     "id": "asset4", 
                     "resource_type": "" 

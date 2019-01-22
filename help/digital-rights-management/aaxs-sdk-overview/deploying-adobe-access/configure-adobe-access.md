@@ -9,7 +9,7 @@ snippet: y
 
 # Configure Adobe Access{#configure-adobe-access}
 
-A key advantage to Adobe Access SDK is that you can install it on any Java™ application server or servlet container, such as Tomcat. You also need JDK™ 1.5 or higher. For more information on software requirements, see Adobe Access SDK platform requirements: [: http://www.adobe.com/products/flashaccess/systemreqs/](http://www.adobe.com/products/flashaccess/systemreqs/).
+A key advantage to Adobe Access SDK is that you can install it on any Java™ application server or servlet container, such as Tomcat. You also need JDK™ 1.5 or higher. For more information on software requirements, see Adobe Access SDK platform requirements: [: https://www.adobe.com/products/flashaccess/systemreqs/](https://www.adobe.com/products/flashaccess/systemreqs/).
 
 The high-level steps to deploy Adobe Access are:
 

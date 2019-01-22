@@ -68,12 +68,12 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "height" : 250, 
         "resourceType" : "static", 
         "mimeType" : "image/jpeg", 
-        "url" : "http://a.newsinc.com/. . ..jpg", 
+        "url" : "https://a.newsinc.com/. . ..jpg", 
         "trackingUrls" : [ { 
           "startTime" : 0.0, 
           "adSystems" : "Auditude", 
           "event" : "creativeView", 
-          "url" : "http://ad.qa.auditude.com/adserver/i/z=147611; 
+          "url" : "https://ad.qa.auditude.com/adserver/i/z=147611; 
                    u=19287a324825cc5aacb7e46183c72324; 
                    uid=ixutzMD0Se6OSWEmWT1ZdQ;cid=1785961691;s=6c7940cd; 
                    t=1429813545;br=1;sq=1; 
@@ -82,13 +82,13 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
           "startTime" : 0.0, 
           "adSystems" : "Auditude", 
           "event" : "clickThrough", 
-          "url" : "http://example.com?ClickThrough"} ] }, { 
+          "url" : "https://example.com?ClickThrough"} ] }, { 
         "id" : "102", 
         "width" : 300, 
         "height" : 250, 
         "resourceType" : "iframe", 
         "mimeType" : "text/html", 
-        "url" : "http://ad.qa.auditude.com/adserver/s/a1=102;a=308150;w=2000;z=147611; 
+        "url" : "https://ad.qa.auditude.com/adserver/s/a1=102;a=308150;w=2000;z=147611; 
                  u=19287a324825cc5aacb7e46183c72324; 
                  uid=ixutzMD0Se6OSWEmWT1ZdQ;cid=1785961691;s=6c7940cd; 
                  t=1429813545;br=1;sq=1; 
@@ -98,7 +98,7 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
           "startTime" : 0.0, 
           "adSystems" : "Auditude", 
           "event" : "creativeView", 
-          "url" : "http://ad.qa.auditude.com/adserver/i/z=147611; 
+          "url" : "https://ad.qa.auditude.com/adserver/i/z=147611; 
                    u=19287a324825cc5aacb7e46183c72324; 
                    uid=ixutzMD0Se6OSWEmWT1ZdQ;cid=1785961691;s=6c7940cd; 
                    t=1429813545;br=1;sq=1; 
@@ -107,12 +107,12 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
           "startTime" : 0.0, 
           "adSystems" : "Auditude", 
           "event" : "clickThrough", 
-          "url" : "http://example.com?ClickThrough" } ] } ], 
+          "url" : "https://example.com?ClickThrough" } ] } ], 
       "trackingUrls" : [ { 
         "startTime" : 0.0, 
         "adSystems" : "Auditude", 
         "event" : "impression", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=adimp& 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=adimp& 
                  cid=1785961691&z=147611&a=308150&s=6c7940cd&t=1429813545& 
                  w=2000&uid=ixutzMD0Se6OSWEmWT1ZdQ&u=19287a324825cc5aacb7e46183c72324& 
                  br=1&sq=1&pod=id:1,ctype:l,ptype:p,dur:60,lot:1,cpos:1& 
@@ -120,7 +120,7 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "startTime" : 0.0, 
         "adSystems" : "Auditude", 
         "event" : "start", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& 
                   a=308150&a1=105&ref=urn:asset:308150:105&unit=percent&progress=0& 
                   cid=1785961691&z=147611&a=308150&s=6c7940cd&t=1429813545&w=2000& 
                   uid=ixutzMD0Se6OSWEmWT1ZdQ&u=19287a324825cc5aacb7e46183c72324& 
@@ -129,42 +129,42 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "startTime" : 0.0, 
         "adSystems" : "Auditude", 
         "event" : "start", 
-        "url" : "http://ad4.qa.auditude.com/test.txt?set=1&adprogress=0" }, { 
+        "url" : "https://ad4.qa.auditude.com/test.txt?set=1&adprogress=0" }, { 
  
         "startTime" : 0.0, 
         "adSystems" : "Auditude", 
         "event" : "creativeView", 
-        "url" : "http://ad.qa.auditude.com/adserver/i/z=147611; . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/i/z=147611; . . ." }, { 
  
         "startTime" : 0.0, 
         "adSystems" : "Auditude", 
         "event" : "impression", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=adimp& . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=adimp& . . ." }, { 
  
         "startTime" : 0.0, 
         "adSystems" : "Auditude", 
         "event" : "creativeView", 
-        "url" : "http://ad.qa.auditude.com/adserver/i/; . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/i/; . . ." }, { 
  
         "startTime" : 0.0, 
         "adSystems" : "Auditude", 
         "event" : "start", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." }, { 
  
         "startTime" : 3.75, 
         "adSystems" : "Auditude", 
         "event" : "first", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." }, { 
  
         "startTime" : 3.75, 
         "adSystems" : "Auditude", 
         "event" : "first", 
-        "url" : "http://ad4.qa.auditude.com/test.txt?set=1&adprogress=25" }, { 
+        "url" : "https://ad4.qa.auditude.com/test.txt?set=1&adprogress=25" }, { 
  
         "startTime" : 3.75, 
         "adSystems" : "Auditude", 
         "event" : "first", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." }, 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." }, 
  
       . . . 
  
@@ -172,17 +172,17 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "startTime" : 15.0, 
         "adSystems" : "Auditude", 
         "event" : "complete", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." 
        }, { 
         "startTime" : 15.0, 
         "adSystems" : "Auditude", 
         "event" : "complete", 
-        "url" : "http://ad4.qa.auditude.com/test.txt?set=1&adprogress=100" 
+        "url" : "https://ad4.qa.auditude.com/test.txt?set=1&adprogress=100" 
        }, { 
         "startTime" : 15.0, 
         "adSystems" : "Auditude", 
         "event" : "complete", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." } ] },  
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." } ] },  
  
     . . .  
  
@@ -195,32 +195,32 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "startTime" : 213.0, 
         "adSystems" : "Auditude", 
         "event" : "impression", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=adimp . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=adimp . . ." }, { 
  
         "startTime" : 213.0, 
         "adSystems" : "Auditude", 
         "event" : "start", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." }, { 
  
         "startTime" : 213.0, 
         "adSystems" : "Auditude", 
         "event" : "start", 
-        "url" : "http://ad4.qa.auditude.com/test.txt?set=1&adprogress=0" , { 
+        "url" : "https://ad4.qa.auditude.com/test.txt?set=1&adprogress=0" , { 
  
         "startTime" : 213.0, 
         "adSystems" : "Auditude", 
         "event" : "creativeView", 
-        "url" : "http://ad.qa.auditude.com/adserver/i/z=147611; . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/i/z=147611; . . ." }, { 
  
         "startTime" : 213.0, 
         "adSystems" : "Auditude", 
         "event" : "impression", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=adimp& . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=adimp& . . ." }, { 
  
         "startTime" : 213.0, 
         "adSystems" : "Auditude", 
         "event" : "creativeView", 
-        "url" : "http://ad.qa.auditude.com/adserver/i/;uid=mbAXWlBCTsai4x_FbjJycg; 
+        "url" : "https://ad.qa.auditude.com/adserver/i/;uid=mbAXWlBCTsai4x_FbjJycg; 
                  u=4316135f47263eee860b2174fecd3bba;t=1429813545;s=115f9058;z=147612; 
                  cid=2050307395;br=5;pod=id:5,ctype:l,dur:120,lot:6,cpos:3; 
                  sq=5;ax=0,0,0,0;a1=105;a=308133;w=1000/c0x0" }, { 
@@ -228,7 +228,7 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "startTime" : 213.0, 
         "adSystems" : "Auditude", 
         "event" : "start", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." 
       },  
  
       . . . 
@@ -237,17 +237,17 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "startTime" : 228.0, 
         "adSystems" : "Auditude", 
         "event" : "complete", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." 
       }, { 
         "startTime" : 228.0, 
         "adSystems" : "Auditude", 
         "event" : "complete", 
-        "url" : "http://ad4.qa.auditude.com/test.txt?set=1&adprogress=100" 
+        "url" : "https://ad4.qa.auditude.com/test.txt?set=1&adprogress=100" 
       }, { 
         "startTime" : 228.0, 
         "adSystems" : "Auditude", 
         "event" : "complete", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . ." 
       } ] },  
  
     . . .  
@@ -258,7 +258,7 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "height" : 250, 
         "resourceType" : "iframe", 
         "mimeType" : "text/html", 
-        "url" : "http://ad.qa.auditude.com/adserver/s/a1=102;a=307893;w=1500;z=147611; 
+        "url" : "https://ad.qa.auditude.com/adserver/s/a1=102;a=307893;w=1500;z=147611; 
                   u=894a4267cd8f1e648eb0bdf878ce3f0a;uid=FmuZ2UwpSjmtBjMc7yLtzw; 
                   cid=159311145;s=cd097e73;t=1429813545;br=1;sq=1; 
                   pod=id%3a1%2cctype%3al%2cdur%3a80%2clot%3a1%2ccpos%3a1; 
@@ -267,7 +267,7 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
           "startTime" : 347.508, 
           "adSystems" : "Auditude", 
           "event" : "creativeView", 
-          "url" : "http://ad.qa.auditude.com/adserver/i/z=147611; 
+          "url" : "https://ad.qa.auditude.com/adserver/i/z=147611; 
                     u=894a4267cd8f1e648eb0bdf878ce3f0a;uid=FmuZ2UwpSjmtBjMc7yLtzw; 
                     cid=159311145;s=cd097e73;t=1429813545;br=1;sq=1; 
                     pod=id%3a1%2cctype%3al%2cdur%3a80%2clot%3a1%2ccpos%3a1; 
@@ -276,14 +276,14 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
           "startTime" : 347.508, 
           "adSystems" : "Auditude", 
           "event" : "clickThrough", 
-          "url" : "http://www.example.com?clickThrough" 
+          "url" : "https://www.example.com?clickThrough" 
         } ] 
       } ], 
       "trackingUrls" : [ { 
         "startTime" : 347.508, 
         "adSystems" : "Auditude", 
         "event" : "impression", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=adimp&cid=159311145& 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=adimp&cid=159311145& 
                   z=147611&a=307893&s=cd097e73&t=1429813545&w=1500& 
                   uid=FmuZ2UwpSjmtBjMc7yLtzw& 
                   u=894a4267cd8f1e648eb0bdf878ce3f0a&br=1&sq=1& 
@@ -292,17 +292,17 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "startTime" : 347.508, 
         "adSystems" : "Auditude", 
         "event" : "start", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS . . ." }, { 
  
         "startTime" : 347.508, 
         "adSystems" : "Auditude", 
         "event" : "start", 
-        "url" : "http://ad4.qa.auditude.com/test.txt?set=1&adprogress=0" }, { 
+        "url" : "https://ad4.qa.auditude.com/test.txt?set=1&adprogress=0" }, { 
  
         "startTime" : 347.508, 
         "adSystems" : "Auditude", 
         "event" : "creativeView", 
-        "url" : "http://ad.qa.auditude.com/adserver/i/z=147611; 
+        "url" : "https://ad.qa.auditude.com/adserver/i/z=147611; 
                   u=894a4267cd8f1e648eb0bdf878ce3f0a;uid=FmuZ2UwpSjmtBjMc7yLtzw; 
                   cid=159311145;s=cd097e73;t=1429813545;br=1;sq=1; 
                   pod=id%3a1%2cctype%3al%2cdur%3a80%2clot%3a1%2ccpos%3a1; 
@@ -311,17 +311,17 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "startTime" : 347.508, 
         "adSystems" : "Auditude", 
         "event" : "impression", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=adimp& . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=adimp& . . ." }, { 
  
         "startTime" : 347.508, 
         "adSystems" : "Auditude", 
         "event" : "creativeView", 
-        "url" : "http://ad.qa.auditude.com/adserver/i/; . . ." }, { 
+        "url" : "https://ad.qa.auditude.com/adserver/i/; . . ." }, { 
  
         "startTime" : 347.508, 
         "adSystems" : "Auditude", 
         "event" : "start", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . .0" },  
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& . . .0" },  
  
       . . . 
  
@@ -329,12 +329,12 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
         "startTime" : 362.508, 
         "adSystems" : "Auditude", 
         "event" : "complete", 
-        "url" : "http://ad4.qa.auditude.com/test.txt?set=1&adprogress=100" }, { 
+        "url" : "https://ad4.qa.auditude.com/test.txt?set=1&adprogress=100" }, { 
  
         "startTime" : 362.508, 
         "adSystems" : "Auditude", 
         "event" : "complete", 
-        "url" : "http://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& 
+        "url" : "https://ad.qa.auditude.com/adserver/e?type=AD_PROGRESS& 
                   a=307885&a1=105&ref=urn:asset:307885:105&unit=percent&progress=100& 
                   uid=mbAXWlBCTsai4x_FbjJycg&u=4316135f47263eee860b2174fecd3bba& 
                   t=1429813545&s=115f9058&z=147612&cid=2050307395&br=7& 
@@ -344,7 +344,7 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
       "startTime" : 302.508, 
       "adSystems" : "Auditude", 
       "event" : "start", 
-      "url" : "http://ad.qa.auditude.com/adserver/e?type=podprogress&event=start& 
+      "url" : "https://ad.qa.auditude.com/adserver/e?type=podprogress&event=start& 
                 uid=mbAXWlBCTsai4x_FbjJycg&u=4316135f47263eee860b2174fecd3bba& 
                 t=1429813545&s=115f9058&z=147612&cid=2050307395&br=7& 
                 pod=id:7,ctype:l,dur:120,lot:6,cpos:4" }, { 
@@ -352,7 +352,7 @@ It has been shortened to avoid unnecessary repetition, so that the structure is 
       "startTime" : 362.508, 
       "adSystems" : "Auditude", 
       "event" : "complete", 
-      "url" : "http://ad.qa.auditude.com/adserver/e?type=podprogress&event=complete& 
+      "url" : "https://ad.qa.auditude.com/adserver/e?type=podprogress&event=complete& 
                 uid=mbAXWlBCTsai4x_FbjJycg&u=4316135f47263eee860b2174fecd3bba& 
                 t=1429813545&s=115f9058&z=147612&cid=2050307395&br=7& 
                 pod=id:7,ctype:l,dur:120,lot:6,cpos:4" } ] } ] } 
@@ -371,8 +371,8 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
 { 
   "vmap" : { 
     "vmap:VMAP" : { 
-      "@version" : "1.0", "@xmlns:vmap" : "http://www.iab.net/vmap-1.0", 
-      "@xmlns:xsi" : "http://www.w3.org/2001/XMLSchema-instance", 
+      "@version" : "1.0", "@xmlns:vmap" : "https://www.iab.net/vmap-1.0", 
+      "@xmlns:xsi" : "https://www.w3.org/2001/XMLSchema-instance", 
       "vmap:AdBreak" : [ { 
         "@breakType" : "linear", 
         "@breakId" : "0", 
@@ -383,8 +383,8 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
           "@id" : "0", 
           "vmap:VASTData" : { 
             "VAST" : { 
-              "@xmlns:xsd" : "http://www.w3.org/2001/XMLSchema", 
-              "@xmlns:xsi" : "http://www.w3.org/2001/XMLSchema-instance", 
+              "@xmlns:xsd" : "https://www.w3.org/2001/XMLSchema", 
+              "@xmlns:xsi" : "https://www.w3.org/2001/XMLSchema-instance", 
               "@version" : "3.0", 
               "Ad" : [ { 
                 "@sequence" : "1", 
@@ -392,7 +392,7 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                 "InLine" : { 
                   "AdSystem" : "Auditude", 
                   "AdTitle" : "lee_pre_266647", 
-                  "Impression" : "http://ad.auditude.com/adserver/e?type=adimp& 
+                  "Impression" : "https://ad.auditude.com/adserver/e?type=adimp& 
                      a=334690&w=200&uid=JLgOz9mEQGKzPds-INqpEQ& 
                      u=cecebae72a919de350b9ac52602623f3& 
                      t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=1& 
@@ -405,7 +405,7 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                         "TrackingEvents" : { 
                           "Tracking" : [ { 
                             "@event" : "creativeView", 
-                            "#text" : "http://ad.auditude.com/adserver/i/; 
+                            "#text" : "https://ad.auditude.com/adserver/i/; 
                               uid=JLgOz9mEQGKzPds-INqpEQ; 
                               u=cecebae72a919de350b9ac52602623f3;t=1476120919; 
                               s=74dfbb06;z=266647;cid=371477780;br=1; 
@@ -413,7 +413,7 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                               ax=0,0,0,0;a1=105;a=334690;w=200/c340x192.m3u8" 
                           }, { 
                             "@event" : "start", 
-                            "#text" : "http://ad.auditude.com/adserver/e? 
+                            "#text" : "https://ad.auditude.com/adserver/e? 
                               type=AD_PROGRESS&a=334690&a1=105& 
                               ref=urn:asset:334690:105&unit=percent&progress=0& 
                               uid=JLgOz9mEQGKzPds-INqpEQ& 
@@ -422,11 +422,11 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                               pod=id:1,ctype:l,ptype:p,dur:150,lot:5,cpos:1&sq=1&ax=0,0,0,0" 
                           }, { 
                             "@event" : "start", 
-                            "#text" : "http://dpm.demdex.net/ibs:dpid=22619& 
+                            "#text" : "https://dpm.demdex.net/ibs:dpid=22619& 
                               dpuuid=JLgOz9mEQGKzPds-INqpEQ" 
                           }, { 
                             "@event" : "firstQuartile", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334690&a1=105&ref=urn:asset:334690:105&unit=percent& 
                               progress=25&uid=JLgOz9mEQGKzPds-INqpEQ& 
                               u=cecebae72a919de350b9ac52602623f3&t=1476120919&s=74dfbb06& 
@@ -434,7 +434,7 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                               pod=id:1,ctype:l,ptype:p,dur:150,lot:5,cpos:1&sq=1&ax=0,0,0,0" 
                           }, { 
                             "@event" : "midpoint", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334690&a1=105&ref=urn:asset:334690:105&unit=percent& 
                               progress=50&uid=JLgOz9mEQGKzPds-INqpEQ& 
                               u=cecebae72a919de350b9ac52602623f3&t=1476120919&s=74dfbb06& 
@@ -442,7 +442,7 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                               pod=id:1,ctype:l,ptype:p,dur:150,lot:5,cpos:1&sq=1&ax=0,0,0,0" 
                           }, { 
                             "@event" : "thirdQuartile", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334690&a1=105&ref=urn:asset:334690:105&unit=percent& 
                               progress=75&uid=JLgOz9mEQGKzPds-INqpEQ& 
                               u=cecebae72a919de350b9ac52602623f3&t=1476120919&s=74dfbb06& 
@@ -450,7 +450,7 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                               pod=id:1,ctype:l,ptype:p,dur:150,lot:5,cpos:1&sq=1&ax=0,0,0,0" 
                           }, { 
                             "@event" : "complete", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334690&a1=105&ref=urn:asset:334690:105&unit=percent& 
                               progress=100&uid=JLgOz9mEQGKzPds-INqpEQ& 
                               u=cecebae72a919de350b9ac52602623f3&t=1476120919&s=74dfbb06& 
@@ -460,13 +460,13 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
         "vmap:TrackingEvents" : { 
           "vmap:Tracking" : [ { 
             "@event" : "breakStart", 
-            "#text" : "http://ad.auditude.com/adserver/e?type=podprogress&event=start& 
+            "#text" : "https://ad.auditude.com/adserver/e?type=podprogress&event=start& 
               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=1& 
               pod=id:1,ctype:l,ptype:p,dur:150,lot:5,cpos:1" 
           }, { 
             "@event" : "breakEnd", 
-            "#text" : "http://ad.auditude.com/adserver/e?type=podprogress&event=complete& 
+            "#text" : "https://ad.auditude.com/adserver/e?type=podprogress&event=complete& 
                        uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                        t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=1& 
                        pod=id:1,ctype:l,ptype:p,dur:150,lot:5,cpos:1" 
@@ -480,8 +480,8 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
           "@id" : "2", 
           "vmap:VASTData" : { 
             "VAST" : { 
-              "@xmlns:xsd" : "http://www.w3.org/2001/XMLSchema", 
-              "@xmlns:xsi" : "http://www.w3.org/2001/XMLSchema-instance", 
+              "@xmlns:xsd" : "https://www.w3.org/2001/XMLSchema", 
+              "@xmlns:xsi" : "https://www.w3.org/2001/XMLSchema-instance", 
               "@version" : "3.0", 
               "Ad" : [ { 
                 "@sequence" : "1", 
@@ -489,7 +489,7 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                 "InLine" : { 
                   "AdSystem" : "Auditude", 
                   "AdTitle" : "lee_mid3_266647", 
-                  "Impression" : "http://ad.auditude.com/adserver/e?type=adimp&a=334693& 
+                  "Impression" : "https://ad.auditude.com/adserver/e?type=adimp&a=334693& 
                     w=200&uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                     t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                     pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=1&ax=0,0,0,0", 
@@ -501,14 +501,14 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                         "TrackingEvents" : { 
                           "Tracking" : [ { 
                             "@event" : "creativeView", 
-                            "#text" : "http://ad.auditude.com/adserver/i/; 
+                            "#text" : "https://ad.auditude.com/adserver/i/; 
                               uid=JLgOz9mEQGKzPds-INqpEQ;u=cecebae72a919de350b9ac52602623f3; 
                               t=1476120919;s=74dfbb06;z=266647;cid=371477780;br=3; 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2;sq=1; 
                               ax=0,0,0,0;a1=105;a=334693;w=200/c384x216.m3u8" 
                           }, { 
                             "@event" : "start", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334693&a1=105&ref=urn:asset:334693:105&unit=percent& 
                               progress=0&uid=JLgOz9mEQGKzPds-INqpEQ& 
                               u=cecebae72a919de350b9ac52602623f3&t=1476120919&s=74dfbb06& 
@@ -516,11 +516,11 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=1&ax=0,0,0,0" 
                           }, { 
                             "@event" : "start", 
-                            "#text" : "http://dpm.demdex.net/ibs:dpid=22619& 
+                            "#text" : "https://dpm.demdex.net/ibs:dpid=22619& 
                               dpuuid=JLgOz9mEQGKzPds-INqpEQ" 
                           }, { 
                             "@event" : "firstQuartile", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334693&a1=105&ref=urn:asset:334693:105&unit=percent& 
                               progress=25&uid=JLgOz9mEQGKzPds-INqpEQ& 
                               u=cecebae72a919de350b9ac52602623f3& 
@@ -528,21 +528,21 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=1&ax=0,0,0,0" 
                           }, { 
                             "@event" : "midpoint", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334693&a1=105&ref=urn:asset:334693:105&unit=percent&progress=50& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=1&ax=0,0,0,0" 
                           }, { 
                             "@event" : "thirdQuartile", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334693&a1=105&ref=urn:asset:334693:105&unit=percent&progress=75& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=1&ax=0,0,0,0" 
                           }, { 
                             "@event" : "complete", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334693&a1=105&ref=urn:asset:334693:105&unit=percent&progress=100& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
@@ -553,7 +553,7 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                 "InLine" : { 
                   "AdSystem" : "Auditude", 
                   "AdTitle" : "lee_mid2_266652", 
-                  "Impression" : "http://ad.auditude.com/adserver/e?type=adimp&a=334759&w=200& 
+                  "Impression" : "https://ad.auditude.com/adserver/e?type=adimp&a=334759&w=200& 
                                   uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                                   t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                                   pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=2&ax=0,0,0,0", 
@@ -565,46 +565,46 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                         "TrackingEvents" : { 
                           "Tracking" : [ { 
                             "@event" : "creativeView", 
-                            "#text" : "http://ad.auditude.com/adserver/i/; 
+                            "#text" : "https://ad.auditude.com/adserver/i/; 
                               uid=JLgOz9mEQGKzPds-INqpEQ;u=cecebae72a919de350b9ac52602623f3; 
                               t=1476120919;s=74dfbb06;z=266647;cid=371477780;br=3; 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2;sq=2; 
                               ax=0,0,0,0;a1=105;a=334759;w=200/c320x240.m3u8" 
                           }, { 
                             "@event" : "start", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334759&a1=105&ref=urn:asset:334759:105&unit=percent&progress=0& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=2&ax=0,0,0,0" 
                           }, { 
                             "@event" : "start", 
-                            "#text" : "http://dpm.demdex.net/ibs:dpid=22619& 
+                            "#text" : "https://dpm.demdex.net/ibs:dpid=22619& 
                               dpuuid=JLgOz9mEQGKzPds-INqpEQ" 
                           }, { 
                             "@event" : "firstQuartile", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334759&a1=105&ref=urn:asset:334759:105&unit=percent&progress=25& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=2&ax=0,0,0,0" 
                           }, { 
                             "@event" : "midpoint", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334759&a1=105&ref=urn:asset:334759:105&unit=percent&progress=50& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=2&ax=0,0,0,0" 
                           }, { 
                             "@event" : "thirdQuartile", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334759&a1=105&ref=urn:asset:334759:105&unit=percent&progress=75& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=2&ax=0,0,0,0" 
                           }, { 
                             "@event" : "complete", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334759&a1=105&ref=urn:asset:334759:105&unit=percent&progress=100& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
@@ -615,7 +615,7 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                 "InLine" : { 
                   "AdSystem" : "Auditude", 
                   "AdTitle" : "lee_mid1_266647", 
-                  "Impression" : "http://ad.auditude.com/adserver/e?type=adimp&a=334691&w=200& 
+                  "Impression" : "https://ad.auditude.com/adserver/e?type=adimp&a=334691&w=200& 
                                   uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                                   t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                                   pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=3&ax=0,0,0,0", 
@@ -627,46 +627,46 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                         "TrackingEvents" : { 
                           "Tracking" : [ { 
                             "@event" : "creativeView", 
-                            "#text" : "http://ad.auditude.com/adserver/i/; 
+                            "#text" : "https://ad.auditude.com/adserver/i/; 
                               uid=JLgOz9mEQGKzPds-INqpEQ;u=cecebae72a919de350b9ac52602623f3; 
                               t=1476120919;s=74dfbb06;z=266647;cid=371477780;br=3; 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2;sq=3; 
                               ax=0,0,0,0;a1=105;a=334691;w=200/c384x216.m3u8" 
                           }, { 
                             "@event" : "start", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334691&a1=105&ref=urn:asset:334691:105&unit=percent&progress=0& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=3&ax=0,0,0,0" 
                           }, { 
                             "@event" : "start", 
-                            "#text" : "http://dpm.demdex.net/ibs:dpid=22619& 
+                            "#text" : "https://dpm.demdex.net/ibs:dpid=22619& 
                               dpuuid=JLgOz9mEQGKzPds-INqpEQ" 
                           }, { 
                             "@event" : "firstQuartile", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334691&a1=105&ref=urn:asset:334691:105&unit=percent&progress=25& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=3&ax=0,0,0,0" 
                           }, { 
                             "@event" : "midpoint", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334691&a1=105&ref=urn:asset:334691:105&unit=percent&progress=50& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=3&ax=0,0,0,0" 
                           }, { 
                             "@event" : "thirdQuartile", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334691&a1=105&ref=urn:asset:334691:105&unit=percent&progress=75& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=3&ax=0,0,0,0" 
                           }, { 
                             "@event" : "complete", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334691&a1=105&ref=urn:asset:334691:105&unit=percent&progress=100& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
@@ -677,7 +677,7 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                 "InLine" : { 
                   "AdSystem" : "Auditude", 
                   "AdTitle" : "lee_mid1_266652", 
-                  "Impression" : "http://ad.auditude.com/adserver/e?type=adimp&a=334705&w=200& 
+                  "Impression" : "https://ad.auditude.com/adserver/e?type=adimp&a=334705&w=200& 
                                   uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                                   t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                                   pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=4&ax=0,0,0,0", 
@@ -689,46 +689,46 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
                         "TrackingEvents" : { 
                           "Tracking" : [ { 
                             "@event" : "creativeView", 
-                            "#text" : "http://ad.auditude.com/adserver/i/; 
+                            "#text" : "https://ad.auditude.com/adserver/i/; 
                               uid=JLgOz9mEQGKzPds-INqpEQ;u=cecebae72a919de350b9ac52602623f3; 
                               t=1476120919;s=74dfbb06;z=266647;cid=371477780;br=3; 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2;sq=4; 
                               ax=0,0,0,0;a1=105;a=334705;w=200/c340x192.m3u8" 
                           }, { 
                             "@event" : "start", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334705&a1=105&ref=urn:asset:334705:105&unit=percent&progress=0& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=4&ax=0,0,0,0" 
                           }, { 
                             "@event" : "start", 
-                            "#text" : "http://dpm.demdex.net/ibs:dpid=22619& 
+                            "#text" : "https://dpm.demdex.net/ibs:dpid=22619& 
                               dpuuid=JLgOz9mEQGKzPds-INqpEQ" 
                           }, { 
                             "@event" : "firstQuartile", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334705&a1=105&ref=urn:asset:334705:105&unit=percent&progress=25& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=4&ax=0,0,0,0" 
                           }, { 
                             "@event" : "midpoint", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334705&a1=105&ref=urn:asset:334705:105&unit=percent&progress=50& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=4&ax=0,0,0,0" 
                           }, { 
                             "@event" : "thirdQuartile", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334705&a1=105&ref=urn:asset:334705:105&unit=percent&progress=75& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                               pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2&sq=4&ax=0,0,0,0" 
                           }, { 
                             "@event" : "complete", 
-                            "#text" : "http://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
+                            "#text" : "https://ad.auditude.com/adserver/e?type=AD_PROGRESS& 
                               a=334705&a1=105&ref=urn:asset:334705:105&unit=percent&progress=100& 
                               uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                               t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
@@ -737,13 +737,13 @@ The JSON file that the manifest server sends if `pttrackingversion=v3` has the f
         "vmap:TrackingEvents" : { 
           "vmap:Tracking" : [ { 
             "@event" : "breakStart", 
-            "#text" : "http://ad.auditude.com/adserver/e?type=podprogress&event=start& 
+            "#text" : "https://ad.auditude.com/adserver/e?type=podprogress&event=start& 
                        uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                        t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                        pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2" 
           }, { 
             "@event" : "breakEnd", 
-            "#text" : "http://ad.auditude.com/adserver/e?type=podprogress&event=complete& 
+            "#text" : "https://ad.auditude.com/adserver/e?type=podprogress&event=complete& 
                        uid=JLgOz9mEQGKzPds-INqpEQ&u=cecebae72a919de350b9ac52602623f3& 
                        t=1476120919&s=74dfbb06&z=266647&cid=371477780&br=3& 
                        pod=id:3,ctype:l,ptype:m,dur:150,lot:5,cpos:2" 

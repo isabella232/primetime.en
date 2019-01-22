@@ -16,13 +16,13 @@ This section describes the features available with different versions of Flash P
 **Error Dispatch** - The TVSDK platforms listed below dispatch a DRM Runtime Error when the resolution of the content that is being played exceeds the resolution that is allowed for the device configuration that is defined in the DRM policy:
 
 * Flash Player Versions 18 through 20
-* Android - [Versions](http://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-reference-System_and_software_requirements)
-* iOS - [Versions](http://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-reference-System_and_software_requirements)
+* Android - [Versions](https://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-reference-System_and_software_requirements)
+* iOS - [Versions](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-reference-System_and_software_requirements)
 
 >[!NOTE]
 >
 >* All Flash and mobile platforms support Error Dispatch, however only the TVSDK clients listed above process RBOP-related errors.
->* RBOP-related [DRM Client Errors](http://help.adobe.com/en_US/primetime/drm/index.html#reference-DRM_Client_Error_Messages): >
+>* RBOP-related [DRM Client Errors](https://help.adobe.com/en_US/primetime/drm/index.html#reference-DRM_Client_Error_Messages): >
 >    * **3371** - Malformed resolution based on output protection constraints in the license. 
 >    * **3372** - The content's resolution is larger than the maximum resolution that is specified in the output-protection constraint. (This can occur if somebody tried to inject content meant for another device.) 
 >    * **3373** - The content's resolution is larger than the resolution that is specified by the currently active output-protection constraint. (This means we will have to downgrade.)

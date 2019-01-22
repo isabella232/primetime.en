@@ -15,8 +15,8 @@ When the DRM metadata for a video is separate from the media stream, perform aut
 
 A video asset can have an associated DRM metadata file. For example:
 
-* "url": "http://www.domain.com/asset.m3u8" 
-* "drmMetadata": "http://www.domain.com/asset.metadata"
+* "url": "https://www.domain.com/asset.m3u8" 
+* "drmMetadata": "https://www.domain.com/asset.metadata"
 
 When this is the case, use `DRMHelper` methods to download the contents of the DRM metadata file, parse it, and check whether DRM authentication is needed. 
 
