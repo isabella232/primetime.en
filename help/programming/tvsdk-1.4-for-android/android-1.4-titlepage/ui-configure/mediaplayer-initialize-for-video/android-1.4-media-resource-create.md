@@ -55,7 +55,7 @@ For each new video content, initialize a MediaResource instance with information
        // create a MediaResource instance pointing to some HLS content 
        Metadata metadata = //TODO: create metadata  
        MediaResource mediaResource = MediaResource.createFromUrl( 
-         "http://www.example.com/video/some-video.m3u8",  
+         "https://www.example.com/video/some-video.m3u8",  
          MediaResource.Type.HLS,  
          metadata); 
    } catch(IllegalArgumentException ex) { 

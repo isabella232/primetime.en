@@ -46,7 +46,7 @@ This request returns a token that can be redeemed for a FairPlay license.
 * **Sample Response:** 
 
   ```
-  http://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
+  https://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
   ```
 
 ## Request Query Parameters {#section_73B0BF44A37D46328E43E0DC25BB8B16}
@@ -107,7 +107,7 @@ This request returns a token that can be redeemed for a FairPlay license.
  <tbody> 
   <tr> 
    <td> <span class="codeph"> expirationTime </span> </td> 
-   <td> Expiration time of this token. This value MUST be a string in <a href="http://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> date/time format in the ‘Z’ zone designator ("Zulu time"), or an integer preceded by a '+' sign. An example of an RFC 3339 date/time is <span class="codeph"> 2006-04-14T12:01:10Z </span>. <p>If the value is a string in <a href="http://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> date/time format, then it represents an absolute expiration date/time for the token. If the value is an integer preceded by a '+' sign, then it is interpreted as a relative number of seconds, from issuance, that the token is valid. </p> For example, <span class="codeph"> +60 </span> specifies one minute. The maximum and default (if not specified) token lifetime is 30 days. </td> 
+   <td> Expiration time of this token. This value MUST be a string in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> date/time format in the ‘Z’ zone designator ("Zulu time"), or an integer preceded by a '+' sign. An example of an RFC 3339 date/time is <span class="codeph"> 2006-04-14T12:01:10Z </span>. <p>If the value is a string in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> date/time format, then it represents an absolute expiration date/time for the token. If the value is an integer preceded by a '+' sign, then it is interpreted as a relative number of seconds, from issuance, that the token is valid. </p> For example, <span class="codeph"> +60 </span> specifies one minute. The maximum and default (if not specified) token lifetime is 30 days. </td> 
    <td> No </td> 
   </tr> 
  </tbody> 

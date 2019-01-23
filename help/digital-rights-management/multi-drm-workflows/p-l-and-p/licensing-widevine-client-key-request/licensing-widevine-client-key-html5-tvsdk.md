@@ -30,7 +30,7 @@ license acquisition. </p>
    setProtectionData: function(protectionData) 
 ```
 
-Your code would need to call this API before starting content playback the normal way. MediaPlayer.vo.protection.ProtectionData is documented here: [http://vm2.dashif.org/dash.js/docs/jsdocs/MediaPlayer.vo.protection.ProtectionData.html](http://vm2.dashif.org/dash.js/docs/jsdocs/MediaPlayer.vo.protection.ProtectionData.html)
+Your code would need to call this API before starting content playback the normal way. MediaPlayer.vo.protection.ProtectionData is documented here: [https://vm2.dashif.org/dash.js/docs/jsdocs/MediaPlayer.vo.protection.ProtectionData.html](https://vm2.dashif.org/dash.js/docs/jsdocs/MediaPlayer.vo.protection.ProtectionData.html)
 
 Here is sample protection data object with license server URLs for both PlayReady and Widevine.
 

@@ -22,4 +22,4 @@ A device may have multiple licenses for the same content (same License ID), but 
 
 Licenses and errors are sent at one time when the `LicenseHandler.close()` method is called.
 
-See the [DRM Server API reference documentation](http://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/overview-summary.html) for details. 
+See the [DRM Server API reference documentation](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/overview-summary.html) for details. 

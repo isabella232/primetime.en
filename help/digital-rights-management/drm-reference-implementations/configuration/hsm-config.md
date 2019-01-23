@@ -13,7 +13,7 @@ snippet: y
 
 You can configure the reference implementation with the Sun PKCS#11 provider that supports HSM. Although the use of an HSM is not required, it is recommended.
 
-To use a credential on an HSM, you must create a configuration file for the Sun PKCS#11 provider. For more information, see the [Java PCKS#11 Reference Guide](http://docs.oracle.com/javase/1.5.0/docs/guide/security/p11guide.html).
+To use a credential on an HSM, you must create a configuration file for the Sun PKCS#11 provider. For more information, see the [Java PCKS#11 Reference Guide](https://docs.oracle.com/javase/1.5.0/docs/guide/security/p11guide.html).
 
 To verify that your HSM and Sun PKCS#11 configuration file are configured, type the following command by using the keytool that was installed with the Java JDK:
 

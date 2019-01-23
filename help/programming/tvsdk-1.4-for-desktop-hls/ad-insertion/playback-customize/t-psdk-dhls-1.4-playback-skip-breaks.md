@@ -109,7 +109,7 @@ The following example of a customized ad policy selector skips ads in the next f
 
    ```
    var mediaResource:MediaResource =  
-     MediaResource.createFromUrl("http://example.org/stream.m3u8", null); 
+     MediaResource.createFromUrl("https://example.org/stream.m3u8", null); 
    var mediaPlayerItemConfig:MediaPlayerItemConfig =  
      PSDKConfig.retrieveMediaPlayerItemConfig(); 
    mediaPlayerItemConfig.advertisingFactory = new CustomAdPolicyContentFactory(); 

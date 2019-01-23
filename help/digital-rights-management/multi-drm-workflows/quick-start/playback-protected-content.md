@@ -29,7 +29,7 @@ To test your DRM solution, you need a video application that can process the par
     * HTML5 Reference Player:     
     
       ```    
-      http://ptdemos.com/html5/internal/1_2/2.4_GM/samples/reference/reference_player.html
+      https://ptdemos.com/html5/internal/1_2/2.4_GM/samples/reference/reference_player.html
       ```    
     
     * 
@@ -41,13 +41,13 @@ To test your DRM solution, you need a video application that can process the par
     * Sample TVSDK Player (under development) -     
     
       ```    
-      http://drmtest2.adobe.com/TVSDK_HTML5/samples/reference/reference_player.html
+      https://drmtest2.adobe.com/TVSDK_HTML5/samples/reference/reference_player.html
       ```
 
        **Checking playback when testing your FairPlay setup:** FairPlay requires some extra steps to play back content when you are using the ExpressPlay license servers. If you are using [!DNL curl] to test your connections (as described in [Licensing](../../multi-drm-workflows/quick-start/handle-the-licensing.md) ), you need to *edit your M3U8 manifest* (your packaged content) as follows:
 
     1. Add the response you got back from your license token request to the `#EXT-X-KEY:` tag in the manifest; and 
-    1. Change the protocol of that URL from the response (now in the manifest), from `http://` to `skd://`.
+    1. Change the protocol of that URL from the response (now in the manifest), from `https://` to `skd://`.
 
        Here is a complete example for testing playback with FairPlay, including the licensing step:
 
@@ -87,7 +87,7 @@ To test your DRM solution, you need a video application that can process the par
 
        >[!NOTE] {importance="high"}
        >
-       >The preceding information applies only to the testing of your FairPlay setup. It may not apply to your production setup, depending upon how you configure your FairPlay handler. See [Enable Apple FairPlay in iOS applications](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/#PSDKs-task-Enable_Apple_FairPlay_in_TVSDK_applications) for details.
+       >The preceding information applies only to the testing of your FairPlay setup. It may not apply to your production setup, depending upon how you configure your FairPlay handler. See [Enable Apple FairPlay in iOS applications](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/#PSDKs-task-Enable_Apple_FairPlay_in_TVSDK_applications) for details.
 
 >If your video plays, you've successfully packaged and licensed your content. If your video does not play, check the troubleshooting page for some possible solutions to your troubles. 
 

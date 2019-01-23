@@ -57,7 +57,7 @@ To modify your FairPlay / Safari app:
        The response with the license token URL will look something like this:
 
        ```    
-       http://fp.service.expressplay.com:80/hms/fp/rights/? 
+       https://fp.service.expressplay.com:80/hms/fp/rights/? 
             ExpressPlayToken=<base64-encoded ExpressPlay token>
        ```
 
@@ -66,11 +66,11 @@ To modify your FairPlay / Safari app:
    For example: 
 
    ```js
-   var myServerProcessSPCPath = 'http://fp.service.expressplay.com:80/hms/fp/rights/? 
+   var myServerProcessSPCPath = 'https://fp.service.expressplay.com:80/hms/fp/rights/? 
         ExpressPlayToken=<base64-encoded ExpressPlay token>';
    ```
 
-1. Before your app can play protected content, change the URL scheme for the content from `skd://` to `http://`.
+1. Before your app can play protected content, change the URL scheme for the content from `skd://` to `https://`.
 
    You need to add this URL scheme change in your app, before the call to the license server that allows playback.
 
@@ -83,7 +83,7 @@ To modify your FairPlay / Safari app:
        var link = document.createElement('a');  
        link.href = contentId;  
        var index = contentId.indexOf(':');  
-       myServerProcessSPCPath = "http:" + contentId.substring(index+1);  
+       myServerProcessSPCPath = "https:" + contentId.substring(index+1);  
        console.log("severProcessSPCPAth = " + serverProcessSPCPath); return link.hostname;  
    }
    ```

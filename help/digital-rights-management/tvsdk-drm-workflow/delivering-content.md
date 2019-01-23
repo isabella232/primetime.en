@@ -15,7 +15,7 @@ However, depending on the protocol, there may be intricacies involved with retri
 
 ```
 private function getMetadata():void { 
-    extrapolated-path-to-metadata = "http://metadatas.mywebserver.com/" + videoname; 
+    extrapolated-path-to-metadata = "https://metadatas.mywebserver.com/" + videoname; 
      var urlRequest : URLRequest =  
       new URLRequest(extrapolated-path-to-the-metadata + ".metadata");  
     var urlStream : URLStream = new URLStream();  

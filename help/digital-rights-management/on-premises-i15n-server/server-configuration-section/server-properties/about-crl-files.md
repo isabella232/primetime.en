@@ -17,33 +17,33 @@ The following is a list of externally hosted CRLs that are used by both the Indi
 
 * **Intermediate CRL:**
 
-    * URL: [!DNL http://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl] 
+    * URL: [!DNL https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl] 
     * File: [!DNL http___crl2.adobe.com_Adobe_FlashAccessIntermediateCA.crl] 
     * Validity: Good for approximately 12 months from creation
 
 * **Root CRL:**
 
-    * URL: [!DNL http://crl2.adobe.com/Adobe/FlashAccessRootCA.crl] 
+    * URL: [!DNL https://crl2.adobe.com/Adobe/FlashAccessRootCA.crl] 
     * File: [!DNL http___crl2.adobe.com_Adobe_FlashAccessRootCA.crl] 
     * Validity: Good for approximately 5 years from creation
 
 * **Latest CRL:**
 
-    * URL: [!DNL http://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl] 
+    * URL: [!DNL https://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl] 
     * File: [!DNL http___crl3.adobe.com_AdobeSystemsIncorporatedFlashAccessRuntime_LatestCRL.crl] 
     * Validity: Good for approximately 3 months from creation
 
 The following are externally hosted CRLs that are used only by the License Servers:
 
-* URL: [!DNL http://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl] 
+* URL: [!DNL https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl] 
 * File: [!DNL http___crl2.adobe.com_Adobe_FlashAccessIndividualizationCA.crl] 
 * Validity: Good for approximately 3 months from creation
 
-* URL: [!DNL http://individualization-crl.primetime.adobe.com/FlashAccessIndividualizationCA.crl] 
+* URL: [!DNL https://individualization-crl.primetime.adobe.com/FlashAccessIndividualizationCA.crl] 
 * File: [!DNL http___individualization-crl.primetime.adobe.com_FlashAccessIndividualizationCA.crl] 
 * Validity: Good for approximately 3 months from creation
 
-* URL: [!DNL http://individualization-crl.s3-website-us-east-1.amazonaws.com/FlashAccessIndividualizationCA.crl] 
+* URL: [!DNL https://individualization-crl.s3-website-us-east-1.amazonaws.com/FlashAccessIndividualizationCA.crl] 
 * File: [!DNL http___individualization-crl.s3-website-us-east-1.amazonaws.com_FlashAccessIndividualizationCA.crl] 
 * Validity: Good for approximately 3 months from creation
 

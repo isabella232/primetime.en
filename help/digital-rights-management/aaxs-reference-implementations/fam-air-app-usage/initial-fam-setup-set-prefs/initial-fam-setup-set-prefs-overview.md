@@ -29,7 +29,7 @@ The preference descriptions use the following terms:
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> Packager Server URL </td> 
-   <td colname="2" class="- topic/entry "> Location of server running <span class="filepath"> flashaccess-packager.war </span>; for example, <span class="filepath"> http://localhost:8080 </span> </td> 
+   <td colname="2" class="- topic/entry "> Location of server running <span class="filepath"> flashaccess-packager.war </span>; for example, <span class="filepath"> https://localhost:8080 </span> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> Resource Directory </td> 
@@ -37,7 +37,7 @@ The preference descriptions use the following terms:
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> License Server URL </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL of the server from which the client should request a license; for example, <span class="filepath"> http://mylicenseserver.com:8080 </span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL of the server from which the client should request a license; for example, <span class="filepath"> https://mylicenseserver.com:8080 </span> </p> </td> 
   </tr> 
  </tbody> 
 </table>

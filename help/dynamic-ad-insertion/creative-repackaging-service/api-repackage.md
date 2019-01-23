@@ -18,7 +18,7 @@ This request requires a username and password. You can obtain these from your Ad
 
 To submit a transcoding request to CRS, send an HTTP message as follows:
 
-* **URL -** [!DNL http://id3.auditude.com/repackage] 
+* **URL -** [!DNL https://id3.auditude.com/repackage] 
 
 * **Method -** `POST` 
 
@@ -34,14 +34,14 @@ To submit a transcoding request to CRS, send an HTTP message as follows:
           <AdSystem>Auditude</AdSystem>
           <AdID>AUD1</AdID>
           <CreativeID>AUD-CR1</CreativeID>
-          <CreativeURL>http://cdn.auditude.com/assets/ip/starbucks2.mp4</CreativeURL>
+          <CreativeURL>https://cdn.auditude.com/assets/ip/starbucks2.mp4</CreativeURL>
           <Zone>3</Zone>
       </Repackage>
       <Repackage>
           <AdSystem>Auditude</AdSystem>
           <AdID>AUD2</AdID>
           <CreativeID>AUD-CR1</CreativeID>
-          <CreativeURL>http://cdn.auditude.com/assets/ip/starbucks2.mp4</CreativeURL>
+          <CreativeURL>https://cdn.auditude.com/assets/ip/starbucks2.mp4</CreativeURL>
           <Format>id3 targetdur=5</Format>
           <Zone>3</Zone>
       </Repackage>

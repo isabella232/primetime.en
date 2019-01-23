@@ -25,7 +25,7 @@ You can remove TimeRanges between begin and end in localTime from the timeline.
        "stream": {
            "manifests": [
                {
-                   "url": "http://xyz.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
+                   "url": "https://xyz.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
                    "type": "hls"
                }
            ],
@@ -68,8 +68,8 @@ You can remove TimeRanges between begin and end in localTime from the timeline.
        },   
        "title": "VOD - DELETE TimeRange with Primetime ad decisioning Ads",
        "thumbnail": {
-           "large": "http://example.com",
-           "small": "http://example.com"
+           "large": "https://example.com",
+           "small": "https://example.com"
        },
        "type": "vod",
        "id": "vod_003"

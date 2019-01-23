@@ -53,7 +53,7 @@ The MediaResource class represents the content to be loaded by the MediaPlayer i
    //create a MediaResource instance pointing to some HLS content 
    Metadata metadata = //TODO: create metadata here 
    mediaResource = new AdobePSDK.MediaResource ( 
-         "http://www.example.com/video/some-video.m3u8", 
+         "https://www.example.com/video/some-video.m3u8", 
          AdobePSDK.MediaResourceType.HLS,  
          metadata);
    ```

@@ -59,7 +59,7 @@ or (for the Adobe Offline Packager):
 **When / where do I use it?**
 
 1. First, you need to have the CEK available on the machine on which you are doing your packaging. Your packaging tool uses your CEK to encrypt your content. 
-1. Second, you need to store the CEK in some form of Key Management System (KMS), with each CEK associated with its own [](key-id.md). You can create your own KMS, or use [ExpressPlay's Key Storage](http://www.expressplay.com/developer/key-storage/). This lets your storefront (your entitlement server, that handles customer entitlement and License Token provision) pull a license token for the customer from the KMS using a Key ID instead of the actual CEK (this is much more secure).
+1. Second, you need to store the CEK in some form of Key Management System (KMS), with each CEK associated with its own [](key-id.md). You can create your own KMS, or use [ExpressPlay's Key Storage](https://www.expressplay.com/developer/key-storage/). This lets your storefront (your entitlement server, that handles customer entitlement and License Token provision) pull a license token for the customer from the KMS using a Key ID instead of the actual CEK (this is much more secure).
 
 ## Content Encryption Key Storage ID {#section_0C94F54970E04BDB82DE3C8A33A62CD4}
 
@@ -67,7 +67,7 @@ The Content Encryption Key Storage ID (CEKSID) uniquely identifies the stored ke
 
 **What is the CEKSID?** - The CEKSID is the unique identifier for a Content Encryption Key (CEK). The CEK is necessary to unlock the protected content; the CEKSID is necessary to access the CEK from where it is stored. When you are testing your setup, you can provide a random CEKSID and CEK at Packaging time, as long as you use the same information for the licensing and playback checks.
 
-**Where does it come from?** - You (the content provider) can create this ID yourself, or you can use a service such as [ExpressPlay's Key Storage](http://www.expressplay.com/developer/key-storage/) to generate CEKSIDs for each of your CEKs (and store both of them). Further, you can use randomly generated CEKSIDs, or employ a scheme that suits your business model. For example, you could use CEKSIDs that are meaningful strings rather than random Hex strings (the ID name could consist of subjects, dates, times, etc.)
+**Where does it come from?** - You (the content provider) can create this ID yourself, or you can use a service such as [ExpressPlay's Key Storage](https://www.expressplay.com/developer/key-storage/) to generate CEKSIDs for each of your CEKs (and store both of them). Further, you can use randomly generated CEKSIDs, or employ a scheme that suits your business model. For example, you could use CEKSIDs that are meaningful strings rather than random Hex strings (the ID name could consist of subjects, dates, times, etc.)
 
 **What else is the CEKSID called?** - It is sometimes referred to as a *Content ID*.
 
@@ -80,4 +80,4 @@ The customer authenticator is a key you obtain from ExpressPlay when you set up 
 
 ![](assets/expressplay_admin_dashboard-web.png)
 
-**When do I use this?** - You include this in all calls to ExpressPlay servers — for example, license servers, [ExpressPlay Key Storage](http://www.expressplay.com/developer/key-storage/), and other calls. 
+**When do I use this?** - You include this in all calls to ExpressPlay servers — for example, license servers, [ExpressPlay Key Storage](https://www.expressplay.com/developer/key-storage/), and other calls. 

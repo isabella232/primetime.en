@@ -24,13 +24,13 @@ This example assumes the VOD content is in `Original.m3u8` with a timeline of `C
 The following manifest server request replaces the breaks in `Original.m3u8` with a 30-second pre-roll, followed by two breaks of duration two minutes each.
 
 ```
-http://manifest.auditude.com/auditude/variant/pubAsset/Original.m3u8?. . .&enableC3=false 
+https://manifest.auditude.com/auditude/variant/pubAsset/Original.m3u8?. . .&enableC3=false 
 &pttimeline=B,30,2,p;C,0,1;B,120,4,m;C,0,1;B,120,4,m;C,0,1;
 ```
 
 The following manifest server request removes the breaks in `Original.m3u8` and adds a 30-second pre-roll and a 30-second post-roll.
 
 ```
-http://manifest.auditude.com/auditude/variant/pubAsset/Original.m3u8?. . .&enableC3=false 
+https://manifest.auditude.com/auditude/variant/pubAsset/Original.m3u8?. . .&enableC3=false 
 &pttimeline=B,30,2,p;C,0,1;B,0,0,m;C,0,1;B,0,0,m;C,0,1;B,30,2,t;
 ```

@@ -20,7 +20,7 @@ Remove TimeRanges between begin and end in localTime from the timeline.
        "properties": [],
        "stream": {
            "manifests": [ {
-               "url": "http://d398890tia84ty.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
+               "url": "https://d398890tia84ty.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
                "type": "hls"
            } ],
    
@@ -58,8 +58,8 @@ Remove TimeRanges between begin and end in localTime from the timeline.
        },   
        "title": "VOD - DELETE TimeRange with Adobe Primetime ad decisioningxm-replace_text Phrase Ads",
        "thumbnail": {
-           "large": "http://example.com",
-           "small": "http://example.com"
+           "large": "https://example.com",
+           "small": "https://example.com"
        },
        "type": "vod",
        "id": "vod_003"

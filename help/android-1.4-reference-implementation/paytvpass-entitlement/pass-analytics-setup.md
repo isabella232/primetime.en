@@ -40,7 +40,7 @@ The table below presents the data sent to Adobe Analytics:
 
 1. Configure the application for use with Adobe Marketing Cloud.
 
-   To enable sending Primetime Primetime authentication data to Adobe Analytics, an [!DNL `ADBMobileConfig.json`] configuration file must be added to the Reference Implementation at compile time. Note that this is exactly the same configuration file used by the Primetime SDK to send Video Analytics data to the Marketing Cloud. Please consult the [Adobe Marketing Cloud documentation](http://microsite.omniture.com/t2/help/en_US/reference/) for more information on configuring an application with your Adobe Analytics account.
+   To enable sending Primetime Primetime authentication data to Adobe Analytics, an [!DNL `ADBMobileConfig.json`] configuration file must be added to the Reference Implementation at compile time. Note that this is exactly the same configuration file used by the Primetime SDK to send Video Analytics data to the Marketing Cloud. Please consult the [Adobe Marketing Cloud documentation](https://microsite.omniture.com/t2/help/en_US/reference/) for more information on configuring an application with your Adobe Analytics account.
 1. Create processing rules.
 
-   The Primetime authentication event data sent by the Reference Implementation will not automatically appear in your analytics reports. You must first make use of the data by creating processing rules. Please consult the [Adobe Analytics documentation on creating processing rules](http://microsite.omniture.com/t2/help/en_US/reference/processing_rules.html).
+   The Primetime authentication event data sent by the Reference Implementation will not automatically appear in your analytics reports. You must first make use of the data by creating processing rules. Please consult the [Adobe Analytics documentation on creating processing rules](https://microsite.omniture.com/t2/help/en_US/reference/processing_rules.html).

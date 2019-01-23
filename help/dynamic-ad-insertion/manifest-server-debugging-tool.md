@@ -184,7 +184,7 @@ An example:
 
 ```
 2015-03-25T06:13:31.271Z 14272. . . 189938 TRACE_AD_CALL
-200 8 http://ad.stg2.auditude.com/adserver/a?cip=0.0.0.0&g=1000012&of=1.5 &ptcueformat=turner&ptdebug=true&tl=l,150,30,m&tm=63&u=ceceb. . . Auditude IvpIyC. . . 150 PD94bWw. . .
+200 8 https://ad.stg2.auditude.com/adserver/a?cip=0.0.0.0&g=1000012&of=1.5 &ptcueformat=turner&ptdebug=true&tl=l,150,30,m&tm=63&u=ceceb. . . Auditude IvpIyC. . . 150 PD94bWw. . .
 
 ```
 
@@ -217,16 +217,16 @@ An example:
 
 ```
 2015-03-18T22:25:36.229-07:00 1426742736208 1120feb. . . 147465 TRACE_AD_RESOLVE
-200 0 DIRECT 15 http://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8 Auditude 308008 0  cecebae72a919de350b9ac52602623f3 0 NA
+200 0 DIRECT 15 https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8 Auditude 308008 0  cecebae72a919de350b9ac52602623f3 0 NA
 
 2015-03-18T22:25:36.230-07:00 1426742736208 1120feb. . . 147465 TRACE_AD_RESOLVE
-200 2 DIRECT 15 http://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8 Auditude 308008 0  cecebae72a919de350b9ac52602623f3 0 NA
+200 2 DIRECT 15 https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8 Auditude 308008 0  cecebae72a919de350b9ac52602623f3 0 NA
 
 2015-03-18T22:25:36.562-07:00 1426742736208 1120feb. . . 147465 TRACE_AD_INSERT
-200 0 DIRECT 15 http://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8 http://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8
+200 0 DIRECT 15 https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8 https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8
 Auditude 308008 0 cecebae72a919de350b9ac52602623f3 0 NA
 2015-03-18T22:25:36.563-07:00 1426742736208 1120feb. . . 147465 TRACE_AD_INSERT
-200 2 DIRECT 15 http://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8 http://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8
+200 2 DIRECT 15 https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8 https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . ..m3u8
 Auditude 308008 0 cecebae72a919de350b9ac52602623f3 0 NA
 
 ```
@@ -246,7 +246,7 @@ An example:
 
 ```
 2015-06-04T23:24:42.000-0700    1426742736208     3086f5cd . . .    12345    TRACE_TRACKING_URL
-    0.000000    ExampleSystem    http://localhost/index.php?stream:test#8.1433485415;
+    0.000000    ExampleSystem    https://localhost/index.php?stream:test#8.1433485415;
     sid:3086f5cd . . .;pts:0    200
 ```
 
@@ -324,7 +324,7 @@ Records of this type log responses to requests the manifest server makes for WEB
 
 Records of this type enable the manifest server to log events and information not otherwise planned for when it ingests ads. The field beyond TRACE_MISC consists of a message string. Messages that might appear include the following:
 
-• Ad ignored :AdPlacement `[adManifestURL=http://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . . .m3u8, durationSeconds=15.0, ignore=false, redirectAd=false, priority=1]`
+• Ad ignored :AdPlacement `[adManifestURL=https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . . .m3u8, durationSeconds=15.0, ignore=false, redirectAd=false, priority=1]`
 • AdPlacement adManifestURL=*adManifestURL*, durationSeconds=*seconds*, ignore=*ignore*, redirectAd=*redirectAd*, priority=*priority*
 • Ad placement returned null.
 • Ad successfully stitched.

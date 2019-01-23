@@ -27,7 +27,7 @@ The ad map must be used as defined by the ad server.
        "stream": {
            "manifests": [
                {
-                   "url": "http://d398890tia84ty.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
+                   "url": "https://d398890tia84ty.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
                    "type": "hls"
                }
            ],
@@ -68,8 +68,8 @@ The ad map must be used as defined by the ad server.
        },   
        "title": "VOD - DELETE TimeRange with xm-replace_text Phrase Ads",
        "thumbnail": {
-           "large": "http://example.com",
-           "small": "http://example.com"
+           "large": "https://example.com",
+           "small": "https://example.com"
        },
        "type": "vod",
        "id": "vod_003"

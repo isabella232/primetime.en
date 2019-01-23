@@ -27,7 +27,7 @@ The `TimeRanges` between the `begin` and `end` in `localTime` are removed from t
        "stream": {
            "manifests": [
                {
-                   "url": "http://d398890tia84ty.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
+                   "url": "https://d398890tia84ty.cloudfront.net/e2e-vod/cloudfront_vod_hls_tos_30fps.m3u8",
                    "type": "hls"
                }
            ],
@@ -72,8 +72,8 @@ The `TimeRanges` between the `begin` and `end` in `localTime` are removed from t
        },   
        "title": "VOD - Replace TimeRange with Auditude Ads",
        "thumbnail": {
-           "large": "http://example.com",
-           "small": "http://example.com"
+           "large": "https://example.com",
+           "small": "https://example.com"
        },
        "type": "vod",
        "id": "vod_003"

@@ -33,7 +33,7 @@ You can use Adobe's Offline packager to prepare content for any of the DRM solut
 
        The following sample commands show some examples of packaging content for different DRM solutions:
 
-    * [Widevine with Primetime Packager](http://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-task-Protecting_content_using_Widevine_DRM_for_DASH) (generates MPD file):     
+    * [Widevine with Primetime Packager](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-task-Protecting_content_using_Widevine_DRM_for_DASH) (generates MPD file):     
     
       ```    
       java -jar OfflinePackager.jar \ 
@@ -52,7 +52,7 @@ You can use Adobe's Offline packager to prepare content for any of the DRM solut
         -widevine_header provider:intertrust#content_id:2a
       ```
 
-    * [FairPlay with Primetime Packager](http://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-task-Protecting_content_using_FairPlay_DRM) (Generates an M3U8 file):     
+    * [FairPlay with Primetime Packager](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-task-Protecting_content_using_FairPlay_DRM) (Generates an M3U8 file):     
     
       ```    
       java -jar OfflinePackager.jar  
@@ -83,7 +83,7 @@ You can use Adobe's Offline packager to prepare content for any of the DRM solut
 
        The client should include a call to your storefront server. Adobe recommends that the client call the storefront after the user selects some content, and after the user is authenticated. Then, pass the token returned from ExpressPlay to your player to use for license requests. Introductions to implementing the DRM component of your players are here:
 
-    * [Browser TVSDK for HTML5](http://help.adobe.com/en_US/primetime/psdk/browser_tvsdk/index.html#PSDKs-reference-DRM_interface_overview) 
-    * [iOS](http://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-task-Enable_Apple_FairPlay_in_TVSDK_applications)
+    * [Browser TVSDK for HTML5](https://help.adobe.com/en_US/primetime/psdk/browser_tvsdk/index.html#PSDKs-reference-DRM_interface_overview) 
+    * [iOS](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-task-Enable_Apple_FairPlay_in_TVSDK_applications)
 
 1. With the license token in hand, the client can now derive the request URL from the token and make the license request to ExpressPlay, and then play the selected content for the user.

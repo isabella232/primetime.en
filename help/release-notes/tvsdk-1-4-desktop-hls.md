@@ -28,7 +28,7 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
 
 **1.4.30**
 
-* **Billing Metrics**To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers. For more information about Billing Metrics, see [Billing Metrics](http://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics).
+* **Billing Metrics**To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers. For more information about Billing Metrics, see [Billing Metrics](https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics).
 
 **1.4.24**
 
@@ -51,7 +51,7 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
 
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
 
-  For more information, see [Ad fallback for VAST and VMAP ads](http://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
+  For more information, see [Ad fallback for VAST and VMAP ads](https://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
 
 **1.4.8**
 
@@ -88,7 +88,7 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
 >
 >All TVSDK customers who use CRS are strongly encouraged to upgrade to at least TVSDK 1.4.32 on iOS, Android, and Desktop HLS. This upgrade will be a drop-in replacement to the existing app implementation. After the upgrade, check for the CRS creative URL requests in a proxy tool (for example, Charles) to verify that the version in the path reflects version 3.1. For example,
 >
->`http://adunit.cdn.auditude.com/assets/3p/v3.1/218747/94b/c1b/94bc1b964cc67e115a5a6781c7329b90_ee92607938ffff46b083121f044c2746.m3u8`
+>`https://adunit.cdn.auditude.com/assets/3p/v3.1/218747/94b/c1b/94bc1b964cc67e115a5a6781c7329b90_ee92607938ffff46b083121f044c2746.m3u8`
 
 **Version 1.4.41**
 
@@ -168,7 +168,7 @@ This issue was resolved by handling of VPAID ads correctly based on content IDs 
 
 Important: This issue requires Flash player 23.0.0.185 or later.
 
-For more information about Billing Metrics, see [Billing Metrics](http://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics).
+For more information about Billing Metrics, see [Billing Metrics](https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics).
 
 * Zendesk # 25432 Closed Caption issue during resizing the player.
 
@@ -746,7 +746,7 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 
     * PTPLAY-1634 - The same Subscribed tag has different timestamps in different live windows. When live windows move, the same tag in each of them should have the same timestamps. However, sometimes, the same tags have different timestamps.
     * PTPLAY-28 - MediaPlayer timeline does not include empty breaks.
-    * A cross-domain policy file (crossdomain.xml) is required for permission to stream content from a different domain. [Setting a crossdomain.xml file for HTTP streaming](http://www.adobe.com/devnet/adobe-media-server/articles/cross-domain-xml-for-streaming.html).
+    * A cross-domain policy file (crossdomain.xml) is required for permission to stream content from a different domain. [Setting a crossdomain.xml file for HTTP streaming](https://www.adobe.com/devnet/adobe-media-server/articles/cross-domain-xml-for-streaming.html).
     * Bug #3694203 - In a DVR stream, seeking from within a playing mid-roll into another mid-roll ad cue may lead to browser freeze
     * Bug #3753725 - selectPolicyForSeekIntoAd doesn't take into account if the ad break has been watched
     * Bug #3754529 - Pre-roll ads are not removed from the stream when seeking back in a live DVR stream

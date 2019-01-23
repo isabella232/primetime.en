@@ -45,7 +45,7 @@ Your content is obtained by using the `skd:` protocol, but your license request 
   NSString* const PLAYLIST_URL =  
     @"https://{your_content_URL}/{your_manifest}.m3u8"; 
   NSString* const EXPRESSPLAY_TOKEN =  
-    @"http://fp.service.expressplay.com:80/hms/fp/rights/? 
+    @"https://fp.service.expressplay.com:80/hms/fp/rights/? 
       ExpressPlayToken={copy_your_token_to_here}";
   ```
 
@@ -63,7 +63,7 @@ Your content is obtained by using the `skd:` protocol, but your license request 
       NSString *strUrl = [url absoluteString]; 
       NSLog(@"url is: %@", strUrl); 
        
-      strUrl = [strUrl stringByReplacingOccurrencesOfString:@"skd://" withString:@"http://"]; 
+      strUrl = [strUrl stringByReplacingOccurrencesOfString:@"skd://" withString:@"https://"]; 
        
       NSData *assetId; 
        
@@ -91,7 +91,7 @@ Your content is obtained by using the `skd:` protocol, but your license request 
        
   #if 0 
       // The hardcoded SEES server: 
-      strUrl = @"http://10.0.248.85:8080/sees/SEESServlet"; 
+      strUrl = @"https://10.0.248.85:8080/sees/SEESServlet"; 
    
       // You can use the following code to simulate a device binding entitlement  
       // request:  

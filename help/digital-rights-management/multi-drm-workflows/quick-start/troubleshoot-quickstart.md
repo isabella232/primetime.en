@@ -23,7 +23,7 @@ In addition:
 
 * Check that you are using the correct Customer Authenticator in your service requests. It is easy to accidentally use the production authenticator when you meant to use the test authenticator. Also, make sure you are using *your* authenticator. For example, during testing you might borrow somebody else's `curl` command and forget to swap in your authenticator for theirs. 
 
-* Check that you are using the proper transport protocol in your requests or in your manifests ( `http://` versus `https://`, or in the case of FairPlay, `skd://` versus `http://` versus `https://`. 
+* Check that you are using the proper transport protocol in your requests or in your manifests ( `https://` versus `https://`, or in the case of FairPlay, `skd://` versus `https://` versus `https://`. 
 
 * Make sure that you are including all of the required query parameters for the DRM solution you are working with. It is easy to get confused between PlayReady and Widevine for instance, because they are both working with DASH, but the required request parameters and packaging configurations are different. 
 * Confirm that your ExpressPlay account has enough token credits and has not been exhausted. 

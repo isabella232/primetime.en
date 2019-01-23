@@ -57,12 +57,12 @@ The following code block defines the JSON object for the ads-list array.
 ```
 "ad-list": [ 
     { 
-        "url": "http://cdn.auditude.com/player/downloads/data/espn/ads/csx/prog_index.m3u8", 
+        "url": "https://cdn.auditude.com/player/downloads/data/espn/ads/csx/prog_index.m3u8", 
         "duration": 15000, 
         "tag": "1st break - 1st ad" 
     }, 
     { 
-        "url": "http://cdn.auditude.com/player/downloads/data/espn/ads/csx/prog_index.m3u8", 
+        "url": "https://cdn.auditude.com/player/downloads/data/espn/ads/csx/prog_index.m3u8", 
         "duration": 30000, 
         "tag": "1st break - 2nd ad" 
     } 

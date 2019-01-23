@@ -59,7 +59,7 @@ Advertising metadata is in the `MediaResource.Metadata` property. When starting 
 
    ```java
    MediaResource mediaResource = new MediaResource( 
-   "http://example.com/media/test_media.m3u8", MediaResource.Type.HLS, Metadata);
+   "https://example.com/media/test_media.m3u8", MediaResource.Type.HLS, Metadata);
    ```
 
 1. Load the `MediaResource` object through the `MediaPlayer.replaceCurrentResource` method.

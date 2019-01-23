@@ -24,7 +24,7 @@ http(s)://
 For example, for license server hostname "mylicenseserver.com" listening on port 8080 and a tenant named "tenant1", the license server URL to specify at packaging time is:
 
 ```
-http://mylicenseserver.com:8080/flashaccessserver/tenant1
+https://mylicenseserver.com:8080/flashaccessserver/tenant1
 ```
 
 If each tenant uses a different License Server and Transport Credential, be sure to specify the correct tenant's certificate in the packager.

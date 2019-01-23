@@ -101,7 +101,7 @@ Android TVSDK v2.5.3 offers the following updates and API changes.
 
 * All TVSDK customers who use CRS are encouraged to upgrade their apps with TVSDK 2.5.3.85 or latest on Android. This will be a drop-in replacement to the existing app implementation. After the TVSDK upgrade, check for the CRS creative URL requests in a proxy tool (ex: Charles) and confirm that the host name and version in the path reflects as in the sample URL structure below.
 
-  `http://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784 bf3586d.m3u8`
+  `https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784 bf3586d.m3u8`
 
 * TVSDK's User Agent customizable: we have added some new API's to customize the user agents.
 

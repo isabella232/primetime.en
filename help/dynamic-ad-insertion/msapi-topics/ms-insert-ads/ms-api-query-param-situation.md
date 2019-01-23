@@ -21,7 +21,7 @@ The `live` parameter distinguishes between live content and video on demand (VOD
 Here is a sample URL showing the parameters that pertain to Akamai: 
 
 ```
-http://. . .master.m3u8?. . .&ptassetid=pubAsset&live=true
+https://. . .master.m3u8?. . .&ptassetid=pubAsset&live=true
 ```
 
 ## Ad insertion from TVSDK on Xbox {#section_5DB405F4647240A0B83E72DE35D5EC80}
@@ -39,7 +39,7 @@ The `live` parameter tells the manifest server whether to return live or VOD con
 Here is a sample URL showing the parameters that pertain to iOS with Safari: 
 
 ```
-http://. . .master.m3u8?. . .&ptplayer=ios-mobileweb&live=false
+https://. . .master.m3u8?. . .&ptplayer=ios-mobileweb&live=false
 ```
 
 ## Ad insertion using a custom ad cue format {#section_82AF880AAABE4BD4B593D906434D4D89}
@@ -49,7 +49,7 @@ Adobe provides names for ad cue formats that it does not support directly in the
 Here is a sample URL specifying a custom ad cue format: 
 
 ```
-http://. . .master.m3u8?. . .&ptcueformat=[custom format name]
+https://. . .master.m3u8?. . .&ptcueformat=[custom format name]
 ```
 
 ## Ad insertion using ad cues to create a FreeWheel timeline for VOD {#section_E0D830F5EEE24639819B975B90F6999F}
@@ -59,7 +59,7 @@ For VOD content containing ad cues to be parsed and included in a FreeWheel ad r
 Here is a sample URL that specifies using a FreeWheel timeline for VOD: 
 
 ```
-http://. . .master.m3u8?. . .&ptcueformat=DPISimple&live=false
+https://. . .master.m3u8?. . .&ptcueformat=DPISimple&live=false
 ```
 
 ## Ad insertion using a custom timeline for VOD {#section_F398F7659164463FA886A4CC787C7B5A}
@@ -69,7 +69,7 @@ To ask the manifest server to insert ads into VOD content according to a timelin
 Here is a sample URL that uses a custom timeline for VOD: 
 
 ```
-http://. . .master.m3u8?. . .&live=false&pttimeline=B,60,2,p;C,120,1;B,30,2,m;C,300,1
+https://. . .master.m3u8?. . .&live=false&pttimeline=B,60,2,p;C,120,1;B,30,2,m;C,300,1
 ```
 
 It specifies an initial break of one minute containing up to two ads, followed by a two-minute content segment, followed by a 30-second break containing up to two ads, followed by a five-minute content segment.

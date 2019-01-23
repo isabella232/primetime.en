@@ -24,7 +24,7 @@ During license acquisition, the AAXS license server observes a flag in the metad
 
    ```
    java -jar AdobePackager_ExternalCEK.jar sample.flv encrypted.flv abc abcdef0123456789 
-       policy.pol http://path-to-your-server:8090 <license-server-public-cert.pem> 
+       policy.pol https://path-to-your-server:8090 <license-server-public-cert.pem> 
        <license-server-private-key.pfx> <private-key-password>
    ```
 
@@ -38,7 +38,7 @@ During license acquisition, the AAXS license server observes a flag in the metad
 
 1. Set up the Reference Implementation according to:
 
-   [http://www.adobe.com/support/adobeaccess/pdfs/server/AdobeAccess_RefImpl.pdf]( http://www.adobe.com/support/adobeaccess/pdfs/server/AdobeAccess_4_RefImpl.pdf )
+   [https://www.adobe.com/support/adobeaccess/pdfs/server/AdobeAccess_RefImpl.pdf]( https://www.adobe.com/support/adobeaccess/pdfs/server/AdobeAccess_4_RefImpl.pdf )
 1. If any exist, clean up previous Reference Implementation deployments:
 
     1. `delete <tomcat>\work\Catalina\*.*`

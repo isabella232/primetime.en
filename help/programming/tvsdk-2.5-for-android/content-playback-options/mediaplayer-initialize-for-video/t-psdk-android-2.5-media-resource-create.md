@@ -58,7 +58,7 @@ The MediaResource class represents the content to be loaded by the MediaPlayer i
        >```java       >
        >// To do: Create metadata here 
        >MediaResource res = new MediaResource( 
-       >  "http://www.example.com/video/some-video.m3u8",  
+       >  "https://www.example.com/video/some-video.m3u8",  
        >  MediaResource.Type.HLS, 
        >  metadata); 
        >```       >

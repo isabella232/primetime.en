@@ -148,7 +148,7 @@ Several performance enhancements has been incorporated to the JIT packaging capa
 
 **Install streaming server**
 
-1. Download the Java SE and JDK software from the [Oracle site](http://www.oracle.com/technetwork/java/javase/downloads/index.html)and follow the installation instructions.
+1. Download the Java SE and JDK software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html)and follow the installation instructions.
 2. Extract the Adobe Primetime-Streaming Server 1.4 archive file, Primetime- StreamingServer-1-4-0-b206-12042014.zip to your disk.
 
 **Start the Primetime Streaming Server**
@@ -180,7 +180,7 @@ To restart the Streaming Server, stop and start the Streaming Server.
 
 **Configuring Primetime Streaming Server**
 
-Refer the Primetime Streaming Server Getting Started document for the configuration details available at [http://help.adobe.com/en_US/primetime/platform/primetime_streaming_server.pdf](http://help.adobe.com/en_US/primetime/platform/primetime_streaming_server.pdf).
+Refer the Primetime Streaming Server Getting Started document for the configuration details available at [https://help.adobe.com/en_US/primetime/platform/primetime_streaming_server.pdf](https://help.adobe.com/en_US/primetime/platform/primetime_streaming_server.pdf).
 
 **Uninstalling the Primetime Streaming Server**
 
@@ -221,12 +221,12 @@ The above minimum system requirements holds true for Origin Server as well as Li
 
 **Installing the Live Packager**
 
-1. Download the Java SE and JDK software from the [Oracle site](http://www.oracle.com/technetwork/java/javase/downloads/index.html)and follow the installation instructions.
+1. Download the Java SE and JDK software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html)and follow the installation instructions.
 1. Extract the Adobe Primetime - Live Packager 1.4 archive file Primetime-LivePackager-1-4-0-b206-12042014.zip to your disk.
 
 **Installing the HTTP Origin Server**
 
-1. Download the Java JRE and JDK software from the [Oracle site](http://www.oracle.com/technetwork/java/javase/downloads/index.html)and follow the installation instructions.
+1. Download the Java JRE and JDK software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html)and follow the installation instructions.
 1. Extract the Adobe Primetime - HTTP Origin Server 1.4 archive file, Primetime-HttpOrigin-1-4-0-b206-12042014.zip, to your disk.
 
 **To start the Live Packager** To start the packager, execute the following command from the packager’s root directory:  
@@ -267,7 +267,7 @@ For more details about the configuration refer [the *Primetime Live Packager *do
 
 **Configuring the HTTP Origin Server**
 
-Refer the Primetime HTTP Origin Server Getting Started document for the configuration details available [here](http://help.adobe.com/en_US/primetime/platform/originserver/index.html#Platform-concept-%20Origin_Server_Getting_Started_Guide).
+Refer the Primetime HTTP Origin Server Getting Started document for the configuration details available [here](https://help.adobe.com/en_US/primetime/platform/originserver/index.html#Platform-concept-%20Origin_Server_Getting_Started_Guide).
 
 **Uninstalling the Live Packager**
 
@@ -304,7 +304,7 @@ To uninstall the HTTP Origin Server, stop the HTTP Origin Server and remove the 
 
 To install Offline Packager, follow these steps:
 
-1. Download the Java SE software from the [Oracle site](http://www.oracle.com/technetwork/java/javase/downloads/index.html)and follow the install instructions.
+1. Download the Java SE software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html)and follow the install instructions.
 1. Extract the Adobe Primetime - Offline Packager 1.4 archive file, Primetime- OfflinePackager-1-4-0-b206-12042014.zip, to your disk.
 
-Refer the Primetime Offline Packager Getting Started document for the configuration details available [here](http://help.adobe.com/en_US/primetime/packagers/offline/index.html).
+Refer the Primetime Offline Packager Getting Started document for the configuration details available [here](https://help.adobe.com/en_US/primetime/packagers/offline/index.html).

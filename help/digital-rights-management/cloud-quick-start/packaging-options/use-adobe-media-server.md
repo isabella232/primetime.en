@@ -23,7 +23,7 @@ For example:
           <ContentID>SampleVideo</ContentID>
           <CommonKeyPath>common-key.bin</CommonKeyPath>
           <LicenseServerURL>
-            http://access.adobeprimetime.com/flashaccessserver/axs_prod
+            https://access.adobeprimetime.com/flashaccessserver/axs_prod
           </LicenseServerURL>
           <KeyServerURL>
             https://access.adobeprimetime.com:443/faxsks/axs_prod/key

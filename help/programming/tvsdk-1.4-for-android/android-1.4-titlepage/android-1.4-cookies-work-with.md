@@ -37,7 +37,7 @@ To work with cookies:
    cookie.setDomain("twitter.com");  
    cookie.setPath("/"); 
    cookie.setVersion(0); 
-   cookieManager.getCookieStore().add(newURI("http://twitter.com/"),cookie);
+   cookieManager.getCookieStore().add(newURI("https://twitter.com/"),cookie);
    ```
 
    TVSDK queries this cookieManager at runtime, checks whether there are any cookies associated with the URL, and uses those automatically.
