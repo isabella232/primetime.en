@@ -6,7 +6,7 @@ title: Catalog format
 uuid: 6e1a526f-c0bb-403d-a792-666caf5479a5
 ---
 
-# Catalog format{#catalog-format}
+# Catalog format {#catalog-format}
 
 The Primetime reference implementation uses a JSON-based feed format for responses. This format is parsed using an implementation of the IFeedItemAdapter interface.
 
