@@ -11,7 +11,7 @@ user-guide: Primetime Release Notes
 + [TVSDK 3.0 for Android Release Notes](tvsdk-30-android.md)
 + [TVSDK 2.4.1 for Android Release Notes](tvsdk-24-android.md)
 + [TVSDK 1.4 for Desktop HLS Release Notes](tvsdk-1-4-desktop-hls.md)
-+ [Primetime Offline Packager 2.x releases](offline_packager_2x_release_note.md)
++ [Primetime Offline Packager 2.x releases](offline-packager-2x-release-note.md)
 + [Browser TVSDK 2.4 Release Notes](tvsdk-24-browser.md)
 + [Primetime Streaming Server 1.x releases](primetime-streaming-server-1x.md)
 + [TVSDK 2.1 PlayStation 4 Release Notes](tvsdk-21-ps4.md)

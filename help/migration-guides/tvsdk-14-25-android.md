@@ -13,7 +13,7 @@ internal: n
 snippet: y
 ---
 
-# TVSDK 1.4 to 2.5 for Android (Java){#tvsdk-to-for-android-java}
+# TVSDK 1.4 to 2.5 for Android (Java) {#tvsdk-to-for-android-java}
 
 TVSDK 2.5 offers multiple benefits over version 1.4 in terms of performance, security, better integrations, and more.
 
