@@ -17,7 +17,7 @@ The largest impact to performance that you can make is by using settings in the 
   <Caching refreshDelaySeconds="..." numTenants="..."/>
   ```
 
-    * `refreshDelaySeconds` controls how often the server checks for updates to the configuration files. A low value for `refreshDelaySeconds` negatively impacts performance, while a higher value can improve performance. For more information on `refreshDelaySeconds`, see " [Updating configuration files](c_xgep_updating-configuration-files.md)". 
+    * `refreshDelaySeconds` controls how often the server checks for updates to the configuration files. A low value for `refreshDelaySeconds` negatively impacts performance, while a higher value can improve performance. For more information on `refreshDelaySeconds`, see "[Updating configuration files](../../aaxs-protected-streaming/updating-configuration-files/updating-configuration-files-overview.md)". 
     
     * `numTenants` specifies the number of tenants. A value that is lower than the number of tenants likely impacts performance because requests to the remaining tenants result in cache misses. A cache miss for configuration data negatively impacts performance. Therefore, Adobe recommends that you set this value higher than the number of tenants configured for the server, unless there are memory limitations to consider.
 

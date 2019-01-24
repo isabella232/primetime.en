@@ -7,11 +7,11 @@ internal: n
 snippet: y
 ---
 
-# Updating a policy using the Java API{#updating-a-policy-using-the-java-api}
+# Updating a policy using the Java API {#updating-a-policy-using-the-java-api}
 
 To update a policy by using the Java API, perform the following steps:
 
-1. Set up your development environment and include all of the JAR files mentioned in [Setting up the development environment](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-sdk.md) within your project. 
+1. Set up your development environment and include all of the JAR files mentioned in [Setting up the development environment](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) within your project. 
 1. Create a `Policy` instance and read in the policy from a file or database. 
 
    ```

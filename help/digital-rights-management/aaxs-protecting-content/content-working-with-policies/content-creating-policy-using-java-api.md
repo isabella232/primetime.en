@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Creating a policy using the Java API{#creating-a-policy-using-the-java-api}
+# Creating a policy using the Java API {#creating-a-policy-using-the-java-api}
 
 To create a policy by using the Java API, perform the following steps:
 

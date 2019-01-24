@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Device capabilities required to play protected content{#device-capabilities-required-to-play-protected-content}
+# Device capabilities required to play protected content {#device-capabilities-required-to-play-protected-content}
 
 Specifies the hardware capabilities required to access content. Information about the hardware capabilities is available for devices that use the porting kit.
 

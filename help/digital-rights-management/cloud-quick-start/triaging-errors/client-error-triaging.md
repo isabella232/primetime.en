@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Triaging errors overview{#triaging-errors-overview}
+# Triaging errors overview {#triaging-errors-overview}
 
 Occasionally, there will be times when content cannot be played back. Any number of situations may cause this, including errors in the browser network stack, transport layer, Operating System, Flash Player runtime, or Primetime DRM system.
 
@@ -22,5 +22,5 @@ Primetime DRM (outside of Primetime Cloud DRM) has been in the market for severa
 If content does not play, please examine the right-side panel of the Sample Video Players, which will log any `DRMErrorEvent` that occurs. If there is an error event, it will correlate with one of the Flash Player Runtime Errors :
 
 * [DRM Client Error Message Reference](https://help.adobe.com/en_US/primetime/drm/index.html#reference-DRM_Client_Error_Messages); or 
-* [AS3 Flash Runtime Errors](https://help.adobe.com/en_US/FlashPlatform/actionscript/3/runtimeErrors.html) (DRM issues start at 3300)
+* [AS3 Flash Runtime Errors](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html) (DRM issues start at 3300)
 

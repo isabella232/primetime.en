@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Minimum security level for DRM and runtimes{#minimum-security-level-for-drm-and-runtimes}
+# Minimum security level for DRM and runtimes {#minimum-security-level-for-drm-and-runtimes}
 
 Specifies the security level required to access content. Specified by individual security levels for each component. The default security level for DRM/Runtime modules is 10000.
 

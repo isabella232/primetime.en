@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Configure and run the command-line tools{#configure-and-run-the-command-line-tools}
+# Configure and run the command-line tools {#configure-and-run-the-command-line-tools}
 
 The command-line tools have associated properties for which you must set set values in [!DNL flashaccesstools.properties] *before* you run the tools. Some of the command-line tools also let you specify property values from the command-line. Values that you specify from the command line take precedence over values you supply from [!DNL flashaccesstools.properties].
 

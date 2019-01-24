@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Password Scrambler{#password-scrambler}
+# Password Scrambler {#password-scrambler}
 
 The Password Scrambler utility encrypts a password so that it can be used in the Adobe Access Server for Protected Streaming configuration files. To run the scrambler, run the command:
 

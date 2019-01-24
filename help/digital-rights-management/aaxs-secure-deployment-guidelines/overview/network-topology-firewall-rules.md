@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Firewall rules{#firewall-rules}
+# Firewall rules {#firewall-rules}
 
 ## Incoming URLs {#section-F111526A9DB844CBBF21A3CAE5F50880}
 

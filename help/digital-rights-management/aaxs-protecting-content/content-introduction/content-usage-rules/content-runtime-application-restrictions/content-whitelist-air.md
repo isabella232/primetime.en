@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# White-list for Adobe® Primetime applications allowed to play protected content{#white-list-for-adobe-primetime-applications-allowed-to-play-protected-content}
+# White-list for Adobe® Primetime applications allowed to play protected content {#white-list-for-adobe-primetime-applications-allowed-to-play-protected-content}
 
 Specifies the AIR/iOS applications that can play content. Specify the AIR/iOS application ID, minimum version, maximum version, and publisher ID.
 

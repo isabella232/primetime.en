@@ -14,7 +14,7 @@ snippet: y
 Adobe® Access™ is an advanced digital rights management and content protection solution for high-value audiovisual content. Using tools that you create using Java APIs, you can create policies, apply policies to files containing audio and video content, and encrypt those files. The high-level steps for performing these tasks are as follows:
 
 1. Use the Java APIs to set the policy properties and encryption parameters. 
-1. Create a policy describing the usage roles for the content. (See [Working with policies](../../aaxs-protecting-content/content-working-with-policies/content-working-with-policies.md).)
+1. Create a policy describing the usage roles for the content. (See [Working with policies](../../aaxs-protecting-content/content-working-with-policies/content-working-with-policies-overview.md)).
 
    You can create any number of policies. Most users create a small number of policies and apply them to many files. 
 

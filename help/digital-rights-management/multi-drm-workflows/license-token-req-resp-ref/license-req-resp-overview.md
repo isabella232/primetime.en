@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# ExpressPlay license token request / response reference overview{#expressplay-license-token-request-response-reference-overview}
+# ExpressPlay license token request / response reference overview {#expressplay-license-token-request-response-reference-overview}
 
 ExpressPlay provides reference documentation on their site. Some of ExpressPlay's request / response reference documentation that is relevant to Primetime Cloud DRM, powered by ExpressPlay is also posted here for convenience.
 

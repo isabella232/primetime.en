@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Network protocols used by Adobe Access{#network-protocols-used-by-adobe-access}
+# Network protocols used by Adobe Access {#network-protocols-used-by-adobe-access}
 
 When you configure a secure network architecture, the network protocols in the following table are required for interaction between Adobe Access and other systems in your enterprise network. 
 
@@ -25,7 +25,7 @@ When you configure a secure network architecture, the network protocols in the f
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">HTTPS (Optional) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player, Adobe AIR, and Adobe Primetime clients can use HTTPS for communication with Adobe Access, however, HTTPS (SSL) is not required unless you need support for FMRMS 1.x clients. See the notes in the table <a href="c-aaxs-xgep-sdg-network-topology-firewall-rules-in-urls.md" format="dita" scope="local"> Incoming URLs</a> and <a href="c-aaxs-xgep-sdg-network-topology-configuring-ssl.md"> Configuring SSL</a>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player, Adobe AIR, and Adobe Primetime clients can use HTTPS for communication with Adobe Access, however, HTTPS (SSL) is not required unless you need support for FMRMS 1.x clients. See the notes in the table <a href="network-topology-firewall-rules.md" format="dita" scope="local"> Incoming URLs</a> and <a href="network-topology-configuring-ssl.md"> Configuring SSL</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Primetime DRM Cloud Quick-start overview{#primetime-drm-cloud-quick-start-overview}
+# Primetime DRM Cloud Quick-start overview {#primetime-drm-cloud-quick-start-overview}
 
 Work with your Adobe representative to obtain certificates, and to set up an administrative account at ExpressPlay. After your Adobe and ExpressPlay accounts are set up, you can begin to implement and test workflows for different DRM solutions.
 

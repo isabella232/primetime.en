@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Embedding licenses{#embedding-licenses}
+# Embedding licenses {#embedding-licenses}
 
 Once content has been encrypted and a license has been pre-generated, the license may be embedded into the encrypted content.
 
@@ -19,4 +19,4 @@ For sample code demonstrating embedded licenses, see `com.adobe.flashaccess.samp
 >
 >Adobe Access 2.0 clients will ignore any licenses embedded in the content and will attempt to obtain a license from the license server specified in the metadata. However, if the metadata indicates that no license server is available, an Adobe Access 2.0 client will need to upgrade to view the content.
 
-See [Out-of-band Licenses](overview.md#WS5262178513756206-2cb3fd0f13088bab534-8000_ver2.0). 
+See [Out-of-band Licenses](../../aaxs-protecting-content/content-introduction/packaging-options/content-out-of-band-licenses.md). 

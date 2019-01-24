@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Determining if Reference Implementation License Server runs properly{#determining-if-reference-implementation-license-server-runs-properly}
+# Determining if Reference Implementation License Server runs properly {#determining-if-reference-implementation-license-server-runs-properly}
 
 There are several ways to determine whether your Reference Implementation License Server has started correctly. You can view the [!DNL catalina.log] logs may not be sufficient, as the license server logs to its own log files. Follow the steps below to ensure your Reference Implementation has started up properly.
 
@@ -23,7 +23,7 @@ The following procedure describes this process:
 
 1. Go to the [!DNL \Reference Implementation\Command Line Tools] folder.
 
-   See [Installing the command line tools](c_drm_ref-impl-installing-the-command-line-tools.md) on how to install the command line tools. 
+   See [Installing the command line tools](../drm-reference-implementations/command-line-tools/install-command-line-tools.md) on how to install the command line tools. 
 
 1. Type the following command to create a simple anonymous DRM policy: 
 
@@ -31,7 +31,7 @@ The following procedure describes this process:
        java -jar libs\AdobePolicyManager.jar new policy_test.pol -x
    ```
 
-   See [Command line usage](c_drm_ref-impl-command-line-usage.md) on how to create DRM policies with the DRM Policy Manager. 
+   See [Command line usage](../drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-command-line-usage.md) on how to create DRM policies with the DRM Policy Manager. 
 
 1. Set the `encrypt.license.serverurl` property in the [!DNL flashaccesstools.properties] file to the URL of the license server.
 

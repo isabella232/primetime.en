@@ -9,14 +9,14 @@ internal: n
 snippet: y
 ---
 
-# ExpressPlay Packager / Cloud DRM / TVSDK{#expressplay-packager-cloud-drm-tvsdk}
+# ExpressPlay Packager / Cloud DRM / TVSDK {#expressplay-packager-cloud-drm-tvsdk}
 
 You can use ExpressPlay's Bento4 packager to prepare content for any of the DRM solutions supported by Primetime Cloud DRM, powered by ExpressPlay.
 
  This task describes how to use a 3rd-party tool to prepare protected content, in this case *ExpressPlay Bento4 Tools*, for use with a variety of DRM solutions. For additional information, see the *Bento4 tools* documentation on the [ExpressPlay](https://www.expressplay.com/developer/) web site. 
 1. Acquire an ExpressPlay account and obtain your ExpressPlay Customer Authenticator information.
 
-   See [Primetime DRM Cloud Quick-start.](../../../multi-drm-workflows/quick-start/quick-start.md)
+   See [Primetime DRM Cloud Quick-start.](../../quick-start/quick-overview.md)
 1. If you are encrypting content for  Primetime Access , acquire the  Primetime Adobe Access  SDK from Adobe, along with the required certificates (License, Transport, and Packaging certs).
 1. Supply a Content Encryption Key (CEK) and Content Encryption Key Storage ID (CEKSID) for use across the DRM systems. (You randomly generate these using OpenSSL or similar.)
 
@@ -57,7 +57,7 @@ You can use ExpressPlay's Bento4 packager to prepare content for any of the DRM 
 
     1. Customer selection of content. This implementation needs to include an endpoint for clients to request a content token for a specific content ID. 
     1. Customer entitlement 
-    1. License token (ExpressPlay) requests from the client ( [ExpressPlay license token request / response reference](../../../multi-drm-workflows/license-token-req-resp-ref/license-token-req-resp-ref.md))
+    1. License token (ExpressPlay) requests from the client ( [ExpressPlay license token request / response reference](../../license-token-req-resp-ref/license-req-resp-overview.md))
 
 1. Create your client.
 

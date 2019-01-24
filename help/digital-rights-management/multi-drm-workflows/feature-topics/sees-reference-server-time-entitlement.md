@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Reference Service: Time-based Entitlement{#reference-service-time-based-entitlement}
+# Reference Service: Time-based Entitlement {#reference-service-time-based-entitlement}
 
 Work with the SEES to see how to enable a time-based entitlement service using ExpressPlay.
 
