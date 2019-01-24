@@ -7,11 +7,12 @@ internal: n
 snippet: y
 ---
 
-# Command line configuration file{#command-line-configuration-file}
+# Command line configuration file
+{#command-line-configuration-file}
 
 Several of the command-line tools require a configuration file that contains information for the tools to use for applying policies and encrypting files.
 
-The default configuration file is [!DNL flashaccesstools.properties]. It is located in the working directory; that is, the directory from which you run the tools (see [Installing the command line tools](c_xgep_using-aaxs-ref-impl-installing-the-command-line-tools.md)). Each tool also contains an option ( `-c`) that lets you point to the configuration file you want to use if you prefer not to use the default.
+The default configuration file is [!DNL flashaccesstools.properties]. It is located in the working directory; that is, the directory from which you run the tools (see [Installing the command line tools](../../aaxs-reference-implementations/command-line-tools/installing-the-command-line-tools.md). Each tool also contains an option ( `-c`) that lets you point to the configuration file you want to use if you prefer not to use the default.
 
 The configuration file uses the Java property file format. If values for any of the properties contain special characters, keep in mind the following restrictions:
 

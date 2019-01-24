@@ -7,6 +7,6 @@ internal: n
 snippet: y
 ---
 
-# Revocation List Manager overview{#revocation-list-manager-overview}
+# Revocation List Manager overview {#revocation-list-manager-overview}
 
-Before using Revocation List Manager, ensure that you fulfill the requirements listed in [Requirements](c_xgep_using-aaxs-ref-impl-requirements.md) and that the configuration file contains the required information (see [Configuration file](c_xgep_using-aaxs-ref-impl-config-file.md)). 
+Before using Revocation List Manager, ensure that you fulfill the requirements listed in requirements and that the configuration file contains the required information (see [Configuration file](../policy-revocation-list-manager/revocation-config-file-props.md)). 
