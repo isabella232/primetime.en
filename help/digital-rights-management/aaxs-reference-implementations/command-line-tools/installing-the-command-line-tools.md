@@ -8,6 +8,7 @@ snippet: y
 ---
 
 # Installing the command line tools
+
 {#installing-the-command-line-tools}
 
 You can copy the files you need from the [!DNL \Reference Implementation\Command Line Tools] directory on the DVD, which contains the default [!DNL flashaccesstools.properties] configuration file, and a [!DNL libs] directory, which contains the JAR files for the tools.

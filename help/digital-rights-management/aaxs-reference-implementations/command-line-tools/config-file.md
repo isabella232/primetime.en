@@ -8,6 +8,7 @@ snippet: y
 ---
 
 # Command line configuration file
+
 {#command-line-configuration-file}
 
 Several of the command-line tools require a configuration file that contains information for the tools to use for applying policies and encrypting files.
