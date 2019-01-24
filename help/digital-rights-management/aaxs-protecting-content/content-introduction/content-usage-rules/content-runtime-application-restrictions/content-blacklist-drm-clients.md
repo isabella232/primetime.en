@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Black-list of DRM Clients restricted from accessing protected content{#black-list-of-drm-clients-restricted-from-accessing-protected-content}
+# Black-list of DRM Clients restricted from accessing protected content {#black-list-of-drm-clients-restricted-from-accessing-protected-content}
 
 **Adobe Access DRM module versions restricted from accessing protected content.**
 

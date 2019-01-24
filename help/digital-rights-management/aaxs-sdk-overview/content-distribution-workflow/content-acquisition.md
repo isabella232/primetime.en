@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Content acquisition{#content-acquisition}
+# Content acquisition {#content-acquisition}
 
 When a consumer acquires a protected content file from a website or CDN, the consumer must also acquire a license that contains a key to decrypt the video before it can be played. The following steps illustrate a common workflow for how protected content is accessed by a computer running Flash Player or Adobe AIR: 
 

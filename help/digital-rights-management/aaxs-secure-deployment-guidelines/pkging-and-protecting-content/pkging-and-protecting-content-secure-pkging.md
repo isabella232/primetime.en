@@ -7,11 +7,11 @@ internal: n
 snippet: y
 ---
 
-# Securely packaging content{#securely-packaging-content}
+# Securely packaging content {#securely-packaging-content}
 
 The configuration file for the Adobe Access Media Packager command line tool requires a PKCS12 credential that is used during packaging.
 
-In the Reference Implementation Command Line tools, the password for the PKCS12 credentials file is stored in the flashaccess.properties file in clear text. For this reason, take extra care when securing the computer hosting this file, and ensure that it is in a secure environment. (See [Physical security and access](physicalSecurity.md#WS287f927bd30d4b1f7797d0b413073dcfd7d-8000-ver2.0).)
+In the Reference Implementation Command Line tools, the password for the PKCS12 credentials file is stored in the flashaccess.properties file in clear text. For this reason, take extra care when securing the computer hosting this file, and ensure that it is in a secure environment. (See [Physical security and access](../../aaxs-secure-deployment-guidelines/physical-sec-and-access.md)).
 
 The packager also uses the License Server and License Server Transport certificates. Both the integrity and confidentiality of this information must be protected. Only authorized entities should be permitted to use the packager. If any of your private keys are compromised, immediately inform Adobe Systems Incorporated so that the certificate can be revoked.
 

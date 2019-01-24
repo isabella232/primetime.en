@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Setting up the development environment{#setting-up-the-development-environment}
+# Setting up the development environment {#setting-up-the-development-environment}
 
 To set up the Adobe® Access™ for use, copy files from the DVD. These files include JAR files containing code, certificates, and third-party classes. In addition, request a certificate from Adobe Systems Incorporated. You will be issued multiple credentials used to protect the integrity of packaged content, licenses, and communication between the client and server.
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Configuration Validator{#configuration-validator}
+# Configuration Validator {#configuration-validator}
 
 Adobe recommends running the Configuration Validator utility before starting the server any time changes are made to the configuration file. This utility can detect most configuration errors early, before they cause failures during request processing.
 

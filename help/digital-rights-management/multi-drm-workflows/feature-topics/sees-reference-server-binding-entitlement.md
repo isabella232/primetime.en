@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Reference Service: Device-Binding Entitlement{#reference-service-device-binding-entitlement}
+# Reference Service: Device-Binding Entitlement {#reference-service-device-binding-entitlement}
 
 The SEES reference server shows you how to enable the device-binding entitlement service using ExpressPlay.
 

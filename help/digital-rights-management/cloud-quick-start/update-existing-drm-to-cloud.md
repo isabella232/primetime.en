@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Update existing DRM content to use Cloud DRM (Optional){#update-existing-drm-content-to-use-cloud-drm-optional}
+# Update existing DRM content to use Cloud DRM (Optional) {#update-existing-drm-content-to-use-cloud-drm-optional}
 
 If you have an existing library of content protected by Primetime DRM, it is possible to "re-header" the existing content to use the  Primetime Cloud DRM service, instead of having to re-package/encrypt the original source files. Re-headering the content simply updates the DRM Metadata of the content in the HLS manifest. It does not perform any unencryption/re-encryption of the original asset. This may be a useful option if the original source content is not available, or if there is concern over the amount of resources required to re-package a large library.
 
@@ -17,7 +17,7 @@ It is possible to use the Primetime DRM Java SDK to update the metadata programm
 
 Re-headering must update the following fields to use CloudDRM:
 
-* License Server URL (To [!DNL https://access.adobeprimetime.com/flashaccessserver/axs_prod]) 
+* License Server URL (To [!DNL ht<span></span>tps://access.adobeprimetime.com/flashaccessserver/axs_prod]) 
 * License Server Certificate (To the CloudDRM license server certificate) 
 * Transport Certificate (To the CloudDRM transport certificate) 
 * Packager Credential (To the packager credential you have activated for use with CloudDRM)

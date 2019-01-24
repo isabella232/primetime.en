@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Handling certificate updates when your Adobe-issued certifcates expire{#handling-certificate-updates-when-your-adobe-issued-certifcates-expire}
+# Handling certificate updates when your Adobe-issued certifcates expire {#handling-certificate-updates-when-your-adobe-issued-certifcates-expire}
 
 There might be times when you have to get a new certificate from Adobe. For example, when a production certificate expires, an evaluation certificate expires, or when you switch from an evaluation to a production certificate. When a certificate expires and you do not want to repackage the content that used the old certificate. You can make the License Server aware of both the old and new certificates.
 

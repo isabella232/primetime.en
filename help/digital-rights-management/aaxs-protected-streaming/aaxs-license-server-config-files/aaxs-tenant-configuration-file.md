@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Tenant configuration file{#tenant-configuration-file}
+# Tenant configuration file {#tenant-configuration-file}
 
 The flashaccess-tenant.xml configuration file contains settings that apply to a specific tenant of the license server. Each tenant has its own instance of this configuration file located in *LicenseServer.ConfigRoot* [!DNL /flashaccessserver/tenants/]*tenantname*. See the [!DNL configs/flashaccessserver/tenants/sampletenant] directory for an example tenant configuration file.
 
@@ -15,10 +15,10 @@ You can specify all file paths in the tenant configuration file as absolute path
 
 The tenant configuration file includes:
 
-* **Transport Credential** — Specifies one or more transport credentials (certificate and private key) issued by Adobe. Can be specified as a path to a .pfx file and a password, or an alias for a credential stored on an HSM. Several such credentials can be specified here, either as file paths, or key aliases, or both. See " [Handling certificate updates](c_xgep_using-aaxs-for-protecting-content-handling-cert-updates.md)" in *Using the Adobe Access SDK for Protecting Content* for more information on when additional credentials are needed. 
+* **Transport Credential** — Specifies one or more transport credentials (certificate and private key) issued by Adobe. Can be specified as a path to a .pfx file and a password, or an alias for a credential stored on an HSM. Several such credentials can be specified here, either as file paths, or key aliases, or both. See "[Handling certificate updates](../../aaxs-protecting-content/content-implementing-the-license-server/content-handling-cert-updates.md)" in *Using the Adobe Access SDK for Protecting Content* for more information on when additional credentials are needed. 
 * **License Server Credential** — Specifies one or more license server credentials (certificate and private key) issued by Adobe. Can be specified as a path to a .pfx file and a password, or an alias for a credential stored on an HSM. Several such credentials can be specified here, either as file paths, or key aliases, or both. See Handling certificate updates in *Using the Adobe Access SDK for Protecting Content *for more information on when additional credentials are needed. 
 * **Key Server Certificates** — Optional. Specifies the Key Server’s License Server certificate issued by Adobe. Can be specified as a path to a .cer file or an alias to a certificate stored on an HSM. This option must be specified in order to issue licenses for content packaged with a policy that requires remote key delivery for iOS devices. 
-* **Custom Authorizers** — Optional. Specifies custom authorizer classes to invoke for each license request. If multiple authorizers are specified, they are invoked in the order listed. For more information, see " [Custom authorization extensions](c_xgep_custom-authorization-extensions.md)". 
+* **Custom Authorizers** — Optional. Specifies custom authorizer classes to invoke for each license request. If multiple authorizers are specified, they are invoked in the order listed. For more information, see "[Custom authorization extensions](../../aaxs-protected-streaming/custom-authorization-extensions.md)". 
 * **List of Authorized Packagers** — Optional. Specifies certificates identifying entities authorized to package content for this license server. If no packager certificates are specified, the server issues licenses for content packaged by any packager. 
 * **Minimum supported client version** (See *Using the Adobe Access SDK for Protecting Content*). 
 * **Usage Rules**

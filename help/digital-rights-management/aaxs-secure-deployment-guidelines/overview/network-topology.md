@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Network topology overview{#network-topology-overview}
+# Network topology overview {#network-topology-overview}
 
 After you successfully deploy Adobe Access, it is important to maintain the security of your environment. This section describes the tasks that are necessary to maintain the security of your Adobe Access production server.
 
