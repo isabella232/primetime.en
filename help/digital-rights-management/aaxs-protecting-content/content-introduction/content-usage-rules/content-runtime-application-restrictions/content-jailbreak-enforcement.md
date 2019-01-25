@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Jailbreak Enforcement (requires Adobe Primetime){#jailbreak-enforcement-requires-adobe-primetime}
+# Jailbreak Enforcement (requires Adobe Primetime) {#jailbreak-enforcement-requires-adobe-primetime}
 
 On platforms that supports jailbreak detection (such as Android and iOS mobile devices), enabling jailbreak enforcement disallows playback of content if [!DNL jailbreak/root] has been detected on the device.
 

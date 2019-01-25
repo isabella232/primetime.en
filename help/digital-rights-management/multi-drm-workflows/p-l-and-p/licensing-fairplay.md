@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Licensing and playback for FairPlay{#licensing-and-playback-for-fairplay}
+# Licensing and playback for FairPlay {#licensing-and-playback-for-fairplay}
 
 Licensing and playback of FairPlay-protected content requires swapping of URL schemes, between the scheme used in the video manifest file (skd:) and the one used in ExpressPlay token requests (https:).
 
@@ -19,12 +19,12 @@ Instructions for implementing licensing and playback from an iOS TVSDK client ar
 
 You may want to make it possible for users to play FairPlay-protected content when its licensing is not retrievable because the player is isolated from the web (such as on an airplane).
 
-Before you begin this task, download and read the Apple document [Offline Playback with FairPlay Streaming and HTTP Live Streaming](/en_US/primetime/drm/multi-drm-workflows/OfflineHLSGuide_withFPS.pdf). Read the guide to learn how to download Transport Stream (TS) segments and save them to your local machine.
+Before you begin this task, download and read the Apple document **"Offline Playback with FairPlay Streaming and HTTP Live Streaming"**. Read the guide to learn how to download Transport Stream (TS) segments and save them to your local machine.
 
 Implement offline play for FairPlay with this workflow:
 
 1. Download the HLS TS segment. 
-1. Request Persistent Rental license from the FairPlay server (see [FairPlay Persistent Rental Policy](c_multi_drm_workflow_fairplay_persistent_rental_policy.md)). 
+1. Request Persistent Rental license from the FairPlay server (see **"FairPlay Persistent Rental Policy"**). 
 1. Save the `persistentContentKey`. 
 1. Play the FairPlay content offline.
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Overview{#overview}
+# Overview {#overview}
 
 The Adobe Primetime DRM reference implementations command-line tools enable you to perform a variety of DRM-related tasks directly from the command line.
 

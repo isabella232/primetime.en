@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Setting policies for FairPlay{#setting-policies-for-fairplay}
+# Setting policies for FairPlay {#setting-policies-for-fairplay}
 
 You can set polices for FairPlay-protected content by using an entitlement server. You can set up your own, or make use of an Adobe-provided sample entitlement server.
 
@@ -17,6 +17,6 @@ Adobe provides a Sample ExpressPlay Entitlement Server (SEES) that shows how to 
 
 [Reference Server: Sample ExpressPlay Entitlement Server (SEES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md)
 
-* [Reference Service: Time-based Entitlement](sees-reference-server-time-based-entitlement.md) 
-* [Reference Service: Device-Binding Entitlement](sees-reference-server-device-binding-entitlement.md)
+* [Reference Service: Time-based Entitlement](../../multi-drm-workflows/feature-topics/sees-reference-server-time-entitlement.md)
+* [Reference Service: Device-Binding Entitlement](../../multi-drm-workflows/feature-topics/sees-reference-server-binding-entitlement.md)
 

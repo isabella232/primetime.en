@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Updating configuration files overview{#updating-configuration-files-overview}
+# Updating configuration files overview {#updating-configuration-files-overview}
 
 Once the license server reads one of the license server configuration files (global or tenant configuration), the configuration information is cached in memory. Therefore, the files do not have to be read from disk for every license request. However, the server also allows most values in the configuration files to be modified without requiring a server restart for the changes to take effect. (See below for details on which configuration values are checked for updates.)
 

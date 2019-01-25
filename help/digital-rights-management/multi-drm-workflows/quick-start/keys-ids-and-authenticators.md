@@ -47,9 +47,8 @@ or (for the Adobe Offline Packager):
   ```
   <config>  
     <in_path>sample.mp4</in_path>  
-    <out_type>dash</out_type> 
-     
-<b><key_file_path>keyfile.bin</key_file_path></b> // This is your CEK  
+    <out_type>dash</out_type>
+    <b><key_file_path>keyfile.bin</key_file_path></b> // This is your CEK  
     […] 
   </config> 
   ```
@@ -59,7 +58,7 @@ or (for the Adobe Offline Packager):
 **When / where do I use it?**
 
 1. First, you need to have the CEK available on the machine on which you are doing your packaging. Your packaging tool uses your CEK to encrypt your content. 
-1. Second, you need to store the CEK in some form of Key Management System (KMS), with each CEK associated with its own [](key-id.md). You can create your own KMS, or use [ExpressPlay's Key Storage](https://www.expressplay.com/developer/key-storage/). This lets your storefront (your entitlement server, that handles customer entitlement and License Token provision) pull a license token for the customer from the KMS using a Key ID instead of the actual CEK (this is much more secure).
+1. Second, you need to store the CEK in some form of Key Management System (KMS), with each CEK associated with its own [Content Encryption Key](../../multi-drm-workflows/glossary/glossary-cek.md). You can create your own KMS, or use [ExpressPlay's Key Storage](https://www.expressplay.com/developer/key-storage/). This lets your storefront (your entitlement server, that handles customer entitlement and License Token provision) pull a license token for the customer from the KMS using a Key ID instead of the actual CEK (this is much more secure).
 
 ## Content Encryption Key Storage ID {#section_0C94F54970E04BDB82DE3C8A33A62CD4}
 

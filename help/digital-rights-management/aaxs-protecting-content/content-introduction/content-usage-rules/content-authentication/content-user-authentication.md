@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# User authentication{#user-authentication}
+# User authentication {#user-authentication}
 
 Specifies whether a credential, such as username and password, is required to acquire a license. If authenticated (identity-based) licensing is specified, the server authenticates the user before issuing a license.
 

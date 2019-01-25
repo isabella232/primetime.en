@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Send a command to the Manifest Server{#send-a-command-to-the-manifest-server}
+# Send a command to the Manifest Server {#send-a-command-to-the-manifest-server}
 
 Use the HTTP GET command to interact with the manifest server.
 

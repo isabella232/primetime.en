@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Install the command-line tools{#install-the-command-line-tools}
+# Install the command-line tools {#install-the-command-line-tools}
 
 1. Copy the contents of the [DRM SDK DVD]\Reference Implementation\Command Line Tools\ directory to a working directory on your system.
 

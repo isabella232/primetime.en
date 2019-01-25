@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Physical security and access{#physical-security-and-access}
+# Physical security and access {#physical-security-and-access}
 
 The physical security for your Adobe Access environment can range from the server being placed in a secure room under lock and key, along with other equipment, to being in a secured alarmed cage, isolated from other computers, with two-part authentication such as badge and fingerprint, monitored continuously by Closed Circuit Television (CCTV). The degree of security that you implement depends on your organizations’ policies, the risk involved (potential of loss and severity if lost), and other legal compliance requirements.
 

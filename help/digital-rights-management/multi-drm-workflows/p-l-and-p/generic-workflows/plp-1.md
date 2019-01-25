@@ -13,7 +13,7 @@ snippet: y
 
 You can use Adobe's Offline packager to prepare content for any of the DRM solutions supported by Primetime Cloud DRM, powered by ExpressPlay.
 
- This set of instructions assumes you have already set up an ExpressPlay admin account: [Primetime DRM Cloud Quick-start](../../../multi-drm-workflows/quick-start/quick-start.md). 
+ This set of instructions assumes you have already set up an ExpressPlay admin account: [Primetime DRM Cloud Quick-start](../../../multi-drm-workflows/quick-start/quick-overview.md). 
 1. Choose the infrastructure to use for packaging your content. Primetime Packager supports both command-line and configuration-based packaging of content for use with the FairPlay, Widevine, and PlayReady DRMs. The following formats and encryption are currently supported in TVSDK (with more in the pipeline):
 
     * DASH (CENC) / PlayReady, Widevine - For HTML5 
@@ -77,7 +77,7 @@ You can use Adobe's Offline packager to prepare content for any of the DRM solut
 
     1. Customer selection of content. This implementation needs to include an endpoint for clients to request a content token for a specific content ID. 
     1. Customer entitlement 
-    1. License token (ExpressPlay) requests from the client ( [ExpressPlay license token request / response reference](../../../multi-drm-workflows/license-token-req-resp-ref/license-token-req-resp-ref.md))
+    1. License token (ExpressPlay) requests from the client ( [ExpressPlay license token request / response reference](../../../multi-drm-workflows/license-token-req-resp-ref/license-req-resp-overview.md))
 
 1. Create your client.
 

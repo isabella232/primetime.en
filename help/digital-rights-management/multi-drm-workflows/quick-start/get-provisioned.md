@@ -52,4 +52,4 @@ To get started with Primetime DRM Cloud, powered by ExpressPlay, you need to set
 
    ![](assets/expressplay_admin_dashboard_2-web.png) ![](assets/expressplay_admin_dashboard-web.png)
 
-1. If you are using FairPlay, there are additional steps involved (on the Apple developer site) to get set up with ExpressPlay. See [](t_multi_drm_workflow_enable-expressplay-for-fairplay.md) for instructions.
+1. If you are using FairPlay, there are additional steps involved (on the Apple developer site) to get set up with ExpressPlay. See [Enable ExpressPlay service for FairPlay](../../multi-drm-workflows/p-l-and-p/enable-expressplay-for-fairplay.md) for instructions.

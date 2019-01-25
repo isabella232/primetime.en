@@ -7,11 +7,11 @@ internal: n
 snippet: y
 ---
 
-# Examining encrypted file content{#examining-encrypted-file-content}
+# Examining encrypted file content {#examining-encrypted-file-content}
 
 To examine the contents of an FLV or an F4V file by using the Java API, perform the following steps:
 
-1. Set up your development environment and include all of the JAR files mentioned in [Setting up the development environment](settingUpSDK.md#WS287f927bd30d4b1f4fad6c7f1304f5e91be-7fff_ver2.0) within your project. 
+1. Set up your development environment and include all of the JAR files mentioned in [Setting up the development environment](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) within your project. 
 1. Create a `MediaEncrypter` instance. 
 1. Pass the encrypted file to the `MediaEncrypter.examineEncryptedContent` method, which returns a `KeyMetaData` object. 
 1. Inspect the information within the `KeyMetaData` object.

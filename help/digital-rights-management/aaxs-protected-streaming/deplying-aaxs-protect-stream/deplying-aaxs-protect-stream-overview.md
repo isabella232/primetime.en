@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Deploying the Adobe Access Server for Protected Streaming overview{#deploying-the-adobe-access-server-for-protected-streaming-overview}
+# Deploying the Adobe Access Server for Protected Streaming overview {#deploying-the-adobe-access-server-for-protected-streaming-overview}
 
 Before deploying the Adobe Access Server for Protected Streaming, make sure you have installed the versions of Java and Tomcat listed in the Requirements section.
 

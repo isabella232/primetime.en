@@ -36,9 +36,7 @@ During license acquisition, the AAXS license server observes a flag in the metad
 
 ## Server Workflow
 
-1. Set up the Reference Implementation according to:
-
-   [https://www.adobe.com/support/adobeaccess/pdfs/server/AdobeAccess_RefImpl.pdf]( https://www.adobe.com/support/adobeaccess/pdfs/server/AdobeAccess_4_RefImpl.pdf )
+1. Set up the Reference Implementation.
 1. If any exist, clean up previous Reference Implementation deployments:
 
     1. `delete <tomcat>\work\Catalina\*.*`

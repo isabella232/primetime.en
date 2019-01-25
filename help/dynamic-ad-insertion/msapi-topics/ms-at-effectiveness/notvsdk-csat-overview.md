@@ -38,7 +38,7 @@ The manifest server API assumes that any video player using it meets the minimum
    u=9a2893fd893cab27da24059ff034b78d&z=173475&pttrackingmode=simple&pttrackingversion=v2&__sid__=docExample02
    ```
 
-   The URL includes the elements described in [Send a command to the Manifest Server](ms-getting-started/ms-sending-cmd.md#send-command). 
+   The URL includes the elements described in [Send a command to the Manifest Server](../../msapi-topics/ms-getting-started/ms-sending-cmd.md). 
 
 1. The manifest server establishes a session for that player and generates a unique session ID. It creates a new variant M3U8 playlist URL, which it returns to the player as a JSON response. The JSON has the following syntax: 
 

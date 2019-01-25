@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Policy Manager Command-line usage{#policy-manager-command-line-usage}
+# Policy Manager Command-line usage {#policy-manager-command-line-usage}
 
 ```
 java -jar AdobePolicyManager.jar  
