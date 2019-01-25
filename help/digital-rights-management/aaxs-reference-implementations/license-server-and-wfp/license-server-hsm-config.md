@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# HSM configuration{#hsm-configuration}
+# HSM configuration {#hsm-configuration}
 
 Use of an HSM is not required, but it is recommended. The reference implementation can be configured to use the Sun PKCS11 provider for HSM support. In order to use a credential on an HSM, you must create a configuration file for the Sun PKCS11 provider. See the Sun documentation for details. To verify that your HSM and Sun PKCS11 configuration file are configured properly, you can use the following command (keytool is installed with the Java JDK):
 

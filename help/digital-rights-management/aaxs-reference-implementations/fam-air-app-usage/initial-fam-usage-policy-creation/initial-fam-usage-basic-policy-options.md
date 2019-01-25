@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Basic Policy Options{#basic-policy-options}
+# Basic Policy Options {#basic-policy-options}
 
 The following table describes the Basic Policy preferences: 
 

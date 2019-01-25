@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Java SDK, Flash Player and Adobe AIR client{#java-sdk-flash-player-and-adobe-air-client}
+# Java SDK, Flash Player and Adobe AIR client {#java-sdk-flash-player-and-adobe-air-client}
 
 The main components of Adobe Access consist of a Java SDK, and the Flash Player and Adobe AIR client runtime environments.
 

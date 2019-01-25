@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Overview- Using the reference implementations{#overview-using-the-reference-implementations}
+# Overview- Using the reference implementations {#overview-using-the-reference-implementations}
 
 The Adobe Access product comes with a reference implementation for the following components:
 

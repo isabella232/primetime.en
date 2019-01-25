@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Command line usage{#command-line-usage}
+# Command line usage {#command-line-usage}
 
 Before using Policy Manager, ensure that you fulfill the requirements listed in Requirements.
 

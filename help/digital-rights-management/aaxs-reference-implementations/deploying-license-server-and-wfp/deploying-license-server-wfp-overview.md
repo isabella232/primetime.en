@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Deploying the license server and watched folder packager overview{#deploying-the-license-server-and-watched-folder-packager-overview}
+# Deploying the license server and watched folder packager overview {#deploying-the-license-server-and-watched-folder-packager-overview}
 
 Copy the license server WAR files to Tomcat's [!DNL webapps] directory. If you have previously deployed the WAR file, you may need to manually delete the unpacked WAR directories ( [!DNL flashaccess], [!DNL edcws], and [!DNL flashaccess-packager] in Tomcat's [!DNL webapps] directory). To prevent Tomcat from unpacking WAR files, edit the [!DNL server.xml] file in Tomcat's conf directory and set the `unpackWARs` attribute to `false`.
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Set up a domain server{#set-up-a-domain-server}
+# Set up a domain server {#set-up-a-domain-server}
 
 To configure the domain server on an existing license server installation, perform the following tasks:
 

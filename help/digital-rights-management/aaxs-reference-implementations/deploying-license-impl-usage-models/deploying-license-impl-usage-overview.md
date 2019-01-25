@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Implementing the usage models overview{#implementing-the-usage-models-overview}
+# Implementing the usage models overview {#implementing-the-usage-models-overview}
 
 The Reference Implementation includes business logic for demonstrating how to enable the following four different usage models for a piece of packaged content:
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Upgrading existing deployments{#upgrading-existing-deployments}
+# Upgrading existing deployments {#upgrading-existing-deployments}
 
 To upgrade a server running the version 3.0 Reference Implementation License Server or Watched Folder Packager, replace the [!DNL .war] files deployed on your Application Server with the files included with Adobe Access Reference Implementation Server.
 

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Create a new policy{#create-a-new-policy}
+# Create a new policy {#create-a-new-policy}
 
 Before any content can be packaged, one or more policies must be created. For an overview of the usage rules that may be specified in a policy, see Usage rules in the Overview of the Adobe Access SDK.
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Command line usage{#command-line-usage}
+# Command line usage {#command-line-usage}
 
 To run the tool, use the following syntax:
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Command line usage{#command-line-usage}
+# Command line usage {#command-line-usage}
 
 To generate a license, use the following syntax:
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Java APIs for managing device group domains{#java-apis-for-managing-device-group-domains}
+# Java APIs for managing device group domains {#java-apis-for-managing-device-group-domains}
 
 These APIs are used to allow the server to handle client requests for joining and leaving device group domains.
 

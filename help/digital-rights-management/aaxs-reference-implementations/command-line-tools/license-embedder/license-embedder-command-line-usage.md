@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Command line usage{#command-line-usage}
+# Command line usage {#command-line-usage}
 
 To embed a license, use the following syntax:
 

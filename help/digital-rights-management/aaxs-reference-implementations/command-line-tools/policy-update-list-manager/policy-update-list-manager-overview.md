@@ -7,6 +7,6 @@ internal: n
 snippet: y
 ---
 
-# Policy Update List Manager overview{#policy-update-list-manager-overview}
+# Policy Update List Manager overview {#policy-update-list-manager-overview}
 
 Before using Policy Update List Manager, ensure that you fulfill the requirements listed in Requirements and that the configuration file contains the required information (see Configuration file in *Using the Adobe Access Reference Implementations*). 

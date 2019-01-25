@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Adobe AIR{#adobe-air}
+# Adobe AIR {#adobe-air}
 
 Adobe AIR is a cross-operating system runtime that allows content producers to extend their existing investments in the web to the desktop by designing customized multimedia applications. Built on proven, open technologies, it provides a reliable, simplified way for businesses to develop and deploy custom applications that can be trusted to deliver a more secure, enjoyable user experience. Adobe AIR allows businesses to easily integrate rich media to create a more immersive and interactive user experience. It lets developers use familiar tools such as HTML, JavaScript, Flash, or Adobe® Flex® software to deploy their unique combination of rich Internet applications to either Windows, Macintosh, or Linux.
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Packager Preferences{#packager-preferences}
+# Packager Preferences {#packager-preferences}
 
 This tab contains settings required for packaging content. The following table describes these preferences: 
 

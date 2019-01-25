@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Update an existing policy{#update-an-existing-policy}
+# Update an existing policy {#update-an-existing-policy}
 
 To update an existing policy, choose the filename from the drop down list and click **[!UICONTROL Open]**. Modify any desired policy attributes. All attributes can be modified except those related to Authentication and License Chaining.
 

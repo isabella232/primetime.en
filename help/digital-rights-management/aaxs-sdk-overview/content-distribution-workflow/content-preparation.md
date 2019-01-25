@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Content preparation{#content-preparation}
+# Content preparation {#content-preparation}
 
 Any use of Adobe Access consists of two key steps at different points of the workflow. Content preparation must be done once per asset, and results in creating protected content. Content acquisition is done multiple times, once for every consumer that wants to watch that protected asset.
 

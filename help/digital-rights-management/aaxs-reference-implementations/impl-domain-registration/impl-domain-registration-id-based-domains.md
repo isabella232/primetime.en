@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Identity-based domains{#identity-based-domains}
+# Identity-based domains {#identity-based-domains}
 
 In this use case, each authenticated user has his own domain, and a certain number of devices are allowed to join the domain. To use this type of domain with the reference implementation, create a policy specifying domain registration is required. Specify your server’s host and port for the domain server URL and specify username/password authentication is required.
 

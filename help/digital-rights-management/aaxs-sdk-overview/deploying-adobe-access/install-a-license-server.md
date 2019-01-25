@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Implement a License Server{#implement-a-license-server}
+# Implement a License Server {#implement-a-license-server}
 
 Using Adobe Access SDK, you must create a License Server. When content is protected using Adobe Access, it cannot be viewed until a license is issued to the consumer by the License Server. If identity-based licensing is used, password-based authentication ensures that only authorized consumers can open and view content.
 

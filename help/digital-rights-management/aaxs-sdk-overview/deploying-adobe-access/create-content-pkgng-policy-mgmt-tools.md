@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Create content packaging and policy management tools{#create-content-packaging-and-policy-management-tools}
+# Create content packaging and policy management tools {#create-content-packaging-and-policy-management-tools}
 
 Using the Adobe Access SDK, you can create content packaging and policy management tools. The policy management APIs allow administrators to create, view details of, and update policies. The packaging APIs embed the policy into the FLV or F4V file, and encrypt the file using the content encryption key.
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Building the Packager Server and AIR Application{#building-the-packager-server-and-air-application}
+# Building the Packager Server and AIR Application {#building-the-packager-server-and-air-application}
 
 There are two components required to use the Flash Access Manager:
 

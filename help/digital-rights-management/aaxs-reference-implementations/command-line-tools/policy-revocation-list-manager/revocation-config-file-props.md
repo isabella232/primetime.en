@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Configuration file properties{#configuration-file-properties}
+# Configuration file properties {#configuration-file-properties}
 
 The following are the Revocation List Manager properties, which specify a PKCS12 file containing credentials for signing revocation lists (License Server Certificate):
 

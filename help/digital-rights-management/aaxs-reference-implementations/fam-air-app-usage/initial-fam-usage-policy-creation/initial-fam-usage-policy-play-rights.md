@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Play Rights{#play-rights}
+# Play Rights {#play-rights}
 
 The following table describes the Play Rights preferences: 
 

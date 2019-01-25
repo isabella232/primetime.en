@@ -9,11 +9,11 @@ internal: n
 snippet: y
 ---
 
-# Initial Flash Access Manager setup{#initial-flash-access-manager-setup}
+# Initial Flash Access Manager setup {#initial-flash-access-manager-setup}
 
 Use the following procedure to set up Flash Access Manager:
 
-1. Deploy the Packager Server. This server should only be available to users within your firewall (do not deploy this software on a public-facing machine). For more information on deploying the server, see [Deploying the license server and watched folder packager](c_xgep_using-aaxs-ref-impl-deploying-license-server-and-wfp.md).
+1. Deploy the Packager Server. This server should only be available to users within your firewall (do not deploy this software on a public-facing machine). For more information on deploying the server, see [Deploying the license server and watched folder packager](../../aaxs-reference-implementations/deploying-license-server-and-wfp/deploying-license-server-wfp-overview.md).
 
     * Copy [!DNL flashaccess-packager.war] to Tomcat's webapps folder.
     * Copy [!DNL flashaccess-refimpl-packager.properties] from resources to a location on the classpath.
