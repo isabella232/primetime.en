@@ -527,7 +527,7 @@ This version of TVSDK has the following issues:
 
 * [System Requirements](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_2.5.pdf#page=6)
 * [TVSDK 3.0 for Android Programmer's Guide](assets/psdk_android_3.0.pdf)
-* [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.0/index)
+* [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.0/index.html)
 * [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.5/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
 * [TVSDK 1.4 to 2.5 for Android (Java) Migration Guide](../migration-guides/tvsdk-14-25-android.md)
 * For handling screen on/off scenarios, see the `Application_Changes_for_Screen_On_Off.pdf` file included in the build.
