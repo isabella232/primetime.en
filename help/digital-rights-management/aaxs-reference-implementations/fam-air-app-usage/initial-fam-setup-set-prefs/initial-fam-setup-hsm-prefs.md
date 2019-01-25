@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# HSM Preferences{#hsm-preferences}
+# HSM Preferences {#hsm-preferences}
 
 Preferences in this tab only need to be specified if the **[!UICONTROL Enable HSM]** checkbox is selected in the Packager tab. The following table describes these preferences: 
 

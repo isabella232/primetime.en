@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Key features{#key-features}
+# Key features {#key-features}
 
 Adobe Access provides these key features:
 

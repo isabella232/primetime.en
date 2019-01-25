@@ -7,6 +7,6 @@ internal: n
 snippet: y
 ---
 
-# License Embedder overview{#license-embedder-overview}
+# License Embedder overview {#license-embedder-overview}
 
 Using the License Embedder command line tool, you can embed pre-generated licenses into content protected using Media Packager. 

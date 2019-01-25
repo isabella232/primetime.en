@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# About Adobe Access{#about-adobe-access}
+# About Adobe Access {#about-adobe-access}
 
 Adobe Access lets content owners and distributors control how and where their content can be distributed and experienced, providing end-to-end protection throughout the content lifecycle. It encrypts Flash FLV and F4V video files, which can then be streamed or downloaded to Microsoft® Windows®, Apple® Mac OS®, Linux®, and Android® platforms, and enforces business models such as online video rental. Consumers can enjoy high-quality content at their convenience, whether they are online or offline. Adobe Access offers key advantages that content owners and distributors can use to quickly deliver new services that differentiate them from the competition.
 

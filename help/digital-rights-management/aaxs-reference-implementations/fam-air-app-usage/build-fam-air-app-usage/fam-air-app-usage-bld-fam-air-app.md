@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Building the Flash Access Manager AIR Application{#building-the-flash-access-manager-air-application}
+# Building the Flash Access Manager AIR Application {#building-the-flash-access-manager-air-application}
 
 To build the Flash Access Manager AIR file from the source code, you need the Flex and AIR SDK installed on your machine. Before you can package and run the application, you must compile the MXML code into a SWF file using the [!DNL amxmlc] compiler. The [!DNL amxmlc] compiler can be found in the [!DNL bin] directory of the Flex 4 or later SDK. If desired, you can set your path environment variable to include the Flex SDK bin directory to make it easier to run the utilities on the command line.
 

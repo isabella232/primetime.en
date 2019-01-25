@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Command line tools overview{#command-line-tools-overview}
+# Command line tools overview {#command-line-tools-overview}
 
 The reference implementation includes the following command line tools:
 

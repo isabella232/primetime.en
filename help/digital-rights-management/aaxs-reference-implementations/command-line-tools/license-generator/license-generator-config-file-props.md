@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Configuration File Properties{#configuration-file-properties}
+# Configuration File Properties {#configuration-file-properties}
 
 Before you run the License Generator, specify values for the License Generator properties. The configuration file specifies the following properties. For property names that include *n*, *n* represents an integer starting with 1 and increasing for each instance of the property. 
 

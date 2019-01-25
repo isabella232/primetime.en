@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Policy Update List Preferences{#policy-update-list-preferences}
+# Policy Update List Preferences {#policy-update-list-preferences}
 
 This tab contains settings required for creating Policy Update Lists. The following table describes the preferences: 
 

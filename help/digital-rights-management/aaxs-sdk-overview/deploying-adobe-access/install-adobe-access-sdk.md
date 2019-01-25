@@ -7,6 +7,6 @@ internal: n
 snippet: y
 ---
 
-# Install Adobe Access SDK{#install-adobe-access-sdk}
+# Install Adobe Access SDK {#install-adobe-access-sdk}
 
 Adobe Access SDK is provided as a Java archive (JAR) file. To learn more about installing Adobe Access, see *Using Adobe Access SDK for Protecting Content *and* Secure Deployment Guidelines*. 

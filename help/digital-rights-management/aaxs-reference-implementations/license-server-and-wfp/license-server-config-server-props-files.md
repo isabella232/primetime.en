@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Server properties files{#server-properties-files}
+# Server properties files {#server-properties-files}
 
 The server requires two configuration files, one for the license server and one for the packager. Both files must be placed on the classpath. The properties files contain the location of the credentials issued by Adobe. These credentials can be specified as a .pfx file and password or by providing an alias and password for a credential stored on an HSM.
 

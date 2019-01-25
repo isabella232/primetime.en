@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Troubleshooting{#troubleshooting}
+# Troubleshooting {#troubleshooting}
 
 Listed below are common problems and solutions for deployment:
 

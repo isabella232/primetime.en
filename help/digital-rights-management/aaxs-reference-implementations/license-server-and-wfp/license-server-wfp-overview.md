@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# License server and watched folder packager overview{#license-server-and-watched-folder-packager-overview}
+# License server and watched folder packager overview {#license-server-and-watched-folder-packager-overview}
 
 The reference implementation server can help you create a license server using the Adobe Access SDK. In this implementation, users are authenticated based on user entries in a database. The server includes demonstration business logic for issuing licenses. It also implements compatibility support for Flash Media Rights Management Server 1.0 and 1.5.
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Terminology and core concepts{#terminology-and-core-concepts}
+# Terminology and core concepts {#terminology-and-core-concepts}
 
 The following terms and concepts are used throughout this document:
 

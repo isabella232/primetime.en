@@ -7,6 +7,6 @@ internal: n
 snippet: y
 ---
 
-# Configuration{#configuration}
+# Configuration {#configuration}
 
 You will need to configure the server properties files, watched folder properties, set up the database, and configure the HSM. 

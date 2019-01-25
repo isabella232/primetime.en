@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# UltraViolet media and Adobe Access{#ultraviolet-media-and-adobe-access}
+# UltraViolet media and Adobe Access {#ultraviolet-media-and-adobe-access}
 
 Adobe Access can be used with other third-party content streaming solutions to set up a complete and secure DRM-based media distribution ecosystem.
 
