@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Time-based rules overview{#time-based-rules-overview}
+# Time-based rules overview {#time-based-rules-overview}
 
 Primetime DRM uses "soft enforcement" of time-based license restrictions. If a time right expires during playback of a video, the default behaviour of Primetime DRM is to not restrict playback until the next time the video stream is recreated (by calling `Netstream.stop()` and `Netstream.play()`).
 

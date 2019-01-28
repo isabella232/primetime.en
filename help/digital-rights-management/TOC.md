@@ -242,7 +242,7 @@ user-guide: Primetime DRM Help
       + [What is new in Adobe Primetime DRM](protecting-content/introduction/whats-new.md)
       + Usage rules and Authentication {#usage-rules}
          + [User authentication](protecting-content/introduction/usage-rules/authentication/user-authentication.md)
-         + [Time-based rules](protecting-content/introduction/usage-rules/time-rules-overview/time-rules-overview.md)
+         + [Time-based rules](protecting-content/introduction/usage-rules/time-rules-overview/time-based-rules.md)
             + [Time-based rules overview](protecting-content/introduction/usage-rules/time-rules-overview/time-based-rules.md)
             + [Start date](protecting-content/introduction/usage-rules/time-rules-overview/start-date.md)
             + [End date](protecting-content/introduction/usage-rules/time-rules-overview/end-date.md)
@@ -494,20 +494,20 @@ user-guide: Primetime DRM Help
       + [Content Encryption Key Storage ID](multi-drm-workflows/glossary/glossary-ceksid.md)
       + [Content Encryption Key Storage ID](multi-drm-workflows/glossary/glossary-ceksid.md)
 + Using the Adobe Access SDK for Protecting Content {#using-adobe-access-sdk}
-   + [Introduction](aaxs-protecting-content/content-introduction/content-introduction.md)
+   + [Introduction](aaxs-protecting-content/content-introduction/content-whats-new.md)
       + [What is new in Adobe Access 5.2](aaxs-protecting-content/content-introduction/content-whats-new.md)
-      + [Usage rules](aaxs-protecting-content/content-introduction/content-usage-rules/content-usage-rules.md)
-         + [Authentication](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-authentication.md)
-            + [User authentication](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)
-         + [Time-based rules](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-time-based-rules.md)
-            + [Time-based rules](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-time-based-rules-defining.md)
+      + [Usage rules](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-custom-usage-rules.md)
+         + [Authentication] {#authentication}
+            + [User authentication overview](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)
+         + [Time-based-rules] {#time-based-rules}
+            + [Time-based rules overview](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-time-based-rules-defining.md)
             + [Start date](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-start-date.md)
             + [End date](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-end-date.md)
             + [Relative end date](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-relative-end-date.md)
             + [License caching duration](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-relative-license-caching-duration.md)
             + [Playback window](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-relative-license-playback-window.md)
          + [Requirements for Synchronization](aaxs-protecting-content/content-introduction/content-usage-rules/requirements-for-synchronization.md)
-         + [Runtime and application restrictions](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-runtime-application-restrictions.md)
+         + [Runtime and application restrictions] {#runtime-and-application-restrictions}
             + [White-list for Adobe® Primetime applications allowed to play   protected content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-whitelist-air.md)
             + [White-list for Adobe® Flash® Player SWFs allowed to play protected   content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-whitelist-flash.md)
             + [Black-list of DRM Clients restricted from accessing protected   content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blacklist-drm-clients.md)
@@ -515,15 +515,15 @@ user-guide: Primetime DRM Help
             + [Minimum security level for DRM and runtimes](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-min-sec-level-for-drm.md)
             + [Device capabilities required to play protected content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-device-capabilities.md)
             + [Jailbreak Enforcement (requires Adobe Primetime)](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-jailbreak-enforcement.md)
-         + [Other policy options](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-other-policy-options.md)
+         + [Other policy options] {#content-other-policy-options}
             + [Custom usage rules](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-custom-usage-rules.md)
             + [Enhanced license chaining](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-enhanced-license-chaining.md)
             + [Multiple play rights](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-multiple-play-rights.md)
             + [Remote and Local iOS Key Delivery](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-remote-key-delivery.md)
          + [Device Group Domain Registration](aaxs-protecting-content/content-introduction/content-usage-rules/content-domain-registration.md)
-         + [Output protection](aaxs-protecting-content/content-introduction/content-usage-rules/output-protection/output-protection.md)
+         + [Output protection] {#output-protection}
             + [Output protection controls](aaxs-protecting-content/content-introduction/content-usage-rules/output-protection/output-protection-controls.md)
-      + [Packaging Options](aaxs-protecting-content/content-introduction/packaging-options/packaging-options.md)
+      + [Packaging Options] {#packaging-option}
          + [Key Rotation](aaxs-protecting-content/content-introduction/packaging-options/content-key-rotation.md)
          + [Out-of-band Licenses](aaxs-protecting-content/content-introduction/packaging-options/content-out-of-band-licenses.md)
          + [Encrypting tracks](aaxs-protecting-content/content-introduction/packaging-options/content-encrypting-tracks.md)
@@ -532,30 +532,30 @@ user-guide: Primetime DRM Help
          + [Initial portion of content in the clear](aaxs-protecting-content/content-introduction/packaging-options/content-initial-portion-content-clear.md)
          + [Custom metadata](aaxs-protecting-content/content-introduction/packaging-options/content-custom-metadata.md)
          + [Multiple policies](aaxs-protecting-content/content-introduction/packaging-options/content-multiple-policies.md)
-   + [Setting up the SDK](aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-sdk.md)
+   + [Setting up the SDK] {#setting-up-the-sdk}
       + [Setting up the development environment](aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md)
       + [Adobe Access credentials](aaxs-protecting-content/content-setting-up-the-sdk/content-aaxs-credentials.md)
       + [Requesting certificates](aaxs-protecting-content/content-setting-up-the-sdk/content-requesting-certs.md)
       + [Storing credentials](aaxs-protecting-content/content-setting-up-the-sdk/content-storing-credentials.md)
-   + [Working with policies](aaxs-protecting-content/content-working-with-policies/content-working-with-policies.md)
+   + [Working with policies] {#working-with-policies}
       + [Working with policies](aaxs-protecting-content/content-working-with-policies/content-working-with-policies-overview.md)
       + [Creating a policy using the Java API](aaxs-protecting-content/content-working-with-policies/content-creating-policy-using-java-api.md)
       + [Updating a policy using the Java API](aaxs-protecting-content/content-working-with-policies/content-updating-policy-using-java-api.md)
       + [Policy criticality](aaxs-protecting-content/content-working-with-policies/content-policy-criticality.md)
       + [Policy update lists](aaxs-protecting-content/content-working-with-policies/protecting-content-policy-update-lists.md)
       + [Working with Policy Update Lists](aaxs-protecting-content/content-working-with-policies/content-working-with-policy-update-lists.md)
-   + [Packaging media files](aaxs-protecting-content/content-packaging-media-files/content-packaging-media-files.md)
+   + [Packaging media files] {#packaging-media-files}
       + [Packaging media files](aaxs-protecting-content/content-packaging-media-files/content-packaging-media-files-overview.md)
       + [Encrypting content](aaxs-protecting-content/content-packaging-media-files/content-encrypting-content.md)
       + [Examining encrypted file content](aaxs-protecting-content/content-packaging-media-files/content-examining-encrypted-file-content.md)
-   + [Pre-generating and embedding licenses](aaxs-protecting-content/content-pre-generating-and-embedded-licenses/content-pre-generating-and-embedded-licenses.md)
+   + [Pre-generating and embedding licenses] {#pre-generating-and-embedding-liceses}
       + [Pre-generating and embedding licenses](aaxs-protecting-content/content-pre-generating-and-embedded-licenses/content-pre-generating-embedded-licenses-overview.md)
       + [Pre-generating licenses](aaxs-protecting-content/content-pre-generating-and-embedded-licenses/content-pre-generating-licenses.md)
       + [Embedding licenses](aaxs-protecting-content/content-pre-generating-and-embedded-licenses/content-embedding-licenses.md)
-   + [Implementing the License Server](aaxs-protecting-content/content-implementing-the-license-server/content-implementing-the-license-server.md)
+   + [Implementing the License Server] {#implementing-license-server}
       + [Implementing the License Server](aaxs-protecting-content/content-implementing-the-license-server/content-implementing-license-server-overview.md)
       + [License Server deployment options](aaxs-protecting-content/content-implementing-the-license-server/content-license-server-deployment-options.md)
-      + [Processing Adobe Access requests](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-processing-aaxs-requests.md)
+      + [Processing Adobe Access requests] {#processing-adobe-access-requests}
          + [Processing Adobe Access requests](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-processing-aaxs-requests-overview.md)
          + [Using machine identifiers](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-using-machine-ids.md)
          + [User authentication](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-licenses-user-authentication.md)
@@ -592,7 +592,6 @@ user-guide: Primetime DRM Help
       + [Revoking DRM client and runtime credentials](aaxs-protecting-content/content-revoking-client-creds/content-revoking-drm-client-and-runtime-creds.md)
       + [Revoking machine credentials](aaxs-protecting-content/content-revoking-client-creds/content-revoking-machine-creds.md)
    + [Creating video players](aaxs-protecting-content/content-creating-video-players.md)
-   + [No title available](aaxs-protecting-content/content-copyright.md)
 + Adobe Access Reference Implementations
    + [Overview - Using the reference implementations](aaxs-reference-implementations/overview.md)
    + Command line tools {#command-line-tools}
@@ -656,7 +655,7 @@ user-guide: Primetime DRM Help
    + [Migrating from FMRMS 1.0 or 1.5 to Adobe Access   2.0 and above](aaxs-reference-implementations/license-server-migrating-fmrms-aaxs.md)
    + [Upgrading existing deployments](aaxs-reference-implementations/license-server-upgrading-existing-deplys.md)
    + [Set up a domain server](aaxs-reference-implementations/license-server-upgrading-existing-deplys-setup-ds.md)
-   + [Flash Access Manager AIR application   usage](aaxs-reference-implementations/fam-air-app-usage/fam-air-app-usage.md)
+   + [Flash Access Manager AIR application usage] {#flash-access-manager-air-app-usage}
       + Flash Access Manager components {#flash-manager-components}
          + [Building the Packager Server and AIR   Application](aaxs-reference-implementations/fam-air-app-usage/build-fam-air-app-usage/fam-air-app-usage-overview.md)
          + [Building the Packager Server](aaxs-reference-implementations/fam-air-app-usage/build-fam-air-app-usage/fam-air-app-usage-bld-pkg-srv.md)
