@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# User authentication{#user-authentication}
+# User authentication {#user-authentication}
 
 An Adobe Primetime DRM request can contain an authentication token.
 

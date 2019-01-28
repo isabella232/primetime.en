@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Configuring SSL{#configuring-ssl}
+# Configuring SSL {#configuring-ssl}
 
 The Secure Sockets Layer (SSL) is necessary only if you require support for Flash Media Rights Management Server 1.x clients.
 

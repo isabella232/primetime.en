@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Embedding licenses{#embedding-licenses}
+# Embedding licenses {#embedding-licenses}
 
 Once content has been encrypted and a license has been pre-generated, the license may be embedded into the encrypted content.
 

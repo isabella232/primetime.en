@@ -7,11 +7,11 @@ internal: n
 snippet: y
 ---
 
-# Revoking DRM client and runtime credentials{#revoking-drm-client-and-runtime-credentials}
+# Revoking DRM client and runtime credentials {#revoking-drm-client-and-runtime-credentials}
 
 DRM/Runtime versions are identified by security level, version number, and other attributes including OS and runtime. To restrict the DRM/Runtime versions allowed, set the module restrictions in a DRM policy or in a `HandlerConfiguration`. Module restrictions may include a minimum security level and list of module versions that are not permitted to be issued a license.
 
-See [Blacklist of DRM Clients restricted from accessing protected content](c_content-blacklist-drm-clients.md) for details on the attributes used to identify a DRM/Runtime module.
+See [Blacklist of DRM Clients restricted from accessing protected content](../../protecting-content/introduction/usage-rules/runtime-application-restrictions/blacklist-drm-clients.md) for details on the attributes used to identify a DRM/Runtime module.
 
 If the minimum security level is set, the version on the client (specified in the machine token), must be greater than or equal to the specified value.
 
@@ -21,7 +21,7 @@ In the event a breach is reported with a particular DRM client or runtime versio
 
 If you require a newer version of the Adobe Flash Player/Adobe AIR Runtime or the Adobe Content Protection library (DRM module), you need to update your DRM policies.
 
-See [Updating a policy using the Java API](c_content-updating-policy-using-java-api.md).
+See [Updating a policy using the Java API](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md).
 
 Then you need to create a DRM Policy Update List or set restrictions in `HandlerConfiguration` by invoking `HandlerConfiguration.setRuntimeModuleRequirements()` or `HandlerConfiguration.setDRMModuleRequirements()`. When a user requests a new license with the specified blacklists enabled, you need to install the latest runtimes and libraries before a license can be issued.
 

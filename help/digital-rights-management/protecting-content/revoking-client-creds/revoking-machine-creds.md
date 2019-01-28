@@ -7,13 +7,13 @@ internal: n
 snippet: y
 ---
 
-# Revoking machine credentials{#revoking-machine-credentials}
+# Revoking machine credentials {#revoking-machine-credentials}
 
 Adobe maintains a CRL for revoking machine credentials that are known to be compromised. This CRL is automatically enforced by the SDK. If there are additional machines to which you do not want your license server to issue licenses, you may create a machine revocation list and add the issuer name and serial number of the machine tokens you want to exclude (use `MachineToken.getMachineTokenId()` to retrieve the issuer name and serial number of the machine certificate).
 
 Revoking machine credentials involves the usage of a `RevocationListFactory` object. To create a revocation list, load an existing revocation list, and check whether a machine token has been revoked by using the Java API, perform the following steps:
 
-1. Set up your development environment and include all of the JAR files mentioned in [Setting up the development environment](c_content-setting-up-the-dev-env.md) within your project. 
+1. Set up your development environment and include all of the JAR files mentioned in [Setting up the development environment](../../protecting-content/setting-up-the-sdk/setup-dev-env.md) within your project. 
 1. Create a `ServerCredentialFactory` instance to load the credentials needed for signing. The license server credential is used to sign the revocation list. 
 1. Create a `RevocationListFactory` instance. 
 1. Specify the issuer and serial number of the machine token to be revoked by using a `IssuerAndSerialNumber` object. All Adobe Primetime DRM requests contain a machine token. 

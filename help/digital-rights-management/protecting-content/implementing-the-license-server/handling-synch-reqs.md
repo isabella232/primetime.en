@@ -7,9 +7,9 @@ internal: n
 snippet: y
 ---
 
-# Handle synchronization requests{#handle-synchronization-requests}
+# Handle synchronization requests {#handle-synchronization-requests}
 
-If a license specifies synchronization requirements ( [Requirements for Synchronization,](c_-synchronization.md)) the client periodically sends synchronization requests to the server, based on the frequency specified in the license. To enable synchronization messages, set `SyncFrequencyRequirements` in a PlayRight.
+If a license specifies synchronization requirements ( [Requirements for Synchronization,](../../protecting-content/introduction/usage-rules/synchronization.md)) the client periodically sends synchronization requests to the server, based on the frequency specified in the license. To enable synchronization messages, set `SyncFrequencyRequirements` in a PlayRight.
 
 * The request handler class is `com.adobe.flashaccess.sdk.protocol.sync.SynchronizationHandler` 
 * The request message class is `com.adobe.flashaccess.sdk.protocol.sync.SynchronizationRequestMessage` 
@@ -19,4 +19,4 @@ Synchronization messages are used to synchronize the client’s time with the se
 
 Synchronization messages can also be used to communicate the client state information to the server ( `getClientState()`) for rollback detection.
 
-See [Rollback Protection](c_content-rollback-detection.md). 
+See [Rollback Protection](../../protecting-content/implementing-the-license-server/rollback-detection.md). 

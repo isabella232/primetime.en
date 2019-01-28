@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Requirements for using Primetime DRM Key Server{#requirements-for-using-primetime-drm-key-server}
+# Requirements for using Primetime DRM Key Server {#requirements-for-using-primetime-drm-key-server}
 
 Primetime DRM Key Server is a multi-tenant Key Server for Remote iOS and / or Xbox 360 key delivery. If Remote Key Delivery is enabled in a policy for iOS, a Primetime DRM Key Server must be deployed in order to enable content playback on iOS clients. Primetime DRM Key Server is always required for Xbox 360. The minimum requirements for using Primetime DRM Key Server are:
 

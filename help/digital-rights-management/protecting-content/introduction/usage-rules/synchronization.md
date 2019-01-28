@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Requirements for Synchronization{#requirements-for-synchronization}
+# Requirements for Synchronization {#requirements-for-synchronization}
 
 Requirements for synchronization specifies the frequency with which the client synchronize its state with the server. If the client has been issued an out-of-band license (without a license server being contacted), usage rules may specify that the client must send synchronization messages to the server in order to synchronize the client's secure time, and report client state to the server.
 

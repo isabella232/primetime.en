@@ -15,6 +15,6 @@ To upgrade a server running Adobe Access Server for Protected Streaming, replace
 
 Before running the Adobe Access Server for Protected Streaming, Adobe recommends that you verify that the configuration files are valid by using the utilities provided with the license server. For more details, see "[Configuration Validator](../../aaxs-protected-streaming/aaxs-protected-streaming-utilities/configuration-validator.md)".
 
-To start Tomcat and the license server, run "catalina.bat start" or "catalina.sh start" from Tomcat's bin directory.
+To start Tomcat and the license server, run "catalina.bat start" or "catalina.sh start" from Tomcat's bin directory. 
 
-After the server has started, verify that it is configured properly by opening *https://license-server-host:port*/flashaccessserver/*tenant-name*/flashaccess/license/v1 in a browser window. If the tenant configuration was successfully loaded, a confirmation message is displayed. 
+After the server has started, verify that it is configured properly by opening *https:// license-server-host:port/flashaccessserver/tenant-name/flashaccess/license/v1* in a browser window. If the tenant configuration was successfully loaded, a confirmation message is displayed. 

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Ensuring compatibility with Flash Media Rights Management Server 1.x{#ensuring-compatibility-with-flash-media-rights-management-server-x}
+# Ensuring compatibility with Flash Media Rights Management Server 1.x {#ensuring-compatibility-with-flash-media-rights-management-server-x}
 
 Flash Media Rights Management Server 1.x and Adobe Primetime DRM use different metadata to package content and request licenses. For Primetime DRM to use FMRMS version 1.x content, the metadata must be converted.
 

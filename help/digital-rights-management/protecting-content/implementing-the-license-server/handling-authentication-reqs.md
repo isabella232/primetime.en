@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Handle authentication requests{#handle-authentication-requests}
+# Handle authentication requests {#handle-authentication-requests}
 
 The `AuthenticationHandler` class is used to process authentication requests. It is used only for username/password authentication.
 

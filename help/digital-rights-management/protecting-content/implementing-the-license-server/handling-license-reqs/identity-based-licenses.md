@@ -11,7 +11,7 @@ snippet: y
 
 If identity-based licensing is used, the server checks for a valid authentication token before issuing a license.
 
-See [User authentication](c_content-user-authentication.md) for details on handling authentication tokens.
+See [User authentication](../../../protecting-content/implementing-the-license-server/licenses-user-authentication.md) for details on handling authentication tokens.
 
 >[!NOTE] {class="- topic/note "}
 >

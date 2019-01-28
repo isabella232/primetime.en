@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Working with DRM Policy Update Lists{#working-with-drm-policy-update-lists}
+# Working with DRM Policy Update Lists {#working-with-drm-policy-update-lists}
 
 If you update the usage rules in a DRM policy after packaging any content, the license server needs to have the latest version before it can issue licenses that use an updated DRM policy. One way to achieve this is through a DRM policy update list.
 
