@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Rollback detection{#rollback-detection}
+# Rollback detection {#rollback-detection}
 
 For rollback detection, some usage rules require the client to maintain state information for enforcement of the rights. For example, to enforce the playback window usage rule, the client stores the date and time when the user first began viewing the content. This event triggers the start of the playback window. To securely enforce the playback window, the server needs to ensure that the user is not backing up and restoring the client state to remove the playback window start time stored on the client. The server does this by tracking the value of the client's rollback counter.
 

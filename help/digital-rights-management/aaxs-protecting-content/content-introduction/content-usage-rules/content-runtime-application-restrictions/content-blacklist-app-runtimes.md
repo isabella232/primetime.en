@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Blacklist of application runtimes restricted from accessing protected content{#blacklist-of-application-runtimes-restricted-from-accessing-protected-content}
+# Blacklist of application runtimes restricted from accessing protected content {#blacklist-of-application-runtimes-restricted-from-accessing-protected-content}
 
 Specifies the version of the Primetime or Flash Runtime that cannot access content. Specify the restricted runtime (Flash Player, AIR, or iOS), platform, and version.
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Working with DRM policies overview{#working-with-drm-policies-overview}
+# Working with DRM policies overview {#working-with-drm-policies-overview}
 
 Content providers can apply DRM policies to media files using the Primetime DRM SDK. Administrators can then create, view details of, and update DRM policies using policy management APIs.
 

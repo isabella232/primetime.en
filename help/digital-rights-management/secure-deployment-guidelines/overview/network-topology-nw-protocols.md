@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Adobe Primetime DRM network protocols{#adobe-primetime-drm-network-protocols}
+# Adobe Primetime DRM network protocols {#adobe-primetime-drm-network-protocols}
 
 When you configure a secure network architecture, network protocols are required for interaction between Adobe Primetime DRM and other systems in your enterprise network.
 
@@ -29,7 +29,7 @@ When you configure a secure network architecture, the following network protocol
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">HTTPS (Optional) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player, Adobe AIR, and Adobe Primetime clients can use HTTPS to communicate with Primetime DRM; HTTPS (SSL) is not required unless you support FMRMS 1.x clients. For more information, see <a href="network-topology-firewall-rules-in-urls.md" format="dita" scope="local"> Incoming URLs </a> and <a href="../../secure-deployment-guidelines/overview/network-topology-configuring-ssl.md"> Configuring SSL </a>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player, Adobe AIR, and Adobe Primetime clients can use HTTPS to communicate with Primetime DRM; HTTPS (SSL) is not required unless you support FMRMS 1.x clients. For more information, see <a href="../../secure-deployment-guidelines/overview/network-topology-firewall-rules.md" format="dita" scope="local"> Incoming URLs </a> and <a href="../../secure-deployment-guidelines/overview/network-topology-configuring-ssl.md"> Configuring SSL </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -7,11 +7,11 @@ internal: n
 snippet: y
 ---
 
-# Creating a DRM policy with the Java API{#creating-a-drm-policy-with-the-java-api}
+# Creating a DRM policy with the Java API {#creating-a-drm-policy-with-the-java-api}
 
 To create a DRM policy with the Java API:
 
-1. Set up your development environment and include in your project all of the JAR files listed in [Set up your development environment.](drm_protecting_setup-dev-env.md). 
+1. Set up your development environment and include in your project all of the JAR files listed in [Set up your development environment.](../../protecting-content/setting-up-the-sdk/setup-dev-env.md). 
 1. Create a `com.adobe.flashaccess.sdk.policy.Policy` object and specify its properties, including the rights, license caching duration, and DRM policy end date. 
 
    ```java

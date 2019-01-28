@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Device capabilities required to play protected content{#device-capabilities-required-to-play-protected-content}
+# Device capabilities required to play protected content {#device-capabilities-required-to-play-protected-content}
 
 Device capabilities required specifies the hardware capabilities required to access content. Information about the hardware capabilities is available for devices that use the porting kit.
 
@@ -42,5 +42,5 @@ The following attributes can identify the device capabilities:
 >
 >This usage rule is supported by Adobe Primetime DRM clients version 2.0.2 and later. The behavior on older clients depends on the minimum client version supported by the license server. 
 >
->See [Minimum Client Version](c_content-setting-up-the-dev-env.md).
+>See [Minimum Client Version](../../../../protecting-content/setting-up-the-sdk/setup-dev-env.md).
 

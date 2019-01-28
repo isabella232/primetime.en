@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Blacklist of DRM Clients restricted from accessing protected content{#blacklist-of-drm-clients-restricted-from-accessing-protected-content}
+# Blacklist of DRM Clients restricted from accessing protected content {#blacklist-of-drm-clients-restricted-from-accessing-protected-content}
 
 This blacklist specifies the Primetime DRM clients that cannot access protected content. You blacklist clients by client version and platform.
 

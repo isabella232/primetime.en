@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Overview{#overview}
+# Overview {#overview}
 
 To obtain a license, clients form a request from the metadata embedded in packaged content, then submit that request to the license server. The license server uses information extracted from the content metadata for generating a license.
 

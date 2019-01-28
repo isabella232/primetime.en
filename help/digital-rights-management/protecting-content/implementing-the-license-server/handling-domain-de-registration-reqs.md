@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Handle Domain De-Registration requests{#handle-domain-de-registration-requests}
+# Handle Domain De-Registration requests {#handle-domain-de-registration-requests}
 
 If the client application needs to leave a domain, it invokes the `DRMManager.removeFromDeviceGroup()`ActionScript API or the `leaveLicenseDomain()` iOS API to initiate the domain de-registration process. Domain de-registration is a two phase process. The client first sends a de-registration preview request. The domain server examines the request and determines whether the client is permitted to leave the domain. An error may be returned if the machine is not currently part of the domain. Upon a successful response, the client deletes its domain credentials and any licenses that have been issued to that domain. It then sends a de-registration request.
 
