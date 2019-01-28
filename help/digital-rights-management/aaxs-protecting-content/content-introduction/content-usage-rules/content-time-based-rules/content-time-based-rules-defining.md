@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Defining time-based rules{#defining-time-based-rules}
+# Defining time-based rules {#defining-time-based-rules}
 
 Adobe Access uses “soft enforcement” of time-based license restrictions. If a time right expires during playback of a video, the default behaviour of Adobe Access is to not restrict playback until the next time the video stream is recreated (by calling `Netstream.stop()` and `Netstream.play()`).
 
