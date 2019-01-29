@@ -17,7 +17,7 @@ To get started with Primetime DRM Cloud, powered by ExpressPlay, you need to set
 
        Provide your Adobe representative with the email address you will be using as your contact point. Adobe then creates two accounts for you:
 
-    * ***Certificate Portal Account*** - ( [https://certportal.primetime.adobe.com](https://certportal.primetime.adobe.com)) : The *Adobe Access / Primetime DRM Certificate Enrollment Management Team* sends an email to the addresses you provided them. The email includes the URL for the Adobe cert portal, along with a link to Adobe's certificate enrollment documentation (latest docs are here: [Certificate Enrollment Guide](https://help.adobe.com/en_US/primetime/drm/5.3/certificate_enrollment/index.html#concept-Certificate_Enrollment_Guide)).
+    * ***Certificate Portal Account*** - ( <https://certportal.primetime.adobe.com>) : The *Adobe Access / Primetime DRM Certificate Enrollment Management Team* sends an email to the addresses you provided them. The email includes the URL for the Adobe cert portal, along with a link to Adobe's certificate enrollment documentation (latest docs are here: [Certificate Enrollment Guide](https://help.adobe.com/en_US/primetime/drm/5.3/certificate_enrollment/index.html#concept-Certificate_Enrollment_Guide)).
     
     * ***ExpressPlay Account*** - Adobe sends you an email that contains a link you use to register for your ExpressPlay Admin account.
 
