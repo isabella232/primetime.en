@@ -25,4 +25,4 @@ See [Updating a policy using the Java API](../../protecting-content/working-poli
 
 Then you need to create a DRM Policy Update List or set restrictions in `HandlerConfiguration` by invoking `HandlerConfiguration.setRuntimeModuleRequirements()` or `HandlerConfiguration.setDRMModuleRequirements()`. When a user requests a new license with the specified blacklists enabled, you need to install the latest runtimes and libraries before a license can be issued.
 
-See the sample code in [Updating a policy using the Java API For an example on blacklisting DRM and runtime versions](c_content-updating-policy-using-java-api.md) for an example on blacklisting DRM and runtime versions.
+See the sample code in [Updating a policy using the Java API For an example on blacklisting DRM and runtime versions](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md) for an example on blacklisting DRM and runtime versions.
