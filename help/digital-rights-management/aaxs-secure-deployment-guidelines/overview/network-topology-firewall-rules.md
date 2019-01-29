@@ -95,8 +95,7 @@ Configure your outer firewall so that it exposes only the URLs for application f
 
 The license server requires access through the firewall to download the following CRLs from Adobe:
 
-* https://crl2.adobe.com/Adobe/FlashAccessRootCA.crl 
-* https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl 
-* https://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl 
-* https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl
-
+* <https://crl2.adobe.com/Adobe/FlashAccessRootCA.crl>
+* <https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl>
+* [http://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl](https://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl)
+* <https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl>

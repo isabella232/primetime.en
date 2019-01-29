@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# FairPlay license token request / response{#fairplay-license-token-request-response}
+# FairPlay license token request / response {#fairplay-license-token-request-response}
 
 The FairPlay license token interface provides production and test services.
 
@@ -21,14 +21,14 @@ This request returns a token that can be redeemed for a FairPlay license.
 
 **URLs:**
 
-* **Production: ** `https://fp-gen.{prod_domain}/hms/fp/token` 
+* **Production: ** ht<snap></snap>tps://fp-gen.{prod_domain}/hms/fp/token
 
 * **Test: ** ` [https://fp-gen.test.expressplay.com/hms/fp/token](https://fp-gen.test.expressplay.com/hms/fp/token)`
 
 * **Sample request:** 
 
-  ```
-     
+```
+
 <xref href="https: pr-gen.test.expressplay.com="" hms="" pr="" token?customerAuthenticator="201722,1ad8eed133edf43cbcc185f0236828ae&kid=b366360da82e9c6e0b0984002a362cf2&contentKey=b366360da82e9c6e0b0984002a362cf2&rightsType=BuyToOwn&analogVideoOPL=0&compressedDigitalAudioOPL=0&compressedDigitalVideoOPL=0&uncompressedDigitalAudioOPL=0&uncompressedDigitalVideoOPL=0&quot; format=&quot;html&quot; scope=&quot;external&quot;">
   https://fp-gen.test.expressplay.com/hms/fp/token?customerAuthenticator= 
    <ExpressPlay customer authenticator identifier> 
@@ -39,19 +39,19 @@ This request returns a token that can be redeemed for a FairPlay license.
    &compressedDigitalAudioOPL=0 
    &compressedDigitalVideoOPL=0 
    &uncompressedDigitalAudioOPL=0 
-   &uncompressedDigitalVideoOPL=0 
-</xref href="https:>
+   &uncompressedDigitalVideoOPL=0
   ```
 
-* **Sample Response:** 
+* **Sample Response:**
 
   ```
   https://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
   ```
 
-## Request Query Parameters {#section_73B0BF44A37D46328E43E0DC25BB8B16}
+# Request Query Parameters {#section_73B0BF44A37D46328E43E0DC25BB8B16}
 
-#### Token Query Parameters
+## Token Query Parameters
+
 <table id="table_xlz_jsx_pv">  
  <thead> 
   <tr> 
@@ -83,7 +83,8 @@ This request returns a token that can be redeemed for a FairPlay license.
  </tbody> 
 </table>
 
-#### License Query Parameters
+### License Query Parameters
+
 |  **Query Parameter** | **Description** | **Required?** |
 |---|---|---|
 |  `generalFlags`  | A 4 byte hexadecimal string representing the license flags. ‘0000’ is the only allowed value.  | No  |
@@ -96,6 +97,7 @@ This request returns a token that can be redeemed for a FairPlay license.
 |  `fpExtension`  | A short form wrapping `extensionType` and `extensionPayload`, as a comma separated string. For example: […] `&fpExtension=wudo,AAAAAA==&`[…]  | No, any number can be used  |
 
 #### Token Restriction Query Parameters
+
 <table id="table_ar3_lsx_pv">  
  <thead> 
   <tr> 
@@ -114,13 +116,15 @@ This request returns a token that can be redeemed for a FairPlay license.
 </table>
 
 #### Correlation Query Parameters
+
 |  **Query Parameter** | **Description** | **Required?** |
 |---|---|---|
 |  `cookie`   | An arbitrary string up to 32 characters long, carried in the token and logged by the token redemption server. This can be used to correlate log entries at the redemption server and those at the service provider’s servers.  | No  |
 
-## Response {#section_435D5B65374A4C36A5FDCFFEEA9D1868}
+# Response {#section_435D5B65374A4C36A5FDCFFEEA9D1868}
 
-#### HTTP Responses
+## HTTP Responses
+
 |  **HTTP Status Code** | **Description** | **Content-Type** | **Entity Body Contains** |
 |---|---|---|---|
 |  `200 OK`  | No error.  | `text/uri-list`  | License acquisition URL + token  |
@@ -129,7 +133,8 @@ This request returns a token that can be redeemed for a FairPlay license.
 |  `404 Not found`  | Bad URL  | `text/html` or `application/json`  | Error description  |
 |  `50x Server Error`  | Server error  | `text/html` or `application/json`  | Error description  |
 
-#### Event Error Codes
+### Event Error Codes
+
 <table id="table_i2c_zsx_pv">  
  <thead> 
   <tr> 
