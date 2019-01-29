@@ -10,7 +10,7 @@ internal: n
 snippet: y
 ---
 
-# Enable lazy ad resolving{#enable-lazy-ad-resolving}
+# Enable lazy ad resolving {#enable-lazy-ad-resolving}
 
 You can enable or disable the Lazy Ad Resolving feature using the existing Lazy Ad Loading mechanism (Lazy Ad Resolving is disabled by default).
 

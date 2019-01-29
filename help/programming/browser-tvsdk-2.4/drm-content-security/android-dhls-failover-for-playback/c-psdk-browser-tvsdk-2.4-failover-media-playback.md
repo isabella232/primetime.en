@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Media playback{#media-playback}
+# Media playback {#media-playback}
 
 For live and VOD media, Browser TVSDK starts playback by downloading the playlist that is associated with the middle-resolution bit rate and then downloading segments of the middle-resolution bit rate media that is defined by the playlist.
 

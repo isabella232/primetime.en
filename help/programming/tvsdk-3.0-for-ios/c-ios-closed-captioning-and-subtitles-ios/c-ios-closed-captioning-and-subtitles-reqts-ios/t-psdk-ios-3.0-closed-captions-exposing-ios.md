@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Expose closed captions{#expose-closed-captions}
+# Expose closed captions {#expose-closed-captions}
 
 To make closed captions available to your client player, you must enable them. The user can turn closed captions on or off and select the formatting.
 
@@ -25,5 +25,5 @@ To expose closed captions:
 
    >[!NOTE]
    >
-   >`closedCaptionDisplayEnabled` property is deprecated. Use `subtitlesOptions` property of `PTMediaPlayerItem`. See [Expose subtitles](t_psdk_ios_3.0_subtitles-exposing-ios.md#t_psdk_ios_exposing-subtitles) to use closed captions.
+   >`closedCaptionDisplayEnabled` property is deprecated. Use `subtitlesOptions` property of `PTMediaPlayerItem`. See [Expose subtitles](../../../tvsdk-3.0-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-ios-subtitles-exposing-ios.md) to use closed captions.
 

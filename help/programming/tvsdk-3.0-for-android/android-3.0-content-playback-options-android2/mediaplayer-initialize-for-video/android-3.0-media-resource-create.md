@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Create a media resource{#create-a-media-resource}
+# Create a media resource {#create-a-media-resource}
 
 The MediaResource class represents the content to be loaded by the MediaPlayer instance.
 
@@ -69,7 +69,7 @@ The MediaResource class represents the content to be loaded by the MediaPlayer i
 1. Load the media resource using one of the following options:
 
     * The MediaPlayer instance. 
-    * `MediaPlayerItemLoader` For more information, see [Load a media resource using MediaPlayerItemLoader](t_psdk_android_2.5_media-resource-load-using-mediaplayeritemloader.md#use-mediaplayeritemloader).
+    * `MediaPlayerItemLoader` For more information, see [Load a media resource using MediaPlayerItemLoader](../../../tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-mediaplayeritemloader.md).
 
        >[!IMPORTANT]
        >
