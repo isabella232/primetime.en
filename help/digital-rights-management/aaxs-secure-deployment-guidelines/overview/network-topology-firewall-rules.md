@@ -11,7 +11,7 @@ snippet: y
 
 ## Incoming URLs {#section-F111526A9DB844CBBF21A3CAE5F50880}
 
-Configure your outer firewall so that it exposes only the URLs for application functionality that you want to provide to end users. Allow external users access through the outer firewall only to the URLs listed in the following table: 
+Configure your outer firewall so that it exposes only the URLs for application functionality that you want to provide to the end users. Allow external users access through the outer firewall only to the URLs listed in the following table: 
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table-bqs-whz-n4"> 
  <thead class="- topic/thead "> 

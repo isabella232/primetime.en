@@ -9,7 +9,7 @@ snippet: y
 
 # Revoking DRM client and runtime credentials {#revoking-drm-client-and-runtime-credentials}
 
-DRM/Runtime versions are identified by security level, version number, and other attributes including OS and runtime. To restrict the DRM/Runtime versions allowed, set the module restrictions in a DRM policy or in a `HandlerConfiguration`. Module restrictions may include a minimum security level and list of module versions that are not permitted to be issued a license.
+DRM/Runtime versions are identified by security level, version number, and other attributes including Operating System and runtime. To restrict the DRM/Runtime versions allowed, set the module restrictions in a DRM policy or in a `HandlerConfiguration`. Module restrictions may include a minimum security level and list of module versions that are not permitted to be issued a license.
 
 See [Blacklist of DRM Clients restricted from accessing protected content](../../protecting-content/introduction/usage-rules/runtime-application-restrictions/blacklist-drm-clients.md) for details on the attributes used to identify a DRM/Runtime module.
 
@@ -25,4 +25,4 @@ See [Updating a policy using the Java API](../../protecting-content/working-poli
 
 Then you need to create a DRM Policy Update List or set restrictions in `HandlerConfiguration` by invoking `HandlerConfiguration.setRuntimeModuleRequirements()` or `HandlerConfiguration.setDRMModuleRequirements()`. When a user requests a new license with the specified blacklists enabled, you need to install the latest runtimes and libraries before a license can be issued.
 
-See the sample code in [Updating a policy using the Java API For an example on blacklisting DRM and runtime versions](c_content-updating-policy-using-java-api.md) for an example on blacklisting DRM and runtime versions. 
+See the sample code in [Updating a policy using the Java API For an example on blacklisting DRM and runtime versions](c_content-updating-policy-using-java-api.md) for an example on blacklisting DRM and runtime versions.
