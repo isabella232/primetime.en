@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# null {#no-title}
+# Flash Failover {#flash-failover}
 
 Browser TVSDK provides tools for creating an advanced video player application (your Primetime player), which you can integrate with other Primetime components.
 
