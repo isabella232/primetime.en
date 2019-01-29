@@ -67,14 +67,15 @@ snippet: y
    <td> 
     <ul id="ul_eq3_lv2_jr"> 
      <li id="li_5E37A9E318D742B6A5E1035120888819"><span class="codeph"> cert.machine.crldp =</span> [CRL distribution point] </li> 
-    </ul> <p>For example: </p> <p> 
-     <codeblock>
+    </ul> <p>For example: </p>
+    <p> <codeblock>
+
       cert.machine.crldp__DEV=
-      
-https://onprem-individualization.com/
-      
+<ht<span></span>tps://onprem-individualization.com/>
 CRL/onprem-individualization-ca.crl
-     </codeblock> </p> <p>The License Server should automatically download this CRL, once a license request is handled. </p> <p importance="high">Note: This distribution point is <i>not</i> checked by Primetime DRM for validity. You must verify that this URL is valid. Errors resulting from an invalid URL will not appear until validation errors appear from the license server. </p> </td> 
+     </codeblock></p>
+
+<p>The License Server should automatically download this CRL, once a license request is handled. </p> <p importance="high">Note: This distribution point is <i>not</i> checked by Primetime DRM for validity. You must verify that this URL is valid. Errors resulting from an invalid URL will not appear until validation errors appear from the license server. </p> </td> 
   </tr> 
   <tr> 
    <td> Logging </td> 

@@ -7,11 +7,11 @@ internal: n
 snippet: y
 ---
 
-# Handle authentication requests{#handle-authentication-requests}
+# Handle authentication requests {#handle-authentication-requests}
 
 The `AuthenticationHandler` class is used to process authentication requests. It is used only for username/password authentication.
 
-When generating the authentication token, the token expiration date must be specified. Custom properties may also be included in the token. If set, those properties will be visible to the server when the authentication token is sent in subsequent requests. See [Handling license requests](c_content-handling-license-reqs.md) for information on handling custom authentication tokens.
+When generating the authentication token, the token expiration date must be specified. Custom properties may also be included in the token. If set, those properties will be visible to the server when the authentication token is sent in subsequent requests. See [Handling license requests](../../protecting-content/implementing-the-license-server/handling-license-reqs/license-handling-classes.md) for information on handling custom authentication tokens.
 
 The handler reads an authentication request and parses the request message when `parseRequest()` is called. The server implementation examines the user credentials in the request, and if the credentials are valid, generates an `AuthenticationToken` object by calling `getRequest().generateAuthToken()`. If `AuthenticationRequestMessage.generateAuthToken()` is not called before `close()`, an authentication failure error code is sent.
 

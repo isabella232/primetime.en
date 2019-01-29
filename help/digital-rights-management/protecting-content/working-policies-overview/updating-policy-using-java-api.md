@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Updating a DRM policy with the Java API{#updating-a-drm-policy-with-the-java-api}
+# Updating a DRM policy with the Java API {#updating-a-drm-policy-with-the-java-api}
 
 To update a DRM policy with the Java API:
 

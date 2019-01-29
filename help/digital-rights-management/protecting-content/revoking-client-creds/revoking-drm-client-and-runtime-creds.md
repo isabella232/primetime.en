@@ -21,7 +21,7 @@ In the event a breach is reported with a particular DRM client or runtime versio
 
 If you require a newer version of the Adobe Flash Player/Adobe AIR Runtime or the Adobe Content Protection library (DRM module), you need to update your DRM policies.
 
-See [Updating a policy using the Java API](c_content-updating-policy-using-java-api.md).
+See [Updating a policy using the Java API](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md).
 
 Then you need to create a DRM Policy Update List or set restrictions in `HandlerConfiguration` by invoking `HandlerConfiguration.setRuntimeModuleRequirements()` or `HandlerConfiguration.setDRMModuleRequirements()`. When a user requests a new license with the specified blacklists enabled, you need to install the latest runtimes and libraries before a license can be issued.
 

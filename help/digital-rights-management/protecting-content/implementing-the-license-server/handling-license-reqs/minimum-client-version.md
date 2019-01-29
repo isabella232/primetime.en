@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Minimum client version{#minimum-client-version}
+# Minimum client version {#minimum-client-version}
 
 Adobe Primetime DRM 2.0.2 and higher introduce some new usage rules, which are not understood by Primetime DRM 2.0 clients. By setting the minimum supported client version ( `HandlerConfiguration.setMinSupportedClientVersion()`), the license server can control how older clients behave when they encounter licenses with these usage rules. Based on this setting, the server can indicate whether older clients can ignore the usage rules they do not understand or whether older clients will not be able to consume licenses with those usage rules.
 

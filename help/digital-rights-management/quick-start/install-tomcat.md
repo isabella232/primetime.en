@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Install Tomcat{#install-tomcat}
+# Install Tomcat {#install-tomcat}
 
  You must install Tomcat on both of your servers. 
 1. Install Tomcat from the [!DNL \Third Party\Tomcat\6.0.18\] directory on the installation DVD.
@@ -20,4 +20,4 @@ snippet: y
 1. To verify installation, go to the Tomcat landing page by entering [!DNL https://<Hostname>:8080/].
 1. Create a [!DNL crossdomain.xml] file and place the file in the [!DNL <TomcatInstallDir>\webapps\ROOT\] directory.
 
-   You can also copy a file from the [!DNL https://drmtest2.adobe.com/crossdomain.xml] directory.
+   You can also copy a file from the <[!DNL ht<span></span>tps://drmtest2.adobe.com/crossdomain.xml]> directory.
