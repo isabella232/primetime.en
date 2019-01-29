@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Set up error handling{#set-up-error-handling}
+# Set up error handling {#set-up-error-handling}
 
 You can set up one lace to handle errors.
 

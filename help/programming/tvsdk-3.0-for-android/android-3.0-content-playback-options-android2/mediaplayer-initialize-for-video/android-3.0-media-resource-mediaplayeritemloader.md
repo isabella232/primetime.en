@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Load a media resource using MediaPlayerItemLoader{#load-a-media-resource-using-mediaplayeritemloader}
+# Load a media resource using MediaPlayerItemLoader {#load-a-media-resource-using-mediaplayeritemloader}
 
 Using MediaPlayerItemLoader helps you obtain information about a media stream without instantiating a MediaPlayer instance. This is especially useful in pre-buffering streams so that playback can begin without delay.
 

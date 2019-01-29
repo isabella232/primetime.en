@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Load a media resource using MediaPlayerItemLoader{#load-a-media-resource-using-mediaplayeritemloader}
+# Load a media resource using MediaPlayerItemLoader {#load-a-media-resource-using-mediaplayeritemloader}
 
 Another way to resolve a media resource is with MediaPlayerItemLoader. This is useful when you want to obtain information about a particular media stream without instantiating a MediaPlayer instance.
 

@@ -9,19 +9,19 @@ internal: n
 snippet: y
 ---
 
-# Instant On{#instant-on}
+# Instant On {#instant-on}
 
 Enabling instant on means that one or more channels are preloaded. When users select a channel or switch channels, the content plays immediately. The buffering is complete by the time the user starts watching.
 
 Without Instant On, TVSDK initializes the media to be played but does not start buffering the stream until the application calls `play`. The user sees no content until buffering is complete. With Instant On, you can launch multiple media player (or media-player item loader) instances, and TVSDK starts buffering the streams immediately. When a user changes the channel and the stream has buffered properly, calling `play` on the new channel starts playback immediately.
 
-Although there are no limits to the number of `MediaPlayer` and `MediaPlayerItemLoader` instances that TVSDK can run, running more instances consumes more resources. Application performance can be affected by the number of instances that are running. For more information about `MediaPlayerItemLoader`, see [Load a media resource in the media player](t_psdk_android_2.5_media-resource-load.md#load-a-media-resource).
+Although there are no limits to the number of `MediaPlayer` and `MediaPlayerItemLoader` instances that TVSDK can run, running more instances consumes more resources. Application performance can be affected by the number of instances that are running. For more information about `MediaPlayerItemLoader`, see [Load a media resource in the media player](../../../tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-load.md).
 
 >[!IMPORTANT]
 >
 >TVSDK does not support a single `QoSProvider` to work with both `itemLoader` and `MediaPlayer`. If the customer uses Instant On, the application needs to maintain two QoS instances and manage both instances for the information.
 
-For more information about `MediaPlayerItemLoader`, see [Load a media resource using MediaPlayerItemLoader](t_psdk_android_2.5_media-resource-load-using-mediaplayeritemloader.md#use-mediaplayeritemloader).
+For more information about `MediaPlayerItemLoader`, see [Load a media resource using MediaPlayerItemLoader](../../../tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-mediaplayeritemloader.md).
 
 ## Add a QoS Provider instance to mediaPlayerItemLoader {#section_2F9F24C7BFAD49599D043D64F767F9A0}
 
@@ -38,7 +38,7 @@ For more information about `MediaPlayerItemLoader`, see [Load a media resource u
 
   Once the playback starts, use the `_qosProvider` to get `timeToLoad` and `timeToPrepare` QoSdata. The remaining QoS metrics can be retrieved by using the `QoSProvider` attached to the `mediaPlayer`.
 
-  For more information about `MediaPlayerItemLoader`, see [Load a media resource using MediaPlayerItemLoader](t_psdk_android_2.5_media-resource-load-using-mediaplayeritemloader.md#use-mediaplayeritemloader).
+  For more information about `MediaPlayerItemLoader`, see [Load a media resource using MediaPlayerItemLoader](../../../tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-mediaplayeritemloader.md).
 
 ## Configure buffering for Instant On {#section_4FE346B7BE434BA8A2203896D6E52146}
 

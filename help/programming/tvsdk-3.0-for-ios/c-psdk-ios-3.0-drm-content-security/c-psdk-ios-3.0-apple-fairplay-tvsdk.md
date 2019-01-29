@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Apple FairPlay in TVSDK applications{#apple-fairplay-in-tvsdk-applications}
+# Apple FairPlay in TVSDK applications {#apple-fairplay-in-tvsdk-applications}
 
 To implement FairPlay Streaming in your TVSDK app, you need to write a Resource Loader, which sends a license acquisition request to your FairPlay Streaming server.
 
@@ -153,13 +153,11 @@ You can implement Apple FairPlay Streaming, which is Apple's DRM solution, in yo
 
 1. Create your FairPlay Customer Resource Loader by implementing `PTAVAssetResourceLoaderDelegate`.
 
-   For more information, see [Apple FairPlay in TVSDK applications](c_psdk_ios_1.4_apple_fairplay_tvsdk.md#concept_79E840B2596A4E6B82E8FC3E40F7ADF9). 
-
-   >[!NOTE]
+      >[!NOTE]
    >
    >Ensure that you follow the instructions in the *FairPlay Streaming Program Guide* ( *FairPlayStreaming_PG.pdf*), which is included in [FairPlay Server SDK for Developing a FPS-Aware App](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip)).
 
-   The `resourceLoader:shouldWaitForLoadingOfRequestedResource` method is equivalent to what is in `AVAssetResourceLoaderDelegate`. 
+   The method `resourceLoader:shouldWaitForLoadingOfRequestedResource` is equivalent to what is in `AVAssetResourceLoaderDelegate`. 
 
    >[!NOTE]
    >

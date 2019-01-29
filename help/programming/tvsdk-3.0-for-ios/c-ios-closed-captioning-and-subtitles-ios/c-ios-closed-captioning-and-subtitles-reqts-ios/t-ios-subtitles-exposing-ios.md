@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Expose subtitles{#expose-subtitles}
+# Expose subtitles {#expose-subtitles}
 
 The TVSDK notifies your player client about the availability of internal AVAsset’s availableMediaCharacteristicsWithMediaSelectionOptions by using the PTMediaPlayerMediaSelectionOptionsAvailableNotification notification.
 

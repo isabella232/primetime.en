@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Primetime TVSDK features{#primetime-tvsdk-features}
+# Primetime TVSDK features {#primetime-tvsdk-features}
 
 TVSDK for Android 3.0 includes a variety of features that you can implement in your players.
 
