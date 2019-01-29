@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Install Flash Player and playback test content{#install-flash-player-and-playback-test-content}
+# Install Flash Player and playback test content {#install-flash-player-and-playback-test-content}
 
 1. Go to [https://get.adobe.com/flashplayer/](https://get.adobe.com/flashplayer/).
 1. Download and install Flash Player.

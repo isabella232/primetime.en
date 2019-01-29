@@ -1,18 +1,21 @@
 ---
-seo-title: Firewall rules
-title: Firewall rules
+seo-title: 'Firewall rules'
+title: 'Firewall rules'
 uuid: a5667030-c4d0-42e3-b56e-20a12c903954
 index: y
 internal: n
 snippet: y
----
-
-# Firewall rules {#firewall-rules}
-
-## Incoming URLs {#section-F111526A9DB844CBBF21A3CAE5F50880}
-
+---  
+  
+  
+# Firewall rules
+  
+  
+## Incoming URLs
+  
+  
 Configure your outer firewall so that it exposes only the URLs for application functionality that you want to provide to end users. Allow external users access through the outer firewall only to the URLs listed in the following table: 
-
+  
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table-bqs-whz-n4"> 
  <thead class="- topic/thead "> 
   <tr rowsep="1" class="- topic/row "> 
@@ -86,16 +89,18 @@ Configure your outer firewall so that it exposes only the URLs for application f
   </tr> 
  </tbody> 
 </table>
-
+  
 >[!NOTE] {class="- topic/note "}
 >
 >The internal firewall must only allow connections to be made to the Adobe Access license server through the reverse proxy, and only to the URLs listed above. To improve scalability, the connections between the reverse proxy and Adobe Access will be over HTTP.
-
-## Outgoing URLs {#section-FFF9F7BB353149F4A27F8788E9934A48}
-
+  
+## Outgoing URLs
+  
+  
 The license server requires access through the firewall to download the following CRLs from Adobe:
-
-* <https://crl2.adobe.com/Adobe/FlashAccessRootCA.crl>
-* <https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl>
-* [http://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl](https://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl)
-* <https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl>
+  
+* <http://crl2.adobe.com/Adobe/FlashAccessRootCA.crl>
+* <http://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl>
+* <http://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl>
+* <http://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl>
+  

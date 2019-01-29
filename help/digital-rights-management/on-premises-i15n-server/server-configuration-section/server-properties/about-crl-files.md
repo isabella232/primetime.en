@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# About CRL Files{#about-crl-files}
+# About CRL Files {#about-crl-files}
 
 In order to properly function, Individualization and License servers need to have several Certificate Revocation List (CRL) files cached to disk on the running application server (e.g., Tomcat). New CRL files have to be downloaded and cached on disk on a regularly scheduled basis. If the validity period of CRL files on disk are allowed to lapse, the Individualization Server will refuse to individualize clients, and the License Server will refuse to issue licenses.
 
@@ -17,33 +17,33 @@ The following is a list of externally hosted CRLs that are used by both the Indi
 
 * **Intermediate CRL:**
 
-    * URL: [!DNL https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl] 
+    * URL: [!DNL <ht<span></span>tps://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl>] 
     * File: [!DNL http___crl2.adobe.com_Adobe_FlashAccessIntermediateCA.crl] 
     * Validity: Good for approximately 12 months from creation
 
 * **Root CRL:**
 
-    * URL: [!DNL https://crl2.adobe.com/Adobe/FlashAccessRootCA.crl] 
+    * URL: [!DNL <ht<span></span>tps://crl2.adobe.com/Adobe/FlashAccessRootCA.crl>] 
     * File: [!DNL http___crl2.adobe.com_Adobe_FlashAccessRootCA.crl] 
     * Validity: Good for approximately 5 years from creation
 
 * **Latest CRL:**
 
-    * URL: [!DNL https://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl] 
+    * URL: [!DNL <ht<span></span>tps://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl>] 
     * File: [!DNL http___crl3.adobe.com_AdobeSystemsIncorporatedFlashAccessRuntime_LatestCRL.crl] 
     * Validity: Good for approximately 3 months from creation
 
 The following are externally hosted CRLs that are used only by the License Servers:
 
-* URL: [!DNL https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl] 
+* URL: [!DNL <ht<span></span>tps://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl>] 
 * File: [!DNL http___crl2.adobe.com_Adobe_FlashAccessIndividualizationCA.crl] 
 * Validity: Good for approximately 3 months from creation
 
-* URL: [!DNL https://individualization-crl.primetime.adobe.com/FlashAccessIndividualizationCA.crl] 
+* URL: [!DNL <ht<span></span>tps://individualization-crl.primetime.adobe.com/FlashAccessIndividualizationCA.crl>] 
 * File: [!DNL http___individualization-crl.primetime.adobe.com_FlashAccessIndividualizationCA.crl] 
 * Validity: Good for approximately 3 months from creation
 
-* URL: [!DNL https://individualization-crl.s3-website-us-east-1.amazonaws.com/FlashAccessIndividualizationCA.crl] 
+* URL: [!DNL <ht<span></span>tps://individualization-crl.s3-website-us-east-1.amazonaws.com/FlashAccessIndividualizationCA.crl]> 
 * File: [!DNL http___individualization-crl.s3-website-us-east-1.amazonaws.com_FlashAccessIndividualizationCA.crl] 
 * Validity: Good for approximately 3 months from creation
 

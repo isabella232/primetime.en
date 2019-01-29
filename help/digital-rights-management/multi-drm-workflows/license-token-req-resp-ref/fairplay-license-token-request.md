@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# FairPlay license token request / response{#fairplay-license-token-request-response}
+# FairPlay license token request / response {#fairplay-license-token-request-response}
 
 The FairPlay license token interface provides production and test services.
 
@@ -21,14 +21,12 @@ This request returns a token that can be redeemed for a FairPlay license.
 
 **URLs:**
 
-* **Production: ** `https://fp-gen.{prod_domain}/hms/fp/token` 
+* **Production: ** ht<snap></snap>tps://fp-gen.{prod_domain}/hms/fp/token
 
 * **Test: ** ` [https://fp-gen.test.expressplay.com/hms/fp/token](https://fp-gen.test.expressplay.com/hms/fp/token)`
 
 * **Sample request:** 
-
-  ```
-     
+```     
 <xref href="https: pr-gen.test.expressplay.com="" hms="" pr="" token?customerAuthenticator="201722,1ad8eed133edf43cbcc185f0236828ae&kid=b366360da82e9c6e0b0984002a362cf2&contentKey=b366360da82e9c6e0b0984002a362cf2&rightsType=BuyToOwn&analogVideoOPL=0&compressedDigitalAudioOPL=0&compressedDigitalVideoOPL=0&uncompressedDigitalAudioOPL=0&uncompressedDigitalVideoOPL=0&quot; format=&quot;html&quot; scope=&quot;external&quot;">
   https://fp-gen.test.expressplay.com/hms/fp/token?customerAuthenticator= 
    <ExpressPlay customer authenticator identifier> 
@@ -39,12 +37,10 @@ This request returns a token that can be redeemed for a FairPlay license.
    &compressedDigitalAudioOPL=0 
    &compressedDigitalVideoOPL=0 
    &uncompressedDigitalAudioOPL=0 
-   &uncompressedDigitalVideoOPL=0 
-</xref href="https:>
+   &uncompressedDigitalVideoOPL=0
   ```
 
-* **Sample Response:** 
-
+* **Sample Response:**
   ```
   https://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
   ```

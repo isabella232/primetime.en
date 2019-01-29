@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Updating DRM policies{#updating-drm-policies}
+# Updating DRM policies {#updating-drm-policies}
 
 If DRM policies are updated after the content is packaged, provide the updated DRM policies to the license server so the updated version can be used when issuing a license. If a license server has access to a database for storing DRM policies, you can retrieve the updated DRM policy from the database and call `LicenseRequestMessage.setSelectedPolicy()` to provide the new version of the DRM policy.
 
