@@ -26,6 +26,7 @@ This request returns a token that can be redeemed for a FairPlay license.
 * **Test: ** ` [https://fp-gen.test.expressplay.com/hms/fp/token](https://fp-gen.test.expressplay.com/hms/fp/token)`
 
 * **Sample request:** 
+
 ```
 
 <xref href="https: pr-gen.test.expressplay.com="" hms="" pr="" token?customerAuthenticator="201722,1ad8eed133edf43cbcc185f0236828ae&kid=b366360da82e9c6e0b0984002a362cf2&contentKey=b366360da82e9c6e0b0984002a362cf2&rightsType=BuyToOwn&analogVideoOPL=0&compressedDigitalAudioOPL=0&compressedDigitalVideoOPL=0&uncompressedDigitalAudioOPL=0&uncompressedDigitalVideoOPL=0&quot; format=&quot;html&quot; scope=&quot;external&quot;">
@@ -49,7 +50,8 @@ This request returns a token that can be redeemed for a FairPlay license.
 
 # Request Query Parameters {#section_73B0BF44A37D46328E43E0DC25BB8B16}
 
-#### Token Query Parameters
+## Token Query Parameters
+
 <table id="table_xlz_jsx_pv">  
  <thead> 
   <tr> 
@@ -121,7 +123,7 @@ This request returns a token that can be redeemed for a FairPlay license.
 
 # Response {#section_435D5B65374A4C36A5FDCFFEEA9D1868}
 
-#### HTTP Responses
+## HTTP Responses
 
 |  **HTTP Status Code** | **Description** | **Content-Type** | **Entity Body Contains** |
 |---|---|---|---|
