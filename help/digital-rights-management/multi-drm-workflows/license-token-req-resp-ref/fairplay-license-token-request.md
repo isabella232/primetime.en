@@ -83,7 +83,7 @@ This request returns a token that can be redeemed for a FairPlay license.
  </tbody> 
 </table>
 
-#### License Query Parameters
+### License Query Parameters
 
 |  **Query Parameter** | **Description** | **Required?** |
 |---|---|---|
@@ -133,7 +133,7 @@ This request returns a token that can be redeemed for a FairPlay license.
 |  `404 Not found`  | Bad URL  | `text/html` or `application/json`  | Error description  |
 |  `50x Server Error`  | Server error  | `text/html` or `application/json`  | Error description  |
 
-#### Event Error Codes
+### Event Error Codes
 
 <table id="table_i2c_zsx_pv">  
  <thead> 
