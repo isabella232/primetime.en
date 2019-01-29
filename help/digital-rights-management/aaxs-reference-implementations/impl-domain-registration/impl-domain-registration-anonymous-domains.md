@@ -7,9 +7,9 @@ internal: n
 snippet: y
 ---
 
-# Anonymous Domains{#anonymous-domains}
+# Anonymous Domains {#anonymous-domains}
 
-In this use case, a large number of devices belong to a single domain, and authentication may not be required. To use this type of domain with the reference implementation, create the policy specifying that the domain registration is required. Specify the domain server URL as [!DNL https://host:port/flashaccess/domainserver/domainname/] and specify anonymous authentication.
+In this use case, a large number of devices belong to a single domain, and authentication may not be required. To use this type of domain with the reference implementation, create the policy specifying that the domain registration is required. Specify the domain server URL as [*!DNL https:// host:port/flashaccess/domainserver/domainname/*] and specify anonymous authentication.
 
 The reference implementation implements the following logic for domain registration:
 

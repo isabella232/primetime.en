@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Overview {#overview}
+# Overview  {#overview}
 
 Using Adobe® Access™, content providers can apply policies to media files. Using the policy management APIs, administrators can create, view details of, and update policies.
 

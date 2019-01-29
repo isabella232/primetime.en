@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Firewall rules{#firewall-rules}
+# Firewall rules {#firewall-rules}
 
 When determining your firewall rules, consider the following types of URLs:
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Adobe Pass and Adobe Access{#adobe-pass-and-adobe-access}
+# Adobe Pass and Adobe Access {#adobe-pass-and-adobe-access}
 
 Adobe Pass ( [](https://www.adobe.com/products/adobepass/)) provides user/device authentication and authorization across multiple content providers. The user must have a valid cable TV or satellite TV subscription. 
 

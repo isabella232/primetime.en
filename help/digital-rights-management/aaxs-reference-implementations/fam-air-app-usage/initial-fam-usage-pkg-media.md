@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Package media{#package-media}
+# Package media {#package-media}
 
 Use the Package Media tab to package content. The Packager Properties section displays the Packager settings that were entered in the Preferences tab. To modify these settings, go to the Preferences tab, change the settings, and Save.
 

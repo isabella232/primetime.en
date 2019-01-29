@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Setting up the database and configuring the JNDI datasource{#setting-up-the-database-and-configuring-the-jndi-datasource}
+# Setting up the database and configuring the JNDI datasource {#setting-up-the-database-and-configuring-the-jndi-datasource}
 
 The reference implementation license server requires a database to support the following features:
 

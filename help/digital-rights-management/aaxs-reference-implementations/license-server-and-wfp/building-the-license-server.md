@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Building the license server{#building-the-license-server}
+# Building the license server {#building-the-license-server}
 
 The reference implementation license server includes WAR files for deploying the license server. It also includes all the license server source code and an Ant build script (Reference Implementation\Server\refimpl\build-refimpl.xml) so you can easily make changes to the code.
 

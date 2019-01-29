@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Migrating from FMRMS 1.0 or 1.5 to Adobe Access 2.0 and above{#migrating-from-fmrms-or-to-adobe-access-and-above}
+# Migrating from FMRMS 1.0 or 1.5 to Adobe Access 2.0 and above {#migrating-from-fmrms-or-to-adobe-access-and-above}
 
 In order to continue to issue licenses for content packaged using Flash Media Rights Management Server (FMRMS) 1.0 or 1.5, license and policy data must be migrated from the LiveCycle ES server to the customer's new server based on the Adobe Access SDK. The important steps are:
 

@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Java APIs for protecting content{#java-apis-for-protecting-content}
+# Java APIs for protecting content {#java-apis-for-protecting-content}
 
 These APIs are used to define rights and prepare content for distribution. The content protection APIs are:
 

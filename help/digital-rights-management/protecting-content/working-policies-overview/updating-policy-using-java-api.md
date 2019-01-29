@@ -11,7 +11,7 @@ snippet: y
 
 To update a DRM policy with the Java API:
 
-1. Set up your development environment and include in your project all of the JAR files listed in [Setting up the development environment](../../protecting-content/setting-up-the-sdk/setting-up-the-sdk.md#c_content-setting-up-the-sdk). 
+1. Set up your development environment and include in your project all of the JAR files listed in [Setting up the development environment](../../protecting-content/setting-up-the-sdk/setup-dev-env.md). 
 1. Create a DRM `Policy` instance and read the DRM policy from a file or database. 
 
    ```

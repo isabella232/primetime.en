@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Watched folder properties{#watched-folder-properties}
+# Watched folder properties {#watched-folder-properties}
 
 Each watched folder contains a file called [!DNL properties/watchfolder.properties]. This file contains the packaging options for content placed in this folder, including what to encrypt and which policies to apply. Any changes made to the values in the property file take effect the next time the watched folder packager runs (you do not need to restart the server).
 

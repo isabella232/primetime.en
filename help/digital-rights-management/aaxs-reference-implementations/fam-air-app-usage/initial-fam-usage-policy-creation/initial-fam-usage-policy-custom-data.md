@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Custom Data{#custom-data}
+# Custom Data {#custom-data}
 
 The following table describes the Custom Data preferences: 
 

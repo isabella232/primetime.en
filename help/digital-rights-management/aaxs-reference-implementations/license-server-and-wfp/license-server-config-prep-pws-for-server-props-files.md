@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Preparing passwords for the Server properties files{#preparing-passwords-for-the-server-properties-files}
+# Preparing passwords for the Server properties files {#preparing-passwords-for-the-server-properties-files}
 
 To ensure the security of your credential’s password, a tool is provided to encrypt the password before it is entered into the [!DNL flashaccess-refimpl.properties] or [!DNL flashaccess-refimpl-packager.properties] file.
 

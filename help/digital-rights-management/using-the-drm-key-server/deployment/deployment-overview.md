@@ -7,9 +7,9 @@ internal: n
 snippet: y
 ---
 
-# Deploying the Primetime DRM Key Server overview{#deploying-the-primetime-drm-key-server-overview}
+# Deploying the Primetime DRM Key Server overview {#deploying-the-primetime-drm-key-server-overview}
 
-Before deploying the Primetime DRM Key Server, make sure that you have installed the required versions of Java and Tomcat. See, [](c_drm_key_server-requirements.md).
+Before deploying the Primetime DRM Key Server, make sure that you have installed the required versions of Java and Tomcat. See, [DRM Key Server Requirements](../../../digital-rights-management\using-the-drm-key-server\requirements.md).
 
 The Primetime DRM Key Server download includes [!DNL faxsks.war]. To deploy this WAR file, copy the file to Tomcat’s [!DNL webapps] directory. If you have previously deployed the WAR file, you may need to manually delete the unpacked WAR directory, [!DNL faxsks] in Tomcat’s [!DNL webapps] directory). To prevent Tomcat from unpacking WAR files, edit the [!DNL server.xml] file in Tomcat’s [!DNL conf] directory and set the `unpackWARs` attribute to `false`.
 

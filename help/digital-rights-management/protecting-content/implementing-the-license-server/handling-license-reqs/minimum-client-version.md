@@ -13,7 +13,7 @@ Adobe Primetime DRM 2.0.2 and higher introduce some new usage rules, which are n
 
 For example,
 
-* If the license specifies the device capabilities requirements ( [Device capabilities required to play protected content](c_content-device-capabilities.md)), Primetime DRM clients 2.0.2 and higher can enforce those requirements. 
+* If the license specifies the device capabilities requirements ( [Device capabilities required to play protected content](../../../protecting-content/introduction/usage-rules/runtime-application-restrictions/device-capabilities.md)), Primetime DRM clients 2.0.2 and higher can enforce those requirements. 
 * If the license server does not want content to play on clients that do not understand the device capabilities requirements , set the minimum supported client version to 2 (for 2.0.2). This will prevent the server from issuing licenses to Primetime DRM clients before 2.0.2. The minimum client version is also enforced if the license is transferred from one client to another. 
 * If the license server wants to allow older clients to ignore the device capabilities requirements, set the minimum supported client version to 1 (for Primetime DRM 2.0). The server then issues a license to any client version 2.0 and higher. If the client upgrades or transfers the license to another client with version 2.0.2 or later, the device capabilities requirements in the license is then enforced because the client can then support that usage rule.
 

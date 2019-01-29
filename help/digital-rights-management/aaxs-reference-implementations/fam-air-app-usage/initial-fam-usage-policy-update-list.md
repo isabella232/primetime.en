@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Policy update list{#policy-update-list}
+# Policy update list {#policy-update-list}
 
 You can use Policy Update Lists to communicate policy changes to a License Server. If a policy is modified after it is used to package content, it is desirable to have the License Server aware of the most recent version of the policy, so that version can be used to issue a license.
 

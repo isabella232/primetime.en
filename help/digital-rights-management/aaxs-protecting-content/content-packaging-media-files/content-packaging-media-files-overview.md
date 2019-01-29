@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Overview{#overview}
+# Overview {#overview}
 
 *Packaging* refers to the process of encrypting and applying a policy to FLV or F4V files. Use the media packaging APIs to package files. The Adobe Access Java SDK can only package progressive-download Flash and AIR content, such as FLV, F4V, and MP4. In order to package content using Adobe Access DRM for other content formats, such as Adobe HTTP Dynamic Streaming (HDS) or Apple HTTP Live Streaming (HLS), you will have to use other tools, such as Adobe Media Server ( [https://www.adobe.com/products/adobe-media-server-family.html](https://www.adobe.com/products/adobe-media-server-family.html)) or an encoder that implements the Adobe Broadcast SDK ( [https://help.adobe.com/en_US/primetime/packagers/hdkb_api_overview_3.5.pdf](https://help.adobe.com/en_US/primetime/packagers/hdkb_api_overview_3.5.pdf)). Alternatively, customers have the choice of using Adobe's Java Primetime Packager toolset, which can package content for a variety of target formats, such as HDS, HLS, and DASH.
 

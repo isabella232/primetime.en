@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Command line tool requirements{#command-line-tool-requirements}
+# Command line tool requirements {#command-line-tool-requirements}
 
 The requirements for using the command line tools available in the reference implementations are as follows:
 

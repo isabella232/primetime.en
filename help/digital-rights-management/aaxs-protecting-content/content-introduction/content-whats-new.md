@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Overview{#overview}
+# Overview {#overview}
 
 Adobe® Access™ is an advanced digital rights management and content protection solution for high-value audiovisual content. Using tools that you create using Java APIs, you can create policies, apply policies to files containing audio and video content, and encrypt those files. The high-level steps for performing these tasks are as follows:
 
@@ -20,7 +20,7 @@ Adobe® Access™ is an advanced digital rights management and content protectio
 
 1. Package a media file.
 
-   In this context, *packaging a file* means to encrypt it and apply a policy to it. (See [Packaging media files](../../aaxs-protecting-content/content-packaging-media-files/content-packaging-media-files.md#content-packaging-media-files).) 
+   In this context, *packaging a file* means to encrypt it and apply a policy to it. (See [Packaging media files](../../aaxs-protecting-content/content-packaging-media-files/content-packaging-media-files-overview.md).) 
 
 1. Implement the license server to issue a license to the user.
 
@@ -30,7 +30,7 @@ The SDK provides a Java API to accomplish these tasks, and includes reference im
 
 ## What is new in Adobe Access 5.2 {#section_06220EDE36B54DCB9CA7963B76DA8167}
 
-* **External CEK**: The ability to integrate a Content Key Management System (CKMS) to the DRM license serving and Content Packaging workflows, instead of encrypting the CEK and bundling it into the content’s metadata. See [Adobe Access DRM External CEK Overview](c_aaxs_drm-external-cek-overview.md). 
+* **External CEK**: The ability to integrate a Content Key Management System (CKMS) to the DRM license serving and Content Packaging workflows, instead of encrypting the CEK and bundling it into the content’s metadata. See [Adobe Access DRM External CEK Overview](../../aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md). 
 
 * **License (voucher) Return**: The ability for a client to return (or delete) a license issued to the client. 
 * **Xbox Key Server**: The ability to protect content sent to the Xbox and Xbox 360. (An Adobe Primetime client is required.)

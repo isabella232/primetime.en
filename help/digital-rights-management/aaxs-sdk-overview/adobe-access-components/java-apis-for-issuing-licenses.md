@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Java APIs for issuing licenses{#java-apis-for-issuing-licenses}
+# Java APIs for issuing licenses {#java-apis-for-issuing-licenses}
 
 These APIs are used when a client requests a license from the server. The SDK supports the following requests from the client:
 

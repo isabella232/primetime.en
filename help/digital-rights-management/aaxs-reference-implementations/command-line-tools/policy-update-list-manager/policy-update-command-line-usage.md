@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Command line usage{#command-line-usage}
+# Command line usage {#command-line-usage}
 
 Policy Update List Manager is in the \Reference Implementation\Command Line Tools directory on the DVD. To create a policy update list, use the following syntax:
 
