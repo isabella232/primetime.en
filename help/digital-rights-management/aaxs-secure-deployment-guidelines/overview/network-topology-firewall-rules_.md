@@ -1,18 +1,17 @@
 ---
-seo-title: 'Firewall rules'
-title: 'Firewall rules'
+seo-title: Firewall rules
+
+title: Firewall rules
+
 uuid: a5667030-c4d0-42e3-b56e-20a12c903954
 index: y
 internal: n
 snippet: y
 ---  
-  
-  
+
 # Firewall rules
-  
-  
+
 ## Incoming URLs
-  
   
 Configure your outer firewall so that it exposes only the URLs for application functionality that you want to provide to end users. Allow external users access through the outer firewall only to the URLs listed in the following table: 
   
@@ -95,8 +94,7 @@ Configure your outer firewall so that it exposes only the URLs for application f
 >The internal firewall must only allow connections to be made to the Adobe Access license server through the reverse proxy, and only to the URLs listed above. To improve scalability, the connections between the reverse proxy and Adobe Access will be over HTTP.
   
 ## Outgoing URLs
-  
-  
+
 The license server requires access through the firewall to download the following CRLs from Adobe:
   
 * <http://crl2.adobe.com/Adobe/FlashAccessRootCA.crl>
