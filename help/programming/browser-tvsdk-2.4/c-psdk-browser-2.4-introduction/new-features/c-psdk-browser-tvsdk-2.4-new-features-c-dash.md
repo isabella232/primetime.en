@@ -84,7 +84,7 @@ The following features are supported:
 |---|---|---|---|
 |  Integrations  | VOD + Live  | Adobe Analytics VHL integration  | ![](assets/supported15.png)|
 |  Integrations  | VOD + Live  | Billing  | ![](assets/supported15.png)|
-|  Integrations  | VOD + Live  | Browserify  | ![](assets/supported15.png)
+|  Integrations  | VOD + Live  | Browserify  | ![](assets/supported15.png)|
 
 ## DASH advanced ad insertion features (CSAI)
 
