@@ -21,7 +21,7 @@ This request returns a token that can be redeemed for a FairPlay license.
 
 **URLs:**
 
-* **Production: ** ht<snap></snap>tps://fp-gen.{prod_domain}/hms/fp/token
+* **Production: ** https://fp-gen.{prod_domain}/hms/fp/token
 
 * **Test: ** ` [https://fp-gen.test.expressplay.com/hms/fp/token](https://fp-gen.test.expressplay.com/hms/fp/token)`
 
@@ -52,36 +52,10 @@ This request returns a token that can be redeemed for a FairPlay license.
 
 ## Token Query Parameters
 
-<table id="table_xlz_jsx_pv">  
- <thead> 
-  <tr> 
-   <th class="entry"> <b>Query Parameter</b> </th> 
-   <th class="entry"> <b>Description</b> </th> 
-   <th class="entry"> <b>Required?</b> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td> <span class="codeph"> customerAuthenticator </span> 
-    <indexterm>
-      Customer authenticator 
-     <indexterm>
-       as query parameter customerAuthenticator 
-      <indexterm>
-        FairPlay 
-      </indexterm> 
-     </indexterm> 
-    </indexterm> </td> 
-   <td> <p>This is your customer API key, one each for your production and test environments. You can find this on the ExpressPlay Admin Dashboard tab. </p> </td> 
-   <td> Yes </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> errorFormat </span> </td> 
-   <td> Either <span class="codeph"> html </span> or <span class="codeph"> json </span>. If <span class="codeph"> html </span> (the default) an HTML representation of any errors is provided in the entity body of the response. <p>If <span class="codeph"> json </span> is specified, a structured response in JSON format is returned. See <a href="https://www.expressplay.com/developer/restapi/#json-errors" format="html" scope="external"> JSON Errors </a> for details. </p> <p>The mime type of the response is either <span class="codeph"> text/uri-list </span> on success, <span class="codeph"> text/html </span> for HTML error format, or <span class="codeph"> application/json </span> for JSON error format. </p> </td> 
-   <td> No </td> 
-  </tr> 
- </tbody> 
-</table>
+|Query Parameter|Description|Required?|
+|--- |--- |--- |
+|customerAuthenticator Customer authenticator as query parameter customerAuthenticator FairPlay|This is your customer API key, one each for your production and test environments. You can find this on the ExpressPlay Admin Dashboard tab.|Yes|
+|errorFormat|Either html or json. If html  (the default) an HTML representation of any errors is provided in the entity body of the response. If json is specified, a structured response in JSON format is returned. See [JSON Errors](https://www.expressplay.com/developer/restapi/#json-errors) for details. The mime type of the response is either text/uri-list on success, text/html for HTML error format, or application/json for JSON error format.|No|
 
 ### License Query Parameters
 
