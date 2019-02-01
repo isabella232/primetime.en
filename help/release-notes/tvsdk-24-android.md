@@ -20,21 +20,21 @@ TVSDK 2.4.1 for Android Release Notes describe the new and supported features an
 
 Adobe is releasing TVSDK 2.4.1 for Android.
 
-To use this version of TVSDK, ensure that your system meets the requirements described at [System Requirements.](https://help.adobe.com/en_US/primetime/psdk/android/2.4/index.html#PSDKs-reference-System_and_software_requirements)
+To use this version of TVSDK, ensure that your system meets the requirements described at [System Requirements.](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_2.5.pdf#page=6)
 
 Here is where you can find documentation:
 
-• Online help system ( [TVSDK 2.4 for Android Help](https://help.adobe.com/en_US/primetime/psdk/android/2.4/index.html))
+• Online help system TVSDK 2.4 for Android Help
 
-• Javadocs ( [TVSDK 2.4 for Android Java API]
+• Javadocs [TVSDK 2.4 for Android Java API](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/index.html)
 
 The Javadocs are the ultimate authority, because they are automatically generated directly from the TVSDK source code.
 
-• C++ API documentation ( [TVSDK 2.4 for Android C++ API]
+• C++ API documentation [TVSDK 2.4 for Android C++ API](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.4/namespaces.html)
 
 Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so consult the C++ documentation for a deeper understanding of the Java API.
 
-• Migration guide ( [TVSDK 2.4 for Android Migration Guide](https://help.adobe.com/en_US/primetime/conv_mig/android_24_mig/index.html))
+• Migration guide ([TVSDK 2.4 for Android Migration Guide](../migration-guides/tvsdk-14-25-android.md))
 
 This guide explains what you need to modify to migrate an application based on TVSDK 1.4 to one based on TVSDK 2.4.
 
@@ -117,11 +117,11 @@ These improvements enhance the user experience:
 
 • Use the main stream instead of the IDR stream to get up to 30 fps fast playback.
 
-* **Improved ABR logic **
+* **Improved ABR logic**
 
 The new ABR logic is based on buffer length, rate of change of buffer length, and measured bandwidth. This ensures that the ABR chooses the right bit rate when the bandwidth fluctuates and also optimizes the number of times the bitrate switch actually happens by monitoring the rate at which the buffer length changes.
 
-* **Billing **
+* **Billing**
 
 TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer’s own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation.
 

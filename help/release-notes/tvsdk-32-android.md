@@ -12,17 +12,17 @@ internal: n
 snippet: y
 ---
 
-# TVSDK 3.0 for Android Release Notes{#tvsdk-for-android-release-notes}
+# TVSDK 3.2 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.0 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.0
+TVSDK 3.2 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.0
 
-## TVSDK Android 3.0 {#tvsdk-android}
+## TVSDK Android 3.2 {#tvsdk-android}
 
-The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying `README.md` file explains how to build the reference player.
+The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README<span></span>.md file explains how to build the reference player.
 
 >[!NOTE]
 >
->To successfully build the reference player, as described in the README.md distributed with the release, make sure you do the following:
+>To successfully build the reference player, as described in the README<span></span>.md distributed with the release, make sure you do the following:
 >
 >1. Download VideoHeartbeat.jar from [https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) (VideoHeartbeat library for Android v2.0.0)
 >1. Extract VideoHeartbeat.jar into the libs/ folder.
@@ -32,19 +32,38 @@ The Android reference player is included with Android TVSDK in the samples/ dire
 
 TVSDK for Android provides many performance improvements over earlier versions. It provides a high quality viewing experience and carries over all of the features of version 1.4, with the exception of Multi-CDN support.
 
-The comprehensive set of features supported and not supported are presented in the [Features Matrix](tvsdk-30-android.md#main-pars_header) section of these release notes.
+The comprehensive set of features supported and not supported are presented in the [Features Matrix](#feature-matrix) section of these release notes.
 
-### What's New in TVSDK 3.0 {#what-s-new-in-tvsdk}
+### What's New in TVSDK 3.2 {#what-s-new-in-tvsdk}
 
-* **TVSDK 3.0 supports High Efficiency Video Coding (HEVC) streams.   
-  **
+* **Parallel Ad Resolution and Manifest download support**
+    * TVSDK 3.2 supports the simultaneous resolution, instead of the sequential resolution for all the Ad requests and Ad breaks except for VMAP.
+    * All the ad manifests in an ad break are downloaded simultaneously. 
+* **Enabled support for Ad Resolution and Manifest Download Timeout.**
+    * Users can now set the timeout value for overall ad resolution and manifest downloads.  In the case of VMAP, the timeout value applies for individual ad breaks as all the ad breaks are resolved sequentially.
+* **Introduced new APIs in AdvertisingMetadata Class:**
+    * void setAdResolutionTimeout(int adResolutionTimeout)
+    * int getAdResolutionTimeout()
+    * void setAdManifestTimeout(int adManifestTimeout)
+    * int getAdManifestTimeout()
+* **Removed below APIs from AdvertisingMetadata Class:**
+    * void setAdRequestTimeout(int adRequestTimeout)
+    * int getAdRequestTimeout()
+*   **Enabled playback of streams with AC3/EAC3 audio codec** 
+    * void alwaysUseAC3OnSupportedDevices(boolean val)in MediaPlayer class
+* **TVSDK supports CMAF and plain streams playback for encrypted Widevine CTR.**
+* **Playback of 4K HEVC streams is now supported.**
+* **Parallel ad call requests** - TVSDK now prefetches 20 ad call requests in parallel.
 
-* **Just in Time - Resolving ads closer to ad markers** 
+**Version 3.0**
+
+* **TVSDK 3.0 supports High Efficiency Video Coding (HEVC) streams.**
+
+* **Just in Time - Resolving ads closer to ad markers**  
+  Lazy Ad Resolving now resolves each ad break independently. Previously, ad resolution was a two-phased approach: pre-rolls were resolved prior to playback start and all mid/post roll slots combined after playback started. With this enhanced feature, each ad break is now resolved at a specific time prior to the ad cue point.
+  **Please note: Lazy Ad Resolving has now changed to be turned off by default, and explicitly needs to be enabled.**
   
-  Lazy Ad Resolving now resolves each ad break independently. Previously, ad resolution was a two-phased approach: pre-rolls were resolved prior to playback start and all mid/post roll slots combined after playback started. With this enhanced feature, each ad break is now resolved at a specific time prior to the ad cue point.   
-  **Please note: Lazy Ad Resolving has now changed to be turned off by default, and explicitly needs to be enabled.   
-  
-  **A new API is added to *AdvertisingMetadata::setDelayAdLoadingTolerance* to get the delayed ad loading tolerance associated with this Advertising Metadata.  
+  A new API is added to *AdvertisingMetadata::setDelayAdLoadingTolerance* to get the delayed ad loading tolerance associated with this Advertising Metadata.  
   Seeking will now be allowed immediately after PREPARATION, seeking over ad breaks will result in immediate resolution before the completion of the seek.  
   Signaling modes SERVER_MAP and MANIFEST_CUES are supported.  
   
@@ -56,46 +75,37 @@ The comprehensive set of features supported and not supported are presented in t
 * **Placement.Type getPlacementType() is now a method on interface TimelineMarker** 
   This method will return a placement type of Placement.Type.PRE_ROLL, Placement.Type.MID_ROLL or Placement.Type.POST_ROLL. If an ad break is unresolved, the getDuration() method on the TimelineMarker interface will return 0.
 
-### What's New in TVSDK 2.5.6 {#what-s-new-in-tvsdk-1}
+**Version 2.5.6.**
 
-* **TVSDK 2.5 supports Android P**
+* **TVSDK 2.5 supports Android P.**
 
-* **Enabling Background Audio** 
-  
+* **Enabling Background Audio**
   To enable audio playback when app moves from foreground to background, app should call `enableAudioPlaybackInBackground` API of MediaPlayer with true as argument when player is in PREPARED state.
 
 * **alwaysUseAudioOutputLatency(boolean val) in MediaPlayer class**
-
 When set, use output latency in the audio timestamp calculation.
-
 Boolean parameters val - True will use audio output latency in audio timestamp calculation.
 
 * **Optimized to get the best playback experience even if the bandwidth speed falls off suddenly**
-
 TVSDK now cancels the ongoing segment’s download, if required, and dynamically switches to the appropriate rendition. This is done by seamlessly switching among the bitrates without interruptions.
 
-### What's New in TVSDK 2.5.5 {#what-s-new-in-tvsdk-2}
+**Version 2.5.5**
 
-* **Partial Ad-Break Insertion  
-  **TV-like experience of joining in the middle of an ad without firing the tracking for the partially watched ad.  
-  Example**: **User joins in the middle (at 40 seconds) of a 90-second ad break consisting of three 30-second ads. This is 10 seconds into the second ad in the break.
-
+* **Partial Ad-Break Insertion**  
+  TV-like experience of joining in the middle of an ad without firing the tracking for the partially watched ad.  
+  Example: User joins in the middle (at 40 seconds) of a 90-second ad break consisting of three 30-second ads. This is 10 seconds into the second ad in the break.
     * The second ad plays for the remaining duration (20 sec) followed by the third ad.
     * Ad trackers for the partial ad played (second ad) are not fired. The trackers for only the third ad are fired.
 
 * **Secure Ad Loading over HTTPS** 
-  
-  Adobe Primetime provides an option to request first call to primetime ad server and CRS over https.   
-  ** 
-  **
+  Adobe Primetime provides an option to request first call to primetime ad server and CRS over https.
 
 * **AdSystem and Creative Id added to CRS requests**
-
     * Now including 'AdSystem' and 'CreativeId' as new parameters in the 1401 and 1403 requests.
 
 * **API setEncodeUrlForTracking in NetworkConfiguration class removed** as the unsafe characters in a URL should be encoded.
 
-### What's New in TVSDK 2.5.4 {#what-s-new-in-tvsdk-3}
+**Version 2.5.4**
 
 Android TVSDK v2.5.4 offers the following updates and API changes:
 
@@ -111,7 +121,7 @@ Android TVSDK v2.5.4 offers the following updates and API changes:
 
   Introduced a new API NetworkAdInfo::getVastXml() that provides access of the VAST response object to the application.
 
-### What's New in TVSDK v2.5.3 {#what-s-new-in-tvsdk-v}
+**Version 2.5.3**
 
 Android TVSDK v2.5.3 offers the following updates and API changes.
 
@@ -136,37 +146,30 @@ Android TVSDK v2.5.3 offers the following updates and API changes.
 * Changes in SizeAvailableEvent: Previously, getHeight() and getWidth() methods of SizeAvailableEvent in 2.5.2 used to return Frame height and frame width, which was returned by media format. Now it returns output height and output width respectively returned by decoder.
 * Changes in Buffering behavior: Buffering behavior is changed. Its left up to App developer on what they want to do in case of buffer empty. 2.5.3 uses play buffer size at buffer empty situation.
 
-### What's New in TVSDK v2.5.2 {#what-s-new-in-tvsdk-v-1}
+**Version 2.5.2**
 
 Android TVSDK v2.5.2 offers important bug fixes and a few API changes.
 
-### What's New in TVSDK v2.5.1 {#what-s-new-in-tvsdk-v-2}
+**Version 2.5.1**
 
 The important new features released in Android 2.5.1.
 
 * **Performance Improvements**The new TVSDK 2.5.1 architecture brings a number of performance improvements. Based on statistics from a third party benchmarking study, the new architecture provides a 5x reduction in startup time and 3.8x fewer dropped frames compared to the industry average:
-
     * **Instant on for VOD and live -** When you enable instant on, the TVSDK initializes and buffers media before playback starts. Because you can launch multiple MediaPlayerItemLoader instances simultaneously in the background, you can buffer multiple streams. When a user changes the channel, and the stream has buffered properly, playback on the new channel starts immediately. TVSDK 2.5.1 also supports the Instant On for **live** streams also. The live streams are re-buffered when the live window moves.
-    
     * **Improved ABR logic -** The new ABR logic is based on buffer length, rate of change of buffer length, and measured bandwidth. This ensures that the ABR chooses the right bit rate when the bandwidth fluctuates and also optimizes the number of times the bitrate switch actually happens by monitoring the rate at which the buffer length changes.
     * **Partial Segment Download / Sub-segmentation -** TVSDK further reduces the size of each fragment, in order to start playback as soon as possible. The ts fragment must have a key frame every two seconds.
     * **Lazy ad resolution -** TVSDK doesn't wait for resolution of non-preroll ads before starting playback, thus decreasing the startup time. APIs like seek and trick-play are still not allowed until all ads are resolved. This is applicable to VOD streams used with CSAI. Operations like seek and fast forward are not permitted till the ad resolution is completed. For live streams this feature cannot be enabled for ad resolution during a live event.
     * **Persistent network connections -** This feature allows TVSDK to create and store an internal list of persistent network connections. These connections are reused for multiple requests, rather than opening a new connection for each network request and then destroying it afterwards. This increases efficiency and decreases latency in the networking code resulting in faster playback performance.
-
       When TVSDK opens a connection it asks the server for a *keep-alive* connection. Some servers may not support this type of connection, in which case TVSDK will fall back to making a connection for each request again. Also, while persistent connections will be on by default, TVSDK now has a configuration option so that apps can turn persistent connections off if desired.
-    
     * **Parallel download -** Downloading video and audio in parallel rather than in series reduces startup delays. This feature allows HLS Live and VOD files to be played, optimizes the available bandwidth usage from a server, lowers the probability of getting into buffer under-run situations, and minimizes the delay between download and playback.
     * **Parallel ad downloads -** TVSDK prefetches ads in parallel to the content playback before hitting the ad breaks thus enabling seamless playback of ads and content.
 
 * **Playback**
 
     * **MP4 Content Playback -** MP4 short clips do not need to be re-transcoded to play back within TVSDK.
-
-      Note: ABR switching, trick play, ad insertion, late audio binding, and sub-segmentation are not supported for MP4 playback.
-    
+      Note: ABR switching, trick play, ad insertion, late audio binding, and sub-segmentation are not supported for MP4 playback.    
     * **Trick play with adaptive bit rate (ABR) -** This feature allows TVSDK to switch between iFrame streams while in trick play mode. You can use non-iFrame profiles to do trick play at lower speeds.
     * **Smoother trick play -** These improvements enhance the user experience:
-
         * Adaptive bit-rate and frame rate selection during trick play, based on bandwidth and buffer profile
         * Use of the main stream instead of the IDR stream to get up to 30 fps fast playback.
 
@@ -296,22 +299,24 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 ## Resolved issues {#resolved-issues}
 
-### Android TVSDK 3.0 {#android-tvsdk}
+### Android TVSDK 3.2 {#android-tvsdk}
+
+* ZD#37493- Tracking beacons for live playback do not get fired intermittently for the first ad in sequence.
+* ZD#36985- Tracking beacons are not sent for empty ad breaks in VMAP response. 
+* ZD#37134 - TVSDK throws the wrong ID for VMAP response intermittently.
+
+**Version 3.0**
 
 * ZD#33740 - TVSDK throws an unneeded warning just after creating a MediaPlayer object and calling replaceCurrentResource()
-
     * Improved the earlier fix by calling restore only when player is in suspended state
 
 * ZD#36442 - Every new playback disconnects remote debugging session making it impossible to debug.
-
     * Debug not possible by default on web view as debugging is not enabled by default. App should enable debugging if required by calling setWebContentsDebuggingEnabled(true) on object returned from MediaPlayer.getCustomAdView().
 
 * ZD#33688 - Support for Just In Time ad resolving
-
     * Ad breaks are resolved at a specified interval prior to the position of the ad break.
 
 * ZD#36441 - Duration of live window keeps increasing beyond 5 minutes causing multiple issues.
-
     * Fixed an issue where virtualStartTime was getting added twice while calculating virtual live point resulting in this issue.
 
 **Android TVSDK 2.5.6**
@@ -479,6 +484,14 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
+**Android TVSDK 3.2**
+
+* TVSDK 3.2 does not support CMAF Sample AES and AES128 streams playback.
+* HEVC CMAF streams do not include support for closed captions playback.
+* Green coloration appears for WV Encrypted streams when seeking is performed around the non-encrypted segment. 
+* CMAF streams do not support ID3 events.
+* HLS streams do not support TTML captions format.
+
 **Android TVSDK 3.0**
 
 * HEVC support has following limitations in this release
@@ -525,11 +538,10 @@ This version of TVSDK has the following issues:
 
 ## Helpful resources {#helpful-resources}
 
-* [System Requirements](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_2.5.pdf#page=6)
-* [TVSDK 3.0 for Android Programmer's Guide](assets/psdk_android_3.0.pdf)
-* [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.0/index.html)
-* [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.5/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
-* [TVSDK 1.4 to 2.5 for Android (Java) Migration Guide](../migration-guides/tvsdk-14-25-android.md)
+* [System Requirements](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.0.pdf#page=6)
+* [TVSDK 3.0 for Android Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.0.pdf)
+* [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.2/index.html)
+* [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.2/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
+* [TVSDK 1.4 to 2.5 for Android (Java) Migration Guide](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-25-android.html)
 * For handling screen on/off scenarios, see the `Application_Changes_for_Screen_On_Off.pdf` file included in the build.
 * See complete help documentation at [Adobe Primetime User Guide](https://helpx.adobe.com/primetime/user-guide.html).
-

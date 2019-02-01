@@ -12,7 +12,7 @@ internal: n
 snippet: y
 ---
 
-# DRM 5.3.1 Release Notes{#drm-release-notes}
+# DRM 5.3.1 Release Notes {#drm-release-notes}
 
 DRM 5.3.1 Release Notes describe the new features and the known issues in DRM 5.3.1.
 

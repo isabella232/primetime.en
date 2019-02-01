@@ -12,7 +12,7 @@ internal: n
 snippet: y
 ---
 
-# TVSDK 1.4 for iOS Release Notes{#tvsdk-for-ios-release-notes}
+# TVSDK 1.4 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
 TVSDK 1.4 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 1.4.
 
@@ -39,14 +39,14 @@ TVSDK 1.4 for iOS Release Notes describe what is new or changed, the resolved an
 
 **Version 1.4.42**
 
-No new features are added in this release. For a list of issues fixed, see [Resolved issues](https://help.adobe.com/en_US/primetime/release_notes/ios/c_relnotes_ios_1.4_resolved_issues.html#c_relnotes_resolved-issues_1_4).
+No new features are added in this release. For a list of issues fixed, see [Resolved issues](https://helpx.adobe.com/primetime/release-notes/tvsdk-1-4-ios.html#Resolvedissuesin14).
 
 **Version 1.4.41**
 
 API changes:
 
-* ** isSecure **: A new API is introduced isSecure to secure the player from recording and throwing an error. The default value is true.
-* ** allowExternalRecording **: A new API is introduced to allow airplay mirroring for a secure content. Airplay mirroring is treated as recording therefore  allowExternalRecording  value must be set to 'True', to allow airplay mirroring or set to 'False' to stop the airplay mirroring for secure content. By default,  value  is true.
+* ** isSecure**: A new API is introduced isSecure to secure the player from recording and throwing an error. The default value is true.
+* ** allowExternalRecording**: A new API is introduced to allow airplay mirroring for a secure content. Airplay mirroring is treated as recording therefore  allowExternalRecording  value must be set to 'True', to allow airplay mirroring or set to 'False' to stop the airplay mirroring for secure content. By default,  value  is true.
 
 **Version 1.4.40**
 
@@ -55,12 +55,12 @@ No new features.
 **Version 1.4.39**
 
 * iOS  TVSDK  is certified with VHL 2.0.1 and with VHL 2.0.1 with Nielsen.
-* iOS  TVSDK  is updated to make CRS requests from new Akamai host primetime-a.akamaihd.net.
+* iOS  TVSDK  is updated to make CRS requests from new Akamai host primetime-a.akamaihd<span></span>.net.
 * New hostname configuration provides CRS asset delivery via both HTTP and HTTPS (SSL) at greater scale.
 
 **Version 1.4.36**
 
-Integrate and certify VHL 2.0 in iOS  TVSDK : Reduce the barrier in the VideoHeartbeatsLibrary implementation by decreasing the complexity of the APIs.
+Integrate and certify VHL 2.0 in iOS TVSDK : Reduce the barrier in the VideoHeartbeatsLibrary implementation by decreasing the complexity of the APIs.
 
 **Version 1.4.34**
 
@@ -86,8 +86,12 @@ The PTSDKConfig class provides methods to enforce SSL on requests made to Adobe 
 
 **Version 1.4.18**
 
-Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. For more information about VPAID 2.0, see [VPAID ad support](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html).
+Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. 
+<!-- 
 
+Comment Type: draft
+For more information about VPAID 2.0, see [VPAID ad support](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html).
+-->
 **Version 1.4.17**
 
 * tvOS
@@ -120,8 +124,12 @@ Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich
 
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**
 
-For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. For more information, see [Ad fallback for VAST and VMAP ads](https://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
+For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. 
+<!-- 
 
+Comment Type: draft
+For more information, see [Ad fallback for VAST and VMAP ads](http://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
+-->
 **Version 1.4.9**
 
 * **Blackout Signaling With Alternate Content Replacement**
@@ -156,7 +164,13 @@ DRM Policies can now specify the highest resolution permitted, depending on the 
 
 * **Nielsen SDK Integration**
 
-  * The TVSDK now supports sending mTVR and MDPR ID3 beacons to the Nielsen SDK without any custom integration. In order to get started, download the 3.1.2.19 Nielsen iOS App SDK, and follow the instructions found here in the [iOS Programmers Guide](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-Use_Nielsen_Analytics).
+  * The TVSDK now supports sending mTVR and MDPR ID3 beacons to the Nielsen SDK without any custom integration. In order to get started, download the 3.1.2.19 Nielsen iOS App SDK.
+  
+  <!-- 
+
+   Comment Type: draft
+  and follow the instructions found here in the [iOS Programmers Guide](http://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-Use_Nielsen_Analytics).
+  -->
 
 **Version 1.4.0**
 
@@ -439,9 +453,9 @@ Enabled by sending the original creative URL for the 1401 CRS request instead of
 
 This issue was resolved by updating resource loading to look from all available bundles.
 
-* [ZD# 27460] Midroll first Ad call - POST to cdn.auditude.com returning 403.
+* [ZD# 27460] Midroll first Ad call - POST to cdn.auditude<span></span>.com returning 403.
 
-The new CDN account is unable to handle a POST CDN request. This issue was resolved by updating the code to make the cdn.auditude.com ad request to be GET instead of POST.
+The new CDN account is unable to handle a POST CDN request. This issue was resolved by updating the code to make the cdn.auditude<span></span>.com ad request to be GET instead of POST.
 
 **Version 1.4.32** (1.4.32.792 for iOS 6.0+)
 
@@ -456,9 +470,11 @@ The issue was resolved by placing the tag at the beginning of the playlist.
 **Version 1.4.31** (1.4.31.785 for iOS 6.0+)
 
 * [ZD# 24528] Implement TVSDK Usage Metrics for Billing
+<!-- 
 
-For more information, see [Billing Metrics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/PSDKs/concept/c_psdk_billing.html).
-
+Comment Type: draft
+For more information, see [Billing Metrics](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/PSDKs/concept/c_psdk_billing.html).
+-->
 * [ZD# 24642] Picture-in-Picture support for  TVSDK
 
 The picture-in-picture feature, which was not working properly in some cases, has been fixed.
@@ -472,8 +488,11 @@ This issue was resolved by aligning discontinuity tags across variant manifests.
 This issue was resolved by packaging the PSDKLibrary.framework as requested.
 
 * [ZD# 26364] Multi-CDN Support for CRS Ads
+<!-- 
 
-For more information, see [Multiple CDN support for CRS Ad Delivery](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-concept-Multiple_CDN_support_for_CRS_ad_delivery).
+Comment Type: draft
+For more information, see [Multiple CDN support for CRS Ad Delivery](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-concept-Multiple_CDN_support_for_CRS_ad_delivery).
+-->
 
 * [ZD# 27028] Delay in playback of some streams in iOS 10.
 
