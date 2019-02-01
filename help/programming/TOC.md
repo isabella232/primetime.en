@@ -1,4 +1,4 @@
----
+fairplay-license-token-request.md---
 cloud: experience-cloud
 product: adobe primetime
 archtype: end-user
@@ -893,18 +893,20 @@ user-guide: Primetime Programming Help
          + [Implement custom time updates](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-imp-cust-time-updates.md)
          + [Set up video analytics reporting on the server side](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-va-server-side-reporting-set-up.md)
          + [Access video analytics reports](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-va-reports-access.md)
-   + [Content protection](tvsdk-1.4-for-desktop-hls/drm-content-security/c-psdk-dhls-1.4-drm-content-security.md)
+   + Content protection {#content-protection}
       + [Supported DRM systems](tvsdk-1.4-for-desktop-hls/drm-content-security/t-psdk-dhls-1.4-drm-support.md)
       + [Primetime DRM interface overview](tvsdk-1.4-for-desktop-hls/drm-content-security/r-psdk-dhls-1.4-drm-interface.md)
       + [Implementing Primetime DRM in a TSVDK application](tvsdk-1.4-for-desktop-hls/drm-content-security/c-psdk-dhls-1.4-tvsdk-drm-workflow.md)
-   + [Notification system](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/r-psdk-dhls-1.4-notification-system.md)
-      + [Notifications for player status, activity, errors, and logging](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/c-psdk-dhls-1.4-notification-system.md)
+   + Notification system {#notification-system}
+      + Notifications for player status, activity, errors, and logging {#notifications}
+         + [Notifications overview](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/c-psdk-dhls-1.4-notification-system.md)
          + [Notification content](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/c-psdk-dhls-1.4-notification-content.md)
          + [Set up your notification system](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-notification-setup.md)
          + [Add real-time logging and debugging](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-notification-realtime-logging-debugging.md)
          + [ID3 tags](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-id3-metadata-retrieve.md)
          + [Track AVE warnings in your player](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-track-ave-warnings-in-player.md)
-   + [Playback and failover](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-for-playback.md)
+   + Playback and failover {#playback-and-failover}
+      + [Playback and failover](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-for-playback.md)
       + [Media playback and failover](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-media-playback.md)
       + [Advertising insertion and failover for VOD](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-ad-insertion-for-vod.md)
       + [Live master-manifest update](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-manifest-update-intro.md)
@@ -938,7 +940,7 @@ user-guide: Primetime Programming Help
       + [Timeline resolvers classes](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-timeline-resolvers.md)
       + [Utility classes](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-utility.md)
       + [Video Analytics classes](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-video-analytics.md)
-   + [Events and notifications](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/c-psdk-dhls-1.4-events-and-notifications.md)
+   + Events and notifications {#events-and-notifications}      
       + Notification codes {#notification-codes}
          + [Notification codes overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/c-psdk-dhls-1.4-notification-codes.md)
          + [ERROR notification codes](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/r-psdk-dhls-1.4-notifications-errors.md)
@@ -948,7 +950,7 @@ user-guide: Primetime Programming Help
          + [NATIVE_ERROR: Video playback values](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/r-psdk-dhls-1.4-notifications-video-playback-errors.md)
          + [NATIVE_ERROR: Crypto values](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/r-psdk-dhls-1.4-notifications-crypto-errors.md)
 + Browser-TVSDK-2.4 {#browser-tvsdk-2.4}
-   + [Introduction](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/c-psdk-browser-2.4-introduction.md)
+   + Introduction {#introduction}
       + [Product overview and audience](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/c-psdk-browser-tvsdk-2.4-overview-prod-audience-guide.md)
       + Supported features {#supported-features}
          + [Supported features overview](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features.md)
