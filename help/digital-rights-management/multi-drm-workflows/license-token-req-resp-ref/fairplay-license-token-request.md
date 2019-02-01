@@ -9,27 +9,21 @@ internal: n
 snippet: y
 ---
 
-# FairPlay license token request / response {#fairplay-license-token-request-response}
+# FairPlay license token request and response {#fairplay-license-token-request-response}
 
-The FairPlay license token interface provides production and test services.
-
-<a id="section_948C2CA38FC747C8AAC28FD8FAE90530"></a>
-
-This request returns a token that can be redeemed for a FairPlay license.
+The FairPlay license token interface provides production and test services. This request returns a token that can be redeemed for a FairPlay license.
 
 **Method: GET, POST** (with a www-url-encoded body that contains parameters for both methods)
 
 **URLs:**
 
-* **Production: ** https://fp-gen.{prod_domain}/hms/fp/token
+* **Production:** `https://fp-gen.{prod_domain}/hms/fp/token`
 
-* **Test: ** ` [https://fp-gen.test.expressplay.com/hms/fp/token](https://fp-gen.test.expressplay.com/hms/fp/token)`
+* **Test:** `[https://fp-gen.test.expressplay.com/hms/fp/token](https://fp-gen.test.expressplay.com/hms/fp/token)`
 
 * **Sample request:** 
 
-```
-
-<xref href="https: pr-gen.test.expressplay.com="" hms="" pr="" token?customerAuthenticator="201722,1ad8eed133edf43cbcc185f0236828ae&kid=b366360da82e9c6e0b0984002a362cf2&contentKey=b366360da82e9c6e0b0984002a362cf2&rightsType=BuyToOwn&analogVideoOPL=0&compressedDigitalAudioOPL=0&compressedDigitalVideoOPL=0&uncompressedDigitalAudioOPL=0&uncompressedDigitalVideoOPL=0&quot; format=&quot;html&quot; scope=&quot;external&quot;">
+```<xref href="https: pr-gen.test.expressplay.com="" hms="" pr="" token?customerAuthenticator="201722,1ad8eed133edf43cbcc185f0236828ae&kid=b366360da82e9c6e0b0984002a362cf2&contentKey=b366360da82e9c6e0b0984002a362cf2&rightsType=BuyToOwn&analogVideoOPL=0&compressedDigitalAudioOPL=0&compressedDigitalVideoOPL=0&uncompressedDigitalAudioOPL=0&uncompressedDigitalVideoOPL=0&quot; format=&quot;html&quot; scope=&quot;external&quot;">
   https://fp-gen.test.expressplay.com/hms/fp/token?customerAuthenticator= 
    <ExpressPlay customer authenticator identifier> 
    &kid=<CEKSID> 
@@ -63,7 +57,7 @@ This request returns a token that can be redeemed for a FairPlay license.
 |---|---|---|
 |  `generalFlags`  | A 4 byte hexadecimal string representing the license flags. ‘0000’ is the only allowed value.  | No  |
 |  `kek`  | Key Encryption Key (KEK). Keys are stored encrypted with a KEK using a key wrapping algorithm (AES Key Wrap, RFC3394). If `kek` is supplied, either one of the `kid` or the `ek` parameters needs to be supplied, *but not both*.  | No  |
-|  `kid`   | A 16 byte hexadecimal string representation of the content encryption key or a string '^somestring'. The length of the string followed by the '^' cannot be greater than 64 characters.  | No  |
+|  `kid`   | A 16 byte hexadecimal string representation of the content encryption key or a string `'^somestring'`. The length of the string followed by the `'^'` cannot be greater than 64 characters.  | No  |
 |  `ek`  | A hex string representation of the encrypted content key.  | No  |
 |  `contentKey`   | A 16 byte hexadecimal string representation of the content encryption key  | Yes, unless the `kek` and `ek` or `kid` are provided.  |
 |  `iv`  | A 16 byte hexadecimal string representation of the content encryption IV  | Yes  |
