@@ -1,4 +1,4 @@
-fairplay-license-token-request.md---
+---
 cloud: experience-cloud
 product: adobe primetime
 archtype: end-user
