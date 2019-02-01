@@ -13,7 +13,7 @@ internal: n
 snippet: y
 ---
 
-# TVSDK 1.4 for Desktop HLS Release Notes{#tvsdk-for-desktop-hls-release-notes}
+# TVSDK 1.4 for Desktop HLS Release Notes {#tvsdk-for-desktop-hls-release-notes}
 
 TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolved and known issues in TVSDK DHLS.
 
@@ -21,22 +21,26 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
 
 **1.4.31**
 
-* Multi-CDN Support for CRS Ads
-
-    * By default, all transcoded assets will be hosted on Adobe-owned CDN on Akamai. With the latest release, Adobe Creative Repackaging Service (CRS) provides the ability to upload the transcoded creatives to multiple CDNs as specified by the customer.
-    * New APIs are added to TVSDK to enable specifying the final CRS creative url when the default URL is not used. Please refer to the documentation to learn how to use these new APIs.
+* **Multi-CDN Support for CRS Ads**
+  * By default, all transcoded assets will be hosted on Adobe-owned CDN on Akamai. With the latest release, Adobe Creative Repackaging Service (CRS) provides the ability to upload the transcoded creatives to multiple CDNs as specified by the customer.
+  * New APIs are added to TVSDK to enable specifying the final CRS creative url when the default URL is not used. Please refer to the documentation to learn how to use these new APIs.
 
 **1.4.30**
 
-* **Billing Metrics**To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers. For more information about Billing Metrics, see [Billing Metrics](https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics).
+* **Billing Metrics**
+To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers. 
+<!-- 
+
+Comment Type: draft
+For more information about Billing Metrics, see [Billing Metrics](http://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics)
+-->
 
 **1.4.24**
 
-* **Persistent Network Connection**Important: You must have at least Adobe Flash Player version 22 or later installed.
-
-  Persistent network connections create and store an internal list of network connections that can be reused for multiple requests, instead of opening a new connection for each network request. Persistent network connections should increase efficiency and decrease latency in your networking code.
-
-  In this release, this feature is not supported in Apple Safari and Mozilla Firefox on a Mac.
+* **Persistent Network Connection**
+Important: You must have at least Adobe Flash Player version 22 or later installed.
+Persistent network connections create and store an internal list of network connections that can be reused for multiple requests, instead of opening a new connection for each network request. Persistent network connections should increase efficiency and decrease latency in your networking code.
+In this release, this feature is not supported in Apple Safari and Mozilla Firefox on a Mac.
 
 **1.4.19**
 
@@ -50,31 +54,33 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
 **1.4.10**
 
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
+<!-- 
 
-  For more information, see [Ad fallback for VAST and VMAP ads](https://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
-
+Comment Type: draft
+For more information, see [Ad fallback for VAST and VMAP ads](https://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
+-->
 **1.4.8**
 
 * **Video Heartbeats Library (VHL) updated to version 1.5**
-
-    * Ability to send metadata with video start and/or video/ad/chapter start as context data
-    * Less network traffic - Heartbeats are fewer on average and smaller in size.
+  * Ability to send metadata with video start and/or video/ad/chapter start as context data
+  * Less network traffic - Heartbeats are fewer on average and smaller in size.
 
 **1.4.7**
 
-* **On-Premise Individualization Support**Support for on-premise installations of the Adobe Individualization Server to customize the client's individualization request to go to a different endpoint.
+* **On-Premise Individualization Support**
+Support for on-premise installations of the Adobe Individualization Server to customize the client's individualization request to go to a different endpoint.
 
 **1.4.6**
 
-* **Sample AES encryption (requires Flash Player version 17.0.0.134)**Sample-based AES encryption is now supported.
+* **Sample AES encryption (requires Flash Player version 17.0.0.134)**
+Sample-based AES encryption is now supported.
 
 **1.4.2**
 
 * **Video Heartbeats Library (VHL) update to version 1.4.0.1**
-
-    * Added the ability to bundle different analytics use cases, from other SDKs or players, with the Adobe Analytics Video Essentials.
-    * Ad tracking has been optimized by removing the trackAdBreakStart and trackAdBreakComplete methods. The ad break is inferred from the trackAdStart and trackAdComplete method calls.
-    * The playhead property is no longer needed when tracking ads.
+  * Added the ability to bundle different analytics use cases, from other SDKs or players, with the Adobe Analytics Video Essentials.
+  * Ad tracking has been optimized by removing the trackAdBreakStart and trackAdBreakComplete methods. The ad break is inferred from the trackAdStart and trackAdComplete method calls.
+  * The playhead property is no longer needed when tracking ads.
 
 **1.4.0**
 
@@ -94,9 +100,9 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
 
 * Zendesk #33777 - Localhost token SWF for DHLS distribution build expired.
 
-Updating the localhost token for PMP demo on DHLS.
+  Updating the localhost token for PMP demo on DHLS.
 
-**Version 1.4.38 **(891)
+**Version 1.4.38** (891)
 
 * Zendesk #30731 - TVSDK does not playing multiple VPAID ads in an AdBreak.
 
@@ -167,9 +173,11 @@ This issue was resolved by handling of VPAID ads correctly based on content IDs 
 * Zendesk #24528 - TVSDK Usage Metrics for Billing.
 
 Important: This issue requires Flash player 23.0.0.185 or later.
+<!-- 
 
-For more information about Billing Metrics, see [Billing Metrics](https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics).
-
+Comment Type: draft
+For more information about Billing Metrics, see [Billing Metrics](http://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics).
+-->
 * Zendesk # 25432 Closed Caption issue during resizing the player.
 
 Important: This issue requires Flash player 23.0.0.185 or later.
@@ -243,24 +251,23 @@ This issue was resolved by allowing clients to set custom parameters separately 
 **Version 1.4.26** (839)
 
 * Zendesk #18854 - Update creative selection logic based on CRS rules
-
-    * Provided the support to update creative selection logic based on CRS rules
+  * Provided the support to update creative selection logic based on CRS rules
 
 * Zendesk #22725 - playbackManager.beginPlayback() implementation in the sample application for Desktop
 
-    * Fixed by removing this redundant call at the end of startPlaybackFromFlashVars as the method is called from setupVideo()
+  * Fixed by removing this redundant call at the end of startPlaybackFromFlashVars as the method is called from setupVideo()
 
 * Zendesk #22807 - SeekManager null reference exception
 
-    * Fixed by providing the necessary NULL pointer protection inside of SeekManager relating to _dispatcher
+  * Fixed by providing the necessary NULL pointer protection inside of SeekManager relating to _dispatcher
 
 * Zendesk #22822 - Frequent buffering when using TVSDK to play a clear HLS
 
-    * Fixed by removing the initial opportunity generated by adSignalingModeOpportunityGenerator if there is no ad
+  * Fixed by removing the initial opportunity generated by adSignalingModeOpportunityGenerator if there is no ad
 
 * Zendesk #23378 - Stream integrity blocks rules.xml
 
-    * Fixed by loading rules.xml file through the stream integrity workflow
+  * Fixed by loading rules.xml file through the stream integrity workflow
 
 **Version 1.4.24** (817)
 
@@ -726,10 +733,9 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 ## Known issues {#known-issues}
 
 * Closed Caption will not work with audio-only content because the caption system needs video to work.
-
   Without video, there is no viewport dimension, and without a viewport dimension, you cannot display any graphics for captions.
 * Stream integrity is slightly slower in Google Chrome because of Chrome sandbox restrictions.
-* In TVSDK 1.4, if you disable autoPlay, a DRM error might occur when the player remains idle for at least a minute. To work around this issue, when you disable autoPlay but preload assets, modify ReferenceCore.as by changing the contents of onPlaybackManagerPrepared:
+* In TVSDK 1.4, if you disable autoPlay, a DRM error might occur when the player remains idle for at least a minute. To work around this issue, when you disable autoPlay but preload assets, modify ReferenceCore<span></span>.as by changing the contents of onPlaybackManagerPrepared:
 
   `if (_playbackManager.autoPlay) {  
   _playbackManager.play();  
@@ -756,5 +762,5 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 
 >[!MORE_LIKE_THIS]
 >
->* [All release notes of Adobe Primetime](https://help.adobe.com/en_US/primetime/release_notes/index.html)
->* [Adobe Primetime documentation](https://help.adobe.com/en_US/primetime/index.html)
+>* [All release notes of Adobe Primetime](https://helpx.adobe.com/primetime/user-guide.html)
+>* [Adobe Primetime documentation](https://helpx.adobe.com/primetime/user-guide.html)

@@ -13,7 +13,7 @@ internal: n
 snippet: y
 ---
 
-# Browser TVSDK 2.4 Release Notes{#browser-tvsdk-release-notes}
+# Browser TVSDK 2.4 Release Notes {#browser-tvsdk-release-notes}
 
 Browser TVSDK 2.4 Release Notes describe the new,  supported and unsupported features and the known issues in Browser TVSDK 2.4.
 
@@ -31,17 +31,17 @@ This release includes the following information:
 
 • [*Browser TVSDK API documentation*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
-• [*Browser TVSDK programming guide*](https://help.adobe.com/en_US/primetime/psdk/browser/2.4/index.html).
+• [*Browser TVSDK programming guide*](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_browser-tvsdk.pdf).
 
-• [*TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide*](https://help.adobe.com/en_US/primetime/conv_mig/as14_to_js24_mig/index.html).
+• [*TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide*](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-dhls-browser-tvsdk-24.html).
 
-• [*Converting from Browser TVSDK 2.4.6 to version 2.4.7*](https://help.adobe.com/en_US/primetime/conv_mig/js246_to_js247_conv_guide/index.html).
+• [*Converting from Browser TVSDK 2.4.6 to version 2.4.7*](https://helpx.adobe.com/primetime/conversion-guides/browser-tvsdk-246-to-247-for-javascript.html).
 
 • A reference implementation, which is included in the build.
 
 >[!NOTE]
 >
->*For a complete list of the security considerations for this release, see * [*Security considerations*](https://help.adobe.com/en_US/primetime/psdk/browser/2.4/index.html#PSDKs-concept-Security_considerations)*.*
+>*For a complete list of the security considerations for this release, see Security considerations.
 
 ## What's new and supported features {#what-s-new-and-supported-features}
 
@@ -59,7 +59,7 @@ The following addition is available as part of Browser TVSDK 2.4.12 release:
 
 • A new API, auditudeSettings.ignoreVPAIDAds, is added to allow ignoring VPAID ads received from the Auditude server. The API does not work for Flash Fallback.
 
-#### New in 2.4.11 {#new-in-1}
+**Version 2.4.11**
 
 The following enhancements and additions are available as part of Browser TVSDK 2.4.11 release:
 
@@ -69,7 +69,7 @@ The following enhancements and additions are available as part of Browser TVSDK 
 
 • The release contains fixes for critical customer issues. See *Issues fixed *a list
 
-#### New in 2.4.10 {#new-in-2}
+**Version 2.4.10**
 
 The following enhancements and additions are available as part of Browser TVSDK 2.4.10 release:
 
@@ -79,7 +79,7 @@ The following enhancements and additions are available as part of Browser TVSDK 
 
 • The release contains fixes for critical customer issues. See *Issues fixed *a list.
 
-#### New in 2.4.9 {#new-in-3}
+**Version 2.4.9**
 
 The following enhancements and additions are available as part of Browser TVSDK 2.4.9 release:
 
@@ -101,7 +101,7 @@ AdobePSDK.ForceHttpsAdConfiguration class.
 
 This update contains fixes for critical customer issues. See *Fixed Issues*, for the list.
 
-#### New in 2.4.8 {#new-in-4}
+**Version 2.4.8**
 
 The following enhancements and additions are available as part of Browser TVSDK 2.4.8 release:
 
@@ -111,7 +111,7 @@ The following enhancements and additions are available as part of Browser TVSDK 
 
 • The setDRMAuthenticateData API is added to the UI Framework. To play streams protected with Adobe Access DRM, invoke this API. Alternately, drmAuthenticateData attribute can be specified in the player. See [*AdobePSDK.videoBehavior *](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/VideoBehavior.html)for details.
 
-#### New in 2.4.7 {#new-in-5}
+**Version 2.4.7**
 
 The following features are new in version 2.4.7:
 
@@ -171,30 +171,28 @@ This new API provides flexibility to the player app for selecting the div in whi
 
 * Replaced `getVersion`API from `AdobePSDK.MediaPlayer` class with `AdobePSDK.Version` class for TVSDK version related information. For details, see `AdobePSDK.Version` API [*here*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/AdobePSDK.Version.html).
 
-#### New in 2.4.6 {#new-in-6}
+**Version 2.4.6**
 
 The following features are new in version 2.4.6:
 
-* **Browserify Support   
-  **Browserify allows you to use the node.js style modules in the browser. You can define the dependencies and Browserify bundles everything into one JavaScript file.
+* **Browserify Support**
+Browserify allows you to use the node.js style modules in the browser. You can define the dependencies and Browserify bundles everything into one JavaScript file.
 
 * **Billing**
-
 With the help of billing, Browser TVSDK can collect player usage metrics to bill Primetime customers.
 
 >[!NOTE]
 >
->*The deprecated enum MediaPlayer.Events and deprecated constants in Enum PSDKErrorCode have been removed in version 2.4.6. For more information, see * [*Converting from Browser TVSDK 2.4.5 to*](https://help.adobe.com/en_US/primetime/conv_mig/js245_to_js246_conv_guide/index.html)* * [*version 2.4.6*](https://help.adobe.com/en_US/primetime/conv_mig/js245_to_js246_conv_guide/index.html)*.*
+>*The deprecated enum MediaPlayer.Events and deprecated constants in Enum PSDKErrorCode have been removed in version 2.4.6. For more information, see * [*Converting from Browser TVSDK 2.4.5 to version 2.4.6*](https://helpx.adobe.com/primetime/conversion-guides/browser-tvsdk-245-to-246-for-javascript.html)*.*
 
-#### New in 2.4.5 {#new-in-7}
+**Version 2.4.5**
 
 The following features are new in version 2.4.5:
 
-* **Full Event Replays and Ads   
-  
-  **HLS Full Event Replay (FER) streams now supports ad resolution and ad behaviors. To enable this support, set the ad signaling mode to `MANIFEST_CUES` when creating the `MediaPlayerItemConfig` object.
+* **Full Event Replays and Ads**  
+  HLS Full Event Replay (FER) streams now supports ad resolution and ad behaviors. To enable this support, set the ad signaling mode to `MANIFEST_CUES` when creating the `MediaPlayerItemConfig` object.
 
-* **MediaplayerView ScalePolicy Support   
+* **MediaplayerView ScalePolicy Support
   
   **Application developers can now specify a different scalePolicy for the view using MediaplayerView scalePolicy property.
 
@@ -206,7 +204,7 @@ Anamorphic content playback is now supported when using MSE and Flash playback.
 
 When `withCredentials` is set to true, the `Access-Control-Allow-Origin` header cannot be set to a wild card. Depending on the response of server, Browser TVSDK will selectively set the `withCredentials` attribute. For more information about this support, see [*Browser TVSDK API docs*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
-#### Version 2.4.4 {#version-2}
+**Version 2.4.4**
 
 The following features were new in version 2.4.4:
 
@@ -218,7 +216,7 @@ This release provides support for a sender and receiver app that demonstrates pl
 
 This release contains support for advanced failover use cases (segment and server failover) for HLS VOD streams.
 
-#### Version 2.4.3 {#version-3}
+**Version 2.4.3**
 
 The following features were new in version 2.4.3:
 
@@ -230,13 +228,13 @@ Inline custom tags (Events) can be subscribed to and received as TimedMetadata o
 
 HLS and DASH streams without extensions are now supported. For the manifest file, the resourceType needs to be specified when loading the resource. For segments and VTT files, the Content-Type response header is used to determine the content type.
 
-#### Version 2.4.2 {#version-4}
+**Version 2.4.2**
 
 The following features were new in version 2.4.2:
 
 * **API Parity**
 
-For a complete list of the API parity, see the [*TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide*](https://help.adobe.com/en_US/primetime/conv_mig/as14_to_js24_mig/index.html).
+For a complete list of the API parity, see the [*TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide*](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-dhls-browser-tvsdk-24.html).
 
 * **Sample-AES support**
 
@@ -254,7 +252,7 @@ The playback of files with the .aac extension is now supported. This can be audi
 
 HLS streams that are delivered through a Content Delivery Network (CDN) can sometimes use authentication tokens on the manifest and segment requests for verification, and these tokens can be provided as URL parameters or as cookie headers. The playback of such streams are now supported.
 
-#### Version 2.4.1 {#version-5}
+**Version 2.4.1**
 
 The following features were new in version 2.4.1:
 
@@ -1327,17 +1325,17 @@ The following features are supported:
 
 The following issues are fixed in Browser TVSDK verison 2.4.12 Update (Build 204):
 
-• **21647 **- bTVSDK should allow automatic video playback on iOS devices when audio is muted.
+• **21647**- TVSDK should allow automatic video playback on iOS devices when audio is muted.
 
 #### Issues fixed in version 2.4.12 {#issues-fixed-in-version}
 
 The following issues are fixed in Browser TVSDK verison 2.4.12:
 
-• **21465 **- Error Key System Access Denied is received when playing a DRM-protected DASH stream after a DASH Live stream is played.
+• **21465**- Error Key System Access Denied is received when playing a DRM-protected DASH stream after a DASH Live stream is played.
 
-• **21442 **- Enable content autoplay on iOS Web, after preroll ad is played with a user gesture.
+• **21442**- Enable content autoplay on iOS Web, after preroll ad is played with a user gesture.
 
-• **21240 **- Provided API to filter VPAID ads parsed from Auditude/VMAP.
+• **21240**- Provided API to filter VPAID ads parsed from Auditude/VMAP.
 
 #### Issues fixed in version 2.4.11 {#issues-fixed-in-version-1}
 

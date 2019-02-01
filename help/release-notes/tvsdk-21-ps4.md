@@ -13,7 +13,7 @@ internal: n
 snippet: y
 ---
 
-# TVSDK 2.1 PlayStation 4 Release Notes{#tvsdk-playstation-release-notes}
+# TVSDK 2.1 PlayStation 4 Release Notes {#tvsdk-playstation-release-notes}
 
 TVSDK 2.1 for PlayStation 4 Release Notes describe the supported features and the known issues in TVSDK 2.1 PlayStation 4 .
 
@@ -41,7 +41,7 @@ Here are the resolved issues for TVSDK 2.1 for PlayStation 4:
 * **PTPLAY-9551:**
   When there is no ad break after Auditude processing, the CRS calls **onPrefetchComplete** which decrements the groupCount. Since there's no ad break, the **groupCount** is 0 and decremented by 1. Previously the **groupCount** was **uint32_t** because of which it used to change to max value. This is now **int32_t**.
 
-### Version 2.1.0.621
+**Version 2.1.0.621**
 
 * **Zendesk #4555**
   Instant on Memory issues leading-Loading errors - `MediaItemLoader` Fix for crash happening while releasing `mediaitemloader` 
@@ -76,7 +76,7 @@ Here are the resolved issues for TVSDK 2.1 for PlayStation 4:
   Fallback Logic on PS4 and XBox One   
   Same as Zendesk #3103
 
-### Version 2.1.0.591
+**Version 2.1.0.591**
 
 * **Zendesk #3767**
   PS4 Ad code snippet, Ad resolving fails when processing VMAP redirects.
@@ -110,7 +110,7 @@ Here are the resolved issues for TVSDK 2.1 for PlayStation 4:
 
 * PS4 TVSDK retested within a mini-app instead of game.
 
-### Version 2.1.0.563
+**Version 2.1.0.563**
 
 * **Zendesk #3868**
   Does TVSDK support Playstation SDK 2.5
@@ -124,12 +124,12 @@ Here are the resolved issues for TVSDK 2.1 for PlayStation 4:
 
 The following features are supported in TVSDK 2.1 for PlayStation 4:
 
-### Version 2.1.0.621
+**Version 2.1.0.621**
 
 * Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)
   For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place.You can configure some aspects of fallback behavior
 
-### Version 2.1.0.538
+**Version 2.1.0.538**
 
 * HLS VOD playback, including play, pause, seek
 * Adaptive bitrate streaming
@@ -140,4 +140,3 @@ The following features are supported in TVSDK 2.1 for PlayStation 4:
 * Instant on with custom start position
 * Trick play with fast forward and fast rewind
 * 302 redirect
-

@@ -12,13 +12,33 @@ internal: n
 snippet: y
 ---
 
-# TVSDK 3.1 for iOS Release Notes{#tvsdk-for-ios-release-notes}
+# TVSDK 3.3 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
-TVSDK 3.1 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.1.
+TVSDK 3.3 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.3.
+
+## System and software requirements {#system-software-requirements}
+
+Before you download iOS 3.3, ensure your hardware, operating system, and application versions meet the following requirements listed below:
+
+| Operating System |iOS 7.0 or later |
+|---|---|---|
 
 ## New features {#new-features}
 
-### What's New in iOS TVSDK 3.1 {#what-s-new-in-ios-tvsdk}
+### What's New in iOS TVSDK 3.3 {#what-s-new-in-ios-tvsdk}
+
+* TVSDK 3.3 is now compliant with iOS 11 SDK. All the deprecated APIs have been replaced with suitable alternatives.
+
+**Version 3.2**
+
+* **Additional Logging Support (Phase 2)**
+
+    * Added support for error notifications, in case of 
+        * HLS version of ad uses higher level than content.
+        * Audio-only variant is excluded.
+        * VAST/VMAP request is failed.
+
+**Version 3.1**
 
 * **Additional Logging Support**
 
@@ -28,7 +48,7 @@ TVSDK 3.1 for iOS Release Notes describe what is new or changed, the resolved an
 
     * Fairplay Encrypted CMAF streams with AVC codec playback is now supported.
 
-### Version 3.0.1
+**Version 3.0.1**
 
 * No new feature or enhancements in this release.
 
@@ -63,7 +83,7 @@ With this property enabled, TVSDK resolves each ad breaks prior to its position 
 
 **Version 1.4.42**
 
-No new features are added in this release. For a list of issues fixed, see [Resolved issues](https://help.adobe.com/en_US/primetime/release_notes/ios/c_relnotes_ios_1.4_resolved_issues.html#c_relnotes_resolved-issues_1_4).
+No new features are added in this release. For a list of issues fixed, see [Resolved issues](#resolved-issues).
 
 **Version 1.4.41**
 
@@ -79,7 +99,7 @@ No new features.
 **Version 1.4.39**
 
 * iOS  TVSDK  is certified with VHL 2.0.1 and with VHL 2.0.1 with Nielsen.
-* iOS  TVSDK  is updated to make CRS requests from new Akamai host primetime-a.akamaihd.net.
+* iOS  TVSDK  is updated to make CRS requests from new Akamai host primetime-a.akamaihd<span></span>.net.
 * New hostname configuration provides CRS asset delivery via both HTTP and HTTPS (SSL) at greater scale.
 
 **Version 1.4.36**
@@ -110,7 +130,7 @@ The PTSDKConfig class provides methods to enforce SSL on requests made to Adobe 
 
 **Version 1.4.18**
 
-Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. For more information about VPAID 2.0, see [VPAID ad support](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html).
+Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. For more information about VPAID 2.0, see VPAID ad support.
 
 **Version 1.4.17**
 
@@ -144,7 +164,7 @@ Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich
 
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**
 
-For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. For more information, see [Ad fallback for VAST and VMAP ads](https://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
+For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. For more information, see Ad fallback for VAST and VMAP ads.
 
 **Version 1.4.9**
 
@@ -180,7 +200,7 @@ DRM Policies can now specify the highest resolution permitted, depending on the 
 
 * **Nielsen SDK Integration**
 
-The TVSDK now supports sending mTVR and MDPR ID3 beacons to the Nielsen SDK without any custom integration. In order to get started, download the 3.1.2.19 Nielsen iOS App SDK, and follow the instructions found here in the [iOS Programmers Guide](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-Use_Nielsen_Analytics).
+The TVSDK now supports sending mTVR and MDPR ID3 beacons to the Nielsen SDK without any custom integration. In order to get started, download the 3.1.2.19 Nielsen iOS App SDK, and follow the instructions found here in the iOS Programmers Guide.
 
 **Version 1.4.0**
 
@@ -215,9 +235,22 @@ Comment Type: draft
 
  -->
 
-### Version 3.1 {#ios-tvsdk}
+### iOS TVSDK 3.3 {#ios-tvsdk}
 
-* Ticket# [36313](https://adobeprimetime.zendesk.com/agent/tickets/36313) - Intermittent unpredictable results during Linear Ad Breaks
+*   ZD#37820 - Added whitelisting for custom header HS-Id, HS-SSAI-TAG.
+
+**Version 3.2**
+
+* Ticket#36588 - Player crash is observed when the MediaPlayer STOP method is called.
+    * Fixed intermittent crash observed when STOP method is called for a few streams with subtitles.
+* Ticket#37080 - Duplicate requests seen for Manifest calls.
+    * Fixed the duplicate requests made for Manifest URLs during playback. TVSDK now makes one call per manifest.
+* Ticket#37 - CRS normalization rule fails with eq match type
+    * Fixed a case where the player used to crash when encountered with last normalization rule set for hostnames with an "eq" match type.
+
+**Version 3.1**
+
+* Ticket #36313 - Intermittent unpredictable results during Linear Ad Breaks
 
     * Fixed intermittent playback during linear ad breaks in Live stream.
 
@@ -450,9 +483,9 @@ Enabled by sending the original creative URL for the 1401 CRS request instead of
 
 This issue was resolved by updating resource loading to look from all available bundles.
 
-* [ZD# 27460] Midroll first Ad call - POST to cdn.auditude.com returning 403.
+* [ZD# 27460] Midroll first Ad call - POST to cdn.auditude<span></span>.com returning 403.
 
-The new CDN account is unable to handle a POST CDN request. This issue was resolved by updating the code to make the cdn.auditude.com ad request to be GET instead of POST.
+The new CDN account is unable to handle a POST CDN request. This issue was resolved by updating the code to make the cdn.auditude<span></span>.com ad request to be GET instead of POST.
 
 **Version 1.4.32** (1.4.32.792 for iOS 6.0+)
 
@@ -468,7 +501,7 @@ The issue was resolved by placing the tag at the beginning of the playlist.
 
 * [ZD# 24528] Implement TVSDK Usage Metrics for Billing
 
-For more information, see [Billing Metrics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/PSDKs/concept/c_psdk_billing.html).
+For more information, see [Billing Metrics].
 
 * [ZD# 24642] Picture-in-Picture support for  TVSDK
 
@@ -484,7 +517,7 @@ This issue was resolved by packaging the PSDKLibrary.framework as requested.
 
 * [ZD# 26364] Multi-CDN Support for CRS Ads
 
-For more information, see [Multiple CDN support for CRS Ad Delivery](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-concept-Multiple_CDN_support_for_CRS_ad_delivery).
+For more information, see Multiple CDN support for CRS Ad Delivery.
 
 * [ZD# 27028] Delay in playback of some streams in iOS 10.
 
@@ -1024,6 +1057,7 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
+* With JIT enabled and tolerance set to 10 seconds, no VAST call is seen for the first midroll ad break in case of VMAP->VAST redirect ads.
 * Detailed Error notifications are not available when Just in Time Ad resolving is enabled.
 * Error notifications are logged as per ad resolution time and not as per ad sequence.
 * HEVC support has following limitations in this release:
@@ -1049,4 +1083,9 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 * The Reference App cannot be built using Xcode 8 or lower versions. iOS TVSDK version 1.4.41 onwards, use Xcode 9 to compile.
 * VPAID ads do not honor the delayAdLoadingTolerance value.
 * 24077- For certain HLS contents with subtitles, player crashes on Stop or Reset method.
+
+## Helpful resources {#helpful-resources}
+
+* [TVSDK 3.3 for iOS Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_ios_3.3.pdf)
+* [TVSDK iOS 3.3 API reference]( https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v33/index.html)
 
