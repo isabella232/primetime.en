@@ -86,6 +86,7 @@ Comment Type: draft
 The configuration instructions are available in the Primetime Offline Packager Getting Started guide at [http://help.adobe.com/en_US/primetime/packagers/offline/index.html](http://help.adobe.com/en_US/primetime/packagers/offline/index.html)
 
 -->
+
 ## What’s new in Primetime Offline Packager 2.1 [July 2015] {#what-s-new-in-primetime-offline-packager-july}
 
 Support for PlayReady BuyDRM (for DASH). For details refer to Help Documentation.
