@@ -20,6 +20,7 @@ For example, in the `com.adobe.primetime.reference.ui.player.PlayerFragment.java
 ```java
 adsManager = ManagerFactory.getAdsManager( 
 <b>true</b>, config, mediaPlayer);
+
 ```
 
 <!-- 

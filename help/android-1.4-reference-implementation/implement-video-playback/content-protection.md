@@ -54,7 +54,6 @@ To create a content protection manager:
           Player.logger.e(LOG_TAG + "::DRMPreload#onError", s); 
       } 
   } 
-  
   ```
 
   >[!NOTE]
@@ -67,8 +66,9 @@ To create a content protection manager:
 
   ```java
   drmManager = ManagerFactory.getDrmManager(config, mediaPlayer);
-  ```
   
+  ```
+
 <!-- 
 
 Comment Type: draft
