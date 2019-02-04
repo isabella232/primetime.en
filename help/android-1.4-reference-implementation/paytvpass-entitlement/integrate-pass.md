@@ -6,7 +6,7 @@ title: Integrate Primetime authentication
 uuid: 34cdf1da-261e-462c-a194-4fcb439e5dfb
 ---
 
-# Integrate Primetime authentication{#integrate-primetime-authentication}
+# Integrate Primetime authentication {#integrate-primetime-authentication}
 
 Customize your reference implementation to integrate Adobe Primetime authentication for your production environment.
 

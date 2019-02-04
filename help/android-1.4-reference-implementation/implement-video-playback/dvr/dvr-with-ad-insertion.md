@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# DVR with ad insertion{#dvr-with-ad-insertion}
+# DVR with ad insertion {#dvr-with-ad-insertion}
 
 By default, a live stream with DVR support exposes a seekable range in which the viewer can pause and seek.
 

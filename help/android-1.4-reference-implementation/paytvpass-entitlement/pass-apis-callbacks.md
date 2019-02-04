@@ -14,3 +14,13 @@ The Entitlement Manager exposes these classes to integrate Adobe Primetime authe
 * EntitlementManagerOn
 * ManagerFactory
 * EntitlementMetadata
+
+<!-- 
+
+Comment Type: draft
+* [EntitlementManager](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/EntitlementManager.html)
+* [EntitlementManagerOn](http://help.stage.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/EntitlementManagerOn.html)
+* [ManagerFactory](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/ManagerFactory.html)
+* [EntitlementMetadata](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/entitlement/EntitlementMetadata.html)
+
+-->

@@ -21,5 +21,10 @@ For example, in the `com.adobe.primetime.reference.ui.player.PlayerFragment.java
 adsManager = ManagerFactory.getAdsManager( 
 <b>true</b>, config, mediaPlayer);
 ```
+<!-- 
+
+Comment Type: draft
 
 API documentation: [ManagerFactory](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/ManagerFactory.html) 
+
+-->

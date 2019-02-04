@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# JSON object for custom ad markers{#json-object-for-custom-ad-markers}
+# JSON object for custom ad markers {#json-object-for-custom-ad-markers}
 
 The code block below defines the "details" JSON object when the type is custom ad markers.
 

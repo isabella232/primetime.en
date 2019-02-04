@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Build a custom user interface{#build-a-custom-user-interface}
+# Build a custom user interface {#build-a-custom-user-interface}
 
 You can build a custom user interface based on the reference implementation framework.
 
@@ -28,5 +28,11 @@ The UI components of the following features are already integrated:
 
 >[!NOTE]
 >
->To make UI changes to the seek bar, you can edit the [MarkableSeekBar](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/MarkableSeekBar.html) class. The `MarkableSeekBar` class handles the slider, thumb of the slider, ad marker holder, cue markers, buffer range, and seek range backgrounds.
+>To make UI changes to the seek bar, you can edit the MarkableSeekBar class. The `MarkableSeekBar` class handles the slider, thumb of the slider, ad marker holder, cue markers, buffer range, and seek range backgrounds.
 
+<!-- 
+
+Comment Type: draft
+(https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/MarkableSeekBar.html)
+
+-->

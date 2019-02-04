@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Integrate late-binding audio{#integrate-late-binding-audio}
+# Integrate late-binding audio {#integrate-late-binding-audio}
 
 You can integrate late-binding or alternate audio streams into your player by creating an alternate audio feature manager.
 
