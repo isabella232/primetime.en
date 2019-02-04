@@ -13,7 +13,7 @@ snippet: y
 
 Browser TVSDK sends billing metrics to Adobe in an XML format.
 
-<a id="example_13ABDB1CC0B549968A534765378DA3A0"></a>
+<!--<a id="example_13ABDB1CC0B549968A534765378DA3A0"></a>-->
 
 If you use a network capture tool to monitor the statistics Browser TVSDK transmits to Adobe, you should see units like the following:
 

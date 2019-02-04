@@ -27,7 +27,7 @@ You can specify two types of rules in [!DNL AdobeTVSDKConfig.json]: *Priority* r
 
 **[!UICONTROL Ad Rules change]**
 
-<a id="section_EDCE7C94156D4A47AA2FBAE9BE0390CE"></a>
+<!--<a id="section_EDCE7C94156D4A47AA2FBAE9BE0390CE"></a>-->
 
 The Ad rules are specified using a JSON file. The format of the JSON file remains the same in both versions of the TVSDK. However, in TVSDK v2.5, the Ad rules JSON file must be hosted on a location accessible via a HTTP URL. The application can use an instance of AuditudeSettings:
 

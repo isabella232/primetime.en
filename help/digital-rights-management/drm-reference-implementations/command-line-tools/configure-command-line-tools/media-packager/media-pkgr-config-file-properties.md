@@ -11,7 +11,7 @@ snippet: y
 
 # Configuration properties{#configuration-properties}
 
-<a id="section_3081C60BE54D47569FD1E3793513A2D9"></a>
+<!--<a id="section_3081C60BE54D47569FD1E3793513A2D9"></a>-->
 
 >[!NOTE]
 >

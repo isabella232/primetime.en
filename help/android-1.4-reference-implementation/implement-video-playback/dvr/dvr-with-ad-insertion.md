@@ -15,7 +15,7 @@ By default, a live stream with DVR support exposes a seekable range in which the
 
 Ad breaks display as red bars in the control bar, as shown below:
 
-<a id="fig_720DD22D2318485EAB4BEA55C30D5ECF"></a>
+<!--<a id="fig_720DD22D2318485EAB4BEA55C30D5ECF"></a>-->
 
 ![](assets/dvr-with-ads.jpg)
 

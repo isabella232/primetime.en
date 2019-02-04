@@ -19,7 +19,7 @@ snippet: y
 
 Use the `useRedirectedUrl` property to turn 302 redirect on ( `true`) or off ( `false`).
 
-<a id="example_888749F70C8A43279D06A29BD68E7E4D"></a>
+<!--<a id="example_888749F70C8A43279D06A29BD68E7E4D"></a>-->
 
 For example: 
 

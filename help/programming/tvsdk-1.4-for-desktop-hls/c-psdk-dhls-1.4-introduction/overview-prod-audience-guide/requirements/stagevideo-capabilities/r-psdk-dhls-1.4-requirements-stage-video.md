@@ -13,7 +13,7 @@ snippet: y
 
 On devices that support GPU (hardware) acceleration, you can use a flash.media.StageVideo object to process video directly on the device hardware.
 
-<a id="section_64DDAA8DB215493E8A7CA6636819D350"></a>
+<!--<a id="section_64DDAA8DB215493E8A7CA6636819D350"></a>-->
 
 A combination of different factors determine when and how you can use `StageVideo`. The following table presents a snapshot of some of the requirements and restrictions that are associated with using StageVideo. These requirements and restrictions are subject to change. 
 

@@ -21,7 +21,7 @@ Set up a single place to handle errors.
 
    When the `MediaPlayer` object is in the error state, it remains in that state until you reset it using the `MediaPlayer.reset` method.
 
-<a id="example_49FF225E92EA494AA06B2E5F26101F4C"></a>
+<!--<a id="example_49FF225E92EA494AA06B2E5F26101F4C"></a>-->
 
 For example: 
 

@@ -17,7 +17,7 @@ After you successfully deploy Adobe Primetime DRM, you must maintain the securit
 
 You can use a *reverse proxy* to ensure that different sets of URLs for Primetime DRM web applications are available to external and internal users. *Reverse proxy* is more secure than allowing users to connect directly to the application server on which Primetime DRM runs, and this configuration performs all HTTP requests for the application server that runs Primetime DRM. Users can access only reverse proxy and can attempt only the URL connections that are supported by the reverse proxy. 
 
-<a id="fig_8083A8C794B646CD87985EC891B60663"></a>
+<!--<a id="fig_8083A8C794B646CD87985EC891B60663"></a>-->
 
 ![](assets/AdobeAccess_4_SecureDeployment.png)
 

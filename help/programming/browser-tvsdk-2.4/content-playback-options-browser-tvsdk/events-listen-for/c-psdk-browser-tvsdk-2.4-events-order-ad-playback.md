@@ -13,7 +13,7 @@ snippet: y
 
 When your playback includes advertising, Browser TVSDK dispatches events/notifications in generally expected sequences. Your player can implement actions based on events in the expected sequence.
 
-<a id="section_69E3CCBC57BB48399799876E83908348"></a>
+<!--<a id="section_69E3CCBC57BB48399799876E83908348"></a>-->
 
 When playing ads, the order of events is:
 

@@ -13,7 +13,7 @@ snippet: y
 
 You can cast any of the streams from a TVSDK-based sender app and have the stream played back on Chromecast with Browser TVSDK.
 
-<a id="section_87CE5D6D46F0439EB6E63A742D6DD9C8"></a>
+<!--<a id="section_87CE5D6D46F0439EB6E63A742D6DD9C8"></a>-->
 
 There are two components of a Cast-enabled app:
 

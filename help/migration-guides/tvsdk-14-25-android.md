@@ -414,7 +414,7 @@ The following event codes are new in 2.5:
    <td valign="top" width="336"><p>SIZE_CHANGED</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="336"><p><a id="MediaPlayer_changes" name="MediaPlayer_changes"></a><a id="_bookmark6" name="_bookmark6"></a>LOAD_INFO</p> </td> 
+   <td valign="top" width="336"><p><!--<a id="MediaPlayer_changes" name="MediaPlayer_changes"></a>--><!--<a id="_bookmark6" name="_bookmark6"></a>-->LOAD_INFO</p> </td> 
    <td valign="top" width="336"><p>LOAD_INFORMATION_AVAILABLE</p> </td> 
   </tr> 
  </tbody> 

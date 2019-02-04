@@ -92,8 +92,8 @@ To test your DRM solution, you need a video application that can process the par
 >If your video plays, you've successfully packaged and licensed your content. If your video does not play, check the troubleshooting page for some possible solutions to your troubles. 
 
 >
-><a id="example_603D92A1F3924467B5D66EC862B8F59C"></a>
+><!--<a id="example_603D92A1F3924467B5D66EC862B8F59C"></a>-->
 
 >For example, here is the part of the UI in the first test player listed above, where you supply the licensing information obtained from the ExpressPlay server: >
-><a id="fig_zjy_q2c_rw"></a>
+><!--<a id="fig_zjy_q2c_rw"></a>-->
 >![](assets/sample-player-drm-settings-web.png)>

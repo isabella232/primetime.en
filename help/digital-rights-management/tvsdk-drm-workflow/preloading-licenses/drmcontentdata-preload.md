@@ -24,7 +24,7 @@ The following steps describe the workflow for pre-loading the license for a prot
 
 1. The rest of the steps are identical to the workflow described in *Content Protection Process Details*.
 
-<a id="example_EBEDA8E10F6344CABA4DE31DC342B8F8"></a>
+<!--<a id="example_EBEDA8E10F6344CABA4DE31DC342B8F8"></a>-->
 
 ```
 import flash.events.DRMAuthenticationCompleteEvent; 

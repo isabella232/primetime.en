@@ -26,7 +26,7 @@ To work with statuses:
 * The list of statuses is defined in `MediaPlayer.PlayerStatus`.
 
 State-transition diagram for the lifecycle of a `MediaPlayer` instance: 
-<a id="fig_1C55DE3F186F4B36AFFDCDE90379534C"></a>
+<!--<a id="fig_1C55DE3F186F4B36AFFDCDE90379534C"></a>-->
 
 ![](assets/player-state-transitions-diagram-flash-1_2_web.png)
 

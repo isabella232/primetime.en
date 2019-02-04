@@ -17,7 +17,7 @@ UltraViolet ( [](https://www.uvvu.com/)) is a digital rights authentication and 
 
 It is easy to set up an UltraViolet system along with Adobe Access. The following use case depicts the content flow behavior: 
 
-<a id="fig_cxy_dc2_44"></a>
+<!--<a id="fig_cxy_dc2_44"></a>-->
 
 ![](assets/AdobeUV_web.png)
 

@@ -102,7 +102,7 @@ When TVSDK detects a new opportunity, it iterates through the registered content
       error.setMetadata(metadata);
       ```
 
-<a id="example_4F0D7692A92E480A835D6FDBEDBE75E7"></a>
+<!--<a id="example_4F0D7692A92E480A835D6FDBEDBE75E7"></a>-->
 
 This sample custom ad resolver makes an HTTP request to the ad server and receives a JSON response.
 

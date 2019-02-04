@@ -138,7 +138,7 @@ When TVSDK generates a new opportunity, it iterates through the registered conte
          _client.notifyFailed(opportunity, UNSUPPORTED_OPERATION);
          ```
 
-<a id="example_463B718749504A978F0B887786844C39"></a>
+<!--<a id="example_463B718749504A978F0B887786844C39"></a>-->
 
 This sample custom ad resolver resolves an opportunity and serves a simple ad: 
 

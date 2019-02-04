@@ -56,7 +56,7 @@ When TVSDK detects a subscribed tag in the playlist/manifest, the player automat
  </tbody> 
 </table>
 
-<a id="section_737CC47997F74F80A3C5C6171ADE120E"></a>
+<!--<a id="section_737CC47997F74F80A3C5C6171ADE120E"></a>-->
 
 Remember the following:
 

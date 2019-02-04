@@ -15,7 +15,7 @@ TVSDK supports the programmatic deleting and replacing of ad content in VOD stre
 
 The delete and replace feature extends the custom ad markers feature. Custom ad markers mark sections of the main content as ad-related content periods. In addition to marking these time ranges, you can also delete and replace time ranges.
 
-<a id="section_7A90BFE99F1A4D908D6DDB0B49FA1199"></a>
+<!--<a id="section_7A90BFE99F1A4D908D6DDB0B49FA1199"></a>-->
 
 The following changes in TVSDK support ad deletion and replacement.
 

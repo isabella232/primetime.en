@@ -13,7 +13,7 @@ snippet: y
 
 The TimeRangeCollection utility class abstracts the notion of an ordered collection of TimeRange specifications and provides services to translate itself into a Metadata instance.
 
-<a id="section_D87AA7BC628D458DAB12D5247AD34B41"></a>
+<!--<a id="section_D87AA7BC628D458DAB12D5247AD34B41"></a>-->
 
 ```java
 public final class TimeRangeCollection {

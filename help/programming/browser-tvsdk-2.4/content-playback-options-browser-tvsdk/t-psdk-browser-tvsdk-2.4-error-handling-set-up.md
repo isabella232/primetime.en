@@ -30,7 +30,7 @@ You can set up one place in your application to perform error handling in respon
     * Reset the MediaPlayer object by using the `MediaPlayer.reset` method. 
     * Load a new media resource by using the `MediaPlayer.replaceCurrentResource` method.
 
-<a id="example_342CA5A8CD7C45BD88233C5BDBB17220"></a>
+<!--<a id="example_342CA5A8CD7C45BD88233C5BDBB17220"></a>-->
 
 For example: 
 

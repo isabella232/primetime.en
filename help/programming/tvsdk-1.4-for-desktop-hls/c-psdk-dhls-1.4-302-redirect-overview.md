@@ -30,7 +30,7 @@ If you enable this feature, it works correctly only if *all* of the following co
 
 Use the `useRedirectedUrl` property to turn 302 redirect on (true) or off (false).
 
-<a id="example_B886777252B745AAB48B1FCC42C97A25"></a>
+<!--<a id="example_B886777252B745AAB48B1FCC42C97A25"></a>-->
 
 For example: 
 

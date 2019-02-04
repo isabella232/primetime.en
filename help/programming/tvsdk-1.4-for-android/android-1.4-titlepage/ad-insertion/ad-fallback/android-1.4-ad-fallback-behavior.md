@@ -13,7 +13,7 @@ snippet: y
 
 When Primetime ad decisioning encounters a VAST ad (creative) that is empty or that has a media type that is invalid for HLS, it evaluates the fallback ads to determine what to return.
 
-<a id="section_9F60AF00CE9645848EAAF8C06A9E426B"></a>
+<!--<a id="section_9F60AF00CE9645848EAAF8C06A9E426B"></a>-->
 
 In TVSDK, the only valid media type is `application/x-mpegURL` (M3U8).
 

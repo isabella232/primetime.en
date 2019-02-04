@@ -9,7 +9,7 @@ snippet: y
 
 # BEES Error codes{#bees-error-codes}
 
-<a id="section_81946679E1114DBA9FE173D0AA9E2F09"></a>
+<!--<a id="section_81946679E1114DBA9FE173D0AA9E2F09"></a>-->
 
 If there is an error during a BEES check, a `DRMErrorEvent` will be returned to the client. You can parse this event's properties to find details on the nature of the failure. A subset of possible error codes are listed below. 
 

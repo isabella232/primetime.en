@@ -13,7 +13,7 @@ snippet: y
 
 There are some limitations and some issues in the way trick play mode behaves.
 
-<a id="section_8B88E281A0FA4661B4C2C70A0ABED57C"></a>
+<!--<a id="section_8B88E281A0FA4661B4C2C70A0ABED57C"></a>-->
 
 Here are the limitations for trick play mode:
 

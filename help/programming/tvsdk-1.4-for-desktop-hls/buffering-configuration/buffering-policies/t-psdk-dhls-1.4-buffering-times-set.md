@@ -51,7 +51,7 @@ The MediaPlayer provides methods to set and get the initial buffering time and p
    public function get bufferControlParameters():BufferControlParameters
    ```
 
-<a id="example_B5C5004188574D8D8AB8525742767280"></a>
+<!--<a id="example_B5C5004188574D8D8AB8525742767280"></a>-->
 
 For example, to set the initial buffer to 2 seconds and the playback buffer time to 30 seconds:
 

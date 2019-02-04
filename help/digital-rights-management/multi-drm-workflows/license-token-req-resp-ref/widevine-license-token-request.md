@@ -13,7 +13,7 @@ snippet: y
 
 The Widevine license token interface provides production and test services.
 
-<a id="section_8BFECB6984F74B80B6FC5B4B7459D8B5"></a>
+<!--<a id="section_8BFECB6984F74B80B6FC5B4B7459D8B5"></a>-->
 
 This HTTP request returns a token that can be redeemed for a Widevine license.
 
@@ -38,7 +38,7 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
   https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
   ```
 
-<a id="section_1E22012EE4B94BB2974D3B16DE8812D9"></a>
+<!--<a id="section_1E22012EE4B94BB2974D3B16DE8812D9"></a>-->
 
 ## Token Query Parameters
 
@@ -177,7 +177,7 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 |---|---|---|
 |  `cookie`  | Arbitrary string up to 32 characters long carried in the token and logged by the token redemption server. Can be used to correlate log entries at the redemption server and those at the service provider’s servers.  | No  |
 
-<a id="section_6BFBD314C77C40C4B172ABBDD2D8D80E"></a>
+<!--<a id="section_6BFBD314C77C40C4B172ABBDD2D8D80E"></a>-->
 
 #### HTTP Response
 

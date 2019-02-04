@@ -13,7 +13,7 @@ snippet: y
 
 Video Player Ad-Serving Interface Definition (VPAID) provides a common interface to play video ads. VPAID provides a rich media experience for users and allows publishers to better target ads, track ad impressions, and monetize video content.
 
-<a id="section_9A358902CBC24999BA34206EE2029616"></a>
+<!--<a id="section_9A358902CBC24999BA34206EE2029616"></a>-->
 
 The TVSDK supports the following features:
 

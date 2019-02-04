@@ -62,7 +62,7 @@ The `MediaPlayer` provides methods to set and get the initial buffering time and
 
    If the AVE cannot set the specified values, the media player enters the `ERROR` state with the error code `SET_BUFFER_PARAMETERS_ERROR`.
 
-<a id="example_B5C5004188574D8D8AB8525742767280"></a>
+<!--<a id="example_B5C5004188574D8D8AB8525742767280"></a>-->
 
 For example, to set the initial buffer to 2 seconds and the playback buffer time to 30 seconds:
 

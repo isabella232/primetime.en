@@ -36,7 +36,7 @@ When a user clicks on an ad or a related button, your application must respond. 
 
 1. Close the browser window in which the click-through information is displayed and resume playing the video.
 
-<a id="example_2D93228E510D438C8AB5559897817A47"></a>
+<!--<a id="example_2D93228E510D438C8AB5559897817A47"></a>-->
 
 For example: 
 

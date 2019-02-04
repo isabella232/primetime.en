@@ -36,7 +36,7 @@ When a consumer acquires a protected content file from a website or CDN, the con
 
 1. Once the Flash Player or Adobe AIR runtime client has a license, the client extracts the CEK from the license, and the consumer can view the content they are authorized to access.
 
-   <a id="fig_s43_gc2_44"></a>
+   <!--<a id="fig_s43_gc2_44"></a>-->
 
    ![](assets/FMRMS_fig01_web.png)
 

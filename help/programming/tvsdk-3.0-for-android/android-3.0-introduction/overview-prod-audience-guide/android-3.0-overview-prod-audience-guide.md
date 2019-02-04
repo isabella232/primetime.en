@@ -13,7 +13,7 @@ snippet: y
 
 This guide provides information about how to develop video player applications by using TVSDK for Android, which is implemented in Java.
 
-<a id="section_FC24E86A2E6442B8A3769160769BBDFA"></a>
+<!--<a id="section_FC24E86A2E6442B8A3769160769BBDFA"></a>-->
 
 * For a list of the features that are supported by TVSDK, see [Primetime TVSDK features](../../../tvsdk-3.0-for-android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-overview-of-the-player.md). 
 * For specific hardware and software requirements for using TVSDK, see [Requirements](../../../tvsdk-3.0-for-android/android-3.0-introduction/android-3.0-requirements.md). 

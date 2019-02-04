@@ -13,7 +13,7 @@ snippet: y
 
 TVSDK dispatches events/notifications in generally expected sequences. Your player can implement actions based on events in the expected sequence.
 
-<a id="section_6E34A6C7936245D88DEB3315DA64598B"></a>
+<!--<a id="section_6E34A6C7936245D88DEB3315DA64598B"></a>-->
 
 The following examples show the order of some events that include playback events.
 
@@ -36,7 +36,7 @@ The following examples show the order of some events that include playback event
     * `MediaPlayerItemEvent.ITEM_UPDATED` 
     * `TimelineEvent.TIMELINE_UPDATED` if ads were inserted
 
-<a id="section_76C13548AF934868B70757CA5489E516"></a>
+<!--<a id="section_76C13548AF934868B70757CA5489E516"></a>-->
 
 The following example shows a typical progression of events:
 

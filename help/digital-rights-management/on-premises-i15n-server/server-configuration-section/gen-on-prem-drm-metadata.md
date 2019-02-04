@@ -19,7 +19,7 @@ A [!DNL CreateMetadata.jar] utility is included in the [!DNL create_metadata] fo
 
        The two JAR files can reside in the [!DNL Command Line Tools/libs] folder. The [!DNL createMetadata.properties] file can reside next to the [!DNL flashaccesstools.properties] file.
 
-<a id="example_2116349CA33642CD9293EAD94A532ED8"></a>
+<!--<a id="example_2116349CA33642CD9293EAD94A532ED8"></a>-->
 
 Included is an [!DNL examplecreate.sh] script that demonstrates a sample creation of metadata. Be sure to configure the License Server URL and Individualization Server URL in both the script and properties files before attempting to generate metadata.
 

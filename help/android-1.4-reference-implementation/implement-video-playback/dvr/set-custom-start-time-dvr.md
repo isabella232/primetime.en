@@ -14,7 +14,7 @@ You can use the DVR controls panel in the Settings interface to enable and edit 
 1. Open the Primetime Settings dialog.
 1. Select **[!UICONTROL DVR controls]**.
 
-   <a id="fig_5C7A4E8F0390404F97E667364DB8B0A6"></a>
+   <!--<a id="fig_5C7A4E8F0390404F97E667364DB8B0A6"></a>-->
 
    ![](assets/dvr-configuration.jpg)
 

@@ -70,7 +70,7 @@ You can override the default aspect ratio behavior by specifying a different *sc
    mediaPlayer.view = view;
    ```
 
-<a id="example_7B08ECCDA17B4DD191FC672BD1F4C850"></a>
+<!--<a id="example_7B08ECCDA17B4DD191FC672BD1F4C850"></a>-->
 
 **For example: Scale the video to fill the entire video view, without maintaining aspect ratio:** 
 

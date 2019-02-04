@@ -21,7 +21,7 @@ new MediaResource(url, type, metadata, forceFlash)
 
 If supported, you can use the `forceFlash` parameter to override the playback technology determination sequence and force the implementation to use the Flash Player.
 
-<a id="section_FEE3205B532446498771F7DD55B5E79F"></a>
+<!--<a id="section_FEE3205B532446498771F7DD55B5E79F"></a>-->
 
 ```js
 AdobePSDK.PlayerTechnology = { 

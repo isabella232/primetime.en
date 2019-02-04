@@ -13,7 +13,7 @@ snippet: y
 
 To use TVSDK, ensure that your hardware, operating system, and application versions all meet the minimum requirements listed below.
 
-<a id="section_FD9C110E85BB483B869FBB94E5662710"></a>
+<!--<a id="section_FD9C110E85BB483B869FBB94E5662710"></a>-->
 
 * For Mac OS: 
 

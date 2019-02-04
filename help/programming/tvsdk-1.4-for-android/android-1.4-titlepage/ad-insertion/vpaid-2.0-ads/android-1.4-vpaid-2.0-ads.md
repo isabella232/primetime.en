@@ -48,7 +48,7 @@ The following changes were made to the API:
 
   The default timeout value is 10 seconds.
 
-<a id="section_495700E1C5404A7B85307A4137C740C5"></a>
+<!--<a id="section_495700E1C5404A7B85307A4137C740C5"></a>-->
 
 While the VPAID ad is playing:
 

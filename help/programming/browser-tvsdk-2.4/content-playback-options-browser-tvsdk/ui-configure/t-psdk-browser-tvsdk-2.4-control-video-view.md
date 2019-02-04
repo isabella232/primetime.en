@@ -76,7 +76,7 @@ In non-Flash fallback scenarios, for scale policy to work correctly, the video d
    mediaplayer.view = view;
    ```
 
-<a id="example_ABCD79AE29DB4A668F9A8B729FE44AF9"></a>
+<!--<a id="example_ABCD79AE29DB4A668F9A8B729FE44AF9"></a>-->
 
 **For example: Scale the video to fill the entire video view, without maintaining aspect ratio:** 
 

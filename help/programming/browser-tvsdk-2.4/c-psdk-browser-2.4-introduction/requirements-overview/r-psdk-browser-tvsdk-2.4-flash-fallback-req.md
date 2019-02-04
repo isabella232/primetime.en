@@ -13,7 +13,7 @@ snippet: y
 
 To use Flash Player, ensure that your environment meets the necessary requirements.
 
-<a id="section_FEE654D506EC4D85AE77302AD2A27777"></a>
+<!--<a id="section_FEE654D506EC4D85AE77302AD2A27777"></a>-->
 
 Here are the requirements for the Flash Player:
 

@@ -15,7 +15,7 @@ You can set up buttons that call TVSDK methods to pause and play the media.
 
 1. Use the following sample code to implement a play or pause button:
 
-<a id="example_BC2632D673FE451190A30A23145090D0"></a>
+<!--<a id="example_BC2632D673FE451190A30A23145090D0"></a>-->
 
 ```
 _playPauseButton =  

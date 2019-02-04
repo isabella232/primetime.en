@@ -13,7 +13,7 @@ snippet: y
 
 You can implement your resolvers based on the default resolvers.
 
-<a id="fig_CC41E2A66BDB4115821F33737B46A09B"></a>
+<!--<a id="fig_CC41E2A66BDB4115821F33737B46A09B"></a>-->
 
 ![](assets/ios_psdk_content_resolver.png)
 

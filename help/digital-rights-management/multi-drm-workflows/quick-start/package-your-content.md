@@ -18,7 +18,7 @@ To prepare your content, you can use either Adobe Offline Packager or other tool
 * [Adobe Offline Packager](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Primetime_Offline_Packager_Getting_Started) 
 * [ExpressPlay Packagers](https://www.expressplay.com/developer/packaging-tools/)
 
-<a id="fig_jbn_fw5_xw"></a>
+<!--<a id="fig_jbn_fw5_xw"></a>-->
 
 ![](assets/pkg_lic_play_web.png)
 
@@ -30,7 +30,7 @@ To prepare your content, you can use either Adobe Offline Packager or other tool
    >
    >For those familiar with Adobe Access, this is an important difference in how the different solutions work. In Access, the License key is embedded in the DRM Metadata and passed back and forth with the protected content. In the Multi-DRM systems described here, the actual License is not passed, but stored securely and obtained via the Key ID.
 
-<a id="example_52AF76B730174B79B6088280FCDF126D"></a>
+<!--<a id="example_52AF76B730174B79B6088280FCDF126D"></a>-->
 
 Here is a packaging example using Adobe Offline Packager for Widevine. The Packager uses a configuration file (e.g., [!DNL widevine.xml]), which looks something like this: 
 

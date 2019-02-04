@@ -13,7 +13,7 @@ snippet: y
 
 Custom ad markers allow you to pass a set of TimeRange specifications that represent timeline segments to TVSDK.
 
-<a id="section_42EB6D62627A424ABA250E3246EFEFC3"></a>
+<!--<a id="section_42EB6D62627A424ABA250E3246EFEFC3"></a>-->
 
 Each TimeRange specification in the set represents a segment on the playback timeline that is maintained internally by TVSDK and that must be appropriately marked as an ad-related period.
 

@@ -86,5 +86,5 @@ Follow these steps to enable ExpressPlay service for FairPlay content protection
        1. Click the Upload button.
 
 >Now you can create iOS applications or HTML5 pages with FairPlay content protection along with your [!DNL fairplay.cer] certificate using the ExpressPlay service for FairPlay. >
-><a id="fig_sjr_2pn_sv"></a>
+><!--<a id="fig_sjr_2pn_sv"></a>-->
 >![](assets/multi_drm_expressplay_drm_services_web.png)>

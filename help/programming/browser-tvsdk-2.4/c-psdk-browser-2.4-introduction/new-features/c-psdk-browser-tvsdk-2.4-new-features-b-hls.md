@@ -29,7 +29,7 @@ Browser TVSDK supports a number of HLS features that you can implement to add fu
 >
 >In the Safari column "Platform Limitation" means that the use case is not supported because that platform does not allow implementation of support for it. In the case of a insertion, use SSAI. If there are playback limitations important to you, force fallback to Flash on Safari until the platform supports the ad insertion use case.
 
-<a id="section_9FB9193D5763448CB228B96164661738"></a>
+<!--<a id="section_9FB9193D5763448CB228B96164661738"></a>-->
 
 The following features are supported: 
 

@@ -11,7 +11,7 @@ snippet: y
 
 # Limitations and behavior for trick play{#limitations-and-behavior-for-trick-play}
 
-<a id="section_2BC43539C5C142E085D06A7E35C76726"></a>
+<!--<a id="section_2BC43539C5C142E085D06A7E35C76726"></a>-->
 
 Limitations for trick play mode:
 

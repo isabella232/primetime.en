@@ -22,7 +22,7 @@ You can display the duration of the currently active content.
 
        For more information about the API, see [TVSDK 3.0 for iOS API Reference](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/index.html)
 
-<a id="example_A153BE3AC03F43C6BF3A156316A08CD3"></a>
+<!--<a id="example_A153BE3AC03F43C6BF3A156316A08CD3"></a>-->
 
 ```
 CMTimeRange seekableRange = self.player.seekableRange;  

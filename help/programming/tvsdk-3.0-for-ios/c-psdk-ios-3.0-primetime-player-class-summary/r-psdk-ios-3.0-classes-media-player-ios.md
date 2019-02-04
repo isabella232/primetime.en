@@ -13,7 +13,7 @@ snippet: y
 
 You can use the Primetime Player Objective-C API to customize the behavior of the player.
 
-<a id="section_A5E0447020F844C3BE1630EE6F681496"></a>
+<!--<a id="section_A5E0447020F844C3BE1630EE6F681496"></a>-->
 
 These classes describe your media player and its resources. 
 

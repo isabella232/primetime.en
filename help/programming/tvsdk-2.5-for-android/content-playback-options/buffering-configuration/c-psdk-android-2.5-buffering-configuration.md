@@ -75,7 +75,7 @@ The `MediaPlayer` provides methods to set and get the initial buffering time and
    
    ```
 
-<a id="example_DE0580B3AD404635825D3301C1F096B6"></a>
+<!--<a id="example_DE0580B3AD404635825D3301C1F096B6"></a>-->
 
 For example, to set the initial buffer to 5 seconds and the playback buffer time to 30 seconds:
 

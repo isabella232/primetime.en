@@ -89,7 +89,7 @@ You can implement your own opportunity generators by implementing the Opportunit
 
    1. For each opportunity created, call `resolve` on the `OpportunityGeneratorClient:getClient().resolve(opportunity);`.
 
-<a id="example_7A46377EBE79458E87423EB95D0568D4"></a>
+<!--<a id="example_7A46377EBE79458E87423EB95D0568D4"></a>-->
 
 This is a sample custom placement opportunity detector:
 

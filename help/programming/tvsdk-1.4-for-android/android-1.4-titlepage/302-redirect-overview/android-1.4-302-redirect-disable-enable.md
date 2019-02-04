@@ -13,7 +13,7 @@ snippet: y
 
 302 redirect optimization minimizes the number of 302 redirect responses, which allows your application to load balance more effectively.
 
-<a id="example_B886777252B745AAB48B1FCC42C97A25"></a>
+<!--<a id="example_B886777252B745AAB48B1FCC42C97A25"></a>-->
 
 If a main manifest request is redirected, and 302 optimization is enabled in your player, subsequent requests made for assets from that manifest will use the final domain location, which avoids additional 302 responses.
 

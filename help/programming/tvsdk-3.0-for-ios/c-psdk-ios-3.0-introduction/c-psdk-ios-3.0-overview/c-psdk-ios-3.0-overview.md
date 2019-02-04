@@ -16,7 +16,7 @@ The Adobe Primetime Software Development Kit (TVSDK) is a toolkit that allows yo
 * For a list of the features that are supported by TVSDK, see  overview-of-the-player . 
 * For specific hardware and software requirements for using TVSDK, see  requirements .
 
-<a id="section_C1244804FC864A0D9D0BB20431D2DEBE"></a>
+<!--<a id="section_C1244804FC864A0D9D0BB20431D2DEBE"></a>-->
 
 This guide provides information about how to develop video player applications by using TVSDK for iOS, which is implemented in Objective-C.
 

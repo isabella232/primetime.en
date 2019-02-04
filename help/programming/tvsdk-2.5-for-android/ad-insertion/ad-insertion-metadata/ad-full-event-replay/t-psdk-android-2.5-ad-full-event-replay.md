@@ -35,7 +35,7 @@ For a FER stream, the Adobe Primetime ad decisioning server should not provide t
 
 1. Continue to playback.
 
-<a id="example_6DECA71C3C3B4551805C09A80686552F"></a>
+<!--<a id="example_6DECA71C3C3B4551805C09A80686552F"></a>-->
 
 ```java
 MediaPlayer mediaPlayer =  

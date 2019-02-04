@@ -52,7 +52,7 @@ TVSDK supports seeking to a specific position (time) where the stream is a slidi
 
 1. Use the position information when displaying a seek scrub bar.
 
-<a id="example_EEB73818260C43C8B5AE12BA68548AB7"></a>
+<!--<a id="example_EEB73818260C43C8B5AE12BA68548AB7"></a>-->
 
 **Seeking Example**
 

@@ -24,7 +24,7 @@ You can implement a control bar with DVR support for VOD and live streaming. DVR
     * The default value is 10000 ms. 
     * The control bar for live playback supports DVR by first positioning the thumb at the client live point when starting playback and by displaying a region that marks the area where seek is not allowed.
 
-<a id="fig_37A39A28BA714BA5A2C461357ED5BD41"></a>
+<!--<a id="fig_37A39A28BA714BA5A2C461357ED5BD41"></a>-->
 
 ![](assets/dvr-window.PNG){width="684"}
 

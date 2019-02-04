@@ -39,7 +39,7 @@ Load a resource by directly instantiating a MediaResource and loading the video 
 >* A `MediaError` parameter that you can use to get a notification that contains diagnostic information about the error event. 
 >
 
-><a id="example_3774607C6F08473282CF0CB7F3D82373"></a>
+><!--<a id="example_3774607C6F08473282CF0CB7F3D82373"></a>-->
 
 >The following simplified sample code illustrates the process of loading a media resource: 
 >

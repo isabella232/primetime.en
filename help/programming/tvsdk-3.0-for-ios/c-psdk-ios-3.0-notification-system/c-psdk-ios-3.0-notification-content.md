@@ -23,7 +23,7 @@ TVSDK also issues `PTMediaPlayerNewNotificationItemEntryNotification` when it is
 
 You implement event listeners to capture and respond to events. Many events provide `PTNotification` status notifications.
 
-<a id="section_8D751C71BE80402EB7F6152BA220A006"></a>
+<!--<a id="section_8D751C71BE80402EB7F6152BA220A006"></a>-->
 
 `PTNotification` provides information that is related to the player’s status.
 

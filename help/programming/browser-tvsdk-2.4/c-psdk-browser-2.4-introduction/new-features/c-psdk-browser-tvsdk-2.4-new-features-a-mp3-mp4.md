@@ -32,12 +32,12 @@ Browser TVSDK supports a number of MP3 and MP4 features that you can implement t
    <th morerows="1" class="entry"> Category </th> 
    <th morerows="1" class="entry"> Content Type </th> 
    <th morerows="1" class="entry"> Feature </th> 
-   <th morerows="1" align="center" class="entry"> Flash </th> 
-   <th align="center" class="entry" colspan="2"> HTML5 </th> 
+   <th morerows="1" class="entry"> Flash </th> 
+   <th class="entry" colspan="2"> HTML5 </th> 
   </tr> 
   <tr> 
-   <th align="center" class="entry"> FF, IE, Chrome, Android Chrome </th> 
-   <th align="center" class="entry"> Safari, iOS Safari </th> 
+   <th class="entry"> FF, IE, Chrome, Android Chrome </th> 
+   <th class="entry"> Safari, iOS Safari </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -45,9 +45,9 @@ Browser TVSDK supports a number of MP3 and MP4 features that you can implement t
    <td> Playback </td> 
    <td> MP3 VOD </td> 
    <td> General Playback (Play, Pause, Seek) </td> 
-   <td align="center"> Not Supported </td> 
-   <td align="center"><img href="assets/supported15.png" id="image_EED0BEBC0B05412AA376B93C87135098" /> </td> 
-   <td align="center"><img href="assets/supported15.png" id="image_0A4B8BE1152744EFAEA3EF0B1F18F41E" /> </td> 
+   <td> Not Supported </td> 
+   <td><img href="assets/supported15.png" id="image_EED0BEBC0B05412AA376B93C87135098" /> </td> 
+   <td><img href="assets/supported15.png" id="image_0A4B8BE1152744EFAEA3EF0B1F18F41E" /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -62,12 +62,12 @@ Browser TVSDK supports a number of MP3 and MP4 features that you can implement t
    <th morerows="1" class="entry"> Category </th> 
    <th morerows="1" class="entry"> Content Type </th> 
    <th morerows="1" class="entry"> Feature </th> 
-   <th morerows="1" align="center" class="entry"> Flash </th> 
-   <th align="center" class="entry" colspan="2"> HTML5 </th> 
+   <th morerows="1" class="entry"> Flash </th> 
+   <th class="entry" colspan="2"> HTML5 </th> 
   </tr> 
   <tr> 
-   <th align="center" class="entry"> FF, IE, Chrome, Android Chrome </th> 
-   <th align="center" class="entry"> Safari, iOS Safari </th> 
+   <th class="entry"> FF, IE, Chrome, Android Chrome </th> 
+   <th class="entry"> Safari, iOS Safari </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -75,9 +75,9 @@ Browser TVSDK supports a number of MP3 and MP4 features that you can implement t
    <td> Playback </td> 
    <td> MP4 VOD </td> 
    <td> General Playback (Play, Pause, Seek) </td> 
-   <td align="center"> Not Supported </td> 
-   <td align="center"><img href="assets/supported15.png" id="image_6F1026641DE54DB3A735F51903FB069E" /> </td> 
-   <td align="center"><img href="assets/supported15.png" id="image_0388D4B89F384073BA98753F9170462D" /> </td> 
+   <td> Not Supported </td> 
+   <td><img href="assets/supported15.png" id="image_6F1026641DE54DB3A735F51903FB069E" /> </td> 
+   <td><img href="assets/supported15.png" id="image_0388D4B89F384073BA98753F9170462D" /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -90,12 +90,12 @@ Browser TVSDK supports a number of MP3 and MP4 features that you can implement t
    <th morerows="1" class="entry"> Category </th> 
    <th morerows="1" class="entry"> Content Type </th> 
    <th morerows="1" class="entry"> Feature </th> 
-   <th morerows="1" align="center" class="entry"> Flash </th> 
-   <th align="center" class="entry" colspan="2"> HTML5 </th> 
+   <th morerows="1" class="entry"> Flash </th> 
+   <th class="entry" colspan="2"> HTML5 </th> 
   </tr> 
   <tr> 
-   <th align="center" class="entry"> FF, IE, Chrome, Android Chrome </th> 
-   <th align="center" class="entry"> Safari, iOS Safari </th> 
+   <th class="entry"> FF, IE, Chrome, Android Chrome </th> 
+   <th class="entry"> Safari, iOS Safari </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -103,18 +103,17 @@ Browser TVSDK supports a number of MP3 and MP4 features that you can implement t
    <td> Ad Insertion </td> 
    <td> MP4 VOD </td> 
    <td> Pre-roll </td> 
-   <td align="center"> Not Supported </td> 
-   <td align="center"><img href="assets/supported15.png" id="image_826687074C57462187B8C1AED24FA0A8" /> </td> 
-   <td align="center"><img href="assets/supported15.png" id="image_4E22B29C2E5A4B128FE2F1DF605832AA" /> </td> 
+   <td> Not Supported </td> 
+   <td><img href="assets/supported15.png" id="image_826687074C57462187B8C1AED24FA0A8" /> </td> 
+   <td><img href="assets/supported15.png" id="image_4E22B29C2E5A4B128FE2F1DF605832AA" /> </td> 
   </tr> 
   <tr> 
    <td> Ad Insertion </td> 
    <td> MP4 VOD </td> 
    <td> Post-roll </td> 
-   <td align="center"> Not Supported </td> 
-   <td align="center"><img href="assets/supported15.png" id="image_8C889819D67847E0B405E85095B3EDAD" /> </td> 
-   <td align="center"><img href="assets/supported15.png" id="image_D2F2F41678714D2EA76341249D4544CE" /> </td> 
+   <td> Not Supported </td> 
+   <td><img href="assets/supported15.png" id="image_8C889819D67847E0B405E85095B3EDAD" /> </td> 
+   <td><img href="assets/supported15.png" id="image_D2F2F41678714D2EA76341249D4544CE" /> </td> 
   </tr> 
  </tbody> 
 </table>
-

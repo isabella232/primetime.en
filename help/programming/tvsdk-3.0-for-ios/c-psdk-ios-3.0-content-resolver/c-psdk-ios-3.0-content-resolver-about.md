@@ -28,7 +28,7 @@ You can override the default opportunity detectors and content resolvers to cust
 * Create a customized ad provider 
 * Black out content
 
-<a id="section_C2BA8F50230E4010ABFCD5D976BC1217"></a>
+<!--<a id="section_C2BA8F50230E4010ABFCD5D976BC1217"></a>-->
 
 TVSDK provides default opportunity generators and content resolvers that place ads in the timeline, and these generators and resolvers are based on nonstandard tags in the manifest. Your application might need to alter the timeline based on opportunities that are identified in the manifest, such as indicators for a blackout period.
 

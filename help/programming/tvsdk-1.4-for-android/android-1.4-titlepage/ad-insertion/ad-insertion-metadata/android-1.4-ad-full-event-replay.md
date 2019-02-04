@@ -31,5 +31,5 @@ In addition to each request that is associated with a cue point, TVSDK makes an 
 
 1. Continue to playback.
 
-<a id="example_3567B4A0D53E4DA99C10C13244454026"></a>
+<!--<a id="example_3567B4A0D53E4DA99C10C13244454026"></a>-->
 

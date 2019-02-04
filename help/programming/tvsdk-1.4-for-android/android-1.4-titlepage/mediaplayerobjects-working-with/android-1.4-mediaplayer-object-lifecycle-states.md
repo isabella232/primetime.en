@@ -26,7 +26,7 @@ To work with states:
 * The list of states is defined in `MediaPlayer.PlayerState`.
 
 State-transition diagram for the lifecycle of a `MediaPlayer` instance: 
-<a id="fig_1C55DE3F186F4B36AFFDCDE90379534C"></a>
+<!--<a id="fig_1C55DE3F186F4B36AFFDCDE90379534C"></a>-->
 
 ![](assets/player-state-transitions-diagram-android_1.2_web.png)
 

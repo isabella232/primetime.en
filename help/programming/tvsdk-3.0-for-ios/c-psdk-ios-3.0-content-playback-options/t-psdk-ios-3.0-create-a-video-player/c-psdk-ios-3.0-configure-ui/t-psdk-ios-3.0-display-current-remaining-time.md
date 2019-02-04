@@ -105,5 +105,5 @@ You can display the current and remaining time of the content that is being play
       }
       ```
 
-<a id="example_D2FC658F27FC42A0B3E1AEC99B36788B"></a>
+<!--<a id="example_D2FC658F27FC42A0B3E1AEC99B36788B"></a>-->
 

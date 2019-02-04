@@ -18,7 +18,7 @@ Packagers prepare the video for playback (e.g., fragmenting the original file an
 * [Adobe Offline Packager for FairPlay DRM](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-task-Protecting_content_using_FairPlay_DRM) 
 * [ExpressPlay Packagers - Bento4 for HLS](https://www.bento4.com/developers/hls/)
 
-<a id="fig_jbn_fw5_xw"></a>
+<!--<a id="fig_jbn_fw5_xw"></a>-->
 
 ![](assets/pkg_lic_play_hls_web.png)
 

@@ -15,7 +15,7 @@ You can use the features of the Primetime Digital Rights Management (DRM) system
 
 Contact your Adobe representative for the most up-to-date information on the availability of third-party DRM solutions.
 
-<a id="section_1385440013EF4A9AA45B6AC98919E662"></a>
+<!--<a id="section_1385440013EF4A9AA45B6AC98919E662"></a>-->
 
 You can use the Android native Widevine DRM with DASH streams.
 

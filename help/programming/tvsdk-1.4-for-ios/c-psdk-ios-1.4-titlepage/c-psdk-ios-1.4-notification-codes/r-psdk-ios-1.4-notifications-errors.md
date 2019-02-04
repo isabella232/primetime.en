@@ -13,7 +13,7 @@ snippet: y
 
 This table provides detailed information about ERROR type notifications.
 
-<a id="section_D29404228F5E4B818642CBA6A0D39546"></a>
+<!--<a id="section_D29404228F5E4B818642CBA6A0D39546"></a>-->
 
 Most errors contain relevant metadata, for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad. 
 

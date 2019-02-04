@@ -97,7 +97,7 @@ public class NotificationEvent extends Event {
    
    ```
 
-<a id="example_C35262605D394718B40C084B569A5052"></a>
+<!--<a id="example_C35262605D394718B40C084B569A5052"></a>-->
 
 Here is an example of AVE warnings that were tracked using `NotificationEvent`: 
 

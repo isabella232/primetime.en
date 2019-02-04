@@ -13,7 +13,7 @@ snippet: y
 
 The PlayReady license token interface provides production and test services.
 
-<a id="section_068F7F87F37E4B77846CA77CD175797A"></a>
+<!--<a id="section_068F7F87F37E4B77846CA77CD175797A"></a>-->
 
 This HTTP request returns a token that can be redeemed for a PlayReady license.
 

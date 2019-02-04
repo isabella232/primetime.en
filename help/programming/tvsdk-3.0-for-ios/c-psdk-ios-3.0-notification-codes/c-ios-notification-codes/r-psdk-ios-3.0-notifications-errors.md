@@ -13,7 +13,7 @@ snippet: y
 
 The TVSDK notification system produces various error, warning, and informational notices that provide diagnostic metadata.
 
-<a id="section_D29404228F5E4B818642CBA6A0D39546"></a>
+<!--<a id="section_D29404228F5E4B818642CBA6A0D39546"></a>-->
 
 Notification objects provide information related to the player's status. TVSDK provides a chronologically sorted list of notification objects, and each notification contains the following metadata: 
 

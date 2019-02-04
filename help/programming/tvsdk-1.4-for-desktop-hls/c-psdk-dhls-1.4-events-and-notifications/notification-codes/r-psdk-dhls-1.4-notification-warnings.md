@@ -13,7 +13,7 @@ snippet: y
 
 This table proves detailed information about WARN. type notifications.
 
-<a id="section_F25366B6703040E3ADA993C113618F01"></a>
+<!--<a id="section_F25366B6703040E3ADA993C113618F01"></a>-->
 
 Most warnings contain relevant metadata, for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad. 
 

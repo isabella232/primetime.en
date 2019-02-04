@@ -13,7 +13,7 @@ snippet: y
 
 This table provides detailed information about INFO. type notifications.
 
-<a id="section_ED4302E363AE48CBA2C3E0B71AE612D8"></a>
+<!--<a id="section_ED4302E363AE48CBA2C3E0B71AE612D8"></a>-->
 
 Most informational notifications contain relevant metadata, for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad. 
 

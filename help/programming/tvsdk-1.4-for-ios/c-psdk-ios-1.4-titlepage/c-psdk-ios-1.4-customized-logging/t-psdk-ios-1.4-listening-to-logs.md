@@ -39,7 +39,7 @@ snippet: y
    
    ```
 
-<a id="example_3738B5A8B4C048D28695E62297CF39E3"></a>
+<!--<a id="example_3738B5A8B4C048D28695E62297CF39E3"></a>-->
 
 Here is an example of filtering logs by using the `PTLogEntry` type: 
 

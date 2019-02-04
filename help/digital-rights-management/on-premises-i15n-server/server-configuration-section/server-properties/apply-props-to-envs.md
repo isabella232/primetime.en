@@ -42,7 +42,7 @@ With this capability, you can use the same WAR file for all server environments.
     * `STAGE` 
     * `PROD`
 
-<a id="example_A7A58E3EE8DA4114B4F7A9EEB69D50CA"></a>
+<!--<a id="example_A7A58E3EE8DA4114B4F7A9EEB69D50CA"></a>-->
 
 For example, to set the log level to `INFO` for your production and staging servers, and to `DEBUG` for your development server: 
 

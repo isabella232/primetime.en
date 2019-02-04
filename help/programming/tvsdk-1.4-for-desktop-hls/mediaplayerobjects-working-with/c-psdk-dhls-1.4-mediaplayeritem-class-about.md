@@ -13,7 +13,7 @@ snippet: y
 
 The MediaPlayer object represents your media player. A MediaPlayerItem represents audio or video on your player.
 
-<a id="section_01BC89E5C5A94D0A95EF9D29FBCE758A"></a>
+<!--<a id="section_01BC89E5C5A94D0A95EF9D29FBCE758A"></a>-->
 
 After a media resource is successfully loaded, TVSDK creates an instance of the `MediaPlayerItem` class to provide access to that resource.
 

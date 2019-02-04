@@ -13,7 +13,7 @@ snippet: y
 
 TVSDK provides tools for creating an advanced video player application (your Primetime player), that you can integrate with other Primetime components. It also provides a number of features designed to maximize the quality of video playback.
 
-<a id="section_1FE83A68DE624F20B52C0959851F5699"></a>
+<!--<a id="section_1FE83A68DE624F20B52C0959851F5699"></a>-->
 
 Instantiate a `MediaPlayer` and place a view of it into a frame layout.
 

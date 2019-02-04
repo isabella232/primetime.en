@@ -21,7 +21,7 @@ You can set up one lace to handle errors.
 
    When the `MediaPlayer` object is in the error status it remains in that status until you reset it using the `MediaPlayer.reset` method.
 
-<a id="example_E74BB605ED08450295B8902F1E4BB8F5"></a>
+<!--<a id="example_E74BB605ED08450295B8902F1E4BB8F5"></a>-->
 
 For example: 
 

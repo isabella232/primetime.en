@@ -13,7 +13,7 @@ snippet: y
 
 TVSDK includes methods, properties, and events to determine valid rates, current rates, whether trick play is supported, and other functionality that are related to fast forward and rewind.
 
-<a id="section_E5D37C71323947E2AED8B866D9835E31"></a>
+<!--<a id="section_E5D37C71323947E2AED8B866D9835E31"></a>-->
 
 Use the following API elements to change play rates:
 

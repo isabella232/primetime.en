@@ -64,5 +64,5 @@ The TVSDK player dispatches events to display custom ad loading status or to ign
  </tbody> 
 </table>
 
-<a id="section_027774C2A47C453BA9DED61C6F8567C3"></a>
+<!--<a id="section_027774C2A47C453BA9DED61C6F8567C3"></a>-->
 

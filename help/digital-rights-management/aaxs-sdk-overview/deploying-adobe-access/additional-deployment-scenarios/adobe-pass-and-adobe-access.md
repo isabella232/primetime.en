@@ -11,7 +11,7 @@ snippet: y
 
 Adobe Pass ( [](https://www.adobe.com/products/adobepass/)) provides user/device authentication and authorization across multiple content providers. The user must have a valid cable TV or satellite TV subscription. 
 
-<a id="fig_cln_bc2_44"></a>
+<!--<a id="fig_cln_bc2_44"></a>-->
 
 ![](assets/AdobePass_web.png)
 

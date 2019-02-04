@@ -13,7 +13,7 @@ snippet: y
 
 You can use the features of the Primetime Digital Rights Management (DRM) system to provide secure access to your video content. Alternatively, you can use third-party DRM solutions as an alternative to Adobe's integrated Primetime DRM solution.
 
-<a id="section_4DD54E085AB345FE9BE00865E56B28DB"></a>
+<!--<a id="section_4DD54E085AB345FE9BE00865E56B28DB"></a>-->
 
 Check with your Adobe representative for the most up-to-date information on the availability of 3rd-party DRM solutions.
 
@@ -88,7 +88,7 @@ These are the most important API elements for working with DRM:
 
 * Events that notify your application about various DRM activities and status.
 
-<a id="section_899BD9061D484E1BBA46E84617C36867"></a>
+<!--<a id="section_899BD9061D484E1BBA46E84617C36867"></a>-->
 
 Additional relevant API elements:
 
@@ -100,6 +100,6 @@ Additional relevant API elements:
 * [com.adobe.ave.drm.DRMOperationErrorCallback](https://help.adobe.com/en_US/primetime/api/drm/com/adobe/ave/drm/DRMOperationErrorCallback.html) 
 * [com.adobe.mediacore.drm.DRMAuthenticateListener](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/drm/DRMAuthenticateListener.html)
 
-<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>
+<!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
 
 For more information about DRM, see the [Adobe Primetime DRM documentation](https://help.adobe.com/en_US/primetime/drm). 

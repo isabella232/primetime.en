@@ -16,7 +16,7 @@ snippet: y
 
    Here is an example of logging using the `PTLogDebug` macro:
 
-<a id="example_F014436E1686468F941F4EBD1A21B18E"></a>
+<!--<a id="example_F014436E1686468F941F4EBD1A21B18E"></a>-->
 
 ```
 // The following line creates an instance of PTLogEntry with type PTLogEntryDebug, 

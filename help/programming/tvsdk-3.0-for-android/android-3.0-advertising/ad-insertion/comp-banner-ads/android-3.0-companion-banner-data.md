@@ -13,7 +13,7 @@ snippet: y
 
 The content of an AdAsset describes a companion banner.
 
-<a id="section_D730B4FD6FD749E9860B6A07FC110552"></a>
+<!--<a id="section_D730B4FD6FD749E9860B6A07FC110552"></a>-->
 
 Each `AdAsset` provides information about displaying the asset. 
 

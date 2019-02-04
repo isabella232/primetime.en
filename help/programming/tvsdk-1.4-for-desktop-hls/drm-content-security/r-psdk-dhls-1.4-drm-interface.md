@@ -13,7 +13,7 @@ snippet: y
 
 The key client-side element of the Primetime digital rights management (DRM) system is the DRM Manager.
 
-<a id="section_4DD54E085AB345FE9BE00865E56B28DB"></a>
+<!--<a id="section_4DD54E085AB345FE9BE00865E56B28DB"></a>-->
 
 Primetime DRM provides a scalable, efficient workflow to implement content protection in TVSDK applications. You protect and manage the rights to your video content by creating a license for each digital media file.
 
@@ -27,7 +27,7 @@ These are the most important API elements for working with DRM:
   public function get drmManager():DRMManager 
   ```
 
-<a id="section_4204CE2731A44F67A3664AEDE8CCCA47"></a>
+<!--<a id="section_4204CE2731A44F67A3664AEDE8CCCA47"></a>-->
 
 Additional relevant API elements:
 
@@ -38,6 +38,6 @@ Additional relevant API elements:
 * [flash.events.DRMStatusEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/DRMStatusEvent.html) 
 * [flash.events.DRMErrorEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/DRMErrorEvent.html)
 
-<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>
+<!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
 
 For more information about DRM, see the Adobe Primetime DRM documentation. 

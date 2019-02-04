@@ -62,7 +62,7 @@ As a media resource is loaded and played, the player transitions in the followin
 
 Here is an illustration of the life cycle of a MediaPlayer instance: 
 
-<a id="fig_DD3DAE7507C549C8A4720A26DFCFFCCB"></a>
+<!--<a id="fig_DD3DAE7507C549C8A4720A26DFCFFCCB"></a>-->
 
 ![](assets/player-state-transitions-diagram-android_1.2_web.png)
 
