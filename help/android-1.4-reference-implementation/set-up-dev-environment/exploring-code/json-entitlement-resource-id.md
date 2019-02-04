@@ -6,7 +6,7 @@ description: The following code block provides an example of a JSON object when 
 seo-description: The following code block provides an example of a JSON object when the entitlement resource ID is a simple text string.
 ---
 
-# JSON object for entitlement resource ID{#json-object-for-entitlement-resource-id}
+# JSON object for entitlement resource ID {#json-object-for-entitlement-resource-id}
 
 The following code block provides an example of a JSON object when the entitlement resource ID is a simple text string. In this case, the resource ID is the string "resource".
 

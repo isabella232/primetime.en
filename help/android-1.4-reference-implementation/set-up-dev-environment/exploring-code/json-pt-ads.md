@@ -6,7 +6,7 @@ description: The code block below defines the details JSON object when the type 
 seo-description: The code block below defines the details JSON object when the type value is Primetime ads.
 ---
 
-# JSON object for Primetime ads{#json-object-for-primetime-ads}
+# JSON object for Primetime ads {#json-object-for-primetime-ads}
 
 The code block below defines the details JSON object when the type value is Primetime ads.
 
@@ -37,4 +37,4 @@ The code block below defines the details JSON object when the type value is Prim
 |  zoneid  | The Primetime ads zoneid. See the Primetime ads documentation for more information.  |
 |  targeting  | An array of key/value pairs used for targeting specific ads for the content.  |
 
-See [com.adobe.mediacore.metadata.AuditudeSettings](https://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/metadata/AuditudeSettings.html) for more information on the value of these attributes. 
+See [com.adobe.mediacore.metadata.AuditudeSettings](https://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/metadata/AuditudeSettings.html) for more information on the value of these attributes.

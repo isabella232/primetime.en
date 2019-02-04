@@ -6,7 +6,7 @@ title: DRM content protection
 uuid: 95c446f6-8304-4d70-9bef-7368b9364025
 ---
 
-# DRM content protection{#drm-content-protection}
+# DRM content protection {#drm-content-protection}
 
 The Primetime player supports Primetime DRM integration as custom DRM workflows. This means that your application must implement the DRM authentication workflows before playing the stream.
 
@@ -68,9 +68,13 @@ To create a content protection manager:
   ```java
   drmManager = ManagerFactory.getDrmManager(config, mediaPlayer);
   ```
+<!-- 
+
+Comment Type: draft
 
 ## Related API documentation {#section_FF1AEB53F9A64AF39E3F94A934960CA0}
 
 1. [Class DrmManager](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/DrmManager.html) 
 1. [DrmManagerEventListener](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/DrmManager.DrmManagerEventListener.html)
 
+-->

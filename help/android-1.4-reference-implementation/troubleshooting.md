@@ -18,4 +18,3 @@ snippet: y
      ```    
      android.permission.READ_LOGS
      ```
-

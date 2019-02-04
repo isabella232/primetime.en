@@ -6,7 +6,7 @@ title: Overview
 uuid: defd718d-849b-4e79-8e0f-114c43c5bcf7
 ---
 
-# Overview{#overview}
+# Overview {#overview}
 
 You can use Adobe Primetime authentication to manage user entitlement in your player.
 

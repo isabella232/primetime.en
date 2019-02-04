@@ -6,7 +6,7 @@ title: Configure Video Analytics
 uuid: ce2ebab3-b3c8-472a-9c54-16ddb1c3cc4e
 ---
 
-# Configure Video Analytics{#configure-video-analytics}
+# Configure Video Analytics {#configure-video-analytics}
 
 You can track video usage in the Primetime Android Reference Implementation by configuring it to work with your Adobe Analytics account. The Android Reference Implementation is designed to send video usage and heartbeat data to Adobe Analytics. To enable this feature, you must first contact your Adobe Primetime representative and create an Adobe Analytics account.
 
@@ -14,7 +14,7 @@ There are two places within the Reference Implementation that you must configure
 
 1. Configure load-time options in the `ADBMobileConfig.json` assets file.
 
-   This file is provided by your Adobe representative. It is not included in the Primetime SDK bundle by default. For more information on the settings in this config file, see the Android Programmer's Guide here: [Initialize and configure video analytics](https://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-task-Initialize_and_configure_video_analytics_).
+   This file is provided by your Adobe representative. It is not included in the Primetime SDK bundle by default. For more information on the settings in this config file, see the Android Programmer's Guide here: Initialize and configure video analytics.
 1. Configure run-time options in the Reference Implementation settings menu
 
    ![](assets/img_psdk_ref_impl_va-settings-menu.png) 
@@ -27,4 +27,3 @@ There are two places within the Reference Implementation that you must configure
    |  Publisher | The name of the content publisher |
    |  Debug Logging | Activates extensive logging. Disabled by default, this can impact performance when enabled, so you disable this for a production environment. |
    |  Quiet Mode | When this is enabled, no network calls are made, so this would be useful for local debugging, but must be disabled for a production environment. |
-

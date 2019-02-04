@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Reference implementation structure{#reference-implementation-structure}
+# Reference implementation structure {#reference-implementation-structure}
 
 The feature managers serve as wrappers around the TVSDK library.
 
@@ -32,4 +32,3 @@ The Primetime reference implementation contains the following packages:
 |[`com.adobe.primetime.reference.ui.settings`](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/settings/package-summary.html)|Contains UI code for settings.|
 |[`com.adobe.primetime.reference.utils`](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/package-summary.html)|Contains general utility classes.|
 |[`com.adobe.primetime.reference.utils.http`](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/http/package-summary.html)|Contains `HTTP-specific` utility classes.|
-

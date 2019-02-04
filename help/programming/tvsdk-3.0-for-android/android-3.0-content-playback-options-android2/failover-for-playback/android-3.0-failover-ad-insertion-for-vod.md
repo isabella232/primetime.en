@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Advertising insertion and failover for VOD{#advertising-insertion-and-failover-for-vod}
+# Advertising insertion and failover for VOD {#advertising-insertion-and-failover-for-vod}
 
 The video-on-demand (VOD) ad-insertion process consists of the ad resolving, ad insertion, and ad playback phases. For ad tracking, TVSDK must inform a remote tracking server about the playback progress of each ad. When unexpected situations arise, TVSDK takes appropriate action.
 

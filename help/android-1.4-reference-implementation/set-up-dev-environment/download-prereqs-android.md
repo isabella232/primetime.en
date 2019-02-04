@@ -6,7 +6,7 @@ seo-description: The installation process is straightforward. If you already hav
 uuid: ca29144f-8088-4c8d-93cf-aa59007da034
 ---
 
-# Download and configure prerequisite software{#download-and-configure-prerequisite-software}
+# Download and configure prerequisite software {#download-and-configure-prerequisite-software}
 
 1. Download the JDK from [https://www.oracle.com/technetwork/java/javase/downloads/](https://www.oracle.com/technetwork/java/javase/downloads/).
 

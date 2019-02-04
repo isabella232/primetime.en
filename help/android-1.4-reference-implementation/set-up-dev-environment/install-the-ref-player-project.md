@@ -7,7 +7,7 @@ uuid: ab12660a-1563-49a4-82d9-1ab13f8a92be
 
 ---
 
-# Build the Primetime reference implementation{#build-the-primetime-reference-implementation}
+# Build the Primetime reference implementation {#build-the-primetime-reference-implementation}
 
 The TVSDK Primetime Reference is an Android application built around the TVSDK and AVE frameworks.
 
@@ -38,4 +38,4 @@ To set up and build the Primetime Reference project in Eclipse:
    1. Click **[!UICONTROL OK]** to exit the Properties page.
    1. Select  **[!UICONTROL Project]** > **[!UICONTROL Build Project]** to build the project.
    
-      This step is not necessary if the project is set up to build automatically.   
+      This step is not necessary if the project is set up to build automatically.

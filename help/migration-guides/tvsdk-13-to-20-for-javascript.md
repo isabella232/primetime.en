@@ -13,7 +13,7 @@ internal: n
 snippet: y
 ---
 
-# TVSDK Conversion - 1.3 to 2.0 For JavaScript{#tvsdk-conversion-to-for-javascript}
+# TVSDK Conversion - 1.3 to 2.0 For JavaScript {#tvsdk-conversion-to-for-javascript}
 
 Many method signatures and API element names have changed for 2.0. Review these tables to see all API change details.
 

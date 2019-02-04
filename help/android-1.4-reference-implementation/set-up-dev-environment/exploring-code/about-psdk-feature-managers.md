@@ -37,4 +37,3 @@ The reference implementation contains basic default classes, listed above, and c
 
 * For optional features, the default code operates as if the feature is turned off. 
 * Classes with the On suffix operate as if the feature is turned on.
-

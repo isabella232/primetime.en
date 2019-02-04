@@ -4,7 +4,7 @@ title: How to use feature managers
 uuid: 29027635-e9ff-48c3-8d89-de1ed9889ec0
 ---
 
-# How to use feature managers{#how-to-use-feature-managers}
+# How to use feature managers {#how-to-use-feature-managers}
 
 There are two ways of using the feature managers to enable, disable, and configure features:
 

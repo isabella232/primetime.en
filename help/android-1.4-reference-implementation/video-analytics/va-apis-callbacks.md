@@ -10,7 +10,15 @@ uuid: 2dbb01c7-f8e0-47c7-baaa-84b8d54c03a6
 
 The Video Analytics Manager exposes these classes to implement video tracking in your player.
 
+* VAManager
+* VAManagerOn
+* IVAConfig
+
+<!-- 
+
+Comment Type: draft
 * [VAManager](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/VAManager.html)
 * [VAManagerOn](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/VAManagerOn.html)
 * [IVAConfig](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IVAConfig.html)
 
+-->

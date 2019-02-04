@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Entitlement Manager Overview{#entitlement-manager-overview}
+# Entitlement Manager Overview {#entitlement-manager-overview}
 
 The Entitlement Manager is the feature manager that supports the Primetime authentication implementation.
 

@@ -6,13 +6,13 @@ title: Multiple bit rates
 uuid: 46eac41e-0b2a-42e3-8a88-54ad9fe34212
 ---
 
-# Multiple bit rates{#multiple-bit-rates}
+# Multiple bit rates {#multiple-bit-rates}
 
 The TVSDK can play videos that have multiple profiles with different bit rates, switching between them to provide more than one quality level based on the available bandwidth.
 
  You can set initial, minimum, and maximum bit rates as well as the adaptive bit-rate (ABR) switch policy for a multiple bit rate (MBR) stream. The TVSDK automatically switches to the bit rate that provides the best playback experience within the specified configuration.
 
-The reference implementation configures the following ABR parameters in [ <!-- APINAME - Required Post Migration Cleanup -->`IPlaybackConfig`](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html).  
+The reference implementation configures the following ABR parameters in IPlaybackConfig.  
 
 |Parameter|Description|
 |--- |--- |
@@ -41,14 +41,19 @@ To enable custom ABR through the Settings user interface:
 
 >[!NOTE]
 >
->The `PlaybackManager` only sets the ABR parameters if [isABRControlEnabled](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html) returns true (ON). If it returns false (OFF), the `PlaybackManager` uses the default ABR control so the initial, minimum, and maximum bit rates will all be 0 and the ABR policy will be `ABR_MODERATE`.
+>The `PlaybackManager` only sets the ABR parameters if isABRControlEnabled returns true (ON). If it returns false (OFF), the `PlaybackManager` uses the default ABR control so the initial, minimum, and maximum bit rates will all be 0 and the ABR policy will be `ABR_MODERATE`.
 
 ## Configure for low bit rates {#section_5451691CBBD24542AD54A474D222CD39}
 
 For some low bit-rate playback rates, the TVSDK, by default, switches to the audio-only stream and the playback appears frozen. You can configure the player so that it never encounters a situation where it switches to audio-only.
+
+<!-- 
+
+Comment Type: draft
 
 * Implement the [IPlaybackConfig](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html) interface:
 
 * Ensure that [getABRMinBitRate](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html#getABRMinBitRate()) is higher than the audio-only bit rate (higher than 64000). 
 * Ensure that [isABRControlEnabled](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html#isABRControlEnabled()) is on.
 
+-->

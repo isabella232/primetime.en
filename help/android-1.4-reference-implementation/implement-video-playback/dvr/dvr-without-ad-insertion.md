@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# DVR without ad insertion{#dvr-without-ad-insertion}
+# DVR without ad insertion {#dvr-without-ad-insertion}
 
 By default, a live stream with DVR support exposes a seekable range in which the viewer can pause and seek.
 
@@ -21,4 +21,3 @@ You can enhance the player control bar for DVR with the following additional fea
 
   The seekable range is a subset of the playable range in which ads can be inserted safely. 
 * Choose a custom starting point for when to enter a stream.
-
