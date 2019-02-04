@@ -52,7 +52,7 @@ The MediaResource class represents the content to be loaded by the MediaPlayer i
    >For MP4 video-on-demand (VOD) content, TVSDK does not support trick play, adaptive bit rate (ABR) streaming, ad insertion, closed captions, or DRM. 
 
    The following code creates a `MediaResource` instance:        >
-   
+
    ```java
    // To do: Create metadata here 
    MediaResource res = new MediaResource( 
