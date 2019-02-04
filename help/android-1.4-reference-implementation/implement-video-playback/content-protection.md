@@ -68,6 +68,7 @@ To create a content protection manager:
   ```java
   drmManager = ManagerFactory.getDrmManager(config, mediaPlayer);
   ```
+  
 <!-- 
 
 Comment Type: draft

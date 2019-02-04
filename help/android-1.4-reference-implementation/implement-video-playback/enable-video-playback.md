@@ -52,6 +52,7 @@ Create a PlaybackManager that handles the HLS stream setup and playback operatio
        playbackManager.play();  
    }
    ```
+   
 <!-- 
 
 Comment Type: draft
