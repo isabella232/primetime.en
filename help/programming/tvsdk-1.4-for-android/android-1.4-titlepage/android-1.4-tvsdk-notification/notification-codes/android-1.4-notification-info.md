@@ -116,8 +116,7 @@ Most informational notifications contain relevant metadata, for example, the URL
    <td colname="2"><span class="codeph"> AD_BREAK_ PLACEMENT_COMPLETE </span> </td> 
    <td colname="3"> <p>None </p> </td> 
    <td colname="4"> <span class="codeph"> PROPOSED_AD_BREAK</span> <span class="codeph"> ACCEPTED_AD_BREAK</span> </td> 
-   <td colname="5"> A proposed ad break was accepted by 
-    <ph conkeyref="phrases/primetime-sdk-name" /> and placed (in its entirety or just partially) on the playback timeline. </td> 
+   <td colname="5"> A proposed ad break was accepted by <code>primetime-sdk-name</code> and placed (in its entirety or just partially) on the playback timeline. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 303002 </span> </td> 

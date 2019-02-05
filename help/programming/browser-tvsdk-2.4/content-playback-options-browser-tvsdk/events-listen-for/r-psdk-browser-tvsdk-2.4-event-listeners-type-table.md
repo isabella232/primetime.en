@@ -14,8 +14,7 @@ When you register event listeners with Browser TVSDK, you specify an event type 
  <thead> 
   <tr rowsep="1"> 
    <th colname="2" class="entry"> When you listen for this event name (AdobePSDK.EventType) </th> 
-   <th class="entry"> 
-    <ph conkeyref="phrases/browser-tvsdk-name" /> passes an event to your callback of this object type (<span class="codeph"> AdobePSDK.Event</span>) </th> 
+   <th class="entry">phrases/browser-tvsdk-name passes an event to your callback of this object type (<span class="codeph"> AdobePSDK.Event</span>) </th> 
   </tr> 
  </thead>
  <tbody> 

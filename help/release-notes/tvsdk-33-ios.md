@@ -786,7 +786,7 @@ This issue was resolved by providing a timeout event (requestTimeout) to the app
 This issue was resolved by allowing the application subscribe to the EXT-X-PROGRAM-DATE-TIME on live streams.
 
 * (ZD #19459) - Crash when preparing alternate audio with PTMediaPlayerItem prepareAudioOptionsWithAVMediaSelectionOptions
-* (ZD #19460) - Crash - [PTMediaPlayerItem prepareSubtitlesOptionsWithAVMediaSelectionOptions:nonForcedOptions:]
+* (ZD #19460) - Crash - `[PTMediaPlayerItem prepareSubtitlesOptionsWithAVMediaSelectionOptions:nonForcedOptions:]`
 
 This issue is the same as Zendesk #19459.
 
@@ -918,10 +918,10 @@ Fixed an intermittent crash due to concurrency issues.
 
 **Version 1.4.13** (iOS 6.0+)
 
-* (ZD #3304) - VAST 3.0 [ERRORCODE] macro not being populated
+* (ZD #3304) - VAST 3.0 `[ERRORCODE]` macro not being populated
 
   * Error code 400 will be exposed if  inline   ad  has bad creative.
-  * [ERRORCODE] macro will be URL encoded.
+  * `[ERRORCODE]` macro will be URL encoded.
 
 * (ZD #3865) Heartbeat integration with IMA ads
 

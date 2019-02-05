@@ -10,7 +10,7 @@ uuid: c1f0218d-4a79-4141-9a74-e70ac4f70aa5
 
 These classes provide information that help you to determine how well the player is performing.
 
- Package: [com.adobe.mediacore.qos](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/qos/package-summary.html)  Package: [com.adobe.mediacore.qos.metrics](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/qos/metrics/package-summary.html) 
+Package: [com.adobe.mediacore.qos](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/qos/package-summary.html)  Package: [com.adobe.mediacore.qos.metrics](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/qos/metrics/package-summary.html) 
 
 <table frame="all" colsep="1" rowsep="1" id="table_2893EFF9755149159A4F94E781C76B6E"> 
  <thead> 
@@ -26,16 +26,11 @@ These classes provide information that help you to determine how well the player
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/qos/DeviceInformation.html" format="html" scope="external"> DeviceInformation</a> </span></td> 
-   <td colname="2">Provides information about the platform and operating system on which the 
-    <ph conkeyref="phrases/primetime-sdk-name">
-      Phrase
-    </ph> runs: 
+   <td colname="2">Provides information about the platform and operating system on which the Phrase
+    runs: 
     <ul id="ul_0DE69F3B38E84964AB98DCCD11E5E123"> 
      <li id="li_19B2D1889FCA4B0F8FCB0EE8F87353B2">Version of the platform OS </li> 
-     <li id="li_CA35F4A48FD34555AC7D7832D5997AD4">Version number of the 
-      <ph conkeyref="phrases/primetime-sdk-name">
-        Phrase
-      </ph> library </li> 
+     <li id="li_CA35F4A48FD34555AC7D7832D5997AD4">Version number of the Phrase library </li> 
      <li id="li_30D38320C2A3440E92C0A477FFFBF9A0">Device's model name </li> 
      <li id="li_2D15164B987E405685B96A900EBF041D">Device manufacturer’s name </li> 
      <li id="li_B78485CB9580444DB9694404706BA191">Dehvice UUID </li> 
@@ -64,14 +59,7 @@ These classes provide information that help you to determine how well the player
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/qos/QOSProvider.html" format="html" scope="external"> QOSProvider</a></span></td> 
-   <td colname="2">
-    <ph>
-      Provides essential QoS metrics for both playback and the device.
-    </ph>
-    <ph>
-      QOS information provider class.
-    </ph> </td> 
+   <td colname="2">Provides essential QoS metrics for both playback and the device. QOS information provider class.</td> 
   </tr> 
  </tbody> 
 </table>
-

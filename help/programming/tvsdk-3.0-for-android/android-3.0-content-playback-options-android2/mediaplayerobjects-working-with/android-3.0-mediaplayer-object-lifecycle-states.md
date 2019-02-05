@@ -16,7 +16,8 @@ For working with media player statuses:
 
 * The list of statuses is defined in the [MediaPlayerStatus](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/com/adobe/mediacore/MediaPlayerStatus.html) enum.
 
-Status-transition diagram for the lifecycle of a `MediaPlayer` instance: 
+Status-transition diagram for the lifecycle of a `MediaPlayer` instance:
+
 <!--<a id="fig_A6425F24C7734DC681D992859D2A6743"></a>-->
 
 ![](assets/media_player_statuses.png)
@@ -73,7 +74,7 @@ The following table provides details about the lifecycle and statuses of the med
   </tr> 
   <tr> 
    <td colname="col1"> ERROR </td> 
-   <td colname="col2"> <p>An error occurred during the process. An error also might affect what the application can do next. For more information, see <a href="../../../tvsdk-3.0-for-android\android-3.0-content-playback-options-android2\android-3.0-error-handling-set-up.md" format="dita" scope="local"> Set up error handling </a>. </p> </td> 
+   <td colname="col2"> <p>An error occurred during the process. An error also might affect what the application can do next. For more information, see <a href="../../../tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/android-3.0-error-handling-set-up.md" format="dita" scope="local"> Set up error handling </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -106,4 +107,3 @@ mediaPlayer.addEventListener(MediaPlayerEvent STATUS_CHANGED, new StatusChangeEv
 }); 
 
 ```
-

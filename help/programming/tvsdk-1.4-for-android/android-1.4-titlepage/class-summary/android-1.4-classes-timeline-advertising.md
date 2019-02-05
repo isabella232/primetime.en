@@ -10,7 +10,7 @@ uuid: 4e6ca9fb-9e68-4625-a24b-386a50333862
 
 These classes provide information about ads that occur within a timeline.
 
- Package: [com.adobe.mediacore.timeline.advertising](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/package-summary.html) Package: [com.adobe.mediacore.timeline.advertising.auditude](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/auditude/package-summary.html) 
+Package: [com.adobe.mediacore.timeline.advertising](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/package-summary.html) Package: [com.adobe.mediacore.timeline.advertising.auditude](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/auditude/package-summary.html) 
 
 <table frame="all" colsep="1" rowsep="1" id="table_1A59E777BA99466793D586286F19E933"> 
  <thead> 
@@ -58,32 +58,22 @@ These classes provide information about ads that occur within a timeline.
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph">
-     <ph>
+     <p>
        auditude.
-     </ph><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/auditude/AuditudeResolver.html" format="html" scope="external"> AuditudeResolver</a> </span></td> 
-   <td colname="2"> Class that handles primetime ad resolving in the 
-    <ph conref="phrase_library_android_1.4.xml#c_psdk_phrase-library/auditude-name-long">
-      Phrase
-    </ph> process. </td> 
+     </p><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/auditude/AuditudeResolver.html" format="html" scope="external"> AuditudeResolver</a> </span></td> 
+   <td colname="2"> Class that handles primetime ad resolving in the Phrase process. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1">
-    <ph>
-      auditude.
-    </ph><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/auditude/AuditudeTracker.html" format="html" scope="external"> AuditudeTracker</a> </td> 
+   <td colname="1">auditude.<a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/auditude/AuditudeTracker.html" format="html" scope="external"> AuditudeTracker</a> </td> 
    <td colname="2"> Class that implements the ContentTracker interface and defines Primetime ad-tracking events. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/ContentResolver.html" format="html" scope="external"> ContentResolver</a> </span> </td> 
-   <td colname="2">Class that handles the ad-resolving part in the 
-    <ph conref="phrase_library_android_1.4.xml#c_psdk_phrase-library/auditude-name-long">
-      Phrase
-    </ph> process. </td> 
+   <td colname="2">Class that handles the ad-resolving part in the Phrase process. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/ContentTracker.html" format="html" scope="external"> ContentTracker</a> </span></td> 
-   <td colname="2">Interface that defines the protocol that you must implement if you want to create an ad-tracking module that is designed to integrate with the 
-    <ph conkeyref="phrases/primetime-sdk-name" /> library or a custom ad tracker. <p>This interface requires that you define the way ad-progress events are reported to the remote ad-tracking system. </p> </td> 
+   <td colname="2">Interface that defines the protocol that you must implement if you want to create an ad-tracking module that is designed to integrate with the library or a custom ad tracker. <p>This interface requires that you define the way ad-progress events are reported to the remote ad-tracking system. </p> </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/PlacementInformation.html" format="html" scope="external"> PlacementInformation</a> </span></td> 
@@ -96,4 +86,3 @@ These classes provide information about ads that occur within a timeline.
   </tr> 
  </tbody> 
 </table>
-
