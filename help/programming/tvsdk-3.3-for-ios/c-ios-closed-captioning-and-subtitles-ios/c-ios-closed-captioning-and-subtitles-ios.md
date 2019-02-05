@@ -26,8 +26,8 @@ You should be aware of the following requirements for closed captions and subtit
 The PTMediaPlayer plays the main content and ads, where the main content could be live/linear or VOD, and ads could be pre-roll, mid-roll, or post-roll.
 
 Here are some additional requirements for subtitles in iOS:
-  * For timestamps, the X-TIMESTAMP-MAP value, which is specified in the header section of the WebVTT file, must match the video timestamp.
-  * For the system, you must use iOS 7.0 or later.
+* For timestamps, the X-TIMESTAMP-MAP value, which is specified in the header section of the WebVTT file, must match the video timestamp.
+* For the system, you must use iOS 7.0 or later.
 
      >[!IMPORTANT]
    >
