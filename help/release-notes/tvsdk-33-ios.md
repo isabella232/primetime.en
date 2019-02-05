@@ -971,7 +971,7 @@ Updated PTPlaybackInformation to expose the updated indicatedBitrate. Updated BI
 
 * (ZD #3324) Primetime ads reporting  issue  when no ad media in VMAP
 
-Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad break start and complete pings for empty ad breaks 
+Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad break start and complete pings for empty ad breaks.
 
 **Version 1.4.8** (1.4.8.402)
 
@@ -989,7 +989,7 @@ Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad bre
 
 **Version 1.4.5** (1.4.5.283)
 
-* (ZD #2141) Analytics implementation for TreeHouse app, added AdobeAnalyticsPlugin.a library to build  package .
+* (ZD #2141) Analytics implementation for TreeHouse app, added `AdobeAnalyticsPlugin.a` library to build  package .
 * Video Heartbeats Library update to 1.4.1.2
 * [PTPALY-4226] [related to ZD #2423) Performing DRM Reset can result in deletion of Application Document data.
 
@@ -1001,7 +1001,7 @@ Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad bre
 
 **Version 1.4.2** (1.4.2.210 : iOS 6.0+)
 
-* (ZD #1129) _player.currentItem.audioOptions returning empty
+* (ZD #1129) `_player.currentItem.audioOptions` returning empty
 * (ZD #2109) Primetime PSDK 1.4.1.125 doesn't work with Xcode 5.1.1
 * (ZD #2137) Crash in PSDK on iOS when DRM metadata cannot be loaded
 
@@ -1036,7 +1036,7 @@ Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad bre
 **Version 1.4.28**
 
 * TVSDK 1.4.28 has been certified for iOS 10 Beta 7.
-* DRM support to force HTTPS by adding  forceHTTPS  and isForcingHTTPS APIs.
+* DRM support to force HTTPS by adding  `forceHTTPS`  and `isForcingHTTPS` APIs.
 * Updated VHL libraries to 1.5.8, Adobe Mobile libraries to 4.8.4, and the logger utility library to the version 7.0 deployment target.
 
 **Version 1.4.19**
@@ -1073,12 +1073,12 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 * It might experience that License rotation video does not play on iOS 11 and it will play fine on iOS 9.x and iOS 10.x.
 * In VPAID 2.0 support, if the playback is active over AirPlay, VPAID ads are skipped.
 * The drmNativeInterface.framework does not link correctly when the minimum target is set to iOS7 (or later).  
-  Workaround: Explicitly specify the libstdc++6.  dylib  library as follows: Go to Target`->`Build Phases`->`Link Binary With Libraries and add libstdc++.6.dylib.
+  Workaround: Explicitly specify the `libstdc++6`.  dylib  library as follows: Go to Target`->`Build Phases`->`Link Binary With Libraries and add `libstdc++.6.dylib`.
 
 * Post-Roll Ad not getting inserted for replacing API.
 * Seeking in an ad break (without coming out of it) issues a duplicate  ad  start an ad break notification
 * Setting currentTimeUpdateInterval does not have any effect.  
-  Note: In certain iOS versions, the OS doesn't load the resources inside the PSDKLibrary.framework automatically. It is important to manually copy the PSDKResources.bundle to the application's bundle resources: Go to "Build Phases" and copy bundle resources.
+  Note: In certain iOS versions, the OS doesn't load the resources inside the PSDKLibrary.framework automatically. It is important to manually copy the `PSDKResources.bundle` to the application's bundle resources: Go to "Build Phases" and copy bundle resources.
 * The Reference App cannot be built using Xcode 8 or lower versions. iOS TVSDK version 1.4.41 onwards, use Xcode 9 to compile.
 * VPAID ads do not honor the delayAdLoadingTolerance value.
 * 24077- For certain HLS contents with subtitles, player crashes on Stop or Reset method.
@@ -1086,4 +1086,4 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 ## Helpful resources {#helpful-resources}
 
 * [TVSDK 3.3 for iOS Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_ios_3.3.pdf)
-* [TVSDK iOS 3.3 API reference]( https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v33/index.html)
+* [TVSDK iOS 3.3 API reference](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v33/index.html)
