@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Add Digital Rights Management
 title: Add Digital Rights Management
 uuid: 7bd1303b-32bc-4b00-9c0f-faf42f8f5cd5
-index: y
-internal: n
-snippet: y
 ---
 
 # Add Digital Rights Management{#add-digital-rights-management}

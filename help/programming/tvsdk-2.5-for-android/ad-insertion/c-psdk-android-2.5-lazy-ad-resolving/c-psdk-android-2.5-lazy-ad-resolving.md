@@ -5,9 +5,6 @@ seo-description: Ad resolving and ad loading can cause an unacceptable delay for
 seo-title: Lazy ad resolving
 title: Lazy ad resolving
 uuid: cf9ba788-b83f-43aa-94c4-db391d92a77b
-index: y
-internal: n
-snippet: y
 ---
 
 # Lazy ad resolving{#lazy-ad-resolving}

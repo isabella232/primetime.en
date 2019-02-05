@@ -4,9 +4,6 @@ seo-description: This release includes players and supports a wide range of brow
 seo-title: Requirements
 title: Requirements
 uuid: 9726b083-f52a-410c-8ab4-47b4913d5172
-index: y
-internal: n
-snippet: y
 ---
 
 # Requirements{#requirements}

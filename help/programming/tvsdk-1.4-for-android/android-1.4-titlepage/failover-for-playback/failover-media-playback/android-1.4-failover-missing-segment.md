@@ -4,9 +4,6 @@ seo-description: When a segment is missing, for example when a particular segmen
 seo-title: Missing segment failover
 title: Missing segment failover
 uuid: 17ee1221-e1eb-4f64-a406-4d7eff1d7555
-index: y
-internal: n
-snippet: y
 ---
 
 # Missing segment failover{#missing-segment-failover}

@@ -4,9 +4,6 @@ seo-description: Video Player Ad-Serving Interface Definition (VPAID) 2.0 provid
 seo-title: VPAID 2.0 ad support
 title: VPAID 2.0 ad support
 uuid: 7168a6e4-9c5e-4d3a-8710-867cf98e4445
-index: y
-internal: n
-snippet: y
 ---
 
 # VPAID 2.0 ad support{#vpaid-ad-support}
@@ -48,7 +45,7 @@ The following changes were made to the API:
 
   The default timeout value is 10 seconds.
 
-<a id="section_495700E1C5404A7B85307A4137C740C5"></a>
+<!--<a id="section_495700E1C5404A7B85307A4137C740C5"></a>-->
 
 While the VPAID ad is playing:
 

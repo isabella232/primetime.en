@@ -2,9 +2,6 @@
 seo-title: Add new log messages
 title: Add new log messages
 uuid: b180f859-9714-445a-ad30-926bea9a88f7
-index: y
-internal: n
-snippet: y
 ---
 
 # Add new log messages{#add-new-log-messages}
@@ -16,7 +13,7 @@ snippet: y
 
    Here is an example of logging using the `PTLogDebug` macro:
 
-<a id="example_F014436E1686468F941F4EBD1A21B18E"></a>
+<!--<a id="example_F014436E1686468F941F4EBD1A21B18E"></a>-->
 
 ```
 // The following line creates an instance of PTLogEntry with type PTLogEntryDebug, 

@@ -4,9 +4,6 @@ seo-description: Set up a single place to handle errors.
 seo-title: Set up error handling
 title: Set up error handling
 uuid: a3182fce-85ac-4dad-bdb3-f9bfbdb2c62d
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up error handling{#set-up-error-handling}
@@ -21,7 +18,7 @@ Set up a single place to handle errors.
 
    When the `MediaPlayer` object is in the error state, it remains in that state until you reset it using the `MediaPlayer.reset` method.
 
-<a id="example_49FF225E92EA494AA06B2E5F26101F4C"></a>
+<!--<a id="example_49FF225E92EA494AA06B2E5F26101F4C"></a>-->
 
 For example: 
 

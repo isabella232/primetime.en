@@ -4,16 +4,13 @@ seo-description: The key client-side element of the Primetime DRM solution is th
 seo-title: Primetime DRM interface overview
 title: Primetime DRM interface overview
 uuid: 9e6f6ae6-7193-40fe-bc9d-d8de33705f5d
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime DRM interface overview{#primetime-drm-interface-overview}
 
 The key client-side element of the Primetime DRM solution is the DRM Manager. The sample application that is included with the Android SDK also includes a DRMHelper class that can be used to make certain DRM operations easier to implement.
 
-<a id="section_4DD54E085AB345FE9BE00865E56B28DB"></a>
+<!--<a id="section_4DD54E085AB345FE9BE00865E56B28DB"></a>-->
 
 Primetime DRM provides a scalable, efficient workflow to implement content protection in TVSDK applications. You protect and manage the rights to your video content by creating a license for each digital media file.
 
@@ -81,6 +78,6 @@ Here are the most important API elements for working with DRM:
 
 * Events that notify your application about various DRM activities and status.
 
-<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>
+<!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
 
 For more information about DRM, see the [DRM documentation](https://help.adobe.com/en_US/primetime/drm). 

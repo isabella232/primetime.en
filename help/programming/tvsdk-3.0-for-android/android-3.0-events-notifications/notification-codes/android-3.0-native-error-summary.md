@@ -2,9 +2,6 @@
 seo-title: Details for the NATIVE_ERROR notification
 title: Details for the NATIVE_ERROR notification
 uuid: d16ef930-d1f4-4984-be6e-1cf4993ab71d
-index: y
-internal: n
-snippet: y
 ---
 
 # Details for the NATIVE_ERROR notification{#details-for-the-native-error-notification}

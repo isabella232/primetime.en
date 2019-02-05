@@ -4,9 +4,6 @@ seo-description: For live and video-on-demand (VOD) media, TVSDK starts playback
 seo-title: Media playback and failover
 title: Media playback and failover
 uuid: 197a6ee0-f1ff-40ac-bd49-eafeae6167d4
-index: y
-internal: n
-snippet: y
 ---
 
 # Media playback and failover{#media-playback-and-failover}

@@ -4,16 +4,13 @@ seo-description: Browser TVSDK dispatches events/notifications in generally expe
 seo-title: Order of playback events
 title: Order of playback events
 uuid: 259a9a2d-3d28-4240-b392-cc81f5c3f0cf
-index: y
-internal: n
-snippet: y
 ---
 
 # Order of playback events{#order-of-playback-events}
 
 Browser TVSDK dispatches events/notifications in generally expected sequences. Your player can implement actions based on events in the expected sequence.
 
-<a id="section_D247A5873A854A079EFA6AC2E80AB894"></a>
+<!--<a id="section_D247A5873A854A079EFA6AC2E80AB894"></a>-->
 
 The following examples show the order of some events that include playback events.
 
@@ -31,7 +28,7 @@ The following examples show the order of some events that include playback event
         * `MediaPlayerStatus.PREPARING` 
         * `MediaPlayerStatus.PREPARED`
 
-<a id="section_76C13548AF934868B70757CA5489E516"></a>
+<!--<a id="section_76C13548AF934868B70757CA5489E516"></a>-->
 
 The following example shows a typical progression of events:
 

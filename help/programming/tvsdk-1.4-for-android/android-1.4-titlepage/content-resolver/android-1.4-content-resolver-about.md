@@ -4,9 +4,6 @@ seo-description: An opportunity detector is a TVSDK component that detects custo
 seo-title: Opportunity generators and content resolvers
 title: Opportunity generators and content resolvers
 uuid: 593de6c0-042d-4a05-82d7-056a9a4500f3
-index: y
-internal: n
-snippet: y
 ---
 
 # Opportunity generators and content resolvers{#opportunity-generators-and-content-resolvers}

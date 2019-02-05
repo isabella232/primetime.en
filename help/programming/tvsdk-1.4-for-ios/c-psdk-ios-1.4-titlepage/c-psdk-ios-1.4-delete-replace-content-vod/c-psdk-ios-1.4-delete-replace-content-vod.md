@@ -4,9 +4,6 @@ seo-description: TVSDK supports the programmatic deleting and replacing of ad co
 seo-title: Delete and replace ads in VOD streams
 title: Delete and replace ads in VOD streams
 uuid: 8f51c413-a8c9-46c1-aec6-0d536feaaeb7
-index: y
-internal: n
-snippet: y
 ---
 
 # Delete and replace ads in VOD streams{#delete-and-replace-ads-in-vod-streams}

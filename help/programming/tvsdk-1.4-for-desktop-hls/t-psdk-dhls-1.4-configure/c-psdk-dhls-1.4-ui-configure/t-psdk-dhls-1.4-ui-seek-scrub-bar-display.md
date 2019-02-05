@@ -4,9 +4,6 @@ seo-description: TVSDK supports seeking to a specific position (time) where the 
 seo-title: Display a seek scrub bar with the current playback position
 title: Display a seek scrub bar with the current playback position
 uuid: f940b305-4893-4531-9a79-53670f5fd23f
-index: y
-internal: n
-snippet: y
 ---
 
 # Display a seek scrub bar with the current playback position{#display-a-seek-scrub-bar-with-the-current-playback-position}

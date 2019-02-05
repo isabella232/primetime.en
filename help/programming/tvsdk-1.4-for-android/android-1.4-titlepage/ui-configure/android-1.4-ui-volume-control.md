@@ -4,9 +4,6 @@ seo-description: You can set up a user interface control for sound volume.
 seo-title: Provide volume control
 title: Provide volume control
 uuid: 63e96424-54d0-4c16-bd94-2366722f752a
-index: y
-internal: n
-snippet: y
 ---
 
 # Provide volume control{#provide-volume-control}

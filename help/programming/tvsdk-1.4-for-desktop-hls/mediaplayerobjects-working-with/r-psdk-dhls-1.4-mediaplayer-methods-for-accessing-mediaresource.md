@@ -4,9 +4,6 @@ seo-description: The methods in the MediaPlayerItem class allow you to obtain in
 seo-title: MediaPlayer methods for accessing MediaResource information
 title: MediaPlayer methods for accessing MediaResource information
 uuid: c2d18f8e-4107-42bc-a975-9b881aadd27b
-index: y
-internal: n
-snippet: y
 ---
 
 # MediaPlayer methods for accessing MediaResource information{#mediaplayer-methods-for-accessing-mediaresource-information}

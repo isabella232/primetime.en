@@ -4,9 +4,6 @@ seo-description: These classes specify formatting for text.
 seo-title: Text format classes
 title: Text format classes
 uuid: ef0a5098-d6a0-42f4-91f6-eb944eae5c2a
-index: y
-internal: n
-snippet: y
 ---
 
 # Text format classes{#text-format-classes}

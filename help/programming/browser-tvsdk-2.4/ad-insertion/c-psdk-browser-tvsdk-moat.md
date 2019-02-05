@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Ad measurement from Moat
 title: Ad measurement from Moat
 uuid: a29c1e74-df15-47d2-9bd6-1d366c5cdf37
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad measurement from Moat{#ad-measurement-from-moat}

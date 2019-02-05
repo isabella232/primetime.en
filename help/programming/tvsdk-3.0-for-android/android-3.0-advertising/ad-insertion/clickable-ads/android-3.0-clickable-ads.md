@@ -4,9 +4,6 @@ seo-description: TVSDK provides you with information so that you can act on clic
 seo-title: Clickable ads
 title: Clickable ads
 uuid: 18295cdd-10b9-4384-b7f9-3fc63f0b806a
-index: y
-internal: n
-snippet: y
 ---
 
 # Clickable ads{#clickable-ads}

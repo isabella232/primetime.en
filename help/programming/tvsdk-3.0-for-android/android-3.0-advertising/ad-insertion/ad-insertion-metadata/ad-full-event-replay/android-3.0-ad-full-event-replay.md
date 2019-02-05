@@ -4,9 +4,6 @@ seo-description: Full-event replay (FER) is a VOD asset that acts as a live/DVR 
 seo-title: Enable ads in full-event replay
 title: Enable ads in full-event replay
 uuid: a8859db1-1408-4365-bf12-5bc2ab7df449
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable ads in full-event replay{#enable-ads-in-full-event-replay}
@@ -35,7 +32,7 @@ For a FER stream, the Adobe Primetime ad decisioning server should not provide t
 
 1. Continue to playback.
 
-<a id="example_6DECA71C3C3B4551805C09A80686552F"></a>
+<!--<a id="example_6DECA71C3C3B4551805C09A80686552F"></a>-->
 
 ```java
 MediaPlayer mediaPlayer =  

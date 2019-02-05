@@ -4,9 +4,6 @@ seo-description: This example shows the recommended way to include custom ad mar
 seo-title: Place custom ad markers on the timeline
 title: Place custom ad markers on the timeline
 uuid: 47e31a97-e5da-46f3-bdcc-327c159c4355
-index: y
-internal: n
-snippet: y
 ---
 
 # Place custom ad markers on the timeline{#place-custom-ad-markers-on-the-timeline}
@@ -34,7 +31,7 @@ This example shows the recommended way to include custom ad markers on the playb
 >  You can use any TVSDK ad-resolver module or the custom ad markers mechanism. When you use custom ad markers, the ad content is considered resolved and is placed on the timeline. 
 >
 
-><a id="example_B80623FC452E416AA9BB808CBE672551"></a>
+><!--<a id="example_B80623FC452E416AA9BB808CBE672551"></a>-->
 
 >The following code snippet places three time ranges on the timeline as custom ad-markers. 
 >

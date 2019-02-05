@@ -4,9 +4,6 @@ seo-description: Closed captioning displays the audio portion of a video as text
 seo-title: Select a current caption track from among available tracks
 title: Select a current caption track from among available tracks
 uuid: 637a70c9-9bef-4b13-8b1f-62f22f983e80
-index: y
-internal: n
-snippet: y
 ---
 
 # Select a current caption track from among available tracks{#select-a-current-caption-track-from-among-available-tracks}

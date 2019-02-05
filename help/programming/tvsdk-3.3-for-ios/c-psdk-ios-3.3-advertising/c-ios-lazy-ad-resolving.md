@@ -4,12 +4,9 @@ seo-description: Ad resolving and ad loading may cause an unacceptable delay for
 seo-title: Just-in-Time ad resolving
 title: Just-in-Time ad resolving
 uuid: f7b20439-3604-4d69-bdfe-2e0ad26f495b
-index: y
-internal: n
-snippet: y
 ---
 
-# Just-in-Time Ad Resolving {#just-in-time-ad-resolving}
+# Just-in-Time ad resolving{#just-in-time-ad-resolving}
 
 Ad resolving and ad loading may cause an unacceptable delay for a user waiting for playback to start. The Lazy Ad Loading Resolving feature can reduce this startup delay. Ads can now be resolved at a specified interval prior to the position of the ad break. This is achieved by using a dual player approach.
 
@@ -34,7 +31,7 @@ Ad resolving and ad loading may cause an unacceptable delay for a user waiting f
 >**Factors to consider with Lazy Ad Resolving:** >
 >* Lazy Ad Resolving is only supported for VOD streams only with modes SERVER_MAP ad signaling mode. 
 >* Lazy Ad Resolving is not enabled by default. You must set `PTAdMetadata::delayAdLoading` = YES to enable it. 
->* Lazy Ad Resolving is incompatible with the Instant On feature. For more information about Instant On, see [Instant On](../../tvsdk-3.0-for-ios/c-psdk-ios-3.0-instant-on-ios.md#instant_on-concept). 
+>* Lazy Ad Resolving is incompatible with the Instant On feature. For more information about Instant On, see [Instant On](../../tvsdk-3.0-for-ios/c-psdk-ios-3.3-instant-on-ios.md#instant_on-concept). 
 >* Picture-in-Picture mode is not supported with Lazy Ad Resolving. Please disable any Picture-in-picture modes if you enable Lazy Ad Resolving. 
 >* Lazy ad resolution does not affect pre-roll ads. 
 >

@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Special Use Cases
 title: Special Use Cases
 uuid: 066bc256-4fdf-4083-b23e-0a916b3b532f
-index: y
-internal: n
-snippet: y
 ---
 
 # Special Use Cases{#special-use-cases}

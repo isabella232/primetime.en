@@ -4,9 +4,6 @@ seo-description: You can use the features of the Primetime Digital Rights Manage
 seo-title: Widevine DRM
 title: Widevine DRM
 uuid: 3a5fd786-4319-4e92-83b6-0f5328df6a44
-index: y
-internal: n
-snippet: y
 ---
 
 # Widevine DRM{#widevine-drm}
@@ -15,7 +12,7 @@ You can use the features of the Primetime Digital Rights Management (DRM) system
 
 Contact your Adobe representative for the most up-to-date information on the availability of third-party DRM solutions.
 
-<a id="section_1385440013EF4A9AA45B6AC98919E662"></a>
+<!--<a id="section_1385440013EF4A9AA45B6AC98919E662"></a>-->
 
 You can use the Android native Widevine DRM with DASH streams.
 

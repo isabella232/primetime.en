@@ -4,9 +4,6 @@ seo-description: Browser TVSDK can detect changed playback information in master
 seo-title: Live master-manifest update
 title: Live master-manifest update
 uuid: 4b918a73-dacf-465a-82d6-404c6bdb01f2
-index: y
-internal: n
-snippet: y
 ---
 
 # Live master-manifest update{#live-master-manifest-update}

@@ -4,9 +4,6 @@ seo-description: Alternate audio uses MediaPlayer to play a video that is specif
 seo-title: Access alternate audio tracks
 title: Access alternate audio tracks
 uuid: 9cec3a00-1416-497d-8d16-0ee429c8b575
-index: y
-internal: n
-snippet: y
 ---
 
 # Access alternate audio tracks{#access-alternate-audio-tracks}

@@ -4,9 +4,6 @@ seo-description: You can implement notification callbacks.
 seo-title: Implement notification callbacks
 title: Implement notification callbacks
 uuid: c5d3f03d-82ba-4113-ab39-94c4f327ab97
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement notification callbacks{#implement-notification-callbacks}

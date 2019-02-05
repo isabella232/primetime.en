@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Best practices for companion banner ads
 title: Best practices for companion banner ads
 uuid: d844babb-20ab-4380-9487-eb1c24b58877
-index: y
-internal: n
-snippet: y
 ---
 
 # Best practices for companion banner ads{#best-practices-for-companion-banner-ads}

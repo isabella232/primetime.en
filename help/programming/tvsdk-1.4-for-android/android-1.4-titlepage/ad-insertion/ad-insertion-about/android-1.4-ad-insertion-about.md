@@ -4,9 +4,6 @@ seo-description: Ad insertion resolves ads for video-on-demand (VOD), for live s
 seo-title: Inserting ads
 title: Inserting ads
 uuid: 555ef6af-5ae3-4d8d-9b35-9bbfc68e393e
-index: y
-internal: n
-snippet: y
 ---
 
 # Inserting ads{#inserting-ads}

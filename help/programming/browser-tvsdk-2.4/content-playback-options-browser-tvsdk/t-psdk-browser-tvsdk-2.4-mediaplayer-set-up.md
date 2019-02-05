@@ -4,9 +4,6 @@ seo-description: A MediaPlayer object encapsulates the behavior and functionalit
 seo-title: Set up the MediaPlayer
 title: Set up the MediaPlayer
 uuid: 2279e388-6fbc-49a2-8560-218d3d31e1d6
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up the MediaPlayer{#set-up-the-mediaplayer}

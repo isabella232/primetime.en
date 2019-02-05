@@ -4,9 +4,6 @@ seo-description: This table provides detailed information about INFO type notifi
 seo-title: INFO notification codes
 title: INFO notification codes
 uuid: 10145ce6-9eb0-4829-85dd-1acfe97b07e8
-index: y
-internal: n
-snippet: y
 ---
 
 # INFO notification codes{#info-notification-codes}

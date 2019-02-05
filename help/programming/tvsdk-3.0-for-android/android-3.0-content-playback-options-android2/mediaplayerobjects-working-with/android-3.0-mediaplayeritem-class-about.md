@@ -4,9 +4,6 @@ seo-description: After you successfully load the MediaResource object, TVSDK cre
 seo-title: About the MediaPlayerItem class
 title: About the MediaPlayerItem class
 uuid: fc79c442-2e38-48c4-8ef9-6dce9ad6790a
-index: y
-internal: n
-snippet: y
 ---
 
 # About the MediaPlayerItem class{#about-the-mediaplayeritem-class}

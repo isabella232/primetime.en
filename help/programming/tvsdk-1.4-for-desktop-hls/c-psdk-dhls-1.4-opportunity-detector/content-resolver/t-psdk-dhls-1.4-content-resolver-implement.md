@@ -4,9 +4,6 @@ seo-description: You can implement your own content resolvers based on the defau
 seo-title: Implement a custom content resolver
 title: Implement a custom content resolver
 uuid: 1714fcd9-45e0-48be-97f3-f702265128a4
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement a custom content resolver{#implement-a-custom-content-resolver}

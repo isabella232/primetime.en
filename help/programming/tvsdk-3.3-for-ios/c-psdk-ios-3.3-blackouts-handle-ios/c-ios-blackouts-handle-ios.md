@@ -4,12 +4,9 @@ seo-description: TVSDK handles blackouts in live video streams and provides alte
 seo-title: Handle blackouts
 title: Handle blackouts
 uuid: 00b6f204-6ba4-4245-9028-6f7c392e9275
-index: y
-internal: n
-snippet: y
 ---
 
-# Handle blackouts {#handle-blackouts}
+# Handle blackouts{#handle-blackouts}
 
 TVSDK handles blackouts in live video streams and provides alternate content during a blackout.
 

@@ -4,16 +4,13 @@ seo-description: You can implement your resolvers based on the default resolvers
 seo-title: Implement a custom opportunity/content resolver
 title: Implement a custom opportunity/content resolver
 uuid: 0023f516-12f3-4548-93de-b0934789053b
-index: y
-internal: n
-snippet: y
 ---
 
-# Implement a custom opportunity/content resolver {#implement-a-custom-opportunity-content-resolver}
+# Implement a custom opportunity/content resolver{#implement-a-custom-opportunity-content-resolver}
 
 You can implement your resolvers based on the default resolvers.
 
-<a id="fig_CC41E2A66BDB4115821F33737B46A09B"></a>
+<!--<a id="fig_CC41E2A66BDB4115821F33737B46A09B"></a>-->
 
 ![](assets/ios_psdk_content_resolver.png)
 
@@ -137,4 +134,5 @@ You can implement your resolvers based on the default resolvers.
 
 >When the player loads the content, and it is determined to be of type VOD or LIVE, one of the following occurs: >
 >* If the content is VOD, the custom content resolver is used to get the ad timeline of the entire video. 
->* If the content is LIVE, the custom content resolver is called each time a placement opportunity (cue point) is detected in the content.
+>* If the content is LIVE, the custom content resolver is called each time a placement opportunity (cue point) is detected in the content. 
+>

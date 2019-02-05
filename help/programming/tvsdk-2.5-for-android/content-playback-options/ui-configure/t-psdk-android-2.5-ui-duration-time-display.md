@@ -4,9 +4,6 @@ seo-description: You can use TVSDK to retrieve information about the player's po
 seo-title: Display the duration, current time, and remaining time of the video
 title: Display the duration, current time, and remaining time of the video
 uuid: 13627fa2-8cd8-4336-bc4b-7e3226330389
-index: y
-internal: n
-snippet: y
 ---
 
 # Display the duration, current time, and remaining time of the video{#display-the-duration-current-time-and-remaining-time-of-the-video}
@@ -72,7 +69,7 @@ You can use TVSDK to retrieve information about the player's position in the med
 
 1. Use a timer to periodically retrieve the current time and update the seek bar, as shown in the figure:
 
-   <a id="fig_689CEDDD02094C0C8E91C5195F8EAD3F"></a>
+   <!--<a id="fig_689CEDDD02094C0C8E91C5195F8EAD3F"></a>-->
 
    ![](assets/seek-bar.jpg){width="477.000pt"}
 

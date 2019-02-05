@@ -4,9 +4,6 @@ seo-description: The MediaPlayer object represents your media player. A MediaPla
 seo-title: About the MediaPlayerItem class
 title: About the MediaPlayerItem class
 uuid: d7f65edf-4693-4b1e-bae0-46fadce98751
-index: y
-internal: n
-snippet: y
 ---
 
 # About the MediaPlayerItem class{#about-the-mediaplayeritem-class}

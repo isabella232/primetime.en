@@ -4,16 +4,13 @@ seo-description: When your playback includes advertising, Browser TVSDK dispatch
 seo-title: Order of advertising events
 title: Order of advertising events
 uuid: 9787e6ac-5e52-4d7d-8fc7-f7609633707c
-index: y
-internal: n
-snippet: y
 ---
 
 # Order of advertising events{#order-of-advertising-events}
 
 When your playback includes advertising, Browser TVSDK dispatches events/notifications in generally expected sequences. Your player can implement actions based on events in the expected sequence.
 
-<a id="section_69E3CCBC57BB48399799876E83908348"></a>
+<!--<a id="section_69E3CCBC57BB48399799876E83908348"></a>-->
 
 When playing ads, the order of events is:
 

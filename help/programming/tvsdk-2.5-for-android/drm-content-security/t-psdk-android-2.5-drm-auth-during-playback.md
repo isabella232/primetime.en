@@ -4,9 +4,6 @@ seo-description: When the DRM metadata for a video is included in the media stre
 seo-title: DRM authentication during playback
 title: DRM authentication during playback
 uuid: b3ff8edd-a3d4-470e-8899-580eca9fff4a
-index: y
-internal: n
-snippet: y
 ---
 
 # DRM authentication during playback{#drm-authentication-during-playback}
@@ -43,7 +40,7 @@ With license rotation, an asset is encrypted with multiple DRM licenses. Each ti
 
 1. If authentication fails, the user cannot continue viewing the video, and playback stops.
 
-<a id="example_939B95F831A245869F9248E2767F260C"></a>
+<!--<a id="example_939B95F831A245869F9248E2767F260C"></a>-->
 
 For example: 
 

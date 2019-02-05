@@ -4,9 +4,6 @@ seo-description: For live and VOD media, Browser TVSDK starts playback by downlo
 seo-title: Media playback
 title: Media playback
 uuid: 454f84fe-8077-4f37-8e62-1d6ba0fcde27
-index: y
-internal: n
-snippet: y
 ---
 
 # Media playback {#media-playback}

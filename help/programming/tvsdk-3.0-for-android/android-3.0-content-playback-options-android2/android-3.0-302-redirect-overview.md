@@ -4,9 +4,6 @@ seo-description: 302 redirect optimization minimizes the number of 302 redirect 
 seo-title: HTTP 302 redirect optimization
 title: HTTP 302 redirect optimization
 uuid: 91ed8919-a3c1-4e57-9eaf-e3ba430de35f
-index: y
-internal: n
-snippet: y
 ---
 
 # HTTP 302 redirect optimization{#http-redirect-optimization}
@@ -19,7 +16,7 @@ snippet: y
 
 Use the `useRedirectedUrl` property to turn 302 redirect on ( `true`) or off ( `false`).
 
-<a id="example_888749F70C8A43279D06A29BD68E7E4D"></a>
+<!--<a id="example_888749F70C8A43279D06A29BD68E7E4D"></a>-->
 
 For example: 
 

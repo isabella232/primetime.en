@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Delete Ranges
 title: Delete Ranges
 uuid: 27a009f5-f6d0-4b65-ab5d-e2fbcebe4c31
-index: y
-internal: n
-snippet: y
 ---
 
 # Delete Ranges{#delete-ranges}

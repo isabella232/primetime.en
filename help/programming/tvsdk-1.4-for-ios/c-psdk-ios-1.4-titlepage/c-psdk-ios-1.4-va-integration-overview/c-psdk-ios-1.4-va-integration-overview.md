@@ -4,9 +4,6 @@ seo-description: You can track video use by integrating TVSDK with Adobe Analyti
 seo-title: Video analytics
 title: Video analytics
 uuid: 8f297316-f95e-4896-b489-a2d6b36e6b40
-index: y
-internal: n
-snippet: y
 ---
 
 # Video analytics{#video-analytics}

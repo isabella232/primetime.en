@@ -4,16 +4,13 @@ seo-description: This guide provides information about how to develop video play
 seo-title: Product overview, audience, and this guide
 title: Product overview, audience, and this guide
 uuid: 638bafbe-e518-4891-b792-29f765c3c0d7
-index: y
-internal: n
-snippet: y
 ---
 
 # Product overview, audience, and this guide{#product-overview-audience-and-this-guide}
 
 This guide provides information about how to develop video player applications by using TVSDK for Android, which is implemented in Java.
 
-<a id="section_FC24E86A2E6442B8A3769160769BBDFA"></a>
+<!--<a id="section_FC24E86A2E6442B8A3769160769BBDFA"></a>-->
 
 * For a list of the features that are supported by TVSDK, see [Primetime TVSDK features](../../tvsdk-2.5-for-android/overview-prod-audience-guide/c-psdk-android-2.5-overview-of-the-player.md#c_psdk_overview-of-the-player-features). 
 * For specific hardware and software requirements for using TVSDK, see [Requirements](../../tvsdk-2.5-for-android/c-psdk-android-2.5-requirements.md#c_psdk_requirements). 

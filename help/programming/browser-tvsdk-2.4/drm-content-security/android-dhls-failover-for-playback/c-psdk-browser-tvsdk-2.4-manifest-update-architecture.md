@@ -4,9 +4,6 @@ seo-description: Here is some information and examples about how the Browser TVS
 seo-title: Live master-manifest update architecture
 title: Live master-manifest update architecture
 uuid: 6f253502-8dec-4b42-9ee1-99ad9bfd6080
-index: y
-internal: n
-snippet: y
 ---
 
 # Live master-manifest update architecture{#live-master-manifest-update-architecture}

@@ -4,9 +4,6 @@ seo-description: You can select a track from a list of currently available close
 seo-title: Select a current caption track from among available tracks
 title: Select a current caption track from among available tracks
 uuid: d582779a-2789-4e2a-85f6-1a0b9b847382
-index: y
-internal: n
-snippet: y
 ---
 
 # Select a current caption track from among available tracks{#select-a-current-caption-track-from-among-available-tracks}

@@ -4,9 +4,6 @@ seo-description: Browser TVSDK supports a number of DASH features that you can i
 seo-title: Supported DASH features
 title: Supported DASH features
 uuid: 299516a4-09ed-4b8a-b0bf-a04f204f385a
-index: y
-internal: n
-snippet: y
 ---
 
 # Supported DASH features{#supported-dash-features}

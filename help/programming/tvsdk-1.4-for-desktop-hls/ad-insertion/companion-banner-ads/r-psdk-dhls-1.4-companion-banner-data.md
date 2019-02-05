@@ -4,16 +4,13 @@ seo-description: The content of an AdBannerAsset describes a companion banner.
 seo-title: Companion banner data
 title: Companion banner data
 uuid: 5ba7ec98-5339-495f-b5d3-e933394b5be1
-index: y
-internal: n
-snippet: y
 ---
 
 # Companion banner data{#companion-banner-data}
 
 The content of an AdBannerAsset describes a companion banner.
 
-<a id="section_D730B4FD6FD749E9860B6A07FC110552"></a>
+<!--<a id="section_D730B4FD6FD749E9860B6A07FC110552"></a>-->
 
 The `AdPlaybackEvent.AD_STARTED` event returns an `Ad` instance that contains a `companionAssets` property ( `Vector.<AdAsset>`). 
 Each `AdAsset` provides information about displaying the asset. 

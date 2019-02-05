@@ -4,9 +4,6 @@ seo-description: In certain analytics implementations, the client application ma
 seo-title: Implement custom time updates
 title: Implement custom time updates
 uuid: 2b46eca9-3815-4c44-ab5e-21678c35f410
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement custom time updates{#implement-custom-time-updates}

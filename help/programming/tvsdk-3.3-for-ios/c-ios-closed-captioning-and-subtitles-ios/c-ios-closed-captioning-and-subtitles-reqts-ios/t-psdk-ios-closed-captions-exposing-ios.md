@@ -4,9 +4,6 @@ seo-description: To make closed captions available to your client player, you mu
 seo-title: Expose closed captions
 title: Expose closed captions
 uuid: 7057014a-b14a-4790-8f7f-37d7a1fb8194
-index: y
-internal: n
-snippet: y
 ---
 
 # Expose closed captions {#expose-closed-captions}

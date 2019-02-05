@@ -4,9 +4,6 @@ seo-description: You can mark, delete, and replace time ranges in VOD streams by
 seo-title: Effect on ad insertion and deletion from ad signaling mode and ad metadata combinations
 title: Effect on ad insertion and deletion from ad signaling mode and ad metadata combinations
 uuid: 49abab49-4e52-477d-b7ed-688ee63e7473
-index: y
-internal: n
-snippet: y
 ---
 
 # Effect on ad insertion and deletion from ad signaling mode and ad metadata combinations {#effect-on-ad-insertion-and-deletion-from-ad-signaling-mode-and-ad-metadata-combinations}

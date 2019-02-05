@@ -4,16 +4,13 @@ seo-description: The notification portion of the Browser TVSDK library allows yo
 seo-title: Notification system
 title: Notification system
 uuid: 69c4ff1d-3167-413b-ab49-942a5ddc34d7
-index: y
-internal: n
-snippet: y
 ---
 
 # Notification system {#notification-system}
 
 The notification portion of the Browser TVSDK library allows you to create a logging and debugging system that can be useful for diagnostic and validation purposes.
 
-<a id="section_EC5DBE8DDA434B70A01FA2F3EF4618BD"></a>
+<!--<a id="section_EC5DBE8DDA434B70A01FA2F3EF4618BD"></a>-->
 
 Browser TVSDK has a *no throw* policy for its API. Most methods return an `PSDKErrorCode` value to indicate whether the method was executed successfully. For a complete list of all possible `PSDKErrorCode` values, see Browser TVSDK API references.
 

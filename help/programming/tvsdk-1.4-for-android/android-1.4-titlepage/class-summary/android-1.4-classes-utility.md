@@ -4,9 +4,6 @@ seo-description: These classes provide ways to process various types of informat
 seo-title: Utility classes
 title: Utility classes
 uuid: 060d5587-c1ef-4b58-9cad-49826201a79f
-index: y
-internal: n
-snippet: y
 ---
 
 # Utility classes{#utility-classes}

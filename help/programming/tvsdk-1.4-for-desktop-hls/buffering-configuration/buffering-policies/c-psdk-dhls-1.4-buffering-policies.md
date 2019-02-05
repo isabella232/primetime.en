@@ -4,9 +4,6 @@ seo-description: To provide a smoother viewing experience, TVSDK sometimes buffe
 seo-title: Buffering time policies
 title: Buffering time policies
 uuid: 8d3ce9be-cca4-485e-ba66-d2f2aa6822dd
-index: y
-internal: n
-snippet: y
 ---
 
 # Buffering time policies{#buffering-time-policies}
@@ -17,7 +14,7 @@ TVSDK defines a playback buffer length of at least 30 seconds and an initial buf
 
 You can alter the buffer times by defining new buffering policies.
 
-<a id="section_F6EEE15600814A70A57CCBACE20D68BD"></a>
+<!--<a id="section_F6EEE15600814A70A57CCBACE20D68BD"></a>-->
 
 Depending on your environment (including the device, the operating system, or the network conditions), you can set different buffering policies for your player, such as changing the minimum duration for initial buffering and for ongoing playback buffering.
 

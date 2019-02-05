@@ -4,12 +4,9 @@ seo-description: An opportunity detector is a TVSDK component that detects custo
 seo-title: Opportunity generators and content resolvers
 title: Opportunity generators and content resolvers
 uuid: c49494da-2145-40d7-8f4b-2ecaf2866ca4
-index: y
-internal: n
-snippet: y
 ---
 
-# Opportunity generators and content resolvers {#opportunity-generators-and-content-resolvers}
+# Opportunity generators and content resolvers{#opportunity-generators-and-content-resolvers}
 
 An opportunity detector is a TVSDK component that detects custom tags in a stream and identifies placement opportunities. These opportunities are sent to the content resolver, which customizes the content/ad insertion workflow based on the placement opportunity properties and metadata.
 
@@ -28,7 +25,7 @@ You can override the default opportunity detectors and content resolvers to cust
 * Create a customized ad provider 
 * Black out content
 
-<a id="section_C2BA8F50230E4010ABFCD5D976BC1217"></a>
+<!--<a id="section_C2BA8F50230E4010ABFCD5D976BC1217"></a>-->
 
 TVSDK provides default opportunity generators and content resolvers that place ads in the timeline, and these generators and resolvers are based on nonstandard tags in the manifest. Your application might need to alter the timeline based on opportunities that are identified in the manifest, such as indicators for a blackout period.
 

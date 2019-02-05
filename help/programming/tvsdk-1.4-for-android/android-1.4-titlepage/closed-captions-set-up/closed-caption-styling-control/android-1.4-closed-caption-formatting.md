@@ -4,9 +4,6 @@ seo-description: You can specify closed-caption formatting.
 seo-title: Examples  Caption formatting
 title: Examples  Caption formatting
 uuid: 59c23ee5-73df-408f-ad71-4541f39e1961
-index: y
-internal: n
-snippet: y
 ---
 
 # Examples: Caption formatting{#examples-caption-formatting}

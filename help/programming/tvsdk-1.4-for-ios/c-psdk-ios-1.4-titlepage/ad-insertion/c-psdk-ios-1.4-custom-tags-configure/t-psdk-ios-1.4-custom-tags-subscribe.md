@@ -4,9 +4,6 @@ seo-description: TVSDK prepares PTTimedMetadata objects for subscribed tags each
 seo-title: Subscribe to custom tags
 title: Subscribe to custom tags
 uuid: de66d3db-46d1-485f-9d3a-6e28495bfb13
-index: y
-internal: n
-snippet: y
 ---
 
 # Subscribe to custom tags{#subscribe-to-custom-tags}

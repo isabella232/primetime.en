@@ -4,9 +4,6 @@ seo-description: The MediaPlayer object represents your media player. A MediaPla
 seo-title: Work with MediaPlayer objects
 title: Work with MediaPlayer objects
 uuid: edc7f870-a4d4-4235-aad2-4ef99080c3d9
-index: y
-internal: n
-snippet: y
 ---
 
 # Work with MediaPlayer objects{#work-with-mediaplayer-objects}

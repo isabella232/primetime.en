@@ -4,9 +4,6 @@ seo-description: You can obtain a description of the timeline associated with th
 seo-title: Inspect the playback timeline
 title: Inspect the playback timeline
 uuid: 2f903493-2d88-4af2-ac71-36300b49735b
-index: y
-internal: n
-snippet: y
 ---
 
 # Inspect the playback timeline{#inspect-the-playback-timeline}
@@ -14,7 +11,7 @@ snippet: y
 You can obtain a description of the timeline associated with the currently selected item being played by TVSDK. This is most useful when your application displays a custom scrub-bar control in which the content sections that correspond to ad content are identified.
 
 Here is an example implementation as seen in the following screen shot. 
-<a id="fig_6D9FB3764F3947A38B8E7726187BD461"></a>
+<!--<a id="fig_6D9FB3764F3947A38B8E7726187BD461"></a>-->
 
 ![](assets/inspect-playback.jpg){width="368.641pt"}
 
@@ -29,7 +26,7 @@ Here is an example implementation as seen in the following screen shot.
     * Position of the marker on the timeline (in milliseconds) 
     * Duration of the marker on the timeline (in milliseconds)
 
-<a id="example_BA936629E82B4082A2E2C548E3FC3357"></a>
+<!--<a id="example_BA936629E82B4082A2E2C548E3FC3357"></a>-->
 
 ```
 // access the timeline object 

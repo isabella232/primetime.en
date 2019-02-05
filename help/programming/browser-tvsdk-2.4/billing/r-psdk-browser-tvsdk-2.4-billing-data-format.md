@@ -4,16 +4,13 @@ seo-description: Browser TVSDK sends billing metrics to Adobe in an XML format.
 seo-title: Transmit billing metrics
 title: Transmit billing metrics
 uuid: ed2638d2-7894-4840-b31a-51e48e0a3f49
-index: y
-internal: n
-snippet: y
 ---
 
 # Transmit billing metrics{#transmit-billing-metrics}
 
 Browser TVSDK sends billing metrics to Adobe in an XML format.
 
-<a id="example_13ABDB1CC0B549968A534765378DA3A0"></a>
+<!--<a id="example_13ABDB1CC0B549968A534765378DA3A0"></a>-->
 
 If you use a network capture tool to monitor the statistics Browser TVSDK transmits to Adobe, you should see units like the following:
 

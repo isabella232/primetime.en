@@ -4,9 +4,6 @@ seo-description: For video-on-demand (VOD) content, Browser TVSDK inserts ad bre
 seo-title: VOD ad resolving and insertion
 title: VOD ad resolving and insertion
 uuid: 34a30ae5-d553-4c5d-9829-8e5eaa41c104
-index: y
-internal: n
-snippet: y
 ---
 
 # VOD ad resolving and insertion{#vod-ad-resolving-and-insertion}

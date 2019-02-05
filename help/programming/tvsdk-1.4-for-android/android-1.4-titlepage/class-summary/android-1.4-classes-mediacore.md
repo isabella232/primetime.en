@@ -4,9 +4,6 @@ seo-description: You can use the Primetime Player API to customize the behavior 
 seo-title: Mediacore classes
 title: Mediacore classes
 uuid: 2d4e41e6-e689-4f79-9021-1ab8ce0fe40d
-index: y
-internal: n
-snippet: y
 ---
 
 # Mediacore classes {#mediacore-classes}

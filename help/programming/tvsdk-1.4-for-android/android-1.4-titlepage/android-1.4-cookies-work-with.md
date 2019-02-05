@@ -4,9 +4,6 @@ seo-description: You can use TVSDK to send arbitrary data in cookie headers for 
 seo-title: Work with cookies
 title: Work with cookies
 uuid: f060b520-ceec-48ca-929f-683566fe6ae7
-index: y
-internal: n
-snippet: y
 ---
 
 # Work with cookies{#work-with-cookies}

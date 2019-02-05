@@ -4,18 +4,15 @@ seo-description: You can set up buttons that call TVSDK methods to pause and pla
 seo-title: Implement a play/pause button
 title: Implement a play/pause button
 uuid: b0ce4103-819e-4a1c-8238-1d7728ec8770
-index: y
-internal: n
-snippet: y
 ---
 
-# Implement a play/pause button {#implement-a-play-pause-button}
+# Implement a play/pause button{#implement-a-play-pause-button}
 
 You can set up buttons that call TVSDK methods to pause and play the media.
 
-  Use the following sample code to implement a play or pause button:
+1. Use the following sample code to implement a play or pause button:
 
-<a id="example_BC2632D673FE451190A30A23145090D0"></a>
+<!--<a id="example_BC2632D673FE451190A30A23145090D0"></a>-->
 
 ```
 _playPauseButton =  

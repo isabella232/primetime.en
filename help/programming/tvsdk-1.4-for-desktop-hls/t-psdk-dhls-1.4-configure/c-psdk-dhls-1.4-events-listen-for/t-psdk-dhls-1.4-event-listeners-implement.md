@@ -4,9 +4,6 @@ seo-description: Event handlers allow TVSDK to respond to events. When an event 
 seo-title: Implement event listeners and callbacks
 title: Implement event listeners and callbacks
 uuid: b4dded7d-ce55-4306-be12-7dd8eb2fbcab
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement event listeners and callbacks{#implement-event-listeners-and-callbacks}

@@ -4,9 +4,6 @@ seo-description: To use the custom skins, you must write the customization simil
 seo-title: Custom skins
 title: Custom skins
 uuid: bc71926e-0dec-4628-8248-911224a7a6c2
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom skins{#custom-skins}

@@ -4,9 +4,6 @@ seo-description: These classes assist in detecting ad opportunities in the timel
 seo-title: Timeline detectors classes
 title: Timeline detectors classes
 uuid: 73452e8a-5f33-4004-b93a-e77a09a66add
-index: y
-internal: n
-snippet: y
 ---
 
 # Timeline detectors classes{#timeline-detectors-classes}

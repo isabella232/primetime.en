@@ -4,9 +4,6 @@ seo-description: This is an example of how to create a button that allows a user
 seo-title: Example  Allow users to change the caption track
 title: Example  Allow users to change the caption track
 uuid: 4b69d569-0d6e-4388-9fe3-488e2a4d762d
-index: y
-internal: n
-snippet: y
 ---
 
 # Example: Allow users to change the caption track{#example-allow-users-to-change-the-caption-track}

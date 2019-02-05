@@ -4,9 +4,6 @@ seo-description: You can globally configure custom tag names in TVSDK with the M
 seo-title: Config class methods for tags
 title: Config class methods for tags
 uuid: 64284876-1f31-47e0-a99b-3bfe17e10707
-index: y
-internal: n
-snippet: y
 ---
 
 # Config class methods for tags{#config-class-methods-for-tags}

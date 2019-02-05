@@ -4,16 +4,13 @@ seo-description: Alternate, or late-binding, audio allows you to switch among av
 seo-title: Alternate audio
 title: Alternate audio
 uuid: 9dc3bec6-2135-4083-8db2-50a492e6bd67
-index: y
-internal: n
-snippet: y
 ---
 
 # Alternate audio{#alternate-audio}
 
 Alternate, or late-binding, audio allows you to switch among available audio tracks for a video track. This way, users can select a language track when the video is played.
 
-<a id="section_E4F9DC28A2944BD08B4190A7F98A8365"></a>
+<!--<a id="section_E4F9DC28A2944BD08B4190A7F98A8365"></a>-->
 
 When TVSDK creates the `MediaPlayerItem` instance for the current video, it creates an `AudioTrack` item for each available audio track. The item contains a `name` property, a string that typically contains a user-recognizable description of the language of that track. The item also contains information about whether to use that track by default.
 

@@ -4,9 +4,6 @@ seo-description: An opportunity detector is a Browser TVSDK component that detec
 seo-title: Customize opportunity detectors and content resolvers
 title: Customize opportunity detectors and content resolvers
 uuid: d4926933-5966-4cd8-8050-c81c5e3c8545
-index: y
-internal: n
-snippet: y
 ---
 
 # Customize opportunity detectors and content resolvers{#customize-opportunity-detectors-and-content-resolvers}

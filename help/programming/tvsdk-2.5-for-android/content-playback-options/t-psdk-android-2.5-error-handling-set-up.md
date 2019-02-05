@@ -4,9 +4,6 @@ seo-description: You can set up one lace to handle errors.
 seo-title: Set up error handling
 title: Set up error handling
 uuid: fde47fa5-5ca5-4be5-a7e7-3227c5e4c670
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up error handling{#set-up-error-handling}
@@ -21,7 +18,7 @@ You can set up one lace to handle errors.
 
    When the `MediaPlayer` object is in the error status it remains in that status until you reset it using the `MediaPlayer.reset` method.
 
-<a id="example_E74BB605ED08450295B8902F1E4BB8F5"></a>
+<!--<a id="example_E74BB605ED08450295B8902F1E4BB8F5"></a>-->
 
 For example: 
 

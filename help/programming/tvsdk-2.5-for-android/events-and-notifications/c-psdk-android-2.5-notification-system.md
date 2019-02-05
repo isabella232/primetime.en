@@ -4,9 +4,6 @@ seo-description: MediaPlayerStatus objects provide information about changes in 
 seo-title: Notifications and events for player status, activity, errors, and logging
 title: Notifications and events for player status, activity, errors, and logging
 uuid: ec840f14-38d1-4f43-b119-e1326515fc63
-index: y
-internal: n
-snippet: y
 ---
 
 # Notifications and events for player status, activity, errors, and logging{#notifications-and-events-for-player-status-activity-errors-and-logging}

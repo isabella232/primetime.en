@@ -4,9 +4,6 @@ seo-description: With instant on, users can switch channels and the playback sta
 seo-title: Configure buffering for instant-on playback
 title: Configure buffering for instant-on playback
 uuid: 49bf8ab5-3a85-40c2-9464-a18322169773
-index: y
-internal: n
-snippet: y
 ---
 
 # Configure buffering for instant-on playback{#configure-buffering-for-instant-on-playback}

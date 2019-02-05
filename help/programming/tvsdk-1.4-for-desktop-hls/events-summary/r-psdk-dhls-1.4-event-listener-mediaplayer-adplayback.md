@@ -4,9 +4,6 @@ seo-description: TVSDK dispatches ad-playback events in response to ad-related o
 seo-title: Ad playback events
 title: Ad playback events
 uuid: 63138237-2315-45ff-914d-369da18fdff7
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad playback events{#ad-playback-events}

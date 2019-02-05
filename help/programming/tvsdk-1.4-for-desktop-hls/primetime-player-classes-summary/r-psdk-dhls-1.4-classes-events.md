@@ -4,9 +4,6 @@ seo-description: These classes describe events that the TVSDK dispatches to your
 seo-title: Events classes
 title: Events classes
 uuid: 5e63d43c-6112-4958-b8cd-ccf123affd08
-index: y
-internal: n
-snippet: y
 ---
 
 # Events classes{#events-classes}

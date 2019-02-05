@@ -4,9 +4,6 @@ seo-description: From the moment the MediaPlayer instance is created to the mome
 seo-title: Life cycle and states of the MediaPlayer object
 title: Life cycle and states of the MediaPlayer object
 uuid: fe76ea80-aaa8-43bc-9b81-85e0551f70dd
-index: y
-internal: n
-snippet: y
 ---
 
 # Life cycle and states of the MediaPlayer object{#life-cycle-and-states-of-the-mediaplayer-object}
@@ -62,7 +59,7 @@ As a media resource is loaded and played, the player transitions in the followin
 
 Here is an illustration of the life cycle of a MediaPlayer instance: 
 
-<a id="fig_DD3DAE7507C549C8A4720A26DFCFFCCB"></a>
+<!--<a id="fig_DD3DAE7507C549C8A4720A26DFCFFCCB"></a>-->
 
 ![](assets/player-state-transitions-diagram-android_1.2_web.png)
 

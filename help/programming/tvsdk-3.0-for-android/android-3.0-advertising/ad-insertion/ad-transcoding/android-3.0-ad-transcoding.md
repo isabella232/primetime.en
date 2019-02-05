@@ -4,9 +4,6 @@ seo-description: Some third-party ads (or creatives) cannot be stitched into the
 seo-title: Repackage incompatible ads using Adobe Creative Repackaging Service (CRS)
 title: Repackage incompatible ads using Adobe Creative Repackaging Service (CRS)
 uuid: ef542d13-6d52-4429-8a1e-0af2df236f12
-index: y
-internal: n
-snippet: y
 ---
 
 # Repackage incompatible ads using Adobe Creative Repackaging Service (CRS){#repackage-incompatible-ads-using-adobe-creative-repackaging-service-crs}

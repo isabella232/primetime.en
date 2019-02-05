@@ -2,12 +2,9 @@
 seo-title: Add custom notifications
 title: Add custom notifications
 uuid: 3294d1cc-7751-4ee1-a3d3-668ff678e5c2
-index: y
-internal: n
-snippet: y
 ---
 
-# Add custom notifications {#add-custom-notifications}
+# Add custom notifications{#add-custom-notifications}
 
  To add a custom notification: 
 1. Create a new `PTNotification` and add it to the `PTNotificationHistory` by using the current `PTMediaPlayerItem`:
@@ -23,3 +20,4 @@ snippet: y
    //Add notification 
    [notificationHistory addNotification:notification];
    ```
+

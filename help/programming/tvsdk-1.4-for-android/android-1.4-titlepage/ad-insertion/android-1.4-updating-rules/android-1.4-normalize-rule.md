@@ -5,9 +5,6 @@ seo-description: The normalize rule defines a URL transformation to apply to a s
 seo-title: Normalize rules
 title: Normalize rules
 uuid: eccae85b-907e-4e16-9bb8-6c2be6cb0ab6
-index: y
-internal: n
-snippet: y
 ---
 
 # Normalize rules{#normalize-rules}

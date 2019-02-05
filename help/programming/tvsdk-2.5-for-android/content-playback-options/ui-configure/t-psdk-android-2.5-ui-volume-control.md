@@ -4,9 +4,6 @@ seo-description: You can set up a user interface control to adjust the volume fo
 seo-title: Provide volume control
 title: Provide volume control
 uuid: f1e959e0-1817-4ccb-8adc-3eba09c91887
-index: y
-internal: n
-snippet: y
 ---
 
 # Provide volume control{#provide-volume-control}

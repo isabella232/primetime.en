@@ -4,16 +4,13 @@ seo-description: The version of #EXT-X-VERSION in the .m3u8 file affects what fe
 seo-title: #EXT-X-VERSION requirements
 title: #EXT-X-VERSION requirements
 uuid: c862df4a-88ba-4497-8b7c-b83fcb34b8bb
-index: y
-internal: n
-snippet: y
 ---
 
 # #EXT-X-VERSION requirements{#ext-x-version-requirements}
 
 The version of #EXT-X-VERSION in the .m3u8 file affects what features are available to your application and what EXT tags are valid in your playlist/manifest.
 
-<a id="section_8850183988124049A001758F117AD3A6"></a>
+<!--<a id="section_8850183988124049A001758F117AD3A6"></a>-->
 
 Here is some information about the `#EXT-X-VERSION` tag, which specifies the HLS protocol version:
 

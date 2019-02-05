@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Ad resolvers
 title: Ad resolvers
 uuid: 705df232-4adc-4f3a-b4aa-dafbd2b8fe4c
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad resolvers{#ad-resolvers}

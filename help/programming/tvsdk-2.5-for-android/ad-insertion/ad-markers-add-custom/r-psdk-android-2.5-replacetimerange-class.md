@@ -4,9 +4,6 @@ seo-description: The ReplaceTimeRange utility class is an extension of the TimeR
 seo-title: ReplaceTimeRange class
 title: ReplaceTimeRange class
 uuid: 19c49b26-5096-4429-b30b-bdd2502e3036
-index: y
-internal: n
-snippet: y
 ---
 
 # ReplaceTimeRange class{#replacetimerange-class}

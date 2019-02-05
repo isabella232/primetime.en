@@ -4,9 +4,6 @@ seo-description: To implement FairPlay Streaming in your TVSDK app, you need to 
 seo-title: Apple FairPlay in TVSDK applications
 title: Apple FairPlay in TVSDK applications
 uuid: 5796d5af-0018-4c69-a755-65e4819ee838
-index: y
-internal: n
-snippet: y
 ---
 
 # Apple FairPlay in TVSDK applications {#apple-fairplay-in-tvsdk-applications}
@@ -175,3 +172,4 @@ You can implement Apple FairPlay Streaming, which is Apple's DRM solution, in yo
    >[!NOTE]
    >
    >If you wrote your own FairPlay license server, or you are using a third-party FairPlay license server, consult your license server vendor to determine your license server URL, formatting, and any other requirements.
+

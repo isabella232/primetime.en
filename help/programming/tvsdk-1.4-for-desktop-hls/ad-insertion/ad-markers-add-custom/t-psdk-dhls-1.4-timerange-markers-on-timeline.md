@@ -4,9 +4,6 @@ seo-description: This example shows the recommended way to include TimeRange spe
 seo-title: Place TimeRange ad markers on the timeline
 title: Place TimeRange ad markers on the timeline
 uuid: cbcc4c84-0d56-4331-b555-b8e59f7d52d4
-index: y
-internal: n
-snippet: y
 ---
 
 # Place TimeRange ad markers on the timeline{#place-timerange-ad-markers-on-the-timeline}
@@ -25,7 +22,7 @@ This example shows the recommended way to include TimeRange specifications on th
 >* When dealing with custom ad markers, TVSDK deactivates other ad-resolving mechanisms (via Adobe Primetime ad decisioning (previously known as Auditude) or other ad provisioning system). You can use either one of the various ad-resolver modules provided by TVSDK or the custom ad-markers mechanism. When using the custom ad-markers API, the ad content is considered already resolved and placed on the timeline. 
 >
 
-><a id="example_639BD1B66CE74F3DB65ED06CAD23EB09"></a>
+><!--<a id="example_639BD1B66CE74F3DB65ED06CAD23EB09"></a>-->
 
 >The following code snippet provides a simple example where a set of three `TimeRange` specifications are placed on the timeline as custom ad-markers. 
 >
