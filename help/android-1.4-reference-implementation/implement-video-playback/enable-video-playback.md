@@ -51,7 +51,9 @@ Create a PlaybackManager that handles the HLS stream setup and playback operatio
    controlBar.pressPlay() { 
        playbackManager.play();  
    }
+   
    ```
+
 <!-- 
 
 Comment Type: draft

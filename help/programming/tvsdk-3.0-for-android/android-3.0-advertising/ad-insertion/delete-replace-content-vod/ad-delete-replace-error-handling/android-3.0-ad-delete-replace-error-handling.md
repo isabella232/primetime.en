@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Ad deletion and replacement error handling{#ad-deletion-and-replacement-error-handling}
+# Ad deletion and replacement error handling {#ad-deletion-and-replacement-error-handling}
 
 TVSDK handles time range errors according to the specific problem by merging or reordering the improperly defined time ranges.
 
@@ -32,7 +32,7 @@ TVSDK handles signaling-mode conflicts with ad metadata in the following ways:
   For example, if the ad signaling mode is set as server map or manifest cues, and there are also MARK time rangesin the ad metadata, the resulting behavior is that the ranges are marked, and no ads are inserted. 
 * For REPLACE ranges, if the signaling mode is set as the server map or manifest cues, the ranges are replaced as specified in the REPLACE ranges, and there is no ad insertion through server map or manifest cues.
 
-  For more information, see the *Signaling Mode / Metadata Combination Behaviors* table in [Effect on ad insertion and deletion from ad signaling mode...](c_psdk_android_2.5_signaling-mode-metadata-combos-android.md#c_psdk_signaling-mode-metadata-combos-android).
+  For more information, see the *Signaling Mode / Metadata Combination Behaviors* table in [Effect on ad insertion and deletion from ad signaling mode](../../../../../tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/android-3.0-signaling-mode-android.md).
 
 Remember the following:
 

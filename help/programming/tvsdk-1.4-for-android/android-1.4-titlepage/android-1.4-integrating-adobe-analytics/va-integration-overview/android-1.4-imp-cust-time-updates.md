@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Implement custom time updates{#implement-custom-time-updates}
+# Implement custom time updates {#implement-custom-time-updates}
 
 In some analytics implementations, the client application might want to provide a different playhead position than the position reported by the TVSDK localTime value. For example, during a linear stream playback, each program’s playhead can be provided relative to its start time.
 

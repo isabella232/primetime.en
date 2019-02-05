@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Create a media resource{#create-a-media-resource}
+# Create a media resource {#create-a-media-resource}
 
 For each new video content, initialize a MediaResource instance with information about the video content and load the media resource. The MediaResource class represents the content to be loaded by the MediaPlayer instance.
 
@@ -36,7 +36,7 @@ For each new video content, initialize a MediaResource instance with information
   </tr> 
   <tr> 
    <td colname="col1"> <p>metadata </p> </td> 
-   <td colname="col2"> <p>An instance of the <span class="codeph"> Metadata </span> class, which might contain custom information about the content to be loaded. </p> <p>Examples of content are alternate or ad content to place inside the main content. If using advertising, set up <span class="codeph"> AuditudeSettings </span>. For more information, see <a href="c_psdk_android_1.4_ad-insertion-metadata.md" format="dita" scope="local"> Ad Insertion Metadata </a>. </p> </td> 
+   <td colname="col2"> <p>An instance of the <span class="codeph"> Metadata </span> class, which might contain custom information about the content to be loaded. </p> <p>Examples of content are alternate or ad content to place inside the main content. If using advertising, set up <span class="codeph"> AuditudeSettings </span>. For more information, see <a href="../../../../tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-metadata/android-1.4-ad-insertion-metadata-set-up.md" format="dita" scope="local"> Ad Insertion Metadata </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -73,8 +73,8 @@ For each new video content, initialize a MediaResource instance with information
 
     * Your MediaPlayer instance.
 
-      For more information, see [Load a media resource in the MediaPlayer](t_psdk_android_1.4_media-resource-load.md). 
-    * A `MediaPlayerItemLoader` For more information, see [Load a media resource using MediaPlayerItemLoader](t_psdk_android_1.4_media-resource-load-using-mediaplayeritemloader.md).
+      For more information, see [Load a media resource in the MediaPlayer](../../../../tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-load.md). 
+    * A `MediaPlayerItemLoader` For more information, see [Load a media resource using MediaPlayerItemLoader](../../../../tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-mediaplayeritemloader.md).
 
    >[!IMPORTANT]
    >

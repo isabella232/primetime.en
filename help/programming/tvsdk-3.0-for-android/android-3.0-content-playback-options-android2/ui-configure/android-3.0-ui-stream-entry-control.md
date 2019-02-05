@@ -9,13 +9,13 @@ internal: n
 snippet: y
 ---
 
-# Enter a stream at a specific time{#enter-a-stream-at-a-specific-time}
+# Enter a stream at a specific time {#enter-a-stream-at-a-specific-time}
 
 By default, when starting playback, VOD media starts at 0 and live media starts at the client live point (MediaPlayer.LIVE_POINT). You can override the default behavior.
 
 1. Pass a position to `MediaPlayer.prepareToPlay`.
 
-   TVSDK considers the given position to be the starting point for the asset, and no seek operation is required. If the position is not inside the seekable range, TVSDK uses the default position. For more information, see [Load a media resource in the media player](t_psdk_android_2.5_media-resource-load.md#load-a-media-resource).
+   TVSDK considers the given position to be the starting point for the asset, and no seek operation is required. If the position is not inside the seekable range, TVSDK uses the default position. For more information, see [Load a media resource in the media player](../../../tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-load.md).
 
    For example: 
 

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Load a media resource in the MediaPlayer{#load-a-media-resource-in-the-mediaplayer}
+# Load a media resource in the MediaPlayer {#load-a-media-resource-in-the-mediaplayer}
 
 Load a resource by directly instantiating a MediaResource and loading the video content to be played. This is one way of loading a media resource.
 

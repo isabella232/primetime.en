@@ -11,6 +11,8 @@ snippet: y
 
 # Requirements{#requirements}
 
+Browser TVSDK requires specific properties for media content, manifest content, and software versions.
+
 This release includes players and supports a wide range of browsers.
 
 The Browser TVSDK release includes the following players:
