@@ -25,7 +25,7 @@ Your entitlement or storefront server will request a license token from the rele
    For a quick-start scenario, in which you merely want to make sure that the various components involved are working together, you may want to use something like [!DNL curl] to make your license token request, (as opposed to initially getting an app up and running and testing calls from there). For example:
 
    * Widevine:     
-    
+
    ```    
    curl "https://wv-gen.test.expressplay.com/hms/wv/token?customerAuthenticator= 
    <Customer Authenticator> 
@@ -65,7 +65,7 @@ Your entitlement or storefront server will request a license token from the rele
    Note that the Widevine response is a "ready-to-use" URL string. 
     
     * PlayReady:     
-    
+
    ```    
    curl "https://pr-gen.test.expressplay.com/hms/pr/token?customerAuthenticator= 
    <Customer Authenticator> 
@@ -91,7 +91,7 @@ Your entitlement or storefront server will request a license token from the rele
    </indexterm>=<CEK> 
       &<Any additional licensing attributes desired>" >>playreadyToken
    ```    
-    
+
    Sample PlayReady test token:     
 
    ```    
@@ -100,37 +100,37 @@ Your entitlement or storefront server will request a license token from the rele
    G_2Qt8RdTGJ2_Q_xtRfnj7H6C-yt6By40IhNaSQ0nNYUsY1_MtCrHXIltlVhN2Ekr_RNyTNvCjYs0V5TqzOPY"} 
       
    ```
-  
-      Note that the PlayReady response is a JSON object, with separate URL and token elements. 
-    
-    * FairPlay:     
 
-      ```    
-      curl "https://fp-gen.test.expressplay.com/hms/fp/token?customerAuthenticator= 
-      <Customer Authenticator> 
-      &kid 
+   Note that the PlayReady response is a JSON object, with separate URL and token elements. 
+    
+   * FairPlay:     
+
+   ```    
+   curl "https://fp-gen.test.expressplay.com/hms/fp/token?customerAuthenticator= 
+    <Customer Authenticator> 
+    &kid 
+    <indexterm>
+      CEKSID 
+    <indexterm>
+      as query parameter kid 
       <indexterm>
-        CEKSID 
-      <indexterm>
-        as query parameter kid 
-        <indexterm>
-          FairPlay 
-        </indexterm> 
+        FairPlay 
       </indexterm> 
-      </indexterm>=<Key ID> 
-            &contentKey 
+    </indexterm> 
+    </indexterm>=<Key ID> 
+          &contentKey 
+    <indexterm>
+      CEK 
+    <indexterm>
+      as query parameter contentKey 
       <indexterm>
-        CEK 
-      <indexterm>
-        as query parameter contentKey 
-        <indexterm>
-          FairPlay 
-        </indexterm> 
+        FairPlay 
       </indexterm> 
-      </indexterm>=<CEK> 
-      &iv=<IV ID> 
-      &<Any additional licensing attributes desired>"
-      ```
+    </indexterm> 
+    </indexterm>=<CEK> 
+    &iv=<IV ID> 
+    &<Any additional licensing attributes desired>"
+    ```
 
       Sample FairPlay test token:
 
