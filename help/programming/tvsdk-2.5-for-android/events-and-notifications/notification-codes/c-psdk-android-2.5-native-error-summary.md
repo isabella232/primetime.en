@@ -177,10 +177,7 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1">
-    <ph id="ec-3301">
-      3301
-    </ph> </td> 
+   <td colname="col1"> 3301 </td> 
    <td colname="col2"><span class="codeph"> AAXS_AuthenticationFailed</span> </td> 
    <td colname="col3"> <p>The server failed to authenticate or authorize the client. </p> 
     <ul id="ul_BE77AC1848FB4C09B6318359ACF1B8EE"> 
@@ -217,10 +214,7 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
    <td colname="col3">For more information about this error code, see <a href="https://forums.adobe.com/thread/1277149" format="https" scope="external"> DRM error 3301 causes and resolution</a>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1">
-    <ph id="ec-3305">
-      3305
-    </ph> </td> 
+   <td colname="col1"> 3305 </td> 
    <td colname="col2"><span class="codeph"> AAXS_ServerConnectionFailed</span> </td> 
    <td colname="col3"> <p>The connection to the license or domain servers timed out, either due to network delay or the client being offline. Normally subErrorId contains HTTP return code. </p> 
     <ul id="ul_938C7D8F07F64B4FA71A09DDF37E2E64"> 
@@ -350,10 +344,7 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
    <td colname="col3"> Not applicable for Android. </td> 
   </tr> 
   <tr> 
-   <td colname="col1">
-    <ph id="ec-3221">
-      3321
-    </ph> </td> 
+   <td colname="col1"> 3321 </td> 
    <td colname="col2"><span class="codeph"> AAXS_I15nFailed </span> </td> 
    <td colname="col3"> <p>The process of provisioning the client with keys failed. subErrorId contains a client-specific, server-specific or line error. </p> 
     <ul id="ul_98D919B9060A441AACB6106F6D8E8DA7"> 
@@ -369,10 +360,7 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
    <td colspan="3"><b>Global Store corruption errors</b> </td> 
   </tr> 
   <tr> 
-   <td colname="col1">
-    <ph id="ec-3322">
-      3322
-    </ph> </td> 
+   <td colname="col1"> 3322 </td> 
    <td colname="col2"><span class="codeph"> AAXS_DeviceBindingFailed </span> </td> 
    <td colname="col3"> <p>The device does not appear to match the configuration that was present when initialized. subErrorId contains a client-specific or line error. </p> <p>The distributor's software should complete one of the following tasks: 
      <ul id="ul_444401051A2E407B95BC44491E9BB71C"> 
