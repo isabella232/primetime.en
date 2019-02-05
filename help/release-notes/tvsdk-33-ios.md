@@ -54,13 +54,13 @@ Operating System: iOS 7.0 or later
 
 * Just In Time - Resolving ads closer to ad markers.
 
-Added `enableDelayAdLoading` property of Boolean type on App level interface to enable JIT. If `enableDelayAdLoading` is NO, it will `setadMetadata.delayAdLoading`to True (property of PTAdMetadata interface).
+Added `enableDelayAdLoading` property of Boolean type on App level interface to enable JIT. If `enableDelayAdLoading` is NO, it will `setadMetadata.delayAdLoading`to True (property of `PTAdMetadata` interface).
 
 With this property enabled, TVSDK resolves each ad breaks prior to its position based on the tolerance value defined. By default, `delayAdTolerance` is set to 5 seconds.
 
 **Version 1.4.45**
 
-* In order to comply with Xcode10, TVSDK has moved from “libstdc++” to “libc++”, and as a result the minimum supported version is iOS 7. Earlier it was iOS 6.
+* In order to comply with Xcode10, TVSDK has moved from “`libstdc++`” to “`libc++`”, and as a result the minimum supported version is iOS 7. Earlier it was iOS 6.
 
 **Version 1.4.44**
 
@@ -183,15 +183,15 @@ Support for on-premise installations of the Adobe Individualization Server to cu
 
 * **Resolution-Based output protection**
 
-DRM Policies can now specify the highest resolution permitted, depending on the device's Output Protection capabilities. For instance "If HDCP is available, allow  content  of up to 1080p resolution to be played, and if HDCP is not available, allow  content  of up to 480p resolution to be played".
+DRM Policies can now specify the highest resolution permitted, depending on the device's Output Protection capabilities. For instance, "If HDCP is available, allow  content  of up to 1080p resolution to be played, and if HDCP is not available, allow  content  of up to 480p resolution to be played".
 
 **Version 1.4.4**
 
 * **Video Heartbeats Library (VHL) update to version 1.4.1.1**
 
   * Added the ability to bundle different analytics use cases, from other SDKs or players, with the Adobe Analytics Video Essentials.
-  * Ad tracking has been optimized by removing the trackAdBreakStart and trackAdBreakComplete methods. The ad break is inferred from the  trackAdStart  and trackAdComplete method calls.
-  * The  playhead  property is no longer needed when tracking ads.
+  * Ad tracking has been optimized by removing the `trackAdBreakStart` and `trackAdBreakComplete` methods. The ad break is inferred from the  `trackAdStart`  and `trackAdComplete` method calls.
+  * The  `playhead`  property is no longer needed when tracking ads.
   * Added support for the Marketing Cloud Visitor ID.
 
 * **Nielsen SDK Integration**
@@ -233,7 +233,7 @@ Comment Type: draft
 
 ### iOS TVSDK 3.3 {#ios-tvsdk}
 
-*   ZD#37820 - Added whitelisting for custom header HS-Id, HS-SSAI-TAG.
+* (ZD#37820) - Added whitelisting for custom header HS-Id, HS-SSAI-TAG.
 
 **Version 3.2**
 
@@ -271,7 +271,7 @@ Added interrupt handler to stop the player from interrupting. On interruption, t
 
 Correct time is calculated for the SCTE markers that are ahead of live point.
 
-**Ticket36492** - currentTime and localTime aren't updated when seeking to a new position during paused status
+**Ticket36492** - `currentTime` and `localTime` aren't updated when seeking to a new position during paused status
 
 Player's current time can now be set to zero in case player is in paused state; earlier the current time used to be set to zero only in play state.
 
@@ -281,8 +281,8 @@ Player's current time can now be set to zero in case player is in paused state; 
 
 Fixed the compilation issues with TVSDK on XCode 10. Due to XCode 10 requirements, apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
 
-**Ticket36321** - Discrepancy observed in seekable range between PTMediaPlayer and AVPlayer instance in "Playing" state.
-**Ticket36493** - libstdc++ support on iOS 12
+**Ticket36321** - Discrepancy observed in seekable range between `PTMediaPlayer` and `AVPlayer` instance in "Playing" state.
+**Ticket36493** - `libstdc++` support on iOS 12
 
 Fixed the compilation issues with TVSDK on iOS 12. Apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
 
@@ -302,7 +302,7 @@ Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancell
 
 **Version 1.4.43**
 
-* (ZD#32990) - iOS: Content playing instead of ads on some cue-points. 'selectedMediaOptionInMediaSelectionGroup' API which was part of AVPlayerItem interface has now moved under AVMediaSelection in iOS 11. The issue got resolved using this new API.
+* (ZD#32990) - iOS: Content playing instead of ads on some cue-points. `selectedMediaOptionInMediaSelectionGroup` API which was part of AVPlayerItem interface has now moved under AVMediaSelection in iOS 11. The issue got resolved using this new API.
 * (ZD#33683) TVSDK removed == suffix from the metadata strings. The issue is fixed in the parsing logic.
 * (ZD#33905) - iOS TVSDK making calls to the manifest files with two user agents. The user agent issue has been fixed in first m3u8 call (fresh install case). M3u8's have the same user-agents for all the calls now.
 * (ZD#34293) - Pre-rolls inserted on LINEAR streams do not play correctly on iOS11. The issue is fixed for preroll ads.
@@ -315,18 +315,18 @@ Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancell
 
 * (ZD#34385) - Playback stalls with a bad URL when returning from signal-based ad insertion.
 
-  Increase the maximum concurrent counts for CustomAVAssetLoaderOperations, so that the manifest reads can continue to execute.
+  Increase the maximum concurrent counts for `CustomAVAssetLoaderOperations`, so that the manifest reads can continue to execute.
 * (ZD#34373) - End users are not able to stream to HDMI-connected  devices,  when stream recording is disallowed.
 * (ZD#32678) - TVSDK does not collect the correct ad IDs on iOS.
 
   Ad ID of the final Ad creative is now picked up in VHL pings in case of VAST/VMAP redirects.
-* (ZD#33904) -  TVSDK  is not Registered for AVFoundation notifications AVAudioSessionMediaServicesWereLostNotification and AVAudioSessionMediaServicesWereResetNotification.
+* (ZD#33904) -  TVSDK  is not Registered for AVFoundation notifications `AVAudioSessionMediaServicesWereLostNotification` and `AVAudioSessionMediaServicesWereResetNotification`.
 
-  PTMediaServicesWereLostNotification and PTMediaServicesWereResetNotification can now be registered on the player App to get the notifications when Media services are reset or lost.
+  `PTMediaServicesWereLostNotification` and `PTMediaServicesWereResetNotification` can now be registered on the player App to get the notifications when Media services are reset or lost.
 
 * (ZD#33815) - Customers are not able to update their prioritization and normalization CRS rules without requiring an app update.
 
-  Added the getCRSRulesJsonURL and setCRSRulesJsonURL APIs to the iOS  TVSDK .
+  Added the `getCRSRulesJsonURL` and `setCRSRulesJsonURL` APIs to the iOS  TVSDK .
 
 **Version 1.4.41 (1.4.41.76)**
 
@@ -339,15 +339,15 @@ Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancell
 * (ZD #30371) - AdBreak start time changes when we insert more than 2 ads in linear stream
 
   Fixed the Error when attempting to playback content on Apple TV, which  prevent  playback completely
-* (ZD #32146)- No PTMediaPlayerStatusError is received for HLS Live content on blocking iOS 11 dev beta
+* (ZD #32146)- No `PTMediaPlayerStatusError` is received for HLS Live content on blocking iOS 11 dev beta
 
-  No PTMediaPlayerStatusError is received for HLS Live and VOD content on blocking using Charles (Drop connection and 403)
+  No `PTMediaPlayerStatusError` is received for HLS Live and VOD content on blocking using Charles (Drop connection and 403)
 * (ZD #29242) - Airplay Video Playback Fails with Ads Enabled
 
   When ads are enabled and AirPlay is enabled starting playing a video, video playback never starts and no error is shown
-* (ZD#33341) - DRMInterface.h triggers build warnings in Xcode 9
+* (ZD#33341) - `DRMInterface.h` triggers build warnings in Xcode 9
 
-  Fixed two block prototypes in DRMInterface.h which were missing the word 'void' in their parameter lists
+  Fixed two block prototypes in `DRMInterface.h` which were missing the word 'void' in their parameter lists
 * (ZD#31979) - Does not compile/run when it is iOS 10 or later for iPhone 7/iPhone7+
 
   Fixed Compiling IB documents for earlier than iOS 7 is no longer supported
@@ -364,15 +364,15 @@ Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancell
 
 * (ZD #32465) - Player cannot handle merged playlists.
 
-  Call finishLoadingWithError(with: Error) for AV foundation to try alternate streams/ trigger failover.
+  Call `finishLoadingWithError`(with: Error) for AV foundation to try alternate streams/ trigger failover.
 
 * (ZD #31951) - TVSDK Error during License Rotations.
 
   Fixed the license rotation issue.
 * (ZD #31951) - White blank screen within an Ad break and no Ad break completion.
 
-  Handled an issue where Facebook VPAID ads were often returning multiple CDATA blocks in a single \&lt;AdParameters\&gt; VAST node.
-* (ZD #33336) - [iOS] TVSDK - Ad pods not being filled, despite enough ads being returned by Freewheel.
+  Handled an issue where Facebook VPAID ads were often returning multiple CDATA blocks in a single `<AdParameters>` VAST node.
+* (ZD #33336) - iOS TVSDK - Ad pods not being filled, despite enough ads being returned by Freewheel.
 
   Created parent-child relation between sequence ad and fallback ad and sorting based on parent sequence and index.
 
@@ -412,7 +412,7 @@ Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancell
 
 Usage of creative Id and AdSystem in CRS request based upon CRS normalization rules
 
-* (ZD #29176) - Crash on PTAdPolicyDeligate satAdBreakAsWatched:position
+* (ZD #29176) - Crash on `PTAdPolicyDeligate` `satAdBreakAsWatched:position`
 
 Crash due to empty AdBreak is handled now.
 
@@ -444,7 +444,7 @@ The issue is fixed and playback starts correctly.
 
 * (ZD #29462) - Ad in VOD causing a crash on iOS  TVSDK .
 
-The issue is fixed. iOS  TVSDK  is raising an exception(AUDNetworkAdInfo::initWithAdId) and not handling it. The exception is due to empty Ad ID.
+The issue is fixed. iOS  TVSDK  is raising an `exception(AUDNetworkAdInfo::initWithAdId)` and not handling it. The exception is due to empty Ad ID.
 
 * (ZD #29281)- Add AdSystem and Creative id to CRS requests.
 
@@ -484,9 +484,9 @@ Enabled by sending the original creative URL for the 1401 CRS request instead of
 
 This issue was resolved by updating resource loading to look from all available bundles.
 
-* (ZD# 27460) Midroll first Ad call - POST to cdn.auditude<span></span>.com returning 403.
+* (ZD# 27460) Midroll first Ad call - POST to `cdn.auditude.com` returning 403.
 
-The new CDN account is unable to handle a POST CDN request. This issue was resolved by updating the code to make the cdn.auditude<span></span>.com ad request to be GET instead of POST.
+The new CDN account is unable to handle a POST CDN request. This issue was resolved by updating the code to make the `cdn.auditude.com` ad request to be GET instead of POST.
 
 **Version 1.4.32** (1.4.32.792 for iOS 6.0+)
 
@@ -550,7 +550,7 @@ When the last ad break start time from the VMAP falls before the total duration 
 
 * The Video Heartbeat Library (VHL) has been updated to version 1.5.9 to resolve the following issues:
 
-    * (ZD #22351) VHL - Analytics: Live video asset duration
+* (ZD #22351) VHL - Analytics: Live video asset duration
 
 This issue was resolved by adding the  assetDuration  API to PTVideoAnalyticsTrackingMetadata to update the asset duration for Live/Linear streams and provide a logic for checking the live stream.
 
@@ -884,7 +884,7 @@ The issue was to resolve the heartbeat in an error state when there is a seek in
 
 * (Zendesk #18053) - Application using the TVSDK crashes on Marshmallow
 
-The TVSDK was crashing on Android M OS when the TVSDK library uses neon code that does YUV -&gt; RGB color conversion. This issue was resolved by updating the functions that are causing this issue by using  non-neon  version of  code .
+The TVSDK was crashing on Android M OS when the TVSDK library uses neon code that does YUV `->` RGB color conversion. This issue was resolved by updating the functions that are causing this issue by using  non-neon  version of `code`.
 
 * (Zendesk #18072) - Android M - Application Crash
 
@@ -1056,7 +1056,7 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-* With JIT enabled and tolerance set to 10 seconds, no VAST call is seen for the first midroll ad break in case of VMAP->VAST redirect ads.
+* With JIT enabled and tolerance set to 10 seconds, no VAST call is seen for the first midroll ad break in case of VMAP`->`VAST redirect ads.
 * Detailed Error notifications are not available when Just in Time Ad resolving is enabled.
 * Error notifications are logged as per ad resolution time and not as per ad sequence.
 * HEVC support has following limitations in this release:
@@ -1073,7 +1073,7 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 * It might experience that License rotation video does not play on iOS 11 and it will play fine on iOS 9.x and iOS 10.x.
 * In VPAID 2.0 support, if the playback is active over AirPlay, VPAID ads are skipped.
 * The drmNativeInterface.framework does not link correctly when the minimum target is set to iOS7 (or later).  
-  Workaround: Explicitly specify the libstdc++6.  dylib  library as follows: Go to Target-&gt;Build Phases-&gt;Link Binary With Libraries and add libstdc++.6.dylib.
+  Workaround: Explicitly specify the libstdc++6.  dylib  library as follows: Go to Target`->`Build Phases`->`Link Binary With Libraries and add libstdc++.6.dylib.
 
 * Post-Roll Ad not getting inserted for replacing API.
 * Seeking in an ad break (without coming out of it) issues a duplicate  ad  start an ad break notification
