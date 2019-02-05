@@ -4,9 +4,6 @@ seo-description: Typically, all Primetime DRM licenses, at creation time, are bo
 seo-title: Play encrypted content using domain support
 title: Play encrypted content using domain support
 uuid: 8854cc0f-9bfc-4833-82d7-a3f46ac88e06
-index: y
-internal: n
-snippet: y
 ---
 
 # Play encrypted content using domain support{#play-encrypted-content-using-domain-support}

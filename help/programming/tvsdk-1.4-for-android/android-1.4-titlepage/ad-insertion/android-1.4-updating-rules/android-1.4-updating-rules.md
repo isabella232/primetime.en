@@ -5,9 +5,6 @@ seo-description: You can use the TVSDK configuration file (AdobeTVSDKConfig.json
 seo-title: Updating ad creative selection rules
 title: Updating ad creative selection rules
 uuid: 84cc13d1-21a3-456b-95c8-200bfec7b453
-index: y
-internal: n
-snippet: y
 ---
 
 # Updating ad creative selection rules{#updating-ad-creative-selection-rules}

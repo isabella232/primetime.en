@@ -2,9 +2,6 @@
 seo-title: Managing Domains
 title: Managing Domains
 uuid: aee02196-8704-46ee-add9-82b371722f0f
-index: y
-internal: n
-snippet: y
 ---
 
 # Managing Domains{#managing-domains}

@@ -4,9 +4,6 @@ seo-description: For live stream ad insertion, you might need to exit from an ad
 seo-title: Implement an early ad break return
 title: Implement an early ad break return
 uuid: 41b70ee1-290b-4732-899e-32b234ec1d9a
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement an early ad break return{#implement-an-early-ad-break-return}

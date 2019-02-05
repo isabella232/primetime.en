@@ -4,9 +4,6 @@ seo-description: To accommodate customers who want to pay only for what they use
 seo-title: Billing usage metrics
 title: Billing usage metrics
 uuid: e792cc72-b1ae-42ce-8b71-f9f9f1de0614
-index: y
-internal: n
-snippet: y
 ---
 
 # Billing usage metrics{#billing-usage-metrics}

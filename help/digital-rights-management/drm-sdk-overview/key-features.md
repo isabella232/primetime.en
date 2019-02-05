@@ -2,9 +2,6 @@
 seo-title: Key features
 title: Key features
 uuid: bee91fd7-a335-4881-abad-8972f28630d5
-index: y
-internal: n
-snippet: y
 ---
 
 # Key features{#key-features}

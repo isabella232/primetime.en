@@ -4,9 +4,6 @@ seo-description: Alternate audio allows you to switch among available audio trac
 seo-title: Alternate audio
 title: Alternate audio
 uuid: d1af1ea9-2516-4835-baff-3577ad5b705e
-index: y
-internal: n
-snippet: y
 ---
 
 # Alternate audio{#alternate-audio}

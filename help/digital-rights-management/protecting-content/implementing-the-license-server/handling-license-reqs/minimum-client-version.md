@@ -2,9 +2,6 @@
 seo-title: Minimum client version
 title: Minimum client version
 uuid: f2b56cff-96fa-4954-a08a-9b3e78f496d6
-index: y
-internal: n
-snippet: y
 ---
 
 # Minimum client version {#minimum-client-version}

@@ -4,9 +4,6 @@ seo-description: You can read quality of service (QoS) information about downloa
 seo-title: Track at the fragment level using load information
 title: Track at the fragment level using load information
 uuid: 41fb2b90-3531-4cc5-bf9b-01ccae04d2fd
-index: y
-internal: n
-snippet: y
 ---
 
 # Track at the fragment level using load information{#track-at-the-fragment-level-using-load-information}

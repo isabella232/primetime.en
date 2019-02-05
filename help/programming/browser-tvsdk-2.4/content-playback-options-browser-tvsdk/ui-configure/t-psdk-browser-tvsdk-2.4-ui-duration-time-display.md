@@ -4,9 +4,6 @@ seo-description: You can use Browser TVSDK to retrieve information about the med
 seo-title: Display the duration, current time, and remaining time of the video
 title: Display the duration, current time, and remaining time of the video
 uuid: 58341c5f-1d53-4f65-92c8-5bde22f61519
-index: y
-internal: n
-snippet: y
 ---
 
 # Display the duration, current time, and remaining time of the video{#display-the-duration-current-time-and-remaining-time-of-the-video}

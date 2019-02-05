@@ -4,9 +4,6 @@ seo-description: TVSDK takes information from FreeWheel and other ad servers pro
 seo-title: Ad measurements from Moat
 title: Ad measurements from Moat
 uuid: b89f900f-50ab-4152-9c0f-11f82d92bffa
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad measurements from Moat{#ad-measurements-from-moat}

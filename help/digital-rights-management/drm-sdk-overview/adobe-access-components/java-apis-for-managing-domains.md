@@ -4,9 +4,6 @@ seo-description: These APIs are used to allow the server to handle client reques
 seo-title: Java APIs for managing device group domains
 title: Java APIs for managing device group domains
 uuid: 952772ea-502b-4ba9-8bcf-cd3562d9f633
-index: y
-internal: n
-snippet: y
 ---
 
 # Java APIs for managing device group domains{#java-apis-for-managing-device-group-domains}

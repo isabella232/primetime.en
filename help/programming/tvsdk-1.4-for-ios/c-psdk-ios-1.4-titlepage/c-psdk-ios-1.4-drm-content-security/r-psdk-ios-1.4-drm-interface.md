@@ -4,9 +4,6 @@ seo-description: The key client-side element of the Primetime digital rights man
 seo-title: Primetime DRM interface overview
 title: Primetime DRM interface overview
 uuid: 3aae7c7a-fd0c-430e-9018-fd72801ab778
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime DRM interface overview{#primetime-drm-interface-overview}

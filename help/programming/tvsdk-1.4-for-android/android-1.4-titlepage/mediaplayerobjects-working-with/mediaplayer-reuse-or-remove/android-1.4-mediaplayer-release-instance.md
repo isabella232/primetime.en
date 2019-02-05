@@ -4,9 +4,6 @@ seo-description: You should release a MediaPlayer instance and resources when yo
 seo-title: Release a MediaPlayer instance and resources
 title: Release a MediaPlayer instance and resources
 uuid: dd3fb5f2-8656-4f85-bdf1-ff2f14b9c716
-index: y
-internal: n
-snippet: y
 ---
 
 # Release a MediaPlayer instance and resources{#release-a-mediaplayer-instance-and-resources}

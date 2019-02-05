@@ -2,9 +2,6 @@
 seo-title: Encrypting content
 title: Encrypting content
 uuid: ea71154e-557b-447e-bc14-208232f00be1
-index: y
-internal: n
-snippet: y
 ---
 
 # Encrypting content{#encrypting-content}

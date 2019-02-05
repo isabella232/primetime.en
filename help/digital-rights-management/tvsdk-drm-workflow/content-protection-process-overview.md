@@ -2,9 +2,6 @@
 seo-title: License acquisition process overview
 title: License acquisition process overview
 uuid: c2eedd0a-3e3a-4c2f-a781-855f0ba65b15
-index: y
-internal: n
-snippet: y
 ---
 
 # License acquisition process overview{#license-acquisition-process-overview}

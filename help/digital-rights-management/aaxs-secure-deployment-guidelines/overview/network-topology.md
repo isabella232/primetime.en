@@ -2,9 +2,6 @@
 seo-title: Network topology overview
 title: Network topology overview
 uuid: 1558b7fa-dc0d-477c-8f1c-9c6f3718e1b0
-index: y
-internal: n
-snippet: y
 ---
 
 # Network topology overview {#network-topology-overview}

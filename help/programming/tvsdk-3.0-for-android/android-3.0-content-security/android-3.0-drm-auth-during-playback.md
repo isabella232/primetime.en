@@ -4,9 +4,6 @@ seo-description: When the DRM metadata for a video is included in the media stre
 seo-title: DRM authentication during playback
 title: DRM authentication during playback
 uuid: d44acfb2-796b-4c60-b622-db01e58042cc
-index: y
-internal: n
-snippet: y
 ---
 
 # DRM authentication during playback{#drm-authentication-during-playback}

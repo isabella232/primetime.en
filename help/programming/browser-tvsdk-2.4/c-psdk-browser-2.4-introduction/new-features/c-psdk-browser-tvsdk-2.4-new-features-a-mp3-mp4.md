@@ -4,9 +4,6 @@ seo-description: Browser TVSDK supports a number of MP3 and MP4 features that yo
 seo-title: Supported MP3 and MP4 features
 title: Supported MP3 and MP4 features
 uuid: 33e3130f-fc78-40b8-a4b7-2fcdd5a2b4f9
-index: y
-internal: n
-snippet: y
 ---
 
 # Supported MP3 and MP4 features{#supported-mp-and-mp-features}

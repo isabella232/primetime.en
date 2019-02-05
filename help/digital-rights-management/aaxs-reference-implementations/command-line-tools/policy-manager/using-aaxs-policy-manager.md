@@ -2,9 +2,6 @@
 seo-title: Using Policy Manager
 title: Using Policy Manager
 uuid: 729aa6bc-8851-40e3-8b86-629a4786575b
-index: y
-internal: n
-snippet: y
 ---
 
 # Using Policy Manager {#using-policy-manager}

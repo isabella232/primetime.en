@@ -4,9 +4,6 @@ seo-description: TVSDK automatically tracks ads for VOD and live/linear streamin
 seo-title: Client ad tracking
 title: Client ad tracking
 uuid: 77e8dc80-9941-45e2-91ae-3ba9b62961ca
-index: y
-internal: n
-snippet: y
 ---
 
 # Client ad tracking{#client-ad-tracking}

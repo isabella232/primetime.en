@@ -4,9 +4,6 @@ seo-description: These classes provide information about the timeline of the par
 seo-title: Timeline classes
 title: Timeline classes
 uuid: effb7308-f581-4bc2-808d-7f7ccb121a3a
-index: y
-internal: n
-snippet: y
 ---
 
 # Timeline classes{#timeline-classes}

@@ -5,9 +5,6 @@ seo-description: You can use the features of the Primetime Digital Rights Manage
 seo-title: Primetime DRM interface overview
 title: Primetime DRM interface overview
 uuid: 5e794147-cc58-448c-b8ec-065e80ef01fd
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime DRM interface overview{#primetime-drm-interface-overview}

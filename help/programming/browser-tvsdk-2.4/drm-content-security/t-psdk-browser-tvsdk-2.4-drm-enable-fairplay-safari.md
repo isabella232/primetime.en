@@ -4,9 +4,6 @@ seo-description: You can enable FairPlay for Safari when working with Primetime 
 seo-title: Enable FairPlay for Safari HLS
 title: Enable FairPlay for Safari HLS
 uuid: 6a250a31-cc4b-4c4b-b1e9-893ee3ca5d78
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable FairPlay for Safari HLS{#enable-fairplay-for-safari-hls}

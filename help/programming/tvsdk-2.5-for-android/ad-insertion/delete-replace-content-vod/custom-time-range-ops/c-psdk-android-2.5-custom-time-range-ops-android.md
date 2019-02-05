@@ -4,9 +4,6 @@ seo-description: The CustomRangeMetadata class identifies different types of tim
 seo-title: Custom time range operations
 title: Custom time range operations
 uuid: e9c6a135-124e-44d4-adf2-dc9d671e2483
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom time range operations{#custom-time-range-operations}

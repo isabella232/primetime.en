@@ -2,9 +2,6 @@
 seo-title: Packager Preferences
 title: Packager Preferences
 uuid: 3e9c971d-3a5f-4f3e-97e7-baab63b1f67f
-index: y
-internal: n
-snippet: y
 ---
 
 # Packager Preferences {#packager-preferences}

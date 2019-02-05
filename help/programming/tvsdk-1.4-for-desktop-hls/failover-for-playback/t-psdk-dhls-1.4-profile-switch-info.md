@@ -4,9 +4,6 @@ seo-description: When the media player switches its current profile to a new pro
 seo-title: Get information about profile switch
 title: Get information about profile switch
 uuid: e26ad9fb-6c54-450e-ab62-784d9033d214
-index: y
-internal: n
-snippet: y
 ---
 
 # Get information about profile switch{#get-information-about-profile-switch}

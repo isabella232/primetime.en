@@ -5,9 +5,6 @@ seo-description: Suspending and restoring the TVSDK MediaPlayer when a device sc
 seo-title: Suspend and Restore MediaPlayer
 title: Suspend and Restore MediaPlayer
 uuid: 7777af91-547c-4f7a-8818-3d46dccee7d6
-index: y
-internal: n
-snippet: y
 ---
 
 # Suspend and Restore MediaPlayer{#suspend-and-restore-mediaplayer}

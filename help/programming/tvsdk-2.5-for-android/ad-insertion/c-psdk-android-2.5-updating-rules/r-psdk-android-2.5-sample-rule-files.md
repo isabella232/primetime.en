@@ -4,9 +4,6 @@ seo-description: In the AdobeTVSDKConfig.json you can specify default rules as w
 seo-title: Sample creative selection rules
 title: Sample creative selection rules
 uuid: 58e6637e-9f5c-471a-8bc8-d217b36e5f9d
-index: y
-internal: n
-snippet: y
 ---
 
 # Sample creative selection rules{#sample-creative-selection-rules}

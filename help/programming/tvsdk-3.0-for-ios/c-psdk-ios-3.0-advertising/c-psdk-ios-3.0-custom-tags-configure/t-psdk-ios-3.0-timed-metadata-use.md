@@ -4,9 +4,6 @@ seo-description: You can use TimedMetadata when the current playback time matche
 seo-title: Use timed metadata
 title: Use timed metadata
 uuid: 1531780f-2502-4235-818c-6c0a6bf3d348
-index: y
-internal: n
-snippet: y
 ---
 
 # Use timed metadata{#use-timed-metadata}

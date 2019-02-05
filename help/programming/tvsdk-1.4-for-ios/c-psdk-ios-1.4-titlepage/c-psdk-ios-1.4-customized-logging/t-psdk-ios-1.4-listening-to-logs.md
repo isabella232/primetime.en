@@ -2,9 +2,6 @@
 seo-title: Listen to logs
 title: Listen to logs
 uuid: 17b3c6c5-94bc-4b2d-afce-bda0f59054b6
-index: y
-internal: n
-snippet: y
 ---
 
 # Listen to logs{#listen-to-logs}

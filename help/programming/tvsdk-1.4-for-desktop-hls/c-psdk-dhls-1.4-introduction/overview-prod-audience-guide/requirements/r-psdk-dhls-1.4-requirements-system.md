@@ -4,9 +4,6 @@ seo-description: To use TVSDK, ensure that your hardware, operating system, and 
 seo-title: System and software requirements
 title: System and software requirements
 uuid: e0f58dac-96b6-41d1-bc4c-543bb3b4823b
-index: y
-internal: n
-snippet: y
 ---
 
 # System and software requirements{#system-and-software-requirements}

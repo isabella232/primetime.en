@@ -4,9 +4,6 @@ seo-description: When TVSDK detects a subscribed tag in the playlist/manifest, t
 seo-title: Timed metadata class
 title: Timed metadata class
 uuid: c7b1c1d7-48b3-43c7-aa21-f800d894976d
-index: y
-internal: n
-snippet: y
 ---
 
 # Timed metadata class{#timed-metadata-class}

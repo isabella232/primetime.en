@@ -4,9 +4,6 @@ seo-description: The Adobe Primetime DRM SDK allows you to develop applications 
 seo-title: Securely storing policies
 title: Securely storing policies
 uuid: adb7cfc2-bcd8-4013-b63f-37d0c75b9885
-index: y
-internal: n
-snippet: y
 ---
 
 # Securely storing policies{#securely-storing-policies}

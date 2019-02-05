@@ -4,9 +4,6 @@ seo-description: A MediaResource represents the content that is about to be load
 seo-title: MediaPlayer and MediaResource classes
 title: MediaPlayer and MediaResource classes
 uuid: 7393c320-7dbb-4580-9425-a735f9d03ef5
-index: y
-internal: n
-snippet: y
 ---
 
 # MediaPlayer and MediaResource classes{#mediaplayer-and-mediaresource-classes}

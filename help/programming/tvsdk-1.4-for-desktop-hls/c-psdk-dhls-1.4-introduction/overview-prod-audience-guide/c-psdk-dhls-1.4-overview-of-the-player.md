@@ -4,9 +4,6 @@ seo-description: TVSDK for Desktop HLS includes a variety of features and provid
 seo-title: Primetime TVSDK features
 title: Primetime TVSDK features
 uuid: 0a7ebb05-7da5-49ff-928a-4d2124eaa115
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime TVSDK features{#primetime-tvsdk-features}

@@ -4,9 +4,6 @@ seo-description: The Adobe Access Server for Protected Streaming requires two ty
 seo-title: Configuration Directory Structure
 title: Configuration Directory Structure
 uuid: c6cfc734-6b7c-4502-9bdb-c7aaca156e0e
-index: y
-internal: n
-snippet: y
 ---
 
 # License server configuration files & Configuration Directory Structure {#configuration-directory-structure}

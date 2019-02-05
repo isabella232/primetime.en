@@ -2,9 +2,6 @@
 seo-title: Jailbreak Enforcement (requires Adobe Primetime)
 title: Jailbreak Enforcement (requires Adobe Primetime)
 uuid: 12be7499-c359-406f-ace9-a4aad9e00207
-index: y
-internal: n
-snippet: y
 ---
 
 # Jailbreak Enforcement (requires Adobe Primetime) {#jailbreak-enforcement-requires-adobe-primetime}

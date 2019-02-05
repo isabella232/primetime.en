@@ -4,9 +4,6 @@ seo-description: The PTMediaPlayer object represents your media player. A PTMedi
 seo-title: Work with MediaPlayer objects
 title: Work with MediaPlayer objects
 uuid: eba26ad7-8c9a-4703-af32-1dfb928f6b67
-index: y
-internal: n
-snippet: y
 ---
 
 # Work with MediaPlayer objects{#work-with-mediaplayer-objects}

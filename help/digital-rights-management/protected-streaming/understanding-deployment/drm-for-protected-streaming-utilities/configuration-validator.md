@@ -4,9 +4,6 @@ seo-description: Adobe recommends that if you make changes in the configuration 
 seo-title: Configuration validator
 title: Configuration validator
 uuid: 7b44919a-0319-4675-95e2-ad1ad72ec0cb
-index: y
-internal: n
-snippet: y
 ---
 
 # Configuration validator{#configuration-validator}

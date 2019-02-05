@@ -4,9 +4,6 @@ seo-description: When content is playing, Browser TVSDK can display ads and pass
 seo-title: Ads
 title: Ads
 uuid: 9a5e8c83-18ce-41e8-9cb1-fdc9da903faf
-index: y
-internal: n
-snippet: y
 ---
 
 # Ads{#ads}

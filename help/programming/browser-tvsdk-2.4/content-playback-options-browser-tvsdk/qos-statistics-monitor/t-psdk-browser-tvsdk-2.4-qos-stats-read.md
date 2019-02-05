@@ -4,9 +4,6 @@ seo-description: You can read playback, buffering, and device statistics from th
 seo-title: Read QOS playback, buffering, and device statistics
 title: Read QOS playback, buffering, and device statistics
 uuid: 64f6b73d-3dda-40f8-b2bc-158713a2d191
-index: y
-internal: n
-snippet: y
 ---
 
 # Read QOS playback, buffering, and device statistics{#read-qos-playback-buffering-and-device-statistics}

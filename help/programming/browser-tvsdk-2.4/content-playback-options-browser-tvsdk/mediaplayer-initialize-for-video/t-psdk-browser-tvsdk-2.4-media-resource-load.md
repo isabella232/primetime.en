@@ -4,9 +4,6 @@ seo-description: Load a resource by directly instantiating a MediaResource and l
 seo-title: Load a media resource in the MediaPlayer
 title: Load a media resource in the MediaPlayer
 uuid: ac31ccfe-161d-41a2-9a6e-38fae11ceab5
-index: y
-internal: n
-snippet: y
 ---
 
 # Load a media resource in the MediaPlayer{#load-a-media-resource-in-the-mediaplayer}

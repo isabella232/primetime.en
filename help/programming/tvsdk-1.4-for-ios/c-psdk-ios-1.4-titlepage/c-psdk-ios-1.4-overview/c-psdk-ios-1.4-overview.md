@@ -4,9 +4,6 @@ seo-description: The Adobe Primetime Software Development Kit (TVSDK) is a toolk
 seo-title: Overview
 title: Overview
 uuid: 0b3fb26c-f3d1-4cf2-9859-89b052501eb3
-index: y
-internal: n
-snippet: y
 ---
 
 # Overview{#overview}

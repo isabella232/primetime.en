@@ -4,9 +4,6 @@ seo-description: TVSDK dispatches events/notifications in generally expected seq
 seo-title: Order of playback events
 title: Order of playback events
 uuid: 4a9ea66b-a383-46ff-9ab8-983b1dd7f935
-index: y
-internal: n
-snippet: y
 ---
 
 # Order of playback events{#order-of-playback-events}

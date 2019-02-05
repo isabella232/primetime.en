@@ -4,9 +4,6 @@ seo-description: The MediaPlayerItem.timedMetadata property provides access to a
 seo-title: Notifications for manifest tags
 title: Notifications for manifest tags
 uuid: 50727455-b37b-4e39-8efb-a97de3164074
-index: y
-internal: n
-snippet: y
 ---
 
 # Notifications for manifest tags{#notifications-for-manifest-tags}

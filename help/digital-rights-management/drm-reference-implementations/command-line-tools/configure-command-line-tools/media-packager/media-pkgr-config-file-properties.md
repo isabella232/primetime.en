@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Configuration properties
 title: Configuration properties
 uuid: 814b04b0-a3cf-49fa-8f6a-06ea1adf176d
-index: y
-internal: n
-snippet: y
 ---
 
 # Configuration properties{#configuration-properties}

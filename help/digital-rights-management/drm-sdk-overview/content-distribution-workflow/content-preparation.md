@@ -4,9 +4,6 @@ seo-description: Any use of Adobe Primetime DRM consists of two key steps at dif
 seo-title: Content preparation
 title: Content preparation
 uuid: edb633f0-b623-41ea-a52a-19017d45fb18
-index: y
-internal: n
-snippet: y
 ---
 
 # Content preparation{#content-preparation}

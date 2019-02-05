@@ -4,9 +4,6 @@ seo-description: In some cases you may want to restrict end users from playing c
 seo-title: Device Binding
 title: Device Binding
 uuid: 351fa33c-4226-4ed5-829c-56b563166fec
-index: y
-internal: n
-snippet: y
 ---
 
 # Device Binding{#device-binding}

@@ -1,8 +1,5 @@
 ---
 uuid: a03d9753-0133-4d37-8136-cad6c78645e4
-index: y
-internal: n
-snippet: y
 ---
 
 # null {#no-title}

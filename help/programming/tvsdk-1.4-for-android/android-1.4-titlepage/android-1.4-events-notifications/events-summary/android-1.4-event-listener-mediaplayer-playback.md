@@ -4,9 +4,6 @@ seo-description: TVSDK dispatches playback events when media playback operations
 seo-title: Playback events
 title: Playback events
 uuid: 809a8e0e-f4d8-4013-b04a-49fb93d7ca8a
-index: y
-internal: n
-snippet: y
 ---
 
 # Playback events{#playback-events}

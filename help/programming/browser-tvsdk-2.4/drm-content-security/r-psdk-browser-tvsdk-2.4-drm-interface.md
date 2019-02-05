@@ -4,9 +4,6 @@ seo-description: Browser TVSDK provides a DRM interface you can use to play cont
 seo-title: DRM interface overview
 title: DRM interface overview
 uuid: b553ebad-8310-4517-8d97-ef8a1c5f4340
-index: y
-internal: n
-snippet: y
 ---
 
 # DRM interface overview{#drm-interface-overview}

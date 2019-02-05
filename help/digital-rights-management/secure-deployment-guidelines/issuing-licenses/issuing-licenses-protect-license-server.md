@@ -4,9 +4,6 @@ seo-description: You must ensure that you are securely issuing licenses. Conside
 seo-title: Protecting the License Server
 title: Protecting the License Server
 uuid: 7b5de17d-d0a7-41df-9651-4ff51c9965c6
-index: y
-internal: n
-snippet: y
 ---
 
 # Protecting the License Server{#protecting-the-license-server}

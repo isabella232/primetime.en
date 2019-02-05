@@ -4,9 +4,6 @@ seo-description: You can set polices for FairPlay-protected content by using an 
 seo-title: Setting policies for FairPlay
 title: Setting policies for FairPlay
 uuid: a956bf61-d2ef-4b69-aa3f-91a398f1c7b5
-index: y
-internal: n
-snippet: y
 ---
 
 # Setting policies for FairPlay {#setting-policies-for-fairplay}

@@ -4,9 +4,6 @@ seo-description: To use Flash Player, ensure that your environment meets the nec
 seo-title: Flash Player requirements
 title: Flash Player requirements
 uuid: f181457b-2bb4-4baa-b2b7-d787f65fab75
-index: y
-internal: n
-snippet: y
 ---
 
 # Flash Player requirements{#flash-player-requirements}

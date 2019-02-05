@@ -2,9 +2,6 @@
 seo-title: DRM policy criticality
 title: DRM policy criticality
 uuid: ddc03142-7acb-4a9f-a367-e34cfc5e78ba
-index: y
-internal: n
-snippet: y
 ---
 
 # DRM policy criticality{#drm-policy-criticality}

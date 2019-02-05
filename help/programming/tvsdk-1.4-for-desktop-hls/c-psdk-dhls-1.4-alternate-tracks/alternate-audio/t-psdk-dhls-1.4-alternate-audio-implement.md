@@ -4,9 +4,6 @@ seo-description: Late-binding audio uses MediaPlayer to play a video that is spe
 seo-title: Access alternate audio tracks
 title: Access alternate audio tracks
 uuid: 136b4f1b-e56f-4a8a-a961-05193434558c
-index: y
-internal: n
-snippet: y
 ---
 
 # Access alternate audio tracks{#access-alternate-audio-tracks}

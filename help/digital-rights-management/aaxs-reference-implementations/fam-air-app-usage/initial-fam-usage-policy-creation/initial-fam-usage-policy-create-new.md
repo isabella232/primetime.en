@@ -4,9 +4,6 @@ seo-description: Before any content can be packaged, one or more policies must b
 seo-title: Create a new policy
 title: Create a new policy
 uuid: 972f8645-b695-49d5-a5e6-7e8c53fc34c4
-index: y
-internal: n
-snippet: y
 ---
 
 # Create a new policy {#create-a-new-policy}

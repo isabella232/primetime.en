@@ -4,9 +4,6 @@ seo-description: You can cast any of the streams from a TVSDK-based sender app a
 seo-title: Google Cast app for Browser TVSDK
 title: Google Cast app for Browser TVSDK
 uuid: 018143e2-143a-4f88-97c6-4b10a2083f9e
-index: y
-internal: n
-snippet: y
 ---
 
 # Google Cast app for Browser TVSDK{#google-cast-app-for-browser-tvsdk}

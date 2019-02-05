@@ -4,9 +4,6 @@ seo-description: Closed captions and subtitles have some unique differences, and
 seo-title: Requirements for subtitles and closed captions
 title: Requirements for subtitles and closed captions
 uuid: 18ed6ac1-4b25-4590-8c61-3ffb0464d093
-index: y
-internal: n
-snippet: y
 ---
 
 # Requirements for subtitles and closed captions{#requirements-for-subtitles-and-closed-captions}

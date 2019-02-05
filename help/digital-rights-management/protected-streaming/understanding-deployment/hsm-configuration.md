@@ -4,9 +4,6 @@ seo-description: If you select an HSM to store your server credentials, you must
 seo-title: HSM configuration
 title: HSM configuration
 uuid: 3610840b-082e-4a73-8aa5-5065f9232e0b
-index: y
-internal: n
-snippet: y
 ---
 
 # HSM configuration{#hsm-configuration}

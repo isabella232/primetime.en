@@ -2,9 +2,6 @@
 seo-title: Multiple play rights
 title: Multiple play rights
 uuid: 90f898bf-ffa2-44f0-a01a-0af8868500ee
-index: y
-internal: n
-snippet: y
 ---
 
 # Multiple play rights{#multiple-play-rights}

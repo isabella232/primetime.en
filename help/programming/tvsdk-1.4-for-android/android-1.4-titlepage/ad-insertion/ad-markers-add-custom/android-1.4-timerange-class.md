@@ -4,9 +4,6 @@ seo-description: Custom ad markers allow you to pass a set of TimeRange specific
 seo-title: TimeRange class
 title: TimeRange class
 uuid: adf4f1ad-6b3b-48ac-a388-ee1fd54f770b
-index: y
-internal: n
-snippet: y
 ---
 
 # TimeRange class{#timerange-class}

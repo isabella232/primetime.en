@@ -4,9 +4,6 @@ seo-description: TVSDK provides default opportunity generators and content resol
 seo-title: Opportunity generators and content resolvers
 title: Opportunity generators and content resolvers
 uuid: e1d658eb-cb6c-407d-9163-2dbf62ba1d19
-index: y
-internal: n
-snippet: y
 ---
 
 # Opportunity generators and content resolvers{#opportunity-generators-and-content-resolvers}

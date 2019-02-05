@@ -2,9 +2,6 @@
 seo-title: Start date
 title: Start date
 uuid: 1fc492d2-a0ba-4496-b4a4-d3a8ee1293b3
-index: y
-internal: n
-snippet: y
 ---
 
 # Start date{#start-date}

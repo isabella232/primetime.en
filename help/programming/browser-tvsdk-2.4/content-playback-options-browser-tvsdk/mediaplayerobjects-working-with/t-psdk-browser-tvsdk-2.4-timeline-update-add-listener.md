@@ -4,9 +4,6 @@ seo-description: To receive notifications about timeline updates, register the a
 seo-title: Add listeners for TimelineUpdatedEvent
 title: Add listeners for TimelineUpdatedEvent
 uuid: 7d742e15-5a55-4155-93a7-7b79f21c1472
-index: y
-internal: n
-snippet: y
 ---
 
 # Add listeners for TimelineUpdatedEvent{#add-listeners-for-timelineupdatedevent}

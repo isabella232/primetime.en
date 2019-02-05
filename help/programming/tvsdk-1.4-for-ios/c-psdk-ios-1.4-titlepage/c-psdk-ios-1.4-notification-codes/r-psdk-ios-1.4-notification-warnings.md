@@ -4,9 +4,6 @@ seo-description: This table proves detailed information about WARN type notifica
 seo-title: WARNING notification codes
 title: WARNING notification codes
 uuid: 136b5a65-b842-40fd-8ddd-efe01d73c388
-index: y
-internal: n
-snippet: y
 ---
 
 # WARNING notification codes{#warning-notification-codes}

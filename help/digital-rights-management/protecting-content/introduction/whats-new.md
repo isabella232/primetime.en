@@ -4,9 +4,6 @@ seo-description: Adobe Primetime DRM is an advanced Digital Rights Management (D
 seo-title: What is new in Adobe Primetime DRM
 title: What is new in Adobe Primetime DRM
 uuid: 3c8da594-a231-4496-bffc-130775ecae50
-index: y
-internal: n
-snippet: y
 ---
 
 # What is new in Adobe Primetime DRM{#what-is-new-in-adobe-primetime-drm}

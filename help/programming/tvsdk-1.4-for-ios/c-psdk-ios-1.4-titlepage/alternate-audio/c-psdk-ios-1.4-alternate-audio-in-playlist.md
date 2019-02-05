@@ -4,9 +4,6 @@ seo-description: The playlist for a video can specify an unlimited number of alt
 seo-title: Alternate audio tracks in the playlist
 title: Alternate audio tracks in the playlist
 uuid: 68f01375-9d57-4839-a1c0-7e022b374012
-index: y
-internal: n
-snippet: y
 ---
 
 # Alternate audio tracks in the playlist{#alternate-audio-tracks-in-the-playlist}

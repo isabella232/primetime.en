@@ -8,9 +8,6 @@ contentOwner: dekalra
 topic-tags: release-notes
 products: SG_PRIMETIME
 discoiquuid: ebfc8819-f5a9-47a2-b454-0e4e6f9e4640
-index: y
-internal: n
-snippet: y
 ---
 
 # TVSDK 2.1 PlayStation 4 Release Notes {#tvsdk-playstation-release-notes}

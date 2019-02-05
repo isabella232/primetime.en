@@ -2,9 +2,6 @@
 seo-title: License Embedder overview
 title: License Embedder overview
 uuid: 0639d7b0-a6c1-45fe-a21b-1fb23d0e379e
-index: y
-internal: n
-snippet: y
 ---
 
 # License Embedder overview {#license-embedder-overview}

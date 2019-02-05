@@ -5,9 +5,6 @@ seo-description: null
 seo-title: Apply creative selection rules
 title: Apply creative selection rules
 uuid: 2f009776-201c-418e-aa8f-cb409d0046d8
-index: y
-internal: n
-snippet: y
 ---
 
 # Apply creative selection rules{#apply-creative-selection-rules}

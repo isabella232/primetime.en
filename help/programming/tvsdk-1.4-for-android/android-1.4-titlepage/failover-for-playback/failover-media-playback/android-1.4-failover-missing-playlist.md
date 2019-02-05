@@ -4,9 +4,6 @@ seo-description: When an entire playlist is missing, for example, when the M3U8 
 seo-title: Missing playlist failover
 title: Missing playlist failover
 uuid: 91a537f3-3e69-4669-8f84-0292c19ac209
-index: y
-internal: n
-snippet: y
 ---
 
 # Missing playlist failover{#missing-playlist-failover}

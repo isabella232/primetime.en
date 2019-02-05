@@ -2,9 +2,6 @@
 seo-title: Deploy the WAR files
 title: Deploy the WAR files
 uuid: 435a6a6e-c981-46fb-bca9-7f5f34eecd6a
-index: y
-internal: n
-snippet: y
 ---
 
 # Deploy the WAR files{#deploy-the-war-files}

@@ -4,9 +4,6 @@ seo-description: You can control the position and size of the video view using t
 seo-title: Control the position and size of the video view
 title: Control the position and size of the video view
 uuid: 2231c574-03cd-45a8-ab00-4a42f8e044f0
-index: y
-internal: n
-snippet: y
 ---
 
 # Control the position and size of the video view{#control-the-position-and-size-of-the-video-view}

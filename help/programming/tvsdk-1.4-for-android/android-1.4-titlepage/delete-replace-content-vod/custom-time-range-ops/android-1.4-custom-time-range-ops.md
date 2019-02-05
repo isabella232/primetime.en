@@ -4,9 +4,6 @@ seo-description: TVSDK supports the programmatic deleting and replacing of ad co
 seo-title: Custom time range operations
 title: Custom time range operations
 uuid: e04af786-8dac-41a6-8406-f2ca04f612a4
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom time range operations{#custom-time-range-operations}

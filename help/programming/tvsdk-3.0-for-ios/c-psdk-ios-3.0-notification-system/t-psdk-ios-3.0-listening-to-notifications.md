@@ -2,9 +2,6 @@
 seo-title: Listen to notifications
 title: Listen to notifications
 uuid: d513727a-6124-4494-8c7a-39f8adb06716
-index: y
-internal: n
-snippet: y
 ---
 
 # Listen to notifications{#listen-to-notifications}

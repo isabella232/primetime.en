@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Set the XSTS token in your player
 title: Set the XSTS token in your player
 uuid: 8995e029-deee-4e23-9cda-a50de8c4f2c0
-index: y
-internal: n
-snippet: y
 ---
 
 # Set the XSTS token in your player{#set-the-xsts-token-in-your-player}

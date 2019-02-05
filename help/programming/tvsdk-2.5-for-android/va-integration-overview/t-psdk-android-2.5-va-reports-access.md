@@ -4,9 +4,6 @@ seo-description: Video analytics reports are routed to the Adobe Analytics repor
 seo-title: Access video analytics reports
 title: Access video analytics reports
 uuid: 6e89287b-f639-4ab7-994f-dd0ece97dad8
-index: y
-internal: n
-snippet: y
 ---
 
 # Access video analytics reports{#access-video-analytics-reports}

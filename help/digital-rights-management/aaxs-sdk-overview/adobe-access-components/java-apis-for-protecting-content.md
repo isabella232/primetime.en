@@ -2,9 +2,6 @@
 seo-title: Java APIs for protecting content
 title: Java APIs for protecting content
 uuid: c7256347-955f-4c30-bfe4-cd381959bb26
-index: y
-internal: n
-snippet: y
 ---
 
 # Java APIs for protecting content {#java-apis-for-protecting-content}

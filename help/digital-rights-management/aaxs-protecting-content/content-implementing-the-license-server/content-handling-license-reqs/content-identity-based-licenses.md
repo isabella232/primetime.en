@@ -2,9 +2,6 @@
 seo-title: Identity-based licenses
 title: Identity-based licenses
 uuid: 3340833c-404a-4647-86b9-6f67ca354f58
-index: y
-internal: n
-snippet: y
 ---
 
 # Identity-based licenses{#identity-based-licenses}

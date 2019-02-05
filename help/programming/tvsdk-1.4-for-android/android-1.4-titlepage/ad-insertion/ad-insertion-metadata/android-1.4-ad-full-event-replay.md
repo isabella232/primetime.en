@@ -4,9 +4,6 @@ seo-description: Full-event replay (FER) is a VOD asset that acts as a live/DVR 
 seo-title: Enable ads in full-event replay
 title: Enable ads in full-event replay
 uuid: 70e463bd-332c-4f91-ac05-03e79c0939a4
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable ads in full-event replay{#enable-ads-in-full-event-replay}

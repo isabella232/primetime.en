@@ -4,9 +4,6 @@ seo-description: You can implement a control bar with DVR support for VOD and li
 seo-title: Construct a control bar enhanced for DVR
 title: Construct a control bar enhanced for DVR
 uuid: 08f943e8-90da-4860-92dd-dd289fd68cba
-index: y
-internal: n
-snippet: y
 ---
 
 # Construct a control bar enhanced for DVR{#construct-a-control-bar-enhanced-for-dvr}

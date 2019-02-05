@@ -4,9 +4,6 @@ seo-description: Primetime DRM lets content owners and distributors control how 
 seo-title: About Adobe Primetime DRM
 title: About Adobe Primetime DRM
 uuid: 4c445ccb-0a8e-490f-b840-8654fcaa106c
-index: y
-internal: n
-snippet: y
 ---
 
 # About Adobe Primetime DRM{#about-adobe-primetime-drm}

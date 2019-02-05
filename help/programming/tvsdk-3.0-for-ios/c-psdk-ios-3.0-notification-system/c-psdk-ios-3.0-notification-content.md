@@ -4,9 +4,6 @@ seo-description: PTNotification objects provide information about changes in pla
 seo-title: Notification content
 title: Notification content
 uuid: d42d2e89-1bdd-4be0-8a69-821fec6bbc75
-index: y
-internal: n
-snippet: y
 ---
 
 # Notification content{#notification-content}

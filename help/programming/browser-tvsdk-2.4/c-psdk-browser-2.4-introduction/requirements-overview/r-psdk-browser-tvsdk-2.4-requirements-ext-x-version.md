@@ -4,9 +4,6 @@ seo-description: The version of #EXT-X-VERSION in the .m3u8 file affects what fe
 seo-title: #EXT-X-VERSION requirements
 title: #EXT-X-VERSION requirements
 uuid: 8d22930f-4faf-4a40-b1f0-507886cd8938
-index: y
-internal: n
-snippet: y
 ---
 
 # #EXT-X-VERSION requirements{#ext-x-version-requirements}

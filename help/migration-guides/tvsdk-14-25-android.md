@@ -8,9 +8,6 @@ contentOwner: vishgupt
 products: SG_PRIMETIME
 topic-tags: migration
 discoiquuid: 8d9136bf-b3ae-450c-bd8a-0bb246527886
-index: y
-internal: n
-snippet: y
 ---
 
 # TVSDK 1.4 to 2.5 for Android (Java) {#tvsdk-to-for-android-java}

@@ -4,9 +4,6 @@ seo-description: null
 seo-title: License Generator command-line usage
 title: License Generator command-line usage
 uuid: 79517cda-e8d0-45ec-9efd-845b9c6a9d1f
-index: y
-internal: n
-snippet: y
 ---
 
 # License Generator command-line usage{#license-generator-command-line-usage}

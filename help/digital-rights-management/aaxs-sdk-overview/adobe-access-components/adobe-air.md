@@ -2,9 +2,6 @@
 seo-title: Adobe AIR
 title: Adobe AIR
 uuid: 42b426d1-757e-444b-9f13-68a15d54b114
-index: y
-internal: n
-snippet: y
 ---
 
 # Adobe AIR {#adobe-air}

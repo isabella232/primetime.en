@@ -4,9 +4,6 @@ seo-description: You can display the duration of the currently active content.
 seo-title: Display the duration of the video
 title: Display the duration of the video
 uuid: 945f222d-80ba-4832-a06f-9bb8db6adbcb
-index: y
-internal: n
-snippet: y
 ---
 
 # Display the duration of the video{#display-the-duration-of-the-video}

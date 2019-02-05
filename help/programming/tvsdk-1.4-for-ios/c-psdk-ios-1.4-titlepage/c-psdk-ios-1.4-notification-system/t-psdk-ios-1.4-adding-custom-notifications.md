@@ -2,9 +2,6 @@
 seo-title: Add custom notifications
 title: Add custom notifications
 uuid: 4b48db70-7188-4c79-9428-8cbf45ef15f0
-index: y
-internal: n
-snippet: y
 ---
 
 # Add custom notifications{#add-custom-notifications}

@@ -8,9 +8,6 @@ contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: f1ebc1a8-185a-493a-9c00-a6102dffb128
-index: y
-internal: n
-snippet: y
 ---
 
 # TVSDK 1.4 for Android Release Notes {#tvsdk-for-android-release-notes}

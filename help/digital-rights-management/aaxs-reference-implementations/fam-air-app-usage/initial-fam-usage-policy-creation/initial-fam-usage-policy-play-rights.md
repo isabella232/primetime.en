@@ -2,9 +2,6 @@
 seo-title: Play Rights
 title: Play Rights
 uuid: 90f2a7a6-6637-4d10-9afe-6d2e77fc4185
-index: y
-internal: n
-snippet: y
 ---
 
 # Play Rights {#play-rights}

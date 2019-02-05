@@ -4,9 +4,6 @@ seo-description: You can use the features of the Primetime Digital Rights Manage
 seo-title: Supported DRM systems
 title: Supported DRM systems
 uuid: db1f3d2f-b493-486c-ac53-49ccee9ec06b
-index: y
-internal: n
-snippet: y
 ---
 
 # Supported DRM systems{#supported-drm-systems}

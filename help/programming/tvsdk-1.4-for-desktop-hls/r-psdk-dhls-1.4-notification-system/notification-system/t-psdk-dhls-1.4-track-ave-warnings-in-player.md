@@ -4,9 +4,6 @@ seo-description: Using the NotificationEvent, you can track warnings that are pa
 seo-title: Track AVE warnings in your player
 title: Track AVE warnings in your player
 uuid: 236aee5e-6b1a-4298-9d3b-f33b40416c19
-index: y
-internal: n
-snippet: y
 ---
 
 # Track AVE warnings in your player{#track-ave-warnings-in-your-player}

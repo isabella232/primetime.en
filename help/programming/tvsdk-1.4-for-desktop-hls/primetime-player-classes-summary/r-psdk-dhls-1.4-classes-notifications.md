@@ -4,9 +4,6 @@ seo-description: These classes describe messages about errors, warnings, and som
 seo-title: Notification classes
 title: Notification classes
 uuid: 3befc64b-4abd-47df-9c45-215b49029757
-index: y
-internal: n
-snippet: y
 ---
 
 # Notification classes{#notification-classes}

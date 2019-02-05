@@ -4,9 +4,6 @@ seo-description: You can obtain a description of the timeline that is associated
 seo-title: Inspect the playback timeline
 title: Inspect the playback timeline
 uuid: b2049e53-7c78-40f9-a43f-7ff7ee5581d0
-index: y
-internal: n
-snippet: y
 ---
 
 # Inspect the playback timeline{#inspect-the-playback-timeline}

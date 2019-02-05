@@ -2,9 +2,6 @@
 seo-title: Content acquisition
 title: Content acquisition
 uuid: f3d8b4ef-bc45-4c2d-962b-638512ca0ef3
-index: y
-internal: n
-snippet: y
 ---
 
 # Content acquisition {#content-acquisition}

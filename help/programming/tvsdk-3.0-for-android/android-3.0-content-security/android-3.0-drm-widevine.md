@@ -4,9 +4,6 @@ seo-description: You can use the features of the Primetime Digital Rights Manage
 seo-title: Widevine DRM
 title: Widevine DRM
 uuid: 3a5fd786-4319-4e92-83b6-0f5328df6a44
-index: y
-internal: n
-snippet: y
 ---
 
 # Widevine DRM{#widevine-drm}

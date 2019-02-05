@@ -4,9 +4,6 @@ seo-description: Media streams can carry additional metadata in the form of tags
 seo-title: Custom tags
 title: Custom tags
 uuid: 2892712f-bb01-4112-baee-6dcafd4fb923
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom tags{#custom-tags}

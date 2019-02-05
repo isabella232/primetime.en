@@ -2,9 +2,6 @@
 seo-title: Global Log File
 title: Global Log File
 uuid: e43844e7-92d9-45d4-b8b0-e5d7328a4963
-index: y
-internal: n
-snippet: y
 ---
 
 # Global Log File{#global-log-file}

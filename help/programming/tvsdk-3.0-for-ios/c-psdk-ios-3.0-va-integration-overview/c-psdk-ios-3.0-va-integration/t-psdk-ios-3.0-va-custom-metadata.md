@@ -4,9 +4,6 @@ seo-description: You can provide custom metadata on content, ads, and chapter tr
 seo-title: Implement custom metadata support
 title: Implement custom metadata support
 uuid: 229681f5-ff77-4321-8022-b8ccf2928fb3
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement custom metadata support{#implement-custom-metadata-support}

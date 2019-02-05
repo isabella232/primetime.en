@@ -4,9 +4,6 @@ seo-description: To package you content, you can use either Adobe Offline Packag
 seo-title: Package your content for FairPlay
 title: Package your content for FairPlay
 uuid: 92850da0-256c-4046-aa04-b4fe3034731a
-index: y
-internal: n
-snippet: y
 ---
 
 # Package your content for FairPlay{#package-your-content-for-fairplay}

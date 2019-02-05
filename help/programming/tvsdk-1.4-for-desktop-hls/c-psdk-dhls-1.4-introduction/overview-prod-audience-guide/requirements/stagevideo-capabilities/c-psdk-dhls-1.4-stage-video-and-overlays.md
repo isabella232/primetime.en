@@ -4,9 +4,6 @@ seo-description: You can use HTML overlays with StageVideo to display UI element
 seo-title: StageVideo and HTML Overlays
 title: StageVideo and HTML Overlays
 uuid: 84e862ab-4c35-47a2-9c4e-f792d3ef5363
-index: y
-internal: n
-snippet: y
 ---
 
 # StageVideo and HTML Overlays{#stagevideo-and-html-overlays}

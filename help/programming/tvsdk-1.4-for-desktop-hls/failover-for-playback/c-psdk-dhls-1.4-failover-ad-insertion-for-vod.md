@@ -4,9 +4,6 @@ seo-description: The video-on-demand (VOD) ad-insertion process consists of the 
 seo-title: Advertising insertion and failover for VOD
 title: Advertising insertion and failover for VOD
 uuid: 98505f63-ac43-4ff5-9f7b-895b6135df47
-index: y
-internal: n
-snippet: y
 ---
 
 # Advertising insertion and failover for VOD{#advertising-insertion-and-failover-for-vod}

@@ -2,9 +2,6 @@
 seo-title: Command line configuration file
 title: Command line configuration file
 uuid: c2376f7b-56a7-46f3-9693-10cfbb762a91
-index: y
-internal: n
-snippet: y
 ---
 
 # Command line configuration file

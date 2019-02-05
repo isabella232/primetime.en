@@ -4,9 +4,6 @@ seo-description: The following encryption options are selected at packaging time
 seo-title: Key Rotation
 title: Key Rotation
 uuid: 6ee47c06-9981-4281-b10b-343f8b1e55b7
-index: y
-internal: n
-snippet: y
 ---
 
 # Key Rotation{#key-rotation}

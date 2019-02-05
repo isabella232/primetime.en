@@ -2,9 +2,6 @@
 seo-title: Adobe Primetime authentication and Adobe Primetime DRM
 title: Adobe Primetime authentication and Adobe Primetime DRM
 uuid: 44fe3956-efb5-4fc5-97e2-37abb6554322
-index: y
-internal: n
-snippet: y
 ---
 
 # Adobe Primetime authentication and Adobe Primetime DRM{#adobe-primetime-authentication-and-adobe-primetime-drm}

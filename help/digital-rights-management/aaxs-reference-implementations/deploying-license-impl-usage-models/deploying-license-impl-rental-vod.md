@@ -2,9 +2,6 @@
 seo-title: Rental/Video-On-Demand
 title: Rental/Video-On-Demand
 uuid: 11e357e5-f683-40c4-a59c-0ae7c10d6cb4
-index: y
-internal: n
-snippet: y
 ---
 
 # Rental/Video-On-Demand {#rental-video-on-demand}

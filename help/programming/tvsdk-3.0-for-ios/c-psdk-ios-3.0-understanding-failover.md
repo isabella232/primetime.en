@@ -4,9 +4,6 @@ seo-description: Failover handling occurs when a variant playlist has multiple r
 seo-title: Failover
 title: Failover
 uuid: 064886ab-afa2-4afc-b795-d094b31934b8
-index: y
-internal: n
-snippet: y
 ---
 
 # Failover{#failover}

@@ -4,9 +4,6 @@ seo-description: The MediaPlayer provides a notifyClick() function that dispatch
 seo-title: Handle Clickable Ads
 title: Handle Clickable Ads
 uuid: 5d3c9d36-60d7-4272-a523-7d1fe0e1615f
-index: y
-internal: n
-snippet: y
 ---
 
 # Handle Clickable Ads{#handle-clickable-ads}

@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Advertising requirements
 title: Advertising requirements
 uuid: 60e299df-4f42-455a-8983-8964f7a197e1
-index: y
-internal: n
-snippet: y
 ---
 
 # Advertising requirements{#advertising-requirements}

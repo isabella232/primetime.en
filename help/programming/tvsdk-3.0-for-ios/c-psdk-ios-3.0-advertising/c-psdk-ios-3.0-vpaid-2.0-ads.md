@@ -4,9 +4,6 @@ seo-description: Video Player Ad-Serving Interface Definition (VPAID) 2.0 provid
 seo-title: VPAID 2.0 ad support
 title: VPAID 2.0 ad support
 uuid: b688d244-c5ac-4832-b5c2-cb25bc80ce8b
-index: y
-internal: n
-snippet: y
 ---
 
 # VPAID 2.0 ad support{#vpaid-ad-support}

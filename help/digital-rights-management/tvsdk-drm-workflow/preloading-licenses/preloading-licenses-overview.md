@@ -2,9 +2,6 @@
 seo-title: Pre-loading licenses for offline playback overview
 title: Pre-loading licenses for offline playback overview
 uuid: 71e5169b-7f70-4723-9f9b-fdff822c5876
-index: y
-internal: n
-snippet: y
 ---
 
 # Pre-loading licenses for offline playback overview{#pre-loading-licenses-for-offline-playback-overview}

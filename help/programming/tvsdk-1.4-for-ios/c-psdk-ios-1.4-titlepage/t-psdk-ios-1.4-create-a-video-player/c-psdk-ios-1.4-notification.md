@@ -4,9 +4,6 @@ seo-description: The player can listen for a range of events that indicate the s
 seo-title: Set up notifications
 title: Set up notifications
 uuid: 77cc5b45-f91f-4b71-9a67-5d17cda81da3
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up notifications{#set-up-notifications}

@@ -4,9 +4,6 @@ seo-description: There are several Java System properties that you can configure
 seo-title: Java system properties
 title: Java system properties
 uuid: d8c72359-bf61-47e0-9cd5-b21225d5fe49
-index: y
-internal: n
-snippet: y
 ---
 
 # Java system properties{#java-system-properties}

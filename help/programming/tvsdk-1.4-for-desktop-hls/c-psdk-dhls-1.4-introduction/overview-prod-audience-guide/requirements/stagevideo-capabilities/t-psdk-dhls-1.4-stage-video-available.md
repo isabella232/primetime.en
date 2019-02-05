@@ -4,9 +4,6 @@ seo-description: If StageVideo is unavailable, and your application tries to use
 seo-title: Check whether StageVideo is available
 title: Check whether StageVideo is available
 uuid: 09c39442-cb9a-4892-af99-3d3d9bf1d4a7
-index: y
-internal: n
-snippet: y
 ---
 
 # Check whether StageVideo is available{#check-whether-stagevideo-is-available}

@@ -4,9 +4,6 @@ seo-description: Alternate, or late-binding, audio allows you to switch among av
 seo-title: Alternate audio tracks in the playlist
 title: Alternate audio tracks in the playlist
 uuid: 6241d3e4-6e07-44fb-bc0e-5d49d1a76824
-index: y
-internal: n
-snippet: y
 ---
 
 # Alternate audio tracks in the playlist{#alternate-audio-tracks-in-the-playlist}

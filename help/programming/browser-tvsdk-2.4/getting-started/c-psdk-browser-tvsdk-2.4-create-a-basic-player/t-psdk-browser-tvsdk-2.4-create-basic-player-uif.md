@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Create a basic player using the UI Framework
 title: Create a basic player using the UI Framework
 uuid: d1a82dbb-1c05-4d0c-b6bc-e07cbede93cb
-index: y
-internal: n
-snippet: y
 ---
 
 # Create a basic player using the UI Framework{#create-a-basic-player-using-the-ui-framework}

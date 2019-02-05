@@ -4,9 +4,6 @@ seo-description: TVSDK supports the programmatic deleting and replacing of ad co
 seo-title: Ad deletion and replacement API changes
 title: Ad deletion and replacement API changes
 uuid: 3689d31f-4feb-4ea5-ac49-ef2e71472f4b
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad deletion and replacement API changes{#ad-deletion-and-replacement-api-changes}

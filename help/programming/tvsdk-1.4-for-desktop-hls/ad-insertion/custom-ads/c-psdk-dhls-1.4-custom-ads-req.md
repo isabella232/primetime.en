@@ -4,9 +4,6 @@ seo-description: Video Player Ad-Serving Interface Definition (VPAID) provides a
 seo-title: Custom ad requirements
 title: Custom ad requirements
 uuid: 6d4ba87b-ffe5-467d-8ab5-9795928c2f69
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom ad requirements{#custom-ad-requirements}

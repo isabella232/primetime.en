@@ -4,9 +4,6 @@ seo-description: When your playback includes advertising, Browser TVSDK dispatch
 seo-title: Order of advertising events
 title: Order of advertising events
 uuid: 9787e6ac-5e52-4d7d-8fc7-f7609633707c
-index: y
-internal: n
-snippet: y
 ---
 
 # Order of advertising events{#order-of-advertising-events}

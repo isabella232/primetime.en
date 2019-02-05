@@ -2,9 +2,6 @@
 seo-title: Encrypting script data
 title: Encrypting script data
 uuid: 7cf67866-5668-4ed8-a051-c00b29b7df18
-index: y
-internal: n
-snippet: y
 ---
 
 # Encrypting script data{#encrypting-script-data}

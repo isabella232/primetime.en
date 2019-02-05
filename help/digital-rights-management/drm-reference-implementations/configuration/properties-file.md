@@ -4,9 +4,6 @@ seo-description: null
 seo-title: License server properties file
 title: License server properties file
 uuid: 5e94ed1f-1dbf-4506-a097-183fcd5d25ef
-index: y
-internal: n
-snippet: y
 ---
 
 # License server properties file{#license-server-properties-file}

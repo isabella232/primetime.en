@@ -4,9 +4,6 @@ seo-description: You can configure the reference implementation with the Sun PKC
 seo-title: HSM configuration
 title: HSM configuration
 uuid: 2741ac40-aa42-4aa7-9864-037f3ed3dee2
-index: y
-internal: n
-snippet: y
 ---
 
 # HSM configuration{#hsm-configuration}

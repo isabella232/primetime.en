@@ -5,9 +5,6 @@ seo-description: Support for the withCredentials attribute in XMLHttpRequests al
 seo-title: Cross-origin resource sharing
 title: Cross-origin resource sharing
 uuid: e788b542-d4ac-48aa-91e2-1e88068cbba1
-index: y
-internal: n
-snippet: y
 ---
 
 # Cross-origin resource sharing{#cross-origin-resource-sharing}

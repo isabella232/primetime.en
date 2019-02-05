@@ -7,9 +7,6 @@ uuid: e8305fdb-78a8-4c0b-b216-807f745a0769
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: c470c84d-03e7-4f5b-b36a-d8866394ec8f
-index: y
-internal: n
-snippet: y
 ---
 
 # TVSDK 3.3 for iOS Release Notes {#tvsdk-for-ios-release-notes}
@@ -20,8 +17,7 @@ TVSDK 3.3 for iOS Release Notes describe what is new or changed, the resolved an
 
 Before you download iOS 3.3, ensure your hardware, operating system, and application versions meet the following requirements listed below:
 
-| Operating System |iOS 7.0 or later |
-|---|---|---|
+Operating System: iOS 7.0 or later
 
 ## New features {#new-features}
 

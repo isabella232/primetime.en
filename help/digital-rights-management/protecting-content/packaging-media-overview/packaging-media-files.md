@@ -2,9 +2,6 @@
 seo-title: Packaging media files overview
 title: Packaging media files overview
 uuid: 9509bcdc-ee4d-4025-9bb6-9b8ac439b926
-index: y
-internal: n
-snippet: y
 ---
 
 # Packaging media files overview{#packaging-media-files-overview}

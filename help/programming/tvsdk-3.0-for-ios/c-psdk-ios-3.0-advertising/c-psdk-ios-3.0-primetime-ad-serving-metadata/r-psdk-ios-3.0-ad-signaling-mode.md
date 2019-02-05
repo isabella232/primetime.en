@@ -4,9 +4,6 @@ seo-description: The ad signaling mode specifies where the video stream should g
 seo-title: Ad signaling mode
 title: Ad signaling mode
 uuid: 6e6e72cf-4de4-4ac1-9726-7521e47ccd83
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad signaling mode{#ad-signaling-mode}

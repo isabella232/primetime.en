@@ -4,9 +4,6 @@ seo-description: You can display the current and remaining time of the content t
 seo-title: Display the current time and remaining time
 title: Display the current time and remaining time
 uuid: 800996ff-afc0-4e17-9d70-5ec1e1fcfdc7
-index: y
-internal: n
-snippet: y
 ---
 
 # Display the current time and remaining time{#display-the-current-time-and-remaining-time}

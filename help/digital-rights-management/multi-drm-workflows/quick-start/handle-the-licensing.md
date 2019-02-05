@@ -4,9 +4,6 @@ seo-description: Licensing is the primary mechanism by which users are allowed o
 seo-title: Licensing
 title: Licensing
 uuid: 9f433d62-5609-4d88-95fd-c1e7c0f6aa75
-index: y
-internal: n
-snippet: y
 ---
 
 # Licensing{#licensing}

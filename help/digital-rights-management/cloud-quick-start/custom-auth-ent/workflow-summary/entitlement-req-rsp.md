@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Entitlement request and response details
 title: Entitlement request and response details
 uuid: 44a53be9-6a0e-4d5b-9df0-8b03fcd993e8
-index: y
-internal: n
-snippet: y
 ---
 
 # Entitlement request and response details{#entitlement-request-and-response-details}

@@ -2,9 +2,6 @@
 seo-title: Consume locally generated CRLs
 title: Consume locally generated CRLs
 uuid: 5a4519b8-6dbd-4921-9048-6c9f67aae18d
-index: y
-internal: n
-snippet: y
 ---
 
 # Consume locally generated CRLs{#consume-locally-generated-crls}

@@ -4,9 +4,6 @@ seo-description: TVSDK for iOS includes a variety of features.
 seo-title: Primetime TVSDK features
 title: Primetime TVSDK features
 uuid: 838d407c-84e1-4818-bec2-4abd7cbf5308
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime TVSDK features{#primetime-tvsdk-features}

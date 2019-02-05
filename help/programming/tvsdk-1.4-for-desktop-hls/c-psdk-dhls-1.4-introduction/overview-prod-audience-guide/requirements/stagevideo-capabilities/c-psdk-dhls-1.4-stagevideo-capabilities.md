@@ -4,9 +4,6 @@ seo-description: On devices that support GPU (hardware) acceleration, you can us
 seo-title: StageVideo capabilities and restrictions
 title: StageVideo capabilities and restrictions
 uuid: 7556f30b-4b9f-4258-beb6-2a4ce8f05d1a
-index: y
-internal: n
-snippet: y
 ---
 
 # StageVideo capabilities and restrictions{#stagevideo-capabilities-and-restrictions}

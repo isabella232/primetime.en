@@ -4,9 +4,6 @@ seo-description: Use the helper class AuditudeSettings to set up Adobe Primetime
 seo-title: Set up ad insertion metadata
 title: Set up ad insertion metadata
 uuid: fc37e0ae-6acf-4a78-a468-f7b5b123b45e
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up ad insertion metadata{#set-up-ad-insertion-metadata}

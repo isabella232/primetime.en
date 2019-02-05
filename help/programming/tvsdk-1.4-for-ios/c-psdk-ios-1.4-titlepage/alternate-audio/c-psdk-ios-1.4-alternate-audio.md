@@ -4,9 +4,6 @@ seo-description: Alternate, or late-binding, audio allows you to switch among av
 seo-title: Alternate audio
 title: Alternate audio
 uuid: 9dc3bec6-2135-4083-8db2-50a492e6bd67
-index: y
-internal: n
-snippet: y
 ---
 
 # Alternate audio{#alternate-audio}

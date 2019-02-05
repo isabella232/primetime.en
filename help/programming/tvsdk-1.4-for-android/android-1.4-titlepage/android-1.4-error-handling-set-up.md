@@ -4,9 +4,6 @@ seo-description: Set up a single place to handle errors.
 seo-title: Set up error handling
 title: Set up error handling
 uuid: a3182fce-85ac-4dad-bdb3-f9bfbdb2c62d
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up error handling{#set-up-error-handling}

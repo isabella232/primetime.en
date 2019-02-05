@@ -4,9 +4,6 @@ seo-description: From the moment that you create the MediaPlayer instance to the
 seo-title: MediaPlayer object lifecycle
 title: MediaPlayer object lifecycle
 uuid: 1452ae3a-7ce9-439e-951c-9d3db63b1d20
-index: y
-internal: n
-snippet: y
 ---
 
 # MediaPlayer object lifecycle{#mediaplayer-object-lifecycle}

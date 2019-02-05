@@ -4,9 +4,6 @@ seo-description: When Primetime ad decisioningencounters a VAST ad (creative) th
 seo-title: Ad fallback behavior for VAST and VMAP
 title: Ad fallback behavior for VAST and VMAP
 uuid: 50e17372-fd29-4792-aafa-8f9c21cc42c6
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad fallback behavior for VAST and VMAP{#ad-fallback-behavior-for-vast-and-vmap}

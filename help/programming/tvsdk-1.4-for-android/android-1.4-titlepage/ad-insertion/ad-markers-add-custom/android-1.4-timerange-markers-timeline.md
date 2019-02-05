@@ -4,9 +4,6 @@ seo-description: This example shows the recommended way to include TimeRange spe
 seo-title: Place TimeRange ad markers on the timeline
 title: Place TimeRange ad markers on the timeline
 uuid: 12935eba-2e91-40ea-a60e-02d0060c3cce
-index: y
-internal: n
-snippet: y
 ---
 
 # Place TimeRange ad markers on the timeline{#place-timerange-ad-markers-on-the-timeline}

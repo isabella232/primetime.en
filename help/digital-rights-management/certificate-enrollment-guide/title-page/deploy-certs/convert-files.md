@@ -2,9 +2,6 @@
 seo-title: Convert files
 title: Convert files
 uuid: e17ee003-5ac2-4bb8-83b7-81ee8fa9ee46
-index: y
-internal: n
-snippet: y
 ---
 
 # Convert files{#convert-files}

@@ -2,9 +2,6 @@
 seo-title: Handling Domain De-Registration requests
 title: Handling Domain De-Registration requests
 uuid: 6f056b2b-374d-4e4d-926a-68605b2c923b
-index: y
-internal: n
-snippet: y
 ---
 
 # Handling Domain De-Registration requests{#handling-domain-de-registration-requests}

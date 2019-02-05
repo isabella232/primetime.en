@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Set up video analytics reporting on the server side
 title: Set up video analytics reporting on the server side
 uuid: 0c9443a5-17e8-40ee-82a7-72a69c853077
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up video analytics reporting on the server side{#set-up-video-analytics-reporting-on-the-server-side}

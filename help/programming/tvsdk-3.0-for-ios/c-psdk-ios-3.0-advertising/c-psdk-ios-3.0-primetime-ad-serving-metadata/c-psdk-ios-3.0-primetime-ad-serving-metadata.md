@@ -4,9 +4,6 @@ seo-description: TVSDK supports resolving and inserting ads for VOD and live/lin
 seo-title: Primetime ad server metadata
 title: Primetime ad server metadata
 uuid: 61e224dd-551a-438f-8560-e64915087fef
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime ad server metadata{#primetime-ad-server-metadata}

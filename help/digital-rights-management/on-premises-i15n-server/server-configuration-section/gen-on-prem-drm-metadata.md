@@ -2,9 +2,6 @@
 seo-title: Generate the On Premises DRM Metadata
 title: Generate the On Premises DRM Metadata
 uuid: 89d53924-1a8d-42d4-a716-ce4f4566b6bf
-index: y
-internal: n
-snippet: y
 ---
 
 # Generate the On Premises DRM Metadata{#generate-the-on-premises-drm-metadata}

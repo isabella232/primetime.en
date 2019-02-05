@@ -2,9 +2,6 @@
 seo-title: Command line usage
 title: Command line usage
 uuid: 5f24f18d-09ef-400a-9404-50a9fcf4316d
-index: y
-internal: n
-snippet: y
 ---
 
 # Command line usage {#command-line-usage}

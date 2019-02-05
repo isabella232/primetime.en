@@ -2,9 +2,6 @@
 seo-title: Firewall Rules
 title: Firewall Rules
 uuid: f1629ceb-22de-4bb5-b73f-9b874d97ea8b
-index: y
-internal: n
-snippet: y
 ---
 
 # Firewall Rules{#firewall-rules}

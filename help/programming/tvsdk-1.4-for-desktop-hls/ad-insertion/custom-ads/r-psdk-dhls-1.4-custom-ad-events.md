@@ -4,9 +4,6 @@ seo-description: The TVSDK player dispatches events to display custom ad loading
 seo-title: Custom ad events
 title: Custom ad events
 uuid: 78e2ccf4-5943-4c60-84be-623182d9a300
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom ad events{#custom-ad-events}

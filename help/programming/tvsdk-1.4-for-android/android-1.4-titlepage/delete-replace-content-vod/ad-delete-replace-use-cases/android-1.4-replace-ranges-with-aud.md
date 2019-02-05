@@ -4,9 +4,6 @@ seo-description: You can insert ads into VOD content.
 seo-title: Replace time ranges with an ad
 title: Replace time ranges with an ad
 uuid: 50cdcc06-7df5-414b-95d4-c684bc68dce3
-index: y
-internal: n
-snippet: y
 ---
 
 # Replace time ranges with an ad{#replace-time-ranges-with-an-ad}

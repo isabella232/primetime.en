@@ -4,9 +4,6 @@ seo-description: To use Browser TVSDK, you must create and configure a basic pla
 seo-title: Basic player
 title: Basic player
 uuid: 44a27458-be12-452f-92b9-3cef79439257
-index: y
-internal: n
-snippet: y
 ---
 
 # Basic player{#basic-player}

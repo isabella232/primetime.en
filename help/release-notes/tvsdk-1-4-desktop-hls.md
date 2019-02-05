@@ -8,9 +8,6 @@ contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: e4437a26-9454-4da1-ae87-0fce664aac3d
-index: y
-internal: n
-snippet: y
 ---
 
 # TVSDK 1.4 for Desktop HLS Release Notes {#tvsdk-for-desktop-hls-release-notes}

@@ -4,9 +4,6 @@ seo-description: You can save the current playback position in a video and resum
 seo-title: Save the video position and resume later
 title: Save the video position and resume later
 uuid: 007c8e89-54f4-4dfd-81f8-b931e216e724
-index: y
-internal: n
-snippet: y
 ---
 
 # Save the video position and resume later{#save-the-video-position-and-resume-later}

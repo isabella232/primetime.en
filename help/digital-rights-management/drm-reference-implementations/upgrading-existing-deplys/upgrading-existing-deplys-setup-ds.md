@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Set up a domain server
 title: Set up a domain server
 uuid: bf85305e-9a00-4bc0-ba36-c870979456e4
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up a domain server{#set-up-a-domain-server}

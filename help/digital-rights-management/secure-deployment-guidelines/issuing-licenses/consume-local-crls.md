@@ -4,9 +4,6 @@ seo-description: To consume locally generated certificate revocation lists (CRLs
 seo-title: Consuming locally generated CRLs
 title: Consuming locally generated CRLs
 uuid: 2e20b8ca-8606-4c27-b585-2f020b93be32
-index: y
-internal: n
-snippet: y
 ---
 
 # Consuming locally generated CRLs{#consuming-locally-generated-crls}

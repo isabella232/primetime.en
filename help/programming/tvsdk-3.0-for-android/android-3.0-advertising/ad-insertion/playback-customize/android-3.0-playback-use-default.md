@@ -4,9 +4,6 @@ seo-description: You can choose to use default ad behaviors.
 seo-title: Use the default playback behavior
 title: Use the default playback behavior
 uuid: 36f76c42-4c6c-4620-9b47-ec97519a642a
-index: y
-internal: n
-snippet: y
 ---
 
 # Use the default playback behavior{#use-the-default-playback-behavior}

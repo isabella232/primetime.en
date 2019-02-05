@@ -4,9 +4,6 @@ seo-description: Some third-party ads (or creatives) cannot be stitched into the
 seo-title: Repackage (transcode) incompatible ads
 title: Repackage (transcode) incompatible ads
 uuid: f414d133-2d04-462c-ae2c-75158a577fc5
-index: y
-internal: n
-snippet: y
 ---
 
 # Repackage (transcode) incompatible ads{#repackage-transcode-incompatible-ads}

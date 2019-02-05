@@ -4,9 +4,6 @@ seo-description: If you use the default configuration, there is nothing else you
 seo-title: Configure billing metrics
 title: Configure billing metrics
 uuid: 5aa968e5-040f-4308-8370-db7ada659b39
-index: y
-internal: n
-snippet: y
 ---
 
 # Configure billing metrics{#configure-billing-metrics}

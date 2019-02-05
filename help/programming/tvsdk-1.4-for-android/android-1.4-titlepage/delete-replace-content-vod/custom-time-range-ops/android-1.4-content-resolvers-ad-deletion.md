@@ -4,9 +4,6 @@ seo-description: You can use multiple content resolvers to handle different time
 seo-title: Content resolvers for ad deletion / replacement
 title: Content resolvers for ad deletion / replacement
 uuid: 2954ce0f-aed2-4a85-8e53-d4e89d1497b6
-index: y
-internal: n
-snippet: y
 ---
 
 # Content resolvers for ad deletion / replacement{#content-resolvers-for-ad-deletion-replacement}

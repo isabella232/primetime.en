@@ -4,9 +4,6 @@ seo-description: This table provides detailed information about ERROR type notif
 seo-title: ERROR notification codes
 title: ERROR notification codes
 uuid: 50624782-3d0b-4ac4-b883-355c1f7e9bff
-index: y
-internal: n
-snippet: y
 ---
 
 # ERROR notification codes{#error-notification-codes}

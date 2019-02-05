@@ -2,9 +2,6 @@
 seo-title: Updating the Global Configuration File
 title: Updating the Global Configuration File
 uuid: f733550c-46c0-49c2-8fd1-15906f7d7b22
-index: y
-internal: n
-snippet: y
 ---
 
 # Updating the Global Configuration File{#updating-the-global-configuration-file}

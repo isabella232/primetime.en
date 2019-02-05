@@ -4,9 +4,6 @@ seo-description: TVSDK requires specific properties for media content, manifest 
 seo-title: Requirements
 title: Requirements
 uuid: 923e5327-10a5-440e-886d-1a03fcea13fd
-index: y
-internal: n
-snippet: y
 ---
 
 # Requirements{#requirements}

@@ -4,9 +4,6 @@ seo-description: 302 redirect optimization minimizes the number of 302 redirect 
 seo-title: Disable or enable 302 redirect optimization
 title: Disable or enable 302 redirect optimization
 uuid: 7561839f-aec6-4a59-a07a-7e4fa043fdc2
-index: y
-internal: n
-snippet: y
 ---
 
 # Disable or enable 302 redirect optimization{#disable-or-enable-redirect-optimization}

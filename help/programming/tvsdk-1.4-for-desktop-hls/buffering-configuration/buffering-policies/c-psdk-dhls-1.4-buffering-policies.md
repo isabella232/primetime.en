@@ -4,9 +4,6 @@ seo-description: To provide a smoother viewing experience, TVSDK sometimes buffe
 seo-title: Buffering time policies
 title: Buffering time policies
 uuid: 8d3ce9be-cca4-485e-ba66-d2f2aa6822dd
-index: y
-internal: n
-snippet: y
 ---
 
 # Buffering time policies{#buffering-time-policies}

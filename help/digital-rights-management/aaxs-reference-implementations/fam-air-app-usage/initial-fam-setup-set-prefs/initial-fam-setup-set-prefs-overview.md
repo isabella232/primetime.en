@@ -2,9 +2,6 @@
 seo-title: Setting preferences overview
 title: Setting preferences overview
 uuid: d1c067b1-6c2b-460e-8d00-5a5bfee0789c
-index: y
-internal: n
-snippet: y
 ---
 
 # Setting preferences overview {#setting-preferences-overview}

@@ -4,9 +4,6 @@ seo-description: To provide a smoother viewing experience, TVSDK sometimes buffe
 seo-title: Buffering
 title: Buffering
 uuid: c84b98ed-0070-4a86-a409-d7702e5be23c
-index: y
-internal: n
-snippet: y
 ---
 
 # Buffering{#buffering}

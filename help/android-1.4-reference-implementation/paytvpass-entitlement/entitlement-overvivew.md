@@ -4,9 +4,6 @@ seo-description: The Entitlement Manager is the feature manager that supports th
 seo-title: Entitlement Manager Overview
 title: Entitlement Manager Overview
 uuid: b33dfae3-a132-4215-9992-80cbf4c87a61
-index: y
-internal: n
-snippet: y
 ---
 
 # Entitlement Manager Overview {#entitlement-manager-overview}

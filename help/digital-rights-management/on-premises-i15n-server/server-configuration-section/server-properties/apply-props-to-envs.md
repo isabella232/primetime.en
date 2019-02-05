@@ -4,9 +4,6 @@ seo-description: You must configure server properties to reflect your environmen
 seo-title: Apply properties to server environments
 title: Apply properties to server environments
 uuid: a1ee0d6c-b5e7-4689-b7c8-b155176faf1c
-index: y
-internal: n
-snippet: y
 ---
 
 # Apply properties to server environments{#apply-properties-to-server-environments}

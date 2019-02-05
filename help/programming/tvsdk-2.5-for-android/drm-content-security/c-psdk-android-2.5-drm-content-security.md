@@ -5,9 +5,6 @@ seo-description: You can use the features of the Primetime Digital Rights Manage
 seo-title: Content protection
 title: Content protection
 uuid: bba696fe-e6ef-42bc-a65b-2fd8623ffc61
-index: y
-internal: n
-snippet: y
 ---
 
 # Content protection{#content-protection}

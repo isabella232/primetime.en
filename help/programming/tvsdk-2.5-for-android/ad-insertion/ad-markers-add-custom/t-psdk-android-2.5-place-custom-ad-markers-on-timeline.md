@@ -4,9 +4,6 @@ seo-description: This example shows the recommended way to include custom ad mar
 seo-title: Place custom ad markers on the timeline
 title: Place custom ad markers on the timeline
 uuid: ee74d1f3-7186-44b8-bad7-55af579842e8
-index: y
-internal: n
-snippet: y
 ---
 
 # Place custom ad markers on the timeline{#place-custom-ad-markers-on-the-timeline}

@@ -2,9 +2,6 @@
 seo-title: BEES Error codes
 title: BEES Error codes
 uuid: 7b2d0dd1-9a43-47e3-b932-a4eaf784ae7a
-index: y
-internal: n
-snippet: y
 ---
 
 # BEES Error codes{#bees-error-codes}

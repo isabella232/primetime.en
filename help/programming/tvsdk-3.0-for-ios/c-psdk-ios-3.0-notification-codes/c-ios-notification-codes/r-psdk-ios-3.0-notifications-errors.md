@@ -4,9 +4,6 @@ seo-description: The TVSDK notification system produces various error, warning, 
 seo-title: null
 title: null
 uuid: 20828188-817a-471c-acbc-aeb5f336356b
-index: y
-internal: n
-snippet: y
 ---
 
 # null {#no-title}

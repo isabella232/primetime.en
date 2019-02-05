@@ -2,9 +2,6 @@
 seo-title: An overview of Adobe Access SDK
 title: An overview of Adobe Access SDK
 uuid: a77b0427-a7ec-4d55-a887-d7210b5a15a5
-index: y
-internal: n
-snippet: y
 ---
 
 # An overview of Adobe Access SDK {#an-overview-of-adobe-access-sdk}

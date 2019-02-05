@@ -4,9 +4,6 @@ seo-description: The MediaResource class represents the content to be loaded by 
 seo-title: Create a media resource
 title: Create a media resource
 uuid: 3d03d92f-69b3-4da8-9b16-25a264115ae5
-index: y
-internal: n
-snippet: y
 ---
 
 # Create a media resource{#create-a-media-resource}

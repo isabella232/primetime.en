@@ -2,9 +2,6 @@
 seo-title: Create policies and package content
 title: Create policies and package content
 uuid: 0bcf6895-e224-49c3-b83a-414a1a8661b5
-index: y
-internal: n
-snippet: y
 ---
 
 # Create policies and package content {#create-policies-and-package-content}

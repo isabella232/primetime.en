@@ -4,9 +4,6 @@ seo-description: You can implement your own opportunity generators by implementi
 seo-title: Implement a custom opportunity generator
 title: Implement a custom opportunity generator
 uuid: 93d8253f-10f9-4950-a273-28975cb69caa
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement a custom opportunity generator{#implement-a-custom-opportunity-generator}

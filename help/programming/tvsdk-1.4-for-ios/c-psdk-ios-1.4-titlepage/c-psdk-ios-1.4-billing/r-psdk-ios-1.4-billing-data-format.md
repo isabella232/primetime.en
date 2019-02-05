@@ -4,9 +4,6 @@ seo-description: TVSDK sends billing metrics to Adobe in an XML format.
 seo-title: Transmit billing metrics
 title: Transmit billing metrics
 uuid: 6a20b52a-dfcf-4e09-8af6-159d28a7afe2
-index: y
-internal: n
-snippet: y
 ---
 
 # Transmit billing metrics{#transmit-billing-metrics}

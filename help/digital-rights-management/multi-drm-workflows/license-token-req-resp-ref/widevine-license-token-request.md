@@ -4,9 +4,6 @@ seo-description: The Widevine license token interface provides production and te
 seo-title: Widevine license token request / response
 title: Widevine license token request / response
 uuid: a3522422-7075-49a7-bc55-137ef84ee430
-index: y
-internal: n
-snippet: y
 ---
 
 # Widevine license token request / response{#widevine-license-token-request-response}

@@ -4,9 +4,6 @@ seo-description: You can implement your own logging system.
 seo-title: Understanding customized logging
 title: Understanding customized logging
 uuid: f056d7d7-ec3a-4cf1-997f-72a89bbc9447
-index: y
-internal: n
-snippet: y
 ---
 
 # Understanding customized logging{#understanding-customized-logging}

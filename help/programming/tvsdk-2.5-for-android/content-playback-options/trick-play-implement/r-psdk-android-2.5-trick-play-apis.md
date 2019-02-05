@@ -4,9 +4,6 @@ seo-description: TVSDK includes methods, properties, and events to determine val
 seo-title: Rate-change API elements
 title: Rate-change API elements
 uuid: 3554bf45-9419-4740-8a0e-484fc14c7436
-index: y
-internal: n
-snippet: y
 ---
 
 # Rate-change API elements{#rate-change-api-elements}

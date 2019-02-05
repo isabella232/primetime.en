@@ -4,9 +4,6 @@ seo-description: MediaPlayerNotification objects provide information about chang
 seo-title: Notification content
 title: Notification content
 uuid: 89fb8f63-b0d5-45cd-bdad-348529fd07d0
-index: y
-internal: n
-snippet: y
 ---
 
 # Notification content{#notification-content}

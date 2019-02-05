@@ -4,9 +4,6 @@ seo-description: HLS streams that are delivered through a Content Delivery Netwo
 seo-title: Tokenized segment streams
 title: Tokenized segment streams
 uuid: 62e3b858-2605-4960-b504-9010674f80ad
-index: y
-internal: n
-snippet: y
 ---
 
 # Tokenized segment streams{#tokenized-segment-streams}

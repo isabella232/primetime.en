@@ -8,9 +8,6 @@ contentOwner: dekalra
 topic-tags: release-notes
 products: SG_PRIMETIME
 discoiquuid: d71886cb-f34b-47b2-9df7-168686478106
-index: y
-internal: n
-snippet: y
 ---
 
 # Browser TVSDK 2.4 Release Notes {#browser-tvsdk-release-notes}

@@ -4,9 +4,6 @@ seo-description: The notification portion of the Browser TVSDK library allows yo
 seo-title: Notification system
 title: Notification system
 uuid: 69c4ff1d-3167-413b-ab49-942a5ddc34d7
-index: y
-internal: n
-snippet: y
 ---
 
 # Notification system {#notification-system}

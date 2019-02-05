@@ -4,9 +4,6 @@ seo-description: This topic describes performance-related considerations. Any se
 seo-title: Global configuration file
 title: Global configuration file
 uuid: 254925b5-d441-4a35-ad6f-f99db5de7591
-index: y
-internal: n
-snippet: y
 ---
 
 # Global configuration file{#global-configuration-file}

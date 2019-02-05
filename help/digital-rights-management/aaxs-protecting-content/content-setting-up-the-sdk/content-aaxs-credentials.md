@@ -2,9 +2,6 @@
 seo-title: Adobe Access credentials
 title: Adobe Access credentials
 uuid: 22264bd0-f7df-43ff-a6e1-ad060cbc02ff
-index: y
-internal: n
-snippet: y
 ---
 
 # Adobe Access credentials{#adobe-access-credentials}

@@ -4,9 +4,6 @@ seo-description: If your system has access to hardware-assisted decoding, you ca
 seo-title: Smoother trick play operations
 title: Smoother trick play operations
 uuid: 959d6c67-b64f-4666-8de7-54d247459fd1
-index: y
-internal: n
-snippet: y
 ---
 
 # Smoother trick play operations{#smoother-trick-play-operations}

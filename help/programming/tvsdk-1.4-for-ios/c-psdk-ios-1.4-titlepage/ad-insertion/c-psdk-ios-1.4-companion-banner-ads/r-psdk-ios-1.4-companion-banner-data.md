@@ -4,9 +4,6 @@ seo-description: The content of a PTAdAsset describes a companion banner.
 seo-title: Companion banner data
 title: Companion banner data
 uuid: 222bac21-2de8-4213-b8ae-de676c475a68
-index: y
-internal: n
-snippet: y
 ---
 
 # Companion banner data{#companion-banner-data}

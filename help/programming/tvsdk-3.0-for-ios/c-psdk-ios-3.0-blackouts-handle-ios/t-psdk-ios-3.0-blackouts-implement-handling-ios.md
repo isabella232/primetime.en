@@ -4,9 +4,6 @@ seo-description: The TVSDK provides APIs and sample code for handling blackout p
 seo-title: Implement blackout handling
 title: Implement blackout handling
 uuid: a447ff24-8386-4cae-878e-0859fb191de2
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement blackout handling{#implement-blackout-handling}

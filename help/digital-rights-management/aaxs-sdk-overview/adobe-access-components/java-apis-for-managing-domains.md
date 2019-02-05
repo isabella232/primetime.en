@@ -2,9 +2,6 @@
 seo-title: Java APIs for managing device group domains
 title: Java APIs for managing device group domains
 uuid: d4adb291-f224-4ea3-a384-1233479d5d6e
-index: y
-internal: n
-snippet: y
 ---
 
 # Java APIs for managing device group domains {#java-apis-for-managing-device-group-domains}

@@ -4,9 +4,6 @@ seo-description: The content of an AdAsset describes a companion banner.
 seo-title: Companion banner data
 title: Companion banner data
 uuid: f54aecea-5e11-45dd-97d0-5774ca631a4d
-index: y
-internal: n
-snippet: y
 ---
 
 # Companion banner data{#companion-banner-data}

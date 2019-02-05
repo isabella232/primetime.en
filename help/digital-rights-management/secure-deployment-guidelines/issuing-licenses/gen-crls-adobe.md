@@ -4,9 +4,6 @@ seo-description: You can use Adobe Primetime DRM to create CRLs that supplement 
 seo-title: Generating CRLs to supplement those published by Adobe
 title: Generating CRLs to supplement those published by Adobe
 uuid: 0cc4254d-20a0-4e05-9c5b-0b84a5c833cb
-index: y
-internal: n
-snippet: y
 ---
 
 # Generating CRLs to supplement those published by Adobe{#generating-crls-to-supplement-those-published-by-adobe}

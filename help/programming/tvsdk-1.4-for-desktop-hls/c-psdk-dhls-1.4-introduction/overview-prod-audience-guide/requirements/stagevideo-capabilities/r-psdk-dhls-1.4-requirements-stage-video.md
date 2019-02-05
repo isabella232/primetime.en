@@ -4,9 +4,6 @@ seo-description: On devices that support GPU (hardware) acceleration, you can us
 seo-title: StageVideo minimum requirements
 title: StageVideo minimum requirements
 uuid: 8916dbac-33e0-4efd-8105-9ddbc85f0a3f
-index: y
-internal: n
-snippet: y
 ---
 
 # StageVideo minimum requirements{#stagevideo-minimum-requirements}

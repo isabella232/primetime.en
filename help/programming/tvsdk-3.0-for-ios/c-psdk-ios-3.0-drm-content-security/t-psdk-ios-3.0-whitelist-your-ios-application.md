@@ -4,9 +4,6 @@ seo-description: You can whitelist your iOS apps by using Adobe's machotools too
 seo-title: Whitelist your iOS application
 title: Whitelist your iOS application
 uuid: bc558f5f-d4e6-4c1c-81eb-f8bd61c63016
-index: y
-internal: n
-snippet: y
 ---
 
 # Whitelist your iOS application{#whitelist-your-ios-application}

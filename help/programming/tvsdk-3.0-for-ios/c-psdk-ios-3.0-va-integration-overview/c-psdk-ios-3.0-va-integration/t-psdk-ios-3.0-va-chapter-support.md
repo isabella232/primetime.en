@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Implement chapter support
 title: Implement chapter support
 uuid: b0e5ef1c-6568-4901-9ac7-261df71a0110
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement chapter support{#implement-chapter-support}

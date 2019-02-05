@@ -4,9 +4,6 @@ seo-description: This guide provides information about how to develop video play
 seo-title: Product overview, audience, and this guide
 title: Product overview, audience, and this guide
 uuid: 638bafbe-e518-4891-b792-29f765c3c0d7
-index: y
-internal: n
-snippet: y
 ---
 
 # Product overview, audience, and this guide{#product-overview-audience-and-this-guide}

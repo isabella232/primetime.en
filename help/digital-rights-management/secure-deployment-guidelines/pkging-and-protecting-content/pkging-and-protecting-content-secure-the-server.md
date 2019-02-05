@@ -4,9 +4,6 @@ seo-description: You need to physically secure the computer on which policy mana
 seo-title: Securing the server
 title: Securing the server
 uuid: 9bf89f86-082e-40f9-8deb-c9774a9d8e02
-index: y
-internal: n
-snippet: y
 ---
 
 # Securing the server{#securing-the-server}

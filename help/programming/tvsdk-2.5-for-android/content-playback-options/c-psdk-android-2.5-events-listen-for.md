@@ -4,9 +4,6 @@ seo-description: Events from TVSDK indicate the status of the player, errors tha
 seo-title: Listen for Primetime Player events
 title: Listen for Primetime Player events
 uuid: bd0a428c-fa51-41a6-950a-9d6843c6e177
-index: y
-internal: n
-snippet: y
 ---
 
 # Listen for Primetime Player events{#listen-for-primetime-player-events}

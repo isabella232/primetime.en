@@ -4,9 +4,6 @@ seo-description: The FairPlay DRM solution from Apple requires some setup when y
 seo-title: Enable ExpressPlay service for FairPlay
 title: Enable ExpressPlay service for FairPlay
 uuid: 0fa8e857-88e2-413d-b086-27c9a5461e9c
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable ExpressPlay service for FairPlay{#enable-expressplay-service-for-fairplay}

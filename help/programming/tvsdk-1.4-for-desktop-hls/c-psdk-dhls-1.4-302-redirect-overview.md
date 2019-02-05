@@ -4,9 +4,6 @@ seo-description: 302 redirect optimization minimizes the number of 302 redirect 
 seo-title: HTTP 302 redirect optimization
 title: HTTP 302 redirect optimization
 uuid: 58593d5f-a639-4d87-9589-dba6b2dbba38
-index: y
-internal: n
-snippet: y
 ---
 
 # HTTP 302 redirect optimization{#http-redirect-optimization}

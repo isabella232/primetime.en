@@ -4,9 +4,6 @@ seo-description: Use the Browserify library files provided by Browser TVSDK in y
 seo-title: Create a Browserify-compatible player using the UI-Framework
 title: Create a Browserify-compatible player using the UI-Framework
 uuid: 544fd872-5ca1-417d-8aab-69613caada0e
-index: y
-internal: n
-snippet: y
 ---
 
 # Create a Browserify-compatible player using the UI-Framework{#create-a-browserify-compatible-player-using-the-ui-framework}

@@ -4,9 +4,6 @@ seo-description: Packaging content is the process of preparing video content for
 seo-title: Package Your Content
 title: Package Your Content
 uuid: b9bc6104-a1ea-4ea0-a0a4-af8a606e5d47
-index: y
-internal: n
-snippet: y
 ---
 
 # Package Your Content{#package-your-content}

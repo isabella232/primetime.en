@@ -4,9 +4,6 @@ seo-description: To add VPAID 2.0 support, add a custom ad view and appropriate 
 seo-title: Implement VPAID 2.0 integration
 title: Implement VPAID 2.0 integration
 uuid: fa5b9cdd-e684-4656-91b7-50781dc59e23
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement VPAID 2.0 integration{#implement-vpaid-integration}

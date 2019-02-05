@@ -4,9 +4,6 @@ seo-description: To provide a smoother viewing experience, TVSDK sometimes buffe
 seo-title: Set buffering times
 title: Set buffering times
 uuid: 5a3945a4-1935-4797-b19d-84989850a487
-index: y
-internal: n
-snippet: y
 ---
 
 # Set buffering times{#set-buffering-times}

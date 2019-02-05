@@ -2,9 +2,6 @@
 seo-title: Requirements
 title: Requirements
 uuid: a5a13187-be20-4feb-ad9e-5ebd81b7e5a3
-index: y
-internal: n
-snippet: y
 ---
 
 # Requirements{#requirements}

@@ -4,9 +4,6 @@ seo-description: TVSDK provides tools for creating an advanced video player appl
 seo-title: Set up the Media player
 title: Set up the Media player
 uuid: 1f672484-b340-4f92-8a47-dad4c9f3b3fc
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up the Media player{#set-up-the-media-player}

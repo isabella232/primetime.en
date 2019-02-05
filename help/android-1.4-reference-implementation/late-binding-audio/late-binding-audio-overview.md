@@ -4,9 +4,6 @@ seo-description: You can enable and build controls for late binding audio.
 seo-title: Overview
 title: Overview
 uuid: 7656f930-f426-426e-bcd4-dfa9d39e7ae4
-index: y
-internal: n
-snippet: y
 ---
 
 # Overview {#overview}

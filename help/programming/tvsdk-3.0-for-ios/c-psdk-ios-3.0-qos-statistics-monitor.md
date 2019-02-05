@@ -4,9 +4,6 @@ seo-description: Quality of service (QoS) offers a detailed view into how the vi
 seo-title: Quality of service statistics
 title: Quality of service statistics
 uuid: c08c1031-616a-4776-92e2-1c405467689b
-index: y
-internal: n
-snippet: y
 ---
 
 # Quality of service statistics{#quality-of-service-statistics}

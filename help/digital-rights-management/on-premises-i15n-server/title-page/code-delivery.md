@@ -2,9 +2,6 @@
 seo-title: Code Delivery / Package Contents
 title: Code Delivery / Package Contents
 uuid: 13de2fd4-9079-496c-a087-25176c118864
-index: y
-internal: n
-snippet: y
 ---
 
 # Code Delivery / Package Contents{#code-delivery-package-contents}

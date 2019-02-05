@@ -4,9 +4,6 @@ seo-description: This section describes the features available with different ve
 seo-title: RBOP Client Support
 title: RBOP Client Support
 uuid: d1d0f788-7bc1-488c-807e-be47f83725e9
-index: y
-internal: n
-snippet: y
 ---
 
 # RBOP Client Support{#rbop-client-support}

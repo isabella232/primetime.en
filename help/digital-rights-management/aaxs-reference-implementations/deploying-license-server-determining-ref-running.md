@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Determining if Reference Implementation License Server is running properly
 title: Determining if Reference Implementation License Server is running properly
 uuid: 84d32c94-7594-464e-a883-5338b52de2bf
-index: y
-internal: n
-snippet: y
 ---
 
 # Determining if Reference Implementation License Server is running properly {#determining-if-reference-implementation-license-server-is-running-properly}

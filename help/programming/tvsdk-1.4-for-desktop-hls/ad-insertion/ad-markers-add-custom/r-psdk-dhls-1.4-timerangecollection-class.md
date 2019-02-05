@@ -4,9 +4,6 @@ seo-description: The TimeRangeCollection utility class abstracts the notion of a
 seo-title: TimeRangeCollection class
 title: TimeRangeCollection class
 uuid: da781df4-6b19-47e1-8dc5-ea83c139f061
-index: y
-internal: n
-snippet: y
 ---
 
 # TimeRangeCollection class{#timerangecollection-class}

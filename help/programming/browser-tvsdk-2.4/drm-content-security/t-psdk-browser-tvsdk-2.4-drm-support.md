@@ -4,9 +4,6 @@ seo-description: Browser TVSDK supports multiple digital rights management (DRM)
 seo-title: Supported DRM systems
 title: Supported DRM systems
 uuid: 7dd30633-ab28-4fca-a662-c84e95f6ef16
-index: y
-internal: n
-snippet: y
 ---
 
 # Supported DRM systems{#supported-drm-systems}

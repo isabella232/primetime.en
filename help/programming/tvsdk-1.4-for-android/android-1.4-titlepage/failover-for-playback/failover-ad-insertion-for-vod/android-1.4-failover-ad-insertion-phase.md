@@ -4,9 +4,6 @@ seo-description: TVSDK inserts the alternate content (ads) into the timeline tha
 seo-title: Ad-insertion phase
 title: Ad-insertion phase
 uuid: 4a8e9578-6e95-44c0-b045-ae3c20da75e9
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad-insertion phase{#ad-insertion-phase}

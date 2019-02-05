@@ -4,9 +4,6 @@ seo-description: To get started with Primetime DRM Cloud, powered by ExpressPlay
 seo-title: Get Provisioned (Accounts, etc.)
 title: Get Provisioned (Accounts, etc.)
 uuid: 51b95676-2121-4d8b-8756-9fd097185a13
-index: y
-internal: n
-snippet: y
 ---
 
 # Get Provisioned (Accounts, etc.) {#get-provisioned-accounts-etc}

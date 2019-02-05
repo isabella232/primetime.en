@@ -4,9 +4,6 @@ seo-description: The behavior of media playback is affected by seeking, pausing,
 seo-title: Default and customized playback behavior with ads
 title: Default and customized playback behavior with ads
 uuid: 570f6d77-cbb9-4aa7-a935-058003f4ce87
-index: y
-internal: n
-snippet: y
 ---
 
 # Default and customized playback behavior with ads{#default-and-customized-playback-behavior-with-ads}

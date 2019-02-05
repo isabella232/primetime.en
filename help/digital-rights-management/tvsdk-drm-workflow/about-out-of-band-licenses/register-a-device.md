@@ -2,9 +2,6 @@
 seo-title: Register a device
 title: Register a device
 uuid: e1bad373-f19b-432b-b815-f686dbabd0ee
-index: y
-internal: n
-snippet: y
 ---
 
 # Register a device{#register-a-device}

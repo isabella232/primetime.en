@@ -4,9 +4,6 @@ seo-description: Adobe® Access™ is an advanced digital rights management and 
 seo-title: Overview
 title: Overview
 uuid: 874c175b-8207-49fa-aad4-204ccbee9c2c
-index: y
-internal: n
-snippet: y
 ---
 
 # Overview {#overview}

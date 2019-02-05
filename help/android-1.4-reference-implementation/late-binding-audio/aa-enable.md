@@ -4,9 +4,6 @@ seo-description: You can integrate late-binding or alternate audio streams into 
 seo-title: Integrate late-binding audio
 title: Integrate late-binding audio
 uuid: cd2e259a-2af4-4d7b-a856-79bd087e8ca6
-index: y
-internal: n
-snippet: y
 ---
 
 # Integrate late-binding audio {#integrate-late-binding-audio}

@@ -2,9 +2,6 @@
 seo-title: SWF Application Whitelisting
 title: SWF Application Whitelisting
 uuid: e3021ae9-54f4-4bcf-a274-515ae765f74b
-index: y
-internal: n
-snippet: y
 ---
 
 # SWF Application Whitelisting{#swf-application-whitelisting}

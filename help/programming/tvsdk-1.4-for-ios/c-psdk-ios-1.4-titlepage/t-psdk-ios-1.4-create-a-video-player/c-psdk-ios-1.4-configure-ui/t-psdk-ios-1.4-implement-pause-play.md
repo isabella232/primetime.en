@@ -4,9 +4,6 @@ seo-description: You can set up buttons that call TVSDK methods to pause and pla
 seo-title: Implement a play/pause button
 title: Implement a play/pause button
 uuid: eccdce4b-0114-4389-b5ee-74fe62d38ed8
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement a play/pause button{#implement-a-play-pause-button}

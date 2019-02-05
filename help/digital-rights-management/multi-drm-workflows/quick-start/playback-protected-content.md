@@ -4,9 +4,6 @@ seo-description: To test your DRM solution, you need a video application that ca
 seo-title: Playback your protected content
 title: Playback your protected content
 uuid: 84f73ee7-43d0-481c-a5e7-14f92169323c
-index: y
-internal: n
-snippet: y
 ---
 
 # Playback your protected content{#playback-your-protected-content}

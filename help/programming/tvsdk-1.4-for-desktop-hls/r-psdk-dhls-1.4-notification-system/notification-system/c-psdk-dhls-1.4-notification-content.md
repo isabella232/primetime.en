@@ -4,9 +4,6 @@ seo-description: MediaPlayerNotification provides information that is related to
 seo-title: Notification content
 title: Notification content
 uuid: c2321a49-1b60-4e44-b8e2-a023b764d779
-index: y
-internal: n
-snippet: y
 ---
 
 # Notification content{#notification-content}

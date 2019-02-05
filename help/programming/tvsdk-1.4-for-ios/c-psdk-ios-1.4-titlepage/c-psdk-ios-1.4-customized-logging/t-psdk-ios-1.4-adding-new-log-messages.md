@@ -2,9 +2,6 @@
 seo-title: Add new log messages
 title: Add new log messages
 uuid: b180f859-9714-445a-ad30-926bea9a88f7
-index: y
-internal: n
-snippet: y
 ---
 
 # Add new log messages{#add-new-log-messages}

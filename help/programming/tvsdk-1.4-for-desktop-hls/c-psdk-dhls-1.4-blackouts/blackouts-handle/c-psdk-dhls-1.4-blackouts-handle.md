@@ -4,9 +4,6 @@ seo-description: You can handle blackouts in live video streams and provide alte
 seo-title: Handle blackouts in live streams
 title: Handle blackouts in live streams
 uuid: df933087-c8a8-49eb-a016-6dfd971c219c
-index: y
-internal: n
-snippet: y
 ---
 
 # Handle blackouts in live streams{#handle-blackouts-in-live-streams}

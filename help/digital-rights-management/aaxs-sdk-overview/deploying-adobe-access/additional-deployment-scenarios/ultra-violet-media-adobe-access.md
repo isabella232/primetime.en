@@ -4,9 +4,6 @@ seo-description: Adobe Access can be used with other third-party content streami
 seo-title: UltraViolet media and Adobe Access
 title: UltraViolet media and Adobe Access
 uuid: d287680f-02de-4cca-aeea-22b7fd8e67d2
-index: y
-internal: n
-snippet: y
 ---
 
 # UltraViolet media and Adobe Access {#ultraviolet-media-and-adobe-access}

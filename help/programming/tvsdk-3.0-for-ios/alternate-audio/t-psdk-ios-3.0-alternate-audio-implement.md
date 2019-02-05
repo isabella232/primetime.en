@@ -4,9 +4,6 @@ seo-description: Late-binding audio uses PTMediaPlayer to play a video that is s
 seo-title: Access alternate audio tracks
 title: Access alternate audio tracks
 uuid: 2915a74f-5ec3-457e-890d-5c79be39f37a
-index: y
-internal: n
-snippet: y
 ---
 
 # Access alternate audio tracks{#access-alternate-audio-tracks}
