@@ -7,5 +7,5 @@ internal: n
 snippet: y
 ---
 
-# Customize opportunity detectors and content resolvers{#customize-opportunity-detectors-and-content-resolvers}
+# Customize opportunity detectors and content resolvers {#customize-opportunity-detectors-and-content-resolvers}
 

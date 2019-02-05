@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Example of a customized VOD asset{#example-of-a-customized-vod-asset}
+# Example of a customized VOD asset {#example-of-a-customized-vod-asset}
 
 Here is an example of a customized VOD asset:
 
@@ -41,4 +41,3 @@ Your application could set up the following scenarios:
 
 * A notification when `#EXT-X-ASSET` tags, or any other set of custom tag names to which you have subscribed, exist in the file. 
 * Insert ads when an `#EXT-X-AD` tag, or any other custom tag name, is found in the stream.
-

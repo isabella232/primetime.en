@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Notification classes{#notification-classes}
+# Notification classes {#notification-classes}
 
 These classes describe messages about errors, warnings, and some activities that the TVSDK issues for logging and debugging purposes.
 

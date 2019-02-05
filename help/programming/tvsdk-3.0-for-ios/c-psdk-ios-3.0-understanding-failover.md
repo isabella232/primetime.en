@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Failover{#failover}
+# Failover {#failover}
 
 Failover handling occurs when a variant playlist has multiple renditions for the same bit rate, and one of the renditions stops working. The TVSDK switches between renditions.
 
@@ -34,4 +34,3 @@ Failover occurs only at the M3U8 level, which means:
 >[!TIP]
 >
 >TVSDK, rather than the Apple AV Foundation player, provides failover handling.
-

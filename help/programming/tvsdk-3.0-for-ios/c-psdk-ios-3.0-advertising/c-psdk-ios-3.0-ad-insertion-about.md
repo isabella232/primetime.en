@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Insert ads{#insert-ads}
+# Insert ads {#insert-ads}
 
 Ad insertion resolves ads for video-on-demand (VOD) , for live streaming, and for linear streaming with ad tracking and ad playback. TVSDK makes the required requests to the ad server, receives information about ads for the specified content, and places the ads in the content in phases.
 
@@ -119,10 +119,8 @@ The ability to exit from an ad break early is identified through a custom tag in
 
        ```    
        // self.player is the PTMediaPlayer instance created for content and ad playback 
-       PTDefaultMediaPlayerClientFactory *clientFactory = self.player.mediaPlayerClientFactory; 
-             
-       // Clear existing resolver and register the new opportunity resolver 
-       [clientFactory clearOpportunityResolvers]; 
+       PTDefaultMediaPlayerClientFactory *clientFactory = self.player.mediaPlayerClientFactory;
+       // Clear existing resolver and register the new opportunity resolver
+       [clientFactory clearOpportunityResolvers];
        [clientFactory registerOpportunityResolver:[[PTDefaultExtendedAdOpportunityResolver new] autorelease]];
        ```
-

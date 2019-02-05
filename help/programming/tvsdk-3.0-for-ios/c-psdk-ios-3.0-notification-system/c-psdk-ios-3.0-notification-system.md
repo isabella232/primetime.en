@@ -8,4 +8,3 @@ snippet: y
 ---
 
 # Notifications for player status, activity, errors, and logs{#notifications-for-player-status-activity-errors-and-logs}
-

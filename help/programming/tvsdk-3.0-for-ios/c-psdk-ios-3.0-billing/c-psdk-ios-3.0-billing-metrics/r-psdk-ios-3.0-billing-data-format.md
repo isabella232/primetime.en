@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Transmit billing metrics{#transmit-billing-metrics}
+# Transmit billing metrics {#transmit-billing-metrics}
 
 TVSDK sends billing metrics to Adobe in an XML format.
 

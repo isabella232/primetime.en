@@ -7,5 +7,5 @@ internal: n
 snippet: y
 ---
 
-# Advertising{#advertising}
+# Advertising {#advertising}
 

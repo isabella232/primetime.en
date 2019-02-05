@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Work with MediaPlayer objects{#work-with-mediaplayer-objects}
+# Work with MediaPlayer objects {#work-with-mediaplayer-objects}
 
 The PTMediaPlayer object represents your media player. A PTMediaPlayerItem represents audio or video on your player.
 

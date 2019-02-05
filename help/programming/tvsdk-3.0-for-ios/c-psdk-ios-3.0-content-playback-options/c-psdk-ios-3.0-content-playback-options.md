@@ -7,5 +7,4 @@ internal: n
 snippet: y
 ---
 
-# Content playback options{#content-playback-options}
-
+# Content playback options {#content-playback-options}

@@ -10,7 +10,7 @@ internal: n
 snippet: y
 ---
 
-# Update ad creative selection rules{#update-ad-creative-selection-rules}
+# Update ad creative selection rules {#update-ad-creative-selection-rules}
 
 You can use the TVSDK configuration file (AdobeTVSDKConfig.json) to update the priorities for ad creative selection on VAST/VMAP responses. You can also use this configuration file to define the source URL transformation rules for ad creatives.
 
@@ -56,4 +56,3 @@ override protected function doRetrieveGenerators(item:MediaPlayerItem):Vector.<O
     return result; 
 }
 ```
-

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Set up notifications{#set-up-notifications}
+# Set up notifications {#set-up-notifications}
 
 The player can listen for a range of events that indicate the state of the player.
 

@@ -19,7 +19,7 @@ When TVSDK first encounters an incompatible ad, the player ignores the ad and is
 
 To enable this optional feature, contact your Adobe representative.
 
-For more information about CRS, see [Creative Packaging Service (CRS)](https://help.adobe.com/en_US/primetime/crs/index.html).
+For more information about CRS, see [Creative Packaging Service (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/guides/crs.pdf).
 
 ## Multiple CDN support for CRS ad delivery {#section_900FDDA5454143718F1EB4C9732C8E1C}
 
@@ -64,4 +64,3 @@ PTDefaultURLTransformer *defaultTransformer = [[[PTDefaultURLTransformer alloc] 
 // metadata is the PTMetadata instance set on a PTMediaPlayerItem instance. 
 [metadata setMetadata:[self getNetworkConfiguration] forKey:PTNetworkConfigurationMetadataKey];
 ```
-

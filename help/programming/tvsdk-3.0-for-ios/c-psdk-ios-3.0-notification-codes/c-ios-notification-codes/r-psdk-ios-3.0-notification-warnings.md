@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# WARNING notification codes{#warning-notification-codes}
+# WARNING notification codes {#warning-notification-codes}
 
 This table proves detailed information about WARN type notifications.
 

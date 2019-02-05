@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Subscribe to custom tags{#subscribe-to-custom-tags}
+# Subscribe to custom tags {#subscribe-to-custom-tags}
 
 TVSDK prepares PTTimedMetadata objects for subscribed tags each time these objects are encountered in the content manifest.
 

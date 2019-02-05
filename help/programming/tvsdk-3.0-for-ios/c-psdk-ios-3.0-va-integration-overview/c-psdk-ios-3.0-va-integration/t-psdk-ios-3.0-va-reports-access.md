@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Access video analytics reports{#access-video-analytics-reports}
+# Access video analytics reports {#access-video-analytics-reports}
 
 Video analytics reports are routed to the Adobe Analytics reporting platforms.
 

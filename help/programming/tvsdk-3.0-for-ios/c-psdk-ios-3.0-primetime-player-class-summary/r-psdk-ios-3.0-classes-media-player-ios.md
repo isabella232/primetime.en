@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Media player classes{#media-player-classes}
+# Media player classes {#media-player-classes}
 
 You can use the Primetime Player Objective-C API to customize the behavior of the player.
 

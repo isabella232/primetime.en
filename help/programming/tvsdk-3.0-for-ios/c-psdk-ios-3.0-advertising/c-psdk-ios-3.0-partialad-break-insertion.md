@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Partial ad-break insertion{#partial-ad-break-insertion}
+# Partial ad-break insertion {#partial-ad-break-insertion}
 
 TVSDK provides a TV-like experience of being able to join in the middle of an ad, in live streams.
 

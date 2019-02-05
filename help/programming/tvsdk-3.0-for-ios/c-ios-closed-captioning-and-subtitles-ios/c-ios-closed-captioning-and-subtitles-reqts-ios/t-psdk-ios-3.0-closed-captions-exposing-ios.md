@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Expose closed captions{#expose-closed-captions}
+# Expose closed captions {#expose-closed-captions}
 
 To make closed captions available to your client player, you must enable them. The user can turn closed captions on or off and select the formatting.
 

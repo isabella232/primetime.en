@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Product overview, audience, and this guide{#product-overview-audience-and-this-guide}
+# Product overview, audience, and this guide {#product-overview-audience-and-this-guide}
 
 This guide provides information about how to develop video player applications by using TVSDK for Android, which is implemented in Java.
 

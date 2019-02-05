@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Alternate audio tracks in the playlist{#alternate-audio-tracks-in-the-playlist}
+# Alternate audio tracks in the playlist {#alternate-audio-tracks-in-the-playlist}
 
 Alternate, or late-binding, audio allows you to switch among available audio tracks for a video track. This way, users can select a language track when the video is played.
 

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Instant-on{#instant-on}
+# Instant-on {#instant-on}
 
 Instant-on preloads parts of the media on one or more channels. After a user selects or switches channels, the content starts sooner because some of the buffering has already completed.
 

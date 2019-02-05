@@ -10,7 +10,7 @@ internal: n
 snippet: y
 ---
 
-# Normalize rules{#normalize-rules}
+# Normalize rules {#normalize-rules}
 
 The normalize rule defines a URL transformation to apply to a source creative URL obtained from a VAST/VMAP response.
 

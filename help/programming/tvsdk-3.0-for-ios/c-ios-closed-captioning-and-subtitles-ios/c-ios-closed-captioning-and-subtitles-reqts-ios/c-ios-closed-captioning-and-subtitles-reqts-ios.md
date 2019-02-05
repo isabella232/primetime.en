@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Requirements for subtitles and closed captions{#requirements-for-subtitles-and-closed-captions}
+# Requirements for subtitles and closed captions {#requirements-for-subtitles-and-closed-captions}
 
 Closed captions and subtitles have some unique differences, and you enable them in different ways.
 

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Display the current time and remaining time{#display-the-current-time-and-remaining-time}
+# Display the current time and remaining time {#display-the-current-time-and-remaining-time}
 
 You can display the current and remaining time of the content that is being played.
 

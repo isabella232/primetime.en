@@ -7,5 +7,5 @@ internal: n
 snippet: y
 ---
 
-# Content protection{#content-protection}
+# Content protection {#content-protection}
 

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Logging classes{#logging-classes}
+# Logging classes {#logging-classes}
 
 These classes enable you to customize logging.
 

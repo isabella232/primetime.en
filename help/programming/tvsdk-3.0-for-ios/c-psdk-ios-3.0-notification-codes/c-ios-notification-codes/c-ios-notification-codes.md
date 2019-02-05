@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# TVSDK notification system{#tvsdk-notification-system}
+# TVSDK notification system {#tvsdk-notification-system}
 
 The TVSDK notification system produces various error, warning, and informational notices that provide diagnostic metadata.
 

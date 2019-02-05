@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Set up the PTMediaPlayer{#set-up-the-ptmediaplayer}
+# Set up the PTMediaPlayer {#set-up-the-ptmediaplayer}
 
 The PTMediaPlayer interface encapsulates the functionality and behavior of a media player object.
 
@@ -23,7 +23,7 @@ To set up your `PTMediaPlayer`:
 
 1. Create `PTMetadata`.
 
-   Assume that your method `createMetada` prepares metadata (see  ad-insertion ).
+   Assume that your method `createMetada` prepares metadata (see [Advertising](../../c-psdk-ios-3.0-advertising/r-psdk-ios-3.0-advertising-requirements.md)).
 
    ```
    PTMetadata *metadata = [self createMetadata]

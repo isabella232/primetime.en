@@ -7,5 +7,4 @@ internal: n
 snippet: y
 ---
 
-# Notification codes{#notification-codes}
-
+# Notification codes {#notification-codes}

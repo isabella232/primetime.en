@@ -9,14 +9,12 @@ internal: n
 snippet: y
 ---
 
-# Overview{#overview}
+# Overview {#overview}
 
 The Adobe Primetime Software Development Kit (TVSDK) is a toolkit that allows you to add advanced video playback functionality to your applications.
 
-* For a list of the features that are supported by TVSDK, see  overview-of-the-player . 
-* For specific hardware and software requirements for using TVSDK, see  requirements .
-
-<a id="section_C1244804FC864A0D9D0BB20431D2DEBE"></a>
+* For a list of the features that are supported by TVSDK, see [Primetime Player TVSDK features](../../c-psdk-ios-3.0-introduction/c-psdk-ios-3.0-overview/c-psdk-ios-3.0-overview-of-the-player.md). 
+* For specific hardware and software requirements for using TVSDK, see [Requirements]((../../c-psdk-ios-3.0-introduction/c-psdk-ios-3.0-requirements.md)).
 
 This guide provides information about how to develop video player applications by using TVSDK for iOS, which is implemented in Objective-C.
 
@@ -24,7 +22,7 @@ This guide provides information about how to develop video player applications b
 
 TVSDK includes API descriptions and code samples to help you to integrate advanced video functionality, content protection, and advertising features into your player. You use Objective-C to create a video player user interface. TVSDK helps you connect that user interface to its media player. This allows you to play videos and advertising based on media manifests. You can also use TVSDK to retrieve information about the video, handle security, and control and monitor playback.
 
-For specific hardware and software requirements for using TVSDK, see
+For specific hardware and software requirements for using TVSDK, see [Requirements](../../c-psdk-ios-3.0-introduction/c-psdk-ios-3.0-requirements.md).
 
 ## Audience {#section_527860B373734D3BA89FCF5EC1F6DC37}
 
@@ -32,4 +30,4 @@ This guide assumes that you understand how to develop applications and video pla
 
 ## About this guide {#section_9A5B2FC506B34B5DB71CA827B307A4D0}
 
-This guide provides information that allows you to incorporate TVSDK features in a video player by using Objective-C on iOS devices. 
+This guide provides information that allows you to incorporate TVSDK features in a video player by using Objective-C on iOS devices.

@@ -7,5 +7,4 @@ internal: n
 snippet: y
 ---
 
-# Billing metrics{#billing-metrics}
-
+# Billing metrics {#billing-metrics}

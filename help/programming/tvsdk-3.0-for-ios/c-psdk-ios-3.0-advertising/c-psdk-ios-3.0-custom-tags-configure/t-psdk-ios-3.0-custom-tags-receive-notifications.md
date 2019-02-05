@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Add listeners for timed metadata notifications{#add-listeners-for-timed-metadata-notifications}
+# Add listeners for timed metadata notifications {#add-listeners-for-timed-metadata-notifications}
 
 To receive notifications about tags in the manifest, implement the appropriate notification listener(s).
 

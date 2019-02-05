@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Listen to logs{#listen-to-logs}
+# Listen to logs {#listen-to-logs}
 
  To register for listening to logs: 
 1. Implement a custom class that follows the protocol `PTLogger`:
@@ -71,4 +71,3 @@ Here is an example of filtering logs by using the `PTLogEntry` type:
  
 @end
 ```
-

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Use timed metadata{#use-timed-metadata}
+# Use timed metadata {#use-timed-metadata}
 
 You can use TimedMetadata when the current playback time matches the start time.
 

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Video analytics integration{#video-analytics-integration}
+# Video analytics integration {#video-analytics-integration}
 
 You can track video use by integrating TVSDK with Adobe Analytics.
 

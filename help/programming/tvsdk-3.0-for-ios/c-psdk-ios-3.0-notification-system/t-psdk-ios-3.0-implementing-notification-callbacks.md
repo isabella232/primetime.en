@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Implement notification callbacks{#implement-notification-callbacks}
+# Implement notification callbacks {#implement-notification-callbacks}
 
 You can implement notification callbacks.
 
@@ -21,4 +21,3 @@ You can implement notification callbacks.
        NSLog(@"Notification: %@", notification); 
    }
    ```
-

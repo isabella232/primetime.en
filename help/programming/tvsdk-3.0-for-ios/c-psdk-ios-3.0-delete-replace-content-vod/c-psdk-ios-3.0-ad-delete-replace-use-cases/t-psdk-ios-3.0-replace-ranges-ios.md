@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Replace ranges{#replace-ranges}
+# Replace ranges {#replace-ranges}
 
  To implement the `PTTimeRangeCollection` and delete ranges of content as ads: 
 1. Prepare `PTTimeRangeCollection`.
