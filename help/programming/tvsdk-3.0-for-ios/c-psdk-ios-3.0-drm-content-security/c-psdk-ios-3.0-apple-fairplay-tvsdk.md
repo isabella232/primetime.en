@@ -175,4 +175,3 @@ You can implement Apple FairPlay Streaming, which is Apple's DRM solution, in yo
    >[!NOTE]
    >
    >If you wrote your own FairPlay license server, or you are using a third-party FairPlay license server, consult your license server vendor to determine your license server URL, formatting, and any other requirements.
-

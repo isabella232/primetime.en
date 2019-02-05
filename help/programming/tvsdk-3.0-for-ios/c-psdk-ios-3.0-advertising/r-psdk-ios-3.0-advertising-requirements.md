@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Advertising requirements{#advertising-requirements}
+# Advertising requirements {#advertising-requirements}
 
 You can insert ads in your VOD and live/linear content by using the Adobe Primetime ad decisioning interface.
 

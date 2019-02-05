@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Load Ad for a DVR window{#load-ad-for-a-dvr-window}
+# Load Ad for a DVR window {#load-ad-for-a-dvr-window}
 
 You can decide whether to resolve only the ads that occur after the user’s current live point or to also resolve ads that occur before the current live point.
 

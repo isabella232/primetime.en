@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Default and customized playback behavior with ads{#default-and-customized-playback-behavior-with-ads}
+# Default and customized playback behavior with ads {#default-and-customized-playback-behavior-with-ads}
 
 The behavior of media playback is affected by seeking, pausing, and the inclusion of advertising.
 

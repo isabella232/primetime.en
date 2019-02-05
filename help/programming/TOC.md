@@ -299,7 +299,7 @@ user-guide: Primetime Programming Help
       + [Digital Rights Management classes](tvsdk-3.0-for-ios/c-psdk-ios-3.0-primetime-player-class-summary/r-psdk-ios-3.0-classes-digital-rights-management-ios.md)
       + [Video Analytics classes](tvsdk-3.0-for-ios/c-psdk-ios-3.0-primetime-player-class-summary/r-psdk-ios-3.0-classes-video-analytics.md)
    + [Notification codes](tvsdk-3.0-for-ios/c-psdk-ios-3.0-notification-codes/c-psdk-ios-3.0-notification-codes.md)
-      + [Notification codes](tvsdk-3.0-for-ios/c-psdk-ios-3.0-notification-codes/c-ios-notification-codes/c-ios-notification-codes.md)
+      + [TVSDK notification system](tvsdk-3.0-for-ios/c-psdk-ios-3.0-notification-codes/c-ios-notification-codes/c-ios-notification-codes.md)
          + [Element ID :r_psdk_notifications-errors](tvsdk-3.0-for-ios/c-psdk-ios-3.0-notification-codes/c-ios-notification-codes/r-psdk-ios-3.0-notifications-errors.md)
          + [WARNING notification codes](tvsdk-3.0-for-ios/c-psdk-ios-3.0-notification-codes/c-ios-notification-codes/r-psdk-ios-3.0-notification-warnings.md)
          + [INFO notification codes](tvsdk-3.0-for-ios/c-psdk-ios-3.0-notification-codes/c-ios-notification-codes/r-psdk-ios-3.0-notification-info.md)

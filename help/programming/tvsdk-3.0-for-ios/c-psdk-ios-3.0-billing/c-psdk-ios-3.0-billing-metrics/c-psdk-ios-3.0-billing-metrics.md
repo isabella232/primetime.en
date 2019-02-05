@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Billing usage metrics{#billing-usage-metrics}
+# Billing usage metrics {#billing-usage-metrics}
 
 To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers.
 

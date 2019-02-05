@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Metadata classes{#metadata-classes}
+# Metadata classes {#metadata-classes}
 
 These classes provide metadata for advertising, namespaces, and tracking.
 

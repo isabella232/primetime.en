@@ -9,7 +9,6 @@ internal: n
 snippet: y
 ---
 
-# Use cases to delete and replace ads{#use-cases-to-delete-and-replace-ads}
+# Use cases to delete and replace ads {#use-cases-to-delete-and-replace-ads}
 
 Here are the use cases to delete and replace ads:
-

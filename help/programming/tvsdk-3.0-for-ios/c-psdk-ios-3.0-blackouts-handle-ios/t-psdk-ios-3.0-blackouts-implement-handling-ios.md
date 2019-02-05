@@ -9,19 +9,13 @@ internal: n
 snippet: y
 ---
 
-# Implement blackout handling{#implement-blackout-handling}
+# Implement blackout handling {#implement-blackout-handling}
 
 The TVSDK provides APIs and sample code for handling blackout periods.
 
 To implement blackout handling and provide alternate content during the blackout: 
 
-1. Set up your app to subscribe to blackout tags in a live stream manifest. 
-
-   <!-- 
-
-Q: The "for example" comment in the following doesn't exactly match the code. What's correct?
-
- -->
+1. Set up your app to subscribe to blackout tags in a live stream manifest.
 
    ```
    - (void) createMediaPlayer:(PTMediaPlayerItem *)item 
@@ -258,4 +252,3 @@ Q: The "for example" comment in the following doesn't exactly match the code. Wh
        [currMetadata setMetadata:blackoutMetadata forKey:PTBlackoutMetadataKey] 
    }
    ```
-

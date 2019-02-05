@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Handle blackouts{#handle-blackouts}
+# Handle blackouts {#handle-blackouts}
 
 TVSDK handles blackouts in live video streams and provides alternate content during a blackout.
 

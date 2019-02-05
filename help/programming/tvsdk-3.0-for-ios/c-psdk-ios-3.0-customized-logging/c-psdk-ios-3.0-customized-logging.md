@@ -7,5 +7,4 @@ internal: n
 snippet: y
 ---
 
-# Customized logging{#customized-logging}
-
+# Customized logging {#customized-logging}

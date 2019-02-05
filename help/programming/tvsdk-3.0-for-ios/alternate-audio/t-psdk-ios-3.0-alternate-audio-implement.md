@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Access alternate audio tracks{#access-alternate-audio-tracks}
+# Access alternate audio tracks {#access-alternate-audio-tracks}
 
 Late-binding audio uses PTMediaPlayer to play a video that is specified in an M3U8 HLS playlist and that can contain several alternate audio streams.
 

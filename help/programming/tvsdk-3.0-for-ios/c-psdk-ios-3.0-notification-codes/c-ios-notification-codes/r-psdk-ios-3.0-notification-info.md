@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# INFO notification codes{#info-notification-codes}
+# INFO notification codes {#info-notification-codes}
 
 This table provides detailed information about INFO type notifications.
 

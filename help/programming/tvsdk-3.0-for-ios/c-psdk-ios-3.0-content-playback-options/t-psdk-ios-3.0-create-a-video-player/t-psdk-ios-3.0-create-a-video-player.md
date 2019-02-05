@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Create video player{#create-video-player}
+# Create video player {#create-video-player}
 
 TVSDK provides tools for creating an advanced video player application (your Primetime player), which you can integrate with other Primetime components.
 

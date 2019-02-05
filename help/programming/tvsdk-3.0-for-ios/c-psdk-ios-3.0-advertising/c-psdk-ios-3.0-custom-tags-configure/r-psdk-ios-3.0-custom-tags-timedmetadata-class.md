@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Timed metadata class{#timed-metadata-class}
+# Timed metadata class {#timed-metadata-class}
 
 When TVSDK detects a subscribed tag in the playlist/manifest, the player automatically tries to process the tag and expose it in the form of a PTTimedMetadata object.
 

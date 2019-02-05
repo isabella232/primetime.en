@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Whitelist your iOS application{#whitelist-your-ios-application}
+# Whitelist your iOS application {#whitelist-your-ios-application}
 
 You can whitelist your iOS apps by using Adobe's machotools tool.
 

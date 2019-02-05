@@ -7,5 +7,5 @@ internal: n
 snippet: y
 ---
 
-# Handle blackouts in live streams{#handle-blackouts-in-live-streams}
+# Handle blackouts in live streams {#handle-blackouts-in-live-streams}
 

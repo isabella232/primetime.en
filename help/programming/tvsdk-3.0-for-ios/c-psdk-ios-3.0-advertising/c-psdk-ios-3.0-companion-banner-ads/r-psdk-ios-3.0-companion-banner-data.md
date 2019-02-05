@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Companion banner data{#companion-banner-data}
+# Companion banner data {#companion-banner-data}
 
 The content of a PTAdAsset describes a companion banner.
 

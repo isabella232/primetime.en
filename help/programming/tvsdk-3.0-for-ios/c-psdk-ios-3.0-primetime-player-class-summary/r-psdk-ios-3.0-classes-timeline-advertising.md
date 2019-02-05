@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Timeline advertising classes{#timeline-advertising-classes}
+# Timeline advertising classes {#timeline-advertising-classes}
 
 These classes provide information about ads that occur within a timeline.
 

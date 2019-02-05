@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Ad signaling mode{#ad-signaling-mode}
+# Ad signaling mode {#ad-signaling-mode}
 
 The ad signaling mode specifies where the video stream should get advertising information.
 

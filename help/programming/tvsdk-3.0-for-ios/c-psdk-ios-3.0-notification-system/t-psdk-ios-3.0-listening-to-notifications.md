@@ -7,7 +7,7 @@ internal: n
 snippet: y
 ---
 
-# Listen to notifications{#listen-to-notifications}
+# Listen to notifications {#listen-to-notifications}
 
 There are two ways to listen to the `PTNotification` notification in the `PTMediaPlayer`: 
 

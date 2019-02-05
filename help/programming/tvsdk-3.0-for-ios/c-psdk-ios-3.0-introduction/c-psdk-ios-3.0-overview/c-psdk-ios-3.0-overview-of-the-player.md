@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Primetime TVSDK features{#primetime-tvsdk-features}
+# Primetime TVSDK features {#primetime-tvsdk-features}
 
 TVSDK for iOS includes a variety of features.
 

@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Display banner ads{#display-banner-ads}
+# Display banner ads {#display-banner-ads}
 
 To display banner ads, you need to create banner instances and allow TVSDK to listen for ad-related events.
 
@@ -63,4 +63,3 @@ For each companion ad, TVSDK indicates which types are available for your applic
           } 
       }
       ```
-

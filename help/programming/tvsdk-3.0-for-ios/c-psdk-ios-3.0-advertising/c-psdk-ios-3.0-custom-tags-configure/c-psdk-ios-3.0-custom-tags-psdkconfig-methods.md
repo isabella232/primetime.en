@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Config class methods for tags{#config-class-methods-for-tags}
+# Config class methods for tags {#config-class-methods-for-tags}
 
 You can configure custom tag names in TVSDK globally with the PTSDKConfig class.
 
@@ -32,4 +32,3 @@ Remember the following:
 
   For example, #EXT-X-ASSET is a correct custom tag name, but EXT-X-ASSET is incorrect. 
 * You cannot change the configuration after the media stream has been loaded.
-

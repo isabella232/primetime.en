@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# QoS classes{#qos-classes}
+# QoS classes {#qos-classes}
 
 These classes provide information that help you to determine how well the player is performing.
 

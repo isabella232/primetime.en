@@ -7,5 +7,4 @@ internal: n
 snippet: y
 ---
 
-# Video analytics{#video-analytics}
-
+# Video analytics {#video-analytics}

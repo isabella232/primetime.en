@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Quality of service statistics{#quality-of-service-statistics}
+# Quality of service statistics {#quality-of-service-statistics}
 
 Quality of service (QoS) offers a detailed view into how the video engine is performing. TVSDK provides detailed statistics about playback, buffering, and devices.
 

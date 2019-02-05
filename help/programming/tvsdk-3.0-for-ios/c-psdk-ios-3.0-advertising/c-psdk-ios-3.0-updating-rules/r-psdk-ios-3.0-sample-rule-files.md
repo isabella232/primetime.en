@@ -9,7 +9,7 @@ internal: n
 snippet: y
 ---
 
-# Sample creative selection rules{#sample-creative-selection-rules}
+# Sample creative selection rules {#sample-creative-selection-rules}
 
 In the AdobeTVSDKConfig.json you can specify default rules as well as rules for specific zones.
 
@@ -136,4 +136,3 @@ The following is an example of an [!DNL AdobeTVSDKConfig.json] file that defines
 }
 
 ```
-

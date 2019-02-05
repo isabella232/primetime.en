@@ -10,7 +10,7 @@ internal: n
 snippet: y
 ---
 
-# Apply creative selection rules{#apply-creative-selection-rules}
+# Apply creative selection rules {#apply-creative-selection-rules}
 
 TVSDK applies creative selection rules in the following ways:
 
