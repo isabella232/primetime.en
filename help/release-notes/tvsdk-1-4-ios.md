@@ -17,7 +17,7 @@ TVSDK 1.4 for iOS Release Notes describe what is new or changed, the resolved an
 
 ### Version 1.4.45
 
-* In order to comply with Xcode10, TVSDK has moved from “libstdc++” to “libc++”, and as a result the minimum supported version is iOS 7. Earlier it was iOS 6.
+* In order to comply with Xcode10, TVSDK has moved from “`libstdc++`” to “`libc++`”, and as a result the minimum supported version is iOS 7. Earlier it was iOS 6.
 
 **Version 1.4.44**
 
@@ -28,8 +28,8 @@ TVSDK 1.4 for iOS Release Notes describe what is new or changed, the resolved an
 * TV-like experience of being able to join in the middle of an ad without triggering partial ad's tracking.  
   Example: User joins in the middle (at 40 seconds) of a 90-second ad break consisting of three 30-second ads. This is 10 seconds into the second ad in the break.
 
-    * The second ad plays for the remaining duration (20 sec) followed by the third ad.
-    * Ad trackers for the partial ad played (second ad) are not triggered. The trackers for only the third ad are triggered.
+  * The second ad plays for the remaining duration (20 sec) followed by the third ad.
+  * Ad trackers for the partial ad played (second ad) are not triggered. The trackers for only the third ad are triggered.
 
 * Added enableVodPreroll property of Boolean type in PTAdMetadata interface. The property can be used to enable pre-roll on a VoD stream. If enableVodPreroll is NO, PSDK does not play pre-roll. This, however, has no impact on the midrolls. The default value of enableVodPreroll is YES.
 * closedCaptionDisplayEnabled API of PTMediaPlayer interface is marked as deprecated from iOS v1.4.43 onwards. To determine whether closed captions are available for a given PTMediaPlayerItem, examine the subtitlesOptions property of PTMediaPlayerMediaItem.
@@ -42,8 +42,8 @@ No new features are added in this release. For a list of issues fixed, see [Reso
 
 API changes:
 
-* ** isSecure**: A new API is introduced isSecure to secure the player from recording and throwing an error. The default value is true.
-* ** allowExternalRecording**: A new API is introduced to allow airplay mirroring for a secure content. Airplay mirroring is treated as recording therefore  allowExternalRecording  value must be set to 'True', to allow airplay mirroring or set to 'False' to stop the airplay mirroring for secure content. By default,  value  is true.
+* **isSecure**: A new API is introduced isSecure to secure the player from recording and throwing an error. The default value is true.
+* **allowExternalRecording**: A new API is introduced to allow airplay mirroring for a secure content. Airplay mirroring is treated as recording therefore  allowExternalRecording  value must be set to 'True', to allow airplay mirroring or set to 'False' to stop the airplay mirroring for secure content. By default,  value  is true.
 
 **Version 1.4.40**
 
@@ -52,7 +52,7 @@ No new features.
 **Version 1.4.39**
 
 * iOS  TVSDK  is certified with VHL 2.0.1 and with VHL 2.0.1 with Nielsen.
-* iOS  TVSDK  is updated to make CRS requests from new Akamai host primetime-a.akamaihd<span></span>.net.
+* iOS  TVSDK  is updated to make CRS requests from new Akamai host `primetime-a.akamaihd.net`.
 * New hostname configuration provides CRS asset delivery via both HTTP and HTTPS (SSL) at greater scale.
 
 **Version 1.4.36**
@@ -63,7 +63,7 @@ Integrate and certify VHL 2.0 in iOS TVSDK : Reduce the barrier in the VideoHear
 
 * Network Ad Information
 
-  TVSDK APIs now provide additional information on third party VAST responses. Ad ID, Ad System  and  VAST Ad Extensions are provided in PTNetworkAdInfo class accessible through  networkAdInfo  property on an Ad Asset. This information can be used for integrating with other Ad Analytics platforms such as **Moat Analytics**.
+  TVSDK APIs now provide additional information on third party VAST responses. Ad ID, Ad System  and  VAST Ad Extensions are provided in `PTNetworkAdInfo` class accessible through  `networkAdInfo`  property on an Ad Asset. This information can be used for integrating with other Ad Analytics platforms such as **Moat Analytics**.
 
 **Version 1.4.31**
 
@@ -77,7 +77,7 @@ Integrate and certify VHL 2.0 in iOS TVSDK : Reduce the barrier in the VideoHear
 
 In the PTSDKConfig class, the forceHTTPS API has been added.
 
-The PTSDKConfig class provides methods to enforce SSL on requests made to Adobe Primetime ad decisioning, DRM, and Video Analytics servers. For more information, see the forceHTTPS and isForcingHTTPS methods on this class. If a manifest is loaded over HTTPS, TVSDK preserves the content use of HTTPS and respects this usage when loading any relative URLs from that manifest.
+The PTSDKConfig class provides methods to enforce SSL on requests made to Adobe Primetime ad decisioning, DRM, and Video Analytics servers. For more information, see the `forceHTTPS` and `isForcingHTTPS` methods on this class. If a manifest is loaded over HTTPS, TVSDK preserves the content use of HTTPS and respects this usage when loading any relative URLs from that manifest.
 
 **Note**: Requests to third-party domains such as Ad Tracking pixels, Content and Ad URLs, and similar requests are not modified, and it is the responsibility of the content providers and ad servers to provide URLs that are supported through HTTPS.
 
@@ -122,11 +122,12 @@ For more information about VPAID 2.0, see [VPAID ad support](https://help.adobe.
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**
 
 For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. 
-<!-- 
 
+<!-- 
 Comment Type: draft
 For more information, see [Ad fallback for VAST and VMAP ads](http://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
 -->
+
 **Version 1.4.9**
 
 * **Blackout Signaling With Alternate Content Replacement**
@@ -187,7 +188,6 @@ DRM Policies can now specify the highest resolution permitted, depending on the 
 >
 >* Slow motion, on any platform or version.
 >* Live trick play.
->
 
 ### Version 1.4.43
 
@@ -248,7 +248,7 @@ Comment Type: draft
   * Fixed the compilation issues with TVSDK on XCode 10. Due to XCode 10 requirements, apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
 
 * Ticket #36321 - Discrepancy observed in seekable range between PTMediaPlayer and AVPlayer instance in "Playing" state.
-* Ticket #36493 - libstdc++ support on iOS 12
+* Ticket #36493 - `libstdc++` support on iOS 12
 
   * Fixed the compilation issues with TVSDK on iOS 12. Apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
 
@@ -268,230 +268,227 @@ Comment Type: draft
 
 **Version 1.4.43**
 
-* [ZD#32990] - iOS: Content playing instead of ads on some cue-points. 'selectedMediaOptionInMediaSelectionGroup' API which was part of AVPlayerItem interface has now moved under AVMediaSelection in iOS 11. The issue got resolved using this new API.
-* [ZD#33683] TVSDK removed == suffix from the metadata strings. The issue is fixed in the parsing logic.
-* [ZD#33905] - iOS TVSDK making calls to the manifest files with two user agents. The user agent issue has been fixed in first m3u8 call (fresh install case). M3u8's have the same user-agents for all the calls now.
-* [ZD#34293] - Pre-rolls inserted on LINEAR streams do not play correctly on iOS11. The issue is fixed for preroll ads.
-* [ZD#34684] - When the ad skip policy is applied, Pre-roll ad frames are shown for few seconds. A new API, enableVodPreroll has been introduced to disable preroll playback in vod playback. The default value for this API is 'Yes'. The API ensures skipping of ad content stitching in the main content.
-* [ZD#34765] - After calling stop(), few Transport Streams segments still get downloaded. Enhanced the Stop() API to avoid download of the extra segments.
-* [ZD#34865] - Pre-roll ads for livestream are truncated on iOS. Related to iOS11, and adding an additional check to confirm if the stream is pre-roll or main-content, addresses this issue.
-* [ZD#35093] - Fixed a failover scenario where, if Primary variant of the stream fails at startup (returns 404), playback does not switch to backup stream.
+* (ZD#32990) - iOS: Content playing instead of ads on some cue-points. 'selectedMediaOptionInMediaSelectionGroup' API which was part of AVPlayerItem interface has now moved under AVMediaSelection in iOS 11. The issue got resolved using this new API.
+* (ZD#33683) TVSDK removed == suffix from the metadata strings. The issue is fixed in the parsing logic.
+* (ZD#33905) - iOS TVSDK making calls to the manifest files with two user agents. The user agent issue has been fixed in first m3u8 call (fresh install case). M3u8's have the same user-agents for all the calls now.
+* (ZD#34293) - Pre-rolls inserted on LINEAR streams do not play correctly on iOS11. The issue is fixed for preroll ads.
+* (ZD#34684) - When the ad skip policy is applied, Pre-roll ad frames are shown for few seconds. A new API, enableVodPreroll has been introduced to disable preroll playback in vod playback. The default value for this API is 'Yes'. The API ensures skipping of ad content stitching in the main content.
+* (ZD#34765) - After calling stop(), few Transport Streams segments still get downloaded. Enhanced the Stop() API to avoid download of the extra segments.
+* (ZD#34865) - Pre-roll ads for livestream are truncated on iOS. Related to iOS11, and adding an additional check to confirm if the stream is pre-roll or main-content, addresses this issue.
+* (ZD#35093) - Fixed a failover scenario where, if Primary variant of the stream fails at startup (returns 404), playback does not switch to backup stream.
 
 **Version 1.4.42 (1.4.42.118)**
 
-* [ZD#34385] - Playback stalls with a bad URL when returning from signal-based ad insertion.
+* (ZD#34385) - Playback stalls with a bad URL when returning from signal-based ad insertion.
 
   Increase the maximum concurrent counts for CustomAVAssetLoaderOperations, so that the manifest reads can continue to execute.
-* [ZD#34373] - End users are not able to stream to HDMI-connected  devices,  when stream recording is disallowed.
-* [ZD#32678] - TVSDK does not collect the correct ad IDs on iOS.
+* (ZD#34373) - End users are not able to stream to HDMI-connected  devices,  when stream recording is disallowed.
+* (ZD#32678) - TVSDK does not collect the correct ad IDs on iOS.
 
   Ad ID of the final Ad creative is now picked up in VHL pings in case of VAST/VMAP redirects.
-* [ZD#33904] -  TVSDK  is not Registered for AVFoundation notifications AVAudioSessionMediaServicesWereLostNotification and AVAudioSessionMediaServicesWereResetNotification.
+* (ZD#33904) -  TVSDK  is not Registered for AVFoundation notifications AVAudioSessionMediaServicesWereLostNotification and AVAudioSessionMediaServicesWereResetNotification.
 
   PTMediaServicesWereLostNotification and PTMediaServicesWereResetNotification can now be registered on the player App to get the notifications when Media services are reset or lost.
 
-* [ZD#33815] - Customers are not able to update their prioritization and normalization CRS rules without requiring an app update.
+* (ZD#33815) - Customers are not able to update their prioritization and normalization CRS rules without requiring an app update.
 
   Added the getCRSRulesJsonURL and setCRSRulesJsonURL APIs to the iOS  TVSDK .
 
 **Version 1.4.41 (1.4.41.76)**
 
-* [ZD #34464] - Issues building Reference App with TVSDK Version 1.4.41
+* (ZD #34464) - Issues building Reference App with TVSDK Version 1.4.41
 
   Starting this version, Xcode 9 is required for compiling  TVSDK  for iOS.
-* [ZD #29456] - Airplay Starts in Paused State
+* (ZD #29456) - Airplay Starts in Paused State
 
   Fixed the pause issue that is when Video Pauses when Entering Airplay.
-* [ZD #30371] - AdBreak start time changes when we insert more than 2 ads in linear stream
+* (ZD #30371) - AdBreak start time changes when we insert more than 2 ads in linear stream
 
   Fixed the Error when attempting to playback content on Apple TV, which  prevent  playback completely
-* [ZD #32146]- No PTMediaPlayerStatusError is received for HLS Live content on blocking iOS 11 dev beta
+* (ZD #32146)- No PTMediaPlayerStatusError is received for HLS Live content on blocking iOS 11 dev beta
 
   No PTMediaPlayerStatusError is received for HLS Live and VOD content on blocking using Charles (Drop connection and 403)
-* [ZD #29242] - Airplay Video Playback Fails with Ads Enabled
+* (ZD #29242) - Airplay Video Playback Fails with Ads Enabled
 
   When ads are enabled and AirPlay is enabled starting playing a video, video playback never starts and no error is shown
-* [ZD#33341] - DRMInterface.h triggers build warnings in Xcode 9
+* (ZD#33341) - DRMInterface.h triggers build warnings in Xcode 9
 
   Fixed two block prototypes in DRMInterface.h which were missing the word 'void' in their parameter lists
-* [ZD#31979] - Does not compile/run when it is iOS 10 or later for iPhone 7/iPhone7+
+* (ZD#31979) - Does not compile/run when it is iOS 10 or later for iPhone 7/iPhone7+
 
   Fixed Compiling IB documents for earlier than iOS 7 is no longer supported
-* [ZD#32920] - white blank screen within an Ad break and no Ad break completion
+* (ZD#32920) - white blank screen within an Ad break and no Ad break completion
 
   When an Ad break is presenting Ad instances and after an ad instance is finished, a white blank screen is shown
-* [ZD#32509] - Disable iOS 11 screen  recoding Disable screen recording on iOS 11
+* (ZD#32509) - Disable iOS 11 screen  recoding Disable screen recording on iOS 11
 
-* [ZD#33179] - Intermittent event failure on iOS11
+* (ZD#33179) - Intermittent event failure on iOS11
 
   Fixed the event failure on iOS 11
 
 **Version 1.4.40** (1.4.40.72)
 
-* [ZD #32465] - Player cannot handle merged playlists.
+* (ZD #32465) - Player cannot handle merged playlists.
 
   Call finishLoadingWithError(with: Error) for AV foundation to try alternate streams/ trigger failover.
 
-* [ZD #31951] - TVSDK Error during License Rotations.
+* (ZD #31951) - TVSDK Error during License Rotations.
 
   Fixed the license rotation issue.
-* [ZD #31951] - White blank screen within an Ad break and no Ad break completion.
+* (ZD #31951) - White blank screen within an Ad break and no Ad break completion.
 
   Handled an issue where Facebook VPAID ads were often returning multiple CDATA blocks in a single \&lt;AdParameters\&gt; VAST node.
-* [ZD #33336] - [iOS] TVSDK - Ad pods not being filled, despite enough ads being returned by Freewheel.
+* (ZD #33336) - [iOS] TVSDK - Ad pods not being filled, despite enough ads being returned by Freewheel.
 
   Created parent-child relation between sequence ad and fallback ad and sorting based on parent sequence and index.
 
 **Version 1.4.39** (1.4.39.43)
 
-* [ZD #32178] - iOS TVSDK version is incorrect.
+* (ZD #32178) - iOS TVSDK version is incorrect.
 
   The TVSDK version output in the log files was 1.0.211. It is fixed to output the correct version.
 
-* [ZD #32199] - Lazy Ad loading - Video is not displayed for the content.
+* (ZD #32199) - Lazy Ad loading - Video is not displayed for the content.
 
   Local  Adbreak timeline that was not getting  initialised  previously, is now refreshed before usage.
 
-* [ZD #27528] - Video, audio, or both freeze 1-45 seconds after an asset starts  playing,  if the secondary audio is set to non-default on iOS 1.2.
+* (ZD #27528) - Video, audio, or both freeze 1-45 seconds after an asset starts  playing,  if the secondary audio is set to non-default on iOS 1.2.
 
   Prepare and inform audio tracks in  Ready  state.
 
-* [ZD #30411] - You may get unexpected results like no audio or incorrect  audio,  if you choose a secondary Sap language.
+* (ZD #30411) - You may get unexpected results like no audio or incorrect  audio,  if you choose a secondary Sap language.
 
   Prepare and inform audio tracks in  Ready  state.
 
-* [ZD #32199] - Lazy Ad loading - Video is not displayed for the content.
+* (ZD #32199) - Lazy Ad loading - Video is not displayed for the content.
 
   Local  Adbreak timeline that was not getting  initialised  previously, is now refreshed before usage.
 
-* [ZD #27528] - Video, audio, or both freeze 1-45 seconds after an asset starts  playing,  if the secondary audio is set to non-default on iOS 1.2.
+* (ZD #27528) - Video, audio, or both freeze 1-45 seconds after an asset starts  playing,  if the secondary audio is set to non-default on iOS 1.2.
 
   Prepare and inform audio tracks in  Ready  state.
 
-* [ZD #30411] - You may get unexpected results like no audio or incorrect  audio,  if you choose a secondary Sap language.
+* (ZD #30411) - You may get unexpected results like no audio or incorrect  audio,  if you choose a secondary Sap language.
 
   Prepare and inform audio tracks in  Ready  state.
 
 **Version 1.4.38** (1.4.38.860)
 
-* [ZD #29281] - iOS: Add AdSystem and Creative Id to CRS requests
+* (ZD #29281) - iOS: Add AdSystem and Creative Id to CRS requests
 
 Usage of creative Id and AdSystem in CRS request based upon CRS normalization rules
 
-* [ZD #29176] - Crash on PTAdPolicyDeligate satAdBreakAsWatched:position
+* (ZD #29176) - Crash on PTAdPolicyDeligate satAdBreakAsWatched:position
 
 Crash due to empty AdBreak is handled now.
 
-* [ZD #30125] - Programmatic ads are not working  in  iOS platform
+* (ZD #30125) - Programmatic ads are not working  in  iOS platform
 
 Added Programmatic ads support in iOS.
 
-* [ZD #30782] - #EXT-X-PROGRAM-DATE-TIME Notification
+* (ZD #30782) - #EXT-X-PROGRAM-DATE-TIME Notification
 
 Timed metadata event is not fired for  # EXT-X-PROGRAM-DATE-TIME tag with LIVE DRM streams.
 
 **Version 1.4.37 (1.4.37.842)**
 
-* [ZD #28950 ] - VOD playback issue
+* (ZD #28950 ) - VOD playback issue
 
 Playback issue when  # EXT-X-PLAYLIST-TYPE tag in the stream is set to Event rather than VOD
 
-* [ZD #29281] - iOS: Add AdSystem and Creative Id to CRS requests
+* (ZD #29281) - iOS: Add AdSystem and Creative Id to CRS requests
 
 Usage of Creative Id and AdSystem in CRS request based upon CRS normalization rules.
 
-* [ ZD #29462] - TremorHub ad in A&E VOD causing a crash in iOS apps
+* (ZD #29462) - TremorHub ad in A&E VOD causing a crash in iOS apps
 
 **Version 1.4.36 (1.4.36.835)**
 
-* [ZD #29418] - Cues with duration 0 (#EXT-X-CUE-OUT:0.000) are causing iOS TVSDK to stop or crash the playback.
+* (ZD #29418) - Cues with duration 0 (#EXT-X-CUE-OUT:0.000) are causing iOS TVSDK to stop or crash the playback.
 
 The issue is fixed and playback starts correctly.
 
-* [ZD #29462] - Ad in VOD causing a crash on iOS  TVSDK .
+* (ZD #29462) - Ad in VOD causing a crash on iOS  TVSDK .
 
 The issue is fixed. iOS  TVSDK  is raising an exception(AUDNetworkAdInfo::initWithAdId) and not handling it. The exception is due to empty Ad ID.
 
-* [ZD #29281]- Add AdSystem and Creative id to CRS requests.
+* (ZD #29281)- Add AdSystem and Creative id to CRS requests.
 
 Include AdSystem and  CreativeId  as new parameters in the 1401 and 1403 requests (all other parameters remain the same).
 
 **Version 1.4.35** (1.4.35.830)
 
-* [ZD #27830] - Need to determine programmatically the difference between closed-captions and subtitle in iOS.
+* (ZD #27830) - Need to determine programmatically the difference between closed-captions and subtitle in iOS.
 
 TVSDK now exposes the two types which can be used to filter out the required caption type.
 
-* [ZD #29160] - EXT-X-CUE-OUT ad cues are not spliced-in correctly on TVSDK iOS.
+* (ZD #29160) - EXT-X-CUE-OUT ad cues are not spliced-in correctly on TVSDK iOS.
 
 With EXT-X-CUE-OUT midroll ad is playing now.
 
-* [ZD #29100] - The app crashes when the user scrubs to the end of a movie.
+* (ZD #29100) - The app crashes when the user scrubs to the end of a movie.
 
 Fixed multiple crashes related to synchronization.
 
-* [ZD #28785], [ZD #27712], and [ZD #25076] - iOS app is crashing during the large live events.
+* (ZD #28785), (ZD #27712), and (ZD #25076) - iOS app is crashing during the large live events.
 
 Fixed multiple crashes related to synchronization.
 
 **Version 1.4.34** (1.4.34.815 for iOS 6.0+)
 
-* [ZD# 28481] - FER outage due to the incorrect key being appended at the end of an ad break for those FER streams
+* (ZD# 28481) - FER outage due to the incorrect key being appended at the end of an ad break for those FER streams
 
 For an FER stream, the key before the ad break is inserted after the end of the ad break. This issue was resolved by appending the *last seen key* at the end of the ad break.
 
 **Version 1.4.33** (1.4.33.803 for iOS 6.0+)
 
-* [ZD# 21701] Enable CRS for Sub-accounts
+* (ZD# 21701) Enable CRS for Sub-accounts
 
 Enabled by sending the original creative URL for the 1401 CRS request instead of the normalized URL, as per the requirement for CRS back end.
 
-* [ZD# 26218] - PSDKResources.bundle loading issue
+* (ZD# 26218) - PSDKResources.bundle loading issue
 
 This issue was resolved by updating resource loading to look from all available bundles.
 
-* [ZD# 27460] Midroll first Ad call - POST to cdn.auditude<span></span>.com returning 403.
+* (ZD# 27460) Midroll first Ad call - POST to cdn.auditude<span></span>.com returning 403.
 
-The new CDN account is unable to handle a POST CDN request. This issue was resolved by updating the code to make the cdn.auditude<span></span>.com ad request to be GET instead of POST.
+The new CDN account is unable to handle a POST CDN request. This issue was resolved by updating the code to make the `cdn.auditude.com` ad request to be GET instead of POST.
 
 **Version 1.4.32** (1.4.32.792 for iOS 6.0+)
 
-* [ZD# 27132] Support for decimal values for VMAP Ad Breaks.
+* (ZD# 27132) Support for decimal values for VMAP Ad Breaks.
 
 When content was not segmented along the defined ad breaks, integers were causing unexpected ad placements. The issue was resolved by not converting the decimal values to integers.
 
-* [ZD# 27189] AES content with the EXT-X-DISCONTINUITY-SEQUENCE tag are not playing correctly.
+* (ZD# 27189) AES content with the EXT-X-DISCONTINUITY-SEQUENCE tag are not playing correctly.
 
 The issue was resolved by placing the tag at the beginning of the playlist.
 
 **Version 1.4.31** (1.4.31.785 for iOS 6.0+)
 
-* [ZD# 24528] Implement TVSDK Usage Metrics for Billing
+* (ZD# 24528) Implement TVSDK Usage Metrics for Billing
 <!-- 
-
 Comment Type: draft
 For more information, see [Billing Metrics](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/PSDKs/concept/c_psdk_billing.html).
 -->
-* [ZD# 24642] Picture-in-Picture support for  TVSDK
+* (ZD# 24642) Picture-in-Picture support for  TVSDK
 
 The picture-in-picture feature, which was not working properly in some cases, has been fixed.
 
-* [ZD# 25246] Incorrect Ad Break Signals
+* (ZD# 25246) Incorrect Ad Break Signals
 
 This issue was resolved by aligning discontinuity tags across variant manifests.
 
-* [ZD# 26218] The application build process gets complicated when trying to include PSDKLibrary.framework in the client's application framework
+* (ZD# 26218) The application build process gets complicated when trying to include PSDKLibrary.framework in the client's application framework
 
 This issue was resolved by packaging the PSDKLibrary.framework as requested.
 
-* [ZD# 26364] Multi-CDN Support for CRS Ads
+* (ZD# 26364) Multi-CDN Support for CRS Ads
 <!-- 
-
 Comment Type: draft
 For more information, see [Multiple CDN support for CRS Ad Delivery](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-concept-Multiple_CDN_support_for_CRS_ad_delivery).
 -->
-
-* [ZD# 27028] Delay in playback of some streams in iOS 10.
+* (ZD# 27028) Delay in playback of some streams in iOS 10.
 
 This issue was resolved by providing a workaround for streams that do not have an M3U8 extension.
 
@@ -499,153 +496,153 @@ This issue was resolved by providing a workaround for streams that do not have a
 
 The following issues were resolved for TVSDK in this release:
 
-* [ZD# 24180] Add a custom header to white-list
+* (ZD# 24180) Add a custom header to white-list
 
 A new custom header has been added to the TVSDK white-list.
 
-* [ZD# 25016] Failover stream is selected randomly when ABR control parameters are set
+* (ZD# 25016) Failover stream is selected randomly when ABR control parameters are set
 
 This issue was resolved by maintaining the ABR streams in order when the ABR settings are provided with the  initialBitrate  setting on a stream that includes failover URLs. This will avoid playing the failover streams instead of primary.
 
-* [ZD# 25076] Crash on PTAuditudeAdResolver loadComplete
+* (ZD# 25076) Crash on PTAuditudeAdResolver loadComplete
 
 The issue where a crash was occurring during rapid start/stop of multiple PTMediaPlayer instances with ads has been fixed.
 
-* [ZD# 25960] No additional subscribed tags tare triggering metadata change notification broadcasts
+* (ZD# 25960) No additional subscribed tags tare triggering metadata change notification broadcasts
 
 The issue where a subscribed tag is not notified when it appears before the first segment in the manifest has been fixed.
 
-* [ZD# 26084] PSDK throwing a 106000.101000.-11833 decoder not found error when transitioning from the last ad break back to entertainment content
+* (ZD# 26084) PSDK throwing a 106000.101000.-11833 decoder not found error when transitioning from the last ad break back to entertainment content
 
 When the last ad break start time from the VMAP falls before the total duration is complete, in certain conditions, the key is not inserted until after the end of the last ad break. This issue has been fixed.
 
 * The Video Heartbeat Library (VHL) has been updated to version 1.5.9 to resolve the following issues:
 
-    * [ZD #22351] VHL - Analytics: Live video asset duration
+    * (ZD #22351) VHL - Analytics: Live video asset duration
 
-This issue was resolved by adding the  assetDuration  API to PTVideoAnalyticsTrackingMetadata to update the asset duration for Live/Linear streams and provide a logic for checking the live stream.
+This issue was resolved by adding the  assetDuration  API to `PTVideoAnalyticsTrackingMetadata` to update the asset duration for Live/Linear streams and provide a logic for checking the live stream.
 
-* [ZD# 22675] VHL - Analytics: Updating live video asset duration
+* (ZD# 22675) VHL - Analytics: Updating live video asset duration
 
 This issue is the same as ZD #22351.
 
-* [ZD #25908] VHL - Analytics: Adobe Heartbeat Event Crash
+* (ZD #25908) VHL - Analytics: Adobe Heartbeat Event Crash
 
 This issue was resolved by updating the implementation to use the latest version of VHL for iOS version 1.5.9 to improve stability and performance.
 
-* [ZD #25956] VHL - Analytics: Crash when repeatedly playing videos
+* (ZD #25956) VHL - Analytics: Crash when repeatedly playing videos
 
 This issue is the same as ZD #25908.
 
 **Version 1.4.29** (1.4.29.743)
 
-* [ZD# 23901] Third party ads are not playing
+* (ZD# 23901) Third party ads are not playing
 
 This issue was resolved by moving to CRS v3 URL structure to include the zone ID in the repackaged URL.
 
-* [ZD #25183] Issues with DRM playback on tvOS and iOS
+* (ZD #25183) Issues with DRM playback on tvOS and iOS
 
 This issue was resolved by providing support for multiple key tags that are needed for multi-DRM support.
 
-* [ZD# 25334] TVSDK fails to play a  cDVR  shared content
+* (ZD# 25334) TVSDK fails to play a  cDVR  shared content
 
 This issue was resolved by preventing TVSDK from converting empty strings to absolute URLs.
 
-* [ZD# 25347] Set custom HTTP header on AVURLAsset
+* (ZD# 25347) Set custom HTTP header on AVURLAsset
 
 Support for custom headers on ts segment requests through the PTNetworkConfiguration class has been added.
 
 **Version 1.4.28** (1.4.28.722)
 
-* [ZD #24549] Multiple Ad tracking calls
+* (ZD #24549) Multiple Ad tracking calls
 
 This issue was resolved by updating the timeline manager to listen for notifications on a specific object when multiple players are created.
 
-* [ZD #24758] PTManifestLogger does not support iOS 8
+* (ZD #24758) PTManifestLogger does not support iOS 8
 
 This issue was resolved by updating the logger utility library to the version 7.0 deployment target.
 
-* [ZD #24775] Delayed stream due to Ads
+* (ZD #24775) Delayed stream due to Ads
 
 This issue was resolved by correctly calculating the duration drift on event playlists.
 
-* [ZD #24799] Some of the episodes are not playing on iOS APP
+* (ZD #24799) Some of the episodes are not playing on iOS APP
 
 This issue was resolved by using local web server for subtitles when the WebVTT files are geo-restricted.
 
 **Version 1.4.27** (1.4.27.711) for iOS 6.0+
 
-* [ZD #24089] - Optimizations for ad resolving on long DVR streams
+* (ZD #24089) - Optimizations for ad resolving on long DVR streams
 
 This issue was resolved by adding multiple optimizations to reduce the time that is required to process the DVR window in live/linear streams.
 
-* [ZD #21554] - TVSDK error beacons not fired for application-type = video/mp4
+* (ZD #21554) - TVSDK error beacons not fired for application-type = video/mp4
 
 This issue was resolved by enabling the player to ping the correct error tracking URLs on invalid asset formats.
 
-* [ZD #24424] - Crash of type EXC_BAD_ACCESS KERN_INVALID_ADDRESS is originating from inside PSDKLib for iOS on newer hardware devices.
+* (ZD #24424) - Crash of type EXC_BAD_ACCESS KERN_INVALID_ADDRESS is originating from inside PSDKLib for iOS on newer hardware devices.
 
 The crash that occurred because of a deallocated media player instance, when playback is switched rapidly between different streams, has been fixed.
 
-* [ZD #24575] - Crash in TVSDK on 32-bit devices when enableDebugLog=true
+* (ZD #24575) - Crash in TVSDK on 32-bit devices when enableDebugLog=true
 
 The issue in the log format that caused the crash on 32-bit devices when logging is enabled has been fixed.
 
 **Version 1.4.26** (1.4.26.702) for iOS 6.0+
 
-* [ZD# 20213] - TVSDK FW needs to be dynamic/modularized for XCode7
+* (ZD# 20213) - TVSDK FW needs to be dynamic/modularized for XCode7
 
     * Fixed by updating the libraries with module support
 
 **Version 1.4.25** (1.4.25.684) for iOS 6.0+
 
-* [ZD #19629] - Live Video Pauses when Entering Airplay to ATV 4
+* (ZD #19629) - Live Video Pauses when Entering Airplay to ATV 4
 
 This issue was resolved by adding a waiting period after removing old items but before adding new items to the AVQueuePlayer. Without the waiting period, notifications are sent to the incorrect item.
 
-* [ZD #19856] - No subtitles display when enabled by default
+* (ZD #19856) - No subtitles display when enabled by default
 
 The issues in the  webvtt  playlist, which was causing the subtitles  to  not display correctly, has been fixed.
 
-* [ZD #21590] - Video Performance and Tracking in Latest Origin Builds
+* (ZD #21590) - Video Performance and Tracking in Latest Origin Builds
 
 The issue about the missing video length in  VideoAnalytics  has been fixed.
 
-* [ZD #20202] - Setting custom subtitles styling crashes the iOS app
+* (ZD #20202) - Setting custom subtitles styling crashes the iOS app
 
 This issue was resolved by adding additional null object checks while setting subtitle styles.
 
-* [ZD #20709] - video length reported as 0 in video start tracking
+* (ZD #20709) - video length reported as 0 in video start tracking
 
-This issue is the same as [ZD #21590].
+This issue is the same as (ZD #21590).
 
-* [ZD #22280] - Analytics Video Length  being  set to 0
+* (ZD #22280) - Analytics Video Length  being  set to 0
 
-This issue is the same as [ZD #21590].
+This issue is the same as (ZD #21590).
 
-* [ZD #22592] - Issues with Airplay in Primetime
+* (ZD #22592) - Issues with Airplay in Primetime
 
-This issue is the same as [ZD #19629].
+This issue is the same as (ZD #19629).
 
-* [ZD#22922] - Manual bitrate switching for iOS
+* (ZD#22922) - Manual bitrate switching for iOS
 
 This issue was resolved by providing an option to specify the max bitrate.
 
-* [ZD #23084] - Apple Compliance for IPv6-Only Networks
+* (ZD #23084) - Apple Compliance for IPv6-Only Networks
 
 The symbols that were not recommended by Apple for IPv6 compatibility have been removed.
 
 **Version 1.4.24** (1.4.24.661) for iOS 6.0+
 
-* ZD #2548] - Primetime support for interactive advertising on mobile - VPAID 2.0
+* ZD #2548) - Primetime support for interactive advertising on mobile - VPAID 2.0
 
 This issue was resolved by updating the logic to unhide player view if a VPAID ad fails to play.
 
-* [ZD #20101] - Custom Chapter implementation fires chapter start event during ad playback
+* (ZD #20101) - Custom Chapter implementation fires chapter start event during ad playback
 
 This issue was resolved by updating VideoAnalyticsTracker to properly detect chapter start/complete when transitioning between  chapter  and non-chapters boundaries.
 
-* [ZD #20784] - Analytics: Triggering content completes for live video transitions
+* (ZD #20784) - Analytics: Triggering content completes for live video transitions
 
 This issue was resolved by adding a logic to manually trigger the completion of content during a video tracking session.
 
@@ -654,156 +651,156 @@ The following libraries were updated:
 * AdobeMobile library to 4.10.0
 * VHL library to 1.5.6
 * VHL-Nielsen library to 1.6.7
-* [ZD #21855] - Subtitles do not play after mid-roll
+* (ZD #21855) - Subtitles do not play after mid-roll
 
 In this issue, duplicate discontinuity tags were causing subtitles to not appear after mid-roll. This issue was resolved by removing the discontinuity tags that are next to each other.
 
-* [ZD #21994] - String out-of-bounds in PTHLSUtils
+* (ZD #21994) - String out-of-bounds in PTHLSUtils
 
 The most likely cause of the crash is when  a EXT-X-KEY  has a URL that is surrounded by quotes.
 
-* ZD #22074] - AUDVAST Crash happening once a minute on iOS
+* ZD #22074) - AUDVAST Crash happening once a minute on iOS
 
 In version 1.4.23, the crash that was caused by the presence of unsafe characters in a VAST redirect URL was fixed. However, TVSDK was continuing to skip these ads.
 
 This issue was resolved by handling the unsafe characters and by allowing the ads to play.
 
-* [ZD #22694] - PTMediaPlayer.  View  is hidden by  player
+* (ZD #22694) - PTMediaPlayer.  View  is hidden by  player
 
 This issue was resolved by updating the logic to unhide player view if a VPAID ad fails to play.
 
 **Version 1.4.23** (1.4.23.641) for iOS 6.0+
 
-* [ZD #18016] - No response from Primetime SDK with a bad network condition
+* (ZD #18016) - No response from Primetime SDK with a bad network condition
 
 This issue was resolved by improving error notification when a fatal error from AVFoundation occurs and to allow the app to handle the restart after the error.
 
-* [ZD #20580] - Crash in PTSplicerManager
+* (ZD #20580) - Crash in PTSplicerManager
 
 This issue was resolved by providing additional protection from concurrency issues that causes the crash.
 
-* [ZD #21782] - iOS Error Code 10100
+* (ZD #21782) - iOS Error Code 10100
 
 The issue where the TVSDK was returning a 101000 error while starting playback on Adobe Access DRM streams has been fixed.
 
-* [ZD #21889] - Online Ads and offline content playback fails
+* (ZD #21889) - Online Ads and offline content playback fails
 
 The issue where playback was failing after an ad on AES encrypted offline content has been fixed.
 
-* [ZD #22074] - AUDVAST Crash happening once a minute on iOS
+* (ZD #22074) - AUDVAST Crash happening once a minute on iOS
 
 This issue was resolved by improving the handling of third-party VAST ad tags that have invalid characters in the URL.
 
-* [ZD #22257] - The TVSDK fails to play back DRM stream
+* (ZD #22257) - The TVSDK fails to play back DRM stream
 
 The issue where the  TVSDK  that was returning a 101000 error while starting playback on Adobe Access DRM streams has been fixed.
 
 **Version 1.4.22** (1.4.22.627) for iOS 6.0+
 
-* [ZD #18709] - Crash in the  TVSDK  for iOS
+* (ZD #18709) - Crash in the  TVSDK  for iOS
 
 The issue about a crash occurring on some Adobe Access DRM protected streams has been fixed.
 
-* [ZD #18850] - Update creative selection logic based on CRS rules
+* (ZD #18850) - Update creative selection logic based on CRS rules
 
 This issue was resolved by adding a .json configuration file to specify the creative selection priority.
 
-* [ZD #19770] - Protected AES Video feed not playing anymore
+* (ZD #19770) - Protected AES Video feed not playing anymore
 
 The issue where certain 302 redirected streams were failing to play has been fixed.
 
-* [ZD #19629] - Live Video Pauses when Entering Airplay to ATV 4
+* (ZD #19629) - Live Video Pauses when Entering Airplay to ATV 4
 
 This issue was resolved by adding a workaround for live video pausing when airplay is turned on for Apple TV 4 devices. The issue appears to be an AppleTV 4 issue.
 
-* [ZD #21119] - The  TVSDK  is stalled after ad playback
+* (ZD #21119) - The  TVSDK  is stalled after ad playback
 
 Support has been added for AES encrypted streams with a sequence IV while using ad insertion.
 
-* [ZD #21125] - Return from live/linear ad break early
+* (ZD #21125) - Return from live/linear ad break early
 
 Support has been added for returning from an ad break early before the ad break is played to completion. Early return is indicated  through  a custom manifest tag.
 
-* [ZD #21224] - Airplay support for tokenized streams from Akamai
+* (ZD #21224) - Airplay support for tokenized streams from Akamai
 
 APIs have been added to the PTNetworkConfiguration class to append cookies as URL parameters on segments for certain Akamai tokenized streams.
 
-* [ZD #21287] - Extraneous Log
+* (ZD #21287) - Extraneous Log
 
 An issue with some log statements shown by default in the  xcode  console even when logging is disabled has been fixed.
 
-* [ZD #21446] - Ad Break events sometimes not triggered by the  TVSDK
+* (ZD #21446) - Ad Break events sometimes not triggered by the  TVSDK
 
 On EVENT streams,  ad  breaks are not triggered correctly in the previous release build. This build addresses this issue.
 
 **1.4.21** (1.4.21.605) for iOS 6.0+
 
-* [ZD #20749] - Fallback skips non-empty VAST responses; Extra ad tracking URLs fire
+* (ZD #20749) - Fallback skips non-empty VAST responses; Extra ad tracking URLs fire
 
 An issue with duplicate pings on fallback ads has been resolved.
 
 **1.4.20** (1.4.20.590) for iOS 6.0+
 
-* [ZD #18639] - The  TVSDK  is using excessive CPU/resources on a lengthy hot-recording asset
+* (ZD #18639) - The  TVSDK  is using excessive CPU/resources on a lengthy hot-recording asset
 
 The excessive CPU/resources usage has been fixed in the two levels. First by letting the time update function run on a global queue, instead of the main thread, and by optimizing the CPU usage for parsing the manifest with the previously processed and cached m3u8.
 
-* [ZD #19349] - Pre-Roll ads are being skipped when throttling the network connection.
+* (ZD #19349) - Pre-Roll ads are being skipped when throttling the network connection.
 
 This issue was resolved by providing a timeout event (requestTimeout) to the application and the  adMetadata .  adRequestTimeout  API to override the default 10 secs timeout.
 
-* [ZD #19446] - Missing Notification on Live streams
+* (ZD #19446) - Missing Notification on Live streams
 
 This issue was resolved by allowing the application subscribe to the EXT-X-PROGRAM-DATE-TIME on live streams.
 
-* [ZD #19459] - Crash when preparing alternate audio with PTMediaPlayerItem prepareAudioOptionsWithAVMediaSelectionOptions
-* [ZD #19460] - Crash - [PTMediaPlayerItem prepareSubtitlesOptionsWithAVMediaSelectionOptions:nonForcedOptions:]
+* (ZD #19459) - Crash when preparing alternate audio with PTMediaPlayerItem prepareAudioOptionsWithAVMediaSelectionOptions
+* (ZD #19460) - Crash - [PTMediaPlayerItem prepareSubtitlesOptionsWithAVMediaSelectionOptions:nonForcedOptions:]
 
 This issue is the same as Zendesk #19459.
 
-* [ZD #19574] - The  TVSDK  is not returning M3U8 response data for DRM or non-DRM content
+* (ZD #19574) - The  TVSDK  is not returning M3U8 response data for DRM or non-DRM content
 
 In the initial load of the manifest file in PTMediaPlayerItem.prepareToPlay, if loading the manifest failed, the TVSDK does not report the body of the failure response to the application.
 
 This issue was resolved by allowing the  TVSDK  to report the failure response as an error to the application.
 
-* [ZD #19615] - Fallback logic is not working
+* (ZD #19615) - Fallback logic is not working
 
 In the current implementation, fallback ads were skipped and were not repackaged unless these ads are in the m3u8 format. This issue was resolved by also adding the support for repackaging fallback ads.
 
-* [ZD #19770] - The TVSDK fails to play any protected AES content with 302 redirect
+* (ZD #19770) - The TVSDK fails to play any protected AES content with 302 redirect
 
 The redirect issue was  fixed,  because the redirect URL was getting wiped out by cleanConnectionData before it could be used to parse the manifest.
 
-* [ZD #19856] - Subtitles aren't displaying  for  some bit-rates when enabled by default
+* (ZD #19856) - Subtitles aren't displaying  for  some bit-rates when enabled by default
 
 This issue was resolved by handling the error from iOS for the segments of the streams where the subtitles do not display.
 
-* [ZD #19868] - The TVSDK crashes when an invalid creative is trafficked
+* (ZD #19868) - The TVSDK crashes when an invalid creative is trafficked
 
 The crash in the  TVSDK  that was incorrectly deallocating an instance of the vast parser has been fixed.
 
-* [ZD #20180] - VPAID ads get skipped occasionally
+* (ZD #20180) - VPAID ads get skipped occasionally
 
 JavaScript mime type was not always being included or considered as a valid mime type. This issue was resolved by including JavaScript as a valid mime type.
 
-* [ZD #20749] - Fallback skips non-empty VAST responses; Extra ad tracking URLs fire
+* (ZD #20749) - Fallback skips non-empty VAST responses; Extra ad tracking URLs fire
 
 The issue where some of the creatives are not being repackaged has been fixed.
 
 **Version 1.4.19** (1.4.19.563) for iOS 6.0+
 
-* ZD #18639] - The TVSDK uses excessive CPU/resources on a lengthy hot-recording asset
+* ZD #18639) - The TVSDK uses excessive CPU/resources on a lengthy hot-recording asset
 
 This issue was resolved by optimizing the DRM m3u8 playlist rewrite to cache bits of the playlist that have been previously rewritten. This is most relevant when you play back live m3u8 streams for  whichthe  m3u8 is downloaded after every segment download.
 
-* [ZD#18956] - player.drmManager is nil when the breakpoint is set in iOS Demo Player
+* (ZD#18956) - player.drmManager is nil when the breakpoint is set in iOS Demo Player
 
 This issue was resolved by updating the PTMediaPlayer.drmManager API implementation to pick up DRMManager from the DRM framework.
 
 **Version 1.4.18** ( 1.4.18.557) for iOS 6.0+
 
-* [ZD #18844] Tracking  playhead  for live content in the iOS player.
+* (ZD #18844) Tracking  playhead  for live content in the iOS player.
 
 This issue was resolved by allowing the applications to set their own  playhead  value.
 
@@ -813,27 +810,27 @@ This issue was resolved by removing the default value for the player's name.
 
 **Version 1.4.17** (1.4.17.545) for iOS 6.0+
 
-* Zendesk #2228] - Enhance the  TVSDK  to return JSON response of the fetching of a manifest
+* Zendesk #2228 - Enhance the  TVSDK  to return JSON response of the fetching of a manifest
 
 Instead of sending an error when the content is not M3U8, the DRM Framework returns a nil DRMMetadata. The issue was resolved by adding metadata to expose content when the M3U8_PARSER_ERROR notification occurs.
 
-* [Zendesk #2231] - Error returned from fetching the manifest unavailable in MediaPlayerNotification
+* Zendesk #2231 - Error returned from fetching the manifest unavailable in MediaPlayerNotification
 
 Same resolution as Zendesk #2228
 
-* [Zendesk #3304] - VAST 3.0 [ERRORCODE] macro not being populated
+* Zendesk #3304 - VAST 3.0 `[ERRORCODE]` macro not being populated
 
 The issue where the Auditude SDK is failing to send a ping when the tracking URL has spaces at the beginning has been resolved.
 
-* [Zendesk #17294] - Crash SecKeyRawSign
+* Zendesk #17294 - Crash SecKeyRawSign
 
 A possible crash when the customer's code uses the  key chain  has been resolved.
 
-* [Zendesk #18008] - Support cookies for iOS8+ to support tokenized streams
+* Zendesk #18008 - Support cookies for iOS8+ to support tokenized streams
 
 Akamai tokenized streams require that cookies be sent on segment requests, and this was not possible on iOS 7 and earlier. Starting in iOS 8, Apple has added an API that allows cookies to be passed for segment requests. This support is now available in the  TVSDK . Support has also been added for sending a user-agent, if available.
 
-* [Zendesk #18166] - TVSDK 1.4.15 gives hundreds of warnings when compiling with DWARF with dSYM file options
+* Zendesk #18166 - TVSDK 1.4.15 gives hundreds of warnings when compiling with DWARF with dSYM file options
 
 All of the warnings have been resolved.
 
@@ -869,33 +866,32 @@ This issue was resolved by providing support for the Android CTS font map.
 
 **Note**: The Nielsen module has been removed from the TVSDK build, but the  TVSDK  will be updated in the near future with a new Nielsen integration module.
 
-* [ZD #2228] - Error returned from fetching the manifest unavailable in MediaPlayerNotification
+* (ZD #2228) - Error returned from fetching the manifest unavailable in MediaPlayerNotification
 
 Added metadata to expose content when the notification M3U8_PARSER_ERROR occurs.
 
-* [ZD #4437] - Crashes inside Adobe Primetime SDK
+* (ZD #4437) - Crashes inside Adobe Primetime SDK
 
 Fixed a reported crash when preparing subtitles/alternate audio.
 
-* [ZD #4487] - Tracking Linear Channel of Content
+* (ZD #4487) - Tracking Linear Channel of Content
 
 Allowed re-initializing of the video heartbeat tracker during a linear stream playback session.
 
 **Version 1.4.14** (1.4.14.498) for iOS 6.0+
 
-* [ZD #17260] - Crash on playlistManagerForURL
+* (ZD #17260) - Crash on playlistManagerForURL
 
 Fixed an intermittent crash due to concurrency issues.
 
 **Version 1.4.13** (iOS 6.0+)
 
-* [ZD #3304] - VAST 3.0 [ERRORCODE] macro not being populated
+* (ZD #3304) - VAST 3.0 `[ERRORCODE]` macro not being populated
 
-    * Error code 400 will be exposed if  inline   ad  has bad creative.
-    
-    * [ERRORCODE] macro will be URL encoded.
+  * Error code 400 will be exposed if  inline   ad  has bad creative.
+  * `[ERRORCODE]` macro will be URL encoded.
 
-* [ZD #3865] Heartbeat integration with IMA ads
+* (ZD #3865) Heartbeat integration with IMA ads
 
 Fixed a bug where the video length was being reported incorrectly.
 
@@ -905,84 +901,84 @@ To properly support iOS 9, you need to configure the exceptions of the Applicati
 
 **Version 1.4.12** (1.4.12.464) for iOS 6.0+
 
-* [ZD #4521] CRS Testing Client Side and SSAI
+* (ZD #4521) CRS Testing Client Side and SSAI
 
 Fixed incorrect reverse MD5 in 3P URL.
 
 **Version 1.4.12** (1.4.12.463) for iOS 6.0+
 
-* [ZD #2751] CSAI and CRS | Enhance: Handle dynamic elements in certain media file URLs.
+* (ZD #2751) CSAI and CRS | Enhance: Handle dynamic elements in certain media file URLs.
 
 Updated Creative Repackaging Service to properly handle ads with dynamic creative URLs.
 
-* [ZD #3654] Memory Leak in PSDK version after 1.3.4.166
+* (ZD #3654) Memory Leak in PSDK version after 1.3.4.166
 
 Fixed memory leak in  drmFramework  with regular playback on iOS 8.2 devices
 
-* [ZD #3988] Preroll is skipped when seeking back into it after  first  playback
+* (ZD #3988) Preroll is skipped when seeking back into it after  first  playback
 
 Fixed a bug so that ad policies could be properly disabled.
 
-* [ZD #4017] Requesting iOS API to force ad playback on  backwards  seek
+* (ZD #4017) Requesting iOS API to force ad playback on  backwards  seek
 
 Resolved with  fix  for ZD #4279
 
-* [ZD #4279] HLS TVSDK ad insertion -302 redirect issue on iOS and Desktop
+* (ZD #4279) HLS TVSDK ad insertion -302 redirect issue on iOS and Desktop
 
 Fixed bug when an Ad asset was using a relative redirect URL
 
 **Version 1.4.9** (1.4.9.427) for iOS 6.0+
 
-* [ZD #3075] Internet Reachability Issue - iOS
+* (ZD #3075) Internet Reachability Issue - iOS
 
 Added notification to detect when the playback has stalled.
 
-* [ZD #3193] Request for a Profile change API in  TVSDK
+* (ZD #3193) Request for a Profile change API in  TVSDK
 
 Updated PTPlaybackInformation to expose the updated indicatedBitrate. Updated BITRATE_CHANGE notification to be more time reliable and accurate to the M3U8 reported bitrates.
 
-* [ZD #3324] Primetime ads reporting  issue  when no ad media in VMAP
+* (ZD #3324) Primetime ads reporting  issue  when no ad media in VMAP
 
-Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad break start and complete pings for empty ad breaks 
+Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad break start and complete pings for empty ad breaks
 
 **Version 1.4.8** (1.4.8.402)
 
-* [ZD #3158] IOS 7 crashes in Full Event Replays
+* (ZD #3158) IOS 7 crashes in Full Event Replays
 
 **Version 1.4.7** (1.4.7.382)
 
-* [ZD #2197] Tracking ad errors. Added notification for asset failed to load manifest.
-* [ZD #2894] Player Makes 4  top level  manifest requests during playback.
-* [ZD #2992] Auditude Reporting weird durations and identifiers.
+* (ZD #2197) Tracking ad errors. Added notification for asset failed to load manifest.
+* (ZD #2894) Player Makes 4  top level  manifest requests during playback.
+* (ZD #2992) Auditude Reporting weird durations and identifiers.
 
 **Version 1.4.6**(1.4.6.325)
 
-* [ZD #2197] Tracking ad errors. Added notification for asset failed to load manifest
+* (ZD #2197) Tracking ad errors. Added notification for asset failed to load manifest
 
 **Version 1.4.5** (1.4.5.283)
 
-* [ZD #2141] Analytics implementation for TreeHouse app, added AdobeAnalyticsPlugin.a library to build  package .
+* (ZD #2141) Analytics implementation for TreeHouse app, added AdobeAnalyticsPlugin.a library to build  package .
 * Video Heartbeats Library update to 1.4.1.2
-* [PTPALY-4226] [related to ZD #2423] Performing DRM Reset can result in deletion of Application Document data.
+* [PTPALY-4226] [related to ZD #2423) Performing DRM Reset can result in deletion of Application Document data.
 
 **Version 1.4.4** (1.4.4.242)
 
 * Video Heartbeats Library (VHL) update to 1.4.1.
 
-* [ZD #2435] TV SDK documentation on analytics needs updates
+* (ZD #2435) TV SDK documentation on analytics needs updates
 
 **Version 1.4.2** (1.4.2.210 : iOS 6.0+)
 
-* [ZD #1129] _player.currentItem.audioOptions returning empty
-* [ZD #2109] Primetime PSDK 1.4.1.125 doesn't work with Xcode 5.1.1
-* [ZD #2137] Crash in PSDK on iOS when DRM metadata cannot be loaded
+* (ZD #1129) _player.currentItem.audioOptions returning empty
+* (ZD #2109) Primetime PSDK 1.4.1.125 doesn't work with Xcode 5.1.1
+* (ZD #2137) Crash in PSDK on iOS when DRM metadata cannot be loaded
 
 **Version 1.4.1** (1.4.1.125)
 
-* [ZD #1107] CocoaLumberjack duplicate symbols
-* [ZD #1644] Modify iOS User Agent for Targeting and Reporting
-* [ZD #1850] Cocoa Lumberjack files included in iOS SDK
-* [ZD#1908] Custom Tags are ignored by PSDK if there is more than 1
+* (ZD #1107) CocoaLumberjack duplicate symbols
+* (ZD #1644) Modify iOS User Agent for Targeting and Reporting
+* (ZD #1850) Cocoa Lumberjack files included in iOS SDK
+* (ZD#1908) Custom Tags are ignored by PSDK if there is more than 1
 
 **Version 1.4.0** (1.4.0.32)
 
@@ -996,11 +992,10 @@ Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad bre
 * It might experience that License rotation video does not play on iOS 11 and it will play fine on iOS 9.x and iOS 10.x.
 * In VPAID 2.0 support, if the playback is active over AirPlay, VPAID ads are skipped.
 * The drmNativeInterface.framework does not link correctly when the minimum target is set to iOS7 (or later).  
-  Workaround: Explicitly specify the libstdc++6.  dylib  library as follows: Go to Target-&gt;Build Phases-&gt;Link Binary With Libraries and add libstdc++.6.dylib.
+  Workaround: Explicitly specify the `libstdc++6`.  dylib  library as follows: Go to Target-&gt;Build Phases-&gt;Link Binary With Libraries and add `libstdc++.6.dylib`.
 
 * Post-Roll Ad not getting inserted for replacing API.
 * Seeking in an ad break (without coming out of it) issues a duplicate  ad  start an ad break notification
 * Setting currentTimeUpdateInterval does not have any effect.  
   Note: In certain iOS versions, the OS doesn't load the resources inside the PSDKLibrary.framework automatically. It is important to manually copy the PSDKResources.bundle to the application's bundle resources: Go to "Build Phases" and copy bundle resources.
 * The Reference App cannot be built using Xcode 8 or lower versions. iOS TVSDK version 1.4.41 onwards, use Xcode 9 to compile.
-
