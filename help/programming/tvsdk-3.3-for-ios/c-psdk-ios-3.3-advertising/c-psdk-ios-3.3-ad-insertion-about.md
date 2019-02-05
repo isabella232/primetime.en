@@ -47,7 +47,7 @@ These markers require the metadata field's `DURATION` in seconds and the cue’s
 
 ```
 
-For more information about additional cues, see [Subscribe to custom tags](../../tvsdk-3.0-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-custom-tags-configure/t-psdk-ios-3.3-custom-tags-subscribe.md#t_psdk_ios_subscribing-to-custom-hls-tags).
+For more information about additional cues, see [Subscribe to custom tags](../../tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-custom-tags-configure/t-psdk-ios-3.3-custom-tags-subscribe.md#t_psdk_ios_subscribing-to-custom-hls-tags).
 
 ## Track client ad {#section_12355C7A35F14C15A2A18AAC90FEC2F5}
 

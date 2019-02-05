@@ -256,7 +256,7 @@ user-guide: Primetime Programming Help
    + [Subtitles and closed captioning](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-ios.md)
       + [Subtitles and closed captioning](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/c-ios-closed-captioning-and-subtitles-reqts-ios.md)
          + [Expose subtitles](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-ios-subtitles-exposing-ios.md)
-         + [Expose closed captions](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-psdk-ios-3.3-closed-captions-exposing-ios.md)
+         + [Expose closed captions](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-psdk-ios-closed-captions-exposing-ios.md)
    + [Alternate audio](tvsdk-3.3-for-ios/alternate-audio/c-psdk-ios-3.3-alternate-audio.md)
       + [Element ID :c_psdk_alternate-audio-in-playlist](tvsdk-3.3-for-ios/alternate-audio/c-psdk-ios-3.3-alternate-audio-in-playlist.md)
       + [Access alternate audio tracks](tvsdk-3.3-for-ios/alternate-audio/t-psdk-ios-3.3-alternate-audio-implement.md)
