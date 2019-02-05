@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Identity-based domain registration logic
 title: Identity-based domain registration logic
 uuid: bc13f7c2-9a20-4f80-b96f-05f7a0fcc343
-index: y
-internal: n
-snippet: y
 ---
 
 # Identity-based domain registration logic{#identity-based-domain-registration-logic}

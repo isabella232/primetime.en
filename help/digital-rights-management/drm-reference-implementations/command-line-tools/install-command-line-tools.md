@@ -2,9 +2,6 @@
 seo-title: Install the command-line tools
 title: Install the command-line tools
 uuid: 42fe7d55-7b8e-4f44-8714-ddae6c086d6a
-index: y
-internal: n
-snippet: y
 ---
 
 # Install the command-line tools {#install-the-command-line-tools}

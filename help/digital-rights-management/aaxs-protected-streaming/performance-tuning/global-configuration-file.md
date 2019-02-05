@@ -2,9 +2,6 @@
 seo-title: Global Configuration File
 title: Global Configuration File
 uuid: 48c45f56-55c2-4526-b854-5552caf21541
-index: y
-internal: n
-snippet: y
 ---
 
 # Global Configuration File{#global-configuration-file}

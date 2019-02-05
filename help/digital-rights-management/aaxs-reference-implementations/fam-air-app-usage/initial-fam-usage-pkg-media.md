@@ -2,9 +2,6 @@
 seo-title: Package media
 title: Package media
 uuid: f6e877be-d916-4766-bc44-99891a3df3a8
-index: y
-internal: n
-snippet: y
 ---
 
 # Package media {#package-media}

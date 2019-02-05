@@ -4,9 +4,6 @@ seo-description: One way to coordinate licensing and policy enforcement is to bu
 seo-title: Reference Server  Sample ExpressPlay Entitlement Server (SEES)
 title: Reference Server  Sample ExpressPlay Entitlement Server (SEES)
 uuid: 99e42f76-7730-42fc-a9a9-f6396ac12c02
-index: y
-internal: n
-snippet: y
 ---
 
 # Reference Server: Sample ExpressPlay Entitlement Server (SEES) {#reference-server-sample-expressplay-entitlement-server-sees}

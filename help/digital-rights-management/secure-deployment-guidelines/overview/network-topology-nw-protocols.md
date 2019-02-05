@@ -4,9 +4,6 @@ seo-description: When you configure a secure network architecture, network proto
 seo-title: Adobe Primetime DRM network protocols
 title: Adobe Primetime DRM network protocols
 uuid: 8954e33c-83ac-4b40-9e45-005d4954b44e
-index: y
-internal: n
-snippet: y
 ---
 
 # Adobe Primetime DRM network protocols {#adobe-primetime-drm-network-protocols}

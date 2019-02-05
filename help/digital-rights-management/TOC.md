@@ -122,7 +122,7 @@ user-guide: Primetime DRM Help
       + [RBOP Grammar](RBOP/introduction/output-protection-grammar.md)
       + [RBOP FAQ](RBOP/introduction/output-protection-faq.md)
 + Primetime DRM Server for Protected Streaming 5.3.1 {#server-for-protected-streaming}
-   + Using the Adobe Primetime DRM Server for Protected Streaming {#introduction.md)
+   + Using the Adobe Primetime DRM Server for Protected Streaming {#introduction-drm-server-protected-streaming)
       + [About Adobe Primetime DRM Server for Protected Streaming](protected-streaming/introduction/about-drm-for-protected-streaming.md)
       + [About usage rules](protected-streaming/introduction/usage-rules.md)
       + [Requirements](protected-streaming/introduction/requirements.md)

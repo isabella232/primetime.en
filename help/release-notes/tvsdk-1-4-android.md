@@ -8,9 +8,6 @@ contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: f1ebc1a8-185a-493a-9c00-a6102dffb128
-index: y
-internal: n
-snippet: y
 ---
 
 # TVSDK 1.4 for Android Release Notes {#tvsdk-for-android-release-notes}
@@ -36,7 +33,7 @@ It accepts a Boolean parameters val. If its value is `True`, the client uses the
 **Partial Ad-Break Insertion:**
 TV-like experience of joining in the middle of an ad without firing the tracking for the partially watched ad.
 Example: User joins in the middle (at 40 seconds) of a 90-second ad break consisting of three 30-second ads. This is 10 seconds into the second ad in the break.
-* The second ad plays for the remaining duration (20 sec) followed by the third ad..
+* The second ad plays for the remaining duration (20 sec) followed by the third ad.
 * Ad trackers for the partial ad played (second ad) are not fired. The trackers for only the third ad are fired.
 
 **Version 1.4.41**
@@ -54,16 +51,16 @@ No new features.
 **Version 1.4.39**
 
 * TVSDK is certified with VHL 2.0.1 and with VHL 2.0.1 with Nielsen.
-* Android TVSDK is updated to make CRS requests from new Akamai host primetime-a.akamaihd<span></span>.net.
+* Android TVSDK is updated to make CRS requests from new Akamai host `primetime-a.akamaihd.net`.
 * New hostname configuration provides CRS asset delivery via both HTTP and HTTPS (SSL) at greater scale.
 * TVSDK supports Android Oreo release.
-* A new function is added to AdClientFactory class to support registering multiple Opportunity Detectors:
+* A new function is added to `AdClientFactory` class to support registering multiple Opportunity Detectors:
 
   `public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);`
 
   This should return an array of PlacementOpportunityDetector. Now you can register multiple Opportunity Detectors. For example for early ad exit feature, two Opportunity Detectors were required - one for ad insertion and another for early exit from ad. You are required to implement this new function only impact if you have implemented your own AdvertisingFactory (and not using DefaultAdvertisingfactory). For getting the existing behavior - you need to create a single Opportunity Detector, as in createOpportunityDetector() function and put into an array and return:
 
-  `  
+  ```
   public class MyAdvertisingFactory extends AdvertisingFactory {  
   …  
   @Override  
@@ -71,7 +68,8 @@ No new features.
   List&lt;PlacementOpportunityDetector&gt; opportunityDetectors = new ArrayList&lt;PlacementOpportunityDetector&gt;();  
   opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));  
   return opportunityDetectors;  
-  } }`
+  } }
+  ```
 
 >[!NOTE]
 >
@@ -128,9 +126,9 @@ AC-3 5.1 is supported only on Amazon FireTV.
 
 **Version 1.4.0**
 
-* **Blackout Signaling With Alternate Content Replacement**As part of the 1.4 TVSDK update, the TVSDK also now supports going into and returning from regional blackouts against linear content. The TVSDK can now process two manifest files in parallel, main and alternate, to monitor for blackout signals even when alternate programming is being shown in place of the original programming.
+* **Blackout Signaling With Alternate Content Replacement** As part of the 1.4 TVSDK update, the TVSDK also now supports going into and returning from regional blackouts against linear content. The TVSDK can now process two manifest files in parallel, main and alternate, to monitor for blackout signals even when alternate programming is being shown in place of the original programming.
 
-* **Remove/Replace C3 Ads**Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during broadcast and is immediately pulled down for use as on demand content without proper time to “clean” the asset.
+* **Remove/Replace C3 Ads** Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during broadcast and is immediately pulled down for use as on demand content without proper time to “clean” the asset.
 
 * The interface PlaybackEventListener has a new method called onReplaceMediaPlayerItem, which you can use to listen for a new event, ITEM_REPLACED. This event is dispatched whenever a MediaPlayeritem instance is replaced on MediaPlayer. The client application implementing this PlaybackEventListener must implement or override this new method.
 * AdClientFactory has a new function added to  class  to register for multiple Opportunity Detectors:
@@ -163,7 +161,6 @@ AC-3 5.1 is supported only on Amazon FireTV.
 >
 >* Slow motion, on any platform or version.
 >* Live trick play.
->
 
 ### Version 1.4.43
 
@@ -171,13 +168,12 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 
 * **Version 1.4.23:**   
 
-
-    * TVSDK 1.4.23 has been certified for Android Devices with Android N.
+  * TVSDK 1.4.23 has been certified for Android Devices with Android N.
 
 * **Version 1.4.18:**
 
-    * Primetime has been certified for Amazon Fire TV.
-    * VPAID 2.0 is supported only on devices with Android 4.0 and above.
+  * Primetime has been certified for Amazon Fire TV.
+  * VPAID 2.0 is supported only on devices with Android 4.0 and above.
 
 ## Resolved issues in 1.4 {#resolved-issues-in}
 
@@ -191,15 +187,15 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 
 * Ticket #27143 - Unable to play 5.1 audio track on FireTV devices
 
-    * TVSDK now able to play AC3 audio on FireTV devices. Playback is always in stereo.
+  * TVSDK now able to play AC3 audio on FireTV devices. Playback is always in stereo.
 
 * Ticket #33902 - Secure Ad Delivery over HTTPS
 
-    * Adobe Primetime provides an option to request first call to primetime ad server and CRS over https.
+  * Adobe Primetime provides an option to request first call to primetime ad server and CRS over https.
 
 * Ticket #34493 - Bluetooth audio delay
 
-    * Added alwaysUseAudioOutputLatency in MediaPlayer class which when set, Will result in using audio output latency in audio timestamp calculation.
+  * Added alwaysUseAudioOutputLatency in MediaPlayer class which when set, Will result in using audio output latency in audio timestamp calculation.
 
 * Ticket #34949 - New version of video heartbeat library (VHL) integrated.
 
@@ -263,7 +259,7 @@ The OpenSSL library has been updated with the OpenSSL version 1.0.2j.
     This issue was resolved by setting the maximum video format dimensions for CenturyLink set-top box devices.
 
 * Zendesk #27460 - The new Akamai account is unable to handle a POST cdn request.
-    The code was updated to make the cdn.auditude<span></span>.com ad request to be GET instead of POST.
+    The code was updated to make the `cdn.auditude.com` ad request to be GET instead of POST.
 
 * Zendesk #28245 - Playback state is not notified correctly when the app goes from background to foreground
     This issue was resolved by correctly restoring the playback state to play or pause when the application returns to the foreground.
@@ -294,6 +290,7 @@ The OpenSSL library has been updated with the OpenSSL version 1.0.2j.
   * Fixed by checking if TrickPlayManager object is not null before using it.
 
 **Version 1.4.30 (1659)**
+
 * Zendesk #22675 Asset duration does not get updated for Live/Linear streams
     This issue was resolved by providing a new API, assetDuration, in PTVideoAnalyticsTrackingMetadata that provides the asset duration for Live and Linear streams.
 
@@ -511,7 +508,7 @@ The RENDITION_TIMEOUT_THRESHOLD was set to 100ms, but it found to be insufficien
 * Zendesk #17919 - Content seek causes heartbeat error
     An Invalid input data Position error was occurring as a result of the heartbeat call that was generated when seeking was started after the pre-roll. This issue has been resolved.
 
-**1.4.16a **(1454a)
+**1.4.16a** (1454a)
 
 * Zendesk #18215 - Some AES streams are unable to load.
     This issue was resolved by checking the profile DRM metadata size before loading the AES key.
@@ -614,12 +611,12 @@ The RENDITION_TIMEOUT_THRESHOLD was set to 100ms, but it found to be insufficien
 * Zendesk #2076 - Frequent stutter when playing video on Motorola Xoom with Android 4.0.3
     Added devices to whitelist to prevent them from trying to play high profile content.
 
-* Zendesk #2197 - [Ads] Tracking ad errors
+* Zendesk #2197 - `[Ads]` Tracking ad errors
     dispatch OperationFailedEvent with warning notification. 
 
-* Zendesk #3304 - VAST 3.0 [ERRORCODE] macro not being populated
+* Zendesk #3304 - VAST 3.0 `[ERRORCODE]` macro not being populated
     * error code 400 will be exposed if inline ad has bad creative. 
-    * [ERRORCODE] macro will be URL encoded
+    * `[ERRORCODE]` macro will be URL encoded
 
 **Version 1.4.10 (1354)**
 
@@ -641,9 +638,11 @@ The Android sample reference players has been enhanced with an option to turn on
 **Version 1.4.9 (1332)**
 
 * Zendesk #2649 - Buffer Complete occurs before initial buffer is full
+
 After a seek, possible case where video engine sets state to PLAYING before video presenter is ready to play. Occurs when buffer state is high before seek. Fix by notifying video engine of low buffer state. With video engine low buffer state, calling Play causes state change to BUFFERING instead of PLAYING. Playback resumes when state changes to PLAYING.
 
 * Zendesk #2846 - Enhancement request: Provide ability to set different user-agent string for calls made by Auditude library
+
 A new API has been added to set the user agent for ad related calls, auditudeSettings.setUserAgent(“user/agent”). If no user agent is set, the default will be used. This only affects the user agent for ad related calls, the user agent for media calls is unchanged which is "Adobe Primetime"+&lt;default useragent&gt;.
 
 **Version 1.4.8 (1324)**
@@ -767,11 +766,12 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
    * from an ad to main content.
 
 **Version 1.4.23**
+
 * Closed Caption will not work with audio-only content because the caption system needs video to work. Without video, there is no viewport dimension, and without a viewport dimension, you cannot display any graphics for captions.
 * Starting in version 1.4.23, the TVSDK will not support Gingerbread OS 2.3. This is because the TVSDK used the following private Android libraries to gather hardware information about devices with Gingerbread OS:
 
-  * libstagefright<span></span>.so
-  * libcutils<span></span>.so
+  * `libstagefright.so`
+  * `libcutils.so`
 
 In the Android N release, Google has removed access to these private libraries. The Gingerbread OS currently accounts for less than 1% of Android OS market share globally, so after version 1.4.23, the Gingerbread OS will no longer be supported by the TVSDK.
 When you use version 1.4.23 (which includes support for Android N) or later:

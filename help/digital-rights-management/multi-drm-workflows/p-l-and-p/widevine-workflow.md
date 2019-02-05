@@ -4,9 +4,6 @@ seo-description: This Multi-DRM workflow takes you through setup, packaging, lic
 seo-title: Multi-DRM Workflow for Widevine and PlayReady
 title: Multi-DRM Workflow for Widevine and PlayReady
 uuid: 295a7024-353c-4ff5-a46a-927020834322
-index: y
-internal: n
-snippet: y
 ---
 
 # Multi-DRM Workflow for Widevine and PlayReady{#multi-drm-workflow-for-widevine-and-playready}

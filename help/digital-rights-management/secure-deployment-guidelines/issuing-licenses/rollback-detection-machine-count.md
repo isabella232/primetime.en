@@ -4,9 +4,6 @@ seo-description: If the business rules require that the number of machines for a
 seo-title: Machine count when issuing licenses
 title: Machine count when issuing licenses
 uuid: 7ba8a8d4-a31f-4f37-82a7-755cfa443544
-index: y
-internal: n
-snippet: y
 ---
 
 # Machine count when issuing licenses{#machine-count-when-issuing-licenses}

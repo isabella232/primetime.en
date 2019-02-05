@@ -4,9 +4,6 @@ seo-description: All requests for ad insertion use the same URL structure and th
 seo-title: Requests for ad insertion
 title: Requests for ad insertion
 uuid: e42b3228-bff7-4202-86ed-7f631f3016ae
-index: y
-internal: n
-snippet: y
 ---
 
 # Requests for ad insertion {#requests-for-ad-insertion}

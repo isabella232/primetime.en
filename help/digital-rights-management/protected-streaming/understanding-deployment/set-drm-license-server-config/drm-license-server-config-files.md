@@ -2,9 +2,6 @@
 seo-title: License server configuration files
 title: License server configuration files
 uuid: 7c7e0f76-2ced-45af-9542-99e06ec31cda
-index: y
-internal: n
-snippet: y
 ---
 
 # License server configuration files{#license-server-configuration-files}

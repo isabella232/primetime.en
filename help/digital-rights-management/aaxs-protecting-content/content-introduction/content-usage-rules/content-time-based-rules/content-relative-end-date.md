@@ -2,9 +2,6 @@
 seo-title: Relative end date
 title: Relative end date
 uuid: 3847d6f3-b6ef-4943-8fd1-d692eb9ee153
-index: y
-internal: n
-snippet: y
 ---
 
 # Relative end date{#relative-end-date}

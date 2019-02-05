@@ -4,9 +4,6 @@ seo-description: The Partial Ad Break Insertion (PABI) feature mimics a TV like 
 seo-title: Partial Ad Break Insertion
 title: Partial Ad Break Insertion
 uuid: a0c1ae34-0f8d-4401-97fe-45a2ea40d08d
-index: y
-internal: n
-snippet: y
 ---
 
 # Partial Ad Break Insertion {#partial-ad-break-insertion}

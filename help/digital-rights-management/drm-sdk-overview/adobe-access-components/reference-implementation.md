@@ -4,9 +4,6 @@ seo-description: The SDK includes a reference implementation, a simple Adobe Pri
 seo-title: Reference implementation
 title: Reference implementation
 uuid: 12684571-6f5f-4709-ad4b-193e17ff5383
-index: y
-internal: n
-snippet: y
 ---
 
 # Reference implementation{#reference-implementation}

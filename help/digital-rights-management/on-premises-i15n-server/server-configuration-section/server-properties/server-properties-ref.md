@@ -2,14 +2,11 @@
 seo-title: Server Properties Reference
 title: Server Properties Reference
 uuid: 24a187fe-9b7d-411f-a358-d10c70a5dd0e
-index: y
-internal: n
-snippet: y
 ---
 
 # Server Properties Reference{#server-properties-reference}
 
-<a id="section_EC8810492A454BDBA6013FE376360F4E"></a>
+<!--<a id="section_EC8810492A454BDBA6013FE376360F4E"></a>-->
 
 ## Individualization Server
 

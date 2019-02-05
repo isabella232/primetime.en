@@ -2,9 +2,6 @@
 seo-title: Updating policies
 title: Updating policies
 uuid: f6686c8b-bedf-4ec5-a14e-f03326519f89
-index: y
-internal: n
-snippet: y
 ---
 
 # Updating policies {#updating-policies}

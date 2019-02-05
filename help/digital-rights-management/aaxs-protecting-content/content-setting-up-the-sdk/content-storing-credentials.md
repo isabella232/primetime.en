@@ -2,9 +2,6 @@
 seo-title: Storing credentials
 title: Storing credentials
 uuid: dbce523c-32d9-423f-bc95-39786f85fc29
-index: y
-internal: n
-snippet: y
 ---
 
 # Storing credentials{#storing-credentials}

@@ -2,9 +2,6 @@
 seo-title: License caching duration
 title: License caching duration
 uuid: 378940a2-f072-478d-bee1-05ccba888b5c
-index: y
-internal: n
-snippet: y
 ---
 
 # License caching duration{#license-caching-duration}

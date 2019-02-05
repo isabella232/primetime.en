@@ -4,9 +4,6 @@ seo-description: This section covers the grammar of the configuration input, emp
 seo-title: RBOP Grammar
 title: RBOP Grammar
 uuid: d9064e39-593a-4767-b835-287640b4c94a
-index: y
-internal: n
-snippet: y
 ---
 
 # RBOP Grammar{#rbop-grammar}

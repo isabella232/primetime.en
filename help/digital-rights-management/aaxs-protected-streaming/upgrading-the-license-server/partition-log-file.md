@@ -2,9 +2,6 @@
 seo-title: Partition Log File
 title: Partition Log File
 uuid: ad8e4f39-88c9-416a-bc01-cf18d0373c15
-index: y
-internal: n
-snippet: y
 ---
 
 # Partition Log File{#partition-log-file}

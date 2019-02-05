@@ -2,9 +2,6 @@
 seo-title: Enable the usage model demo
 title: Enable the usage model demo
 uuid: 43930ebb-e936-4f48-990d-7ad19992e326
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable the usage model demo{#enable-the-usage-model-demo}

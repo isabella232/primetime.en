@@ -4,9 +4,6 @@ seo-description: The main components of Adobe Access consist of a Java SDK, and 
 seo-title: Java SDK, Flash Player and Adobe AIR client
 title: Java SDK, Flash Player and Adobe AIR client
 uuid: 6b6c5aa2-56ee-4476-a05b-dcbbe3b9001e
-index: y
-internal: n
-snippet: y
 ---
 
 # Java SDK, Flash Player and Adobe AIR client {#java-sdk-flash-player-and-adobe-air-client}

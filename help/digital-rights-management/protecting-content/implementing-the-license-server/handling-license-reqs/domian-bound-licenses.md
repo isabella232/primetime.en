@@ -2,9 +2,6 @@
 seo-title: Issuing domain-bound licenses
 title: Issuing domain-bound licenses
 uuid: 706650b7-6044-4c01-9f5a-90779127c9e1
-index: y
-internal: n
-snippet: y
 ---
 
 # Issuing domain-bound licenses{#issuing-domain-bound-licenses}

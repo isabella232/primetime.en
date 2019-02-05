@@ -2,9 +2,6 @@
 seo-title: Custom Data
 title: Custom Data
 uuid: e9736afc-0f5f-4304-9c37-a192322fa87a
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom Data {#custom-data}

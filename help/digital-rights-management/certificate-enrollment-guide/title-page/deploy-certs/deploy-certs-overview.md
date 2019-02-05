@@ -2,9 +2,6 @@
 seo-title: Deploy certificates overview
 title: Deploy certificates overview
 uuid: e6413f9f-69a5-4881-bb13-47a80cf32a48
-index: y
-internal: n
-snippet: y
 ---
 
 # Deploy certificates overview{#deploy-certificates-overview}

@@ -4,9 +4,6 @@ seo-description: If you want to set up Primetime DRM, copy the files from the DV
 seo-title: Set up your development environment
 title: Set up your development environment
 uuid: 68afefe8-7ec6-466e-89a8-bc0da8afb4c8
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up your development environment {#set-up-your-development-environment}

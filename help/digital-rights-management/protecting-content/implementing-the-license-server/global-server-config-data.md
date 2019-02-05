@@ -2,9 +2,6 @@
 seo-title: Global server configuration data
 title: Global server configuration data
 uuid: a1557b3e-9a08-4623-a62d-8ebc308eae15
-index: y
-internal: n
-snippet: y
 ---
 
 # Global server configuration data{#global-server-configuration-data}

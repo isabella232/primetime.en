@@ -2,9 +2,6 @@
 seo-title: SWF Hash Calculator
 title: SWF Hash Calculator
 uuid: c1823208-92d9-47c5-b550-f9cc370b543d
-index: y
-internal: n
-snippet: y
 ---
 
 # SWF Hash Calculator{#swf-hash-calculator}

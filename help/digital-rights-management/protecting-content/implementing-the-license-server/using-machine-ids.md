@@ -2,9 +2,6 @@
 seo-title: Use machine identifiers
 title: Use machine identifiers
 uuid: 14eee414-62f1-4a9d-84bd-689ca2271d19
-index: y
-internal: n
-snippet: y
 ---
 
 # Use machine identifiers{#use-machine-identifiers}

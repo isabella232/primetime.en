@@ -4,9 +4,6 @@ seo-description: Occasionally, there will be times when content cannot be played
 seo-title: Triaging errors overview
 title: Triaging errors overview
 uuid: 44b4ab0e-5f08-44b0-bcb5-a869f6add69b
-index: y
-internal: n
-snippet: y
 ---
 
 # Triaging errors overview {#triaging-errors-overview}

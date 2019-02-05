@@ -4,9 +4,6 @@ seo-description: Physically securing your Adobe Primetime DRM environment is cru
 seo-title: Physical security and access
 title: Physical security and access
 uuid: a5b00012-f2e5-4afa-8c59-46910fa325da
-index: y
-internal: n
-snippet: y
 ---
 
 # Physical security and access{#physical-security-and-access}

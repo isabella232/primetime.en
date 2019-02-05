@@ -2,9 +2,6 @@
 seo-title: License server overview
 title: License server overview
 uuid: 8c62376b-b159-4297-9322-75d62947e84e
-index: y
-internal: n
-snippet: y
 ---
 
 # License server overview{#license-server-overview}

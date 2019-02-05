@@ -8,9 +8,6 @@ contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: migration
 discoiquuid: c732f54d-116c-43f3-bec4-5e71af208426
-index: y
-internal: n
-snippet: y
 ---
 
 # TVSDK Conversion - 1.3 to 2.0 For JavaScript {#tvsdk-conversion-to-for-javascript}

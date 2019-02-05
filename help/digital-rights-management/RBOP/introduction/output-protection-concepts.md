@@ -4,9 +4,6 @@ seo-description: This section provides a conceptual overview of the configuratio
 seo-title: RBOP Concepts
 title: RBOP Concepts
 uuid: fc19c3c9-39a1-4b62-b763-101e5454a01f
-index: y
-internal: n
-snippet: y
 ---
 
 # RBOP Concepts{#rbop-concepts}

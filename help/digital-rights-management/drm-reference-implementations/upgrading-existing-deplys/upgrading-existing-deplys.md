@@ -4,9 +4,6 @@ seo-description: To upgrade a server that supports the version 3.0 Reference Imp
 seo-title: Upgrade existing deployments
 title: Upgrade existing deployments
 uuid: 1a40aae9-f639-41fa-b42d-cf8cdfcde694
-index: y
-internal: n
-snippet: y
 ---
 
 # Upgrade existing deployments{#upgrade-existing-deployments}

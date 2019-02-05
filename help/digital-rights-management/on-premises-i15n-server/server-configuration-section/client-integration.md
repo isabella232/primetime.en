@@ -2,9 +2,6 @@
 seo-title: Client Integration
 title: Client Integration
 uuid: 89b476e4-c382-47ce-8bd1-57c12b060073
-index: y
-internal: n
-snippet: y
 ---
 
 # Client Integration{#client-integration}

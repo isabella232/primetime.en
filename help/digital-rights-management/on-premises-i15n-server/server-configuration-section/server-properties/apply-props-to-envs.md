@@ -4,9 +4,6 @@ seo-description: You must configure server properties to reflect your environmen
 seo-title: Apply properties to server environments
 title: Apply properties to server environments
 uuid: a1ee0d6c-b5e7-4689-b7c8-b155176faf1c
-index: y
-internal: n
-snippet: y
 ---
 
 # Apply properties to server environments{#apply-properties-to-server-environments}
@@ -42,7 +39,7 @@ With this capability, you can use the same WAR file for all server environments.
     * `STAGE` 
     * `PROD`
 
-<a id="example_A7A58E3EE8DA4114B4F7A9EEB69D50CA"></a>
+<!--<a id="example_A7A58E3EE8DA4114B4F7A9EEB69D50CA"></a>-->
 
 For example, to set the log level to `INFO` for your production and staging servers, and to `DEBUG` for your development server: 
 

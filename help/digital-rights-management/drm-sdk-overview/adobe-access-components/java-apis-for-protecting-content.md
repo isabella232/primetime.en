@@ -4,9 +4,6 @@ seo-description: These APIs are used to define rights and prepare content for di
 seo-title: Java APIs for protecting content
 title: Java APIs for protecting content
 uuid: 8eaf7740-227c-439d-bcd3-1c30ccf3094a
-index: y
-internal: n
-snippet: y
 ---
 
 # Java APIs for protecting content{#java-apis-for-protecting-content}

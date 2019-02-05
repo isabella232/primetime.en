@@ -2,9 +2,6 @@
 seo-title: Primetime DRM credentials
 title: Primetime DRM credentials
 uuid: 0bff9ad2-31ee-485c-bb32-5e9a33bf0c87
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime DRM credentials{#primetime-drm-credentials}

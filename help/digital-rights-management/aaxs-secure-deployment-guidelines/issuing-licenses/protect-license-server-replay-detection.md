@@ -2,9 +2,6 @@
 seo-title: Replay protection
 title: Replay protection
 uuid: 5e6488e6-0834-4dcf-bc26-55019f5db320
-index: y
-internal: n
-snippet: y
 ---
 
 # Replay protection{#replay-protection}

@@ -4,9 +4,6 @@ seo-description: Flash Media Rights Management Server 1.x and Adobe Primetime DR
 seo-title: Ensuring compatibility with Flash Media Rights Management Server 1.x
 title: Ensuring compatibility with Flash Media Rights Management Server 1.x
 uuid: dd70941e-9015-4fb0-b265-557b6252e051
-index: y
-internal: n
-snippet: y
 ---
 
 # Ensuring compatibility with Flash Media Rights Management Server 1.x {#ensuring-compatibility-with-flash-media-rights-management-server-x}

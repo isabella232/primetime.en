@@ -4,9 +4,6 @@ seo-description: The flashaccess-tenant.xml configuration file includes settings
 seo-title: Tenant configuration file
 title: Tenant configuration file
 uuid: bc9ee4a1-63b6-4362-9929-3e9fe8251075
-index: y
-internal: n
-snippet: y
 ---
 
 # Tenant configuration file{#tenant-configuration-file}

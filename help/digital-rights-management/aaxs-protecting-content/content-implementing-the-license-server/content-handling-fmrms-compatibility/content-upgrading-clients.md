@@ -2,9 +2,6 @@
 seo-title: Upgrading clients
 title: Upgrading clients
 uuid: 9c9bc7da-2a97-4659-945a-554d778d30a3
-index: y
-internal: n
-snippet: y
 ---
 
 # Upgrading clients{#upgrading-clients}

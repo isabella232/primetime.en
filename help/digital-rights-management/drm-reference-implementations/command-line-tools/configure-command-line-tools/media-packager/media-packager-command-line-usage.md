@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Media Packager command-line usage
 title: Media Packager command-line usage
 uuid: 5814a465-fa49-4ed0-b5d6-c18d64167a9f
-index: y
-internal: n
-snippet: y
 ---
 
 # Media Packager command-line usage{#media-packager-command-line-usage}

@@ -2,9 +2,6 @@
 seo-title: Update the License Server WAR File
 title: Update the License Server WAR File
 uuid: 0cde53d6-185d-4bf2-84fc-0c31d17904a8
-index: y
-internal: n
-snippet: y
 ---
 
 # Update the License Server WAR File{#update-the-license-server-war-file}
@@ -24,7 +21,7 @@ Do the following to update the License Server:
 
    The output file is an updated WAR file.
 
-<a id="example_2618EBFFC4664D35B9CC68D74197BDC3"></a>
+<!--<a id="example_2618EBFFC4664D35B9CC68D74197BDC3"></a>-->
 
 ```
 ./addIndivCert.py -cert NEW_IndivCA.cer -war flashaccess.war

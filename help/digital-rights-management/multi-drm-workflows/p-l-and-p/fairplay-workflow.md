@@ -4,9 +4,6 @@ seo-description: The DRM workflows involve packaging your content, providing lic
 seo-title: Multi-DRM Workflow for FairPlay
 title: Multi-DRM Workflow for FairPlay
 uuid: cd940a70-400c-435e-8322-55bd624164e1
-index: y
-internal: n
-snippet: y
 ---
 
 # Multi-DRM Workflow for FairPlay{#multi-drm-workflow-for-fairplay}

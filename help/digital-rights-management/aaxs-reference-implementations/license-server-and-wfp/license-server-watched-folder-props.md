@@ -2,9 +2,6 @@
 seo-title: Watched folder properties
 title: Watched folder properties
 uuid: fc204bb4-033a-46fe-8642-737f6a4cd1f1
-index: y
-internal: n
-snippet: y
 ---
 
 # Watched folder properties {#watched-folder-properties}

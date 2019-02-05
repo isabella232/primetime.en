@@ -2,9 +2,6 @@
 seo-title: Update an existing policy
 title: Update an existing policy
 uuid: 081e5dab-e735-4ae9-bcfd-15dd9819bef3
-index: y
-internal: n
-snippet: y
 ---
 
 # Update an existing policy {#update-an-existing-policy}

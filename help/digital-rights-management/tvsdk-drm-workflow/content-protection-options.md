@@ -2,9 +2,6 @@
 seo-title: Primetime DRM content protection options
 title: Primetime DRM content protection options
 uuid: e4865e17-fbb3-40be-ab23-816dd76f599d
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime DRM content protection options{#primetime-drm-content-protection-options}

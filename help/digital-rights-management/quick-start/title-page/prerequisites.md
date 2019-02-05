@@ -2,9 +2,6 @@
 seo-title: Prerequisites
 title: Prerequisites
 uuid: 9dfca4ec-b93e-47f9-bb35-5fdaa24e8651
-index: y
-internal: n
-snippet: y
 ---
 
 # Prerequisites{#prerequisites}

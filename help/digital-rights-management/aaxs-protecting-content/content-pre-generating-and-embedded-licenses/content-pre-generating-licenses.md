@@ -2,9 +2,6 @@
 seo-title: Pre-generating licenses
 title: Pre-generating licenses
 uuid: 31430753-11f1-4ce5-b402-cf4279119a05
-index: y
-internal: n
-snippet: y
 ---
 
 # Pre-generating licenses{#pre-generating-licenses}

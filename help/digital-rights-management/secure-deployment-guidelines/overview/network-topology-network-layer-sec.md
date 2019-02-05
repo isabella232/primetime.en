@@ -4,9 +4,6 @@ seo-description: Network security vulnerabilities are among the first threats to
 seo-title: Network layer security
 title: Network layer security
 uuid: c750c595-a784-47ce-be0b-17b8d60c5753
-index: y
-internal: n
-snippet: y
 ---
 
 # Network layer security{#network-layer-security}

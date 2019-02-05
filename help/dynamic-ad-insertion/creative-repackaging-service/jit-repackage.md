@@ -35,7 +35,7 @@ For all subsequent requests for that creative, the manifest server retrieves the
 
 ## JIT Repackaging Initiated by the Client {#section_FBC97D40043F4FDD98247A08BB6195B0}
 
-<a id="fig_hkn_ndt_3z"></a>
+<!--<a id="fig_hkn_ndt_3z"></a>-->
 
 ![](assets/ssai_JIT-workflow_client_web.png)
 

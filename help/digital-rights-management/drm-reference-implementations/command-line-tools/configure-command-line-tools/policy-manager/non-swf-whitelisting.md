@@ -2,9 +2,6 @@
 seo-title: Non-SWF Application Whitelisting
 title: Non-SWF Application Whitelisting
 uuid: d4f93b15-e556-4749-95ab-f7f58b1061d7
-index: y
-internal: n
-snippet: y
 ---
 
 # Non-SWF Application Whitelisting{#non-swf-application-whitelisting}

@@ -4,9 +4,6 @@ seo-description: When determining your firewall rules, consider the following ty
 seo-title: Firewall rules
 title: Firewall rules
 uuid: 309b35b5-8c0a-4cd7-9289-b6b035955697
-index: y
-internal: n
-snippet: y
 ---
 
 # Firewall rules {#firewall-rules}

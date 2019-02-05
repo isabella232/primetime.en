@@ -4,9 +4,6 @@ seo-description: If your implementation of Adobe Primetime DRM uses business rul
 seo-title: Rollback detection
 title: Rollback detection
 uuid: f161ed41-488a-478a-b6a8-468cf6d11e89
-index: y
-internal: n
-snippet: y
 ---
 
 # Rollback detection{#rollback-detection}

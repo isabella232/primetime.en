@@ -8,9 +8,6 @@ contentOwner: vishgupt
 products: SG_PRIMETIME
 topic-tags: migration
 discoiquuid: 8d9136bf-b3ae-450c-bd8a-0bb246527886
-index: y
-internal: n
-snippet: y
 ---
 
 # TVSDK 1.4 to 2.5 for Android (Java) {#tvsdk-to-for-android-java}
@@ -414,7 +411,7 @@ The following event codes are new in 2.5:
    <td valign="top" width="336"><p>SIZE_CHANGED</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="336"><p><a id="MediaPlayer_changes" name="MediaPlayer_changes"></a><a id="_bookmark6" name="_bookmark6"></a>LOAD_INFO</p> </td> 
+   <td valign="top" width="336"><p><!--<a id="MediaPlayer_changes" name="MediaPlayer_changes"></a>--><!--<a id="_bookmark6" name="_bookmark6"></a>-->LOAD_INFO</p> </td> 
    <td valign="top" width="336"><p>LOAD_INFORMATION_AVAILABLE</p> </td> 
   </tr> 
  </tbody> 

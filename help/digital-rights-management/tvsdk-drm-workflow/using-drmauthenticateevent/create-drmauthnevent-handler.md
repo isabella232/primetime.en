@@ -4,9 +4,6 @@ seo-description: The DRMAuthenticateEvent object is dispatched when a Primetime 
 seo-title: Create a DRMAuthenticateEvent handler
 title: Create a DRMAuthenticateEvent handler
 uuid: 58330691-d0b5-46bd-9b1d-8dc597580d31
-index: y
-internal: n
-snippet: y
 ---
 
 # Create a DRMAuthenticateEvent handler{#create-a-drmauthenticateevent-handler}

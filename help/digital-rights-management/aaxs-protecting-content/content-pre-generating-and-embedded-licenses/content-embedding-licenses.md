@@ -2,9 +2,6 @@
 seo-title: Embedding licenses
 title: Embedding licenses
 uuid: b8d8ee9b-7430-4899-9caf-47d6b64021b8
-index: y
-internal: n
-snippet: y
 ---
 
 # Embedding licenses {#embedding-licenses}

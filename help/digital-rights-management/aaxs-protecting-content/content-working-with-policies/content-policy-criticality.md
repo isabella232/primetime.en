@@ -2,9 +2,6 @@
 seo-title: Policy criticality
 title: Policy criticality
 uuid: 076f386e-ba58-4507-92a3-a190126c881e
-index: y
-internal: n
-snippet: y
 ---
 
 # Policy criticality{#policy-criticality}

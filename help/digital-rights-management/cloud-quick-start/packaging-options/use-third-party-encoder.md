@@ -2,9 +2,6 @@
 seo-title: Use a third-party encoder
 title: Use a third-party encoder
 uuid: 8649303c-b8e6-4c02-a8ad-5734af850bfe
-index: y
-internal: n
-snippet: y
 ---
 
 # Use a third-party encoder{#use-a-third-party-encoder}

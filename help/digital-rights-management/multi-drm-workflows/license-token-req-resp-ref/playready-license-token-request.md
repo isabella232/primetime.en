@@ -4,16 +4,13 @@ seo-description: The PlayReady license token interface provides production and t
 seo-title: PlayReady license token request / response
 title: PlayReady license token request / response
 uuid: 20ebd582-ebb9-4716-8c1e-df3e58d6ec14
-index: y
-internal: n
-snippet: y
 ---
 
 # PlayReady license token request / response{#playready-license-token-request-response}
 
 The PlayReady license token interface provides production and test services.
 
-<a id="section_068F7F87F37E4B77846CA77CD175797A"></a>
+<!--<a id="section_068F7F87F37E4B77846CA77CD175797A"></a>-->
 
 This HTTP request returns a token that can be redeemed for a PlayReady license.
 

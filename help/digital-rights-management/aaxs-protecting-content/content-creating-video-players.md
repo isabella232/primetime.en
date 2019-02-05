@@ -2,9 +2,6 @@
 seo-title: Creating video players
 title: Creating video players
 uuid: 86dfff87-1dbd-40b7-936b-61e77c40270c
-index: y
-internal: n
-snippet: y
 ---
 
 # Creating video players{#creating-video-players}

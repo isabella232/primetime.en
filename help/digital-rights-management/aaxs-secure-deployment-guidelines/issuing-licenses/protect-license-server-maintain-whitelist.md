@@ -2,9 +2,6 @@
 seo-title: Maintain a whitelist of trusted content packagers
 title: Maintain a whitelist of trusted content packagers
 uuid: ad40993c-15c3-43b2-9593-7b75802cfe69
-index: y
-internal: n
-snippet: y
 ---
 
 # Maintain a whitelist of trusted content packagers{#maintain-a-whitelist-of-trusted-content-packagers}

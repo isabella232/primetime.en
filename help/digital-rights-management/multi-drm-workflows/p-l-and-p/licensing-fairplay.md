@@ -4,9 +4,6 @@ seo-description: Licensing and playback of FairPlay-protected content requires s
 seo-title: Licensing and playback for FairPlay
 title: Licensing and playback for FairPlay
 uuid: 8b37bf3b-ba9f-42b3-bbb3-1c089f86ed5c
-index: y
-internal: n
-snippet: y
 ---
 
 # Licensing and playback for FairPlay {#licensing-and-playback-for-fairplay}

@@ -2,9 +2,6 @@
 seo-title: Using the DRMManager class overview
 title: Using the DRMManager class overview
 uuid: 71ce061b-75b6-4ab5-8bbd-cafe7c3e4592
-index: y
-internal: n
-snippet: y
 ---
 
 # Using the DRMManager class overview{#using-the-drmmanager-class-overview}

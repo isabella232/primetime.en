@@ -2,9 +2,6 @@
 seo-title: Authentication workflow details
 title: Authentication workflow details
 uuid: 3ba4b635-b195-477c-9113-d12eca1c25fb
-index: y
-internal: n
-snippet: y
 ---
 
 # Authentication workflow details{#authentication-workflow-details}

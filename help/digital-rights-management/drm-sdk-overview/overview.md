@@ -2,9 +2,6 @@
 seo-title: Adobe Primetime DRM SDK - An overview
 title: Adobe Primetime DRM SDK - An overview
 uuid: d6bdd66e-02b3-48b8-9355-60238b9115a4
-index: y
-internal: n
-snippet: y
 ---
 
 # Adobe Primetime DRM SDK - An overview{#adobe-primetime-drm-sdk-an-overview}

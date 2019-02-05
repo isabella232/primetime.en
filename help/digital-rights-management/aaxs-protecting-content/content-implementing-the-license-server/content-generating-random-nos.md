@@ -2,9 +2,6 @@
 seo-title: Generating random numbers
 title: Generating random numbers
 uuid: 3ea25c48-1dbe-4039-8091-36c289702f78
-index: y
-internal: n
-snippet: y
 ---
 
 # Generating random numbers{#generating-random-numbers}

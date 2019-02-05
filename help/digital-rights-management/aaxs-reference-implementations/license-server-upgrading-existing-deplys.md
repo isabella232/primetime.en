@@ -2,9 +2,6 @@
 seo-title: Upgrading existing deployments
 title: Upgrading existing deployments
 uuid: 57e62a88-e541-435c-8274-7f1602548601
-index: y
-internal: n
-snippet: y
 ---
 
 # Upgrading existing deployments {#upgrading-existing-deployments}

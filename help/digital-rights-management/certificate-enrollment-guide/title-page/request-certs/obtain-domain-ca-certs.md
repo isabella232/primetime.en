@@ -2,9 +2,6 @@
 seo-title: Obtain Domain CA certificates
 title: Obtain Domain CA certificates
 uuid: 41bbe02b-363a-47f4-9cc0-350730b6c787
-index: y
-internal: n
-snippet: y
 ---
 
 # Obtain Domain CA certificates{#obtain-domain-ca-certificates}

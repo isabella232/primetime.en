@@ -2,9 +2,6 @@
 seo-title: DRM factory reset
 title: DRM factory reset
 uuid: 4c009e3d-980a-470e-a4b2-ba878acfb669
-index: y
-internal: n
-snippet: y
 ---
 
 # DRM factory reset{#drm-factory-reset}
