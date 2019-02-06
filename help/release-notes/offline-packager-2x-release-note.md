@@ -80,7 +80,7 @@ Software requirements
 Comment Type: draft
 ### Configuring the Offline Packager 2.3.1 {#configuring-the-offline-packager}
 
-The configuration instructions are available in the Primetime Offline Packager Getting Started guide at [http://help.adobe.com/en_US/primetime/packagers/offline/index.html](http://help.adobe.com/en_US/primetime/packagers/offline/index.html)
+The configuration instructions are available in the Primetime Offline Packager Getting Started guide at [https://help.adobe.com/en_US/primetime/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/packagers/offline/index.html)
 
 -->
 
@@ -140,6 +140,6 @@ Comment Type: draft
 
 ### Configuring the Offline Packager 2.1 {#configuring-the-offline-packager-1}
 
-Refer the Primetime Offline Packager Getting Started document for the configuration details available here [http://help.adobe.com/en_US/primetime/platform/offline/index.html#Platform-conceptPrimetime_Offline_Packager_Getting_Started](http://help.adobe.com/en_US/primetime/platform/offline/index.html#Platform-conceptPrimetime_Offline_Packager_Getting_Started)
+Refer the Primetime Offline Packager Getting Started document for the configuration details available here [https://help.adobe.com/en_US/primetime/platform/offline/index.html#Platform-conceptPrimetime_Offline_Packager_Getting_Started](https://help.adobe.com/en_US/primetime/platform/offline/index.html#Platform-conceptPrimetime_Offline_Packager_Getting_Started)
 
 -->

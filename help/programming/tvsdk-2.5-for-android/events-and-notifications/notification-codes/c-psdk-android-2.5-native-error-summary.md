@@ -4,7 +4,7 @@ title: Details for the NATIVE_ERROR notification
 uuid: 750ee0e2-15d4-4602-9574-94015a6e1b57
 ---
 
-# Details for the NATIVE_ERROR notification{#details-for-the-native-error-notification}
+# Details for the NATIVE_ERROR notification {#details-for-the-native-error-notification}
 
 When TVSDK handles a native error, it returns some or all of the following metadata key values as strings.  
 
@@ -393,7 +393,7 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
       <li id="li_6867A9050E8D421C9138AC853D1784C9"><a href="https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl" format="http" scope="external"> crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl</a> </li> 
       <li id="li_6431689260554EAFAFDA2EC31798DCB5"><a href="https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl" format="http" scope="external"> crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl</a> </li> 
       <li id="li_2939674D0F854ADEB67E45FD216288A2"><a href="https://crl2.adobe.com/Adobe/FlashAccessRootCA.crl" format="http" scope="external"> crl2.adobe.com/Adobe/FlashAccessRootCA.crl</a> </li> 
-      <li id="li_96386E00BE9D4CB99D100057A5F7C6DD"><a href="https://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl" format="http" scope="external"> crl3.adobe.com/AdobeSystemsIncorporated FlashAccessRuntime/LatestCRL.crl</a> </li> 
+      <li id="li_96386E00BE9D4CB99D100057A5F7C6DD">crl3.adobe.com/AdobeSystemsIncorporated FlashAccessRuntime/LatestCRL.crl</li> 
      </ul> </p> <p>If the firewall rules are open and there are no current 3324 errors, there might have been a temporary network issue. Check the customer's server logs, which are probably in the <span class="codeph"> /tomcat/logs/</span> directory, to determine whether an error occurred when the license server tried to fetch the Certificate Revocation Lists. <p>Important:  An error might occur when a large number (or a burst) of clients report a 3324 error to a temporary network issue when renewing a CRL file. When the network issue was resolved, the 3324 issues were also resolved. </p> </p> <p>If all 4 of the CRL files exist in the <span class="filepath"> tomcat/temp/</span> directory, and clients are still getting 3324 error codes, there might be file access issues to the CRL files. To resolve this issue, you might want to review the logs and purge the existing CRL files. </p> <p>If there are no server issues, prompt the user to reset in as described in 3322. </p> </td> 
   </tr> 
   <tr> 

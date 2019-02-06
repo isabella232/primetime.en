@@ -6,6 +6,6 @@ uuid: ade0f8fb-e529-4a21-8b54-66baa3a93cb8
 
 # Related API documentation {#related-api-documentation}
 
-* [Class AAManager](http://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AdsManager.html)
-* [Class AAManagerOn](http://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManagerOn.html)
+* [Class AAManager](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AdsManager.html)
+* [Class AAManagerOn](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManagerOn.html)
 * [mediacore.info.AudioTrack](https://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/info/AudioTrack.html)
