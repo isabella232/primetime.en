@@ -19,4 +19,5 @@ adsManager = ManagerFactory.getAdsManager(
 <b>true</b>, config, mediaPlayer);
 
 ```
-API documentation: [ManagerFactory](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/ManagerFactory.html)
+
+**API documentation**: [ManagerFactory](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/ManagerFactory.html)

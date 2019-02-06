@@ -52,6 +52,10 @@ The comprehensive set of features supported and not supported are presented in t
 * **Playback of 4K HEVC streams is now supported.**
 * **Parallel ad call requests** - TVSDK now prefetches 20 ad call requests in parallel.
 
+<details>
+<summary><b>New features in the previous releases</b></summary>
+<p>
+
 **Version 3.0**
 
 * **TVSDK 3.0 supports High Efficiency Video Coding (HEVC) streams.**
@@ -210,6 +214,8 @@ The important new features released in Android 2.5.1.
 * **Cookies**
 
     * Android TVSDK now supports access to JAVA cookies stored in CookieStore of the Android Application. A Callback API (onCookiesUpdated) is provided to record whenever a new Cookie comes as part of "Set-Cookie" Response header. These cookies are available as a List of HttpCookie(s) used for a different URI/domain by setting these cookie values on that particular URI/domain using CookieStore. Similarly the cookie values in TVSDK are updated using CookieStore add API.
+    </p>
+    </details>
 
 ## Feature matrix {#feature-matrix}
 
@@ -301,6 +307,10 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 * ZD#37493- Tracking beacons for live playback do not get fired intermittently for the first ad in sequence.
 * ZD#36985- Tracking beacons are not sent for empty ad breaks in VMAP response. 
 * ZD#37134 - TVSDK throws the wrong ID for VMAP response intermittently.
+
+<details>
+<summary><b>Resolved issues in the previous releases</b></summary>
+<p>
 
 **Version 3.0**
 
@@ -479,6 +489,9 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 * HLS with separate EAC3 SAP track won't load.
 * Player crashes as TVSDK receives a Screen On intent after the Media Player is restored.
 
+</p>
+</details>
+
 ## Known issues and limitations {#known-issues-and-limitations}
 
 **Android TVSDK 3.2**
@@ -488,6 +501,10 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 * Green coloration appears for WV Encrypted streams when seeking is performed around the non-encrypted segment. 
 * CMAF streams do not support ID3 events.
 * HLS streams do not support TTML captions format.
+
+<details>
+<summary><b>Known issues and limitations in the previous releases</b></summary>
+<p>
 
 **Android TVSDK 3.0**
 
@@ -532,6 +549,9 @@ This version of TVSDK has the following issues:
 * For FER streams, virtualTime and localTime may differ. Also, FER with offset does not work.
 * In VMAP XML, if there is an empty VAST tag without an explicit closing tag (&lt;/VAST&gt;), and without a newline after it, then the VMAP XML is not parsed properly and ads may not play.
 * VPAID post-roll are not supported.
+
+</p>
+</details>
 
 ## Helpful resources {#helpful-resources}
 
