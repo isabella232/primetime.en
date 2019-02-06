@@ -4,9 +4,6 @@ seo-description: For each new video content, initialize a MediaResource instance
 seo-title: Initialize the media player for a specific video
 title: Initialize the media player for a specific video
 uuid: 7d869190-f867-406f-a917-5728d7b772d6
-index: y
-internal: n
-snippet: y
 ---
 
 # Initialize the media player for a specific video{#initialize-the-media-player-for-a-specific-video}

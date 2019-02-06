@@ -2,9 +2,6 @@
 seo-title: Using the DRMErrorEvent class overview
 title: Using the DRMErrorEvent class overview
 uuid: cbb9c1a7-3c50-479d-b7e5-63010a696dfa
-index: y
-internal: n
-snippet: y
 ---
 
 # Using the DRMErrorEvent class overview{#using-the-drmerrorevent-class-overview}

@@ -4,9 +4,6 @@ seo-description: By default, a live stream with DVR support exposes a seekable r
 seo-title: DVR without ad insertion
 title: DVR without ad insertion
 uuid: e516be00-bb18-4119-ae0d-a79a35f4bd20
-index: y
-internal: n
-snippet: y
 ---
 
 # DVR without ad insertion {#dvr-without-ad-insertion}

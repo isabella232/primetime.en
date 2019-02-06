@@ -4,9 +4,6 @@ seo-description: You might need to know whether the media content is live or vid
 seo-title: Identify whether the content is live or VOD
 title: Identify whether the content is live or VOD
 uuid: e6a66104-97fb-438a-8356-e21f94058c85
-index: y
-internal: n
-snippet: y
 ---
 
 # Identify whether the content is live or VOD{#identify-whether-the-content-is-live-or-vod}

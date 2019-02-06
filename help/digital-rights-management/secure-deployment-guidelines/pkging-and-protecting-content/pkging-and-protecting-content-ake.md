@@ -4,9 +4,6 @@ seo-description: Asymmetric key encryption, also called public key encryption, u
 seo-title: Asymmetric key encryption
 title: Asymmetric key encryption
 uuid: c438efe3-aaf1-42b2-987b-feb96600d619
-index: y
-internal: n
-snippet: y
 ---
 
 # Asymmetric key encryption{#asymmetric-key-encryption}

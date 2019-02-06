@@ -4,9 +4,6 @@ seo-description: When a user clicks an ad or a related button, your application 
 seo-title: Respond to clicks on ads
 title: Respond to clicks on ads
 uuid: 5ce5c381-7885-43f2-9b5d-c0bd8c8b25dd
-index: y
-internal: n
-snippet: y
 ---
 
 # Respond to clicks on ads{#respond-to-clicks-on-ads}

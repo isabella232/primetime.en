@@ -4,9 +4,6 @@ seo-description: The SDK periodically downloads CRLs that are published by Adobe
 seo-title: Consuming CRLs published by Adobe
 title: Consuming CRLs published by Adobe
 uuid: 7a9088bd-dde6-4445-958c-3e7272215b3c
-index: y
-internal: n
-snippet: y
 ---
 
 # Consuming CRLs published by Adobe{#consuming-crls-published-by-adobe}

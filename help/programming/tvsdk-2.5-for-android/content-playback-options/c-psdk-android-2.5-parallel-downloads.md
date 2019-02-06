@@ -4,9 +4,6 @@ seo-description: Downloading video and audio in parallel, rather than in a serie
 seo-title: Parallel downloads
 title: Parallel downloads
 uuid: fa3edb50-7c24-433c-bc50-72d6cf73d834
-index: y
-internal: n
-snippet: y
 ---
 
 # Parallel downloads{#parallel-downloads}

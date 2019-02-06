@@ -4,9 +4,6 @@ seo-description: TVSDK handles time range errors according to the specific probl
 seo-title: Ad deletion and replacement error handling
 title: Ad deletion and replacement error handling
 uuid: 615f42b7-733a-49c4-bd7a-f14ad0d23fa0
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad deletion and replacement error handling {#ad-deletion-and-replacement-error-handling}

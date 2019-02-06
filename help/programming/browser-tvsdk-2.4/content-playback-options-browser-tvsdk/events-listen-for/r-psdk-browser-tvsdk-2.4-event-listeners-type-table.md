@@ -4,9 +4,6 @@ seo-description: When you register event listeners with Browser TVSDK, you speci
 seo-title: Event types and classes for callbacks
 title: Event types and classes for callbacks
 uuid: 13d7e939-ff45-4a52-bcbe-70abb56ac205
-index: y
-internal: n
-snippet: y
 ---
 
 # Event types and classes for callbacks{#event-types-and-classes-for-callbacks}
@@ -17,8 +14,7 @@ When you register event listeners with Browser TVSDK, you specify an event type 
  <thead> 
   <tr rowsep="1"> 
    <th colname="2" class="entry"> When you listen for this event name (AdobePSDK.EventType) </th> 
-   <th class="entry"> 
-    <ph conkeyref="phrases/browser-tvsdk-name" /> passes an event to your callback of this object type (<span class="codeph"> AdobePSDK.Event</span>) </th> 
+   <th class="entry">phrases/browser-tvsdk-name passes an event to your callback of this object type (<span class="codeph"> AdobePSDK.Event</span>) </th> 
   </tr> 
  </thead>
  <tbody> 

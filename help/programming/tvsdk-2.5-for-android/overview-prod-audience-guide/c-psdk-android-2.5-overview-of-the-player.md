@@ -4,9 +4,6 @@ seo-description: TVSDK for Android 2.5 includes a variety of features that you c
 seo-title: Primetime TVSDK features
 title: Primetime TVSDK features
 uuid: 20ef9abf-1a33-4afc-bb2e-4910e3398a7a
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime TVSDK features{#primetime-tvsdk-features}

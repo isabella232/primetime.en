@@ -4,9 +4,6 @@ seo-description: These classes provide decoding and parsing for packets and tags
 seo-title: System decoders classes
 title: System decoders classes
 uuid: b333166b-3a13-48c5-a5d7-d8a64f0cd736
-index: y
-internal: n
-snippet: y
 ---
 
 # System decoders classes{#system-decoders-classes}

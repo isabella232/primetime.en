@@ -4,9 +4,6 @@ seo-description: Browser TVSDK provides tools for creating an advanced video pla
 seo-title: null
 title: null
 uuid: 57b35a5f-87f8-41a2-ad85-300b999dc30b
-index: y
-internal: n
-snippet: y
 ---
 
 # Flash Failover {#flash-failover}

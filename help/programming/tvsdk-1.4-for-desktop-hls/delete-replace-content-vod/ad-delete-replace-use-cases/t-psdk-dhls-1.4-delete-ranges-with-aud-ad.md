@@ -4,9 +4,6 @@ seo-description: Remove TimeRanges between begin and end in localTime from the t
 seo-title: Delete ranges with Primetime ad decisioning ad
 title: Delete ranges with Primetime ad decisioning ad
 uuid: efd36a2f-db61-434a-bc2a-50a866f44b33
-index: y
-internal: n
-snippet: y
 ---
 
 # Delete ranges with Primetime ad decisioning ad{#delete-ranges-with-primetime-ad-decisioning-ad}

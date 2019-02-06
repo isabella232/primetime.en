@@ -4,9 +4,6 @@ seo-description: Replay protection prevents an attacker from replaying a license
 seo-title: Replay protection
 title: Replay protection
 uuid: 93749dd3-a42c-4866-ac54-1b20d6683c42
-index: y
-internal: n
-snippet: y
 ---
 
 # Replay protection{#replay-protection}

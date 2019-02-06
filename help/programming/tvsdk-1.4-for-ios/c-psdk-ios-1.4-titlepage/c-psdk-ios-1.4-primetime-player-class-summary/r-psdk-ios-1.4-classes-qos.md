@@ -4,9 +4,6 @@ seo-description: These classes provide information that help you to determine ho
 seo-title: QoS classes
 title: QoS classes
 uuid: fc175269-ec4a-415e-91f3-7fa036290fa6
-index: y
-internal: n
-snippet: y
 ---
 
 # QoS classes{#qos-classes}

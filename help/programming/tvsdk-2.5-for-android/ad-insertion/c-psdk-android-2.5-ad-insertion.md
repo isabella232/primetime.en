@@ -4,9 +4,6 @@ seo-description: You can insert ads in your VOD and live/linear content by using
 seo-title: Advertising
 title: Advertising
 uuid: 9fb020ab-f146-40e6-bd82-9f7cfe86d35b
-index: y
-internal: n
-snippet: y
 ---
 
 # Advertising{#advertising}

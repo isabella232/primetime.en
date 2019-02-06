@@ -4,9 +4,6 @@ seo-description: The Audio Codec 3 (AC-3, also known as Dolby Digital®) 5.1 for
 seo-title: AC-3 5.1 format
 title: AC-3 5.1 format
 uuid: 9d1adf33-4c9b-4d31-8212-ac301f3e44c5
-index: y
-internal: n
-snippet: y
 ---
 
 # AC-3 5.1 format{#ac-format}

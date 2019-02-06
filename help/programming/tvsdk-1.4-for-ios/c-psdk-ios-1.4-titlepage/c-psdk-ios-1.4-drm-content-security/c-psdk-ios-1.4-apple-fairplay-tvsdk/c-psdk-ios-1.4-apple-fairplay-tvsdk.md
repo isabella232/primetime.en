@@ -4,9 +4,6 @@ seo-description: To implement FairPlay Streaming in your TVSDK app, you need to 
 seo-title: Apple FairPlay in TVSDK applications
 title: Apple FairPlay in TVSDK applications
 uuid: 4384d379-37cd-46c5-8c25-0cda16bdebb8
-index: y
-internal: n
-snippet: y
 ---
 
 # Apple FairPlay in TVSDK applications{#apple-fairplay-in-tvsdk-applications}

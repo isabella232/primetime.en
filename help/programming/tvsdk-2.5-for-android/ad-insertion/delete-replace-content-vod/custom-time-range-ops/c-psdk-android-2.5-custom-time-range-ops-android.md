@@ -4,16 +4,13 @@ seo-description: The CustomRangeMetadata class identifies different types of tim
 seo-title: Custom time range operations
 title: Custom time range operations
 uuid: e9c6a135-124e-44d4-adf2-dc9d671e2483
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom time range operations{#custom-time-range-operations}
 
 The CustomRangeMetadata class identifies different types of time ranges in a VOD stream: mark, delete, and replace. For each of these custom time range types, you can perform corresponding operations, including deleting and replacing ad content.
 
-<a id="section_1323C0BAC259424C85A6ACFB48FE77EC"></a>
+<!--<a id="section_1323C0BAC259424C85A6ACFB48FE77EC"></a>-->
 
 For ad deletion and replacement, TVSDK uses the following *custom time range operation* modes:
 

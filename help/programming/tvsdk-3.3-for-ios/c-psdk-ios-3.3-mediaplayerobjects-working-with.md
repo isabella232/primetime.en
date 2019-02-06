@@ -4,12 +4,9 @@ seo-description: The PTMediaPlayer object represents your media player. A PTMedi
 seo-title: Work with MediaPlayer objects
 title: Work with MediaPlayer objects
 uuid: 0c33ebd6-b11a-4e62-8c1c-880cfceff474
-index: y
-internal: n
-snippet: y
 ---
 
-# Work with MediaPlayer objects {#work-with-mediaplayer-objects}
+# Work with MediaPlayer objects{#work-with-mediaplayer-objects}
 
 The PTMediaPlayer object represents your media player. A PTMediaPlayerItem represents audio or video on your player.
 
@@ -35,7 +32,7 @@ To work with statuses:
 * The list of statuses is defined in `PTMediaPlayerStatus`.
 
 State-transition diagram for the lifecycle of a MediaPlayer instance: 
-<a id="fig_1C55DE3F186F4B36AFFDCDE90379534C"></a>
+<!--<a id="fig_1C55DE3F186F4B36AFFDCDE90379534C"></a>-->
 
 ![](assets/player-state-transitions-diagram-ios2_web.png)
 

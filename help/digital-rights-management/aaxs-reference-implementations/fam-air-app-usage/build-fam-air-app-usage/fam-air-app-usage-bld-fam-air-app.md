@@ -2,9 +2,6 @@
 seo-title: Building the Flash Access Manager AIR Application
 title: Building the Flash Access Manager AIR Application
 uuid: 00927eb3-b8eb-4dd4-b528-91b70760c8cd
-index: y
-internal: n
-snippet: y
 ---
 
 # Building the Flash Access Manager AIR Application {#building-the-flash-access-manager-air-application}

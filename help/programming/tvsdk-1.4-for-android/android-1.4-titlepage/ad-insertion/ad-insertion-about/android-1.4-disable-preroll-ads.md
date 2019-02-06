@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Disable pre-roll ads
 title: Disable pre-roll ads
 uuid: 2e307a58-49f2-43d6-908b-97684ad6e3d3
-index: y
-internal: n
-snippet: y
 ---
 
 # Disable pre-roll ads{#disable-pre-roll-ads}

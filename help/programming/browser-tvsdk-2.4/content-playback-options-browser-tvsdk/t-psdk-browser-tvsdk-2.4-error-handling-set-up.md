@@ -4,9 +4,6 @@ seo-description: You can set up one place in your application to perform error h
 seo-title: Set up error handling
 title: Set up error handling
 uuid: 9e650ea7-86cb-4489-a3fd-80cd2ccef41f
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up error handling{#set-up-error-handling}
@@ -30,7 +27,7 @@ You can set up one place in your application to perform error handling in respon
     * Reset the MediaPlayer object by using the `MediaPlayer.reset` method. 
     * Load a new media resource by using the `MediaPlayer.replaceCurrentResource` method.
 
-<a id="example_342CA5A8CD7C45BD88233C5BDBB17220"></a>
+<!--<a id="example_342CA5A8CD7C45BD88233C5BDBB17220"></a>-->
 
 For example: 
 

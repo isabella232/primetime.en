@@ -2,9 +2,6 @@
 seo-title: Adobe Flash Player
 title: Adobe Flash Player
 uuid: 838777c2-6d54-4b65-bad3-375f559a6b47
-index: y
-internal: n
-snippet: y
 ---
 
 # Adobe Flash Player{#adobe-flash-player}

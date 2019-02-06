@@ -4,9 +4,6 @@ seo-description: You can generate Expressplay tokens for their encrypted content
 seo-title: Expressplay tokens
 title: Expressplay tokens
 uuid: 6103e1b2-127d-4758-a589-15f0f3c73db1
-index: y
-internal: n
-snippet: y
 ---
 
 # Expressplay tokens{#expressplay-tokens}

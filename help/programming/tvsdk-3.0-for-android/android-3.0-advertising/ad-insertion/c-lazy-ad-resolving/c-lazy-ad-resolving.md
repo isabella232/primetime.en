@@ -5,9 +5,6 @@ seo-description: Ad resolving and ad loading may cause an unacceptable delay for
 seo-title: Just-in-Time Ad Resolving
 title: Just-in-Time Ad Resolving
 uuid: 77028f6e-7e53-45d1-bcc0-54f8224d6d18
-index: y
-internal: n
-snippet: y
 ---
 
 # Just-in-Time Ad Resolving{#just-in-time-ad-resolving}

@@ -2,9 +2,6 @@
 seo-title: Create content packaging and policy management tools
 title: Create content packaging and policy management tools
 uuid: 39f6b609-caa0-4e3b-a2cd-d9555bd2c697
-index: y
-internal: n
-snippet: y
 ---
 
 # Create content packaging and policy management tools {#create-content-packaging-and-policy-management-tools}

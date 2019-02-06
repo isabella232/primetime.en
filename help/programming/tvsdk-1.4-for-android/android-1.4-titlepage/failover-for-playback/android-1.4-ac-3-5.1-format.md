@@ -4,9 +4,6 @@ seo-description: Streaming over the Internet requires a constant and stable conn
 seo-title: AC-3 5.1 format
 title: AC-3 5.1 format
 uuid: d5e77bb5-ed51-4f9f-b34f-e9082f5ee4de
-index: y
-internal: n
-snippet: y
 ---
 
 # AC-3 5.1 format{#ac-format}

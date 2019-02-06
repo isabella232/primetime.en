@@ -2,9 +2,6 @@
 seo-title: Develop applications for video playback
 title: Develop applications for video playback
 uuid: 414a43d3-e993-4260-be42-7845346080b9
-index: y
-internal: n
-snippet: y
 ---
 
 # Develop applications for video playback {#develop-applications-for-video-playback}

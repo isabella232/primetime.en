@@ -4,9 +4,6 @@ seo-description: You can display the current and remaining time of the content t
 seo-title: Display a seek scrub bar with the current playback time position
 title: Display a seek scrub bar with the current playback time position
 uuid: db57eb6f-3c67-4a64-a0f4-7e39027eb3e0
-index: y
-internal: n
-snippet: y
 ---
 
 # Display a seek scrub bar with the current playback time position{#display-a-seek-scrub-bar-with-the-current-playback-time-position}

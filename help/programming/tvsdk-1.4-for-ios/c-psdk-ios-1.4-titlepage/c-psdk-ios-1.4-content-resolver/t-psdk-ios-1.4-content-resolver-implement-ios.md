@@ -4,16 +4,13 @@ seo-description: You can implement your resolvers based on the default resolvers
 seo-title: Implement a custom opportunity/content resolver
 title: Implement a custom opportunity/content resolver
 uuid: bfc14318-ca4b-46cc-8128-e3743af06d9a
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement a custom opportunity/content resolver{#implement-a-custom-opportunity-content-resolver}
 
 You can implement your resolvers based on the default resolvers.
 
-<a id="fig_CC41E2A66BDB4115821F33737B46A09B"></a>
+<!--<a id="fig_CC41E2A66BDB4115821F33737B46A09B"></a>-->
 
 ![](assets/ios_psdk_content_resolver.png)
 

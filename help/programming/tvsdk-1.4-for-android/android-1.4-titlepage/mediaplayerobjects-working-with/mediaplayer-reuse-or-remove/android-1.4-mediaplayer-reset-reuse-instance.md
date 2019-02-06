@@ -4,9 +4,6 @@ seo-description: When you reset a MediaPlayer instance, it is returned to its un
 seo-title: Reset or reuse a MediaPlayer instance
 title: Reset or reuse a MediaPlayer instance
 uuid: 72cc4511-8ab0-44e5-b93c-b36f0321bba8
-index: y
-internal: n
-snippet: y
 ---
 
 # Reset or reuse a MediaPlayer instance{#reset-or-reuse-a-mediaplayer-instance}

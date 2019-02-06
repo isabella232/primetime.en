@@ -2,9 +2,6 @@
 seo-title: Enable background audio
 title: Enable background audio
 uuid: aa6dc934-e85c-4db1-901b-9777f47106e6
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable background audio{#enable-background-audio}

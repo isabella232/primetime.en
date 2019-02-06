@@ -5,9 +5,6 @@ seo-description: You can enable or disable the Lazy Ad Resolving feature using t
 seo-title: Enable lazy ad resolving
 title: Enable lazy ad resolving
 uuid: a084ee0b-53af-4600-91f6-d30ccc89699d
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable lazy ad resolving{#enable-lazy-ad-resolving}

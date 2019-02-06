@@ -4,9 +4,6 @@ seo-description: While the AES-128 encryption method encrypts the entire transpo
 seo-title: Sample AES encrypted HLS streams
 title: Sample AES encrypted HLS streams
 uuid: 32c1f87b-eb81-4e1c-92ea-ec37260a7ecb
-index: y
-internal: n
-snippet: y
 ---
 
 # Sample AES encrypted HLS streams{#sample-aes-encrypted-hls-streams}

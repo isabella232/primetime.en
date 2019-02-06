@@ -4,9 +4,6 @@ seo-description: To set up the Adobe® Access™ for use, copy files from the DV
 seo-title: Setting up the development environment
 title: Setting up the development environment
 uuid: 1f192783-9c9a-4342-909a-4881248a85ad
-index: y
-internal: n
-snippet: y
 ---
 
 # Setting up the development environment {#setting-up-the-development-environment}

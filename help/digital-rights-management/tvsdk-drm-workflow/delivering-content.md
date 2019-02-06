@@ -2,9 +2,6 @@
 seo-title: Delivering content
 title: Delivering content
 uuid: b277d369-fee3-4a20-9dd8-27b3a8a82a9e
-index: y
-internal: n
-snippet: y
 ---
 
 # Delivering content{#delivering-content}

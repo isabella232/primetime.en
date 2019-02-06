@@ -4,9 +4,6 @@ seo-description: Some third-party ads (or creatives) cannot be stitched into the
 seo-title: Repackage incompatible ads using Adobe Creative Repackaging Service
 title: Repackage incompatible ads using Adobe Creative Repackaging Service
 uuid: 56a2405d-b395-4fea-820d-343590be7c19
-index: y
-internal: n
-snippet: y
 ---
 
 # Repackage incompatible ads using Adobe Creative Repackaging Service{#repackage-incompatible-ads-using-adobe-creative-repackaging-service}
@@ -19,7 +16,7 @@ When TVSDK first encounters an incompatible ad, the player ignores the ad and is
 
 To enable this optional feature, contact your Adobe representative.
 
-For more information about CRS, see [Creative Packaging Service (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/guides/crs.pdf).
+For more information about CRS, see [Creative Packaging Service (CRS)](https://help.adobe.com/en_US/primetime/crs/index.html).
 
 ## Multiple CDN support for CRS ad delivery {#section_900FDDA5454143718F1EB4C9732C8E1C}
 
@@ -64,3 +61,4 @@ PTDefaultURLTransformer *defaultTransformer = [[[PTDefaultURLTransformer alloc] 
 // metadata is the PTMetadata instance set on a PTMediaPlayerItem instance. 
 [metadata setMetadata:[self getNetworkConfiguration] forKey:PTNetworkConfigurationMetadataKey];
 ```
+

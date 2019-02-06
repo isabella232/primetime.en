@@ -4,9 +4,6 @@ seo-description: You can override the default behavior for how TVSDK seeks over 
 seo-title: Control playback behavior for seeking over custom ad markers
 title: Control playback behavior for seeking over custom ad markers
 uuid: 926299c6-9c23-457d-b836-08432e4e169e
-index: y
-internal: n
-snippet: y
 ---
 
 # Control playback behavior for seeking over custom ad markers{#control-playback-behavior-for-seeking-over-custom-ad-markers}

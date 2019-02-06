@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Obtain Certificates
 title: Obtain Certificates
 uuid: dd01931b-289e-4876-9344-dd90c3c8c162
-index: y
-internal: n
-snippet: y
 ---
 
 # Obtain Certificates{#obtain-certificates}

@@ -2,9 +2,6 @@
 seo-title: Command line tools overview
 title: Command line tools overview
 uuid: 2c740521-2004-4320-88e1-118b84e80e31
-index: y
-internal: n
-snippet: y
 ---
 
 # Command line tools overview {#command-line-tools-overview}

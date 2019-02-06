@@ -4,9 +4,6 @@ seo-description: TVSDK provides classes and methods that you can use to customiz
 seo-title: API elements for ad playback
 title: API elements for ad playback
 uuid: 56844663-d635-4b04-b61b-cb8f33ef5732
-index: y
-internal: n
-snippet: y
 ---
 
 # API elements for ad playback{#api-elements-for-ad-playback}

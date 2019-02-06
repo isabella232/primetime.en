@@ -4,9 +4,6 @@ seo-description: You can implement a control bar with DVR support for VOD and li
 seo-title: Construct a control bar enhanced for DVR
 title: Construct a control bar enhanced for DVR
 uuid: c9c86383-379f-452c-b35d-447ac8691fa0
-index: y
-internal: n
-snippet: y
 ---
 
 # Construct a control bar enhanced for DVR{#construct-a-control-bar-enhanced-for-dvr}
@@ -22,7 +19,7 @@ You can implement a control bar with DVR support for VOD and live streaming. DVR
 
   The control bar for live playback supports DVR by first positioning the thumb at the client live point when starting playback and by displaying a region that marks the area where seek is not allowed.
 
-<a id="fig_37A39A28BA714BA5A2C461357ED5BD41"></a>
+<!--<a id="fig_37A39A28BA714BA5A2C461357ED5BD41"></a>-->
 
 ![](assets/dvr-window.PNG){width="684"}
 

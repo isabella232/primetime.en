@@ -4,9 +4,6 @@ seo-description: You can remove TimeRanges between begin and end in localTime fr
 seo-title: Delete ranges
 title: Delete ranges
 uuid: 2aaea7a0-5d52-49a1-901c-f71e4b081d91
-index: y
-internal: n
-snippet: y
 ---
 
 # Delete ranges{#delete-ranges}

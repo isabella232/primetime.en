@@ -4,9 +4,6 @@ seo-description: This section presents a sample configuration that illustrates t
 seo-title: Sample RBOP Configuration
 title: Sample RBOP Configuration
 uuid: fa5ead93-36c5-4ad1-947b-c4f1f2632d9b
-index: y
-internal: n
-snippet: y
 ---
 
 # Sample RBOP Configuration{#sample-rbop-configuration}

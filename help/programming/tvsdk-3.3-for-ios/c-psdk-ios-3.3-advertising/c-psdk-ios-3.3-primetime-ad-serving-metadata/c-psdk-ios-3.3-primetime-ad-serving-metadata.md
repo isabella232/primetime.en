@@ -4,12 +4,9 @@ seo-description: TVSDK supports resolving and inserting ads for VOD and live/lin
 seo-title: Primetime ad server metadata
 title: Primetime ad server metadata
 uuid: 61e224dd-551a-438f-8560-e64915087fef
-index: y
-internal: n
-snippet: y
 ---
 
-# Primetime ad server metadata {#primetime-ad-server-metadata}
+# Primetime ad server metadata{#primetime-ad-server-metadata}
 
 TVSDK supports resolving and inserting ads for VOD and live/linear streams.
 
@@ -29,7 +26,7 @@ Your application must provide TVSDK with the required `PTAuditudeMetadata` infor
 
 To set up the ad server metadata:
 
-1. Create an instance of [PTAuditudeMetadata](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html) and set its properties. 
+1. Create an instance of [ `PTAuditudeMetadata` ](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html) and set its properties. 
 
    ```
    PTAuditudeMetadata *adMetadata = [[PTAuditudeMetadata alloc] init];  
@@ -109,3 +106,4 @@ In addition to each request that is associated with a cue point, TVSDK makes an 
    [metadata setMetadata:adMetadata forKey:PTAdResolvingMetadataKey]; 
    
    ```
+

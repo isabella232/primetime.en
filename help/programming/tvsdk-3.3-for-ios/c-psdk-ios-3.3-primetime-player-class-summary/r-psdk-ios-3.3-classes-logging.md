@@ -4,12 +4,9 @@ seo-description: These classes enable you to customize logging.
 seo-title: Logging classes
 title: Logging classes
 uuid: b40dc619-0a52-477f-9879-56f75ab0c31f
-index: y
-internal: n
-snippet: y
 ---
 
-# Logging classes {#logging-classes}
+# Logging classes{#logging-classes}
 
 These classes enable you to customize logging.
 

@@ -2,9 +2,6 @@
 seo-title: Request a certificate (Requester)
 title: Request a certificate (Requester)
 uuid: f0d7f65d-681d-430f-b67b-3bdceb4b6d37
-index: y
-internal: n
-snippet: y
 ---
 
 # Request a certificate (Requester){#request-a-certificate-requester}

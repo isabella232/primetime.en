@@ -4,12 +4,9 @@ seo-description: TVSDK provides tools for creating an advanced video player appl
 seo-title: Create video player
 title: Create video player
 uuid: 48e11ac4-5010-4a0a-bb54-ecf03ed4946b
-index: y
-internal: n
-snippet: y
 ---
 
-# Create video player {#create-video-player}
+# Create video player{#create-video-player}
 
 TVSDK provides tools for creating an advanced video player application (your Primetime player), which you can integrate with other Primetime components.
 

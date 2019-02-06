@@ -4,9 +4,6 @@ seo-description: To get started with Primetime DRM Cloud, powered by ExpressPlay
 seo-title: Get Provisioned (Accounts, etc.)
 title: Get Provisioned (Accounts, etc.)
 uuid: 51b95676-2121-4d8b-8756-9fd097185a13
-index: y
-internal: n
-snippet: y
 ---
 
 # Get Provisioned (Accounts, etc.) {#get-provisioned-accounts-etc}
@@ -23,32 +20,32 @@ To get started with Primetime DRM Cloud, powered by ExpressPlay, you need to set
 
 1. Log in to the Adobe cert portal using your Adobe ID (use the same email address that you provided to your Adobe representative). If you don't have an Adobe ID yet, you can quickly create one by following the *Get an Adobe ID* link from the cert portal:
 
-   <a id="fig_mst_gtj_wv"></a>
+   <!--<a id="fig_mst_gtj_wv"></a>-->
 
    ![](assets/cert_portal_sign-in-page-web.png)
 
 1. On the Adobe cert portal, request a *Trial* cert.
 
    For the Multi-DRM trial, a single trial cert will cover all of these aspects of content protection: packaging, licensing, and transport. You will need to supply your own [CSR](https://help.adobe.com/en_US/primetime/drm/5.3/certificate_enrollment/#task-Generate_a_Certificate_Signing_Request) to make a request for a cert: 
-   <a id="fig_op1_xwj_wv"></a>
+   <!--<a id="fig_op1_xwj_wv"></a>-->
 
    ![](assets/cert_portal_trial_request-web.png)
 
    Adobe will send you an email that indicates acceptance or rejection of your cert request. You can see the status of your cert request(s) on the *Request history* tab on the cert portal:
-   <a id="fig_gkl_myj_wv"></a>
+   <!--<a id="fig_gkl_myj_wv"></a>-->
 
    ![](assets/cert_portal_request_history-web.png)
 
 1. Create your ExpressPlay Admin account.
 
    Follow the link to ExpressPlay that Adobe provided to you. This opens the *Create an Account* page at ExpressPlay. Fill in the required information and submit the form. You will receive an email from `operations@expressplay.com` containing an activation link that is good for a week. After you activate, set up your ExpressPlay service:
-   <a id="fig_cjl_ztk_wv"></a>
+   <!--<a id="fig_cjl_ztk_wv"></a>-->
 
    ![](assets/expressplay_create_service-web.png)
 
    When you have created your service, you are presented with your own Admin page. Along with some activity tracking fields, you will see your Production and Test *customer authenticators* (API keys), and your Production and Test service URLs:
 
-   <a id="fig_c5h_xdl_wv"></a>
+   <!--<a id="fig_c5h_xdl_wv"></a>-->
 
    ![](assets/expressplay_admin_dashboard_2-web.png) ![](assets/expressplay_admin_dashboard-web.png)
 

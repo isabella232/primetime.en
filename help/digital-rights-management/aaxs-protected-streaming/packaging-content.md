@@ -2,9 +2,6 @@
 seo-title: Packaging content
 title: Packaging content
 uuid: 5d1d4b9d-f241-4291-9577-e9de5a8b92be
-index: y
-internal: n
-snippet: y
 ---
 
 # Packaging content{#packaging-content}

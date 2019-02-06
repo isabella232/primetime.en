@@ -2,9 +2,6 @@
 seo-title: License server and watched folder packager overview
 title: License server and watched folder packager overview
 uuid: 3dd6f699-a5c0-44c4-897a-34e06abe3d71
-index: y
-internal: n
-snippet: y
 ---
 
 # License server and watched folder packager overview {#license-server-and-watched-folder-packager-overview}

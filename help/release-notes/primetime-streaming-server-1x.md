@@ -7,9 +7,6 @@ uuid: be05db6b-713f-4406-940d-9f3a805f967b
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: baec714e-9d41-4e8b-b134-13a736885cbd
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime Streaming Server 1.x releases{#primetime-streaming-server-x-releases}

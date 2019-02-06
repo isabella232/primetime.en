@@ -4,9 +4,6 @@ seo-description: The Secure Sockets Layer (SSL) is necessary only if you require
 seo-title: Configuring SSL
 title: Configuring SSL
 uuid: be547eac-f589-48ba-af14-8a7bec0e7431
-index: y
-internal: n
-snippet: y
 ---
 
 # Configuring SSL {#configuring-ssl}

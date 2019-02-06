@@ -4,9 +4,6 @@ seo-description: By default, TVSDK forces an ad break to play when the user seek
 seo-title: Skip ad breaks for a period of time
 title: Skip ad breaks for a period of time
 uuid: f07d838b-3c1d-4cea-a3aa-dba33964ac81
-index: y
-internal: n
-snippet: y
 ---
 
 # Skip ad breaks for a period of time{#skip-ad-breaks-for-a-period-of-time}

@@ -8,9 +8,6 @@ contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: e4437a26-9454-4da1-ae87-0fce664aac3d
-index: y
-internal: n
-snippet: y
 ---
 
 # TVSDK 1.4 for Desktop HLS Release Notes {#tvsdk-for-desktop-hls-release-notes}
@@ -657,10 +654,10 @@ Fixed a occasional Flash Player crash with Firefox on Mac when a stream, playing
 
 Fixed an issue on Mac Chrome where stream would start to flicker an eventually go black. (requires Flash Player 18.0.0.161)
 
-* Zendesk #3304 - VAST 3.0 [ERRORCODE] macro not being populated
+* Zendesk #3304 - VAST 3.0 `[ERRORCODE]` macro not being populated
 
     * error code 400 will be exposed if inline ad has bad creative. 
-    * [ERRORCODE] macro will be URL encoded
+    * `[ERRORCODE]` macro will be URL encoded
 
 * Zendesk #3601 - Enhancement request: Wrapper companion management
 

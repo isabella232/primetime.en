@@ -4,9 +4,6 @@ seo-description: To allow the ad resolver to work, ad providers, such as Adobe P
 seo-title: Ad insertion metadata
 title: Ad insertion metadata
 uuid: 3eb024c3-4bb5-4bee-943e-fe0c60379e60
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad insertion metadata{#ad-insertion-metadata}

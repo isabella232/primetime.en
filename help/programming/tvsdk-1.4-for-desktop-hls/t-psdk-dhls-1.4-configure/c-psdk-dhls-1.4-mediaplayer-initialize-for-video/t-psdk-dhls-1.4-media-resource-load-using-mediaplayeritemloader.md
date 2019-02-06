@@ -4,9 +4,6 @@ seo-description: Another way to resolve a media resource is with MediaPlayerItem
 seo-title: Load a media resource using MediaPlayerItemLoader
 title: Load a media resource using MediaPlayerItemLoader
 uuid: a7ec8f58-7357-4757-a402-e879dd6caec8
-index: y
-internal: n
-snippet: y
 ---
 
 # Load a media resource using MediaPlayerItemLoader{#load-a-media-resource-using-mediaplayeritemloader}

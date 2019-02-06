@@ -4,9 +4,6 @@ seo-description: You can implement your own content resolvers based on the defau
 seo-title: Implement a custom content resolver
 title: Implement a custom content resolver
 uuid: bc0eda17-9b5d-4733-8e93-790758e68df5
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement a custom content resolver{#implement-a-custom-content-resolver}
@@ -138,7 +135,7 @@ When TVSDK generates a new opportunity, it iterates through the registered conte
          _client.notifyFailed(opportunity, UNSUPPORTED_OPERATION);
          ```
 
-<a id="example_463B718749504A978F0B887786844C39"></a>
+<!--<a id="example_463B718749504A978F0B887786844C39"></a>-->
 
 This sample custom ad resolver resolves an opportunity and serves a simple ad: 
 

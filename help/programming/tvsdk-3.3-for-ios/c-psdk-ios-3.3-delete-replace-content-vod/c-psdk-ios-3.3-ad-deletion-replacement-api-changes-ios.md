@@ -4,18 +4,15 @@ seo-description: TVSDK supports the programmatic deleting and replacing of ad co
 seo-title: Ad deletion and replacement API changes
 title: Ad deletion and replacement API changes
 uuid: 3689d31f-4feb-4ea5-ac49-ef2e71472f4b
-index: y
-internal: n
-snippet: y
 ---
 
-# Ad deletion and replacement API changes {#ad-deletion-and-replacement-api-changes}
+# Ad deletion and replacement API changes{#ad-deletion-and-replacement-api-changes}
 
 TVSDK supports the programmatic deleting and replacing of ad content in VOD streams.
 
 The delete and replace feature extends the custom ad markers feature. Custom ad markers mark sections of the main content as ad-related content periods. In addition to marking these time ranges, you can also delete and replace time ranges.
 
-<a id="section_7A90BFE99F1A4D908D6DDB0B49FA1199"></a>
+<!--<a id="section_7A90BFE99F1A4D908D6DDB0B49FA1199"></a>-->
 
 The following changes in TVSDK support ad deletion and replacement.
 
@@ -69,3 +66,4 @@ The following changes in TVSDK support ad deletion and replacement.
 * `PTAdMetadata`:
 
     * `property NSArray* externalAdRanges` - This property was previously used to define C3 ranges for marking. It is now deprecated, as these ranges are set via `PTTimeRangeCollection`.
+

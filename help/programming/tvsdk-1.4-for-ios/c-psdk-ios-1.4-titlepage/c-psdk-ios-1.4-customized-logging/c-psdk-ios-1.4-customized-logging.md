@@ -4,9 +4,6 @@ seo-description: You can implement your own logging system.
 seo-title: Customized logging
 title: Customized logging
 uuid: c5bdf266-4266-4896-b6e0-47710ce64e67
-index: y
-internal: n
-snippet: y
 ---
 
 # Customized logging{#customized-logging}

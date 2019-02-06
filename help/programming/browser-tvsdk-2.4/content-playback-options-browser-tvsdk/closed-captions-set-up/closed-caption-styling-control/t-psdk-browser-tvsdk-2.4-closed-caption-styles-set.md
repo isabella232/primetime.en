@@ -4,9 +4,6 @@ seo-description: You can set the format, such as font, size, color, edge, and op
 seo-title: Set closed-caption styles
 title: Set closed-caption styles
 uuid: 906ed22c-e673-4211-a14b-d95d176aad21
-index: y
-internal: n
-snippet: y
 ---
 
 # Set closed-caption styles{#set-closed-caption-styles}

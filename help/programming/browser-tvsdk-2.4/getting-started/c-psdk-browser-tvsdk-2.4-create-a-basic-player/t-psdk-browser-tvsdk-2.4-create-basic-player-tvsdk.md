@@ -4,9 +4,6 @@ seo-description: Complete the following steps to create a basic player using the
 seo-title: Create a basic player using TVSDK
 title: Create a basic player using TVSDK
 uuid: ec15cf53-197f-4190-a6b2-600a57815390
-index: y
-internal: n
-snippet: y
 ---
 
 # Create a basic player using TVSDK{#create-a-basic-player-using-tvsdk}

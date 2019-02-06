@@ -4,9 +4,6 @@ seo-description: null
 seo-title: License Embedder command-line usage
 title: License Embedder command-line usage
 uuid: 6f2cc195-ffdc-4421-a1ab-1d4e2412a8df
-index: y
-internal: n
-snippet: y
 ---
 
 # License Embedder command-line usage{#license-embedder-command-line-usage}

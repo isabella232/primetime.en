@@ -4,9 +4,6 @@ seo-description: For video-on-demand (VOD) content, TVSDK inserts ad breaks by s
 seo-title: Resolve and insert VOD ad
 title: Resolve and insert VOD ad
 uuid: 69853c16-e252-472e-b33a-7a0e0c4b95dd
-index: y
-internal: n
-snippet: y
 ---
 
 # Resolve and insert VOD ad{#resolve-and-insert-vod-ad}

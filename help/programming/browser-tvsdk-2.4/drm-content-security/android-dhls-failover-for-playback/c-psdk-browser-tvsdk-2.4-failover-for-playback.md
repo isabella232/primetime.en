@@ -4,9 +4,6 @@ seo-description: Streaming over the Internet requires a constant and stable conn
 seo-title: Playback and failover
 title: Playback and failover
 uuid: 5d75e55d-9c01-4a36-9bdf-891289821c6b
-index: y
-internal: n
-snippet: y
 ---
 
 # Playback and failover{#playback-and-failover}

@@ -4,9 +4,6 @@ seo-description: There are some security considerations to be aware for Browser 
 seo-title: Security considerations
 title: Security considerations
 uuid: 78edf2b0-363c-4ab6-b588-ab4748ee6096
-index: y
-internal: n
-snippet: y
 ---
 
 # Security considerations{#security-considerations}

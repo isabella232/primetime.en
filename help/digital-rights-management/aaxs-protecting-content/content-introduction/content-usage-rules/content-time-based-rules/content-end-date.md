@@ -2,9 +2,6 @@
 seo-title: End date
 title: End date
 uuid: f95ddeff-3c9d-476a-ae23-044ae9af039f
-index: y
-internal: n
-snippet: y
 ---
 
 # End date{#end-date}

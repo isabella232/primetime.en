@@ -2,9 +2,6 @@
 seo-title: Implement a License Server
 title: Implement a License Server
 uuid: 96efab3e-146e-4f47-808b-b53e7ad94cd1
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement a License Server {#implement-a-license-server}

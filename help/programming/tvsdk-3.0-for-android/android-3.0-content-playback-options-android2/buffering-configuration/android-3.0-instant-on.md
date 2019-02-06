@@ -4,9 +4,6 @@ seo-description: Enabling instant on means that one or more channels are preload
 seo-title: Instant On
 title: Instant On
 uuid: 5b1ceace-cae7-44c7-b4b9-d45078d58cc3
-index: y
-internal: n
-snippet: y
 ---
 
 # Instant On {#instant-on}

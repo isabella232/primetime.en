@@ -4,9 +4,6 @@ seo-description: To make closed captions available to your client player, you mu
 seo-title: Expose closed captions
 title: Expose closed captions
 uuid: 7057014a-b14a-4790-8f7f-37d7a1fb8194
-index: y
-internal: n
-snippet: y
 ---
 
 # Expose closed captions {#expose-closed-captions}
@@ -25,5 +22,5 @@ To expose closed captions:
 
    >[!NOTE]
    >
-   >`closedCaptionDisplayEnabled` property is deprecated. Use `subtitlesOptions` property of `PTMediaPlayerItem`. See [Expose subtitles](../../../tvsdk-3.0-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-ios-subtitles-exposing-ios.md) to use closed captions.
+   >`closedCaptionDisplayEnabled` property is deprecated. Use `subtitlesOptions` property of `PTMediaPlayerItem`. See [Expose subtitles](../../../tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-ios-subtitles-exposing-ios.md) to use closed captions.
 

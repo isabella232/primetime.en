@@ -4,9 +4,6 @@ seo-description: To upgrade a server running Adobe Access Server for Protected S
 seo-title: Running the Adobe Access Server for Protected Streaming
 title: Running the Adobe Access Server for Protected Streaming
 uuid: 3819500d-ad2f-49eb-8aa4-e50a55461608
-index: y
-internal: n
-snippet: y
 ---
 
 # Running the Adobe Access Server for Protected Streaming{#running-the-adobe-access-server-for-protected-streaming}

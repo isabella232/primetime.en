@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Command-line tools requirements
 title: Command-line tools requirements
 uuid: 62f6e7ef-f593-4184-b217-2d086fead733
-index: y
-internal: n
-snippet: y
 ---
 
 # Command-line tools requirements{#command-line-tools-requirements}

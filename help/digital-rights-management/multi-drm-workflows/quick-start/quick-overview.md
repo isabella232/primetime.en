@@ -4,9 +4,6 @@ seo-description: Work with your Adobe representative to obtain certificates, and
 seo-title: Primetime DRM Cloud Quick-start overview
 title: Primetime DRM Cloud Quick-start overview
 uuid: 57397454-042b-4f11-a1b2-8e7f6ab041d4
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime DRM Cloud Quick-start overview {#primetime-drm-cloud-quick-start-overview}

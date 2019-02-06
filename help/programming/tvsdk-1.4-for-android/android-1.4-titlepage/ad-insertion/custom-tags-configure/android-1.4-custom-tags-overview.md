@@ -2,9 +2,6 @@
 seo-title: Example of a customized VOD asset
 title: Example of a customized VOD asset
 uuid: 1db76b3f-b57a-428a-b79f-d4657ded8391
-index: y
-internal: n
-snippet: y
 ---
 
 # Example of a customized VOD asset{#example-of-a-customized-vod-asset}

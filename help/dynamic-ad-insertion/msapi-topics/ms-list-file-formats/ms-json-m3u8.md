@@ -4,9 +4,6 @@ seo-description: If pttrackingmode=simple or ptplayer=ios-mobileweb, the manifes
 seo-title: JSON format for URL for requesting variant manifest playlist
 title: JSON format for URL for requesting variant manifest playlist
 uuid: 9f9693d0-3c93-4555-b20c-7f4576742f41
-index: y
-internal: n
-snippet: y
 ---
 
 # JSON format for URL for requesting variant manifest playlist {#json-format-for-url-for-requesting-variant-manifest-playlist}

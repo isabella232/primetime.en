@@ -2,9 +2,6 @@
 seo-title: Request certificates overview
 title: Request certificates overview
 uuid: 3a4e79d7-1832-49d8-bcf2-a029b3729e6d
-index: y
-internal: n
-snippet: y
 ---
 
 # Request certificates overview{#request-certificates-overview}

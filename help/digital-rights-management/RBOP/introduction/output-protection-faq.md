@@ -4,9 +4,6 @@ seo-description: Frequently asked questions about using resolution-based output 
 seo-title: RBOP FAQ
 title: RBOP FAQ
 uuid: 7dcd337c-369a-474c-8768-409c48b5cee5
-index: y
-internal: n
-snippet: y
 ---
 
 # RBOP FAQ{#rbop-faq}

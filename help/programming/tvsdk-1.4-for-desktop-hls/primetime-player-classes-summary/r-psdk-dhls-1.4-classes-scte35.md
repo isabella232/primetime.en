@@ -4,9 +4,6 @@ seo-description: These classes enable the TVSDK to include SCTE 35 splices.
 seo-title: SCTE 35 classes
 title: SCTE 35 classes
 uuid: 7f3754fd-90f1-4457-9e31-d40740435489
-index: y
-internal: n
-snippet: y
 ---
 
 # SCTE 35 classes{#scte-classes}

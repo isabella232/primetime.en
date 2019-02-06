@@ -15,12 +15,12 @@ The Reference Implementation integration of the Primetime authentication service
 1. Enable or disable entitlement flows.
 
    The `EntitlementManager` must first initialize and obtain an instance of the Primetime authentication SDK to be enabled. If the `EntitlementManager` does not initialize this library, the manager will be disabled.
-   1. Enable the `EntitlementManger`, from your main application class:
+1. Enable the `EntitlementManger`, from your main application class:
 
-      ```java   
-      // initialize the AccessEnabler library, required for Primetime PayTV Pass entitlement workflows 
-      EntitlementManager.initializeAccessEnabler(this); // comment out this line to disable entitlement workflows
-      ```
+   ```java   
+   // initialize the AccessEnabler library, required for Primetime PayTV Pass entitlement workflows 
+   EntitlementManager.initializeAccessEnabler(this); // comment out this line to disable entitlement workflows
+   ```
 
 1. Use the `ManagerFactory` class to obtain an instance of the `EntitlementManager`.
 
@@ -62,33 +62,33 @@ The Reference Implementation integration of the Primetime authentication service
    * Staging - The staging environment is used for testing your application. 
    * Production - The production environment is used for live deployments of your application.
 
-     You set the URIs for both the staging and production environments using the application, however you must set which of these is used by the application within the code. In the `com.adobe.primetime.reference.manager.EntitlementManger` class, set the `environmentUri` variable to either `STAGING_URI` or `PRODUCTION_URI` depending on which Primetime authentication service environment you are using.     
-    
-     >[!NOTE]
-     >
-     >The provided Requestor ID ("REF") should only be used with the staging environment.
+   You set the URIs for both the staging and production environments using the application, however you must set which of these is used by the application within the code. In the `com.adobe.primetime.reference.manager.EntitlementManger` class, set the `environmentUri` variable to either `STAGING_URI` or `PRODUCTION_URI` depending on which Primetime authentication service environment you are using.     
+  
+   >[!NOTE]
+   >
+   >The provided Requestor ID ("REF") should only be used with the staging environment.
 
-     `com.adobe.primetime.reference.manager.EntitlementManager`:
+   `com.adobe.primetime.reference.manager.EntitlementManager`:
 
-     ```java    
-       // Adobe Primetime authentication service provider endpoint for production environment 
-       PRODUCTION_URI = 
+   ```java    
+     // Adobe Primetime authentication service provider endpoint for production environment 
+     PRODUCTION_URI = 
          application.getResources().getString(R.string.adobepass_sp_url_production); 
         
-       // Adobe Primetime authentication service provider endpoint for staging environment 
-       STAGING_URI = 
-         application.getResources().getString(R.string.adobepass_sp_url_staging); 
+     // Adobe Primetime authentication service provider endpoint for staging environment 
+     STAGING_URI = 
+       application.getResources().getString(R.string.adobepass_sp_url_staging); 
         
-       // Set to STAGING_URI when testing against the staging/test environment 
-       // Set to PRODUCTION_URI when deploying the application for production use 
-       String environmentUri = STAGING_URI; 
+     // Set to STAGING_URI when testing against the staging/test environment 
+     // Set to PRODUCTION_URI when deploying the application for production use 
+     String environmentUri = STAGING_URI; 
         
-       // Adobe Primetime authentication service URI used by this application 
-       PAYTV_PASS_URI = environmentUri + "/adobe-services"; 
+     // Adobe Primetime authentication service URI used by this application 
+     PAYTV_PASS_URI = environmentUri + "/adobe-services"; 
         
-       // Token Verification Service URL 
-       TVS_URL = "https://" + environmentUri + "/tvs/v1/validate";
-     ```
+     // Token Verification Service URL 
+     TVS_URL = "https://" + environmentUri + "/tvs/v1/validate";
+   ```
 
 1. Customize the MVPD Selection Grid.
 
@@ -133,4 +133,4 @@ The Reference Implementation integration of the Primetime authentication service
 
 |Available MVPDs|Primary MVPDs|Displayed 6 MVPDs|
 |--- |--- |--- |
-|<ol><li>Comcast XFINITY</li><li>TWC</li><li>Mediacom</li><li>RCN</li><li>Dish</li><li>AT&T U-verse</li><li>CableOne</li><li>Brighthouse</li><li>Atlantic Broadband</li><li>WOW!</li><li>MetroCast</li><li>DirectTV </li><li>Cox</li><li>Cablevision Optimum</li></ol>|Comcast XFINITY</li><li>DirectTV</li><li>Dish</li><li> TWC</li><li>Cox</li><li>Charter</li><li>Verizon FiOS</li><li>Cablevision Optimum</li><li>AT&T U-verse</li></ol>|<ol><li>Comcast XFINITY</li><li>DirectTV</li><li>Dish</li><li>TWC</li><li>Cox</li><li>Cablevision Optimum</li></ol>|
+|<ol><li>Comcast XFINITY</li><li>TWC</li><li>Mediacom</li><li>RCN</li><li>Dish</li><li>AT&T U-verse</li><li>CableOne</li><li>Brighthouse</li><li>Atlantic Broadband</li><li>WOW!</li><li>MetroCast</li><li>DirectTV </li><li>Cox</li><li>Cablevision Optimum</li></ol>|<ol><li>Comcast XFINITY</li><li>DirectTV</li><li>Dish</li><li> TWC</li><li>Cox</li><li>Charter</li><li>Verizon FiOS</li><li>Cablevision Optimum</li><li>AT&T U-verse</li></ol>|<ol><li>Comcast XFINITY</li><li>DirectTV</li><li>Dish</li><li>TWC</li><li>Cox</li><li>Cablevision Optimum</li></ol>|

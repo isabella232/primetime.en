@@ -4,9 +4,6 @@ seo-description: When a user clicks an ad, your application should pause playbac
 seo-title: Pause and resume playback
 title: Pause and resume playback
 uuid: 87ba9f05-912d-4b85-8add-feb26a796a3a
-index: y
-internal: n
-snippet: y
 ---
 
 # Pause and resume playback{#pause-and-resume-playback}

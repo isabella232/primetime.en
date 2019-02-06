@@ -4,9 +4,6 @@ seo-description: TVSDK supports displaying linear Video Player-Ad Interface Defi
 seo-title: Display linear VPAID ads in an ad break
 title: Display linear VPAID ads in an ad break
 uuid: 1f3a5426-79f5-49a1-a913-923708c09ade
-index: y
-internal: n
-snippet: y
 ---
 
 # Display linear VPAID ads in an ad break{#display-linear-vpaid-ads-in-an-ad-break}

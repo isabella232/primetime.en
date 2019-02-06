@@ -2,9 +2,6 @@
 seo-title: Adobe Access Server for Protected Streaming
 title: Adobe Access Server for Protected Streaming
 uuid: 5fb780cd-ff13-4962-8913-e4af816e3290
-index: y
-internal: n
-snippet: y
 ---
 
 # Adobe Access Server for Protected Streaming {#adobe-access-server-for-protected-streaming}

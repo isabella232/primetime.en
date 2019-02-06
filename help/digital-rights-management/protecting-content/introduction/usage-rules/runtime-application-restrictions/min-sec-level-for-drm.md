@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Minimum security level for DRM and runtimes
 title: Minimum security level for DRM and runtimes
 uuid: 0df2a285-309d-4f49-912c-7a0562637424
-index: y
-internal: n
-snippet: y
 ---
 
 # Minimum security level for DRM and runtimes{#minimum-security-level-for-drm-and-runtimes}

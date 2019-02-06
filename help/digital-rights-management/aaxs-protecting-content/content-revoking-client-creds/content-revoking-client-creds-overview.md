@@ -2,9 +2,6 @@
 seo-title: Revoking client credentials
 title: Revoking client credentials
 uuid: 47f1ec1a-bd8f-4f8c-bee3-bfbf6d9902e7
-index: y
-internal: n
-snippet: y
 ---
 
 # Revoking client credentials{#revoking-client-credentials}

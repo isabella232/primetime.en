@@ -8,9 +8,6 @@ contentOwner: dekalra
 topic-tags: release-notes
 products: SG_PRIMETIME
 discoiquuid: d71886cb-f34b-47b2-9df7-168686478106
-index: y
-internal: n
-snippet: y
 ---
 
 # Browser TVSDK 2.4 Release Notes {#browser-tvsdk-release-notes}
@@ -869,7 +866,7 @@ The following features are supported:
   <tr> 
    <td valign="top" width="112"><p>Ad Insertion</p> </td> 
    <td valign="top" width="96"><p>VOD + Live</p> </td> 
-   <td valign="top" width="125"><p>Creative Repackaging (MP4<a id="_bookmark12" name="_bookmark12"></a> to HLS)</p> </td> 
+   <td valign="top" width="125"><p>Creative Repackaging (MP4<!--<a id="_bookmark12" name="_bookmark12"></a>--> to HLS)</p> </td> 
    <td valign="top" width="113"><p><strong> </strong></p> <p>Y</p> </td> 
    <td valign="top" width="113"><p><strong> </strong></p> <p>Y</p> </td> 
    <td valign="top" width="113"><p><strong> </strong></p> <p>Y</p> </td> 

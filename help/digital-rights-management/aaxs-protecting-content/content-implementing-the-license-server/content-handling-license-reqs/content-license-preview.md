@@ -2,9 +2,6 @@
 seo-title: License preview
 title: License preview
 uuid: 3171647d-1437-48ab-9659-3eb363993618
-index: y
-internal: n
-snippet: y
 ---
 
 # License preview{#license-preview}

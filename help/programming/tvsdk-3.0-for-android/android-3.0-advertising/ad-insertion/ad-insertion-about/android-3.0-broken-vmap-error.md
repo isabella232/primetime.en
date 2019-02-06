@@ -5,9 +5,6 @@ seo-description: When TVSDK encounters a broken VMAP in an ad server response, i
 seo-title: Client error handling for broken VMAP
 title: Client error handling for broken VMAP
 uuid: ab2c567d-d945-4ebe-b65a-c1f13518a576
-index: y
-internal: n
-snippet: y
 ---
 
 # Client error handling for broken VMAP {#client-error-handling-for-broken-vmap}

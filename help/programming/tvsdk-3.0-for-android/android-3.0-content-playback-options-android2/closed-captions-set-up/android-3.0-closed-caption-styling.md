@@ -4,9 +4,6 @@ seo-description: You can provide styling information for closed caption tracks u
 seo-title: Control closed-caption styling
 title: Control closed-caption styling
 uuid: b5d9c783-755f-47a2-acb1-966df9d6116e
-index: y
-internal: n
-snippet: y
 ---
 
 # Control closed-caption styling{#control-closed-caption-styling}

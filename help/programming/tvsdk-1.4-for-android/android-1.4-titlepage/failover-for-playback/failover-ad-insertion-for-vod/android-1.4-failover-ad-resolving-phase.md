@@ -4,9 +4,6 @@ seo-description: TVSDK contacts an ad delivery service, such as Adobe Primetime 
 seo-title: Ad-resolving phase
 title: Ad-resolving phase
 uuid: b3e62a57-7e62-4e4e-8fa6-0d416785db67
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad-resolving phase{#ad-resolving-phase}

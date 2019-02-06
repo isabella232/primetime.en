@@ -4,9 +4,6 @@ seo-description: PTNotification provides information that is related to the play
 seo-title: Notification content
 title: Notification content
 uuid: 15f08b33-ccb0-48a6-913e-dbc59a9ec6c4
-index: y
-internal: n
-snippet: y
 ---
 
 # Notification content{#notification-content}

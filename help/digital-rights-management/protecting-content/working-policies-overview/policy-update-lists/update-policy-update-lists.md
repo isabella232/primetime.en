@@ -2,9 +2,6 @@
 seo-title: Update Policy Update Lists
 title: Update Policy Update Lists
 uuid: 3f583bb2-a498-4e82-8111-5cb0c91919a6
-index: y
-internal: n
-snippet: y
 ---
 
 # Update Policy Update Lists{#update-policy-update-lists}

@@ -4,9 +4,6 @@ seo-description: From the moment that you create the MediaPlayer instance to the
 seo-title: MediaPlayer object lifecycle
 title: MediaPlayer object lifecycle
 uuid: 1452ae3a-7ce9-439e-951c-9d3db63b1d20
-index: y
-internal: n
-snippet: y
 ---
 
 # MediaPlayer object lifecycle{#mediaplayer-object-lifecycle}
@@ -26,7 +23,7 @@ To work with statuses:
 * The list of statuses is defined in `MediaPlayer.PlayerStatus`.
 
 State-transition diagram for the lifecycle of a `MediaPlayer` instance: 
-<a id="fig_1C55DE3F186F4B36AFFDCDE90379534C"></a>
+<!--<a id="fig_1C55DE3F186F4B36AFFDCDE90379534C"></a>-->
 
 ![](assets/player-state-transitions-diagram-flash-1_2_web.png)
 

@@ -4,9 +4,6 @@ seo-description: TVSDK dispatches quality of service (QoS) events to notify your
 seo-title: QoS events
 title: QoS events
 uuid: e6ba1e9b-435b-480d-bea9-bff41b4e0b21
-index: y
-internal: n
-snippet: y
 ---
 
 # QoS events{#qos-events}

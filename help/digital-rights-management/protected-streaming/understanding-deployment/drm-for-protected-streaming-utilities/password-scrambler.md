@@ -4,9 +4,6 @@ seo-description: The Password Scrambler utility encrypts a password for the Adob
 seo-title: Password scrambler
 title: Password scrambler
 uuid: 56df0f49-f3fd-464d-b4ba-25e1b497158a
-index: y
-internal: n
-snippet: y
 ---
 
 # Password scrambler{#password-scrambler}

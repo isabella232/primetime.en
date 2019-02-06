@@ -4,9 +4,6 @@ seo-description: Adobe provides a Cloud DRM service to Adobe Primetime DRM custo
 seo-title: Background
 title: Background
 uuid: 11a5b9ea-ebd2-47e0-b078-af2a3e1f7bf6
-index: y
-internal: n
-snippet: y
 ---
 
 # Background{#background}

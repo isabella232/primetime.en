@@ -4,9 +4,6 @@ seo-description: You should separate your player’s UI logic from the process t
 seo-title: Separate the clickable ad process
 title: Separate the clickable ad process
 uuid: 00537191-8997-418d-add2-8e86d818c76e
-index: y
-internal: n
-snippet: y
 ---
 
 # Separate the clickable ad process{#separate-the-clickable-ad-process}

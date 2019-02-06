@@ -4,9 +4,6 @@ seo-description: You can implement your own opportunity generators by implementi
 seo-title: Implement a custom opportunity generator
 title: Implement a custom opportunity generator
 uuid: 93d8253f-10f9-4950-a273-28975cb69caa
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement a custom opportunity generator{#implement-a-custom-opportunity-generator}
@@ -89,7 +86,7 @@ You can implement your own opportunity generators by implementing the Opportunit
 
    1. For each opportunity created, call `resolve` on the `OpportunityGeneratorClient:getClient().resolve(opportunity);`.
 
-<a id="example_7A46377EBE79458E87423EB95D0568D4"></a>
+<!--<a id="example_7A46377EBE79458E87423EB95D0568D4"></a>-->
 
 This is a sample custom placement opportunity detector:
 

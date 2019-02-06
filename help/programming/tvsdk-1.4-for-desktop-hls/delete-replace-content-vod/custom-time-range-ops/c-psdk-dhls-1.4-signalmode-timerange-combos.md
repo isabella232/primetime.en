@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Signaling mode and time range
 title: Signaling mode and time range
 uuid: a4d2b0f3-49ce-4a07-a460-9e63bb91b5d3
-index: y
-internal: n
-snippet: y
 ---
 
 # Signaling mode and time range{#signaling-mode-and-time-range}

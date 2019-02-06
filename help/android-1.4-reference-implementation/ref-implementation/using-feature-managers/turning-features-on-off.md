@@ -4,9 +4,6 @@ seo-description: You can turn features on or off without going through the code 
 seo-title: Turning features on or off using ManagerFactory
 title: Turning features on or off using ManagerFactory
 uuid: 385c2707-95f7-4628-8d25-67731151cb6a
-index: y
-internal: n
-snippet: y
 ---
 
 # Turning features on or off using ManagerFactory{#turning-features-on-or-off-using-managerfactory}

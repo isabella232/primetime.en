@@ -4,9 +4,6 @@ seo-description: To provide a smoother viewing experience, Browser TVSDK sometim
 seo-title: Buffering
 title: Buffering
 uuid: 9937731d-013e-41e9-a4c9-f7a54a5e654d
-index: y
-internal: n
-snippet: y
 ---
 
 # Buffering{#buffering}

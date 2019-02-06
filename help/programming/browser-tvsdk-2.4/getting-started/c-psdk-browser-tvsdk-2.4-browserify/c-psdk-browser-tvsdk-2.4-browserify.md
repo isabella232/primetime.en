@@ -4,9 +4,6 @@ seo-description: You can create a Browserify-compatible player using JS files pr
 seo-title: Browserify-compatible player
 title: Browserify-compatible player
 uuid: 1832c826-d5d0-41b0-852f-286c8e4fa0f3
-index: y
-internal: n
-snippet: y
 ---
 
 # Browserify-compatible player{#browserify-compatible-player}

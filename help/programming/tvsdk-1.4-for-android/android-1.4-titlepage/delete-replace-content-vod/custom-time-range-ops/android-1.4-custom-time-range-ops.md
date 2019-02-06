@@ -4,16 +4,13 @@ seo-description: TVSDK supports the programmatic deleting and replacing of ad co
 seo-title: Custom time range operations
 title: Custom time range operations
 uuid: e04af786-8dac-41a6-8406-f2ca04f612a4
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom time range operations{#custom-time-range-operations}
 
 TVSDK supports the programmatic deleting and replacing of ad content in VOD streams.
 
-<a id="section_0B9BC9C2123246BAA3B476BF0CE501DB"></a>
+<!--<a id="section_0B9BC9C2123246BAA3B476BF0CE501DB"></a>-->
 
 The delete and replace feature extends the custom ad markers feature. Custom ad markers mark sections of the main content as ad-related content periods. In addition to marking these time ranges, you can also delete and replace time ranges.
 

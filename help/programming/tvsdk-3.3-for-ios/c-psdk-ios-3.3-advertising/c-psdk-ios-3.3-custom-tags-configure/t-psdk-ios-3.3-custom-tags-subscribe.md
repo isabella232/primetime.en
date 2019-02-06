@@ -4,12 +4,9 @@ seo-description: TVSDK prepares PTTimedMetadata objects for subscribed tags each
 seo-title: Subscribe to custom tags
 title: Subscribe to custom tags
 uuid: e47076b2-6184-4c20-bae4-ba7ae62cf198
-index: y
-internal: n
-snippet: y
 ---
 
-# Subscribe to custom tags {#subscribe-to-custom-tags}
+# Subscribe to custom tags{#subscribe-to-custom-tags}
 
 TVSDK prepares PTTimedMetadata objects for subscribed tags each time these objects are encountered in the content manifest.
 

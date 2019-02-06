@@ -4,12 +4,9 @@ seo-description: To accommodate customers who want to pay only for what they use
 seo-title: Billing usage metrics
 title: Billing usage metrics
 uuid: e792cc72-b1ae-42ce-8b71-f9f9f1de0614
-index: y
-internal: n
-snippet: y
 ---
 
-# Billing usage metrics {#billing-usage-metrics}
+# Billing usage metrics{#billing-usage-metrics}
 
 To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers.
 

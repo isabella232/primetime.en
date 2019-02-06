@@ -4,9 +4,6 @@ seo-description: There are two types of requests related to Flash Media Rights M
 seo-title: Upgrading clients
 title: Upgrading clients
 uuid: c32ee087-2edf-4d11-be36-e2b31f3769de
-index: y
-internal: n
-snippet: y
 ---
 
 # Upgrading clients{#upgrading-clients}

@@ -4,9 +4,6 @@ seo-description: You can use the following information to help you skin your pla
 seo-title: Skinning the player
 title: Skinning the player
 uuid: 516ff846-d76d-4062-b64b-3032f7a70470
-index: y
-internal: n
-snippet: y
 ---
 
 # Skinning the player{#skinning-the-player}

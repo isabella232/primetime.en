@@ -2,9 +2,6 @@
 seo-title: Policy workflow details
 title: Policy workflow details
 uuid: b355fcf6-3416-440f-9b30-a155e20f9f74
-index: y
-internal: n
-snippet: y
 ---
 
 # Policy workflow details{#policy-workflow-details}
@@ -16,7 +13,7 @@ When Primetime Cloud DRM processes a license request, it parses the DRM policy i
     * `policy.customProp.1=bees.required=<true | false>` 
     * `policy.customProp.2=bees.url=<url to your BEES endpoint>`
 
-<a id="example_F617FC49A4824C0CB234C92E57D876D3"></a>
+<!--<a id="example_F617FC49A4824C0CB234C92E57D876D3"></a>-->
 
 For example, using the  Primetime DRM Policy Manager ( [!DNL AdobePolicyManager.jar]), you would specify the following two custom properties in the [!DNL flashaccesstools.properties] configuration file:
 

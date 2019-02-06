@@ -4,9 +4,6 @@ seo-description: For those familiar with Adobe's Primetime Access DRM solution, 
 seo-title: Migrating from Access to Multi-DRM
 title: Migrating from Access to Multi-DRM
 uuid: 3e33ca9a-867e-46b8-bf88-8dbfe14ff786
-index: y
-internal: n
-snippet: y
 ---
 
 # Migrating from Access to Multi-DRM{#migrating-from-access-to-multi-drm}

@@ -2,9 +2,6 @@
 seo-title: Using machine identifiers
 title: Using machine identifiers
 uuid: 2832c158-fade-4bbf-ae89-f95ce9dfc369
-index: y
-internal: n
-snippet: y
 ---
 
 # Using machine identifiers{#using-machine-identifiers}

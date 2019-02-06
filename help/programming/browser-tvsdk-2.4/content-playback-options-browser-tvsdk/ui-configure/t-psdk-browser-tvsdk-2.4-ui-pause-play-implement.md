@@ -4,9 +4,6 @@ seo-description: You can add Browser TVSDK behavior to pause and play buttons.
 seo-title: Play and pause a video
 title: Play and pause a video
 uuid: 4053ea9e-6b74-41e9-ad04-087ad13e3698
-index: y
-internal: n
-snippet: y
 ---
 
 # Play and pause a video{#play-and-pause-a-video}

@@ -4,9 +4,6 @@ seo-description: TVSDK dispatches digital rights management (DRM) events in resp
 seo-title: DRM events
 title: DRM events
 uuid: 729fe524-1047-4188-b4e6-96bfc5af4ae0
-index: y
-internal: n
-snippet: y
 ---
 
 # DRM events{#drm-events}

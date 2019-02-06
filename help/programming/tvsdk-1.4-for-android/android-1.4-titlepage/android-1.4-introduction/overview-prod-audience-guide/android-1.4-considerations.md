@@ -4,9 +4,6 @@ seo-description: To use TVSDK most effectively, you should consider certain deta
 seo-title: Considerations and best practices
 title: Considerations and best practices
 uuid: e698ae09-280b-4406-a9b8-4f468b7a6b9c
-index: y
-internal: n
-snippet: y
 ---
 
 # Considerations and best practices{#considerations-and-best-practices}

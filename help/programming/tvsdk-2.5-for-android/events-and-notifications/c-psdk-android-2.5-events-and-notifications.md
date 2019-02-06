@@ -4,9 +4,6 @@ seo-description: Events and notifications help you manage the asynchronous aspec
 seo-title: Events and notifications
 title: Events and notifications
 uuid: bd4cce4d-577f-40b7-88b6-4ede991fcd12
-index: y
-internal: n
-snippet: y
 ---
 
 # Events and notifications{#events-and-notifications}

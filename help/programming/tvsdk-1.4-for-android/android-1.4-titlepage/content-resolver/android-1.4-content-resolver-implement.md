@@ -4,9 +4,6 @@ seo-description: You can implement your own content resolvers based on the defau
 seo-title: Implement a custom content resolver
 title: Implement a custom content resolver
 uuid: 88627fdc-3b68-4a9f-847e-a490ea8e3034
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement a custom content resolver{#implement-a-custom-content-resolver}
@@ -102,7 +99,7 @@ When TVSDK detects a new opportunity, it iterates through the registered content
       error.setMetadata(metadata);
       ```
 
-<a id="example_4F0D7692A92E480A835D6FDBEDBE75E7"></a>
+<!--<a id="example_4F0D7692A92E480A835D6FDBEDBE75E7"></a>-->
 
 This sample custom ad resolver makes an HTTP request to the ad server and receives a JSON response.
 

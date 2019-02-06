@@ -4,9 +4,6 @@ seo-description: You can enable a TV-like experience of being able to join in th
 seo-title: Partial Ad break insertion
 title: Partial Ad break insertion
 uuid: 296a9b6a-9e9f-4ca7-ab8a-c8cbc98fb9af
-index: y
-internal: n
-snippet: y
 ---
 
 # Partial Ad break insertion{#partial-ad-break-insertion}

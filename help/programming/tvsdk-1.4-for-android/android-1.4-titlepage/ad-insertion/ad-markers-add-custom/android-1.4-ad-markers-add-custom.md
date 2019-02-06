@@ -4,9 +4,6 @@ seo-description: By using custom ad markers, you can mark specific sections of t
 seo-title: Add custom ad markers
 title: Add custom ad markers
 uuid: 5d8c8aaa-a4e7-499d-b70e-5c72007ec269
-index: y
-internal: n
-snippet: y
 ---
 
 # Add custom ad markers{#add-custom-ad-markers}

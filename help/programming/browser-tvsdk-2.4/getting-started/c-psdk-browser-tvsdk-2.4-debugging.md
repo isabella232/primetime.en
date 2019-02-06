@@ -4,9 +4,6 @@ seo-description: Browser TVSDK has logging enabled by default. It also provides 
 seo-title: Debugging and logging
 title: Debugging and logging
 uuid: c0970525-975f-4252-8ca2-7c1ebde09983
-index: y
-internal: n
-snippet: y
 ---
 
 # Debugging and logging{#debugging-and-logging}

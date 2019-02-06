@@ -4,9 +4,6 @@ seo-description: null
 seo-title: References
 title: References
 uuid: e01d0600-e899-4efe-b1d6-219a646b6d1b
-index: y
-internal: n
-snippet: y
 ---
 
 # References{#references}

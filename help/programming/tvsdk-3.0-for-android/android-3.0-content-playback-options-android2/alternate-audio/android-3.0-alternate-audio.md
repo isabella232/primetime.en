@@ -4,16 +4,13 @@ seo-description: Alternate audio allows you to switch among available audio trac
 seo-title: Alternate audio
 title: Alternate audio
 uuid: d1af1ea9-2516-4835-baff-3577ad5b705e
-index: y
-internal: n
-snippet: y
 ---
 
 # Alternate audio{#alternate-audio}
 
 Alternate audio allows you to switch among available audio tracks for a video track. Users can select their preferred language track when the video is played.
 
-<a id="section_E4F9DC28A2944BD08B4190A7F98A8365"></a>
+<!--<a id="section_E4F9DC28A2944BD08B4190A7F98A8365"></a>-->
 
 When TVSDK creates the `MediaPlayerItem` instance for the current video, it creates an `AudioTrack` item for each available audio track. The item contains a `name` property, which is a string that typically contains a user-recognizable description of the language of that track. The item also contains information about whether to use that track by default. When it is time to play the video, you can ask for a list of available audio tracks, optionally allow the user select a track, and set the video to play with the selected track.
 

@@ -2,9 +2,6 @@
 seo-title: Create policies dynamically for Custom Auth/Entitlement
 title: Create policies dynamically for Custom Auth/Entitlement
 uuid: e340fe38-543e-43a6-8abd-65fe9248a9f6
-index: y
-internal: n
-snippet: y
 ---
 
 # Create policies dynamically for Custom Auth/Entitlement{#create-policies-dynamically-for-custom-auth-entitlement}

@@ -4,9 +4,6 @@ seo-description: TVSDK sets up the player for basic notifications, although you 
 seo-title: Notification setup
 title: Notification setup
 uuid: 598cbf2c-8f92-45ba-9228-92fc23083f52
-index: y
-internal: n
-snippet: y
 ---
 
 # Notification setup{#notification-setup}

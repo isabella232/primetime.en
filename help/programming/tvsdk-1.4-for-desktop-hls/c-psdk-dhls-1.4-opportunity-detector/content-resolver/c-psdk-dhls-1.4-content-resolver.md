@@ -4,9 +4,6 @@ seo-description: An opportunity detector is a TVADK component that detects custo
 seo-title: Customize opportunity detectors and content resolvers
 title: Customize opportunity detectors and content resolvers
 uuid: 7bd04c8f-6f04-4321-88e8-9bb93251d940
-index: y
-internal: n
-snippet: y
 ---
 
 # Customize opportunity detectors and content resolvers{#customize-opportunity-detectors-and-content-resolvers}

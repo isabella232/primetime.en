@@ -4,9 +4,6 @@ seo-description: Use the helper class AuditudeSettings , which extends the Metad
 seo-title: Set up ad insertion metadata
 title: Set up ad insertion metadata
 uuid: a8b0928d-d8ba-4886-b7ca-d5c604ac0846
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up ad insertion metadata{#set-up-ad-insertion-metadata}

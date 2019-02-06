@@ -4,9 +4,6 @@ seo-description: To package you content, you can use either Adobe Offline Packag
 seo-title: Package your content for FairPlay
 title: Package your content for FairPlay
 uuid: 92850da0-256c-4046-aa04-b4fe3034731a
-index: y
-internal: n
-snippet: y
 ---
 
 # Package your content for FairPlay{#package-your-content-for-fairplay}
@@ -18,7 +15,7 @@ Packagers prepare the video for playback (e.g., fragmenting the original file an
 * [Adobe Offline Packager for FairPlay DRM](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-task-Protecting_content_using_FairPlay_DRM) 
 * [ExpressPlay Packagers - Bento4 for HLS](https://www.bento4.com/developers/hls/)
 
-<a id="fig_jbn_fw5_xw"></a>
+<!--<a id="fig_jbn_fw5_xw"></a>-->
 
 ![](assets/pkg_lic_play_hls_web.png)
 

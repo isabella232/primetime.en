@@ -4,9 +4,6 @@ seo-description: These APIs are used when a client requests a license from the s
 seo-title: Java APIs for issuing licenses
 title: Java APIs for issuing licenses
 uuid: 8148368c-4ec5-440c-bba6-d98ffbb37a0a
-index: y
-internal: n
-snippet: y
 ---
 
 # Java APIs for issuing licenses{#java-apis-for-issuing-licenses}

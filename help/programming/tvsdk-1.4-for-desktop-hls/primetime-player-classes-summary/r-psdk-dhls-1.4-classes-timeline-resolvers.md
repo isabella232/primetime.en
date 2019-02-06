@@ -4,9 +4,6 @@ seo-description: These classes assist in resolving content, such as ads, to plac
 seo-title: Timeline resolvers classes
 title: Timeline resolvers classes
 uuid: a36349b2-23ee-4774-99b2-7e1cd9168686
-index: y
-internal: n
-snippet: y
 ---
 
 # Timeline resolvers classes{#timeline-resolvers-classes}

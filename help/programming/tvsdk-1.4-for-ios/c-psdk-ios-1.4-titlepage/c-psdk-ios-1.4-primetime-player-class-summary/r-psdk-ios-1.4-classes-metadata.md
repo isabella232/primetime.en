@@ -4,9 +4,6 @@ seo-description: These classes provide metadata for advertising, namespaces, and
 seo-title: Metadata classes
 title: Metadata classes
 uuid: 16ad4f00-170b-4bcc-ad22-fe6b9ef9c013
-index: y
-internal: n
-snippet: y
 ---
 
 # Metadata classes{#metadata-classes}

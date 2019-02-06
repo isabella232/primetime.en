@@ -2,9 +2,6 @@
 seo-title: Using Output Protection Policies
 title: Using Output Protection Policies
 uuid: f00d2a97-0036-41a6-ab44-391cc40b146e
-index: y
-internal: n
-snippet: y
 ---
 
 # Using Output Protection Policies{#using-output-protection-policies}

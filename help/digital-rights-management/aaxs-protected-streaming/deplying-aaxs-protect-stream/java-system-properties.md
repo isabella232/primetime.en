@@ -2,9 +2,6 @@
 seo-title: Java system properties
 title: Java system properties
 uuid: ad1f3d9b-7d95-4e19-a0f8-fd7d4dd4dc32
-index: y
-internal: n
-snippet: y
 ---
 
 # Java system properties {#java-system-properties}

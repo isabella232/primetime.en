@@ -2,9 +2,6 @@
 seo-title: Configuration properties
 title: Configuration properties
 uuid: 47429c8e-0897-4956-93bb-73eebb746453
-index: y
-internal: n
-snippet: y
 ---
 
 # Configuration properties{#configuration-properties}

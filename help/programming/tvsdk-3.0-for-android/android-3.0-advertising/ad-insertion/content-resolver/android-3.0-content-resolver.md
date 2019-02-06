@@ -4,9 +4,6 @@ seo-description: An opportunity generator identifies placement opportunities by 
 seo-title: Customize opportunity generators and content resolvers
 title: Customize opportunity generators and content resolvers
 uuid: 0d4fb0b2-98f3-4245-9bf1-4e968c5d0f36
-index: y
-internal: n
-snippet: y
 ---
 
 # Customize opportunity generators and content resolvers{#customize-opportunity-generators-and-content-resolvers}

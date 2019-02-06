@@ -4,9 +4,6 @@ seo-description: When playback reaches an ad break, passes an ad break, or ends 
 seo-title: Customize playback with ads
 title: Customize playback with ads
 uuid: 9cbf0bcf-7932-409e-a690-e79f284eaf74
-index: y
-internal: n
-snippet: y
 ---
 
 # Customize playback with ads{#customize-playback-with-ads}

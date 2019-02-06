@@ -4,9 +4,6 @@ seo-description: Work with the SEES to see how to enable a time-based entitlemen
 seo-title: Reference Service  Time-based Entitlement
 title: Reference Service  Time-based Entitlement
 uuid: dd937299-a271-49a9-9b26-eec16f1484df
-index: y
-internal: n
-snippet: y
 ---
 
 # Reference Service: Time-based Entitlement {#reference-service-time-based-entitlement}

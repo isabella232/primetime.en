@@ -4,9 +4,6 @@ seo-description: The Adobe Primetime DRM Server for Protected Streaming is a lic
 seo-title: About Adobe Primetime DRM Server for Protected Streaming
 title: About Adobe Primetime DRM Server for Protected Streaming
 uuid: 775bef19-6071-428f-80f5-57cae472753c
-index: y
-internal: n
-snippet: y
 ---
 
 # About Adobe Primetime DRM Server for Protected Streaming{#about-adobe-primetime-drm-server-for-protected-streaming}

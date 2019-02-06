@@ -4,9 +4,6 @@ seo-description: Primetime DRM is integrated into TVSDK, which simplifies implem
 seo-title: Implement Primetime DRM in a TSVDK application
 title: Implement Primetime DRM in a TSVDK application
 uuid: a4075228-f45c-4cc5-aac8-d7bbda0e2355
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement Primetime DRM in a TSVDK application{#implement-primetime-drm-in-a-tsvdk-application}

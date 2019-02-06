@@ -4,9 +4,6 @@ seo-description: You can reset, reuse, or release a MediaPlayer instance that yo
 seo-title: Reuse or remove a MediaPlayer instance
 title: Reuse or remove a MediaPlayer instance
 uuid: 0b9a06b0-ece7-4e18-9221-a4528bcbc141
-index: y
-internal: n
-snippet: y
 ---
 
 # Reuse or remove a MediaPlayer instance{#reuse-or-remove-a-mediaplayer-instance}

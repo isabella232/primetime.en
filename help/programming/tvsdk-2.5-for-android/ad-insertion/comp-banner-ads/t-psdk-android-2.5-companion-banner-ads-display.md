@@ -4,9 +4,6 @@ seo-description: To display banner ads, you need to create banner instances and 
 seo-title: Display banner ads
 title: Display banner ads
 uuid: 7246dfab-860f-4b55-9554-49738a483406
-index: y
-internal: n
-snippet: y
 ---
 
 # Display banner ads{#display-banner-ads}

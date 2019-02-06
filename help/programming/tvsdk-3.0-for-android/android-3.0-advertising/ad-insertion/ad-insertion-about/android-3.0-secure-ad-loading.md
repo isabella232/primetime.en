@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Secure Ad loading over HTTPS
 title: Secure Ad loading over HTTPS
 uuid: 18be77cc-c59b-4982-b8c1-e4451495edd2
-index: y
-internal: n
-snippet: y
 ---
 
 # Secure Ad loading over HTTPS{#secure-ad-loading-over-https}

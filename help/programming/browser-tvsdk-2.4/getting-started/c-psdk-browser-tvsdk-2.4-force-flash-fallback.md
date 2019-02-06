@@ -4,9 +4,6 @@ seo-description: The forceflash flag in the source list forces Flash fallback fo
 seo-title: Forcing the Flash fallback using the media source list
 title: Forcing the Flash fallback using the media source list
 uuid: 04b09734-15f7-4e7e-8802-344f550f9b05
-index: y
-internal: n
-snippet: y
 ---
 
 # Forcing the Flash fallback using the media source list{#forcing-the-flash-fallback-using-the-media-source-list}

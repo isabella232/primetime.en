@@ -4,18 +4,21 @@ seo-description: The TVSDK provides APIs and sample code for handling blackout p
 seo-title: Implement blackout handling
 title: Implement blackout handling
 uuid: a447ff24-8386-4cae-878e-0859fb191de2
-index: y
-internal: n
-snippet: y
 ---
 
-# Implement blackout handling {#implement-blackout-handling}
+# Implement blackout handling{#implement-blackout-handling}
 
 The TVSDK provides APIs and sample code for handling blackout periods.
 
 To implement blackout handling and provide alternate content during the blackout: 
 
-1. Set up your app to subscribe to blackout tags in a live stream manifest.
+1. Set up your app to subscribe to blackout tags in a live stream manifest. 
+
+   <!-- 
+
+Q: The "for example" comment in the following doesn't exactly match the code. What's correct?
+
+ -->
 
    ```
    - (void) createMediaPlayer:(PTMediaPlayerItem *)item 
@@ -252,3 +255,4 @@ To implement blackout handling and provide alternate content during the blackout
        [currMetadata setMetadata:blackoutMetadata forKey:PTBlackoutMetadataKey] 
    }
    ```
+

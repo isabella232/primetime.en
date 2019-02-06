@@ -2,9 +2,6 @@
 seo-title: Playback window
 title: Playback window
 uuid: a06a1e28-8f14-4231-bb88-61aa7e33cace
-index: y
-internal: n
-snippet: y
 ---
 
 # Playback window{#playback-window}

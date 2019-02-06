@@ -4,9 +4,6 @@ seo-description: You can configure visuals to notify the user that content is bu
 seo-title: Buffering
 title: Buffering
 uuid: da9498ee-c736-4093-97a2-250d3ad56d49
-index: y
-internal: n
-snippet: y
 ---
 
 # Buffering{#buffering}

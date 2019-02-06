@@ -2,12 +2,9 @@
 seo-title: Listen to logs
 title: Listen to logs
 uuid: a01d89ea-854f-4a06-94a8-de6dd7d7419c
-index: y
-internal: n
-snippet: y
 ---
 
-# Listen to logs {#listen-to-logs}
+# Listen to logs{#listen-to-logs}
 
  To register for listening to logs: 
 1. Implement a custom class that follows the protocol `PTLogger`:
@@ -39,7 +36,7 @@ snippet: y
    
    ```
 
-<a id="example_3738B5A8B4C048D28695E62297CF39E3"></a>
+<!--<a id="example_3738B5A8B4C048D28695E62297CF39E3"></a>-->
 
 Here is an example of filtering logs by using the `PTLogEntry` type: 
 
@@ -71,3 +68,4 @@ Here is an example of filtering logs by using the `PTLogEntry` type:
  
 @end
 ```
+

@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Initialize and configure video analytics
 title: Initialize and configure video analytics
 uuid: c49c77d9-66b9-4586-9d70-b139b4a97a7a
-index: y
-internal: n
-snippet: y
 ---
 
 # Initialize and configure video analytics{#initialize-and-configure-video-analytics}

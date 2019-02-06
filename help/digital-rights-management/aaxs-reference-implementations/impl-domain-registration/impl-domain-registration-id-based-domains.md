@@ -2,9 +2,6 @@
 seo-title: Identity-based domains
 title: Identity-based domains
 uuid: 34cad19b-1adb-4e0c-ac59-50632f6988f7
-index: y
-internal: n
-snippet: y
 ---
 
 # Identity-based domains {#identity-based-domains}

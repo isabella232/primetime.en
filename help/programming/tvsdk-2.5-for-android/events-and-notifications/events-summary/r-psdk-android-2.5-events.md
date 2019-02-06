@@ -4,9 +4,6 @@ seo-description: TVSDK notifies you when events, to which your application must 
 seo-title: Events
 title: Events
 uuid: 50c4f381-e0fa-4846-baf3-8b6198b922d2
-index: y
-internal: n
-snippet: y
 ---
 
 # Events{#events}

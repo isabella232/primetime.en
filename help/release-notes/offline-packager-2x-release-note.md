@@ -8,9 +8,6 @@ contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 933a0711-846a-4bb7-bf51-b300822a93d4
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime Offline Packager 2.x releases {#primetime-offline-packager-x-releases}

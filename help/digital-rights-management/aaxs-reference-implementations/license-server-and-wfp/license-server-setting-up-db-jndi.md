@@ -2,9 +2,6 @@
 seo-title: Setting up the database and configuring the JNDI datasource
 title: Setting up the database and configuring the JNDI datasource
 uuid: 1326523f-c053-4169-a934-1b2d3907b1f4
-index: y
-internal: n
-snippet: y
 ---
 
 # Setting up the database and configuring the JNDI datasource {#setting-up-the-database-and-configuring-the-jndi-datasource}

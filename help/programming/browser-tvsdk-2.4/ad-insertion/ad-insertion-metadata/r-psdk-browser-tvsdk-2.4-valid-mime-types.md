@@ -4,9 +4,6 @@ seo-description: An ad might have multiple creative, out of which one is selecte
 seo-title: Valid mime types
 title: Valid mime types
 uuid: ab2baac9-a9ef-44f1-83a1-2e6e471e3231
-index: y
-internal: n
-snippet: y
 ---
 
 # Valid mime types{#valid-mime-types}

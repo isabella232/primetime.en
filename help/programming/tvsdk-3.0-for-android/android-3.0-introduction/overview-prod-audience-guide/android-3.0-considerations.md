@@ -4,9 +4,6 @@ seo-description: To use TVSDK most effectively, you should consider certain deta
 seo-title: Considerations and best practices
 title: Considerations and best practices
 uuid: a65c9739-ed83-4519-8ae5-7ba4c8f1ca49
-index: y
-internal: n
-snippet: y
 ---
 
 # Considerations and best practices{#considerations-and-best-practices}
@@ -36,9 +33,7 @@ Remember the following information when using TVSDK:
     
       ```    
       "Adobe Primetime/" + 
-<varname>
-  originalUserAgent
-</varname> 
+      originalUserAgent
       ```    
     
       All ad-related calls use the Android default user agent or the custom user agent if you set it while setting up ad-insertion metadata.
@@ -52,4 +47,3 @@ Here are recommended practices for TVSDK:
 * For TVSDK 3.0 for Android, lazy ad resolving is on by default.
 
   For content with no pre-roll or mid-roll, you can use `AdvertisingMetadata.setPreroll(false)` to accelerate content loading.
-

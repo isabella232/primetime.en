@@ -2,9 +2,6 @@
 seo-title: Configuration file properties
 title: Configuration file properties
 uuid: 4e31f72e-a151-4a4b-91f8-a85476b26036
-index: y
-internal: n
-snippet: y
 ---
 
 # Configuration file properties{#configuration-file-properties}

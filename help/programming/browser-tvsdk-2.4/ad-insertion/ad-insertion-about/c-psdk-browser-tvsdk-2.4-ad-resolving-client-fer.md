@@ -4,9 +4,6 @@ seo-description: Full Event Replay (FER) content is a live stream converted to V
 seo-title: FER ad resolving and insertion
 title: FER ad resolving and insertion
 uuid: 85da0e92-17fe-4001-a53c-085dadd09756
-index: y
-internal: n
-snippet: y
 ---
 
 # FER ad resolving and insertion{#fer-ad-resolving-and-insertion}

@@ -4,9 +4,6 @@ seo-description: The term instant on refers to preloading one or more channels s
 seo-title: Instant on
 title: Instant on
 uuid: 4cb4d221-170f-46e8-af26-32f259377617
-index: y
-internal: n
-snippet: y
 ---
 
 # Instant on{#instant-on}

@@ -2,9 +2,6 @@
 seo-title: UltraViolet media and Adobe Primetime DRM
 title: UltraViolet media and Adobe Primetime DRM
 uuid: 7076c0f9-e092-48e4-9118-8a414bd03c7a
-index: y
-internal: n
-snippet: y
 ---
 
 # UltraViolet media and Adobe Primetime DRM{#ultraviolet-media-and-adobe-primetime-drm}
@@ -15,7 +12,7 @@ UltraViolet ( [https://www.myuv.com/](https://www.uvvu.com/)) is a digital right
 
 It is easy to set up an UltraViolet system along with Adobe Primetime DRM. The following use case depicts the content flow behavior: 
 
-<a id="fig_cxy_dc2_44"></a>
+<!--<a id="fig_cxy_dc2_44"></a>-->
 
 ![](assets/AdobeUV_web.png)
 

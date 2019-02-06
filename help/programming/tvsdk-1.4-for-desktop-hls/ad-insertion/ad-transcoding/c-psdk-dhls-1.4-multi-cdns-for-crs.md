@@ -4,9 +4,6 @@ seo-description: While the default Creative Repackaging Service (CRS) scenario i
 seo-title: Multiple CDN support for CRS ad delivery
 title: Multiple CDN support for CRS ad delivery
 uuid: 73859e27-a64c-44e0-b67b-cf98fd5ccaec
-index: y
-internal: n
-snippet: y
 ---
 
 # Multiple CDN support for CRS ad delivery{#multiple-cdn-support-for-crs-ad-delivery}

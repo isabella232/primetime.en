@@ -2,9 +2,6 @@
 seo-title: Updating DRM policies
 title: Updating DRM policies
 uuid: 6f7a1432-88e4-499b-a008-6c8cf0e9c09b
-index: y
-internal: n
-snippet: y
 ---
 
 # Updating DRM policies {#updating-drm-policies}

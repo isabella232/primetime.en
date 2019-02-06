@@ -4,9 +4,6 @@ seo-description: null
 seo-title: License server requirements
 title: License server requirements
 uuid: bdcc8637-aa70-49ef-9264-ed3359eec93b
-index: y
-internal: n
-snippet: y
 ---
 
 # License server requirements{#license-server-requirements}

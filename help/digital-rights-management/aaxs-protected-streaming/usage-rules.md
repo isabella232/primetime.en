@@ -2,9 +2,6 @@
 seo-title: Usage rules
 title: Usage rules
 uuid: 361d07b9-e4c8-47ab-8c45-a1de98c9fed7
-index: y
-internal: n
-snippet: y
 ---
 
 # Usage rules{#usage-rules}

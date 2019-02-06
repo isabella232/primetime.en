@@ -4,9 +4,6 @@ seo-description: The MediaPlayer provides methods to set and get the initial buf
 seo-title: Set buffering times
 title: Set buffering times
 uuid: 25142b01-5381-49c9-b89a-24c858faaf13
-index: y
-internal: n
-snippet: y
 ---
 
 # Set buffering times{#set-buffering-times}
@@ -51,7 +48,7 @@ The MediaPlayer provides methods to set and get the initial buffering time and p
    public function get bufferControlParameters():BufferControlParameters
    ```
 
-<a id="example_B5C5004188574D8D8AB8525742767280"></a>
+<!--<a id="example_B5C5004188574D8D8AB8525742767280"></a>-->
 
 For example, to set the initial buffer to 2 seconds and the playback buffer time to 30 seconds:
 

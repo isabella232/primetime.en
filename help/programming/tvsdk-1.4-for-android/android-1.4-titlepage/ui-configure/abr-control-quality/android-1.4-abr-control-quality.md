@@ -4,9 +4,6 @@ seo-description: HLS and DASH streams provide different bit rate encodings (prof
 seo-title: Adaptive bit rates (ABR) for video quality
 title: Adaptive bit rates (ABR) for video quality
 uuid: 1de26f34-4eac-4c9c-8f59-8c34d69a2d01
-index: y
-internal: n
-snippet: y
 ---
 
 # Adaptive bit rates (ABR) for video quality{#adaptive-bit-rates-abr-for-video-quality}

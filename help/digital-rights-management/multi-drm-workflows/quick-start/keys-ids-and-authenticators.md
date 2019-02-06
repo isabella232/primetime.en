@@ -4,9 +4,6 @@ seo-description: To implement DRM you need particular certs and keys, including 
 seo-title: Keys, IDs, and Authenticators
 title: Keys, IDs, and Authenticators
 uuid: 9e5b1a64-b4e9-442f-ac15-26831aaf585d
-index: y
-internal: n
-snippet: y
 ---
 
 # Keys, IDs, and Authenticators{#keys-ids-and-authenticators}
@@ -75,7 +72,7 @@ The Content Encryption Key Storage ID (CEKSID) uniquely identifies the stored ke
 The customer authenticator is a key you obtain from ExpressPlay when you set up an admin account there. The authenticator is used in communications with ExpressPlay servers.
 
 **What are the customer authenticators?** - The two customer authenticators make up the pair of IDs — one for testing, one for production — that ExpressPlay registers for you hen you sign up with their service. They are always available to you on your ExpressPlay admin page: 
-<a id="fig_c5h_xdl_wv"></a>
+<!--<a id="fig_c5h_xdl_wv"></a>-->
 
 ![](assets/expressplay_admin_dashboard-web.png)
 

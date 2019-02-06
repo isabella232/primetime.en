@@ -2,9 +2,6 @@
 seo-title: Updating a policy using the Java API
 title: Updating a policy using the Java API
 uuid: 23c50f05-799e-4f5a-869b-4b5e29a36ce1
-index: y
-internal: n
-snippet: y
 ---
 
 # Updating a policy using the Java API {#updating-a-policy-using-the-java-api}

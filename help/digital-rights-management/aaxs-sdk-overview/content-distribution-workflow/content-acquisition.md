@@ -2,9 +2,6 @@
 seo-title: Content acquisition
 title: Content acquisition
 uuid: f3d8b4ef-bc45-4c2d-962b-638512ca0ef3
-index: y
-internal: n
-snippet: y
 ---
 
 # Content acquisition {#content-acquisition}
@@ -34,7 +31,7 @@ When a consumer acquires a protected content file from a website or CDN, the con
 
 1. Once the Flash Player or Adobe AIR runtime client has a license, the client extracts the CEK from the license, and the consumer can view the content they are authorized to access.
 
-   <a id="fig_s43_gc2_44"></a>
+   <!--<a id="fig_s43_gc2_44"></a>-->
 
    ![](assets/FMRMS_fig01_web.png)
 
