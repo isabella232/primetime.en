@@ -19,21 +19,24 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Ad tags</b> </td> 
+   <td colname="2"> <b>Ad tags</b> </td> 
+   <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> List&lt;String&gt; getAdTags() </span> </td> 
    <td colname="3"> Provides the list of ad tags that are used for the ad placement process. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Live stream</b> </td> 
+   <td colname="2"> <b>Live stream</b> </td> 
+   <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean isLive(); </span> </td> 
    <td colname="3"> True if the stream is live; false if it is VOD. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>DRM protected</b> </td> 
+   <td colname="2"> <b>DRM protected</b> </td> 
+   <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean isProtected(); </span> </td> 
@@ -44,7 +47,8 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> Lists all the DRM metadata objects discovered in the manifest. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Closed captions</b> </td> 
+   <td colname="2"> <b>Closed captions</b> </td> 
+   <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean hasClosedCaptions(); </span> </td> 
@@ -63,7 +67,8 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> Sets a closed-caption track to be the current closed-caption track. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Alternate audio tracks</b> </td> 
+   <td colname="2"> <b>Alternate audio tracks</b> </td> 
+   <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean hasAlternateAudio(); </span> </td> 
@@ -82,7 +87,8 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> Selects an audio track to be the current audio track. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Timed metadata</b> </td> 
+   <td colname="2"> <b>Timed metadata</b> </td> 
+   <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean hasTimedMetadata(); </span> </td> 
@@ -93,7 +99,8 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> Provides a list of the timed metadata objects associated with the stream. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Multiple profiles (bit rates)</b> </td> 
+   <td colname="2"> <b>Multiple profiles (bit rates)</b> </td> 
+   <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean isDynamic(); </span> </td> 
@@ -108,7 +115,8 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> Retrieves the currently selected profile. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Trick play</b> </td> 
+   <td colname="2"> <b>Trick play</b> </td> 
+   <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean isTrickPlaySupported(); </span> </td> 
@@ -127,7 +135,8 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> Returns the <span class="codeph"> MediaPlayerItemConfig </span> instance associated with this item. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Media resource</b> </td> 
+   <td colname="2"> <b>Media resource</b> </td> 
+   <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> MediaResource getResource(); </span> </td> 
@@ -139,4 +148,3 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
   </tr> 
  </tbody> 
 </table>
-

@@ -14,10 +14,9 @@ You can mark, delete, and replace time ranges in VOD streams by using different 
 >
 >When there is a conflict between time ranges and ad signaling modes, TVSDK gives the time ranges priority.
 
+The following table provides the details about the signaling mode and metadata combination behaviors: 
+
 <table id="table_6044AA1ACFA244FA814EA2D0766C6D12"> 
- <desc>
-   The following table provides the details about the signaling mode and metadata combination behaviors: 
- </desc> 
  <thead> 
   <tr> 
    <th class="entry"> Ad Signaling Mode </th> 
@@ -29,7 +28,11 @@ You can mark, delete, and replace time ranges in VOD streams by using different 
  </thead>
  <tbody> 
   <tr> 
-   <td colspan="5"> <p><b>Server Map</b> </p> </td> 
+   <td colname="1"> <p><b>Server Map</b> </p> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -78,7 +81,11 @@ You can mark, delete, and replace time ranges in VOD streams by using different 
    <td> Ranges marked, no ads inserted </td> 
   </tr> 
   <tr> 
-   <td colspan="5"> <p><b>Manifest Cues</b> </p> </td> 
+   <td colname="1"> <p><b>Manifest Cues</b> </p> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr> 
    <td></td> 
@@ -127,7 +134,11 @@ You can mark, delete, and replace time ranges in VOD streams by using different 
    <td> Ranges replaced </td> 
   </tr> 
   <tr> 
-   <td colspan="5"> <p><b>Custom Time Range</b> </p> </td> 
+   <td colname="1"> <p><b>Custom Time Range</b> </p> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr> 
    <td></td> 
@@ -172,7 +183,11 @@ You can mark, delete, and replace time ranges in VOD streams by using different 
    <td> Ranges marked, no ads inserted </td> 
   </tr> 
   <tr> 
-   <td colspan="5"> <p><b>Not set (default)</b> </p> </td> 
+   <td colname="1"> <p><b>Not set (default)</b> </p> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr> 
    <td></td> 

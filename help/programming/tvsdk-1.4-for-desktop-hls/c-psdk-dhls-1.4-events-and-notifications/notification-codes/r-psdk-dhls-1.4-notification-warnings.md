@@ -26,7 +26,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Playback</b> </td> 
+   <td colname="1"><b>Playback</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 200000 </span> </td> 
@@ -36,7 +40,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p>A playback-related operation has failed, but playback may continue. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Ad resolving </b> </td> 
+   <td colname="1"><b>Ad resolving </b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 201000 </span> </td> 
@@ -46,7 +54,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p>The ad-resolver has failed to resolve/insert the ad content. Playback may continue. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Background manifests</b> </td> 
+   <td colname="1"><b>Background manifests</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 204000 </span> </td> 
@@ -63,7 +75,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Native</b> </td> 
+   <td colname="1"><b>Native</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1" morerows="1"><span class="codeph"> 209100 </span> </td> 
@@ -74,14 +90,15 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
   </tr> 
   <tr rowsep="1"> 
    <td colname="4"><b>DRM</b> <p><span class="codeph"> NATIVE_SUBERROR_CODE</span> <span class="codeph"> DRM_ERROR_STRING</span> </p> </td> 
-   <td colname="5">
-    <ph>
-     DRM minor error code and DRM server error string. See 
-     <a href="https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-concept-Details_for_the_NATIVEERROR_notification" format="html" scope="external"> Details for the NATIVE_ERROR notifications</a> for detailed information about the values for these metadata fields.
-    </ph> </td> 
+   <td colname="5">DRM minor error code and DRM server error string. See <a href="https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-concept-Details_for_the_NATIVEERROR_notification" format="html" scope="external"> Details for the NATIVE_ERROR notifications</a> for detailed information about the values for these metadata fields.
+   </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Generic</b> </td> 
+   <td colname="1"><b>Generic</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"> 299999 </span> </td> 

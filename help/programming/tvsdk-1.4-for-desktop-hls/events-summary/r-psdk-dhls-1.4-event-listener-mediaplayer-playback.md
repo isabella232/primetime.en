@@ -21,7 +21,8 @@ TVSDK dispatches playback events when media playback operations occur, such as a
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="2"><b>Playback</b> </td> 
+   <td colname="1"><b>Playback</b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="1">PlaybackRateEvent.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/PlaybackRateEvent.html#RATE_SELECTED" format="html" scope="external"> RATE_SELECTED</a> </td> 
@@ -36,7 +37,8 @@ TVSDK dispatches playback events when media playback operations occur, such as a
    <td colname="2"> The current playhead position of the media has changed. Dispatched periodically when the current time has changed, every 250 ms or more. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"><b>Media Player</b> </td> 
+   <td colname="1"><b>Media Player</b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="1">MediaPlayerStatus ChangeEvent.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerStatusChangeEvent.html#STATUS_CHANGED" format="html" scope="external"> STATUS_CHANGED</a> </td> 
@@ -47,7 +49,8 @@ TVSDK dispatches playback events when media playback operations occur, such as a
    <td colname="2">The media player’s current profile has changed. Use the <span class="codeph"> ProfileEvent.profile</span> property to get the new profile that is being played. Use the <span class="codeph"> time</span> property to get the time when this event occurred. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"><b>MediaplayerItem</b> </td> 
+   <td colname="1"><b>MediaplayerItem</b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="1">MediaPlayerItem Event.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerItemEvent.html#ITEM_CREATED" format="html" scope="external"> ITEM_CREATED</a> </td> 
@@ -62,14 +65,16 @@ TVSDK dispatches playback events when media playback operations occur, such as a
     </ul> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"><b>Captions and Audio</b> </td> 
+   <td colname="1"><b>Captions and Audio</b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> MediaPlayerItem Event.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerItemEvent.html#CAPTION_UPDATED" format="html" scope="external"> CAPTION_UPDATED</a> </td> 
    <td colname="2">A new closed captioning track has been detected in the media stream and the <span class="codeph"> closedCaptionsTracks</span> collection has been updated. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"><b>Manifest and Timeline</b> </td> 
+   <td colname="1"><b>Manifest and Timeline</b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="0"> 
    <td colname="1">TimelineEvent.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimelineEvent.html#TIMELINE_UPDATED" format="html" scope="external"> TIMELINE_UPDATED</a> </td> 

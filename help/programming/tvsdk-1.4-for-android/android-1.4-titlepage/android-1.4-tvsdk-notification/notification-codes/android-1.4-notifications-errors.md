@@ -26,7 +26,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Playback</b> </td> 
+   <td colname="1"><b>Playback</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 101000 </span> </td> 
@@ -85,7 +89,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> An error has occurred while attempting to download data. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Invalid resource</b> </td> 
+   <td colname="1"><b>Invalid resource</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 102100 </span> </td> 
@@ -102,7 +110,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> An error has occurred while placing a resource on the playback timeline. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Ad processing</b> </td> 
+   <td colname="1"><b>Ad processing</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 104000 </span> </td> 
@@ -133,7 +145,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> Ad resolving phase has failed. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Native</b> </td> 
+   <td colname="1"><b>Native</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 106000 </span> </td> 
@@ -178,7 +194,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> An error has occurred while attaching a view to the AVE library. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Configuration</b> </td> 
+   <td colname="1"><b>Configuration</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 107000 </span> </td> 
@@ -223,7 +243,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> An error has occurred while attempting to change the buffering control parameters. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Alternate audio</b> </td> 
+   <td colname="1"><b>Alternate audio</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 109000 </span> </td> 
@@ -233,7 +257,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> An error related to an audio track occurred. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Generic</b> </td> 
+   <td colname="1"><b>Generic</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"> 199999 </span> </td> 

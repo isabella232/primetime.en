@@ -26,7 +26,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>DRM</b> </td> 
+   <td colname="1"><b>DRM</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 100000 </span> </td> 
@@ -36,7 +40,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"></td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Playback</b> </td> 
+   <td colname="1"><b>Playback</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 101000 </span> </td> 
@@ -75,7 +83,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
     <!-- workaround for PDF having too much negative kerning in column 2 --> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Invalid resource</b> </td> 
+   <td colname="1"><b>Invalid resource</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 102000 </span> </td> 
@@ -85,7 +97,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Ad processing</b> </td> 
+   <td colname="1"><b>Ad processing</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 104001 </span> </td> 
@@ -109,7 +125,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Native</b> </td> 
+   <td colname="1"><b>Native</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 106000 </span> </td> 
@@ -119,7 +139,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> <p>A low-level iOS error occurred. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Configuration</b> </td> 
+   <td colname="1"><b>Configuration</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 107002 </span> </td> 
@@ -136,7 +160,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> <p>An error has occurred while attempting to change the styling options for the CC tracks. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>iOS unique</b> </td> 
+   <td colname="1"><b>iOS unique</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 170000 </span> </td> 
@@ -222,10 +250,7 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="4"> <span class="codeph"> AD_ASSET</span> </td> 
    <td colname="5"> <p>The TARGET DURATION of the ad is higher than the TARGET DURATION of the content. </p> </td> 
   </tr> 
-  <tr rowsep="1"> 
-   <td colspan="4"> <p>Note: adID and source (URL) can be retrieved through the <span class="codeph"> PTAdAsset</span> in the notification metadata with the <span class="codeph"> AD_ASSET</span> key. </p> </td> 
-   <td colname="5"> </td> 
-  </tr> 
  </tbody> 
 </table>
 
+>[!NOTE] adID and source (URL) can be retrieved through the `PTAdAsset` in the notification metadata with the `AD_ASSET` key. 

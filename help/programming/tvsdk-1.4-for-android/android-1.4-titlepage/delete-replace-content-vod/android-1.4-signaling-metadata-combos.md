@@ -28,7 +28,11 @@ You can mark, delete, and replace time ranges in VOD streams by using different 
  </thead>
  <tbody> 
   <tr> 
-   <td colspan="5"> Server Map </td> 
+   <td> <b>Server Map</b> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -77,7 +81,11 @@ You can mark, delete, and replace time ranges in VOD streams by using different 
    <td> Ranges marked, no ads inserted </td> 
   </tr> 
   <tr> 
-   <td colspan="5"> Manifest Cues </td> 
+   <td> <b>Manifest Cues</b> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
   </tr> 
   <tr> 
    <td></td> 
@@ -126,7 +134,11 @@ You can mark, delete, and replace time ranges in VOD streams by using different 
    <td> Ranges replaced </td> 
   </tr> 
   <tr> 
-   <td colspan="5"> Custom Time Range </td> 
+   <td> <b>Custom Time Range</b> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
   </tr> 
   <tr> 
    <td></td> 
@@ -171,7 +183,11 @@ You can mark, delete, and replace time ranges in VOD streams by using different 
    <td> Ranges marked, no ads inserted </td> 
   </tr> 
   <tr> 
-   <td colspan="5"> Not set (default) </td> 
+   <td> <b>Not set (default)</b> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
+   <td> </td> 
   </tr> 
   <tr> 
    <td></td> 

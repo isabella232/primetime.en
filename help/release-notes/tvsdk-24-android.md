@@ -169,7 +169,7 @@ TVSDK for Android 2.4 supports a number of features that you can implement to ad
 
 ### Advanced Playback Features {#advanced-playback-features}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody>
   <tr>
    <td style="text-align: left;"><strong>Feature</strong></td> 
@@ -263,7 +263,7 @@ TVSDK for Android 2.4 supports a number of features that you can implement to ad
 
 ### Advanced Ad Insertion Features (CSAI) {#advanced-ad-insertion-features-csai}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody>
   <tr>
    <td style="text-align: left;"><strong>Feature</strong></td> 

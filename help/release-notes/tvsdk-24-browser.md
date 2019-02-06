@@ -346,67 +346,63 @@ Browser TVSDK has specific requirements for the levels of platforms and software
 
 • Google Chromecast (second-generation; for DASH playback only)
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td valign="top" width="134"><p style="text-align: center;"><strong>Browser</strong></p> </td> 
-   <td colspan="4" valign="top" width="538"><p style="text-align: center;"><strong>Technology</strong></p> </td> 
+   <td><p><strong>Technology</strong> </p> </td> 
+   <td><p><strong>Browser TVSDK Video Tag</strong><sup>1</sup></p> </td> 
+   <td><p><strong>Browser TVSDK MSE</strong></p> </td> 
+   <td><p><strong>Flash</strong></p> </td> 
+   <td><p><strong>Default Technology</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="134"><p> </p> </td> 
-   <td valign="top" width="134"><p>Browser TVSDK Video Tag<sup>1</sup></p> </td> 
-   <td valign="top" width="134"><p>Browser TVSDK MSE</p> </td> 
-   <td valign="top" width="134"><p>Flash</p> </td> 
-   <td valign="top" width="134"><p>Default Technology</p> </td> 
+   <td><p>iOS</p> </td> 
+   <td><p>MP4 and HLS</p> </td> 
+   <td><p>-</p> </td> 
+   <td><p>-</p> </td> 
+   <td><p>Video tag</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="134"><p>iOS</p> </td> 
-   <td valign="top" width="134"><p>MP4 and HLS</p> </td> 
-   <td valign="top" width="134"><p>-</p> </td> 
-   <td valign="top" width="134"><p>-</p> </td> 
-   <td valign="top" width="134"><p>Video tag</p> </td> 
+   <td><p>Android</p> </td> 
+   <td><p>MP4</p> </td> 
+   <td><p>HLS and DASH</p> </td> 
+   <td><p>-</p> </td> 
+   <td><p>MSE</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="134"><p>Android</p> </td> 
-   <td valign="top" width="134"><p>MP4</p> </td> 
-   <td valign="top" width="134"><p>HLS and DASH</p> </td> 
-   <td valign="top" width="134"><p>-</p> </td> 
-   <td valign="top" width="134"><p>MSE</p> </td> 
+   <td><p>Apple Safari 8</p> </td> 
+   <td><p>MP4 and HLS</p> </td> 
+   <td><p>-</p> </td> 
+   <td><p>MP4 and HLS</p> </td> 
+   <td><p>Video tag</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="134"><p>Apple Safari 8</p> </td> 
-   <td valign="top" width="134"><p>MP4 and HLS</p> </td> 
-   <td valign="top" width="134"><p>-</p> </td> 
-   <td valign="top" width="134"><p>MP4 and HLS</p> </td> 
-   <td valign="top" width="134"><p>Video tag</p> </td> 
+   <td><p>Google Chrome</p> </td> 
+   <td><p>MP4</p> </td> 
+   <td><p>HLS and DASH</p> </td> 
+   <td><p>MP4 and HLS</p> </td> 
+   <td><p>MSE</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="134"><p>Google Chrome</p> </td> 
-   <td valign="top" width="134"><p>MP4</p> </td> 
-   <td valign="top" width="134"><p>HLS and DASH</p> </td> 
-   <td valign="top" width="134"><p>MP4 and HLS</p> </td> 
-   <td valign="top" width="134"><p>MSE</p> </td> 
+   <td><p>Mozilla Firefox</p> </td> 
+   <td><p>MP4</p> </td> 
+   <td><p>HLS and DASH</p> </td> 
+   <td><p>MP4 and HLS</p> </td> 
+   <td><p>MSE<sup>2</sup></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="134"><p>Mozilla Firefox</p> </td> 
-   <td valign="top" width="134"><p>MP4</p> </td> 
-   <td valign="top" width="134"><p>HLS and DASH</p> </td> 
-   <td valign="top" width="134"><p>MP4 and HLS</p> </td> 
-   <td valign="top" width="134"><p>MSE<sup>2</sup></p> </td> 
+   <td><p>Internet Explorer 11</p> <p>(Windows 7)</p> </td> 
+   <td><p>MP4</p> </td> 
+   <td><p>-</p> </td> 
+   <td><p>MP4 and HLS</p> </td> 
+   <td><p>Flash</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="134"><p>Internet Explorer 11</p> <p>(Windows 7)</p> </td> 
-   <td valign="top" width="134"><p>MP4</p> </td> 
-   <td valign="top" width="134"><p>-</p> </td> 
-   <td valign="top" width="134"><p>MP4 and HLS</p> </td> 
-   <td valign="top" width="134"><p>Flash</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="134"><p>Internet Explorer 11</p> <p>(Windows 8.1)</p> </td> 
-   <td valign="top" width="134"><p>MP4</p> </td> 
-   <td valign="top" width="134"><p>HLS, DASH</p> </td> 
-   <td valign="top" width="134"><p>MP4 and HLS</p> </td> 
-   <td valign="top" width="134"><p>MSE</p> </td> 
+   <td><p>Internet Explorer 11</p> <p>(Windows 8.1)</p> </td> 
+   <td><p>MP4</p> </td> 
+   <td><p>HLS, DASH</p> </td> 
+   <td><p>MP4 and HLS</p> </td> 
+   <td><p>MSE</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -427,26 +423,25 @@ Here is a list of the supported and unsupported features for this release:
 
 #### Table 1: Core Playback {#table-core-playback}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Category</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Content Type</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Feature</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Flash</strong></p> </td> 
-   <td colspan="2" valign="top" width="224"><p><strong>HTML5</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content Type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong>Flash</strong></p> </td> 
+   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
+  </tr> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td valign="top" width="112"><p><strong>Safari, iOS Safari</strong></p> </td> 
-  </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>MP3 VOD</p> </td> 
-   <td valign="top" width="112"><p>General Playback (Play, Pause, Seek)</p> </td> 
-   <td valign="top" width="112"><p>Not Supported</p> </td>
-   <td valign="top" width="112"><p>Y</p> </td>
-   <td valign="top" width="112"><p>Y</p> </td>
+   <td><p>Playback</p> </td> 
+   <td><p>MP3 VOD</p> </td> 
+   <td><p>General Playback (Play, Pause, Seek)</p> </td> 
+   <td><p>Not Supported</p> </td>
+   <td><p>Y</p> </td>
+   <td><p>Y</p> </td>
   </tr>
  </tbody>  
 </table>
@@ -459,60 +454,59 @@ Here is a list of the supported and unsupported features for this release:
 
 #### Table 2: Core Playback {#table-core-playback-1}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Category</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Content Type</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Feature</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Flash</strong></p> </td> 
-   <td colspan="2" valign="top" width="224"><p><strong>HTML5</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content Type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong>Flash</strong></p> </td> 
+   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td valign="top" width="112"><p><strong>Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>MP4 VOD</p> </td> 
-   <td valign="top" width="112"><p>General Playback (Play, Pause, Seek)</p> </td> 
-   <td valign="top" width="112"><p>Not Supported</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>MP4 VOD</p> </td> 
+   <td><p>General Playback (Play, Pause, Seek)</p> </td> 
+   <td><p>Not Supported</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 3: Core Ad Insertion {#table-core-ad-insertion}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Category</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Content Type</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Feature</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p style="text-align: center;"><strong>Flash</strong></p> </td> 
-   <td colspan="2" valign="top" width="224"><p style="text-align: center;"><strong>HTML5</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content Type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p style="text-align: center;"><strong>Flash</strong></p> </td> 
+   <td colspan="2"><p style="text-align: center;"><strong>HTML5</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td valign="top" width="112"><p><strong>Safari, iOS Safari</strong></p> </td> 
+   <td><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="112"><p>MP4 VOD</p> </td> 
-   <td valign="top" width="112"><p>Pre-roll (MP4)</p> </td> 
-   <td valign="top" width="112"><p>Not Supported</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>MP4 VOD</p> </td> 
+   <td><p>Pre-roll (MP4)</p> </td> 
+   <td><p>Not Supported</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="112"><p>MP4 VOD</p> </td> 
-   <td valign="top" width="112"><p>Post-roll (MP4)</p> </td> 
-   <td valign="top" width="112"><p>Not Supported</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>MP4 VOD</p> </td> 
+   <td><p>Post-roll (MP4)</p> </td> 
+   <td><p>Not Supported</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -540,436 +534,418 @@ The following features are supported:
 
 #### Table 4: HLS Core playback {#table-hls-core-playback}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Category</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Content type</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Feature</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Flash</strong></p> </td> 
-   <td colspan="2" valign="top" width="224"><p><strong>HTML5</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong>Flash</strong></p> </td> 
+   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td valign="top" width="112"><p><strong>Safari, iOS Safari</strong></p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>General playback (play, pause, seek)</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>General playback (play, pause, seek)</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>FER VOD</p> </td> 
+   <td><p>General playback (play, pause, and seek)</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>FER VOD</p> </td> 
-   <td valign="top" width="112"><p>General playback (play, pause, and seek)</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Adaptive bit rate</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Adaptive bit rate</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>608/708 captions</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>608/708 captions</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>WebVTT</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>VOD only</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>WebVTT</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>VOD only</p> </td> 
-   <td valign="top" width="112"><p>VOD only</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Manifest Failover</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Manifest Failover</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Advanced Failover</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Advanced Failover</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>QoS and player notifications</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Limited QoS support</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>QoS and player notifications</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Limited QoS support</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Support for cookie headers</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Support for cookie headers</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Setting buffer control parameters</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Setting buffer control parameters</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Set adaptive</p> <p>bit-rate controls</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Set adaptive</p> <p>bit-rate controls</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Custom tags</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Custom tags</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td>Late-binding audio</td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112">Late-binding audio</td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>302 redirect</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>302 redirect</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 5: HLS advanced playback features {#table-hls-advanced-playback-features}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Category</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Content type</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Feature</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Flash</strong></p> </td> 
-   <td colspan="2" valign="top" width="224"><p><strong>HTML5</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong>Flash</strong></p> </td> 
+   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td valign="top" width="112"><p><strong>Safari, iOS Safari</strong></p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Playback at offset</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD</p> </td> 
-   <td valign="top" width="112"><p>Playback at offset</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Audio-only playback</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD</p> </td> 
-   <td valign="top" width="112"><p>Audio-only playback</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Trick Play</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD</p> </td> 
-   <td valign="top" width="112"><p>Trick Play</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Smooth Trick Play</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD</p> </td> 
-   <td valign="top" width="112"><p>Smooth Trick Play</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>ID3 parsing</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>ID3 parsing</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Discontinuity marker support</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Discontinuity marker support</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Tokenized streams</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Tokenized streams</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="112"><p>Playback</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Billing</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Billing</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 6: HLS Content protection features {#table-hls-content-protection-features}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Category</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Content type</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Feature</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Flash</strong></p> </td> 
-   <td colspan="2" valign="top" width="224"><p><strong>HTML5</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong>Flash</strong></p> </td> 
+   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td valign="top" width="112"><p><strong>Safari, iOS Safari</strong></p> </td> 
+   <td><p>Content Protection</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>AES-128</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Content Protection</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>AES-128</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p>Content Protection</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Sample-AES</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Content Protection</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Sample-AES</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="112"><p>Content Protection</p> </td> 
-   <td valign="top" width="112"><p>VOD</p> </td> 
-   <td valign="top" width="112"><p>DRM</p> </td> 
-   <td valign="top" width="112"><p>Adobe Access</p> </td> 
-   <td valign="top" width="112"><p>Not Supported</p> </td> 
-   <td valign="top" width="112"><p>FairPlay</p> </td> 
+   <td><p>Content Protection</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>DRM</p> </td> 
+   <td><p>Adobe Access</p> </td> 
+   <td><p>Not Supported</p> </td> 
+   <td><p>FairPlay</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 7: HLS Core ad insertion features {#table-hls-core-ad-insertion-features}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Category</strong></p> </td> 
-   <td rowspan="2" valign="top" width="96"><p><strong>Content type</strong></p> </td> 
-   <td rowspan="2" valign="top" width="125"><p><strong>Feature</strong></p> </td> 
-   <td rowspan="2" valign="top" width="113"><p><strong>Flash</strong></p> </td> 
-   <td colspan="2" valign="top" width="226"><p><strong>HTML5</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong>Flash</strong></p> </td> 
+   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="113"><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td valign="top" width="113"><p><strong>Safari, iOS Safari</strong></p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Pre-roll (MP4/HLS)</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="96"><p>VOD + Live</p> </td> 
-   <td valign="top" width="125"><p>Pre-roll (MP4/HLS)</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Mid-roll (HLS)</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="96"><p>VOD + Live</p> </td> 
-   <td valign="top" width="125"><p>Mid-roll (HLS)</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Platform Limitation</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Post-roll (MP4/HLS)</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="96"><p>VOD</p> </td> 
-   <td valign="top" width="125"><p>Post-roll (MP4/HLS)</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>FER VOD</p> </td> 
+   <td><p>Ad resolution and behaviors</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="96"><p>FER VOD</p> </td> 
-   <td valign="top" width="125"><p>Ad resolution and behaviors</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Platform Limitation</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Default ad policy</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="96"><p>VOD + Live</p> </td> 
-   <td valign="top" width="125"><p>Default ad policy</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Platform Limitation</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>VAST 2.0/3.0</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="96"><p>VOD + Live</p> </td> 
-   <td valign="top" width="125"><p>VAST 2.0/3.0</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>VMAP 1.0</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="96"><p>VOD + Live</p> </td> 
-   <td valign="top" width="125"><p>VMAP 1.0</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-   <td valign="top" width="113"><p>Y</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="96"><p>VOD + Live</p> </td> 
-   <td valign="top" width="125"><p>Creative Repackaging (MP4<!--<a id="_bookmark12" name="_bookmark12"></a>--> to HLS)</p> </td> 
-   <td valign="top" width="113"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="113"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="113"><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Creative Repackaging (MP4<!--<a id="_bookmark12" name="_bookmark12"></a>--> to HLS)</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 8: HLS Advanced ad insertion features {#table-hls-advanced-ad-insertion-features}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Category</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Content type</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Feature</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Flash</strong></p> </td> 
-   <td colspan="2" valign="top" width="224"><p><strong>HTML5</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong>Flash</strong></p> </td> 
+   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td valign="top" width="112"><p><strong>Safari, iOS Safari</strong></p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Ad only</p> </td> 
+   <td><p>Not Supported</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="112"><p>VOD</p> </td> 
-   <td valign="top" width="112"><p>Ad only</p> </td> 
-   <td valign="top" width="112"><p>Not Supported</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Targeting parameters</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Targeting parameters</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Custom parameters</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Custom parameters</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Custom ad policy</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Custom ad policy</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Lazy ad loading</p> </td> 
+   <td><p>Y</p> </td> 
+   <td><p>Not Supported</p> </td> 
+   <td><p>Platform Limitation</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Lazy ad loading</p> </td> 
-   <td valign="top" width="112"><p>Y</p> </td> 
-   <td valign="top" width="112"><p>Not Supported</p> </td> 
-   <td valign="top" width="112"><p>Platform Limitation</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Companion ads, Banner ads, Clickable ads</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="112"><p>VOD</p> </td> 
-   <td valign="top" width="112"><p>Companion ads, Banner ads, Clickable ads</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="112"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="112"><p>VOD</p> </td> 
-   <td valign="top" width="112"><p>VPAID 2.0</p> </td> 
-   <td valign="top" width="112"><p>SWF</p> </td> 
-   <td valign="top" width="112"><p>JavaScript</p> </td> 
-   <td valign="top" width="112"><p>JavaScript</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>VPAID 2.0</p> </td> 
+   <td><p>SWF</p> </td> 
+   <td><p>JavaScript</p> </td> 
+   <td><p>JavaScript</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 9: HLS Integrations {#table-hls-integrations}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Category</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Content type</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Feature</strong></p> </td> 
-   <td rowspan="2" valign="top" width="112"><p><strong>Flash</strong></p> </td> 
-   <td colspan="2" valign="top" width="224"><p><strong>HTML5</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong>Flash</strong></p> </td> 
+   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="112"><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td valign="top" width="112"><p><strong>Safari, iOS Safari</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="112"><p>Integrations</p> </td> 
-   <td valign="top" width="112"><p>VOD + Live</p> </td> 
-   <td valign="top" width="112"><p>Adobe Analytics VHL integration</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
-   <td valign="top" width="112"><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p>Integrations</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Adobe Analytics VHL integration</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1000,318 +976,318 @@ The following features are supported:
 
 #### Table 10: DASH Core playback features {#table-dash-core-playback-features}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td valign="top" width="166"><p><strong>Category</strong></p> </td> 
-   <td valign="top" width="148"><p><strong>Content type</strong></p> </td> 
-   <td valign="top" width="166"><p><strong>Feature</strong></p> </td> 
-   <td valign="top" width="192"><p><strong> </strong></p> <p><strong>HTML5 FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong> </strong></p> <p><strong>HTML5 FF, IE, Chrome, Android Chrome</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>General playback (play, pause, seek)</p> </td> 
-   <td valign="top" width="192"><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>General playback (play, pause, seek)</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>FER VOD</p> </td> 
-   <td valign="top" width="166"><p>General playback (play, pause, and seek)</p> </td> 
-   <td valign="top" width="192"><p>Not Supported</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>FER VOD</p> </td> 
+   <td><p>General playback (play, pause, and seek)</p> </td> 
+   <td><p>Not Supported</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>Adaptive bit rate</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Adaptive bit rate</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>608/708 captions</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>608/708 captions</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>WebVTT</p> </td> 
-   <td valign="top" width="192"><p>VOD only</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>WebVTT</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>Failover</p> </td> 
-   <td valign="top" width="192"><p>VOD only</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Failover</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>QoS and player notifications</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>QoS and player notifications</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>Support for cookie headers</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Support for cookie headers</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>Setting buffer control parameters</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Setting buffer control parameters</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>Set adaptive bit-rate controls</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Set adaptive bit-rate controls</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>Custom tags (EventStream)</p> </td> 
-   <td valign="top" width="192"><p>VOD only (Inline)</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Custom tags (EventStream)</p> </td> 
+   <td><p>VOD only (Inline)</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>Late-bound audio</p> </td> 
-   <td valign="top" width="192"><p>VOD only</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Late-bound audio</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="166"><p>Playback</p> </td> 
-   <td valign="top" width="148"><p>VOD + Live</p> </td> 
-   <td valign="top" width="166"><p>302 redirect</p> </td> 
-   <td valign="top" width="192"><p>VOD only</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>302 redirect</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 11: DASH Advanced playback features {#table-dash-advanced-playback-features}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td valign="top" width="168"><p><strong>Category</strong></p> </td> 
-   <td valign="top" width="149"><p><strong>Content type</strong></p> </td> 
-   <td valign="top" width="164"><p><strong>Feature</strong></p> </td> 
-   <td valign="top" width="192"><strong>HTML5 FF, IE, Chrome, Android Chrome</strong></td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><strong>HTML5 FF, IE, Chrome, Android Chrome</strong></td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Playback</p> </td> 
-   <td valign="top" width="149"><p>VOD</p> </td> 
-   <td valign="top" width="164"><p>Playback at offset</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Playback at offset</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Playback</p> </td> 
-   <td valign="top" width="149"><p>VOD</p> </td> 
-   <td valign="top" width="164"><p>Audio-only playback</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Audio-only playback</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Playback</p> </td> 
-   <td valign="top" width="149"><p>VOD</p> </td> 
-   <td valign="top" width="164"><p>Trick play</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Trick play</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Playback</p> </td> 
-   <td valign="top" width="149"><p>VOD</p> </td> 
-   <td valign="top" width="164"><p>Smooth Trick Play</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Smooth Trick Play</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Playback</p> </td> 
-   <td valign="top" width="149"><p>VOD + Live</p> </td> 
-   <td valign="top" width="164"><p>ID3 parsing</p> </td> 
-   <td valign="top" width="192"><p>Not Supported</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>ID3 parsing</p> </td> 
+   <td><p>Not Supported</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Playback</p> </td> 
-   <td valign="top" width="149"><p>VOD + Live</p> </td> 
-   <td valign="top" width="164"><p>Multi-period support</p> </td> 
-   <td valign="top" width="192"><p>VOD only</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Multi-period support</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Playback</p> </td> 
-   <td valign="top" width="149"><p>VOD + Live</p> </td> 
-   <td valign="top" width="164"><p>Tokenized streams</p> </td> 
-   <td valign="top" width="192"><p>Not Supported</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Tokenized streams</p> </td> 
+   <td><p>Not Supported</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Playback</p> </td> 
-   <td valign="top" width="149"><p>VOD + Live</p> </td> 
-   <td valign="top" width="164"><p>Billing</p> </td> 
-   <td valign="top" width="192"><p>Y</p> </td> 
+   <td><p>Playback</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Billing</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 12: DASH Content protection features {#table-dash-content-protection-features}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td valign="top" width="159"><p><strong>Category</strong></p> </td> 
-   <td valign="top" width="159"><p><strong>Content type</strong></p> </td> 
-   <td valign="top" width="162"><p><strong>Feature</strong></p> </td> 
-   <td valign="top" width="191"><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="159"><p>Content Protection</p> </td> 
-   <td valign="top" width="159"><p>VOD + Live</p> </td> 
-   <td valign="top" width="162"><p>AES-128</p> </td> 
-   <td valign="top" width="191"><p>Not Supported</p> </td> 
+   <td><p>Content Protection</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>AES-128</p> </td> 
+   <td><p>Not Supported</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="159"><p>Content Protection</p> </td> 
-   <td valign="top" width="159"><p>VOD + Live</p> </td> 
-   <td valign="top" width="162"><p>Sample-AES</p> </td> 
-   <td valign="top" width="191"><p>Not Supported</p> </td> 
+   <td><p>Content Protection</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Sample-AES</p> </td> 
+   <td><p>Not Supported</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="159"><p>Content Protection</p> </td> 
-   <td valign="top" width="159"><p>VOD</p> </td> 
-   <td valign="top" width="162"><p>DRM</p> </td> 
-   <td valign="top" width="191"><p>• Widevine on Chrome, Firefox 47+, and Chromecast</p> <p>• PlayReady on Internet Explorer on Windows 8.1 and Edge</p> <p>• Primetime DRM for Windows Firefox (video only)</p> </td> 
+   <td><p>Content Protection</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>DRM</p> </td> 
+   <td><p>• Widevine on Chrome, Firefox 47+, and Chromecast</p> <p>• PlayReady on Internet Explorer on Windows 8.1 and Edge</p> <p>• Primetime DRM for Windows Firefox (video only)</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 13: DASH Core ad insertion features {#table-dash-core-ad-insertion-features}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td valign="top" width="168"><p><strong>Category</strong></p> </td> 
-   <td valign="top" width="168"><p><strong>Content type</strong></p> </td> 
-   <td valign="top" width="168"><p><strong>Feature</strong></p> </td> 
-   <td valign="top" width="168"><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD + Live</p> </td> 
-   <td valign="top" width="168"><p>Pre-roll (MP4/DASH)</p> </td> 
-   <td valign="top" width="168"><p>VOD only</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Pre-roll (MP4/DASH)</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD + Live</p> </td> 
-   <td valign="top" width="168"><p>Mid-roll (DASH)</p> </td> 
-   <td valign="top" width="168"><p>VOD only</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Mid-roll (DASH)</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD</p> </td> 
-   <td valign="top" width="168"><p>Post-roll (MP4/DASH)</p> </td> 
-   <td valign="top" width="168"><p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Post-roll (MP4/DASH)</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>FER VOD</p> </td> 
-   <td valign="top" width="168"><p>Ad Resolution and Behaviors</p> </td> 
-   <td valign="top" width="168"><p>Not Supported</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>FER VOD</p> </td> 
+   <td><p>Ad Resolution and Behaviors</p> </td> 
+   <td><p>Not Supported</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD + Live</p> </td> 
-   <td valign="top" width="168"><p>Default ad policy</p> </td> 
-   <td valign="top" width="168"><p>VOD only</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Default ad policy</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD + Live</p> </td> 
-   <td valign="top" width="168"><p>VAST 2.0/3.0</p> </td> 
-   <td valign="top" width="168"><p>VOD only</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>VAST 2.0/3.0</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD + Live</p> </td> 
-   <td valign="top" width="168"><p>VMAP 1.0</p> </td> 
-   <td valign="top" width="168"><p>VOD only</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>VMAP 1.0</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD + Live</p> </td> 
-   <td valign="top" width="168"><p>Creative Repackaging (MP4 to DASH)</p> </td> 
-   <td valign="top" width="168"><p>Not supported</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Creative Repackaging (MP4 to DASH)</p> </td> 
+   <td><p>Not supported</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 14: DASH Advanced ad insertion features {#table-dash-advanced-ad-insertion-features}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td valign="top" width="168"><p><strong>Category</strong></p> </td> 
-   <td valign="top" width="168"><p><strong>Content type</strong></p> </td> 
-   <td valign="top" width="168"><p><strong>Feature</strong></p> </td> 
-   <td valign="top" width="168"><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD</p> </td> 
-   <td valign="top" width="168"><p>Ad only</p> </td> 
-   <td valign="top" width="168"><p>Y</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Ad only</p> </td> 
+   <td><p>Y</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD</p> </td> 
-   <td valign="top" width="168"><p>Targeting parameters</p> </td> 
-   <td valign="top" width="168"><p>VOD only</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Targeting parameters</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD</p> </td> 
-   <td valign="top" width="168"><p>Custom Parameters</p> </td> 
-   <td valign="top" width="168"><p>VOD only</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Custom Parameters</p> </td> 
+   <td><p>VOD only</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD + Live</p> </td> 
-   <td valign="top" width="168"><p>Custom ad policy</p> </td> 
-   <td valign="top" width="168"><p>Not Supported</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Custom ad policy</p> </td> 
+   <td><p>Not Supported</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD + Live</p> </td> 
-   <td valign="top" width="168"><p>Lazy ad loading</p> </td> 
-   <td valign="top" width="168"><p>Not Supported</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Lazy ad loading</p> </td> 
+   <td><p>Not Supported</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD</p> </td> 
-   <td valign="top" width="168"><p>Companion ads,banner ads, clickable ads</p> </td> 
-   <td valign="top" width="168"><p>Not Supported</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>Companion ads,banner ads, clickable ads</p> </td> 
+   <td><p>Not Supported</p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Ad Insertion</p> </td> 
-   <td valign="top" width="168"><p>VOD</p> </td> 
-   <td valign="top" width="168"><p>VPAID 2.0</p> </td> 
-   <td valign="top" width="168"><p>Not Supported</p> </td> 
+   <td><p>Ad Insertion</p> </td> 
+   <td><p>VOD</p> </td> 
+   <td><p>VPAID 2.0</p> </td> 
+   <td><p>Not Supported</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 15: DASH Integrations {#table-dash-integrations}
 
-<table border="1" cellpadding="0" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
-   <td valign="top" width="168"><p><strong>Category</strong></p> </td> 
-   <td valign="top" width="168"><p><strong>Content type</strong></p> </td> 
-   <td valign="top" width="168"><p><strong>Feature</strong></p> </td> 
-   <td valign="top" width="168"><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>Category</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Feature</strong></p> </td> 
+   <td><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
   </tr> 
   <tr> 
-   <td valign="top" width="168"><p>Integrations</p> </td> 
-   <td valign="top" width="168"><p>VOD + Live</p> </td> 
-   <td valign="top" width="168"><p>Adobe Analytics VHL integration</p> </td> 
-   <td valign="top" width="168"><p><strong> </strong></p> <p>Y</p> </td> 
+   <td><p>Integrations</p> </td> 
+   <td><p>VOD + Live</p> </td> 
+   <td><p>Adobe Analytics VHL integration</p> </td> 
+   <td><p><strong> </strong></p> <p>Y</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1518,10 +1494,10 @@ The limitations and known issues in Browser TVSDK are mentioned below.
 
 ### Table 16: Core Playback Features {#table-core-playback-features}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
-   <td valign="top" width="112"><p><strong>Content type</strong></p> </td> 
+   <td><p><strong>Content type</strong></p> </td> 
    <td><strong>Feature</strong></td> 
    <td><strong>Flash</strong></td> 
    <td><strong>HTML5 in Firefox, IE, Chrome, Android Chrome</strong></td> 
@@ -1612,7 +1588,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
    <td>VOD + Live</td> 
    <td>Late Binding Audio</td> 
    <td> </td> 
-   <td valign="top" width="112"><p>• Ad insertion is not supported with HLS Live LBA streams.</p> <p>• 17273: HLS VOD LBA streams switch to default rendition in case of failover and cannot be switched back to last selected.</p> <p>• 20251: HLS Live LBA stream may stall on seeking.</p> <p>• 20497: Player remains in buffering state if HLS LBA unmuxed streams have missing audio or video frames close to end of stream.</p> </td> 
+   <td><p>• Ad insertion is not supported with HLS Live LBA streams.</p> <p>• 17273: HLS VOD LBA streams switch to default rendition in case of failover and cannot be switched back to last selected.</p> <p>• 20251: HLS Live LBA stream may stall on seeking.</p> <p>• 20497: Player remains in buffering state if HLS LBA unmuxed streams have missing audio or video frames close to end of stream.</p> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -1620,7 +1596,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
    <td>VOD + Live</td> 
    <td>302 Redirect</td> 
    <td> </td> 
-   <td valign="top" width="112"><p>15787: 302</p> <p>redirect optimization is not supported on windows Edge and IE browsers as these do not support the responseURL property in the XMLHttpRequest object.</p> </td> 
+   <td><p>15787: 302</p> <p>redirect optimization is not supported on windows Edge and IE browsers as these do not support the responseURL property in the XMLHttpRequest object.</p> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -1629,7 +1605,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
 
 #### Table 17: Advanced Playback Features {#table-advanced-playback-features}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td>Content Type</td> 
@@ -1642,7 +1618,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
   <tr> 
    <td>VOD</td> 
    <td>Playback at offset</td> 
-   <td valign="top" width="112"><p>Starting playback at particular offset value is not supported MP4 contents.</p> </td> 
+   <td><p>Starting playback at particular offset value is not supported MP4 contents.</p> </td> 
    <td>20492: Mid-roll ads preceding the offset are played before content resumes from the offset value.</td> 
    <td>Playback with offset feature is not supported on iOS.</td> 
    <td> </td> 
@@ -1667,7 +1643,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
    <td>VOD + Live</td> 
    <td>Discontinuity marker support</td> 
    <td> </td> 
-   <td valign="top" width="112"><p>• Client side ad insertion is not supported with HLS streams containing discontinuity.</p> <p>• Audio Codec change is not allowed across discontinuities in HLS stream.</p> <p>• Audio Track switch is not supported for HLS stream with discontinuity markers</p> </td> 
+   <td><p>• Client side ad insertion is not supported with HLS streams containing discontinuity.</p> <p>• Audio Codec change is not allowed across discontinuities in HLS stream.</p> <p>• Audio Track switch is not supported for HLS stream with discontinuity markers</p> </td> 
    <td>Discontinuity sequence number is a requirement for HLS streams with discontinuity in order to playback on Safari.</td> 
    <td> </td> 
   </tr> 
@@ -1676,7 +1652,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
 
 #### Table 18: Content Protection Features {#table-content-protection-features}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Content Type</strong></td> 
@@ -1700,14 +1676,14 @@ The limitations and known issues in Browser TVSDK are mentioned below.
    <td> </td> 
    <td><p>• 12660: HTML5 player throws Internal Server Error for expired PlayReady encrypted dash contents.</p> <p>• 16720: DASH DRM encrypted content wont work if start attribute in period tag is missing.</p> <p>• 18589: Playback is not supported for DRM protected Dash VoD Multiperiod streams with Xlink.</p> <p>• 18653: Playback of Widevine MultiPeriod Content with Multiple Keys, stops at first period and cannot switch to next Period.</p> <p>• 18656: Playready MultiPeriod Stream, encrypted with different keys, wont playback.</p> <p>Playready 2.0 for Dash is not certified.</p> <p> </p> <p> </p> </td> 
    <td>12602: HLS Fairplay DRM metadata is repeatedly refreshed by HTML5 player on Safari</td> 
-   <td valign="top" width="112"><p>DASH Widevine DRM content packaged through Bento4 can be played. Content packaged through Offline Packager and Shaka packager do not play. DASH PlayReady DRM is not supported.</p> </td> 
+   <td><p>DASH Widevine DRM content packaged through Bento4 can be played. Content packaged through Offline Packager and Shaka packager do not play. DASH PlayReady DRM is not supported.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Table 19: Core Ad Insertion Features (CSAI) {#table-core-ad-insertion-features-csai}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Content Type</strong></td> 
@@ -1734,7 +1710,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
    <td> </td> 
    <td>SDK does not honor sequence attribute inside VMAP response for VAST adSource.</td> 
    <td> </td> 
-   <td valign="top" width="112"> </td> 
+   <td> </td> 
   </tr> 
   <tr> 
    <td>VOD + Live</td> 
@@ -1765,7 +1741,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
 
 #### Table 20: Advanced Ad Insertion Features (CSAI) {#table-advanced-ad-insertion-features-csai}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
+<table> 
  <tbody> 
   <tr> 
    <td><strong>Content Type</strong></td> 
@@ -1789,7 +1765,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
    <td> </td> 
    <td><p>• Ad behaviors are not supported with MP4 ads and MP4 content.</p> <p>• 13973: Custom ad behaviors - SKIP policy does not throw complete event when used with MSE.</p> <p>• 14939: Custom ad behavior policies skip and skip ad break are not working for DASH content.</p> <p>• 17131: First frame of the ad is visible and then content resumes in case of SKIP ad break policy.</p> </td> 
    <td> </td> 
-   <td valign="top" width="112"> </td> 
+   <td> </td> 
   </tr> 
   <tr> 
    <td> </td> 

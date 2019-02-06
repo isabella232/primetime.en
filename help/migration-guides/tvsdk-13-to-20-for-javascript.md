@@ -142,7 +142,7 @@ Tables in this topic:
 
 ### ReplaceTimeRange {#replacetimerange}
 
-<table cellpadding="4" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 

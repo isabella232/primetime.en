@@ -25,20 +25,20 @@ Remember the following information when using TVSDK:
   Operations that run correctly on the main thread may throw an error and exit when run on a background thread. 
 * Video playback requires the Adobe Video Engine (AVE). This affects how and when media resources can be accessed:
 
-    * Closed captioning is supported to the extent provided by the AVE. 
-    * Depending on encoder precision, the actual encoded media duration might differ from the durations that are recorded in the stream resource manifest.
+  * Closed captioning is supported to the extent provided by the AVE. 
+  * Depending on encoder precision, the actual encoded media duration might differ from the durations that are recorded in the stream resource manifest.
 
-      There is no reliable way to resynchronize between the ideal virtual timeline and the actual playout timeline. Progress tracking of the stream playback for ad management and Video Analytics must use the actual playout time, so reporting and user interface behavior might not precisely track the media and advertisement content. 
-    * The incoming user agent name for all media requests from the TVSDK on this platform is assigned the following string pattern:     
-    
-      ```    
-      "Adobe Primetime/" + 
-<varname>
+    There is no reliable way to resynchronize between the ideal virtual timeline and the actual playout timeline. Progress tracking of the stream playback for ad management and Video Analytics must use the actual playout time, so reporting and user interface behavior might not precisely track the media and advertisement content. 
+  * The incoming user agent name for all media requests from the TVSDK on this platform is assigned the following string pattern:
+
+  ```    
+  "Adobe Primetime/" + 
+  <varname>
   originalUserAgent
-</varname> 
-      ```    
-    
-      All ad-related calls use the Android default user agent or the custom user agent if you set it while setting up ad-insertion metadata.
+  </varname> 
+  ``` 
+
+  All ad-related calls use the Android default user agent or the custom user agent if you set it while setting up ad-insertion metadata.
 
 ## Best practices {#section_tvsdk_best_practices}
 
@@ -49,4 +49,3 @@ Here are recommended practices for TVSDK:
 * For TVSDK 2.5 for Android, lazy ad resolving is on by default.
 
   For content with no pre-roll or mid-roll, you can use `AdvertisingMetadata.setPreroll(false)` to accelerate content loading.
-
