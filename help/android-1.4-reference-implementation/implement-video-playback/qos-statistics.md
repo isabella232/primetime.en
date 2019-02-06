@@ -46,7 +46,7 @@ The `QoSManager` tracks QoS statistics by getting device information, attaching 
 
    >[!NOTE]
    >
-   >When the player activity is going to be destroyed, make sure to call [qosManager.destroyQOSProvider](http://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.html#destroyQOSProvider()) to clean up the QOS provider by detaching it from the media player.
+   >When the player activity is going to be destroyed, make sure to call [qosManager.destroyQOSProvider](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.html#destroyQOSProvider()) to clean up the QOS provider by detaching it from the media player.
 
 **Related API documentation**
    

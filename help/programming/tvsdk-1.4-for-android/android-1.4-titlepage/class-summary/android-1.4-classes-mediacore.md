@@ -24,7 +24,7 @@ Package: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/j
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/ABRControlParameters.html" format="html" scope="external"> ABRControlParameters</a> <a href="https://help.adobe.com/en_US/primetime/api/psdk/html5/AdobePSDK.ABRControlParameters.html" format="html" scope="external"> ABRControlParameters</a> </span> </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/ABRControlParameters.html" format="html" scope="external"> ABRControlParameters</a>  ABRControlParameters</span> </td> 
    <td colname="2"> Class that encapsulates all adaptive bit rate control parameters. </td> 
   </tr> 
   <tr rowsep="1"> 

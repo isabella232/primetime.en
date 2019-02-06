@@ -16,7 +16,7 @@ The FairPlay license token interface provides production and test services. This
 
 * **Production:** `https://fp-gen.{prod_domain}/hms/fp/token`
 
-* **Test:** `[https://fp-gen.test.expressplay.com/hms/fp/token](https://fp-gen.test.expressplay.com/hms/fp/token)`
+* **Test:** `https://fp-gen.test.expressplay.com/hms/fp/token`
 
 * **Sample request:** 
 

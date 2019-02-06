@@ -39,7 +39,7 @@ To enable custom ABR through the Settings user interface:
 
 * Tap the [!UICONTROL Enable ON] control so that it displays `OFF`.
 
-The `PlaybackManager` only sets the ABR parameters if [isABRControlEnabled](http://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html) returns true (ON). If it returns false (OFF), the `PlaybackManager` uses the default ABR control so the initial, minimum, and maximum bit rates will all be 0 and the ABR policy will be `ABR_MODERATE`.
+The `PlaybackManager` only sets the ABR parameters if [isABRControlEnabled](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IPlaybackConfig.html) returns true (ON). If it returns false (OFF), the `PlaybackManager` uses the default ABR control so the initial, minimum, and maximum bit rates will all be 0 and the ABR policy will be `ABR_MODERATE`.
 
 ## Configure for low bit rates {#section_5451691CBBD24542AD54A474D222CD39}
 

@@ -29,7 +29,7 @@ To accommodate customers who want to pay only for what they use, rather than a f
 <!-- 
 
 Comment Type: draft
-For more information about Billing Metrics, see [Billing Metrics](http://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics)
+For more information about Billing Metrics, see [Billing Metrics](https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics)
 -->
 
 **1.4.24**

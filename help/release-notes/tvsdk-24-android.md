@@ -9,7 +9,7 @@ products: SG_PRIMETIME
 discoiquuid: a6dbcc4a-9e14-4452-9004-b39ed13fad6f
 ---
 
-# TVSDK 2.4.1 for Android Release Notes{#tvsdk-for-android-release-notes}
+# TVSDK 2.4.1 for Android Release Notes {#tvsdk-for-android-release-notes}
 
 TVSDK 2.4.1 for Android Release Notes describe the new and supported features and the known issues and limitations in TVSDK Android 2.4.1.
 
@@ -23,11 +23,25 @@ Here is where you can find documentation:
 
 • Online help system TVSDK 2.4 for Android Help
 
-• Javadocs [TVSDK 2.4 for Android Java API](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/index.html)
+• Javadocs TVSDK 2.4 for Android Java API
+
+<!-- 
+
+Comment Type: draft
+(https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/index.html)
+
+-->
 
 The Javadocs are the ultimate authority, because they are automatically generated directly from the TVSDK source code.
 
-• C++ API documentation [TVSDK 2.4 for Android C++ API](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.4/namespaces.html)
+• C++ API documentation TVSDK 2.4 for Android C++ API
+
+<!-- 
+
+Comment Type: draft
+(https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.4/namespaces.html)
+
+-->
 
 Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so consult the C++ documentation for a deeper understanding of the Java API.
 

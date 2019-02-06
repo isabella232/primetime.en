@@ -67,7 +67,7 @@ To enable `withCredentials` support for most types of requests when playing a gi
 >>            "authorization": "true"  
 >>            }, 
 >>        "serverURL":  
->>          "https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=[YOUR_TOKEN</i>]"
+>>          "https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=[YOUR_TOKEN</i>]" }
 >>        } 
 >>}
 

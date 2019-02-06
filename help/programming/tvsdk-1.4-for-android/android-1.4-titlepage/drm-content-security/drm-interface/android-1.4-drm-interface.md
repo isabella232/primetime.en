@@ -95,8 +95,13 @@ Additional relevant API elements:
 * [com.adobe.ave.drm.DRMAuthenticationMethod](https://help.adobe.com/en_US/primetime/api/drm/com/adobe/ave/drm/DRMAuthenticationMethod.html) 
 * [com.adobe.ave.drm.DRMAuthenticationCompleteCallback](https://help.adobe.com/en_US/primetime/api/drm/com/adobe/ave/drm/DRMAuthenticationCompleteCallback.html) 
 * [com.adobe.ave.drm.DRMOperationErrorCallback](https://help.adobe.com/en_US/primetime/api/drm/com/adobe/ave/drm/DRMOperationErrorCallback.html) 
-* [com.adobe.mediacore.drm.DRMAuthenticateListener](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/drm/DRMAuthenticateListener.html)
+* com.adobe.mediacore.drm.DRMAuthenticateListener
 
+<!-- 
+Comment Type: draft
+(https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/drm/DRMAuthenticateListener.html)
+
+-->
 <!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
 
 For more information about DRM, see the [Adobe Primetime DRM documentation](https://help.adobe.com/en_US/primetime/drm). 

@@ -6,7 +6,7 @@ title: Info classes
 uuid: 49d6dc60-573e-41a6-aef9-2094c2699673
 ---
 
-# Info classes{#info-classes}
+# Info classes {#info-classes}
 
 These classes provide information about the media.
 
@@ -25,7 +25,8 @@ These classes provide information about the media.
    <td colname="2">Class that extends <span class="codeph"> Track</span> to define the audio track abstraction. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/ClosedCaptionsTrack.html" format="html" scope="external"> ClosedCaptionsTrack</a> <a href="https://help.adobe.com/en_US/primetime/api/psdk/html5/AdobePSDK.ClosedCaptionsTrack.html" format="html" scope="external"> ClosedCaptionsTrack</a></span> </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/ClosedCaptionsTrack.html" format="html" scope="external"> ClosedCaptionsTrack</a> 
+   ClosedCaptionsTrack</span> </td> 
    <td colname="2">Class that extends <span class="codeph"> Track</span> to define the closed caption abstraction. Class that defines the <span class="codeph"> ClosedCaptions</span> abstraction. A closed captions track is defined uniquely by its name AND it's service type. Different service types can share the same name.</td> 
   </tr> 
   <tr rowsep="1"> 

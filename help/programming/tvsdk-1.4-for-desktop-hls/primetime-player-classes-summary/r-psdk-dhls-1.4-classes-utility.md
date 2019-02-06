@@ -6,11 +6,18 @@ title: Utility classes
 uuid: ec57aba9-b29b-4bc5-804f-6ab5549a61c1
 ---
 
-# Utility classes{#utility-classes}
+# Utility classes {#utility-classes}
 
 These classes provide ways to process various types of information.
 
- Package: [com.adobe.mediacore.utils](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/package-summary.html) 
+ Package: com.adobe.mediacore.utils
+ 
+ <!-- 
+
+Comment Type: draft
+(https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/package-summary.html)
+
+-->
 
 |  Class name  | Description  |
 |---|---|

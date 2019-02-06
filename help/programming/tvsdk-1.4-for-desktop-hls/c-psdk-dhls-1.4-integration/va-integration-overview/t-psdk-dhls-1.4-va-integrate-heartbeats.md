@@ -56,7 +56,7 @@ To configure video tracking in your player:
     * The only configuration option for the VisitorAPI library is the URL of the back-end endpoint that provides the unique identifier for the current user. 
     * The URL of the visitor tracking server is the same as the URL of the analytics tracking server.
 
-      For information about implementing the Visitor ID Service, see [Visitor ID Service Implementation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_implement.html).
+      For information about implementing the Visitor ID Service, see Visitor ID Service Implementation.
 
    ```
    var_visitor = new Visitor("MARKETING_CLOUD_ORG_ID"); 
