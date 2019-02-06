@@ -40,7 +40,7 @@ Dash content consists of a main manifest, written in xml, which points to video 
 </MPD>
 ```
 
-Below is an example manifest with Common Encryption applied. The Widevine content protection XML elements (the <ContentProtection> blocks) in the manifest contain a base64 encoded pssh (Protection System Specific Header) box. The pssh box contains the data needed for initializing content decryption. This data is also embedded in the video/audio content that the manifest refer to. DASH content may have multiple content protection elements, for example 1 for PlayReady and 1 for Widevine.
+Below is an example manifest with Common Encryption applied. The Widevine content protection XML elements (the `<ContentProtection>` blocks) in the manifest contain a base64 encoded pssh (Protection System Specific Header) box. The pssh box contains the data needed for initializing content decryption. This data is also embedded in the video/audio content that the manifest refer to. DASH content may have multiple content protection elements, for example 1 for PlayReady and 1 for Widevine.
 
 ```
 <?xml version="1.0" ?>

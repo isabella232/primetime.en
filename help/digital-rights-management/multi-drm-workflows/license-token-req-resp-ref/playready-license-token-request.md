@@ -18,15 +18,15 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
 
 **URLs:**
 
-* **Production: ** `https://pr-gen.{prod_domain}/hms/pr/token` 
+* **Production:** `https://pr-gen.{prod_domain}/hms/pr/token` 
 
-* **Test: ** ` [https://pr-gen.test.expressplay.com/hms/pr/token](https://pr-gen.test.expressplay.com/hms/pr/token)`
+* **Test:** ` [https://pr-gen.test.expressplay.com/hms/pr/token](https://pr-gen.test.expressplay.com/hms/pr/token)`
 
 * **Sample request:** 
 
   ```
   <xref href="https: pr-gen.test.expressplay.com="" hms="" pr="" token?customerAuthenticator="201722,1ad8eed133edf43cbcc185f0236828ae&kid=b366360da82e9c6e0b0984002a362cf2&contentKey=b366360da82e9c6e0b0984002a362cf2&rightsType=BuyToOwn&analogVideoOPL=0&compressedDigitalAudioOPL=0&compressedDigitalVideoOPL=0&uncompressedDigitalAudioOPL=0&uncompressedDigitalVideoOPL=0&quot; format=&quot;html&quot; scope=&quot;external&quot;">
- https://pr-gen.test.expressplay.com/hms/pr/token?customerAuthenticator=
+  https://pr-gen.test.expressplay.com/hms/pr/token?customerAuthenticator=
    <ExpressPlay customer authenticator identifier>
    &kid=<CEKSID>
    &contentKey=<CEK>
@@ -36,7 +36,7 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
    &compressedDigitalVideoOPL=0
    &uncompressedDigitalAudioOPL=0
    &uncompressedDigitalVideoOPL=0
-</xref href="https:>
+  </xref href="https:>
   ```
 
 * **Sample Response:** 
@@ -48,7 +48,8 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
 
 ## Request Query Parameters {#section_26F8856641A64A46A3290DBE61ACFAD2}
 
-#### Token Query Parameters
+### Token Query Parameters
+
 <table id="table_zxg_dyr_pv">  
  <thead> 
   <tr> 
@@ -71,7 +72,8 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
  </tbody> 
 </table>
 
-#### License Query Parameters
+### License Query Parameters
+
 <table id="table_f1l_fyr_pv">  
  <thead> 
   <tr> 
@@ -171,7 +173,8 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
 
 ## Responses {#section_0079C31B4AF14DBBB6277CF251FB90E3}
 
-#### HTTP Responses
+### HTTP Responses
+
 | **HTTP Status Code** |**Description** |**Content-Type** |**Entity Body Contains** |
 |---|---|---|---|
 | `200 OK`  | No error.  | `text/uri-list`  | License acquisition url and token  |
@@ -180,7 +183,8 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
 | `404 Not found`  | Bad URL  | `text/html` or `application/json`  | Error description  |
 | `50x Server Error`  | Server error  | `text/html` or `application/json`  | Error description  |
 
-#### Event Error Codes
+### Event Error Codes
+
 <table id="table_lqb_ycs_pv">  
  <thead> 
   <tr> 
@@ -335,4 +339,3 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
   </tr> 
  </tbody> 
 </table>
-

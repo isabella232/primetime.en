@@ -12,4 +12,4 @@ The flashaccess-global.xml configuration file contains settings that apply to al
 * Logging — Specifies the logging level and how frequently log files are rolled. 
 * HSM password — Required only if an HSM is used to store server credentials.
 
-See the comments in the example global configuration file located in <AdobeAccessDVD>\Adobe Access Server for Protected Streaming\configs for more details. 
+See the comments in the example global configuration file located in `<AdobeAccessDVD>\Adobe Access Server for Protected Streaming\configs` for more details. 

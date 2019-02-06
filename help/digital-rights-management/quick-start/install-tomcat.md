@@ -11,10 +11,10 @@ uuid: f7663eda-ad18-4a6e-bb9f-01c74721b047
 
    >[!NOTE]
    >
-   >Ensure Tomcat is installed in a location where there are no spaces in the path. You can enter [!DNL C:\Program Files\Tomcat], but not [!DNL C:\Tomcat\].
+   >Ensure Tomcat is installed in a location where there are no spaces in the path. You can enter `C:\Program Files\Tomcat`, but not `C:\Tomcat\`.
 
-1. To start Tomcat, enter [!DNL <TomcatInstallDir>\bin\catalina.bat run].
-1. To verify installation, go to the Tomcat landing page by entering [!DNL https://<Hostname>:8080/].
-1. Create a [!DNL crossdomain.xml] file and place the file in the [!DNL <TomcatInstallDir>\webapps\ROOT\] directory.
+1. To start Tomcat, enter `TomcatInstallDir>\bin\catalina.bat run`.
+1. To verify installation, go to the Tomcat landing page by entering `https://<Hostname>:8080/`.
+1. Create a `crossdomain.xml` file and place the file in the `<TomcatInstallDir>\webapps\ROOT\` directory.
 
-   You can also copy a file from the <[!DNL ht<span></span>tps://drmtest2.adobe.com/crossdomain.xml]> directory.
+   You can also copy a file from the `https://drmtest2.adobe.com/crossdomain.xml` directory.
