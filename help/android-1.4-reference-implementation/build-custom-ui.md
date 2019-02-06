@@ -28,11 +28,4 @@ The UI components of the following features are already integrated:
 
 >[!NOTE]
 >
->To make UI changes to the seek bar, you can edit the MarkableSeekBar class. The `MarkableSeekBar` class handles the slider, thumb of the slider, ad marker holder, cue markers, buffer range, and seek range backgrounds.
-
-<!-- 
-
-Comment Type: draft
-(https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/MarkableSeekBar.html)
-
--->
+>To make UI changes to the seek bar, you can edit the MarkableSeekBar class. The [MarkableSeekBar](http://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/MarkableSeekBar.html) class handles the slider, thumb of the slider, ad marker holder, cue markers, buffer range, and seek range backgrounds.

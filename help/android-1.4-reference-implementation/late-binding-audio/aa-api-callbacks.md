@@ -7,16 +7,8 @@ internal: n
 snippet: y
 ---
 
-# Related API documentation{#related-api-documentation}
+# Related API documentation {#related-api-documentation}
 
-* Class AAManager
-* Class AAManagerOn
+* [Class AAManager](http://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AdsManager.html)
+* [Class AAManagerOn](http://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManagerOn.html)
 * [mediacore.info.AudioTrack](https://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/info/AudioTrack.html)
-
-<!-- 
-
-Comment Type: draft
-[Class AAManager](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AdsManager.html) 
-* [Class AAManagerOn](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AAManagerOn.html) 
-
--->

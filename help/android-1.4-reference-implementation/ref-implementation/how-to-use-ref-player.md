@@ -17,4 +17,4 @@ You can use the reference implementation in the following ways:
 
 We provide the Primetime reference implementation to help you understand the TVSDK and easily modify the feature managers to customize your player. However, please refer to the [TVSDK 1.4 for Android Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android.pdf) for detailed information about the TVSDK library.
 
-For easy access to the reference implementation API documentation in Javadoc format, click [here](https://help.adobe.com/en_US/primetime/api/psdk/javadoc/index.html).
+For easy access to the reference implementation API documentation in Javadoc format, click [here](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/index.html).

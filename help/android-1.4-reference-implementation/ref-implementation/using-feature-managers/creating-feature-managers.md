@@ -67,10 +67,4 @@ An application that uses a TVSDK feature can create its feature manager with a c
 AdsManager adsManager = new AdsManagerOn();
 ```
 
-<!-- 
-
-Comment Type: draft
-
-Feature manager configuration API docs: [Javadoc](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/package-summary.html) 
-
--->
+Feature manager configuration API docs: [Javadoc](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/package-summary.html)
