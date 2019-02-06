@@ -53,6 +53,7 @@ Create a PlaybackManager that handles the HLS stream setup and playback operatio
    }
    
    ```
+
 # Related API documentation {#related-api-documentation}
 
 * [Class PlaybackManager](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/PlaybackManager.html)
