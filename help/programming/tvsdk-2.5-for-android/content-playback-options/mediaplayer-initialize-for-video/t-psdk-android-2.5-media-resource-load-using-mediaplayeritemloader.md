@@ -4,9 +4,6 @@ seo-description: Using MediaPlayerItemLoader helps you obtain information about 
 seo-title: Load a media resource using MediaPlayerItemLoader
 title: Load a media resource using MediaPlayerItemLoader
 uuid: 43ca2470-1fd2-4f66-94fe-a12ed17b52d7
-index: y
-internal: n
-snippet: y
 ---
 
 # Load a media resource using MediaPlayerItemLoader{#load-a-media-resource-using-mediaplayeritemloader}

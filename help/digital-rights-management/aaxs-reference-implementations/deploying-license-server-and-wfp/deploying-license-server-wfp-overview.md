@@ -2,9 +2,6 @@
 seo-title: Deploying the license server and watched folder packager overview
 title: Deploying the license server and watched folder packager overview
 uuid: 4b71f2f4-f971-4382-ae41-171f7dfdfe21
-index: y
-internal: n
-snippet: y
 ---
 
 # Deploying the license server and watched folder packager overview {#deploying-the-license-server-and-watched-folder-packager-overview}

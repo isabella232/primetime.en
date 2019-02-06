@@ -5,9 +5,6 @@ seo-description: null
 seo-title: Enable CRS in TVSDK applications
 title: Enable CRS in TVSDK applications
 uuid: 2243988f-505c-4998-bc0b-d48a166ca429
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable CRS in TVSDK applications{#enable-crs-in-tvsdk-applications}

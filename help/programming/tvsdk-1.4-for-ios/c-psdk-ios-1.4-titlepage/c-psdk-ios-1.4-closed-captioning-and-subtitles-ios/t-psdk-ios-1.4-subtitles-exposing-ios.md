@@ -4,9 +4,6 @@ seo-description: The TVSDK notifies your player client about the availability of
 seo-title: Expose subtitles
 title: Expose subtitles
 uuid: 657ab9c7-b205-4d13-81a7-51bc8e7d5ee2
-index: y
-internal: n
-snippet: y
 ---
 
 # Expose subtitles{#expose-subtitles}

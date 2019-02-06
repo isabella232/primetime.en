@@ -2,9 +2,6 @@
 seo-title: Anonymous Domains
 title: Anonymous Domains
 uuid: ee29ae4d-65b2-48de-b441-18c8cf55de32
-index: y
-internal: n
-snippet: y
 ---
 
 # Anonymous Domains {#anonymous-domains}

@@ -4,9 +4,6 @@ seo-description: When you package content, you must specify the license server U
 seo-title: Packaging content
 title: Packaging content
 uuid: 2e47a9a2-bbc6-4995-8ce5-6ca6b116349b
-index: y
-internal: n
-snippet: y
 ---
 
 # Packaging content{#packaging-content}

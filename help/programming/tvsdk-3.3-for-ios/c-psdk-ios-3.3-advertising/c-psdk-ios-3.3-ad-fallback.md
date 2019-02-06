@@ -4,9 +4,6 @@ seo-description: For Digital Video Ad Serving Template (VAST) ads (or creatives)
 seo-title: Ad fallback for VAST and VMAP ads
 title: Ad fallback for VAST and VMAP ads
 uuid: ca65f349-012d-49e3-8c23-fd041c5362ee
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad fallback for VAST and VMAP ads{#ad-fallback-for-vast-and-vmap-ads}

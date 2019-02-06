@@ -4,16 +4,13 @@ seo-description: The MediaPlayer object represents your media player. A MediaPla
 seo-title: About the MediaPlayerItem class
 title: About the MediaPlayerItem class
 uuid: 531dd1a6-d72c-4ae3-9c3f-2f1d854245c5
-index: y
-internal: n
-snippet: y
 ---
 
 # About the MediaPlayerItem class{#about-the-mediaplayeritem-class}
 
 The MediaPlayer object represents your media player. A MediaPlayerItem represents audio or video on your player.
 
-<a id="section_01BC89E5C5A94D0A95EF9D29FBCE758A"></a>
+<!--<a id="section_01BC89E5C5A94D0A95EF9D29FBCE758A"></a>-->
 
 After a media resource is successfully loaded, TVSDK creates an instance of the `MediaPlayerItem` class to provide access to that resource.
 

@@ -4,9 +4,6 @@ seo-description: MediaPlayerNotification objects provide information about chang
 seo-title: Notifications for player status, activity, errors, and logging
 title: Notifications for player status, activity, errors, and logging
 uuid: 7ce5bed0-f312-437e-a82f-b1d4a8e1926c
-index: y
-internal: n
-snippet: y
 ---
 
 # Notifications for player status, activity, errors, and logging{#notifications-for-player-status-activity-errors-and-logging}

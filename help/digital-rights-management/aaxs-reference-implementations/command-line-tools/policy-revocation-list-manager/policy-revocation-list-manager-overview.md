@@ -2,9 +2,6 @@
 seo-title: Revocation List Manager overview
 title: Revocation List Manager overview
 uuid: 241ee4fa-1781-497f-ac39-eb018141d300
-index: y
-internal: n
-snippet: y
 ---
 
 # Revocation List Manager overview {#revocation-list-manager-overview}

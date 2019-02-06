@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Mark ranges
 title: Mark ranges
 uuid: d98efb92-701e-4ee2-b574-823c1e5d5149
-index: y
-internal: n
-snippet: y
 ---
 
 # Mark ranges{#mark-ranges}

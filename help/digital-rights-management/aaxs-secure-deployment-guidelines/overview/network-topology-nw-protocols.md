@@ -2,9 +2,6 @@
 seo-title: Network protocols used by Adobe Access
 title: Network protocols used by Adobe Access
 uuid: 4f2ee3f5-6758-4fbe-b5cd-cead1e5ccde8
-index: y
-internal: n
-snippet: y
 ---
 
 # Network protocols used by Adobe Access {#network-protocols-used-by-adobe-access}

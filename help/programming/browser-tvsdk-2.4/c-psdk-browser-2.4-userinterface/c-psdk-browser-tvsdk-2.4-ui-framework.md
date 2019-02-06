@@ -4,9 +4,6 @@ seo-description: The UI framework is a UI layer on top of Browser TVSDK, which p
 seo-title: The UI Framework
 title: The UI Framework
 uuid: 8460d65c-b9aa-40d0-9e68-771b9f73a7b4
-index: y
-internal: n
-snippet: y
 ---
 
 # The UI Framework{#the-ui-framework}

@@ -2,9 +2,6 @@
 seo-title: Sample Client Requests
 title: Sample Client Requests
 uuid: 330d5e3c-1711-4375-bd11-e7702f0cde31
-index: y
-internal: n
-snippet: y
 ---
 
 # Sample Client Requests{#sample-client-requests}

@@ -2,9 +2,6 @@
 seo-title: Requesting certificates
 title: Requesting certificates
 uuid: dc38732b-c8e3-40aa-a145-4ecc21535628
-index: y
-internal: n
-snippet: y
 ---
 
 # Requesting certificates{#requesting-certificates}

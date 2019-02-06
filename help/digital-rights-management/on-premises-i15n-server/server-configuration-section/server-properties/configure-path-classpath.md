@@ -2,9 +2,6 @@
 seo-title: Configure the Path and Classpath
 title: Configure the Path and Classpath
 uuid: cf10fafa-125e-450c-83ae-60b990dab6b5
-index: y
-internal: n
-snippet: y
 ---
 
 # Configure the Path and Classpath{#configure-the-path-and-classpath}

@@ -4,9 +4,6 @@ seo-description: Publishers can build HLS-compliant video players that work with
 seo-title: Overview of non-TVSDK client-side tracking
 title: Overview of non-TVSDK client-side tracking
 uuid: fb23be01-3327-443d-82c4-fb0993e7fec1
-index: y
-internal: n
-snippet: y
 ---
 
 # Overview of non-TVSDK client-side tracking {#overview-of-non-tvsdk-client-side-tracking}

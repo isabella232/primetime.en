@@ -5,9 +5,6 @@ seo-description: The priority rule defines the priority order of the ad creative
 seo-title: Priority rules
 title: Priority rules
 uuid: 6aa5822a-a3c0-49b2-b25b-0308a784e405
-index: y
-internal: n
-snippet: y
 ---
 
 # Priority rules{#priority-rules}

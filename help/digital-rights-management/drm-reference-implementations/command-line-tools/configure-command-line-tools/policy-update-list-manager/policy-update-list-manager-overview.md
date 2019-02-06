@@ -2,9 +2,6 @@
 seo-title: Overview
 title: Overview
 uuid: 19d05867-c210-4cd0-bc2f-5dd75f5774e5
-index: y
-internal: n
-snippet: y
 ---
 
 # Overview{#overview}

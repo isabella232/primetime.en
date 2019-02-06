@@ -4,9 +4,6 @@ seo-description: The Video Encoder interface of the AVE returns these video play
 seo-title: NATIVE_ERROR  Video playback values
 title: NATIVE_ERROR  Video playback values
 uuid: fbc08ecd-2e28-41ad-955b-557358bccdc8
-index: y
-internal: n
-snippet: y
 ---
 
 # NATIVE_ERROR: Video playback values{#native-error-video-playback-values}

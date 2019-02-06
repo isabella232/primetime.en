@@ -4,9 +4,6 @@ seo-description: You can control the visibility of closed captions. When visibil
 seo-title: Control closed-caption visibility
 title: Control closed-caption visibility
 uuid: 42913347-8158-474e-aa3c-ba4d38baba12
-index: y
-internal: n
-snippet: y
 ---
 
 # Control closed-caption visibility{#control-closed-caption-visibility}

@@ -2,9 +2,6 @@
 seo-title: User authentication
 title: User authentication
 uuid: 19a6ee7e-9580-48bb-a3a6-ff2cedcc796a
-index: y
-internal: n
-snippet: y
 ---
 
 # User authentication{#user-authentication}

@@ -4,9 +4,6 @@ seo-description: Browser TVSDK supports a number of features that you can implem
 seo-title: Supported features
 title: Supported features
 uuid: 54b36ef4-58d6-43ba-9a26-261d9d435d83
-index: y
-internal: n
-snippet: y
 ---
 
 # Supported features{#supported-features}

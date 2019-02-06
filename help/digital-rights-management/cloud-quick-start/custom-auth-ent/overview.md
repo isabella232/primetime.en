@@ -2,9 +2,6 @@
 seo-title: BEES Overview
 title: BEES Overview
 uuid: c6ee7528-fdfa-4a56-bea2-a5e2dab6d428
-index: y
-internal: n
-snippet: y
 ---
 
 # BEES Overview{#bees-overview}

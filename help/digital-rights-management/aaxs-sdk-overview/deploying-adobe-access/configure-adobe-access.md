@@ -2,9 +2,6 @@
 seo-title: Configure Adobe Access
 title: Configure Adobe Access
 uuid: 9f9a9931-f607-4b1a-9209-0236a4c197ca
-index: y
-internal: n
-snippet: y
 ---
 
 # Configure Adobe Access {#configure-adobe-access}

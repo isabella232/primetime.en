@@ -4,9 +4,6 @@ seo-description: The configuration file for the Adobe Primetime DRM Media Packag
 seo-title: Securely packaging content
 title: Securely packaging content
 uuid: 3887f48f-6c27-4eb8-b91c-4227fdd50f7b
-index: y
-internal: n
-snippet: y
 ---
 
 # Securely packaging content{#securely-packaging-content}

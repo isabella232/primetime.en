@@ -2,9 +2,6 @@
 seo-title: Time-based rules overview
 title: Time-based rules overview
 uuid: 10b7766e-3b1a-4d8a-ba15-46976aa0847d
-index: y
-internal: n
-snippet: y
 ---
 
 # Time-based rules overview {#time-based-rules-overview}

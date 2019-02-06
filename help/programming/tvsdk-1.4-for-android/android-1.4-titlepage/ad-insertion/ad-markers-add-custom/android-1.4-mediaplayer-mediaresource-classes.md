@@ -4,16 +4,13 @@ seo-description: A MediaResource represents the content that is about to be load
 seo-title: MediaPlayer and MediaResource classes
 title: MediaPlayer and MediaResource classes
 uuid: 7393c320-7dbb-4580-9425-a735f9d03ef5
-index: y
-internal: n
-snippet: y
 ---
 
 # MediaPlayer and MediaResource classes{#mediaplayer-and-mediaresource-classes}
 
 A MediaResource represents the content that is about to be loaded by the MediaPlayer instance.
 
-<a id="section_B09A012C97454AF58CE2269B800D8027"></a>
+<!--<a id="section_B09A012C97454AF58CE2269B800D8027"></a>-->
 
 The TVSDK library provides a simple means to load and prepare content for playback by using the `replaceCurrentItem` method in the MediaPlayer interface. This method receives an instance of the MediaResource class as the sole input argument. The MediaResource class is composed of the following information:
 

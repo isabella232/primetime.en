@@ -4,12 +4,9 @@ seo-description: TVSDK provides API elements that are useful when implementing b
 seo-title: Blackout API elements
 title: Blackout API elements
 uuid: f87f4ed0-3f97-48bd-bceb-28357a978964
-index: y
-internal: n
-snippet: y
 ---
 
-# Blackout API elements {#blackout-api-elements}
+# Blackout API elements{#blackout-api-elements}
 
 TVSDK provides API elements that are useful when implementing blackouts, including methods, metadata, and notifications.
 
@@ -42,3 +39,4 @@ You can use the following when implementing a blackout solution in your player.
         * Error in background manifest download.
 
     * `INVALID_SEEK_WARNING` Dispatched when a seek is attempted in a nonseekable range (in `nonSeekableRanges` set in `PTBlackoutMetadata`).
+

@@ -2,9 +2,6 @@
 seo-title: Basic Policy Options
 title: Basic Policy Options
 uuid: b09543b6-26a7-4e4d-8e8f-866b4bf9cc50
-index: y
-internal: n
-snippet: y
 ---
 
 # Basic Policy Options {#basic-policy-options}

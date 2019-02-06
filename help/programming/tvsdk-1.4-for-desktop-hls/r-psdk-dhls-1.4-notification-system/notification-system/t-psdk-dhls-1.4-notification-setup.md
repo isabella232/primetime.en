@@ -4,9 +4,6 @@ seo-description: You can listen for notifications and you can add your own notif
 seo-title: Set up your notification system
 title: Set up your notification system
 uuid: 2d1876c7-4ce6-491c-880b-dd94697d4feb
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up your notification system{#set-up-your-notification-system}

@@ -4,9 +4,6 @@ seo-description: TVSDK dispatches media player item events in response to loadin
 seo-title: Loader events
 title: Loader events
 uuid: 0ad37715-14b1-457c-892f-0db0d6220f0c
-index: y
-internal: n
-snippet: y
 ---
 
 # Loader events{#loader-events}

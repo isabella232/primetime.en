@@ -2,9 +2,6 @@
 seo-title: Configuring SSL
 title: Configuring SSL
 uuid: aba7c7bb-63bb-4d51-b57e-329d2ad01590
-index: y
-internal: n
-snippet: y
 ---
 
 # Configuring SSL {#configuring-ssl}

@@ -4,9 +4,6 @@ seo-description: For live/linear content, TVSDK replaces a chunk of the main str
 seo-title: Resolve and insert Live/linear ad
 title: Resolve and insert Live/linear ad
 uuid: c9d54fc9-1d54-41c3-a872-d27afdd16314
-index: y
-internal: n
-snippet: y
 ---
 
 # Resolve and insert Live/linear ad{#resolve-and-insert-live-linear-ad}

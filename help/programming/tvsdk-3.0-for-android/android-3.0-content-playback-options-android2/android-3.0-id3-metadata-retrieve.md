@@ -4,9 +4,6 @@ seo-description: ID3 tags provide information about an audio or video file, such
 seo-title: ID3 tags
 title: ID3 tags
 uuid: 96901223-81c7-49c7-bacf-7b4bbdff1691
-index: y
-internal: n
-snippet: y
 ---
 
 # ID3 tags{#id-tags}

@@ -4,9 +4,6 @@ seo-description: You can implement your own opportunity detectors by implementin
 seo-title: Implement a custom opportunity detector
 title: Implement a custom opportunity detector
 uuid: 012527c5-4ef0-4cd6-a9df-2fb861078a7e
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement a custom opportunity detector{#implement-a-custom-opportunity-detector}

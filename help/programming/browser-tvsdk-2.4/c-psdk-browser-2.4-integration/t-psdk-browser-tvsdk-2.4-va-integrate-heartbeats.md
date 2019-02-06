@@ -4,9 +4,6 @@ seo-description: You can configure your player to track and analyze video use.
 seo-title: Initialize and configure video analytics
 title: Initialize and configure video analytics
 uuid: 4a582b35-ae92-4557-806d-e174fc878cc5
-index: y
-internal: n
-snippet: y
 ---
 
 # Initialize and configure video analytics {#initialize-and-configure-video-analytics}

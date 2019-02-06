@@ -4,9 +4,6 @@ seo-description: You can implement Apple FairPlay Streaming, which is Apple's DR
 seo-title: Enable Apple FairPlay in TVSDK applications
 title: Enable Apple FairPlay in TVSDK applications
 uuid: fafffdb9-09f9-45fb-9957-3c6e95ed55f9
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable Apple FairPlay in TVSDK applications{#enable-apple-fairplay-in-tvsdk-applications}

@@ -4,9 +4,6 @@ seo-description: You can use Adobe's Offline packager to prepare content for any
 seo-title: Primetime Packager / Cloud DRM / TVSDK
 title: Primetime Packager / Cloud DRM / TVSDK
 uuid: e54a0e4d-c8ea-46d4-b1b0-bed8a680f8f5
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime Packager / Cloud DRM / TVSDK{#primetime-packager-cloud-drm-tvsdk}
@@ -38,17 +35,17 @@ You can use Adobe's Offline packager to prepare content for any of the DRM solut
       ```    
       java -jar OfflinePackager.jar \ 
         -in_path [ 
-<i>your_content.mp4</i>] \ 
+        <your_content.mp4>] \ 
         -out_type dash \ 
         -out_path [ 
-<i>your_out_file_path</i>] \ 
+        <your_out_file_path>] \ 
         -drm \ 
         -drm_sys WIDEVINE \ 
         -key_file_path "creds/widevine_key.bin" \ 
         -widevine_key_id [ 
-<i>some_keyID</i>] \ 
+        <some_keyID>] \ 
         -widevine_content_id [ 
-<i>some_content-ID</i>] \ 
+        <some_content-ID] \ 
         -widevine_header provider:intertrust#content_id:2a
       ```
 
@@ -57,10 +54,10 @@ You can use Adobe's Offline packager to prepare content for any of the DRM solut
       ```    
       java -jar OfflinePackager.jar  
         -in_path [ 
-<i>your_content.mp4</i>]  
+        <your_content.mp4>]  
         -out_type hls  
         -out_path [ 
-<i>your_out_file_path</i>]  
+        <your_out_file_path>]  
         -drm  
         -drm_sys FAIRPLAY  
         -key_file_path "creds/fairplay_key.bin"  

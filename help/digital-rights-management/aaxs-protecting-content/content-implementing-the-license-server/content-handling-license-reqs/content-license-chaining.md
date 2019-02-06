@@ -2,9 +2,6 @@
 seo-title: License chaining
 title: License chaining
 uuid: dcc12663-ef9e-4c73-b837-66fcec39358b
-index: y
-internal: n
-snippet: y
 ---
 
 # License chaining{#license-chaining}

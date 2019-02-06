@@ -2,9 +2,6 @@
 seo-title: Rollback detection
 title: Rollback detection
 uuid: cc554194-2848-4104-85eb-f697a86c72f2
-index: y
-internal: n
-snippet: y
 ---
 
 # Rollback detection{#rollback-detection}

@@ -2,9 +2,6 @@
 seo-title: Encrypting tracks
 title: Encrypting tracks
 uuid: 75444553-cb55-4beb-b486-c6c615b54ca0
-index: y
-internal: n
-snippet: y
 ---
 
 # Encrypting tracks{#encrypting-tracks}

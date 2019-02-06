@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Whitelist for Primetime DRM applications allowed to play protected content
 title: Whitelist for Primetime DRM applications allowed to play protected content
 uuid: 23dd4faf-7992-4ee9-97ce-c6004ee995c2
-index: y
-internal: n
-snippet: y
 ---
 
 # Whitelist for Primetime DRM applications allowed to play protected content{#whitelist-for-primetime-drm-applications-allowed-to-play-protected-content}

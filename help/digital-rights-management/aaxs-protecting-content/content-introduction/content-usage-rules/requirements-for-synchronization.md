@@ -2,9 +2,6 @@
 seo-title: Requirements for Synchronization
 title: Requirements for Synchronization
 uuid: 976a0ae1-bece-437e-b95b-6cd222525d13
-index: y
-internal: n
-snippet: y
 ---
 
 # Requirements for Synchronization{#requirements-for-synchronization}

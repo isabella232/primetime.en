@@ -2,9 +2,6 @@
 seo-title: Out-of-band licenses overview
 title: Out-of-band licenses overview
 uuid: 82e4529a-ee1b-4c0c-8885-e0e68319d1a0
-index: y
-internal: n
-snippet: y
 ---
 
 # Out-of-band licenses overview{#out-of-band-licenses-overview}

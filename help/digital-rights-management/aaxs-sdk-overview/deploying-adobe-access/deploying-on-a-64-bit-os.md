@@ -2,9 +2,6 @@
 seo-title: Deploying on a 64-bit operating system
 title: Deploying on a 64-bit operating system
 uuid: 29aa3640-64f6-4148-a71f-6e69374568b7
-index: y
-internal: n
-snippet: y
 ---
 
 # Deploying on a 64-bit operating system {#deploying-on-a-bit-operating-system}

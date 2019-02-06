@@ -2,16 +2,13 @@
 seo-title: Adobe Pass and Adobe Access
 title: Adobe Pass and Adobe Access
 uuid: 09e75cd7-00b3-4f0f-869e-43dc4d5c3bf7
-index: y
-internal: n
-snippet: y
 ---
 
 # Adobe Pass and Adobe Access {#adobe-pass-and-adobe-access}
 
 Adobe Pass ( [](https://www.adobe.com/products/adobepass/)) provides user/device authentication and authorization across multiple content providers. The user must have a valid cable TV or satellite TV subscription. 
 
-<a id="fig_cln_bc2_44"></a>
+<!--<a id="fig_cln_bc2_44"></a>-->
 
 ![](assets/AdobePass_web.png)
 

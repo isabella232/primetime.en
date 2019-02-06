@@ -4,9 +4,6 @@ seo-description: The TVSDK player can play digital Video Player Ad-Interface Def
 seo-title: Custom ads
 title: Custom ads
 uuid: 0fa782d1-f4f1-460c-b469-47824b8de232
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom ads{#custom-ads}

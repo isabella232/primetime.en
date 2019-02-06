@@ -4,9 +4,6 @@ seo-description: Load a resource by directly instantiating a MediaResource and l
 seo-title: Load a media resource in the MediaPlayer
 title: Load a media resource in the MediaPlayer
 uuid: 6ee8032f-0728-423f-a1d2-5030aa7db14f
-index: y
-internal: n
-snippet: y
 ---
 
 # Load a media resource in the MediaPlayer {#load-a-media-resource-in-the-mediaplayer}
@@ -36,7 +33,7 @@ Load a resource by directly instantiating a MediaResource and loading the video 
 >* A `notification` parameter of type `MediaPlayerNotification` that contains diagnostic information about the error event. 
 >
 
-><a id="example_3774607C6F08473282CF0CB7F3D82373"></a>
+><!--<a id="example_3774607C6F08473282CF0CB7F3D82373"></a>-->
 
 >The following simplified sample code illustrates the process of loading a media resource: 
 >

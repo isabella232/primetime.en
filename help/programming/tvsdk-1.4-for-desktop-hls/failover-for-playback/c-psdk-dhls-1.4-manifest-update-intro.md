@@ -4,9 +4,6 @@ seo-description: TVSDK can detect changed playback information in master m3u8 ma
 seo-title: Live master-manifest update
 title: Live master-manifest update
 uuid: 44f8adc2-0538-4c5d-8e39-55f661d8540b
-index: y
-internal: n
-snippet: y
 ---
 
 # Live master-manifest update{#live-master-manifest-update}

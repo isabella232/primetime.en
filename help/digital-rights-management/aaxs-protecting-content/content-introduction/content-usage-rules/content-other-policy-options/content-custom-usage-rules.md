@@ -2,9 +2,6 @@
 seo-title: Custom usage rules
 title: Custom usage rules
 uuid: 77293e49-5980-4c4f-99bc-575e9be80739
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom usage rules {#custom-usage-rules}

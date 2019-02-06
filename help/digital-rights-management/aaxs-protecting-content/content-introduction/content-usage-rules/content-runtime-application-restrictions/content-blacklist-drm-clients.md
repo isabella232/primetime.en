@@ -2,9 +2,6 @@
 seo-title: Black-list of DRM Clients restricted from accessing protected content
 title: Black-list of DRM Clients restricted from accessing protected content
 uuid: c05aa6f8-32d9-42aa-a9c5-0d0629d49778
-index: y
-internal: n
-snippet: y
 ---
 
 # Black-list of DRM Clients restricted from accessing protected content {#black-list-of-drm-clients-restricted-from-accessing-protected-content}

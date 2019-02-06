@@ -4,9 +4,6 @@ seo-description: TVSDK dispatches timed metadata events and generates timed meta
 seo-title: Timed metadata events
 title: Timed metadata events
 uuid: 69c43701-6ffa-45fe-a104-fe81391222e7
-index: y
-internal: n
-snippet: y
 ---
 
 # Timed metadata events{#timed-metadata-events}

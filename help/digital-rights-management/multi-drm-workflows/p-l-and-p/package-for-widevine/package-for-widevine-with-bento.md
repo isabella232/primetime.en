@@ -4,9 +4,6 @@ seo-description: We use both the Bento4 packager and the Adobe offline packager 
 seo-title: Package your content with Bento4
 title: Package your content with Bento4
 uuid: 88323a4e-d0b5-4a41-acec-7126d3e0c90b
-index: y
-internal: n
-snippet: y
 ---
 
 # Package your content with Bento4{#package-your-content-with-bento}

@@ -4,9 +4,6 @@ seo-description: You can implement multiple DRM solutions for your TVSDK apps us
 seo-title: Multi-DRM overview
 title: Multi-DRM overview
 uuid: 1705a338-baeb-4fcd-ae16-08963da55ab8
-index: y
-internal: n
-snippet: y
 ---
 
 # Multi-DRM overview{#multi-drm-overview}

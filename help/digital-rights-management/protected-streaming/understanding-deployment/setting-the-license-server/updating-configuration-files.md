@@ -4,9 +4,6 @@ seo-description: As soon as the license server reads one of the license server c
 seo-title: Updating configuration files
 title: Updating configuration files
 uuid: 34b3247c-3458-49de-b1b0-dc0ebbf61c88
-index: y
-internal: n
-snippet: y
 ---
 
 # Updating configuration files{#updating-configuration-files}

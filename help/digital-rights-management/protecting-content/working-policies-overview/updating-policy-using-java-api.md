@@ -2,9 +2,6 @@
 seo-title: Updating a DRM policy with the Java API
 title: Updating a DRM policy with the Java API
 uuid: ec21351c-900e-48f5-845a-c0b430c210d7
-index: y
-internal: n
-snippet: y
 ---
 
 # Updating a DRM policy with the Java API {#updating-a-drm-policy-with-the-java-api}

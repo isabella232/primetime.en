@@ -4,9 +4,6 @@ seo-description: You can complete Digital Rights Management (DRM)-specific workf
 seo-title: Digital Rights Management
 title: Digital Rights Management
 uuid: 011605c7-50c4-4ad5-9961-8cd92d0e6fd8
-index: y
-internal: n
-snippet: y
 ---
 
 # Digital Rights Management{#digital-rights-management}

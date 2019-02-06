@@ -2,9 +2,6 @@
 seo-title: Add advertising
 title: Add advertising
 uuid: cff37f8e-e62b-43ba-8af6-8fd5fe0dd16f
-index: y
-internal: n
-snippet: y
 ---
 
 # Add advertising {#add-advertising}

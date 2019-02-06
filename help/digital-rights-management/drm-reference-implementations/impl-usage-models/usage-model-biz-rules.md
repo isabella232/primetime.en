@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Usage model demo business rules
 title: Usage model demo business rules
 uuid: c55f85be-5ecb-4a78-b47d-7001ec207d3a
-index: y
-internal: n
-snippet: y
 ---
 
 # Usage model demo business rules{#usage-model-demo-business-rules}

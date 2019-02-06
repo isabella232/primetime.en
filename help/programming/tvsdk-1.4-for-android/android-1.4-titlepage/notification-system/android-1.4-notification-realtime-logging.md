@@ -4,9 +4,6 @@ seo-description: You can use notifications to implement real-time logging in you
 seo-title: Add real-time logging and debugging
 title: Add real-time logging and debugging
 uuid: 037daf57-a1b3-4b42-ac51-81179fb36915
-index: y
-internal: n
-snippet: y
 ---
 
 # Add real-time logging and debugging{#add-real-time-logging-and-debugging}

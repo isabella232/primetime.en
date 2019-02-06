@@ -4,9 +4,6 @@ seo-description: When users fast forward or fast rewind through the media, they 
 seo-title: Implement fast forward and rewind
 title: Implement fast forward and rewind
 uuid: 2e5d0fd0-0290-4f08-b9c6-c8ecde26abb8
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement fast forward and rewind{#implement-fast-forward-and-rewind}

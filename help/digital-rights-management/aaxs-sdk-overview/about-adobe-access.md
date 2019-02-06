@@ -2,9 +2,6 @@
 seo-title: About Adobe Access
 title: About Adobe Access
 uuid: e0e85150-8966-4d16-b53a-2c283067481d
-index: y
-internal: n
-snippet: y
 ---
 
 # About Adobe Access {#about-adobe-access}

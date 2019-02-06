@@ -4,9 +4,6 @@ seo-description: Common problems during testing often involve your ExpressPlay a
 seo-title: Troubleshooting your quick-start
 title: Troubleshooting your quick-start
 uuid: 42256aa0-2efc-4602-aefc-3bab2dc58ec0
-index: y
-internal: n
-snippet: y
 ---
 
 # Troubleshooting your quick-start{#troubleshooting-your-quick-start}

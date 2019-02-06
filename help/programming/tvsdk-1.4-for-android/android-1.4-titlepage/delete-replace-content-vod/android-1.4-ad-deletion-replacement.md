@@ -4,9 +4,6 @@ seo-description: These changes in the Android TVSDK API support ad deletion and 
 seo-title: Ad deletion and replacement API changes
 title: Ad deletion and replacement API changes
 uuid: 2bb8a331-6851-4442-99de-b01500a0e1e2
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad deletion and replacement API changes{#ad-deletion-and-replacement-api-changes}

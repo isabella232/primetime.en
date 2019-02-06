@@ -2,9 +2,6 @@
 seo-title: Working with Policy Update Lists
 title: Working with Policy Update Lists
 uuid: 583abb31-5c80-43f2-bc3d-a2300f61c4ea
-index: y
-internal: n
-snippet: y
 ---
 
 # Working with Policy Update Lists{#working-with-policy-update-lists}

@@ -4,9 +4,6 @@ seo-description: You can set ABR control values only with ABRControlParameters, 
 seo-title: Configure adaptive bit rates using ABRControlParameters
 title: Configure adaptive bit rates using ABRControlParameters
 uuid: 99b7a463-327b-48bf-8244-e41467072b44
-index: y
-internal: n
-snippet: y
 ---
 
 # Configure adaptive bit rates using ABRControlParameters{#configure-adaptive-bit-rates-using-abrcontrolparameters}

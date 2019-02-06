@@ -4,16 +4,13 @@ seo-description: This table provides detailed information about INFO. type notif
 seo-title: INFO notification codes
 title: INFO notification codes
 uuid: 2b9f9328-4e09-44b7-8ea5-237c46e65e73
-index: y
-internal: n
-snippet: y
 ---
 
 # INFO notification codes{#info-notification-codes}
 
 This table provides detailed information about INFO. type notifications.
 
-<a id="section_ED4302E363AE48CBA2C3E0B71AE612D8"></a>
+<!--<a id="section_ED4302E363AE48CBA2C3E0B71AE612D8"></a>-->
 
 Most informational notifications contain relevant metadata, for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad. 
 
@@ -119,8 +116,7 @@ Most informational notifications contain relevant metadata, for example, the URL
    <td colname="2"><span class="codeph"> AD_BREAK_ PLACEMENT_COMPLETE </span> </td> 
    <td colname="3"> <p>None </p> </td> 
    <td colname="4"> <span class="codeph"> PROPOSED_AD_BREAK</span> <span class="codeph"> ACCEPTED_AD_BREAK</span> </td> 
-   <td colname="5"> A proposed ad break was accepted by 
-    <ph conkeyref="phrases/primetime-sdk-name" /> and placed (in its entirety or just partially) on the playback timeline. </td> 
+   <td colname="5"> A proposed ad break was accepted by <code>primetime-sdk-name</code> and placed (in its entirety or just partially) on the playback timeline. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 303002 </span> </td> 

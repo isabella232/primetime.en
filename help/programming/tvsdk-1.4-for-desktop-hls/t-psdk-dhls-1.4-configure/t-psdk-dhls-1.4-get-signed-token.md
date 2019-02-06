@@ -4,9 +4,6 @@ seo-description: The Flash Runtime TVSDK needs a signed token to validate that y
 seo-title: Load your signed token
 title: Load your signed token
 uuid: 8760eab3-3d6d-47c6-9aa7-f64f6aa5ddcf
-index: y
-internal: n
-snippet: y
 ---
 
 # Load your signed token{#load-your-signed-token}

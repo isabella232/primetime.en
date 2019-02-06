@@ -4,9 +4,6 @@ seo-description: The main components of Primetime DRM consist of a Java SDK, and
 seo-title: Java SDK, Flash Player and Adobe AIR client
 title: Java SDK, Flash Player and Adobe AIR client
 uuid: e6daed27-3803-4ef7-ba25-4a180af7502f
-index: y
-internal: n
-snippet: y
 ---
 
 # Java SDK, Flash Player and Adobe AIR client{#java-sdk-flash-player-and-adobe-air-client}

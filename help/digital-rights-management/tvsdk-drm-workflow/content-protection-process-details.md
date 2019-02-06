@@ -2,9 +2,6 @@
 seo-title: License acquisition process details
 title: License acquisition process details
 uuid: 4825c49e-fa6f-4c98-9d21-a2743930ca2e
-index: y
-internal: n
-snippet: y
 ---
 
 # License acquisition process details{#license-acquisition-process-details}

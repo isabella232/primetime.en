@@ -2,9 +2,6 @@
 seo-title: Handling synchronization requests
 title: Handling synchronization requests
 uuid: 37b2db09-4c09-4216-874b-b570a84569b6
-index: y
-internal: n
-snippet: y
 ---
 
 # Handling synchronization requests{#handling-synchronization-requests}

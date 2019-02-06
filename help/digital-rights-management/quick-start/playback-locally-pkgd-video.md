@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Play back a locally packaged video
 title: Play back a locally packaged video
 uuid: 64a38c52-17f9-4108-9378-2d294b4a7c7b
-index: y
-internal: n
-snippet: y
 ---
 
 # Play back a locally packaged video {#play-back-a-locally-packaged-video}

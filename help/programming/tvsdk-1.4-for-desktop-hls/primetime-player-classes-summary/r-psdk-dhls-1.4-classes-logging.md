@@ -4,9 +4,6 @@ seo-description: These classes enable you to customize logging.
 seo-title: Logging classes
 title: Logging classes
 uuid: 947f3ec8-c5fe-4a55-b306-f338205ab4e6
-index: y
-internal: n
-snippet: y
 ---
 
 # Logging classes{#logging-classes}
@@ -41,10 +38,7 @@ These classes enable you to customize logging.
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/Logger.html" format="html" scope="external"> Logger</a></span> </td> 
-   <td colname="2">Interface. The methods required to implement a custom logger for the 
-    <ph conkeyref="phrases/primetime-sdk-name">
-      Phrase
-    </ph>. </td> 
+   <td colname="2">Interface. The methods required to implement a custom logger for the Phrase. </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/logging/NullLogger.html" format="html" scope="external"> NullLogger</a></span> </td> 

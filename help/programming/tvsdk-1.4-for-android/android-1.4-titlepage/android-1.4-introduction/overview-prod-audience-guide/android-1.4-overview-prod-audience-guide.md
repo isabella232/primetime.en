@@ -4,9 +4,6 @@ seo-description: This guide provides information about how to develop video play
 seo-title: Overview
 title: Overview
 uuid: 9c320389-e327-4e5f-888c-e2e5728365ca
-index: y
-internal: n
-snippet: y
 ---
 
 # Overview {#overview}

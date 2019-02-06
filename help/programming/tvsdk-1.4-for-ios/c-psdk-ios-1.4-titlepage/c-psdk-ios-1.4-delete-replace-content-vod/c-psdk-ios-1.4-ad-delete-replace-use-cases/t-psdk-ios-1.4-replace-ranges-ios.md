@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Replace ranges
 title: Replace ranges
 uuid: f7c2463e-60e6-4e03-8f5b-9dc88ab73d00
-index: y
-internal: n
-snippet: y
 ---
 
 # Replace ranges{#replace-ranges}

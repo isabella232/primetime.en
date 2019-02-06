@@ -4,9 +4,6 @@ seo-description: To provide a smoother viewing experience, TVSDK sometimes buffe
 seo-title: Set buffering times
 title: Set buffering times
 uuid: 5a3945a4-1935-4797-b19d-84989850a487
-index: y
-internal: n
-snippet: y
 ---
 
 # Set buffering times{#set-buffering-times}
@@ -62,7 +59,7 @@ The `MediaPlayer` provides methods to set and get the initial buffering time and
 
    If the AVE cannot set the specified values, the media player enters the `ERROR` state with the error code `SET_BUFFER_PARAMETERS_ERROR`.
 
-<a id="example_B5C5004188574D8D8AB8525742767280"></a>
+<!--<a id="example_B5C5004188574D8D8AB8525742767280"></a>-->
 
 For example, to set the initial buffer to 2 seconds and the playback buffer time to 30 seconds:
 

@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Partial Ad break insertion
 title: Partial Ad break insertion
 uuid: cc071c89-f813-419e-a2b2-4f6a9fdccd6a
-index: y
-internal: n
-snippet: y
 ---
 
 # Partial Ad break insertion{#partial-ad-break-insertion}

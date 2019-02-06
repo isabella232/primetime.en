@@ -2,9 +2,6 @@
 seo-title: Java APIs for issuing licenses
 title: Java APIs for issuing licenses
 uuid: beffcd1c-933c-44a9-86fb-78e09456ef33
-index: y
-internal: n
-snippet: y
 ---
 
 # Java APIs for issuing licenses {#java-apis-for-issuing-licenses}

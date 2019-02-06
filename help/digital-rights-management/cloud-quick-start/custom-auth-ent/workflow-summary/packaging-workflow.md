@@ -4,9 +4,6 @@ seo-description: During the packaging of your Adobe Access-protected content, yo
 seo-title: Package workflow details
 title: Package workflow details
 uuid: ebe64ac1-aee6-436b-9ff7-7b6040d34a19
-index: y
-internal: n
-snippet: y
 ---
 
 # Package workflow details{#package-workflow-details}

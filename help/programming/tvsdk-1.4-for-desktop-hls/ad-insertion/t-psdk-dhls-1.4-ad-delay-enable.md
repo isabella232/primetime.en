@@ -4,9 +4,6 @@ seo-description: You can specify whether to allow playback before all ads are lo
 seo-title: Enable lazy ad loading
 title: Enable lazy ad loading
 uuid: ac7c8801-7fa2-4f17-b79c-c603b3236948
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable lazy ad loading{#enable-lazy-ad-loading}

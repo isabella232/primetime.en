@@ -4,9 +4,6 @@ seo-description: The flashaccess-global.xml configuration file includes settings
 seo-title: Global configuration file
 title: Global configuration file
 uuid: 294d6cff-be07-4b4b-8aa6-943044a1c56f
-index: y
-internal: n
-snippet: y
 ---
 
 # Global configuration file{#global-configuration-file}

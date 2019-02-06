@@ -4,9 +4,6 @@ seo-description: ExpressPlay provides reference documentation on their site. Som
 seo-title: ExpressPlay license token request / response reference overview
 title: ExpressPlay license token request / response reference overview
 uuid: 50d67b55-4683-4dac-9928-b8ec165ad6d8
-index: y
-internal: n
-snippet: y
 ---
 
 # ExpressPlay license token request / response reference overview {#expressplay-license-token-request-response-reference-overview}

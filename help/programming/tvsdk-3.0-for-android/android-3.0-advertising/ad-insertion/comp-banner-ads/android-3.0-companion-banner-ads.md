@@ -4,9 +4,6 @@ seo-description: TVSDK supports companion banner ads, which are ads that accompa
 seo-title: Companion banner ads
 title: Companion banner ads
 uuid: 60cb10f4-ddc8-40ec-a673-83e76328b037
-index: y
-internal: n
-snippet: y
 ---
 
 # Companion banner ads{#companion-banner-ads}

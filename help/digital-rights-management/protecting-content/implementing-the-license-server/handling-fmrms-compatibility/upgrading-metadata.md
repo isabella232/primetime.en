@@ -2,9 +2,6 @@
 seo-title: Upgrading metadata
 title: Upgrading metadata
 uuid: 769483e6-a2d1-46cb-afcf-557aa807037c
-index: y
-internal: n
-snippet: y
 ---
 
 # Upgrading metadata{#upgrading-metadata}

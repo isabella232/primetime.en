@@ -2,9 +2,6 @@
 seo-title: Watched Folders
 title: Watched Folders
 uuid: b0073c35-4599-4477-9f5b-28fba889f649
-index: y
-internal: n
-snippet: y
 ---
 
 # Watched Folders {#watched-folders}

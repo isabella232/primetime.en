@@ -4,9 +4,6 @@ seo-description: Setting policies is the process of specifying conditions for wh
 seo-title: Setting policies
 title: Setting policies
 uuid: 2d2672ce-5ed4-4868-aa5e-0a9e21a809b3
-index: y
-internal: n
-snippet: y
 ---
 
 # Setting policies{#setting-policies}

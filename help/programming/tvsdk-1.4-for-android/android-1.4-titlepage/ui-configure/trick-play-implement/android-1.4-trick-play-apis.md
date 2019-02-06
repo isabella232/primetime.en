@@ -4,16 +4,13 @@ seo-description: TVSDK includes methods, properties, and events to determine val
 seo-title: Rate-change API elements
 title: Rate-change API elements
 uuid: 0040d35c-f9cb-4066-9bee-828ed5541194
-index: y
-internal: n
-snippet: y
 ---
 
 # Rate-change API elements{#rate-change-api-elements}
 
 TVSDK includes methods, properties, and events to determine valid rates, current rates, whether trick play is supported, and other functionality related to fast forward and rewind.
 
-<a id="section_36576E92DE6343AEBD0BBD662502365D"></a>
+<!--<a id="section_36576E92DE6343AEBD0BBD662502365D"></a>-->
 
 Use the following API elements to change play rates:
 

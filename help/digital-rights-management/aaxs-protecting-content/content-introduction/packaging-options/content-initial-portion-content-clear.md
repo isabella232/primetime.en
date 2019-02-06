@@ -2,9 +2,6 @@
 seo-title: Initial portion of content in the clear
 title: Initial portion of content in the clear
 uuid: 97c4df2d-c019-468b-93a7-e93942caa042
-index: y
-internal: n
-snippet: y
 ---
 
 # Initial portion of content in the clear{#initial-portion-of-content-in-the-clear}

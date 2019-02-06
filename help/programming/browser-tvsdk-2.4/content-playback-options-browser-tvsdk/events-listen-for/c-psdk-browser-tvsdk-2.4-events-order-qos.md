@@ -4,9 +4,6 @@ seo-description: Browser TVSDK dispatches quality of service (QoS) events to not
 seo-title: QoS events
 title: QoS events
 uuid: 3384bc51-b435-4cd9-a1f8-9abf2605205b
-index: y
-internal: n
-snippet: y
 ---
 
 # QoS events{#qos-events}

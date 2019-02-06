@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Initial Flash Access Manager setup
 title: Initial Flash Access Manager setup
 uuid: e9041f7c-b098-4121-88bf-ff3e6369e01b
-index: y
-internal: n
-snippet: y
 ---
 
 # Initial Flash Access Manager setup {#initial-flash-access-manager-setup}

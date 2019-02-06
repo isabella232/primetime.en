@@ -4,9 +4,6 @@ seo-description: In Browser TVSDK, you can seek to a specific position (time) in
 seo-title: Handle seek when using the seek bar
 title: Handle seek when using the seek bar
 uuid: a7c74141-581f-40a3-9d28-ce56ba56773c
-index: y
-internal: n
-snippet: y
 ---
 
 # Handle seek when using the seek bar{#handle-seek-when-using-the-seek-bar}

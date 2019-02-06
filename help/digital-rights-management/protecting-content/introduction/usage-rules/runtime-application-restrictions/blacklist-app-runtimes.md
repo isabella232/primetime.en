@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Blacklist of application runtimes
 title: Blacklist of application runtimes
 uuid: fc3c9bd6-b1e6-4534-b29c-cd9a35b80928
-index: y
-internal: n
-snippet: y
 ---
 
 # Blacklist of application runtimes{#blacklist-of-application-runtimes}

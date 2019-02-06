@@ -4,9 +4,6 @@ seo-description: Primetime DRM SDK is provided as a Java archive (JAR) file. To 
 seo-title: Install Adobe Primetime DRM SDK
 title: Install Adobe Primetime DRM SDK
 uuid: eb53fabc-6332-402a-b45c-c5c2da227c38
-index: y
-internal: n
-snippet: y
 ---
 
 # Install Adobe Primetime DRM SDK{#install-adobe-primetime-drm-sdk}

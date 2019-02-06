@@ -2,9 +2,6 @@
 seo-title: Use the included Primetime Offline Packager
 title: Use the included Primetime Offline Packager
 uuid: 16b535a9-81b5-43bc-9e42-a64eb6649d9a
-index: y
-internal: n
-snippet: y
 ---
 
 # Use the included Primetime Offline Packager{#use-the-included-primetime-offline-packager}

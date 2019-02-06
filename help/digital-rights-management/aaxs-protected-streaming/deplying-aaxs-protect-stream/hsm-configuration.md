@@ -2,9 +2,6 @@
 seo-title: HSM configuration
 title: HSM configuration
 uuid: da4d7118-65a8-460d-a796-b7bf5c28b208
-index: y
-internal: n
-snippet: y
 ---
 
 # HSM configuration {#hsm-configuration}

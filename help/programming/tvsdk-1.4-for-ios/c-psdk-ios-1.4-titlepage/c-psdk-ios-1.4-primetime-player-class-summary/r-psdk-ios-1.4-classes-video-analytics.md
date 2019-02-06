@@ -4,9 +4,6 @@ seo-description: These classes provide the interface between the TVSDK and Adobe
 seo-title: Video Analytics classes
 title: Video Analytics classes
 uuid: 25f1c306-ed50-4a37-a16c-ddd4266012b3
-index: y
-internal: n
-snippet: y
 ---
 
 # Video Analytics classes{#video-analytics-classes}

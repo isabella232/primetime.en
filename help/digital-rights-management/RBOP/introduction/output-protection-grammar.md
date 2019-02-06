@@ -4,9 +4,6 @@ seo-description: This section covers the grammar of the configuration input, emp
 seo-title: RBOP Grammar
 title: RBOP Grammar
 uuid: d9064e39-593a-4767-b835-287640b4c94a
-index: y
-internal: n
-snippet: y
 ---
 
 # RBOP Grammar{#rbop-grammar}
@@ -23,88 +20,95 @@ Rule ::=
 AnotherRule ::=     
  
     DifferentForm 
-
 ```
 
 ## Applying the Grammar Rules {#section_A7216BD585FF4EB88737B643B36C2781}
 
 >[!NOTE]
 >
->To help improve the readability of the grammar, the following properties are not reflected within the grammar but still hold true: >
->1. The order of the pairs defined within the objects is not fixed; thus, any permutation of the pairs is valid. 
->
->   For example, if we defined an object like this: 
->
->   ```>
->   {  
->     "foo": <Foo>,  
->     "bar":<Bar>,  
->     "baz":<Baz>  
->   }
->   ```>
->   then the following structure would also be considered valid: >
->   ```>
->   {  
->     "baz":<Baz>,  
->     "foo":<Foo>,  
->     "bar":<Bar> 
->   }
->   ```>
->1. For each pair within an object, it is assumed that only 1 instance of that pair exists within a given instance of a given object. 
->
->   For example, if we defined an object like this: 
->
->   ```>
->   {  
->     "foo": <Foo>,  
->     "bar":<Bar>,  
->     "baz":<Baz>  
->   }
->   ```>
->   then the following instance would be invalid, because there are two `foo` pairs within the same object: >
->   ```>
->   { 
->     "foo":<Foo>,  
->     "bar":<Bar>,  
->     "baz":<Baz>,  
->      
-<ph otherprops="bad_grammar">
-  "foo":<Foo>  
- >   } 
-</ph otherprops="bad_grammar">
->   ```>
->   Likewise, having two objects such as: >
->   ```>
->   {  
->     "foo": <Foo>,  
->     "bar":<Bar>,  
->     "baz":<Baz>  
->   }
->   ```>
->   and: >
->   ```>
->   {  
->     "baz":<Baz>,  
->     "foo":<Foo>,  
->     "bar":<Bar> 
->   }
->   ```>
->   is valid, since they are independent instances of the same object. 
->
->1. For definitions where one or more of a sequence of strings may be chosen, treat the strings like a set, in which duplicate entries are treated as a single entry. For example, `["foo", "bar", "foo", "baz"]` is equivalent to `["foo", "bar", "baz"]` 
->
->1. For defining numbers, a space is used between the rules, (e.g., `Digit Digits`), but no such space should be used when applying the rule. 
->
->   For example, if we express the number *one hundred twenty three* per the NonZeroInteger rule, it should be expressed as `123` rather than `1 2 3`, even though the rule contains a space between NonZeroDigit and Digits. 
->
->1. Some of the rules allow multiple forms. In these cases, the different forms are separated by the `'|'` character. 
->
->   For example, this rule: >
->   ```>
->   Foo ::= "A" | "B" | "C"
->   ```>
->   means that an instance of `Foo` can be replaced with "A", "B", or "C". This should not be confused with a form that spans multiple lines; that is a feature to make longer forms more readable. 
->
+>To help improve the readability of the grammar, the following properties are not reflected within the grammar but still hold true:
+
+1. The order of the pairs defined within the objects is not fixed; thus, any permutation of the pairs is valid. 
+
+   For example, if we defined an object like this: 
+
+   ```
+   {  
+     "foo": <Foo>,  
+     "bar":<Bar>,  
+     "baz":<Baz>  
+   }
+   ```
+
+   then the following structure would also be considered valid: =
+
+   ```
+   {  
+     "baz":<Baz>,  
+     "foo":<Foo>,  
+     "bar":<Bar> 
+   }
+   ```
+
+1. For each pair within an object, it is assumed that only 1 instance of that pair exists within a given instance of a given object. 
+
+   For example, if we defined an object like this: 
+
+   ```
+   {  
+     "foo": <Foo>,  
+     "bar":<Bar>,  
+     "baz":<Baz>  
+   }
+   ```
+
+   then the following instance would be invalid, because there are two `foo` pairs within the same object: 
+
+   ```
+   { 
+     "foo":<Foo>,  
+     "bar":<Bar>,  
+     "baz":<Baz>,  
+   } 
+   ```
+
+   Likewise, having two objects such as:
+
+   ```
+   {  
+     "foo": <Foo>,  
+     "bar":<Bar>,  
+     "baz":<Baz>  
+   }
+   ```
+
+   and: 
+
+   ```
+   {  
+     "baz":<Baz>,  
+     "foo":<Foo>,  
+     "bar":<Bar> 
+   }
+   ```
+
+   is valid, since they are independent instances of the same object. 
+
+1. For definitions where one or more of a sequence of strings may be chosen, treat the strings like a set, in which duplicate entries are treated as a single entry. For example, `["foo", "bar", "foo", "baz"]` is equivalent to `["foo", "bar", "baz"]` 
+
+1. For defining numbers, a space is used between the rules, (e.g., `Digit Digits`), but no such space should be used when applying the rule. 
+
+   For example, if we express the number *one hundred twenty three* per the NonZeroInteger rule, it should be expressed as `123` rather than `1 2 3`, even though the rule contains a space between NonZeroDigit and Digits. 
+
+1. Some of the rules allow multiple forms. In these cases, the different forms are separated by the `'|'` character. 
+
+   For example, this rule: 
+
+   ```
+   Foo ::= "A" | "B" | "C"
+   ```
+
+   means that an instance of `Foo` can be replaced with "A", "B", or "C". This should not be confused with a form that spans multiple lines; that is a feature to make longer forms more readable. 
 
 ## The Grammar {#section_52189FD66B1A46BA9F8FDDE1D7C8E8E8}
 
@@ -223,7 +227,6 @@ NonZeroDigit ::=
     | 7 
     | 8 
     | 9
-
 ```
 
 ## Semantics: Legal but invalid configurations {#section_709BE240FF0041D4A1B0A0A7544E4966}
@@ -237,13 +240,8 @@ The *Sample Output Protection Configuration* topic presented a valid configurati
     "pixelConstraints":  
       [  
         { "pixelCount": 720 }  
-        { "pixelCount":  
-<ph otherprops="bad_grammar">
-  720 }  
-       ]  
+      ]  
    }  
-    
-</ph otherprops="bad_grammar">
   ```
 
 * A pixel count must not exceed the maximum pixel resolution specified. 
@@ -253,12 +251,7 @@ The *Sample Output Protection Configuration* topic presented a valid configurati
     "maxPixel": 720, 
     "pixelConstraints": 
       [ 
-        {"pixelCount":  
-<ph otherprops="bad_grammar">
-  1080} 
-       ] 
-   } 
-    
-</ph otherprops="bad_grammar">
+        {"pixelCount": 1080} 
+      ] 
+  } 
   ```
-

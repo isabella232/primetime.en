@@ -4,9 +4,6 @@ seo-description: To receive notifications about tags in the manifest, you need t
 seo-title: Add listeners for timed metadata notifications
 title: Add listeners for timed metadata notifications
 uuid: 336882e7-e2d8-49b8-a23d-f236c7e6a594
-index: y
-internal: n
-snippet: y
 ---
 
 # Add listeners for timed metadata notifications{#add-listeners-for-timed-metadata-notifications}

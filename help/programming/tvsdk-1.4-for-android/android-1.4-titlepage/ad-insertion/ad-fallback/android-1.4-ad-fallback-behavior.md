@@ -4,16 +4,13 @@ seo-description: When Primetime ad decisioning encounters a VAST ad (creative) t
 seo-title: Ad fallback behavior for VAST and VMAP
 title: Ad fallback behavior for VAST and VMAP
 uuid: 9bbd52d9-4719-4f09-a35b-943fb728eeac
-index: y
-internal: n
-snippet: y
 ---
 
 # Ad fallback behavior for VAST and VMAP{#ad-fallback-behavior-for-vast-and-vmap}
 
 When Primetime ad decisioning encounters a VAST ad (creative) that is empty or that has a media type that is invalid for HLS, it evaluates the fallback ads to determine what to return.
 
-<a id="section_9F60AF00CE9645848EAAF8C06A9E426B"></a>
+<!--<a id="section_9F60AF00CE9645848EAAF8C06A9E426B"></a>-->
 
 In TVSDK, the only valid media type is `application/x-mpegURL` (M3U8).
 

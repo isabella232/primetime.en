@@ -4,9 +4,6 @@ seo-description: PTNotification objects provide information about changes in pla
 seo-title: Notification content
 title: Notification content
 uuid: d42d2e89-1bdd-4be0-8a69-821fec6bbc75
-index: y
-internal: n
-snippet: y
 ---
 
 # Notification content{#notification-content}
@@ -23,7 +20,7 @@ TVSDK also issues `PTMediaPlayerNewNotificationItemEntryNotification` when it is
 
 You implement event listeners to capture and respond to events. Many events provide `PTNotification` status notifications.
 
-<a id="section_8D751C71BE80402EB7F6152BA220A006"></a>
+<!--<a id="section_8D751C71BE80402EB7F6152BA220A006"></a>-->
 
 `PTNotification` provides information that is related to the player’s status.
 

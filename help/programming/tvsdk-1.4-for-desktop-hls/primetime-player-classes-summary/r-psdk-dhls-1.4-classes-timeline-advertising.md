@@ -4,9 +4,6 @@ seo-description: These classes provide information about ads that occur within a
 seo-title: Timeline advertising classes
 title: Timeline advertising classes
 uuid: f424fa13-778b-458d-bc82-389441a8a56a
-index: y
-internal: n
-snippet: y
 ---
 
 # Timeline advertising classes{#timeline-advertising-classes}

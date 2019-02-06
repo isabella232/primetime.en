@@ -4,12 +4,9 @@ seo-description: TVSDK provides a TV-like experience of being able to join in th
 seo-title: Partial ad-break insertion
 title: Partial ad-break insertion
 uuid: 799acdd8-fbb9-43b4-955a-3f56825d1e87
-index: y
-internal: n
-snippet: y
 ---
 
-# Partial ad-break insertion {#partial-ad-break-insertion}
+# Partial ad-break insertion{#partial-ad-break-insertion}
 
 TVSDK provides a TV-like experience of being able to join in the middle of an ad, in live streams.
 

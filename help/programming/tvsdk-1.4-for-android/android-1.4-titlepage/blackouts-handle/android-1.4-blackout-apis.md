@@ -4,9 +4,6 @@ seo-description: You can handle blackouts in live video streams and provide alte
 seo-title: Blackout API elements
 title: Blackout API elements
 uuid: 263a8987-0c85-493a-9352-9605c877ba65
-index: y
-internal: n
-snippet: y
 ---
 
 # Blackout API elements{#blackout-api-elements}

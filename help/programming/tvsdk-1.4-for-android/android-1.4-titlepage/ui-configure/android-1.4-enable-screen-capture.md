@@ -5,9 +5,6 @@ seo-description: null
 seo-title: Enable screen capture
 title: Enable screen capture
 uuid: f3d18729-e13e-47f9-b4b8-f93a2874ef16
-index: y
-internal: n
-snippet: y
 ---
 
 # Enable screen capture{#enable-screen-capture}

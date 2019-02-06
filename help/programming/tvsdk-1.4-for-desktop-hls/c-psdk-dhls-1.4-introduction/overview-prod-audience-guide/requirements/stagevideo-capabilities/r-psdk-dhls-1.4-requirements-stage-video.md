@@ -4,16 +4,13 @@ seo-description: On devices that support GPU (hardware) acceleration, you can us
 seo-title: StageVideo minimum requirements
 title: StageVideo minimum requirements
 uuid: 8916dbac-33e0-4efd-8105-9ddbc85f0a3f
-index: y
-internal: n
-snippet: y
 ---
 
 # StageVideo minimum requirements{#stagevideo-minimum-requirements}
 
 On devices that support GPU (hardware) acceleration, you can use a flash.media.StageVideo object to process video directly on the device hardware.
 
-<a id="section_64DDAA8DB215493E8A7CA6636819D350"></a>
+<!--<a id="section_64DDAA8DB215493E8A7CA6636819D350"></a>-->
 
 A combination of different factors determine when and how you can use `StageVideo`. The following table presents a snapshot of some of the requirements and restrictions that are associated with using StageVideo. These requirements and restrictions are subject to change. 
 

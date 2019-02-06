@@ -4,9 +4,6 @@ seo-description: The PTMediaPlayer interface encapsulates the functionality and 
 seo-title: Set up the PTMediaPlayer
 title: Set up the PTMediaPlayer
 uuid: 78549406-7e33-4bca-a25e-1e433f6a75d7
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up the PTMediaPlayer{#set-up-the-ptmediaplayer}

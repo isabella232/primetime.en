@@ -4,9 +4,6 @@ seo-description: Video Player Ad-Serving Interface Definition (VPAID) 2.0 provid
 seo-title: VPAID 2.0 ad support
 title: VPAID 2.0 ad support
 uuid: d9a06f3c-0ac2-48aa-b6d2-915184027a38
-index: y
-internal: n
-snippet: y
 ---
 
 # VPAID 2.0 ad support{#vpaid-ad-support}
@@ -43,7 +40,7 @@ The following changes were made to the API:
 
 * `PTMediaPlayerCustomAdNotification` is dispatched from the `PTMediaPlayer` instance
 
-<a id="section_495700E1C5404A7B85307A4137C740C5"></a>
+<!--<a id="section_495700E1C5404A7B85307A4137C740C5"></a>-->
 
 While the VPAID ad is playing:
 

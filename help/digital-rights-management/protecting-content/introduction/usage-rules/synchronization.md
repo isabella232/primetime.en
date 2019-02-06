@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Requirements for Synchronization
 title: Requirements for Synchronization
 uuid: 594a4bb2-c042-4485-9cae-73b8f9f93d82
-index: y
-internal: n
-snippet: y
 ---
 
 # Requirements for Synchronization {#requirements-for-synchronization}

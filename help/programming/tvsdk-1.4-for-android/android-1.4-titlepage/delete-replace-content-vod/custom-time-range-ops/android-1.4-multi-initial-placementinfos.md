@@ -4,9 +4,6 @@ seo-description: TVSDK can set up multiple initial PlacementInformations.
 seo-title: Multiple initial PlacementInformations
 title: Multiple initial PlacementInformations
 uuid: e0f549d7-3092-45e9-bd67-ee41d01075b5
-index: y
-internal: n
-snippet: y
 ---
 
 # Multiple initial PlacementInformations{#multiple-initial-placementinformations}

@@ -4,16 +4,13 @@ seo-description: The content of a PTAdAsset describes a companion banner.
 seo-title: Companion banner data
 title: Companion banner data
 uuid: c61f9ae6-f93a-4ff3-9c22-a33328c54281
-index: y
-internal: n
-snippet: y
 ---
 
-# Companion banner data {#companion-banner-data}
+# Companion banner data{#companion-banner-data}
 
 The content of a PTAdAsset describes a companion banner.
 
-<a id="section_D730B4FD6FD749E9860B6A07FC110552"></a>
+<!--<a id="section_D730B4FD6FD749E9860B6A07FC110552"></a>-->
 
 The `PTMediaPlayerAdStartedNotification` notification returns a `PTAd` instance that contains a `companionAssets` property (array of `PtAdAsset`). 
 Each `PtAdAsset` provides information about displaying the asset. 

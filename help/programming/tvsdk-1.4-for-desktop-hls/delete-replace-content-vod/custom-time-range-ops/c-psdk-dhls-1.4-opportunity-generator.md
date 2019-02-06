@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Opportunity Generator
 title: Opportunity Generator
 uuid: 26f4dcab-6c6b-4d27-a073-017673bf098f
-index: y
-internal: n
-snippet: y
 ---
 
 # Opportunity Generator{#opportunity-generator}

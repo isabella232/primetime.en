@@ -4,9 +4,6 @@ seo-description: The MediaPlayer interface for Android encapsulates the function
 seo-title: Set up the MediaPlayer
 title: Set up the MediaPlayer
 uuid: 492b4693-acdf-4213-98e5-d6f0f1ae086d
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up the MediaPlayer{#set-up-the-mediaplayer}

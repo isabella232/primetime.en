@@ -2,12 +2,9 @@
 seo-title: Add new log messages
 title: Add new log messages
 uuid: 8a3115f9-88f2-4ac1-89e4-21e992665f7b
-index: y
-internal: n
-snippet: y
 ---
 
-# Add new log messages {#add-new-log-messages}
+# Add new log messages{#add-new-log-messages}
 
  To register to listen to logs: 
 1. Create a new `PTLogEntry` and add it to `thePTLogFactory`:
@@ -16,7 +13,7 @@ snippet: y
 
    Here is an example of logging using the `PTLogDebug` macro:
 
-<a id="example_F014436E1686468F941F4EBD1A21B18E"></a>
+<!--<a id="example_F014436E1686468F941F4EBD1A21B18E"></a>-->
 
 ```
 // The following line creates an instance of PTLogEntry with type PTLogEntryDebug, 
@@ -25,3 +22,4 @@ snippet: y
  
 PTLogDebug(@"[DEBUG_PLAYBACK] Playback has started");
 ```
+

@@ -2,9 +2,6 @@
 seo-title: About CRL Files
 title: About CRL Files
 uuid: 672c3ca0-5c5d-4ec7-83b1-f0f8e34c8d09
-index: y
-internal: n
-snippet: y
 ---
 
 # About CRL Files {#about-crl-files}

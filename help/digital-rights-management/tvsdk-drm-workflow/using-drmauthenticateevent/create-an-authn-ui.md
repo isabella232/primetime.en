@@ -2,9 +2,6 @@
 seo-title: Create an authentication UI
 title: Create an authentication UI
 uuid: 4744bac0-c36e-4b0a-b3fb-d81c7f2e7617
-index: y
-internal: n
-snippet: y
 ---
 
 # Create an authentication UI{#create-an-authentication-ui}

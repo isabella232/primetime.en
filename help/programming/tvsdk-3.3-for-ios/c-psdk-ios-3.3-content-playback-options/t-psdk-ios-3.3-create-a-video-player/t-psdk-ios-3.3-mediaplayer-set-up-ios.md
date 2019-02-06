@@ -4,12 +4,9 @@ seo-description: The PTMediaPlayer interface encapsulates the functionality and 
 seo-title: Set up the PTMediaPlayer
 title: Set up the PTMediaPlayer
 uuid: 698034d3-1260-416f-83b0-6b7d058750a0
-index: y
-internal: n
-snippet: y
 ---
 
-# Set up the PTMediaPlayer {#set-up-the-ptmediaplayer}
+# Set up the PTMediaPlayer{#set-up-the-ptmediaplayer}
 
 The PTMediaPlayer interface encapsulates the functionality and behavior of a media player object.
 
@@ -23,7 +20,7 @@ To set up your `PTMediaPlayer`:
 
 1. Create `PTMetadata`.
 
-   Assume that your method `createMetada` prepares metadata (see [Advertising](../../c-psdk-ios-3.0-advertising/r-psdk-ios-3.0-advertising-requirements.md)).
+   Assume that your method `createMetada` prepares metadata (see  ad-insertion ).
 
    ```
    PTMetadata *metadata = [self createMetadata]

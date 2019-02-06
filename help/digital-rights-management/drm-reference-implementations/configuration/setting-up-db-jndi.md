@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Set up the license server database
 title: Set up the license server database
 uuid: aa6185f2-8e9d-4b65-971a-b7534d910580
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up the license server database{#set-up-the-license-server-database}

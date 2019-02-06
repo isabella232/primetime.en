@@ -4,9 +4,6 @@ seo-description: You can use the Primetime Player API to customize the behavior 
 seo-title: Mediacore classes
 title: Mediacore classes
 uuid: 2d4e41e6-e689-4f79-9021-1ab8ce0fe40d
-index: y
-internal: n
-snippet: y
 ---
 
 # Mediacore classes {#mediacore-classes}
@@ -43,15 +40,8 @@ Package: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/j
    <td colname="2"> Class that encapsulates all buffer control parameters. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/DefaultAdPolicySelector.html" format="html" scope="external"> DefaultAdPolicySelector</a> 
-   <a format="html" scope="external"> AdPolicySelector</a> </span> </td> 
-   <td colname="2">
-    <ph>
-      Default implementation for ad playback behaviors.
-    </ph> 
-    <ph>
-      Interface allowing applications to customize ad behaviors.
-    </ph> </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/DefaultAdPolicySelector.html" format="html" scope="external"> DefaultAdPolicySelector</a></span> </td> 
+   <td colname="2"> Default implementation for ad playback behaviors. Interface allowing applications to customize ad behaviors.</td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/DefaultMediaPlayer.html" format="html" scope="external"> DefaultMediaPlayer</a></span> </td> 
@@ -74,7 +64,7 @@ Package: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/j
    <td colname="2"> Marker interface used to unify event listener registration. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html" format="html" scope="external"> MediaPlayer.PlaybackEventListener</a> </span> </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html" format="html" scope="external"> MediaPlayer.PlaybackEventListener</a> </span> </td>
    <td colname="2"> Interface definition of a set of callback to be invoked during playback. </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -123,4 +113,3 @@ Package: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/j
   </tr> 
  </tbody> 
 </table>
-

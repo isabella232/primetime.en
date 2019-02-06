@@ -4,9 +4,6 @@ seo-description: When Browser TVSDK requests an ad that is not on your primary a
 seo-title: VAST ads
 title: VAST ads
 uuid: 052dae0c-2425-456c-aebe-531f68bb5aa8
-index: y
-internal: n
-snippet: y
 ---
 
 # VAST ads {#vast-ads}

@@ -4,16 +4,13 @@ seo-description: The following new APIs allow you to define DRM callbacks.
 seo-title: Implementing DRM callbacks
 title: Implementing DRM callbacks
 uuid: a54c5ec2-299f-47b0-b65b-eed5656ab6aa
-index: y
-internal: n
-snippet: y
 ---
 
 # Implementing DRM callbacks{#implementing-drm-callbacks}
 
 The following new APIs allow you to define DRM callbacks.
 
-<a id="section_1090BFDB2C1D4EA4AAC9F9A6EC9DCD51"></a>
+<!--<a id="section_1090BFDB2C1D4EA4AAC9F9A6EC9DCD51"></a>-->
 
 You can define a call back function (for example, `parseContentIdCallback`) to parse the content ID and set it to `drmManager` by using the `setParseContentIdCallback` API. 
 
@@ -36,7 +33,7 @@ parseContentIdCallback = function (initData) {
 drmManager.setParseContentIdCallback(parseContentIdCallback);
 ```
 
-<a id="section_1E082B428EA74D9CA11C052158A83947"></a>
+<!--<a id="section_1E082B428EA74D9CA11C052158A83947"></a>-->
 
 You can define a call back function (for example, `onCertificateResponseCallback`) to process a text certificate response and set the function to `drmManager` by using the `setCertificateResponseCallback` API. You can set `setCertificateResponseCallback` to override the default behavior. For example, if you have a `certificateResponseType` that is other than `ArrayBuffer`, you can use this callback to convert the certificate response to the `ArrayBuffer` type. 
 
@@ -63,7 +60,7 @@ onCertificateResponseCallback = function (certificateResponse) {
 drmManager.setCertificateResponseCallback(onCertificateResponseCallback);
 ```
 
-<a id="section_4DCC1B3ABCED484EB5340A558C9A770A"></a>
+<!--<a id="section_4DCC1B3ABCED484EB5340A558C9A770A"></a>-->
 
 You can define callback functions to parse the license message and the license response and pass them in a call to `drmManager.acquireLicense`. `onLicenseResponseCallback` is a new parameter in the `acquireLicense` API. 
 

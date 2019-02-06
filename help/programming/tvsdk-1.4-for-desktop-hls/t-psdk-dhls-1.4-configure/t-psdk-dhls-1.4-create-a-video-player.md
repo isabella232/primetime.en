@@ -4,9 +4,6 @@ seo-description: TVSDK provides tools for creating an advanced video player appl
 seo-title: Playback options
 title: Playback options
 uuid: 917e23bc-ebec-495b-89fb-295b4fc665a3
-index: y
-internal: n
-snippet: y
 ---
 
 # Playback options{#playback-options}

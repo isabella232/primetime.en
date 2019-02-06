@@ -4,9 +4,6 @@ seo-description: The reference implementation server can help you create a fully
 seo-title: License server
 title: License server
 uuid: 39cb0d0f-f3dc-48e9-b6fd-6960a9ade291
-index: y
-internal: n
-snippet: y
 ---
 
 # License server{#license-server}

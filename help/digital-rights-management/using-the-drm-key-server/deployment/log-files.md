@@ -2,9 +2,6 @@
 seo-title: Log files
 title: Log files
 uuid: ae06d20c-ced4-4174-9ecd-5f4e5fd80e15
-index: y
-internal: n
-snippet: y
 ---
 
 # Log files{#log-files}

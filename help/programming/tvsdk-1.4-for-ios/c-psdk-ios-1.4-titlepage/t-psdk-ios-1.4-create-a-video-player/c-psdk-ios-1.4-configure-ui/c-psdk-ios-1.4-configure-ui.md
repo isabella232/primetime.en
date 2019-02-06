@@ -4,9 +4,6 @@ seo-description: With the TVSDK, you can control the basic playback experience f
 seo-title: Configure the player user interface
 title: Configure the player user interface
 uuid: d71d3a53-c2a4-4192-b16a-988d538b42e3
-index: y
-internal: n
-snippet: y
 ---
 
 # Configure the player user interface{#configure-the-player-user-interface}

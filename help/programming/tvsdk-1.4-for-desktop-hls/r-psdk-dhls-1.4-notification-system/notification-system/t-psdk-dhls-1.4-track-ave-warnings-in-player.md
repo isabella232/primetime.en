@@ -4,9 +4,6 @@ seo-description: Using the NotificationEvent, you can track warnings that are pa
 seo-title: Track AVE warnings in your player
 title: Track AVE warnings in your player
 uuid: 236aee5e-6b1a-4298-9d3b-f33b40416c19
-index: y
-internal: n
-snippet: y
 ---
 
 # Track AVE warnings in your player{#track-ave-warnings-in-your-player}
@@ -97,7 +94,7 @@ public class NotificationEvent extends Event {
    
    ```
 
-<a id="example_C35262605D394718B40C084B569A5052"></a>
+<!--<a id="example_C35262605D394718B40C084B569A5052"></a>-->
 
 Here is an example of AVE warnings that were tracked using `NotificationEvent`: 
 

@@ -5,14 +5,11 @@ seo-description: null
 seo-title: Configuration properties
 title: Configuration properties
 uuid: 216921d1-a9c1-4650-9dce-c025836986e5
-index: y
-internal: n
-snippet: y
 ---
 
 # Configuration properties{#configuration-properties}
 
-<a id="section_20A96CDCC5C340DEAF455C6E300E5712"></a>
+<!--<a id="section_20A96CDCC5C340DEAF455C6E300E5712"></a>-->
 
 >[!NOTE]
 >

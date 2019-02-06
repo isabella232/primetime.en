@@ -2,9 +2,6 @@
 seo-title: DRM Revocation List Manager
 title: DRM Revocation List Manager
 uuid: 30ab5f54-4aac-4535-b30c-b4e5dbfbc475
-index: y
-internal: n
-snippet: y
 ---
 
 # DRM Revocation List Manager{#drm-revocation-list-manager}

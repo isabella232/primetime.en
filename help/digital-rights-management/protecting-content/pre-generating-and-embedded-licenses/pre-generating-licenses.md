@@ -4,9 +4,6 @@ seo-description: If you use Adobe Primetime DRM Professional, you can pre-genera
 seo-title: Pre-generating licenses
 title: Pre-generating licenses
 uuid: aa7d5038-5a9b-40a2-a240-266622158b43
-index: y
-internal: n
-snippet: y
 ---
 
 # Pre-generating licenses {#pre-generating-licenses}

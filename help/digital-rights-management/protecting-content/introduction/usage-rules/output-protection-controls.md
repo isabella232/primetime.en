@@ -2,9 +2,6 @@
 seo-title: Output protection controls
 title: Output protection controls
 uuid: a0518392-cd33-4ef0-834c-f90145a9b421
-index: y
-internal: n
-snippet: y
 ---
 
 # Output protection controls{#output-protection-controls}

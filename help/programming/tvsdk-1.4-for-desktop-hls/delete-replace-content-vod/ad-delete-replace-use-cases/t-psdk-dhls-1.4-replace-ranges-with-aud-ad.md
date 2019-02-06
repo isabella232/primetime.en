@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Replace time ranges with an Adobe Primetime ad decisioning ad
 title: Replace time ranges with an Adobe Primetime ad decisioning ad
 uuid: 101ac42d-5ba5-4487-af95-483a6594808a
-index: y
-internal: n
-snippet: y
 ---
 
 # Replace time ranges with an Adobe Primetime ad decisioning ad{#replace-time-ranges-with-an-adobe-primetime-ad-decisioning-ad}

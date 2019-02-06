@@ -4,9 +4,6 @@ seo-description: You can select the following encryption options when you create
 seo-title: Key Rotation
 title: Key Rotation
 uuid: 6ac3b828-2cd1-42df-b9ee-4daa8e553d5e
-index: y
-internal: n
-snippet: y
 ---
 
 # Key Rotation{#key-rotation}

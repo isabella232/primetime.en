@@ -2,9 +2,6 @@
 seo-title: Handling FMRMS compatibility
 title: Handling FMRMS compatibility
 uuid: c8d36281-cb20-4716-a58c-209e012a69bd
-index: y
-internal: n
-snippet: y
 ---
 
 # Handling FMRMS compatibility{#handling-fmrms-compatibility}

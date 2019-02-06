@@ -2,9 +2,6 @@
 seo-title: Securely packaging content
 title: Securely packaging content
 uuid: a5e7cc17-353b-47d1-b89c-a2ba3c9faca1
-index: y
-internal: n
-snippet: y
 ---
 
 # Securely packaging content {#securely-packaging-content}

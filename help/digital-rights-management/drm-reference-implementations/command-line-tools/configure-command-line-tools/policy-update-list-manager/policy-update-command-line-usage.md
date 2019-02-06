@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Policy Update List Manager command-line usage
 title: Policy Update List Manager command-line usage
 uuid: a5505512-e017-49ae-9a0a-72c9d3b7b368
-index: y
-internal: n
-snippet: y
 ---
 
 # Policy Update List Manager command-line usage{#policy-update-list-manager-command-line-usage}

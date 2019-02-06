@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Revocation List Manager command-line usage
 title: Revocation List Manager command-line usage
 uuid: 7bc9a947-5bce-4637-93d0-18a85de4fd64
-index: y
-internal: n
-snippet: y
 ---
 
 # Revocation List Manager command-line usage{#revocation-list-manager-command-line-usage}

@@ -4,9 +4,6 @@ seo-description: Your application must use the appropriate PTTimedMetadata objec
 seo-title: Store timed metadata objects as they are dispatched
 title: Store timed metadata objects as they are dispatched
 uuid: d26ed49e-fb29-4765-86e9-9ebbe5fa0a2b
-index: y
-internal: n
-snippet: y
 ---
 
 # Store timed metadata objects as they are dispatched{#store-timed-metadata-objects-as-they-are-dispatched}

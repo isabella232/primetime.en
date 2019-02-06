@@ -4,9 +4,6 @@ seo-description: Using Adobe Primetime DRM SDK, you must create a License Server
 seo-title: Implement a License Server
 title: Implement a License Server
 uuid: 35647912-c87c-4e67-8cd0-32536a9c71b9
-index: y
-internal: n
-snippet: y
 ---
 
 # Implement a License Server{#implement-a-license-server}

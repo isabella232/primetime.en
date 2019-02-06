@@ -4,9 +4,6 @@ seo-description: TVSDK provides API elements that are useful when implementing b
 seo-title: Blackout API elements
 title: Blackout API elements
 uuid: 65e1668c-6a19-4910-83a2-46d364e94e5f
-index: y
-internal: n
-snippet: y
 ---
 
 # Blackout API elements{#blackout-api-elements}

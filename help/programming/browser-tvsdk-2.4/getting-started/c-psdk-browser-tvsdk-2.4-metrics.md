@@ -4,9 +4,6 @@ seo-description: Browser TVSDK provides metrics to use for analyzing and debuggi
 seo-title: Metrics
 title: Metrics
 uuid: 4734e532-1f83-4691-b1bd-785f78e55d8d
-index: y
-internal: n
-snippet: y
 ---
 
 # Metrics{#metrics}

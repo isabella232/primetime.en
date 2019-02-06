@@ -4,9 +4,6 @@ seo-description: Your application must use the appropriate TimedMetadata objects
 seo-title: Store timed metadata objects as they are dispatched
 title: Store timed metadata objects as they are dispatched
 uuid: 0d0ddfea-6f32-467d-91bc-f18ceadcd842
-index: y
-internal: n
-snippet: y
 ---
 
 # Store timed metadata objects as they are dispatched{#store-timed-metadata-objects-as-they-are-dispatched}

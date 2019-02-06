@@ -4,9 +4,6 @@ seo-description: You can customize or override ad behaviors.
 seo-title: Set up customized playback
 title: Set up customized playback
 uuid: 479ca1b0-6b3f-42fa-85e1-31d707da8730
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up customized playback{#set-up-customized-playback}

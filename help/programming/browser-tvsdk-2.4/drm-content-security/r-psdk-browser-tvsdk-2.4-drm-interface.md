@@ -4,16 +4,13 @@ seo-description: Browser TVSDK provides a DRM interface you can use to play cont
 seo-title: DRM interface overview
 title: DRM interface overview
 uuid: b553ebad-8310-4517-8d97-ef8a1c5f4340
-index: y
-internal: n
-snippet: y
 ---
 
 # DRM interface overview{#drm-interface-overview}
 
 Browser TVSDK provides a DRM interface you can use to play content protected by different DRM solutions, including FairPlay, PlayReady, and Widevine.
 
-<a id="section_59994F2059B245E996E0776214804A0A"></a>
+<!--<a id="section_59994F2059B245E996E0776214804A0A"></a>-->
 
 >[!IMPORTANT]
 >
@@ -24,7 +21,7 @@ The key interface of the DRM workflow is the `DRMManager`. A reference to the `D
 * `var mediaPlayer = new AdobePSDK.MediaPlayer();` 
 * `var drmManager = mediaPlayer.drmManager;`
 
-<a id="section_B7E8AD9A4D4F4BD9BA2A67ABC135D6F9"></a>
+<!--<a id="section_B7E8AD9A4D4F4BD9BA2A67ABC135D6F9"></a>-->
 
 Here is a high-level workflow for playback of DRM-protected content:
 

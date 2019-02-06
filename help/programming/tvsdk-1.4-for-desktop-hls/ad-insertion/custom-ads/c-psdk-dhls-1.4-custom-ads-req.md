@@ -4,16 +4,13 @@ seo-description: Video Player Ad-Serving Interface Definition (VPAID) provides a
 seo-title: Custom ad requirements
 title: Custom ad requirements
 uuid: 6d4ba87b-ffe5-467d-8ab5-9795928c2f69
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom ad requirements{#custom-ad-requirements}
 
 Video Player Ad-Serving Interface Definition (VPAID) provides a common interface to play video ads. VPAID provides a rich media experience for users and allows publishers to better target ads, track ad impressions, and monetize video content.
 
-<a id="section_9A358902CBC24999BA34206EE2029616"></a>
+<!--<a id="section_9A358902CBC24999BA34206EE2029616"></a>-->
 
 The TVSDK supports the following features:
 

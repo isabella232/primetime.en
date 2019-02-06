@@ -4,9 +4,6 @@ seo-description: By default, when starting playback, VOD media starts at 0 and l
 seo-title: Enter a stream at a specific time
 title: Enter a stream at a specific time
 uuid: 65a19192-b890-4d69-9cb1-582a22988d2b
-index: y
-internal: n
-snippet: y
 ---
 
 # Enter a stream at a specific time{#enter-a-stream-at-a-specific-time}

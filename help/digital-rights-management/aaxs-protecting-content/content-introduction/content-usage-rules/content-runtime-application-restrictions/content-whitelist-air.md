@@ -2,9 +2,6 @@
 seo-title: White-list for Adobe® Primetime applications allowed to play protected content
 title: White-list for Adobe® Primetime applications allowed to play protected content
 uuid: 3b1f938c-5c76-459e-a918-dfbec0fc2ff9
-index: y
-internal: n
-snippet: y
 ---
 
 # White-list for Adobe® Primetime applications allowed to play protected content {#white-list-for-adobe-primetime-applications-allowed-to-play-protected-content}

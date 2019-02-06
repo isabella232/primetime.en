@@ -4,9 +4,6 @@ seo-description: Closed captioning displays the audio portion of a video as text
 seo-title: Work with closed captions
 title: Work with closed captions
 uuid: 6e105316-a166-45c1-b6b0-70c89c97c297
-index: y
-internal: n
-snippet: y
 ---
 
 # Work with closed captions{#work-with-closed-captions}

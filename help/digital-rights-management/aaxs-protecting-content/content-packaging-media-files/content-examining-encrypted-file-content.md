@@ -2,9 +2,6 @@
 seo-title: Examining encrypted file content
 title: Examining encrypted file content
 uuid: 2132fac7-5f11-4308-b511-ed4f216527a6
-index: y
-internal: n
-snippet: y
 ---
 
 # Examining encrypted file content {#examining-encrypted-file-content}

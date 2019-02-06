@@ -4,9 +4,6 @@ seo-description: null
 seo-title: AIR Publisher ID utility command-line usage
 title: AIR Publisher ID utility command-line usage
 uuid: 2797bb91-c57c-4855-98d5-f251a8df8db0
-index: y
-internal: n
-snippet: y
 ---
 
 # AIR Publisher ID utility command-line usage{#air-publisher-id-utility-command-line-usage}

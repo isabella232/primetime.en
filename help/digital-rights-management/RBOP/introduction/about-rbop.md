@@ -4,9 +4,6 @@ seo-description: Resolution-based output protection (RBOP) is a mechanism that p
 seo-title: RBOP Overview
 title: RBOP Overview
 uuid: 57219331-d949-443c-88b3-6f714ab6c82e
-index: y
-internal: n
-snippet: y
 ---
 
 # RBOP Overview{#rbop-overview}

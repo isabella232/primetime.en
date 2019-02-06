@@ -4,9 +4,6 @@ seo-description: To prevent users from backing up and restoring files to bypass 
 seo-title: Managing Domains
 title: Managing Domains
 uuid: 30b73e38-d6ed-43c6-89ba-ae8616383779
-index: y
-internal: n
-snippet: y
 ---
 
 # Managing Domains{#managing-domains}

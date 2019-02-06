@@ -4,9 +4,6 @@ seo-description: You can decide whether to resolve only the ads that occur after
 seo-title: Load Ad for a DVR window
 title: Load Ad for a DVR window
 uuid: 67bc3924-3d17-4d1a-b9a7-be8d0488a970
-index: y
-internal: n
-snippet: y
 ---
 
 # Load Ad for a DVR window{#load-ad-for-a-dvr-window}

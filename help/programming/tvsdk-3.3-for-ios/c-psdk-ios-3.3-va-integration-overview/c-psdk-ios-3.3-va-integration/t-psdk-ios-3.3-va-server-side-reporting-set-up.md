@@ -4,12 +4,9 @@ seo-description: null
 seo-title: Set up video analytics reporting on the server side
 title: Set up video analytics reporting on the server side
 uuid: 46af6094-3607-4c37-968e-2633e3895315
-index: y
-internal: n
-snippet: y
 ---
 
-# Set up video analytics reporting on the server side {#set-up-video-analytics-reporting-on-the-server-side}
+# Set up video analytics reporting on the server side{#set-up-video-analytics-reporting-on-the-server-side}
 
  Your Adobe representative will handle most aspects of the server-side setup for Adobe Analytics reporting. For more information, see [Analytics Help and Reference - Report Suite Manager](https://microsite.omniture.com/t2/help/en_US/reference/#Report_Suite_Manager). 
 1. To enable the conversion level for the Report Suite ID (RSID):

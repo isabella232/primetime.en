@@ -4,9 +4,6 @@ seo-description: null
 seo-title: Build the license server
 title: Build the license server
 uuid: f9418520-ba95-42fc-9d60-664428534efd
-index: y
-internal: n
-snippet: y
 ---
 
 # Build the license server{#build-the-license-server}

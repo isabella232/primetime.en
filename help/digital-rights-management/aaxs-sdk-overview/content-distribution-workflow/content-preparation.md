@@ -4,9 +4,6 @@ seo-description: Any use of Adobe Access consists of two key steps at different 
 seo-title: Content preparation
 title: Content preparation
 uuid: 7a3562c6-6033-4e28-8f0a-18e3cb8987b9
-index: y
-internal: n
-snippet: y
 ---
 
 # Content preparation {#content-preparation}

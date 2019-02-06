@@ -4,12 +4,9 @@ seo-description: When TVSDK detects a subscribed tag in the playlist/manifest, t
 seo-title: Timed metadata class
 title: Timed metadata class
 uuid: d76b2a6b-2995-4559-b15d-82ded4c27eea
-index: y
-internal: n
-snippet: y
 ---
 
-# Timed metadata class {#timed-metadata-class}
+# Timed metadata class{#timed-metadata-class}
 
 When TVSDK detects a subscribed tag in the playlist/manifest, the player automatically tries to process the tag and expose it in the form of a PTTimedMetadata object.
 
@@ -51,7 +48,7 @@ When TVSDK detects a subscribed tag in the playlist/manifest, the player automat
  </tbody> 
 </table>
 
-<a id="section_737CC47997F74F80A3C5C6171ADE120E"></a>
+<!--<a id="section_737CC47997F74F80A3C5C6171ADE120E"></a>-->
 
 Remember the following:
 

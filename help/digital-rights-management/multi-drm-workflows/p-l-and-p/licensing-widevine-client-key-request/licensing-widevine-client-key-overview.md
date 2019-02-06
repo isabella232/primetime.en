@@ -4,9 +4,6 @@ seo-description: To play the DASH content resulting from content packaging, the 
 seo-title: Client Key Request workflow overview
 title: Client Key Request workflow overview
 uuid: 2f01f0ae-adbf-42fa-a908-4b5b9410a26d
-index: y
-internal: n
-snippet: y
 ---
 
 # Client Key Request workflow overview{#client-key-request-workflow-overview}

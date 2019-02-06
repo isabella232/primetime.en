@@ -2,9 +2,6 @@
 seo-title: White-list for Adobe® Flash® Player SWFs allowed to play protected content
 title: White-list for Adobe® Flash® Player SWFs allowed to play protected content
 uuid: 482bfbed-7ef9-48d9-b399-d23fddabc81e
-index: y
-internal: n
-snippet: y
 ---
 
 # White-list for Adobe® Flash® Player SWFs allowed to play protected content {#white-list-for-adobe-flash-player-swfs-allowed-to-play-protected-content}

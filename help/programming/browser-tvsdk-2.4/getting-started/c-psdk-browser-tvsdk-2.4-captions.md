@@ -4,9 +4,6 @@ seo-description: You can display captions when playing video content.
 seo-title: Captions
 title: Captions
 uuid: 4dedcedc-50e5-4983-bb09-3f316337117e
-index: y
-internal: n
-snippet: y
 ---
 
 # Captions{#captions}

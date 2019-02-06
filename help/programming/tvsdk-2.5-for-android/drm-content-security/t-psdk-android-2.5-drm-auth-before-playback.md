@@ -4,9 +4,6 @@ seo-description: When the DRM metadata for a video is separate from the media st
 seo-title: DRM authentication before playback
 title: DRM authentication before playback
 uuid: 6b4fbcfb-95fd-4591-bbb2-a17afd783383
-index: y
-internal: n
-snippet: y
 ---
 
 # DRM authentication before playback{#drm-authentication-before-playback}

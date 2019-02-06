@@ -4,16 +4,13 @@ seo-description: This table provides detailed information about ERROR type notif
 seo-title: ERROR notification codes
 title: ERROR notification codes
 uuid: cea75277-7747-4f9b-ad59-98f9f1a5ac2f
-index: y
-internal: n
-snippet: y
 ---
 
 # ERROR notification codes{#error-notification-codes}
 
 This table provides detailed information about ERROR type notifications.
 
-<a id="section_D29404228F5E4B818642CBA6A0D39546"></a>
+<!--<a id="section_D29404228F5E4B818642CBA6A0D39546"></a>-->
 
 Most errors contain relevant metadata, for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad. 
 

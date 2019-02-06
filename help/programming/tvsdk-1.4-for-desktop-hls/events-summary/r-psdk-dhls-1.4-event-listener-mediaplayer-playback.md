@@ -4,9 +4,6 @@ seo-description: Your application can monitor the activity in your player and th
 seo-title: Playback events
 title: Playback events
 uuid: 6d6491d7-cf25-4130-8388-68b8c028bb71
-index: y
-internal: n
-snippet: y
 ---
 
 # Playback events{#playback-events}

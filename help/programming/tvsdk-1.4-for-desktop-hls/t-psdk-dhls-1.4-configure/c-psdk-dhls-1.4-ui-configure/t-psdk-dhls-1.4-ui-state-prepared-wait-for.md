@@ -4,9 +4,6 @@ seo-description: Before you can use most of the TVSDK player methods, the player
 seo-title: Wait for a valid state
 title: Wait for a valid state
 uuid: 918ab021-3685-424a-b84e-683da0357724
-index: y
-internal: n
-snippet: y
 ---
 
 # Wait for a valid state{#wait-for-a-valid-state}

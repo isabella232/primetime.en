@@ -4,9 +4,6 @@ seo-description: From Flash 15 and later, when hardware rendering with StageVide
 seo-title: Flash 15 support for StageVideo
 title: Flash 15 support for StageVideo
 uuid: 49bd8703-016e-4fda-8773-5254d4774ec6
-index: y
-internal: n
-snippet: y
 ---
 
 # Flash 15 support for StageVideo{#flash-support-for-stagevideo}

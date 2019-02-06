@@ -4,9 +4,6 @@ seo-description: If you want to issue valid licenses that a Primetime DRM client
 seo-title: About Adobe Primetime DRM credentials
 title: About Adobe Primetime DRM credentials
 uuid: 0a85c68c-3279-40bf-92d9-e1f4fce994c0
-index: y
-internal: n
-snippet: y
 ---
 
 # About Adobe Primetime DRM credentials{#about-adobe-primetime-drm-credentials}

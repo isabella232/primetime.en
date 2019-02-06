@@ -4,16 +4,13 @@ seo-description: This table proves detailed information about WARN type notifica
 seo-title: WARNING notification codes
 title: WARNING notification codes
 uuid: 136b5a65-b842-40fd-8ddd-efe01d73c388
-index: y
-internal: n
-snippet: y
 ---
 
 # WARNING notification codes{#warning-notification-codes}
 
 This table proves detailed information about WARN type notifications.
 
-<a id="section_F25366B6703040E3ADA993C113618F01"></a>
+<!--<a id="section_F25366B6703040E3ADA993C113618F01"></a>-->
 
 Most warnings contain relevant metadata, for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad. 
 

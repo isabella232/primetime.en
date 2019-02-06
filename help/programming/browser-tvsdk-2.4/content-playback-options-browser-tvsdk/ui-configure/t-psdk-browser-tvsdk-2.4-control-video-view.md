@@ -4,9 +4,6 @@ seo-description: You can control the position and size of the video view using t
 seo-title: Control the position and size of the video view
 title: Control the position and size of the video view
 uuid: d09dbc18-1ec0-4336-bf3f-7ff6c265c443
-index: y
-internal: n
-snippet: y
 ---
 
 # Control the position and size of the video view{#control-the-position-and-size-of-the-video-view}
@@ -76,7 +73,7 @@ In non-Flash fallback scenarios, for scale policy to work correctly, the video d
    mediaplayer.view = view;
    ```
 
-<a id="example_ABCD79AE29DB4A668F9A8B729FE44AF9"></a>
+<!--<a id="example_ABCD79AE29DB4A668F9A8B729FE44AF9"></a>-->
 
 **For example: Scale the video to fill the entire video view, without maintaining aspect ratio:** 
 

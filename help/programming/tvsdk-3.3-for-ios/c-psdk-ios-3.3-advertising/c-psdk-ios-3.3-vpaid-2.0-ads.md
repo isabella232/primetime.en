@@ -4,12 +4,9 @@ seo-description: Video Player Ad-Serving Interface Definition (VPAID) 2.0 provid
 seo-title: VPAID 2.0 ad support
 title: VPAID 2.0 ad support
 uuid: b688d244-c5ac-4832-b5c2-cb25bc80ce8b
-index: y
-internal: n
-snippet: y
 ---
 
-# VPAID 2.0 ad support {#vpaid-ad-support}
+# VPAID 2.0 ad support{#vpaid-ad-support}
 
 Video Player Ad-Serving Interface Definition (VPAID) 2.0 provides a common interface to play video ads. It provides a rich media experience for users and allows publishers to better target ads, track ad impressions, and monetize video content.
 
@@ -43,7 +40,7 @@ The following changes were made to the API:
 
 * `PTMediaPlayerCustomAdNotification` is dispatched from the `PTMediaPlayer` instance
 
-<a id="section_495700E1C5404A7B85307A4137C740C5"></a>
+<!--<a id="section_495700E1C5404A7B85307A4137C740C5"></a>-->
 
 While the VPAID ad is playing:
 
@@ -72,3 +69,4 @@ To add VPAID 2.0 support in your iOS application:
     
    }
    ```
+

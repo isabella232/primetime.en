@@ -4,9 +4,6 @@ seo-description: Set up a single place to handle errors.
 seo-title: Set up error handling
 title: Set up error handling
 uuid: ff56180d-aa74-4b7c-a24c-e536d874c2e6
-index: y
-internal: n
-snippet: y
 ---
 
 # Set up error handling{#set-up-error-handling}
@@ -21,7 +18,7 @@ Set up a single place to handle errors.
 
    When the `MediaPlayer` object is in the ERROR state, it cannot exit this state until you either reset the `MediaPlayer` object (via the `MediaPlayer.reset` method) or load a new media resource ( `MediaPlayer.replaceCurrentItem`).
 
-<a id="example_49FF225E92EA494AA06B2E5F26101F4C"></a>
+<!--<a id="example_49FF225E92EA494AA06B2E5F26101F4C"></a>-->
 
 For example: 
 

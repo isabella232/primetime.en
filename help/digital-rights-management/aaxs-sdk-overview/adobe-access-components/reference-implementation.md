@@ -2,9 +2,6 @@
 seo-title: Reference implementation
 title: Reference implementation
 uuid: 95af6185-d18c-4291-9209-621507cebd9f
-index: y
-internal: n
-snippet: y
 ---
 
 # Reference implementation {#reference-implementation}

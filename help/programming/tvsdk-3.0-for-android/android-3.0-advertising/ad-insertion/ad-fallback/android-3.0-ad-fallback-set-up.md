@@ -4,9 +4,6 @@ seo-description: You can enable fallback when a VMAP inline ad contains an inval
 seo-title: Define fallback ad behavior for VMAP inline ads
 title: Define fallback ad behavior for VMAP inline ads
 uuid: bc8cb0b4-5ea9-429b-ab5d-746c6f03e74b
-index: y
-internal: n
-snippet: y
 ---
 
 # Define fallback ad behavior for VMAP inline ads{#define-fallback-ad-behavior-for-vmap-inline-ads}

@@ -2,9 +2,6 @@
 seo-title: License Generator overview
 title: License Generator overview
 uuid: 9c191871-28f4-485e-b09f-038e499764bb
-index: y
-internal: n
-snippet: y
 ---
 
 # License Generator overview {#license-generator-overview}

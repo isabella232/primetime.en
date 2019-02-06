@@ -4,9 +4,6 @@ seo-description: Your application can monitor the activity in your player and th
 seo-title: Primetime player events summary
 title: Primetime player events summary
 uuid: ed3be4c2-8df3-4d96-a30b-74c196262798
-index: y
-internal: n
-snippet: y
 ---
 
 # Primetime player events summary{#primetime-player-events-summary}

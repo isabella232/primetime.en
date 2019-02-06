@@ -4,9 +4,6 @@ seo-description: With TVSDK you can control the basic playback experience for li
 seo-title: Wait for a valid state
 title: Wait for a valid state
 uuid: 22b68162-1625-4e8a-8566-b0c198155622
-index: y
-internal: n
-snippet: y
 ---
 
 # Wait for a valid state{#wait-for-a-valid-state}

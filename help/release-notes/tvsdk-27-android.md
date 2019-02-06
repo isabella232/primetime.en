@@ -7,9 +7,6 @@ uuid: 4013b97d-29f9-435b-8772-b19df7054282
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: bab78e9f-f9ba-4e1c-b778-0936ae704037
-index: y
-internal: n
-snippet: y
 ---
 
 # TVSDK 2.7 for Android Release Notes {#tvsdk-for-android-release-notes}
