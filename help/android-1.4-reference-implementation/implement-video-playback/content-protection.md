@@ -69,13 +69,7 @@ To create a content protection manager:
   
   ```
 
-<!-- 
+**Related API documentation**
 
-Comment Type: draft
-
-## Related API documentation {#section_FF1AEB53F9A64AF39E3F94A934960CA0}
-
-1. [Class DrmManager](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/DrmManager.html) 
-1. [DrmManagerEventListener](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/DrmManager.DrmManagerEventListener.html)
-
--->
+* [Class DrmManager](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/DrmManager.html) 
+* [DrmManagerEventListener](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/DrmManager.DrmManagerEventListener.html)
