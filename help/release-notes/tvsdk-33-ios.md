@@ -29,6 +29,10 @@ Before you download iOS 3.3, ensure your hardware, operating system, and applica
 
 * TVSDK 3.3 is now compliant with iOS 11 SDK. All the deprecated APIs have been replaced with suitable alternatives.
 
+<details>
+<summary><b>New features in the previous releases</b></summary>
+<p>
+
 **Version 3.2**
 
 * **Additional Logging Support (Phase 2)**
@@ -57,6 +61,7 @@ Before you download iOS 3.3, ensure your hardware, operating system, and applica
 * TVSDK 3.0 supports HEVC streams.
 
 * Just In Time - Resolving ads closer to ad markers.
+
 
 Added `enableDelayAdLoading` property of Boolean type on App level interface to enable JIT. If `enableDelayAdLoading` is NO, it will `setadMetadata.delayAdLoading`to True (property of PTAdMetadata interface).
 
@@ -211,6 +216,8 @@ As part of the 1.4 TVSDK update, the TVSDK also now supports going into and retu
 * **Remove/Replace C3 Ads**
 
 Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during  broadcast  and is immediately pulled down for use as  on demand  content without proper time to “clean” the asset.
+</p>
+</details>
 
 ## Resolved issues {#resolved-issues}
 
@@ -238,6 +245,10 @@ Comment Type: draft
 ### iOS TVSDK 3.3 {#ios-tvsdk}
 
 *   ZD#37820 - Added whitelisting for custom header HS-Id, HS-SSAI-TAG.
+
+<details>
+<summary><b>Resolved issues in the previous releases</b></summary>
+<p>
 
 **Version 3.2**
 
@@ -1016,6 +1027,9 @@ Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad bre
 
 * Zendesk #1024 - Feature to remove  ad  from stream via manifest
 
+</p>
+</details>
+
 ## Device certification and support {#device-certification-and-support}
 
 >[!NOTE]
@@ -1025,7 +1039,9 @@ Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad bre
 >* Slow motion, on any platform or version.
 >* Live trick play.
 >
-
+<details>
+<summary><b>Device certification and support></b></summary>
+<p>
 **Version 1.4.43**
 
 * TVSDK 1.4.43 is certified for iOS 11.
@@ -1054,6 +1070,8 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
     * TVSDK tvOs support is limited to non-Adobe DRM encrypted streams. You must remove the reference to drmNativeInterface.framework in your tvOS build settings. AES encrypted streams are still supported.
     * Apple requires all Apple TV applications to be  bitcode  enabled, so you must turn this flag on in your project settings.
+    </p>
+    </details>
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
