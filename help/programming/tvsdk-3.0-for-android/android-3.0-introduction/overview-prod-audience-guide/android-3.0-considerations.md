@@ -33,9 +33,7 @@ Remember the following information when using TVSDK:
     
       ```    
       "Adobe Primetime/" + 
-<varname>
-  originalUserAgent
-</varname> 
+      originalUserAgent
       ```    
     
       All ad-related calls use the Android default user agent or the custom user agent if you set it while setting up ad-insertion metadata.
@@ -49,4 +47,3 @@ Here are recommended practices for TVSDK:
 * For TVSDK 3.0 for Android, lazy ad resolving is on by default.
 
   For content with no pre-roll or mid-roll, you can use `AdvertisingMetadata.setPreroll(false)` to accelerate content loading.
-

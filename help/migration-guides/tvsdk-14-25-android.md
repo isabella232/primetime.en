@@ -22,119 +22,38 @@ TVSDK 2.5 offers multiple benefits over version 1.4 in terms of performance, sec
 
 According to a third-party benchmarking study, v2.5 provides 5x reduction in startup time and 3.8x reduction in dropped frames over the industry average.
 
-<table> 
- <caption>
-   Table: Performance enhancements in v2.5 
- </caption> 
- <tbody> 
-  <tr> 
-   <td valign="top" width="336"><p><strong>Performance Features</strong></p> </td> 
-   <td valign="top" width="336"><p><strong>Description</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Instant-on for VOD and Live</p> </td> 
-   <td valign="top" width="336"><p>Pre-load initial ts segments for Immediate playback for VOD and live-linear streams when channel switching, for a TV like experience.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Lazy ad loading</p> </td> 
-   <td valign="top" width="336"><p>Starts playback as soon as pre-roll or content is available while resolving mid-roll ads in a parallel thread.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Persistent network connections</p> </td> 
-   <td valign="top" width="336"><p>Increase in efficiency and decrease in latency of networking code for faster playback performance.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Improved ABR logic</p> </td> 
-   <td valign="top" width="336"><p>The new ABR logic is based on buffer length, rate of change of buffer length, and measured bandwidth. This ensures that the ABR chooses the right bit rate when the bandwidth fluctuates and also optimizes the number of times the bitrate switch actually happens by monitoring the rate at which the buffer length changes.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Partial segment download</p> </td> 
-   <td valign="top" width="336"><p>Starts playback as soon as enough frames from a segment are available for rendering video reliably on the client side.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Parallel downloads</p> </td> 
-   <td valign="top" width="336"><p>TVSDK downloads audio and video segments in parallel for demuxed content to optimize playback performance.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Performance Features|Description|
+|--- |--- |
+|Instant-on for VOD and Live|Pre-load initial ts segments for Immediate playback for VOD and live-linear streams when channel switching, for a TV like experience.|
+|Lazy ad loading|Starts playback as soon as pre-roll or content is available while resolving mid-roll ads in a parallel thread.|
+|Persistent network connections|Increase in efficiency and decrease in latency of networking code for faster playback performance.|
+|Improved ABR logic|The new ABR logic is based on buffer length, rate of change of buffer length, and measured bandwidth. This ensures that the ABR chooses the right bit rate when the bandwidth fluctuates and also optimizes the number of times the bitrate switch actually happens by monitoring the rate at which the buffer length changes.|
+|Partial segment download|Starts playback as soon as enough frames from a segment are available for rendering video reliably on the client side.|
+|Parallel downloads|TVSDK downloads audio and video segments in parallel for demuxed content to optimize playback performance.|
 
 The playback features improve consumer engagement by delivering the experience of linear broadcast on digital. Also, it helps you leverage native DRM such as Widevine for HD playback.
 
-<table> 
- <caption>
-   Table: Playback features in v2.5 
- </caption> 
- <tbody> 
-  <tr> 
-   <td valign="top" width="336"><p><strong>Playback Features</strong></p> </td> 
-   <td valign="top" width="336"><p><strong>Description</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>MP4 playback</p> </td> 
-   <td valign="top" width="336"><p>MP4 short clips don’t have to be re-transcoded to playback within TVSDK.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>DASH VOD content playback</p> </td> 
-   <td valign="top" width="336"><p>Basic DASH VOD playback use cases are supported.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Smooth Trickplay with ABR</p> </td> 
-   <td valign="top" width="336"><p>Support for fast forward and rewind in HLS using keyframes at low rates and I-Frames at faster speeds. ABR support for all supported frames.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Playback Features|Description|
+|--- |--- |
+|MP4 playback|MP4 short clips don’t have to be re-transcoded to playback within TVSDK.|
+|DASH VOD content playback|Basic DASH VOD playback use cases are supported.|
+|Smooth Trickplay with ABR|Support for fast forward and rewind in HLS using keyframes at low rates and I-Frames at faster speeds. ABR support for all supported frames.|
 
 The features are important to meet the studio restrictions such as HD playback over native DRM.
 
-<table> 
- <caption>
-   Table: Content protection in v2.5 
- </caption> 
- <tbody> 
-  <tr> 
-   <td valign="top" width="336"><p><strong>Features</strong></p> </td> 
-   <td valign="top" width="336"><p><strong>Description</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Resolution Based Output Protection</p> </td> 
-   <td valign="top" width="336"><p>playback can be restricted to only certain resolutions that are allowed by DRM requirements. Available only through Primetime DRM.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Widevine support</p> </td> 
-   <td valign="top" width="336"><p>Supported with DASH VOD streams to enable native DRM use cases.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Features|Description|
+|--- |--- |
+|Resolution Based Output Protection|playback can be restricted to only certain resolutions that are allowed by DRM requirements. Available only through Primetime DRM.|
+|Widevine support|Supported with DASH VOD streams to enable native DRM use cases.|
 
 Direct billing enhancement does away with the need to create manual reports for billing every month. VHL 2.0 allows for a faster time to market with pre-build integration and better accuracy in tracking.
 
-<table> 
- <caption>
-   Table: Advertising, Analytics, and other workflow in v2.5 
- </caption> 
- <tbody> 
-  <tr> 
-   <td valign="top" width="336"><p><strong>Features</strong></p> </td> 
-   <td valign="top" width="336"><p><strong>Description</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Moat integration</p> </td> 
-   <td valign="top" width="336"><p>Support for ad viewability measurement from Moat.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>VHL 2.0</p> </td> 
-   <td valign="top" width="336"><p>The latest optimized video heartbeats library integration for automatic collection of usage data for Adobe Analytics.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Failover Support</p> </td> 
-   <td valign="top" width="336"><p>Additional strategies implemented to continue uninterrupted playback, despite failures of host servers, playlist files, and segments.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>Direct Billing Integration</p> </td> 
-   <td valign="top" width="336"><p>Sends billing metrics to Adobe Analytics backend which is certified by Adobe Primetime for streams used by customer.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Features|Description|
+|--- |--- |
+|Moat integration|Support for ad viewability measurement from Moat.|
+|VHL 2.0|The latest optimized video heartbeats library integration for automatic collection of usage data for Adobe Analytics.|
+|Failover Support|Additional strategies implemented to continue uninterrupted playback, despite failures of host servers, playlist files, and segments.|
+|Direct Billing Integration|Sends billing metrics to Adobe Analytics backend which is certified by Adobe Primetime for streams used by customer.|
 
 >[!NOTE]
 >
@@ -153,7 +72,6 @@ The psdk.jar file uses third party libraries for supporting different features. 
 -keep class com.adobe.** { *; }
 -keep class com.google.android.exoplayer.**
 { *; }
-
 ```
 
 In the `build.gradle` file, you need to include the compile directive to include the TVSDK based JAR files. If your app includes Adobe Video Analytics then you need to include the compile directive for the additional jars required for Adobe Video Analytics integration in the app
@@ -172,88 +90,22 @@ Multiple examples of the API usage are covered in the reference implementation d
 
 The new, obsolete, and modified APIs are documented below.
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <caption>
-   Table: API changes between TVSDK v1.4 and TVSDK v2.5 
- </caption> 
- <tbody> 
-  <tr> 
-   <td valign="top" width="224"><p><strong>TVSDK v1.4</strong></p> </td> 
-   <td valign="top" width="224"><p><strong>TVSDK v2.5</strong></p> </td> 
-   <td valign="top" width="224"><p><strong>Description</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>import com.adobe.ave.drm</p> <p>.DRMAcquireLicenseSettings</p> </td> 
-   <td valign="top" width="224"><p>import com.adobe.mediacore.drm</p> <p>.DRMAcquireLicenseSettings;</p> </td> 
-   <td valign="top" width="224"><p>All class names in the TVSDK 2.5 API begin with the com.adobe.mediacore prefix. This is just an example.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>MediaPlayerException, IllegalStateException, or IllegalArgumentException</p> </td> 
-   <td valign="top" width="224"><p>MediaPlayerException</p> </td> 
-   <td valign="top" width="224"><p>In 2.5, the APIs generate only MediaPlayerException.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>MediaPlayer.PlayerState (MediaPlayer.Event.PLAYBACK)</p> </td> 
-   <td valign="top" width="224"><p>MediaPlayerStatus (MediaPlayerEvent.STATUS_CHANGED)</p> </td> 
-   <td valign="top" width="224"><p>In v2.5, MediaPlayer.PlayerState was renamed to a separate</p> <p>enum MediaPlayerStatus.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>DefaultMediaPlayer.create (getActivity().getApplicationContext())</p> </td> 
-   <td valign="top" width="224"><p>MediaPlayer mediaPlayer =</p> <p>new MediaPlayer(getActivity(). getApplicationContext());</p> </td> 
-   <td valign="top" width="224"><p>The static methods used to create objects are replaced by public constructors.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>MediaPlayer.seekToLocalTime()</p> </td> 
-   <td valign="top" width="224"><p>MediaPlayer.seekToLocal()</p> </td> 
-   <td valign="top" width="224"><p>The MediaPlayer.seekToLocalTime() method is now called MediaPlayer.seekToLocal().</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>closedCaptionsTrack.isActive()</p> </td> 
-   <td valign="top" width="224"><p> </p> </td> 
-   <td valign="top" width="224"><p>Not available</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>MetadataNode</p> </td> 
-   <td valign="top" width="224"><p>Metadata</p> </td> 
-   <td valign="top" width="224"><p>In v2.5, the Metadata class replaces the use of the</p> <p>v1.4 MetadataNode class.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>DefaultMetadataKeys</p> </td> 
-   <td valign="top" width="224"><p>MetadataKeys</p> </td> 
-   <td valign="top" width="224"><p>The DefaultMetadataKeys from v1.4 are in v2.5 enum MetadataKeys.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>AdvertisingFactory</p> </td> 
-   <td valign="top" width="224"><p>ContentFactory</p> </td> 
-   <td valign="top" width="224"><p>The AdvertisingFactory from v1.4 is renamed to ContentFactory in v2.5</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>PlacementOpportunityDetector</p> </td> 
-   <td valign="top" width="224"><p>OpportunityGenerator</p> </td> 
-   <td valign="top" width="224"><p>Detectors are replaced with Generators.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>mediaPlayer.getView().notifyClick();</p> </td> 
-   <td valign="top" width="224"><p>mediaPlayer.notifyClick();</p> </td> 
-   <td valign="top" width="224"><p>The notifyClick() method of MediaPlayerView was moved to the MediaPlayer class.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>public ABRControlParameters(ABRPolicy abrPolicy, int nInitialBitRate, int nMinBitRate, int nMaxBitRate)</p> </td> 
-   <td valign="top" width="224"><p>public ABRControlParameters(int nInitialBitRate, int nMinBitRate, int nMaxBitRate, ABRPolicy abrPolicy, int nMinTrickPlayBitRate, int nMaxTrickPlayBitRate, int nMaxTrickPlayBandwidthUsage, double dMaxPlayoutRate)</p> </td> 
-   <td valign="top" width="224"><p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p>playbackInformation.getTimeToFirstFrame()</p> </td> 
-   <td valign="top" width="224"><p> </p> </td> 
-   <td valign="top" width="224"><p>Not available</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="224"><p> </p> </td> 
-   <td valign="top" width="224"><p>playbackInformation.get<br /> PerceivedBandwidth()</p> </td> 
-   <td valign="top" width="224"><p>TVSDK v2.5 QOSProvider has a new property to determine the perceived bandwidth during a streaming session.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|TVSDK v1.4|TVSDK v2.5|Description|
+|--- |--- |--- |
+|import com.adobe.ave.drm .DRMAcquireLicenseSettings|import com.adobe.mediacore.drm .DRMAcquireLicenseSettings;|All class names in the TVSDK 2.5 API begin with the com.adobe.mediacore prefix. This is just an example.|
+|MediaPlayerException, IllegalStateException, or IllegalArgumentException|MediaPlayerException|In 2.5, the APIs generate only MediaPlayerException.|
+|MediaPlayer.PlayerState (MediaPlayer.Event.PLAYBACK)|MediaPlayerStatus (MediaPlayerEvent.STATUS_CHANGED)|In v2.5, MediaPlayer.PlayerState was renamed to a separate enum MediaPlayerStatus.|
+|DefaultMediaPlayer.create (getActivity().getApplicationContext())|MediaPlayer mediaPlayer = new MediaPlayer(getActivity(). getApplicationContext());|The static methods used to create objects are replaced by public constructors.|
+|MediaPlayer.seekToLocalTime()|MediaPlayer.seekToLocal()|The MediaPlayer.seekToLocalTime() method is now called MediaPlayer.seekToLocal().|
+|closedCaptionsTrack.isActive()||Not available|
+|MetadataNode|Metadata|In v2.5, the Metadata class replaces the use of the v1.4 MetadataNode class.|
+|DefaultMetadataKeys|MetadataKeys|The DefaultMetadataKeys from v1.4 are in v2.5 enum MetadataKeys.|
+|AdvertisingFactory|ContentFactory|The AdvertisingFactory from v1.4 is renamed to ContentFactory in v2.5|
+|PlacementOpportunityDetector|OpportunityGenerator|Detectors are replaced with Generators.|
+|mediaPlayer.getView().notifyClick();|mediaPlayer.notifyClick();|The notifyClick() method of MediaPlayerView was moved to the MediaPlayer class.|
+|public ABRControlParameters(ABRPolicy abrPolicy, int nInitialBitRate, int nMinBitRate, int nMaxBitRate)|public ABRControlParameters(int nInitialBitRate, int nMinBitRate, int nMaxBitRate, ABRPolicy abrPolicy, int nMinTrickPlayBitRate, int nMaxTrickPlayBitRate, int nMaxTrickPlayBandwidthUsage, double dMaxPlayoutRate)||
+|playbackInformation.getTimeToFirstFrame()||Not available|
+||playbackInformation.get PerceivedBandwidth()|TVSDK v2.5 QOSProvider has a new property to determine the perceived bandwidth during a streaming session.|
 
 ### Removed classes {#removed-classes}
 
@@ -368,54 +220,18 @@ The following event codes are new in 2.5:
 
 ### Renamed Events {#renamed-events}
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody> 
-  <tr> 
-   <td valign="top" width="336"><p><strong>New Name</strong></p> </td> 
-   <td valign="top" width="336"><p><strong>Old Name</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>SEEK_BEGIN</p> </td> 
-   <td valign="top" width="336"><p>SEEK_STARTED</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>SEEK_END</p> </td> 
-   <td valign="top" width="336"><p>SEEK_COMPLETED</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>SEEK_POSITION_ADJUSTED</p> </td> 
-   <td valign="top" width="336"><p>SEEK_ADJUST_COMPLETED</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>BUFFERING_BEGIN</p> </td> 
-   <td valign="top" width="336"><p>BUFFERING_STARTED</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>BUFFERING_END</p> </td> 
-   <td valign="top" width="336"><p>BUFFERING_COMPLETED</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>AUDIO_TRACK_UPDATED</p> </td> 
-   <td valign="top" width="336"><p>AUDIO_TRACK_CHANGED</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>STATUS_CHANGED</p> </td> 
-   <td valign="top" width="336"><p>STATE_CHANGED</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>TIMED_METADATA_AVAILABLE</p> </td> 
-   <td valign="top" width="336"><p>TIMED_METADATA_ADDED</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p>SIZE_AVAILABLE</p> </td> 
-   <td valign="top" width="336"><p>SIZE_CHANGED</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="336"><p><!--<a id="MediaPlayer_changes" name="MediaPlayer_changes"></a>--><!--<a id="_bookmark6" name="_bookmark6"></a>-->LOAD_INFO</p> </td> 
-   <td valign="top" width="336"><p>LOAD_INFORMATION_AVAILABLE</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|New Name|Old Name|
+|--- |--- |
+|SEEK_BEGIN|SEEK_STARTED|
+|SEEK_END|SEEK_COMPLETED|
+|SEEK_POSITION_ADJUSTED|SEEK_ADJUST_COMPLETED|
+|BUFFERING_BEGIN|BUFFERING_STARTED|
+|BUFFERING_END|BUFFERING_COMPLETED|
+|AUDIO_TRACK_UPDATED|AUDIO_TRACK_CHANGED|
+|STATUS_CHANGED|STATE_CHANGED|
+|TIMED_METADATA_AVAILABLE|TIMED_METADATA_ADDED|
+|SIZE_AVAILABLE|SIZE_CHANGED|
+|LOAD_INFO|LOAD_INFORMATION_AVAILABLE|
 
 ## MediaPlayer changes {#mediaplayer-changes}
 
@@ -869,82 +685,19 @@ The following additional changes are available in version 2.5:
 
 The majority of changes in this version are in the DRM layer. The following table shows additional changes between versions 1.4 and 2.5:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody> 
-  <tr> 
-   <td valign="top" width="168"><p><strong>DRMManager Method</strong></p> </td> 
-   <td valign="top" width="168"><p><strong>Success Callback in 1.4</strong></p> </td> 
-   <td valign="top" width="168"><p><strong>Error Callback in 1.4</strong></p> </td> 
-   <td valign="top" width="168"><p><strong>Listener in 2.5</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">acquireLicense</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMLicenseAcquiredCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMAcquireLicenseListener</span></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">acquirePreviewLicense</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMLicenseAcquiredCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMAcquireLicenseListener</span></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">authenticate</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMAuthenticationCompleteCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMAuthenticateListener</span></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">createMetadataFromBytes</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">NA</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMErrorListener</span></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">initialize</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteListener</span></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">joinLicenseDomain</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteListener</span></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">leaveLicenseDomain</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteListener</span></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">resetDRM</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteListener</span></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">returnLicense</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMLicenseReturnCompleteCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMReturnLicenseListener</span></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">setAuthenticationToken</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteListener</span></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top" width="168"><p><span class="code">storeLicenseBytes</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationErrorCallback</span></p> </td> 
-   <td valign="top" width="168"><p><span class="code">DRMOperationCompleteListener</span></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|DRMManager Method|Success Callback in 1.4|Error Callback in 1.4|Listener in 2.5|
+|--- |--- |--- |--- |
+|acquireLicense|DRMLicenseAcquiredCallback|DRMOperationErrorCallback|DRMAcquireLicenseListener|
+|acquirePreviewLicense|DRMLicenseAcquiredCallback|DRMOperationErrorCallback|DRMAcquireLicenseListener|
+|authenticate|DRMAuthenticationCompleteCallback|DRMOperationErrorCallback|DRMAuthenticateListener|
+|createMetadataFromBytes|NA|DRMOperationErrorCallback|DRMErrorListener|
+|initialize|DRMOperationCompleteCallback|DRMOperationErrorCallback|DRMOperationCompleteListener|
+|joinLicenseDomain|DRMOperationCompleteCallback|DRMOperationErrorCallback|DRMOperationCompleteListener|
+|leaveLicenseDomain|DRMOperationCompleteCallback|DRMOperationErrorCallback|DRMOperationCompleteListener|
+|resetDRM|DRMOperationCompleteCallback|DRMOperationErrorCallback|DRMOperationCompleteListener|
+|returnLicense|DRMLicenseReturnCompleteCallback|DRMOperationErrorCallback|DRMReturnLicenseListener|
+|setAuthenticationToken|DRMOperationCompleteCallback|DRMOperationErrorCallback|DRMOperationCompleteListener|
+|storeLicenseBytes|DRMOperationCompleteCallback|DRMOperationErrorCallback|DRMOperationCompleteListener|
 
 ```java
 //TVSDK 1.4
@@ -1483,4 +1236,3 @@ LOG_TAG + "::LoadInformationEventListener#onLoadInfomation()", "Url: " + loadInf
 }
 };
 ```
-
