@@ -200,11 +200,9 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
    <td colname="col3"> <p>The content you are viewing has expired according to the rules set by the content provider. subErrorId contains a client-specific error or line error. </p> <p> 
      <ul id="ul_1E4B3B8AE87A4E79997553BB2A0E52B9"> 
       <li id="li_EE3F2EEBF73743B9A38E4FCB7531E275">The distributor's software should attempt to reacquire license from the server once to determine whether a new non-expired license is available. <p>If no license is available or the license has expired, allow the user to acquire new license, or inform user that the content cannot be watched.If the content has been packaged with a policy that has a lapsed expiration/end date, the license server logs report a <span class="codeph"> PolicyEvaluationException</span> and state that the Policy End Date has lapsed (Server Error code 303). Check the server's log files to verify. </p> <p>If possible, customers should check the policy that they used during packaging to see whether it has expired. The Java command line tool is: 
-        <codeblock>
-         java&nbsp;-jar&nbsp;libs/AdobePolicyManager.jar&nbsp;
-         
-&nbsp;&nbsp;detail&nbsp;demo.pol
-        </codeblock> </p> </li> 
+        <code>
+         java&nbsp;-jar&nbsp;libs/AdobePolicyManager.jar&nbsp;&nbsp;&nbsp;detail&nbsp;demo.pol
+        </code> </p> </li> 
       <li id="li_50DBE680D8F04E7DA3E29C65A93188E7">The distributor should confirm whether license expiration dates are configured as intended. </li> 
      </ul> </p> <p>For more information about this error code, see <a href="https://forums.adobe.com/thread/1300813" format="https" scope="external"> 3303 (Content Expired) with AMS/FMS using a Live Stream?</a>. </p> </td> 
   </tr> 
@@ -1217,4 +1215,3 @@ The crypto module of the Adobe video engine returns these notifications in the `
 |  304  | `CRYPTO_ERROR_DIGEST_UPDATE`  | Digest update.  |
 |  305  | `CRYPTO_ERROR_DIGEST_FINISH`  | Digest finish.  |
 |  306  | `CRYPTO_ERROR_BAD_PARAMETER`  | Bad parameter.  |
-
