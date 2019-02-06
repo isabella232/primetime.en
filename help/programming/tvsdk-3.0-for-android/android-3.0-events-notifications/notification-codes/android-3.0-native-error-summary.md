@@ -352,7 +352,9 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
     </ul> <p>For more information, see <a href="https://forums.adobe.com/thread/1277138" format="https" scope="external"> DRM error 3321 Causes &amp; Resolution</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="3"><b>Global Store corruption errors</b> </td> 
+   <td colname="col1"><b>Global Store corruption errors</b> </td> 
+   <td colname="col2"> </td> 
+   <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3322 </td> 
@@ -394,8 +396,10 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
      </ul> </p> <p>If the firewall rules are open and there are no current 3324 errors, there might have been a temporary network issue. Check the customer's server logs, which are probably in the <span class="codeph"> /tomcat/logs/</span> directory, to determine whether an error occurred when the license server tried to fetch the Certificate Revocation Lists. <p>Important:  An error might occur when a large number (or a burst) of clients report a 3324 error to a temporary network issue when renewing a CRL file. When the network issue was resolved, the 3324 issues were also resolved. </p> </p> <p>If all 4 of the CRL files exist in the <span class="filepath"> tomcat/temp/</span> directory, and clients are still getting 3324 error codes, there might be file access issues to the CRL files. To resolve this issue, you might want to review the logs and purge the existing CRL files. </p> <p>If there are no server issues, prompt the user to reset in as described in 3322. </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="3"><b>Server Store corruption errors</b> </td> 
-  </tr> 
+   <td colname="col1"><b>Server Store corruption errors</b> </td> 
+   <td colname="col2"> </td> 
+   <td colname="col3"> </td> 
+</tr> 
   <tr> 
    <td colname="col1"> 3325 </td> 
    <td colname="col2"><span class="codeph"> AAXS_CorruptServerStateStore </span> </td> 
@@ -416,7 +420,9 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
    <td colname="col3"> Fix the clock or acquire <span class="codeph"> Authn/Lic/Domain</span> license again. </td> 
   </tr> 
   <tr> 
-   <td colspan="3"><b>Authentication/License/Domain server errors</b> </td> 
+   <td colname="col1"><b>Authentication/License/Domain server errors</b> </td> 
+   <td colname="col2"> </td> 
+   <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3328 </td> 
@@ -438,8 +444,10 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colspan="3"> <b>License Enforcement errors that aren't covered above</b> </td> 
-  </tr> 
+   <td colname="col1"><b>License Enforcement errors that aren't covered above</b> </td> 
+   <td colname="col2"> </td> 
+   <td colname="col3"> </td> 
+</tr> 
   <tr> 
    <td colname="col1"> 3331 </td> 
    <td colname="col2"><span class="codeph"> AAXS_ContentNotYetValid </span> </td> 
