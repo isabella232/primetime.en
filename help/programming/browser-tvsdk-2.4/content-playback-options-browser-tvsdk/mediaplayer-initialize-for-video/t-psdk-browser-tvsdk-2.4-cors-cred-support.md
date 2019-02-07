@@ -47,33 +47,33 @@ To enable `withCredentials` support for most types of requests when playing a gi
    
    ```
 
->>[!IMPORTANT]
->>
->>The `useCookieHeaderForAllRequests` flag does not affect license requests. To set the `withCredentials` attribute to `true` for a license request, you must set the `withCredentials` attribute in your protection data or specify an authorization key in the `httpRequestHeaders` of your protection data. For example: 
+>[!IMPORTANT]
 >
->>```>>
->># Example 1 
->>{ 
->>    "com.widevine.alpha": {  
->>        "withCredentials":true,  
->>        "serverURL":  
->>          "https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=[YOUR_TOKEN</i]" } 
->>} 
->> 
->># Example 2 
->>{ 
->>    "com.widevine.alpha": { 
->>        "httpRequestHeaders": {  
->>            "authorization": "true"  
->>            }, 
->>        "serverURL":  
->>          "https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=[YOUR_TOKEN</i>]" }
->>        } 
->>}
+>The `useCookieHeaderForAllRequests` flag does not affect license requests. To set the `withCredentials` attribute to `true` for a license request, you must set the `withCredentials` attribute in your protection data or specify an authorization key in the `httpRequestHeaders` of your protection data. For example: 
 
->>The flag does not affect a license request because some servers set the `Access-Control-Allow-Origin` field to wildcard ('&#42;') in their response. But, when the credentials flag is set to `true`, the wildcard cannot be used in `Access-Control-Allow-Origin`. If you set `useCookieHeaderForAllRequests` to `true` for all types of requests, you might see the following error for a license request:  
->
->Remember the following information:
->* When a call with `withCredentials=true` fails, Browser TVSDK retries the call without `withCredentials`.
->
->* When a call is made with `networkConfiguration.useCookieHeaderForAllRequests=false`, XHR requests are made without the `withCredentials` attribute.
+```
+# Example 1 
+{ 
+    "com.widevine.alpha": {  
+        "withCredentials":true,  
+        "serverURL":  
+          "https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=[YOUR_TOKEN</i]" } 
+} 
+ 
+# Example 2 
+{ 
+    "com.widevine.alpha": { 
+        "httpRequestHeaders": {  
+            "authorization": "true"  
+            }, 
+        "serverURL":  
+          "https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=[YOUR_TOKEN</i>]" }
+        } 
+}
+
+The flag does not affect a license request because some servers set the `Access-Control-Allow-Origin` field to wildcard ('&#42;') in their response. But, when the credentials flag is set to `true`, the wildcard cannot be used in `Access-Control-Allow-Origin`. If you set `useCookieHeaderForAllRequests` to `true` for all types of requests, you might see the following error for a license request:  
+
+Remember the following information:
+
+* When a call with `withCredentials=true` fails, Browser TVSDK retries the call without `withCredentials`.
+* When a call is made with `networkConfiguration.useCookieHeaderForAllRequests=false`, XHR requests are made without the `withCredentials` attribute.

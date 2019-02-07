@@ -189,9 +189,9 @@ The following features are new in version 2.4.5:
 * **Full Event Replays and Ads**  
   HLS Full Event Replay (FER) streams now supports ad resolution and ad behaviors. To enable this support, set the ad signaling mode to `MANIFEST_CUES` when creating the `MediaPlayerItemConfig` object.
 
-* **MediaplayerView ScalePolicy Support
+* **MediaplayerView ScalePolicy Support**
   
-  **Application developers can now specify a different scalePolicy for the view using MediaplayerView scalePolicy property.
+  Application developers can now specify a different scalePolicy for the view using MediaplayerView scalePolicy property.
 
 * **Anamorphic Content Support**
 
@@ -281,9 +281,9 @@ The following features were available in version 2.4:
 
 This release supports MP3 audio playback on browsers with Media Source Extensions (MSE) and with the Safari video tag.
 
-* **MP4 video playback  
+* **MP4 video playback**
   
-  **The following features are supported:
+  The following features are supported:
 
     * Single stream playback
     * Pre-roll and Post-roll MP4 ads with ad behaviors and tracking
@@ -485,12 +485,11 @@ Here is a list of the supported and unsupported features for this release:
    <td><p><strong>Category</strong></p> </td> 
    <td><p><strong>Content Type</strong></p> </td> 
    <td><p><strong>Feature</strong></p> </td> 
-   <td><p style="text-align: center;"><strong>Flash</strong></p> </td> 
-   <td colspan="2"><p style="text-align: center;"><strong>HTML5</strong></p> </td> 
+   <td><p><strong>Flash</strong></p> </td> 
+   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td><p><strong>Safari, iOS Safari</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Ad Insertion</p> </td> 

@@ -14,7 +14,7 @@ discoiquuid: 933a0711-846a-4bb7-bf51-b300822a93d4
 
 What’s new in Primetime Offline Packager 2.1 and 2.3.1 releases
 
-## What’s new in Primetime Offline Packager 2.3.1 [Oct 2016]  {#what-s-new-in-primetime-offline-packager-oct}
+## What’s new in Primetime Offline Packager 2.3.1 (Oct 2016)  {#what-s-new-in-primetime-offline-packager-oct}
 
 The release enables On-demand Profile for MPEG-DASH, adds support for the `validate` option for PlaylistCreator tool, and has few key fixes for Multi-DRM scenarios listed below.
 
@@ -28,7 +28,7 @@ The release enables On-demand Profile for MPEG-DASH, adds support for the `valid
 
 The latest documentation of Primetime Packagers is available at [https://help.adobe.com/en_US/primetime/api/packagers/index.html](https://help.adobe.com/en_US/primetime/api/packagers/index.html).
 
-### Known issue in version 2.3.1  {#known-issue-in-version}
+### Known issue in version 2.3.1 {#known-issue-in-version}
 
 The following issues exist in this release.
 
@@ -122,7 +122,7 @@ Software requirements
 ### Installing Offline Packager 2.1 {#installing-offline-packager}
 
 1. Download the Java SE software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the install instructions. 
-1. Extract the Adobe Primetime - Offline Packager 2.1.0 archive file, PrimetimeOfflinePackager-2-1-0-b15-07082015.zip, to your disk.
+1. Extract the `Adobe Primetime - Offline Packager 2.1.0 archive file, PrimetimeOfflinePackager-2-1-0-b15-07082015.zip`, to your disk.
 
 ### Configuring the Offline Packager 2.1 {#configuring-the-offline-packager-1}
 

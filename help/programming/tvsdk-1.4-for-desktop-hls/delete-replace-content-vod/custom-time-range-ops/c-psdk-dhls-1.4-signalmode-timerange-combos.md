@@ -21,160 +21,108 @@ uuid: a4d2b0f3-49ce-4a07-a460-9e63bb91b5d3
   <tr> 
    <td> <span class="codeph"> CustomRange OpportunityGenerator </span> </td> 
    <td> 
-    <codeblock>
+    <code>
       (range.begin,&nbsp; 
-     
-&nbsp;range.end) 
-    </codeblock> </td> 
+    &nbsp;range.end) 
+    </code> </td> 
    <td> 
-    <codeblock>
+    <code>
       (range.begin,&nbsp; 
-     
-&nbsp;range.end) 
-    </codeblock> </td> 
+     &nbsp;range.end) 
+    </code> </td> 
    <td> 
-    <codeblock>
+    <code>
       (range.begin,&nbsp; 
-     
-&nbsp;range.end,&nbsp; 
-     
-&nbsp;replaceDuration) 
-    </codeblock> </td> 
+      &nbsp;range.end,&nbsp; 
+      &nbsp;replaceDuration) 
+    </code> </td> 
   </tr> 
   <tr> 
    <td> <span class="codeph"> ServerMap </span> Signaling Mode </td> 
    <td> 
-    <codeblock>
+    <code>
       placement&nbsp;=&nbsp; 
-     
-&nbsp;&nbsp;new&nbsp;Placement(&nbsp; 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE,&nbsp; 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.begin,&nbsp; 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp; 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.MARK&nbsp;); 
-    </codeblock> </td> 
+     &nbsp;&nbsp;new&nbsp;Placement(&nbsp; 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE,&nbsp; 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.begin,&nbsp; 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp; 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.MARK&nbsp;); 
+    </code> </td> 
    <td> 
-    <codeblock>
+    <code>
       placement&nbsp;=&nbsp; 
-     
-&nbsp;&nbsp;new&nbsp;Placement(&nbsp; 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE,&nbsp; 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.begin,&nbsp; 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin,&nbsp; 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.DELETE&nbsp;); 
-    </codeblock> </td> 
+     &nbsp;&nbsp;new&nbsp;Placement(&nbsp; 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE,&nbsp; 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.begin,&nbsp; 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin,&nbsp; 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.DELETE&nbsp;); 
+    </code> </td> 
    <td> N/A (automatic CustomRange signaling mode) </td> 
   </tr> 
   <tr> 
    <td> <span class="codeph"> ManifestCue </span> Signaling Mode </td> 
    <td> 
-    <codeblock>
+    <code>
       placement&nbsp;=&nbsp; 
-     
-new&nbsp;Placement( 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.MARK 
-     
-); 
-    </codeblock> </td> 
+     new&nbsp;Placement( 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE, 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.MARK 
+     ); 
+    </code> </td> 
    <td> 
-    <codeblock>
+    <code>
       placement&nbsp;=&nbsp; 
-     
-&nbsp;&nbsp;new&nbsp;Placement( 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.DELETE 
-     
-); 
-    </codeblock> </td> 
+     &nbsp;&nbsp;new&nbsp;Placement( 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE, 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.DELETE 
+     ); 
+    </code> </td> 
    <td> N/A (automatic CustomRange signaling mode) </td> 
   </tr> 
   <tr> 
    <td> <span class="codeph"> CustomRange </span> Signaling Mode </td> 
    <td> 
-    <codeblock>
+    <code>
       placement&nbsp;=&nbsp; 
-     
-&nbsp;&nbsp;new&nbsp;Placement( 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.MARK 
-     
-); 
-    </codeblock> </td> 
+     &nbsp;&nbsp;new&nbsp;Placement( 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE, 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.MARK 
+     ); 
+    </code> </td> 
    <td> 
-    <codeblock>
+    <code>
       placement&nbsp;=&nbsp; 
-     
-&nbsp;&nbsp;new&nbsp;Placement( 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.DELETE 
-     
-); 
-    </codeblock> </td> 
+     &nbsp;&nbsp;new&nbsp;Placement( 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE, 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.DELETE 
+     ); 
+    </code> </td> 
    <td> 
-    <codeblock>
+    <code>
       placement1&nbsp;=&nbsp; 
-     
-&nbsp;&nbsp;new&nbsp;Placement( 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.MARK 
-     
-); 
-     
-placement2&nbsp;=&nbsp;placement&nbsp;=&nbsp; 
-     
-&nbsp;&nbsp;new&nbsp;Placement(/ 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementType.MID_ROLL( 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;PlacementType.PRE_ROLL), 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;rangeDuration, 
-     
-&nbsp;&nbsp;&nbsp;&nbsp;placementMode 
-     
-); 
-    </codeblock> </td> 
+     &nbsp;&nbsp;new&nbsp;Placement( 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementType.CUSTOM_RANGE, 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;range.end&nbsp;-&nbsp;range.begin, 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementMode.MARK 
+     ); 
+     placement2&nbsp;=&nbsp;placement&nbsp;=&nbsp; 
+     &nbsp;&nbsp;new&nbsp;Placement(/ 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementType.MID_ROLL( 
+     &nbsp;&nbsp;&nbsp;&nbsp;PlacementType.PRE_ROLL), 
+     &nbsp;&nbsp;&nbsp;&nbsp;rangeDuration, 
+     &nbsp;&nbsp;&nbsp;&nbsp;placementMode 
+     ); 
+    </code> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -192,62 +140,48 @@ placement2&nbsp;=&nbsp;placement&nbsp;=&nbsp;
   <tr> 
    <td> <span class="codeph"> AdSignalingMode OpportunityGenerator </span> </td> 
    <td> 
-    <codeblock>
+    <code>
       (range.begin,&nbsp; 
-     
-&nbsp;range.end) 
-    </codeblock> </td> 
+     &nbsp;range.end) 
+    </code> </td> 
    <td> 
-    <codeblock>
+    <code>
       (range.begin,&nbsp; 
-     
-&nbsp;range.end) 
-    </codeblock> </td> 
+     &nbsp;range.end) 
+    </code> </td> 
    <td> 
-    <codeblock>
+    <code>
       (range.begin,&nbsp; 
-     
-&nbsp;range.end,&nbsp; 
-     
-&nbsp;replaceDuration) 
-    </codeblock> </td> 
+     &nbsp;range.end,&nbsp; 
+     &nbsp;replaceDuration) 
+    </code> </td> 
   </tr> 
   <tr> 
    <td> <span class="codeph"> SeverMap </span> Signaling Mode </td> 
    <td> Not present (ad is disabled). </td> 
    <td> 
-    <codeblock>
+    <code>
       placement&nbsp;=&nbsp; 
-     
-&nbsp;new&nbsp;Placement( 
-     
-PlacementType.SERVER_MAP, 
-     
-Placement.UNKNOWN_TIME, 
-     
-Placement.UNKNOWN_DURATION, 
-     
-PlacementMode.DEFAULT); 
-    </codeblock> </td> 
+     &nbsp;new&nbsp;Placement( 
+     PlacementType.SERVER_MAP, 
+     Placement.UNKNOWN_TIME, 
+     Placement.UNKNOWN_DURATION, 
+     PlacementMode.DEFAULT); 
+    </code> </td> 
    <td> N/A (automatic <span class="codeph"> CustomRange </span> signaling mode) </td> 
   </tr> 
   <tr> 
    <td> <span class="codeph"> ManifestCue </span> Signaling Mode </td> 
    <td> Not present (ad is disabled). </td> 
    <td> 
-    <codeblock>
+    <code>
       placement&nbsp;=&nbsp; 
-     
-&nbsp;new&nbsp;Placement( 
-     
-PlacementType.PRE_ROLL, 
-     
-playhead, 
-     
-Placement.UNKNOWN_DURATION, 
-     
-PlacementMode.DEFAULT); 
-    </codeblock> </td> 
+     &nbsp;new&nbsp;Placement( 
+     PlacementType.PRE_ROLL, 
+     playhead, 
+     Placement.UNKNOWN_DURATION, 
+     PlacementMode.DEFAULT); 
+    </code> </td> 
    <td> N/A (automatic <span class="codeph"> CustomRange </span> signaling mode) </td> 
   </tr> 
   <tr> 
@@ -258,4 +192,3 @@ PlacementMode.DEFAULT);
   </tr> 
  </tbody> 
 </table>
-

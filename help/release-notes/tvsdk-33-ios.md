@@ -25,9 +25,7 @@ Operating System: iOS 7.0 or later
 
 * TVSDK 3.3 is now compliant with iOS 11 SDK. All the deprecated APIs have been replaced with suitable alternatives.
 
-<details>
-<summary><b>New features in the previous releases</b></summary>
-<p>
+### New features in the previous releases {whats-new-previous}
 
 **Version 3.2**
 
@@ -211,8 +209,6 @@ As part of the 1.4 TVSDK update, the TVSDK also now supports going into and retu
 * **Remove/Replace C3 Ads**
 
 Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during  broadcast  and is immediately pulled down for use as  on demand  content without proper time to “clean” the asset.
-</p>
-</details>
 
 ## Resolved issues {#resolved-issues}
 
@@ -241,9 +237,7 @@ Comment Type: draft
 
 * (ZD#37820) - Added whitelisting for custom header HS-Id, HS-SSAI-TAG.
 
-<details>
-<summary><b>Resolved issues in the previous releases</b></summary>
-<p>
+#### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **Version 3.2**
 
@@ -1026,9 +1020,6 @@ Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad bre
 
 * Zendesk #1024 - Feature to remove  ad  from stream via manifest
 
-</p>
-</details>
-
 ## Device certification and support {#device-certification-and-support}
 
 >[!NOTE]
@@ -1038,9 +1029,7 @@ Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad bre
 >* Slow motion, on any platform or version.
 >* Live trick play.
 >
-<details>
-<summary><b>Device certification and support></b></summary>
-<p>
+
 **Version 1.4.43**
 
 * TVSDK 1.4.43 is certified for iOS 11.
@@ -1069,8 +1058,6 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
     * TVSDK tvOs support is limited to non-Adobe DRM encrypted streams. You must remove the reference to drmNativeInterface.framework in your tvOS build settings. AES encrypted streams are still supported.
     * Apple requires all Apple TV applications to be  bitcode  enabled, so you must turn this flag on in your project settings.
-    </p>
-    </details>
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
