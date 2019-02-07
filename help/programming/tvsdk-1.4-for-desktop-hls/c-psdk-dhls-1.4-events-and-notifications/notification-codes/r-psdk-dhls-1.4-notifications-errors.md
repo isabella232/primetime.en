@@ -26,21 +26,27 @@ Most errors contain relevant metadata, for example, the URL of the resource that
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>DRM</b> </td> 
+   <td colname="1"><b>DRM</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 100000 </span> </td> 
    <td colname="2"><span class="codeph"> DRM_ERROR </span> </td> 
    <td colname="3"> </td> 
    <td colname="4"><span class="codeph"> MAJOR_DRM_CODE </span><span class="codeph"> MINOR_DRM_CODE </span><span class="codeph"> DESCRIPTION </span> </td> 
-   <td colname="5">
-    <ph>
-     Refer also to 106000 (
+   <td colname="5">Refer also to 106000 (
      <span class="codeph"> NATIVE_ERROR</span>).
-    </ph> </td> 
+   </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Playback</b> </td> 
+   <td colname="1"><b>Playback</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 101000 </span> </td> 
@@ -106,7 +112,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> <p>An error has occurred while attempting to download data. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Invalid resource </b> </td> 
+   <td colname="1"><b>Invalid resource </b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 102100 </span> </td> 
@@ -123,7 +133,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> <p>An error has occurred while placing a resource on the playback timeline. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Ad processing </b> </td> 
+   <td colname="1"><b>Ad processing </b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 104000 </span> </td> 
@@ -149,10 +163,7 @@ Most errors contain relevant metadata, for example, the URL of the resource that
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 104005 </span> </td> 
    <td colname="2"><span class="codeph"> AD_INSERTION_FAIL </span> </td> 
-   <td colname="3">
-    <ph>
-      None
-    </ph> </td> 
+   <td colname="3">None</td> 
    <td colname="4"><span class="codeph"> PROPOSED_AD_BREAK</span> </td> 
    <td colname="5"> <p>Ad resolving phase has failed. </p> </td> 
   </tr> 
@@ -164,7 +175,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Native</b> </td> 
+   <td colname="1"><b>Native</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 106000 </span> </td> 
@@ -209,7 +224,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> <p>An error has occurred while attaching a view to the AVE library. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Alternate audio</b> </td> 
+   <td colname="1"><b>Alternate audio</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 109000 </span> </td> 
@@ -219,7 +238,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> <p>An error related to an audio track occurred. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Generic</b> </td> 
+   <td colname="1"><b>Generic</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"> 199999 </span> </td> 

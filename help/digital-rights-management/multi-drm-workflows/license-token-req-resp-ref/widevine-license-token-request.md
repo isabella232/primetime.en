@@ -18,9 +18,9 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 
 **URLs:**
 
-* **Production: ** `https://wv-gen.{prod_domain}/hms/wv/token` 
+* **Production:** `https://wv-gen.{prod_domain}/hms/wv/token` 
 
-* **Test: ** ` [https://wv-gen.test.expressplay.com/hms/wv/token](https://wv-gen.test.expressplay.com/hms/wv/token)`
+* **Test:** ` [https://wv-gen.test.expressplay.com/hms/wv/token](https://wv-gen.test.expressplay.com/hms/wv/token)`
 
 * **Sample request:** 
 
@@ -63,110 +63,25 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 
 ### License Query Parameters
 
-<table id="table_yfy_hcs_pv">  
- <thead> 
-  <tr> 
-   <th class="entry"> <b>Query Parameter</b> </th> 
-   <th class="entry"> <b>Description</b> </th> 
-   <th class="entry"> <b>Required?</b> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td> <span class="codeph"> generalFlags </span> </td> 
-   <td> A 4 byte hexadecimal string representing the license flags. ‘0000’ is the only allowed value </td> 
-   <td> No </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> kek </span> </td> 
-   <td> Key Encryption Key (KEK). Keys are stored encrypted with a KEK using a key wrapping algorithm (AES Key Wrap, RFC3394). </td> 
-   <td> No </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> kid </span> </td> 
-   <td> A 16 byte hexadecimal string representation of the content encryption key or a string <span class="codeph"> ^somestring’ </span>. The length of the string followed by the '^' cannot be greater than 64 characters. Check note below for an example. </td> 
-   <td> Yes </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> ek </span> </td> 
-   <td> A hex string representation of the encrypted content key. </td> 
-   <td> No </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> contentKey </span> </td> 
-   <td> A 16 byte hexadecimal string representation of the content encryption key </td> 
-   <td> Yes, unless <span class="codeph"> kek </span> and <span class="codeph"> ek </span> or <span class="codeph"> kid </span> are provided </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> contentId </span> </td> 
-   <td> Content Id </td> 
-   <td> No </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> securityLevel </span> </td> 
-   <td> Allowed values are 1-5. 
-    <ul id="ul_ckd_bkg_qv"> 
-     <li id="li_212BEC3981AF4E9B862F69271C56EDF3">1 = <span class="codeph"> SW_SECURE_CRYPTO </span> </li> 
-     <li id="li_0E656C21764045F49BBFB6524A0D071C">2 = <span class="codeph"> SW_SECURE_DECODE </span> </li> 
-     <li id="li_08F0B0149A08446091ABAC659128E59E">3 = <span class="codeph"> HW_SECURE_CRYPTO </span> </li> 
-     <li id="li_4B703C8EB03F4F1B9321463D6D69E2CC">4 = <span class="codeph"> HW_SECURE_DECODE </span> </li> 
-     <li id="li_6C74306FF40746C2949289DB6FEB54AD">5 = <span class="codeph"> HW_SECURE_ALL </span> </li> 
-    </ul> </td> 
-   <td> Yes </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> hdcpOutputControl </span> </td> 
-   <td> Allowed values are 0, 1, 2. 
-    <ul id="ul_vhm_2kg_qv"> 
-     <li id="li_0F7DAB982E374A538A1E9C8A3FFA9338">0 = <span class="codeph"> HDCP_NONE </span> </li> 
-     <li id="li_FC46EDE7D2E344369CD69C206C4AFD09">1 = <span class="codeph"> HDCP_V1 </span> </li> 
-     <li id="li_B7543AB8A557444FB17C7FAF39D46C63">2 = <span class="codeph"> HDCP_V2 </span> </li> 
-    </ul> </td> 
-   <td> Yes </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> licenseDuration </span> <b>*</b> </td> 
-   <td> Duration of the license in seconds. If not provided, it indicates that there is no limit to the duration. Please check the note below for detailed information. </td> 
-   <td> No </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="codeph"> wvExtension </span> </td> 
-   <td> A short form wrapping extensionType and extensionPayload, as a comma separated string. See format below. Example: …&amp;wvExtension=wudo,AAAAAA==&amp;… </td> 
-   <td> No, any number can be used </td> 
-  </tr> 
-  <tr> 
-   <td></td> 
-   <td></td> 
-   <td></td> 
-  </tr> 
-  <tr> 
-   <td colspan="3"> <p><b>*About <span class="codeph"> licenseDuration </span>:</b> 
-     <ol id="ol_mn2_lws_pv"> 
-      <li id="li_322601989EBA4343AB3BD89129851422">Playback will stop <span class="codeph"> licenseDuration </span> seconds after beginning of playback. </li> 
-      <li id="li_5C9A6F6D5B8548638D45489ADB2EAD50">To allow playback to be stopped/resumed for an unlimited amount of time, omit <span class="codeph"> licenseDuration </span> (it will default to infinite). Otherwise specify the amount of time during which end-users should be able to enjoy the stream. </li> 
-     </ol> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Query Parameter | Description | Required? |
+|--- |--- |--- |
+|`generalFlags`|A 4 byte hexadecimal string representing the license flags. ‘0000’ is the only allowed value|No|
+|`kek`|Key Encryption Key (KEK). Keys are stored encrypted with a KEK using a key wrapping algorithm (AES Key Wrap, RFC3394).|No|
+|`kid`|A 16 byte hexadecimal string representation of the content encryption key or a string `^somestring’`. The length of the string followed by the `^` cannot be greater than 64 characters. Check note below for an example.|Yes|
+|`ek`|A hex string representation of the encrypted content key.|No|
+|`contentKey`|A 16 byte hexadecimal string representation of the content encryption key|Yes, unless `kek` and `ek` or `kid` are provided|
+|`contentId`|Content Id|No|
+|`securityLevel`|Allowed values are 1-5. <ul><li>1 = `SW_SECURE_CRYPTO`</li><li> 2 = `SW_SECURE_DECODE` </li><li> 3 = `HW_SECURE_CRYPTO` </li><li> 4 = `HW_SECURE_DECODE` </li><li> 5 = `HW_SECURE_ALL`</li></ul>|Yes|
+|`hdcpOutputControl`|Allowed values are 0, 1, 2. <ul><li>0 = `HDCP_NONE` </li><li> 1 = `HDCP_V1` </li><li> 2 = `HDCP_V2`</li></ul>|Yes|
+|`licenseDuration` * |Duration of the license in seconds. If not provided, it indicates that there is no limit to the duration. Please check the note below for detailed information.|No|
+|`wvExtension`|A short form wrapping extensionType and extensionPayload, as a comma separated string. See format below. Example: `…&wvExtension=wudo,AAAAAA==&…`|No, any number can be used|
+| * About `licenseDuration`: <ol><li> Playback will stop `licenseDuration` seconds after beginning of playback. </li><li> To allow playback to be stopped/resumed for an unlimited amount of time, omit `licenseDuration` (it will default to infinite). Otherwise specify the amount of time during which end-users should be able to enjoy the stream. </li></ol>|
 
 #### Token Restriction Query Parameters
 
-<table id="table_rxj_2l5_pv">  
- <thead> 
-  <tr> 
-   <th class="entry"> <b>Query Parameter</b> </th> 
-   <th class="entry"> <b>Description</b> </th> 
-   <th class="entry"> <b>Required?</b> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td> <span class="codeph"> expirationTime </span> </td> 
-   <td> Expiration time of this token. This value MUST a string in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> date/time format in the ‘Z’ zone designator ("Zulu time"), or an integer preceded by a + sign. An example of an RFC 3339 date/time is 2006-04-14T12:01:10Z. <p>If the value is a string in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> date/time format, then it represents an absolute expiration date/time for the token. If the value is an integer preceded by a + sign, then it is interpreted as a relative number of seconds, from issuance, that the token is valid. For example, +60 specifies one minute. </p> <p>The maximum and default (if not specified) token lifetime is 30 days. </p> </td> 
-   <td> No </td> 
-  </tr> 
- </tbody> 
-</table>
+| Query Parameter | Description | Required? |
+|--- |--- |--- |
+|`expirationTime`|Expiration time of this token. This value MUST a string in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) date/time format in the ‘Z’ zone designator ("Zulu time"), or an integer preceded by a + sign. An example of an RFC 3339 date/time is 2006-04-14T12:01:10Z. <br> If the value is a string in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) date/time format, then it represents an absolute expiration date/time for the token. If the value is an integer preceded by a + sign, then it is interpreted as a relative number of seconds, from issuance, that the token is valid. For example, `+60` specifies one minute. <br> The maximum and default (if not specified) token lifetime is 30 days.|No|
 
 #### Correlation Query Parameters
 

@@ -19,14 +19,16 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Live stream </b> </td> 
+   <td colname="1"> <b>Live stream </b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> function get isLive():Boolean; </span> </td> 
    <td colname="3"> <p>True if the stream is live; false if it is VOD. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>DRM protected</b> </td> 
+   <td colname="1"> <b>DRM protected</b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> function get isProtected():Boolean; </span> </td> 
@@ -37,7 +39,8 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> <p>Lists all the DRM metadata objects discovered in the manifest. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Closed captions</b> </td> 
+   <td colname="1"> <b>Closed captions</b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> function get hasClosedCaptions():Boolean; </span> </td> 
@@ -56,7 +59,8 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> <p>Sets a closed-caption track to be the current closed-caption track. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Alternate audio tracks </b> </td> 
+   <td colname="1"> <b>Alternate audio tracks </b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> function get hasAlternateAudio():Boolean; </span> </td> 
@@ -79,7 +83,8 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> <p>Selects an audio track to be the current audio track. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Timed metadata</b> </td> 
+   <td colname="1"> <b>Timed metadata</b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> function get hasTimedMetadata():Boolean; </span> </td> 
@@ -98,7 +103,8 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> <p>Provides a list of the associated bit rate profiles. For each profile, you can retrieve its bit rate and the height and width of the profile. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Trick play </b> </td> 
+   <td colname="1"> <b>Trick play </b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> function get isTrickPlaySupported():Boolean; </span> </td> 
@@ -109,14 +115,16 @@ The methods in the MediaPlayerItem class allow you to obtain information about t
    <td colname="3"> <p>Provides the list of available playback rates in the context of the trick-play feature. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Media player </b> </td> 
+   <td colname="1"> <b>Media player </b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> function get player():MediaPlayer </span> </td> 
    <td colname="3"> <p>Returns the media player currently associated with this player. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"> <b>Media resource</b> </td> 
+   <td colname="1"> <b>Media resource</b> </td> 
+   <td colname="2"> </td>
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> function get resource():MediaResource; </span> </td> 

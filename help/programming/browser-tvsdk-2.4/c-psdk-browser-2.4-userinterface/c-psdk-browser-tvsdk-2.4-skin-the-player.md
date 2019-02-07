@@ -33,7 +33,8 @@ Here are the styles for the main div:
  </thead>
  <tbody> 
   <tr> 
-   <td colspan="2"> <p><b>Main Div</b> </p> </td> 
+   <td colname="col1"> <p><b>Main Div</b> </p> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-main-video-div-style</span> </td> 
@@ -44,10 +45,12 @@ Here are the styles for the main div:
    <td colname="col2"> <p>Used when the PIP mode is active. </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> videoBehavior</span>. </td> 
+   <td colname="col1">The default behavior is <span class="codeph"> videoBehavior</span>. </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"> <p><b>Picture in Picture (PIP)</b> </p> </td> 
+   <td colname="col1"> <p><b>Picture in Picture (PIP)</b> </p> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-pip-video-div</span> </td> 
@@ -58,7 +61,8 @@ Here are the styles for the main div:
    <td colname="col2"> <p>Applied to the initial PIP when it has been swapped and is displayed as the main video. </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"> <p><b>Multi-Video View</b> </p> </td> 
+   <td colname="col1"> <p><b>Multi-Video View</b> </p> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-multi-view-container</span> </td> 
@@ -77,14 +81,13 @@ Here are the styles for the main div:
 
 ## Various Controls {#section_E9E4A8E3AEBF4BDC89840B84B3B0E737}
 
+Here are the styles for generic player controls: 
+
 >[!TIP]
 >
 >These styles are listed in the `default-controls.css` file.
 
 <table id="table_0ACB6BAB5DAD42DBBD18CA7C0385A261"> 
- <desc>
-   Here are the styles for generic player controls: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 
@@ -137,10 +140,9 @@ Here are the styles for the main div:
 
 ## Control Bar {#section_B683B51EC746484B9AA90CB481D637BD}
 
+Here are the styles for the control bar: 
+
 <table id="table_681E13F264674F849FAA2523EB65F094"> 
- <desc>
-   Here are the styles for the control bar: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 
@@ -149,11 +151,8 @@ Here are the styles for the main div:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><span class="codeph"> ptp-control-bar</span> </td> 
+   <td colname="col1"><span class="codeph"> ptp-control-bar</span> (default behavior)</td>
    <td colname="col2"> <p>Applicable for the control bar </p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> controlBarBehavior</span>. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -164,10 +163,9 @@ Here are the styles for the main div:
 >
 >The letters in the following tables correspond to the letters in this illustration.
 
+Here are the styles for the scrub bar: 
+
 <table id="table_2207AD72E72A47FFA03AC748F06A54FD"> 
- <desc>
-   Here are the styles for the scrub bar: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style (A) </th> 
@@ -203,25 +201,22 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> ptp-scrub-bar .ptp-ad-marker</span> </td>
    <td colname="col2"> <p>Ad marker </p> </td>
   </tr>
-  <tr>
-   <td colspan="2">The default behaviors are: 
-    <ul id="ul_8D547A82793040349018BD0589A626AD"> 
-     <li id="li_469F37AC9FA342A99EB3A7A40C357EBB"><span class="codeph"> scrubBarBehavior</span> </li> 
-     <li id="li_DFFC973449E741F498F87648B7E3B14E"><span class="codeph"> bufferProgressBarBehavior</span> </li> 
-     <li id="li_A04F9E94FAAE4F9CB3EDA82BCDBAFF1F"><span class="codeph"> playHeadBehavior</span> </li> 
-     <li id="li_CAAB67BE78F54FDD94A1989DB2C781D5"><span class="codeph"> playProgressBarBehavior</span> </li>
-     <li id="li_F021629719A0478BA5FEFC9930CBBF1B"><span class="codeph"> seekToBarBehavior</span> </li>
-    </ul> </td>
-  </tr>
  </tbody>
 </table>
 
+The default behaviors are:
+
+* `scrubBarBehavior` 
+* `bufferProgressBarBehavior` 
+* `playHeadBehavior` 
+* `playProgressBarBehavior`
+* `seekToBarBehavior`
+
 ## Play/Pause Button {#section_F1F40A948D0049C5A4D8EA5F2A475CAA}
 
+Here are the styles for the play/pause button:
+
 <table id="table_975C2293222A4782A8C75A6149C1AD27">
- <desc>
-   Here are the styles for the play/pause button:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style (B) </th>
@@ -241,18 +236,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> ptp-btn-playpause.pause-state</span> </td> 
    <td colname="col2"> <p><span class="codeph"> ptp-btn-playpause</span> in the play state </p> </td>
   </tr>
-  <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> playPauseButtonBehavior</span>. </td>
-  </tr>
  </tbody>
 </table>
 
+The default behavior is `playPauseButtonBehavior`.
+
 ## Volume {#section_23E17BD2343948F8A2CEE1C8BEE2F874}
 
+Here are the styles to configure the volume button:
+
 <table id="table_8F9831F36A4D427CA31C9FFA4173170D">
- <desc>
-   Here are the styles to configure the volume button:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style (C) </th>
@@ -284,16 +277,14 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> ptp-btn-volume.mute-state</span> </td>
    <td colname="col2"> <p>When volume is in mute state </p> </td>
   </tr>
-  <tr>
-   <td colspan="2">The default behaviors are <span class="codeph"> volumeBehavior</span> and <span class="codeph"> muteButtonBehavior</span>. </td>
-  </tr>
  </tbody>
 </table>
 
+The default behaviors are `volumeBehavior` and `muteButtonBehavior`.
+
+Here are the styles for the volume slider:
+
 <table id="table_E3DC93F8FC614C30AADAE259D18F10EF">
- <desc>
-   Here are the styles for the volume slider:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style (D) </th>
@@ -309,18 +300,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-volume-hidden</span> </td>
    <td colname="col2"> <p>The volume slider in a hidden state. </p> </td>
   </tr>
-  <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> volumeSliderBehavior</span>. </td>
-  </tr>
  </tbody>
 </table>
 
+The default behavior is `volumeSliderBehavior`.
+
 ## Rewind {#section_06EE608FC54A4CF5B5DF9DC743CFC740}
 
+Here is the style for the rewind button:
+
 <table id="table_0ACB116582D54B188E9F5B5C03D3A615">
- <desc>
-   Here is the style for the rewind button:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style (E) </th>
@@ -332,18 +321,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-btn-fastrewind</span> </td>
    <td colname="col2"> <p>The rewind button on the control bar. </p> </td>
   </tr>
-  <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> rewindButtonBehavior</span>. </td>
-  </tr>
  </tbody>
 </table>
 
+The default behavior is `rewindButtonBehavior`.
+
 ## Time {#section_0E6549B3DF6D4C10947D445A5F8EEA7F}
 
+Here is the style to display the remaining time on the control bar:
+
 <table id="table_CEE62BFF5FB04FDCBBE1331E0D727EBA">
- <desc>
-   Here is the style to display the remaining time on the control bar:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style (F) </th>
@@ -355,18 +342,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-txt-display-time</span> </td>
    <td colname="col2"> <p>Displays the remaining time on the control bar </p> </td>
   </tr>
-  <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> timeRemainingBehavior</span>. </td>
-  </tr>
- </tbody>
+</tbody>
 </table>
 
+The default behavior is `timeRemainingBehavior`.
+ 
 ## Fast Rewind {#section_F6E6C65BD3BD493A89915DF9B92933BA}
 
+Here is the style for the fast rewind button:
+
 <table id="table_25BB4966B709402383AB6A6822FC1999">
- <desc>
-   Here is the style for the fast rewind button:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style (G) </th>
@@ -378,18 +363,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-btn-fastrewind</span> </td>
    <td colname="col2"> <p>The fast rewind button on the control bar. </p> </td>
   </tr>
-  <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> fastRewindButtonBehavior</span>. </td>
-  </tr>
  </tbody>
 </table>
 
+The default behavior is `fastRewindButtonBehavior`.
+
 ## Slow Rewind {#section_38A22BB8681B430F8C6808C3BD21FB4E}
 
+Here is the style for the slow rewind button:
+
 <table id="table_E623C374622A497C91E22333D77AF8F6">
- <desc>
-   Here is the style for the slow rewind button:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style (H) </th>
@@ -401,18 +384,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-btn-slowrewind</span> </td>
    <td colname="col2"> <p>The slow rewind button on the control bar. </p> </td>
   </tr>
-  <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> slowRewindButtonBehavior</span>. </td>
-  </tr>
  </tbody>
 </table>
 
+The default behavior is `slowRewindButtonBehavior`.
+
 ## Slow Forward {#section_92ACF092EECC4A5EAF6AA090C05E552E}
 
+Here is the style for the slow forward button:
+
 <table id="table_88C1CF5DB2D84EDBA01AC62B70509B08">
- <desc>
-   Here is the style for the slow forward button:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style (I) </th>
@@ -424,18 +405,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-btn-slowforward</span> </td>
    <td colname="col2"> <p>The slow forward button on the control bar. </p> </td>
   </tr>
-  <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> slowForwardButtonBehavior</span>. </td>
-  </tr>
  </tbody>
 </table>
 
+The default behavior is `slowForwardButtonBehavior`.
+
 ## Fast Forward {#section_F90ED8B3739B49ACAB1F12DF18F0E4D6}
 
+Here is the style for the fast forward button:
+
 <table id="table_F166BD1E8B934B34AF3690BBBAD894B7">
- <desc>
-   Here is the style for the fast forward button:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style (J) </th>
@@ -447,18 +426,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-btn-fastforward</span> </td>
    <td colname="col2"> <p>The fast forward button on the control bar. </p> </td>
   </tr>
-  <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> fastForwardButtonBehavior</span>. </td>
-  </tr>
  </tbody>
 </table>
 
+The default behavior is `fastForwardButtonBehavior`.
+
 ## Audio Track {#section_1CDF4FA5A1C14DB6B9C96579FFA1057C}
 
+Here are the styles to configure the audio track:
+
 <table id="table_22FC521D786B45EB84F230894FFECE79">
- <desc>
-   Here are the styles to configure the audio track:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style </th> 
@@ -467,27 +444,32 @@ Here are the styles for the main div:
  </thead>
  <tbody>
   <tr>
-   <td colspan="2"> <p><b>Audio Track Button (K)</b> </p> </td>
+   <td colname="col1"> <p><b>Audio Track Button (K)</b> </p> </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-audio-track</span> </td>
    <td colname="col2"> <p>The audio track button on the control bar. </p> </td>
   </tr>
   <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> audioTrackButtonBehavior</span>. </td>
-  </tr>
+   <td colname="col1">The default behavior is <span class="codeph"> audioTrackButtonBehavior</span>. </td>
+   <td colname="col2"> </td>
+</tr>
   <tr>
-   <td colspan="2"> <p><b>Audio Track Selection Panel (L)</b> </p> </td>
+   <td colname="col1"> <p><b>Audio Track Selection Panel (L)</b> </p> </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-panel</span> </td> 
    <td colname="col2"> <p>The panel for selecting the audio track. </p> </td>
   </tr>
   <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> audioTrackSelectionPanelBehavior</span>. </td>
-  </tr>
+   <td colname="col1">The default behavior is <span class="codeph"> audioTrackSelectionPanelBehavior</span>. </td>
+   <td colname="col2"> </td>
+</tr>
   <tr>
-   <td colspan="2"> <p><b>Audio Track Selection Header (M)</b> </p> </td>
+   <td colname="col1"> <p><b>Audio Track Selection Header (M)</b> </p> </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-header</span> </td>
@@ -506,10 +488,9 @@ Here are the styles for the main div:
 
 ## Sharing {#section_B2ADC76E76304A68AD648A00A12B676E}
 
+Here are the styles to configure sharing:
+
 <table id="table_3264C472809D462B8FC16680B96B1AC9">
- <desc>
-   Here are the styles to configure sharing:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style </th>
@@ -518,26 +499,31 @@ Here are the styles for the main div:
  </thead>
  <tbody>
   <tr>
-   <td colspan="2"> <p><b>Social Media Sharing Button (O)</b> </p> </td>
+   <td colname="col1"> <p><b>Social Media Sharing Button (O)</b> </p> </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-share-video</span> </td> 
    <td colname="col2"> <p>The social media share button on the control bar that will open up <span class="codeph"> ptp-share-video-panel</span>. </p> </td>
   </tr>
   <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> shareVideoButtonBehavior</span>. </td>
+   <td colname="col1">The default behavior is <span class="codeph"> shareVideoButtonBehavior</span>. </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
-   <td colspan="2"> <p><b>Sharing Video Panel (P)</b> </p> </td>
+   <td colname="col1"> <p><b>Sharing Video Panel (P)</b> </p> </td>
+   <td colname="col2"> </td>
   </tr>
    <td colname="col1"><span class="codeph"> .ptp-share-video-panel</span> </td>
    <td colname="col2"> <p>The panel that displays the social share options. </p> </td>
   </tr>
   <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> shareVideoPanelBehavior</span>. </td>
+   <td colname="col1">The default behavior is <span class="codeph"> shareVideoPanelBehavior</span>. </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
-   <td colspan="2"> <p><b>Sharing Video Menu (Q)</b> </p> </td>
+   <td colname="col1"> <p><b>Sharing Video Menu (Q)</b> </p> </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-header</span> </td>
@@ -572,10 +558,9 @@ Here are the styles for the main div:
 
 ## Closed Captions {#section_A01BA68218564DA0B7D6BF51F045D7AB}
 
+Here are the styles to configure closed captions:
+
 <table id="table_777C7034C9424F8C841DABD480FFAC47">
- <desc>
-   Here are the styles to configure closed captions:
- </desc>
  <thead>
   <tr>
    <th colname="col1" class="entry"> Style </th>
@@ -584,31 +569,36 @@ Here are the styles for the main div:
  </thead>
  <tbody>
   <tr>
-   <td colspan="2"> <p><b>Closed Captions Button (R)</b> </p> </td>
+   <td colname="col1"> <p><b>Closed Captions Button (R)</b> </p> </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-closed-caption</span> </td>
    <td colname="col2"> <p>The <span class="uicontrol"> Closed Captions</span> button on the control bar. </p> </td>
   </tr>
   <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> closedCaptionButtonBehavior</span>. </td>
+   <td colname="col1">The default behavior is <span class="codeph"> closedCaptionButtonBehavior</span>. </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .on-state</span> </td>
    <td colname="col2"> <p>The captions have been enabled for a video. </p> </td>
   </tr>
   <tr>
-   <td colspan="2"> <p><b>Closed Captions Panel (S)</b> </p> </td>
+   <td colname="col1"> <p><b>Closed Captions Panel (S)</b> </p> </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-panel</span> </td>
    <td colname="col2"> <p>The panel for closed captions. </p> </td>
   </tr>
   <tr>
-   <td colspan="2">The default behavior is <span class="codeph"> closedCaptionLanguagePanelBehavior</span>. </td>
-  </tr>
+   <td colname="col1">The default behavior is <span class="codeph"> closedCaptionLanguagePanelBehavior</span>. </td>
+   <td colname="col2"> </td>
+</tr>
   <tr>
-   <td colspan="2"> <p><b>Closed Captions Languages (T)</b> </p> </td>
+   <td colname="col1"> <p><b>Closed Captions Languages (T)</b> </p> </td>
+   <td colname="col2"> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-language-panel:</span> </td>
@@ -683,17 +673,16 @@ Here are the styles for the main div:
    <td colname="col2"> <p>The <span class="uicontrol"> Apply</span> button in the footer of the closed caption options panel. </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> closedCaptionOptionsPanelBehavior</span>. </td> 
+   <td colname="col1">The default behavior is <span class="codeph"> closedCaptionOptionsPanelBehavior</span>. </td> 
+   <td colname="col2"> </td>
   </tr> 
  </tbody> 
 </table>
 
 ## More Options (V) {#section_18E25CF8A8964FFD9026A8A833089CE3}
 
+Here are the styles to configure additional options:
 <table id="table_EC6EF88E2EDE4B8EBB1C14F87A6161FA"> 
- <desc>
-   Here are the styles to configure additional options: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 
@@ -721,19 +710,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-more-options-control-panel-menu-item</span> </td> 
    <td colname="col2"> <p>The More Options control panel menu item. </p> </td> 
   </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> moreOptionsButtonBehavior</span>. </td> 
-  </tr> 
  </tbody> 
 </table>
 
+The default behavior is `moreOptionsButtonBehavior`.
+
 ## PIP Button (W) {#section_1EE039DEA99541D391B30BD1DF72A83E}
 
+Here is the style for the [!UICONTROL PIP<] button: 
+
 <table id="table_EE2E882C87E24D39B8D5347686F29E55"> 
- <desc>
-  Here is the style for the 
-  <span class="uicontrol"> PIP</span> button: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 
@@ -746,17 +732,17 @@ Here are the styles for the main div:
    <td colname="col2"> <p>The PIP button on the control bar. </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> pipButtonBehavior</span>. </td> 
+   <td colname="col1">The default behavior is <span class="codeph"> pipButtonBehavior</span>. </td> 
+   <td colname="col2"> </td>
   </tr> 
  </tbody> 
 </table>
 
 ## Full Screen (X) {#section_158A19DFB30E4432A67E4A74A7CBA563}
 
+Here is the style to configure the full screen: 
+
 <table id="table_5941835F31AC4E9CBA9702AB8D813B8F"> 
- <desc>
-   Here is the style to configure the full screen: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 
@@ -768,18 +754,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-btn-fullscreen</span> </td> 
    <td colname="col2"> <p>The <span class="uicontrol"> Full Screen</span> button on control bar. </p> </td> 
   </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> fullScreenButtonBehavior</span>. </td> 
-  </tr> 
  </tbody> 
 </table>
 
+The default behavior is `fullScreenButtonBehavior`.
+
 ## Trick Play (Y) {#section_AE6F83BB7EE2497FB13CD94A8316192D}
 
+Here is the style to configure trick play: 
+
 <table id="table_F1ADAC0A4B4E48669828690BDEB4BC09"> 
- <desc>
-   Here is the style to configure trick play: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 
@@ -791,18 +775,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-control-bar-trick-play-rate</span> </td> 
    <td colname="col2"> <p>The trick rate display component in the control bar. </p> </td> 
   </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> trickPlayRateDisplayBehavior</span>. </td> 
-  </tr> 
  </tbody> 
 </table>
 
+The default behavior is `trickPlayRateDisplayBehavior`.
+
 ## Multiview (Z) {#section_58EFAE7263BA45D3A4E2AB7309A9CAA7}
 
+Here is the style to configure multiview: 
+
 <table id="table_84B37D7410EE40DFA7A8BB8431C6DCF0"> 
- <desc>
-   Here is the style to configure multiview: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 
@@ -823,10 +805,9 @@ Here are the styles for the main div:
 
 ## Thumbnail {#section_0AFD932975634BB08387EEE7D3BFC438}
 
+Here is the style to configure thumbnails: 
+
 <table id="table_968136A8BBA042A7A8E79739B8F92F55"> 
- <desc>
-   Here is the style to configure thumbnails: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 
@@ -838,18 +819,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-progress-bar-thumb-nail</span> </td> 
    <td colname="col2"> <p>The progress bar of the thumbnails. </p> </td> 
   </tr> 
-  <tr> 
-   <td colspan="2">The default default behavior is <span class="codeph"> thumbnailPreviewBehavior</span>. </td> 
-  </tr> 
  </tbody> 
 </table>
 
+The default default behavior is `thumbnailPreviewBehavior`.
+
 ## Error Messages {#section_AC9858EE1B5A4FF4947E383C663B6AB5}
 
+Here is the style to configure error messages: 
+
 <table id="table_7F4C156170DB4AFFA7DEE06F00449506"> 
- <desc>
-   Here is the style to configure error messages: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 
@@ -869,18 +848,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-error-message-panel-message</span> </td> 
    <td colname="col2"> <p>The error message that is displayed. </p> </td> 
   </tr> 
-  <tr> 
-   <td colspan="2">The default behavior is <span class="codeph"> errorMessagePanelBehavior</span>. </td> 
-  </tr> 
  </tbody> 
 </table>
 
+The default behavior is `errorMessagePanelBehavior`.
+
 ## Buffering Overlay {#section_2FE8FDE2599E42BAA7411D0D38FA0A88}
 
+Here is the style to configure thumbnails: 
+
 <table id="table_1FECE1DC29B8434B886751A29455F004"> 
- <desc>
-   Here is the style to configure thumbnails: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 
@@ -892,18 +869,16 @@ Here are the styles for the main div:
    <td colname="col1"><span class="codeph"> .ptp-buffering-overlay</span> </td> 
    <td colname="col2"> <p>The buffering overlay control. </p> </td> 
   </tr> 
-  <tr> 
-   <td colspan="2">The default overlay is <span class="codeph"> bufferingOverlayBehavior</span>. </td> 
-  </tr> 
  </tbody> 
 </table>
 
+The default overlay is `bufferingOverlayBehavior`.
+
 ## Specific Selectors {#section_51F735AEF82E41E890FF59E031A0DB89}
 
+Here is the style for the fast forward button: 
+
 <table id="table_E77EDC7D227348E79C7E73FB5D46F992"> 
- <desc>
-   Here is the style for the fast forward button: 
- </desc> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Style </th> 

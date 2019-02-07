@@ -26,7 +26,11 @@ Most informational notifications contain relevant metadata, for example, the URL
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Playback</b> </td> 
+   <td colname="1"><b>Playback</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 300000 </span> </td> 
@@ -92,7 +96,11 @@ Most informational notifications contain relevant metadata, for example, the URL
    <td colname="5"> The size of the video playback window has changed. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Adaptive bit rates (ABR)</b> </td> 
+   <td colname="1"><b>Adaptive bit rates (ABR)</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 302000 </span> </td> 
@@ -102,7 +110,11 @@ Most informational notifications contain relevant metadata, for example, the URL
    <td colname="5"> The bit rate of the video changed. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Ad Processing</b> </td> 
+   <td colname="1"><b>Ad Processing</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 303000 </span> </td> 
@@ -175,7 +187,11 @@ Most informational notifications contain relevant metadata, for example, the URL
    <td colname="5"> An ad break was skipped. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Late-binding audio (LBA)</b> </td> 
+   <td colname=""><b>Late-binding audio (LBA)</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 304000 </span> </td> 
@@ -185,7 +201,11 @@ Most informational notifications contain relevant metadata, for example, the URL
    <td colname="5"> The audio track has changed. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>DRM</b> </td> 
+   <td colname="1"><b>DRM</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 305000 </span> </td> 
@@ -195,7 +215,11 @@ Most informational notifications contain relevant metadata, for example, the URL
    <td colname="5"> New DRM data is available. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Generic</b> </td> 
+   <td colname="1"><b>Generic</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"> 399999 </span> </td> 

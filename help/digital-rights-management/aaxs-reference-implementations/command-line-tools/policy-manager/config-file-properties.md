@@ -34,9 +34,7 @@ The configuration file specifies the following properties. For property names th
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.chaining.asymmetric.certfile</span> </td> 
-   <td colname="2" class="- topic/entry ">License server certificate whose public key is used to encrypt the root encryption key for the 
-
-   [Enhanced License Chaining](../../../aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-enhanced-license-chaining.md)
+   <td colname="2" class="- topic/entry ">License server certificate whose public key is used to encrypt the root encryption key for the <a href="../../../aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-enhanced-license-chaining.md" format="dita" scope="local"> Enhanced License Chaining </a>
    This property specifies a file that contains the certificate only (either PEM or DER format is acceptable). </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
