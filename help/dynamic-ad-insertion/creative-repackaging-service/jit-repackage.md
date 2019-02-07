@@ -66,4 +66,4 @@ The manifest server and the client use the same selection logic to determine the
 
 CRS typically requires 2-4 minutes to process a non-HLS ad creative, and usually less than 3 minutes.
 
-CRS produces different HLS bit rates, so the ad can play at a speed suitable to the available connection speed and bandwidth. If there are multiple available bit rates, CRS chooses the highest bit rate available. If CRS receives a non-HLS ad creative, it produces an HLS version at the highest resolution available. 
+CRS produces different HLS bit rates, so the ad can play at a speed suitable to the available connection speed and bandwidth. If there are multiple available bit rates, CRS chooses the highest bit rate available. If CRS receives a non-HLS ad creative, it produces an HLS version at the highest resolution available.

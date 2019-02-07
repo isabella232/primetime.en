@@ -17,4 +17,3 @@ Primetime ad insertion maintains the following cookies:
 * `ssaiPub` helps retrieve content URLs from streams that require cookie authentication to obtain the `m3u8` file.
 * `ssai3` holds session cookies for ad servers requiring them. 
 * `AWSELB` and `ssaiSession` hold internal information.
-

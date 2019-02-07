@@ -17,4 +17,3 @@ When enabling ad tracking the client specifies one of the following approaches:
 * **Server side** The client does not participate in ad tracking. The server sends whatever ad tracking information it can. Tracking data is calculated only on the server side and may not match with client side playback activity. For example, if an end-user does not view the entire ad, after the segments are delivered, the server still considers the ad to be played.
 
 * **Hybrid** This is like client-side tracking, but the client sends its reports to the manifest server, which relays them to the appropriate URLs. Advertisers receive the same information as with client side tracking. This mode accommodates clients running with restricted internet access.
-

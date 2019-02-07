@@ -14,11 +14,11 @@ The creative repackaging service (CRS) ensures that a non-HLS ad creative can pl
 >
 >By default, CRS is disabled. To enable CRS for your account, contact your Adobe technical account manager. 
 >
->For information on enabling CRS within TVSDK apps, see the *Enable CRS in TVSDK applications* topic in the Programmer's Guide for your platform. For example, for Android 2.5, see [Enable CRS in TVSDK applications](https://help.adobe.com/en_US/primetime/psdk/android/2.5/index.html#Enable_in_TVSDK_applications)
+>For information on enabling CRS within TVSDK apps, see the *Enable CRS in TVSDK applications* topic in the Programmer's Guide for your platform. For example, for Android 3.0, see [Enable CRS in TVSDK applications](../../programming/tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-transcoding/android-3.0-enable-crs.md)
 
 CRS prepares HTTP Live Streaming (HLS) ad creatives for the content stream and injects ID3 packets for client-side ad tracking. It transcodes MP4, FLV, and WebM files received from third-party ad servers, ad networks, and agency servers into HLS format.
 
-When Adobe Primetime ad insertion encounters a non-HLS ad creative, it sends it to CRS for repackaging, which typically takes no longer than three minutes. CRS sends the transcoded ad creative to the CDN server for future use. This is called *`just-in-time (JIT) repackaging`*. You can also transcode ad creatives before they're needed using the  async_repackage . This is called *`asynchronous repackaging`*.
+When Adobe Primetime ad insertion encounters a non-HLS ad creative, it sends it to CRS for repackaging, which typically takes no longer than three minutes. CRS sends the transcoded ad creative to the CDN server for future use. This is called **`just-in-time (JIT) repackaging`**. You can also transcode ad creatives before they're needed using the  [Repackaging API](../dynamic-ad-insertion\creative-repackaging-service\api-repackage.md) . This is called *`asynchronous repackaging`*.
 
 Your Adobe technical account manager can also change some CRS default behaviors if another behavior is better suited to your application. These are:
 

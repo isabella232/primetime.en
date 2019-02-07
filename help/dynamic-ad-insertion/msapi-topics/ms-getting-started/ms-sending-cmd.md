@@ -40,4 +40,3 @@ Use the HTTP GET command to interact with the manifest server.
    >[!NOTE]
    >
    >The manifest server cannot change the protocol (HTTP or HTTPS) of content segments (.ts) and 3rd-party tracking beacons. You must contact the content and 3rd-party ad providers to have them configure the desired protocols.
-
