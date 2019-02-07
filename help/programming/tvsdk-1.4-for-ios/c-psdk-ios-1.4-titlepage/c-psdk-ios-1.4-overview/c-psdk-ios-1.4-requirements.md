@@ -14,8 +14,7 @@ TVSDK requires specific properties for media content, manifest content, and soft
 
 To use TVSDK, ensure that your hardware, operating system, and application versions all meet the minimum requirements listed below. 
 
-|  Operating system  | iOS 6.0 or later  |
-|---|---|
+Operating system: iOS 6.0 or later
 
 ## Content and manifest requirements {#section_05FA02E2189742008DA09D87E66DCAB7}
 
@@ -37,7 +36,7 @@ Here is some information about the `#EXT-X-VERSION` tag, which specifies the HLS
 * If the tag is not included in the master or media playlists, or if no version is specified, version 1 is used by default. Content that does not comply with version 1 will not play. 
 * Adobe recommends using at least version 2 for playback in TVSDK-based clients.
 
-  Clients and servers must implement the versions in the following way:  
+Clients and servers must implement the versions in the following way:  
 
 <table frame="all" colsep="1" rowsep="1" id="table_62EB98EDD9DE49EC84CB1C7D59BC40E6"> 
  <thead> 
@@ -73,4 +72,3 @@ Here is some information about the `#EXT-X-VERSION` tag, which specifies the HLS
   </tr> 
  </tbody> 
 </table>
-
