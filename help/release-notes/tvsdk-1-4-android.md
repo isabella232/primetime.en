@@ -28,6 +28,10 @@ When this parameter is set, use the audio output latency in the audio timestamp 
 
 It accepts a Boolean parameters val. If its value is `True`, the client uses the audio output latency in the audio timestamp calculation.
 
+<details>
+<summary><b>New features in the previous releases</b></summary>
+<p>
+
 **Version 1.4.42**
 
 **Partial Ad-Break Insertion:**
@@ -92,7 +96,7 @@ Bug fix for Content Skip on Android.
 * New APIs are added to  TVSDK  to enable specifying the final CRS creative  url  when the default  url  is not used. Please refer to the documentation to learn how to use these new APIs.
 
 **Version 1.4.18**
-Primetime Android TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. 
+Primetime Android TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. For more information about VPAID 2.0, see [VPAID ad support](../programming/tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/vpaid-2.0-ads/android-3.0-vpaid-2.0-ads.md).
 
 **Version 1.4.17**
 
@@ -101,6 +105,8 @@ AC-3 5.1 is supported only on Amazon FireTV.
 **Version 1.4.11**
 
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103** For VAST ads (creatives) with the fallback rule enabled, TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
+
+For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-fallback/android-3.0-ad-fallback.md).
 
 * **Video Heartbeats Library (VHL) updated to version 1.5**
   * Ability to send metadata with video start and/or video/ad/chapter start as context data
@@ -122,7 +128,7 @@ AC-3 5.1 is supported only on Amazon FireTV.
   * Ad tracking has been optimized by removing the trackAdBreakStart and trackAdBreakComplete methods. The ad break is inferred from the trackAdStart and trackAdComplete method calls.
   * The  playhead  property is no longer needed when tracking ads.
 
-* **Nielsen SDK Integration**The TVSDK now supports sending user tracking information to the Nielsen SDK without any custom integration. To get started, download the Nielsen Android App SDK, and follow the instructions in the Android Programmers Guide.
+* **Nielsen SDK Integration**The TVSDK now supports sending user tracking information to the Nielsen SDK without any custom integration.
 
 **Version 1.4.0**
 
@@ -152,6 +158,41 @@ AC-3 5.1 is supported only on Amazon FireTV.
   }
 
   }
+  </p>
+  </details>
+
+## TVSDK changes for 1.4 {#tvsdk-changes}
+
+<details>
+<summary><b>API additions</b></summary>
+<p>
+
+* The interface PlaybackEventListener has a new method called onReplaceMediaPlayerItem, which you can use to listen for a new event, ITEM_REPLACED. This event is dispatched whenever a MediaPlayeritem instance is replaced on MediaPlayer. The client application implementing this PlaybackEventListener must implement or override this new method.
+
+* AdClientFactory has a new function added to class to register for multiple Opportunity Detectors:
+
+public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);
+
+For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for early exit from ad.
+
+To override this new function create a single Opportunity Detector, and put into an array and return:
+
+@Override
+
+public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {
+
+List<PlacementOpportunityDetector> opportunityDetectors = new ArrayList<PlacementOpportunityDetector>();
+
+opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));
+
+return opportunityDetectors;
+
+}
+
+}
+
+</p>
+</details>
 
 ## Device certification and support in 1.4 {#device-certification-and-support-in}
 
@@ -166,6 +207,10 @@ AC-3 5.1 is supported only on Amazon FireTV.
 
 TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 and 8.1 (Oreo).
 
+<details>
+<summary><b>Device certification and support in the previous releases</b></summary>
+<p>
+
 * **Version 1.4.23:**   
 
   * TVSDK 1.4.23 has been certified for Android Devices with Android N.
@@ -174,6 +219,9 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 
   * Primetime has been certified for Amazon Fire TV.
   * VPAID 2.0 is supported only on devices with Android 4.0 and above.
+
+</p>
+</details>
 
 ## Resolved issues in 1.4 {#resolved-issues-in}
 
@@ -198,6 +246,10 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
   * Added alwaysUseAudioOutputLatency in MediaPlayer class which when set, Will result in using audio output latency in audio timestamp calculation.
 
 * Ticket #34949 - New version of video heartbeat library (VHL) integrated.
+
+<details>
+<summary><b>Resolved issues in the previous releases</b></summary>
+<p>
 
 **Version 1.4.42 (1791)**
 
@@ -743,7 +795,14 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
 * Zendesk #1674 - ClosedCaption Not showing up, correct 708 caption display when 0x03 ETX codes are missing. 
 * PTPLAY-2157 - Default Closed Captioning styles were returned by getters even if after a different styles has been set and verified visually on the stream. The Closed Caption style properties will now show the value they have been set to.
 
+</p>
+</details>
+
 ## Known issues in 1.4 {#known-issues-in}
+
+<details>
+<summary><b>Known issues in the previous releases</b></summary>
+<p>
 
 ### Version 1.4.31
 
@@ -807,8 +866,14 @@ The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during t
 * Some devices have known playback issues. For more information, see [Known device issues in 1.4](https://helpx.adobe.com/primetime/release-notes/tvsdk-1-4-android.html#Knownissuesin14).
 * Reference Implementation - Trick play is not implemented in the sample application.
 
+</p>
+</details>
+
 ## Known device issues in 1.4 {#known-device-issues-in}
 
+<details>
+<summary><b>Known device issues in the previous releases</b></summary>
+<p>
 |Device|Chipset|Issue|Cause|Workaround|
 |--- |--- |--- |--- |--- |
 |Droid X|TI OMAP3|ABR Delay is expected since it’s restarting the decoder.|||
@@ -831,3 +896,6 @@ The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during t
 |Samsung Galaxy Tab 1 v10.1|Tegra 2|MBR transition might take up to three seconds.|As a fix for MBR crashes, we restart the decoder for every stream switch, which can take up to three seconds.||
 |Samsung Galaxy Y||Can't install SampleMediaPlayer app.|Uses ARM v6 instead of the more common ARM v7 chipset. FP/AIR does not support this device.||
 |Xoom|Tegra|A few frames are dropped for switching. The decoder is not restarted.|OMXAL limitation.||
+
+</p>
+</details>

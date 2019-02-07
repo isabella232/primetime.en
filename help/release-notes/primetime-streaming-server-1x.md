@@ -9,7 +9,7 @@ topic-tags: release-notes
 discoiquuid: baec714e-9d41-4e8b-b134-13a736885cbd
 ---
 
-# Primetime Streaming Server 1.x releases{#primetime-streaming-server-x-releases}
+# Primetime Streaming Server 1.x releases {#primetime-streaming-server-x-releases}
 
 What’s new in Primetime Streaming Server 1.3 and 1.4 releases.
 
@@ -269,7 +269,9 @@ After extracting the Adobe Primetime - Live Packager 1.4 archive, change directo
 <!-- 
 
 Comment Type: draft
-For more details about the configuration refer the Primetime Live Packager document.
+
+For more details about the configuration refer [the Primetime Live Packager document](https://help.adobe.com/en_US/primetime/api/packagers/index.html).
+
 -->
 
 **Configuring the HTTP Origin Server**
@@ -313,3 +315,5 @@ To install Offline Packager, follow these steps:
 
 1. Download the Java SE software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the install instructions.
 1. Extract the Adobe Primetime - Offline Packager 1.4 archive file, Primetime- OfflinePackager-1-4-0-b206-12042014.zip, to your disk.
+
+Refer the Primetime Offline Packager Getting Started document for the configuration details available [here](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html).

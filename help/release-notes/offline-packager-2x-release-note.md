@@ -26,13 +26,7 @@ The release enables On-demand Profile for MPEG-DASH, adds support for the `valid
 | PTPUB-954 |Sample-AES encryption bypasses AAXS DRM by default / Error thrown with remote key delivery enabled. |
 | PTPUB-951 |Offline packager does not throw exception when key_file_path is not specified with Widevine. It throws NPE instead. |
 
-<!-- 
-
-Comment Type: draft
-
-The latest documentation of Primetime Packagers is available at [http://help.adobe.com/en_US/primetime/packagers/index.html](http://help.adobe.com/en_US/primetime/packagers/index.html).
-
- -->
+The latest documentation of Primetime Packagers is available at [https://help.adobe.com/en_US/primetime/api/packagers/index.html](https://help.adobe.com/en_US/primetime/api/packagers/index.html).
 
 ### Known issue in version 2.3.1  {#known-issue-in-version}
 
@@ -75,18 +69,14 @@ Software requirements
 
 1. Download the Java SE software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the install instructions.
 1. Extract the Adobe Primetime Offline Packager 2.3.1 archive file named `PrimetimeOfflinePackager-2-3-1-b47-10142016.zip` to the disk.
-<!-- 
 
-Comment Type: draft
 ### Configuring the Offline Packager 2.3.1 {#configuring-the-offline-packager}
 
-The configuration instructions are available in the Primetime Offline Packager Getting Started guide at [https://help.adobe.com/en_US/primetime/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/packagers/offline/index.html)
-
--->
+The configuration instructions are available in the Primetime Offline Packager Getting Started guide at [https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html)
 
 ## What’s new in Primetime Offline Packager 2.1 [July 2015] {#what-s-new-in-primetime-offline-packager-july}
 
-Support for PlayReady BuyDRM (for DASH). For details refer to Help Documentation.
+Support for PlayReady BuyDRM (for DASH). For details, refer to Help Documentation [available here](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html).
 
 Following enhancement was also made to the offline packager.
 
@@ -94,7 +84,7 @@ PTPUB-780 Added support for EXT-X-START tag
 
 ## What’s new in Primetime Offline Packager 2.0 [June 2015] {#what-s-new-in-primetime-offline-packager-june}
 
-Clear DASH output support has been added. Refer to product documentation for details.
+Clear DASH output support has been added. Refer to product documentation [here](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html) for details.
 
 Following issues were also fixed in this release.
 
@@ -119,11 +109,11 @@ Hardware requirements
 
 * Hard Disk
 
-(Disk-SAS): Minimum 10GB with 7.5K RPM
+  * (Disk-SAS): Minimum 10GB with 7.5K RPM
 
-(Disk-SSD): 400MBps read/write speed
+  * (Disk-SSD): 400MBps read/write speed
 
-(NAS): 1 GB dedicated link
+  * (NAS): 1 GB dedicated link
 
 Software requirements
 
@@ -134,12 +124,6 @@ Software requirements
 1. Download the Java SE software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the install instructions. 
 1. Extract the Adobe Primetime - Offline Packager 2.1.0 archive file, PrimetimeOfflinePackager-2-1-0-b15-07082015.zip, to your disk.
 
-<!-- 
-
-Comment Type: draft
-
 ### Configuring the Offline Packager 2.1 {#configuring-the-offline-packager-1}
 
-Refer the Primetime Offline Packager Getting Started document for the configuration details available here [https://help.adobe.com/en_US/primetime/platform/offline/index.html#Platform-conceptPrimetime_Offline_Packager_Getting_Started](https://help.adobe.com/en_US/primetime/platform/offline/index.html#Platform-conceptPrimetime_Offline_Packager_Getting_Started)
-
--->
+Refer the Primetime Offline Packager Getting Started document for the configuration details available here [https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html)

@@ -22,15 +22,14 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
   * By default, all transcoded assets will be hosted on Adobe-owned CDN on Akamai. With the latest release, Adobe Creative Repackaging Service (CRS) provides the ability to upload the transcoded creatives to multiple CDNs as specified by the customer.
   * New APIs are added to TVSDK to enable specifying the final CRS creative url when the default URL is not used. Please refer to the documentation to learn how to use these new APIs.
 
+<details>
+<summary><b>New features in the previous releases</b></summary>
+<p>
+
 **1.4.30**
 
 * **Billing Metrics**
 To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers. 
-<!-- 
-
-Comment Type: draft
-For more information about Billing Metrics, see [Billing Metrics](https://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics)
--->
 
 **1.4.24**
 
@@ -51,11 +50,9 @@ In this release, this feature is not supported in Apple Safari and Mozilla Firef
 **1.4.10**
 
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
-<!-- 
 
-Comment Type: draft
-For more information, see [Ad fallback for VAST and VMAP ads](https://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
--->
+For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion\ad-fallback/android-1.4-ad-fallback-behavior.md).
+
 **1.4.8**
 
 * **Video Heartbeats Library (VHL) updated to version 1.5**
@@ -85,6 +82,9 @@ Sample-based AES encryption is now supported.
 
 * **Remove/Replace C3 Ads** Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during broadcast and is immediately pulled down for use as on demand content without proper time to “clean” the asset.
 
+</p>
+</details>
+
 ## Resolved issues {#resolved-issues}
 
 >[!NOTE]
@@ -98,6 +98,10 @@ Sample-based AES encryption is now supported.
 * Zendesk #33777 - Localhost token SWF for DHLS distribution build expired.
 
   Updating the localhost token for PMP demo on DHLS.
+
+<details>
+<summary><b>Resolved issues in the previous releases</b></summary>
+<p>
 
 **Version 1.4.38** (891)
 
@@ -170,11 +174,7 @@ This issue was resolved by handling of VPAID ads correctly based on content IDs 
 * Zendesk #24528 - TVSDK Usage Metrics for Billing.
 
 Important: This issue requires Flash player 23.0.0.185 or later.
-<!-- 
 
-Comment Type: draft
-For more information about Billing Metrics, see [Billing Metrics](http://help.adobe.com/en_US/primetime/psdk/dhls/2.3/#PSDKs-concept-Billing_metrics).
--->
 * Zendesk # 25432 Closed Caption issue during resizing the player.
 
 Important: This issue requires Flash player 23.0.0.185 or later.
@@ -727,6 +727,9 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 * Zendesk #1423 - HLS playback failure is locking up Flash Player (with no error reported) 
 * Zendesk #1674 - ClosedCaption Not showing up, correct 708 caption display when 0x03 ETX codes are missing.
 
+</p>
+</details>
+
 ## Known issues {#known-issues}
 
 * Closed Caption will not work with audio-only content because the caption system needs video to work.
@@ -740,6 +743,10 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
   _playbackManager.play();  
   _playbackManager.pause();  
   }`
+
+<details>
+<summary><b>Known issues</b></summary>
+<p>
 
 * **Version 1.4.13** PTPLAY-8501 - When VMAP returns two direct MP4 non transcoded ads, the same fall back ad plays twice.
 
@@ -756,6 +763,9 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
     * Bug #3761896 - If seeking is allowed during ad play, ad markers will re-adjust after seek. Workaround is to not use ITEM_UPDATED callback during seek
     * Bug #3779889 - The complete call is not made when reaching the end in trick play in Video Analytics
     * Bug #VA-779 - The bit-rate change event heartbeat is not sent for Enhanced Video Analytics with Heartbeat Support Reference Implementation - Trick play is not implemented in the sample application.
+
+</p>
+</details>
 
 >[!MORE_LIKE_THIS]
 >
