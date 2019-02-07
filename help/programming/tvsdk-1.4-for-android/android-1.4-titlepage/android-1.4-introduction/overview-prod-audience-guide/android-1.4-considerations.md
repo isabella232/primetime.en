@@ -33,9 +33,9 @@ Remember the following information when using TVSDK:
     
       ```    
       "Adobe Primetime/ + 
-<varname>
-  originalUserAgent
-</varname>" 
+      <varname>
+      originalUserAgent
+      </varname>" 
       ```    
     
       All ad-related calls use the Android default user agent or the custom user agent if you set it while setting up ad-insertion metadata.
@@ -46,4 +46,3 @@ Here are recommended practices for TVSDK:
 
 * Use HLS version 3.0 or above for program content. 
 * Run most TVSDK operations in the main (UI) thread, not on background threads.
-
