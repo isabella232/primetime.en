@@ -20,7 +20,7 @@ For details on the EXT-X-MARKER tag, see [Adobe Primetime HTTP Live Streaming Pr
 >
 >The EXT-X-MARKER tag is added to ad segments and not content segments.
 
-The draft standard at  http_live_stream_spec  describes the contents and format of variant playlists. The EXT-X-MARKER tag directs the client to invoke a callback. It contains the following components: 
+The draft standard at [HTTP Live Streaming](https://tools.ietf.org/html/draft-pantos-http-live-streaming-23) describes the contents and format of variant playlists. The EXT-X-MARKER tag directs the client to invoke a callback. It contains the following components: 
 
 * **ID** Unique identifier (string) for this callback event within the context of the program stream.
 

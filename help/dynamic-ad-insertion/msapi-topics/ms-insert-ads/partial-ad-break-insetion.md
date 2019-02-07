@@ -20,7 +20,7 @@ The PABI feature instructs the manifest server ignore the pre-roll ad break and 
 
 >[!NOTE]
 >
->To enable PABI, you will need to specify the  query_params  in the bootstrap URL.
+>To enable PABI, you will need to specify the [query_params](../../msapi-topics/ms-getting-started/ms-api-query-params.md) in the bootstrap URL.
 
 >[!NOTE]
 >
@@ -30,4 +30,3 @@ The PABI feature instructs the manifest server ignore the pre-roll ad break and 
 
 * Use client-side tracking because the client has more control over the firing of tracking beacons. 
 * Partial ad breaks should only be used with server-side tracking mode if the player supports EXT-X-START.
-

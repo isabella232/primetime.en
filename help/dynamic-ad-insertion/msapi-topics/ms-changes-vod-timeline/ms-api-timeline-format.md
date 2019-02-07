@@ -35,4 +35,3 @@ A pod is an ad break or a content segment. A timeline consists of a sequence of 
   ```
 
   Duration is in seconds, with precision of .001 (milliseconds); number of lots (sections of content) is an integer. For example, `C,300,1` represents a single five-minute section of content.
-

@@ -23,4 +23,3 @@ This is the format of the JSON file containing the `Master-M3U8` URL.
   &{other query parameters}"
 }
 ```
-

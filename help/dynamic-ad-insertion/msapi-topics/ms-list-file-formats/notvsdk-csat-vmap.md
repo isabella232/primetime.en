@@ -6,7 +6,7 @@ title: VMAP format for tracking URLs
 uuid: e3173fad-caa2-49cb-9a65-631573812e52
 ---
 
-# VMAP format for tracking URLs{#vmap-format-for-tracking-urls}
+# VMAP format for tracking URLs {#vmap-format-for-tracking-urls}
 
 If the client requests tracking information, the manifest server sends back a formatted file. Its format and contents depend on the value of the query parameter `pttrackingversion`
 

@@ -17,7 +17,7 @@ The manifest server provides an API to enable custom players to request the foll
 * Ad pod progress
 * Content pod progress
 
-The manifest server API assumes that any video player using it meets the minimum requirements. See video_player_requirements for more details.
+The manifest server API assumes that any video player using it meets the minimum requirements. See [Video Player Requirements](../../msapi-topics/ms-player-req.md) for more details.
 
 ## Client-side tracking workflow {#section_cst_flow}
 
@@ -106,19 +106,19 @@ The manifest server API assumes that any video player using it meets the minimum
    #EXTINF:4,
    https://www.ptdemos.com/videos/toshdunencrypted/hls/500/toc_500.4000.ts
    #EXTINF:4.833,
-   https://www.ptdemos.com/videos/toshdunencrypted/hls/500/toc_500.8000.ts
-   
+   https://www.ptdemos.com/videos/toshdunencrypted/hls/500/toc_500.8000.ts   
    ```
 
    >[!NOTE]
    >
    >The player selects the stream-level playlist URL to obtain the content stream. The manifest server retrieves the original playlist from the CDN. Some encoders may inject additional details into the `#EXTINF` title attribute, for example:
    >
-   >```   >
+   >```
    >#EXTINF:6.006,LTC=2017-08-23T13:25:47+00:00
-   >```   >
-   >
-   >Since the manifest server cannot infer the meaning of non-standard attributes to modify them for ad-stitched playlist, the manifest server removes all additional attributes beyond the duration information in this tag. See the [EXTINF](https://tools.ietf.org/html/rfc8216#section-4.3.2.1) entry in the HLS spec for more details.
+   >```
+
+   Since the manifest server cannot infer the meaning of non-standard attributes to modify them for ad-stitched playlist, the manifest server removes all additional attributes beyond the duration information in this tag. See the [EXTINF](https://tools.ietf.org/html/rfc8216#section-4.3.2.1) entry in the HLS spec for more details.
+
 
 1. To request tracking information, the player appends the query parameter `pttrackingposition` with any alphanumeric value to the stream-level playlist URL for the selected bit rate. For example: 
 
@@ -127,7 +127,7 @@ The manifest server API assumes that any video player using it meets the minimum
    &z=173475&pttrackingmode=simple&pttrackingversion=v2&pttrackingposition=1
    ```
 
-1. The manifest server returns the playlist file populated with either a  json_tracking_urls  or  vmap-tracking  object containing the ad tracking data for the stream-level m3u8 file currently requested. 
+1. The manifest server returns the playlist file populated with either a  [JSON](../../msapi-topics/ms-list-file-formats/notvsdk-csat-sidecar.md) or [VMAP](../../msapi-topics/ms-list-file-formats/notvsdk-csat-vmap.md) object containing the ad tracking data for the stream-level m3u8 file currently requested. 
 
    >[!NOTE]
    >
@@ -135,7 +135,7 @@ The manifest server API assumes that any video player using it meets the minimum
 
    >[!NOTE]
    >
-   >The manifest server generates the ad tracking object based on the `pttrackingversion` value in the Bootstrap URL. If the `pttrackingversion` is omitted or has an invalid value, then the manifest server will automatically populate the ad tracking information in the `#EXT-X-MARKER` tags in each requested stream-level playlist. See  about_ext-x-marker
+   >The manifest server generates the ad tracking object based on the `pttrackingversion` value in the Bootstrap URL. If the `pttrackingversion` is omitted or has an invalid value, then the manifest server will automatically populate the ad tracking information in the `#EXT-X-MARKER` tags in each requested stream-level playlist. See [for more details](../../msapi-topics/ms-at-effectiveness/ms-api-playlists.md).
 
 1. The player requests each ad tracking URL for each ad tracking event at the appropriate time.
 

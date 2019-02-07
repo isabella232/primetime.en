@@ -26,4 +26,3 @@ The workflow for VOD content streams is as follows:
 >[!NOTE]
 >
 >If a client requests that a video play in a specific language such as English, and then requests to play the video in French, manifest server cannot detect that the client requested to change the language to French. Because the client doesn't communicate with the manifest server, the manifest server inserts the ad caption into the video stream using the first language specified in the ad's M3U8 master file.
-
