@@ -444,36 +444,10 @@ Here is a list of the supported and unsupported features for this release:
 
 #### Table 3: Core Ad Insertion {#table-core-ad-insertion}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Category</strong></p> </td> 
-   <td><p><strong>Content Type</strong></p> </td> 
-   <td><p><strong>Feature</strong></p> </td> 
-   <td><p><strong>Flash</strong></p> </td> 
-   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
-  </tr> 
-  <tr> 
-  </tr> 
-  <tr> 
-   <td><p>Ad Insertion</p> </td> 
-   <td><p>MP4 VOD</p> </td> 
-   <td><p>Pre-roll (MP4)</p> </td> 
-   <td><p>Not Supported</p> </td> 
-   <td><p>Y</p> </td> 
-   <td><p>Y</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad Insertion</p> </td> 
-   <td><p>MP4 VOD</p> </td> 
-   <td><p>Post-roll (MP4)</p> </td> 
-   <td><p>Not Supported</p> </td> 
-   <td><p>Y</p> </td> 
-   <td><p>Y</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Category|Content Type|Feature|Flash|HTML5: FF, IE, Chrome, Android Chrome|HTML5: Safari, iOS Safari|
+|--- |--- |--- |--- |--- |--- |
+|Ad Insertion|MP4 VOD|Pre-roll (MP4)|Not Supported|Y|Y|
+|Ad Insertion|MP4 VOD|Post-roll (MP4)|Not Supported|Y|Y|
 
 For more information about HLS or DASH feature support, see below.
 

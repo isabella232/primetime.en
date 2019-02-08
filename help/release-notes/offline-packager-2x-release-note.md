@@ -1,6 +1,6 @@
 ---
-title: Primetime Offline Packager releases
-seo-title: Primetime Offline Packager releases
+title: Primetime Offline Packager 2.x releases
+seo-title: Primetime Offline Packager 2.x releases
 description: What's new in Primetime Offline Packager 2.1 and 2.3.1 releases
 seo-description: What's new in Primetime Offline Packager 2.1 and 2.3.1 releases
 uuid: 01926a10-890d-477d-b832-e22847d957e0
@@ -74,7 +74,7 @@ Software requirements
 
 The configuration instructions are available in the Primetime Offline Packager Getting Started guide at [https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html)
 
-## What's new in Primetime Offline Packager 2.1 [July 2015] {#what-s-new-in-primetime-offline-packager-july}
+## What's new in Primetime Offline Packager 2.1 (July 2015) {#what-s-new-in-primetime-offline-packager-july}
 
 Support for PlayReady BuyDRM (for DASH). For details, refer to Help Documentation [available here](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html).
 
@@ -82,7 +82,7 @@ Following enhancement was also made to the offline packager.
 
 PTPUB-780 Added support for EXT-X-START tag
 
-## What's new in Primetime Offline Packager 2.0 [June 2015] {#what-s-new-in-primetime-offline-packager-june}
+## What's new in Primetime Offline Packager 2.0 (June 2015) {#what-s-new-in-primetime-offline-packager-june}
 
 Clear DASH output support has been added. Refer to product documentation [here](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html) for details.
 

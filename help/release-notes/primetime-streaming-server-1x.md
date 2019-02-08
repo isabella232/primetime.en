@@ -13,7 +13,7 @@ discoiquuid: baec714e-9d41-4e8b-b134-13a736885cbd
 
 What's new in Primetime Streaming Server 1.3 and 1.4 releases.
 
-## What's new in Primetime Streaming Server 1.4 [December Release] {#what-s-new-in-primetime-streaming-server-december-release}
+## New in Primetime Streaming Server 1.4 (December Release) {#what-s-new-in-primetime-streaming-server-december-release}
 
 **Offline Packager**
 
@@ -48,7 +48,7 @@ PHDS/PHLS certificates have been refreshed. New expiry date for the same will be
 
 * PTPUB- 645 DPISimple Mode is forced even when DPIScte35 mode is specified when both command line cues and in-stream cues both are provided in offline packager configuration
 
-## What's new in Primetime Streaming Server 1.3.1 [MAY Release] {#what-s-new-in-primetime-streaming-server-may-release}
+## What's new in Primetime Streaming Server 1.3.1 (MAY Release) {#what-s-new-in-primetime-streaming-server-may-release}
 
 Version 1.3.1 refers to the hotfix. Following enhancements make it a recommended upgrade for customers as it consists of key performance enhancements for JIT MP4 use cases:
 
@@ -66,7 +66,7 @@ Version 1.3.1 refers to the hotfix. Following enhancements make it a recommended
 
 * 3718598 - When Origin Server is configured for serving protected contents with HSM access enabled the backend LunaSA client does a frequent communication with HSM module
 
-## What's new in Primetime Streaming Server 1.3 [APRIL Release] {#what-s-new-in-primetime-streaming-server-april-release}
+## What's new in Primetime Streaming Server 1.3 (APRIL Release) {#what-s-new-in-primetime-streaming-server-april-release}
 
 Primetime 1.3 release brings several new features around Streaming content, better Usability and Security.
 

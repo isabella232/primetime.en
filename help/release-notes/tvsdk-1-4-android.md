@@ -134,12 +134,12 @@ For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvs
 
 * **Remove/Replace C3 Ads** Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during broadcast and is immediately pulled down for use as on demand content without proper time to “clean” the asset.
 
-* The interface PlaybackEventListener has a new method called onReplaceMediaPlayerItem, which you can use to listen for a new event, ITEM_REPLACED. This event is dispatched whenever a MediaPlayeritem instance is replaced on MediaPlayer. The client application implementing this PlaybackEventListener must implement or override this new method.
+* The interface PlaybackEventListener has a new method called onReplaceMediaPlayerItem, which you can use to listen for a new event, `ITEM_REPLACED`. This event is dispatched whenever a MediaPlayeritem instance is replaced on MediaPlayer. The client application implementing this PlaybackEventListener must implement or override this new method.
 * AdClientFactory has a new function added to  class  to register for multiple Opportunity Detectors:
 
   public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem item);
 
-  For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for  early  exit from  ad .
+  For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for  early  exit from  `ad`.
 
   To override this new function create a single Opportunity Detector, and put into an array and return:
 
@@ -163,7 +163,7 @@ For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvs
 
 * AdClientFactory has a new function added to class to register for multiple Opportunity Detectors:
 
-public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);
+public List`<PlacementOpportunityDetector>` createOpportunityDetectors(MediaPlayerItem item);
 
 For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for early exit from ad.
 
@@ -171,9 +171,9 @@ To override this new function create a single Opportunity Detector, and put into
 
 @Override
 
-public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {
+public List`<PlacementOpportunityDetector>` createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {
 
-List<PlacementOpportunityDetector> opportunityDetectors = new ArrayList<PlacementOpportunityDetector>();
+List`<PlacementOpportunityDetector>` opportunityDetectors = new ArrayList`<PlacementOpportunityDetector>`();
 
 opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));
 
@@ -196,7 +196,7 @@ return opportunityDetectors;
 
 TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 and 8.1 (Oreo).
 
-* **Version 1.4.23:**   
+* **Version 1.4.23:** 
 
   * TVSDK 1.4.23 has been certified for Android Devices with Android N.
 
@@ -225,7 +225,7 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 
 * Ticket #34493 - Bluetooth audio delay
 
-  * Added alwaysUseAudioOutputLatency in MediaPlayer class which when set, Will result in using audio output latency in audio timestamp calculation.
+  * Added `alwaysUseAudioOutputLatency` in MediaPlayer class which when set, Will result in using audio output latency in audio timestamp calculation.
 
 * Ticket #34949 - New version of video heartbeat library (VHL) integrated.
 
@@ -244,7 +244,7 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 **Version 1.4.40 (1764)**
 
 * Zendesk #33068 - Amazon lip sync issue on  new  device. Lip sync issue is fixed in this releases.
-* Zendesk #32215 - Android TVSDK 1.4.38 Security Issues [Hotlist]. Updated to the latest OpenSSL-1.1.0 and curl-7.55.1.
+* Zendesk #32215 - Android TVSDK 1.4.38 Security Issues `[Hotlist]`. Updated to the latest OpenSSL-1.1.0 and curl-7.55.1.
 * Zendesk #32920 - white blank screen within an Ad break and no Ad break completion. Fixed an issue where a VPAID container could get into a hung state and handled an issue where Facebook VPAID ads were often returning multiple CDATA blocks in a single \&lt;AdParameters\&gt; VAST node.
 
 **Version 1.4.39 (1744)**
