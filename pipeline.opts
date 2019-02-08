@@ -1,1 +1,2 @@
 export ANT_OPTS="-Xmx2048m $ANT_OPTS"
+export SKIPLINKCHECK=true
