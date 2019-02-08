@@ -6,7 +6,7 @@ title: Implement custom time updates
 uuid: 174937ca-3c26-4385-a298-8a01fc93ea20
 ---
 
-# Implement custom time updates{#implement-custom-time-updates}
+# Implement custom time updates {#implement-custom-time-updates}
 
 In some analytics implementations, the client application might want to provide a different playhead position than the position that is reported by the TVSDK's localTime value. For example, during a linear stream playback, each program's playhead can be provided relative to its start time.
 
@@ -26,4 +26,3 @@ In some analytics implementations, the client application might want to provide 
    >[!IMPORTANT]
    >
    >In this code sample, 500 is only a sample value. You need to use a different value for your custom playhead position.
-

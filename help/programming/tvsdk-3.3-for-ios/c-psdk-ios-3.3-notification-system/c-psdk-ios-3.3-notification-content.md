@@ -6,9 +6,9 @@ title: Notification content
 uuid: d42d2e89-1bdd-4be0-8a69-821fec6bbc75
 ---
 
-# Notification content{#notification-content}
+# Notification content {#notification-content}
 
-PTNotification objects provide information about changes in player status, warnings, and errors. Errors that stop the playback of the video also cause a change in the status of the player.
+`PTNotification` objects provide information about changes in player status, warnings, and errors. Errors that stop the playback of the video also cause a change in the status of the player.
 
 Your application can retrieve the notification and status information. You can also create a logging system for diagnostics and validation by using the notification information.
 
@@ -36,4 +36,4 @@ TVSDK provides a chronological list of `PTNotification` notifications. Each noti
     
     * `innerNotification`: A reference to another `PTNotification` object that directly impacts this notification.
 
-You can store this information locally for later analysis or send it to a remote server for logging and graphical representation. 
+You can store this information locally for later analysis or send it to a remote server for logging and graphical representation.

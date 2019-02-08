@@ -5,4 +5,3 @@ uuid: 508716df-24b1-4ccb-b292-7856c8d52858
 ---
 
 # Notifications for player status, activity, errors, and logs{#notifications-for-player-status-activity-errors-and-logs}
-

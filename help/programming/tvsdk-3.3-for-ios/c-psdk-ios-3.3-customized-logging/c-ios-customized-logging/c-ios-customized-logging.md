@@ -6,7 +6,7 @@ title: Understanding customized logging
 uuid: f056d7d7-ec3a-4cf1-997f-72a89bbc9447
 ---
 
-# Understanding customized logging{#understanding-customized-logging}
+# Understanding customized logging {#understanding-customized-logging}
 
 You can implement your own logging system.
 

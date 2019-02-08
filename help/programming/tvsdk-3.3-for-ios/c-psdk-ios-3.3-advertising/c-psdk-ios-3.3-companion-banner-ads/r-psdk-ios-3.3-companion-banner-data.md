@@ -6,7 +6,7 @@ title: Companion banner data
 uuid: c61f9ae6-f93a-4ff3-9c22-a33328c54281
 ---
 
-# Companion banner data{#companion-banner-data}
+# Companion banner data {#companion-banner-data}
 
 The content of a PTAdAsset describes a companion banner.
 
@@ -42,8 +42,7 @@ Each `PtAdAsset` provides information about displaying the asset.
   </tr> 
   <tr> 
    <td colname="col1"> data </td> 
-   <td colname="col2"> The data of the type that is specified by <span class="codeph"> resourceType</span> for this companion banner. </td> 
+   <td colname="col2"> The data of the type that is specified by <span class="codeph">resourceType</span> for this companion banner. </td> 
   </tr> 
  </tbody> 
 </table>
-

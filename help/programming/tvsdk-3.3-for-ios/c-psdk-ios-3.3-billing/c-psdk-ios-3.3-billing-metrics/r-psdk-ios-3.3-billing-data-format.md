@@ -6,7 +6,7 @@ title: Transmit billing metrics
 uuid: dae8eda2-4892-41f6-b1f4-67e412f04b49
 ---
 
-# Transmit billing metrics{#transmit-billing-metrics}
+# Transmit billing metrics {#transmit-billing-metrics}
 
 TVSDK sends billing metrics to Adobe in an XML format.
 

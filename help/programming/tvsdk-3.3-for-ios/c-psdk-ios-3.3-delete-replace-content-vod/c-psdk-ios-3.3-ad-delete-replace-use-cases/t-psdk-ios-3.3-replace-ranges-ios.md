@@ -6,7 +6,7 @@ title: Replace ranges
 uuid: 64506a44-5942-47e0-be21-5b0d8842d470
 ---
 
-# Replace ranges{#replace-ranges}
+# Replace ranges {#replace-ranges}
 
  To implement the `PTTimeRangeCollection` and delete ranges of content as ads: 
 1. Prepare `PTTimeRangeCollection`.
@@ -73,4 +73,3 @@ uuid: 64506a44-5942-47e0-be21-5b0d8842d470
    //Start playback 
    [player play];
    ```
-

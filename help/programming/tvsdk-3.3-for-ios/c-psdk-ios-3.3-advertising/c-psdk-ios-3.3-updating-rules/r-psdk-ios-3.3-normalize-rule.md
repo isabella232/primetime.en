@@ -7,11 +7,11 @@ title: Normalize rules
 uuid: c5cdc40c-7f8c-4b4a-8044-217494e2f466
 ---
 
-# Normalize rules{#normalize-rules}
+# Normalize rules {#normalize-rules}
 
 The normalize rule defines a URL transformation to apply to a source creative URL obtained from a VAST/VMAP response.
 
-## The normalize rule has the following attributes and possible values:
+**Table 2: The normalize rule has the following attributes and possible values:**
 
 <table id="table_ljp_tgx_hz">  
  <thead> 
@@ -100,4 +100,3 @@ The normalize rule defines a URL transformation to apply to a source creative UR
     }
 }
 ```
-

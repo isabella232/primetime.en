@@ -6,7 +6,7 @@ title: WARNING notification codes
 uuid: da1a561d-3b9a-468a-a24a-7b6fa62aa2e8
 ---
 
-# WARNING notification codes{#warning-notification-codes}
+# WARNING notification codes {#warning-notification-codes}
 
 This table proves detailed information about WARN type notifications.
 
@@ -47,11 +47,7 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p>Ad resolving failed because of an invalid VAST URL or because no ad was returned from the VAST wrapper. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><b>Background manifests</b> </td> 
-   <td colname="2"> </td> 
-   <td colname="3"> </td> 
-   <td colname="4"> </td> 
-   <td colname="5"> </td> 
+   <td colspan="5"><b>Background manifests</b> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 204000 </span> </td> 
@@ -145,19 +141,9 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p>Error getting data from the network. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 270002</span> </td> 
-   <td colname="2"><span class="codeph"> AD_HLS_AUDIOONLY_MISSING</span> </td> 
-   <td colname="3"> <p>None </p> </td> 
-   <td colname="4"><span class="codeph"> AD_ASSET</span> </td> 
-   <td colname="5"> <p>The audio for this ad cannot be heard because it is missing </p> </td> 
-  </tr> 
-  <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 270003</span> </td> 
-   <td colname="2"><span class="codeph"> AD_HLS_MATCHING_BITRATE_MISSING</span> </td> 
-   <td colname="3"> <p>None </p> </td> 
-   <td colname="4"><span class="codeph"> AD_ASSET</span> </td> 
-   <td colname="5"> <p>The matching bitrate is missing. </p> <p>&nbsp; </p>
-    <!-- workaround for PDF having too much negative kerning in column 2 --> </td> 
+   <td colspan="4"> <p>Note: The [] attribute specifies an optional key for notification. </p> </td> 
+   <td colname="5"> </td> 
+  </td> 
   </tr> 
  </tbody> 
 </table>

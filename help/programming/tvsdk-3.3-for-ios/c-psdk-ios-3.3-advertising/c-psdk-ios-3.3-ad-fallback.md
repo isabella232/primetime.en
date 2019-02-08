@@ -6,7 +6,7 @@ title: Ad fallback for VAST and VMAP ads
 uuid: ca65f349-012d-49e3-8c23-fd041c5362ee
 ---
 
-# Ad fallback for VAST and VMAP ads{#ad-fallback-for-vast-and-vmap-ads}
+# Ad fallback for VAST and VMAP ads {#ad-fallback-for-vast-and-vmap-ads}
 
 For Digital Video Ad Serving Template (VAST) ads (or creatives) that have the fallback rule enabled, TVSDK treats an ad with an invalid media type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
 
@@ -45,4 +45,3 @@ When there are stand-alone fallback ads, the Primetime ad decisioning plug-in lo
 >[!IMPORTANT]
 >
 >This behavior is always enabled for ads in VAST wrappers. For VAST ads inline in a VMAP, the behavior is disabled by default, but your application can enable it.
-

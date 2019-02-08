@@ -6,7 +6,7 @@ title: Logging classes
 uuid: b40dc619-0a52-477f-9879-56f75ab0c31f
 ---
 
-# Logging classes{#logging-classes}
+# Logging classes {#logging-classes}
 
 These classes enable you to customize logging.
 
@@ -32,4 +32,3 @@ These classes enable you to customize logging.
   </tr> 
  </tbody> 
 </table>
-

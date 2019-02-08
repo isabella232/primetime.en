@@ -148,7 +148,7 @@ Your content is obtained by using the `skd:` protocol, but your license request 
 
 You can implement Apple FairPlay Streaming, which is Apple's DRM solution, in your TVSDK applications.
 
-1. Create your FairPlay Customer Resource Loader by implementing `PTAVAssetResourceLoaderDelegate`.
+1. Create your FairPlay Customer Resource Loader by implementing `PTAVAssetResourceLoaderDelegate`. For more information, see Apple FairPlay in TVSDK applications.
 
       >[!NOTE]
    >
@@ -172,4 +172,3 @@ You can implement Apple FairPlay Streaming, which is Apple's DRM solution, in yo
    >[!NOTE]
    >
    >If you wrote your own FairPlay license server, or you are using a third-party FairPlay license server, consult your license server vendor to determine your license server URL, formatting, and any other requirements.
-

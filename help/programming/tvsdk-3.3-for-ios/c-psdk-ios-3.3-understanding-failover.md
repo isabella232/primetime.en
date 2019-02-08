@@ -6,7 +6,7 @@ title: Failover
 uuid: 064886ab-afa2-4afc-b795-d094b31934b8
 ---
 
-# Failover{#failover}
+# Failover {#failover}
 
 Failover handling occurs when a variant playlist has multiple renditions for the same bit rate, and one of the renditions stops working. The TVSDK switches between renditions.
 

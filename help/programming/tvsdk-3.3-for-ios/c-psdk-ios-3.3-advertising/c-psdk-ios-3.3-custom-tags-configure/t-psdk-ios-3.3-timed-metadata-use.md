@@ -6,7 +6,7 @@ title: Use timed metadata
 uuid: 1531780f-2502-4235-818c-6c0a6bf3d348
 ---
 
-# Use timed metadata{#use-timed-metadata}
+# Use timed metadata {#use-timed-metadata}
 
 You can use TimedMetadata when the current playback time matches the start time.
 

@@ -202,6 +202,4 @@ Fetch the `PTAd` instance using `PTMediaPlayerAdKey`:
    ... 
    ... 
 } 
-
 ```
-

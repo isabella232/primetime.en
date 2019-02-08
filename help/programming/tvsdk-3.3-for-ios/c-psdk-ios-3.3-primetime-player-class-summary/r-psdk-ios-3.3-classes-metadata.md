@@ -6,7 +6,7 @@ title: Metadata classes
 uuid: 9cabd1b7-4343-41a1-a3e7-1b61235992db
 ---
 
-# Metadata classes{#metadata-classes}
+# Metadata classes {#metadata-classes}
 
 These classes provide metadata for advertising, namespaces, and tracking.
 

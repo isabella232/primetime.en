@@ -6,7 +6,7 @@ title: null
 uuid: 20828188-817a-471c-acbc-aeb5f336356b
 ---
 
-# null {#no-title}
+# ERROR notification codes {#error-notification-codes}
 
 The TVSDK notification system produces various error, warning, and informational notices that provide diagnostic metadata.
 
@@ -290,7 +290,12 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="4"> <span class="codeph"> AD_ASSET</span> </td> 
    <td colname="5"> <p>The TARGET DURATION of the ad is higher than the TARGET DURATION of the content. </p> </td> 
   </tr> 
+  <tr rowsep="1"> 
+   <td colspan="4"> <p>Note: adID and source (URL) can be retrieved through the <span class="codeph"> PTAdAsset</span> in the notification metadata with the <span class="codeph"> AD_ASSET</span> key. </p> </td> 
+   <td colname="5"> </td> 
+   <tr rowsep="1"> 
+   <td colspan="4"> <p>The [] attribute specifies an optional key for notification. </p> </td> 
+   <td colname="5"> </td> 
+  </tr> 
  </tbody> 
 </table>
-
->[!NOTE] adID and source (URL) can be retrieved through the `PTAdAsset` in the notification metadata with the `AD_ASSET` key.
