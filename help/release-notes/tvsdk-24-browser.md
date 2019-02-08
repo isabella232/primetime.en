@@ -26,13 +26,13 @@ Browser TVSDK 2.4 provides JavaScript APIs to build browser-based video applicat
 
 This release includes the following information:
 
-• [*Browser TVSDK API documentation*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
+• [Browser TVSDK API documentation](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
-• [*Browser TVSDK programming guide*](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_browser-tvsdk.pdf).
+• [Browser TVSDK programming guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_browser-tvsdk.pdf).
 
-• [*TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide*](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-dhls-browser-tvsdk-24.html).
+• [TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-dhls-browser-tvsdk-24.html).
 
-• [*Converting from Browser TVSDK 2.4.6 to version 2.4.7*](https://helpx.adobe.com/primetime/conversion-guides/browser-tvsdk-246-to-247-for-javascript.html).
+• [Converting from Browser TVSDK 2.4.6 to version 2.4.7](https://helpx.adobe.com/primetime/conversion-guides/browser-tvsdk-246-to-247-for-javascript.html).
 
 • A reference implementation, which is included in the build.
 
@@ -54,7 +54,7 @@ The following addition is available as part of Browser TVSDK 2.4.12 Update (Buil
 
 The following addition is available as part of Browser TVSDK 2.4.12 release:
 
-• A new API, auditudeSettings.ignoreVPAIDAds, is added to allow ignoring VPAID ads received from the Auditude server. The API does not work for Flash Fallback.
+• A new API, `auditudeSettings.ignoreVPAIDAds`, is added to allow ignoring VPAID ads received from the Auditude server. The API does not work for Flash Fallback.
 
 **Version 2.4.11**
 
@@ -62,15 +62,15 @@ The following enhancements and additions are available as part of Browser TVSDK 
 
 • HLS Live segment failover is supported for MSE and Flash fallback modes.
 
-• Support for AuditudeSettings.creativeRepackagingDomain API is now available for MSE as well. It was previously supported only with Flash fallback mode.
+• Support for `AuditudeSettings.creativeRepackagingDomain` API is now available for MSE as well. It was previously supported only with Flash fallback mode.
 
-• The release contains fixes for critical customer issues. See *Issues fixed *a list
+• The release contains fixes for critical customer issues. See *Issues fixed* a list.
 
 **Version 2.4.10**
 
 The following enhancements and additions are available as part of Browser TVSDK 2.4.10 release:
 
-• TVSDK provides enableLogging() to enable or disable the logging. Refer to the [*API documentation *](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)for usage.
+• TVSDK provides enableLogging() to enable or disable the logging. Refer to the [API documentation](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)for usage.
 
 • TVSDK does not anymore support Default Chapters, when using Adobe Analytics. Define and manage Chapters using your application.
 
@@ -102,11 +102,11 @@ This update contains fixes for critical customer issues. See *Fixed Issues*, for
 
 The following enhancements and additions are available as part of Browser TVSDK 2.4.8 release:
 
-• The SDK is now compliant with the Chrome EME and the best practices changes available starting Chrome v58. For more details see [*https://storage.googleapis.com/wvdocs/Chrome_EME_Changes_and_Best_Practices.pdf*](https://storage.googleapis.com/wvdocs/Chrome_EME_Changes_and_Best_Practices.pdf)**
+• The SDK is now compliant with the Chrome EME and the best practices changes available starting Chrome v58. For more details see [https://storage.googleapis.com/wvdocs/Chrome_EME_Changes_and_Best_Practices.pdf](https://storage.googleapis.com/wvdocs/Chrome_EME_Changes_and_Best_Practices.pdf)**
 
 • The UI Framework now supports HLS Access DRM on Flash, Ad only, and Targeting Info workflow.
 
-• The setDRMAuthenticateData API is added to the UI Framework. To play streams protected with Adobe Access DRM, invoke this API. Alternately, drmAuthenticateData attribute can be specified in the player. See [*AdobePSDK.videoBehavior *](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/VideoBehavior.html)for details.
+• The setDRMAuthenticateData API is added to the UI Framework. To play streams protected with Adobe Access DRM, invoke this API. Alternately, drmAuthenticateData attribute can be specified in the player. See [AdobePSDK.videoBehavior ](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/VideoBehavior.html)for details.
 
 **Version 2.4.7**
 
@@ -126,13 +126,13 @@ In this tool, you can select various settings, click **Test Configuration **to v
 
 • Addition of the MediaPlayerItemConfig API to the UI Framework
 
-Various features, including advertisingMetadata, advertisingFactory, adSignalingMode, networkConfiguration, customRangeMetadata, useHardwareDecoder, subscribeTags, adTags, thumbnailScrubber, billingMetricsConfiguration, can be configured through MediaPlayerItemConfig. For more information, see the AdobePSDK.MediaPlayerItemConfig documentation in the [*Browser TVSDK API*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)* * [*documentation*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
+Various features, including advertisingMetadata, advertisingFactory, adSignalingMode, networkConfiguration, customRangeMetadata, useHardwareDecoder, subscribeTags, adTags, thumbnailScrubber, billingMetricsConfiguration, can be configured through MediaPlayerItemConfig. For more information, see the AdobePSDK.MediaPlayerItemConfig documentation in the [Browser TVSDK API](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)* * [documentation](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
 In the UI Framework, the way of passing network configurations through the player configuration has been modified.
 
 #### Version 2.4.6 {#version}
 
-`var player = ptp.videoPlayer(‘#videoHolder’, {`
+`var player = ptp.videoPlayer(‘#videoHolder', {`
 
 `player: {`
 
@@ -144,7 +144,7 @@ In the UI Framework, the way of passing network configurations through the playe
 
 #### Version 2.4.7 {#version-1}
 
-`var player = ptp.videoPlayer(‘#videoHolder’, {`
+`var player = ptp.videoPlayer(‘#videoHolder', {`
 
 `player: {`
 
@@ -166,40 +166,43 @@ DRM configurations and Analytics Tracking can be enabled through the UI Framewor
 
 This new API provides flexibility to the player app for selecting the div in which it can embed the FlashFallback.swf file.
 
-* Replaced `getVersion`API from `AdobePSDK.MediaPlayer` class with `AdobePSDK.Version` class for TVSDK version related information. For details, see `AdobePSDK.Version` API [*here*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/AdobePSDK.Version.html).
+* Replaced `getVersion`API from `AdobePSDK.MediaPlayer` class with `AdobePSDK.Version` class for TVSDK version related information. For details, see `AdobePSDK.Version` API [here](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/AdobePSDK.Version.html).
 
 **Version 2.4.6**
 
 The following features are new in version 2.4.6:
 
 * **Browserify Support**
+
 Browserify allows you to use the node.js style modules in the browser. You can define the dependencies and Browserify bundles everything into one JavaScript file.
 
 * **Billing**
+
 With the help of billing, Browser TVSDK can collect player usage metrics to bill Primetime customers.
 
 >[!NOTE]
 >
->*The deprecated enum MediaPlayer.Events and deprecated constants in Enum PSDKErrorCode have been removed in version 2.4.6. For more information, see * [*Converting from Browser TVSDK 2.4.5 to version 2.4.6*](https://helpx.adobe.com/primetime/conversion-guides/browser-tvsdk-245-to-246-for-javascript.html)*.*
+>The deprecated enum MediaPlayer.Events and deprecated constants in Enum PSDKErrorCode have been removed in version 2.4.6. For more information, see [Converting from Browser TVSDK 2.4.5 to version 2.4.6](https://helpx.adobe.com/primetime/conversion-guides/browser-tvsdk-245-to-246-for-javascript.html).
 
 **Version 2.4.5**
 
 The following features are new in version 2.4.5:
 
-* **Full Event Replays and Ads**  
+* **Full Event Replays and Ads** 
+
   HLS Full Event Replay (FER) streams now supports ad resolution and ad behaviors. To enable this support, set the ad signaling mode to `MANIFEST_CUES` when creating the `MediaPlayerItemConfig` object.
 
-* **MediaplayerView ScalePolicy Support
+* **MediaplayerView ScalePolicy Support**
   
-  **Application developers can now specify a different scalePolicy for the view using MediaplayerView scalePolicy property.
+  Application developers can now specify a different scalePolicy for the view using MediaplayerView scalePolicy property.
 
 * **Anamorphic Content Support**
 
-Anamorphic content playback is now supported when using MSE and Flash playback.
+  Anamorphic content playback is now supported when using MSE and Flash playback.
 
 * **Selective application of `withCredentials`**
 
-When `withCredentials` is set to true, the `Access-Control-Allow-Origin` header cannot be set to a wild card. Depending on the response of server, Browser TVSDK will selectively set the `withCredentials` attribute. For more information about this support, see [*Browser TVSDK API docs*](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
+When `withCredentials` is set to true, the `Access-Control-Allow-Origin` header cannot be set to a wild card. Depending on the response of server, Browser TVSDK will selectively set the `withCredentials` attribute. For more information about this support, see [Browser TVSDK API docs](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
 **Version 2.4.4**
 
@@ -219,11 +222,11 @@ The following features were new in version 2.4.3:
 
 * **Custom tags for DASH VOD**
 
-Inline custom tags (Events) can be subscribed to and received as TimedMetadata object.
+  Inline custom tags (Events) can be subscribed to and received as TimedMetadata object.
 
 * **Playback of streams without extensions**
 
-HLS and DASH streams without extensions are now supported. For the manifest file, the resourceType needs to be specified when loading the resource. For segments and VTT files, the Content-Type response header is used to determine the content type.
+  HLS and DASH streams without extensions are now supported. For the manifest file, the resourceType needs to be specified when loading the resource. For segments and VTT files, the Content-Type response header is used to determine the content type.
 
 **Version 2.4.2**
 
@@ -231,19 +234,19 @@ The following features were new in version 2.4.2:
 
 * **API Parity**
 
-For a complete list of the API parity, see the [*TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide*](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-dhls-browser-tvsdk-24.html).
+For a complete list of the API parity, see the [TVSDK for 1.4 DHLS to Browser TVSDK 2.4 Migration Guide](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-dhls-browser-tvsdk-24.html).
 
 * **Sample-AES support**
 
-This release adds support for Sample-AES encrypted content playback on MSE and Flash fallback. The requirement to host AES content over secure origin on Google Chrome have been removed.
+  This release adds support for Sample-AES encrypted content playback on MSE and Flash fallback. The requirement to host AES content over secure origin on Google Chrome have been removed.
 
 * **Support for AAC containers**
 
-The playback of files with the .aac extension is now supported. This can be audio-only streams or alternate audio.
+  The playback of files with the .aac extension is now supported. This can be audio-only streams or alternate audio.
 
->[!NOTE]
->
->*AC3 and enhanced AC3 codecs are not yet supported.*
+  >[!NOTE]
+  >
+  >AC3 and enhanced AC3 codecs are not yet supported.
 
 * **Tokenized stream playback**
 
@@ -279,11 +282,11 @@ The following features were available in version 2.4:
 
 * **MP3 audio playback**
 
-This release supports MP3 audio playback on browsers with Media Source Extensions (MSE) and with the Safari video tag.
+  This release supports MP3 audio playback on browsers with Media Source Extensions (MSE) and with the Safari video tag.
 
-* **MP4 video playback  
+* **MP4 video playback**
   
-  **The following features are supported:
+  The following features are supported:
 
     * Single stream playback
     * Pre-roll and Post-roll MP4 ads with ad behaviors and tracking
@@ -423,28 +426,9 @@ Here is a list of the supported and unsupported features for this release:
 
 #### Table 1: Core Playback {#table-core-playback}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Category</strong></p> </td> 
-   <td><p><strong>Content Type</strong></p> </td> 
-   <td><p><strong>Feature</strong></p> </td> 
-   <td><p><strong>Flash</strong></p> </td> 
-   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
-  </tr> 
-  </tr> 
-  <tr> 
-  <tr> 
-   <td><p>Playback</p> </td> 
-   <td><p>MP3 VOD</p> </td> 
-   <td><p>General Playback (Play, Pause, Seek)</p> </td> 
-   <td><p>Not Supported</p> </td>
-   <td><p>Y</p> </td>
-   <td><p>Y</p> </td>
-  </tr>
- </tbody>  
-</table>
+|Category|Content Type|Feature|Flash|HTML5: FF, IE, Chrome, Android Chrome|HTML5: Safari, iOS Safari|
+|--- |--- |--- |--- |--- |--- |
+|Playback|MP3 VOD|General Playback (Play, Pause, Seek)|Not Supported|Y|Y|
 
 1 The Browser TVSDK Video tag does not support streaming and DRM. The codec and container support is not the same across all browsers.
 
@@ -454,62 +438,16 @@ Here is a list of the supported and unsupported features for this release:
 
 #### Table 2: Core Playback {#table-core-playback-1}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Category</strong></p> </td> 
-   <td><p><strong>Content Type</strong></p> </td> 
-   <td><p><strong>Feature</strong></p> </td> 
-   <td><p><strong>Flash</strong></p> </td> 
-   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
-  </tr> 
-  <tr> 
-  </tr> 
-  <tr> 
-   <td><p>Playback</p> </td> 
-   <td><p>MP4 VOD</p> </td> 
-   <td><p>General Playback (Play, Pause, Seek)</p> </td> 
-   <td><p>Not Supported</p> </td> 
-   <td><p>Y</p> </td> 
-   <td><p>Y</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Category|Content Type|Feature|Flash|HTML5: FF, IE, Chrome, Android Chrome|HTML5: Safari, iOS Safari|
+|--- |--- |--- |--- |--- |--- |
+|Playback|MP4 VOD|General Playback (Play, Pause, Seek)|Not Supported|Y|Y|
 
 #### Table 3: Core Ad Insertion {#table-core-ad-insertion}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Category</strong></p> </td> 
-   <td><p><strong>Content Type</strong></p> </td> 
-   <td><p><strong>Feature</strong></p> </td> 
-   <td><p style="text-align: center;"><strong>Flash</strong></p> </td> 
-   <td colspan="2"><p style="text-align: center;"><strong>HTML5</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td><p><strong>Safari, iOS Safari</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad Insertion</p> </td> 
-   <td><p>MP4 VOD</p> </td> 
-   <td><p>Pre-roll (MP4)</p> </td> 
-   <td><p>Not Supported</p> </td> 
-   <td><p>Y</p> </td> 
-   <td><p>Y</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad Insertion</p> </td> 
-   <td><p>MP4 VOD</p> </td> 
-   <td><p>Post-roll (MP4)</p> </td> 
-   <td><p>Not Supported</p> </td> 
-   <td><p>Y</p> </td> 
-   <td><p>Y</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Category|Content Type|Feature|Flash|HTML5: FF, IE, Chrome, Android Chrome|HTML5: Safari, iOS Safari|
+|--- |--- |--- |--- |--- |--- |
+|Ad Insertion|MP4 VOD|Pre-roll (MP4)|Not Supported|Y|Y|
+|Ad Insertion|MP4 VOD|Post-roll (MP4)|Not Supported|Y|Y|
 
 For more information about HLS or DASH feature support, see below.
 
@@ -848,7 +786,7 @@ The following features are supported:
   <tr> 
    <td><p>Ad Insertion</p> </td> 
    <td><p>VOD + Live</p> </td> 
-   <td><p>Creative Repackaging (MP4<!--<a id="_bookmark12" name="_bookmark12"></a>--> to HLS)</p> </td> 
+   <td><p>Creative Repackaging (MP4 to HLS)</p> </td> 
    <td><p><strong> </strong></p> <p>Y</p> </td> 
    <td><p><strong> </strong></p> <p>Y</p> </td> 
    <td><p><strong> </strong></p> <p>Y</p> </td> 
@@ -968,7 +906,7 @@ Here is the feature matrix for the DASH features in Browser TVSDK.
 
 >[!NOTE]
 >
->*In the feature matrix tables below, a Y means that the feature is supported in the current release.*
+>In the feature matrix tables below, a Y means that the feature is supported in the current release.
 
 ### DASH Features {#dash-features}
 
@@ -982,7 +920,7 @@ The following features are supported:
    <td><p><strong>Category</strong></p> </td> 
    <td><p><strong>Content type</strong></p> </td> 
    <td><p><strong>Feature</strong></p> </td> 
-   <td><p><strong> </strong></p> <p><strong>HTML5 FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5 FF, IE, Chrome, Android Chrome</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Playback</p> </td> 
@@ -1134,7 +1072,7 @@ The following features are supported:
    <td><p><strong>Category</strong></p> </td> 
    <td><p><strong>Content type</strong></p> </td> 
    <td><p><strong>Feature</strong></p> </td> 
-   <td><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5 FF, IE, Chrome, Android Chrome</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Content Protection</p> </td> 
@@ -1152,7 +1090,7 @@ The following features are supported:
    <td><p>Content Protection</p> </td> 
    <td><p>VOD</p> </td> 
    <td><p>DRM</p> </td> 
-   <td><p>• Widevine on Chrome, Firefox 47+, and Chromecast</p> <p>• PlayReady on Internet Explorer on Windows 8.1 and Edge</p> <p>• Primetime DRM for Windows Firefox (video only)</p> </td> 
+   <td><p>• Widevine on Chrome, Firefox 47 and later, and Chromecast</p> <p>• PlayReady on Internet Explorer on Windows 8.1 and Edge</p> <p>• Primetime DRM for Windows Firefox (video only)</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1165,7 +1103,7 @@ The following features are supported:
    <td><p><strong>Category</strong></p> </td> 
    <td><p><strong>Content type</strong></p> </td> 
    <td><p><strong>Feature</strong></p> </td> 
-   <td><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5 FF, IE, Chrome, Android Chrome</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Ad Insertion</p> </td> 
@@ -1226,7 +1164,7 @@ The following features are supported:
    <td><p><strong>Category</strong></p> </td> 
    <td><p><strong>Content type</strong></p> </td> 
    <td><p><strong>Feature</strong></p> </td> 
-   <td><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5</strong> FF, IE, Chrome, Android Chrome</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Ad Insertion</p> </td> 
@@ -1281,7 +1219,7 @@ The following features are supported:
    <td><p><strong>Category</strong></p> </td> 
    <td><p><strong>Content type</strong></p> </td> 
    <td><p><strong>Feature</strong></p> </td> 
-   <td><p><strong> </strong></p> <p><strong>HTML5</strong></p> <p><strong>FF, IE, Chrome, Android Chrome</strong></p> </td> 
+   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Integrations</p> </td> 
@@ -1364,7 +1302,7 @@ The following issues are fixed in Browser TVSDK verison 2.4.9:
 
 • **16380**: During Muxed Audio Video Content Playback of segments having non-matching start times via MSE, Audio Sync Error between Representations accumulates on ABR switches, ultimately resulting in Error (Chromium issue #663686).
 
-• **17985**: On playing particular ISO-BMFF stream on Firefox browser, playback gets stuck(Firefox issue#1342913). This is fixed since Firefox v53.
+• **17985**: On playing particular ISO-BMFF stream on Firefox browser, playback gets stuck(Firefox issue #1342913). This is fixed since Firefox v53.
 
 • **19141**: Uncaught (in promise) ReferenceError: width is not define.
 
@@ -1402,23 +1340,23 @@ The following issues are fixed in Browser TVSDK verison 2.4.9:
 
 The following issues are fixed in Browser TVSDK verison 2.4.8 Update (Build 6002):
 
-• **14126: **Playback may stall on Firefox (issue #1316024) due to internal gap in MSE source buffer. Try seeking in order to resume playback
+• **14126:** Playback may stall on Firefox (issue #1316024) due to internal gap in MSE source buffer. Try seeking in order to resume playback
 
-• **19608: **Fix to honor the timeoffset value from Auditude VMAP response.
+• **19608:** Fix to honor the timeoffset value from Auditude VMAP response.
 
-• **19635: **Fixes Video Stall in Internet Explorer 11 on Windows 10.
+• **19635:** Fixes Video Stall in Internet Explorer 11 on Windows 10.
 
-• **19761: **Fixes for ABR issues with HLS.
+• **19761:** Fixes for ABR issues with HLS.
 
-• **19780: **Fixes the Ad playback with HLS content that was broken in Mozilla Firefox v53.
+• **19780:** Fixes the Ad playback with HLS content that was broken in Mozilla Firefox v53.
 
-• **19877 and 19744: **The issues fixes the inconsistency in selecting bitrate after a seek operation. Now the bitrate selection on seek is the lower value of the current bitrate and the bitrate at the start-up.
+• **19877 and 19744:** The issues fixes the inconsistency in selecting bitrate after a seek operation. Now the bitrate selection on seek is the lower value of the current bitrate and the bitrate at the start-up.
 
-• **19881: **Playback stuck and buffering overlay appears for infinite time after seeking is performed for 3-4 times.
+• **19881:** Playback stuck and buffering overlay appears for infinite time after seeking is performed for 3-4 times.
 
-• **19884: **Confirm compliance with Chrome 59 Beta Verified Media Path (VMP) requirements. bTVSDK was able to playback Widevine DRM content with Chrome 59 Beta.
+• **19884:** Confirm compliance with Chrome 59 Beta Verified Media Path (VMP) requirements. bTVSDK was able to playback Widevine DRM content with Chrome 59 Beta.
 
-• **19916: **DRM playback on UI-Framework was broken. Now, it invokes acquireLicense even if there is no policy in the metadata.
+• **19916:** DRM playback on UI-Framework was broken. Now, it invokes acquireLicense even if there is no policy in the metadata.
 
 #### Issues fixed in version 2.4.8 {#issues-fixed-in-version-4}
 
@@ -1497,7 +1435,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Content type</strong></p> </td> 
+   <td><strong>Content type</strong></td> 
    <td><strong>Feature</strong></td> 
    <td><strong>Flash</strong></td> 
    <td><strong>HTML5 in Firefox, IE, Chrome, Android Chrome</strong></td> 
@@ -1781,6 +1719,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
    <td> </td> 
    <td><p>• Ad behaviors are not supported for VPAID ads.</p> <p>• 15032: VPAID ads in combination with MP4 or HLS ads in an ad break are not supported.</p> <p>• 19001: On Android and iOS when VPAID ad is played with MP4 as main content double audio tracks are audible, one of main content and one of ad.</p> <p>• 20762: VPAID ads are not supported with Picture in Picture (PIP).</p> <p>• 21172: Play complete event is not received for HLS VOD content with VPAID ads.</p> <p>• 21173: onAdBreakCompleteEvent is not received for HLS VOD content and post roll VPAID ads.</p> </td> 
    <td>Player toggles between normal mode and fullscreen mode while switching between VPAID ad and Main content.</td> 
+   <td> </td> 
    <td> </td> 
   </tr> 
  </tbody> 

@@ -36,7 +36,7 @@ Here are the possible states:
 
 The complete list of states is defined in `MediaPlayerStatus`.
 
-Knowing the player’s state is useful because some operations are permitted only while the player is in a particular state. For example, `play` cannot be called while in the IDLE state. It must be called after reaching the PREPARED state. The ERROR state also changes what can happen next.
+Knowing the player's state is useful because some operations are permitted only while the player is in a particular state. For example, `play` cannot be called while in the IDLE state. It must be called after reaching the PREPARED state. The ERROR state also changes what can happen next.
 
 As a media resource is loaded and played, the player transitions in the following way:
 

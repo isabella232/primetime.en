@@ -16,7 +16,7 @@ Let us assume that you have performed the following tasks:
 
 1. The application creates a randomly generated ID.
 1. The application invokes the `DRMManager.authenticate()` method. The application must include the randomly generated ID in the authentication request. For instance, include the ID in the username field.
-1. The action mentioned in Step 2 will result in Primetime DRM sending an authentication request to the customer’s server. This request includes the device certificate:
+1. The action mentioned in Step 2 will result in Primetime DRM sending an authentication request to the customer's server. This request includes the device certificate:
    1. The server extracts the device certificate and the generated ID from the request and stores.
    1. The customer sub-system pre-generates licenses for this device certificate, stores them and grants access to them  in a way that associates them with the generated ID. .
 1. The server responds to the request with a "success" message.

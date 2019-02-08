@@ -62,7 +62,7 @@ To be notified about all playback-related events, register an implementation of 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onProfileChanged%28long,%20long%29" format="html" scope="external"> onProfileChanged</a> (long profile, long time) </td> 
-   <td colname="2"> The media player’s current profile has changed. Use the <span class="codeph"> Profile</span> property to get the new profile that is being played. Use the <span class="codeph"> time</span> property to get the time when this event occurred. </td> 
+   <td colname="2"> The media player's current profile has changed. Use the <span class="codeph"> Profile</span> property to get the new profile that is being played. Use the <span class="codeph"> time</span> property to get the time when this event occurred. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="col1"><b>MediaplayerItem</b> </td> 

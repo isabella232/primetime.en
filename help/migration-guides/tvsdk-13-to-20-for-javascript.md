@@ -148,8 +148,6 @@ Tables in this topic:
    <th>2.0 API</th> 
    <th>1.3 API</th> 
   </tr> 
- </tbody> 
- <tbody> 
   <tr> 
    <td><p>interface ReplaceTimeRange { <br /> attribute unsigned long begin; <br /> readonly attribute unsigned long end; <br /> attribute unsigned long duration; <br /> attribute unsigned long replaceDuration; <br /> };</p> </td> 
    <td>(New for 2.0)</td> 

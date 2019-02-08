@@ -8,7 +8,7 @@ uuid: 4825c49e-fa6f-4c98-9d21-a2743930ca2e
 
 This process presents a detailed, API-level view of the Primetime DRM protected-content workflow: 
 
-1. Using a `URLLoader` object, load the bytes of the protected content’s metadata file.
+1. Using a `URLLoader` object, load the bytes of the protected content's metadata file.
 
    Set this object to a variable, such as `metadata_bytes`.  All content controlled by Primetime DRM has Primetime DRM metadata. When the content is packaged, this metadata can be saved as a separate metadata file ( [!DNL .metadata]) alongside the content. Alternatively, the metadata can be Base64-encoded and inserted into the body of the video manifest file. For more information, see [Packaging Media Files](https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/#concept-Packaging_media_files).
    1. If necessary, remove the exclamation point `!` from the start of the string.

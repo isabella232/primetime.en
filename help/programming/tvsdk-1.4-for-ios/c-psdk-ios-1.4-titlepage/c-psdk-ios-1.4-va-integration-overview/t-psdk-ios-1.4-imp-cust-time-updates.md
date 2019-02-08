@@ -1,6 +1,6 @@
 ---
-description: In some analytics implementations, the client application might want to provide a different playhead position than the position that is reported by the TVSDK’s localTime value. For example, during a linear stream playback, each program’s playhead can be provided relative to its start time.
-seo-description: In some analytics implementations, the client application might want to provide a different playhead position than the position that is reported by the TVSDK’s localTime value. For example, during a linear stream playback, each program’s playhead can be provided relative to its start time.
+description: In some analytics implementations, the client application might want to provide a different playhead position than the position that is reported by the TVSDK's localTime value. For example, during a linear stream playback, each program's playhead can be provided relative to its start time.
+seo-description: In some analytics implementations, the client application might want to provide a different playhead position than the position that is reported by the TVSDK's localTime value. For example, during a linear stream playback, each program's playhead can be provided relative to its start time.
 seo-title: Implement custom time updates
 title: Implement custom time updates
 uuid: 303303eb-c371-4766-a1ee-806ba75b4e01
@@ -8,7 +8,7 @@ uuid: 303303eb-c371-4766-a1ee-806ba75b4e01
 
 # Implement custom time updates{#implement-custom-time-updates}
 
-In some analytics implementations, the client application might want to provide a different playhead position than the position that is reported by the TVSDK’s localTime value. For example, during a linear stream playback, each program’s playhead can be provided relative to its start time.
+In some analytics implementations, the client application might want to provide a different playhead position than the position that is reported by the TVSDK's localTime value. For example, during a linear stream playback, each program's playhead can be provided relative to its start time.
 
 >[!TIP]
 >

@@ -8,7 +8,7 @@ uuid: f3d8b4ef-bc45-4c2d-962b-638512ca0ef3
 
 When a consumer acquires a protected content file from a website or CDN, the consumer must also acquire a license that contains a key to decrypt the video before it can be played. The following steps illustrate a common workflow for how protected content is accessed by a computer running Flash Player or Adobe AIR: 
 
-1. The consumer visits the retailer’s website, and selects a video to watch. The consumer attempts to download or stream the protected video to their computer using either Flash Player or an Adobe AIR application.
+1. The consumer visits the retailer's website, and selects a video to watch. The consumer attempts to download or stream the protected video to their computer using either Flash Player or an Adobe AIR application.
 
    If this is the first time the consumer has attempted to access protected content using this specific computer, the Flash Player or Adobe AIR runtime must first be individualized as described in Step 2. If the runtime client has already been individualized, the process of acquiring a license occurs as described in Step 3. 
 
@@ -18,14 +18,14 @@ When a consumer acquires a protected content file from a website or CDN, the con
 
    The individualization process allows the downloaded licenses to be bound to a specific computer on which the client is installed. Every computer is given a unique machine credential (machine private key and machine certificate). If a specific client were to become compromised, it can be revoked and barred from acquiring licenses for new content. 
 
-1. The client parses the protected content as it begins to download or stream to the consumer’s computer, and extracts the URL of the retailer’s License Server from the DRM metadata embedded within the file.
+1. The client parses the protected content as it begins to download or stream to the consumer's computer, and extracts the URL of the retailer's License Server from the DRM metadata embedded within the file.
 
    The DRM metadata is typically separate from the content, such as embedded in an accompanying manifest file or as a binary blob, but can also be embedded within the content file. The client contacts the License Server at the specified URL, and acquires a license (as described below in Step 4).
-1. The client acquires a license from the retailer’s License Server.
+1. The client acquires a license from the retailer's License Server.
 
-   During license acquisition, the client sends information identifying the requested content (the *DRM metadata*) and the machine certificate (identifying the consumer’s computer) to the retailer’s License Server. The license request sent to the server is encrypted using the Transport public key, which is also included in the DRM metadata.
+   During license acquisition, the client sends information identifying the requested content (the *DRM metadata*) and the machine certificate (identifying the consumer's computer) to the retailer's License Server. The license request sent to the server is encrypted using the Transport public key, which is also included in the DRM metadata.
 
-   The License Server — which may be integrated into the retailer’s billing and authentication infrastructure — can perform a business rules check to verify that the user is authorized to view the requested content. If the business rules allow it, the License Server issues a license containing the content encryption key to decrypt the content and the usage rules associated with that user’s account. To process a license request, the License Server decrypts the request using its Transport private key. The CEK in the metadata is decrypted using the License Server private key, and re-encrypted to bind the license to the device making the request. The license is signed using the License server private key. The license response is signed using the Transport private key, and encrypted before being returned to the client.
+   The License Server — which may be integrated into the retailer's billing and authentication infrastructure — can perform a business rules check to verify that the user is authorized to view the requested content. If the business rules allow it, the License Server issues a license containing the content encryption key to decrypt the content and the usage rules associated with that user's account. To process a license request, the License Server decrypts the request using its Transport private key. The CEK in the metadata is decrypted using the License Server private key, and re-encrypted to bind the license to the device making the request. The license is signed using the License server private key. The license response is signed using the Transport private key, and encrypted before being returned to the client.
 
    If allowed by the license, the client stores the license to enable *offline access* to the license. License caching allows the consumer to view protected content without reacquiring a license every time they want to view content. 
 

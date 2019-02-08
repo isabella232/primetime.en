@@ -10,7 +10,7 @@ Primetime Cloud DRM supports nearly all of the features currently available with
 
 The features currently not supported by Primetime Cloud DRM are:
 
-* Content packaged with an External CEK (where the license server requests the content’s CEK from an external key management system) 
+* Content packaged with an External CEK (where the license server requests the content's CEK from an external key management system) 
 * Device Domains 
 * Advanced License Chaining 
 * License Return/Revocation 

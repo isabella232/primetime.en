@@ -61,7 +61,7 @@ Here are the key new features in version 2.4.1:
 
     * **Video playback** (play, pause, seek) with player control for live, linear, and VOD streams. 
     * **Closed captioning.** TVSDK can display 608/708 closed captions with a selection of fonts, font sizes, colors, and background. It can also support videos with roll-up captions and switch between language tracks if those are available. 
-    * **Trick play mode **supports fast forward and rewind for HLS streams that use I-Frames. All video playback controls function on the content. Slow motion (forward) is available for external video playback mode with rates between 0 and 1. 
+    * **Trick play mode** supports fast forward and rewind for HLS streams that use I-Frames. All video playback controls function on the content. Slow motion (forward) is available for external video playback mode with rates between 0 and 1. 
     * **Adaptive bitrate (ABR)** lets the player dynamically select which of multiple versions of the same content stream to play, based on network and other conditions. You can set parameters dynamically or in the manifest file to select among aggressive, moderate, and conservative selection policies. 
     * **Byte ranges** enable a single TS file to contain multiple TS segments. 
     * **Alternate audio renditions** enable the player to switch between available audio tracks. 
@@ -101,7 +101,7 @@ Here are the key new features version 2.4:
 * **Performance Improvements **The new TVSDK 2.4 architecture brings various performance improvements:
 
     * **Sub-segmentation** - TVSDK further reduces the size of each fragment to start playback as soon as possible. 
-    * **Parallel ad downloads **- TVSDK prefetches ads in parallel to the content playback before hitting the ad breaks thus enabling seamless playback of ads and content.
+    * **Parallel ad downloads** - TVSDK prefetches ads in parallel to the content playback before hitting the ad breaks thus enabling seamless playback of ads and content.
     * **Lazy ad resolution** - With this feature, we don't wait for resolution of non-preroll ads before starting playback, thus decreasing the startup time. APIs like seek and trick-play are still not allowed until all ads are resolved.
 
 * **MP4 content playback**
@@ -112,11 +112,11 @@ This version of TVSDK supports playback of MP4 as main content.
 
 TVSDK maintains a set of reusable network connections, so it does not incur the overhead of creating and destroying a network connection for each network request.
 
-* **Resolution-based output protection **
+* **Resolution-based output protection**
 
 This feature ties playback restrictions to specific resolutions, providing finer grained DRM controls.
 
-* **Trick play with adaptive bit rate (ABR) **
+* **Trick play with adaptive bit rate (ABR)**
 
 This feature allows TVSDK to switch between iFrame streams while in trick play mode. You can use non-iFrame profiles to do trick play at lower speeds.
 
@@ -134,7 +134,7 @@ The new ABR logic is based on buffer length, rate of change of buffer length, an
 
 * **Billing**
 
-TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer’s own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation.
+TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer's own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation.
 
 ## Supported Features {#supported-features}
 
@@ -172,80 +172,80 @@ TVSDK for Android 2.4 supports a number of features that you can implement to ad
 <table> 
  <tbody>
   <tr>
-   <td style="text-align: left;"><strong>Feature</strong></td> 
-   <td style="text-align: left;"><strong>Content Type</strong></td> 
-   <td style="text-align: left;"><strong>HLS</strong></td> 
-   <td style="text-align: left;"><strong>DASH</strong></td> 
+   <td><strong>Feature</strong></td> 
+   <td><strong>Content Type</strong></td> 
+   <td><strong>HLS</strong></td> 
+   <td><strong>DASH</strong></td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Playback With Offset</td> 
-   <td style="text-align: left;">Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Playback With Offset</td> 
+   <td>Live</td> 
+   <td>√</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Audio Only Playback</td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Audio Only Playback</td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Trick Play </td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Trick Play </td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Smooth Trick Play (with ABR)</td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Smooth Trick Play (with ABR)</td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">ID3 Parsing (HLS) / Timed Metadata (DASH)</td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>ID3 Parsing (HLS) / Timed Metadata (DASH)</td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Blackouts </td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">Not supported</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Blackouts </td> 
+   <td>VOD + Live</td> 
+   <td>Not supported</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Instant On</td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Instant On</td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">
+   <td>
     <ul> 
      <li>Discontinuity marker support (HLS) </li> 
      <li>Multi-period (DASH)</li> 
     </ul> </td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">302 Redirect Stickyness</td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">√ (VOD only)</td> 
+   <td>302 Redirect Stickyness</td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>√ (VOD only)</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Thumbnail Scrubbing (Iframe and JPEG)</td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">Not supported</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Thumbnail Scrubbing (Iframe and JPEG)</td> 
+   <td>VOD + Live</td> 
+   <td>Not supported</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Stream Integrity </td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Stream Integrity </td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>Not supported</td> 
   </tr>
  </tbody>
 </table>
@@ -266,46 +266,46 @@ TVSDK for Android 2.4 supports a number of features that you can implement to ad
 <table> 
  <tbody>
   <tr>
-   <td style="text-align: left;"><strong>Feature</strong></td> 
-   <td style="text-align: left;"><strong>Content Type</strong></td> 
-   <td style="text-align: left;"><strong>HLS</strong></td> 
-   <td style="text-align: left;"><strong>DASH</strong></td> 
+   <td><strong>Feature</strong></td> 
+   <td><strong>Content Type</strong></td> 
+   <td><strong>HLS</strong></td> 
+   <td><strong>DASH</strong></td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Trick Play with Ads Enabled</td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Trick Play with Ads Enabled</td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Ad only </td> 
-   <td style="text-align: left;">VOD</td> 
-   <td style="text-align: left;">Not supported</td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Ad only </td> 
+   <td>VOD</td> 
+   <td>Not supported</td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Targeting Parameters</td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">√ (VOD Pre-rolls only)</td> 
+   <td>Targeting Parameters</td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>√ (VOD Pre-rolls only)</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Custom Parameters</td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">√ (VOD Pre-rolls only)</td> 
+   <td>Custom Parameters</td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>√ (VOD Pre-rolls only)</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Custom Ad Behaviors</td> 
-   <td style="text-align: left;">VOD + Live</td> 
-   <td style="text-align: left;">√</td> 
-   <td style="text-align: left;">√ (VOD Pre-rolls only)</td> 
+   <td>Custom Ad Behaviors</td> 
+   <td>VOD + Live</td> 
+   <td>√</td> 
+   <td>√ (VOD Pre-rolls only)</td> 
   </tr>
   <tr>
-   <td style="text-align: left;">Custom Ad Tags</td> 
-   <td style="text-align: left;">Live</td> 
-   <td style="text-align: left;">√ </td> 
-   <td style="text-align: left;">Not supported</td> 
+   <td>Custom Ad Tags</td> 
+   <td>Live</td> 
+   <td>√ </td> 
+   <td>Not supported</td> 
   </tr>
   <tr>
    <td>Custom Ad Resolvers</td> 

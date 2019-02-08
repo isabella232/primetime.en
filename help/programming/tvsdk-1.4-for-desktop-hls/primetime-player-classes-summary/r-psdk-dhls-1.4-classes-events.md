@@ -26,10 +26,10 @@ These classes describe events that the TVSDK dispatches to your media player in 
 | ` [MediaPlayerStatusChangeEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerStatusChangeEvent.html)`  | Class. The media player status changed.  |
 | ` [MediaPlayerViewEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerViewEvent.html)`  | Class. The `MediaPlayerView` was clicked.  |
 | ` [PlaybackRateEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/PlaybackRateEvent.html)`  | Class. The media player's playback rate changes.  |
-| ` [ProfileEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/ProfileEvent.html)`  | Class. The media player’s adaptive bit rate switching algorithm has switched to another profile due to network or machine conditions.  |
+| ` [ProfileEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/ProfileEvent.html)`  | Class. The media player's adaptive bit rate switching algorithm has switched to another profile due to network or machine conditions.  |
 | ` [SeekEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/SeekEvent.html)`  | Class. The player started seeking or the seek operation completed.  |
 | ` [SizeAvailableEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/SizeAvailableEvent.html)`  | Class. The video size is available.  |
-| ` [TimeChangeEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimeChangeEvent.html)`  | Class. The media player’s status changed.  |
+| ` [TimeChangeEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimeChangeEvent.html)`  | Class. The media player's status changed.  |
 | ` [TimedMetadataEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimedMetadataEvent.html)`  | Class. A timed metadata is processed by the opportunity detector.  |
 | ` [TimelineEvent](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimelineEvent.html)`  | Class. The media player timeline has changed.  |
 

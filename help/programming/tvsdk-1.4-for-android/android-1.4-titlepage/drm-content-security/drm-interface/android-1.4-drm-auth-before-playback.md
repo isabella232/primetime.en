@@ -103,7 +103,7 @@ When this is the case, use `DRMHelper` methods to download the contents of the D
         final DRMAuthenticationListener authenticationListener);
    ```
 
-   This example, for simplicity, explicitly codes the user’s name and password.
+   This example, for simplicity, explicitly codes the user's name and password.
 
    ```java
    DRMHelper.performDrmAuthentication(drmManager, drmMetadata, DRM_USERNAME, DRM_PASSWORD,  

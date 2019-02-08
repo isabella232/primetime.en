@@ -34,7 +34,7 @@ The UI Framework provides a default captions behaviors implementation, which can
 
 ```js
 // Using UI Framework 
-var playerWrapper = ptp.videoPlayer(‘.videoDiv’, { 
+var playerWrapper = ptp.videoPlayer(‘.videoDiv', { 
 player:{ 
     mediaResource: 'Specify Resource URL', 
     ccStyle: { 

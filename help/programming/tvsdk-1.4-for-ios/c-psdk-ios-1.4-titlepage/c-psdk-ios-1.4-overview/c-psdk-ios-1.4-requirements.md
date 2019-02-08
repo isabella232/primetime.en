@@ -38,19 +38,19 @@ Here is some information about the `#EXT-X-VERSION` tag, which specifies the HLS
 
 Clients and servers must implement the versions in the following way:  
 
-<table frame="all" colsep="1" rowsep="1" id="table_62EB98EDD9DE49EC84CB1C7D59BC40E6"> 
+<table id="table_62EB98EDD9DE49EC84CB1C7D59BC40E6"> 
  <thead> 
-  <tr rowsep="1"> 
+  <tr> 
    <th colname="1" class="entry"> Use at least this version </th> 
    <th colname="2" class="entry"> To use these features </th> 
   </tr> 
  </thead>
  <tbody> 
-  <tr rowsep="1"> 
+  <tr> 
    <td colname="1"> <span class="codeph"> EXT-X-VERSION:2 </span> </td> 
    <td colname="2"> The IV attribute of the <span class="codeph"> EXT-X-KEY </span> tag. </td> 
   </tr> 
-  <tr rowsep="1"> 
+  <tr> 
    <td colname="1"> <span class="codeph"> EXT-X-VERSION:3 </span> </td> 
    <td colname="2"> 
     <ul id="ul_C9500D3F934848639C204BF248F139FF"> 
@@ -58,7 +58,7 @@ Clients and servers must implement the versions in the following way:
      <li id="li_8DF5E91F1D5D4E19894595E1FE0A5EDE"> TVSDK features such as ad insertion and seamless ABR </li> 
     </ul> </td> 
   </tr> 
-  <tr rowsep="0"> 
+  <tr> 
    <td colname="1"> <p> <span class="codeph"> EXT-X-VERSION:4 </span> </p> </td> 
    <td colname="2"> <p> 
      <ul id="ul_99E24D013E3141308B5A57446A9B8033"> 

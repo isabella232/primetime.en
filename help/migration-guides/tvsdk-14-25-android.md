@@ -14,7 +14,7 @@ discoiquuid: 8d9136bf-b3ae-450c-bd8a-0bb246527886
 
 TVSDK 2.5 offers multiple benefits over version 1.4 in terms of performance, security, better integrations, and more.
 
-TVSDK solves the biggest challenges, on the device that matter the most. Android continues it’s global dominance, with over 86% of market share. Migration to TVSDK on Android will optimize playback performance to improve user engagement and accelerate time-to-market with support for new content formats.
+TVSDK solves the biggest challenges, on the device that matter the most. Android continues it's global dominance, with over 86% of market share. Migration to TVSDK on Android will optimize playback performance to improve user engagement and accelerate time-to-market with support for new content formats.
 
 ## Benefits of migrating to TVSDK v2.5 {#benefits-of-migrating-to-tvsdk-v}
 
@@ -35,7 +35,7 @@ The playback features improve consumer engagement by delivering the experience o
 
 |Playback Features|Description|
 |--- |--- |
-|MP4 playback|MP4 short clips don’t have to be re-transcoded to playback within TVSDK.|
+|MP4 playback|MP4 short clips don't have to be re-transcoded to playback within TVSDK.|
 |DASH VOD content playback|Basic DASH VOD playback use cases are supported.|
 |Smooth Trickplay with ABR|Support for fast forward and rewind in HLS using keyframes at low rates and I-Frames at faster speeds. ABR support for all supported frames.|
 

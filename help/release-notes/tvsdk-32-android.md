@@ -15,11 +15,11 @@ TVSDK 3.2 for Android Release Notes describe what is new or changed, the resolve
 
 ## TVSDK Android 3.2 {#tvsdk-android}
 
-The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README<span></span>.md file explains how to build the reference player.
+The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README.md file explains how to build the reference player.
 
 >[!NOTE]
 >
->To successfully build the reference player, as described in the README<span></span>.md distributed with the release, make sure you do the following:
+>To successfully build the reference player, as described in the README.md distributed with the release, make sure you do the following:
 >
 >1. Download VideoHeartbeat.jar from [https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) (VideoHeartbeat library for Android v2.0.0)
 >1. Extract VideoHeartbeat.jar into the libs/ folder.
@@ -34,34 +34,39 @@ The comprehensive set of features supported and not supported are presented in t
 ### What's New in TVSDK 3.2 {#what-s-new-in-tvsdk}
 
 * **Parallel Ad Resolution and Manifest download support**
+
     * TVSDK 3.2 supports the simultaneous resolution, instead of the sequential resolution for all the Ad requests and Ad breaks except for VMAP.
     * All the ad manifests in an ad break are downloaded simultaneously. 
 * **Enabled support for Ad Resolution and Manifest Download Timeout.**
+
     * Users can now set the timeout value for overall ad resolution and manifest downloads.  In the case of VMAP, the timeout value applies for individual ad breaks as all the ad breaks are resolved sequentially.
 * **Introduced new APIs in AdvertisingMetadata Class:**
+
     * void setAdResolutionTimeout(int adResolutionTimeout)
     * int getAdResolutionTimeout()
     * void setAdManifestTimeout(int adManifestTimeout)
     * int getAdManifestTimeout()
 * **Removed below APIs from AdvertisingMetadata Class:**
+
     * void setAdRequestTimeout(int adRequestTimeout)
     * int getAdRequestTimeout()
 *   **Enabled playback of streams with AC3/EAC3 audio codec** 
+
     * void alwaysUseAC3OnSupportedDevices(boolean val)in MediaPlayer class
 * **TVSDK supports CMAF and plain streams playback for encrypted Widevine CTR.**
 * **Playback of 4K HEVC streams is now supported.**
 * **Parallel ad call requests** - TVSDK now prefetches 20 ad call requests in parallel.
 
-<details>
-<summary><b>New features in the previous releases</b></summary>
-<p>
+#### New features in the previous releases
 
 **Version 3.0**
 
 * **TVSDK 3.0 supports High Efficiency Video Coding (HEVC) streams.**
 
 * **Just in Time - Resolving ads closer to ad markers**  
+
   Lazy Ad Resolving now resolves each ad break independently. Previously, ad resolution was a two-phased approach: pre-rolls were resolved prior to playback start and all mid/post roll slots combined after playback started. With this enhanced feature, each ad break is now resolved at a specific time prior to the ad cue point.
+
   **Please note: Lazy Ad Resolving has now changed to be turned off by default, and explicitly needs to be enabled.**
   
   A new API is added to *AdvertisingMetadata::setDelayAdLoadingTolerance* to get the delayed ad loading tolerance associated with this Advertising Metadata.  
@@ -74,6 +79,7 @@ The comprehensive set of features supported and not supported are presented in t
   **Update `targetSdkVersion` from 19 to 27 for smooth functioning.
 
 * **Placement.Type getPlacementType() is now a method on interface TimelineMarker** 
+
   This method will return a placement type of Placement.Type.PRE_ROLL, Placement.Type.MID_ROLL or Placement.Type.POST_ROLL. If an ad break is unresolved, the getDuration() method on the TimelineMarker interface will return 0.
 
 **Version 2.5.6.**
@@ -81,27 +87,34 @@ The comprehensive set of features supported and not supported are presented in t
 * **TVSDK 2.5 supports Android P.**
 
 * **Enabling Background Audio**
+
   To enable audio playback when app moves from foreground to background, app should call `enableAudioPlaybackInBackground` API of MediaPlayer with true as argument when player is in PREPARED state.
 
 * **alwaysUseAudioOutputLatency(boolean val) in MediaPlayer class**
+
 When set, use output latency in the audio timestamp calculation.
 Boolean parameters val - True will use audio output latency in audio timestamp calculation.
 
 * **Optimized to get the best playback experience even if the bandwidth speed falls off suddenly**
-TVSDK now cancels the ongoing segment’s download, if required, and dynamically switches to the appropriate rendition. This is done by seamlessly switching among the bitrates without interruptions.
+
+TVSDK now cancels the ongoing segment's download, if required, and dynamically switches to the appropriate rendition. This is done by seamlessly switching among the bitrates without interruptions.
 
 **Version 2.5.5**
 
 * **Partial Ad-Break Insertion**  
+
   TV-like experience of joining in the middle of an ad without firing the tracking for the partially watched ad.  
   Example: User joins in the middle (at 40 seconds) of a 90-second ad break consisting of three 30-second ads. This is 10 seconds into the second ad in the break.
+
     * The second ad plays for the remaining duration (20 sec) followed by the third ad.
     * Ad trackers for the partial ad played (second ad) are not fired. The trackers for only the third ad are fired.
 
 * **Secure Ad Loading over HTTPS** 
+
   Adobe Primetime provides an option to request first call to primetime ad server and CRS over https.
 
 * **AdSystem and Creative Id added to CRS requests**
+
     * Now including 'AdSystem' and 'CreativeId' as new parameters in the 1401 and 1403 requests.
 
 * **API setEncodeUrlForTracking in NetworkConfiguration class removed** as the unsafe characters in a URL should be encoded.
@@ -156,6 +169,7 @@ Android TVSDK v2.5.2 offers important bug fixes and a few API changes.
 The important new features released in Android 2.5.1.
 
 * **Performance Improvements**The new TVSDK 2.5.1 architecture brings a number of performance improvements. Based on statistics from a third party benchmarking study, the new architecture provides a 5x reduction in startup time and 3.8x fewer dropped frames compared to the industry average:
+
     * **Instant on for VOD and live -** When you enable instant on, the TVSDK initializes and buffers media before playback starts. Because you can launch multiple MediaPlayerItemLoader instances simultaneously in the background, you can buffer multiple streams. When a user changes the channel, and the stream has buffered properly, playback on the new channel starts immediately. TVSDK 2.5.1 also supports the Instant On for **live** streams also. The live streams are re-buffered when the live window moves.
     * **Improved ABR logic -** The new ABR logic is based on buffer length, rate of change of buffer length, and measured bandwidth. This ensures that the ABR chooses the right bit rate when the bandwidth fluctuates and also optimizes the number of times the bitrate switch actually happens by monitoring the rate at which the buffer length changes.
     * **Partial Segment Download / Sub-segmentation -** TVSDK further reduces the size of each fragment, in order to start playback as soon as possible. The ts fragment must have a key frame every two seconds.
@@ -182,7 +196,7 @@ The important new features released in Android 2.5.1.
 
     * **Direct Billing Integration -** This sends billing metrics to the Adobe Analytics backend, which is certified by Adobe Primetime for streams used by the customer.
 
-      TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer’s own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation. This feature is enabled by default. To turn this feature off, refer to the reference player sample.
+      TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer's own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation. This feature is enabled by default. To turn this feature off, refer to the reference player sample.
     
     * **Improved Failover Support -** Additional strategies implemented to continue uninterrupted playback, despite failures of host servers, playlist files, and segments.
 
@@ -214,8 +228,6 @@ The important new features released in Android 2.5.1.
 * **Cookies**
 
     * Android TVSDK now supports access to JAVA cookies stored in CookieStore of the Android Application. A Callback API (onCookiesUpdated) is provided to record whenever a new Cookie comes as part of "Set-Cookie" Response header. These cookies are available as a List of HttpCookie(s) used for a different URI/domain by setting these cookie values on that particular URI/domain using CookieStore. Similarly the cookie values in TVSDK are updated using CookieStore add API.
-    </p>
-    </details>
 
 ## Feature matrix {#feature-matrix}
 
@@ -308,22 +320,24 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 * ZD#36985- Tracking beacons are not sent for empty ad breaks in VMAP response. 
 * ZD#37134 - TVSDK throws the wrong ID for VMAP response intermittently.
 
-<details>
-<summary><b>Resolved issues in the previous releases</b></summary>
-<p>
+#### Resolved issues in the previous releases
 
 **Version 3.0**
 
 * ZD#33740 - TVSDK throws an unneeded warning just after creating a MediaPlayer object and calling replaceCurrentResource()
+
     * Improved the earlier fix by calling restore only when player is in suspended state
 
 * ZD#36442 - Every new playback disconnects remote debugging session making it impossible to debug.
+
     * Debug not possible by default on web view as debugging is not enabled by default. App should enable debugging if required by calling setWebContentsDebuggingEnabled(true) on object returned from MediaPlayer.getCustomAdView().
 
 * ZD#33688 - Support for Just In Time ad resolving
+
     * Ad breaks are resolved at a specified interval prior to the position of the ad break.
 
 * ZD#36441 - Duration of live window keeps increasing beyond 5 minutes causing multiple issues.
+
     * Fixed an issue where virtualStartTime was getting added twice while calculating virtual live point resulting in this issue.
 
 **Android TVSDK 2.5.6**
@@ -476,7 +490,7 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 * Zendesk #30727 VOD ads are not being downloaded/resolved.
 
-  In VMAP XML if there is an empty VAST tag without an explicit closing tag (‘&lt;/VAST&gt;’) and without a newline character after it, then the VMAP XML is not parsed properly and ads may not play.
+  In VMAP XML if there is an empty VAST tag without an explicit closing tag (‘&lt;/VAST&gt;') and without a newline character after it, then the VMAP XML is not parsed properly and ads may not play.
 
 **Android TVSDK 2.5.1**
 
@@ -489,9 +503,6 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 * HLS with separate EAC3 SAP track won't load.
 * Player crashes as TVSDK receives a Screen On intent after the Media Player is restored.
 
-</p>
-</details>
-
 ## Known issues and limitations {#known-issues-and-limitations}
 
 **Android TVSDK 3.2**
@@ -502,9 +513,7 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 * CMAF streams do not support ID3 events.
 * HLS streams do not support TTML captions format.
 
-<details>
-<summary><b>Known issues and limitations in the previous releases</b></summary>
-<p>
+### Known issues and limitations in the previous releases
 
 **Android TVSDK 3.0**
 
@@ -549,9 +558,6 @@ This version of TVSDK has the following issues:
 * For FER streams, virtualTime and localTime may differ. Also, FER with offset does not work.
 * In VMAP XML, if there is an empty VAST tag without an explicit closing tag (&lt;/VAST&gt;), and without a newline after it, then the VMAP XML is not parsed properly and ads may not play.
 * VPAID post-roll are not supported.
-
-</p>
-</details>
 
 ## Helpful resources {#helpful-resources}
 

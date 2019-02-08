@@ -6,7 +6,7 @@ uuid: 2d876eb0-b1a5-4c30-ae96-0a22f6a03910
 
 # Preparing passwords for the Server properties files {#preparing-passwords-for-the-server-properties-files}
 
-To ensure the security of your credential’s password, a tool is provided to encrypt the password before it is entered into the [!DNL flashaccess-refimpl.properties] or [!DNL flashaccess-refimpl-packager.properties] file.
+To ensure the security of your credential's password, a tool is provided to encrypt the password before it is entered into the [!DNL flashaccess-refimpl.properties] or [!DNL flashaccess-refimpl-packager.properties] file.
 
 To run the tool using the ANT script provided:
 
@@ -19,7 +19,7 @@ To run the tool using the ANT script provided:
       ant -f build-refimpl.xml
   ```
 
-* When prompted, type your credential’s password
+* When prompted, type your credential's password
 
 To run the tool using Java:
 

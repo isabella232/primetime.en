@@ -12,7 +12,7 @@ The Adobe Access SDK supports two options for converting metadata:
 
 * Offline (recommended)
 
-  Generate the Adobe Access metadata in an offline process and store it for use when a client requests it. Adobe recommends this option. If metadata is generated offline, the license server does not need access to the 1.x CEKs or the packager credential. In addition, converting offline offers better performance because the License Server doesn’t need to generate the metadata in real time. 
+  Generate the Adobe Access metadata in an offline process and store it for use when a client requests it. Adobe recommends this option. If metadata is generated offline, the license server does not need access to the 1.x CEKs or the packager credential. In addition, converting offline offers better performance because the License Server doesn't need to generate the metadata in real time. 
 
 * On-demand
 

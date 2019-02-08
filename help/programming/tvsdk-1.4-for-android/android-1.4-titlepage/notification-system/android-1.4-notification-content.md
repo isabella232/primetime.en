@@ -14,7 +14,7 @@ Your application can retrieve the notification and state information. You can al
 
 You implement event listeners to capture and respond to events. Many events provide `MediaPlayerNotification` status notifications.
 
-`MediaPlayerNotification` provides information that is related to the player’s status.
+`MediaPlayerNotification` provides information that is related to the player's status.
 
 TVSDK provides a chronological list of `MediaPlayerNotification` notifications. Each notification contains the following information:
 

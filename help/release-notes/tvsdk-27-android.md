@@ -15,11 +15,11 @@ TVSDK 2.7 for Android Release Notes describe what is new or changed, the resolve
 
 ## TVSDK Android 2.7 {#tvsdk-android}
 
-The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README<span></span>.md file explains how to build the reference player.
+The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README<.md file explains how to build the reference player.
 
 >[!NOTE]
 >
->To successfully build the reference player, as described in the README.<span></span>md distributed with the release, make sure you do the following:
+>To successfully build the reference player, as described in the README.md distributed with the release, make sure you do the following:
 >
 >1. Download VideoHeartbeat.jar from [https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) (VideoHeartbeat library for Android v2.0.0)
 >1. Extract VideoHeartbeat.jar into the libs/ folder.
@@ -39,27 +39,32 @@ TVSDK 2.7 supports the concurrent resolution of all the Ad requests in an Ad bre
 
 * **TVSDK 2.5 supports Android P** 
 * **Enabling Background Audio**  
+
   To enable audio playback when app moves from foreground to background, app should call enableAudioPlaybackInBackground API of MediaPlayer with true as argument when player is in PREPARED state.
 
 * **alwaysUseAudioOutputLatency(boolean val) in MediaPlayer class**
+
 When set, use output latency in the audio timestamp calculation.
 Boolean parameters val - True will use audio output latency in audio timestamp calculation.
 
 * **Optimized to get the best playback experience even if the bandwidth speed falls off suddenly.**
-  TVSDK now cancels the ongoing segment’s download, if required, and dynamically switches to the appropriate rendition. This is done by seamlessly switching among the bitrates without interruptions.
+  TVSDK now cancels the ongoing segment's download, if required, and dynamically switches to the appropriate rendition. This is done by seamlessly switching among the bitrates without interruptions.
 
 **Version 2.5.5**
 
 * **Partial Ad-Break Insertion**  
+
   TV-like experience of joining in the middle of an ad without firing the tracking for the partially watched ad.  
   Example**: **User joins in the middle (at 40 seconds) of a 90-second ad break consisting of three 30-second ads. This is 10 seconds into the second ad in the break.
     * The second ad plays for the remaining duration (20 sec) followed by the third ad.
     * Ad trackers for the partial ad played (second ad) are not fired. The trackers for only the third ad are fired.
 
 * **Secure Ad Loading over HTTPS**  
+
   Adobe Primetime provides an option to request first call to primetime ad server and CRS over https.
 
 * **AdSystem and Creative Id added to CRS requests**
+
     * Now including 'AdSystem' and 'CreativeId' as new parameters in the 1401 and 1403 requests.
 
 * **API setEncodeUrlForTracking in NetworkConfiguration class removed** as the unsafe characters in a URL should be encoded.
@@ -67,6 +72,7 @@ Boolean parameters val - True will use audio output latency in audio timestamp c
 **Version 2.5.4**
 
 Android TVSDK v2.5.4 offers the following updates and API changes:
+
 * Changes in default value for WebViewDebbuging
   WebViewDebbuging value is set to False by default. To enable it, call setWebContentsDebuggingEnabled(true) in the application.
 * OpenSSL and Curl version upgrade
@@ -77,16 +83,19 @@ Android TVSDK v2.5.4 offers the following updates and API changes:
 **Version 2.5.3**
 
 Android TVSDK v2.5.3 offers the following updates and API changes.
+
 * All TVSDK customers who use CRS are encouraged to upgrade their apps with TVSDK 2.5.3.85 or latest on Android. This will be a drop-in replacement to the existing app implementation. After the TVSDK upgrade, check for the CRS creative URL requests in a proxy tool (ex: Charles) and confirm that the host name and version in the path reflects as in the sample URL structure below.
 
   `https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784 bf3586d.m3u8`
 
 * TVSDK's User Agent customizable: we have added some new API's to customize the user agents.
+
     * setCustomUserAgent(String value)
     * getCustomUserAgent()
 
 * Share cookies between Android Application and TVSDK: Android TVSDK now supports accessing of cookies between JAVA layer (stored in CookieStore of the Android Application) and the C++ TVSDK layer. Now, it's possible to set and/or modify the cookies in native C++ layer as they will be exposed to the Java Cookie Store.
 * API changes:
+
   * A new Event CookiesUpdatedEvent is added. It gets dispatched by the media player when its cookie is updated.
   * A new API is added to NetworkConfiguration::set/ getCustomUserAgent() to use custom user agent.
   * A new API is added to NetworkConfiguration::set/ getEncodedUrlForTracking to force Encoding of Unsafe characters.
@@ -105,7 +114,9 @@ Android TVSDK v2.5.2 offers important bug fixes and a few API changes.
 The important new features released in Android 2.5.1.
 
 * **Performance Improvements**The new TVSDK 2.5.1 architecture brings a number of performance improvements. Based on statistics from a third party benchmarking study, the new architecture provides a 5x reduction in startup time and 3.8x fewer dropped frames compared to the industry average:
+
   * **Instant on for VOD and live -** When you enable instant on, the TVSDK initializes and buffers media before playback starts. Because you can launch multiple MediaPlayerItemLoader instances simultaneously in the background, you can buffer multiple streams. When a user changes the channel, and the stream has buffered properly, playback on the new channel starts immediately. TVSDK 2.5.1 also supports the Instant On for **live** streams also. The live streams are re-buffered when the live window moves.
+
     * **Improved ABR logic -** The new ABR logic is based on buffer length, rate of change of buffer length, and measured bandwidth. This ensures that the ABR chooses the right bit rate when the bandwidth fluctuates and also optimizes the number of times the bitrate switch actually happens by monitoring the rate at which the buffer length changes.
     * **Partial Segment Download / Sub-segmentation -** TVSDK further reduces the size of each fragment, in order to start playback as soon as possible. The ts fragment must have a key frame every two seconds.
     * **Lazy ad resolution -** TVSDK doesn't wait for resolution of non-preroll ads before starting playback, thus decreasing the startup time. APIs like seek and trick-play are still not allowed until all ads are resolved. This is applicable to VOD streams used with CSAI. Operations like seek and fast forward are not permitted till the ad resolution is completed. For live streams this feature cannot be enabled for ad resolution during a live event.
@@ -120,15 +131,18 @@ The important new features released in Android 2.5.1.
       Note: ABR switching, trick play, ad insertion, late audio binding, and sub-segmentation are not supported for MP4 playback.
   * **Trick play with adaptive bit rate (ABR) -** This feature allows TVSDK to switch between iFrame streams while in trick play mode. You can use non-iFrame profiles to do trick play at lower speeds.
   * **Smoother trick play -** These improvements enhance the user experience:
+
         * Adaptive bit-rate and frame rate selection during trick play, based on bandwidth and buffer profile
         * Use of the main stream instead of the IDR stream to get up to 30 fps fast playback.
 
 * **Content Protection**
+
     * **Resolution-based output protection -** This feature ties playback restrictions to specific resolutions, providing finer grained DRM controls.
 
 * **Workflow Support**
+
   * **Direct Billing Integration -** This sends billing metrics to the Adobe Analytics backend, which is certified by Adobe Primetime for streams used by the customer.
-      TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer’s own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation. This feature is enabled by default. To turn this feature off, refer to the reference player sample.    
+      TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer's own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation. This feature is enabled by default. To turn this feature off, refer to the reference player sample.    
   * **Improved Failover Support -** Additional strategies implemented to continue uninterrupted playback, despite failures of host servers, playlist files, and segments.
 
 * **Advertising**
@@ -143,19 +157,22 @@ The important new features released in Android 2.5.1.
 * **SizeAvaliableEventListener**
   * getHeight() and getWidth() methods of SizeAvailableEvent will now return output in height and width respectively. Display aspect ratio can be calculated as follows:
 
-      SizeAvailableEvent e;
+    ```
+    SizeAvailableEvent e;
 
-      DAR = e.getWidth()/ e.getHeight();
+    DAR = e.getWidth()/ e.getHeight();
 
-      Storage Aspect Ratio in terms of Sar width and Sar height can also be used to calculate Frame width and Frame height:
+    Storage Aspect Ratio in terms of Sar width and Sar height can also be used to calculate Frame width and Frame height:
 
-      SAR = e.getSarWidth()/e.getSarHeight();
+    SAR = e.getSarWidth()/e.getSarHeight();
 
-      frameHeight = e.getHeight();
+    frameHeight = e.getHeight();
 
-      frameWidth = e.getWidth()/SAR;
+    frameWidth = e.getWidth()/SAR;
+    ```
 
 * **Cookies**
+
   * Android TVSDK now supports access to JAVA cookies stored in CookieStore of the Android Application. A Callback API (onCookiesUpdated) is provided to record whenever a new Cookie comes as part of "Set-Cookie" Response header. These cookies are available as a List of HttpCookie(s) used for a different URI/domain by setting these cookie values on that particular URI/domain using CookieStore. Similarly the cookie values in TVSDK are updated using CookieStore add API.
 
 ## Feature matrix {#feature-matrix}
@@ -243,7 +260,7 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 ## Resolved issues {#resolved-issues}
 
-### Android TVSDK 2.7 {#android-tvsdk}
+### Android TVSDK 2.7 {#android-tvsdk-resolved}
 
 * ZD#37166 - Error tracking call gets fired even when the ad is played fine.
 * ZD#37134 - Wrong Ad IDs are returned, in case, wrapper(3P) Ad is present with multiple ads in VMAP response.
@@ -343,7 +360,7 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 * Zendesk #30727 VOD ads are not being downloaded/resolved.
 
-  In VMAP XML if there is an empty VAST tag without an explicit closing tag (‘&lt;/VAST&gt;’) and without a newline character after it, then the VMAP XML is not parsed properly and ads may not play.
+  In VMAP XML if there is an empty VAST tag without an explicit closing tag (‘&lt;/VAST&gt;') and without a newline character after it, then the VMAP XML is not parsed properly and ads may not play.
 
 **Android TVSDK 2.5.1**
 
@@ -358,7 +375,7 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-### Android TVSDK 2.7 {#android-tvsdk}
+### Android TVSDK 2.7 {#android-tvsdk-issues}
 
 * TVSDK 2.7 supports concurrent resolution up to 5 Ads.
 * In the case of VMAP response, Ad calls in a single Ad break go concurrently, and the Ad breaks are resolved sequentially. 

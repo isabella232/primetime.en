@@ -6,7 +6,7 @@ uuid: ecf9bdd8-0bd2-4616-a6e5-a46bb55d16ab
 
 # Create policies and package content{#create-policies-and-package-content}
 
-Using the usage rules supported by the SDK, you must define and create policies in support of your organization’s business model, and then package your content using those policies. Once policies are applied to content during packaging, you can maintain control of your content no matter how widely it is distributed.
+Using the usage rules supported by the SDK, you must define and create policies in support of your organization's business model, and then package your content using those policies. Once policies are applied to content during packaging, you can maintain control of your content no matter how widely it is distributed.
 
 The policies in Adobe Primetime DRM support a wide range of different usage rules, including:
 

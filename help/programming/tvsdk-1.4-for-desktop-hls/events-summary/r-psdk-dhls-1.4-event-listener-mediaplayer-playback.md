@@ -42,11 +42,11 @@ TVSDK dispatches playback events when media playback operations occur, such as a
   </tr> 
   <tr rowsep="1"> 
    <td colname="1">MediaPlayerStatus ChangeEvent.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerStatusChangeEvent.html#STATUS_CHANGED" format="html" scope="external"> STATUS_CHANGED</a> </td> 
-   <td colname="2"> The status of the media player has changed. Your application should handle errors in this event’s callback. </td> 
+   <td colname="2"> The status of the media player has changed. Your application should handle errors in this event's callback. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1">ProfileEvent.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/ProfileEvent.html#PROFILE_CHANGED" format="html" scope="external"> PROFILE_CHANGED</a> </td> 
-   <td colname="2">The media player’s current profile has changed. Use the <span class="codeph"> ProfileEvent.profile</span> property to get the new profile that is being played. Use the <span class="codeph"> time</span> property to get the time when this event occurred. </td> 
+   <td colname="2">The media player's current profile has changed. Use the <span class="codeph"> ProfileEvent.profile</span> property to get the new profile that is being played. Use the <span class="codeph"> time</span> property to get the time when this event occurred. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><b>MediaplayerItem</b> </td> 

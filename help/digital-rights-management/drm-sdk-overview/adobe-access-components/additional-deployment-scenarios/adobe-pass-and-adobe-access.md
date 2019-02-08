@@ -12,7 +12,7 @@ Adobe Primetime authentication ( [https://www.adobe.com/products/adobepass/](htt
 
 ![](assets/AdobePass_web.png)
 
-Adobe Primetime authentication can be used along with Adobe Primeitme DRM for protecting the media content. In this scenario, The video player (SWF) can load another SWF called the *Access Enabler*, which is hosted by Adobe Systems. The *Access Enabler* is used to connect to the Adobe Primetime authentication service, and facilitate SAML SSO integration with MVPD’s (Multichannel Video Programming Distributor) identity provider systems. This involves redirecting the user’s browser briefly to the MVPD login page, then persisting an AuthN token and finally return to the content web site with a cached AuthN session.
+Adobe Primetime authentication can be used along with Adobe Primeitme DRM for protecting the media content. In this scenario, The video player (SWF) can load another SWF called the *Access Enabler*, which is hosted by Adobe Systems. The *Access Enabler* is used to connect to the Adobe Primetime authentication service, and facilitate SAML SSO integration with MVPD's (Multichannel Video Programming Distributor) identity provider systems. This involves redirecting the user's browser briefly to the MVPD login page, then persisting an AuthN token and finally return to the content web site with a cached AuthN session.
 
 The *Access Enabler* can then facilitate backend authorizations between Adobe Primetime authentication service and the MVPD. The MVPD maintains the business logic and determines what content the user is entitled to. The entitlement is persisted in an additional AuthZ token for that content resource and is sent back to the client.
 

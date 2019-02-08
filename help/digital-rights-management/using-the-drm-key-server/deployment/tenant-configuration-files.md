@@ -8,7 +8,7 @@ uuid: c5d07a52-52a7-4ec3-868d-2011a89488e4
 
 The [!DNL flashaccess-ioskeyserver-tenant.xml] and [!DNL flashaccess-xboxkeyserver-tenant.xml] configuration files contain settings that apply to a specific tenant of the Primetime DRM Key Server. Each tenant has its own instance of these configuration files located in [!DNL <KeyServer.ConfigRoot>/faxsks/tenants/tenantname]. See the [!DNL configs/faxsks/tenants/sampletenant] directory for an example tenant configuration file.
 
-You can specify all file paths in the tenant configuration file as either absolute paths or paths relative to the tenant’s configuration directory ( [!DNL <KeyServer.ConfigRoot>/faxsks/tenants/tenantname]).
+You can specify all file paths in the tenant configuration file as either absolute paths or paths relative to the tenant's configuration directory ( [!DNL <KeyServer.ConfigRoot>/faxsks/tenants/tenantname]).
 
 All tenant configuration files include:
 

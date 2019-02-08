@@ -19,23 +19,25 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
 **1.4.31**
 
 * **Multi-CDN Support for CRS Ads**
+
   * By default, all transcoded assets will be hosted on Adobe-owned CDN on Akamai. With the latest release, Adobe Creative Repackaging Service (CRS) provides the ability to upload the transcoded creatives to multiple CDNs as specified by the customer.
   * New APIs are added to TVSDK to enable specifying the final CRS creative url when the default URL is not used. Please refer to the documentation to learn how to use these new APIs.
 
-<details>
-<summary><b>New features in the previous releases</b></summary>
-<p>
+## New features in the previous releases {#new-features-previous}
 
 **1.4.30**
 
 * **Billing Metrics**
+
 To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers. 
 
 **1.4.24**
 
 * **Persistent Network Connection**
+
 Important: You must have at least Adobe Flash Player version 22 or later installed.
 Persistent network connections create and store an internal list of network connections that can be reused for multiple requests, instead of opening a new connection for each network request. Persistent network connections should increase efficiency and decrease latency in your networking code.
+
 In this release, this feature is not supported in Apple Safari and Mozilla Firefox on a Mac.
 
 **1.4.19**
@@ -49,29 +51,33 @@ In this release, this feature is not supported in Apple Safari and Mozilla Firef
 
 **1.4.10**
 
-* **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
+* **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)** For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
 
-For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion\ad-fallback/android-1.4-ad-fallback-behavior.md).
+For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-fallback/android-1.4-ad-fallback-behavior.md).
 
 **1.4.8**
 
 * **Video Heartbeats Library (VHL) updated to version 1.5**
+
   * Ability to send metadata with video start and/or video/ad/chapter start as context data
   * Less network traffic - Heartbeats are fewer on average and smaller in size.
 
 **1.4.7**
 
 * **On-Premise Individualization Support**
+
 Support for on-premise installations of the Adobe Individualization Server to customize the client's individualization request to go to a different endpoint.
 
 **1.4.6**
 
 * **Sample AES encryption (requires Flash Player version 17.0.0.134)**
+
 Sample-based AES encryption is now supported.
 
 **1.4.2**
 
 * **Video Heartbeats Library (VHL) update to version 1.4.0.1**
+
   * Added the ability to bundle different analytics use cases, from other SDKs or players, with the Adobe Analytics Video Essentials.
   * Ad tracking has been optimized by removing the trackAdBreakStart and trackAdBreakComplete methods. The ad break is inferred from the trackAdStart and trackAdComplete method calls.
   * The playhead property is no longer needed when tracking ads.
@@ -81,9 +87,6 @@ Sample-based AES encryption is now supported.
 * **Blackout Signaling With Alternate Content Replacement** As part of the 1.4 TVSDK update, the TVSDK also now supports going into and returning from regional blackouts against linear content. The TVSDK can now process two manifest files in parallel, main and alternate, to monitor for blackout signals even when alternate programming is being shown in place of the original programming.
 
 * **Remove/Replace C3 Ads** Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during broadcast and is immediately pulled down for use as on demand content without proper time to “clean” the asset.
-
-</p>
-</details>
 
 ## Resolved issues {#resolved-issues}
 
@@ -99,9 +102,7 @@ Sample-based AES encryption is now supported.
 
   Updating the localhost token for PMP demo on DHLS.
 
-<details>
-<summary><b>Resolved issues in the previous releases</b></summary>
-<p>
+## Resolved issues in the previous releases {#resolved-issues-previous}
 
 **Version 1.4.38** (891)
 
@@ -350,7 +351,7 @@ In this release, global ad request timeout has been added.
 
 **Version 1.4.21** (782)
 
-* Zendesk #19580 TVSDK waits for completion of content resolver before sending PTTimedMetadataChangedNotification notifications
+* Zendesk #19580 TVSDK waits for completion of content resolver before sending `PTTimedMetadataChangedNotification` notifications
 
 **Note**: This issue requires Flash player 21.0.0.182 or later.
 
@@ -650,7 +651,7 @@ Fixed issues finding wildcard token when the pageDomain is different from the sw
 
 Fixed a occasional Flash Player crash with Firefox on Mac when a stream, playing on an external monitor, would switch to a higher bitrate stream.(requires Flash Player 18.0.0.160)
 
-* Zendesk #3268 - Desktop: Video player starts flickering after +- 40/50 seconds and starts going black after +- 90 seconds
+* Zendesk #3268 - Desktop: Video player starts flickering after `+-` 40/50 seconds and starts going black after `+-` 90 seconds
 
 Fixed an issue on Mac Chrome where stream would start to flicker an eventually go black. (requires Flash Player 18.0.0.161)
 
@@ -703,8 +704,8 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 
 **Version 1.4.4**
 
-* Zendesk #1561 - Re: [Adobe Primetime] Update: HLS client based failover support for PROGRAM-DATE-TIME in Desktop PSDK (requires Flash Player version 16.0.0.305 or greater) 
-* Zendesk #2197 - [Ads] Tracking ad errors 
+* Zendesk #1561 - Re: `[Adobe Primetime]` Update: HLS client based failover support for PROGRAM-DATE-TIME in Desktop PSDK (requires Flash Player version 16.0.0.305 or greater) 
+* Zendesk #2197 - `[Ads]` Tracking ad errors 
 * Zendesk #2286 - Feature Request: Provide info on ad loading status (VPAID) 
 * Zendesk #2285 - Feature Request: Skip ad after a specified timeout duration 
 * Bug #3921755 - OpenSSL library update to version 1.0.1L in Flash Player (requires Flash Player version 16.0.0.305 or greater)
@@ -714,8 +715,8 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 * Zendesk #1303 - Vertical Offset for Closed Caption (requires Flash Player version 16.0.0.235 or greater, expected release date: December 2014) 
 * Zendesk #1870 - Closed Caption Turning On & Off (requires Flash Player version 16.0.0.235 or greater, expected release date: December 2014) 
 * Zendesk #2110 - Playback gets stuck after trying to enter fullscreen during a VPAID ad (requires Flash Player version 16.0.0.235 or greater, expected release date: December 2014) 
-* Zendesk #2199 - [VPAID] Player not responding when seeking past ad break 
-* Zendesk #2358 - Re: [Analytics] Incorrect chapter data
+* Zendesk #2199 - `[VPAID]` Player not responding when seeking past ad break 
+* Zendesk #2358 - Re: `[Analytics]` Incorrect chapter data
 
 **Version 1.4.1**
 
@@ -735,22 +736,22 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 * Closed Caption will not work with audio-only content because the caption system needs video to work.
   Without video, there is no viewport dimension, and without a viewport dimension, you cannot display any graphics for captions.
 * Stream integrity is slightly slower in Google Chrome because of Chrome sandbox restrictions.
-* In TVSDK 1.4, if you disable autoPlay, a DRM error might occur when the player remains idle for at least a minute. To work around this issue, when you disable autoPlay but preload assets, modify ReferenceCore<span></span>.as by changing the contents of onPlaybackManagerPrepared:
+* In TVSDK 1.4, if you disable autoPlay, a DRM error might occur when the player remains idle for at least a minute. To work around this issue, when you disable autoPlay but preload assets, modify `ReferenceCore.as` by changing the contents of `onPlaybackManagerPrepared`:
 
-  `if (_playbackManager.autoPlay) {  
+  ```
+  if (_playbackManager.autoPlay) {  
   _playbackManager.play();  
   } else {  
   _playbackManager.play();  
   _playbackManager.pause();  
-  }`
+  }
+  ```
 
-<details>
-<summary><b>Known issues</b></summary>
-<p>
+### Known issues
 
 * **Version 1.4.13** PTPLAY-8501 - When VMAP returns two direct MP4 non transcoded ads, the same fall back ad plays twice.
 
-* **Version 1.4.2** In the Flash Player version 16 release, an issue was identified with the ABR "switching down" logic, after the player gets into an empty buffering event. The issue prevents the bitrate from switching down in bad bandwidth environments once the player gets into a buffering state. To work around the issue, have your app set the BufferControlParameters.initialBufferTime to be the same as BufferControlParameters.playbackBufferTime temporarily during the buffering state (that is, on a BufferEvent.BUFFERING_BEGIN event) then reset it back to the set values on BufferEvent.BUFFERING_END event. The fix for this issue will be available in the next patch release of Flash Player verison 16.
+* **Version 1.4.2** In the Flash Player version 16 release, an issue was identified with the ABR "switching down" logic, after the player gets into an empty buffering event. The issue prevents the bitrate from switching down in bad bandwidth environments once the player gets into a buffering state. To work around the issue, have your app set the `BufferControlParameters.initialBufferTime` to be the same as `BufferControlParameters.playbackBufferTime` temporarily during the buffering state (that is, on a `BufferEvent.BUFFERING_BEGIN` event) then reset it back to the set values on `BufferEvent.BUFFERING_END` event. The fix for this issue will be available in the next patch release of Flash Player verison 16.
 
 * **Version 1.4.0**
 
@@ -763,9 +764,6 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
     * Bug #3761896 - If seeking is allowed during ad play, ad markers will re-adjust after seek. Workaround is to not use ITEM_UPDATED callback during seek
     * Bug #3779889 - The complete call is not made when reaching the end in trick play in Video Analytics
     * Bug #VA-779 - The bit-rate change event heartbeat is not sent for Enhanced Video Analytics with Heartbeat Support Reference Implementation - Trick play is not implemented in the sample application.
-
-</p>
-</details>
 
 >[!MORE_LIKE_THIS]
 >

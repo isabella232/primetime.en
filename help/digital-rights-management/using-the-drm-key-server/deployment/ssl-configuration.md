@@ -34,7 +34,7 @@ Generate Certificate:
  openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.cer
 ```
 
-When prompted for the common name, use your server’s Fully Qualified Domain Name (FQDN).
+When prompted for the common name, use your server's Fully Qualified Domain Name (FQDN).
 
 Copy [!DNL server.cer], and [!DNL server.key] to the Tomcat directory. Specify the following Connector in [!DNL conf/server.xml]: 
 

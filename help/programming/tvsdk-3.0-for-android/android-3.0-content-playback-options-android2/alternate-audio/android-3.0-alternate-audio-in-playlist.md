@@ -10,7 +10,7 @@ uuid: e134cc46-5cd3-4c3c-a6ef-5ae54a2108ce
 
 The playlist for a video can specify an unlimited number of alternative audio tracks for the main video content. For example, you might want to add different languages to your video content or allow the user to switch between different tracks on their device while the content is playing.
 
-Alternate audio tracks allow users to switch between multiple language tracks for HTTP video streams (live/linear and VOD), and you do not have to modify, duplicate, or repackage the video for each audio track. You can provide multiple language tracks for a video asset before or after the asset’s initial packaging.
+Alternate audio tracks allow users to switch between multiple language tracks for HTTP video streams (live/linear and VOD), and you do not have to modify, duplicate, or repackage the video for each audio track. You can provide multiple language tracks for a video asset before or after the asset's initial packaging.
 
 >[!IMPORTANT]
 >

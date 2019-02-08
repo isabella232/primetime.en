@@ -27,7 +27,7 @@ The SDK provides a Java API to accomplish these tasks, and includes reference im
 
 ## What is new in Adobe Access 5.2 {#section_06220EDE36B54DCB9CA7963B76DA8167}
 
-* **External CEK**: The ability to integrate a Content Key Management System (CKMS) to the DRM license serving and Content Packaging workflows, instead of encrypting the CEK and bundling it into the content’s metadata. See [Adobe Access DRM External CEK Overview](../../aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md). 
+* **External CEK**: The ability to integrate a Content Key Management System (CKMS) to the DRM license serving and Content Packaging workflows, instead of encrypting the CEK and bundling it into the content's metadata. See [Adobe Access DRM External CEK Overview](../../aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md). 
 
 * **License (voucher) Return**: The ability for a client to return (or delete) a license issued to the client. 
 * **Xbox Key Server**: The ability to protect content sent to the Xbox and Xbox 360. (An Adobe Primetime client is required.)

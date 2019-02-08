@@ -10,7 +10,7 @@ Enabling your application to play content under the protection of Primetime DRM 
 
 **License Acquisition Process:**
 
-1. Get the protected content’s DRM metadata. 
+1. Get the protected content's DRM metadata. 
 1. Check if a license is available locally:
 
     * If the license is available locally, load the license and go to Step 6. 
@@ -25,6 +25,6 @@ Enabling your application to play content under the protection of Primetime DRM 
 1. If authentication was needed and is now complete, download the license from the license server. 
 1. Play the content.
 
-If no errors occured and the user was successfully authorized to view the content, Primetime dispatches a `DRMStatusEvent` object and the application begins playback. The `DRMStatusEvent` object holds the related license information, which identifies the user’s policy and permissions. For example, `DRMStatusEvent` may hold information regarding whether the content can be made available offline, when the license expires, and so on.
+If no errors occured and the user was successfully authorized to view the content, Primetime dispatches a `DRMStatusEvent` object and the application begins playback. The `DRMStatusEvent` object holds the related license information, which identifies the user's policy and permissions. For example, `DRMStatusEvent` may hold information regarding whether the content can be made available offline, when the license expires, and so on.
 
-The application can use the license information to inform the user of the status of their policy. For example, the application can display the number of remaining days the user has for viewing the content in a status bar. If the user is allowed offline access, the license is cached, and the encrypted content is downloaded to the user’s machine. The content is made accessible for the duration defined in the license caching duration. The detail property in the event contains `DRM.voucherObtained`. The application decides where to store the content locally in order for it to be available offline. You can also preload licenses using the `DRMManager` class. 
+The application can use the license information to inform the user of the status of their policy. For example, the application can display the number of remaining days the user has for viewing the content in a status bar. If the user is allowed offline access, the license is cached, and the encrypted content is downloaded to the user's machine. The content is made accessible for the duration defined in the license caching duration. The detail property in the event contains `DRM.voucherObtained`. The application decides where to store the content locally in order for it to be available offline. You can also preload licenses using the `DRMManager` class. 

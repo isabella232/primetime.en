@@ -6,7 +6,7 @@ uuid: 435a6a6e-c981-46fb-bca9-7f5f34eecd6a
 
 # Deploy the WAR files{#deploy-the-war-files}
 
-1. Copy the WAR file to Tomcat’s [!DNL webapps] directory.
+1. Copy the WAR file to Tomcat's [!DNL webapps] directory.
 
     * Individualization Server: [!DNL flashaccess.war] 
     * Key Generation Server: [!DNL flashaccess-kgs.war]

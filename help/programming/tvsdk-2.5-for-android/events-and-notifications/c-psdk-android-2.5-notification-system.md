@@ -14,7 +14,7 @@ Your application can retrieve notification and status information. Using this in
 
 ## Notification content {#section_DF951FF601794CF592841BB7406DC1A1}
 
-`MediaPlayerNotification` provides information that is related to the player’s status.
+`MediaPlayerNotification` provides information that is related to the player's status.
 
 TVSDK provides a chronological list of `MediaPlayerNotification` notifications, and each notification contains the following information:
 
