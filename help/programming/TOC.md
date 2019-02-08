@@ -7,6 +7,7 @@ user-guide: Primetime Programming Help
 
 # Primetime Programming Help {#programming}
 
++ [Programming Overview](home.md)
 + TVSDK 3.0 for Android {#tvsdk-3.0-for-android}
    + Introduction {#introduction}
       + Product overview, audience, and this guide {#overview-prod-audience-guide}
@@ -256,7 +257,7 @@ user-guide: Primetime Programming Help
       + [Requirements for subtitles and closed captions](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/c-ios-closed-captioning-and-subtitles-reqts-ios.md)
       + [Expose subtitles](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-ios-subtitles-exposing-ios.md)
       + [Expose closed captions](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-psdk-ios-closed-captions-exposing-ios.md)
-   + Alternate audio {#alternate-audio)
+   + Alternate audio {#alternate-audio}
       + [Alternate audio overview](tvsdk-3.3-for-ios/alternate-audio/c-psdk-ios-3.3-alternate-audio-in-playlist.md)
       + [Access alternate audio tracks](tvsdk-3.3-for-ios/alternate-audio/t-psdk-ios-3.3-alternate-audio-implement.md)
    + Video analytics {#video-analytics}
@@ -287,7 +288,7 @@ user-guide: Primetime Programming Help
       + [Billing usage metrics](tvsdk-3.3-for-ios/c-psdk-ios-3.3-billing/c-psdk-ios-3.3-billing-metrics/c-psdk-ios-3.3-billing-metrics.md)
       + [Configure billing metrics](tvsdk-3.3-for-ios/c-psdk-ios-3.3-billing/c-psdk-ios-3.3-billing-metrics/t-psdk-ios-3.3-billing-config.md)
       + [Transmit billing metrics](tvsdk-3.3-for-ios/c-psdk-ios-3.3-billing/c-psdk-ios-3.3-billing-metrics/r-psdk-ios-3.3-billing-data-format.md)
-   + Primetime Player classes summary {#primetime-player-classes-summar
+   + Primetime Player classes summary {#primetime-player-classes-summary}
       + [Element ID :c_psdk_ios_player-classes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-primetime-player-class-summary/r-psdk-ios-3.3-classes-media-player-ios.md)
       + [Logging classes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-primetime-player-class-summary/r-psdk-ios-3.3-classes-logging.md)
       + [Metadata classes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-primetime-player-class-summary/r-psdk-ios-3.3-classes-metadata.md)

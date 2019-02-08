@@ -7,6 +7,7 @@ user-guide: Primetime DRM Help
 
 # Digital Rights Management Help {#drm}
 
++ [DRM Overview](home.md)
 + Adobe Primetime DRM Secure Deployment Guidelines {#guidelines}
    + Introduction to Network Topology {#introduction}
       + [Network topology overview](secure-deployment-guidelines/overview/network-topology.md)

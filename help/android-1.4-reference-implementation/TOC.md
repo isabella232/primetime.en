@@ -7,6 +7,7 @@ user-guide: Primetime Video Playback Help
 
 # Primetime Video Playback Help {#video-playback}
 
++ [Video Playback Overview](home.md)
 + Primetime reference implementation {#reference}
    + [How to use the Primetime reference implementation](ref-implementation/how-to-use-ref-player.md)
    + [Reference implementation structure](ref-implementation/ref-player-structure.md)

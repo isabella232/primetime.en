@@ -1,13 +1,16 @@
 ---
-cloud: experience-cloud
-product: adobe primetime
-archtype: end-user
-user-guide: Primetime Release Notes
+title: Primetime Android Help
+seo-title: Adobe Primetime Help for Android
+description: null
+seo-description: null
 ---
 
-# Primetime Release Notes {#release-notes}
+# Primetime Android Help
 
-+ [Release Notes Overview](home.md)
+Description of Primetime and user guide.
+
+## Key articles
+
 + [TVSDK 3.3 for iOS Release Notes](tvsdk-33-ios.md)
 + [TVSDK 3.2 for Android Release Notes](tvsdk-32-android.md)
 + [TVSDK 2.4.1 for Android Release Notes](tvsdk-24-android.md)
@@ -20,3 +23,19 @@ user-guide: Primetime Release Notes
 + [TVSDK 2.7 for Android Release Notes](tvsdk-27-android.md)
 + [TVSDK 1.4 for Android Release Notes](tvsdk-1-4-android.md)
 + [TVSDK 1.4 for iOS Release Notes](tvsdk-1-4-ios.md)
+
+## Primetime user guides
+
+| User Guide | Description |
+|--- |--- |
+| Link to user guide | Description |
+| Link to user guide | Description |
+| Link to user guide | Description |
+| Link to user guide | Description |
+| Link to user guide | Description |
+| Link to user guide | Description |
+
+## Key Primetime resources
+
+* [link text](/help/dynamic-ad-insertion/introduction.md)
+* [link text](/help/dynamic-ad-insertion/introduction.md)
