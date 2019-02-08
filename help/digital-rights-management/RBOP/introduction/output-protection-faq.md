@@ -10,7 +10,7 @@ uuid: 7dcd337c-369a-474c-8768-409c48b5cee5
 
 Frequently asked questions about using resolution-based output protection.
 
-* **Q.** *When defining a digital output requirement for a pixel constraint, I’m getting parsing/formatting errors when I leave the HDCP version out, but I don’t have any HDCP requirements. How should I configure my digital output requirement in this case?* **A.** Since HDCP version checking is not supported in the client currently, Adobe recommends setting the HDCP version to `1.0`. This will ensure that your configuration is formatted correctly and is semantically consistent in the future when HDCP version checking is supported. The following snippet illustrates a configuration with this HDCP value. 
+* **Q.** *When defining a digital output requirement for a pixel constraint, I'm getting parsing/formatting errors when I leave the HDCP version out, but I don't have any HDCP requirements. How should I configure my digital output requirement in this case?* **A.** Since HDCP version checking is not supported in the client currently, Adobe recommends setting the HDCP version to `1.0`. This will ensure that your configuration is formatted correctly and is semantically consistent in the future when HDCP version checking is supported. The following snippet illustrates a configuration with this HDCP value. 
 
   ```
   { "pixelConstraints":  
@@ -28,7 +28,7 @@ Frequently asked questions about using resolution-based output protection.
 
 * **Q.** *Are RBOP pixel constraints discrete or range based?* **A.** RBOP pixel constraints are ranged based. Each pixel count defines the requirements for all pixel counts less than or equal to the given count or up to the largest count smaller than that value if more than one pixel constraint exists. Simply put, the values apply as maximum thresholds for each vertical pixel count.
 
-  Let’s suppose an MBR stream with vertical resolutions of 240, 480, 600, 720, and 1080 is passed to your player with the following RBOP settings.
+  Let's suppose an MBR stream with vertical resolutions of 240, 480, 600, 720, and 1080 is passed to your player with the following RBOP settings.
 
   **RBOP Policy settings:**
 

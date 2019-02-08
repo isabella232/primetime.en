@@ -24,7 +24,7 @@ The tenant configuration file includes:
 
   See *Handling certificate updates* in *Using the Adobe Primetime DRM SDK for Protecting Content* for more information on when additional credentials are needed. 
 
-* *Key Server Certificates* — Optionally specifies the Key Server’s License Server certificate that Adobe has issued. You can specify the Key Server's License Server certificate as a path to a [!DNL .cer] file or an alias to a certificate that is stored on an HSM. This option must be specified to issue licenses for content that is packaged with a DRM policy that requires remote key delivery for iOS devices. 
+* *Key Server Certificates* — Optionally specifies the Key Server's License Server certificate that Adobe has issued. You can specify the Key Server's License Server certificate as a path to a [!DNL .cer] file or an alias to a certificate that is stored on an HSM. This option must be specified to issue licenses for content that is packaged with a DRM policy that requires remote key delivery for iOS devices. 
 
 * *Custom Authorizers* — Optionally specifies custom authorizer classes to invoke for each license request. If multiple authorizers are specified, they are invoked in the order listed. 
 * *List of Authorized Packagers* — Optionally specifies certificates that identify entities authorized to package content for this license server. If no packager certificates are specified, the server issues licenses for content that is packaged by any packager. If the server receives a license request from an unauthorized packager, then the request is denied. 

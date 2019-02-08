@@ -32,7 +32,7 @@ TVSDK supports seeking to a specific position (time) where the stream is a slidi
    void seek(long position) throws MediaPlayerException;
    ```
 
-   You can seek only in the asset’s seekable duration. For video on demand, that is from 0 through the asset's duration.
+   You can seek only in the asset's seekable duration. For video on demand, that is from 0 through the asset's duration.
 
    >[!TIP]
    >

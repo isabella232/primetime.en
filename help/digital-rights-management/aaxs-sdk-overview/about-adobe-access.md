@@ -15,5 +15,5 @@ Adobe Access gives:
 * Content owners and distributors broader reach for media assets, and a way to recuperate production costs while protecting those assets from misuse. 
 * Content distributors the ability to rapidly distribute content and recuperate production costs through direct (user-paid) or indirect (advertiser-paid) compensation. 
 * Consumers the flexibility to enjoy premium content with a rich viewing experience that is intuitive, non-intrusive, convenient, and engaging. 
-* Developers the ability to automate Adobe Access capabilities, including authorization and authentication, into a content distributor’s existing environment.
+* Developers the ability to automate Adobe Access capabilities, including authorization and authentication, into a content distributor's existing environment.
 

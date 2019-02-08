@@ -24,7 +24,7 @@ Context for the current task
 
 ## Package using command line {#section_DFBE462679E34D62963BE201FD3321F9}
 
-Before packaging content, make sure you’ve had all required information provided in the configuration file.
+Before packaging content, make sure you've had all required information provided in the configuration file.
 
 * To package content with your configuration file, use the following syntax on the command line:
 

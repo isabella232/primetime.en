@@ -18,7 +18,7 @@ Outlined below are simplified, sample instructions for using OpenSSL to create C
 1. Copy your Individualization CA [!DNL pfx] to the same [!DNL create_crl] directory.
 
    The subsequent steps assume that the Individualization CA pfx is named [!DNL i15n.pfx]. Adjust as appropriate for your setup.
-1. Extract the Individualization CA [!DNL pfx] file’s private key.
+1. Extract the Individualization CA [!DNL pfx] file's private key.
 
    ```
    openssl pkcs12 -ini15n.pfx -nocerts -out i15n_priv.pem

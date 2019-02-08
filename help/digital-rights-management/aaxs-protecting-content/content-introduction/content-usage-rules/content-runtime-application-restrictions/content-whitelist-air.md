@@ -12,5 +12,5 @@ Example use case: Use this rule to limit playback to a particular AIR/iOS applic
 
 >[!NOTE] {class="- topic/note "}
 >
->If you are using Adobe Flash Builder to build protected applications, make sure that you do not deploy the application in ‘Debug’ mode. When deploying an application in ‘Debug’ mode, the Flash Builder will append “.debug” to the AIR application ID. This will cause the white-list functionality in Adobe Access to behave unexpectedly.
+>If you are using Adobe Flash Builder to build protected applications, make sure that you do not deploy the application in ‘Debug' mode. When deploying an application in ‘Debug' mode, the Flash Builder will append “.debug” to the AIR application ID. This will cause the white-list functionality in Adobe Access to behave unexpectedly.
 

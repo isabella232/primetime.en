@@ -33,7 +33,7 @@ TVSDK supports seeking to a specific position (time) where the stream is a slidi
    function seek(position:Number):void;
    ```
 
-   You can seek only in the asset’s seekable duration. For video on demand, the duration is from 0 through the asset's duration.
+   You can seek only in the asset's seekable duration. For video on demand, the duration is from 0 through the asset's duration.
 
    >[!TIP]
    >

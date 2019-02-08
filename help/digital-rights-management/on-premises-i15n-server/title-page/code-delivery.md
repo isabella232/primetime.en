@@ -24,7 +24,7 @@ The Adobe Primetime DRM On Premises Individualization Server package contains th
 * [!DNL ROOT] - contains a [!DNL crossdomain.xml] file 
 
 * ECI cache files - Pre-downloaded 
-* [!DNL addIndivCert.py] - A script for updating a License Server’s root of trust to support On Premises individualizations 
+* [!DNL addIndivCert.py] - A script for updating a License Server's root of trust to support On Premises individualizations 
 * [!DNL CreateMetadata.jar] - A utility for creating On Premises DRM Metadata 
 * [!DNL client_sample/] - A folder with a client code snippet 
 * Release Notes - For any last minute additions to the documentation

@@ -40,7 +40,7 @@ TVSDK resolves the ads and inserts the ads when a cue point is encountered in th
 * #EXT-X-CUE 
 * #EXT-X-CUE-OUT
 
-These markers require the metadata field's `DURATION` in seconds and the cue’s unique ID. For example: 
+These markers require the metadata field's `DURATION` in seconds and the cue's unique ID. For example: 
 
 ```
 #EXT-X-CUE DURATION=27 ID=identiferForThisCue ... 

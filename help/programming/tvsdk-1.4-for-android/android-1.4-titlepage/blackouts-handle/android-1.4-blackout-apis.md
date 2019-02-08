@@ -37,7 +37,7 @@ You can use the following when implementing a blackout solution in your player.
 
 * **MediaPlayer**
 
-    * `registerCurrentItemAsBackgroundItem` Saves the currently loaded resource as the background resource. If `replaceCurrentResource` is called after this method, TVSDK continues to download the background item’s manifest until you call `unregisterCurrentBackgroundItem`, `release`, or `reset`. 
+    * `registerCurrentItemAsBackgroundItem` Saves the currently loaded resource as the background resource. If `replaceCurrentResource` is called after this method, TVSDK continues to download the background item's manifest until you call `unregisterCurrentBackgroundItem`, `release`, or `reset`. 
     
     * `unregisterCurrentBackgroundItem` Sets the background item to null and stops fetching and parsing the background manifest.
 

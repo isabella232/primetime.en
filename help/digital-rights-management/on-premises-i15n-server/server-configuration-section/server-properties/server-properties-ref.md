@@ -92,7 +92,7 @@ uuid: 24a187fe-9b7d-411f-a358-d10c70a5dd0e
      <li id="li_FACF07CB332D416E91FD34DE48152FAA"><span class="codeph"> deviceinfo.key =</span> [Encrypted Base64 encoded key used to HMAC device info before including it in the machine token. The key can be different for the Dev/Staging/Production environments, but must be the same for all servers in a particular environment. ] </li> 
      <li id="li_B19C77FD6F91496294DBF836A1922EE1"><span class="codeph"> keys.kgs.server =</span> [Location of Key Gen Server (a single host/port, representing a pool of key servers) ] </li> 
      <li id="li_5DA3C89770804B148EF6FAF01A5AD958"><span class="codeph"> keys.MinQueueSize =</span> [Fetch another batch of keys from the KGS when there are this many keys left in the queue] </li> 
-     <li id="li_0C2E5F2FDB824182A6BE418B041D2F28"><span class="codeph"> status.Timeout =</span> [Status page will ping the KGS to determine if it can reach the server. It will time out if a response isn’t received back in the specified amount of time.] </li> 
+     <li id="li_0C2E5F2FDB824182A6BE418B041D2F28"><span class="codeph"> status.Timeout =</span> [Status page will ping the KGS to determine if it can reach the server. It will time out if a response isn't received back in the specified amount of time.] </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

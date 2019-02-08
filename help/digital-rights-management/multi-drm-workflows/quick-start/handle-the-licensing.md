@@ -10,7 +10,7 @@ uuid: 9f433d62-5609-4d88-95fd-c1e7c0f6aa75
 
 Licensing is the primary mechanism by which users are allowed or denied the ability to play a piece of protected video content. A legitimate (entitled) user can be issued a license (a key) to decrypt and play a specific piece of their content provider's encrypted content.
 
-Before your app or web page on an end-user’s device can play DRM-protected content, it must acquire a token from an entitlement or storefront server that you, the customer, operate. Adobe provides a sample reference server for this purpose: [Reference Server: Sample ExpressPlay Entitlement Server (SEES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md).
+Before your app or web page on an end-user's device can play DRM-protected content, it must acquire a token from an entitlement or storefront server that you, the customer, operate. Adobe provides a sample reference server for this purpose: [Reference Server: Sample ExpressPlay Entitlement Server (SEES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md).
 
 Your entitlement or storefront server will request a license token from the relevant ExpressPlay Server, only after checking with your own back end systems to determine if the specific user is entitled to watch the requested content. The response returned from the license token request is either a ready-to-use URL for the license server, or the response contains the URL in a JSON structure, depending upon the DRM solution you are working with. 
 

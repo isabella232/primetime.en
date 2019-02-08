@@ -1,8 +1,8 @@
 ---
 title: Primetime Streaming Server releases
 seo-title: Primetime Streaming Server 1.x releases
-description: What’s new in Primetime Streaming Server 1.3 and 1.4 releases.
-seo-description: What’s new in Primetime Streaming Server 1.3 and 1.4 releases.
+description: What's new in Primetime Streaming Server 1.3 and 1.4 releases.
+seo-description: What's new in Primetime Streaming Server 1.3 and 1.4 releases.
 uuid: be05db6b-713f-4406-940d-9f3a805f967b
 products: SG_PRIMETIME
 topic-tags: release-notes
@@ -11,9 +11,9 @@ discoiquuid: baec714e-9d41-4e8b-b134-13a736885cbd
 
 # Primetime Streaming Server releases {#primetime-streaming-server-x-releases}
 
-What’s new in Primetime Streaming Server 1.3 and 1.4 releases.
+What's new in Primetime Streaming Server 1.3 and 1.4 releases.
 
-## What’s new in Primetime Streaming Server 1.4 [December Release] {#what-s-new-in-primetime-streaming-server-december-release}
+## What's new in Primetime Streaming Server 1.4 [December Release] {#what-s-new-in-primetime-streaming-server-december-release}
 
 **Offline Packager**
 
@@ -48,12 +48,12 @@ PHDS/PHLS certificates have been refreshed. New expiry date for the same will be
 
 * PTPUB- 645 DPISimple Mode is forced even when DPIScte35 mode is specified when both command line cues and in-stream cues both are provided in offline packager configuration
 
-## What’s new in Primetime Streaming Server 1.3.1 [MAY Release] {#what-s-new-in-primetime-streaming-server-may-release}
+## What's new in Primetime Streaming Server 1.3.1 [MAY Release] {#what-s-new-in-primetime-streaming-server-may-release}
 
 Version 1.3.1 refers to the hotfix. Following enhancements make it a recommended upgrade for customers as it consists of key performance enhancements for JIT MP4 use cases:
 
 1. Performance fix for MP4 JIT m3u8 generation on Origin with DRM including Key Rotation
-1. Added a configuration ‘CopyQueryParamToJITFragmentURIs’ to copy query parameters from JIT manifest request to generated fragment URIs for MP4 JIT conversion. Refer to HTTP Origin Server documentation for sample usage
+1. Added a configuration ‘CopyQueryParamToJITFragmentURIs' to copy query parameters from JIT manifest request to generated fragment URIs for MP4 JIT conversion. Refer to HTTP Origin Server documentation for sample usage
 1. Allow MP4 files without extension for JIT conversion , via Config/MP4Only configuration added to vod.xml
 
 ### Bug Fixes included in release 1.3.1 {#bug-fixes-included-in-release-1}
@@ -66,7 +66,7 @@ Version 1.3.1 refers to the hotfix. Following enhancements make it a recommended
 
 * 3718598 - When Origin Server is configured for serving protected contents with HSM access enabled the backend LunaSA client does a frequent communication with HSM module
 
-## What’s new in Primetime Streaming Server 1.3 [APRIL Release] {#what-s-new-in-primetime-streaming-server-april-release}
+## What's new in Primetime Streaming Server 1.3 [APRIL Release] {#what-s-new-in-primetime-streaming-server-april-release}
 
 Primetime 1.3 release brings several new features around Streaming content, better Usability and Security.
 
@@ -150,12 +150,12 @@ Several performance enhancements has been incorporated to the JIT packaging capa
 
 **Start the Primetime Streaming Server**
 
-To start the Streaming Server, execute the following command from the command line in the Streaming Server’s root directory:  
+To start the Streaming Server, execute the following command from the command line in the Streaming Server's root directory:  
 `$./pss_start.sh`
 
 **Configure the Primetime Streaming Server as Live Packager or HTTP Origin Server**
 
-To configure the Streaming Server as Live Packager or Origin Server, update the pss.xml config file placed at conf directory in the Streaming Server’s root directory:
+To configure the Streaming Server as Live Packager or Origin Server, update the pss.xml config file placed at conf directory in the Streaming Server's root directory:
 
 ```
 <Config> 
@@ -168,7 +168,7 @@ To configure the Streaming Server as Live Packager or Origin Server, update the 
 
 **Stop the Primetime Streaming Server**
 
-To stop the Streaming Server, execute the following command in the Streaming Server’s root directory:  
+To stop the Streaming Server, execute the following command in the Streaming Server's root directory:  
 `$./pss_stop.sh`
 
 **Restart the Primetime Streaming Server**
@@ -232,22 +232,22 @@ The above minimum system requirements holds true for Origin Server as well as Li
 1. Download the Java JRE and JDK software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the installation instructions.
 1. Extract the Adobe Primetime - HTTP Origin Server 1.4 archive file, `Primetime-HttpOrigin-1-4-0-b206-12042014.zip`, to your disk.
 
-**To start the Live Packager** To start the packager, execute the following command from the packager’s root directory:  
+**To start the Live Packager** To start the packager, execute the following command from the packager's root directory:  
 `$packager_start.sh`
 
 **To start the HTTP Origin Server**
 
-To start the HTTP Origin Server, execute the following command from the command line in the Origin Server’s root directory:  
+To start the HTTP Origin Server, execute the following command from the command line in the Origin Server's root directory:  
 `$./origin_start.sh`
 
 **Stop the Live Packager**
 
-To stop the packager, execute the following command from the packager’s root directory:  
+To stop the packager, execute the following command from the packager's root directory:  
 `$packager_stop.sh`
 
 **Stop the HTTP Origin Server**
 
-To stop the HTTP Origin Server, execute the following command in the Origin Server’s root directory:  
+To stop the HTTP Origin Server, execute the following command in the Origin Server's root directory:  
 `$./origin_stop.sh`
 
 **Restart the Live Packager**

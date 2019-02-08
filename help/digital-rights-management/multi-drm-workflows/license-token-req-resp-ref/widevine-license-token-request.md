@@ -65,9 +65,9 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 
 | Query Parameter | Description | Required? |
 |--- |--- |--- |
-|`generalFlags`|A 4 byte hexadecimal string representing the license flags. ‘0000’ is the only allowed value|No|
+|`generalFlags`|A 4 byte hexadecimal string representing the license flags. ‘0000' is the only allowed value|No|
 |`kek`|Key Encryption Key (KEK). Keys are stored encrypted with a KEK using a key wrapping algorithm (AES Key Wrap, RFC3394).|No|
-|`kid`|A 16 byte hexadecimal string representation of the content encryption key or a string `^somestring’`. The length of the string followed by the `^` cannot be greater than 64 characters. Check note below for an example.|Yes|
+|`kid`|A 16 byte hexadecimal string representation of the content encryption key or a string `^somestring'`. The length of the string followed by the `^` cannot be greater than 64 characters. Check note below for an example.|Yes|
 |`ek`|A hex string representation of the encrypted content key.|No|
 |`contentKey`|A 16 byte hexadecimal string representation of the content encryption key|Yes, unless `kek` and `ek` or `kid` are provided|
 |`contentId`|Content Id|No|
@@ -81,13 +81,13 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 
 | Query Parameter | Description | Required? |
 |--- |--- |--- |
-|`expirationTime`|Expiration time of this token. This value MUST a string in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) date/time format in the ‘Z’ zone designator ("Zulu time"), or an integer preceded by a + sign. An example of an RFC 3339 date/time is 2006-04-14T12:01:10Z. <br> If the value is a string in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) date/time format, then it represents an absolute expiration date/time for the token. If the value is an integer preceded by a + sign, then it is interpreted as a relative number of seconds, from issuance, that the token is valid. For example, `+60` specifies one minute. <br> The maximum and default (if not specified) token lifetime is 30 days.|No|
+|`expirationTime`|Expiration time of this token. This value MUST a string in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) date/time format in the ‘Z' zone designator ("Zulu time"), or an integer preceded by a + sign. An example of an RFC 3339 date/time is 2006-04-14T12:01:10Z. <br> If the value is a string in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) date/time format, then it represents an absolute expiration date/time for the token. If the value is an integer preceded by a + sign, then it is interpreted as a relative number of seconds, from issuance, that the token is valid. For example, `+60` specifies one minute. <br> The maximum and default (if not specified) token lifetime is 30 days.|No|
 
 #### Correlation Query Parameters
 
 |  **Query Parameter** | **Description** | **Required?** |
 |---|---|---|
-|  `cookie`  | Arbitrary string up to 32 characters long carried in the token and logged by the token redemption server. Can be used to correlate log entries at the redemption server and those at the service provider’s servers.  | No  |
+|  `cookie`  | Arbitrary string up to 32 characters long carried in the token and logged by the token redemption server. Can be used to correlate log entries at the redemption server and those at the service provider's servers.  | No  |
 
 <!--<a id="section_6BFBD314C77C40C4B172ABBDD2D8D80E"></a>-->
 

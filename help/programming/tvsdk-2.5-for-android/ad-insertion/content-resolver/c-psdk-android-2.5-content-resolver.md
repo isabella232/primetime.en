@@ -16,7 +16,7 @@ An opportunity generator identifies placement opportunities by custom tags in a 
 
 * `AdSignalingModeOpportunityGenerator` generates an initial opportunity for the specified ad signaling mode. This ignores any cues or timed metadata information. 
 * `CustomMarkerOpportunityGenerator` generates opportunities to replace baked-in C3 ads. 
-* `AuditudeResolver`’s opportunity generator produces opportunities when lazy ad resolving is on.
+* `AuditudeResolver`'s opportunity generator produces opportunities when lazy ad resolving is on.
 
 TVSDK also includes default content resolvers:
 

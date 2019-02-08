@@ -33,7 +33,7 @@ You can use hardware random number generators on Linux servers to ensure that su
 
 ## Determining Available Entropy {#section_686B311FE6144566B6939E9F20915ADC}
 
-To verify the number of bits available in a given server’s entropy pool during an unexpected delay, execute the following command: 
+To verify the number of bits available in a given server's entropy pool during an unexpected delay, execute the following command: 
 
 ```
 cat /proc/sys/kernel/random/entropy_avail 

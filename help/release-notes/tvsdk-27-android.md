@@ -48,7 +48,7 @@ When set, use output latency in the audio timestamp calculation.
 Boolean parameters val - True will use audio output latency in audio timestamp calculation.
 
 * **Optimized to get the best playback experience even if the bandwidth speed falls off suddenly.**
-  TVSDK now cancels the ongoing segment’s download, if required, and dynamically switches to the appropriate rendition. This is done by seamlessly switching among the bitrates without interruptions.
+  TVSDK now cancels the ongoing segment's download, if required, and dynamically switches to the appropriate rendition. This is done by seamlessly switching among the bitrates without interruptions.
 
 **Version 2.5.5**
 
@@ -142,7 +142,7 @@ The important new features released in Android 2.5.1.
 * **Workflow Support**
 
   * **Direct Billing Integration -** This sends billing metrics to the Adobe Analytics backend, which is certified by Adobe Primetime for streams used by the customer.
-      TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer’s own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation. This feature is enabled by default. To turn this feature off, refer to the reference player sample.    
+      TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer's own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation. This feature is enabled by default. To turn this feature off, refer to the reference player sample.    
   * **Improved Failover Support -** Additional strategies implemented to continue uninterrupted playback, despite failures of host servers, playlist files, and segments.
 
 * **Advertising**
@@ -360,7 +360,7 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 * Zendesk #30727 VOD ads are not being downloaded/resolved.
 
-  In VMAP XML if there is an empty VAST tag without an explicit closing tag (‘&lt;/VAST&gt;’) and without a newline character after it, then the VMAP XML is not parsed properly and ads may not play.
+  In VMAP XML if there is an empty VAST tag without an explicit closing tag (‘&lt;/VAST&gt;') and without a newline character after it, then the VMAP XML is not parsed properly and ads may not play.
 
 **Android TVSDK 2.5.1**
 

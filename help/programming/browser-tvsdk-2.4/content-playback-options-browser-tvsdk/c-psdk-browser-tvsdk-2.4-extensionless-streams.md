@@ -25,7 +25,7 @@ var playerWrapper = ptp.videoPlayer('.videoDiv', {
   player: { 
     mediaResource: { 
       resourceUrl:'Specify Resource Url', 
-      resourceType: ‘Specify Resource Type. Refer AdobePSDK.MediaResourceType’ 
+      resourceType: ‘Specify Resource Type. Refer AdobePSDK.MediaResourceType' 
     } 
   } 
 }); 

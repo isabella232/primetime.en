@@ -181,8 +181,8 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
    <td colname="col2"><span class="codeph"> AAXS_AuthenticationFailed</span> </td> 
    <td colname="col3"> <p>The server failed to authenticate or authorize the client. </p> 
     <ul id="ul_BE77AC1848FB4C09B6318359ACF1B8EE"> 
-     <li id="li_6FB37D317D174E8488C5070D20CD241C">The distributor’s software should take any action necessary to re-establish user’s credentials or guide the user to acquire access to the content. </li> 
-     <li id="li_BE071D59805B42D38E3E7650BC936417">The distributor should confirm that distributor’s authorization and authentication mechanism is working correctly. <p>If the distributors are not planning to use the authentication or authorization features, they should check whether the policy of the offending content requires authentication and see Diagnosing policy / license discrepancies. </p> </li> 
+     <li id="li_6FB37D317D174E8488C5070D20CD241C">The distributor's software should take any action necessary to re-establish user's credentials or guide the user to acquire access to the content. </li> 
+     <li id="li_BE071D59805B42D38E3E7650BC936417">The distributor should confirm that distributor's authorization and authentication mechanism is working correctly. <p>If the distributors are not planning to use the authentication or authorization features, they should check whether the policy of the offending content requires authentication and see Diagnosing policy / license discrepancies. </p> </li> 
     </ul> <p>For more information about this error code, see <a href="https://forums.adobe.com/thread/1277149" format="https" scope="external"> DRM error 3301 causes and resolution</a>. </p> </td> 
   </tr> 
   <tr> 

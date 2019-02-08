@@ -6,7 +6,7 @@ uuid: 0cde53d6-185d-4bf2-84fc-0c31d17904a8
 
 # Update the License Server WAR File{#update-the-license-server-war-file}
 
-In order to support clients that have individualized via an On Premises Individualization server, you must update the License Server’s certificate root of trust to include the newly acquired Individualization CA credential. A Python script ( [!DNL addIndivCert.py]) is included in the [!DNL update_license_server] folder.
+In order to support clients that have individualized via an On Premises Individualization server, you must update the License Server's certificate root of trust to include the newly acquired Individualization CA credential. A Python script ( [!DNL addIndivCert.py]) is included in the [!DNL update_license_server] folder.
 
 Do the following to update the License Server: 
 

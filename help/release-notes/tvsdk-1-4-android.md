@@ -56,7 +56,9 @@ No new features.
 * TVSDK supports Android Oreo release.
 * A new function is added to `AdClientFactory` class to support registering multiple Opportunity Detectors:
 
-  `public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);`
+  ```
+  public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);
+  ```
 
   This should return an array of PlacementOpportunityDetector. Now you can register multiple Opportunity Detectors. For example for early ad exit feature, two Opportunity Detectors were required - one for ad insertion and another for early exit from ad. You are required to implement this new function only impact if you have implemented your own AdvertisingFactory (and not using DefaultAdvertisingfactory). For getting the existing behavior - you need to create a single Opportunity Detector, as in createOpportunityDetector() function and put into an array and return:
 
@@ -839,7 +841,7 @@ The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during t
 
 |Device|Chipset|Issue|Cause|Workaround|
 |--- |--- |--- |--- |--- |
-|Droid X|TI OMAP3|ABR Delay is expected since it’s restarting the decoder.|||
+|Droid X|TI OMAP3|ABR Delay is expected since it's restarting the decoder.|||
 |HTC Desire (different from HTC Desire HD)|QSD8250|Can't play video. Returns VIDEO_PROFILE_NOT_SUPPORTED error.|Desire does not provide a proper HW decoder. It gives Stagefright's SW decoder.|Restart device.|
 |HTC EVO 4G|QSD8650|No HW decoder.|Qualcomm does not have a HW decoder.|Upgrade to Android 4.x.|
 |Kindle FireSystem version 6.0|TI OMAP4|Does not play HLS streams. Video on AIR does not work.||Upgrade to system version 6.3.|

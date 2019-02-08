@@ -16,7 +16,7 @@ The Resource Loader code is responsible for the following tasks:
 1. Format the request. 
 1. Provide the necessary information to the server, so that the server can decide whether the request should be permitted.
 
-For example, if you are using Adobe’s Primetime Cloud DRM powered by ExpressPlay, your Resource Loader sends the request to: 
+For example, if you are using Adobe's Primetime Cloud DRM powered by ExpressPlay, your Resource Loader sends the request to: 
 
 ```
 https://fp-gen.service.expressplay.com

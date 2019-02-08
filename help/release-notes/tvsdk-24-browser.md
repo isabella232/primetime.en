@@ -132,7 +132,7 @@ In the UI Framework, the way of passing network configurations through the playe
 
 #### Version 2.4.6 {#version}
 
-`var player = ptp.videoPlayer(‘#videoHolder’, {`
+`var player = ptp.videoPlayer(‘#videoHolder', {`
 
 `player: {`
 
@@ -144,7 +144,7 @@ In the UI Framework, the way of passing network configurations through the playe
 
 #### Version 2.4.7 {#version-1}
 
-`var player = ptp.videoPlayer(‘#videoHolder’, {`
+`var player = ptp.videoPlayer(‘#videoHolder', {`
 
 `player: {`
 
@@ -438,28 +438,9 @@ Here is a list of the supported and unsupported features for this release:
 
 #### Table 2: Core Playback {#table-core-playback-1}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p><strong>Category</strong></p> </td> 
-   <td><p><strong>Content Type</strong></p> </td> 
-   <td><p><strong>Feature</strong></p> </td> 
-   <td><p><strong>Flash</strong></p> </td> 
-   <td><p><strong>HTML5: FF, IE, Chrome, Android Chrome</strong></p> </td> 
-   <td><p><strong>HTML5: Safari, iOS Safari</strong></p> </td> 
-  </tr> 
-  <tr> 
-  </tr> 
-  <tr> 
-   <td><p>Playback</p> </td> 
-   <td><p>MP4 VOD</p> </td> 
-   <td><p>General Playback (Play, Pause, Seek)</p> </td> 
-   <td><p>Not Supported</p> </td> 
-   <td><p>Y</p> </td> 
-   <td><p>Y</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Category|Content Type|Feature|Flash|HTML5: FF, IE, Chrome, Android Chrome|HTML5: Safari, iOS Safari|
+|--- |--- |--- |--- |--- |--- |
+|Playback|MP4 VOD|General Playback (Play, Pause, Seek)|Not Supported|Y|Y|
 
 #### Table 3: Core Ad Insertion {#table-core-ad-insertion}
 

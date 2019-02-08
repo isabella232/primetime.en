@@ -32,7 +32,7 @@ In Browser TVSDK, you can seek to a specific position (time) in a stream. A stre
    void seek(long position) throws IllegalStateException;
    ```
 
-1. Wait for Browser TVSDK to trigger the  `AdobePSDK.PSDKEventType.SEEK_END`  event, which returns the adjusted position in the event’s `actualPosition` attribute:
+1. Wait for Browser TVSDK to trigger the  `AdobePSDK.PSDKEventType.SEEK_END`  event, which returns the adjusted position in the event's `actualPosition` attribute:
 
        ```js    
        player.addEventListener(AdobePSDK.PSDKEventType.SEEK_END, onSeekComplete); 
@@ -44,7 +44,7 @@ In Browser TVSDK, you can seek to a specific position (time) in a stream. A stre
        This is important because the actual start position after the seek could be different from the requested position. Some of the following rules might apply:
 
     * Playback behavior is affected if a seek, or other repositioning, ends in the middle of an ad break or skips ad breaks. 
-    * You can seek only in the asset’s seekable duration. For VOD, that is from 0 through the asset's duration.
+    * You can seek only in the asset's seekable duration. For VOD, that is from 0 through the asset's duration.
 
 1. For the seekbar that was created in the example above, listen for `setPositionChangeListener()` to see when the user is scrubbing:
 
@@ -63,7 +63,7 @@ In Browser TVSDK, you can seek to a specific position (time) in a stream. A stre
    
    ```
 
-1. Set up event listener callbacks for changes in the user’s seek activity.
+1. Set up event listener callbacks for changes in the user's seek activity.
 
        The seek operation is asynchronous, so Browser TVSDK dispatches these events related to seeking:
 
