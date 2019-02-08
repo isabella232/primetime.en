@@ -140,12 +140,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="4"><span class="codeph"> URL </span> </td> 
    <td colname="5"> <p>Error getting data from the network. </p> </td> 
   </tr> 
-  <tr rowsep="1"> 
-   <td colspan="4"> <p>Note: The [] attribute specifies an optional key for notification. </p> </td> 
-   <td colname="5"> </td> 
-  </td> 
-  </tr> 
  </tbody> 
 </table>
 
->[!NOTE] adID and source (URL) can be retrieved through the PTAdAsset in the notification metadata with the `AD_ASSET` key.
+>[!NOTE] 
+>
+>adID and source (URL) can be retrieved through the PTAdAsset in the notification metadata with the `AD_ASSET` key.
+>
+>The [] attribute specifies an optional key for notification.
