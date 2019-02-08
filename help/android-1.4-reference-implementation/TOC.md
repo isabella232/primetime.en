@@ -1,8 +1,8 @@
 ---
 cloud: experience-cloud
 product: primetime
-archtype: end-user
-user-guide: Primetime Video Playback Help
+audience: end-user
+user-guide-title: Primetime Video Playback Help
 ---
 
 # Primetime Video Playback Help {#video-playback}

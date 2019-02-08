@@ -1,8 +1,8 @@
 ---
 cloud: experience-cloud
 product: adobe primetime
-archtype: end-user
-user-guide: Primetime Migration Help
+audience: end-user
+user-guide-title: Primetime Migration Help
 ---
 
 # Primetime Migration Help {#migration}

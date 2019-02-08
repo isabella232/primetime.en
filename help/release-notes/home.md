@@ -1,11 +1,11 @@
 ---
-title: Primetime Android Help
-seo-title: Adobe Primetime Help for Android
+title: Primetime Release Notes
+seo-title: Adobe Primetime Release Notes
 description: null
 seo-description: null
 ---
 
-# Primetime Android Help
+# Primetime Release Notes
 
 Description of Primetime and user guide.
 
@@ -28,12 +28,12 @@ Description of Primetime and user guide.
 
 | User Guide | Description |
 |--- |--- |
-| Link to user guide | Description |
-| Link to user guide | Description |
-| Link to user guide | Description |
-| Link to user guide | Description |
-| Link to user guide | Description |
-| Link to user guide | Description |
+| [Primetime Video Playback Help](/help/android-1.4-reference-implementation/home.md) | Description |
+| [Primetime DRM Help](/help/digital-rights-management/home.md) | Description |
+| [Dynamic Ad Insertion Help](/help/dynamic-ad-insertion/home.md) | Description |
+| [Primetime Migration Help](/help/migration-guides/home.md) | Description |
+| [Primetime Programming Help](/help/programming/home.md) | Description |
+| [Primetime Release Notes](/help/release-notes/home.md) | Description |
 
 ## Key Primetime resources
 

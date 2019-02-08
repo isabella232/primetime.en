@@ -1,8 +1,8 @@
 ---
 cloud: experience-cloud
 product: adobe primetime
-archtype: end-user
-user-guide: Dynamic Ad Insertion Help
+audience: end-user
+user-guide-title: Dynamic Ad Insertion Help
 ---
 
 # Dynamic Ad Insertion Help {#ad-insertion}

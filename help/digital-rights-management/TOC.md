@@ -1,8 +1,8 @@
 ---
 cloud: experience-cloud
 product: adobe primetime
-archtype: end-user
-user-guide: Primetime DRM Help
+audience: end-user
+user-guide-title: Primetime DRM Help
 ---
 
 # Digital Rights Management Help {#drm}

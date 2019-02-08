@@ -1,8 +1,8 @@
 ---
 cloud: experience-cloud
 product: adobe primetime
-archtype: end-user
-user-guide: Primetime Programming Help
+audience: end-user
+user-guide-title: Primetime Programming Help
 ---
 
 # Primetime Programming Help {#programming}

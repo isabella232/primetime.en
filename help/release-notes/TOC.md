@@ -1,8 +1,8 @@
 ---
 cloud: experience-cloud
 product: adobe primetime
-archtype: end-user
-user-guide: Primetime Release Notes
+audience: end-user
+user-guide-title: Primetime Release Notes
 ---
 
 # Primetime Release Notes {#release-notes}
