@@ -183,12 +183,12 @@ user-guide: Primetime Programming Help
       + [Configure billing metrics](tvsdk-3.0-for-android/android-3.0-billing-title/billing/android-3.0-billing-config.md)
       + [Transmit billing metrics](tvsdk-3.0-for-android/android-3.0-billing-title/billing/android-3.0-billing-data-format.md)
 + TVSDK 3.3 for iOS {#tvsdk-3.3-for-ios}
-   + [Introduction] {#introduction}
+   + Introduction {#introduction}
       + [Element ID :overview](tvsdk-3.3-for-ios/c-psdk-ios-3.3-introduction/c-psdk-ios-3.3-overview/c-psdk-ios-3.3-overview.md)
       + [Primetime TVSDK features](tvsdk-3.3-for-ios/c-psdk-ios-3.3-introduction/c-psdk-ios-3.3-overview/c-psdk-ios-3.3-overview-of-the-player.md)
       + [Considerations and best practices](tvsdk-3.3-for-ios/c-psdk-ios-3.3-introduction/c-psdk-ios-3.3-overview/c-psdk-ios-3.3-considerations.md)
       + [Requirements](tvsdk-3.3-for-ios/c-psdk-ios-3.3-introduction/c-psdk-ios-3.3-requirements.md)
-   + [Content playback options] {content-playback-options}
+   + Content playback options {content-playback-options}
       + [Create Video player](tvsdk-3.3-for-ios/c-psdk-ios-3.3-content-playback-options/t-psdk-ios-3.3-create-a-video-player/t-psdk-ios-3.3-create-a-video-player.md)
       + [Set up the PTMediaPlayer](tvsdk-3.3-for-ios/c-psdk-ios-3.3-content-playback-options/t-psdk-ios-3.3-create-a-video-player/t-psdk-ios-3.3-mediaplayer-set-up-ios.md)
       + [Set up notifications](tvsdk-3.3-for-ios/c-psdk-ios-3.3-content-playback-options/t-psdk-ios-3.3-create-a-video-player/c-psdk-ios-3.3-notification.md)
@@ -203,17 +203,17 @@ user-guide: Primetime Programming Help
    + [Quality of service statistics](tvsdk-3.3-for-ios/c-psdk-ios-3.3-qos-statistics-monitor.md)
    + [Work with MediaPlayer objects](tvsdk-3.3-for-ios/c-psdk-ios-3.3-mediaplayerobjects-working-with.md)
    + [Instant-on](tvsdk-3.3-for-ios/c-psdk-ios-3.3-instant-on-ios.md)
-   + [Advertising] {#advertising}
+   + Advertising {#advertising}
       + [Advertising requirements](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/r-psdk-ios-3.3-advertising-requirements.md)
       + [Partial ad-break insertion](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-partialad-break-insertion.md)
       + [Insert ads](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-ad-insertion-about.md)
       + [Default and customized playback behavior with ads](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-playback-post1.2.md)
       + [Customize playback with ads](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-playback-customize.md)
       + [Just-in-Time ad resolving](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-ios-lazy-ad-resolving.md)
-      + [Primetime ad server metdata] {#ad-server-metadata}
+      + Primetime ad server metdata {#ad-server-metadata}
          + [Primetime ad server metadata overview](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-primetime-ad-serving-metadata/c-psdk-ios-3.3-primetime-ad-serving-metadata.md)
          + [Ad signaling mode](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-primetime-ad-serving-metadata/r-psdk-ios-3.3-ad-signaling-mode.md)
-      + [Companion banner ads] {#banner-ads}
+      + Companion banner ads {#banner-ads}
          + [Companion banner ads overview](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-companion-banner-ads/c-psdk-ios-3.3-companion-banner-ads.md)
          + [Companion banner data](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-companion-banner-ads/r-psdk-ios-3.3-companion-banner-data.md)
          + [Display banner ads](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-companion-banner-ads/t-psdk-ios-3.3-companion-banner-ads-display.md)
@@ -223,7 +223,7 @@ user-guide: Primetime Programming Help
       + [VPAID 2.0 ad support](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-vpaid-2.0-ads.md)
       + [Ad fallback for VAST and VMAP ads](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-ad-fallback.md)
       + [Load Ad for a DVR window](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-ad-loading-for-a-dvr-window.md)
-      + [Custom tags] {#custom-tags}
+      + Custom tags {#custom-tags}
          + [Custom tags overview](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-custom-tags-configure/c-psdk-ios-3.3-custom-tags-configure.md)
          + [Example of a customized VOD asset](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-custom-tags-configure/c-psdk-ios-3.3-custom-tags-overview.md)
          + [Config class methods for tags](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-custom-tags-configure/c-psdk-ios-3.3-custom-tags-psdkconfig-methods.md)
@@ -232,34 +232,34 @@ user-guide: Primetime Programming Help
          + [Add listeners for timed metadata notifications](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-custom-tags-configure/t-psdk-ios-3.3-custom-tags-receive-notifications.md)
          + [Store timed metadata objects as they are dispatched](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-custom-tags-configure/t-psdk-ios-3.3-timed-metadata-store.md)
          + [Use timed metadata](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-custom-tags-configure/t-psdk-ios-3.3-timed-metadata-use.md)
-      + [Update ad creative selection rules] {#update-rules}
+      + Update ad creative selection rules {#update-rules}
          + [Update ad creative selection rules overview](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-updating-rules/c-psdk-ios-3.3-updating-rules.md)
          + [Priority rules](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-updating-rules/r-psdk-ios-3.3-priority-rule.md)
          + [Normalize rules](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-updating-rules/r-psdk-ios-3.3-normalize-rule.md)
          + [Sample creative selection rules](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-updating-rules/r-psdk-ios-3.3-sample-rule-files.md)
          + [Apply creative selection rules](tvsdk-3.3-for-ios/c-psdk-ios-3.3-advertising/c-psdk-ios-3.3-updating-rules/c-psdk-ios-3.3-how-tvsdk-applies-csr.md)
    + [Tokenized segment streams](tvsdk-3.3-for-ios/c-psdk-ios-3.3-tokenized-segment-streams.md)
-   + [Customize opportunity detectors and content resolvers]{#customize-content-resolvers}
+   + Customize opportunity detectors and content resolvers {#customize-content-resolvers}
       + [Opportunity generators and content resolvers](tvsdk-3.3-for-ios/c-psdk-ios-3.3-content-resolver/c-psdk-ios-3.3-content-resolver-about.md)
       + [Implement a custom opportunity/content resolver](tvsdk-3.3-for-ios/c-psdk-ios-3.3-content-resolver/t-psdk-ios-3.3-content-resolver-implement-ios.md)
-   + [Delete and replace ads in VOD streams] {delete-replace-content-vod}
+   + Delete and replace ads in VOD streams {delete-replace-content-vod}
       + [Ad deletion and replacement API changes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-delete-replace-content-vod/c-psdk-ios-3.3-ad-deletion-replacement-api-changes-ios.md)
       + Use cases to delete and replace ads {#use-cases-to-delete-and-replace-ads}
          + [Mark ranges](tvsdk-3.3-for-ios/c-psdk-ios-3.3-delete-replace-content-vod/c-psdk-ios-3.3-ad-delete-replace-use-cases/t-psdk-ios-3.3-mark-ranges-ios.md)
          + [Replace ranges](tvsdk-3.3-for-ios/c-psdk-ios-3.3-delete-replace-content-vod/c-psdk-ios-3.3-ad-delete-replace-use-cases/t-psdk-ios-3.3-replace-ranges-ios.md)
          + [Delete Ranges](tvsdk-3.3-for-ios/c-psdk-ios-3.3-delete-replace-content-vod/c-psdk-ios-3.3-ad-delete-replace-use-cases/t-psdk-ios-3.3-delete-ranges-ios.md)
-   + [Handle blackouts in live streams] {handle-blackouts-in-live-streams}
+   + Handle blackouts in live streams {handle-blackouts-in-live-streams}
       + [Handle blackouts](tvsdk-3.3-for-ios/c-psdk-ios-3.3-blackouts-handle-ios/c-ios-blackouts-handle-ios.md)
       + [Blackout API elements](tvsdk-3.3-for-ios/c-psdk-ios-3.3-blackouts-handle-ios/c-ios-blackout-apis.md)
       + [Implement blackout handling](tvsdk-3.3-for-ios/c-psdk-ios-3.3-blackouts-handle-ios/t-psdk-ios-3.3-blackouts-implement-handling-ios.md)
-   + [Subtitles and closed captioning] {#subtitles-and-closed-captioning}}
+   + Subtitles and closed captioning {#subtitles-and-closed-captioning}}
       + [Requirements for subtitles and closed captions](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/c-ios-closed-captioning-and-subtitles-reqts-ios.md)
       + [Expose subtitles](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-ios-subtitles-exposing-ios.md)
       + [Expose closed captions](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-psdk-ios-closed-captions-exposing-ios.md)
-   + [Alternate audio] {#alternate-audio)
+   + Alternate audio {#alternate-audio)
       + [Alternate audio overview](tvsdk-3.3-for-ios/alternate-audio/c-psdk-ios-3.3-alternate-audio-in-playlist.md)
       + [Access alternate audio tracks](tvsdk-3.3-for-ios/alternate-audio/t-psdk-ios-3.3-alternate-audio-implement.md)
-   + [Video analytics] {#video-analytics}
+   + Video analytics {#video-analytics}
       + [Video analytics integration](tvsdk-3.3-for-ios/c-psdk-ios-3.3-va-integration-overview/c-psdk-ios-3.3-va-integration/c-psdk-ios-3.3-va-integration.md)
       + [Initialize and configure video analytics](tvsdk-3.3-for-ios/c-psdk-ios-3.3-va-integration-overview/c-psdk-ios-3.3-va-integration/t-psdk-ios-3.3-va-integrate-heartbeats.md)
       + [Implement custom metadata support](tvsdk-3.3-for-ios/c-psdk-ios-3.3-va-integration-overview/c-psdk-ios-3.3-va-integration/t-psdk-ios-3.3-va-custom-metadata.md)
@@ -267,27 +267,27 @@ user-guide: Primetime Programming Help
       + [Implement custom time updates](tvsdk-3.3-for-ios/c-psdk-ios-3.3-va-integration-overview/c-psdk-ios-3.3-va-integration/t-psdk-ios-3.3-imp-cust-time-updates.md)
       + [Set up video analytics reporting on the server side](tvsdk-3.3-for-ios/c-psdk-ios-3.3-va-integration-overview/c-psdk-ios-3.3-va-integration/t-psdk-ios-3.3-va-server-side-reporting-set-up.md)
       + [Access video analytics reports](tvsdk-3.3-for-ios/c-psdk-ios-3.3-va-integration-overview/c-psdk-ios-3.3-va-integration/t-psdk-ios-3.3-va-reports-access.md)
-   + [Content protection] {#content-protection}
+   + Content protection {#content-protection}
       + [Primetime DRM interface overview](tvsdk-3.3-for-ios/c-psdk-ios-3.3-drm-content-security/r-psdk-ios-3.3-drm-interface.md)
       + [Implement Primetime DRM in a TSVDK application](tvsdk-3.3-for-ios/c-psdk-ios-3.3-drm-content-security/c-psdk-ios-3.3-tvsdk-drm-workflow.md)
       + [Apple FairPlay in TVSDK applications](tvsdk-3.3-for-ios/c-psdk-ios-3.3-drm-content-security/c-psdk-ios-3.3-apple-fairplay-tvsdk.md)
       + [Whitelist your iOS application](tvsdk-3.3-for-ios/c-psdk-ios-3.3-drm-content-security/t-psdk-ios-3.3-whitelist-your-ios-application.md)
-   + [Notifications for player status, activity, errors, and logs] {#notifications-for-player-status-activity-errors-and-logs}
+   + Notifications for player status, activity, errors, and logs {#notifications-for-player-status-activity-errors-and-logs}
      + [Notification content](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-system/c-psdk-ios-3.3-notification-content.md)
      + [Notification setup](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-system/c-psdk-ios-3.3-notification-setup.md)
      + [Listen to notifications](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-system/t-psdk-ios-3.3-listening-to-notifications.md)
      + [Implement notification callbacks](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-system/t-psdk-ios-3.3-implementing-notification-callbacks.md)
      + [Add custom notifications](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-system/t-psdk-ios-3.3-adding-custom-notifications.md)
-   + [Customized logging] {#customized-logging}
+   + Customized logging {#customized-logging}
       + [Understanding customized logging](tvsdk-3.3-for-ios/c-psdk-ios-3.3-customized-logging/c-ios-customized-logging/c-ios-customized-logging.md)
       + [Listen to logs](tvsdk-3.3-for-ios/c-psdk-ios-3.3-customized-logging/c-ios-customized-logging/t-ios-listening-to-logs.md)
       + [Add new log messages](tvsdk-3.3-for-ios/c-psdk-ios-3.3-customized-logging/c-ios-customized-logging/t-psdk-ios-3.3-adding-new-log-messages.md)
    + [Failover](tvsdk-3.3-for-ios/c-psdk-ios-3.3-understanding-failover.md)
-   + [Billing metrics] {#billing-metrics}
+   + Billing metrics {#billing-metrics}
       + [Billing usage metrics](tvsdk-3.3-for-ios/c-psdk-ios-3.3-billing/c-psdk-ios-3.3-billing-metrics/c-psdk-ios-3.3-billing-metrics.md)
       + [Configure billing metrics](tvsdk-3.3-for-ios/c-psdk-ios-3.3-billing/c-psdk-ios-3.3-billing-metrics/t-psdk-ios-3.3-billing-config.md)
       + [Transmit billing metrics](tvsdk-3.3-for-ios/c-psdk-ios-3.3-billing/c-psdk-ios-3.3-billing-metrics/r-psdk-ios-3.3-billing-data-format.md)
-   + [Primetime Player classes summary] {#primetime-player-classes-summar
+   + Primetime Player classes summary {#primetime-player-classes-summar
       + [Element ID :c_psdk_ios_player-classes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-primetime-player-class-summary/r-psdk-ios-3.3-classes-media-player-ios.md)
       + [Logging classes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-primetime-player-class-summary/r-psdk-ios-3.3-classes-logging.md)
       + [Metadata classes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-primetime-player-class-summary/r-psdk-ios-3.3-classes-metadata.md)
@@ -297,7 +297,7 @@ user-guide: Primetime Programming Help
       + [Timeline advertising classes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-primetime-player-class-summary/r-psdk-ios-3.3-classes-timeline-advertising.md)
       + [Digital Rights Management classes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-primetime-player-class-summary/r-psdk-ios-3.3-classes-digital-rights-management-ios.md)
       + [Video Analytics classes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-primetime-player-class-summary/r-psdk-ios-3.3-classes-video-analytics.md)
-   + [Notification codes] {#notification-codes}
+   + Notification codes {#notification-codes}
       + [TVSDK notification system](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-codes/c-ios-notification-codes/c-ios-notification-codes.md)
       + [ERROR notification codes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-codes/c-ios-notification-codes/r-psdk-ios-3.3-notifications-errors.md)
       + [WARNING notification codes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-codes/c-ios-notification-codes/r-psdk-ios-3.3-notification-warnings.md)
