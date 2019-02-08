@@ -28,10 +28,6 @@ When this parameter is set, use the audio output latency in the audio timestamp 
 
 It accepts a Boolean parameters val. If its value is `True`, the client uses the audio output latency in the audio timestamp calculation.
 
-<details>
-<summary><b>New features in the previous releases</b></summary>
-<p>
-
 **Version 1.4.42**
 
 **Partial Ad-Break Insertion:**
@@ -158,14 +154,8 @@ For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvs
   }
 
   }
-  </p>
-  </details>
 
 ## TVSDK changes for 1.4 {#tvsdk-changes}
-
-<details>
-<summary><b>API additions</b></summary>
-<p>
 
 * The interface PlaybackEventListener has a new method called onReplaceMediaPlayerItem, which you can use to listen for a new event, ITEM_REPLACED. This event is dispatched whenever a MediaPlayeritem instance is replaced on MediaPlayer. The client application implementing this PlaybackEventListener must implement or override this new method.
 
@@ -191,9 +181,6 @@ return opportunityDetectors;
 
 }
 
-</p>
-</details>
-
 ## Device certification and support in 1.4 {#device-certification-and-support-in}
 
 >[!NOTE]
@@ -207,10 +194,6 @@ return opportunityDetectors;
 
 TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 and 8.1 (Oreo).
 
-<details>
-<summary><b>Device certification and support in the previous releases</b></summary>
-<p>
-
 * **Version 1.4.23:**   
 
   * TVSDK 1.4.23 has been certified for Android Devices with Android N.
@@ -219,9 +202,6 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 
   * Primetime has been certified for Amazon Fire TV.
   * VPAID 2.0 is supported only on devices with Android 4.0 and above.
-
-</p>
-</details>
 
 ## Resolved issues in 1.4 {#resolved-issues-in}
 
@@ -246,10 +226,6 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
   * Added alwaysUseAudioOutputLatency in MediaPlayer class which when set, Will result in using audio output latency in audio timestamp calculation.
 
 * Ticket #34949 - New version of video heartbeat library (VHL) integrated.
-
-<details>
-<summary><b>Resolved issues in the previous releases</b></summary>
-<p>
 
 **Version 1.4.42 (1791)**
 
@@ -795,14 +771,7 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
 * Zendesk #1674 - ClosedCaption Not showing up, correct 708 caption display when 0x03 ETX codes are missing. 
 * PTPLAY-2157 - Default Closed Captioning styles were returned by getters even if after a different styles has been set and verified visually on the stream. The Closed Caption style properties will now show the value they have been set to.
 
-</p>
-</details>
-
 ## Known issues in 1.4 {#known-issues-in}
-
-<details>
-<summary><b>Known issues in the previous releases</b></summary>
-<p>
 
 ### Version 1.4.31
 
@@ -866,14 +835,8 @@ The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during t
 * Some devices have known playback issues. For more information, see [Known device issues in 1.4](https://helpx.adobe.com/primetime/release-notes/tvsdk-1-4-android.html#Knownissuesin14).
 * Reference Implementation - Trick play is not implemented in the sample application.
 
-</p>
-</details>
-
 ## Known device issues in 1.4 {#known-device-issues-in}
 
-<details>
-<summary><b>Known device issues in the previous releases</b></summary>
-<p>
 |Device|Chipset|Issue|Cause|Workaround|
 |--- |--- |--- |--- |--- |
 |Droid X|TI OMAP3|ABR Delay is expected since it’s restarting the decoder.|||
@@ -896,6 +859,3 @@ The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during t
 |Samsung Galaxy Tab 1 v10.1|Tegra 2|MBR transition might take up to three seconds.|As a fix for MBR crashes, we restart the decoder for every stream switch, which can take up to three seconds.||
 |Samsung Galaxy Y||Can't install SampleMediaPlayer app.|Uses ARM v6 instead of the more common ARM v7 chipset. FP/AIR does not support this device.||
 |Xoom|Tegra|A few frames are dropped for switching. The decoder is not restarted.|OMXAL limitation.||
-
-</p>
-</details>

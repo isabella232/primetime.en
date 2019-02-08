@@ -1,5 +1,5 @@
 ---
-title: Primetime Streaming Server 1.x releases
+title: Primetime Streaming Server releases
 seo-title: Primetime Streaming Server 1.x releases
 description: What’s new in Primetime Streaming Server 1.3 and 1.4 releases.
 seo-description: What’s new in Primetime Streaming Server 1.3 and 1.4 releases.
@@ -9,7 +9,7 @@ topic-tags: release-notes
 discoiquuid: baec714e-9d41-4e8b-b134-13a736885cbd
 ---
 
-# Primetime Streaming Server 1.x releases {#primetime-streaming-server-x-releases}
+# Primetime Streaming Server releases {#primetime-streaming-server-x-releases}
 
 What’s new in Primetime Streaming Server 1.3 and 1.4 releases.
 
@@ -146,12 +146,12 @@ Several performance enhancements has been incorporated to the JIT packaging capa
 **Install streaming server**
 
 1. Download the Java SE and JDK software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the installation instructions.
-2. Extract the Adobe Primetime-Streaming Server 1.4 archive file, Primetime- StreamingServer-1-4-0-b206-12042014.zip to your disk.
+2. Extract the Adobe Primetime-Streaming Server 1.4 archive file, `Primetime- StreamingServer-1-4-0-b206-12042014.zip` to your disk.
 
 **Start the Primetime Streaming Server**
 
 To start the Streaming Server, execute the following command from the command line in the Streaming Server’s root directory:  
-$./pss_start.sh
+`$./pss_start.sh`
 
 **Configure the Primetime Streaming Server as Live Packager or HTTP Origin Server**
 
@@ -225,30 +225,30 @@ The above minimum system requirements holds true for Origin Server as well as Li
 **Installing the Live Packager**
 
 1. Download the Java SE and JDK software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the installation instructions.
-1. Extract the Adobe Primetime - Live Packager 1.4 archive file Primetime-LivePackager-1-4-0-b206-12042014.zip to your disk.
+1. Extract the Adobe Primetime - Live Packager 1.4 archive file `Primetime-LivePackager-1-4-0-b206-12042014.zip` to your disk.
 
 **Installing the HTTP Origin Server**
 
 1. Download the Java JRE and JDK software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the installation instructions.
-1. Extract the Adobe Primetime - HTTP Origin Server 1.4 archive file, Primetime-HttpOrigin-1-4-0-b206-12042014.zip, to your disk.
+1. Extract the Adobe Primetime - HTTP Origin Server 1.4 archive file, `Primetime-HttpOrigin-1-4-0-b206-12042014.zip`, to your disk.
 
 **To start the Live Packager** To start the packager, execute the following command from the packager’s root directory:  
-$packager_start.sh
+`$packager_start.sh`
 
 **To start the HTTP Origin Server**
 
 To start the HTTP Origin Server, execute the following command from the command line in the Origin Server’s root directory:  
-$./origin_start.sh
+`$./origin_start.sh`
 
 **Stop the Live Packager**
 
 To stop the packager, execute the following command from the packager’s root directory:  
-$packager_stop.sh
+`$packager_stop.sh`
 
 **Stop the HTTP Origin Server**
 
 To stop the HTTP Origin Server, execute the following command in the Origin Server’s root directory:  
-$./origin_stop.sh
+`$./origin_stop.sh`
 
 **Restart the Live Packager**
 
@@ -264,7 +264,7 @@ To restart the HTTP Origin Server, stop and start the HTTP Origin Server.
 
 The distribution file contains a sample configuration that can be used for testing the packager.
 
-After extracting the Adobe Primetime - Live Packager 1.4 archive, change directories to the packager directory, and run the packager_start.sh script. The sample configuration listens on the multicast address 239.235.0.3:14000, and runs the local origin server on port 8080. The output is configured to be written to the packager/webroot/_default_/_default_/ directory.
+After extracting the Adobe Primetime - Live Packager 1.4 archive, change directories to the packager directory, and run the packager_start.sh script. The sample configuration listens on the multicast address 239.235.0.3:14000, and runs the local origin server on port 8080. The output is configured to be written to the `packager/webroot/_default_/_default_/ directory`.
 
 <!-- 
 
@@ -314,6 +314,6 @@ To uninstall the HTTP Origin Server, stop the HTTP Origin Server and remove the 
 To install Offline Packager, follow these steps:
 
 1. Download the Java SE software from the [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and follow the install instructions.
-1. Extract the Adobe Primetime - Offline Packager 1.4 archive file, Primetime- OfflinePackager-1-4-0-b206-12042014.zip, to your disk.
+1. Extract the Adobe Primetime - Offline Packager 1.4 archive file, `Primetime- OfflinePackager-1-4-0-b206-12042014.zip`, to your disk.
 
 Refer the Primetime Offline Packager Getting Started document for the configuration details available [here](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html).

@@ -10,7 +10,7 @@ topic-tags: release-notes
 discoiquuid: 933a0711-846a-4bb7-bf51-b300822a93d4
 ---
 
-# Primetime Offline Packager 2.x releases {#primetime-offline-packager-x-releases}
+# Primetime Offline Packager releases {#primetime-offline-packager-x-releases}
 
 What’s new in Primetime Offline Packager 2.1 and 2.3.1 releases
 
@@ -110,9 +110,7 @@ Hardware requirements
 * Hard Disk
 
   * (Disk-SAS): Minimum 10GB with 7.5K RPM
-
   * (Disk-SSD): 400MBps read/write speed
-
   * (NAS): 1 GB dedicated link
 
 Software requirements
