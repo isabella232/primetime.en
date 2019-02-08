@@ -6,7 +6,7 @@ title: Ad deletion and replacement API changes
 uuid: 3689d31f-4feb-4ea5-ac49-ef2e71472f4b
 ---
 
-# Ad deletion and replacement API changes{#ad-deletion-and-replacement-api-changes}
+# Ad deletion and replacement API changes {#ad-deletion-and-replacement-api-changes}
 
 TVSDK supports the programmatic deleting and replacing of ad content in VOD streams.
 
@@ -66,4 +66,3 @@ The following changes in TVSDK support ad deletion and replacement.
 * `PTAdMetadata`:
 
     * `property NSArray* externalAdRanges` - This property was previously used to define C3 ranges for marking. It is now deprecated, as these ranges are set via `PTTimeRangeCollection`.
-

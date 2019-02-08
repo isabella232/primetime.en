@@ -6,7 +6,7 @@ title: Partial ad-break insertion
 uuid: 799acdd8-fbb9-43b4-955a-3f56825d1e87
 ---
 
-# Partial ad-break insertion{#partial-ad-break-insertion}
+# Partial ad-break insertion {#partial-ad-break-insertion}
 
 TVSDK provides a TV-like experience of being able to join in the middle of an ad, in live streams.
 
@@ -22,4 +22,4 @@ Ad trackers for the partially played ad (the second ad) are not triggered. In th
 
 The feature works when a pre-roll ad is played with live content. The stream plays from the live point after pre-roll ad ends.
 
-Ad break events is sent even if there are no complete ads in this ad break. An ad is considered partial ad, if is skipped for more than one second. For example, if a viewer watches an ad that they skipped for 800 ms, it is considered as a complete ad. 
+Ad break events is sent even if there are no complete ads in this ad break. An ad is considered partial ad, if is skipped for more than one second. For example, if a viewer watches an ad that they skipped for 800 ms, it is considered as a complete ad.

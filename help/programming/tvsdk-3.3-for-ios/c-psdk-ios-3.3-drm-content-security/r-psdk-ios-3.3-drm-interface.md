@@ -48,5 +48,3 @@ If the DRM-protected stream is multiple bit-rate (MBR) encoded, the DRM metadata
 >The `faxs=1` query string parameter signals that the content is DRM protected, and triggers the DRM decryption workflow accordingly in the iOS TVSDK. You can also append the `faxs=1` tag on DRM-protected HLS asset URLs that are destined for other platforms; it is observed as required on iOS or treated as a non-op in players on other platforms.
 
 <!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
-
-For more information about DRM, see the [Adobe Primetime DRM documentation](https://help.adobe.com/en_US/primetime/drm). 

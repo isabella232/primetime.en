@@ -6,7 +6,7 @@ title: Access alternate audio tracks
 uuid: 2915a74f-5ec3-457e-890d-5c79be39f37a
 ---
 
-# Access alternate audio tracks{#access-alternate-audio-tracks}
+# Access alternate audio tracks {#access-alternate-audio-tracks}
 
 Late-binding audio uses PTMediaPlayer to play a video that is specified in an M3U8 HLS playlist and that can contain several alternate audio streams.
 

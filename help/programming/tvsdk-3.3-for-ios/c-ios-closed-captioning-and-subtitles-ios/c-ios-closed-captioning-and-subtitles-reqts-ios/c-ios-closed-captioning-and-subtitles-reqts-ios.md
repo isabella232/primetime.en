@@ -6,7 +6,7 @@ title: Requirements for subtitles and closed captions
 uuid: 18ed6ac1-4b25-4590-8c61-3ffb0464d093
 ---
 
-# Requirements for subtitles and closed captions{#requirements-for-subtitles-and-closed-captions}
+# Requirements for subtitles and closed captions {#requirements-for-subtitles-and-closed-captions}
 
 Closed captions and subtitles have some unique differences, and you enable them in different ways.
 
@@ -36,4 +36,3 @@ You should be aware of the following requirements for closed captions and subtit
 >[!IMPORTANT]
 >
 >The requirements for subtitles do not apply to closed captions.
-

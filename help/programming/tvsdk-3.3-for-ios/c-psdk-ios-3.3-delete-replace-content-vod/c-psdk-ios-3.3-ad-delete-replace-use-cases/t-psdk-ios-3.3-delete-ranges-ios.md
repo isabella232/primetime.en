@@ -6,7 +6,7 @@ title: Delete Ranges
 uuid: b9b05321-2cc4-453d-9005-977b5b67d72f
 ---
 
-# Delete Ranges{#delete-ranges}
+# Delete Ranges {#delete-ranges}
 
  To implement the `PTTimeRangeCollection` and delete ranges of content as ads: 
 1. Prepare the `PTTimeRangeCollection`.
@@ -65,4 +65,3 @@ uuid: b9b05321-2cc4-453d-9005-977b5b67d72f
    //Start playback 
    [player play];
    ```
-

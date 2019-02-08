@@ -4,7 +4,7 @@ title: Add new log messages
 uuid: 8a3115f9-88f2-4ac1-89e4-21e992665f7b
 ---
 
-# Add new log messages{#add-new-log-messages}
+# Add new log messages {#add-new-log-messages}
 
  To register to listen to logs: 
 1. Create a new `PTLogEntry` and add it to `thePTLogFactory`:
@@ -22,4 +22,3 @@ uuid: 8a3115f9-88f2-4ac1-89e4-21e992665f7b
  
 PTLogDebug(@"[DEBUG_PLAYBACK] Playback has started");
 ```
-

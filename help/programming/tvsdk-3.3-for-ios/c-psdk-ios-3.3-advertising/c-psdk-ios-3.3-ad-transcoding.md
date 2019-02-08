@@ -6,7 +6,7 @@ title: Repackage incompatible ads using Adobe Creative Repackaging Service
 uuid: 56a2405d-b395-4fea-820d-343590be7c19
 ---
 
-# Repackage incompatible ads using Adobe Creative Repackaging Service{#repackage-incompatible-ads-using-adobe-creative-repackaging-service}
+# Repackage incompatible ads using Adobe Creative Repackaging Service {#repackage-incompatible-ads-using-adobe-creative-repackaging-service}
 
 Some third-party ads (or creatives) cannot be stitched into the HTTP Live Streaming (HLS) content stream because their video format is incompatible with HLS. Primetime ad insertion and TVSDK can optionally attempt to repackage incompatible ads into compatible M3U8 videos.
 
@@ -16,7 +16,7 @@ When TVSDK first encounters an incompatible ad, the player ignores the ad and is
 
 To enable this optional feature, contact your Adobe representative.
 
-For more information about CRS, see [Creative Packaging Service (CRS)](https://help.adobe.com/en_US/primetime/crs/index.html).
+For more information about CRS, see [Creative Packaging Service (CRS)](../../../dynamic-ad-insertion/creative-repackaging-service/crs-overview.md).
 
 ## Multiple CDN support for CRS ad delivery {#section_900FDDA5454143718F1EB4C9732C8E1C}
 
@@ -61,4 +61,3 @@ PTDefaultURLTransformer *defaultTransformer = [[[PTDefaultURLTransformer alloc] 
 // metadata is the PTMetadata instance set on a PTMediaPlayerItem instance. 
 [metadata setMetadata:[self getNetworkConfiguration] forKey:PTNetworkConfigurationMetadataKey];
 ```
-

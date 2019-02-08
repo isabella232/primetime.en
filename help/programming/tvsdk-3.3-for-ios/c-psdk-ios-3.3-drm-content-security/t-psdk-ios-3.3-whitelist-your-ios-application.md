@@ -6,7 +6,7 @@ title: Whitelist your iOS application
 uuid: bc558f5f-d4e6-4c1c-81eb-f8bd61c63016
 ---
 
-# Whitelist your iOS application{#whitelist-your-ios-application}
+# Whitelist your iOS application {#whitelist-your-ios-application}
 
 You can whitelist your iOS apps by using Adobe's machotools tool.
 
@@ -100,4 +100,3 @@ To use `machotools`:
    ```
 
 1. Package the content by using the new DRM policy and confirm the playback of the whitelisted content in your iOS app.
-

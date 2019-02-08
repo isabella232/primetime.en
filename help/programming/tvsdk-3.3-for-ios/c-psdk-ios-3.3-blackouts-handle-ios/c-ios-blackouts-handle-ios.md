@@ -40,4 +40,3 @@ To implement the solution for this use case:
 
     * When joining the main stream when a blackout is in the DVR. 
     * When switching back to the main content from the alternate content.
-

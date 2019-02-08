@@ -6,7 +6,7 @@ title: Alternate audio tracks in the playlist
 uuid: 6241d3e4-6e07-44fb-bc0e-5d49d1a76824
 ---
 
-# Alternate audio tracks in the playlist{#alternate-audio-tracks-in-the-playlist}
+# Alternate Audio Overview {#alternate-audio-tracks-in-the-playlist}
 
 Alternate, or late-binding, audio allows you to switch among available audio tracks for a video track. This way, users can select a language track when the video is played.
 
@@ -129,4 +129,3 @@ gear2/prog_index.m3u8
 ... 
 
 ```
-

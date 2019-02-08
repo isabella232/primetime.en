@@ -6,7 +6,7 @@ title: TVSDK notification system
 uuid: cace3b4d-ac2b-4fb2-854e-ce6db17544f5
 ---
 
-# TVSDK notification system{#tvsdk-notification-system}
+# TVSDK notification system {#tvsdk-notification-system}
 
 The TVSDK notification system produces various error, warning, and informational notices that provide diagnostic metadata.
 
@@ -47,4 +47,3 @@ The TVSDK notification system produces various error, warning, and informational
   </tr> 
  </tbody> 
 </table>
-

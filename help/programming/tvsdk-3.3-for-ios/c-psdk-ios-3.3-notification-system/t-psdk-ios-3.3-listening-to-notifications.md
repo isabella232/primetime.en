@@ -4,9 +4,9 @@ title: Listen to notifications
 uuid: d513727a-6124-4494-8c7a-39f8adb06716
 ---
 
-# Listen to notifications{#listen-to-notifications}
+# Listen to notifications {#listen-to-notifications}
 
-There are two ways to listen to the `PTNotification` notification in the `PTMediaPlayer`: 
+There are two ways to listen to the `PTNotification` notification in the `PTMediaPlayer`:
 
 1. Manually check the `PTNotificationHistory` of the `PTMediaPlayerItem` with a timer and check the differences:
 
@@ -28,4 +28,3 @@ There are two ways to listen to the `PTNotification` notification in the `PTMedi
    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onMediaPlayerNotification:)  
      name:PTMediaPlayerNewNotificationEntryAddedNotification object:self.player];
    ```
-

@@ -6,7 +6,7 @@ title: Requirements
 uuid: 923e5327-10a5-440e-886d-1a03fcea13fd
 ---
 
-# Requirements{#requirements}
+# Requirements {#requirements}
 
 TVSDK requires specific properties for media content, manifest content, and software versions.
 

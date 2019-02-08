@@ -6,7 +6,7 @@ title: Implement a custom opportunity/content resolver
 uuid: 0023f516-12f3-4548-93de-b0934789053b
 ---
 
-# Implement a custom opportunity/content resolver{#implement-a-custom-opportunity-content-resolver}
+# Implement a custom opportunity/content resolver {#implement-a-custom-opportunity-content-resolver}
 
 You can implement your resolvers based on the default resolvers.
 
@@ -132,7 +132,7 @@ You can implement your resolvers based on the default resolvers.
               registerOpportunityResolver:[opportunityResolver autorelease]];
    ```
 
->When the player loads the content, and it is determined to be of type VOD or LIVE, one of the following occurs: >
->* If the content is VOD, the custom content resolver is used to get the ad timeline of the entire video. 
->* If the content is LIVE, the custom content resolver is called each time a placement opportunity (cue point) is detected in the content. 
->
+When the player loads the content, and it is determined to be of type VOD or LIVE, one of the following occurs:
+
+* If the content is VOD, the custom content resolver is used to get the ad timeline of the entire video. 
+* If the content is LIVE, the custom content resolver is called each time a placement opportunity (cue point) is detected in the content.

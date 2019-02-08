@@ -6,7 +6,7 @@ title: Implement a play/pause button
 uuid: b0ce4103-819e-4a1c-8238-1d7728ec8770
 ---
 
-# Implement a play/pause button{#implement-a-play-pause-button}
+# Implement a play/pause button {#implement-a-play-pause-button}
 
 You can set up buttons that call TVSDK methods to pause and play the media.
 
@@ -35,4 +35,3 @@ _playPauseButton =
 } 
 
 ```
-

@@ -6,7 +6,7 @@ title: Opportunity generators and content resolvers
 uuid: c49494da-2145-40d7-8f4b-2ecaf2866ca4
 ---
 
-# Opportunity generators and content resolvers{#opportunity-generators-and-content-resolvers}
+# Opportunity generators and content resolvers {#opportunity-generators-and-content-resolvers}
 
 An opportunity detector is a TVSDK component that detects custom tags in a stream and identifies placement opportunities. These opportunities are sent to the content resolver, which customizes the content/ad insertion workflow based on the placement opportunity properties and metadata.
 
@@ -35,4 +35,4 @@ When your application is notified about an opportunity (tag), your application m
 
 You can also use `PTSDKConfig.setAdTags` to add more ad marker tags/cues so that TVSDK can recognize and use `PTSDKConfig.setSubscribedTags` and notify your application about additional tags that might carry advertising workflow information.
 
-One possible use of a custom resolver is for blackout periods. To handle these periods, your application could implement and register a blackout opportunity detector that is responsible for handling blackout tags. When TVSDK encounters this tag, it polls all the registered content resolvers to find the first one that handles the specified tag. In this example, it is the blackout content resolver, which can, for example, replace the current item with alternate content on the player for the duration that is specified by the tag. 
+One possible use of a custom resolver is for blackout periods. To handle these periods, your application could implement and register a blackout opportunity detector that is responsible for handling blackout tags. When TVSDK encounters this tag, it polls all the registered content resolvers to find the first one that handles the specified tag. In this example, it is the blackout content resolver, which can, for example, replace the current item with alternate content on the player for the duration that is specified by the tag.

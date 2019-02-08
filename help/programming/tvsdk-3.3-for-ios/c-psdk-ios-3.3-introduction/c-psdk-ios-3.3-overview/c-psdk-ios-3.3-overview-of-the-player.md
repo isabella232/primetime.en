@@ -6,7 +6,7 @@ title: Primetime TVSDK features
 uuid: c24a0dce-cab3-4c5b-8f06-ea06c40e62fa
 ---
 
-# Primetime TVSDK features{#primetime-tvsdk-features}
+# Primetime TVSDK features {#primetime-tvsdk-features}
 
 TVSDK for iOS includes a variety of features.
 

@@ -6,11 +6,9 @@ title: INFO notification codes
 uuid: 21297863-dac1-45a4-ac9d-309d1f746f8b
 ---
 
-# INFO notification codes{#info-notification-codes}
+# INFO notification codes {#info-notification-codes}
 
 This table provides detailed information about INFO type notifications.
-
-## Section Title {#section_ED4302E363AE48CBA2C3E0B71AE612D8}
 
 Most informational notifications contain relevant metadata, for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad. 
 
@@ -95,4 +93,3 @@ Most informational notifications contain relevant metadata, for example, the URL
   </tr> 
  </tbody> 
 </table>
-

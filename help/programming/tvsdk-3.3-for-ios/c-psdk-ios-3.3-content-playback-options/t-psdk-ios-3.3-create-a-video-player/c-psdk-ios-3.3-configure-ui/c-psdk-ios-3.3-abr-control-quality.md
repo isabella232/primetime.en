@@ -6,7 +6,7 @@ title: Adaptive bit rates (ABR) for video quality
 uuid: a9b9a6a8-4098-4952-90e7-684e64800b3f
 ---
 
-# Adaptive bit rates (ABR) for video quality{#adaptive-bit-rates-abr-for-video-quality}
+# Adaptive bit rates (ABR) for video quality {#adaptive-bit-rates-abr-for-video-quality}
 
 HLS and DASH streams provide different bit rate encodings (profiles) for the same short burst of video. TVSDK can select the quality level for each burst based on the available bandwidth.
 
@@ -83,4 +83,3 @@ Remember the following:
 
 * To update the maximum bitrate setting during playback, create a new `PTABRControlParameters` instance and set it on the player instance. 
 * You can update the maximum bitrate setting during playback only on iOS 8.0 and later. For earlier versions, the `maxBitrate` value that was set before content playback started is used.
-

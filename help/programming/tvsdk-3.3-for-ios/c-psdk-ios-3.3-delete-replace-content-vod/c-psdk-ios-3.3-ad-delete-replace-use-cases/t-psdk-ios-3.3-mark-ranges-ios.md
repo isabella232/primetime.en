@@ -6,7 +6,7 @@ title: Mark ranges
 uuid: ca544f64-ef83-4c08-8ec5-1bc07fdba3c4
 ---
 
-# Mark ranges{#mark-ranges}
+# Mark ranges {#mark-ranges}
 
  To implement the `PTTimeRangeCollection` and mark ranges of content as ads: 
 1. Prepare the `PTTimeRangeCollection`.

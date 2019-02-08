@@ -6,7 +6,7 @@ title: Timeline advertising classes
 uuid: df970e8f-4bf8-4367-9d70-42ebcb11c025
 ---
 
-# Timeline advertising classes{#timeline-advertising-classes}
+# Timeline advertising classes {#timeline-advertising-classes}
 
 These classes provide information about ads that occur within a timeline.
 
@@ -61,11 +61,11 @@ These classes provide information about ads that occur within a timeline.
    <td colname="2"> Protocol that defines properties for AdPolicySelector API calls. These properties provide the context for enforcing each ad behavior. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"> PTAdPolicySelector</td> 
+   <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTAdPolicySelector.html" format="html" scope="external">PTAdPolicySelector</a></td> 
    <td colname="2"> An ad policy selector protocol for enforcing ad behaviors. Applications can conform to this protocol by implementing all the required methods or by extending the existing default policy selector class to customize specific behaviors. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1">PTAdTimeline</td> 
+   <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAdTimeline.html" format="html" scope="external">PTAdTimeline</a></td> 
    <td colname="2"> Class that represents the timeline of breaks within the content. </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -91,4 +91,3 @@ These classes provide information about ads that occur within a timeline.
   </tr> 
  </tbody> 
 </table>
-
