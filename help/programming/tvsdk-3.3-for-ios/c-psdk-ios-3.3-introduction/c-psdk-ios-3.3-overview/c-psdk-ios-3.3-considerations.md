@@ -37,7 +37,7 @@ Remember the following information when using TVSDK:
 Here are recommended practices for TVSDK:
 
 * Use HLS version 3.0 or above for program content. 
-* Use Apple’s mediastreamvalidator tool to validate VOD streams. 
+* Use Apple's mediastreamvalidator tool to validate VOD streams. 
 * The `PTSDKConfig` class provides methods to enforce SSL on requests made to Primetime ad decisioning, DRM, and Video Analytics servers.
 
   For more information, see the `forceHTTPS` and `isForcingHTTPS` methods in this class.

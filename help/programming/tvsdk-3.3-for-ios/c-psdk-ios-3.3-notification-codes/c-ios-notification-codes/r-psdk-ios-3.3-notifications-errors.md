@@ -8,6 +8,48 @@ uuid: 20828188-817a-471c-acbc-aeb5f336356b
 
 # ERROR notification codes {#error-notification-codes}
 
+The TVSDK notification system produces various error, warning, and informational notices that provide diagnostic metadata.
+
+<!--<a id="section_D29404228F5E4B818642CBA6A0D39546"></a>-->
+
+Notification objects provide information related to the player's status. TVSDK provides a chronologically sorted list of notification objects, and each notification contains the following metadata: 
+
+<table frame="all" colsep="1" rowsep="1" id="table_DBA8CACF02DB4AF2B053E560850B49CE"> 
+ <thead> 
+  <tr rowsep="1"> 
+   <th colname="1" class="entry"> Element </th> 
+   <th colname="2" class="entry"> Description </th> 
+  </tr> 
+ </thead>
+ <tbody> 
+  <tr rowsep="1"> 
+   <td colname="1"><span class="codeph"> type</span> </td> 
+   <td colname="2">The notification type. Depending on the platform, this property refers to an enumerated type with possible values of INFO, WARN, or ERROR. This is the top-level grouping for notifications.</td> 
+  </tr> 
+  <tr rowsep="1"> 
+   <td colname="1"><span class="codeph"> code</span> </td> 
+   <td colname="2">The numerical representation assigned to the notification. 
+    <ul id="ul_31AB497C6FFA452496DD09B0D78687B9"> 
+     <li id="li_53E75022C50246E0982E315D04EFD8B3">Error notification events, from 100000 to 199999 </li> 
+     <li id="li_11AE91D1325E4F718228E662C9C55F9A">Warning notification events, from 200000 to 299999 </li> 
+     <li id="li_6D3EA03845294DC2BAD1ACF507639E51">Information notification events, from 300000 to 399999 </li> 
+    </ul> <p>Each top-level range, such as errors, is divided into subranges, such as 101000 through 101999 representing playback errors. </p> </td> 
+  </tr> 
+  <tr rowsep="1"> 
+   <td colname="1"><span class="codeph"> name</span> </td> 
+   <td colname="2">A string that contains a human-readable description of the code, such as <span class="codeph"> SEEK_ERROR</span>. </td> 
+  </tr> 
+  <tr rowsep="1"> 
+   <td colname="1"><span class="codeph"> metadata</span> </td> 
+   <td colname="2">Key/value pairs that contain additional relevant information about the notification. For example, a key named <span class="codeph"> URL</span> would be paired with a value that is a URL related to the notification, such as an invalid URL that caused an error. </td> 
+  </tr> 
+  <tr rowsep="0"> 
+   <td colname="1"><span class="codeph"> innerNotification</span> </td> 
+   <td colname="2">A reference to another <span class="codeph"> PTNotification</span> object that directly affected this notification. An example might be a notification about an ad-insertion failure that directly corresponds to a time-line insertion conflict. Not all notifications provide an inner notification. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 This table provides detailed information about ERROR type notifications.
 
 Most errors contain relevant metadata, for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad. 
@@ -24,7 +66,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>DRM</b> </td> 
+   <td colname="1"><b>DRM</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 100000 </span> </td> 
@@ -34,7 +80,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"></td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Playback</b> </td> 
+   <td colname="1"><b>Playback</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 101000 </span> </td> 
@@ -73,7 +123,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
     <!-- workaround for PDF having too much negative kerning in column 2 --> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Invalid resource</b> </td> 
+   <td colname="1"><b>Invalid resource</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 102000 </span> </td> 
@@ -83,7 +137,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Ad processing</b> </td> 
+   <td colname="1"><b>Ad processing</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 104001 </span> </td> 
@@ -107,7 +165,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Native</b> </td> 
+   <td colname="1"><b>Native</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 106000 </span> </td> 
@@ -117,7 +179,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> <p>A low-level iOS error occurred. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Configuration</b> </td> 
+   <td colname="1"><b>Configuration</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 107002 </span> </td> 
@@ -134,7 +200,11 @@ Most errors contain relevant metadata, for example, the URL of the resource that
    <td colname="5"> <p>An error has occurred while attempting to change the styling options for the CC tracks. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>iOS unique</b> </td> 
+   <td colname="1"><b>iOS unique</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 170000 </span> </td> 

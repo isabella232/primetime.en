@@ -21,7 +21,8 @@ To be notified about all playback-related events, register an implementation of 
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="2"><b>Playback</b> </td> 
+   <td colname="col1"><b>Playback</b> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onPlayComplete%28%29" format="html" scope="external"> onPlayComplete</a> </td> 
@@ -40,7 +41,8 @@ To be notified about all playback-related events, register an implementation of 
    <td colname="2"> A new playback rate is visible on the screen. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"><b>Media</b> </td> 
+   <td colname="col1"><b>Media</b> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onPrepared%28%29" format="html" scope="external"> onPrepared</a> </td> 
@@ -51,7 +53,8 @@ To be notified about all playback-related events, register an implementation of 
    <td colname="2"> The size of the media is available. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"><b>Media Player</b> </td> 
+   <td colname="col1"><b>Media Player</b> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onStateChanged%28com.adobe.mediacore.MediaPlayer.PlayerState,com.adobe.mediacore.MediaPlayerNotification%29" format="html" scope="external"> onStateChanged</a> (<a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlayerState.html" format="html" scope="external"> MediaPlayer.PlayerState</a> state, <a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayerNotification.html" format="html" scope="external"> MediaPlayerNotification</a> notification) </td> 
@@ -59,10 +62,11 @@ To be notified about all playback-related events, register an implementation of 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onProfileChanged%28long,%20long%29" format="html" scope="external"> onProfileChanged</a> (long profile, long time) </td> 
-   <td colname="2"> The media player’s current profile has changed. Use the <span class="codeph"> Profile</span> property to get the new profile that is being played. Use the <span class="codeph"> time</span> property to get the time when this event occurred. </td> 
+   <td colname="2"> The media player's current profile has changed. Use the <span class="codeph"> Profile</span> property to get the new profile that is being played. Use the <span class="codeph"> time</span> property to get the time when this event occurred. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"><b>MediaplayerItem</b> </td> 
+   <td colname="col1"><b>MediaplayerItem</b> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onUpdated%28%29" format="html" scope="external"> onUpdated</a> </td> 
@@ -73,7 +77,8 @@ To be notified about all playback-related events, register an implementation of 
     </ul> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="2"><b>Manifest and Timeline</b></td> 
+   <td colname="col1"><b>Manifest and Timeline</b></td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onTimedMetadata%28com.adobe.mediacore.metadata.TimedMetadata%29" format="html" scope="external"> onTimedMetadata</a> (<a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/TimedMetadata.html" format="html" scope="external"> TimedMetadata</a> timedMetadata) </td> 

@@ -1,6 +1,6 @@
 ---
-description: You can decide whether to resolve only the ads that occur after the user’s current live point or to also resolve ads that occur before the current live point.
-seo-description: You can decide whether to resolve only the ads that occur after the user’s current live point or to also resolve ads that occur before the current live point.
+description: You can decide whether to resolve only the ads that occur after the user's current live point or to also resolve ads that occur before the current live point.
+seo-description: You can decide whether to resolve only the ads that occur after the user's current live point or to also resolve ads that occur before the current live point.
 seo-title: Load Ad for a DVR window
 title: Load Ad for a DVR window
 uuid: 3ae1fbf6-deae-4f39-a17d-43d1fe3cb975
@@ -8,9 +8,9 @@ uuid: 3ae1fbf6-deae-4f39-a17d-43d1fe3cb975
 
 # Load Ad for a DVR window {#load-ad-for-a-dvr-window}
 
-You can decide whether to resolve only the ads that occur after the user’s current live point or to also resolve ads that occur before the current live point.
+You can decide whether to resolve only the ads that occur after the user's current live point or to also resolve ads that occur before the current live point.
 
-When a user starts to view content at the beginning of a DVR stream, TVSDK resolves all ads for the stream at that time. However, when the user starts to view content at a point after the beginning of the stream, you can decide whether to resolve only the ads that occur after the user’s current live point or to also resolve ads that occurred before the current live point.
+When a user starts to view content at the beginning of a DVR stream, TVSDK resolves all ads for the stream at that time. However, when the user starts to view content at a point after the beginning of the stream, you can decide whether to resolve only the ads that occur after the user's current live point or to also resolve ads that occurred before the current live point.
 
 >[!TIP]
 >

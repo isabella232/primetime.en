@@ -6,7 +6,7 @@ uuid: 34cad19b-1adb-4e0c-ac59-50632f6988f7
 
 # Identity-based domains {#identity-based-domains}
 
-In this use case, each authenticated user has his own domain, and a certain number of devices are allowed to join the domain. To use this type of domain with the reference implementation, create a policy specifying domain registration is required. Specify your server’s host and port for the domain server URL and specify username/password authentication is required.
+In this use case, each authenticated user has his own domain, and a certain number of devices are allowed to join the domain. To use this type of domain with the reference implementation, create a policy specifying domain registration is required. Specify your server's host and port for the domain server URL and specify username/password authentication is required.
 
 The reference implementation implements the following logic for domain registration:
 

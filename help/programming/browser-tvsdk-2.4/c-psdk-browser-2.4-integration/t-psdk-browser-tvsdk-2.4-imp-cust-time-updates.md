@@ -10,7 +10,7 @@ uuid: 26a0592c-a47b-4d65-b984-5e51533dcddc
 
 In some analytics implementations, the client application might want to provide a different playhead position than the position reported by the Browser TVSDK localTime value.
 
-For example, during a linear stream playback, each program’s playhead can be provided relative to its start time.
+For example, during a linear stream playback, each program's playhead can be provided relative to its start time.
 
 >[!TIP]
 >

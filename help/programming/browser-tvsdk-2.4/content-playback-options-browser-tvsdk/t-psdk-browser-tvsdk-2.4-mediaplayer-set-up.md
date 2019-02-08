@@ -28,12 +28,11 @@ A MediaPlayer object encapsulates the behavior and functionality of a media play
 
    ```
    <div id="videoDiv"> 
-    
-<codeph>
+   <codeph>
      <div id="video-controls"> 
           ... custom video controls 
-       </div> 
-</codeph> 
+     </div> 
+   </codeph> 
    </div>
    ```
 
@@ -41,9 +40,9 @@ A MediaPlayer object encapsulates the behavior and functionality of a media play
 
    ```js
    var view = new  
-<codeph>
-  AdobePSDK.MediaPlayerView 
-</codeph>( 
+   <codeph>
+   AdobePSDK.MediaPlayerView 
+   </codeph>( 
          document.getElementById("videoDiv"));  
    ```
 
@@ -74,4 +73,4 @@ A MediaPlayer object encapsulates the behavior and functionality of a media play
    }
    ```
 
->The `MediaPlayer` instance is now available and properly configured to display video content on the device screen. 
+The `MediaPlayer` instance is now available and properly configured to display video content on the device screen. 

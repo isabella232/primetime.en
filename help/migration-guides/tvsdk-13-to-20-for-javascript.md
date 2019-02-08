@@ -78,24 +78,18 @@ Tables in this topic:
 
 ### TimedMetadata {#timedmetadata}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>TimedMetadata</strong></td> 
-  </tr> 
-  <tr> 
-   <td><p> interface TimedMetadata {<br /> const unsigned short METADATA_TYPE_TAG = 0 ; <br /> const unsigned short METADATA_TYPE_ID3 = 1 ; <br /> readonly attribute unsigned short type; <br /> readonly attribute long time;<br /> readonly attribute DomString id;<br /> readonly attribute DomString name;<br /> readonly attribute DomString content; <br /> readonly attribute Object metadata;<br /> }; </p> </td> 
+   <td><p> <strong>TimedMetadata</strong>: interface TimedMetadata {<br /> const unsigned short METADATA_TYPE_TAG = 0 ; <br /> const unsigned short METADATA_TYPE_ID3 = 1 ; <br /> readonly attribute unsigned short type; <br /> readonly attribute long time;<br /> readonly attribute DomString id;<br /> readonly attribute DomString name;<br /> readonly attribute DomString content; <br /> readonly attribute Object metadata;<br /> }; </p> </td> 
    <td><p>interface TimedMetadata {<br /> const unsigned short METADATA_TYPE_TAG = 0 ;<br /> const unsigned short METADATA_TYPE_ID3 = 1 ;<br /> readonly attribute unsigned short metadataType;<br /> readonly attribute long time;<br /> readonly attribute long id;<br /> readonly attribute DomString name;<br /> <br /> readonly attribute Object metadata;<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>TimedMetadataList</strong></td> 
-  </tr> 
-  <tr> 
-   <td>(No change for 2.0)</td> 
+   <td><strong>TimedMetadataList</strong>: (No change for 2.0)</td> 
    <td><p>interface TimedMetadataList {<br /> readonly attribute unsigned long length;<br /> getter TimedMetadata(unsigned long index);<br /> };</p> </td> 
   </tr> 
  </tbody> 
@@ -103,14 +97,11 @@ Tables in this topic:
 
 ### AdSignalingMode {#adsignalingmode}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>AdSignalingMode</strong></td> 
   </tr> 
   <tr> 
    <td><p>Interface AdSignalingMode { <br /> const unsigned short MODE_DEFAULT, <br /> const unsigned short MODE_MANIFEST_CUES , <br /> const unsigned short MODE_SERVER_MAP , <br /> const unsigned short MODE_CUSTOM_RANGES <br /> };</p> </td> 
@@ -121,14 +112,11 @@ Tables in this topic:
 
 ### AdvertisingMetadata {#advertisingmetadata}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>AdvertisingMetadata</strong></td> 
   </tr> 
   <tr> 
    <td><p>Interface AdvertisingMetadata { <br /> attribute AdSignalingMode mode; <br /> attribute AdBreakWatchedPolicy adBreakAsWatched; <br /> attribute boolean livePreroll; <br /> attribute boolean delayAdLoading ; <br /> };</p> </td> 
@@ -139,14 +127,11 @@ Tables in this topic:
 
 ### CustomRangeMetadata {#customrangemetadata}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>CustomRangeMetadata</strong></td> 
   </tr> 
   <tr> 
    <td><p>Interface CustomRangeMetadata { <br /> const unsigned short TYPE_MARK_RANGE; <br /> const unsigned short TYPE_DELETE_RANGE; <br /> const unsigned short TYPE_REPLACE_RANGE; <br /> attribute unsigned short type; <br /> attribute boolean adjustSeekPosition; <br /> attribute TimeRangeList timeRangeList; <br /> };</p> </td> 
@@ -157,16 +142,11 @@ Tables in this topic:
 
 ### ReplaceTimeRange {#replacetimerange}
 
-<table cellpadding="4" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
- </tbody> 
- <tbody> 
-  <tr> 
-   <td colspan="2"><strong>ReplaceTimeRange</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface ReplaceTimeRange { <br /> attribute unsigned long begin; <br /> readonly attribute unsigned long end; <br /> attribute unsigned long duration; <br /> attribute unsigned long replaceDuration; <br /> };</p> </td> 
@@ -177,14 +157,11 @@ Tables in this topic:
 
 ### Placement {#placement}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>Placement</strong></td> 
   </tr> 
   <tr> 
    <td><p>Interface Placement { <br /> const unsigned short TYPE_MID_ROLL; <br /> const unsigned short TYPE_PRE_ROLL; <br /> const unsigned short TYPE_POST_ROLL; <br /> const unsigned short TYPE_SERVER_MAP; <br /> const unsigned short TYPE_CUSTOM_RANGE;<br /> readonly attribute unsigned short type; <br /> readonly attribute long time; <br /> readonly attribute long duration; <br /> const unsigned short MODE_DEFAULT; <br /> const unsigned short MODE_INSERT; <br /> const unsigned short MODE_REPLACE; <br /> const unsigned short MODE_DELETE; <br /> const unsigned short MODE_MARK; <br /> const unsigned short MODE_FREE_REPLACE; <br /> readonly attribute unsigned short mode; <br /> readonly attribute TimeRange range; <br /> };</p> </td> 
@@ -195,14 +172,11 @@ Tables in this topic:
 
 ### Opportunity {#opportunity}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>Opportunity</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface Opportunity { <br /> readonly attribute DomString id; <br /> readonly attribute Placement placement; <br /> readonly attribute Object settings; <br /> readonly attribute Object customParameters; <br /> }; </p> </td> 
@@ -213,14 +187,11 @@ Tables in this topic:
 
 ### Reservation {#reservation}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>Reservation</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface Reservation { <br /> readonly attribute TimeRange range; <br /> readonly attribute long hold; <br /> }; </p> </td> 
@@ -231,31 +202,22 @@ Tables in this topic:
 
 ### Timeline / TimelineItem / TimelineMarker {#timeline-timelineitem-timelinemarker}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>Timeline</strong></td> 
-  </tr> 
-  <tr> 
-   <td><p>interface Timeline <br /> { readonly attribute TimelineMarkerList timelineMarkers; <br /> readonly attribute TimelineItemList timelineItems; <br /> double convertToLocalTime( double time); <br /> double convertToVirtualTime( double time); <br /> };</p> </td> 
+   <td><p><strong>Timeline</strong>: interface Timeline <br /> { readonly attribute TimelineMarkerList timelineMarkers; <br /> readonly attribute TimelineItemList timelineItems; <br /> double convertToLocalTime( double time); <br /> double convertToVirtualTime( double time); <br /> };</p> </td> 
    <td><p>interface Timeline {<br /> readonly attribute TimelineMarkerList timelineMarkers;<br /> <br /> <br /> <br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>TimelineItem</strong></td> 
-  </tr> 
-  <tr> 
-   <td><p> interface TimelineItem :<br /> TimelineMarker {<br /> readonly attribute long id; <br /> readonly attribute TimeRange virtualRange; <br /> readonly attribute TimeRange localRange; <br /> readonly attribute boolean watched; <br /> readonly attribute boolean temporary; <br /> }; </p> </td> 
+   <td><p> <strong>TimelineItem</strong>: interface TimelineItem :<br /> TimelineMarker {<br /> readonly attribute long id; <br /> readonly attribute TimeRange virtualRange; <br /> readonly attribute TimeRange localRange; <br /> readonly attribute boolean watched; <br /> readonly attribute boolean temporary; <br /> }; </p> </td> 
    <td>(New for 2.0)</td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>TimelineMarker</strong></td> 
-  </tr> 
-  <tr> 
-   <td>(No change for 2.0)</td> 
+   <td><strong>TimelineMarker</strong>: (No change for 2.0)</td> 
    <td><p>interface TimelineMarker {<br /> readonly attribute double time;<br /> readonly attribute double duration;<br /> };</p> </td> 
   </tr> 
  </tbody> 
@@ -263,14 +225,11 @@ Tables in this topic:
 
 ### AdBreak {#adbreak}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>AdBreak</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface AdBreak {<br /> <br /> <br /> <br /> readonly attribute double duration;<br /> readonly attribute AdList ads;<br /> <br /> <br /> readonly attribute AdInsertionType insertionType;<br /> }; </p> </td> 
@@ -281,52 +240,34 @@ Tables in this topic:
 
 ### Ad / AdAsset / AdClick / AdList / AdAssetList / AdBannerAsset {#ad-adasset-adclick-adlist-adassetlist-adbannerasset}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>Ad</strong></td> 
-  </tr> 
-  <tr> 
-   <td><p> interface Ad {<br /> readonly attribute AdAsset primaryAsset;<br /> readonly attribute AdAssetList companionAssets;<br /> <br /> readonly attribute double duration;<br /> readonly attribute DomString id;<br /> const unsigned short ADTYPE_LINEAR = 0 ;<br /> const unsigned short ADTYPE_NONLINEAR = 1 ;<br /> <br /> readonly attribute unsigned short adType;<br /> readonly attribute AdInsertionType adInsertionType; <br /> <br /> readonly attribute boolean clickable; <br /> readonly attribute boolean isCustomAdMarker;<br /> }; </p> </td> 
+   <td><p> <strong>Ad</strong>: interface Ad {<br /> readonly attribute AdAsset primaryAsset;<br /> readonly attribute AdAssetList companionAssets;<br /> <br /> readonly attribute double duration;<br /> readonly attribute DomString id;<br /> const unsigned short ADTYPE_LINEAR = 0 ;<br /> const unsigned short ADTYPE_NONLINEAR = 1 ;<br /> <br /> readonly attribute unsigned short adType;<br /> readonly attribute AdInsertionType adInsertionType; <br /> <br /> readonly attribute boolean clickable; <br /> readonly attribute boolean isCustomAdMarker;<br /> }; </p> </td> 
    <td><p>interface Ad {<br /> readonly attribute AdAsset primaryAsset;<br /> readonly attribute AdAssetList companionAssets;<br /> <br /> readonly attribute double duration;<br /> readonly attribute DomString id;<br /> const unsigned short ADTYPE_LINEAR = 0 ;<br /> const unsigned short ADTYPE_NONLINEAR = 1 ;<br /> <br /> readonly attribute unsigned short type;<br /> readonly attribute AdInsertionType insertionType; <br /> readonly attribute Object tracker;<br /> <br /> <br /> }; </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>AdAsset</strong></td> 
-  </tr> 
-  <tr> 
-   <td>(No change for 2.0)</td> 
+   <td><strong>AdAsset</strong>: (No change for 2.0)</td> 
    <td><p>interface AdAsset {<br /> readonly attribute DomString id;<br /> readonly attribute double duration;<br /> readonly attribute MediaResource resource;<br /> readonly attribute AdClick adClick;<br /> readonly attribute Object metadata;<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><p><strong>AdClick</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td>(No change for 2.0)</td> 
+   <td><strong>AdClick</strong>: (No change for 2.0)</td> 
    <td><p>interface AdClick {<br /> readonly attribute DomString id;<br /> readonly attribute DomString title;<br /> readonly attribute DomString url;<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>AdList</strong> </td> 
-  </tr> 
-  <tr> 
-   <td>(No change for 2.0)</td> 
+   <td><strong>AdList</strong>: (No change for 2.0)</td> 
    <td><p>interface AdList {<br /> readonly attribute unsigned long length;<br /> getter Ad(unsigned long index);<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>AdAssetList</strong></td> 
-  </tr> 
-  <tr> 
-   <td>(No change for 2.0)</td> 
+   <td><strong>AdAssetList</strong>: (No change for 2.0)</td> 
    <td><p>interface AdAssetList {<br /> readonly attribute unsigned long length;<br /> getter AdAsset(unsigned long index);<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>AdBannerAsset</strong></td> 
-  </tr> 
-  <tr> 
-   <td><p>interface AdBannerAsset : AdAsset<br /> {<br /> readonly attribute int width;<br /> readonly attribute int height;<br /> readonly attribute DomString staticUrl;<br /> readonly attribute DomString height;<br /> readonly attribute DomString width;<br /> };</p> </td> 
+   <td><p><strong>AdBannerAsset</strong>: interface AdBannerAsset : AdAsset<br /> {<br /> readonly attribute int width;<br /> readonly attribute int height;<br /> readonly attribute DomString staticUrl;<br /> readonly attribute DomString height;<br /> readonly attribute DomString width;<br /> };</p> </td> 
    <td> New in 2.0</td> 
   </tr> 
  </tbody> 
@@ -334,31 +275,22 @@ Tables in this topic:
 
 ### AdBreakTimelineItem / AdTimelineItem {#adbreaktimelineitem-adtimelineitem}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><p><strong>AdBreakTimelineItem</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p> interface AdBreakTimelineItem : TimelineItem { <br /> readonly attribute AdBreak adBreak; <br /> readonly attribute AdTimelineItemList items; <br /> }; </p> </td> 
+   <td><p> <strong>AdBreakTimelineItem</strong>: interface AdBreakTimelineItem : TimelineItem { <br /> readonly attribute AdBreak adBreak; <br /> readonly attribute AdTimelineItemList items; <br /> }; </p> </td> 
    <td> (New for 2.0)</td> 
   </tr> 
   <tr> 
-   <td colspan="2"><p><strong>AdTimelineItem</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>interface AdTimelineItem : TimelineItem { <br /> readonly attribute AdBreak adBreak; <br /> readonly attribute Ad ad; <br /> }; </p> </td> 
+   <td><p><strong>AdTimelineItem</strong>: interface AdTimelineItem : TimelineItem { <br /> readonly attribute AdBreak adBreak; <br /> readonly attribute Ad ad; <br /> }; </p> </td> 
    <td> (New for 2.0)</td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>AdBreakTimelineItemList</strong></td> 
-  </tr> 
-  <tr> 
-   <td><p>interface AdBreakTimelineItemList { <br /> readonly attribute unsigned long length; <br /> getter AdBreakTimelineItem (unsigned lo ng index); <br /> };</p> </td> 
+   <td><p><strong>AdBreakTimelineItemList</strong>: interface AdBreakTimelineItemList { <br /> readonly attribute unsigned long length; <br /> getter AdBreakTimelineItem (unsigned lo ng index); <br /> };</p> </td> 
    <td> (New for 2.0)</td> 
   </tr> 
  </tbody> 
@@ -366,49 +298,31 @@ Tables in this topic:
 
 ### AdBreakPolicy / AdBreakWatchedPolicy / AdPolicy / AdPolicyMode / AdPolicyInfo / AdPolicySelector {#adbreakpolicy-adbreakwatchedpolicy-adpolicy-adpolicymode-adpolicyinfo-adpolicyselector}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>AdBreakPolicy</strong></td> 
-  </tr> 
-  <tr> 
    <td><p>interface AdBreakPolicy {<br /> readonly attribute short AD_BREAK_POLICY_SKIP;<br /> readonly attribute short AD_BREAK_POLICY_PLAY;<br /> readonly attribute short AD_BREAK_POLICY_REMOVE;<br /> readonly attribute short AD_BREAK_POLICY_REMOVE_AFTER_PLAY;<br /> };</p> </td> 
    <td><p> interface AdPolicyConstants {<br /> readonly attribute short AD_BREAK_POLICY_SKIP;<br /> readonly attribute short AD_BREAK_POLICY_PLAY;<br /> readonly attribute short AD_BREAK_POLICY_REMOVE;<br /> readonly attribute short AD_BREAK_POLICY_REMOVE_AFTER_PLAY;<br /> ...</p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>AdBreakWatchedPolicy</strong></td> 
   </tr> 
   <tr> 
    <td><p> interface AdBreakWatchedPolicy {<br /> readonly attribute short AD_BREAK_AS_WATCHED_ON_BEGIN;<br /> readonly attribute short AD_BREAK_AS_WATCHED_ON_END;<br /> readonly attribute short AD_BREAK_AS_WATCHED_NEVER;<br /> }; </p> </td> 
    <td><p> ...<br /> readonly attribute short AD_BREAK_AS_WATCHED_ON_BEGIN;<br /> readonly attribute short AD_BREAK_AS_WATCHED_ON_END;<br /> readonly attribute short AD_BREAK_AS_WATCHED_NEVER;<br /> ...</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>AdPolicy</strong></td> 
-  </tr> 
-  <tr> 
    <td><p>interface AdPolicy {<br /> readonly attribute short AD_POLICY_PLAY;<br /> readonly attribute short AD_POLICY_PLAY_FROM_AD_BEGIN;<br /> readonly attribute short AD_POLICY_PLAY_FROM_AD_BREAK_BEGIN; readonly attribute short AD_POLICY_SKIP_TO_NEXT_AD_IN_BREAK;<br /> <br /> readonly attribute short AD_POLICY_SKIP_AD_BREAK;<br /> };</p> </td> 
    <td><p> ... <br /> readonly attribute short AD_POLICY_PLAY;<br /> readonly attribute short AD_POLICY_PLAY_FROM_AD_BEGIN;<br /> readonly attribute short AD_POLICY_PLAY_FROM_AD_BREAK_BEGIN;<br /> readonly attribute short AD_POLICY_SKIP_TO_NEXT_AD_IN_BREAK;<br /> readonly attribute short AD_POLICY_SKIP_AD_BREAK;<br /> ...</p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>AdPolicyMode</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface AdPolicyMode {<br /> readonly attribute short AD_POLICY_MODE_PLAY;<br /> readonly attribute short AD_POLICY_MODE_SEEK;<br /> readonly attribute short AD_POLICY_MODE_TRICKPLAY;<br /> };</p> </td> 
    <td><p> ...<br /> readonly attribute short AD_POLICY_MODE_PLAY;<br /> readonly attribute short AD_POLICY_MODE_SEEK;<br /> readonly attribute short AD_POLICY_MODE_TRICKPLAY;<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>AdPolicyInfo</strong></td> 
-  </tr> 
-  <tr> 
    <td><p>interface AdPolicyInfo {<br /> readonly attribute AdBreakTimelineItemList <br /> adBreakTimelineItems;<br /> readonly attribute AdTimelineItem adTimelineItem;<br /> readonly attribute double currentTime;<br /> readonly attribute double seekToTime;<br /> readonly attribute double rate;<br /> readonly attribute short mode; //AdPolicyMode<br /> };</p> </td> 
    <td><p>interface AdPolicyInfo {<br /> readonly attribute AdBreakPlacementList <br /> adBreakPlacements;<br /> readonly attribute Ad ad;<br /> readonly attribute double currentTime;<br /> readonly attribute double seekToTime;<br /> readonly attribute double rate;<br /> readonly attribute short mode; //AdPolicyMode<br /> };</p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>AdPolicySelector</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface AdPolicySelector {<br /> /**<br /> * AdbreakPolicy selectPolicyForAdBreak(<br /> * AdPolicyInfo adPolicyInfo);<br /> */<br /> attribute Object selectPolicyForAdBreakCallbackFunc;<br /> /**<br /> * AdBreakTimelineItemList selectAdBreaksToPlay(<br /> * AdPolicyInfo adPolicyInfo);<br /> */<br /> attribute Object selectAdBreaksToPlayCallbackFunc;<br /> /**<br /> * AdPolicy selectPolicyForSeekIntoAd(AdPolicyInfo adPolicyInfo);<br /> */<br /> attribute Object selectPolicyForSeekIntoAdCallbackFunc; <br /> /**<br /> * AdBreakWatchedPolicy selectWatchedPolicyForAdBreak(<br /> * AdPolicyInfo adPolicyInfo);<br /> */<br /> attribute Object selectWatchedPolicyForAdBreakCallbackFunc;<br /> };</p> </td> 
@@ -419,14 +333,11 @@ Tables in this topic:
 
 ### TimelineOperation {#timelineoperation}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>TimelineOperation</strong> </td> 
   </tr> 
   <tr> 
    <td><p>interface TimelineOperation { <br /> readonly attribute Placement placement ; <br /> };</p> </td> 
@@ -437,14 +348,11 @@ Tables in this topic:
 
 ### AdBreakPlacement {#adbreakplacement}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>AdBreakPlacement</strong> </td> 
   </tr> 
   <tr> 
    <td><p>interface AdBreakPlacement : TimelineOperation {<br /> readonly attribute AdBreak adBreak;<br /> readonly attribute Placement placement; // From TimelineOperation<br /> readonly attribute double time;<br /> readonly attribute double duration;<br /> };</p> </td> 
@@ -455,14 +363,11 @@ Tables in this topic:
 
 ### AuditudeSettings {#auditudesettings}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 API</th> 
    <th>1.3 API</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>AuditudeSettings</strong> </td> 
   </tr> 
   <tr> 
    <td><p>interface AuditudeSettings : AdvertisingMetadata { <br /> attribute DomString zoneId; <br /> attribute DomString mediaId; <br /> attribute DomString defaultMediaId ; <br /> attribute DomString domain ; <br /> attribute Object targettingInfo ; <br /> attribute Object customParameters ; <br /> attribute Boolean creativePackaingEnabled ;<br /> attribute Boolean showStaticBanners ;<br /> };</p> </td> 
@@ -483,14 +388,11 @@ Tables in this topic:
 
 ### MediaPlayerItemConfig {#mediaplayeritemconfig}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>MediaPlayerItemConfig</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface MediaPlayerItemConfig {<br /> attribute ContentFactory adFactory;<br /> attribute StringList subscribeTags;<br /> <br /> attribute StringList adTags;<br /> <br /> <br /> attribute AdSignalingMode adSignalingMode;<br /> attribute CustomRangeMetadata customRangeMetadata;<br /> attribute NetworkConfiguration networkConfiguration;<br /> attribute AdvertisingMetadata advertisingMetadata;<br /> attribute Boolean useHardwareDecoder;<br /> };</p> </td> 
@@ -501,14 +403,11 @@ Tables in this topic:
 
 ### ContentFactory {#contentfactory}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>ContentFactory</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface ContentFactory {<br /> /*<br /> * AdPolicySelector retrieveAdPolicySelector(<br /> * MediaPlayerItem item);<br /> */<br /> attribute Object retrieveAdPolicySelectorCallbackFunc;<br /> };</p> </td> 
@@ -519,14 +418,11 @@ Tables in this topic:
 
 ### NetworkConfiguration {#networkconfiguration}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>NetworkConfiguration</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface NetworkConfiguration<br /> {<br /> attribute boolean forceNativeNetworking;<br /> attribute boolean useRedirectedUrl;<br /> attribute Object cookieHeader;<br /> attribute boolean readSetCookieHeader;<br /> attribute int masterUpdateInterval; <br /> attribute boolean useCookieHeaderForAllRequests;<br /> attribute int readLimit;<br /> };</p> </td> 
@@ -552,7 +448,7 @@ Tables in this topic:
 
 ### DRM Workflow Initialization {#drm-workflow-initialization}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
@@ -567,39 +463,20 @@ Tables in this topic:
 
 ### DRMAcquireLicenseSettings/DRMAuthenticationMethod {#drmacquirelicensesettings-drmauthenticationmethod}
 
-<table cellpadding="1" cellspacing="0"> 
- <tbody> 
-  <tr> 
-   <th>2.0 APIs</th> 
-   <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMAcquireLicenseSettings</strong></td> 
-  </tr> 
-  <tr> 
-   <td>No change for 2.0.</td> 
-   <td><p>enum DRMAcquireLicenseSettings {<br /> const unsigned int FORCE_REFRESH = 0;<br /> const unsigned int LOCAL_ONLY = 1;<br /> const unsigned int ALLOW_SERVER = 2;<br /> };</p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMAuthenticationMethod</strong></td> 
-  </tr> 
-  <tr> 
-   <td>No change for 2.0.</td> 
-   <td><p>enum DRMAuthenticationMethod {<br /> const unsigned int UNKNOWN = 0;<br /> const unsigned int ANONYMOUS = 1;<br /> const unsigned int USERNAME_AND_PASSWORD = 2;<br /> }</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|2.0 APIs|1.3 APIs|
+|--- |--- |
+|**DRMAcquireLicenseSettings**||
+|No change for 2.0.|enum DRMAcquireLicenseSettings <br>{<br> const unsigned int FORCE_REFRESH = 0;<br> const unsigned int LOCAL_ONLY = 1;<br> const unsigned int ALLOW_SERVER = 2;<br> };|
+|**DRMAuthenticationMethod**||
+|No change for 2.0.|enum DRMAuthenticationMethod <br>{<br> const unsigned int UNKNOWN = 0;<br> const unsigned int ANONYMOUS = 1;<br> const unsigned int USERNAME_AND_PASSWORD = 2;<br> }|
 
 ### DRMMetadata {#drmmetadata}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMMetadata</strong></td> 
   </tr> 
   <tr> 
    <td>No change for 2.0.</td> 
@@ -610,14 +487,11 @@ Tables in this topic:
 
 ### DRMPlaybackTimeWindow {#drmplaybacktimewindow}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMPlaybackTimeWindow</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface DRMPlaybackTimeWindow {<br /> readonly attribute int playbackPeriodInSeconds;<br /> readonly attribute long playbackStartDate;<br /> readonly attribute long playbackEndDate;<br /> };</p> </td> 
@@ -628,14 +502,11 @@ Tables in this topic:
 
 ### DRMLicense {#drmlicense}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMLicense</strong></td> 
   </tr> 
   <tr> 
    <td>No change for 2.0.</td> 
@@ -646,14 +517,11 @@ Tables in this topic:
 
 ### DRMLicenseDomain {#drmlicensedomain}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMLicenseDomain</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface DRMLicenseDomain {<br /> readonly attribute DomString authenticationDomain;<br /> readonly attribute DRMAuthenticationMethod authenticationMethod; <br /> readonly attribute DomString serverUrl;<br /> };</p> </td> 
@@ -664,14 +532,11 @@ Tables in this topic:
 
 ### DRMPolicy {#drmpolicy}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMPolicy</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface DRMPolicy<br /> {<br /> readonly attribute DomString authenticationDomain;<br /> readonly attribute DRMAuthenticationMethod authenticationMethod;<br /> <br /> readonly attribute DomString displayName;<br /> readonly attribute DRMLicenseDomain licenseDomain;<br /> };</p> </td> 
@@ -682,21 +547,15 @@ Tables in this topic:
 
 ### DRMManager {#drmmanager}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>DRMManager</strong></td> 
-  </tr> 
-  <tr> 
    <td><p>interface DRMManager : EventTarget {<br /> void acquireLicense(DRMMetadata metadata, <br /> DRMAcquireLicenseSettings setting, <br /> DRMAquireLicenseListener listener);<br /> void acquirePreviewLicense(DRMMetadata metadata, <br /> DRMAquireLicenseListener listener);<br /> void authenticate(DRMMetadata metadata, <br /> DomString url,<br /> DomString &amp;authenticationDomain, <br /> DomString user, <br /> DomString password, <br /> DRMAuthenticateListener listener);<br /> <br /> DRMMetadata createMetadataFromBytes(<br /> Uint8Array array, DRMErrorListener listener);<br /> void initialize(DRMOperationCompleteListener listener);<br /> attribute long maxOperationTime;<br /> <br /> void joinLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> boolean forceRefresh, <br /> DRMOperationCompleteListener listener);<br /> void leaveLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> DRMOperationCompleteListener listener);<br /> <br /> void resetDRM(DRMOperationCompleteListener listener);<br /> void returnLicense(DomString serverURL, <br /> DomString licenseID, <br /> DomString policyID, <br /> boolean commitImmediately,<br /> DRMReturnLicenseListener listener);<br /> void setAuthenticationToken(<br /> DRMMetadata metadata, <br /> DomString authenticationDomain, <br /> Uint8Array token, <br /> DRMOperationCompleteListener listener);<br /> void storeLicenseBytes(Uint8Array licenseBytes, <br /> DRMOperationCompleteListener listener);<br /> };</p> </td> 
    <td><p>interface DRMManager : EventTarget {<br /> void acquireLicense(DRMMetadata metadata, <br /> DRMAcquireLicenseSettings setting, <br /> EventContext eventContext);<br /> void acquirePreviewLicense(DRMMetadata metadata, <br /> EventContext eventContext);<br /> void authenticate(DRMMetadata metadata, <br /> DomString url,<br /> DomString &amp;authenticationDomain, <br /> DomString user, <br /> DomString password, <br /> EventContext eventContext);<br /> <br /> DRMMetadata createMetadataFromBytes(<br /> Uint8Array array, EventContext eventContext);<br /> void initialize(EventContext eventContext);<br /> attribute long maxOperationTime;<br /> <br /> void joinLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> boolean forceRefresh, <br /> EventContext eventContext);<br /> void leaveLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> EventContext eventContext);<br /> <br /> void resetDRM(EventContext eventContext);<br /> void returnLicense(DomString serverURL, <br /> DomString licenseID,<br /> DomString policyID, <br /> boolean commitImmediately,<br /> EventContext eventContext);<br /> void setAuthenticationToken(<br /> DRMMetadata metadata, <br /> DomString authenticationDomain, <br /> Uint8Array token, <br /> EventContext eventContext);<br /> void storeLicenseBytes(Uint8Array licenseBytes, <br /> EventContext eventContext);<br /> };</p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMErrorListener</strong></td> 
   </tr> 
   <tr> 
    <td><p>class DRMErrorListener : <br /> public psdkutils::PSDKInterfaceWithUserData {<br /> public:<br /> virtual void onDRMError(uint32_t major, <br /> uint32_t minor, <br /> const psdkutils:: PSDKString&amp; errorString, <br /> const psdkutils::PSDKString&amp; errorServerUrl) = 0;<br /> <br /> protected:<br /> virtual ~DRMErrorListener() {}<br /> }</p> </td> 
@@ -704,9 +563,6 @@ Tables in this topic:
     <ul> 
      <li>kEventDRMOperationError<p>/ DRMOperationErrorEvent</p> <p>When an error occurs during one of the asynchronous methods of DRMManger.</p> </li> 
     </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMOperationCompleteListener</strong></td> 
   </tr> 
   <tr> 
    <td><p>class DRMOperationCompleteListener : <br /> public DRMErrorListener {<br /> public:<br /> virtual void onDRMOperationComplete() = 0;<br /> <br /> protected:<br /> virtual ~DRMOperationCompleteListener() {}<br /> };</p> </td> 
@@ -721,17 +577,11 @@ Tables in this topic:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>DRMAuthenticateListener</strong></td> 
-  </tr> 
-  <tr> 
    <td><p>class DRMAuthenticateListener : <br /> public DRMErrorListener {<br /> public:<br /> virtual void onAuthenticationComplete(<br /> psdkutils::PSDKImmutableByteArray* <br /> authenticationToken) = 0;<br /> <br /> protected:<br /> virtual ~DRMAuthenticateListener() {}<br /> }</p> </td> 
    <td>Event / Interface / Description 
     <ul> 
      <li>kEventDRMAuthenticationComplete<p>/ DRMAuthenticationCompleteEvent</p> <p>When DRMManager::authenticate method call is successful.</p> </li> 
     </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMAquireLicenseListener</strong></td> 
   </tr> 
   <tr> 
    <td><p>class DRMAquireLicenseListener: <br /> public DRMErrorListener {<br /> public:<br /> virtual void onLicenseAcquired(const DRMLicense*) = 0;<br /> <br /> protected:<br /> virtual ~DRMAquireLicenseListener() {}<br /> };</p> </td> 
@@ -740,9 +590,6 @@ Tables in this topic:
      <li>kEventDRMPreviewLicenseAcquired<p>/ DRMLicenseAcquiredEvent</p> <p>When DRMManager::acquirePreviewLicense method call is successful.</p> </li> 
      <li>kEventDRMLicenseAcquired<p>/ DRMLicenseAcquiredEvent</p> <p>When DRMManager::acquireLicense method call is successful.</p> </li> 
     </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DRMReturnLicenseListener</strong></td> 
   </tr> 
   <tr> 
    <td><p>class DRMReturnLicenseListener: <br /> public DRMErrorListener {<br /> public:<br /> virtual void onLicenseReturnComplete(uint32_t numReturned ) = 0;<br /> <br /> protected:<br /> virtual ~DRMReturnLicenseListener() {}<br /> };</p> </td> 
@@ -769,14 +616,11 @@ Tables in this topic:
 
 ### MediaResource {#mediaresource}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>MediaResource</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface MediaResource {<br /> attribute DomString url; <br /> attribute unsigned short type;<br /> attribute Object metadata;<br /> const unsigned short TYPE_HLS;<br /> const unsigned short TYPE_HDS;<br /> const unsigned short TYPE_DASH;<br /> const unsigned short TYPE_CUSTOM;<br /> const unsigned short TYPE_UNKNOWN;<br /> };</p> </td> 
@@ -787,21 +631,15 @@ Tables in this topic:
 
 ### MediaPlayer {#mediaplayer}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>MediaPlayer</strong></td> 
-  </tr> 
-  <tr> 
    <td><p>interface MediaPlayer : EventTarget<br /> {<br /> void prepareToPlay( double position);<br /> void play();<br /> void pause();<br /> void seek( double position);<br /> void seekToLocal( double position);<br /> void reset();<br /> void release();<br /> void replaceCurrentItem(MediaPlayerItem item);<br /> void replaceCurrentResource(MediaResource rsource, <br /> MediaPlayerItemConfig config); <br /> void suspend();<br /> void restore();<br /> void notifyClick();<br /> <br /> readonly attribute TimeRange playbackRange;<br /> readonly attribute TimeRange seekableRange;<br /> readonly attribute double currentTime;<br /> readonly attribute double localTime;<br /> readonly attribute TimeRange bufferedRange;<br /> readonly attribute DRMManager drmManager;<br /> readonly attribute MediaPlayerItem currentItem;<br /> <br /> // PlayerStatus<br /> <br /> <br /> const unsigned short PLAYER_STATUS_INITIALIZED;<br /> const unsigned short PLAYER_STATUS_PREPARING;<br /> const unsigned short PLAYER_STATUS_PREPARED;<br /> const unsigned short PLAYER_STATUS_PLAYING;<br /> const unsigned short PLAYER_STATUS_PAUSED;<br /> const unsigned short PLAYER_STATUS_SEEKING;<br /> const unsigned short PLAYER_STATUS_COMPLETE;<br /> const unsigned short PLAYER_STATUS_ERROR;<br /> const unsigned short PLAYER_STATUS_RELEASED;<br /> <br /> readonly attribute unsigned short status;<br /> <br /> attribute unsigned short volume;<br /> attribute ABRControlParameters abrControlParameters;<br /> attribute BufferControlParameters bufferControlParameters;<br /> <br /> const unsigned short VISIBLE; //For CC visibility<br /> const unsigned short INVISIBLE; //For CC visibility<br /> attribute unsigned short ccVisibility;<br /> attribute TextFormat ccStyle;<br /> readonly attribute PlaybackMetrics playbackMetrics;<br /> <br /> attribute double rate;<br /> attribute MediaPlayerView view;<br /> readonly attribute Timeline timeline;<br /> attribute double currentTimeUpdateInterval; <br /> // setting this Won't be supported for 2.0<br /> };</p> </td> 
    <td><p>interface MediaPlayer : EventTarget<br /> {<br /> void prepareToPlay( int position);<br /> void play();<br /> void pause();<br /> void seek( int position);<br /> void seekToLocalTime( int position);<br /> void reset();<br /> void release();<br /> void replaceCurrentItem(MediaResource source);<br /> <br /> <br /> <br /> <br /> <br /> <br /> readonly attribute TimeRange playbackRange;<br /> readonly attribute TimeRange seekableRange;<br /> readonly attribute double currentTime;<br /> readonly attribute double localTime;<br /> readonly attribute TimeRange bufferedRange;<br /> readonly attribute DRMManager drmManager;<br /> readonly attribute MediaPlayerItem currentItem;<br /> <br /> // PlayerState<br /> const unsigned short PLAYER_STATE_IDLE;<br /> const unsigned short PLAYER_STATE_INITIALIZING;<br /> const unsigned short PLAYER_STATE_INITIALIZED;<br /> const unsigned short PLAYER_STATE_PREPARING;<br /> const unsigned short PLAYER_STATE_PREPARED;<br /> const unsigned short PLAYER_STATE_PLAYING;<br /> const unsigned short PLAYER_STATE_PAUSED;<br /> const unsigned short PLAYER_STATE_SEEKING;<br /> const unsigned short PLAYER_STATE_COMPLETE;<br /> const unsigned short PLAYER_STATE_ERROR;<br /> const unsigned short PLAYER_STATE_RELEASED;<br /> const unsigned short PLAYER_STATUS_SUSPENDED;<br /> readonly attribute unsigned short state;<br /> <br /> attribute unsigned short volume;<br /> attribute ABRControlParameters abrControlParameters;<br /> attribute BufferControlParameters bufferControlParameters;<br /> <br /> readonly unsigned short VISIBLE; //For CC visibility<br /> readonly unsigned short INVISIBLE; //For CC visibility<br /> attribute unsigned short ccVisibility;<br /> attribute TextFormat ccStyle;<br /> readonly attribute PlaybackMetrics playbackMetrics;<br /> attribute MediaPlayerConfig mediaPlayerConfig;<br /> attribute double rate;<br /> attribute MediaPlayerView view;<br /> readonly attribute Timeline timeline;<br /> <br /> <br /> };</p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>MediaPlayerStatus</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface MediaPlayerStatus<br /> {<br /> // PlayerStatus<br /> const unsigned short PLAYER_STATUS_IDLE;<br /> const unsigned short PLAYER_STATUS_INITIALIZING;<br /> const unsigned short PLAYER_STATUS_INITIALIZED;<br /> const unsigned short PLAYER_STATUS_PREPARING;<br /> const unsigned short PLAYER_STATUS_PREPARED;<br /> const unsigned short PLAYER_STATUS_PLAYING;<br /> const unsigned short PLAYER_STATUS_PAUSED;<br /> const unsigned short PLAYER_STATUS_SEEKING;<br /> const unsigned short PLAYER_STATUS_COMPLETE;<br /> const unsigned short PLAYER_STATUS_ERROR;<br /> const unsigned short PLAYER_STATUS_RELEASED;<br /> const unsigned short PLAYER_STATUS_SUSPENDED;<br /> };</p> </td> 
@@ -812,7 +650,7 @@ Tables in this topic:
 
 #### Events supported by MediaPlayer {#events-supported-by-mediaplayer}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 Event name</th> 
@@ -1063,14 +901,11 @@ Tables in this topic:
 
 ### ABRControlParameters {#abrcontrolparameters}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>ABRControlParameters</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface ABRControlParameters<br /> {<br /> const unsigned short ABR_POLICY_CONSERVATIVE = 0 ;<br /> const unsigned short ABR_POLICY_MODERATE = 1 ;<br /> const unsigned short ABR_POLICY_AGGRESIVE = 2 ;<br /> <br /> attribute unsigned short abrPolicy;<br /> attribute unsigned int initialBitRate;<br /> attribute unsigned int minBitRate;<br /> attribute unsigned int maxBitRate;<br /> const unsigned short DEFAULT_ABR_INITIAL_BITRATE;<br /> const unsigned short DEFAULT_ABR_MIN_BITRATE;<br /> const unsigned short DEFAULT_ABR_MAX_BITRATE;<br /> const ABRPolicy DEFAULT_ABR_POLICY;<br /> };</p> </td> 
@@ -1081,14 +916,11 @@ Tables in this topic:
 
 ### BufferControlParameters {#buffercontrolparameters}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>BufferControlParameters</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface BufferControlParameters<br /> {<br /> attribute double initialBufferTime;<br /> attribute double playBufferTime;<br /> const double DEFAULT_INITIAL_BUFFER_TIME;<br /> const double DEFAULT_PLAY_BUFFER_TIME;<br /> };</p> </td> 
@@ -1099,14 +931,11 @@ Tables in this topic:
 
 ### TextFormat {#textformat}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>TextFormat</strong></td> 
   </tr> 
   <tr> 
    <td>No change for 2.0</td> 
@@ -1117,21 +946,15 @@ Tables in this topic:
 
 ### MediaPlayerItemLoader {#mediaplayeritemloader}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>MediaPlayerItemLoader</strong></td> 
-  </tr> 
-  <tr> 
    <td><p>interface MediaPlayerItemLoader:<br /> {<br /> void load(MediaResource resource, long resourceId,<br /> ItemLoaderListener listener, <br /> MediaPlayerItemConfig config) ;<br /> void cancel();<br /> readonly attribute MediaPlayerItem currentItem;<br /> };</p> </td> 
    <td>New for 2.0</td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>ItemLoaderListener</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface ItemLoaderListener<br /> {<br /> //onLoadCompleteCallbackFunc(MediaPlayerItem)<br /> var onLoadCompleteCallbackFunc;<br /> //onErrorCallbackFunc(PSDKErrorCode)<br /> var onErrorCallbackFunc;<br /> }</p> </td> 
@@ -1153,14 +976,11 @@ Tables in this topic:
 
 ### MediaPlayerItem {#mediaplayeritem}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>MediaPlayerItem</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface MediaPlayerItem {<br /> readonly attribute MediaResource resource;<br /> readonly attribute long resourceId;<br /> readonly attribute boolean live;<br /> <br /> readonly attribute boolean hasAlternateAudio;<br /> readonly attribute AudioTrackList audioTracks;<br /> readonly attribute AudioTrack selectedAudioTrack;<br /> void selectAudioTrack(AudioTrack track); <br /> <br /> readonly attribute boolean hasClosedCaptions;<br /> readonly attribute ClosedCaptionsTrackList closedCaptionsTracks;<br /> readonly attribute ClosedCaptionsTrack selectedClosedCaptionsTrack;<br /> void selectClosedCaptionsTrack(<br /> ClosedCaptionsTrack track); <br /> <br /> readonly attribute boolean hasTimedMetadata;<br /> readonly attribute TimedMetadataList timedMetadata;<br /> readonly attribute boolean dynamic;<br /> <br /> readonly attribute boolean isProtected;<br /> readonly attribute DRMMetadataInfoList drmMetadataInfos;<br /> readonly attribute ProfileList profiles;<br /> readonly attribute Profile selectedProfile;<br /> <br /> readonly attribute boolean trickPlaySupported;<br /> readonly attribute FloatArray availablePlaybackRates;<br /> readonly attribute float selectedPlaybackRate;<br /> <br /> <br /> readonly attribute MediaPlayer mediaPlayer;<br /> readonly attribute MediaPlayerItemConfig config;<br /> };</p> </td> 
@@ -1171,42 +991,27 @@ Tables in this topic:
 
 ### Track / AudioTrack / ClosedCaptionsTrack {#track-audiotrack-closedcaptionstrack}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>Track</strong></td> 
-  </tr> 
-  <tr> 
    <td><p>interface Track<br /> {<br /> readonly attribute DomString name;<br /> readonly attribute DomString language;<br /> readonly attribute boolean default;<br /> readonly attribute boolean autoSelect;<br /> }; </p> </td> 
    <td>New for 2.0</td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>AudioTrack</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface AudioTrack : Track<br /> {<br /> readonly attribute DomString name; //FromTrack<br /> readonly attribute DomString language;//FromTrack<br /> readonly attribute boolean default; // From Track<br /> readonly attribute boolean autoSelect;//FromTrack<br /> <br /> readonly attribute unsigned int pid;<br /> };</p> </td> 
    <td><p>interface AudioTrack<br /> {<br /> readonly attribute DomString name;<br /> readonly attribute DomString language; <br /> readonly attribute boolean default;<br /> readonly attribute boolean autoSelect;<br /> readonly attribute boolean forced;<br /> <br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>AudioTrackList</strong></td> 
-  </tr> 
-  <tr> 
    <td>No change for 2.0</td> 
    <td><p>interface AudioTrackList<br /> {<br /> readonly attribute unsigned long length;<br /> getter AudioTrack (unsigned long index);<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>ClosedCaptionsTrack</strong></td> 
-  </tr> 
-  <tr> 
    <td><p>interface ClosedCaptionsTrack : Track<br /> {<br /> readonly attribute DomString name; //FromTrack<br /> readonly attribute DomString language;//FromTrack<br /> readonly attribute boolean default; // FromTrack<br /> readonly attribute boolean autoSelect;//FromTrack<br /> <br /> <br /> const unsigned short SERVICE_608_CAPTIONS = 0;<br /> const unsigned short SERVICE_708_CAPTIONS = 1;<br /> const unsigned short SERVICE_WEB_VTT_CAPTIONS = 2;<br /> readonly attribute unsigned short serviceType;<br /> readonly attribute boolean forced;<br /> };</p> </td> 
    <td><p>interface ClosedCaptionsTrack<br /> {<br /> readonly attribute DomString name;<br /> readonly attribute DomString language;<br /> readonly attribute boolean default;<br /> <br /> <br /> readonly attribute boolean active;<br /> <br /> <br /> <br /> <br /> <br /> };</p> </td> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>ClosedCaptionsTrackList</strong></td> 
   </tr> 
   <tr> 
    <td>No change for 2.0</td> 
@@ -1217,24 +1022,18 @@ Tables in this topic:
 
 ### Profile {#profile}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>Profile</strong></td> 
-  </tr> 
-  <tr> 
-   <td>No change for 2.0</td> 
+   <td>Profile: No change for 2.0</td> 
    <td><p>interface Profile<br /> {<br /> readonly attribute unsigned int width;<br /> readonly attribute unsigned int height;<br /> readonly attribute unsigned int bitRate;<br /> }; </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>ProfileList</strong></td> 
-  </tr> 
-  <tr> 
-   <td>No change for 2.0</td> 
+   <td>ProfileList: No change for 2.0</td> 
    <td><p>interface ProfileList<br /> {<br /> readonly attribute unsigned long length;<br /> getter Profile(unsigned long index);<br /> };</p> </td> 
   </tr> 
  </tbody> 
@@ -1242,24 +1041,18 @@ Tables in this topic:
 
 ### DRMMetadataInfo {#drmmetadatainfo}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>DRMMetadataInfo</strong></td> 
-  </tr> 
-  <tr> 
-   <td>No change for 2.0</td> 
+   <td><strong>DRMMetadataInfo</strong>: No change for 2.0</td> 
    <td><p>interface DRMMetadataInfo<br /> { <br /> readonly attribute DRMMetadata metadata;<br /> readonly attribute long prefetchTimestamp;<br /> readonly attribute TimeRange timeRange;<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><strong>DRMMetadataInfoList</strong></td> 
-  </tr> 
-  <tr> 
-   <td>No change for 2.0</td> 
+   <td><strong>DRMMetadataInfoList</strong>: No change for 2.0</td> 
    <td><p>interface DRMMetadataInfoList<br /> {<br /> readonly attribute unsigned long length;<br /> getter DRMMetadataInfo(unsigned long index);<br /> };</p> </td> 
   </tr> 
  </tbody> 
@@ -1284,7 +1077,7 @@ For example, if no valid media file was found for the received ad response, then
 
 Error or warning codes that are received asynchronously from the Adobe Video Engine (AVE) are dispatched to the application as normal events. The notification event contains all received error codes and any additional metadata, such as the URL, resource identifier, handle, and so on. If the error is serious and the playback of the current media cannot continue, the MediaPlayer transitions to the ERROR status and onStatusChanged callback or MediaPlayerStatusChanged.STATUS_CHANGED event is dispatched. If the playback can continue, a normal notification event is dispatched.
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>C++ Error (PSDKError Code)</th> 
@@ -1466,14 +1259,11 @@ Tables in this topic:
 
 ### Version {#version}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>Version</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface Version<br /> {<br /> readonly attribute DomString version;<br /> readonly attribute DomString description;<br /> readonly attribute long major;<br /> readonly attribute long minor;<br /> readonly attribute long revision;<br /> readonly attribute long apiVersion;<br /> };</p> </td> 
@@ -1484,14 +1274,11 @@ Tables in this topic:
 
 ### TimeRange {#timerange}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>TimeRange</strong></td> 
   </tr> 
   <tr> 
    <td>No change for 2.0</td> 
@@ -1502,14 +1289,11 @@ Tables in this topic:
 
 ### QOSProvider {#qosprovider}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>QOSProvider</strong></td> 
   </tr> 
   <tr> 
    <td>No change for 2.0</td> 
@@ -1520,14 +1304,11 @@ Tables in this topic:
 
 ### DeviceInformation {#deviceinformation}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>DeviceInformation</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface DeviceInformation<br /> {<br /> readonly attribute DomString os;<br /> <br /> <br /> <br /> readonly attribute DomString id;<br /> readonly attribute int densityDPI;<br /> readonly attribute int heightPixels;<br /> readonly attribute int widthPixels;<br /> readonly attribute boolean seekToKeyFrame;<br /> };</p> </td> 
@@ -1538,14 +1319,11 @@ Tables in this topic:
 
 ### LoadInfo {#loadinfo}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>LoadInfo</strong></td> 
   </tr> 
   <tr> 
    <td>No change for 2.0</td> 
@@ -1556,14 +1334,11 @@ Tables in this topic:
 
 ### View {#view}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>View</strong></td> 
   </tr> 
   <tr> 
    <td>No change for 2.0</td> 
@@ -1574,14 +1349,11 @@ Tables in this topic:
 
 ### PlaybackInformation {#playbackinformation}
 
-<table cellpadding="1" cellspacing="0"> 
+<table> 
  <tbody> 
   <tr> 
    <th>2.0 APIs</th> 
    <th>1.3 APIs</th> 
-  </tr> 
-  <tr> 
-   <td colspan="2"><strong>PlaybackInformation</strong></td> 
   </tr> 
   <tr> 
    <td><p>interface PlaybackInformation<br /> {<br /> readonly attribute double timeToFirstByte;<br /> readonly attribute double timeToLoad;<br /> readonly attribute double timeToStart;<br /> readonly attribute double timeToFail;<br /> readonly attribute int totalSecondsPlayed;<br /> readonly attribute int totalSecondsSpent;<br /> readonly attribute double frameRate;<br /> readonly attribute int droppedFrameCount;<br /> readonly attribute int perceivedBandwidth;<br /> readonly attribute int bitrate;<br /> readonly attribute double bufferTime;<br /> readonly attribute int bufferLength;<br /> readonly attribute int emptyBufferCount;<br /> readonly attribute double bufferingTime;<br /> };</p> </td> 
@@ -1589,4 +1361,3 @@ Tables in this topic:
   </tr> 
  </tbody> 
 </table>
-

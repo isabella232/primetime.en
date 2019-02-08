@@ -1,6 +1,6 @@
 ---
-description: PTNotification provides information that is related to the player’s status.
-seo-description: PTNotification provides information that is related to the player’s status.
+description: PTNotification provides information that is related to the player's status.
+seo-description: PTNotification provides information that is related to the player's status.
 seo-title: Notification content
 title: Notification content
 uuid: 15f08b33-ccb0-48a6-913e-dbc59a9ec6c4
@@ -8,7 +8,7 @@ uuid: 15f08b33-ccb0-48a6-913e-dbc59a9ec6c4
 
 # Notification content{#notification-content}
 
-PTNotification provides information that is related to the player’s status.
+PTNotification provides information that is related to the player's status.
 
 TVSDK provides a chronological list of `PTNotification` notifications. Each notification contains the following information:
 

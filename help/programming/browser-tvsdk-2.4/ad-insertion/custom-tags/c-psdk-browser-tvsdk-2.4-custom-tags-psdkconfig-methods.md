@@ -21,43 +21,39 @@ Here is some information about how the `MediaPlayerItemConfig` methods are used 
 <table id="table_0AC0973497144DDAB05726E3F031ACD1"> 
  <tbody> 
   <tr> 
-   <td colspan="2"> <b>Subscribe to specific custom tags</b> </td> 
+   <td colname="col1"> <b>Subscribe to specific custom tags</b> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 
-    <codeblock class="syntax javascript">
-      var&amp;nbsp;subscribeTagsObtained&amp;nbsp;=&amp;nbsp;mediaPlayerItemConfig.subscribeTags; 
-    </codeblock> </td> 
+    <code class="syntax javascript">
+      var&amp;nbsp;subscribeTagsObtained&amp;nbsp;=&amp;nbsp;mediaPlayerItemConfig.subscribeTags;
+    </code> </td> 
    <td colname="col2"> <p>Retrieves the current list of subscribed tags. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 
-    <codeblock class="syntax javascript">
-      var&nbsp;subscribeTags&nbsp;=&nbsp;["#EXT-X-PROGRAM-DATE-TIME"]; 
-     
-mediaPlayerItemConfig.subscribeTags&nbsp;=&nbsp;subscribeTags;
-
-    </codeblock> </td> 
+    <code class="syntax javascript">
+      var&nbsp;subscribeTags&nbsp;=&nbsp;["#EXT-X-PROGRAM-DATE-TIME"];mediaPlayerItemConfig.subscribeTags&nbsp;=&nbsp;subscribeTags;
+    </code> </td> 
    <td colname="col2"> <p>Sets the list of subscribed tags exposed to the application. </p> <p>Your application is also automatically subscribed to all tags that are transmitted through <span class="codeph"> adTags </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"> <b>Customize the ad tags used by the default opportunity detector </b> </td> 
+   <td colname="col1"> <b>Customize the ad tags used by the default opportunity detector </b> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 
-    <codeblock class="syntax javascript">
+    <code class="syntax javascript">
       var&amp;nbsp;adTagsObtained&amp;nbsp;=&amp;nbsp;mediaPlayerItemConfig.adTags; 
-    </codeblock> </td> 
+    </code> </td> 
    <td colname="col2"> <p>Retrieves the current list of ad tags. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 
-    <codeblock class="syntax javascript">
-      var&nbsp;adTags&nbsp;=&nbsp;["#EXT-X-CUE"]; 
-     
-mediaPlayerItemConfig.adTags&nbsp;=&nbsp;adTags;
-
-    </codeblock> </td> 
+    <code class="syntax javascript">
+      var&nbsp;adTags&nbsp;=&nbsp;["#EXT-X-CUE"];mediaPlayerItemConfig.adTags&nbsp;=&nbsp;adTags;
+    </code> </td> 
    <td colname="col2"> <p>Sets the list of ad tags to be used by the default opportunity generator. </p> </td> 
   </tr> 
  </tbody> 

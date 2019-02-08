@@ -17,7 +17,8 @@ Both `PSDKConfig` and `MediaPlayerItemConfig` expose these methods to manage the
 <table id="table_B37A6C75270D47BC99258F2884AD6905"> 
  <tbody> 
   <tr> 
-   <td colspan="2"><b>Subscribe to specific custom tags</b> </td> 
+   <td colname="1"><b>Subscribe to specific custom tags</b> </td> 
+   <td colname="3"> </td>
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> public function get subscribeTags():Vector.&lt;String&gt;</span> </td> 
@@ -28,7 +29,8 @@ Both `PSDKConfig` and `MediaPlayerItemConfig` expose these methods to manage the
    <td colname="col2">Sets the list of subscribed tags that will be exposed to the application. <p>Your application is also automatically subscribed to all tags transmitted through <span class="codeph"> adTags</span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"><b>Customize the ad tags used by the default opportunity detector </b> </td> 
+   <td colname="1"><b>Customize the ad tags used by the default opportunity detector </b> </td> 
+   <td colname="3"> </td>
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> public function get adTags():Vector.&lt;String&gt;</span> </td> 

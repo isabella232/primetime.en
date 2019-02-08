@@ -116,7 +116,7 @@ In this example, you can use `DRMHelper` methods to download the contents of the
            final DRMAuthenticationListener authenticationListener);
       ```
 
-      In this example, for simplicity, the user’s name and password are explicitly coded:     
+      In this example, for simplicity, the user's name and password are explicitly coded:     
     
       ```java    
       DRMHelper.performDrmAuthentication(drmManager,  

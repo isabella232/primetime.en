@@ -22,11 +22,11 @@ The following properties have been added in Adobe Access:
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> HandlerConfiguration.KeyServerCertificate</span> </td> 
-   <td colname="2" class="- topic/entry "> Key Server’s License Server Certificate, issued by Adobe. This certificate is used to generate licenses for iOS devices, when the metadata indicates that a Key Server is required. </td> 
+   <td colname="2" class="- topic/entry "> Key Server's License Server Certificate, issued by Adobe. This certificate is used to generate licenses for iOS devices, when the metadata indicates that a Key Server is required. </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> RefImpl.HSM.HandlerConfiguration.\ KeyServerCertificate.Alias</span> </td> 
-   <td colname="2" class="- topic/entry ">Alias of Key Server’s Adobe-issued License Server certificate stored on HSM. When HSM is enabled, use this property instead of <span class="codeph"> HandlerConfiguration.KeyServerCertificate</span>. </td> 
+   <td colname="2" class="- topic/entry ">Alias of Key Server's Adobe-issued License Server certificate stored on HSM. When HSM is enabled, use this property instead of <span class="codeph"> HandlerConfiguration.KeyServerCertificate</span>. </td> 
   </tr> 
  </tbody> 
 </table>

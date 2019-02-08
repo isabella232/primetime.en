@@ -6,7 +6,7 @@ uuid: 330d5e3c-1711-4375-bd11-e7702f0cde31
 
 # Sample Client Requests{#sample-client-requests}
 
-You can collect a library of sample client requests using tools such as Charles Proxy or Wireshark. You should capture client requests after the Individualization server has been set up, using the Individualization Transport credential. You can then send these client requests (via *curl* or another tool) to the Individualization Server’s end point to verify that the server is up and running properly. For example: 
+You can collect a library of sample client requests using tools such as Charles Proxy or Wireshark. You should capture client requests after the Individualization server has been set up, using the Individualization Transport credential. You can then send these client requests (via *curl* or another tool) to the Individualization Server's end point to verify that the server is up and running properly. For example: 
 
 ```
 curl https://<<yourindivserver:port>>/flashaccess/i15n/v5 -­data-binary  

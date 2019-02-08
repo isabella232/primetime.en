@@ -26,7 +26,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Playback</b> </td> 
+   <td colname="1"><b>Playback</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 200000 </span> </td> 
@@ -36,7 +40,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p>A playback-related operation has failed, but playback may continue. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Ad resolving</b> </td> 
+   <td colname="1"><b>Ad resolving</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 201000 </span> </td> 
@@ -60,11 +68,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p>Ad resolving failed because of an invalid VAST URL or because no ad was returned from the VAST wrapper. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="4"> <p>Note: adID and source (URL) can be retrieved through the PTAdAsset in the notification metadata with the <span class="codeph"> AD_ASSET</span> key. </p> </td> 
+   <td colname="1"><b>Background manifests</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
    <td colname="5"> </td> 
-  </tr> 
-  <tr rowsep="1"> 
-   <td colspan="5"><b>Background manifests</b> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 204000 </span> </td> 
@@ -81,7 +89,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Native</b> </td> 
+   <td colname="1"><b>Native</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1" morerows="1"><span class="codeph"> 209100 </span> </td> 
@@ -92,14 +104,14 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
   </tr> 
   <tr rowsep="1"> 
    <td colname="4"><b>DRM</b> <p><span class="codeph"> NATIVE_SUBERROR_CODE</span> <span class="codeph"> DRM_ERROR_STRING</span> </p> </td> 
-   <td colname="5">
-    <ph>
-     DRM minor error code and DRM server error string. See 
-     <a href="https://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-concept-Details_for_the_NATIVEERROR_notification" format="html" scope="external"> Details for the NATIVE_ERROR notifications</a> for detailed information about the values for these metadata fields.
-    </ph> </td> 
+   <td colname="5"> DRM minor error code and DRM server error string. See <a href="https://help.adobe.com/en_US/primetime/psdk/android/index.html#PSDKs-concept-Details_for_the_NATIVEERROR_notification" format="html" scope="external"> Details for the NATIVE_ERROR notifications</a> for detailed information about the values for these metadata fields.</td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>TimeRangeCollection</b> </td> 
+   <td colname="1"><b>TimeRangeCollection</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 210000 </span> </td> 
@@ -116,7 +128,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p> One or more time ranges are invalid and will be ignored or modified. </p> <p> DESCRIPTION is a string containing description of the invalid ranges. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Trick mode</b> </td> 
+   <td colname="1"><b>Trick mode</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 280000 </span> </td> 
@@ -126,7 +142,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p> Rate change failed. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Generic</b> </td> 
+   <td colname="1"><b>Generic</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"> 299999 </span> </td> 
@@ -138,3 +158,4 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
  </tbody> 
 </table>
 
+>[NOTE!] adID and source (URL) can be retrieved through the PTAdAsset in the notification metadata with the `AD_ASSET` key.

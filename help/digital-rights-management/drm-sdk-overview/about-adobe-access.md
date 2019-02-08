@@ -17,5 +17,5 @@ Primetime DRM provides a variety of benefits for different types of customers:
 * For Content owners and distributors - Broader reach for media assets, and a way to recuperate production costs while protecting those assets from misuse. 
 * For Content distributors - The ability to rapidly distribute content and recuperate production costs through direct (user-paid) or indirect (advertiser-paid) compensation. 
 * For Consumers - The flexibility to enjoy premium content with a rich viewing experience that is intuitive, non-intrusive, convenient, and engaging. 
-* For Developers - The ability to automate Primetime DRM capabilities, including authorization and authentication, into a content distributor’s existing environment.
+* For Developers - The ability to automate Primetime DRM capabilities, including authorization and authentication, into a content distributor's existing environment.
 

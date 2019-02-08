@@ -8,25 +8,25 @@ user-guide: Primetime Programming Help
 # Primetime Programming Help {#programming}
 
 + TVSDK 3.0 for Android {#tvsdk-3.0-for-android}
-   + [Introduction] {#introduction}
-      + [Product overview, audience, and this guide] {#overview-prod-audience-guide}
+   + Introduction {#introduction}
+      + Product overview, audience, and this guide {#overview-prod-audience-guide}
          + [Considerations and best practices](tvsdk-3.0-for-android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-considerations.md)
          + [Primetime TVSDK features](tvsdk-3.0-for-android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-overview-of-the-player.md)
       + [Requirements](tvsdk-3.0-for-android/android-3.0-introduction/android-3.0-requirements.md)
-   + [Content playback options] {#content-playback-options}
+   + Content playback options {#content-playback-options}
       + [Set up the Media player](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/android-3.0-mediaplayer-set-up-android.md)
-      + [Work with MediaPlayer objects] {#work-with-media-player-objects}
+      + Work with MediaPlayer objects {#work-with-media-player-objects}
          + [About the MediaPlayerItem class](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-mediaplayeritem-class-about.md)
          + [Lifecycle and statuses of the MediaPlayer object](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-mediaplayer-object-lifecycle-states.md)
          + [MediaPlayerItem methods for accessing MediaResource information](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-mediaplayeritem-accessing-mediaresource.md)
          + [Reuse or remove a MediaPlayer instance](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-mediaplayer-reuse-or-remove.md)
          + [Inspect the playback timeline](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-timeline-inspect-playback.md)
          + [Suspend and Restore MediaPlayer](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-suspend-and-restore.md)
-      + [Listen for Primetime Player events] {#listen-primetime-player-events}
+      + Listen for Primetime Player events {#listen-primetime-player-events}
          + [Listen for Primetime Player events overview](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/events-listen-for/android-3.0-events-listen-for.md)
          + [Implement event listeners and callbacks](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/events-listen-for/android-3.0-event-listeners-implement.md)
       + [Set up error handling](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/android-3.0-error-handling-set-up.md)
-      + [Configure the player user interface] {#configure-player-user-interface}
+      + Configure the player user interface {#configure-player-user-interface}
          + [Wait for a valid status](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-state-prepared-wait-for.md)
          + [Play and pause a video](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-pause-play-implement.md)
          + [Identify whether the content is live or VOD](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-content-live-vod-identify.md)
@@ -35,7 +35,7 @@ user-guide: Primetime Programming Help
          + [Display a seek scrub bar with the current playback position](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-seek-scrub-bar-display.md)
          + [Construct a control bar enhanced for DVR](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-ctrl-bar-for-dvr-construct.md)
          + [Enter a stream at a specific time](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-stream-entry-control.md)
-      + [Initialize the media player for a specific video] {#initialize-the-media-player-for-a-specific-video}
+      + Initialize the media player for a specific video {#initialize-the-media-player-for-a-specific-video}
          + [Create a media resource](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-create.md)
          + [Load a media resource in the media player](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-load.md)
          + [Load a media resource using MediaPlayerItemLoader](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-mediaplayeritemloader.md)
@@ -71,8 +71,8 @@ user-guide: Primetime Programming Help
          + [Playback and failover overview](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/failover-for-playback/android-3.0-failover-for-playback.md)
          + [Media playback and failover](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/failover-for-playback/android-3.0-failover-media-playback.md)
          + [Advertising insertion and failover for VOD](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/failover-for-playback/android-3.0-failover-ad-insertion-for-vod.md)
-   + [Advertising] {#advertising}
-      + [Advertising requirements] {#advertising-requirements}
+   + Advertising {#advertising}
+      + Advertising requirements {#advertising-requirements}
          + [Overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-ad-insertion.md)
          + Insert ads {#insert-ads}
             + [Insert ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-insertion-about.md)
@@ -159,12 +159,12 @@ user-guide: Primetime Programming Help
             + [Normalize rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-normalize-rule.md)
             + [Sample creative selection rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-sample-rule-files.md)
             + [Apply creative selection rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-how-tvsdk-applies-csr.md)
-   + [Content protection] {#content-protection}
+   + Content protection {#content-protection}
       + [Widevine DRM](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-widevine.md)
       + [Primetime DRM interface overview](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-interface.md)
       + [DRM authentication before playback](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-auth-before-playback.md)
       + [DRM authentication during playback](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-auth-during-playback.md)
-   + [Video analytics] {#video-analytics}
+   + Video analytics {#video-analytics}
       + Integrating TVSDK with Adobe Analytics {#integrating-tvsdk}
          + [Integrating TVSDK with Adobe Analytics overview](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-integration-overview.md)
          + [Initialize and configure video analytics](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-integrate-heartbeats.md)
@@ -172,13 +172,13 @@ user-guide: Primetime Programming Help
          + [Implement chapter support](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-chapter-support.md)
          + [Set up video analytics reporting on the server side](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-server-side-reporting-set-up.md)
          + [Access video analytics reports](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-reports-access.md)
-   + [Events and notifications] {#events-and-notifications}
+   + Events and notifications {#events-and-notifications}
       + [Notifications and events for player status, activity, errors, and logging](tvsdk-3.0-for-android/android-3.0-events-notifications/android-3.0-notification-system.md)
       + [Notification codes](tvsdk-3.0-for-android/android-3.0-events-notifications/notification-codes/android-3.0-notification-codes.md)
       + [Details for the NATIVE_ERROR notification](tvsdk-3.0-for-android/android-3.0-events-notifications/notification-codes/android-3.0-native-error-summary.md)
       + [Primetime player events summary](tvsdk-3.0-for-android/android-3.0-events-notifications/events-summary/android-3.0-events-summary.md)
       + [Events](tvsdk-3.0-for-android/android-3.0-events-notifications/events-summary/android-3.0-events.md)
-   + [Billing] {#billing}
+   + Billing {#billing}
       + [Billing metrics](tvsdk-3.0-for-android/android-3.0-billing-title/billing/android-3.0-billing.md)
       + [Configure billing metrics](tvsdk-3.0-for-android/android-3.0-billing-title/billing/android-3.0-billing-config.md)
       + [Transmit billing metrics](tvsdk-3.0-for-android/android-3.0-billing-title/billing/android-3.0-billing-data-format.md)
@@ -801,91 +801,110 @@ user-guide: Primetime Programming Help
          + [Reset or reuse a MediaPlayer instance](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/t-psdk-dhls-1.4-mediaplayer-reset-reuse-instance.md)
          + [Release a MediaPlayer instance and resources](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/t-psdk-dhls-1.4-mediaplayer-release-instance.md)
       + [Inspect the playback timeline](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/t-psdk-dhls-1.4-timeline-inspect-playback.md)
-   + [Buffering](tvsdk-1.4-for-desktop-hls/buffering-configuration/c-psdk-dhls-1.4-buffering-configuration.md)
-      + [Buffering time policies](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/c-psdk-dhls-1.4-buffering-policies.md)
+   + Buffering {#buffering}
+      + Buffering time policies {#time-policies}
+         + [Buffering time policies](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/c-psdk-dhls-1.4-buffering-policies.md)
          + [Set buffering times](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/t-psdk-dhls-1.4-buffering-times-set.md)
    + [Hide a video view](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-video-view-hiding.md)
-   + [Advertising](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-ad-insertion.md)
+   + Advertising {#advertising}
       + [Advertising requirements](tvsdk-1.4-for-desktop-hls/ad-insertion/r-psdk-dhls-1.4-advertising-requirements.md)
-      + [Inserting ads](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-insertion-about.md)
+      + Inserting ads {#inserting-ads}
+         + [Inserting ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-insertion-about.md)
          + [VOD ad resolving and insertion](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-resolving-client-vod.md)
          + [Live/linear ad resolving and insertion](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-resolving-client-live-linear.md)
          + [Implementing an early ad break return](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/r-psdk-dhls-1.4-early-ad-break-return.md)
          + [Client ad tracking](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-tracking-client.md)
       + [Enable lazy ad loading](tvsdk-1.4-for-desktop-hls/ad-insertion/t-psdk-dhls-1.4-ad-delay-enable.md)
       + [Default and customized playback behavior with ads](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-playback-post1.2.md)
-      + [Customize playback with ads](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/c-psdk-dhls-1.4-playback-customize.md)
+      + Customize playback with ads {#customize-playback-with-ads}
+         + [Customize playback with ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/c-psdk-dhls-1.4-playback-customize.md)
          + [API elements for ad playback](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/c-psdk-dhls-1.4-playback-ad-custom-elements.md)
          + [Use the default playback behavior](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-use-default.md)
          + [Set up customized playback](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-customize.md)
          + [Skip ad breaks for a period of time](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-skip-breaks.md)
          + [Save the video position and resume later](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-save-position.md)
-      + [Ad insertion metadata](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-metadata/c-psdk-dhls-1.4-ad-insertion-metadata.md)
+      + Ad insertion metadata {#ad-insertion-metadata}
+         + [Ad insertion metadata overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-metadata/c-psdk-dhls-1.4-ad-insertion-metadata.md)
          + [Set up ad insertion metadata](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-metadata/t-psdk-dhls-1.4-ad-insertion-metadata-set-up.md)
-      + [Companion banner ads](tvsdk-1.4-for-desktop-hls/ad-insertion/companion-banner-ads/c-psdk-dhls-1.4-companion-banner-ads.md)
+      + Companion banner ads {#companion-banner-ads}
+         + [Companion banner ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/companion-banner-ads/c-psdk-dhls-1.4-companion-banner-ads.md)
          + [Companion banner data](tvsdk-1.4-for-desktop-hls/ad-insertion/companion-banner-ads/r-psdk-dhls-1.4-companion-banner-data.md)
          + [Display banner ads](tvsdk-1.4-for-desktop-hls/ad-insertion/companion-banner-ads/t-psdk-dhls-1.4-companion-banner-ads-display.md)
-      + [Clickable ads](tvsdk-1.4-for-desktop-hls/ad-insertion/clickable-ads/c-psdk-dhls-1.4-clickable-ads.md)
+      + Clickable ads {#clickable-ads}
+         + [Clickable ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/clickable-ads/c-psdk-dhls-1.4-clickable-ads.md)
          + [Respond to clicks on ads](tvsdk-1.4-for-desktop-hls/ad-insertion/clickable-ads/t-psdk-dhls-1.4-respond-to-ad-clicks.md)
-      + [Custom tags](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-configure.md)
+      + Custom tags {#custom-tags}
+         + [Custom tags overview](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-configure.md)
          + [Example of a customized VOD asset](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-overview.md)
          + [Config class methods for tags](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-psdkconfig-methods.md)
          + [Timed metadata class](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/r-psdk-dhls-1.4-custom-tags-timedmetadata-class.md)
          + [Notifications for manifest tags](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-notifications.md)
          + [Subscribe to custom tags](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/t-psdk-dhls-1.4-custom-tags-subscribe.md)
          + [Add listeners for timed metadata notifications](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/t-psdk-dhls-1.4-custom-tags-receive-notifications.md)
-      + [Repackage incompatible ads using Adobe Creative Repackaging Service](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-transcoding/c-psdk-dhls-1.4-ad-transcoding.md)
+      + Repackage incompatible ads using Adobe Creative Repackaging Service {#repackage-incompatible}
+         + [Repackage incompatible ads using Adobe Creative Repackaging Service overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-transcoding/c-psdk-dhls-1.4-ad-transcoding.md)
          + [Multiple CDN support for CRS ad delivery](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-transcoding/c-psdk-dhls-1.4-multi-cdns-for-crs.md)
-      + [Ad fallback for VAST and VMAP ads](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/c-psdk-dhls-1.4-ad-fallback.md)
+      + Ad fallback for VAST and VMAP ads {#ad-fallback}
+         + [Ad fallback for VAST and VMAP ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/c-psdk-dhls-1.4-ad-fallback.md)
          + [Define fallback ad behavior for VMAP inline ads](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/t-psdk-dhls-1.4-ad-fallback-set-up.md)
          + [Ad fallback behavior for VAST and VMAP](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/r-psdk-dhls-1.4-ad-fallback-behavior.md)
-      + [Custom ads](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/c-psdk-dhls-1.4-custom-ads.md)
+      + Custom ads {#custom-ads}
+         + [Custom ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/c-psdk-dhls-1.4-custom-ads.md)
          + [Custom ad requirements](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/c-psdk-dhls-1.4-custom-ads-req.md)
          + [Custom ad events](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/r-psdk-dhls-1.4-custom-ad-events.md)
          + [Display linear VPAID ads in an ad break](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/t-psdk-dhls-1.4-display-linear-vpaid-ads.md)
-      + [Add custom ad markers](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/c-psdk-dhls-1.4-ad-markers-add-custom.md)
+      + Add custom ad markers {#add-markers}
+         + [Add custom ad markers overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/c-psdk-dhls-1.4-ad-markers-add-custom.md)
          + [TimeRange class](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/r-psdk-dhls-1.4-timerange-class.md)
          + [MediaPlayer and MediaResource classes](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/r-psdk-dhls-1.4-mediaplayer-mediaresource-classes.md)
          + [TimeRangeCollection class](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/r-psdk-dhls-1.4-timerangecollection-class.md)
          + [Place TimeRange ad markers on the timeline](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/t-psdk-dhls-1.4-timerange-markers-on-timeline.md)
          + [Control playback behavior for seeking over custom ad markers](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/t-psdk-dhls-1.4-ad-markers-control-seek.md)
-      + [Updating ad creative selection rules](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/c-psdk-dhls-1.4-updating-rules.md)
+      + Updating ad creative selection rules {#updating-ad-rules}
+         + [Updating ad creative selection rules overview](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/c-psdk-dhls-1.4-updating-rules.md)
          + [Priority rules](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-priority-rule.md)
          + [Normalize rules](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-normalize-rule.md)
          + [Sample creative selection rules](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-sample-rule-files.md)
          + [Applying creative selection rules](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/c-psdk-dhls-1.4-how-tvsdk-applies-csr.md)
-   + [Opportunity detectors and content resolvers](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/c-psdk-dhls-1.4-opportunity-detector.md)
-      + [Customize opportunity detectors and content resolvers](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver.md)
+   + Opportunity detectors and content resolvers {#opportunity-detectors}
+      + Customize opportunity detectors and content resolvers {#customize-opportunities}
+         + [Customize opportunity detectors and content resolvers](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver.md)
          + [Opportunity generators and content resolvers](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver-about.md)
          + [Implement a custom opportunity detector](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/t-psdk-dhls-1.4-opp-detector-impl.md)
          + [Implement a custom content resolver](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/t-psdk-dhls-1.4-content-resolver-implement.md)
-   + [Delete and replace ads in VOD streams](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/c-psdk-dhls-1.4-delete-replace-content-vod.md)
-      + [Custom time range operations](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-custom-time-range-ops.md)
+   + Delete and replace ads in VOD streams {#delete-replace-vod-streams}
+      + Custom time range operations {#custom-time-range}
+         + [Custom time range operations overview](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-custom-time-range-ops.md)
          + [Opportunity Generator](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-opportunity-generator.md)
          + [Ad resolvers](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-ad-resolvers.md)
          + [Signaling mode and time range](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-signalmode-timerange-combos.md)
-      + [Use cases to delete and replace ads](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/c-psdk-dhls-1.4-ad-delete-replace-use-cases.md)
+      + Use cases to delete and replace ads {#use-cases}
          + [Mark ranges](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-mark-ranges.md)
          + [Replace time ranges with an Adobe Primetime ad decisioning ad](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-replace-ranges-with-aud-ad.md)
          + [Delete ranges with Primetime ad decisioning ad](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-delete-ranges-with-aud-ad.md)
          + [Special Use Cases](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-special-use-cases.md)
-      + [Ad deletion and replacement error handling](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-error-handling/c-psdk-dhls-1.4-ad-delete-replace-error-handling.md)
+      + Ad deletion and replacement error handing {#ad-deletion-error}
+         + [Ad deletion and replacement error handling overview](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-error-handling/c-psdk-dhls-1.4-ad-delete-replace-error-handling.md)
          + [Time range error examples](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-error-handling/c-psdk-dhls-1.4-timerange-error-examples.md)
       + [Ad deletion and replacement API changes](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/c-psdk-dhls-1.4-ad-deletion-replacement-api-changes.md)
-   + [Blackouts in live streams](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-blackouts/c-psdk-dhls-1.4-blackouts.md)
-      + [Handle blackouts in live streams](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-blackouts/blackouts-handle/c-psdk-dhls-1.4-blackouts-handle.md)
+   + Blackouts in live streams {#blackouts}
+      + Handle blackouts in live streams {#handle-live-streams}
+         + [Handle blackouts in live streams](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-blackouts/blackouts-handle/c-psdk-dhls-1.4-blackouts-handle.md)
          + [Blackout API elements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-blackouts/blackouts-handle/c-psdk-dhls-1.4-blackout-apis.md)
          + [Implement blackout handling](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-blackouts/blackouts-handle/t-psdk-dhls-1.4-blackouts-implement-handling.md)
-   + [Closed captions](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-closed-captions/c-psdk-dhls-1.4-closed-captions.md)
-      + [Work with closed captions](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-closed-captions/closed-captions-set-up/c-psdk-dhls-1.4-closed-captions-set-up.md)
+   + Closed captions {#closed-captions}
+      + Work with closed captions {#work-closed-captions}
+         + [Work with closed captions](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-closed-captions/closed-captions-set-up/c-psdk-dhls-1.4-closed-captions-set-up.md)
          + [Control closed-caption visibility](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-closed-captions/closed-captions-set-up/t-psdk-dhls-1.4-closed-caption-visibility-control.md)
          + [Control closed-caption styling](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-closed-captions/closed-captions-set-up/c-psdk-dhls-1.4-closed-caption-styling-control.md)
-   + [Alternate audio tracks](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-alternate-tracks/c-psdk-dhls-1.4-alternate-tracks.md)
-      + [Alternate audio](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-alternate-tracks/alternate-audio/c-psdk-dhls-1.4-alternate-audio.md)
+   + Alternate audio tracks {#alternate-audio-tracks}
+      + Alternate audio {#alternate-audio}
+         + [Alternate audio](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-alternate-tracks/alternate-audio/c-psdk-dhls-1.4-alternate-audio.md)
          + [Alternate audio tracks in the playlist](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-alternate-tracks/alternate-audio/c-psdk-dhls-1.4-alternate-audio-in-playlist.md)
          + [Access alternate audio tracks](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-alternate-tracks/alternate-audio/t-psdk-dhls-1.4-alternate-audio-implement.md)
-   + [Integrating TVSDK with Adobe Analytics](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/c-psdk-dhls-1.4-integration.md)
-      + [Video analytics](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/c-psdk-dhls-1.4-va-integration-overview.md)
+   + Integrating TVSDK with Adobe Analytics {#integrating-tvsdk-analytics}
+      + Video analytics {#video-analytics}
+         + [Video analytics](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/c-psdk-dhls-1.4-va-integration-overview.md)
          + [Initialize and configure video analytics](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-va-integrate-heartbeats.md)
          + [Implement custom metadata support](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-va-custom-metadata.md)
          + [Implement chapter support](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-integration/va-integration-overview/t-psdk-dhls-1.4-va-chapter-support.md)

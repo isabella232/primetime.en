@@ -22,11 +22,11 @@ The following properties have been added in Primetime DRM :
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> HandlerConfiguration.KeyServerCertificate</span> </td> 
-   <td colname="2" class="- topic/entry "> <p>Key Server’s License Server Certificate that is issued by Adobe. </p> <p>This certificate generates licenses for iOS devices when the metadata indicates that a Key Server is required. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Key Server's License Server Certificate that is issued by Adobe. </p> <p>This certificate generates licenses for iOS devices when the metadata indicates that a Key Server is required. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> RefImpl.HSM.HandlerConfiguration.\ KeyServerCertificate.Alias</span> </td> 
-   <td colname="2" class="- topic/entry "> <p>The alias of a Key Server’s Adobe-issued License Server certificate that is stored on HSM. </p> <p>When you enable HSM, you can apply this property instead of the <span class="codeph"> HandlerConfiguration.KeyServerCertificate</span> property. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>The alias of a Key Server's Adobe-issued License Server certificate that is stored on HSM. </p> <p>When you enable HSM, you can apply this property instead of the <span class="codeph"> HandlerConfiguration.KeyServerCertificate</span> property. </p> </td> 
   </tr> 
  </tbody> 
 </table>

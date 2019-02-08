@@ -67,4 +67,4 @@ For example, to set the initial buffer to 2 seconds and the playback buffer time
 mediaPlayer.setBufferControlParameters(BufferControlParameters.createDual(2000, 30000));
 ```
 
-The Primetime reference implementation demonstrates this feature; use the application’s settings to set the buffer values. 
+The Primetime reference implementation demonstrates this feature; use the application's settings to set the buffer values. 

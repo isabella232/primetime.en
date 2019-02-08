@@ -31,7 +31,7 @@ These classes provide information that help you to determine how well the player
      <li id="li_19B2D1889FCA4B0F8FCB0EE8F87353B2">Version of the platform OS </li> 
      <li id="li_CA35F4A48FD34555AC7D7832D5997AD4">Version number of the TVSDK library </li> 
      <li id="li_30D38320C2A3440E92C0A477FFFBF9A0">Device's model name </li> 
-     <li id="li_2D15164B987E405685B96A900EBF041D">Device manufacturer’s name </li> 
+     <li id="li_2D15164B987E405685B96A900EBF041D">Device manufacturer's name </li> 
      <li id="li_B78485CB9580444DB9694404706BA191">Dehvice UUID </li> 
      <li id="li_841EA77499B44F0692192F9DE1A798E4">Width/height of the device screen </li> 
     </ul> </td> 

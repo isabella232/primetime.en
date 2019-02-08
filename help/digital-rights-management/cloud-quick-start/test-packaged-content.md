@@ -10,4 +10,4 @@ You should validate that the packaging operation succeeded by using the publicly
 
 1. Host your content on a web server.
 1. Launch the Primetime DRM (formerly called Adobe Access) player: [!DNL ht<span></span>tps://drmtest2.adobe.com:8080/AccessPlayer/player.html]
-1. Paste the URL to your HDS manifest ( [!DNL .f4m]) into the player’s navigation field and click the **[!UICONTROL Play]** button.
+1. Paste the URL to your HDS manifest ( [!DNL .f4m]) into the player's navigation field and click the **[!UICONTROL Play]** button.

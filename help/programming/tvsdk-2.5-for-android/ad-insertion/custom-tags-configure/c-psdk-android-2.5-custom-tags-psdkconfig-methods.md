@@ -17,7 +17,8 @@ TVSDK automatically applies the global configuration to any media stream that do
 <table id="table_B37A6C75270D47BC99258F2884AD6905"> 
  <tbody> 
   <tr> 
-   <td colspan="2"> <b>Subscribe to specific custom tags</b> </td> 
+   <td colname="col1"> <b>Subscribe to specific custom tags</b> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> public final String[] getSubscribedTags </span> </td> 
@@ -28,7 +29,8 @@ TVSDK automatically applies the global configuration to any media stream that do
    <td colname="col2"> <p>Sets the list of subscribed tags that will be exposed to the application. </p> <p>Your application is also automatically subscribed to all tags transmitted through <span class="codeph"> setAdTags </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colspan="2"> <b>Customize the ad tags used by the default opportunity detector</b> </td> 
+   <td colname="col1"> <b>Customize the ad tags used by the default opportunity detector</b> </td> 
+   <td colname="col2"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> public final String[] getAdTags; </span> </td> 
@@ -51,4 +53,3 @@ Remember the following:
   For example, `#EXT-X-ASSET` is a correct custom tag name, but `EXT-X-ASSET` is incorrect. 
 
 * You cannot change the configuration after the media stream has been loaded.
-

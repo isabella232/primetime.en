@@ -24,7 +24,11 @@ Most informational notifications contain relevant metadata, for example, the URL
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Playback</b> </td> 
+   <td colname="1"><b>Playback</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 300000 </span> </td> 
@@ -62,7 +66,11 @@ Most informational notifications contain relevant metadata, for example, the URL
    <td colname="5"> The player state has changed. When state is ERROR, the inner notification is the error notification object that triggered the switch to the ERROR state. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Adaptive bit rates (ABR)</b> </td> 
+   <td colname="1"><b>Adaptive bit rates (ABR)</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 302000 </span> </td> 
@@ -72,7 +80,11 @@ Most informational notifications contain relevant metadata, for example, the URL
    <td colname="5"> The bit rate of the video changed. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Late-binding audio (LBA)</b> </td> 
+   <td colname="1"><b>Late-binding audio (LBA)</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 304000 </span> </td> 
@@ -82,7 +94,11 @@ Most informational notifications contain relevant metadata, for example, the URL
    <td colname="5"> <p>The audio track has changed. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Subtitles</b> </td> 
+   <td colname="1"><b>Subtitles</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 307000 </span> </td> 

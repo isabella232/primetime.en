@@ -52,7 +52,7 @@ The FairPlay license token interface provides production and test services. This
 
 |  **Query Parameter** | **Description** | **Required?** |
 |---|---|---|
-|  `generalFlags`  | A 4 byte hexadecimal string representing the license flags. ‘0000’ is the only allowed value.  | No  |
+|  `generalFlags`  | A 4 byte hexadecimal string representing the license flags. ‘0000' is the only allowed value.  | No  |
 |  `kek`  | Key Encryption Key (KEK). Keys are stored encrypted with a KEK using a key wrapping algorithm (AES Key Wrap, RFC3394). If `kek` is supplied, either one of the `kid` or the `ek` parameters needs to be supplied, *but not both*.  | No  |
 |  `kid`   | A 16 byte hexadecimal string representation of the content encryption key or a string `'^somestring'`. The length of the string followed by the `'^'` cannot be greater than 64 characters.  | No  |
 |  `ek`  | A hex string representation of the encrypted content key.  | No  |
@@ -74,7 +74,7 @@ The FairPlay license token interface provides production and test services. This
  <tbody> 
   <tr> 
    <td> <span class="codeph"> expirationTime </span> </td> 
-   <td> Expiration time of this token. This value MUST be a string in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> date/time format in the ‘Z’ zone designator ("Zulu time"), or an integer preceded by a '+' sign. An example of an RFC 3339 date/time is <span class="codeph"> 2006-04-14T12:01:10Z </span>. <p>If the value is a string in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> date/time format, then it represents an absolute expiration date/time for the token. If the value is an integer preceded by a '+' sign, then it is interpreted as a relative number of seconds, from issuance, that the token is valid. </p> For example, <span class="codeph"> +60 </span> specifies one minute. The maximum and default (if not specified) token lifetime is 30 days. </td> 
+   <td> Expiration time of this token. This value MUST be a string in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> date/time format in the ‘Z' zone designator ("Zulu time"), or an integer preceded by a '+' sign. An example of an RFC 3339 date/time is <span class="codeph"> 2006-04-14T12:01:10Z </span>. <p>If the value is a string in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> date/time format, then it represents an absolute expiration date/time for the token. If the value is an integer preceded by a '+' sign, then it is interpreted as a relative number of seconds, from issuance, that the token is valid. </p> For example, <span class="codeph"> +60 </span> specifies one minute. The maximum and default (if not specified) token lifetime is 30 days. </td> 
    <td> No </td> 
   </tr> 
  </tbody> 
@@ -84,7 +84,7 @@ The FairPlay license token interface provides production and test services. This
 
 |  **Query Parameter** | **Description** | **Required?** |
 |---|---|---|
-|  `cookie`   | An arbitrary string up to 32 characters long, carried in the token and logged by the token redemption server. This can be used to correlate log entries at the redemption server and those at the service provider’s servers.  | No  |
+|  `cookie`   | An arbitrary string up to 32 characters long, carried in the token and logged by the token redemption server. This can be used to correlate log entries at the redemption server and those at the service provider's servers.  | No  |
 
 # Response {#section_435D5B65374A4C36A5FDCFFEEA9D1868}
 

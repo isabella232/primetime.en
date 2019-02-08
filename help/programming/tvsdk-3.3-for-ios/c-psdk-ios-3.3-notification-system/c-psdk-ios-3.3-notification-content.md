@@ -22,7 +22,7 @@ You implement event listeners to capture and respond to events. Many events prov
 
 <!--<a id="section_8D751C71BE80402EB7F6152BA220A006"></a>-->
 
-`PTNotification` provides information that is related to the player’s status.
+`PTNotification` provides information that is related to the player's status.
 
 TVSDK provides a chronological list of `PTNotification` notifications. Each notification contains the following information:
 

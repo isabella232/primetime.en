@@ -30,14 +30,14 @@ Remember the following information when using TVSDK:
 
       There is no reliable way to re-synchronize between the ideal virtual timeline and the actual playout timeline. Progress tracking of the stream playback for ad management and Video Analytics must use the actual playout time, so reporting and user interface behavior might not precisely track the media and advertisement content. 
     * The incoming user agent name for all media requests from the TVSDK on this platform is assigned the following string pattern:     
-    
+
       ```    
       "Adobe Primetime/ + 
-<varname>
-  originalUserAgent
-</varname>" 
+      <varname>
+      originalUserAgent
+      </varname>" 
       ```    
-    
+
       All ad-related calls use the Android default user agent or the custom user agent if you set it while setting up ad-insertion metadata.
 
 ## Best practices {#section_tvsdk_best_practices}
@@ -46,4 +46,3 @@ Here are recommended practices for TVSDK:
 
 * Use HLS version 3.0 or above for program content. 
 * Run most TVSDK operations in the main (UI) thread, not on background threads.
-

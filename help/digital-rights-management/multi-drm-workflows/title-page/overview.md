@@ -12,7 +12,7 @@ You can implement multiple DRM solutions for your TVSDK apps using Primetime DRM
 
 Adobe TVSDK supports DRM protection using multiple DRM schemes. Adobe offers *Primetime DRM Cloud, powered by ExpressPlay* to provide packaging, licensing, and playback of your video content on multiple platforms.
 
-DRM schemes supported include Adobe’s *Primetime Access* DRM (AAXS), as well as native DRMs on various devices including [Widevine](https://www.widevine.com) on Chrome and Android, [FairPlay](https://developer.apple.com/streaming/fps/) on Safari and iOS, and [PlayReady](https://www.microsoft.com/playready/) on Edge and XboxOne. Check with an Adobe representative for information on which DRM schemes are currently available on these platforms, as well as the scheduled dates of future releases.
+DRM schemes supported include Adobe's *Primetime Access* DRM (AAXS), as well as native DRMs on various devices including [Widevine](https://www.widevine.com) on Chrome and Android, [FairPlay](https://developer.apple.com/streaming/fps/) on Safari and iOS, and [PlayReady](https://www.microsoft.com/playready/) on Edge and XboxOne. Check with an Adobe representative for information on which DRM schemes are currently available on these platforms, as well as the scheduled dates of future releases.
 
 TVSDK supports DRM licenses issued by any license server using these protocols. In addition to support for multiple DRM solutions, Adobe offers *Primetime DRM Cloud, powered by ExpressPlay* as a solution in which ExpressPlay operates the license servers for each solution. This can simplify setup and maintenance for your DRM license issuance needs.
 

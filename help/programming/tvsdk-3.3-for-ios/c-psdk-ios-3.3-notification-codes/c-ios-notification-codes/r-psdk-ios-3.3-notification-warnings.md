@@ -26,7 +26,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>Ad resolving</b> </td> 
+   <td colname="1"><b>Ad resolving</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 201002</span> </td> 
@@ -60,7 +64,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p></p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>TimeRangeCollection</b> </td> 
+   <td colname="1"><b>TimeRangeCollection</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 210000 </span> </td> 
@@ -77,7 +85,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="5"> <p> One or more time ranges are invalid and will be ignored or modified. </p> <p> DESCRIPTION is a string containing description of the invalid ranges. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colspan="5"><b>iOS specific</b> </td> 
+   <td colname="1"><b>iOS specific</b> </td> 
+   <td colname="2"> </td> 
+   <td colname="3"> </td> 
+   <td colname="4"> </td> 
+   <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 270000 </span> </td> 
@@ -136,3 +148,4 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
  </tbody> 
 </table>
 
+>[!NOTE] adID and source (URL) can be retrieved through the PTAdAsset in the notification metadata with the `AD_ASSET` key.

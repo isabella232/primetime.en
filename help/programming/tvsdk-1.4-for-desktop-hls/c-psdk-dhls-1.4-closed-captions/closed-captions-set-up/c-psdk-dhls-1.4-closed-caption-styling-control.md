@@ -20,7 +20,6 @@ You can style the closed-caption text with TVSDK methods.
 1. To change the styling settings, do one of the following:
 
     * Use the `ClosedCaptionStylesBuilder` helper class (operates on `ClosedCaptionStyles` behind the scenes). 
-    
     * Use the `ClosedCaptionStyles` class directly.
 
 >[!NOTE]
@@ -60,27 +59,18 @@ public function TextFormat(
   <tr rowsep="1"> 
    <td colname="1"> Font </td> 
    <td colname="2"> <p>The font type. </p> <p>Can be set only to a value that is defined by the <span class="codeph"> ClosedCaptionStyles.FONT </span> array and represents, for example, monospaced with or without serifs. 
-     <codeblock class="syntax actionscript">
+     <code class="syntax actionscript">
        public&nbsp;static&nbsp;const&nbsp;FONT&nbsp;:Array&nbsp;=&nbsp;[ 
-      
-&nbsp;AVCaptionStyle.DEFAULT, 
-      
-&nbsp;AVCaptionStyle.MONOSPACE_WITH_SERIFS, 
-      
-&nbsp;AVCaptionStyle.MONOSPACED_WITHOUT_SERIFS, 
-      
-&nbsp;AVCaptionStyle.PROPORTIONAL_WITH_SERIFS, 
-      
-&nbsp;AVCaptionStyle.PROPORTIONAL_WITHOUT_SERIFS, 
-      
-&nbsp;AVCaptionStyle.CASUAL, 
-      
-&nbsp;AVCaptionStyle.CURSIVE, 
-      
-&nbsp;AVCaptionStyle.SMALL_CAPITALS 
-      
-&nbsp;]; 
-     </codeblock> </p> <p>Tip:  The actual fonts that are available on a device might vary, and substitutions are used when necessary. Monospace with serifs is typically used as a substitute, although this substitution can be system specific. </p> </td> 
+      &nbsp;AVCaptionStyle.DEFAULT, 
+      &nbsp;AVCaptionStyle.MONOSPACE_WITH_SERIFS, 
+      &nbsp;AVCaptionStyle.MONOSPACED_WITHOUT_SERIFS, 
+      &nbsp;AVCaptionStyle.PROPORTIONAL_WITH_SERIFS, 
+      &nbsp;AVCaptionStyle.PROPORTIONAL_WITHOUT_SERIFS, 
+      &nbsp;AVCaptionStyle.CASUAL, 
+      &nbsp;AVCaptionStyle.CURSIVE, 
+      &nbsp;AVCaptionStyle.SMALL_CAPITALS 
+      &nbsp;]; 
+     </code> </p> <p>Tip:  The actual fonts that are available on a device might vary, and substitutions are used when necessary. Monospace with serifs is typically used as a substitute, although this substitution can be system specific. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Size </td> 
@@ -95,78 +85,47 @@ public function TextFormat(
   <tr rowsep="1"> 
    <td colname="1"> Font edge </td> 
    <td colname="2"> <p>The effect used for the font edge, such as raised or none. </p> <p>Can be set only to a value that is defined by the <span class="codeph"> ClosedCaptionStyles.FONT_EDGE </span> array. 
-     <codeblock class="syntax actionscript">
+     <code class="syntax actionscript">
        public&nbsp;static&nbsp;const&nbsp;FONT_EDGE&nbsp;:Array&nbsp;=&nbsp;[ 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DEFAULT, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.NONE, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.RAISED, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DEPRESSED, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.UNIFORM, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.LEFT_DROP_SHADOW, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.RIGHT_DROP_SHADOW 
-      
-&nbsp;]; 
-     </codeblock> </p> </td> 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DEFAULT, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.NONE, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.RAISED, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DEPRESSED, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.UNIFORM, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.LEFT_DROP_SHADOW, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.RIGHT_DROP_SHADOW 
+      &nbsp;]; 
+     </code> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Font color </td> 
    <td colname="2"> <p>The font color. </p> <p>Can be set only to a value defined by the <span class="codeph"> ClosedCaptionStyles.COLOR </span> array. 
-     <codeblock class="syntax actionscript">
+     <code class="syntax actionscript">
        public&nbsp;static&nbsp;const&nbsp;COLOR&nbsp;:Array&nbsp;=&nbsp;[ 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DEFAULT, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BLACK, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.GRAY, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.WHITE, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_WHITE, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.RED, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_RED, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_RED, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.GREEN, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_GREEN, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_GREEN, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BLUE, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_BLUE, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_BLUE, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.YELLOW, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_YELLOW, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_YELLOW, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.MAGENTA, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_MAGENTA, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_MAGENTA, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.CYAN, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_CYAN, 
-      
-&nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_CYAN&nbsp;&nbsp;&nbsp;]; 
-     </codeblock> </p> </td> 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DEFAULT, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BLACK, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.GRAY, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.WHITE, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_WHITE, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.RED, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_RED, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_RED, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.GREEN, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_GREEN, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_GREEN, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BLUE, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_BLUE, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_BLUE, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.YELLOW, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_YELLOW, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_YELLOW, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.MAGENTA, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_MAGENTA, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_MAGENTA, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.CYAN, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.DARK_CYAN, 
+      &nbsp;&nbsp;&nbsp;&nbsp;AVCaptionStyle.BRIGHT_CYAN&nbsp;&nbsp;&nbsp;]; 
+     </code> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Edge color </td> 
@@ -257,4 +216,3 @@ public function toTextFormat():TextFormat;
 ... 
 
 ```
-

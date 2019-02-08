@@ -28,10 +28,6 @@ When this parameter is set, use the audio output latency in the audio timestamp 
 
 It accepts a Boolean parameters val. If its value is `True`, the client uses the audio output latency in the audio timestamp calculation.
 
-<details>
-<summary><b>New features in the previous releases</b></summary>
-<p>
-
 **Version 1.4.42**
 
 **Partial Ad-Break Insertion:**
@@ -60,7 +56,9 @@ No new features.
 * TVSDK supports Android Oreo release.
 * A new function is added to `AdClientFactory` class to support registering multiple Opportunity Detectors:
 
-  `public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);`
+  ```
+  public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);
+  ```
 
   This should return an array of PlacementOpportunityDetector. Now you can register multiple Opportunity Detectors. For example for early ad exit feature, two Opportunity Detectors were required - one for ad insertion and another for early exit from ad. You are required to implement this new function only impact if you have implemented your own AdvertisingFactory (and not using DefaultAdvertisingfactory). For getting the existing behavior - you need to create a single Opportunity Detector, as in createOpportunityDetector() function and put into an array and return:
 
@@ -136,12 +134,12 @@ For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvs
 
 * **Remove/Replace C3 Ads** Now, no additional prep work is needed to dynamically insert new ads into video-on-demand (VOD) assets that are coming out of the C3 window. The TVSDK now provides an API to remove custom content ranges and dynamically insert new ads. This powerful new functionality is also useful in cases where live/linear content airs during broadcast and is immediately pulled down for use as on demand content without proper time to “clean” the asset.
 
-* The interface PlaybackEventListener has a new method called onReplaceMediaPlayerItem, which you can use to listen for a new event, ITEM_REPLACED. This event is dispatched whenever a MediaPlayeritem instance is replaced on MediaPlayer. The client application implementing this PlaybackEventListener must implement or override this new method.
+* The interface PlaybackEventListener has a new method called onReplaceMediaPlayerItem, which you can use to listen for a new event, `ITEM_REPLACED`. This event is dispatched whenever a MediaPlayeritem instance is replaced on MediaPlayer. The client application implementing this PlaybackEventListener must implement or override this new method.
 * AdClientFactory has a new function added to  class  to register for multiple Opportunity Detectors:
 
   public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem item);
 
-  For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for  early  exit from  ad .
+  For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for  early  exit from  `ad`.
 
   To override this new function create a single Opportunity Detector, and put into an array and return:
 
@@ -158,20 +156,14 @@ For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvs
   }
 
   }
-  </p>
-  </details>
 
 ## TVSDK changes for 1.4 {#tvsdk-changes}
-
-<details>
-<summary><b>API additions</b></summary>
-<p>
 
 * The interface PlaybackEventListener has a new method called onReplaceMediaPlayerItem, which you can use to listen for a new event, ITEM_REPLACED. This event is dispatched whenever a MediaPlayeritem instance is replaced on MediaPlayer. The client application implementing this PlaybackEventListener must implement or override this new method.
 
 * AdClientFactory has a new function added to class to register for multiple Opportunity Detectors:
 
-public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);
+public List`<PlacementOpportunityDetector>` createOpportunityDetectors(MediaPlayerItem item);
 
 For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for early exit from ad.
 
@@ -179,9 +171,9 @@ To override this new function create a single Opportunity Detector, and put into
 
 @Override
 
-public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {
+public List`<PlacementOpportunityDetector>` createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {
 
-List<PlacementOpportunityDetector> opportunityDetectors = new ArrayList<PlacementOpportunityDetector>();
+List`<PlacementOpportunityDetector>` opportunityDetectors = new ArrayList`<PlacementOpportunityDetector>`();
 
 opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));
 
@@ -190,9 +182,6 @@ return opportunityDetectors;
 }
 
 }
-
-</p>
-</details>
 
 ## Device certification and support in 1.4 {#device-certification-and-support-in}
 
@@ -207,11 +196,7 @@ return opportunityDetectors;
 
 TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 and 8.1 (Oreo).
 
-<details>
-<summary><b>Device certification and support in the previous releases</b></summary>
-<p>
-
-* **Version 1.4.23:**   
+* **Version 1.4.23:** 
 
   * TVSDK 1.4.23 has been certified for Android Devices with Android N.
 
@@ -219,9 +204,6 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 
   * Primetime has been certified for Amazon Fire TV.
   * VPAID 2.0 is supported only on devices with Android 4.0 and above.
-
-</p>
-</details>
 
 ## Resolved issues in 1.4 {#resolved-issues-in}
 
@@ -243,13 +225,9 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 
 * Ticket #34493 - Bluetooth audio delay
 
-  * Added alwaysUseAudioOutputLatency in MediaPlayer class which when set, Will result in using audio output latency in audio timestamp calculation.
+  * Added `alwaysUseAudioOutputLatency` in MediaPlayer class which when set, Will result in using audio output latency in audio timestamp calculation.
 
 * Ticket #34949 - New version of video heartbeat library (VHL) integrated.
-
-<details>
-<summary><b>Resolved issues in the previous releases</b></summary>
-<p>
 
 **Version 1.4.42 (1791)**
 
@@ -266,7 +244,7 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 **Version 1.4.40 (1764)**
 
 * Zendesk #33068 - Amazon lip sync issue on  new  device. Lip sync issue is fixed in this releases.
-* Zendesk #32215 - Android TVSDK 1.4.38 Security Issues [Hotlist]. Updated to the latest OpenSSL-1.1.0 and curl-7.55.1.
+* Zendesk #32215 - Android TVSDK 1.4.38 Security Issues `[Hotlist]`. Updated to the latest OpenSSL-1.1.0 and curl-7.55.1.
 * Zendesk #32920 - white blank screen within an Ad break and no Ad break completion. Fixed an issue where a VPAID container could get into a hung state and handled an issue where Facebook VPAID ads were often returning multiple CDATA blocks in a single \&lt;AdParameters\&gt; VAST node.
 
 **Version 1.4.39 (1744)**
@@ -795,14 +773,7 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
 * Zendesk #1674 - ClosedCaption Not showing up, correct 708 caption display when 0x03 ETX codes are missing. 
 * PTPLAY-2157 - Default Closed Captioning styles were returned by getters even if after a different styles has been set and verified visually on the stream. The Closed Caption style properties will now show the value they have been set to.
 
-</p>
-</details>
-
 ## Known issues in 1.4 {#known-issues-in}
-
-<details>
-<summary><b>Known issues in the previous releases</b></summary>
-<p>
 
 ### Version 1.4.31
 
@@ -866,17 +837,11 @@ The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during t
 * Some devices have known playback issues. For more information, see [Known device issues in 1.4](https://helpx.adobe.com/primetime/release-notes/tvsdk-1-4-android.html#Knownissuesin14).
 * Reference Implementation - Trick play is not implemented in the sample application.
 
-</p>
-</details>
-
 ## Known device issues in 1.4 {#known-device-issues-in}
 
-<details>
-<summary><b>Known device issues in the previous releases</b></summary>
-<p>
 |Device|Chipset|Issue|Cause|Workaround|
 |--- |--- |--- |--- |--- |
-|Droid X|TI OMAP3|ABR Delay is expected since it’s restarting the decoder.|||
+|Droid X|TI OMAP3|ABR Delay is expected since it's restarting the decoder.|||
 |HTC Desire (different from HTC Desire HD)|QSD8250|Can't play video. Returns VIDEO_PROFILE_NOT_SUPPORTED error.|Desire does not provide a proper HW decoder. It gives Stagefright's SW decoder.|Restart device.|
 |HTC EVO 4G|QSD8650|No HW decoder.|Qualcomm does not have a HW decoder.|Upgrade to Android 4.x.|
 |Kindle FireSystem version 6.0|TI OMAP4|Does not play HLS streams. Video on AIR does not work.||Upgrade to system version 6.3.|
@@ -896,6 +861,3 @@ The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during t
 |Samsung Galaxy Tab 1 v10.1|Tegra 2|MBR transition might take up to three seconds.|As a fix for MBR crashes, we restart the decoder for every stream switch, which can take up to three seconds.||
 |Samsung Galaxy Y||Can't install SampleMediaPlayer app.|Uses ARM v6 instead of the more common ARM v7 chipset. FP/AIR does not support this device.||
 |Xoom|Tegra|A few frames are dropped for switching. The decoder is not restarted.|OMXAL limitation.||
-
-</p>
-</details>
