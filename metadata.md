@@ -3,7 +3,9 @@ cloud: experience-cloud
 solution-title: Primetime
 solution-hub-url: https://helpx.adobe.com/support/primetime.html
 solution-image: https://www.adobe.com
+getting-started-title: Getting Started
 getting-started-url: https://www.adobe.com/devnet/primetime.html
+tutorials-title: Tutorials
 tutorials-url: https://www.adobe.com/devnet/primetime.html
 git-repo: https://git.corp.adobe.com/AdobeDocs/primetime.en
 ---
