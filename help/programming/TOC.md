@@ -189,7 +189,7 @@ user-guide-title: Primetime Programming Help
       + [Primetime TVSDK features](tvsdk-3.3-for-ios/c-psdk-ios-3.3-introduction/c-psdk-ios-3.3-overview/c-psdk-ios-3.3-overview-of-the-player.md)
       + [Considerations and best practices](tvsdk-3.3-for-ios/c-psdk-ios-3.3-introduction/c-psdk-ios-3.3-overview/c-psdk-ios-3.3-considerations.md)
       + [Requirements](tvsdk-3.3-for-ios/c-psdk-ios-3.3-introduction/c-psdk-ios-3.3-requirements.md)
-   + Content playback options {content-playback-options}
+   + Content playback options {#content-playback-options}
       + [Create Video player](tvsdk-3.3-for-ios/c-psdk-ios-3.3-content-playback-options/t-psdk-ios-3.3-create-a-video-player/t-psdk-ios-3.3-create-a-video-player.md)
       + [Set up the PTMediaPlayer](tvsdk-3.3-for-ios/c-psdk-ios-3.3-content-playback-options/t-psdk-ios-3.3-create-a-video-player/t-psdk-ios-3.3-mediaplayer-set-up-ios.md)
       + [Set up notifications](tvsdk-3.3-for-ios/c-psdk-ios-3.3-content-playback-options/t-psdk-ios-3.3-create-a-video-player/c-psdk-ios-3.3-notification.md)
@@ -245,7 +245,7 @@ user-guide-title: Primetime Programming Help
       + [Implement a custom opportunity/content resolver](tvsdk-3.3-for-ios/c-psdk-ios-3.3-content-resolver/t-psdk-ios-3.3-content-resolver-implement-ios.md)
    + Delete and replace ads in VOD streams {delete-replace-content-vod}
       + [Ad deletion and replacement API changes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-delete-replace-content-vod/c-psdk-ios-3.3-ad-deletion-replacement-api-changes-ios.md)
-      + Use cases to delete and replace ads {#use-cases-to-delete-and-replace-ads}
+      + Use cases to delete and replace ads {#use-cases}
          + [Mark ranges](tvsdk-3.3-for-ios/c-psdk-ios-3.3-delete-replace-content-vod/c-psdk-ios-3.3-ad-delete-replace-use-cases/t-psdk-ios-3.3-mark-ranges-ios.md)
          + [Replace ranges](tvsdk-3.3-for-ios/c-psdk-ios-3.3-delete-replace-content-vod/c-psdk-ios-3.3-ad-delete-replace-use-cases/t-psdk-ios-3.3-replace-ranges-ios.md)
          + [Delete Ranges](tvsdk-3.3-for-ios/c-psdk-ios-3.3-delete-replace-content-vod/c-psdk-ios-3.3-ad-delete-replace-use-cases/t-psdk-ios-3.3-delete-ranges-ios.md)
@@ -253,7 +253,7 @@ user-guide-title: Primetime Programming Help
       + [Handle blackouts](tvsdk-3.3-for-ios/c-psdk-ios-3.3-blackouts-handle-ios/c-ios-blackouts-handle-ios.md)
       + [Blackout API elements](tvsdk-3.3-for-ios/c-psdk-ios-3.3-blackouts-handle-ios/c-ios-blackout-apis.md)
       + [Implement blackout handling](tvsdk-3.3-for-ios/c-psdk-ios-3.3-blackouts-handle-ios/t-psdk-ios-3.3-blackouts-implement-handling-ios.md)
-   + Subtitles and closed captioning {#subtitles-and-closed-captioning}}
+   + Subtitles and closed captioning {#subtitles-and-closed-captioning}
       + [Requirements for subtitles and closed captions](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/c-ios-closed-captioning-and-subtitles-reqts-ios.md)
       + [Expose subtitles](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-ios-subtitles-exposing-ios.md)
       + [Expose closed captions](tvsdk-3.3-for-ios/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-psdk-ios-closed-captions-exposing-ios.md)
@@ -273,7 +273,7 @@ user-guide-title: Primetime Programming Help
       + [Implement Primetime DRM in a TSVDK application](tvsdk-3.3-for-ios/c-psdk-ios-3.3-drm-content-security/c-psdk-ios-3.3-tvsdk-drm-workflow.md)
       + [Apple FairPlay in TVSDK applications](tvsdk-3.3-for-ios/c-psdk-ios-3.3-drm-content-security/c-psdk-ios-3.3-apple-fairplay-tvsdk.md)
       + [Whitelist your iOS application](tvsdk-3.3-for-ios/c-psdk-ios-3.3-drm-content-security/t-psdk-ios-3.3-whitelist-your-ios-application.md)
-   + Notifications for player status, activity, errors, and logs {#notifications-for-player-status-activity-errors-and-logs}
+   + Notifications for player status, activity, errors, and logs {#notifications}
      + [Notification content](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-system/c-psdk-ios-3.3-notification-content.md)
      + [Notification setup](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-system/c-psdk-ios-3.3-notification-setup.md)
      + [Listen to notifications](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-system/t-psdk-ios-3.3-listening-to-notifications.md)
@@ -304,7 +304,7 @@ user-guide-title: Primetime Programming Help
       + [WARNING notification codes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-codes/c-ios-notification-codes/r-psdk-ios-3.3-notification-warnings.md)
       + [INFO notification codes](tvsdk-3.3-for-ios/c-psdk-ios-3.3-notification-codes/c-ios-notification-codes/r-psdk-ios-3.3-notification-info.md)
 + TVSDK 2.5 for Android {#tvsdk-2.5-for-android}
-   + Product overview, audience, and this guide
+   + Product overview, audience, and this guide {#overview}
       + [Product overview, audience, and this guide overview](tvsdk-2.5-for-android/overview-prod-audience-guide/c-psdk-android-2.5-overview-prod-audience-guide.md)
       + [Considerations and best practices](tvsdk-2.5-for-android/overview-prod-audience-guide/c-psdk-android-2.5-considerations.md)
       + [Primetime TVSDK features](tvsdk-2.5-for-android/overview-prod-audience-guide/c-psdk-android-2.5-overview-of-the-player.md)
@@ -396,7 +396,8 @@ user-guide-title: Primetime Programming Help
       + Ad insertion metadata {#ad-insertion-metadata}
          + [Ad insertion metadata overview](tvsdk-2.5-for-android/ad-insertion/ad-insertion-metadata/c-psdk-android-2.5-ad-insertion-metadata.md)
          + [Set up ad insertion metadata](tvsdk-2.5-for-android/ad-insertion/ad-insertion-metadata/t-psdk-android-2.5-ad-insertion-metadata-set-up.md)
-         + [Enable ads in full-event replay](tvsdk-2.5-for-android/ad-insertion/ad-insertion-metadata/ad-full-event-replay/t-psdk-android-2.5-ad-full-event-replay.md)
+         + Enable ads in full-event replay {#enable-ads}
+            + [Enable ads in full-event replay overview](tvsdk-2.5-for-android/ad-insertion/ad-insertion-metadata/ad-full-event-replay/t-psdk-android-2.5-ad-full-event-replay.md)
             + Ad signaling mode {#ad-signaling-mode}
                + [Ad signaling mode overview](tvsdk-2.5-for-android/ad-insertion/ad-insertion-metadata/ad-full-event-replay/r-psdk-android-2.5-ad-signaling-mode.md)
       + Companion banner ads {#companion-banner-ads}
@@ -487,17 +488,17 @@ user-guide-title: Primetime Programming Help
       + [Transmit billing metrics](tvsdk-2.5-for-android/billing/r-psdk-android-2.5-billing-data-format.md)
 + TVSDK 1.4 for Android {tvsdk-1.4-for-android}
    + [TVSDK 1.4 for Android Programmer's Guide](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-titlepage.md)
-      + [Introduction](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-introduction/android-1.4-introduction.md)
+      + Introduction
          + [Overview](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-introduction/overview-prod-audience-guide/android-1.4-overview-prod-audience-guide.md)
-            + [Primetime TVSDK features](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-introduction/overview-prod-audience-guide/android-1.4-overview-of-the-player.md)
-            + [Considerations and best practices](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-introduction/overview-prod-audience-guide/android-1.4-considerations.md)
-            + [Requirements](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-introduction/overview-prod-audience-guide/android-1.4-requirements.md)
+         + [Primetime TVSDK features](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-introduction/overview-prod-audience-guide/android-1.4-overview-of-the-player.md)
+         + [Considerations and best practices](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-introduction/overview-prod-audience-guide/android-1.4-considerations.md)
+         + [Requirements](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-introduction/overview-prod-audience-guide/android-1.4-requirements.md)
       + [Set up the MediaPlayer](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-mediaplayer-set-up.md)
-      + [Primetime Player events](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-primetime-player-events/android-1.4-primetime-player-events.md)
+      + Primetime Player events {#player-events}
          + [Listen for Primetime Player events](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-primetime-player-events/events-listen-for/android-1.4-events-listen-for.md)
-            + [Implement event listeners and callbacks](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-primetime-player-events/events-listen-for/android-1.4-event-listeners-implement.md)
+         + [Implement event listeners and callbacks](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-primetime-player-events/events-listen-for/android-1.4-event-listeners-implement.md)
       + [Set up error handling](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-error-handling-set-up.md)
-      + [Configure the player user interface](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/android-1.4-ui-configure.md)
+      + Configure the player user interface {#configure}
          + [Wait for a valid state](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/android-1.4-ui-state-prepared-wait-for.md)
          + [Play and pause a video](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/android-1.4-ui-pause-play-implement.md)
          + [Identify whether the content is live or VOD](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/android-1.4-ui-content-live-vod-identify.md)
@@ -505,38 +506,42 @@ user-guide-title: Primetime Programming Help
          + [Display the duration, current time, and remaining time of the video](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/android-1.4-ui-duration-time-display.md)
          + [Display a seek scrub bar with the current playback position](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/android-1.4-ui-seek-scrub-bar-display.md)
          + [Construct a control bar enhanced for DVR](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/android-1.4-ui-ctrl-bar-for-dvr-construct.md)
-         + [Implement fast forward and rewind](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/trick-play-implement/android-1.4-trick-play-implement.md)
+         + Implement fast forward and rewind {#implement-fast-forward-rewind}
+            + [Implement fast forward and rewind overview](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/trick-play-implement/android-1.4-trick-play-implement.md)
             + [Rate-change API elements](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/trick-play-implement/android-1.4-trick-play-apis.md)
             + [Limitations and behavior for trick play](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/trick-play-implement/android-1.4-trick-play-limitations.md)
          + [Enter a stream at a specific time](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/android-1.4-ui-stream-entry-control.md)
-         + [Adaptive bit rates (ABR) for video quality](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/abr-control-quality/android-1.4-abr-control-quality.md)
+         + Adaptive bit rates (ABR) for video quality {#adaptive-bit-rates}
+            + [ABR for video quality overview](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/abr-control-quality/android-1.4-abr-control-quality.md)
             + [Configure adaptive bit rates using ABRControlParameters](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/abr-control-quality/android-1.4-abr-set-using-abrparameters.md)
          + [Enable screen capture](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/android-1.4-enable-screen-capture.md)
-         + [Initialize the media player for a specific video](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/mediaplayer-initialize-for-video/android-1.4-mediaplayer-initialize-video.md)
+         + Initialize the media player for a specific video {#initialize}
             + [Create a media resource](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-create.md)
             + [Load a media resource in the MediaPlayer](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-load.md)
             + [Load a media resource using MediaPlayerItemLoader](tvsdk-1.4-for-android/android-1.4-titlepage/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-mediaplayeritemloader.md)
-      + [Quality of service statistics](tvsdk-1.4-for-android/android-1.4-titlepage/qos-statistics-monitor/android-1.4-qos-statistics-monitor.md)
+      + Quality of service statistics {qos-statistics}
          + [Track at the fragment level using load information](tvsdk-1.4-for-android/android-1.4-titlepage/qos-statistics-monitor/android-1.4-qos-fragment-tracking.md)
          + [Read QOS playback, buffering, and device statistics](tvsdk-1.4-for-android/android-1.4-titlepage/qos-statistics-monitor/android-1.4-qos-stats-read.md)
       + [Work with cookies](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-cookies-work-with.md)
-      + [HTTP 302 redirect optimization](tvsdk-1.4-for-android/android-1.4-titlepage/302-redirect-overview/android-1.4-302-redirect-overview.md)
+      + HTTP 302 redirect optimization {http-302-redirect-optimization}
          + [Disable or enable 302 redirect optimization](tvsdk-1.4-for-android/android-1.4-titlepage/302-redirect-overview/android-1.4-302-redirect-disable-enable.md)
-      + [Work with MediaPlayer objects](tvsdk-1.4-for-android/android-1.4-titlepage/mediaplayerobjects-working-with/android-1.4-mediaplayerobjects-working-with.md)
+      + Work with MediaPlayer objects {#working-with-mediaplayer-objects}
          + [About the MediaPlayerItem class](tvsdk-1.4-for-android/android-1.4-titlepage/mediaplayerobjects-working-with/android-1.4-mediaplayeritem-class-about.md)
          + [MediaPlayer object lifecycle](tvsdk-1.4-for-android/android-1.4-titlepage/mediaplayerobjects-working-with/android-1.4-mediaplayer-object-lifecycle-states.md)
          + [MediaPlayer methods for accessing MediaResource information](tvsdk-1.4-for-android/android-1.4-titlepage/mediaplayerobjects-working-with/android-1.4-mediaplayer-mediaresource.md)
-         + [Reuse or remove a MediaPlayer instance](tvsdk-1.4-for-android/android-1.4-titlepage/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/android-1.4-mediaplayer-reuse-or-remove.md)
+         + Reuse or remove a MediaPlayer instance {#reuse-remove-mediaplayer}
             + [Reset or reuse a MediaPlayer instance](tvsdk-1.4-for-android/android-1.4-titlepage/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/android-1.4-mediaplayer-reset-reuse-instance.md)
             + [Release a MediaPlayer instance and resources](tvsdk-1.4-for-android/android-1.4-titlepage/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/android-1.4-mediaplayer-release-instance.md)
          + [Inspect the playback timeline](tvsdk-1.4-for-android/android-1.4-titlepage/mediaplayerobjects-working-with/android-1.4-timeline-inspect-playback.md)
-      + [Buffering](tvsdk-1.4-for-android/android-1.4-titlepage/buffering-configuration/android-1.4-buffering-configuration.md)
+      + Buffering {#buffering}
          + [Set buffering times](tvsdk-1.4-for-android/android-1.4-titlepage/buffering-configuration/android-1.4-buffering-times-set.md)
-         + [Instant on](tvsdk-1.4-for-android/android-1.4-titlepage/buffering-configuration/instant-on/android-1.4-instant-on.md)
+         + Instant on {#instant-on}
+            + [Instant on overview](tvsdk-1.4-for-android/android-1.4-titlepage/buffering-configuration/instant-on/android-1.4-instant-on.md)
             + [Configure buffering for instant-on playback](tvsdk-1.4-for-android/android-1.4-titlepage/buffering-configuration/instant-on/android-1.4-config-instant-on.md)
-      + [Advertising](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/android-1.4-ad-insertion.md)
+      + Advertising {#advertising}
          + [Advertising requirements](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/android-1.4-advertising-requirements.md)
-         + [Inserting ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-about/android-1.4-ad-insertion-about.md)
+         + Inserting ads {#inserting-ads}
+            + [Inserting ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-about/android-1.4-ad-insertion-about.md)
             + [Ad insertion and placement](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-about/android-1.4-ad-loc-ad-placer.md)
             + [VOD ad resolving and insertion](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-about/android-1.4-ad-resolving-client-vod.md)
             + [Live/linear ad resolving and insertion](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-about/android-1.4-ad-resolving-client-live-linear.md)
@@ -546,30 +551,37 @@ user-guide-title: Primetime Programming Help
             + [Secure Ad loading over HTTPS](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-about/android-1.4-secure-ad-loading.md)
             + [Disable pre-roll ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-about/android-1.4-disable-preroll-ads.md)
          + [Default and customized playback behavior with ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/android-1.4-playback-post1.2.md)
-         + [Customize playback with ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/playback-customize/android-1.4-playback-customize.md)
+         + Customize playback with ads {#customize-playback}
+            + [Customize playback with ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/playback-customize/android-1.4-playback-customize.md)
             + [API elements for ad playback](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/playback-customize/android-1.4-playback-ad-custom-elements.md)
             + [Use the default playback behavior](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/playback-customize/android-1.4-playback-use-default.md)
             + [Customize playback with ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/playback-customize/android-1.4-playback-customize.md)
             + [Skip ad breaks for a period of time](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/playback-customize/android-1.4-playback-skip-breaks.md)
             + [Save the video position and resume later](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/playback-customize/android-1.4-playback-save-position.md)
             + [Partial Ad break insertion](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/playback-customize/android-1.4-partial-adbreak-insertion.md)
-         + [Ad insertion metadata](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-metadata/android-1.4-ad-insertion-metadata.md)
+         + Ad insertion metadata {#ad-insertion-metadata}
+            + [Ad insertion metadata](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-metadata/android-1.4-ad-insertion-metadata.md)
             + [Set up ad insertion metadata](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-metadata/android-1.4-ad-insertion-metadata-set-up.md)
             + [Enable ads in full-event replay](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-metadata/android-1.4-ad-full-event-replay.md)
             + [Ad signaling mode](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-insertion-metadata/android-1.4-ad-signaling-mode.md)
-         + [Clickable ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/clickable-ads/android-1.4-clickable-ads.md)
+         + Clickable ads {#clickable-ads}
+            + [Clickable ads overview](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/clickable-ads/android-1.4-clickable-ads.md)
             + [Respond to clicks on ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/clickable-ads/android-1.4-respond-to-ad-clicks.md)
             + [Separate the clickable ad process](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/clickable-ads/android-1.4-separate-clickable-ad-process.md)
             + [Pause and resume playback](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/clickable-ads/android-1.4-pausing-resuming-playback.md)
-         + [Repackage incompatible ads using Adobe Creative Repackaging Service](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-transcoding/android-1.4-ad-transcoding.md)
+         + Repackage incompatible ads using Adobe Creative Repackaging Service {#repackage-incompatible-ads}
+            + [Repackage incompatible ads using Adobe Creative Repackaging Service](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-transcoding/android-1.4-ad-transcoding.md)
             + [Multiple CDN support for CRS ad delivery](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-transcoding/android-1.4-multi-cdns-for-crs.md)
-         + [Ad fallback for VAST and VMAP ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-fallback/android-1.4-ad-fallback.md)
+         + Ad fallback for VAST and VMAP ads {#ad-fallback}
+            + [Ad fallback for VAST and VMAP ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-fallback/android-1.4-ad-fallback.md)
             + [Define fallback ad behavior for VMAP inline ads](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-fallback/android-1.4-ad-fallback-set-up.md)
             + [Ad fallback behavior for VAST and VMAP](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-fallback/android-1.4-ad-fallback-behavior.md)
          + [Ad measurements from Moat](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/android-1.4-ad-measurements-from-moat.md)
-         + [VPAID 2.0 ad support](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/vpaid-2.0-ads/android-1.4-vpaid-2.0-ads.md)
+         + VPAID 2.0 ad support {#vpaid-20-ad-support}
+            + [VPAID 2.0 ad support overview](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/vpaid-2.0-ads/android-1.4-vpaid-2.0-ads.md)
             + [Implement VPAID 2.0 integration](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/vpaid-2.0-ads/android-1.4-include-vpaid20-support.md)
-         + [Custom tags](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/custom-tags-configure/android-1.4-custom-tags-configure.md)
+         + Custom tags {#custom-tags}
+            + [Custom tags overview](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/custom-tags-configure/android-1.4-custom-tags-configure.md)
             + [Example of a customized VOD asset](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/custom-tags-configure/android-1.4-custom-tags-overview.md)
             + [Config class methods for tags](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/custom-tags-configure/android-1.4-custom-tags-psdkconfig.md)
             + [Timed metadata class](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/custom-tags-configure/android-1.4-custom-tags-timedmetadata.md)
@@ -577,84 +589,94 @@ user-guide-title: Primetime Programming Help
             + [Add listeners for timed metadata notifications](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/custom-tags-configure/android-1.4-custom-tags-receive-notifications.md)
             + [Store timed metadata objects as they are dispatched](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/custom-tags-configure/android-1.4-timed-metadata-store.md)
             + [Use timed metadata](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/custom-tags-configure/android-1.4-timed-metadata-use.md)
-         + [Add custom ad markers](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-markers-add-custom/android-1.4-ad-markers-add-custom.md)
+         + Add custom ad markers {#ad-markers}
+            + [Add custom ad markers overview](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-markers-add-custom/android-1.4-ad-markers-add-custom.md)
             + [TimeRange class](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-markers-add-custom/android-1.4-timerange-class.md)
             + [MediaPlayer and MediaResource classes](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-markers-add-custom/android-1.4-mediaplayer-mediaresource-classes.md)
             + [TimeRangeCollection class](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-markers-add-custom/android-1.4-timerangecollection-class.md)
             + [Place TimeRange ad markers on the timeline](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-markers-add-custom/android-1.4-timerange-markers-timeline.md)
             + [Control playback behavior for seeking over custom ad markers](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-markers-add-custom/android-1.4-ad-markers-control-seek.md)
-         + [Updating ad creative selection rules](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/android-1.4-updating-rules/android-1.4-updating-rules.md)
+         + Updating ad creative selection rules {#updating-ad-rules}
+            + [Updating ad creative selection rules overview](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/android-1.4-updating-rules/android-1.4-updating-rules.md)
             + [Priority rules](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/android-1.4-updating-rules/android-1.4-priority-rule.md)
             + [Normalize rules](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/android-1.4-updating-rules/android-1.4-normalize-rule.md)
             + [Sample creative selection rules](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/android-1.4-updating-rules/android-1.4-sample-rule-files.md)
             + [Applying creative selection rules](tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/android-1.4-updating-rules/android-1.4-how-tvsdk-applies-csr.md)
-      + [Customize opportunity detectors and content resolvers](tvsdk-1.4-for-android/android-1.4-titlepage/content-resolver/android-1.4-content-resolver.md)
+      + Customize opportunity detectors and content resolvers {#customize-opportunity-detectors}
          + [Opportunity generators and content resolvers](tvsdk-1.4-for-android/android-1.4-titlepage/content-resolver/android-1.4-content-resolver-about.md)
          + [Implement a custom opportunity detector](tvsdk-1.4-for-android/android-1.4-titlepage/content-resolver/android-1.4-opp-detector-impl.md)
          + [Implement a custom content resolver](tvsdk-1.4-for-android/android-1.4-titlepage/content-resolver/android-1.4-content-resolver-implement.md)
-      + [Delete and replace ads in VOD streams](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/android-1.4-delete-replace-content-vod.md)
-         + [Custom time range operations](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/custom-time-range-ops/android-1.4-custom-time-range-ops.md)
+      + Delete and replace ads in VOD streams {#delete-replace-ads}
+         + Custom time range operations {#custom-time-range}
+            + [Custom time range operations overview](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/custom-time-range-ops/android-1.4-custom-time-range-ops.md)
             + [Multiple initial PlacementInformations](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/custom-time-range-ops/android-1.4-multi-initial-placementinfos.md)
             + [Content resolvers for ad deletion / replacement](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/custom-time-range-ops/android-1.4-content-resolvers-ad-deletion.md)
          + [Effect on ad insertion and deletion from ad signaling mode and ad metadata combinations](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/android-1.4-signaling-metadata-combos.md)
          + [Advertising Node Structure with TimeRanges](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/android-1.4-ad-node-structure.md)
-         + [Use cases to delete and replace ads](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/ad-delete-replace-use-cases/android-1.4-ad-delete-replace-use-cases.md)
+         + Use cases to delete and replace ads {#use-cases}
             + [Mark ranges](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/ad-delete-replace-use-cases/android-1.4-mark-ranges.md)
             + [Replace time ranges with an ad](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/ad-delete-replace-use-cases/android-1.4-replace-ranges-with-aud.md)
             + [Delete ranges](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/ad-delete-replace-use-cases/android-1.4-delete-ranges-with-aud-ad.md)
-         + [Ad deletion and replacement error handling](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/ad-delete-replace-error-handling/android-1.4-ad-delete-replace-error-handling.md)
+         + Ad deletion and replacement error handling {#ad-deletion-replacement-error}
+            + [Ad deletion and replacement error handling overview](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/ad-delete-replace-error-handling/android-1.4-ad-delete-replace-error-handling.md)
             + [Time range error examples](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/ad-delete-replace-error-handling/android-1.4-timerange-error-examples.md)
          + [Ad deletion and replacement API changes](tvsdk-1.4-for-android/android-1.4-titlepage/delete-replace-content-vod/android-1.4-ad-deletion-replacement.md)
-      + [Handle blackouts in live streams](tvsdk-1.4-for-android/android-1.4-titlepage/blackouts-handle/android-1.4-blackouts-handle.md)
+      + Handle blackouts in live streams {#handle-blackouts}
          + [Blackout API elements](tvsdk-1.4-for-android/android-1.4-titlepage/blackouts-handle/android-1.4-blackout-apis.md)
          + [Implement blackout handling](tvsdk-1.4-for-android/android-1.4-titlepage/blackouts-handle/android-1.4-blackouts-implement-handling.md)
-      + [Work with closed captions](tvsdk-1.4-for-android/android-1.4-titlepage/closed-captions-set-up/android-1.4-closed-captions-set-up.md)
+      + Work with closed captions {#closed-captions}
          + [Select a current caption track from among available tracks](tvsdk-1.4-for-android/android-1.4-titlepage/closed-captions-set-up/android-1.4-closed-caption-available.md)
-         + [Control closed-caption visibility](tvsdk-1.4-for-android/android-1.4-titlepage/closed-captions-set-up/closed-caption-visibility-control/android-1.4-closed-caption-visibility-control.md)
+         + Control closed-caption visibility {#control-visibility}
+            + [Control closed-caption visibility](tvsdk-1.4-for-android/android-1.4-titlepage/closed-captions-set-up/closed-caption-visibility-control/android-1.4-closed-caption-visibility-control.md)
             + [Example: Allow users to change the caption track](tvsdk-1.4-for-android/android-1.4-titlepage/closed-captions-set-up/closed-caption-visibility-control/android-1.4-closed-caption-allow-user-change.md)
-         + [Control closed-caption styling](tvsdk-1.4-for-android/android-1.4-titlepage/closed-captions-set-up/closed-caption-styling-control/android-1.4-closed-caption-styling.md)
+         + Control closed-caption styling {#control-styling}
+            + [Control closed-caption styling](tvsdk-1.4-for-android/android-1.4-titlepage/closed-captions-set-up/closed-caption-styling-control/android-1.4-closed-caption-styling.md)
             + [Set closed-caption styles](tvsdk-1.4-for-android/android-1.4-titlepage/closed-captions-set-up/closed-caption-styling-control/android-1.4-closed-caption-styles-set.md)
             + [Control closed-caption styling](tvsdk-1.4-for-android/android-1.4-titlepage/closed-captions-set-up/closed-caption-styling-control/android-1.4-closed-caption-styling.md)
             + [Examples: Caption formatting](tvsdk-1.4-for-android/android-1.4-titlepage/closed-captions-set-up/closed-caption-styling-control/android-1.4-closed-caption-formatting.md)
-      + [Implementing alternate audio tracks](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-implementing-alternate-audio/android-1.4-implementing-alternate-audio.md)
+      + Implementing alternate audio tracks {#alternate-audio-tracks}
          + [Alternate audio](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-implementing-alternate-audio/alternate-audio/android-1.4-alternate-audio.md)
-            + [Alternate audio tracks in the playlist](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-implementing-alternate-audio/alternate-audio/android-1.4-alternate-audio-in-playlist.md)
-            + [Access alternate audio tracks](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-implementing-alternate-audio/alternate-audio/android-1.4-alternate-audio-implement.md)
-      + [Integrating Adobe Analytics with TVSDK](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/android-1.4-integrating-adobe-analytics.md)
+         + [Alternate audio tracks in the playlist](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-implementing-alternate-audio/alternate-audio/android-1.4-alternate-audio-in-playlist.md)
+         + [Access alternate audio tracks](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-implementing-alternate-audio/alternate-audio/android-1.4-alternate-audio-implement.md)
+      + Integrating Adobe Analytics with TVSDK {#integrating-adobe-analytics}
          + [Video analytics](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-integration-overview.md)
-            + [Initialize and configure video analytics](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-integrate-heartbeats.md)
-            + [Implement custom metadata support](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-custom-metadata.md)
-            + [Implement chapter support](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-chapter-support.md)
-            + [Implement custom time updates](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-imp-cust-time-updates.md)
-            + [Set up video analytics reporting on the server side](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-server-side-set-up.md)
-            + [Access video analytics reports](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-reports-access.md)
-      + [Content protection](tvsdk-1.4-for-android/android-1.4-titlepage/drm-content-security/android-1.4-drm-content-security.md)
-         + [Primetime DRM interface overview](tvsdk-1.4-for-android/android-1.4-titlepage/drm-content-security/drm-interface/android-1.4-drm-interface.md)
+         + [Initialize and configure video analytics](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-integrate-heartbeats.md)
+         + [Implement custom metadata support](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-custom-metadata.md)
+         + [Implement chapter support](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-chapter-support.md)
+         + [Implement custom time updates](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-imp-cust-time-updates.md)
+         + [Set up video analytics reporting on the server side](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-server-side-set-up.md)
+         + [Access video analytics reports](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-reports-access.md)
+      + Content protection {#content-protection}
+         + Primetime DRM interface {drm-interface}
+            + [Primetime DRM interface overview](tvsdk-1.4-for-android/android-1.4-titlepage/drm-content-security/drm-interface/android-1.4-drm-interface.md)
             + [DRM authentication before playback](tvsdk-1.4-for-android/android-1.4-titlepage/drm-content-security/drm-interface/android-1.4-drm-auth-before-playback.md)
             + [DRM authentication during playback](tvsdk-1.4-for-android/android-1.4-titlepage/drm-content-security/drm-interface/android-1.4-drm-auth-during-playback.md)
          + [Implementing Primetime DRM in a TSVDK application](tvsdk-1.4-for-android/android-1.4-titlepage/drm-content-security/android-1.4-tvsdk-drm-workflow.md)
-      + [Notifications for player status, activity, errors, and logging](tvsdk-1.4-for-android/android-1.4-titlepage/notification-system/android-1.4-notification-system.md)
+      + Notifications for player status, activity, errors, and logging {#notifications}
          + [Notification content](tvsdk-1.4-for-android/android-1.4-titlepage/notification-system/android-1.4-notification-content.md)
          + [Set up your notification system](tvsdk-1.4-for-android/android-1.4-titlepage/notification-system/android-1.4-notification-setup.md)
          + [Add real-time logging and debugging](tvsdk-1.4-for-android/android-1.4-titlepage/notification-system/android-1.4-notification-realtime-logging.md)
          + [ID3 tags](tvsdk-1.4-for-android/android-1.4-titlepage/notification-system/android-1.4-id3-metadata-retrieve.md)
-      + [Playback and failover](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/android-1.4-failover-for-playback.md)
+      + Playback and failover {#playback-and-failover}
          + [AC-3 5.1 format](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/android-1.4-ac-3-5.1-format.md)
-         + [Media playback and failover](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/failover-media-playback/android-1.4-failover-media-playback.md)
+         + Media playback and failover {#media-playback-failover}
+            + [Media playback and failover overview](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/failover-media-playback/android-1.4-failover-media-playback.md)
             + [Missing playlist failover](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/failover-media-playback/android-1.4-failover-missing-playlist.md)
             + [Missing segment failover](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/failover-media-playback/android-1.4-failover-missing-segment.md)
-         + [Advertising insertion and failover for VOD](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-insertion-vod.md)
+         + Advertising insertion and failover for VOD {#advertising-insertion-vod}
+            + [Advertising insertion and failover for VOD overview](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-insertion-vod.md)
             + [Ad-resolving phase](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-resolving-phase.md)
             + [Ad-insertion phase](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-insertion-phase.md)
             + [Ad-playback phase](tvsdk-1.4-for-android/android-1.4-titlepage/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-playback-phase.md)
-      + [Events and notifications](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-events-notifications/android-1.4-events-notifications.md)
-         + [Primetime player events summary](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-events-notifications/events-summary/android-1.4-events-summary.md)
+      + Events and notifications {#events-notifications}
+         + Primetime player events summary {#player-events-summary}
+            + [Primetime player events summary](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-events-notifications/events-summary/android-1.4-events-summary.md)
             + [Playback events](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer-playback.md)
             + [Ad playback events](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer.md)
             + [QoS events](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer-qos.md)
             + [DRM events](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer-drm.md)
             + [Loader events](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer-itemloader.md)
-      + [Primetime player classes summary](tvsdk-1.4-for-android/android-1.4-titlepage/class-summary/android-1.4-class-summary.md)
+      + Primetime player classes summary {#classes-summary}
          + [Mediacore classes](tvsdk-1.4-for-android/android-1.4-titlepage/class-summary/android-1.4-classes-mediacore.md)
          + [Info classes](tvsdk-1.4-for-android/android-1.4-titlepage/class-summary/android-1.4-classes-info.md)
          + [Logging classes](tvsdk-1.4-for-android/android-1.4-titlepage/class-summary/android-1.4-classes-logging.md)
@@ -664,24 +686,28 @@ user-guide-title: Primetime Programming Help
          + [Timeline classes](tvsdk-1.4-for-android/android-1.4-titlepage/class-summary/android-1.4-classes-timeline.md)
          + [Timeline advertising classes](tvsdk-1.4-for-android/android-1.4-titlepage/class-summary/android-1.4-classes-timeline-advertising.md)
          + [Utility classes](tvsdk-1.4-for-android/android-1.4-titlepage/class-summary/android-1.4-classes-utility.md)
-      + [Notification system](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/android-1.4-tvsdk-notification.md)
-         + [Notification codes](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/android-1.4-notification-codes.md)
+      + Notification system {#notification-system}
+         + Notification codes {#codes}
+            + [Notification codes overview](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/android-1.4-notification-codes.md)
             + [ERROR notification codes](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/android-1.4-notifications-errors.md)
             + [WARNING notification codes](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/android-1.4-notification-warnings.md)
             + [INFO notification codes](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/android-1.4-notification-info.md)
-            + [Details for the NATIVE_ERROR notification](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-native-error-summary.md)
+            + Details for the NATIVE_ERROR notification {#details-native-error}
+               + [Details for the NATIVE_ERROR notification overview](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-native-error-summary.md)
                + [NATIVE_ERROR: Video playback values](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-notifications-video-playback.md)
                + [NATIVE_ERROR: Crypto values](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-notifications-crypto-errors.md)
 + TVSDK 1.4 for iOS Programmer's Guide {#tvsdk-1.4-for-ios}
-   + [TVSDK 1.4 for iOS Programmer's Guide](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-titlepage.md)
+   + Introduction {#introduction}
       + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-overview.md)
-         + [Primetime Player TVSDK features](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-overview-of-the-player.md)
-         + [Considerations and best practices](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-considerations.md)
-         + [Requirements](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-requirements.md)
-      + [Content playback options](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/t-psdk-ios-1.4-create-a-video-player.md)
+      + [Primetime Player TVSDK features](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-overview-of-the-player.md)
+      + [Considerations and best practices](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-considerations.md)
+      + [Requirements](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-requirements.md)
+      + Content playback options {#content-playback-options}
+         + [Content playback options](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/t-psdk-ios-1.4-create-a-video-player.md)
          + [Set up the PTMediaPlayer](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/t-psdk-ios-1.4-mediaplayer-set-up-ios.md)
          + [Set up notifications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-notification.md)
-         + [Configure the player user interface](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/c-psdk-ios-1.4-configure-ui.md)
+         + Configure the player user interface {#configure}
+            + [Configure the player user interface overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/c-psdk-ios-1.4-configure-ui.md)
             + [Wait for a valid state](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-ui-state-prepared-wait-for.md)
             + [Implement a play/pause button](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-implement-pause-play.md)
             + [Display the duration of the video](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-display-video-duration.md)
@@ -691,15 +717,17 @@ user-guide-title: Primetime Programming Help
       + [Quality of service statistics](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-qos-statistics-monitor.md)
       + [Work with MediaPlayer objects](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-mediaplayerobjects-working-with.md)
       + [Instant-on](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-instant-on-ios.md)
-      + [Advertising](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-ad-insertion.md)
+      + Advertising {#advertising}
          + [Advertising requirements](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/r-psdk-ios-1.4-advertising-requirements.md)
          + [Partial ad-break insertion](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-partialad-break-insertion.md)
          + [Insert ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-ad-insertion-about.md)
          + [Default and customized playback behavior with ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-playback-post1.2.md)
          + [Customize playback with ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-playback-customize.md)
-         + [Primetime ad server metadata](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-primetime-ad-serving-metadata/c-psdk-ios-1.4-primetime-ad-serving-metadata.md)
+         + Primetime ad server metdata {ad-server-metadata}
+            + [Primetime ad server metadata overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-primetime-ad-serving-metadata/c-psdk-ios-1.4-primetime-ad-serving-metadata.md)
             + [Ad signaling mode](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-primetime-ad-serving-metadata/r-psdk-ios-1.4-ad-signaling-mode.md)
-         + [Companion banner ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-companion-banner-ads/c-psdk-ios-1.4-companion-banner-ads.md)
+         + Companion banner ads {#companion-banner-ads}
+            + [Companion banner ads overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-companion-banner-ads/c-psdk-ios-1.4-companion-banner-ads.md)
             + [Companion banner data](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-companion-banner-ads/r-psdk-ios-1.4-companion-banner-data.md)
             + [Display banner ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-companion-banner-ads/t-psdk-ios-1.4-companion-banner-ads-display.md)
          + [Clickable ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-clickable-ads.md)
@@ -708,7 +736,8 @@ user-guide-title: Primetime Programming Help
          + [VPAID 2.0 ad support](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-vpaid-2.0-ads.md)
          + [Ad fallback for VAST and VMAP ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-ad-fallback.md)
          + [Load Ad for a DVR window](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-ad-loading-for-a-dvr-window.md)
-         + [Custom tags](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/c-psdk-ios-1.4-custom-tags-configure.md)
+         + Custom tags {#custom-tags}
+            + [Custom tags overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/c-psdk-ios-1.4-custom-tags-configure.md)
             + [Example of a customized VOD asset](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/c-psdk-ios-1.4-custom-tags-overview.md)
             + [Config class methods for tags](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/c-psdk-ios-1.4-custom-tags-psdkconfig-methods.md)
             + [Timed metadata class](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/r-psdk-ios-1.4-custom-tags-timedmetadata-class.md)
@@ -716,57 +745,70 @@ user-guide-title: Primetime Programming Help
             + [Add listeners for timed metadata notifications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-custom-tags-receive-notifications.md)
             + [Store timed metadata objects as they are dispatched](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-store.md)
             + [Use timed metadata](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-use.md)
-         + [Update ad creative selection rules](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/c-psdk-ios-1.4-updating-rules.md)
+         + Update ad creative selection rules {#update-rules}
+            + [Update ad creative selection rules overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/c-psdk-ios-1.4-updating-rules.md)
             + [Priority rules](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/r-psdk-ios-1.4-priority-rule.md)
             + [Normalize rules](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/r-psdk-ios-1.4-normalize-rule.md)
             + [Sample creative selection rules](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/r-psdk-ios-1.4-sample-rule-files.md)
             + [Apply creative selection rules](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/c-psdk-ios-1.4-how-tvsdk-applies-csr.md)
       + [Tokenized segment streams](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-tokenized-segment-streams.md)
-      + [Customize opportunity detectors and content resolvers](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-content-resolver/c-psdk-ios-1.4-content-resolver.md)
+      + Customize opportunity detectors and content resolvers {#customize-opportunity-content}
+         + [Customize opportunity detectors and content resolvers overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-content-resolver/c-psdk-ios-1.4-content-resolver.md)
          + [Opportunity generators and content resolvers](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-content-resolver/c-psdk-ios-1.4-content-resolver-about.md)
          + [Implement a custom opportunity/content resolver](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-content-resolver/t-psdk-ios-1.4-content-resolver-implement-ios.md)
-      + [Delete and replace ads in VOD streams](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-delete-replace-content-vod.md)
+      + Delete and replace ads in VOD streams {#delete-replace-ads}
+         + [Delete and replace ads in VOD streams overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-delete-replace-content-vod.md)
          + [Ad deletion and replacement API changes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-deletion-replacement-api-changes-ios.md)
-         + [Use cases to delete and replace ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/c-psdk-ios-1.4-ad-delete-replace-use-cases.md)
+         + Use cases to delete and replace ads {#use-cases}
             + [Mark ranges](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-mark-ranges-ios.md)
             + [Replace ranges](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-replace-ranges-ios.md)
             + [Delete Ranges](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-delete-ranges-ios.md)
-      + [Handle blackouts in live streams](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-blackouts-handle-ios/c-psdk-ios-1.4-blackouts-handle-ios.md)
+      + Handle blackouts in live streams {#blackouts}
+         + [Handle blackouts in live streams overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-blackouts-handle-ios/c-psdk-ios-1.4-blackouts-handle-ios.md)
          + [Blackout API elements](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-blackouts-handle-ios/c-psdk-ios-1.4-blackout-apis.md)
          + [Implement blackout handling](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-blackouts-handle-ios/t-psdk-ios-1.4-blackouts-implement-handling-ios.md)
-      + [Subtitles and closed captions](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios.md)
+      + Subtitles and closed captions {#subtitles-closed-captions}
+         + [Subtitles and closed captions overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios.md)
          + [Expose subtitles](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios/t-psdk-ios-1.4-subtitles-exposing-ios.md)
          + [Expose closed captions](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios/t-psdk-ios-1.4-closed-captions-exposing-ios.md)
-      + [Alternate audio](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/alternate-audio/c-psdk-ios-1.4-alternate-audio.md)
+      + Alternate audio {#alternate-audio}
+         + [Alternate audio overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/alternate-audio/c-psdk-ios-1.4-alternate-audio.md)
          + [Alternate audio tracks in the playlist](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/alternate-audio/c-psdk-ios-1.4-alternate-audio-in-playlist.md)
          + [Access alternate audio tracks](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/alternate-audio/t-psdk-ios-1.4-alternate-audio-implement.md)
-      + [Video analytics](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/c-psdk-ios-1.4-va-integration-overview.md)
+      + Video analytics {#video-analytics}
+         + [Video analytics overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/c-psdk-ios-1.4-va-integration-overview.md)
          + [Initialize and configure video analytics](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-integrate-heartbeats.md)
          + [Implement custom metadata support](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-custom-metadata.md)
          + [Implement chapter support](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-chapter-support.md)
          + [Implement custom time updates](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-imp-cust-time-updates.md)
          + [Set up video analytics reporting on the server side](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-server-side-reporting-set-up.md)
          + [Access video analytics reports](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-reports-access.md)
-      + [Content protection](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-drm-content-security.md)
+      + Content protection {#content-protection}
+         + [Content protection overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-drm-content-security.md)
          + [Primetime DRM interface overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/r-psdk-ios-1.4-drm-interface.md)
          + [Implement Primetime DRM in a TSVDK application](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-tvsdk-drm-workflow.md)
-         + [Apple FairPlay in TVSDK applications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)
+         + Apple FairPlay in TVSDK applications {#fairplay}
+            + [Apple FairPlay in TVSDK applications overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)
             + [Enable Apple FairPlay in TVSDK applications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/t-psdk-ios-1.4-drm-enable-fairplay.md)
          + [Whitelist your iOS application](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/t-psdk-ios-1.4-whitelist-your-ios-application.md)
-      + [Notifications for player status, activity, errors, and logs](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-system.md)
+      + Notification for player status, activity, errors, and logs {#notifications}
+         + [Notifications for player status, activity, errors, and logs overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-system.md)
          + [Notification content](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-content.md)
          + [Notification setup](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-setup.md)
          + [Listen to notifications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/t-psdk-ios-1.4-listening-to-notifications.md)
          + [Implement notification callbacks](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/t-psdk-ios-1.4-implementing-notification-callbacks.md)
          + [Add custom notifications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/t-psdk-ios-1.4-adding-custom-notifications.md)
-      + [Customized logging](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-customized-logging/c-psdk-ios-1.4-customized-logging.md)
+      + Customized logging {#customized-logging}
+         + [Customized logging overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-customized-logging/c-psdk-ios-1.4-customized-logging.md)
          + [Listen to logs](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-customized-logging/t-psdk-ios-1.4-listening-to-logs.md)
          + [Add new log messages](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-customized-logging/t-psdk-ios-1.4-adding-new-log-messages.md)
       + [Failover](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-understanding-failover.md)
-      + [Billing metrics](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-billing/c-psdk-ios-1.4-billing.md)
+      + Billing metrics {#billing-metrics}
+         + [Billing metrics overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-billing/c-psdk-ios-1.4-billing.md)
          + [Configure billing metrics](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-billing/t-psdk-ios-1.4-billing-config.md)
          + [Transmit billing metrics](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-billing/r-psdk-ios-1.4-billing-data-format.md)
-      + [Primetime Player classes summary](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/c-psdk-ios-1.4-primetime-player-class-summary.md)
+      + Primetime Player classes summary {#classes-summary}
+         + [Primetime Player classes summary overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/c-psdk-ios-1.4-primetime-player-class-summary.md)
          + [Media player classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-media-player-ios.md)
          + [Logging classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-logging.md)
          + [Metadata classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-metadata.md)
@@ -776,29 +818,32 @@ user-guide-title: Primetime Programming Help
          + [Timeline advertising classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-timeline-advertising.md)
          + [Digital Rights Management classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-digital-rights-management-ios.md)
          + [Video Analytics classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-video-analytics.md)
-      + [Notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-codes/c-psdk-ios-1.4-notification-codes.md)
+      + Notification codes {#notification-codes}
+         + [Notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-codes/c-psdk-ios-1.4-notification-codes.md)
          + [ERROR notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-codes/r-psdk-ios-1.4-notifications-errors.md)
          + [WARNING notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-codes/r-psdk-ios-1.4-notification-warnings.md)
          + [INFO notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-codes/r-psdk-ios-1.4-notification-info.md)
 + TVSDK 1.4 for DesktopHLS {#tvsdk-1.4-for-desktop-hls}
-   + [Introduction](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/c-psdk-dhls-1.4-introduction.md)
+   + Introduction {#introduction}
       + [Overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/c-psdk-dhls-1.4-overview-prod-audience-guide.md)
-         + [Primetime TVSDK features](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/c-psdk-dhls-1.4-overview-of-the-player.md)
-         + [Considerations and best practices](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/c-psdk-dhls-1.4-considerations.md)
-         + [Requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/c-psdk-dhls-1.4-requirements.md)
-            + [System and software requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-system.md)
-            + [Content and manifest requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-content.md)
-            + [#EXT-X-VERSION requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-ext-x-version.md)
-            + [StageVideo capabilities and restrictions](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stagevideo-capabilities.md)
-               + [Check whether StageVideo is available](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/t-psdk-dhls-1.4-stage-video-available.md)
-               + [Flash 15 support for StageVideo](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stage-video-flash15-support.md)
-               + [StageVideo minimum requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/r-psdk-dhls-1.4-requirements-stage-video.md)
-               + [StageVideo and HTML Overlays](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stage-video-and-overlays.md)
-   + [Content playback options](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-configure.md)
+      + [Primetime TVSDK features](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/c-psdk-dhls-1.4-overview-of-the-player.md)
+      + [Considerations and best practices](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/c-psdk-dhls-1.4-considerations.md)
+      + Requirements {#requirements}
+         + [System and software requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-system.md)
+         + [Content and manifest requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-content.md)
+         + [#EXT-X-VERSION requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-ext-x-version.md)
+         + StageVideo capabilities and restrictions {#stagevideo}
+            + [StageVideo capabilities and restrictions overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stagevideo-capabilities.md)
+            + [Check whether StageVideo is available](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/t-psdk-dhls-1.4-stage-video-available.md)
+            + [Flash 15 support for StageVideo](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stage-video-flash15-support.md)
+            + [StageVideo minimum requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/r-psdk-dhls-1.4-requirements-stage-video.md)
+            + [StageVideo and HTML Overlays](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stage-video-and-overlays.md)
+   + Content playback options {#content-playback-options}
       + [Playback options](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-create-a-video-player.md)
       + [Set up the MediaPlayer](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-mediaplayer-set-up.md)
       + [Load your signed token](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-get-signed-token.md)
-      + [Listen for Primetime Player events](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-listen-for.md)
+      + Listen for Primetime Player events {#listen}
+         + [Listen for Primetime Player events overview](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-listen-for.md)
          + [Implement event listeners and callbacks](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/t-psdk-dhls-1.4-event-listeners-implement.md)
          + [Order of playback events](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-order-playback.md)
          + [Order of advertising events](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-order-ad-playback.md)
@@ -807,7 +852,8 @@ user-guide-title: Primetime Programming Help
          + [Loader events](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-order-loader.md)
          + [Timed metadata events](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-order-timed-metadata.md)
       + [Set up error handling](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-error-handling-set-up.md)
-      + [Configure the player user interface](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/c-psdk-dhls-1.4-ui-configure.md)
+      + Configure the player user interface {#configure-interface}
+         + [Configure the player user interface overview](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/c-psdk-dhls-1.4-ui-configure.md)
          + [Wait for a valid state](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)
          + [Play and pause a video](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-pause-play-implement.md)
          + [Identify whether the content is live or VOD](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-content-live-vod-identify.md)
@@ -819,12 +865,14 @@ user-guide-title: Primetime Programming Help
          + [Enter a stream at a specific time](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-stream-entry-control.md)
          + [Adaptive bit rates (ABR) for video quality](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/c-psdk-dhls-1.4-abr-control-quality.md)
          + [Control the position and size of the video view](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-control-video-view.md)
-      + [Initialize the media player for a specific video](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/c-psdk-dhls-1.4-mediaplayer-initialize-for-video.md)
+      + Initialize the media player for a specific video {#initialize-media-player}
+         + [Initialize the media player for a specific video overview](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/c-psdk-dhls-1.4-mediaplayer-initialize-for-video.md)
          + [Create a media resource](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-create.md)
          + [Load a media resource in the MediaPlayer](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-load.md)
          + [Load a media resource using MediaPlayerItemLoader](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-load-using-mediaplayeritemloader.md)
-   + [Quality of Service](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/c-psdk-dhls-1.4-qos.md)
-      + [Quality of service statistics](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/qos-statistics-monitor/c-psdk-dhls-1.4-qos-statistics-monitor.md)
+   + Quality of Service {#quality-of-service}
+      + Quality of service statistics {#statistics}
+         + [Quality of service statistics overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/qos-statistics-monitor/c-psdk-dhls-1.4-qos-statistics-monitor.md)
          + [Track at the fragment level using load information](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/qos-statistics-monitor/t-psdk-dhls-1.4-qos-fragment-level-tracking.md)
          + [Read QOS playback, buffering, and device statistics](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/qos-statistics-monitor/t-psdk-dhls-1.4-qos-stats-read.md)
    + [Work with cookies](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-cookies-work-with.md)
