@@ -8,6 +8,8 @@ uuid: b376096b-0aed-4ac2-96e5-e30a4eaf742e
 
 # Reset or reuse a MediaPlayer instance{#reset-or-reuse-a-mediaplayer-instance}
 
+You can reset, reuse, or release a MediaPlayer instance that you no longer need.
+
 When you reset a MediaPlayer instance, it is returned to its uninitialized IDLE state as defined in MediaPlayerStatus.
 
 This operation is useful in the following cases:
