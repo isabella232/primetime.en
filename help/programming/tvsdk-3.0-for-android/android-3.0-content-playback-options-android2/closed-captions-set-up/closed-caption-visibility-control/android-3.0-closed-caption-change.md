@@ -6,7 +6,7 @@ title: Allow users to change the caption track
 uuid: 5a6d33f2-cece-48f6-8a68-fe76d9d2a950
 ---
 
-# Allow users to change the caption track{#allow-users-to-change-the-caption-track}
+# Allow users to change the caption track {#allow-users-to-change-the-caption-track}
 
 This procedure is an example of how to create a button that allows a user to select a closed caption track.
 
@@ -86,4 +86,3 @@ This procedure is an example of how to create a button that allows a user to sel
    } 
    
    ```
-

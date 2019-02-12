@@ -6,7 +6,7 @@ title: Best practices for companion banner ads
 uuid: 0e4c98cd-5e16-4c84-848f-02bc6f1b0d6e
 ---
 
-# Best practices for companion banner ads{#best-practices-for-companion-banner-ads}
+# Best practices for companion banner ads {#best-practices-for-companion-banner-ads}
 
 When displaying companion ads, follow these recommendations:
 
@@ -21,5 +21,4 @@ When displaying companion ads, follow these recommendations:
 * Do not overlay the main ad/video container with companion banners. 
 * You can display companion banners after the ad ends.
 
-  The standard practice is to display each companion banner until you have a replacement for the ad.
-
+The standard practice is to display each companion banner until you have a replacement for the ad.

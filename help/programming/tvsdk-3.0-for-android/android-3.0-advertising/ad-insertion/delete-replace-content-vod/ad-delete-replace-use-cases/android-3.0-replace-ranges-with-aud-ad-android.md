@@ -6,7 +6,7 @@ title: Replace time ranges with an ad
 uuid: c1d93389-cba4-4db0-877d-dbdc5183683c
 ---
 
-# Replace time ranges with an ad{#replace-time-ranges-with-an-ad}
+# Replace time ranges with an ad {#replace-time-ranges-with-an-ad}
 
 You can insert ads into VOD content.
 
@@ -76,4 +76,3 @@ The `TimeRanges` between the `begin` and `end` in `localTime` are removed from t
        "id": "vod_003"
    }
    ```
-

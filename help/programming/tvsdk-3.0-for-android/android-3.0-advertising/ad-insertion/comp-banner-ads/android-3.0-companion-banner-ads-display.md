@@ -6,7 +6,7 @@ title: Display banner ads
 uuid: cfd4b26c-9643-4b60-9aff-bc27dec289f1
 ---
 
-# Display banner ads{#display-banner-ads}
+# Display banner ads {#display-banner-ads}
 
 To display banner ads, you need to create banner instances and allow TVSDK to listen for ad-related events.
 
@@ -32,4 +32,3 @@ For each companion ad, TVSDK indicates which types are available for your applic
     * Sends the banner information to a function on your page that displays the banners in an appropriate location.
 
       This is usually a `div`, and your function uses the `div ID` to display the banner.
-

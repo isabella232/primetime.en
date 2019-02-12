@@ -4,7 +4,7 @@ title: Details for the NATIVE_ERROR notification
 uuid: d16ef930-d1f4-4984-be6e-1cf4993ab71d
 ---
 
-# Details for the NATIVE_ERROR notification{#details-for-the-native-error-notification}
+# Details for the NATIVE_ERROR notification {#details-for-the-native-error-notification}
 
 When TVSDK handles a native error, it returns some or all of the following metadata key values as strings.  
 
@@ -386,8 +386,9 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
    <td colname="col3"> Reset DRM local storage for this application. Call DRMManager.resetDRM. <p>The license server might not be able to connect to the Certificate Revocation List (CRL) server to refresh its CRL files, or the client machine is requesting a license/authentication that has been revoked by the license server. </p> <p>In the server logs, an error code 111 is MachineTokenInvalid. However, at the client level, error code 111 is translated to error code 3324. </p> <p>The DRM license server administrator should check whether the customer's license server has ever been able to retrieve the Adobe CRL files. If the customer is using Tomcat, the customer can check the<span class="filepath"> tomcat/temp/</span> directory to see whether there are 4 CRL files. </p> 
     <ul id="ul_23B7F1A104AF49E79EA87DB8E15E337E"> 
      <li id="li_855D87F251184FE688A8D5FA0F6C9EF5">If the files are in this directory, double-click the files in Windows Explorer and in the CRL viewer application, determine whether any of the files have expired. </li> 
-     <li id="li_58EC4EDA2B5146188A0FF7B33C91E2FD">If there are no files in tomcat/temp/, then it can be assumed this license server has never been able to reach the Adobe CRL server due to a firewall/routing issue. </li> 
-    </ul> <p>For more information, see <a href="https://help.adobe.com/en_US/primetime/drm/5.3/secure_deployment_guidelines/index.html#concept-Firewall_rules" format="http" scope="external"> Firewall rules</a>. </p> <p>If the CRL files are not available or have expired, you must confirm whether the license server can be reached. Open a network sniffer on the customer's license server, restart the server, and have a client attempt to request a license from the server. You can observe the network traffic to see whether calls to the following URL endpoints are successful: <p>Tip:  You can also enter the following CRL URLs in a browser to see whether you can manually download each file. </p> 
+     <li id="li_58EC4EDA2B5146188A0FF7B33C91E2FD">If there are no files in tomcat/temp/, then it can be assumed this license server has never been able to reach the Adobe CRL server due to a firewall/routing issue. </li>
+     <p>For more information, see <a href="../../../../digital-rights-management/aaxs-secure-deployment-guidelines/overview/network-topology-firewall-rules.md" format="http" scope="external"> Firewall rules.</a>
+    </ul> </p> <p>If the CRL files are not available or have expired, you must confirm whether the license server can be reached. Open a network sniffer on the customer's license server, restart the server, and have a client attempt to request a license from the server. You can observe the network traffic to see whether calls to the following URL endpoints are successful: <p>Tip:  You can also enter the following CRL URLs in a browser to see whether you can manually download each file. </p> 
      <ul id="ul_9B65C7ABBDEC4AC9BF3755FFD3587971"> 
       <li id="li_6867A9050E8D421C9138AC853D1784C9"><a href="https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl" format="http" scope="external"> crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl</a> </li> 
       <li id="li_6431689260554EAFAFDA2EC31798DCB5"><a href="https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl" format="http" scope="external"> crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl</a> </li> 

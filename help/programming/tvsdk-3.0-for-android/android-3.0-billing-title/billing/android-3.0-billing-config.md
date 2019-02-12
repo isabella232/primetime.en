@@ -6,7 +6,7 @@ title: Configure billing metrics
 uuid: 340439bf-185b-4761-a481-010908842811
 ---
 
-# Configure billing metrics{#configure-billing-metrics}
+# Configure billing metrics {#configure-billing-metrics}
 
 If you use the default configuration, there is nothing else you need to do to enable or configure billing. If you obtained different configuration parameters from your Adobe Enablement representative, use the BillingMetricsConfiguration class to set these parameters up before initializing the media player.
 
@@ -32,4 +32,3 @@ To configure billing metrics:
    config.setBillingMetricsConfiguration(billingConfig); 
    mediaPlayer.replaceCurrentResource(mediaResource, config);
    ```
-

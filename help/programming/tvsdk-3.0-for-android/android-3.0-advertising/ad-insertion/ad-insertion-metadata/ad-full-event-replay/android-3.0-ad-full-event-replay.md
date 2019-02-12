@@ -6,7 +6,7 @@ title: Enable ads in full-event replay
 uuid: a8859db1-1408-4365-bf12-5bc2ab7df449
 ---
 
-# Enable ads in full-event replay{#enable-ads-in-full-event-replay}
+# Enable ads in full-event replay {#enable-ads-in-full-event-replay}
 
 Full-event replay (FER) is a VOD asset that acts as a live/DVR asset, so your application must take steps to ensure that ads are placed correctly.
 
@@ -73,4 +73,3 @@ mediaPlayer.addEventListener(MediaPlayerEvent.STATUS_CHANGED,
 mediaPlayer.replaceCurrentResource(mediaResource, itemConfig); 
 
 ```
-

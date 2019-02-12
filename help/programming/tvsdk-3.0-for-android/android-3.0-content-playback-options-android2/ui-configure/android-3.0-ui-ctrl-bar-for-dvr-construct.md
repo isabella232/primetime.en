@@ -6,7 +6,7 @@ title: Construct a control bar enhanced for DVR
 uuid: 988dcaf5-896d-4da1-8b78-5acf5a317aa3
 ---
 
-# Construct a control bar enhanced for DVR{#construct-a-control-bar-enhanced-for-dvr}
+# Construct a control bar enhanced for DVR {#construct-a-control-bar-enhanced-for-dvr}
 
 You can implement a control bar with DVR support for VOD and live streaming. DVR support includes the concept of a seekable window and the client live point.
 
@@ -51,4 +51,3 @@ You can implement a control bar with DVR support for VOD and live streaming. DVR
        ```    
        mediaPlayer.seek(MediaPlayer.LIVE_POINT);
        ```
-

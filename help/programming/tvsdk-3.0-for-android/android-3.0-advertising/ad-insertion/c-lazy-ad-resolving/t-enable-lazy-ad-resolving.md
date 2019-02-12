@@ -11,7 +11,7 @@ uuid: 91884eea-a622-4f5d-b6a8-36bb0050ba1d
 
 You can enable or disable the Lazy Ad Resolving feature using the existing Lazy Ad Loading mechanism (Lazy Ad Resolving is disabled by default).
 
-You can enable or disable Lazy Ad Resolving by calling ` [AdvertisingMetadata.setDelayLoading](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/metadata/AdvertisingMetadata.html#setDelayAdLoading-boolean-)` with true or false.
+You can enable or disable Lazy Ad Resolving by calling [AdvertisingMetadata.setDelayLoading](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/metadata/AdvertisingMetadata.html#setDelayAdLoading-boolean-) with true or false.
 
 * Use the Boolean *hasDelayAdLoading* and *setDelayAdLoading* methods in AdvertisingMetadata to control the timing of ad resolution and the placement of ads on the timeline:
 
@@ -22,7 +22,7 @@ You can enable or disable Lazy Ad Resolving by calling ` [AdvertisingMetadata.se
 
     * When *hasPreroll *or *hasLivePreroll* return false, TVSDK assumes that there is no preroll ad and starts the playback of the content immediately. These are default set to true.
 
-**APIs relevant to lazy ad resolution: **
+**APIs relevant to lazy ad resolution:**
 
 ```
 Class:    com.adobe.mediacore.metadata.AdvertisingMetadata 
@@ -42,7 +42,7 @@ Methods:
     public Placement.Type getPlacementType() // Returns whether
 ```
 
-To accurately reflect ads as cues on a scrub bar, listen for the *TimelineEvent *event and redraw the scrub bar every time you receive this event.
+To accurately reflect ads as cues on a scrub bar, listen for the `TimelineEvent`event and redraw the scrub bar every time you receive this event.
 
 When Lazy Ad Resolving is enabled for VOD streams, all ad breaks are placed on the timeline, however, many of the ad breaks will not be resolved yet. The application can determine whether or not to draw these markers by checking the `TimelineMarker::getDuration()`. If the value is greater than zero, then the ads within the ad break have been resolved.
 
@@ -58,4 +58,3 @@ for (PlaybackManagerEventListener listener : eventListeners) {
   listener.onUpdate(getLocalSeekRange(), event.getTimeline()); 
 }
 ```
-

@@ -7,7 +7,7 @@ title: Suspend and Restore MediaPlayer
 uuid: 624a87df-df65-4358-915b-c09a3a4fa224
 ---
 
-# Suspend and Restore MediaPlayer{#suspend-and-restore-mediaplayer}
+# Suspend and Restore MediaPlayer {#suspend-and-restore-mediaplayer}
 
 Suspending and restoring the TVSDK MediaPlayer when a device screen is turned off and on must be handled by your application.
 
@@ -118,4 +118,3 @@ public void onResume() {
 } 
 
 ```
-

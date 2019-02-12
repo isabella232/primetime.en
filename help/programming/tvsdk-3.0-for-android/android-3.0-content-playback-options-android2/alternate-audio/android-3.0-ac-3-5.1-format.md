@@ -6,7 +6,7 @@ title: AC-3 5.1 format
 uuid: 9d1adf33-4c9b-4d31-8212-ac301f3e44c5
 ---
 
-# AC-3 5.1 format{#ac-format}
+# AC-3 5.1 format {#ac-format}
 
 The Audio Codec 3 (AC-3, also known as Dolby Digital®) 5.1 format, allows content providers to compress the size of multichannel audio files without impairing the sound quality. AC-3 is a 5.1 format, which means that it provides five full-bandwidth channels for a richer user experience.
 
@@ -58,4 +58,3 @@ While processing AC-3 media, if an Android device is connected to the speaker sy
 |---|---|---|
 |  Device configuration Dolby on (or auto)  | Device configuration Dolby on (or auto)  | Stereo mode  |
 |  Device configuration Dolby off  | Stereo mode  | Stereo mode  |
-

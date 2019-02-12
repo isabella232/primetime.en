@@ -45,4 +45,3 @@ While the VPAID ad is playing:
 * VPAID ads do not have a predefined duration, because the ad can be interactive.
 
   The ad duration and total ad break duration that are specified in the ad server response might not be accurate.
-

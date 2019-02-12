@@ -48,5 +48,4 @@ TVSDK capabilities:
 * **Logging**
 
     * Debug logging 
-    * Tracking support for fragment duration, size, and time-to-download
-
+    * Tracking support for fragment duration, size, and time-to-download.

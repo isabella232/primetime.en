@@ -6,7 +6,7 @@ title: Implement a custom content resolver
 uuid: 5f63cc1e-3f4b-460c-9151-2b9d364800e2
 ---
 
-# Implement a custom content resolver{#implement-a-custom-content-resolver}
+# Implement a custom content resolver {#implement-a-custom-content-resolver}
 
 You can implement your own content resolvers based on the default resolvers.
 

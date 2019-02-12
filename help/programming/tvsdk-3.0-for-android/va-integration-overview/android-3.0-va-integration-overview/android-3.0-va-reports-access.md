@@ -6,7 +6,7 @@ title: Access video analytics reports
 uuid: 1c59e4fa-4577-42d9-b18b-0b4f799aa986
 ---
 
-# Access video analytics reports{#access-video-analytics-reports}
+# Access video analytics reports {#access-video-analytics-reports}
 
 Video analytics reports are routed to the Adobe Analytics reporting platforms.
 

@@ -6,7 +6,7 @@ title: Work with closed captions
 uuid: d7860de4-2881-4817-a4cc-5e7ab557a1db
 ---
 
-# Work with closed captions{#work-with-closed-captions}
+# Overview {#work-with-closed-captions-overview}
 
 Closed captioning displays the audio portion of a video as text on the screen when the sound is inaudible or the viewer is hard of hearing.
 
@@ -26,4 +26,3 @@ You can do the following:
 * Select styling options that dictate how closed captions are rendered by the underlying video engine.
 
   Use the `MediaPlayerItem` interface to select formats such as the font or font color.
-

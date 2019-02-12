@@ -6,9 +6,9 @@ title: Set up ad insertion metadata
 uuid: 7400813c-6af0-4c96-a6c7-d9ea1ba6a7b9
 ---
 
-# Set up ad insertion metadata{#set-up-ad-insertion-metadata}
+# Set up ad insertion metadata {#set-up-ad-insertion-metadata}
 
-Use the helper class AuditudeSettings, which extends the MetadataNode class, to set up Adobe Primetime ad decisioning metadata.
+Use the helper class `AuditudeSettings`, which extends the `MetadataNode` class, to set up Adobe Primetime ad decisioning metadata.
 
 >[!TIP]
 >
@@ -65,4 +65,4 @@ Advertising metadata is in the `MediaResource.Metadata` property. When starting 
 
    After the ads have been resolved and placed on the timeline, the `MediaPlayer` transitions to the `PREPARED` state.
 1. Call `MediaPlayer.play` to start the playback.
->TVSDK now includes ads when your media plays. 
+TVSDK now includes ads when your media plays.

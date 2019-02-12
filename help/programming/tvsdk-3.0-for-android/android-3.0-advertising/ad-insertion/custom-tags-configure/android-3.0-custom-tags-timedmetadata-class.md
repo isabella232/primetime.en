@@ -6,7 +6,7 @@ title: Timed metadata class
 uuid: c7b1c1d7-48b3-43c7-aa21-f800d894976d
 ---
 
-# Timed metadata class{#timed-metadata-class}
+# Timed metadata class {#timed-metadata-class}
 
 When TVSDK detects a subscribed tag in the playlist/manifest, the player automatically tries to process and expose the tag in the form of a TimedMetadata object.
 
@@ -109,4 +109,3 @@ Remember the following:
   </tr> 
  </tbody> 
 </table>
-

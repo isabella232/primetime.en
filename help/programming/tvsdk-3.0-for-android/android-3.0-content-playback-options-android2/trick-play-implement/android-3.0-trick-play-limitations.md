@@ -6,7 +6,7 @@ title: Limitations and behavior for trick play
 uuid: c28cc8db-3f45-488e-ab72-b102b3a1fab2
 ---
 
-# Limitations and behavior for trick play{#limitations-and-behavior-for-trick-play}
+# Limitations and behavior for trick play {#limitations-and-behavior-for-trick-play}
 
 <!--<a id="section_2BC43539C5C142E085D06A7E35C76726"></a>-->
 
@@ -33,4 +33,3 @@ Limitations for trick play mode:
     * Exiting trick play invokes the same ad playback policy as when exiting seek.
 
       As with seeking, the behavior depends on whether your application's playback policy is different from the default. The default is that the last skipped ad break is played at the point where you come out of trick play.
-

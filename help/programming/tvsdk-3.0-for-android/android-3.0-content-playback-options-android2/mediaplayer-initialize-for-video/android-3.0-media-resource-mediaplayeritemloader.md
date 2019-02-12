@@ -14,7 +14,7 @@ The `MediaPlayerItemLoader` class helps you exchange a media resource for the cu
 
 >[!IMPORTANT]
 >
->TVSDK does not support a single `QoSProvider` to work with both `itemLoader` and `MediaPlayer`. If your application uses Instant On, the application needs to maintain two `QoS` instances and manage both instances for the information. See  instant-on  for more information.
+>TVSDK does not support a single `QoSProvider` to work with both `itemLoader` and `MediaPlayer`. If your application uses Instant On, the application needs to maintain two `QoS` instances and manage both instances for the information. See [Instant-on](../../android-3.0-content-playback-options-android2/buffering-configuration/android-3.0-instant-on.md) for more information.
 
 1. Create an instance of `MediaPlayerItemLoader`.
 
@@ -104,4 +104,3 @@ The `MediaPlayerItemLoader` class helps you exchange a media resource for the cu
 
         1. Wait for the buffer prepared event. 
         1. Call `play()`.
-

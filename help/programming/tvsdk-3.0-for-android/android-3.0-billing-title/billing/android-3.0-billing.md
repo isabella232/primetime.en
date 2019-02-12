@@ -6,7 +6,7 @@ title: Billing metrics
 uuid: 6ae9eb1e-4b03-467f-b80a-96313bd01543
 ---
 
-# Billing metrics{#billing-metrics}
+# Billing metrics {#billing-metrics}
 
 To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers.
 
@@ -23,4 +23,4 @@ The messages contain the following information:
 
 Adobe preconfigures this arrangement, but you can work with your Adobe Enablement representative to change the arrangement, work with your Adobe Enablement representative.
 
-To monitor the statistics that TVSDK sends to Adobe, obtain the URL from your Adobe Enablement representative, and use a network capture tool, like Charles, to see the data. 
+To monitor the statistics that TVSDK sends to Adobe, obtain the URL from your Adobe Enablement representative, and use a network capture tool, like Charles, to see the data.

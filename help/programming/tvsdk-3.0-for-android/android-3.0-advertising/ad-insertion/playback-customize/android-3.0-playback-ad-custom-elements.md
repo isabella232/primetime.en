@@ -6,7 +6,7 @@ title: API elements for ad playback
 uuid: 56844663-d635-4b04-b61b-cb8f33ef5732
 ---
 
-# API elements for ad playback{#api-elements-for-ad-playback}
+# API elements for ad playback {#api-elements-for-ad-playback}
 
 TVSDK provides classes and methods that you can use to customize the playback behavior of content that contains advertising.
 
@@ -55,4 +55,3 @@ The following API elements are useful for customizing playback:
   </tr> 
  </tbody> 
 </table>
-

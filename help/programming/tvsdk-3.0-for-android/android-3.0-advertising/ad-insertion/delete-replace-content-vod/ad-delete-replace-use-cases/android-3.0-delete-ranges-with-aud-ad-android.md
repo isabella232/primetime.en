@@ -6,7 +6,7 @@ title: Delete ranges
 uuid: 2aaea7a0-5d52-49a1-901c-f71e4b081d91
 ---
 
-# Delete ranges{#delete-ranges}
+# Delete ranges {#delete-ranges}
 
 You can remove TimeRanges between begin and end in localTime from the timeline.
 
@@ -73,4 +73,3 @@ The ad map must be used as defined by the ad server.
    },
    
    ```
-

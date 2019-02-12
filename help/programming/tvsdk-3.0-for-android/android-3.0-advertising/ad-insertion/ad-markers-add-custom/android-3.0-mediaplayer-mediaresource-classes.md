@@ -6,7 +6,7 @@ title: MediaPlayer and MediaResource classes
 uuid: e198f599-22ca-4ea4-bbbb-e239c79174ae
 ---
 
-# MediaPlayer and MediaResource classes{#mediaplayer-and-mediaresource-classes}
+# MediaPlayer and MediaResource classes {#mediaplayer-and-mediaresource-classes}
 
 A MediaResource represents the content that is about to be loaded by the MediaPlayer instance.
 
@@ -14,6 +14,5 @@ A MediaResource represents the content that is about to be loaded by the MediaPl
 
 TVSDK provides the means to load and prepare content for playback by using the `replaceCurrentResource` method in `MediaPlayer`. This method takes two arguments, an instance of `MediaPlayerResource` and, optionally, an instance of `MediaPlayerItemConfig`, which you can use to pass application-defined custom parameters.
 
-* For more details see  mediaplayer-reuse-or-remove . 
-* For details of `MediaPlayerResource`, see  media-resource-create
-
+* For more details see [Reuse or remove a MediaPlayer instance](../../../../tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayerobjects-working-with/android-3.0-mediaplayer-reuse-or-remove.md). 
+* For details of `MediaPlayerResource`, see [Create a media resource](../../../../tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-create.md).

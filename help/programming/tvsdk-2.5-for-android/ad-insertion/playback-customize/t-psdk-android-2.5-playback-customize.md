@@ -6,7 +6,7 @@ title: Set up customized playback
 uuid: 0810d6e4-8120-4085-8c7b-e417d1308aa8
 ---
 
-# Set up customized playback{#set-up-customized-playback}
+# Set up customized playback {#set-up-customized-playback}
 
 You can customize or override ad behaviors.
 

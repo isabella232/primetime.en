@@ -6,7 +6,7 @@ title: Time range error examples
 uuid: 25ac5985-a844-452e-ac95-5006fdf413e6
 ---
 
-# Time range error examples{#time-range-error-examples}
+# Time range error examples {#time-range-error-examples}
 
 TVSDK responds to erroneous time range specifications by merging or replacing the time ranges as appropriate.
 
@@ -71,4 +71,3 @@ In the following example, four REPLACE time ranges are defined with conflicting 
 }
 
 ```
-

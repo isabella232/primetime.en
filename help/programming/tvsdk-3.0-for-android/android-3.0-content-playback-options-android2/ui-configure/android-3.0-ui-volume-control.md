@@ -6,7 +6,7 @@ title: Provide volume control
 uuid: c87fe656-0329-4c9c-b65b-43be48c77062
 ---
 
-# Provide volume control{#provide-volume-control}
+# Provide volume control {#provide-volume-control}
 
 You can set up a user interface control to adjust the volume for the video.
 
@@ -24,5 +24,4 @@ You can set up a user interface control to adjust the volume for the video.
    void setVolume(int volume) throws MediaPlayerException;
    ```
 
-   The value for the volume represents the requested volume expressed as a proportion of the maximum volume, where `0` is silent and `1` is the maximum volume. 
-
+   The value for the volume represents the requested volume expressed as a proportion of the maximum volume, where `0` is silent and `1` is the maximum volume.

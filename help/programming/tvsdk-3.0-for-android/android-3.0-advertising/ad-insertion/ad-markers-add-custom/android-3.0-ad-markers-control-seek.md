@@ -6,11 +6,11 @@ title: Control playback behavior for seeking over custom ad markers
 uuid: ec95a22f-0143-4c80-826f-d6b40e77cf26
 ---
 
-# Control playback behavior for seeking over custom ad markers{#control-playback-behavior-for-seeking-over-custom-ad-markers}
+# Control playback behavior for seeking over custom ad markers {#control-playback-behavior-for-seeking-over-custom-ad-markers}
 
 You can override the default behavior for how TVSDK handles seeks over ads when using custom ad markers.
 
-By default, when a user seeks into or past ad sections that result from the placement of custom ad markers, TVSDK skips the ads. This might differ from the current playback behavior for standard ad breaks. You can set TVSDK to reposition the playhead to the beginning of the most recently skipped custom ad when the user seeks past one or more custom ads. 
+By default, when a user seeks into or past ad sections that result from the placement of custom ad markers, TVSDK skips the ads. This might differ from the current playback behavior for standard ad breaks. You can set TVSDK to reposition the playhead to the beginning of the most recently skipped custom ad when the user seeks past one or more custom ads.
 
 1. Call `CustomRangeMetadata.setAdjustSeekPosition` with `true`.
 
@@ -28,4 +28,3 @@ By default, when a user seeks into or past ad sections that result from the plac
    mediaPlayer.replaceCurrentResource(mediaResource, config); 
    
    ```
-

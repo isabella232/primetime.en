@@ -6,7 +6,7 @@ title: Custom tags
 uuid: 2892712f-bb01-4112-baee-6dcafd4fb923
 ---
 
-# Custom tags{#custom-tags}
+# Custom tags {#custom-tags}
 
 Media streams can carry additional metadata in the form of tags in the playlist/manifest file, and this file indicates the placement of advertising. You can specify custom tag names and be notified when certain tags appear in the manifest file.
 
@@ -71,4 +71,4 @@ You can subscribe to any of the following tags as custom tags:
 
 You will be notified with a `TimedMetadata` event during the parsing of manifest files.
 
-There are some advertising tags, such as `EXT-X-CUE`, to which you are already subscribed. These ad tags are also used by the default opportunity generator. You can specify which ad tags are used by the default opportunity generator by setting the `adTags` property. 
+There are some advertising tags, such as `EXT-X-CUE`, to which you are already subscribed. These ad tags are also used by the default opportunity generator. You can specify which ad tags are used by the default opportunity generator by setting the `adTags` property.

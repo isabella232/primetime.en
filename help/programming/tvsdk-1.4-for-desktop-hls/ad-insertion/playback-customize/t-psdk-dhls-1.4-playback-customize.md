@@ -60,4 +60,3 @@ For both options, complete the following tasks:
    >[!TIP]
    >
    >If the custom content factory was registered for a specific stream through the `MediaPlayerItemConfig` class, it will be cleared when the `MediaPlayer` instance is deallocated. Your application must register it each time a new playback session is created.
-

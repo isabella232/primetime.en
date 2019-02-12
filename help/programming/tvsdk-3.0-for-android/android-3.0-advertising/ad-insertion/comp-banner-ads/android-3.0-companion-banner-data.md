@@ -6,7 +6,7 @@ title: Companion banner data
 uuid: f54aecea-5e11-45dd-97d0-5774ca631a4d
 ---
 
-# Companion banner data{#companion-banner-data}
+# Companion banner data {#companion-banner-data}
 
 The content of an AdAsset describes a companion banner.
 
@@ -44,4 +44,3 @@ Each `AdAsset` provides information about displaying the asset.
   </tr> 
  </tbody> 
 </table>
-

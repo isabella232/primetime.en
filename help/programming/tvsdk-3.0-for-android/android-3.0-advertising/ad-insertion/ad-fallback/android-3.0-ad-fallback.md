@@ -18,4 +18,3 @@ The VAST/Digital Video Multiple Ad Playlist (VMAP) specification states that for
 >**Zero Length Ads** - When TVSDK encounters a VAST response that contains an ad of zero duration, or an ad break with no ads, it fires AD_BREAK_START / AD_BREAK_COMPLETE events for those zero-length ad breaks. *This behavior applies only for VOD streams.* TVSDK fires these events even when your app is using the SKIP ad policy. 
 >
 >TVSDK does *not* fire AD_BREAK_START / AD_BREAK_COMPLETE events for Live streams, or when a user employs trickplay or seek to go past the zero-length ad.
-

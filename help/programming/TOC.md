@@ -9,9 +9,9 @@ user-guide: Primetime Programming Help
 
 + TVSDK 3.0 for Android {#tvsdk-3.0-for-android}
    + Introduction {#introduction}
-      + Product overview, audience, and this guide {#overview-prod-audience-guide}
-         + [Considerations and best practices](tvsdk-3.0-for-android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-considerations.md)
-         + [Primetime TVSDK features](tvsdk-3.0-for-android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-overview-of-the-player.md)
+      + [Product overview, audience, and this guide](tvsdk-3.0-for-android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-overview-prod-audience-guide.md)
+      + [Considerations and best practices](tvsdk-3.0-for-android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-considerations.md)
+      + [Primetime TVSDK features](tvsdk-3.0-for-android/android-3.0-introduction/overview-prod-audience-guide/android-3.0-overview-of-the-player.md)
       + [Requirements](tvsdk-3.0-for-android/android-3.0-introduction/android-3.0-requirements.md)
    + Content playback options {#content-playback-options}
       + [Set up the Media player](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/android-3.0-mediaplayer-set-up-android.md)
@@ -72,106 +72,103 @@ user-guide: Primetime Programming Help
          + [Media playback and failover](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/failover-for-playback/android-3.0-failover-media-playback.md)
          + [Advertising insertion and failover for VOD](tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/failover-for-playback/android-3.0-failover-ad-insertion-for-vod.md)
    + Advertising {#advertising}
-      + Advertising requirements {#advertising-requirements}
-         + [Overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-ad-insertion.md)
-         + Insert ads {#insert-ads}
-            + [Insert ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-insertion-about.md)
-            + [Resolve and insert VOD ad](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-resolving-client-vod.md)
-            + [Resolve and insert Live/linear ad](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-resolving-client-live-linear.md)
-            + [Implement an early ad break return](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-early-ad-break-return.md)
-            + [Track client ad](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-tracking-client.md)
-            + [Client error handling for broken VMAP](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-broken-vmap-error.md)
-            + [Secure Ad loading over HTTPS](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-secure-ad-loading.md)
-         + [Default and customized playback behavior with ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-playback-post1.2.md)
-         + Customize playback with ads {#customize-playback}
-            + [Customize playback with ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-customize.md)
-            + [API elements for ad playback](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-ad-custom-elements.md)
-            + [Use the default playback behavior](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-use-default.md)
-            + [Customize playback with ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-customize.md)
-            + [Skip ad breaks for a period of time](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-skip-breaks.md)
-            + [Save the video position and resume later](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-save-position.md)
-            + [Partial Ad break insertion](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-partial-ad-break-insertion.md)
-         + Just-in-Time Ad Resolving {#just-in-time}
-            + [Just-in-Time Ad Resolving overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/c-lazy-ad-resolving/c-lazy-ad-resolving.md)
-            + [Enable lazy ad resolving](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/c-lazy-ad-resolving/t-enable-lazy-ad-resolving.md)
-         + [Upgrading from 2.5.x Lazy Ad Resolving to 3.0.0 Lazy Ad Resolving   (API/Workflow changes):](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/t-upgrade-to-3.0.md)
-         + Ad insertion metadata {#ad-insertion-metadata}
-            + [Ad insertion metadata overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-metadata/android-3.0-ad-insertion-metadata.md)
-            + [Set up ad insertion metadata](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-metadata/android-3.0-ad-insertion-metadata-set-up.md)
-            + [Enable ads in full-event replay](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-metadata/ad-full-event-replay/android-3.0-ad-full-event-replay.md)
-            + [Ad signaling mode](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-metadata/ad-full-event-replay/android-3.0-ad-signaling-mode.md)
-         + Companion banner ads {#companion-banner-ads}
-            + [Companion banner ads overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/comp-banner-ads/android-3.0-companion-banner-ads.md)
-            + [Best practices for companion banner ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/comp-banner-ads/android-3.0-banners-best-practices.md)
-            + [Companion banner data](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/comp-banner-ads/android-3.0-companion-banner-data.md)
-            + [Display banner ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/comp-banner-ads/android-3.0-companion-banner-ads-display.md)
-         + Clickable ads {#clickable-ads}
-            + [Clickable ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/clickable-ads/android-3.0-clickable-ads.md)
-            + [Respond to clicks on ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/clickable-ads/android-3.0-respond-to-ad-clicks.md)
-            + [Separate the clickable ad process](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/clickable-ads/android-3.0-separate-clickable-ad-process.md)
-            + [Pause and resume playback](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/clickable-ads/android-3.0-pausing-resuming-playback.md)
-         + Repackage incompatible ads using Adobe Creative Repackaging Service (CRS) {#repackage-crs}
-            + [Repackage incompatible ads using Adobe CRS overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-transcoding/android-3.0-ad-transcoding.md)
-            + [Enable CRS in TVSDK applications](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-transcoding/android-3.0-enable-crs.md)
-         + Ad fallback for VAST and VMAP ads {#ad-fallback}
-            + [Ad fallback for VAST and VMAP ads overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-fallback/android-3.0-ad-fallback.md)
-            + [Define fallback ad behavior for VMAP inline ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-fallback/android-3.0-ad-fallback-set-up.md)
-            + [Ad fallback behavior for VAST and VMAP](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-fallback/android-3.0-ad-fallback-behavior.md)
-         + Custom tags {#custom-tags}
-            + [Custom tags overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-configure.md)
-            + [Example of a customized VOD asset](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-overview.md)
-            + [Config class methods for tags](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-psdkconfig-methods.md)
-            + [Timed metadata class](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-timedmetadata-class.md)
-            + [Subscribe to custom tags](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-subscribe.md)
-            + [Add listeners for timed metadata notifications](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-receive-notifications.md)
-            + [Store timed metadata objects as they are dispatched](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-timed-metadata-store.md)
-         + VPAID 2.0 ad support {#vpaid-ad-support}
-            + [VPAID 2.0 ad support overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/vpaid-2.0-ads/android-3.0-vpaid-2.0-ads.md)
-            + [Implement VPAID 2.0 integration](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/vpaid-2.0-ads/android-3.0-include-vpaid20-support.md)
-         + [Ad measurements from Moat](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-ad-measurements-from-moat.md)
-         + Add custom ad markers {#add-custom-ad}
-            + [Add custom ad markers](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-ad-markers-add-custom.md)
-            + [TimeRange class](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-timerange-class.md)
-            + [MediaPlayer and MediaResource classes](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-mediaplayer-mediaresource-classes.md)
-            + [ReplaceTimeRange class](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-replacetimerange-class.md)
-            + [Place custom ad markers on the timeline](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-place-custom-ad-markers-on-timeline.md)
-            + [Control playback behavior for seeking over custom ad markers](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-ad-markers-control-seek.md)
-         + Customize opportunity generators and content resolvers {#customize-opportunity}
-            + [Customize opportunity generators and content resolvers overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/content-resolver/android-3.0-content-resolver.md)
-            + [Opportunity generators and content resolvers](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/content-resolver/android-3.0-content-resolver-about.md)
-            + [Implement a custom opportunity generator](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/content-resolver/android-3.0-opp-detector-impl-android.md)
-            + [Implement a custom content resolver](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/content-resolver/android-3.0-content-resolver-implement.md)
-         + Delete and replace ads in VOD streams {#delete-ads}
-            + [Delete and replace ads in VOD streams overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/android-3.0-delete-replace-content-vod.md)
-            + [Custom time range operations](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/custom-time-range-ops/android-3.0-custom-time-range-ops-android.md)
-            + [Content resolvers for ad deletion / replacement](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/custom-time-range-ops/android-3.0-content-resolvers-for-ad-deletion.md)
-            + [Effect on ad insertion and deletion from ad signaling mode and ad metadata combinations](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/android-3.0-signaling-mode-android.md)
-            + Use cases to delete and replace ads {#use-cases}
-               + [Mark ranges](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-use-cases/android-3.0-mark-ranges-android.md)
-               + [Replace time ranges with an ad](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-use-cases/android-3.0-replace-ranges-with-aud-ad-android.md)
-               + [Delete ranges](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-use-cases/android-3.0-delete-ranges-with-aud-ad-android.md)
-            + [Examples to delete and replace ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/android-3.0-ad-delete-replace-examples.md)
-            + [Ad deletion and replacement error handling](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-error-handling/android-3.0-ad-delete-replace-error-handling.md)
-            + [Time range error examples](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-error-handling/android-3.0-timerange-error-examples-dhls.md)
-         + Update ad creative selection rules {#update-ad}
-            + [Update ad creative selection rules overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-updating-rules.md)
-            + [Priority rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-priority-rule.md)
-            + [Normalize rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-normalize-rule.md)
-            + [Sample creative selection rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-sample-rule-files.md)
-            + [Apply creative selection rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-how-tvsdk-applies-csr.md)
+      + [Overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-ad-insertion.md)
+      + Insert ads {#insert-ads}
+        + [Insert ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-insertion-about.md)
+        + [Resolve and insert VOD ad](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-resolving-client-vod.md)
+        + [Resolve and insert Live/linear ad](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-resolving-client-live-linear.md)
+        + [Implement an early ad break return](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-early-ad-break-return.md)
+        + [Track client ad](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-ad-tracking-client.md)
+        + [Client error handling for broken VMAP](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-broken-vmap-error.md)
+        + [Secure Ad loading over HTTPS](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-about/android-3.0-secure-ad-loading.md)
+        + [Default and customized playback behavior with ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-playback-post1.2.md)
+      + Customize playback with ads {#customize-playback}
+        + [Customize playback with ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-customize.md)
+        + [API elements for ad playback](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-ad-custom-elements.md)
+        + [Use the default playback behavior](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-use-default.md)
+        + [Skip ad breaks for a period of time](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-skip-breaks.md)
+        + [Save the video position and resume later](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-playback-save-position.md)
+        + [Partial Ad break insertion](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/playback-customize/android-3.0-partial-ad-break-insertion.md)
+      + Just-in-Time Ad Resolving {#just-in-time}
+        + [Just-in-Time Ad Resolving overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/c-lazy-ad-resolving/c-lazy-ad-resolving.md)
+        + [Enable lazy ad resolving](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/c-lazy-ad-resolving/t-enable-lazy-ad-resolving.md)
+        + [Upgrading from 2.5.x Lazy Ad Resolving to 3.0.0 Lazy Ad Resolving   (API/Workflow changes):](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/t-upgrade-to-3.0.md)
+      + Ad insertion metadata {#ad-insertion-metadata}
+        + [Ad insertion metadata overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-metadata/android-3.0-ad-insertion-metadata.md)
+        + [Set up ad insertion metadata](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-metadata/android-3.0-ad-insertion-metadata-set-up.md)
+        + [Enable ads in full-event replay](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-metadata/ad-full-event-replay/android-3.0-ad-full-event-replay.md)
+        + [Ad signaling mode](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-insertion-metadata/ad-full-event-replay/android-3.0-ad-signaling-mode.md)
+      + Companion banner ads {#companion-banner-ads}
+        + [Companion banner ads overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/comp-banner-ads/android-3.0-companion-banner-ads.md)
+        + [Best practices for companion banner ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/comp-banner-ads/android-3.0-banners-best-practices.md)
+        + [Companion banner data](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/comp-banner-ads/android-3.0-companion-banner-data.md)
+        + [Display banner ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/comp-banner-ads/android-3.0-companion-banner-ads-display.md)
+      + Clickable ads {#clickable-ads}
+        + [Clickable ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/clickable-ads/android-3.0-clickable-ads.md)
+        + [Respond to clicks on ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/clickable-ads/android-3.0-respond-to-ad-clicks.md)
+        + [Separate the clickable ad process](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/clickable-ads/android-3.0-separate-clickable-ad-process.md)
+        + [Pause and resume playback](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/clickable-ads/android-3.0-pausing-resuming-playback.md)
+      + Repackage incompatible ads using Adobe Creative Repackaging Service (CRS) {#repackage-crs}
+        + [Repackage incompatible ads using Adobe CRS overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-transcoding/android-3.0-ad-transcoding.md)
+        + [Enable CRS in TVSDK applications](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-transcoding/android-3.0-enable-crs.md)
+      + Ad fallback for VAST and VMAP ads {#ad-fallback}
+        + [Ad fallback for VAST and VMAP ads overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-fallback/android-3.0-ad-fallback.md)
+        + [Define fallback ad behavior for VMAP inline ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-fallback/android-3.0-ad-fallback-set-up.md)
+        + [Ad fallback behavior for VAST and VMAP](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-fallback/android-3.0-ad-fallback-behavior.md)
+      + Custom tags {#custom-tags}
+        + [Custom tags overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-configure.md)
+        + [Example of a customized VOD asset](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-overview.md)
+        + [Config class methods for tags](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-psdkconfig-methods.md)
+        + [Timed metadata class](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-timedmetadata-class.md)
+        + [Subscribe to custom tags](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-subscribe.md)
+        + [Add listeners for timed metadata notifications](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-custom-tags-receive-notifications.md)
+        + [Store timed metadata objects as they are dispatched](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/custom-tags-configure/android-3.0-timed-metadata-store.md)
+      + VPAID 2.0 ad support {#vpaid-ad-support}
+        + [VPAID 2.0 ad support overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/vpaid-2.0-ads/android-3.0-vpaid-2.0-ads.md)
+        + [Implement VPAID 2.0 integration](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/vpaid-2.0-ads/android-3.0-include-vpaid20-support.md)
+        + [Ad measurements from Moat](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-ad-measurements-from-moat.md)
+      + Add custom ad markers {#add-custom-ad}
+        + [Add custom ad markers](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-ad-markers-add-custom.md)
+        + [TimeRange class](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-timerange-class.md)
+        + [MediaPlayer and MediaResource classes](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-mediaplayer-mediaresource-classes.md)
+        + [ReplaceTimeRange class](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-replacetimerange-class.md)
+        + [Place custom ad markers on the timeline](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-place-custom-ad-markers-on-timeline.md)
+        + [Control playback behavior for seeking over custom ad markers](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/ad-markers-add-custom/android-3.0-ad-markers-control-seek.md)
+      + Customize opportunity generators and content resolvers {#customize-opportunity}
+        + [Customize opportunity generators and content resolvers overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/content-resolver/android-3.0-content-resolver.md)
+        + [Opportunity generators and content resolvers](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/content-resolver/android-3.0-content-resolver-about.md)
+        + [Implement a custom opportunity generator](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/content-resolver/android-3.0-opp-detector-impl-android.md)
+        + [Implement a custom content resolver](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/content-resolver/android-3.0-content-resolver-implement.md)
+      + Delete and replace ads in VOD streams {#delete-ads}
+        + [Delete and replace ads in VOD streams overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/android-3.0-delete-replace-content-vod.md)
+        + [Custom time range operations](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/custom-time-range-ops/android-3.0-custom-time-range-ops-android.md)
+        + [Content resolvers for ad deletion / replacement](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/custom-time-range-ops/android-3.0-content-resolvers-for-ad-deletion.md)
+        + [Effect on ad insertion and deletion from ad signaling mode and ad metadata combinations](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/android-3.0-signaling-mode-android.md)
+      + Use cases to delete and replace ads {#use-cases}
+        + [Mark ranges](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-use-cases/android-3.0-mark-ranges-android.md)
+        + [Replace time ranges with an ad](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-use-cases/android-3.0-replace-ranges-with-aud-ad-android.md)
+        + [Delete ranges](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-use-cases/android-3.0-delete-ranges-with-aud-ad-android.md)
+        + [Examples to delete and replace ads](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/android-3.0-ad-delete-replace-examples.md)
+        + [Ad deletion and replacement error handling](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-error-handling/android-3.0-ad-delete-replace-error-handling.md)
+        + [Time range error examples](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-error-handling/android-3.0-timerange-error-examples-dhls.md)
+      + Update ad creative selection rules {#update-ad}
+        + [Update ad creative selection rules overview](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-updating-rules.md)
+        + [Priority rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-priority-rule.md)
+        + [Normalize rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-normalize-rule.md)
+        + [Sample creative selection rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-sample-rule-files.md)
+        + [Apply creative selection rules](tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/android-3.0-updating-rules/android-3.0-how-tvsdk-applies-csr.md)
    + Content protection {#content-protection}
-      + [Widevine DRM](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-widevine.md)
-      + [Primetime DRM interface overview](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-interface.md)
-      + [DRM authentication before playback](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-auth-before-playback.md)
-      + [DRM authentication during playback](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-auth-during-playback.md)
+     + [Widevine DRM](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-widevine.md)
+     + [Primetime DRM interface overview](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-interface.md)
+     + [DRM authentication before playback](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-auth-before-playback.md)
+     + [DRM authentication during playback](tvsdk-3.0-for-android/android-3.0-content-security/android-3.0-drm-auth-during-playback.md)
    + Video analytics {#video-analytics}
-      + Integrating TVSDK with Adobe Analytics {#integrating-tvsdk}
-         + [Integrating TVSDK with Adobe Analytics overview](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-integration-overview.md)
-         + [Initialize and configure video analytics](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-integrate-heartbeats.md)
-         + [Implement custom metadata support](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-custom-metadata.md)
-         + [Implement chapter support](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-chapter-support.md)
-         + [Set up video analytics reporting on the server side](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-server-side-reporting-set-up.md)
-         + [Access video analytics reports](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-reports-access.md)
+     + [Integrating TVSDK with Adobe Analytics overview](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-integration-overview.md)
+     + [Initialize and configure video analytics](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-integrate-heartbeats.md)
+     + [Implement custom metadata support](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-custom-metadata.md)
+     + [Implement chapter support](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-chapter-support.md)
+     + [Set up video analytics reporting on the server side](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-server-side-reporting-set-up.md)
+     + [Access video analytics reports](tvsdk-3.0-for-android/va-integration-overview/android-3.0-va-integration-overview/android-3.0-va-reports-access.md)
    + Events and notifications {#events-and-notifications}
       + [Notifications and events for player status, activity, errors, and logging](tvsdk-3.0-for-android/android-3.0-events-notifications/android-3.0-notification-system.md)
       + [Notification codes](tvsdk-3.0-for-android/android-3.0-events-notifications/notification-codes/android-3.0-notification-codes.md)

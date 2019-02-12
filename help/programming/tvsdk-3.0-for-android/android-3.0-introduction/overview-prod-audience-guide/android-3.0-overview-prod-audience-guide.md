@@ -35,4 +35,3 @@ This guide provides information that allows you to incorporate TVSDK features in
 >The TVSDK API namespace prefix [!DNL com.adobe.mediacore] is often omitted for brevity. 
 >
 >Many API elements are referred to without their parent class designator if the context is clear.
-

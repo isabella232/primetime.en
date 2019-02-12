@@ -7,7 +7,7 @@ title: Just-in-Time Ad Resolving
 uuid: 77028f6e-7e53-45d1-bcc0-54f8224d6d18
 ---
 
-# Just-in-Time Ad Resolving{#just-in-time-ad-resolving}
+# Just-in-Time Ad Resolving {#just-in-time-ad-resolving}
 
 Ad resolving and ad loading may cause an unacceptable delay for a user waiting for playback to start. The Lazy Ad Loading and Lazy Ad Resolving features can reduce this startup delay. Lazy Ad Resolving has changed significantly in the 3.0 version. In Lazy Ad loading prior to 3.0, ad resolution was broken into two steps, resolving just pre-rolls ads prior to the PREPARED status, and mid-rolls and post-rolls after the PREPARED status. This has changed and ad breaks are now resolved at a specified interval prior to the position of the ad break.
 
@@ -49,6 +49,5 @@ Ad resolving and ad loading may cause an unacceptable delay for a user waiting f
 >* With Lazy Ad Resolving, if multiple ad breaks exist at the same time (VMAP), they will be resolved at the same time. 
 >* It is not recommended to reduce the value of *setDelayAdLoadingTolerance() *below the default value (5 seconds). Doing so could cause the player to "buffer" unnecessarily. 
 >* Lazy Ad Resolving does not affect pre-roll ads. 
->* Lazy Ad Resolving is currently supported with the Auditude-Plugin. It is recommended to not set *setDelayAdLoading*to true if you are using a custom resolver. 
+>* Lazy Ad Resolving is currently supported with the Auditude-Plugin. It is recommended to not set *setDelayAdLoading*to true if you are using a custom resolver.
 >
-
