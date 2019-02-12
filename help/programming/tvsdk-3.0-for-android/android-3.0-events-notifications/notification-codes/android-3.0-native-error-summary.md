@@ -226,10 +226,10 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
       <li id="li_3B633FB699234DCEA136E9BE3CC3386D">The application is trying to add multiple DRMSessions when running on an iOS version that is earlier than 5.0. </li> 
       <li id="li_F7ED993AF0B941A7A27216B4D587A999">The metadata has a version of 3 or higher when only version 2 is supported. </li> 
      </ul> </p> 
-    <ul id="ul_EE4AE6AD4F1745A5B5623E53B599DB62"> 
-     <li id="li_7A83869D4262443DA35FA1DF8D3097DD">The distributor's software should alert the user and abort the operation. <p>If the software has a way of determining whether an upgrade is available, direct the user to that upgrade in the appropriate manner for the platform. </p> </li> 
-     <li id="li_AF9C2711FDE54DA196EB9D2864632000">If the issue occurs because of a shared domain, the distributor will need to check with Adobe for an updated runtime or library. <p>For Flash runtime, the distributor can force the upgrade in their application directly. In the case of a library, the distributor will need to obtain an updated library, rebuild their application and deploy it to their users. </p> <p>If the issue occurs because of multiple DRMSessions, the distributor will need to update their application to check the iOS version number prior to adding multiple DRMSessions. Or they can restrict distribution of their application to iOS v5 and above. </p> <p>if the issue occurs because the metadata version is higher than version 2, the issue is probably corrupted metadata. They can try rebuilding the metadata and looking at the results. If they continue to see the problem, log the issue and escalate to Adobe. </p> </li> 
-    </ul> <p>For more information about this error code, see <a href="https://forums.adobe.com/thread/1266675" format="https" scope="external"> How to remedy a 3306 DRMErrorEvent Error Code</a> </p> </td> 
+     <ul id="ul_EE4AE6AD4F1745A5B5623E53B599DB62"> 
+      <li id="li_7A83869D4262443DA35FA1DF8D3097DD">The distributor's software should alert the user and abort the operation. <p>If the software has a way of determining whether an upgrade is available, direct the user to that upgrade in the appropriate manner for the platform. </p> </li> 
+      <li id="li_AF9C2711FDE54DA196EB9D2864632000">If the issue occurs because of a shared domain, the distributor will need to check with Adobe for an updated runtime or library. <p>For Flash runtime, the distributor can force the upgrade in their application directly. In the case of a library, the distributor will need to obtain an updated library, rebuild their application and deploy it to their users. </p> <p>If the issue occurs because of multiple DRMSessions, the distributor will need to update their application to check the iOS version number prior to adding multiple DRMSessions. Or they can restrict distribution of their application to iOS v5 and above. </p> <p>if the issue occurs because the metadata version is higher than version 2, the issue is probably corrupted metadata. They can try rebuilding the metadata and looking at the results. If they continue to see the problem, log the issue and escalate to Adobe. </p> </li> 
+     </ul> <p>For more information about this error code, see <a href="https://forums.adobe.com/thread/1266675" format="https" scope="external"> How to remedy a 3306 DRMErrorEvent Error Code</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3307 </td> 
@@ -244,10 +244,10 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
    <td colname="col1"> 3308 </td> 
    <td colname="col2"><span class="codeph"> AAXS_WrongLicenseKey</span> </td> 
    <td colname="col3"> <p>This error is throw whenever the license being used contains the wrong key to decrypt the content. subErrorId contains a client-specific error or line error. </p> <p>There seem to only be two ways of generating this bug: 
-     <ul id="ul_1C955BD74C7843809D1B5A0CDCA5ED7B"> 
-      <li id="li_18F0A7FDA6584887AD9DB3EDE54080D8">The customer has modified the standard Adobe tooling for generating licenses (for example, the licenser server Java framework). <p>In this case, the license contains a bad key which might not correspond to any content. </p> </li> 
-      <li id="li_21D04ED1F1FA464785BC297D385766FF">The customer has issued multiple licenses with the same license ID. <p>In this case, there are multiple licenses that are available on the client that match the content metadata and the Access code has selected the wrong one for use. </p> </li> 
-     </ul> </p> 
+    <ul id="ul_1C955BD74C7843809D1B5A0CDCA5ED7B"> 
+     <li id="li_18F0A7FDA6584887AD9DB3EDE54080D8">The customer has modified the standard Adobe tooling for generating licenses (for example, the licenser server Java framework). <p>In this case, the license contains a bad key which might not correspond to any content. </p> </li> 
+     <li id="li_21D04ED1F1FA464785BC297D385766FF">The customer has issued multiple licenses with the same license ID. <p>In this case, there are multiple licenses that are available on the client that match the content metadata and the Access code has selected the wrong one for use. </p> </li> 
+    </ul> </p> 
     <ul id="ul_64AEE62BE36946F290067CF475A36ECA"> 
      <li id="li_9EEB2B11A4DA41E78C5840D8FAA81F0D">The distributor's software should attempt to reacquire license from the server. 
       <ul id="ul_ACADC5518B054D0A853AEED2B675DB23"> 
