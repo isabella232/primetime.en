@@ -7,7 +7,7 @@ title: Enable lazy ad resolving
 uuid: a084ee0b-53af-4600-91f6-d30ccc89699d
 ---
 
-# Enable lazy ad resolving{#enable-lazy-ad-resolving}
+# Enable lazy ad resolving {#enable-lazy-ad-resolving}
 
 You can enable or disable the Lazy Ad Resolving feature using the existing Lazy Ad Loading mechanism (Lazy Ad Resolving is enabled by default).
 

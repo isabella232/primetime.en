@@ -6,14 +6,14 @@ title: Quality of service statistics
 uuid: 3d66ed44-9d4a-4162-962f-e238575ff2dd
 ---
 
-# Quality of service statistics{#quality-of-service-statistics}
+# Quality of service statistics {#quality-of-service-statistics}
 
 Quality of service (QoS) provides a detailed view into how the video engine is performing. TVSDK provides detailed statistics about playback, buffering, and devices.
 
  TVSDK also provides information about the following downloaded resources:
 
-* Playlist/manifest files 
-* File fragments 
+* Playlist/manifest files
+* File fragments
 * Tracking information for files
 
 ## Track at the fragment level using load information {#section_4439D91E8EDC45588EF1D7BE25697350}
@@ -25,7 +25,7 @@ You can read quality of service (QoS) information about downloaded resources, su
 
    >[!NOTE]
    >
-   >For more about `LoadInformation`, see [2.5 for Android (Java)](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/index.html) API docs.
+   >For more about `LoadInformation`, see [3.0 for Android (Java)](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.0/index.html) API docs.
 
 ## Read QOS playback, buffering, and device statistics {#section_D21722600F324E67A9F06234D338B243}
 
@@ -101,4 +101,3 @@ The `QOSProvider` class provides various statistics, including information about
      " (" + orientation + ")"); 
    
    ```
-

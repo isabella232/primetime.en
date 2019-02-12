@@ -43,14 +43,12 @@ TVSDK provides methods and statuses to allow you use Instant On with a media res
 
 >[!NOTE]
 >
->Adobe recommends using `MediaPlayerItemLoader` for InstantOn. To use `MediaPlayerItemLoader`, rather than `MediaPlayer`, see  media-resource-load-using-mediaplayeritemloader .
+>Adobe recommends using `MediaPlayerItemLoader` for InstantOn. To use `MediaPlayerItemLoader`, rather than `MediaPlayer`, see [Load a media resource using MediaPlayerItemLoader]((../../../tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.0-media-resource-mediaplayeritemloader.md)).
 
 1. Confirm that the resource has loaded, and the player is prepared to play the resource. 
 1. Before calling `play`, call `prepareBuffer` for each `MediaPlayer` instance. 
 
-   >[!NOTE]
-   >
-   >`prepareBuffer` enables Instant On, and TVSDK starts buffering immediately and dispatches the `BUFFERING_COMPLETED` event when the buffer is full.
+`prepareBuffer` enables Instant On, and TVSDK starts buffering immediately and dispatches the `BUFFERING_COMPLETED` event when the buffer is full.
 
    >[!TIP]
    >
@@ -79,4 +77,3 @@ TVSDK provides methods and statuses to allow you use Instant On with a media res
    >[!NOTE]
    >
    >If you call `play`, playback should begin immediately.
-

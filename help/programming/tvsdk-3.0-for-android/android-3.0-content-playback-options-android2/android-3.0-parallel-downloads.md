@@ -6,7 +6,7 @@ title: Parallel downloads
 uuid: 11d37a39-391d-4127-9aa7-c94eb8a6a6a8
 ---
 
-# Parallel downloads{#parallel-downloads}
+# Parallel downloads {#parallel-downloads}
 
 Downloading video and audio in parallel, rather than in a series, reduces startup delays.
 
@@ -38,8 +38,7 @@ The HTTP connection might experience delays at the following stages:
 
 * When establishing the TCP/IP connection to server
 
-  Although the client and server have agreed to communicate, no HTTP communication has occurred yet. This type of delay depends on the infrastructure between the client and the server. This process requires finding a path through the internet between the client and the server and making sure all devices, such as routers and firewalls, on the route agree to the data transfer. 
+  Although the client and server have agreed to communicate, no HTTP communication has occurred yet. This type of delay depends on the infrastructure between the client and the server. This process requires finding a path through the internet between the client and the server and making sure all devices, such as routers and firewalls, on the route agree to the data transfer.
 * When sending an HTTP request for a segment or a manifest over the TCP/IP connection.
 
   The server receives the request, processes it, and starts sending the data back to the client. The degree of delay depends on the load and the complexity of the software on the server and somewhat on the upload connection speed when the client sends the request.
-

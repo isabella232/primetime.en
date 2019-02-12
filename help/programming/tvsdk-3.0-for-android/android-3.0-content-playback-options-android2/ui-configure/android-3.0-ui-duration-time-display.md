@@ -6,7 +6,7 @@ title: Display the duration, current time, and remaining time of the video
 uuid: 29bb6bc2-dab1-4f35-abcf-d3213605ee70
 ---
 
-# Display the duration, current time, and remaining time of the video{#display-the-duration-current-time-and-remaining-time-of-the-video}
+# Display the duration, current time, and remaining time of the video {#display-the-duration-current-time-and-remaining-time-of-the-video}
 
 You can use TVSDK to retrieve information about the player's position in the media and display it on the seek bar.
 
@@ -105,4 +105,3 @@ You can use TVSDK to retrieve information about the player's position in the med
    } 
    
    ```
-

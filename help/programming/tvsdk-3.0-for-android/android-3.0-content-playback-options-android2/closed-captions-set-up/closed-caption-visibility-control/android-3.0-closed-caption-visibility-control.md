@@ -6,7 +6,7 @@ title: Control closed-caption visibility
 uuid: f142e60d-5581-4d1c-9d4d-a4a58ac1b67b
 ---
 
-# Control closed-caption visibility{#control-closed-caption-visibility}
+# Control closed-caption visibility {#control-closed-caption-visibility}
 
 You can control the visibility of closed captions. When visibility has been enabled, the currently selected track is displayed. If you change which track is current, the visibility setting remains the same.
 
@@ -22,9 +22,8 @@ You can control the visibility of closed captions. When visibility has been enab
 >}
 >```>
 
-1. Wait for the `MediaPlayer` to be in at least the PREPARED status.
+1. Wait for the `MediaPlayer` to be in at least the PREPARED status. For more information, see [Wait for a valid status](../../../../tvsdk-3.0-for-android/android-3.0-content-playback-options-android2/ui-configure/android-3.0-ui-state-prepared-wait-for.md).
 
-   For more information, see  ui-state-prepared-wait-for .
 1. To get the current visibility setting for closed captions, use the getter method in `MediaPlayer`, which returns a visibility value.
 
    ```java
@@ -38,4 +37,3 @@ You can control the visibility of closed captions. When visibility has been enab
    ```java
    mediaPlayer.setCCVisibility(MediaPlayer.Visibility visibility);
    ```
-

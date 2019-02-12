@@ -6,7 +6,7 @@ title: Skip ad breaks for a period of time
 uuid: be39cb2b-c274-447a-8fb5-89b3e9598622
 ---
 
-# Skip ad breaks for a period of time{#skip-ad-breaks-for-a-period-of-time}
+# Skip ad breaks for a period of time {#skip-ad-breaks-for-a-period-of-time}
 
 By default, TVSDK forces an ad break to play when the user seeks over an ad break. You can customize the behavior to skip an ad break if the time elapsed from a previous break completion is within a certain number of minutes.
 
@@ -209,4 +209,3 @@ The following example of a customized ad policy selector skips ads in the next f
    } 
    
    ```
-

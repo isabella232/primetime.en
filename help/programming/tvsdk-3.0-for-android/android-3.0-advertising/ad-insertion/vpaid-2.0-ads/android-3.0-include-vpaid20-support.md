@@ -6,7 +6,7 @@ title: Implement VPAID 2.0 integration
 uuid: d512fb5b-001c-4a7a-a553-d5962002bb30
 ---
 
-# Implement VPAID 2.0 integration{#implement-vpaid-integration}
+# Implement VPAID 2.0 integration {#implement-vpaid-integration}
 
 To add VPAID 2.0 support, add a custom ad view and appropriate listeners.
 
@@ -29,7 +29,7 @@ To add VPAID 2.0 support:
        _playerFrame.addView(view);
    ```
 
-1. Create listeners and process the events described in  event-listeners .
+1. Create listeners and process the events described in [Events](../../../../tvsdk-3.0-for-android/android-3.0-events-notifications/events-summary/android-3.0-events.md).
 
    >[!IMPORTANT]
    >
@@ -59,7 +59,4 @@ To add VPAID 2.0 support:
    >if (_playerFrame != null) 
    >    _playerFrame.removeAllViews(); 
    >
-   >```   >
-   >
-   >.
-
+   >``` 

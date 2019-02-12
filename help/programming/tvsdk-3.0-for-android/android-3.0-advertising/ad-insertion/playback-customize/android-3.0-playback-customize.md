@@ -6,7 +6,7 @@ title: Customize playback with ads
 uuid: e0d3dfb2-b2d2-4590-aa19-26bea916a252
 ---
 
-# Customize playback with ads{#customize-playback-with-ads}
+# Customize playback with ads {#customize-playback-with-ads}
 
 When playback reaches an ad break, passes an ad break, or ends in an ad break, TVSDK defines some default behavior for the positioning of the current playhead.
 
@@ -22,5 +22,4 @@ You can customize ad playback behavior in the following ways:
 * If an ad break is presented to the user, display no additional ads for a few minutes, even if the user seeks to a new position. 
 * If the content fails to play after a few minutes, restart the stream or fail over to a different source for the same content.
 
-  On the failover playback session, to allow the user to skip ads and resume to the previous failed position, you can disable pre-roll and/or mid-roll ads. TVSDK provides methods to enable skipping pre-roll and mid-roll ads.
-
+On the failover playback session, to allow the user to skip ads and resume to the previous failed position, you can disable pre-roll and/or mid-roll ads. TVSDK provides methods to enable skipping pre-roll and mid-roll ads.

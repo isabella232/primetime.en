@@ -6,7 +6,7 @@ title: Reuse or remove a MediaPlayer instance
 uuid: 74a46689-1708-4d26-9a4e-a4cdb0e55451
 ---
 
-# Reuse or remove a MediaPlayer instance{#reuse-or-remove-a-mediaplayer-instance}
+# Reuse or remove a MediaPlayer instance {#reuse-or-remove-a-mediaplayer-instance}
 
 You can reset, reuse, or release a MediaPlayer instance that you no longer need.
 
@@ -51,7 +51,8 @@ Here are some reasons to release a `MediaPlayer`:
 
 * Holding unnecessary resources can affect performance. 
 * Leaving an unnecessary `MediaPlayer` object instantiated can lead to continuous battery consumption for mobile devices. 
-* If multiple instances of the same video-codec are not supported on a device, playback failure might occur for other applications.
+* If multiple instance
+s of the same video-codec are not supported on a device, playback failure might occur for other applications.
 
 * Release the `MediaPlayer`. 
 
@@ -62,4 +63,3 @@ Here are some reasons to release a `MediaPlayer`:
   >[!NOTE]
   >
   >After the `MediaPlayer` instance is released, you can no longer use it. If any method of the `MediaPlayer` interface is called after it is released, a `MediaPlayerException` is thrown.
-

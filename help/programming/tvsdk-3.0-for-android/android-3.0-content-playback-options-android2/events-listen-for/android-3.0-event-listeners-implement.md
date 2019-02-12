@@ -6,7 +6,7 @@ title: Implement event listeners and callbacks
 uuid: f186b39e-e634-4f64-977d-279147d76c5c
 ---
 
-# Implement event listeners and callbacks{#implement-event-listeners-and-callbacks}
+# Implement event listeners and callbacks  {#implement-event-listeners-and-callbacks}
 
 Event handlers enable you to respond to TVSDK events.
 
@@ -24,13 +24,11 @@ Your application must implement event listeners for any TVSDK events that affect
       >
       >Listen for the status change event, which occurs when the player's status changes in ways that you need to know. The information it provides includes errors that might affect what your player can do next.
 
-    * For other events, depending on your application, see  events-summary .
+    * For other events, depending on your application, see  [Primetime player events summary](../../android-3.0-events-notifications\events-summary\android-3.0-events-summary.md).
 
 1. Implement and add an event listener for each event. 
 
-   >[!NOTE]
-   >
-   >For most events TVSDK passes arguments to the event listeners. Such values provide information about the event that can help you decide what to do next. The `MediaPlayerEvent` enumeration lists all the events that `MediaPlayer` dispatches. For more information, see  events-summary .
+   For most events TVSDK passes arguments to the event listeners. Such values provide information about the event that can help you decide what to do next. The `MediaPlayerEvent` enumeration lists all the events that `MediaPlayer` dispatches. For more information, see  [Primetime player events summary](../../android-3.0-events-notifications\events-summary\android-3.0-events-summary.md).
 
    For example, if `mPlayer` is an instance of `MediaPlayer`, here is how you might add and structure an event listener:
 
@@ -142,4 +140,4 @@ To be notified about all DRM-related events, listen for `MediaPlayerEvent.DRM_ME
 
 ## Order of loader events {#section_5638F8EDACCE422A9425187484D39DCC}
 
-TVSDK dispatches `MediaPlayerEvent.LOAD_INFORMATION_AVAILABLE` when loader events occur. 
+TVSDK dispatches `MediaPlayerEvent.LOAD_INFORMATION_AVAILABLE` when loader events occur.

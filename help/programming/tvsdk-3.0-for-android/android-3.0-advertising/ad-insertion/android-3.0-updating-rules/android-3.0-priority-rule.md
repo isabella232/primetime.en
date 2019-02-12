@@ -7,11 +7,9 @@ title: Priority rules
 uuid: 20dd0ded-06dd-427d-8dd3-79f9f8a3390c
 ---
 
-# Priority rules{#priority-rules}
+# Priority rules {#priority-rules}
 
 The priority rule defines the priority order of the ad creatives that will be selected for playback from a VAST/VMAP response.
-
-## A Priority rule has the following attributes and possible values:
 
 <table id="table_ljp_tgx_hz">  
  <thead> 
@@ -101,4 +99,3 @@ The priority rule defines the priority order of the ad creatives that will be se
 }
 
 ```
-

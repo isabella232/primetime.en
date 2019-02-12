@@ -6,7 +6,9 @@ title: Wait for a valid status
 uuid: 7a86b4cf-f7a0-4d90-9ff2-401640a395c5
 ---
 
-# Wait for a valid status{#wait-for-a-valid-status}
+# Wait for a valid status {#wait-for-a-valid-status}
+
+With TVSDK, you can control the basic playback experience for live and video on demand (VOD). TVSDK provides methods and properties on the player instance that you can use to configure the player user interface.
 
 Before you can use most of the TVSDK player methods, the player must be in a valid status.
 

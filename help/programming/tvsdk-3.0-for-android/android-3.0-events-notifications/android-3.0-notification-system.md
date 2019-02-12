@@ -83,4 +83,3 @@ Here is an example of how to retrieve notifications:
    >The remote server can graphically display the provided data in real-time.
 
 1. To detect the loss of notification events, look for gaps in the sequence of event index values.
-

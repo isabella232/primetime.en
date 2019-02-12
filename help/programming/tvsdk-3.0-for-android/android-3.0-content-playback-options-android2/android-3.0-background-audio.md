@@ -4,9 +4,9 @@ title: Enable background audio
 uuid: aa6dc934-e85c-4db1-901b-9777f47106e6
 ---
 
-# Enable background audio{#enable-background-audio}
+# Enable background audio {#enable-background-audio}
 
-To enable audio playback when app is in background, app should call `enableAudioPlaybackInBackground` API of MediaPlayer with true as argument when player is in PREPARED state. 
+To enable audio playback when app is in background, app should call `enableAudioPlaybackInBackground` API of MediaPlayer with true as argument when player is in PREPARED state.
 
 ```
 _mediaPlayer.enableAudioPlaybackInBackground(true);
@@ -39,4 +39,3 @@ App should pause playback when it loses its hold on audio focus during events li
 AudioManager audioManager = (AudioManager) getActivity().getApplicationContext().getSystemService(Context.AUDIO_SERVICE); 
 audioManager.requestAudioFocus(onAudioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
 ```
-

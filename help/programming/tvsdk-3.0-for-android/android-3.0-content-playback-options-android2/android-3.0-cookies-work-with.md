@@ -6,7 +6,7 @@ title: Work with cookies
 uuid: 618bc59a-032d-445e-a867-ed2bf260570d
 ---
 
-# Work with cookies{#work-with-cookies}
+# Work with cookies {#work-with-cookies}
 
 You can use TVSDK to send arbitrary data in cookie headers for session management, gate access, and so on.
 
@@ -41,7 +41,9 @@ To work with cookies:
    >
    >When 302 redirect is enabled, the ad request may be redirected to a domain that is different from the domain to which the cookie belongs.
 
-   TVSDK queries this `cookieManager` at runtime, checks whether there are any cookies associated with the URL, and automatically uses those cookies. 
+   TVSDK queries this `cookieManager` at runtime, checks whether there are any cookies associated with the URL, and automatically uses those cookies.
+
+**Get string value for cookie when cookies are updated**
 
 The event MediaPlayerEvent.COOKIES_UPDATED is called when C++ cookies are updated. This cookiesUpdatedEvent has a method getCookieString() that returns a string value for the cookie.
 
@@ -58,4 +60,3 @@ public void onCookiesUpdated(CookiesUpdatedEvent cookiesUpdatedEvent)
  }  
 };
 ```
-

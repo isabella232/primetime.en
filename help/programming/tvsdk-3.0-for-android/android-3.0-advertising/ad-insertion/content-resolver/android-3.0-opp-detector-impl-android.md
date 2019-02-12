@@ -6,7 +6,7 @@ title: Implement a custom opportunity generator
 uuid: 6a6a6aa4-51f8-4e3c-9255-d87b488b820d
 ---
 
-# Implement a custom opportunity generator{#implement-a-custom-opportunity-generator}
+# Implement a custom opportunity generator {#implement-a-custom-opportunity-generator}
 
 You can implement your own opportunity generators by implementing the OpportunityGenerator class.
 
@@ -148,4 +148,3 @@ public class MyOpportunityGenerator implements OpportunityGenerator {
     protected void cleanup() {} 
 }
 ```
-

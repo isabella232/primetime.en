@@ -6,7 +6,7 @@ title: Play and pause a video
 uuid: 3778a1fb-929c-4579-a14c-561179473dea
 ---
 
-# Play and pause a video{#play-and-pause-a-video}
+# Play and pause a video {#play-and-pause-a-video}
 
 You can add pause and play buttons to pause or play your video.
 
@@ -26,5 +26,4 @@ You can add pause and play buttons to pause or play your video.
 
 1. Use the status changed event callback to check for errors or to take other appropriate actions.
 
-   TVSDK calls this callback for `pause()` or `play()` and passes information about the status change, including the new status, such as paused or playing. 
-
+   TVSDK calls this callback for `pause()` or `play()` and passes information about the status change, including the new status, such as paused or playing.

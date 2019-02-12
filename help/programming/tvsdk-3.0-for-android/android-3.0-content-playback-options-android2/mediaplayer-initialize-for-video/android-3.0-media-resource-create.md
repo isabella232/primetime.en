@@ -8,6 +8,8 @@ uuid: 9ae86c04-7bbe-43fb-9f57-1d9fa2fa73d0
 
 # Create a media resource {#create-a-media-resource}
 
+For each new video content, initialize a MediaResource instance with information about the video content and load the media resource.
+
 The MediaResource class represents the content to be loaded by the MediaPlayer instance.
 
 1. Create a `MediaResource` by passing information about the media to the `MediaResource` constructor.
@@ -37,7 +39,7 @@ The MediaResource class represents the content to be loaded by the MediaPlayer i
    </tr> 
    <tr> 
       <td colname="col1"> <span class="codeph"> metadata </span> </td> 
-      <td colname="col2"> An instance of the <span class="codeph"> Metadata </span> class (a dictionary-like structure), which might contain additional information about the content that is about to be loaded, such as alternate or ad content to place inside the main content. If using advertising, set up <span class="codeph"> AuditudeSettings </span> before using this constructor (see <a keyref="ad-insertion-metadata"></a>). </td> 
+      <td colname="col2"> An instance of the <span class="codeph"> Metadata </span> class (a dictionary-like structure), which might contain additional information about the content that is about to be loaded, such as alternate or ad content to place inside the main content. If using advertising, set up <span class="codeph"> AuditudeSettings </span> before using this constructor (see). </td> 
    </tr> 
    </tbody> 
    </table>

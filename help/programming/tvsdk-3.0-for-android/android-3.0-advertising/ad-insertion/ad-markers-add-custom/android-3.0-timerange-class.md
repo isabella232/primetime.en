@@ -6,7 +6,7 @@ title: TimeRange class
 uuid: af3ce5e6-44b5-457f-a6e7-aa232defb91e
 ---
 
-# TimeRange class{#timerange-class}
+# TimeRange class {#timerange-class}
 
 Custom ad markers allow you to pass a set of TimeRange specifications that represent timeline segments to TVSDK.
 
@@ -34,4 +34,3 @@ public final class TimeRange {
 }
 
 ```
-

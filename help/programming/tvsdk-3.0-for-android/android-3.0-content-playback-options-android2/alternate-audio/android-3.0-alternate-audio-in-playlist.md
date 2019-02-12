@@ -6,7 +6,7 @@ title: Alternate audio tracks in the playlist
 uuid: e134cc46-5cd3-4c3c-a6ef-5ae54a2108ce
 ---
 
-# Alternate audio tracks in the playlist{#alternate-audio-tracks-in-the-playlist}
+# Alternate audio tracks in the playlist {#alternate-audio-tracks-in-the-playlist}
 
 The playlist for a video can specify an unlimited number of alternative audio tracks for the main video content. For example, you might want to add different languages to your video content or allow the user to switch between different tracks on their device while the content is playing.
 
@@ -41,4 +41,3 @@ gear2/prog_index.m3u8
 ...
 
 ```
-

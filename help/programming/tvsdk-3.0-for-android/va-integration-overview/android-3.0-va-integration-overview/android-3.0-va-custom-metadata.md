@@ -6,7 +6,7 @@ title: Implement custom metadata support
 uuid: 4d1a8f6e-c2f6-4d7a-804d-c128adb5ae6f
 ---
 
-# Implement custom metadata support{#implement-custom-metadata-support}
+# Implement custom metadata support {#implement-custom-metadata-support}
 
 You can provide custom metadata on content, ads, and chapter tracking calls by using callback functions.
 
@@ -102,4 +102,3 @@ Callback functions are invoked just before the tracking call is made, so your ap
      new ChapterMetadataBlockImpl("chapter-1234", "1.2.3.4")); 
    
    ```
-

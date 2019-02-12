@@ -33,4 +33,3 @@ mediaPlayer.addEventListener(MediaPlayerEvent.STATUS_CHANGED,
     } 
 });
 ```
-

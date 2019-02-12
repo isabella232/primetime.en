@@ -6,7 +6,7 @@ title: Considerations and best practices
 uuid: a65c9739-ed83-4519-8ae5-7ba4c8f1ca49
 ---
 
-# Considerations and best practices{#considerations-and-best-practices}
+# Considerations and best practices {#considerations-and-best-practices}
 
 To use TVSDK most effectively, you should consider certain details of its operation and follow certain best practices.
 
@@ -14,10 +14,10 @@ To use TVSDK most effectively, you should consider certain details of its operat
 
 Remember the following information when using TVSDK:
 
-* The TVSDK API is implemented in Java. 
+* The TVSDK API is implemented in Java.
 * Adobe Primetime does not currently work on Android emulators.
 
-  You must use real devices for testing. 
+  You must use real devices for testing.
 * Playback is supported only for HTTP Live Streaming (HLS) content. 
 * Main video content can be multiplexed (video and audio streams in the same rendition) or nonmultiplexed (video and audio streams in separate renditions). 
 * Currently, you need to run most TVSDK API operations on the UI thread, which is the main Android thread.
@@ -32,8 +32,7 @@ Remember the following information when using TVSDK:
     * The incoming user agent name for all media requests from the TVSDK on this platform is assigned the following string pattern:     
     
       ```    
-      "Adobe Primetime/" + 
-      originalUserAgent
+      "Adobe Primetime/" + originalUserAgent
       ```    
     
       All ad-related calls use the Android default user agent or the custom user agent if you set it while setting up ad-insertion metadata.
@@ -46,4 +45,4 @@ Here are recommended practices for TVSDK:
 * Run most TVSDK operations on the main (UI) thread, not on background threads. 
 * For TVSDK 3.0 for Android, lazy ad resolving is on by default.
 
-  For content with no pre-roll or mid-roll, you can use `AdvertisingMetadata.setPreroll(false)` to accelerate content loading.
+For content with no pre-roll or mid-roll, you can use `AdvertisingMetadata.setPreroll(false)` to accelerate content loading.

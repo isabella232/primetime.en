@@ -6,7 +6,7 @@ title: Customize opportunity generators and content resolvers
 uuid: 0d4fb0b2-98f3-4245-9bf1-4e968c5d0f36
 ---
 
-# Customize opportunity generators and content resolvers{#customize-opportunity-generators-and-content-resolvers}
+# Customize opportunity generators and content resolvers {#customize-opportunity-generators-and-content-resolvers}
 
 An opportunity generator identifies placement opportunities by custom tags in a stream, ad signaling mode custom markers, and so on. The opportunity generator sends these placement opportunities to the content resolver, which customizes the content/ad insertion workflow based on the placement opportunity's properties and metadata.
 
@@ -26,9 +26,6 @@ TVSDK also includes default content resolvers:
 
 You can override the default opportunity generators and content resolvers to customize the advertising workflow in ways such as the following:
 
-* Recognize custom tags for ad insertion
-
-  For more information, see  content_resolver . 
+* Recognize custom tags for ad insertion. For more information, see [Customize opportunity generators and content resolvers](../../../../tvsdk-3.0-for-android/android-3.0-advertising/ad-insertion/content-resolver/android-3.0-content-resolver.md).
 * Create a customized ad provider. 
 * Black out content.
-

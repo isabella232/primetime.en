@@ -6,7 +6,7 @@ title: Select a current caption track from among available tracks
 uuid: ee2bda5e-e398-4d09-bc5c-5a6adbf5f603
 ---
 
-# Select a current caption track from among available tracks{#select-a-current-caption-track-from-among-available-tracks}
+# Select a current caption track from among available tracks {#select-a-current-caption-track-from-among-available-tracks}
 
 You can select a track from a list of currently available closed-caption tracks. This becomes the current track, which is displayed when visibility is on. Some tracks might not be available initially, so listen for the event that indicates that more have become available.
 
@@ -42,4 +42,4 @@ You can select a track from a list of currently available closed-caption tracks.
 
 1. Implement a listener for the event that indicates that more tracks are available. When TVSDK dispatches the event, retrieve the current list of available tracks.
 
-   Retrieve the list each time that the event occurs to ensure that you always have the most current list.
+Retrieve the list each time that the event occurs to ensure that you always have the most current list.

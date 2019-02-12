@@ -6,7 +6,7 @@ title: Pause and resume playback
 uuid: 87ba9f05-912d-4b85-8add-feb26a796a3a
 ---
 
-# Pause and resume playback{#pause-and-resume-playback}
+# Pause and resume playback {#pause-and-resume-playback}
 
 When a user clicks an ad, your application should pause playback of the main video content.
 

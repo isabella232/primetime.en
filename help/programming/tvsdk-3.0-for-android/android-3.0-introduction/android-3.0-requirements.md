@@ -73,4 +73,3 @@ Here is some information about the `#EXT-X-VERSION` tag, which specifies the HLS
   </tr> 
  </tbody> 
 </table>
-

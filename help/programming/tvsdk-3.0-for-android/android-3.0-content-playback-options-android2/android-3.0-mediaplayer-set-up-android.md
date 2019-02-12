@@ -6,7 +6,7 @@ title: Set up the Media player
 uuid: 1f672484-b340-4f92-8a47-dad4c9f3b3fc
 ---
 
-# Set up the Media player{#set-up-the-media-player}
+# Set up the Media player {#set-up-the-media-player}
 
 TVSDK provides tools for creating an advanced video player application (your Primetime player), that you can integrate with other Primetime components. It also provides a number of features designed to maximize the quality of video playback.
 
@@ -49,4 +49,3 @@ Instantiate a `MediaPlayer` and place a view of it into a frame layout.
    >[!NOTE]
    >
    >The `MediaPlayer` instance ( `mediaPlayer`) is now available and properly configured to display video content on the device screen.
-

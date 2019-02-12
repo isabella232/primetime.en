@@ -6,7 +6,7 @@ title: Buffering
 uuid: c84b98ed-0070-4a86-a409-d7702e5be23c
 ---
 
-# Buffering{#buffering}
+# Overview {#buffering-overview}
 
 To provide a smoother viewing experience, TVSDK sometimes buffers the video stream. You can configure how the player buffers.
 
@@ -79,4 +79,3 @@ For example, to set the initial buffer to 5 seconds and the playback buffer time
 ```java
 mediaPlayer.setBufferControlParameters(BufferControlParameters.createDual(5000, 30000));
 ```
-
