@@ -16,9 +16,9 @@ TVSDK 1.4 for Android Release Notes describe what is new or changed, the resolve
 
 ## New features {#new-features}
 
-### Version 1.4.43
+**Version 1.4.43**
 
-#### Secure Ad Loading over HTTPS
+**Secure Ad Loading over HTTPS**
 
 Adobe Primetime provides an option to request first call to primetime ad server and CRS over HTTPS.
 
@@ -192,7 +192,7 @@ return opportunityDetectors;
 >* Slow motion, on any platform or version.
 >* Live trick play.
 
-### Version 1.4.43
+**Version 1.4.43**
 
 TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 and 8.1 (Oreo).
 
@@ -213,7 +213,7 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 >
 >`https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8`
 
-### Version 1.4.43
+**Version 1.4.43**
 
 * Ticket #27143 - Unable to play 5.1 audio track on FireTV devices
 
@@ -775,7 +775,7 @@ Note: This build is &#42;&#42;&#42;required&#42;&#42;&#42; for support of Androi
 
 ## Known issues in 1.4 {#known-issues-in}
 
-### Version 1.4.31
+**Version 1.4.31**
 
 * PTPLAY-16803 - Closed Caption will not work with audio only content as the caption system needs video in order to work. Without video, there is no viewport dimension, and without a viewport dimension, we are unable to display any graphics for captions.
 * PTPLAY-1634 - Same Subscribed tag has different timestamps in different live windows. When live window moves, the same tag in them should have same timestamps. However, sometimes, even same tags have different timestamps.

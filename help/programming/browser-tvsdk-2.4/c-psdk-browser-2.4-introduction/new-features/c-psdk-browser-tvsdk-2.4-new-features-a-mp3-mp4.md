@@ -16,13 +16,13 @@ Browser TVSDK supports a number of MP3 and MP4 features that you can implement t
 
 ## MP3 Audio Features {#section_C900C301291A40529D02EACC3CD4D55A}
 
-### Core Playback
+### Core Playback {#core-playback}
 
 | Category | Content Type | Feature | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
 |Playback|MP3 VOD|General Playback (Play, Pause, Seek)|Not Supported|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|
 
-## MP4 Audio Features
+## MP4 Audio Features {#mp4-audio-features}
 
 ### Core Playback
 
