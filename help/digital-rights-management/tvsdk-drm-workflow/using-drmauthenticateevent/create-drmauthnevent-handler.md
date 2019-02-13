@@ -10,8 +10,9 @@ uuid: 58330691-d0b5-46bd-9b1d-8dc597580d31
 
 The DRMAuthenticateEvent object is dispatched when a Primetime object tries to play protected content that requires a user credential for authentication before playback (and authentication has not been performed yet). The DRMAuthenticateEvent handler is responsible for gathering the required credentials (user name, password, and type) and passing the values to the .setDRMAuthenticationCredentials() method for validation.
 
- The application must provide some mechanism for obtaining user credentials. For example, the application could provide a user with a simple user interface to enter user name and password values. Also, it should provide a mechanism for handling and limiting repeated authentication failure attempts. 
-1. Create an event handler that passes a set of hard-coded authentication credentials to the Primetime object that originated the event:
+The application must provide some mechanism for obtaining user credentials. For example, the application could provide a user with a simple user interface to enter user name and password values. Also, it should provide a mechanism for handling and limiting repeated authentication failure attempts. 
+
+Create an event handler that passes a set of hard-coded authentication credentials to the Primetime object that originated the event:
 
    ```
    var connection:NetConnection = new NetConnection();  

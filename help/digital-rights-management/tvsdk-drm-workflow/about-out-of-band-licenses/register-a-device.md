@@ -21,8 +21,8 @@ Let us assume that you have performed the following tasks:
    1. The customer sub-system pre-generates licenses for this device certificate, stores them and grants access to them  in a way that associates them with the generated ID. .
 1. The server responds to the request with a "success" message.
 1. The application stores the generated ID.
->After the device registration, the application uses the generated ID in the same way as it would have used the device ID in the previous scheme: &nbsp; >
->1. The application will try to locate the generated ID. 
->1. If the generated ID is found, the application will use the generated ID while downloading the pre-generated licenses. The application will send the licenses to the Primetime DRM client for consumption using the `DRMManager.storeVoucher()` method. . 
->1. If the generated ID is not found, the application will go through the device registration procedure. 
->
+
+After the device registration, the application uses the generated ID in the same way as it would have used the device ID in the previous scheme:
+1. The application will try to locate the generated ID. 
+1. If the generated ID is found, the application will use the generated ID while downloading the pre-generated licenses. The application will send the licenses to the Primetime DRM client for consumption using the `DRMManager.storeVoucher()` method. . 
+1. If the generated ID is not found, the application will go through the device registration procedure.

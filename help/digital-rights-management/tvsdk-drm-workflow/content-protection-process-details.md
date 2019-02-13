@@ -45,7 +45,8 @@ This process presents a detailed, API-level view of the Primetime DRM protected-
 
    [iOS: acquireLicense:](https://help.adobe.com/en_US/primetime/api/drm-apis/client/ios/interface_d_r_m_manager.html#a52accb5ed5b49d6e5d91277d78279f1b)
 
-   After loading completes, the `DRMManager` object dispatches `DRMStatusEvent.DRM_Status`. 1. Check the `DRMVoucher` object.
+   After loading completes, the `DRMManager` object dispatches `DRMStatusEvent.DRM_Status`. 
+1. Check the `DRMVoucher` object.
 
    If the `DRMVoucher` object is not null, the license is valid. Go to Step 9.
 
