@@ -14,17 +14,15 @@ Do the following to update the License Server:
 1. Make sure the WAR files are unlocked and have their permissions set so they can be modified.
 1. Run the [!DNL addIndivCert.py] Python script to update the License Server WAR files.
 
-       The inputs for the script are as follows:
+    The inputs for the script are as follows:
 
     * `cert`: PKCS12 file containing the Individualization CA certificate 
     * `war`: WAR file to be updated
 
    The output file is an updated WAR file.
+   
+    ```
+    ./addIndivCert.py -cert NEW_IndivCA.cer -war flashaccess.war
+    ```
 
-<!--<a id="example_2618EBFFC4664D35B9CC68D74197BDC3"></a>-->
-
-```
-./addIndivCert.py -cert NEW_IndivCA.cer -war flashaccess.war
-```
-
-The WAR files will be modified in place. If necessary, you can edit the Python script to suit your particular needs. After you perform the updates, you can deploy the WAR files normally. 
+The WAR files will be modified in place. If necessary, you can edit the Python script to suit your particular needs. After you perform the updates, you can deploy the WAR files normally.

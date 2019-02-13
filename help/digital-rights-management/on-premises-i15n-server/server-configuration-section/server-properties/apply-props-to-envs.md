@@ -31,9 +31,7 @@ You can apply individual properties to these specific server environments:
 * *Staging* 
 * *Production*
 
-With this capability, you can use the same WAR file for all server environments. To apply properties to specific environments, do the following: 
-
-1. Append two underscore characters (' `__`') plus one of the following environment codes to the property *name*:
+With this capability, you can use the same WAR file for all server environments. To apply properties to specific environments, append two underscore characters (' `__`') plus one of the following environment codes to the property *name*:
 
     * `DEV` 
     * `STAGE` 
@@ -63,8 +61,9 @@ The server employs this search order for properties:
 
 >[!NOTE]
 >
->You must specify the server's environment name as a Java System property when starting the server. For example, when starting Tomcat with [!DNL catalina.bat], set the `CATALINA_OPTS` environment variable as follows: >
->```>
+>You must specify the server's environment name as a Java System property when starting the server. For example, when starting Tomcat with [!DNL catalina.bat], set the `CATALINA_OPTS` environment variable as follows: 
+
+>```
 >-DENVIRONMENT_NAME=[ DEV | STAGE | PROD ]
->```>
+```
 

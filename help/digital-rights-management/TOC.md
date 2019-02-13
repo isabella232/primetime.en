@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime DRM Help
+user-guide-title: Primetime Digital Rights Management Help
 ---
 
 # Digital Rights Management Help {#drm}
@@ -76,7 +76,7 @@ user-guide-title: Primetime DRM Help
    + [Standard AAXS DRM Workflow](aaxs-drm-xkey-mgmt/aaxs-drm-standard-workflow.md)
    + [AAXS DRM External CEK Workflow](aaxs-drm-xkey-mgmt/aaxs-drm-external-cek-workflow.md)
    + [Using External CEK to Vend and Package Licenses](aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek.md)
-+ Adobe Primetime DRM On Premises Individualization Server Guide 5.3.1 {#individualization-server}
++ Adobe Primetime DRM On Premises Individualization Server Guide {#individualization-server}
    + Introduction {#introduction}
       + [Software Requirements](on-premises-i15n-server/title-page/sw-requirements.md)
       + [Code Delivery / Package Contents](on-premises-i15n-server/title-page/code-delivery.md)

@@ -9,13 +9,7 @@ uuid: 366c8470-b7ef-4a39-83c2-151ba9be9a32
 When packaging content for remote key delivery, use a policy that specifies that remote key delivery is required. The Key Server URL must be included in the M3U8 (manifest file) for the HLS content. The Primetime DRM Key Server URL has the format: 
 
 ```
-https://
-<i class="+ topic ph hi-d="" i "="">
- key-server-host:port/faxsks/
- <i class="+ topic ph hi-d="" i "="">
-   tenant-name/key
- </i class="+ topic>
-</i class="+ topic>
+https://key-server-host:port/faxsks/tenant-name/key
 ```
 
 For example, for Key Server host name [!DNL mykeyserver.com] listening on port 443, and a tenant named `tenant1`, the key server URL to specify in the M3U8 is: 
