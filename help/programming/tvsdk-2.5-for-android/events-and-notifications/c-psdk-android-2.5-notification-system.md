@@ -8,6 +8,8 @@ uuid: ec840f14-38d1-4f43-b119-e1326515fc63
 
 # Notifications and events for player status, activity, errors, and logging{#notifications-and-events-for-player-status-activity-errors-and-logging}
 
+Events and notifications help you manage the asynchronous aspects of the video application.
+
 MediaPlayerStatus objects provide information about changes in player status. Notification objects provide information about warnings and errors. Errors that stop the playback of the video also cause a change in the status of the player. You implement event listeners to capture and respond to events (MediaPlayerEvent objects).
 
 Your application can retrieve notification and status information. Using this information, you could also create a logging system for diagnostics and validation.

@@ -8,7 +8,7 @@ uuid: 64f539d9-344c-4372-88b8-c8d098af9dd8
 
 The following example creates an event handler that outputs the DRM content status information for the Primetime object that originated the event. 
 
-1. Add an event handler to a Primetime object that points to protected content:
+Add an event handler to a Primetime object that points to protected content:
 
    ```
    function drmStatusEventHandler(event:DRMStatusEvent):void { trace(event); } 

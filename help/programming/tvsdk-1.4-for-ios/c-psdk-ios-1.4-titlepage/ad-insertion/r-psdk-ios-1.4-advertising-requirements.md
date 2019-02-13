@@ -8,6 +8,10 @@ uuid: 60e299df-4f42-455a-8983-8964f7a197e1
 
 # Advertising requirements{#advertising-requirements}
 
+You can insert ads in your VOD and live/linear content by using the Adobe Primetime ad decisioning interface.
+
+Primetime ad decisioning works with TVSDK to identify ad opportunities, resolve ads, and insert resolved ads in your video streams. 
+
 To incorporate ads in your video content, ensure that the advertising and main video content meets the following requirements:
 
 * The advertising content's HLS version cannot be higher than the main content's HLS version. 

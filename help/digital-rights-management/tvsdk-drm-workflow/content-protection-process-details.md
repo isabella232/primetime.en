@@ -49,7 +49,8 @@ This process presents a detailed, API-level view of the Primetime DRM protected-
 
    After loading completes, the `DRMManager` object dispatches `DRMStatusEvent.DRM_Status`. 
    
-   1. Check the `DRMVoucher` object.
+1. Check the `DRMVoucher` object.
+
 
    If the `DRMVoucher` object is not null, the license is valid. Go to Step 9.
 

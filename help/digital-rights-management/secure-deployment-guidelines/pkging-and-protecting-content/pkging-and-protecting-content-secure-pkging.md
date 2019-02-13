@@ -20,9 +20,9 @@ The packager also uses the License Server and License Server Transport certifica
 
 The Primetime DRM Packaging API issues warnings under certain conditions. Review these warnings to determine whether your files have been successfully encrypted. The warning messages might be one of the following:
 
-* 
-* 
-*
+* The policy has expired and an unrecognized tag or track cannot be encrypted.
+* Movie fragments cannot be encrypted and references inside those fragments might beinvalid.
+* Metadata cannot be encrypted.
 
 If content is packaged by using a policy with incorrect attributes, the policy needs to be updated. The updated policy must be made available to the License Server though a policy update list or another delivery mechanism. Some policy attributes cannot be changed after the policy is created. If these attributes are incorrect, pull the content back from the distribution sites, revoke the policy so that no future licenses can be granted, and encrypt the content again.
 

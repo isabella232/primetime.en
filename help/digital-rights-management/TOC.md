@@ -1,12 +1,13 @@
 ---
 cloud: experience-cloud
 product: adobe primetime
-archtype: end-user
-user-guide: Primetime DRM Help
+audience: end-user
+user-guide-title: Primetime DRM Help
 ---
 
 # Digital Rights Management Help {#drm}
 
++ [DRM Overview](home.md)
 + Adobe Primetime DRM Secure Deployment Guidelines {#guidelines}
    + Introduction to Network Topology {#introduction}
       + [Network topology overview](secure-deployment-guidelines/overview/network-topology.md)
@@ -66,7 +67,7 @@ user-guide: Primetime DRM Help
       + [About device registration](tvsdk-drm-workflow/about-out-of-band-licenses/about-device-registration.md)
       + [Register a device](tvsdk-drm-workflow/about-out-of-band-licenses/register-a-device.md)
       + [DRM factory reset](tvsdk-drm-workflow/about-out-of-band-licenses/drm-factory-reset.md)
-   + Device domain support({#device-domain-support}
+   + Device domain support {#device-domain-support}
       + [Play encrypted content using domain support](tvsdk-drm-workflow/device-domain-support/play-encrypted-content-domain-support.md)
    + [License preview](tvsdk-drm-workflow/license-preview.md)
    + [Delivering content](tvsdk-drm-workflow/delivering-content.md)

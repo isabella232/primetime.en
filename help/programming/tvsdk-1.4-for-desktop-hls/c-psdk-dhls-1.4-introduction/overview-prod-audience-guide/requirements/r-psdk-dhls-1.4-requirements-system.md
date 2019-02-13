@@ -8,6 +8,8 @@ uuid: e0f58dac-96b6-41d1-bc4c-543bb3b4823b
 
 # System and software requirements{#system-and-software-requirements}
 
+TVSDK requires specific properties for media content, manifest content, DRM, and software versions.
+
 To use TVSDK, ensure that your hardware, operating system, and application versions all meet the minimum requirements listed below.
 
 <!--<a id="section_FD9C110E85BB483B869FBB94E5662710"></a>-->

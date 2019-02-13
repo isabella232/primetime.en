@@ -1,12 +1,13 @@
 ---
 cloud: experience-cloud
 product: adobe primetime
-archtype: end-user
-user-guide: Primetime Release Notes
+audience: end-user
+user-guide-title: Primetime Release Notes
 ---
 
 # Primetime Release Notes {#release-notes}
 
++ [Release Notes Overview](home.md)
 + [TVSDK 3.3 for iOS Release Notes](tvsdk-33-ios.md)
 + [TVSDK 3.2 for Android Release Notes](tvsdk-32-android.md)
 + [TVSDK 2.4.1 for Android Release Notes](tvsdk-24-android.md)
