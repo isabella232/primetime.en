@@ -464,7 +464,7 @@ The issue was resolved by placing the tag at the beginning of the playlist.
 
 * (ZD# 24528) Implement TVSDK Usage Metrics for Billing
 
-For more information, see [Billing Metrics](../programming\tvsdk-1.4-for-ios\c-psdk-ios-1.4-titlepage\c-psdk-ios-1.4-billing\t-psdk-ios-1.4-billing-config.md).
+For more information, see [Billing Metrics](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-billing/t-psdk-ios-1.4-billing-config.md).
 
 * (ZD# 24642) Picture-in-Picture support for  TVSDK
 
