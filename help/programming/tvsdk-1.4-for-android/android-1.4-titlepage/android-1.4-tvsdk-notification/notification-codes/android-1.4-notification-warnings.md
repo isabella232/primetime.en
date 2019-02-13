@@ -100,11 +100,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
    <td colname="2" morerows="1"><span class="codeph"> NATIVE_WARNING </span> </td> 
    <td colname="3" morerows="1"> <p>None </p> </td> 
    <td colname="4"><b>AVE</b> <p><span class="codeph"> NATIVE_ERROR_CODE </span><span class="codeph"> NATIVE_ERROR_NAME </span><span class="codeph"> DESCRIPTION </span> </p> </td> 
-   <td colname="5"> <p>The low-level AVE library issued an error. </p> <p>See <a href=../../../../tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes\native-error-summary/android-1.4-native-error-summary.md format="html" scope="external"> Details for the NATIVE_ERROR notifications</a> for detailed information about the values for these metadata fields. </p> </td> 
+   <td colname="5"> <p>The low-level AVE library issued an error. </p> <p>See <a href=../../../../tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-native-error-summary.md format="html" scope="external"> Details for the NATIVE_ERROR notifications</a> for detailed information about the values for these metadata fields. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="4"><b>DRM</b> <p><span class="codeph"> NATIVE_SUBERROR_CODE</span> <span class="codeph"> DRM_ERROR_STRING</span> </p> </td> 
-   <td colname="5"> DRM minor error code and DRM server error string. See <a href=../../../../tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes\native-error-summary/android-1.4-native-error-summary.md format="html" scope="external"> Details for the NATIVE_ERROR notifications</a> for detailed information about the values for these metadata fields.</td> 
+   <td colname="5"> DRM minor error code and DRM server error string. See <a href=../../../../tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-native-error-summary.md format="html" scope="external"> Details for the NATIVE_ERROR notifications</a> for detailed information about the values for these metadata fields.</td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><b>TimeRangeCollection</b> </td> 
