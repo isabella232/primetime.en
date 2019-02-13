@@ -6,7 +6,7 @@ title: Playback events
 uuid: 6d6491d7-cf25-4130-8388-68b8c028bb71
 ---
 
-# Playback events{#playback-events}
+# Playback events {#playback-events}
 
 Your application can monitor the activity in your player and the changing state of the player by listening for events dispatched by TVSDK.
 

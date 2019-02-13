@@ -10,7 +10,7 @@ This process presents a detailed, API-level view of the Primetime DRM protected-
 
 1. Using a `URLLoader` object, load the bytes of the protected content's metadata file.
 
-   Set this object to a variable, such as `metadata_bytes`.  All content controlled by Primetime DRM has Primetime DRM metadata. When the content is packaged, this metadata can be saved as a separate metadata file ( [!DNL .metadata]) alongside the content. Alternatively, the metadata can be Base64-encoded and inserted into the body of the video manifest file. For more information, see [Packaging Media Files](https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/#concept-Packaging_media_files).
+   Set this object to a variable, such as `metadata_bytes`.  All content controlled by Primetime DRM has Primetime DRM metadata. When the content is packaged, this metadata can be saved as a separate metadata file ( [!DNL .metadata]) alongside the content. Alternatively, the metadata can be Base64-encoded and inserted into the body of the video manifest file. For more information, see [Packaging Media Files](../protecting-content/packaging-media-overview/packaging-media-files.md).
    1. If necessary, remove the exclamation point `!` from the start of the string.
    1. If necessary for HLS or HDS content, decode the included metadata in the Base64-encoded string to binary data before passing it.
 1. Create a `DRMContentData` instance.
@@ -26,15 +26,17 @@ This process presents a detailed, API-level view of the Primetime DRM protected-
    [iOS: DRMMetadata](https://help.adobe.com/en_US/primetime/api/drm-apis/client/ios/interface_d_r_m_metadata.html)
 
    [Android: DRMMetadata](https://help.adobe.com/en_US/primetime/api/drm-apis/client/android/index.html)
+
 1. Create listeners to listen for the `DRMStatusEvent` and `DRMErrorEvent` dispatched from the `DRMManager` object.
 
    ```
-   DRMManager.addEventListener(DRMStatusEvent.DRM_STATUS, onDRMStatus);   DRMManager.addEventListener(DRMErrorEvent.DRM_ERROR, onDRMError);
+   DRMManager.addEventListener(DRMStatusEvent.DRM_STATUS, onDRMStatus); 
+   DRMManager.addEventListener(DRMErrorEvent.DRM_ERROR, onDRMError);
    ```
 
-    In the `DRMStatusEvent` listener, check that the license is valid (not null). In the `DRMErrorEvent` listener, handle `DRMErrorEvents`. See *Using the DRMStatusEvent class* and *Using the DRMErrorEvent class* in this guide.
-1. Load the license that is required to play the content.
+   In the `DRMStatusEvent` listener, check that the license is valid (not null). In the `DRMErrorEvent` listener, handle `DRMErrorEvents`. See *Using the DRMStatusEvent class* and *Using the DRMErrorEvent class* in this guide.
 
+1. Load the license that is required to play the content.
    First, try to load a locally stored license to play the content: 
 
    ```
@@ -45,7 +47,9 @@ This process presents a detailed, API-level view of the Primetime DRM protected-
 
    [iOS: acquireLicense:](https://help.adobe.com/en_US/primetime/api/drm-apis/client/ios/interface_d_r_m_manager.html#a52accb5ed5b49d6e5d91277d78279f1b)
 
-   After loading completes, the `DRMManager` object dispatches `DRMStatusEvent.DRM_Status`. 1. Check the `DRMVoucher` object.
+   After loading completes, the `DRMManager` object dispatches `DRMStatusEvent.DRM_Status`. 
+   
+   1. Check the `DRMVoucher` object.
 
    If the `DRMVoucher` object is not null, the license is valid. Go to Step 9.
 
@@ -88,7 +92,7 @@ This process presents a detailed, API-level view of the Primetime DRM protected-
 
       >[!NOTE]
       >
-      >Alternatively, regardless of the authentication method, `.setAuthenticationToken()` can be used to send custom data from the client to the license server. This is an overloading of the API, as this mechanism is the only way to send dynamic custom data from the client to the license server at the time of license acquisition. This method of custom data transport is discussed in depth in several forum posts in the Primetime DRM [  (Adobe Access) forums ](https://forums.adobe.com/community/adobe_access).
+      >Alternatively, regardless of the authentication method, `.setAuthenticationToken()` can be used to send custom data from the client to the license server. This is an overloading of the API, as this mechanism is the only way to send dynamic custom data from the client to the license server at the time of license acquisition. This method of custom data transport is discussed in depth in several forum posts in the [Primetime DRM (Adobe Access) forums ](https://forums.adobe.com/community/adobe_access).
 
 1. If authentication fails, your application must return to Step 6.
 
@@ -106,13 +110,21 @@ This process presents a detailed, API-level view of the Primetime DRM protected-
 1. If authentication succeeds, download the license from the license server:
 
    ```
-   DRMManager.loadvoucher( drmContentData, LoadVoucherSetting.FORCE_REFRESH) 
+   DRMManager.loadvoucher( 
+      drmContentData, 
+      LoadVoucherSetting.FORCE_REFRESH)
    ```
 
    After loading completes, the `DRMManager` object dispatches `DRMStatusEvent.DRM_STATUS`. Listen for this event, and when it is dispatched, you can play the content.  Play the video by creating a Primetime object and then calling its `play()` method: 
 
    ```
-   stream = new Primetime(connection); stream.addEventListener(DRMStatusEvent.DRM _STATUS, drmStatusHandler); stream.addEventListener(DRMErrorEvent.DRM_ERROR, drmErrorHandler); stream.addEventListener(NetStatusEvent.NET_STATUS, netStatusHandler); stream.client = new CustomClient(); video.attachPrimetime(stream); stream.play(videoURL);
+   stream = new Primetime(connection); 
+   stream.addEventListener(DRMStatusEvent.DRM _STATUS, drmStatusHandler); 
+   stream.addEventListener(DRMErrorEvent.DRM_ERROR, drmErrorHandler); 
+   stream.addEventListener(NetStatusEvent.NET_STATUS, netStatusHandler); 
+   stream.client = new CustomClient(); 
+   video.attachPrimetime(stream); 
+   stream.play(videoURL);
    ```
 
    [Android: acquireLicense()](https://help.adobe.com/en_US/primetime/api/drm-apis/client/android/com/adobe/ave/drm/DRMManager.html#acquireLicense(com.adobe.ave.drm.DRMMetadata,%20com.adobe.ave.drm.DRMAcquireLicenseSettings,%20com.adobe.ave.drm.DRMOperationErrorCallback,%20com.adobe.ave.drm.DRMLicenseAcquiredCallback))

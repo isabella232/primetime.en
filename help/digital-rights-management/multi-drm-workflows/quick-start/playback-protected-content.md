@@ -6,7 +6,7 @@ title: Playback your protected content
 uuid: 84f73ee7-43d0-481c-a5e7-14f92169323c
 ---
 
-# Playback your protected content{#playback-your-protected-content}
+# Playback your protected content {#playback-your-protected-content}
 
 To test your DRM solution, you need a video application that can process the particular DRM solution you are working with. This player could be a sample player made available by Adobe, or your own TVSDK-based video application.
 
@@ -80,7 +80,7 @@ To test your DRM solution, you need a video application that can process the par
 
     >[!NOTE] {importance="high"}
     >
-    >The preceding information applies only to the testing of your FairPlay setup. It may not apply to your production setup, depending upon how you configure your FairPlay handler. See [Enable Apple FairPlay in iOS applications](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/#PSDKs-task-Enable_Apple_FairPlay_in_TVSDK_applications) for details.
+    >The preceding information applies only to the testing of your FairPlay setup. It may not apply to your production setup, depending upon how you configure your FairPlay handler. See [Enable Apple FairPlay in iOS applications](../../../programming/tvsdk-3.3-for-ios/c-psdk-ios-3.3-drm-content-security/c-psdk-ios-3.3-apple-fairplay-tvsdk.md) for details.
 
 If your video plays, you've successfully packaged and licensed your content. If your video does not play, check the troubleshooting page for some possible solutions to your troubles. 
 

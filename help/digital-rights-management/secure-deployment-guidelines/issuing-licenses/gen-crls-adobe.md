@@ -12,4 +12,4 @@ You can use Adobe Primetime DRM to create CRLs that supplement the machine CRL t
 
 The Primetime DRM SDK checks and enforces the Adobe CRLs. However, you can disallow additional client machines by creating a CRL that revokes additional machine credentials by passing the CRL to the Primetime DRM SDK. When you issue a license, the SDK checks the Adobe CRL and your CRL.
 
-To generate CRLs, see [ `RevocationListFactory`](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/revocation/RevocationListFactory.html). 
+To generate CRLs, see [RevocationListFactory](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/revocation/RevocationListFactory.html). 

@@ -6,13 +6,13 @@ title: Package Your Content
 uuid: b9bc6104-a1ea-4ea0-a0a4-af8a606e5d47
 ---
 
-# Package Your Content{#package-your-content}
+# Package Your Content {#package-your-content}
 
 Packaging content is the process of preparing video content for playback over the web. Packaging includes transforming raw video into manifest files, and optionally encrypting the content using different DRM solutions for different devices and browsers.
 
 To prepare your content, you can use either Adobe Offline Packager or other tools such as ExpressPlay's Bento4 packager. Packagers both prepare the video for playback (e.g., fragmenting the original file and putting it into a manifest), and protect the video with your chosen DRM solution (PlayReady, Widevine, FairPlay, Access, etc.):
 
-* [Adobe Offline Packager](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Primetime_Offline_Packager_Getting_Started) 
+* [Adobe Offline Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf) 
 * [ExpressPlay Packagers](https://www.expressplay.com/developer/packaging-tools/)
 
 <!--<a id="fig_jbn_fw5_xw"></a>-->
@@ -61,7 +61,7 @@ Here is a packaging example using Adobe Offline Packager for Widevine. The Packa
 
 * `widevine_key_id` - This is the identifier for the license you specified in the `key_file_path` entry. In other words, this identifies the key you use to encrypt the content. This ID is a 16-byte HEX string that you create yourself.
 
-As stated in the [Packager documentation](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Working_with_Offline_Packager), "As a best practice, create a configuration file that contains the common options that you want to use for generating the outputs. Then, create the output by providing specific options as a command-line argument." In this case, our config file is fairly complete, so you could create your output as follows:
+As stated in the [Packager documentation](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf), "As a best practice, create a configuration file that contains the common options that you want to use for generating the outputs. Then, create the output by providing specific options as a command-line argument." In this case, our config file is fairly complete, so you could create your output as follows:
 
 ```
 java -jar OfflinePackager.jar -conf_path widevine.xml -out_path test_dash/ 
