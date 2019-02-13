@@ -17,4 +17,3 @@ These classes provide metadata for advertising, namespaces, and tracking.
 | [PTMetadata](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMetadata.html)  | Defines the base class for configuring all available metadata for your player and additional objects. |
 | [PTTimedMetadata](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTimedMetadata.html)  | Class that represents a custom HLS tag in the stream.  |
 | [PTTrackingMetadata](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTTrackingMetadata.html)  | Defines a base class for all tracking and analytics related metadata.  |
-

@@ -6,7 +6,7 @@ title: Notification content
 uuid: 15f08b33-ccb0-48a6-913e-dbc59a9ec6c4
 ---
 
-# Notification content{#notification-content}
+# Notification content {#notification-content}
 
 PTNotification provides information that is related to the player's status.
 

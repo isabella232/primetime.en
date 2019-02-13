@@ -21,8 +21,8 @@ Comment Type: draft
 
 |  Class name  | Description  |
 |---|---|
-| ` [AuthorizedFeaturesHelper](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/AuthorizedFeaturesHelper.html)`  | Helper class used for loading and obtaining the authorizedFeatures set using an externally stored token.  |
-|  ` [DateUtils](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/DateUtils.html)`  | Methods for processing dates.  |
-|  ` [NumberUtils](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/NumberUtils.html)`  | Helper methods related to numbers.  |
-|  ` [TimeRange](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/TimeRange.html)`  | Methods for creating and interpreting time ranges.  |
+| [AuthorizedFeaturesHelper](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/AuthorizedFeaturesHelper.html)  | Helper class used for loading and obtaining the authorizedFeatures set using an externally stored token.  |
+|  [DateUtils](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/DateUtils.html)  | Methods for processing dates.  |
+|  [NumberUtils](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/NumberUtils.html)  | Helper methods related to numbers.  |
+|  [TimeRange](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/TimeRange.html)  | Methods for creating and interpreting time ranges.  |
 

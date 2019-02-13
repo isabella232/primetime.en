@@ -46,4 +46,3 @@ These classes provide information that help you to determine how well the player
   </tr> 
  </tbody> 
 </table>
-

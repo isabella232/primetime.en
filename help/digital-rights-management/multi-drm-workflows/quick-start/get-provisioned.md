@@ -14,7 +14,7 @@ To get started with Primetime DRM Cloud, powered by ExpressPlay, you need to set
 
        Provide your Adobe representative with the email address you will be using as your contact point. Adobe then creates two accounts for you:
 
-    * ***Certificate Portal Account*** - ( ht<span></span>tps://certportal.primetime.adobe.com) : The *Adobe Access / Primetime DRM Certificate Enrollment Management Team* sends an email to the addresses you provided them. The email includes the URL for the Adobe cert portal, along with a link to Adobe's certificate enrollment documentation (latest docs are here: [Certificate Enrollment Guide](https://help.adobe.com/en_US/primetime/drm/5.3/certificate_enrollment/index.html#concept-Certificate_Enrollment_Guide)).
+    * ***Certificate Portal Account*** - ( ht<span></span>tps://certportal.primetime.adobe.com) : The *Adobe Access / Primetime DRM Certificate Enrollment Management Team* sends an email to the addresses you provided them. The email includes the URL for the Adobe cert portal, along with a link to Adobe's certificate enrollment documentation (latest docs are here: [Certificate Enrollment Guide](../../../digital-rights-management/certificate-enrollment-guide/title-page/about-certs.md)).
     
     * ***ExpressPlay Account*** - Adobe sends you an email that contains a link you use to register for your ExpressPlay Admin account.
 
@@ -26,7 +26,7 @@ To get started with Primetime DRM Cloud, powered by ExpressPlay, you need to set
 
 1. On the Adobe cert portal, request a *Trial* cert.
 
-   For the Multi-DRM trial, a single trial cert will cover all of these aspects of content protection: packaging, licensing, and transport. You will need to supply your own [CSR](https://help.adobe.com/en_US/primetime/drm/5.3/certificate_enrollment/#task-Generate_a_Certificate_Signing_Request) to make a request for a cert: 
+   For the Multi-DRM trial, a single trial cert will cover all of these aspects of content protection: packaging, licensing, and transport. You will need to supply your own [CSR](../../../digital-rights-management/certificate-enrollment-guide/title-page/request-certs/gen-cert-signing-req.md) to make a request for a cert: 
    <!--<a id="fig_op1_xwj_wv"></a>-->
 
    ![](assets/cert_portal_trial_request-web.png)

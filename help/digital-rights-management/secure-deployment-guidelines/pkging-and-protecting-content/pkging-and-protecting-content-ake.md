@@ -18,4 +18,4 @@ When you package content, the License Server's public key is used to encrypt the
 >
 >Make sure that you obtain the License Server's certificate that includes the public key from a trusted source. This way, you can ensure that it is the License Server's key and not a rogue public key. If attackers were to substitute their public key for the License Server's key, they could decrypt your content.
 
-For more information about how to package content, see [Using the Adobe Primetime DRM SDK for Protecting Content](https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Using_the_Adobe_Primetime_DRM_SDK_for_Protecting_Content). 
+For more information about how to package content, see [Using the Adobe Primetime DRM SDK for Protecting Content](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_protecting_content.pdf). 

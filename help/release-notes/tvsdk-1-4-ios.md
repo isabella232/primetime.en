@@ -36,7 +36,7 @@ TVSDK 1.4 for iOS Release Notes describe what is new or changed, the resolved an
 
 **Version 1.4.42**
 
-No new features are added in this release. For a list of issues fixed, see [Resolved issues](https://helpx.adobe.com/primetime/release-notes/tvsdk-1-4-ios.html#Resolvedissuesin14).
+No new features are added in this release. For a list of issues fixed, see Resolved issues.
 
 **Version 1.4.41**
 
@@ -67,9 +67,9 @@ Integrate and certify VHL 2.0 in iOS TVSDK : Reduce the barrier in the VideoHear
 
 **Version 1.4.31**
 
-* **Billing Metrics**To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers.
+* **Billing Metrics** To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers.
 
-  Every time TVSDK generates a stream start event, the player starts to send HTTP messages periodically to Adobe's billing system. The period, known as billable duration, can be different for standard VOD,  pro VOD  (mid-roll ads enabled), and live content. The default duration for each content type is 30 minutes, but your contract with Adobe determines the actual values.
+Every time TVSDK generates a stream start event, the player starts to send HTTP messages periodically to Adobe's billing system. The period, known as billable duration, can be different for standard VOD,  pro VOD  (mid-roll ads enabled), and live content. The default duration for each content type is 30 minutes, but your contract with Adobe determines the actual values.
 
 * **Multi-CDN Support for CRS Ads**TVSDK now supports Multi-CDN for CRS ads. By providing FTP details for CRS ads, you can specify CDN locations, other than the default Adobe-owned CDN such as Akamai.
 
@@ -84,11 +84,9 @@ The PTSDKConfig class provides methods to enforce SSL on requests made to Adobe 
 **Version 1.4.18**
 
 Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. 
-<!-- 
 
-Comment Type: draft
-For more information about VPAID 2.0, see [VPAID ad support](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html).
--->
+For more information about VPAID 2.0, see [VPAID ad support](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-vpaid-2.0-ads.md).
+
 **Version 1.4.17**
 
 * tvOS
@@ -123,10 +121,8 @@ For more information about VPAID 2.0, see [VPAID ad support](https://help.adobe.
 
 For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. 
 
-<!-- 
-Comment Type: draft
-For more information, see [Ad fallback for VAST and VMAP ads](http://help.adobe.com/en_US/primetime/psdk/dhls/#PSDKs-concept-Ad_fallback_for_VAST_and_VMAP_ads).
--->
+For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-ad-fallback.md).
+
 
 **Version 1.4.9**
 
@@ -467,10 +463,9 @@ The issue was resolved by placing the tag at the beginning of the playlist.
 **Version 1.4.31** (1.4.31.785 for iOS 6.0+)
 
 * (ZD# 24528) Implement TVSDK Usage Metrics for Billing
-<!-- 
-Comment Type: draft
-For more information, see [Billing Metrics](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/PSDKs/concept/c_psdk_billing.html).
--->
+
+For more information, see [Billing Metrics](../programming\tvsdk-1.4-for-ios\c-psdk-ios-1.4-titlepage\c-psdk-ios-1.4-billing\t-psdk-ios-1.4-billing-config.md).
+
 * (ZD# 24642) Picture-in-Picture support for  TVSDK
 
 The picture-in-picture feature, which was not working properly in some cases, has been fixed.

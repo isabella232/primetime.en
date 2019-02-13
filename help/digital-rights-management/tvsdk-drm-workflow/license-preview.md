@@ -4,7 +4,7 @@ title: License preview
 uuid: 61ff171f-b977-40ef-8e8d-2900316fa89a
 ---
 
-# License preview{#license-preview}
+# License preview {#license-preview}
 
 If there is a question around whether or not a device can consume and fully enforce a Primetime DRM license, you can use the License Preview feature. A Preview license fully matches all constraints and restrictions defined in the final license, but does not contain the Content Encryption Key (CEK) needed to decrypt the protected content. This capability is useful to determine whether the client can indeed consume the license before the Content Distributor makes a decision to provide a particular license to the client. For example - a customer wishes to watch HD content, but the Content Distributor wants to ensure that the device can fully detect and engage HDCP. In this situation, the client can call `DRMManager.loadPreviewVoucher()`. If a `DRMStatusEvent` is received, instead of a `DRMErrorEvent`, then it is confirmed that the client can fully enforce the Output Protection restrictions in the license, and the Content Distributor can freely provide this type of license to the client.
 

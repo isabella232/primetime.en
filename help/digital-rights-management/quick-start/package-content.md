@@ -45,7 +45,7 @@ uuid: 1e271167-107d-41df-8a7c-3075cb3acc0c
 
    >[!NOTE]
    >
-   >If you want to package HLS, HDS or DASH contents, you must use a different packager tool, such as [Adobe Primetime Offline Packager](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Primetime_Offline_Packager_Getting_Started).
+   >If you want to package HLS, HDS or DASH contents, you must use a different packager tool, such as [Adobe Primetime Offline Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf).
 
 1. Copy the encrypted file artifacts (in this case [!DNL sample_encrypted.mp4] and [!DNL sample_encrypted.mp4.metadata]) to `<Your Content Server - Tomcat Install Dir>\webapps\ROOT`.
 
@@ -53,4 +53,4 @@ At this point you have completed the packaging phase of the process.
 
 >[!NOTE]
 >
->For more detailed information on command-line tools for packaging content, creating policies, and more, see [Adobe Primetime DRM Command-line tools](https://help.adobe.com/en_US/primetime/drm/5.3/reference_implementations/index.html#concept-Commandline_tools).
+>For more detailed information on command-line tools for packaging content, creating policies, and more, see [Adobe Primetime DRM Command-line tools](../drm-reference-implementations/command-line-tools/command-line-tools-overview.md).

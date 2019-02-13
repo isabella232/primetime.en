@@ -6,7 +6,7 @@ title: Password scrambler
 uuid: 56df0f49-f3fd-464d-b4ba-25e1b497158a
 ---
 
-# Password scrambler{#password-scrambler}
+# Password scrambler {#password-scrambler}
 
 The Password Scrambler utility encrypts a password for the Adobe Primetime DRM Server for Protected Streaming configuration files.
 

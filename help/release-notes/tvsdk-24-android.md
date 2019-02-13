@@ -23,25 +23,13 @@ Here is where you can find documentation:
 
 • Online help system TVSDK 2.4 for Android Help
 
-• Javadocs TVSDK 2.4 for Android Java API
+• [Javadocs TVSDK 2.4 for Android Java API](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/index.html)
 
-<!-- 
-
-Comment Type: draft
-(https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/index.html)
-
--->
 
 The Javadocs are the ultimate authority, because they are automatically generated directly from the TVSDK source code.
 
-• C++ API documentation TVSDK 2.4 for Android C++ API
+• [C++ API documentation TVSDK 2.4 for Android C++ API](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.4/namespaces.html)
 
-<!-- 
-
-Comment Type: draft
-(https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.4/namespaces.html)
-
--->
 
 Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so consult the C++ documentation for a deeper understanding of the Java API.
 

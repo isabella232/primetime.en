@@ -28,4 +28,3 @@ These classes provide information about the timeline of the particular media, in
   </tr> 
  </tbody> 
 </table>
-
