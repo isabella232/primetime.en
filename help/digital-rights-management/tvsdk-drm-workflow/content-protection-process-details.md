@@ -4,13 +4,13 @@ title: License acquisition process details
 uuid: 4825c49e-fa6f-4c98-9d21-a2743930ca2e
 ---
 
-# License acquisition process details{#license-acquisition-process-details}
+# License acquisition process details {#license-acquisition-process-details}
 
 This process presents a detailed, API-level view of the Primetime DRM protected-content workflow: 
 
 1. Using a `URLLoader` object, load the bytes of the protected content's metadata file.
 
-   Set this object to a variable, such as `metadata_bytes`.  All content controlled by Primetime DRM has Primetime DRM metadata. When the content is packaged, this metadata can be saved as a separate metadata file ( [!DNL .metadata]) alongside the content. Alternatively, the metadata can be Base64-encoded and inserted into the body of the video manifest file. For more information, see [Packaging Media Files](../protecting-content/packaging-media-overview/packaging-media-files.md).
+   Set this object to a variable, such as `metadata_bytes`. All content controlled by Primetime DRM has Primetime DRM metadata. When the content is packaged, this metadata can be saved as a separate metadata file ( [!DNL .metadata]) alongside the content. Alternatively, the metadata can be Base64-encoded and inserted into the body of the video manifest file. For more information, see [Packaging Media Files](../protecting-content/packaging-media-overview/packaging-media-files.md).
    1. If necessary, remove the exclamation point `!` from the start of the string.
    1. If necessary for HLS or HDS content, decode the included metadata in the Base64-encoded string to binary data before passing it.
 1. Create a `DRMContentData` instance.
@@ -21,7 +21,7 @@ This process presents a detailed, API-level view of the Primetime DRM protected-
    new DRMContentData(metadata_bytes)
    ```
 
-     where `metadata_bytes` is the `URLLoader` object obtained in Step 1.
+   where `metadata_bytes` is the `URLLoader` object obtained in Step 1.
 
    [iOS: DRMMetadata](https://help.adobe.com/en_US/primetime/api/drm-apis/client/ios/interface_d_r_m_metadata.html)
 
