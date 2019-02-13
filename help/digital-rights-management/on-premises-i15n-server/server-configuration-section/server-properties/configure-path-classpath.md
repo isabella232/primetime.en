@@ -24,7 +24,8 @@ The [!DNL flashaccess.war] contains [!DNL jsafeWithNative.jar], which is the Cry
 
 The distribution includes a [!DNL shared] folder that includes both the jar file as well as a pre-configured [!DNL AdobeInitial.properties] file. Adobe recommends that you add these items to the `common.loader` via the [!DNL catalina.properties] file. For example:
 
->```
->common.loader=<Any Pre-Existing Values>,${catalina.home}/shared/classes,${catalina.home}/shared/lib/*.jar
 ```
+common.loader=<Any Pre-Existing Values>,${catalina.home}/shared/classes,${catalina.home}/shared/lib/*.jar
+```
+
 

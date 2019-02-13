@@ -61,9 +61,5 @@ The server employs this search order for properties:
 
 >[!NOTE]
 >
->You must specify the server's environment name as a Java System property when starting the server. For example, when starting Tomcat with [!DNL catalina.bat], set the `CATALINA_OPTS` environment variable as follows: 
-
->```
+>You must specify the server's environment name as a Java System property when starting the server. For example, when starting Tomcat with [!DNL catalina.bat], set the `CATALINA_OPTS` environment variable as follows:
 >-DENVIRONMENT_NAME=[ DEV | STAGE | PROD ]
-```
-

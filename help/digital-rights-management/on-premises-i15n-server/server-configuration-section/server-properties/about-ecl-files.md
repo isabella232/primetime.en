@@ -19,26 +19,31 @@ The [!DNL Latest.txt] file will contain the URL to the most recent CRL distribut
 Adobe will create the ECI zip file in the manner described below:
 
 Folder Structure:
+
 ```
 ECI\*
 ```
 
 The contents of the folder will be zipped up recursively:
+
 ```
 zip -R ECI ECI.zip
 ```
 
 An OpenSSL SHA-­-256 digest will be calculated of the zip file:
+
 ```
 openssl dgst -sha256 -hex ECI.zip
 ```
 
 The zip file will be renamed to contain the archive date as well as the SHA-256 digest:
+
 ```
 Rename ECI.zip to <DATE_SHA-256>.zip
 ```
 
 For example:
+
 ```
 20150310_aea45bf06241f04fba2b310ff9a8066c6aba73c8d22387b60509481e9cefc43e.zip
 ```
