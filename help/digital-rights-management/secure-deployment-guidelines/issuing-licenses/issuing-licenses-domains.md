@@ -20,5 +20,5 @@ Here are some domain management approaches:
   The License Server should only issue licenses to clients that have the latest domain key. This approach assumes that the License Server can coordinate with the Domain Server to know which key is the latest. Rolling over the domain keys involves generating a new key pair for the domain. When you roll over the keys for a domain, increment the key version in `generateDomainCredential`. 
 * If the domain server is the same as the license server, the server can use the rollback counter to detect a backup and restore.
 
-  For more information, see [Processing Adobe Primetime DRM requests](https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Processing_Adobe_Primetime_DRM_requests).
+  For more information, see [Processing Adobe Primetime DRM requests](../../protecting-content/implementing-the-license-server/processing-drm-requests.md).
 

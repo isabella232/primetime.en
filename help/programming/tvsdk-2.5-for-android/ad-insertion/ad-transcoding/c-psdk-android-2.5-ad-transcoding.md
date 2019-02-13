@@ -6,7 +6,7 @@ title: Repackage incompatible ads using Adobe Creative Repackaging Service (CRS)
 uuid: c3961628-39aa-444c-9c93-9f1e267d9cd4
 ---
 
-# Repackage incompatible ads using Adobe Creative Repackaging Service (CRS){#repackage-incompatible-ads-using-adobe-creative-repackaging-service-crs}
+# Repackage incompatible ads using Adobe Creative Repackaging Service (CRS) {#repackage-incompatible-ads-using-adobe-creative-repackaging-service-crs}
 
 Some third-party ads (or creatives) cannot be stitched into the HTTP Live Streaming (HLS) content stream because their video format is incompatible with HLS. Primetime ad insertion and TVSDK can optionally attempt to repackage incompatible ads into compatible M3U8 videos.
 
@@ -24,4 +24,4 @@ To activate this optional CRS feature, contact your Adobe representative.
 >* CRS 3.1 greatly minimizes network calls, improving video startup time.
 >
 
-For more information about CRS, see [Creative Packaging Service (CRS)](https://help.adobe.com/en_US/primetime/crs/index.html). 
+For more information about CRS, see [Creative Packaging Service (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_certificate_enrollment.pdf).

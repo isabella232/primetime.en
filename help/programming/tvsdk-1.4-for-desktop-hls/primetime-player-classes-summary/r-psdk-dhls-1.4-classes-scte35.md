@@ -6,7 +6,7 @@ title: SCTE 35 classes
 uuid: 7f3754fd-90f1-4457-9e31-d40740435489
 ---
 
-# SCTE 35 classes{#scte-classes}
+# SCTE 35 classes {#scte-classes}
 
 These classes enable the TVSDK to include SCTE 35 splices.
 

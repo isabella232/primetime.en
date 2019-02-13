@@ -12,4 +12,4 @@ Browser TVSDK supports multiple digital rights management (DRM) systems using th
 
 For more information about the list of supported DRM systems, see the *Content protection features* table in Supported features.
 
-To make full use of the information here, learn about Multi-DRM Workflows in the [Multi-DRM Workflows](https://help.adobe.com/en_US/primetime/drm/multi-drm-workflows/#MultiDRM_Workflows_) guide. 
+To make full use of the information here, learn about Multi-DRM Workflows in the [Multi-DRM Workflows](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_multi_drm_workflows.pdf) guide. 

@@ -104,4 +104,4 @@ Comment Type: draft
 -->
 <!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
 
-For more information about DRM, see the [Adobe Primetime DRM documentation](https://help.adobe.com/en_US/primetime/drm). 
+For more information about DRM, see the [Adobe Primetime DRM documentation](https://helpx.adobe.com/primetime/user-guide.html). 

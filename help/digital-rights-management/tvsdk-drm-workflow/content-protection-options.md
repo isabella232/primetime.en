@@ -8,9 +8,8 @@ uuid: e4865e17-fbb3-40be-ab23-816dd76f599d
 
 Primetime DRM provides a number of options for content owners to protect their content:
 
-* **SDK** - [Adobe Primetime DRM SDK](https://help.adobe.com/en_US/primetime/drm/5.3/sdk_overview/index.html#concept-Adobe_Primetime_DRM_SDK_Overview) 
+* **SDK** - [Adobe Primetime DRM SDK](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_sdk_overview.pdf) 
 
-* **Command-line Tools** - [Primetime Offline Packager](https://help.adobe.com/en_US/primetime/packagers/offline/index.html#Packagers-concept-Working_with_Offline_Packager), and [Primetime DRM Reference Implementations](https://help.adobe.com/en_US/primetime/drm/5.3/reference_implementations/index.html#concept-Adobe_Primetime_DRM_Reference_Implementations). 
+* **Command-line Tools** - [Primetime Offline Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf), and [Primetime DRM Reference Implementations](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_reference_implementations.pdf). 
 
-* **Hardware and software encoders** - Encoders that implement the [Adobe Primetime DRM SDK](https://help.adobe.com/en_US/primetime/drm/5.3/sdk_overview/index.html#concept-Adobe_Primetime_DRM_SDK_Overview) or the Adobe Broadcast SDK (HDKb).
-
+* **Hardware and software encoders** - Encoders that implement the [Adobe Primetime DRM SDK](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_sdk_overview.pdf) or the Adobe Broadcast SDK (HDKb).

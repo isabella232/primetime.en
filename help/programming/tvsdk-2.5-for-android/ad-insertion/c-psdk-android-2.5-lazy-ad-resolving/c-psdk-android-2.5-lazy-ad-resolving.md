@@ -7,7 +7,7 @@ title: Lazy ad resolving
 uuid: cf9ba788-b83f-43aa-94c4-db391d92a77b
 ---
 
-# Lazy ad resolving{#lazy-ad-resolving}
+# Lazy ad resolving {#lazy-ad-resolving}
 
 Ad resolving and ad loading can cause an unacceptable delay for a user waiting for playback to start. The Lazy Ad Loading and Lazy Ad Resolving features can reduce this startup delay.
 

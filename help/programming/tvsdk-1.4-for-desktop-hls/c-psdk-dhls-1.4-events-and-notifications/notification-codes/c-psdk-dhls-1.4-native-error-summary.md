@@ -4,7 +4,7 @@ title: Details for the NATIVE_ERROR notification
 uuid: 59f6077f-8162-4755-afd8-ce95fd5d57b2
 ---
 
-# Details for the NATIVE_ERROR notification{#details-for-the-native-error-notification}
+# Details for the NATIVE_ERROR notification {#details-for-the-native-error-notification}
 
 When TVSDK handles a native error, it sets some or all of the following metadata key values.  
 
@@ -63,5 +63,4 @@ TVSDK receives these error codes and strings from the video engine.
 
 >[!IMPORTANT]
 >
->For a complete list of Adobe Primetime DRM client error codes, see [DRM Client Error Message Reference](https://help.adobe.com/en_US/primetime/drm/index.html#reference-DRM_Client_Error_Messages).
-
+>For a complete list of Adobe Primetime DRM client error codes, see [DRM Client Error Message Reference](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_client_error_message_reference.pdf).
