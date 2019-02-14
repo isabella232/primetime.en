@@ -49,8 +49,8 @@ To switch the speed, you must set one value.
 
   TVSDK dispatches the following events that are related to trick play:
 
-  * `MediaPlayerEvent.RATE_SELECTED`, when the `rate` value changes to a different value. 
+* `MediaPlayerEvent.RATE_SELECTED`, when the `rate` value changes to a different value. 
     
-  * `MediaPlayerEvent.RATE_PLAYING`, when playback resumes at the selected rate.
+* `MediaPlayerEvent.RATE_PLAYING`, when playback resumes at the selected rate.
 
   TVSDK dispatches these events when the player returns from trick play mode to normal play mode.
