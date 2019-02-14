@@ -6,7 +6,7 @@ title: Custom tags
 uuid: 103f4fff-2218-4d44-90bc-b80da467f282
 ---
 
-# Custom tags overview {#custom-tags-overview}
+# Overview {#custom-tags-overview}
 
 Media streams can carry additional metadata in the form of tags in the playlist/manifest file, and this file indicates the placement of advertising. You can specify custom tag names and be notified when certain tags appear in the manifest file.
 

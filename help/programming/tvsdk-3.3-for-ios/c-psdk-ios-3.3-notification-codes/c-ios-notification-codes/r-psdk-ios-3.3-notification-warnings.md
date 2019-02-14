@@ -17,11 +17,11 @@ Most warnings contain relevant metadata, for example, the URL of the resource th
 <table frame="all" colsep="1" rowsep="1" id="table_C24772DF203B4DB2ACE6B475698C4C58"> 
  <thead> 
   <tr rowsep="1"> 
-   <th colname="1" class="entry"> Code </th> 
-   <th colname="2" class="entry"> Name </th> 
-   <th colname="3" class="entry"> InnerNotification </th> 
-   <th colname="4" class="entry"> Metadata Keys </th> 
-   <th colname="5" class="entry"> Comments </th> 
+   <th colname="1" class="entry"><b>Code</b></th> 
+   <th colname="2" class="entry"><b>Name</b></th> 
+   <th colname="3" class="entry"><b>InnerNotification>/b></th> 
+   <th colname="4" class="entry"><b>Metadata Keys</b></th> 
+   <th colname="5" class="entry"><b>Comments</b></th> 
   </tr> 
  </thead>
  <tbody> 

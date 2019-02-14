@@ -18,9 +18,9 @@ When TVSDK detects a subscribed tag in the playlist/manifest, the player automat
 <table id="table_FFC56AC5B1E04DA99C9309C0223ABA90"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Property </th> 
-   <th colname="col02" class="entry"> Type </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   <th colname="col1" class="entry"><b>Property</b></th> 
+   <th colname="col02" class="entry"><b>Type</b> </th> 
+   <th colname="col2" class="entry"><b>Description</b></th> 
   </tr>
  </thead>
  <tbody> 
@@ -69,7 +69,7 @@ Remember the following:
 
 * If the extraction fails because of a custom tag format, the content property always contains the tag's raw data, which is the string after the colon. No error is thrown in this case.
 
-|  Element  | Description  |
+|  **Element**  | **Description** |
 |---|---|
 |  TAG, ID3  | Possible types for the timed metadata.  |
 | `@property (nonatomic, assign) CMTime time`  | The time position, relative to the start of the main content, where this metadata was inserted in the stream.  |

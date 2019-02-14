@@ -28,7 +28,7 @@ For instance, by default `delayAdLoadingTolerance` is set to 5 seconds. If an Ad
 
 >[!IMPORTANT]
 >
->**Factors to consider with Lazy Ad Resolving:** >
+>**Factors to consider with Lazy Ad Resolving:** 
 >* Lazy Ad Resolving is only supported for VOD streams only with modes SERVER_MAP ad signaling mode. 
 >* Lazy Ad Resolving is not enabled by default. You must set `PTAdMetadata::delayAdLoading` = YES to enable it. 
 >* Lazy Ad Resolving is incompatible with the Instant On feature. For more information about Instant On, see [Instant On](../../tvsdk-3.3-for-ios/c-psdk-ios-3.3-instant-on-ios.md#instant_on-concept). 

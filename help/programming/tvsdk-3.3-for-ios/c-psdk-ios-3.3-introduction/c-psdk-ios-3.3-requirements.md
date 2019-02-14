@@ -14,7 +14,10 @@ TVSDK requires specific properties for media content, manifest content, and soft
 
 To use TVSDK, ensure that your hardware, operating system, and application versions all meet the minimum requirements listed below. 
 
-Operating system: iOS 6.0 or later 
+|  |  |
+|--|--|
+|  Operating System  | iOS 7.0 or later  |
+|  Xcode  | Xcode 10 for iOS 12 and Xcode 9 for iOS 11  |
 
 ## Content and manifest requirements {#section_05FA02E2189742008DA09D87E66DCAB7}
 

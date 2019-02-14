@@ -16,10 +16,10 @@ The normalize rule defines a URL transformation to apply to a source creative UR
 <table id="table_ljp_tgx_hz">  
  <thead> 
   <tr> 
-   <th class="entry"> Key</th> 
-   <th class="entry"> Type</th> 
-   <th class="entry"> Values</th> 
-   <th class="entry"> Description</th> 
+   <th class="entry"><b>Key</b></th> 
+   <th class="entry"><b>Type</b></th> 
+   <th class="entry"><b>Values</b></th> 
+   <th class="entry"><b>Description</b></th> 
   </tr> 
  </thead>
  <tbody> 
