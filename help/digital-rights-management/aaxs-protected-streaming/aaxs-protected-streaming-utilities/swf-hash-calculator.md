@@ -9,28 +9,19 @@ uuid: c1823208-92d9-47c5-b550-f9cc370b543d
 The SWF Hash Calculator utility calculated the digest of a SWF application located in a file. To run the hasher, run the command:
 
 ```
-Hasher.bat 
-<i class="+ topic ph hi-d="" i "="">
-  filename.swf
-</i class="+ topic>
+Hasher.bat filename.swf
 ```
 
 or the command:
 
 ```
-java -jar libs/flashaccess-hasher.jar 
-<i class="+ topic ph hi-d="" i "="">
-  filename.swf
-</i class="+ topic>
+java -jar libs/flashaccess-hasher.jar filename.swf
 ```
 
 The utility output the following message:
 
 ```
-SWF Hash: 
-<i class="+ topic ph hi-d="" i "="">
-  hash-of-swf
-</i class="+ topic>
+SWF Hash: hash-of-swf
 ```
 
 This value can be used to specify the SWF digest in [!DNL flashaccess-tenant.xml]. 

@@ -9,13 +9,7 @@ uuid: 5d1d4b9d-f241-4291-9577-e9de5a8b92be
 When packaging content, the license server URL must be specified. The Adobe Access Server URL has the format:
 
 ```
-http(s)://
-<i class="+ topic ph hi-d="" i "="">
- license-server-host:port/flashaccessserver/
- <i class="+ topic ph hi-d="" i "="">
-   tenant-name
- </i class="+ topic>
-</i class="+ topic>
+http(s):// license-server-host:port/flashaccessserver/tenant-name
 ```
 
 For example, for license server hostname "mylicenseserver.com" listening on port 8080 and a tenant named "tenant1", the license server URL to specify at packaging time is:

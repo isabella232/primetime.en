@@ -20,11 +20,11 @@ The tenant configuration file includes:
 * **Minimum supported client version** (See *Using the Adobe Access SDK for Protecting Content*). 
 * **Usage Rules**
 
-    * **License Caching **— Optional. Specifies how long the license can be stored on the client. By default license caching is disabled. To enable license caching for a limited time period, set the end date or the number of seconds for which the license should be stored (starting when the license is issued). Setting the number of seconds to 0 disables license caching.
+    * **License Caching** — Optional. Specifies how long the license can be stored on the client. By default license caching is disabled. To enable license caching for a limited time period, set the end date or the number of seconds for which the license should be stored (starting when the license is issued). Setting the number of seconds to 0 disables license caching.
 
       Note that all licenses issued by the Server for Protected Streaming have an expiration period of 24 hours (86400 seconds). This value therefore applies implicitly as an upper bound to whatever end date or duration is set for license caching as well, with a maximum value of 86400 seconds, even though the schema enforces higher bounds. 
     
-    * **Play Right **— At least one right must be specified. If multiple rights are specified, the client will use the first right for which it meets all the requirements.
+    * **Play Right** — At least one right must be specified. If multiple rights are specified, the client will use the first right for which it meets all the requirements.
 
         * **Output Protection** — Controls whether output to external rendering devices should be protected. 
         * **AIR and SWF Application Restrictions** — Optional whitelist of SWF and AIR applications that may play the content (i.e., only the applications specified are permitted). SWF applications are identified by a URL or by the digest of the SWF and the maximum time to allow for download and verification of the digest. For information on calculating the SWF digest, see the “SWF Hash Calculator” section. AIR and iOS applications are identified by a publisher ID and optional application ID, minimum version, and maximum version. If no application restrictions are specified, any SWF or AIR application may play the content. 
