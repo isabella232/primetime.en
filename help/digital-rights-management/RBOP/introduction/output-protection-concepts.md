@@ -19,7 +19,7 @@ At the highest level of the JSON specification, you can define maximum pixel res
 
 You associate output requirements with specific pixel constraints. The types of requirements that you can associate with a given pixel constraint include restrictions for digital, analog, and over-the-air (OTA) connections.
 
-**Digital Ouput **
+**Digital Ouput**
 
 The digital output requirement can specify restrictive options, such as "digital output protection is required," or "playback is not permitted". Output requirements can also specify less restrictive options such as, "no protection should be applied," or "digital protection should be used if it is available."
 

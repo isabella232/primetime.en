@@ -34,4 +34,4 @@ This section describes the features available with different versions of Flash P
 >
 >These platforms automatically down-scale video and display the content at a resolution that is lower than or equal to what is specified by the DRM policy. With this feature, content will always be played back to the client, as long as there is an available stream that meets the DRM policy restrictions.
 
-**Legacy Output Protection ** - Clients using Flash Players prior to Version 18 can only handle legacy OP restrictions. Clients with Flash Player Version 18 and later can handle either legacy or RBOP restrictions. If you are setting RBOP restrictions, you should also set legacy OP restrictions for older clients. For clients that support RBOP, RBOP restrictions trump legacy OP restrictions.
+**Legacy Output Protection** - Clients using Flash Players prior to Version 18 can only handle legacy OP restrictions. Clients with Flash Player Version 18 and later can handle either legacy or RBOP restrictions. If you are setting RBOP restrictions, you should also set legacy OP restrictions for older clients. For clients that support RBOP, RBOP restrictions trump legacy OP restrictions.
