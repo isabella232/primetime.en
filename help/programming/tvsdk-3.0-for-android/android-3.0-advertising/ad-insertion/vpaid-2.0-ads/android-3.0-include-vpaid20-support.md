@@ -10,8 +10,6 @@ uuid: d512fb5b-001c-4a7a-a553-d5962002bb30
 
 To add VPAID 2.0 support, add a custom ad view and appropriate listeners.
 
-To add VPAID 2.0 support: 
-
 1. Add the custom ad view to the player interface when the player is in the PREPARED state.
 
    ```java
@@ -29,7 +27,7 @@ To add VPAID 2.0 support:
        _playerFrame.addView(view);
    ```
 
-1. Create listeners and process the events described in [Events](../../../../tvsdk-3.0-for-android/android-3.0-events-notifications/events-summary/android-3.0-events.md).
+1. Create listeners and process the events described in [Events](../../../../tvsdk-3.0-for-android/android-3.0-events-notifications/events-summary/android-3.0-events-summary.md).
 
    >[!IMPORTANT]
    >
@@ -48,15 +46,11 @@ To add VPAID 2.0 support:
    >    ... 
    >} 
    >
-   >```   >
-   >
+   >```
 
+   Finally, before you dispose of your custom ad view, you must remove it from the `FrameLayout`. For example:
    >
-   >
-   >Finally, before you dispose of your custom ad view, you must remove it from the `FrameLayout`. For example:    >
-   >
-   >```   >
+   >```
    >if (_playerFrame != null) 
    >    _playerFrame.removeAllViews(); 
-   >
-   >``` 
+   >```

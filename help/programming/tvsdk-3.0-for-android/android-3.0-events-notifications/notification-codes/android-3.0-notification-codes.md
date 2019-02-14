@@ -15,8 +15,8 @@ The TVSDK notification system produces various error, warning, and informational
 <table frame="all" colsep="1" rowsep="1" id="table_1A32EFFE1834438D8261886EC9D7250D"> 
  <thead> 
   <tr rowsep="1"> 
-   <th colname="1" class="entry"> Element </th> 
-   <th colname="2" class="entry"> Description </th> 
+   <th colname="1" class="entry"><b> Element</b></th> 
+   <th colname="2" class="entry"><b> Description</b></th> 
   </tr> 
  </thead>
  <tbody> 

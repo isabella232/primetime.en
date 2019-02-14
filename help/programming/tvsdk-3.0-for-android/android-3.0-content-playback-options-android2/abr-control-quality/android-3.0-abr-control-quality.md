@@ -6,7 +6,7 @@ title: Adaptive bit rates (ABR) for video quality
 uuid: 87fd7d97-8d13-430d-a88e-bcbff8026679
 ---
 
-# Adaptive bit rates (ABR) for video quality overview  {#adaptive-bit-rates-abr-for-video-quality-overview}
+# Overview  {#adaptive-bit-rates-abr-for-video-quality-overview}
 
 HLS and DASH streams provide different bit rate encodings (profiles) for the same short burst of video. TVSDK can select the quality level for each burst based on the current buffering level and the available bandwidth.
 
@@ -33,7 +33,7 @@ HLS and DASH streams provide different bit rate encodings (profiles) for the sam
       <li id="li_B79C0AA2CBFB42FF98A257CEC9C400BA"><span class="codeph"> ABR_CONSERVATIVE</span>: Switches to the profile with the next higher bit rate when the bandwidth is 50% higher than the current bit rate. </li> 
       <li id="li_38CC3A95D8634F359D0F7C273D0108C0"><span class="codeph"> ABR_MODERATE</span>: Switches to the next higher bit rate profile when the bandwidth is 20% higher than the current bit rate. </li> 
       <li id="li_E845C035420D4B3FB2B179F448F8CA85"><span class="codeph"> ABR_AGGRESSIVE</span>: Switches immediately to the highest bit-rate profile when the bandwidth is higher than the current bit rate. </li> 
-     </ul> </p> <p>If the initial bit rate is zero, or is not specified but a policy is specified, playback starts with the lowest bit rate profile for a conservative policy, the profile closest to the median bit rate of available profiles for a moderate policy, and the highest bit rate profile for an aggressive policy. </p> <p>The policy works in the constraints of the minimum and maximum bit rates, if these rates are specified. </p> <p> <span class="codeph"> getABRPolicy</span> returns the current setting from the <span class="codeph"> ABRControlParameters</span> enum: <span class="codeph"> ABR_CONSERVATIVE</span>, <span class="codeph"> ABR_MODERATE</span>, or <span class="codeph"> ABR_AGGRESSIVE</span>. </p> <p>For more information, see ABR Control Parameteres API doc<a keyref="api-enum-control"></a>. </p> </td> 
+     </ul> </p> <p>If the initial bit rate is zero, or is not specified but a policy is specified, playback starts with the lowest bit rate profile for a conservative policy, the profile closest to the median bit rate of available profiles for a moderate policy, and the highest bit rate profile for an aggressive policy. </p> <p>The policy works in the constraints of the minimum and maximum bit rates, if these rates are specified. </p> <p> <span class="codeph"> getABRPolicy</span> returns the current setting from the <span class="codeph"> ABRControlParameters</span> enum: <span class="codeph"> ABR_CONSERVATIVE</span>, <span class="codeph"> ABR_MODERATE</span>, or <span class="codeph"> ABR_AGGRESSIVE</span>. </p> <p>For more information, see ABR Control Parameteres API doc. </p> </td> 
   </tr> 
  </tbody> 
 </table>

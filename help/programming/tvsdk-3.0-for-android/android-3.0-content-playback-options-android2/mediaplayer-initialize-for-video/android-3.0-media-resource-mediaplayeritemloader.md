@@ -76,8 +76,8 @@ The `MediaPlayerItemLoader` class helps you exchange a media resource for the cu
 
    In the `onLoadComplete()` callback, do one of the following:
 
-* Ensure that anything that might affect buffering, for example, selecting WebVTT or audio tracks, is complete and call `prepareBuffer()` to take advantage of instant on. 
-* Attach the item to the `MediaPlayer` instance by using `replaceCurrentItem()`.
+    * Ensure that anything that might affect buffering, for example, selecting WebVTT or audio tracks, is complete and call `prepareBuffer()` to take advantage of instant on. 
+    * Attach the item to the `MediaPlayer` instance by using `replaceCurrentItem()`.
 
    If you call `prepareBuffer()`, you receive the BUFFER_PREPARED event in your `onBufferPrepared` handler when the preparation is finished. 
 1. Call `load` on the `MediaPlayerItemLoader` instance and pass the resource to be loaded, and optionally the content ID, and a `MediaPlayerItemConfig` instance.

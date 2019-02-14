@@ -6,7 +6,7 @@ title: Customize playback with ads
 uuid: e0d3dfb2-b2d2-4590-aa19-26bea916a252
 ---
 
-# Customize playback with ads {#customize-playback-with-ads}
+# Overview {#customize-playback-with-ads}
 
 When playback reaches an ad break, passes an ad break, or ends in an ad break, TVSDK defines some default behavior for the positioning of the current playhead.
 

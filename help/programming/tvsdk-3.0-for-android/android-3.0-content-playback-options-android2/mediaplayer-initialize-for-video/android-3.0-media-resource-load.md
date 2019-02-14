@@ -28,8 +28,6 @@ Load a resource by directly instantiating a MediaResource and loading the video 
    This status indicates that the media has been successfully loaded. The new `MediaPlayerItem` is ready for playback. Calling `prepareToPlay()` starts the advertising resolution and placement process, if any.
 >If a failure occurs, the media player switches to the `ERROR` status. 
 
->
-
 >The following simplified sample code illustrates the process of loading a media resource: 
 >
 >```java>

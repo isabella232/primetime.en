@@ -12,7 +12,7 @@ To receive notifications about tags in the manifest, you need to implement the a
 
 You can monitor timed metadata by listening for `onTimedMetadata`, which notify your application of related activity. Each time a unique subscribed tag is identified during parsing of the content, TVSDK prepares a new `TimedMetadata` object and dispatches this event. The object contains the name of the tag to which you subscribed, the local time in the playback where this tag will appear, and other data. 
 
-1. Listen for events.
+   Listen for events.
 
    ```java
    private final TimedMetadataEventListener timedMetadataEventListener = new TimedMetadataEventListener() { 

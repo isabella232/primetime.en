@@ -32,9 +32,8 @@ You can select a track from a list of currently available closed-caption tracks.
    // Select the initial CC track. 
    for (int i = 0; i < ccTracks.size(); i++) { 
        ClosedCaptionsTrack track = ccTracks.get(i); 
-       if (track.getName().equals(INITIAL_CC_TRACK)) { 
-           
-<b>mediaPlayer.getCurrentItem().selectClosedCaptionsTrack(track);</b> 
+       if (track.getName().equals(INITIAL_CC_TRACK)) {
+        <b>mediaPlayer.getCurrentItem().selectClosedCaptionsTrack(track);</b> 
              selectedClosedCaptionsIndex = i; 
        } 
    }
@@ -42,4 +41,4 @@ You can select a track from a list of currently available closed-caption tracks.
 
 1. Implement a listener for the event that indicates that more tracks are available. When TVSDK dispatches the event, retrieve the current list of available tracks.
 
-Retrieve the list each time that the event occurs to ensure that you always have the most current list.
+    Retrieve the list each time that the event occurs to ensure that you always have the most current list.

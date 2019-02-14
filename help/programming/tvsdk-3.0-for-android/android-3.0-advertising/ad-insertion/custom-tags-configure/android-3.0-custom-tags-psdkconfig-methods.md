@@ -16,14 +16,14 @@ TVSDK automatically applies the global configuration to any media stream that do
 
 **Subscribe to specific custom tags**
 
-|Method|Description|
+|<b>Method</b>|<b>Description</b>|
 |--- |--- |
 |`public final String[] getSubscribedTags`|Retrieves the current list of subscribed tags.|
 |`public final void setSubscribedTags(String[] tags);`|Sets the list of subscribed tags that will be exposed to the application.  Your application is also automatically subscribed to all tags transmitted through `setAdTags`.|
 
 **Customize the ad tags used by the default opportunity detector**
 
-|Method|Description|
+|<b>Method</b>|<b>Description</b>|
 |--- |--- |
 |`public final String[] getAdTags;`|Retrieves the current list of ad tags.|
 |`public final void setAdTags(String[] tags);`|Sets the list of ad tags that will be used by default opportunity generator.|

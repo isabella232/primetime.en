@@ -18,9 +18,9 @@ The following table describes the effect of `AdSignalingMode` values for the var
  <thead> 
   <tr rowsep="1"> 
    <th colname="1" class="entry"> </th> 
-   <th colname="2" class="entry"> Default </th> 
-   <th colname="3" class="entry"> Manifest cues </th> 
-   <th colname="4" class="entry"> Ad server map </th> 
+   <th colname="2" class="entry"> <b>Default </b></th> 
+   <th colname="3" class="entry"><b> Manifest cues</b> </th> 
+   <th colname="4" class="entry"> <b>Ad server map </b></th> 
   </tr> 
  </thead>
  <tbody> 

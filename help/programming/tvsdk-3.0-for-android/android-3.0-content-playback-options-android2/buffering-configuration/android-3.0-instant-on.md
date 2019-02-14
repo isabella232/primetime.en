@@ -48,7 +48,7 @@ TVSDK provides methods and statuses to allow you use Instant On with a media res
 1. Confirm that the resource has loaded, and the player is prepared to play the resource. 
 1. Before calling `play`, call `prepareBuffer` for each `MediaPlayer` instance. 
 
-`prepareBuffer` enables Instant On, and TVSDK starts buffering immediately and dispatches the `BUFFERING_COMPLETED` event when the buffer is full.
+    `prepareBuffer` enables Instant On, and TVSDK starts buffering immediately and dispatches the `BUFFERING_COMPLETED` event when the buffer is full.
 
    >[!TIP]
    >
