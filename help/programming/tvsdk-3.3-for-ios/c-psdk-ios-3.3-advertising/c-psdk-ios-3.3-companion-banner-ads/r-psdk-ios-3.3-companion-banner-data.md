@@ -18,8 +18,8 @@ Each `PtAdAsset` provides information about displaying the asset.
 <table id="table_760C885E2DCA4BE983CC57FDA7BD5B14"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Available information </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   <th colname="col1" class="entry"><b>Available information</b></th> 
+   <th colname="col2" class="entry"><b>Description</b></th> 
   </tr> 
  </thead>
  <tbody> 

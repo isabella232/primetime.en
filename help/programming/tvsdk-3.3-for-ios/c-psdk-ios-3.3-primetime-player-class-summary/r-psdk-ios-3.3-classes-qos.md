@@ -13,8 +13,8 @@ These classes provide information that help you to determine how well the player
 <table frame="all" colsep="1" rowsep="1" id="table_2893EFF9755149159A4F94E781C76B6E"> 
  <thead> 
   <tr rowsep="1"> 
-   <th colname="1" class="entry"> Name </th> 
-   <th colname="2" class="entry"> Description </th> 
+   <th colname="1" class="entry"><b>Name</b></th> 
+   <th colname="2" class="entry"><b>Description</b></th> 
   </tr> 
  </thead>
  <tbody> 

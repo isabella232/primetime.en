@@ -6,7 +6,7 @@ title: Companion banner ads
 uuid: 522578ff-1f09-48f1-91f7-f074cfd34064
 ---
 
-# Companion banner ads overview {#companion-banner-ads-overview}
+# Overview {#companion-banner-ads-overview}
 
 TVSDK supports companion banner ads, which are ads that accompany a linear ad and often remain on the page after the linear ad ends. Your application is responsible for displaying the companion banners that are provided with a linear ad.
 

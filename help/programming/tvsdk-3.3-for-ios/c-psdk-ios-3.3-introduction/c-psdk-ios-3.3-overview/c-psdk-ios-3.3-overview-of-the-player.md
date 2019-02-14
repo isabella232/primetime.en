@@ -8,9 +8,7 @@ uuid: c24a0dce-cab3-4c5b-8f06-ea06c40e62fa
 
 # Primetime TVSDK features {#primetime-tvsdk-features}
 
-TVSDK for iOS includes a variety of features.
-
-TVSDK provides the following main capabilities:
+TVSDK for iOS includes a variety of features and provides the following main capabilities:
 
 * VOD and live/linear playback
 

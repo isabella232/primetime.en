@@ -13,8 +13,8 @@ These classes provide information about ads that occur within a timeline.
 <table frame="all" colsep="1" rowsep="1" id="table_1A59E777BA99466793D586286F19E933"> 
  <thead> 
   <tr rowsep="1"> 
-   <th colname="1" class="entry"> Name </th> 
-   <th colname="2" class="entry"> Description </th> 
+   <th colname="1" class="entry"><b>Name</b></th> 
+   <th colname="2" class="entry"><b>Description</b></th> 
   </tr> 
  </thead>
  <tbody> 

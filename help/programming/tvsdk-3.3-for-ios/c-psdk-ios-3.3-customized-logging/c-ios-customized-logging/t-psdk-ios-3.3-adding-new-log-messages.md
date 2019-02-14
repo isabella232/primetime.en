@@ -7,7 +7,7 @@ uuid: 8a3115f9-88f2-4ac1-89e4-21e992665f7b
 # Add new log messages {#add-new-log-messages}
 
  To register to listen to logs: 
-1. Create a new `PTLogEntry` and add it to `thePTLogFactory`:
+   Create a new `PTLogEntry` and add it to `thePTLogFactory`:
 
    You can manually instantiate a `PTLogEntry` and add it to the `PTLogFactory` shared instance or use one of the macros to accomplish the same task.
 

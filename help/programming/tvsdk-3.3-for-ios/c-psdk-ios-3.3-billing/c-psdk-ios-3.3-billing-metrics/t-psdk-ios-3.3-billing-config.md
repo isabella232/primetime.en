@@ -18,7 +18,7 @@ Most customers should use the default configuration.
 
 To configure billing metrics: 
 
-1. Enter the following code sample.
+   Enter the following code sample.
 
    ```
    PTBillingMetricsConfiguration *billingConfig = [[[PTBillingMetricsConfiguration alloc] init] autorelease]; 

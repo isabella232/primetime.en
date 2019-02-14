@@ -20,7 +20,7 @@ When a user starts to view content at the beginning of a DVR stream, TVSDK resol
 
 To control ad loading for a DVR window:
 
-1. To load all ads for the entire stream, set the `PTAdMetadata.enableDVRAds` property to `YES`. 
+    To load all ads for the entire stream, set the `PTAdMetadata.enableDVRAds` property to `YES`. 
 
    >[!NOTE]
    >

@@ -10,7 +10,7 @@ uuid: 945f222d-80ba-4832-a06f-9bb8db6adbcb
 
 You can display the duration of the currently active content.
 
-1. Implement a video-duration display using the following sample code:
+  Implement a video-duration display using the following sample code:
 
        The `PTMediaPlayer` property, ` [seekableRange](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaPlayer.html#//api/name/seekableRange)`, contains the current seekable window range:
 

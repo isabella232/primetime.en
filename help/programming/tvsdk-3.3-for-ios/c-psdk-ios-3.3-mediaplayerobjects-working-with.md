@@ -41,8 +41,8 @@ The following table provides additional details:
 <table id="table_426F0093E4214EA88CD72A7796B58DFD"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> PTMediaPlayerStatus </th> 
-   <th colname="col2" class="entry"> Occurs when </th> 
+   <th colname="col1" class="entry"><b>PTMediaPlayerStatus</b></th> 
+   <th colname="col2" class="entry"><b>Occurs when</b> </th> 
   </tr> 
  </thead>
  <tbody> 
