@@ -13,8 +13,8 @@ These classes provide information about the timeline of the particular media, in
 <table frame="all" colsep="1" rowsep="1" id="table_6752E908BA6546549619994A3F7D5F87"> 
  <thead> 
   <tr rowsep="1"> 
-   <th colname="1" class="entry"> Name </th> 
-   <th colname="2" class="entry"> <p>Description </p> </th> 
+   <th colname="1" class="entry"><b>Name</b></th> 
+   <th colname="2" class="entry"> <p><b>Description</b></p> </th> 
   </tr> 
  </thead>
  <tbody> 

@@ -10,7 +10,7 @@ uuid: 6c7d1fd3-bc4f-40da-a824-7a8eadc8bdda
 
 You can implement notification callbacks.
 
-1. Implement the notification callback by getting the `PTNotification` from the `NSNotification` user information and reading its values by using `PTMediaPlayerNotificationKey`:
+   Implement the notification callback by getting the `PTNotification` from the `NSNotification` user information and reading its values by using `PTMediaPlayerNotificationKey`:
 
    ```
    - (void) onMediaPlayerNotification:(NSNotification *) nsnotification { 

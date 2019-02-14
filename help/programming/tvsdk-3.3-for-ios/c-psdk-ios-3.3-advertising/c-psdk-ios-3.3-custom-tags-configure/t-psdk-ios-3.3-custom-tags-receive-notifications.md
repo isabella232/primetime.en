@@ -20,7 +20,7 @@ You can monitor timed metadata by listening for the following events, which noti
 
   This event notifies your application when this happens.
 
-1. Retrieve the timed metadata in one of the following ways.
+   Retrieve the timed metadata in one of the following ways.
 
     * Set your application to add itself as a listener to the `PTTimedMetadataChangedNotification` notification and fetch the object using `PTTimedMetadataKey`.     
     

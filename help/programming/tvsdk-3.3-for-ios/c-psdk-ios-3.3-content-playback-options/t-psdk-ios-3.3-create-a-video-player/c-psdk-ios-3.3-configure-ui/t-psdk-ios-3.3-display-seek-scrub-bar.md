@@ -10,7 +10,7 @@ uuid: 3a13f4a5-538d-4e7e-ac24-043927f3f2ee
 
 You can display the current and remaining time of the content that is being played.
 
-1. To implement a scrub bar, use the following sample code:
+   To implement a scrub bar, use the following sample code:
 
    ```
    // 1. Register for the PTMediaPlayerTimeChangeNotification 

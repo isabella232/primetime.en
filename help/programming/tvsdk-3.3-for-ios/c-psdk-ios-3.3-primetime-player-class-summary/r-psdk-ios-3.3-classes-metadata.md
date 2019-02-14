@@ -10,7 +10,7 @@ uuid: 9cabd1b7-4343-41a1-a3e7-1b61235992db
 
 These classes provide metadata for advertising, namespaces, and tracking.
 
-|  Name  | Description  |
+|  **Name**  | **Description**  |
 |---|---|
 | [PTAdMetadata](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAdMetadata.html)  | Class that provides properties that should be configured for resolving ads for a given media item. All the required properties must be set to configure the player for successfully resolving ads.  |
 | [PTAuditudeMetadata](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html)  |Class that extends `PTAdMetadata` specifically for Adobe Primetime ad decisioning. Provides properties to be configured for resolving Adobe Primetime ad decisioning ads for a given media item. You must set all the required properties, including zone ID, media ID, and ad server URL, to configure the player for successfully resolving ads.  |

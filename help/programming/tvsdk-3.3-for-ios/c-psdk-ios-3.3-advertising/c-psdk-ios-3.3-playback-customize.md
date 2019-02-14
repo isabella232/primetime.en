@@ -32,8 +32,8 @@ The following API elements are useful for customizing playback:
 <table id="table_B07E373B9D2B425AB36466B1D42411AD"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> API element </th> 
-   <th colname="col2" class="entry"> Content that supports advertising </th> 
+   <th colname="col1" class="entry"><b>API element</b></th> 
+   <th colname="col2" class="entry"><b>Content that supports advertising</b></th> 
   </tr> 
  </thead>
  <tbody> 
