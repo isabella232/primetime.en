@@ -6,7 +6,7 @@ title: Customize opportunity generators and content resolvers
 uuid: 0d4fb0b2-98f3-4245-9bf1-4e968c5d0f36
 ---
 
-# Customize opportunity generators and content resolvers {#customize-opportunity-generators-and-content-resolvers}
+# Overview {#customize-opportunity-generators-and-content-resolvers-overview}
 
 An opportunity generator identifies placement opportunities by custom tags in a stream, ad signaling mode custom markers, and so on. The opportunity generator sends these placement opportunities to the content resolver, which customizes the content/ad insertion workflow based on the placement opportunity's properties and metadata.
 

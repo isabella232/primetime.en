@@ -16,4 +16,4 @@ Before you can use most of the TVSDK player methods, the player must be in a val
 
 The required status is usually PREPARED. When this occurs, the callback routine for `StatusChangeEventListener.onStatusChanged()` executes. 
 
-1. To confirm that the status is `PREPARED`, check `MediaPlayer.MediaPlayerStatus`.
+To confirm that the status is `PREPARED`, check `MediaPlayer.MediaPlayerStatus`.

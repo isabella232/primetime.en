@@ -20,7 +20,7 @@ If you use the default configuration, there is nothing else you need to do to en
 
 To configure billing metrics: 
 
-1. Enter the following code sample.
+Enter the following code sample.
 
    ```java
    MediaPlayerItemConfig config = new MediaPlayerItemConfig(); 

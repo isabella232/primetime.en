@@ -15,9 +15,9 @@ When TVSDK detects a subscribed tag in the playlist/manifest, the player automat
 <table id="table_FFC56AC5B1E04DA99C9309C0223ABA90"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Property </th> 
-   <th colname="col02" class="entry"> Type </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   <th colname="col1" class="entry"><b> Property </b></th> 
+   <th colname="col02" class="entry"> <b> Type </b></th> 
+   <th colname="col2" class="entry"> <b> Description </b> </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -74,8 +74,8 @@ Remember the following:
 <table id="table_1BAE98BF23F641A3A5709EBE37B327F6"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Element </th> 
-   <th colname="col2" class="entry"> Description </th> 
+   <th colname="col1" class="entry"> <b>Element </b></th> 
+   <th colname="col2" class="entry"> <b>Description</b></th> 
   </tr> 
  </thead>
  <tbody> 

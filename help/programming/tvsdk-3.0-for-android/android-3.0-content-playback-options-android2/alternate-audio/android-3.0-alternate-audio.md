@@ -6,7 +6,7 @@ title: Alternate audio
 uuid: d1af1ea9-2516-4835-baff-3577ad5b705e
 ---
 
-# Alternate audio {#alternate-audio}
+# Overview {#alternate-audio}
 
 Alternate audio allows you to switch among available audio tracks for a video track. Users can select their preferred language track when the video is played.
 
@@ -22,7 +22,7 @@ When TVSDK creates the `MediaPlayerItem` instance for the current video, it crea
 
 The following APIs have been added to support alternate audio:
 
-`hasAlternateAudio`
+**`hasAlternateAudio`**
 
 If the specified media has an alternate audio track, other than default track, this boolean function returns `true`. If there is no alternate audio track, the function returns `false`. 
 
@@ -30,7 +30,7 @@ If the specified media has an alternate audio track, other than default track, t
 boolean hasAlternateAudio();
 ```
 
-** `getAudioTracks`**
+**`getAudioTracks`**
 
 This function returns list of all the current available audio tracks in a specified media. 
 
@@ -38,7 +38,7 @@ This function returns list of all the current available audio tracks in a specif
 List<AudioTrack> getAudioTracks();
 ```
 
-`getSelectedAudioTrack`
+**`getSelectedAudioTrack`**
 
 This function that returns the currently selected alternate audio track and properties such as language. The auto-selection of track can also be extracted. 
 
@@ -46,7 +46,7 @@ This function that returns the currently selected alternate audio track and prop
 AudioTrack getSelectedAudioTrack();
 ```
 
-`selectAudioTrack`
+**`selectAudioTrack`**
 
 This function selects an alternate audio track to play. 
 

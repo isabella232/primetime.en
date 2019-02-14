@@ -8,6 +8,9 @@ uuid: abc5de2f-3ab0-4e00-908c-ea8b31387d4f
 
 # Respond to clicks on ads {#respond-to-clicks-on-ads}
 
+TVSDK provides you with information so that you can act on click-through ads. As you create your player UI, you must decide how to respond when a user clicks on a clickable ad.
+
+For TVSDK for Android, only linear ads are clickable.
 When a user clicks on an ad or a related button, your application must respond. TVSDK provides you with information about the destination URL for the click.
 
 1. To set up an event listener for TVSDK, and provide the click-through information, register `AdClickedEventListener.onAdClicked`.

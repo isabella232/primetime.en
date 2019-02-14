@@ -6,7 +6,7 @@ title: Insert ads
 uuid: f6636bfa-c96d-4d9d-987a-60292397525a
 ---
 
-# Insert ads {#insert-ads}
+# Overview {#insert-ads}
 
 Ad insertion resolves ads for video-on-demand (VOD), for live streaming, and for linear streaming with ad tracking and ad playback. TVSDK makes the required requests to the ad server, receives information about ads for the specified content, and places the ads in the content in phases.
 

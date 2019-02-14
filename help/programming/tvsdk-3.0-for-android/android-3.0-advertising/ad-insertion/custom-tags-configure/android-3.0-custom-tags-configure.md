@@ -6,7 +6,7 @@ title: Custom tags
 uuid: 2892712f-bb01-4112-baee-6dcafd4fb923
 ---
 
-# Custom tags {#custom-tags}
+# Overview {#custom-tags-overview}
 
 Media streams can carry additional metadata in the form of tags in the playlist/manifest file, and this file indicates the placement of advertising. You can specify custom tag names and be notified when certain tags appear in the manifest file.
 
@@ -22,7 +22,7 @@ TVSDK provides out-of-the-box support for specific `#EXT` advertising tags. Your
 >
 >You can subscribe to custom tags both for VOD and live/linear streams.
 
->[!NOTE] {othertype="Limitation"}
+>[!LIMITATION] {othertype="Limitation"}
 >
 >When HLS is played by using the Video tag in Safari, and not by using Flash Fallback, this feature will not be available in Safari.
 

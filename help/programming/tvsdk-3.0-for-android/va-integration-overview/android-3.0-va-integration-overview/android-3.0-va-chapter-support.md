@@ -16,7 +16,7 @@ Custom chapters are managed by the application, and are based on CMS data or on 
 >
 >Default chapters are not supported in the 3.0 Android TVSDK.
 
-1. Define and track custom chapters.
+  Define and track custom chapters.
 
    ```java
    // First, enable chapter tracking by setting   

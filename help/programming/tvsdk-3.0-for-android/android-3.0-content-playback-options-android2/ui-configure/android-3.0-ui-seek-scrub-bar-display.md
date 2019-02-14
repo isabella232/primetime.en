@@ -16,7 +16,7 @@ TVSDK supports seeking to a specific position (time) where the stream is a slidi
 
 1. Set up callbacks for seeking.
 
-       Seeking is asynchronous, so TVSDK dispatches the following seek-related events:
+    Seeking is asynchronous, so TVSDK dispatches the following seek-related events:
 
     * `MediaPlayerEvent.SEEK_BEGIN`, where the seek starts. 
     * `MediaPlayerEvent.SEEK_END`, where the seek is successful. 

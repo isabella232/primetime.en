@@ -18,7 +18,7 @@ The following table provides the details about the signaling mode and metadata c
 
 **Server Map**
 
-| Ad Metadata | Resolvers Created |`PlacementInformations` created | Resulting behavior |
+| **Ad Metadata** | **Resolvers Created** |**`PlacementInformations` created** | **Resulting behavior** |
 |--- |--- |--- |--- |
 ||Delete|Delete|`PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.DELETE)`|Ranges deleted|
 |Delete, Auditude|Delete, Auditude|`PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.DELETE),` <br>`PlacementInfo (Type.SERVER_MAP, Mode.INSERT)`|Ranges deleted, Ads inserted|

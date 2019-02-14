@@ -6,7 +6,7 @@ title: Ad insertion metadata
 uuid: 676e81b9-4c2b-487e-bc68-74879ca2966b
 ---
 
-# Overview {#overview}
+# Overview {#ad-nsertion-metadata-overview}
 
 To allow the ad resolver to work, ad providers, such as Adobe Primetime ad decisioning, require configuration values to enable your connection to the provider.
 

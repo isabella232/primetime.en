@@ -24,4 +24,4 @@ Here are some reasons to release a MediaPlayer:
    void release() throws IllegalStateException;
    ```
 
->After the `MediaPlayer` instance is released, you can no longer use it. If any method of the `MediaPlayer` interface is called after it is released, an `IllegalStateException` is thrown. 
+After the `MediaPlayer` instance is released, you can no longer use it. If any method of the `MediaPlayer` interface is called after it is released, an `IllegalStateException` is thrown.

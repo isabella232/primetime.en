@@ -41,13 +41,10 @@ You can style the closed-caption text with TVSDK methods.
 
 1. To obtain a reference to an object that implements the `TextFormat` interface, call the `TextFormatBuilder.toTextFormat` public method. 
 
-   >[!NOTE]
-   >
-   >This returns a `TextFormat` object that can be applied to the media player.
+    This returns a `TextFormat` object that can be applied to the media player.
 
-   ```java
-   public TextFormat toTextFormat()
-   ```
+    `public TextFormat toTextFormat()`
+   
 
 1. Optionally get the current closed-caption style settings by doing one of the following:
 
@@ -124,18 +121,19 @@ You can style the closed-caption text with TVSDK methods.
 
       [!IMPORTANT]
       
-      **Color Settings:** In Android TVSDK 2.X, an enhancement was made to color styling of closed captions. The enhancement allows for setting closed caption colors using a hex string representing RGB color values. The RGB hex color representation is the familiar 6 byte string you use in applications such as Photoshop:       
+      **Color Settings:** In Android TVSDK 2.X, an enhancement was made to color styling of closed captions. The enhancement allows for setting closed caption colors using a hex string representing RGB color values. The RGB hex color representation is the familiar 6 byte string you use in applications such as Photoshop:
+
           * FFFFFF = Black 
           * 000000 = White 
           * FF0000 = Red 
           * 00FF00 = Green 
           * 0000FF = Blue 
-      and so on. 
+      and so on.
       
       In your application, whenever you pass color styling information to `TextFormatBuilder`, you still use the `Color` enumeration as before, but now you must add `getValue()` to the color to get the value as a string. For example:
-      ```
-      tfb = tfb.setBackgroundColor(TextFormat.Color.RED      <b>.getValue()</b>);
-     ```
+
+      `tfb = tfb.setBackgroundColor(TextFormat.Color.RED      <b>.getValue()</b>);`
+
 
 Setting the closed-caption style is an asynchronous operation, so it might take up to a few seconds for the changes to appear on the screen.
 
@@ -166,8 +164,8 @@ public TextFormatBuilder(
 <table frame="all" colsep="1" rowsep="1" id="table_87205DEFEE384AF4AF83952B15E18A42"> 
  <thead> 
   <tr rowsep="1"> 
-   <th colname="1" class="entry"> Format </th> 
-   <th colname="2" class="entry"> Description </th> 
+   <th colname="1" class="entry"><b> Format </b></th> 
+   <th colname="2" class="entry"> <b>Description</b> </th> 
   </tr> 
  </thead>
  <tbody> 

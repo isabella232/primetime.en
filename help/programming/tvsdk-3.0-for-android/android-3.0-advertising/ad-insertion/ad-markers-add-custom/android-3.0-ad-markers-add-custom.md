@@ -6,7 +6,7 @@ title: Add custom ad markers
 uuid: 47b08d5e-8d99-4048-a579-77804a5edcdd
 ---
 
-# Add custom ad markers overview {#add-custom-ad-markers-overview}
+# Overview {#add-custom-ad-markers-overview}
 
 By using custom ad markers, you can mark specific sections of the main content as ad-related content periods.
 

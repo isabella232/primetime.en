@@ -22,7 +22,7 @@ Here is the result of completing the tasks in this example:
 
 * If a `ReplaceTimeRange` overlaps another on the playback timeline, for example, the start position of a `ReplaceTimeRange` is earlier than an already placed end position, TVSDK silently adjusts the start of the offending `ReplaceTimeRange` to avoid the conflict. 
 
-This makes the adjusted `ReplaceTimeRange` shorter than originally specified. If the adjustment leads to a duration of zero, TVSDK silently drops the offending `ReplaceTimeRange`.
+    This makes the adjusted `ReplaceTimeRange` shorter than originally specified. If the adjustment leads to a duration of zero, TVSDK silently drops the offending `ReplaceTimeRange`.
 
 * TVSDK looks for adjacent time ranges for custom ad breaks and clusters them into separate ad breaks. 
 
@@ -32,12 +32,9 @@ Time ranges not adjacent to any other time range are translated into ad breaks t
 
 * When dealing with custom ad markers, TVSDK deactivates other ad-resolving mechanisms (for example, Adobe Primetime ad decisioning). 
 
-You can use any TVSDK ad-resolver module or the custom ad markers mechanism. When you use custom ad markers, the ad content is considered resolved and is placed on the timeline. 
->
+    You can use any TVSDK ad-resolver module or the custom ad markers mechanism. When you use custom ad markers, the ad content is considered resolved and is placed on the timeline. 
 
-><!--<a id="example_B80623FC452E416AA9BB808CBE672551"></a>-->
-
->The following code snippet places three time ranges on the timeline as custom ad-markers. 
+The following code snippet places three time ranges on the timeline as custom ad-markers. 
 >
 >```java>
 >// Assume that the 3 time ranges are obtained through external means 

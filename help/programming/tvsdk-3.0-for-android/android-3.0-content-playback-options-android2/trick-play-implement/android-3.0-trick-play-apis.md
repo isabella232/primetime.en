@@ -20,7 +20,7 @@ Use the following API elements to change play rates:
 * `MediaPlayerItem.isTrickPlaySupported` 
 * `MediaPlayerItem.getAvailablePlaybackRates`, which specifies valid rates.
 
-|  Rate value  | Effect on playback  |
+|  **Rate value**  | **Effect on playback**  |
 |---|---|
 |  2.0, 4.0, 8.0, 16.0, 32.0, 64.0, 128.0  | Switches to fast-forward mode with the specified multiplier faster than normal (for example, 4 is 4 times faster than normal)  |
 |  -2.0, -4.0, -8.0, -16.0, -32.0, -64.0 , -128.0  | Switches to fast-rewind mode  |

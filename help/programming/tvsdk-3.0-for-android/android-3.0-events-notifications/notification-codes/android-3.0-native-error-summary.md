@@ -11,8 +11,8 @@ When TVSDK handles a native error, it returns some or all of the following metad
 <table id="table_7F713B7A56024D8DA3C84E449D09CC91"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Metadata key name </th> 
-   <th colname="col2" class="entry"> Metadata value </th> 
+   <th colname="col1" class="entry"><b>Metadata key name</b></th> 
+   <th colname="col2" class="entry"><b>Metadata value</b></th> 
   </tr> 
  </thead>
  <tbody> 
@@ -153,9 +153,9 @@ When reporting DRM errors to Adobe, ensure that you include the `NATIVE_SUBERROR
 <table id="table_CD59A859865F4FFDBAA249C89C74770A"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Value for NATIVE_- ERROR_CODE metadata key </th> 
-   <th colname="col2" class="entry"> Value for NATIVE_ERROR_NAME metadata key </th> 
-   <th colname="col3" class="entry"> Meaning </th> 
+   <th colname="col1" class="entry"><b>Value for NATIVE_- ERROR_CODE metadata key</b></th> 
+   <th colname="col2" class="entry"><b>Value for NATIVE_ERROR_NAME metadata key</b></th> 
+   <th colname="col3" class="entry"><b>Meaning</b></th> 
   </tr>
  </thead>
  <tbody> 
@@ -718,9 +718,9 @@ The Video Encoder interface of the AVE returns these video playback notification
 <table id="table_5EEB1F60E5854452A8B0BABBE9B32651"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Value for NATIVE_ERROR_CODE metadata key </th> 
-   <th colname="col2" class="entry"> Value for NATIVE_ERROR_NAME metadata key </th> 
-   <th colname="col3" class="entry"> Description </th> 
+   <th colname="col1" class="entry"><b>Value for NATIVE_ERROR_CODE metadata key</b></th> 
+   <th colname="col2" class="entry"><b>Value for NATIVE_ERROR_NAME metadata key</b></th> 
+   <th colname="col3" class="entry"><b>Description</b></th> 
   </tr>
  </thead>
  <tbody> 
@@ -1211,7 +1211,7 @@ The Video Encoder interface of the AVE returns these video playback notification
 
 The crypto module of the Adobe video engine returns these notifications in the `NATIVE_ERROR` metadata object. 
 
-|  Value for NATIVE_ERROR_CODE metadata key  | Value for NATIVE_ERROR_NAME metadata key  | Meaning  |
+|  **Value for NATIVE_ERROR_CODE metadata key**  | **Value for NATIVE_ERROR_NAME metadata key**  |**Meaning**  |
 |---|---|---|
 |  300  | `CRYPTO_ALGORITHM_NOT_SUPPORTED`  | Algorithm being used is not supported.  |
 |  301  | `CRYPTO_ERROR_CORRUPTED_DATA`  | Data is corrupted.  |

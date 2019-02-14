@@ -54,7 +54,7 @@ Here is the typical workflow that occurs when TVSDK finds a manifest with AC-3 a
 
 While processing AC-3 media, if an Android device is connected to the speaker system, the decision to play content in surround mode or stereo mode depends on how the device is configured.  
 
-|   | Surround sound  | Stereo speaker  |
+|   | **Surround sound**  | **Stereo speaker** |
 |---|---|---|
 |  Device configuration Dolby on (or auto)  | Device configuration Dolby on (or auto)  | Stereo mode  |
 |  Device configuration Dolby off  | Stereo mode  | Stereo mode  |
