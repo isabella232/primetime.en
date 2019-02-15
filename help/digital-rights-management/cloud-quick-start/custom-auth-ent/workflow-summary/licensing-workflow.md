@@ -8,5 +8,5 @@ uuid: 2b2e4584-e8d7-4da4-a7ee-c0aeb4bca51d
 
 # License workflow details{#license-workflow-details}
 
-Request a license from Primetime Cloud DRM by calling mgr.loadVoucher()
+Request a license from Primetime Cloud DRM by calling `mgr.loadVoucher()`.
 

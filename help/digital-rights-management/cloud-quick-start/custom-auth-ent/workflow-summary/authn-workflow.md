@@ -10,9 +10,9 @@ In order for your BEES endpoint to make entitlement decisions, the client device
 
 Primetime Cloud DRM  does not have to understand this token - it simply passes this token through to your BEES endpoint. The client device is responsible for creating or acquiring this token and setting it using the `DRMManager.setAuthenticationToken()` API.
 
-To associate this token with  Primetime Cloud DRM , so that it is sent with the license request: 
+Do the following to associate this token with  Primetime Cloud DRM , so that it is sent with the license request:
 
-1. Instantiate the `DRMManager` object with the DRM metadata of the content that was packaged for  Primetime Cloud DRM .
+Instantiate the `DRMManager` object with the DRM metadata of the content that was packaged for  Primetime Cloud DRM.
 
    The `setAuthenticationToken()` method works by associating the given byte array with the License Server URL provided in the DRM metadata that was used to instantiate `DRMManager`.
 

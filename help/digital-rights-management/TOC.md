@@ -236,7 +236,6 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Set the XSTS token in your player](cloud-quick-start/streaming-to-xbox360/set-xsts-token.md)
       + [Xbox Live XSTS token validation](cloud-quick-start/streaming-to-xbox360/xsts-token-validation.md)
       + [Create JKS for an XSTS validator](cloud-quick-start/streaming-to-xbox360/jks-for-xsts-token-validator.md)
-   + [References](cloud-quick-start/references.md)
 + Using the Adobe Primetime DRM SDK for Protecting Content - 5.3.1 {#using-drm-sdk}
    + Introduction {#introduction}
       + [What is new in Adobe Primetime DRM](protecting-content/introduction/whats-new.md)

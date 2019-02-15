@@ -154,7 +154,7 @@ java -jar AdobePolicyManager.jar
  </tbody> 
 </table>
 
-**Examples **
+**Examples**
 
 To create a policy that allows anonymous access to your content, using your own configuration properties file: 
 

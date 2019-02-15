@@ -10,7 +10,7 @@ uuid: 8995e029-deee-4e23-9cda-a50de8c4f2c0
 
 In Xbox360, you set the token asynchronously in response to the `MediaPlayer.RequestKeyAttribute` event. 
 
-1. Set the XSTS token.
+Set the XSTS token.
 
    The sample app bundled with your software shows how to set the XSTS token in your player. Here is the relevant code snippet from the sample player: 
 

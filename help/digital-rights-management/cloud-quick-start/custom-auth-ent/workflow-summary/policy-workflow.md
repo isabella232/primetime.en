@@ -4,6 +4,14 @@ title: Policy workflow details
 uuid: b355fcf6-3416-440f-9b30-a155e20f9f74
 ---
 
+# Workflow summary{#workflow-summary}
+
+* **Policy** - Create a DRM BEES-aware policy that indicates BEES is required for all content packaged using thispolicy.
+* **Packaging** - Package content using the BEES-aware DRM policy.
+* **Authentication** - Authenticate your client device and use the Primetime DRM API, or the Primetime API, toassociate this token with Primetime Cloud DRM. Doing this will cause the client device to send this authenticationtoken up to Primetime Cloud DRM along with all license requests. Primetime Cloud DRM will not process thistoken, but instead will pass it along (as an opaque blob) to your BEES endpoint for processing.
+* **Licensing** - Request a license for your protected content. The client device will automatically append yourpreviously-set authentication token to the call.
+* **Entitlement** - Primetime Cloud DRM will determine that the content was packaged with a policy that requiresBEES. Primetime Cloud DRM will construct a JSON request to send to the BEES endpoint. The BEES responsewill instruct Primetime Cloud DRM on whether or not to issue a license, and optionally, which DRM policy to use.
+
 # Policy workflow details{#policy-workflow-details}
 
 When Primetime Cloud DRM processes a license request, it parses the DRM policy in the request to determine if a call to a backend-entitlement service is required before the content can be shown. If a BEES call *is* required,  Primetime Cloud DRM will create the BEES request, then parse the DRM policy to obtain a specified BEES URL endpoint for the BEES request. 

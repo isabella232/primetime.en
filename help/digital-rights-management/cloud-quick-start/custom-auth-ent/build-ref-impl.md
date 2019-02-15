@@ -17,4 +17,4 @@ uuid: c9358188-e626-4f99-a02c-4928b06d6ae2
    ant -f build-bees.xml
    ```
 
->The [!DNL bees.war] will be created in the [!DNL bees-build/wars] folder. 
+The [!DNL bees.war] will be created in the [!DNL bees-build/wars] folder. 
