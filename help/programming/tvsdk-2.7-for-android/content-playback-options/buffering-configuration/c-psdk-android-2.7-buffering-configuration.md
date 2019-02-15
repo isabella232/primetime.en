@@ -79,4 +79,3 @@ For example, to set the initial buffer to 5 seconds and the playback buffer time
 ```java
 mediaPlayer.setBufferControlParameters(BufferControlParameters.createDual(5000, 30000));
 ```
-

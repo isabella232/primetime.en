@@ -29,7 +29,7 @@ TVSDK handles signaling-mode conflicts with ad metadata in the following ways:
   For example, if the ad signaling mode is set as server map or manifest cues, and there are also MARK time rangesin the ad metadata, the resulting behavior is that the ranges are marked, and no ads are inserted. 
 * For REPLACE ranges, if the signaling mode is set as the server map or manifest cues, the ranges are replaced as specified in the REPLACE ranges, and there is no ad insertion through server map or manifest cues.
 
-  For more information, see the *Signaling Mode / Metadata Combination Behaviors* table in [Effect on ad insertion and deletion from ad signaling mode...](../../../../tvsdk-2.5-for-android/ad-insertion/delete-replace-content-vod/c-psdk-android-2.5-signaling-mode-metadata-combos-android.md#c_psdk_signaling-mode-metadata-combos-android).
+  For more information, see the *Signaling Mode / Metadata Combination Behaviors* table in [Effect on ad insertion and deletion from ad signaling mode...](../../../../tvsdk-2.7-for-android/ad-insertion/delete-replace-content-vod/c-psdk-android-2.7-signaling-mode-metadata-combos-android.md#c_psdk_signaling-mode-metadata-combos-android).
 
 Remember the following:
 
