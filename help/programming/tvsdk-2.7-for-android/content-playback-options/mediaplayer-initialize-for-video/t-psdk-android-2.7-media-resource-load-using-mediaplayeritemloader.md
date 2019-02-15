@@ -6,7 +6,7 @@ title: Load a media resource using MediaPlayerItemLoader
 uuid: 43ca2470-1fd2-4f66-94fe-a12ed17b52d7
 ---
 
-# Load a media resource using MediaPlayerItemLoader{#load-a-media-resource-using-mediaplayeritemloader}
+# Load a media resource using MediaPlayerItemLoader {#load-a-media-resource-using-mediaplayeritemloader}
 
 Using MediaPlayerItemLoader helps you obtain information about a media stream without instantiating a MediaPlayer instance. This is especially useful in pre-buffering streams so that playback can begin without delay.
 
@@ -76,12 +76,12 @@ The `MediaPlayerItemLoader` class helps you exchange a media resource for the cu
 
    In the `onLoadComplete()` callback, do one of the following:
 
-* Ensure that anything that might affect buffering, for example, selecting WebVTT or audio tracks, is complete and call `prepareBuffer()` to take advantage of instant on. 
-* Attach the item to the `MediaPlayer` instance by using `replaceCurrentItem()`.
+    * Ensure that anything that might affect buffering, for example, selecting WebVTT or audio tracks, is complete and call `prepareBuffer()` to take advantage of instant on. 
+    * Attach the item to the `MediaPlayer` instance by using `replaceCurrentItem()`.
 
-   If you call `prepareBuffer()`, you receive the BUFFER_PREPARED event in your `onBufferPrepared` handler when the preparation is finished. 
+    If you call `prepareBuffer()`, you receive the BUFFER_PREPARED event in your `onBufferPrepared` handler when the preparation is finished. 
 
-3. Call `load` on the `MediaPlayerItemLoader` instance and pass the resource to be loaded, and optionally the content ID, and a `MediaPlayerItemConfig` instance.
+1. Call `load` on the `MediaPlayerItemLoader` instance and pass the resource to be loaded, and optionally the content ID, and a `MediaPlayerItemConfig` instance.
 
    ```java
    loader = createLoader(); 
