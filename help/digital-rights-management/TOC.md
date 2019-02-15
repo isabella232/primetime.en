@@ -204,7 +204,6 @@ user-guide-title: Primetime DRM Help
       + [Store keys](certificate-enrollment-guide/title-page/storing-keys.md)
       + [Renew certificates](certificate-enrollment-guide/title-page/renewing-certs.md)
 + Adobe Primetime Cloud DRM Quick-Start Guide
-   + [Background](cloud-quick-start/background.md)
    + [What is included with Primetime Cloud DRM](cloud-quick-start/whats-included.md)
    + [What is NOT supported by Primetime Cloud DRM](cloud-quick-start/not-supported.md)
    + [Prerequisites](cloud-quick-start/prerequisites.md)
