@@ -27,7 +27,7 @@ The following table describes how TVSDK handles ads and ad breaks during playbac
   <tr> 
    <th colname="col1" class="entry"><b>Video activity</b></th> 
    <th colname="col2" class="entry"<b>Default TVSDK behavior policy</b></th> 
-   <th colname="col3" class="entry"><b>Customization available through <span class="codeph"> PTAdPolicySelector</b></span> </th> 
+   <th colname="col3" class="entry"><b>Customization available through PTAdPolicySelector</b></th>
   </tr>
  </thead>
  <tbody> 
