@@ -9,9 +9,9 @@ topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 ---
 
-# TVSDK 3.2 for Android Release Notes {#tvsdk-for-android-release-notes}
+# TVSDK 3.3 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.2 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.0
+TVSDK 3.3 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.0
 
 ## TVSDK Android 3.2 {#tvsdk-android}
 
@@ -32,6 +32,16 @@ TVSDK for Android provides many performance improvements over earlier versions. 
 The comprehensive set of features supported and not supported are presented in the [Features Matrix](#feature-matrix) section of these release notes.
 
 ### What's New in TVSDK 3.2 {#what-s-new-in-tvsdk}
+
+* **API changes**
+
+  * A new API is added to `NetworkConfiguration::setNumOfTimesManifestRetryBeforeError(n)*` to handle network errors and timeouts.
+    * where (n) is the number of retries.
+
+
+#### New features in the previous releases
+
+**Version 3.2**
 
 * **Parallel Ad Resolution and Manifest download support**
 
@@ -56,8 +66,6 @@ The comprehensive set of features supported and not supported are presented in t
 * **TVSDK supports CMAF and plain streams playback for encrypted Widevine CTR.**
 * **Playback of 4K HEVC streams is now supported.**
 * **Parallel ad call requests** - TVSDK now prefetches 20 ad call requests in parallel.
-
-#### New features in the previous releases
 
 **Version 3.0**
 
@@ -314,13 +322,28 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 ## Resolved issues {#resolved-issues}
 
-### Android TVSDK 3.2 {#android-tvsdk}
+### Android TVSDK 3.3 {#android-tvsdk}
+
+* ZD#37394 - CMAF asset fast forward causes artifacts after the speed changes.
+  * Fixed an issue which occurs with a profile change during trick play.
+* ZD#37396 - Ad tracking events are missing for some mid-rolls and post-rolls.
+  * Fixed a specific case around ad tracking events.
+* ZD#37491 - HTTP status code with error meta is not present.
+  * Worked on propagating network errors higher in the stack.
+* ZD#37808 - Whitelist New Custom Header.
+  * SSAI_TAG support added as part of this fix.
+* ZD#37622 - URISyntax Errors from Specific Ad Pods.
+  * Fixed an issue about stream playback crash when customer Android app is served ads that contain an un-encoded %
+* ZD#37631 - Master manifest retry mechanism for Android TVSDK.
+  * Added new API in the network configuration for handling this enhancement. If this API is not used, then manifest is not retried. If it is used then manifest will be retried for handling network errors and timeouts.
+
+#### Resolved issues in the previous releases
+
+**Version 3.2**
 
 * ZD#37493- Tracking beacons for live playback do not get fired intermittently for the first ad in sequence.
 * ZD#36985- Tracking beacons are not sent for empty ad breaks in VMAP response. 
 * ZD#37134 - TVSDK throws the wrong ID for VMAP response intermittently.
-
-#### Resolved issues in the previous releases
 
 **Version 3.0**
 
@@ -505,6 +528,12 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
+**Android TVSDK 3.3**
+
+* clcp:c608 captions are not supported for CMAF stream playback.
+
+### Known issues and limitations in the previous releases
+
 **Android TVSDK 3.2**
 
 * TVSDK 3.2 does not support CMAF Sample AES and AES128 streams playback.
@@ -512,8 +541,6 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 * Green coloration appears for WV Encrypted streams when seeking is performed around the non-encrypted segment. 
 * CMAF streams do not support ID3 events.
 * HLS streams do not support TTML captions format.
-
-### Known issues and limitations in the previous releases
 
 **Android TVSDK 3.0**
 

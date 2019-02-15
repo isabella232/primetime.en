@@ -9,7 +9,7 @@ user-guide-title: Primetime Release Notes
 
 + [Release Notes Overview](home.md)
 + [TVSDK 3.3 for iOS Release Notes](tvsdk-33-ios.md)
-+ [TVSDK 3.2 for Android Release Notes](tvsdk-32-android.md)
++ [TVSDK 3.3 for Android Release Notes](tvsdk-33-android.md)
 + [TVSDK 2.4.1 for Android Release Notes](tvsdk-24-android.md)
 + [TVSDK 1.4 for Desktop HLS Release Notes](tvsdk-1-4-desktop-hls.md)
 + [Primetime Offline Packager 2.x releases](offline-packager-2x-release-note.md)
