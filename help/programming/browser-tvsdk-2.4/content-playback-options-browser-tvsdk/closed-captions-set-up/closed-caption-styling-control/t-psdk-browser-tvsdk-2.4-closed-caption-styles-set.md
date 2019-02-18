@@ -12,7 +12,7 @@ You can set the format, such as font, size, color, edge, and opacity for closed-
 
 1. Wait for the `MediaPlayer` to be at least in the PREPARED state.
 
-   For more information about the states, see  ui-state-prepared-wait-for .
+   For more information about the states, see [Wait for a valid state](../../../content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-state-prepared-wait-for.md).
 1. Create a `TextFormat` instance.
 
    You can provide all the closed-caption styling parameters now or set them later.

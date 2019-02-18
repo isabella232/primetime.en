@@ -30,4 +30,3 @@ The following procedure summarizes the steps to activate video tracking in your 
    >The Browser TVSDK built-in video tracking capability depends on a properly configured AppMeasurement instance. The tracking elements assume that the AppMeasurement library is already instantiated and configured before configuring and activating video tracking. Browser TVSDK video tracking capabilities depend on the existence of a fully functional and properly configured instance of the AppMeasurement library.
 
 1. Set up video analytics reporting on the server side by using Adobe Analytics Admin Tools.
-

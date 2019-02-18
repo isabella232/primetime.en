@@ -10,12 +10,12 @@ uuid: 299516a4-09ed-4b8a-b0bf-a04f204f385a
 
 Browser TVSDK supports a number of DASH features that you can implement to add functionality to your video applications.
 
-* [DASH Core playback features](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-c-dash.md#table_frb_p2g_xx) 
-* [DASH Advanced playback features](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-c-dash.md#table_grb_p2g_xx) 
-* [DASH Content protection features](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-c-dash.md#table_hrb_p2g_xx) 
-* [DASH Core ad insertion features](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-c-dash.md#table_jrb_p2g_xx) 
-* [DASH Advanced ad insertion features](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-c-dash.md#table_krb_p2g_xx) 
-* [DASH Integrations](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-c-dash.md#table_lrb_p2g_xx)
+* [DASH Core playback features](#dash-core-playback) 
+* [DASH Advanced playback features](#dash-advanced-playback) 
+* [DASH Content protection features](#dash-content-protection) 
+* [DASH Core ad insertion features](#dash-core-ad-insertion) 
+* [DASH Advanced ad insertion features](#dash-advanced-insertion-features) 
+* [DASH Integrations](#dash-integrations)
 
 >[!TIP]
 >
@@ -75,7 +75,7 @@ The following features are supported:
 
  -->
 
-## DASH integrations
+## DASH integrations {#dash-integrations}
 
 |  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|
@@ -83,7 +83,7 @@ The following features are supported:
 |  Integrations  | VOD + Live  | Billing  | ![](assets/supported15.png)|
 |  Integrations  | VOD + Live  | Browserify  | ![](assets/supported15.png)|
 
-## DASH advanced ad insertion features (CSAI)
+## DASH advanced ad insertion features (CSAI) {#dash-advanced-insertion-features}
 
 |  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome   |
 |---|---|---|---|
@@ -95,7 +95,7 @@ The following features are supported:
 |  Ad Insertion  | VOD  | Companion ads, banner ads, and clickable ads  | Not Supported  |
 |  Ad Insertion  | VOD  | VPAID 2.0  | Not Supported  |
 
-## DASH core ad insertion features (CSAI)
+## DASH core ad insertion features (CSAI) {#dash-core-ad-insertion}
 
 |  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|
@@ -108,7 +108,7 @@ The following features are supported:
 |  Ad Insertion  | VOD + Live  | VMAP 1.0  | VOD only  |
 |  Ad Insertion  | VOD + Live  | CRS v3.1  | VOD only  |
 
-## DASH content protection features
+## DASH content protection features {#dash-content-protection}
 
 <table id="table_hrb_p2g_xx">  
  <thead> 
@@ -151,7 +151,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-## DASH advanced playback features
+## DASH advanced playback features {#dash-advanced-playback}
 
 |  Category  | Content type  | Feature  | HTML5, FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|
@@ -165,7 +165,7 @@ The following features are supported:
 |  Playback  | VOD + Live  | Billing  | ![](assets/supported15.png)|
 |  Playback  | VOD + Live  | Browserify  | ![](assets/supported15.png)|
 
-## DASH core playback features
+## DASH core playback features {#dash-core-playback}
 
 |  Category  | Content type  | Feature  | HTML5 FF, IE, Chrome, Android Chrome  |
 |---|---|---|---|

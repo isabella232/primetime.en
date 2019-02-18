@@ -6,7 +6,7 @@ title: Add Advertising
 uuid: 7762506f-b55e-445d-b8a2-c1208358a370
 ---
 
-# Add Advertising{#add-advertising}
+# Add Advertising {#add-advertising}
 
 1. Define the advertising metadata.
 

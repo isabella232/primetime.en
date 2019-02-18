@@ -6,7 +6,7 @@ title: Load a media resource in the MediaPlayer
 uuid: ac31ccfe-161d-41a2-9a6e-38fae11ceab5
 ---
 
-# Load a media resource in the MediaPlayer{#load-a-media-resource-in-the-mediaplayer}
+# Load a media resource in the MediaPlayer {#load-a-media-resource-in-the-mediaplayer}
 
 Load a resource by directly instantiating a MediaResource and loading the video content to be played.
 
@@ -26,14 +26,15 @@ Load a resource by directly instantiating a MediaResource and loading the video 
 
    The INITIALIZED state indicates that the media has been successfully loaded. Calling `prepareToPlay` starts the advertising resolution and placement process, if any.
 1. When Browser TVSDK dispatches the `MediaPlayerStatus.PREPARED` event the media stream has successfully loaded (a MediaPlayerItem is created) and is prepared for playback.
->If a failure occurs, the `MediaPlayer` switches to the `MediaPlayerStatus.ERROR`. 
->
->It also notifies your application by dispatching the `MediaPlayerStatus.ERROR` event.
+
+If a failure occurs, the `MediaPlayer` switches to the `MediaPlayerStatus.ERROR`. 
+
+It also notifies your application by dispatching the `MediaPlayerStatus.ERROR` event.
 
 ><!--<a id="example_3774607C6F08473282CF0CB7F3D82373"></a>-->
 
->The following simplified sample code illustrates the process of loading a media resource: 
->
+The following simplified sample code illustrates the process of loading a media resource: 
+
 >```js>
 >player.addEventListener(AdobePSDK.PSDKEventType.STATUS_CHANGED,  
 >                        onStatusChange); 

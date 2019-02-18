@@ -6,7 +6,7 @@ title: Ads
 uuid: 9a5e8c83-18ce-41e8-9cb1-fdc9da903faf
 ---
 
-# Ads{#ads}
+# Overview {#ads-overview}
 
 When content is playing, Browser TVSDK can display ads and pass information about ads when creating the MediaResource object.
 
@@ -65,4 +65,4 @@ var playerWrapper = ptp.videoPlayer('.videoDiv', {
 
 ```
 
-For more information about the required `AuditudeSettings`, see  ad-insertion-metadata . 
+For more information about the required `AuditudeSettings`, see [Ad insertion metadata](../../ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md).

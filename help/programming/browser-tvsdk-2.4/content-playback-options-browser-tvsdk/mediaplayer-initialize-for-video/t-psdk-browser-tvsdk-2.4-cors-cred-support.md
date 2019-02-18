@@ -7,7 +7,7 @@ title: Cross-origin resource sharing
 uuid: e788b542-d4ac-48aa-91e2-1e88068cbba1
 ---
 
-# Cross-origin resource sharing{#cross-origin-resource-sharing}
+# Cross-origin resource sharing {#cross-origin-resource-sharing}
 
 Support for the withCredentials attribute in XMLHttpRequests allows cross-origin resource sharing (CORS) requests to include the target domain's cookies for a variety of request types.
 
@@ -70,6 +70,7 @@ To enable `withCredentials` support for most types of requests when playing a gi
           "https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=[YOUR_TOKEN</i>]" }
         } 
 }
+```
 
 The flag does not affect a license request because some servers set the `Access-Control-Allow-Origin` field to wildcard ('&#42;') in their response. But, when the credentials flag is set to `true`, the wildcard cannot be used in `Access-Control-Allow-Origin`. If you set `useCookieHeaderForAllRequests` to `true` for all types of requests, you might see the following error for a license request:  
 

@@ -6,7 +6,7 @@ title: Display banner ads
 uuid: aabc126e-b3aa-42dd-ab50-a7db8e324c50
 ---
 
-# Display banner ads{#display-banner-ads}
+# Display banner ads {#display-banner-ads}
 
 To display banner ads, you need to create banner instances and allow Browser TVSDK to listen for ad-related events.
 
@@ -20,7 +20,7 @@ Manifests can specify companion banner ads by:
 
 For each companion ad, Browser TVSDK indicates which types are available for your application. 
 
-1. Add a listener for the event `AdobePSDK.PSDKEventType.AD_STARTED` that does the following:
+Add a listener for the event `AdobePSDK.PSDKEventType.AD_STARTED` that does the following:
    1. Clears existing ads in the banner instance.
    1. Gets the list of companion ads from `Ad.getCompanionAssets`.
    1. If the list of companion ads is not empty, iterate over the list for banner instances.

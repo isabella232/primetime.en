@@ -6,7 +6,7 @@ title: Ad measurement from Moat
 uuid: a29c1e74-df15-47d2-9bd6-1d366c5cdf37
 ---
 
-# Ad measurement from Moat{#ad-measurement-from-moat}
+# Ad measurement from Moat {#ad-measurement-from-moat}
 
 TVSDK takes information from FreeWheel and other adservers providing VAST responses. FreeWheel provides, within VAST responses, information from the Moat service. The Moat service counts ad impressions with an accuracy that better shows that creatives capture or neglect an audience's interests.
 

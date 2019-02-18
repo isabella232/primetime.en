@@ -51,8 +51,12 @@ To switch the speed, you must set one value.
     
     * `AdobePSDK.PSDKEventType.RATE_PLAYING` when playback resumes at the selected rate.
 
-       Browser TVSDK dispatches both of these events when the player returns from trick-play mode to normal play mode. 
-    
+       Browser TVSDK dispatches both of these events when the player returns from trick-play mode to normal play mode.
+
+## Rate-change API elements {#rate-change-API-elements}
+
+Browser TVSDK includes methods, properties, and events to determine valid rates, current rates, whether trick play is supported, and other functionality related to fast forward and rewind.
+
 Use the following API elements to change play rates:
 
 * `MediaPlayer.rate` 
@@ -67,6 +71,10 @@ Use the following API elements to change play rates:
   |  1.0  | Switches to normal play mode (calling `play` is the same as setting the rate property to 1.0)  |
   |  0.0  | Pauses (calling `pause` is the same as setting the rate property to 0.0)  |
 
+## Limitations and behavior for trick-play {#limitations-and-behavior-trick-play}
+
+There are some limitations and some issues in the way trick play mode behaves. 
+
 Here is a list of the trick-play mode limitations:
 
 * If the stream does not contain a trick play adaptation, fast rewind is disabled, and maximum play rate for fast forward is limited to 8. 
@@ -77,4 +85,3 @@ Here is a list of the trick-play mode limitations:
 * The adaptive bit rate (ABR) logic is enabled.
 
   When using normal adaptations the profiles are restricted between `ABRControlParameters.minBitRate` and `ABRControlParameters.maxBitRate`. When using trick play adaptations, the profiles are restricted between `ABRControlParameters.minTrickPlayBitRate` and `ABRControlParameters.maxTrickPlayBitRate`.
-

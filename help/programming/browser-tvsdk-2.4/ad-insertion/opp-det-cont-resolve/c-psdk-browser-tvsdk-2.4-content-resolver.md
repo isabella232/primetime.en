@@ -6,7 +6,7 @@ title: Customize opportunity detectors and content resolvers
 uuid: d4926933-5966-4cd8-8050-c81c5e3c8545
 ---
 
-# Customize opportunity detectors and content resolvers{#customize-opportunity-detectors-and-content-resolvers}
+# Overview {#customize-opportunity-detectors-and-content-resolvers-overview}
 
 An opportunity detector is a Browser TVSDK component that detects custom tags in a stream and identifies placement opportunities. These opportunities are sent to the content resolver, which customizes the content/ad insertion workflow based on the placement opportunity properties and metadata.
 

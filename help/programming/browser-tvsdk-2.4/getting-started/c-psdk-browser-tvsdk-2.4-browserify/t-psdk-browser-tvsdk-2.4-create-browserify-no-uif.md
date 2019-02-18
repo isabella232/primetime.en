@@ -36,4 +36,4 @@ To create a Browserify-compatible video player:
 1. Create your player as described in [](../../../browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/t-psdk-browser-tvsdk-2.4-create-basic-player-tvsdk.md).
 
    Step 1 in this task replaces the step in the basic player instructions in which you source the individual basic player libraries in your app file.
->You can now bundle your app files using Browserify. 
+You can now bundle your app files using Browserify.

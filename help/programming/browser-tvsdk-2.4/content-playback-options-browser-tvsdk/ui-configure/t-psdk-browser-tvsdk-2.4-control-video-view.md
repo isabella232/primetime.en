@@ -18,7 +18,7 @@ You can override the default aspect ratio behavior by specifying a different *sc
 >
 >You cannot set the `scalePolicy` property to a null value.
 
-**Non-Flash fallback scenarios**
+## Non-Flash fallback scenarios {#non-flash-fallback-scenarios}
 
 In non-Flash fallback scenarios, for scale policy to work correctly, the video div element given in the `View` constructor should return non-zero values for `offsetWidth` and `offsetHeight`. To give an example of incorrect function, sometimes when the width and height of the video div elements are not set explicitly in css, then the `View` constructor returns zero for `offsetWidth` or `offsetHeight`.
 

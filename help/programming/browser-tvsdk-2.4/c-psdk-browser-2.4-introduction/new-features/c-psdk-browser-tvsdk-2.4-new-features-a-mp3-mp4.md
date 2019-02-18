@@ -6,9 +6,12 @@ title: Supported MP3 and MP4 features
 uuid: 33e3130f-fc78-40b8-a4b7-2fcdd5a2b4f9
 ---
 
-# Supported MP3 and MP4 features{#supported-mp-and-mp-features}
+# Supported MP3 and MP4 features {#supported-mp-and-mp-features}
 
 Browser TVSDK supports a number of MP3 and MP4 features that you can implement to add functionality to your applications.
+* [MP3 Audio Features - Core Playback](#core-playback)
+* [MP4 Audio Features - Core Playback](#mp4-audio-features)
+* [MP4 Video Featres  - Core Ad Insertion](#section_1A8CBC5AA4FA4477813FD9EFF26AC104)
 
 >[!TIP]
 >
