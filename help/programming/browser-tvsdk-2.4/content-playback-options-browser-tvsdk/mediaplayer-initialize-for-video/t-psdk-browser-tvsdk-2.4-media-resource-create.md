@@ -6,7 +6,7 @@ title: Create a media resource
 uuid: c25c037e-e9a0-430c-a150-b75a9ac051b1
 ---
 
-# Create a media resource{#create-a-media-resource}
+# Create a media resource {#create-a-media-resource}
 
 The MediaResource class represents the content to be loaded by the MediaPlayer instance.
 
@@ -35,7 +35,7 @@ The MediaResource class represents the content to be loaded by the MediaPlayer i
     </tr> 
     <tr> 
     <td colname="col1"> <p>metadata </p> </td> 
-    <td colname="col2"> <p>An instance of the <span class="codeph"> Metadata </span> class, which might contain custom information about the content to be loaded. Examples of content are alternate or ad content to place inside the main content. If using advertising, set up <span class="codeph"> AuditudeSettings </span> before using this constructor. For more information, see <a keyref="ad-insertion-metadata"></a>. </p> <p>Tip:  You can force Flash fallback, if necessary, by using the <span class="codeph"> forceFlash </span> parameter when creating a media resource. This can be useful because currently not all of the features (such as Live Ad workflows) are supported in Browser TVSDK. Flash fallback is used to play video content. </p> </td> 
+    <td colname="col2"> <p>An instance of the <span class="codeph"> Metadata </span> class, which might contain custom information about the content to be loaded. Examples of content are alternate or ad content to place inside the main content. If using advertising, set up <span class="codeph"> AuditudeSettings </span> before using this constructor. For more information, see <a href="../../ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md">Ad-insertion-metadata</a>. </p> <p>Tip:  You can force Flash fallback, if necessary, by using the <span class="codeph"> forceFlash </span> parameter when creating a media resource. This can be useful because currently not all of the features (such as Live Ad workflows) are supported in Browser TVSDK. Flash fallback is used to play video content. </p> </td> 
     </tr> 
     </tbody> 
    </table>
@@ -59,6 +59,4 @@ The MediaResource class represents the content to be loaded by the MediaPlayer i
    >
    >At any time after this, you can use `MediaResource` accessors (getters) to examine the resource's type, URL, and metadata.
 
-1. Load your MediaPlayer instance.
-
-<!--Note: There seems to be a missing cross-reference here -->
+1. Load your MediaPlayer instance. For more information, see [Load a media resource in the MediaPlayer](../../content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/t-psdk-browser-tvsdk-2.4-media-resource-load.md).

@@ -6,7 +6,7 @@ title: Clickable ads
 uuid: 493c3199-b5ba-4809-86eb-e80f10eb957b
 ---
 
-# Clickable ads{#clickable-ads}
+# Overview {#clickable-ads-overview}
 
 Browser TVSDK provides your video app with information needed to respond to a user's click on a clickable ad.
 
@@ -17,4 +17,3 @@ In your app, you can provide the user with a control to click (e.g., a button) w
 >[!NOTE]
 >
 >The reference player included with Browser TVSDK includes one possible working solution for processing click-through ads.
-

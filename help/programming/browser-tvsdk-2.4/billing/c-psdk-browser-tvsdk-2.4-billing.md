@@ -6,7 +6,7 @@ title: Billing metrics
 uuid: e09b77b3-89d3-44d6-be4e-e1612fbf89fc
 ---
 
-# Billing metrics{#billing-metrics}
+# Overview {#billing-metrics-overview}
 
 To accommodate customers who want to pay only for what they use, rather than a fixed rate regardless of actual use, Adobe collects usage metrics and uses these metrics to determine how much to bill the customers.
 

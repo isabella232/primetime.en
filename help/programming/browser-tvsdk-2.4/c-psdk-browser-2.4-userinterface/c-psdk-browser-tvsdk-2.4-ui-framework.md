@@ -107,7 +107,7 @@ var player = ptp.videoPlayer('.videoHolder', {
 
 >[!NOTE]
 >
->Depending upon the customization that you want, you can override certain functionality in the behavior or write your own behavior. For more information about which functionality can be overridden, see the [UI framwork](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API documentation.
+>Depending upon the customization that you want, you can override certain functionality in the behavior or write your own behavior. For more information about which functionality can be overridden, see the [UI framework](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API documentation.
 
 ## References {#section_0A76A3F44D8A49B09FE4C83F3FACCB76}
 

@@ -32,8 +32,8 @@ Your application must implement event listeners for Browser TVSDK events that af
 
    For example:
 
-* Event type: `AdobePSDK.PSDKEventType.STATUS_CHANGED` 
-* Event property: `MediaPlayerStatus.<event>` used like this: 
+   * Event type: `AdobePSDK.PSDKEventType.STATUS_CHANGED` 
+   * Event property: `MediaPlayerStatus.<event>` used like this: 
 
   ```js
   player.addEventListener( 
@@ -54,4 +54,3 @@ Your application must implement event listeners for Browser TVSDK events that af
    player.addEventListener(AdobePSDK.PSDKEventType.STATUS_CHANGED,  
                                     onStatusChange);
    ```
-

@@ -10,7 +10,7 @@ uuid: 78edf2b0-363c-4ab6-b588-ab4748ee6096
 
 There are some security considerations to be aware for Browser TVSDK.
 
-* **Adobe Flash Player **
+* **Adobe Flash Player**
 
     * Flash Player does not allow access to data that resides outside the domain from which the SWF originated.
 

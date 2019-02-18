@@ -6,16 +6,16 @@ title: Supported HLS features
 uuid: 033d81f8-cea4-4687-b2fb-1524d9164d39
 ---
 
-# Supported HLS features{#supported-hls-features}
+# Supported HLS features {#supported-hls-features}
 
 Browser TVSDK supports a number of HLS features that you can implement to add functionality to your video applications.
 
-* [HLS Core playback](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-b-hls.md#table_0524BD3F2CD1499D95BD4A9D4F451C1B) 
-* [HLS Advanced playback features](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-b-hls.md#table_EEF70EB81AB544519E71FD8CC306CC00) 
-* [HLS Content protection features](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-b-hls.md#table_613AF7D254424965AE11C5189D9A7BA8) 
-* [HLS Core ad insertion features](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-b-hls.md#table_8889329FC60F4B68BA6E898B632AB59C) 
-* [HLS Advanced ad insertion features](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-b-hls.md#table_7F018C879D254291A6803C2F11CEC589) 
-* [HLS Integrations](../../../browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-b-hls.md#table_FFFBDCBA719D4BABBD65DC2F7AC34A5A)
+* [HLS Core playback](#hls-core-playback) 
+* [HLS Advanced playback features](#hls-advanced-playback) 
+* [HLS Content protection features](#hls-content-protection) 
+* [HLS Core ad insertion features](#hls-core-ad-insertion) 
+* [HLS Advanced ad insertion features](#hls-advanced-ad-insertion) 
+* [HLS Integrations](#hls-integrations)
 
 >[!TIP]
 >
@@ -77,13 +77,13 @@ Removed Nielsen row
 
  -->
 
-## HLS integrations
+## HLS integrations {#hls-integrations}
 
 | Category | Content type | Feature | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
 |Integrations|VOD + Live|Adobe Analytics VHL integration|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|
 
-### HLS advanced ad insertion features (CSAI)
+## HLS advanced ad insertion features (CSAI) {#hls-advanced-ad-insertion}
 
 | Category | Content type | Feature | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
@@ -94,7 +94,7 @@ Removed Nielsen row
 |Ad Insertion|VOD|Companion ads, Banner ads, and Clickable ads|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|
 |Ad Insertion|VOD|VPAID 2.0|SWF|JavaScript|JavaScript|
 
-#### HLS core ad insertion features (CSAI)
+## HLS core ad insertion features (CSAI) {#hls-core-ad-insertion}
 
 | Category | Content type | Feature | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
@@ -107,7 +107,7 @@ Removed Nielsen row
 |Ad Insertion|VOD + Live|VMAP 1.0|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|
 |Ad Insertion|VOD + Live|CRS v3.1|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|
 
-#### HLS content protection features
+## HLS content protection features {#hls-content-protection}
 
 | Category | Content type | Feature | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
@@ -115,7 +115,7 @@ Removed Nielsen row
 |Content Protection|VOD + Live|Sample-AES|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|
 |Content Protection|VOD|DRM|Adobe Access|Not Supported|FairPlay|
 
-#### HLS advanced playback features
+## HLS advanced playback features {#hls-advanced-playback}
 
 | Category | Content type | Feature | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
@@ -129,7 +129,7 @@ Removed Nielsen row
 |Playback|VOD + Live|Billing|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|
 |Playback|VOD + Live|Browserify|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|![supported icon](assets/supported15.png)|
 
-#### HLS core playback
+## HLS core playback {#hls-core-playback}
 
 | Category | Content type | Feature | Flash | HTML5: FF, IE, Chrome, Android Chrome | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |

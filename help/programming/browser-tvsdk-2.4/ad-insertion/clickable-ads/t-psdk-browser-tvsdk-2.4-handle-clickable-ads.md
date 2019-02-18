@@ -6,7 +6,7 @@ title: Handle Clickable Ads
 uuid: 5d3c9d36-60d7-4272-a523-7d1fe0e1615f
 ---
 
-# Handle Clickable Ads{#handle-clickable-ads}
+# Handle Clickable Ads {#handle-clickable-ads}
 
 The MediaPlayer provides a notifyClick() function that dispatches ad-related events when a clickable ad is playing. These events provide ad and ad break information that your app can use to provide click-through functionality.
 
@@ -27,7 +27,7 @@ The `AdClickedEvent` contains the information necessary to process the click-thr
 
    ```
    document.getElementById([ 
-<i>your_click_control_id</i>]).addEventListener("click", onAdClick); 
+   <i>your_click_control_id</i>]).addEventListener("click", onAdClick);
    
    ```
 
@@ -52,17 +52,16 @@ The `AdClickedEvent` contains the information necessary to process the click-thr
 
    ```
 
-<i>your_player</i>().addEventListener(AdobePSDK.PSDKEventType.AD_STARTED, onAdStarted); 
-    
-<i>your_player</i>().addEventListener(AdobePSDK.PSDKEventType.AD_COMPLETED, onAdCompleted); 
-    
-<i>your_player</i>().addEventListener(AdobePSDK.PSDKEventType.AD_CLICKED, onAdClickedEvent);
+    <i>your_player</i>().addEventListener(AdobePSDK.PSDKEventType.AD_STARTED, onAdStarted); 
+
+    <i>your_player</i>().addEventListener(AdobePSDK.PSDKEventType.AD_COMPLETED, onAdCompleted);
+
+    <i>your_player</i>().addEventListener(AdobePSDK.PSDKEventType.AD_CLICKED, onAdClickedEvent);
    ```
 
 1. Add event handlers.
-   1. Handle the ad start event.
-   
-      This could do anything, such as setting up UI for the user.    
+   a. Handle the ad start event.
+      This could do anything, such as setting up UI for the user.
    
       ```   
       onAdStarted = function (event) { 
@@ -77,8 +76,7 @@ The `AdClickedEvent` contains the information necessary to process the click-thr
       }
       ```
 
-   1. Handle the ad clicked event.
-   
+   b. Handle the ad clicked event.
       In this example, we obtain ad information from the event and open a new browser window using that information:    
    
       ```   
@@ -97,7 +95,7 @@ The `AdClickedEvent` contains the information necessary to process the click-thr
       }
       ```
 
-   1. Handle the ad completed event.
+   c. Handle the ad completed event.
 
       ```   
       onAdCompleted = function (event) { 
@@ -106,4 +104,3 @@ The `AdClickedEvent` contains the information necessary to process the click-thr
           } 
       }
       ```
-

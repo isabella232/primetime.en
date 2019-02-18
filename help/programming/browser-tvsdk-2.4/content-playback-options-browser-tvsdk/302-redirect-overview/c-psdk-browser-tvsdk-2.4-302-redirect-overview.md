@@ -6,7 +6,7 @@ title: HTTP 302 redirect optimization
 uuid: d3009c6c-320a-4c0f-b6ba-bf6473049823
 ---
 
-# HTTP 302 redirect optimization{#http-redirect-optimization}
+# HTTP 302 redirect optimization {#http-redirect-optimization}
 
 302 redirect optimization minimizes the number of 302 redirect responses, which allows your application to load balance more effectively.
 
@@ -21,3 +21,18 @@ For Flash fallback, remember the following information:
 * Your end users must have Adobe Flash Player version 23 or later installed. 
 * If stream integrity is disabled, 302 redirect is supported on certified browsers only.
 
+## Disabling 302 redirect optimization {#disabling-redirect-optimization}
+
+You can use the useRedirectedUrl property to enable 302 redirect (true) or disable (false).
+
+For example: 
+
+```js
+var networkConfiguration = new AdobePSDK.NetworkConfiguration(); 
+networkConfiguration.useRedirectedUrl = false; 
+ 
+var config = new AdobePSDK.MediaPlayerItemConfig(); 
+config.networkConfiguration = networkConfiguration;; 
+ 
+player.replaceCurrentResource(mediaResource, config);
+```

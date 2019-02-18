@@ -27,15 +27,3 @@ console.log(errorDesc);
 break; 
 
 ```
-
-## Missing segment failover {#section_23924F24E44B4A798BD16D594FAC134D}
-
-When a segment is missing, for example when a particular segment fails to download, Browser TVSDK attempts to recover through a variety of failover attempts. If it cannot recover, it issues an error.
-
-If a segment is missing on the server because, for example, the manifest file is not present, the segment cannot be downloaded, and so on, Browser TVSDK attempts to fail over by trying the following options:
-
-1. Attempt a failover to the same segment, at the same bit rate, in a variant file. 
-1. Switch to an alternate bit rate (ABR switch) in the same file. For finding the alternate bit rate, TVSDK uses ABR rules. 
-1. Cycle through every available bit rate in every available variant.
-
-When TVSDK cannot obtain an alternative segment, it moves the player to ERROR state. It sends inner error code as `AdobePSDK.PSDKErrorCode.NETWORK_ERROR`. The application can decide how to handle this situation by implementing the appropriate listeners. 

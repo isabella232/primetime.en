@@ -6,7 +6,7 @@ title: Create a Browserify-compatible player using the UI-Framework
 uuid: 544fd872-5ca1-417d-8aab-69613caada0e
 ---
 
-# Create a Browserify-compatible player using the UI-Framework{#create-a-browserify-compatible-player-using-the-ui-framework}
+# Create a Browserify-compatible player using the UI-Framework {#create-a-browserify-compatible-player-using-the-ui-framework}
 
 Use the Browserify library files provided by Browser TVSDK in your app to create a Browserify-compatible player using the UI-Framework.
 

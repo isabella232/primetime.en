@@ -50,4 +50,4 @@ Use the helper class AuditudeSettings to set up Adobe Primetime ad decisioning m
 
    After the ads have been resolved and placed on the timeline, the `  MediaPlayer ` transitions to the PREPARED state.
 1. Call `MediaPlayer.play` to start the playback.
->Browser TVSDK now includes ads when your media plays. 
+Browser TVSDK now includes ads when your media plays.

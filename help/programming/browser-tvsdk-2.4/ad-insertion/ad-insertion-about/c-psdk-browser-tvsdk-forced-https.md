@@ -20,4 +20,3 @@ Use the following to enable secure ad loading. It is not enabled by default.
 var auditudeSettings = new AdobePSDK.AuditudeSettings(); 
 auditudeSettings.forceHttpsConfiguration.adServerCalls = true;
 ```
-

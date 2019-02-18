@@ -6,11 +6,9 @@ title: Requirements
 uuid: 9726b083-f52a-410c-8ab4-47b4913d5172
 ---
 
-# Requirements{#requirements}
+# Overview {#requirements-overview}
 
 Browser TVSDK requires specific properties for media content, manifest content, and software versions.
-
-This release includes players and supports a wide range of browsers.
 
 The Browser TVSDK release includes the following players:
 
@@ -73,4 +71,3 @@ Players include the following reference APIs:
 
         * Safari 8+ 
         * Chrome 33+
-

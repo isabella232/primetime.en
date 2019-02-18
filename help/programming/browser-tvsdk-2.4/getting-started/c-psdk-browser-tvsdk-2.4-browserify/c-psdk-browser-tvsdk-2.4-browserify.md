@@ -6,7 +6,7 @@ title: Browserify-compatible player
 uuid: 1832c826-d5d0-41b0-852f-286c8e4fa0f3
 ---
 
-# Browserify-compatible player{#browserify-compatible-player}
+# Overview {#browserify-compatible-player-overview}
 
 You can create a Browserify-compatible player using JS files provided by the Browser TVSDK.
 

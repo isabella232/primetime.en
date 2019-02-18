@@ -1038,23 +1038,23 @@ user-guide-title: Primetime Programming Help
    + Introduction {#introduction}
       + [Product overview and audience](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/c-psdk-browser-tvsdk-2.4-overview-prod-audience-guide.md)
       + Supported features {#supported-features}
-         + [Supported features overview](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features.md)
+         + [Overview](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features.md)
          + [Supported MP3 and MP4 features](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-a-mp3-mp4.md)
          + [Supported HLS features](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-b-hls.md)
          + [Supported DASH features](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-c-dash.md)
       + Requirements {#requirements}
-         + [Requirements overview](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/c-psdk-browser-tvsdk-2.4-requirements.md)
+         + [Overview](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/c-psdk-browser-tvsdk-2.4-requirements.md)
          + [Flash Player requirements](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/r-psdk-browser-tvsdk-2.4-flash-fallback-req.md)
          + [Security considerations](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/c-psdk-browser-tvsdk-2.4-sec-req.md)
          + [Content and manifest requirements](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/r-psdk-browser-tvsdk-2.4-requirements-content.md)
          + [#EXT-X-VERSION requirements](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/r-psdk-browser-tvsdk-2.4-requirements-ext-x-version.md)
    + Getting started {#getting-started}
       + Basic player {#basic-player}
-         + [Basic player overview](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/c-psdk-browser-tvsdk-2.4-create-a-basic-player.md)
+         + [Overview](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/c-psdk-browser-tvsdk-2.4-create-a-basic-player.md)
          + [Create a basic player using TVSDK](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/t-psdk-browser-tvsdk-2.4-create-basic-player-tvsdk.md)
          + [Create a basic player using the UI Framework](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/t-psdk-browser-tvsdk-2.4-create-basic-player-uif.md)
       + Browserify-compatible player {#browserify-compatible-browser}
-         + [Browserify-compatible player overivew](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-browserify/c-psdk-browser-tvsdk-2.4-browserify.md)
+         + [Overview](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-browserify/c-psdk-browser-tvsdk-2.4-browserify.md)
          + [Create a Browserify-compatible player without the UI-Framework](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-browserify/t-psdk-browser-tvsdk-2.4-create-browserify-no-uif.md)
          + [Create a Browserify-compatible player using the UI-Framework](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-browserify/t-psdk-browser-tvsdk-2.4-create-browserify-with-uif.md)
       + [Custom skins](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-custom-skins.md)
@@ -1063,7 +1063,7 @@ user-guide-title: Primetime Programming Help
          + [Ads overview](browser-tvsdk-2.4/getting-started/about-ads/c-psdk-browser-tvsdk-2.4-ads.md)
          + [Add Advertising](browser-tvsdk-2.4/getting-started/about-ads/t-psdk-browser-tvsdk-2.4-add-adverts.md)
       + Digital Rights Management {#drm}
-         + [Digital Rights Management overview](browser-tvsdk-2.4/getting-started/about-drm/c-psdk-browser-tvsdk-2.4-drm.md)
+         + [Overview](browser-tvsdk-2.4/getting-started/about-drm/c-psdk-browser-tvsdk-2.4-drm.md)
          + [Add Digital Rights Management](browser-tvsdk-2.4/getting-started/about-drm/t-psdk-browser-tvsdk-2.4-add-drm.md)
       + [Buffering](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-buffering.md)
       + [Metrics](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-metrics.md)
@@ -1076,7 +1076,7 @@ user-guide-title: Primetime Programming Help
       + [Flash failover](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-flash-failover.md)
       + [Set up the MediaPlayer](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/t-psdk-browser-tvsdk-2.4-mediaplayer-set-up.md)
       + Initialize the media player for a specific video {#initialize-specific-video}
-         + [Initialize the media player for a specific video overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/c-psdk-browser-tvsdk-2.4-mediaplayer-initialize-for-video.md)
+         + [Overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/c-psdk-browser-tvsdk-2.4-mediaplayer-initialize-for-video.md)
          + [Create a media resource](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/t-psdk-browser-tvsdk-2.4-media-resource-create.md)
          + [Cross-origin resource sharing](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/t-psdk-browser-tvsdk-2.4-cors-cred-support.md)
          + [Load a media resource in the MediaPlayer](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/t-psdk-browser-tvsdk-2.4-media-resource-load.md)
@@ -1084,7 +1084,7 @@ user-guide-title: Primetime Programming Help
       + [Extensionless streams](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-extensionless-streams.md)
       + [Buffering](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-buffering-configuration.md)
       + Listen for Primetime Player events {#listen-events}
-         + [Listen for Primetime Player events overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/c-psdk-browser-tvsdk-2.4-events-listen-for.md)
+         + [Overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/c-psdk-browser-tvsdk-2.4-events-listen-for.md)
          + [Implement event listeners and callbacks](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/t-psdk-browser-tvsdk-2.4-event-listeners-implement.md)
          + [Event types and classes for callbacks](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/r-psdk-browser-tvsdk-2.4-event-listeners-type-table.md)
          + [Order of advertising events](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/c-psdk-browser-tvsdk-2.4-events-order-ad-playback.md)
@@ -1094,10 +1094,10 @@ user-guide-title: Primetime Programming Help
       + [Set up error handling](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/t-psdk-browser-tvsdk-2.4-error-handling-set-up.md)
       + [Implement fast forward and rewind](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/t-psdk-browser-tvsdk-2.4-trick-play-implement.md)
       + Adaptive bit rates (ABR) for video quality {abr-video-quality}
-         + [ABR for video quality overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/abr-control-quality/c-psdk-browser-tvsdk-2.4-abr-control-quality.md)
+         + [Overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/abr-control-quality/c-psdk-browser-tvsdk-2.4-abr-control-quality.md)
          + [Configure adaptive bit rates using ABRControlParameters](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/abr-control-quality/t-psdk-browser-tvsdk-2.4-abr-set-using-abrparameters.md)
       + Configure the player user interface {#configure-ui}
-         + [Configure the player user interface overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/c-psdk-browser-tvsdk-2.4-ui-configure.md)
+         + [Overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/c-psdk-browser-tvsdk-2.4-ui-configure.md)
          + [Wait for a valid state](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-state-prepared-wait-for.md)
          + [Play and pause a video](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-pause-play-implement.md)
          + [Identify whether the content is live or VOD](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-content-live-vod-identify.md)
@@ -1107,14 +1107,10 @@ user-guide-title: Primetime Programming Help
          + [Construct a control bar enhanced for DVR](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-ui-ctrl-bar-for-dvr-construct.md)
          + [Enter a stream at a specific time](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-enter-stream-specific-time.md)
          + [Control the position and size of the video view](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-control-video-view.md)
-      + Quality of service statistics {#quality-of-service-statistics}
-         + [Quality of service statistics overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/qos-statistics-monitor/c-psdk-browser-tvsdk-2.4-qos-statistics-monitor.md)
-         + [Read QOS playback, buffering, and device statistics](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/qos-statistics-monitor/t-psdk-browser-tvsdk-2.4-qos-stats-read.md)
-      + HTTP 302 redirect optimization {#http-302-redirect}
-         + [HTTP 302 redirect optimization overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/302-redirect-overview/c-psdk-browser-tvsdk-2.4-302-redirect-overview.md)
-         + [Disabling 302 redirect optimization](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/302-redirect-overview/r-psdk-browser-tvsdk-2.4-disable-302-redirect.md)
+      + [Quality of service statistics](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/qos-statistics-monitor/c-psdk-browser-tvsdk-2.4-qos-statistics-monitor.md)
+      + [HTTP 302 redirect optimization](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/302-redirect-overview/c-psdk-browser-tvsdk-2.4-302-redirect-overview.md)
       + Work with MediaPlayer objects {mediaplayer-objects}
-         + [Work with MediaPlayer objects overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayerobjects-working-with.md)
+         + [Overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayerobjects-working-with.md)
          + [About the MediaPlayerItem class](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayeritem-class-about.md)
          + [Life cycle and states of the MediaPlayer object](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayer-object-lifecycle-states.md)
          + [MediaPlayer attributes to access MediaResource information](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/r-psdk-browser-tvsdk-2.4-mediaplayer-methods-for-accessing-mediaresource.md)
@@ -1122,15 +1118,15 @@ user-guide-title: Primetime Programming Help
          + [Inspect the playback timeline](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/t-psdk-browser-tvsdk-2.4-timeline-inspect-playback.md)
          + [Add listeners for TimelineUpdatedEvent](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/t-psdk-browser-tvsdk-2.4-timeline-update-add-listener.md)
       + Work with closed captions {#closed-captions}
-         + [Work with closed captions overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/c-psdk-browser-tvsdk-2.4-closed-captions-set-up.md)
+         + [Overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/c-psdk-browser-tvsdk-2.4-closed-captions-set-up.md)
          + [Control closed-caption visibility](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/t-psdk-browser-tvsdk-2.4-closed-caption-visibility-control.md)
          + [Allow the user to change the track](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/t-psdk-browser-tvsdk-2.4-closed-caption-track-allow-user-to-change.md)
          + Control closed-caption styling {#styling}
-            + [Control closed-caption styling overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/closed-caption-styling-control/c-psdk-browser-tvsdk-2.4-closed-caption-styling-control.md)
+            + [Overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/closed-caption-styling-control/c-psdk-browser-tvsdk-2.4-closed-caption-styling-control.md)
             + [Set closed-caption styles](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/closed-caption-styling-control/t-psdk-browser-tvsdk-2.4-closed-caption-styles-set.md)
             + [Closed caption styling options](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/closed-caption-styling-control/r-psdk-browser-tvsdk-2.4-closed-caption-styling-options.md)
             + [Examples: Caption formatting](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/closed-caption-styling-control/r-psdk-browser-tvsdk-2.4-closed-caption-formatting-samples.md)
-      + [Media playback and failover](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-failover-media-playback.md)
+      + [Media playback](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-failover-media-playback.md)
       + [ID3 tags](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/t-psdk-browser-tvsdk-2.4-id3-metadata-retrieve.md)
       + [Autoplay on iOS](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-autoplay-ios.md)
    + Advertising {#advertising}
@@ -1138,39 +1134,39 @@ user-guide-title: Primetime Programming Help
       + [VAST ads](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-vast-ads.md)
       + [VPAID 2.0 ad support](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-vpaid-2.0-ads.md)
       + Inserting ads {#inserting-ads}
-         + [Inserting ads overview](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-insertion-about.md)
+         + [Overview](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-insertion-about.md)
          + [VOD ad resolving and insertion](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-resolving-client-vod.md)
          + [Live/linear ad resolving and insertion](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-resolving-client-live-linear.md)
          + [FER ad resolving and insertion](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-resolving-client-fer.md)
          + [Client ad tracking](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-2.4-ad-tracking-client.md)
-         + [Forced HTTPS](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-forced-https.md)
+         + [Secure Ad Loading over HTTPS](browser-tvsdk-2.4/ad-insertion/ad-insertion-about/c-psdk-browser-tvsdk-forced-https.md)
       + Custom tags {#custom-tags}
-         +   [Custom tags overview](browser-tvsdk-2.4/ad-insertion/custom-tags/c-psdk-browser-tvsdk-2.4-custom-tags-configure.md)
+         +   [Overview](browser-tvsdk-2.4/ad-insertion/custom-tags/c-psdk-browser-tvsdk-2.4-custom-tags-configure.md)
          + [Config class methods for tags](browser-tvsdk-2.4/ad-insertion/custom-tags/c-psdk-browser-tvsdk-2.4-custom-tags-psdkconfig-methods.md)
          + [Timed metadata class](browser-tvsdk-2.4/ad-insertion/custom-tags/r-psdk-browser-tvsdk-2.4-custom-tags-timedmetadata-class.md)
          + [Notifications for manifest tags](browser-tvsdk-2.4/ad-insertion/custom-tags/r-psdk-browser-tvsdk-2.4-manifest-tag-notifications.md)
          + [Subscribe to custom ad tags](browser-tvsdk-2.4/ad-insertion/custom-tags/t-psdk-browser-tvsdk-2.4-custom-tags-subscribe.md)
          + [Add listeners for timed-metadata notifications](browser-tvsdk-2.4/ad-insertion/custom-tags/t-psdk-browser-tvsdk-2.4-custom-tags-receive-notifications.md)
       + Customize opportunity detectors and content resolvers {#customize}
-         + [Customize overview](browser-tvsdk-2.4/ad-insertion/opp-det-cont-resolve/c-psdk-browser-tvsdk-2.4-content-resolver.md)
+         + [Overview](browser-tvsdk-2.4/ad-insertion/opp-det-cont-resolve/c-psdk-browser-tvsdk-2.4-content-resolver.md)
          + [Opportunity generators and content resolvers](browser-tvsdk-2.4/ad-insertion/opp-det-cont-resolve/c-psdk-browser-tvsdk-2.4-content-resolver-about.md)
          + [Implement a custom opportunity generator](browser-tvsdk-2.4/ad-insertion/opp-det-cont-resolve/t-psdk-browser-tvsdk-2.4-opp-detector-impl.md)
          + [Implement a custom content resolver](browser-tvsdk-2.4/ad-insertion/opp-det-cont-resolve/t-psdk-browser-tvsdk-2.4-content-resolver-implement.md)
-      + [Secure Ad Loading over HTTPS](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-moat.md)
+      + [Ad measurement from Moat](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-moat.md)
       + [Repackage (transcode) incompatible ads](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-ad-transcoding.md)
       + [Default and customized playback behavior with ads](browser-tvsdk-2.4/ad-insertion/c-psdk-browser-tvsdk-2.4-playback-post1.2.md)
       + Ad insertion metadata {#ad-insertion-metadata}
-         + [Ad insertion metadata overview](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md)
+         + [Overview](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md)
          + [Set up ad insertion metadata](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/t-psdk-browser-tvsdk-2.4-ad-insertion-metadata-set-up.md)
          + [Customize ad insertion metadata](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/t-psdk-browser-tvsdk-2.4-cust-ad-metadata.md)
          + [Valid mime types](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/r-psdk-browser-tvsdk-2.4-valid-mime-types.md)
          + [Targeting information](browser-tvsdk-2.4/ad-insertion/ad-insertion-metadata/r-psdk-browser-tvsdk-2.4-targeting-info.md)
       + Companion banner ads {#companion}
-         + [Companion banner ads overview](browser-tvsdk-2.4/ad-insertion/companion-banner-ads/c-psdk-browser-tvsdk-2.4-companion-banner-ads.md)
+         + [Overview](browser-tvsdk-2.4/ad-insertion/companion-banner-ads/c-psdk-browser-tvsdk-2.4-companion-banner-ads.md)
          + [Companion banner data](browser-tvsdk-2.4/ad-insertion/companion-banner-ads/r-psdk-browser-tvsdk-2.4-companion-banner-data.md)
          + [Display banner ads](browser-tvsdk-2.4/ad-insertion/companion-banner-ads/t-psdk-browser-tvsdk-2.4-companion-banner-ads-display.md)
       + Clickable ads {#clickable-ads}
-         + [Clickable ads overview](browser-tvsdk-2.4/ad-insertion/clickable-ads/c-psdk-browser-tvsdk-2.4-clickable-ads.md)
+         + [Overview](browser-tvsdk-2.4/ad-insertion/clickable-ads/c-psdk-browser-tvsdk-2.4-clickable-ads.md)
          + [Handle Clickable Ads](browser-tvsdk-2.4/ad-insertion/clickable-ads/t-psdk-browser-tvsdk-2.4-handle-clickable-ads.md)
    + Integrating Browser TVSDK with Adobe Analytics {#integrating-browser}
       + [Video analytics](browser-tvsdk-2.4/c-psdk-browser-2.4-integration/c-psdk-browser-tvsdk-2.4-va-integration-overview.md)
@@ -1185,7 +1181,6 @@ user-guide-title: Primetime Programming Help
       + [Sample AES encrypted HLS streams](browser-tvsdk-2.4/drm-content-security/c-psdk-browser-tvsdk-2.4-sample-aes-encrypt.md)
       + Playback and failover {#playback-and-failover}
          + [Playback and failover](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-failover-for-playback.md)
-         + [Media playback and failover](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-failover-media-playback.md)
          + [Advertising insertion and failover for VOD](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-failover-ad-insertion-for-vod.md)
          + [Live master-manifest update](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-manifest-update-intro.md)
          + [Live master-manifest update architecture](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-manifest-update-architecture.md)
@@ -1193,7 +1188,7 @@ user-guide-title: Primetime Programming Help
          + [Get information about profile switch](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/t-psdk-browser-tvsdk-2.4-profile-switch-info.md)
       + [Implementing DRM callbacks](browser-tvsdk-2.4/drm-content-security/c-psdk-browser-tvsdk-2.4-impl-drm-callbacks.md)
    + Billing metrics {#billing-metrics}
-      + [Billing metrics](browser-tvsdk-2.4/billing/c-psdk-browser-tvsdk-2.4-billing.md)
+      + [Overview](browser-tvsdk-2.4/billing/c-psdk-browser-tvsdk-2.4-billing.md)
       + [Configure billing metrics](browser-tvsdk-2.4/billing/t-psdk-browser-tvsdk-2.4-billing-config.md)
       + [Transmit billing metrics](browser-tvsdk-2.4/billing/r-psdk-browser-tvsdk-2.4-billing-data-format.md)
    + [Helpful APIs for the Adobe Flash Player](browser-tvsdk-2.4/r-psdk-browser-tvsdk-2.4-helpful-apis.md)
