@@ -7,7 +7,7 @@ uuid: 4b48db70-7188-4c79-9428-8cbf45ef15f0
 # Add custom notifications{#add-custom-notifications}
 
  To add a custom notification: 
-1. Create a new `PTNotification` and add it to the `PTNotificationHistory` by using the current `PTMediaPlayerItem`:
+   Create a new `PTNotification` and add it to the `PTNotificationHistory` by using the current `PTMediaPlayerItem`:
 
    ```
    //Access to the PTMediaPlayerItem  
@@ -20,4 +20,3 @@ uuid: 4b48db70-7188-4c79-9428-8cbf45ef15f0
    //Add notification 
    [notificationHistory addNotification:notification];
    ```
-

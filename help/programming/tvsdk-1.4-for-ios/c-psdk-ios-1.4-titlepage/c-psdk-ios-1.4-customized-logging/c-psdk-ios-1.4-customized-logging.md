@@ -6,7 +6,7 @@ title: Customized logging
 uuid: c5bdf266-4266-4896-b6e0-47710ce64e67
 ---
 
-# Customized logging {#customized-logging}
+# Overview {#customized-logging-overview}
 
 You can implement your own logging system.
 
@@ -20,4 +20,3 @@ There are two implementations for `PTLogFactory`:
 
 * For listening to logs. 
 * For adding logs to a `PTLogFactory`.
-

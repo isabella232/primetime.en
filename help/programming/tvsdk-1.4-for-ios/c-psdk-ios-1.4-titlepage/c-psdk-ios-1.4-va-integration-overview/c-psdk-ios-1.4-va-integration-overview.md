@@ -6,7 +6,7 @@ title: Video analytics
 uuid: 8f297316-f95e-4896-b489-a2d6b36e6b40
 ---
 
-# Video analytics{#video-analytics}
+# Overview {#video-analytics-overview}
 
 You can track video use by integrating TVSDK with Adobe Analytics.
 
@@ -24,4 +24,3 @@ The following procedure summarizes the steps to activate video tracking in your 
     * Video analytics tracker object
 
 1. Set up video analytics reporting on the server side by using Adobe Analytics Admin Tools.
-

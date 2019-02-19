@@ -6,7 +6,7 @@ title: Load Ad for a DVR window
 uuid: 67bc3924-3d17-4d1a-b9a7-be8d0488a970
 ---
 
-# Load Ad for a DVR window{#load-ad-for-a-dvr-window}
+# Load Ad for a DVR window {#load-ad-for-a-dvr-window}
 
 You can decide whether to resolve only the ads that occur after the user's current live point or to also resolve ads that occur before the current live point.
 
@@ -20,7 +20,7 @@ When a user starts to view content at the beginning of a DVR stream, TVSDK resol
 
 To control ad loading for a DVR window:
 
-1. To load all ads for the entire stream, set the `PTAdMetadata.enableDVRAds` property to `YES`. 
+   To load all ads for the entire stream, set the `PTAdMetadata.enableDVRAds` property to `YES`. 
 
    >[!NOTE]
    >
@@ -45,4 +45,3 @@ To control ad loading for a DVR window:
    playerItem = [[PTMediaPlayerItem alloc] initWithUrl:url mediaId:yourMediaID metadata:metadata]; 
    
    ```
-

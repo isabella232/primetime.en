@@ -679,18 +679,18 @@ user-guide-title: Primetime Programming Help
                + [Details for the NATIVE_ERROR notification overview](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-native-error-summary.md)
                + [NATIVE_ERROR: Video playback values](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-notifications-video-playback.md)
                + [NATIVE_ERROR: Crypto values](tvsdk-1.4-for-android/android-1.4-titlepage/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-notifications-crypto-errors.md)
-+ TVSDK 1.4 for iOS Programmer's Guide {#tvsdk-1.4-for-ios}
++ TVSDK 1.4 for iOS {#tvsdk-1.4-for-ios}
    + Introduction {#introduction}
       + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-overview.md)
       + [Primetime Player TVSDK features](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-overview-of-the-player.md)
       + [Considerations and best practices](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-considerations.md)
       + [Requirements](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-requirements.md)
       + Content playback options {#content-playback-options}
-         + [Content playback options](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/t-psdk-ios-1.4-create-a-video-player.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/t-psdk-ios-1.4-create-a-video-player.md)
          + [Set up the PTMediaPlayer](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/t-psdk-ios-1.4-mediaplayer-set-up-ios.md)
          + [Set up notifications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-notification.md)
          + Configure the player user interface {#configure}
-            + [Configure the player user interface overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/c-psdk-ios-1.4-configure-ui.md)
+            + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/c-psdk-ios-1.4-configure-ui.md)
             + [Wait for a valid state](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-ui-state-prepared-wait-for.md)
             + [Implement a play/pause button](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-implement-pause-play.md)
             + [Display the duration of the video](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/t-psdk-ios-1.4-create-a-video-player/c-psdk-ios-1.4-configure-ui/t-psdk-ios-1.4-display-video-duration.md)
@@ -707,10 +707,10 @@ user-guide-title: Primetime Programming Help
          + [Default and customized playback behavior with ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-playback-post1.2.md)
          + [Customize playback with ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-playback-customize.md)
          + Primetime ad server metdata {ad-server-metadata}
-            + [Primetime ad server metadata overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-primetime-ad-serving-metadata/c-psdk-ios-1.4-primetime-ad-serving-metadata.md)
+            + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-primetime-ad-serving-metadata/c-psdk-ios-1.4-primetime-ad-serving-metadata.md)
             + [Ad signaling mode](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-primetime-ad-serving-metadata/r-psdk-ios-1.4-ad-signaling-mode.md)
          + Companion banner ads {#companion-banner-ads}
-            + [Companion banner ads overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-companion-banner-ads/c-psdk-ios-1.4-companion-banner-ads.md)
+            + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-companion-banner-ads/c-psdk-ios-1.4-companion-banner-ads.md)
             + [Companion banner data](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-companion-banner-ads/r-psdk-ios-1.4-companion-banner-data.md)
             + [Display banner ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-companion-banner-ads/t-psdk-ios-1.4-companion-banner-ads-display.md)
          + [Clickable ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-clickable-ads.md)
@@ -720,7 +720,7 @@ user-guide-title: Primetime Programming Help
          + [Ad fallback for VAST and VMAP ads](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-ad-fallback.md)
          + [Load Ad for a DVR window](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-ad-loading-for-a-dvr-window.md)
          + Custom tags {#custom-tags}
-            + [Custom tags overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/c-psdk-ios-1.4-custom-tags-configure.md)
+            + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/c-psdk-ios-1.4-custom-tags-configure.md)
             + [Example of a customized VOD asset](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/c-psdk-ios-1.4-custom-tags-overview.md)
             + [Config class methods for tags](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/c-psdk-ios-1.4-custom-tags-psdkconfig-methods.md)
             + [Timed metadata class](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/r-psdk-ios-1.4-custom-tags-timedmetadata-class.md)
@@ -729,37 +729,35 @@ user-guide-title: Primetime Programming Help
             + [Store timed metadata objects as they are dispatched](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-store.md)
             + [Use timed metadata](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-use.md)
          + Update ad creative selection rules {#update-rules}
-            + [Update ad creative selection rules overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/c-psdk-ios-1.4-updating-rules.md)
+            + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/c-psdk-ios-1.4-updating-rules.md)
             + [Priority rules](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/r-psdk-ios-1.4-priority-rule.md)
             + [Normalize rules](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/r-psdk-ios-1.4-normalize-rule.md)
             + [Sample creative selection rules](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/r-psdk-ios-1.4-sample-rule-files.md)
             + [Apply creative selection rules](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-updating-rules/c-psdk-ios-1.4-how-tvsdk-applies-csr.md)
       + [Tokenized segment streams](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-tokenized-segment-streams.md)
       + Customize opportunity detectors and content resolvers {#customize-opportunity-content}
-         + [Customize opportunity detectors and content resolvers overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-content-resolver/c-psdk-ios-1.4-content-resolver.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-content-resolver/c-psdk-ios-1.4-content-resolver.md)
          + [Opportunity generators and content resolvers](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-content-resolver/c-psdk-ios-1.4-content-resolver-about.md)
          + [Implement a custom opportunity/content resolver](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-content-resolver/t-psdk-ios-1.4-content-resolver-implement-ios.md)
-      + Delete and replace ads in VOD streams {#delete-replace-ads}
-         + [Delete and replace ads in VOD streams overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-delete-replace-content-vod.md)
-         + [Ad deletion and replacement API changes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-deletion-replacement-api-changes-ios.md)
-         + Use cases to delete and replace ads {#use-cases}
-            + [Mark ranges](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-mark-ranges-ios.md)
-            + [Replace ranges](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-replace-ranges-ios.md)
-            + [Delete Ranges](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-delete-ranges-ios.md)
+      + [Delete and replace ads in VOD streams](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-delete-replace-content-vod.md)
+      + Use cases to delete and replace ads {#use-cases}
+        + [Mark ranges](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-mark-ranges-ios.md)
+        + [Replace ranges](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-replace-ranges-ios.md)
+        + [Delete Ranges](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-delete-replace-content-vod/c-psdk-ios-1.4-ad-delete-replace-use-cases/t-psdk-ios-1.4-delete-ranges-ios.md)
       + Handle blackouts in live streams {#blackouts}
-         + [Handle blackouts in live streams overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-blackouts-handle-ios/c-psdk-ios-1.4-blackouts-handle-ios.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-blackouts-handle-ios/c-psdk-ios-1.4-blackouts-handle-ios.md)
          + [Blackout API elements](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-blackouts-handle-ios/c-psdk-ios-1.4-blackout-apis.md)
          + [Implement blackout handling](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-blackouts-handle-ios/t-psdk-ios-1.4-blackouts-implement-handling-ios.md)
       + Subtitles and closed captions {#subtitles-closed-captions}
-         + [Subtitles and closed captions overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios.md)
          + [Expose subtitles](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios/t-psdk-ios-1.4-subtitles-exposing-ios.md)
          + [Expose closed captions](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios/t-psdk-ios-1.4-closed-captions-exposing-ios.md)
       + Alternate audio {#alternate-audio}
-         + [Alternate audio overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/alternate-audio/c-psdk-ios-1.4-alternate-audio.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/alternate-audio/c-psdk-ios-1.4-alternate-audio.md)
          + [Alternate audio tracks in the playlist](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/alternate-audio/c-psdk-ios-1.4-alternate-audio-in-playlist.md)
          + [Access alternate audio tracks](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/alternate-audio/t-psdk-ios-1.4-alternate-audio-implement.md)
       + Video analytics {#video-analytics}
-         + [Video analytics overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/c-psdk-ios-1.4-va-integration-overview.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/c-psdk-ios-1.4-va-integration-overview.md)
          + [Initialize and configure video analytics](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-integrate-heartbeats.md)
          + [Implement custom metadata support](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-custom-metadata.md)
          + [Implement chapter support](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-chapter-support.md)
@@ -767,7 +765,7 @@ user-guide-title: Primetime Programming Help
          + [Set up video analytics reporting on the server side](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-server-side-reporting-set-up.md)
          + [Access video analytics reports](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-va-integration-overview/t-psdk-ios-1.4-va-reports-access.md)
       + Content protection {#content-protection}
-         + [Content protection overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-drm-content-security.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-drm-content-security.md)
          + [Primetime DRM interface overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/r-psdk-ios-1.4-drm-interface.md)
          + [Implement Primetime DRM in a TSVDK application](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-tvsdk-drm-workflow.md)
          + Apple FairPlay in TVSDK applications {#fairplay}
@@ -775,34 +773,33 @@ user-guide-title: Primetime Programming Help
             + [Enable Apple FairPlay in TVSDK applications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/t-psdk-ios-1.4-drm-enable-fairplay.md)
          + [Whitelist your iOS application](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-drm-content-security/t-psdk-ios-1.4-whitelist-your-ios-application.md)
       + Notification for player status, activity, errors, and logs {#notifications}
-         + [Notifications for player status, activity, errors, and logs overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-system.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-system.md)
          + [Notification content](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-content.md)
          + [Notification setup](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-setup.md)
          + [Listen to notifications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/t-psdk-ios-1.4-listening-to-notifications.md)
          + [Implement notification callbacks](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/t-psdk-ios-1.4-implementing-notification-callbacks.md)
          + [Add custom notifications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-system/t-psdk-ios-1.4-adding-custom-notifications.md)
       + Customized logging {#customized-logging}
-         + [Customized logging overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-customized-logging/c-psdk-ios-1.4-customized-logging.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-customized-logging/c-psdk-ios-1.4-customized-logging.md)
          + [Listen to logs](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-customized-logging/t-psdk-ios-1.4-listening-to-logs.md)
          + [Add new log messages](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-customized-logging/t-psdk-ios-1.4-adding-new-log-messages.md)
       + [Failover](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-understanding-failover.md)
       + Billing metrics {#billing-metrics}
-         + [Billing metrics overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-billing/c-psdk-ios-1.4-billing.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-billing/c-psdk-ios-1.4-billing.md)
          + [Configure billing metrics](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-billing/t-psdk-ios-1.4-billing-config.md)
          + [Transmit billing metrics](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-billing/r-psdk-ios-1.4-billing-data-format.md)
       + Primetime Player classes summary {#classes-summary}
-         + [Primetime Player classes summary overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/c-psdk-ios-1.4-primetime-player-class-summary.md)
-         + [Media player classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-media-player-ios.md)
-         + [Logging classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-logging.md)
-         + [Metadata classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-metadata.md)
-         + [Notification classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-notifications.md)
-         + [QoS classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-qos.md)
-         + [Timeline classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-timeline.md)
-         + [Timeline advertising classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-timeline-advertising.md)
-         + [Digital Rights Management classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-digital-rights-management-ios.md)
-         + [Video Analytics classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-video-analytics.md)
+        + [Media player classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-media-player-ios.md)
+        + [Logging classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-logging.md)
+        + [Metadata classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-metadata.md)
+        + [Notification classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-notifications.md)
+        + [QoS classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-qos.md)
+        + [Timeline classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-timeline.md)
+        + [Timeline advertising classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-timeline-advertising.md)
+        + [Digital Rights Management classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-digital-rights-management-ios.md)
+        + [Video Analytics classes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-video-analytics.md)
       + Notification codes {#notification-codes}
-         + [Notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-codes/c-psdk-ios-1.4-notification-codes.md)
+         + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-codes/c-psdk-ios-1.4-notification-codes.md)
          + [ERROR notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-codes/r-psdk-ios-1.4-notifications-errors.md)
          + [WARNING notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-codes/r-psdk-ios-1.4-notification-warnings.md)
          + [INFO notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-notification-codes/r-psdk-ios-1.4-notification-info.md)

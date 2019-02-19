@@ -6,7 +6,7 @@ title: Expose subtitles
 uuid: 657ab9c7-b205-4d13-81a7-51bc8e7d5ee2
 ---
 
-# Expose subtitles{#expose-subtitles}
+# Expose subtitles {#expose-subtitles}
 
 The TVSDK notifies your player client about the availability of internal AVAsset's availableMediaCharacteristicsWithMediaSelectionOptions by using the PTMediaPlayerMediaSelectionOptionsAvailableNotification notification.
 
@@ -32,5 +32,5 @@ To expose subtitles:
    }
    ```
 
-   For information about alternate audio tracks, see  alternate-audio . 
+   For information about alternate audio tracks, see  [Alternate Audio](../../c-psdk-ios-1.4-titlepage/alternate-audio/c-psdk-ios-1.4-alternate-audio.md). 
 

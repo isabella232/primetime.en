@@ -12,7 +12,7 @@ You can provide custom metadata on content, ads, and chapter tracking calls by u
 
 Callback functions are invoked just before the tracking call is made, so your application can attach the metadata that is specific to an ad or chapter. 
 
-1. Invoke callback functions for content, ads, and chapters.
+  Invoke callback functions for content, ads, and chapters.
 
    ```
    // Video Metadata Block 

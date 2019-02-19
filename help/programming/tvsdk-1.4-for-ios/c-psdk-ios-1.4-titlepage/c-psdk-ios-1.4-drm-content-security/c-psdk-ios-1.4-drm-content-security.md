@@ -7,7 +7,7 @@ title: Content protection
 uuid: 47d79276-e944-49be-9b84-44f5a9cc1d86
 ---
 
-# Content protection{#content-protection}
+# Overview {#content-protection-overview}
 
 You can use the features of the Primetime Digital Rights Management (DRM) system to provide secure access to your video content. Alternatively, you can use third-party DRM solutions as an alternative to Adobe's integrated Primetime DRM solution.
 

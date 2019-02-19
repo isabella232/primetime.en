@@ -6,11 +6,11 @@ title: Display a seek scrub bar with the current playback time position
 uuid: db57eb6f-3c67-4a64-a0f4-7e39027eb3e0
 ---
 
-# Display a seek scrub bar with the current playback time position{#display-a-seek-scrub-bar-with-the-current-playback-time-position}
+# Display a seek scrub bar with the current playback time position {#display-a-seek-scrub-bar-with-the-current-playback-time-position}
 
 You can display the current and remaining time of the content that is being played.
 
-1. To implement a scrub bar, use the following sample code:
+   To implement a scrub bar, use the following sample code:
 
    ```
    // 1. Register for the PTMediaPlayerTimeChangeNotification 
@@ -58,4 +58,3 @@ You can display the current and remaining time of the content that is being play
    } 
    
    ```
-

@@ -6,7 +6,7 @@ title: Apple FairPlay in TVSDK applications
 uuid: 4384d379-37cd-46c5-8c25-0cda16bdebb8
 ---
 
-# Apple FairPlay in TVSDK applications{#apple-fairplay-in-tvsdk-applications}
+# Overview {#apple-fairplay-in-tvsdk-applications-overview}
 
 To implement FairPlay Streaming in your TVSDK app, you need to write a Resource Loader, which sends a license acquisition request to your FairPlay Streaming server.
 
@@ -143,4 +143,3 @@ Your content is obtained by using the `skd:` protocol, but your license request 
        
   }
   ```
-

@@ -6,7 +6,7 @@ title: Companion banner data
 uuid: 222bac21-2de8-4213-b8ae-de676c475a68
 ---
 
-# Companion banner data{#companion-banner-data}
+# Companion banner data {#companion-banner-data}
 
 The content of a PTAdAsset describes a companion banner.
 

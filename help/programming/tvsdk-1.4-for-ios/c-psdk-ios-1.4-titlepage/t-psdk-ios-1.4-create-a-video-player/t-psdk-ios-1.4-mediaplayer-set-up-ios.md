@@ -20,7 +20,7 @@ To set up your `PTMediaPlayer`:
 
 1. Create `PTMetadata`.
 
-   Assume that your method `createMetada` prepares metadata (see  ad-insertion ).
+   Assume that your method `createMetada` prepares metadata (see [Advertising](../../c-psdk-ios-1.4-titlepage/ad-insertion/r-psdk-ios-1.4-advertising-requirements.md)).
 
    ```
    PTMetadata *metadata = [self createMetadata]
