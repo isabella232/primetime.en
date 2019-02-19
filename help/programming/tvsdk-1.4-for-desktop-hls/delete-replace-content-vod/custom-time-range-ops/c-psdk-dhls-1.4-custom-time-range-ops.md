@@ -6,7 +6,7 @@ title: Custom time range operations
 uuid: fb27f343-718d-444e-8fc1-5ae0be02557b
 ---
 
-# Custom time range operations{#custom-time-range-operations}
+# Overview {#custom-time-range-operations-overview}
 
 TVSDK supports the programmatic deleting and replacing of ad content in VOD streams.
 
@@ -26,5 +26,4 @@ For ad deletion and replacement, TVSDK includes the following *custom time range
 TVSDK provides a `CustomRangesOpportunityGenerator` class to generate placement opportunities for the MARK and DELETE ranges. For the REPLACE mode, TVSDK generates two placement opportunities for each time range:
 
 * The `CustomRangeResolver` generates placement opportunities for DELETE 
-* The `AuditudeAdResolver` generates placement opportunities for INSERT
-
+* The `AuditudeAdResolver` generates placement opportunities for INSERT.

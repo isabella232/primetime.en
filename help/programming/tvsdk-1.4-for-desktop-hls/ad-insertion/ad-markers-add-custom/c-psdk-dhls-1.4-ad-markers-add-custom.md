@@ -6,7 +6,7 @@ title: Add custom ad markers
 uuid: 7cf76e76-965c-4ee4-a311-e28b5a3b5046
 ---
 
-# Add custom ad markers{#add-custom-ad-markers}
+# Overview {#add-custom-ad-markers-overview}
 
 By using custom ad markers, you can mark specific sections of the main content as ad-related content periods.
 
@@ -23,4 +23,4 @@ Ad tracking is not handled internally by TVSDK, such as when ads are resolved by
 
 Playback events are triggered separately for ad breaks and ads at the starting and ending point for each ad.
 
-TVSDK dispatches ad tracking events to your application, so you can implement your own tracking logic. If you set custom ad markers, you receive the `AD_BREAK_STARTED`, `AD_STARTED`, `AD_PROGRESS`, `AD_COMPLETED`, and `AD_BREAK_COMPLETED` events. 
+TVSDK dispatches ad tracking events to your application, so you can implement your own tracking logic. If you set custom ad markers, you receive the `AD_BREAK_STARTED`, `AD_STARTED`, `AD_PROGRESS`, `AD_COMPLETED`, and `AD_BREAK_COMPLETED` events.

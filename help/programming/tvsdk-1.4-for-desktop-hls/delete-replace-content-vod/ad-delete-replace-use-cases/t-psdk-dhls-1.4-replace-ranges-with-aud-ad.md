@@ -10,7 +10,7 @@ uuid: 101ac42d-5ba5-4487-af95-483a6594808a
 
 Remove `TimeRanges` between the `begin` and `end` in `localTime` from the timeline. Replace it with an AdBreak of `begin` to `begin+replaceDuration`. 
 
-1. Replace ranges with Primetime ad decisioning ads.
+  Replace ranges with Primetime ad decisioning ads.
 
    ```
    {   

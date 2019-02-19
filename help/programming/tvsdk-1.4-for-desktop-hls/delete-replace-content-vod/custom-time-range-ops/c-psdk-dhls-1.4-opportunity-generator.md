@@ -6,7 +6,7 @@ title: Opportunity Generator
 uuid: 26f4dcab-6c6b-4d27-a073-017673bf098f
 ---
 
-# Opportunity Generator{#opportunity-generator}
+# Opportunity Generatorr{#opportunity-generator}
 
 ```
 if (resource.metadata != null) { 
@@ -29,4 +29,3 @@ if (resource.metadata != null) {
     } 
 }
 ```
-

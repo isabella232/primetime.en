@@ -816,17 +816,17 @@ user-guide-title: Primetime Programming Help
          + [Content and manifest requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-content.md)
          + [#EXT-X-VERSION requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-ext-x-version.md)
          + StageVideo capabilities and restrictions {#stagevideo}
-            + [StageVideo capabilities and restrictions overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stagevideo-capabilities.md)
+            + [Overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stagevideo-capabilities.md)
             + [Check whether StageVideo is available](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/t-psdk-dhls-1.4-stage-video-available.md)
             + [Flash 15 support for StageVideo](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stage-video-flash15-support.md)
             + [StageVideo minimum requirements](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/r-psdk-dhls-1.4-requirements-stage-video.md)
             + [StageVideo and HTML Overlays](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/c-psdk-dhls-1.4-stage-video-and-overlays.md)
    + Content playback options {#content-playback-options}
-      + [Playback options](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-create-a-video-player.md)
+      + [Overview](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-create-a-video-player.md)
       + [Set up the MediaPlayer](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-mediaplayer-set-up.md)
       + [Load your signed token](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-get-signed-token.md)
       + Listen for Primetime Player events {#listen}
-         + [Listen for Primetime Player events overview](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-listen-for.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-listen-for.md)
          + [Implement event listeners and callbacks](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/t-psdk-dhls-1.4-event-listeners-implement.md)
          + [Order of playback events](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-order-playback.md)
          + [Order of advertising events](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-order-ad-playback.md)
@@ -836,28 +836,26 @@ user-guide-title: Primetime Programming Help
          + [Timed metadata events](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-events-listen-for/c-psdk-dhls-1.4-events-order-timed-metadata.md)
       + [Set up error handling](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-error-handling-set-up.md)
       + Configure the player user interface {#configure-interface}
-         + [Configure the player user interface overview](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/c-psdk-dhls-1.4-ui-configure.md)
-         + [Wait for a valid state](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)
-         + [Play and pause a video](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-pause-play-implement.md)
-         + [Identify whether the content is live or VOD](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-content-live-vod-identify.md)
-         + [Provide volume control](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-volume-control.md)
-         + [Display the duration, current time, and remaining time of the   video](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-duration-time-display.md)
-         + [Display a seek scrub bar with the current playback position...](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-seek-scrub-bar-display.md)
-         + [Construct a control bar enhanced for DVR](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-ctrl-bar-for-dvr-construct.md)
-         + [Implement fast forward and rewind](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-browser-dhls-1.4-trickplay-implement.md)
-         + [Enter a stream at a specific time](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-stream-entry-control.md)
-         + [Adaptive bit rates (ABR) for video quality](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/c-psdk-dhls-1.4-abr-control-quality.md)
-         + [Control the position and size of the video view](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-control-video-view.md)
+        + [Overview](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/c-psdk-dhls-1.4-ui-configure.md)
+        + [Wait for a valid state](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)
+        + [Play and pause a video](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-pause-play-implement.md)
+        + [Identify whether the content is live or VOD](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-content-live-vod-identify.md)
+        + [Provide volume control](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-volume-control.md)
+        + [Display the duration, current time, and remaining time of the   video](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-duration-time-display.md)
+        + [Display a seek scrub bar with the current playback position...](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-seek-scrub-bar-display.md)
+        + [Construct a control bar enhanced for DVR](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-ctrl-bar-for-dvr-construct.md)
+        + [Implement fast forward and rewind](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-browser-dhls-1.4-trickplay-implement.md)
+        + [Enter a stream at a specific time](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-stream-entry-control.md)
+        + [Adaptive bit rates (ABR) for video quality](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/c-psdk-dhls-1.4-abr-control-quality.md)
+        + [Control the position and size of the video view](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-control-video-view.md)
       + Initialize the media player for a specific video {#initialize-media-player}
-         + [Initialize the media player for a specific video overview](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/c-psdk-dhls-1.4-mediaplayer-initialize-for-video.md)
          + [Create a media resource](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-create.md)
          + [Load a media resource in the MediaPlayer](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-load.md)
          + [Load a media resource using MediaPlayerItemLoader](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-load-using-mediaplayeritemloader.md)
-   + Quality of Service {#quality-of-service}
-      + Quality of service statistics {#statistics}
-         + [Quality of service statistics overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/qos-statistics-monitor/c-psdk-dhls-1.4-qos-statistics-monitor.md)
-         + [Track at the fragment level using load information](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/qos-statistics-monitor/t-psdk-dhls-1.4-qos-fragment-level-tracking.md)
-         + [Read QOS playback, buffering, and device statistics](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/qos-statistics-monitor/t-psdk-dhls-1.4-qos-stats-read.md)
+   + Quality of service statistics {#quality-of-service-statistics}
+      + [Overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/qos-statistics-monitor/c-psdk-dhls-1.4-qos-statistics-monitor.md)
+      + [Track at the fragment level using load information](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/qos-statistics-monitor/t-psdk-dhls-1.4-qos-fragment-level-tracking.md)
+      + [Read QOS playback, buffering, and device statistics](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-qos/qos-statistics-monitor/t-psdk-dhls-1.4-qos-stats-read.md)
    + [Work with cookies](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-cookies-work-with.md)
    + [HTTP 302 redirect optimization](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-302-redirect-overview.md)
    + Work with MediaPlayer objects {#work-with-mediaplayer-objects}
@@ -869,14 +867,13 @@ user-guide-title: Primetime Programming Help
          + [Release a MediaPlayer instance and resources](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/t-psdk-dhls-1.4-mediaplayer-release-instance.md)
       + [Inspect the playback timeline](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/t-psdk-dhls-1.4-timeline-inspect-playback.md)
    + Buffering {#buffering}
-      + Buffering time policies {#time-policies}
-         + [Buffering time policies](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/c-psdk-dhls-1.4-buffering-policies.md)
-         + [Set buffering times](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/t-psdk-dhls-1.4-buffering-times-set.md)
+     + [Buffering time policies](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/c-psdk-dhls-1.4-buffering-policies.md)
+     + [Set buffering times](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/t-psdk-dhls-1.4-buffering-times-set.md)
    + [Hide a video view](tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-video-view-hiding.md)
    + Advertising {#advertising}
       + [Advertising requirements](tvsdk-1.4-for-desktop-hls/ad-insertion/r-psdk-dhls-1.4-advertising-requirements.md)
       + Inserting ads {#inserting-ads}
-         + [Inserting ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-insertion-about.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-insertion-about.md)
          + [VOD ad resolving and insertion](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-resolving-client-vod.md)
          + [Live/linear ad resolving and insertion](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/c-psdk-dhls-1.4-ad-resolving-client-live-linear.md)
          + [Implementing an early ad break return](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-about/r-psdk-dhls-1.4-early-ad-break-return.md)
@@ -884,64 +881,55 @@ user-guide-title: Primetime Programming Help
       + [Enable lazy ad loading](tvsdk-1.4-for-desktop-hls/ad-insertion/t-psdk-dhls-1.4-ad-delay-enable.md)
       + [Default and customized playback behavior with ads](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-playback-post1.2.md)
       + Customize playback with ads {#customize-playback-with-ads}
-         + [Customize playback with ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/c-psdk-dhls-1.4-playback-customize.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/c-psdk-dhls-1.4-playback-customize.md)
          + [API elements for ad playback](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/c-psdk-dhls-1.4-playback-ad-custom-elements.md)
          + [Use the default playback behavior](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-use-default.md)
          + [Set up customized playback](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-customize.md)
          + [Skip ad breaks for a period of time](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-skip-breaks.md)
          + [Save the video position and resume later](tvsdk-1.4-for-desktop-hls/ad-insertion/playback-customize/t-psdk-dhls-1.4-playback-save-position.md)
       + Ad insertion metadata {#ad-insertion-metadata}
-         + [Ad insertion metadata overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-metadata/c-psdk-dhls-1.4-ad-insertion-metadata.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-metadata/c-psdk-dhls-1.4-ad-insertion-metadata.md)
          + [Set up ad insertion metadata](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-metadata/t-psdk-dhls-1.4-ad-insertion-metadata-set-up.md)
       + Companion banner ads {#companion-banner-ads}
-         + [Companion banner ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/companion-banner-ads/c-psdk-dhls-1.4-companion-banner-ads.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/ad-insertion/companion-banner-ads/c-psdk-dhls-1.4-companion-banner-ads.md)
          + [Companion banner data](tvsdk-1.4-for-desktop-hls/ad-insertion/companion-banner-ads/r-psdk-dhls-1.4-companion-banner-data.md)
          + [Display banner ads](tvsdk-1.4-for-desktop-hls/ad-insertion/companion-banner-ads/t-psdk-dhls-1.4-companion-banner-ads-display.md)
-      + Clickable ads {#clickable-ads}
-         + [Clickable ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/clickable-ads/c-psdk-dhls-1.4-clickable-ads.md)
-         + [Respond to clicks on ads](tvsdk-1.4-for-desktop-hls/ad-insertion/clickable-ads/t-psdk-dhls-1.4-respond-to-ad-clicks.md)
+      + [Clickable ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/clickable-ads/c-psdk-dhls-1.4-clickable-ads.md)
       + Custom tags {#custom-tags}
-         + [Custom tags overview](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-configure.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-configure.md)
          + [Example of a customized VOD asset](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-overview.md)
          + [Config class methods for tags](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-psdkconfig-methods.md)
          + [Timed metadata class](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/r-psdk-dhls-1.4-custom-tags-timedmetadata-class.md)
          + [Notifications for manifest tags](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-notifications.md)
          + [Subscribe to custom tags](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/t-psdk-dhls-1.4-custom-tags-subscribe.md)
          + [Add listeners for timed metadata notifications](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/t-psdk-dhls-1.4-custom-tags-receive-notifications.md)
-      + Repackage incompatible ads using Adobe Creative Repackaging Service {#repackage-incompatible}
-         + [Repackage incompatible ads using Adobe Creative Repackaging Service overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-transcoding/c-psdk-dhls-1.4-ad-transcoding.md)
-         + [Multiple CDN support for CRS ad delivery](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-transcoding/c-psdk-dhls-1.4-multi-cdns-for-crs.md)
-      + Ad fallback for VAST and VMAP ads {#ad-fallback}
-         + [Ad fallback for VAST and VMAP ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/c-psdk-dhls-1.4-ad-fallback.md)
-         + [Define fallback ad behavior for VMAP inline ads](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/t-psdk-dhls-1.4-ad-fallback-set-up.md)
-         + [Ad fallback behavior for VAST and VMAP](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/r-psdk-dhls-1.4-ad-fallback-behavior.md)
+      + [Repackage incompatible ads using Adobe Creative Repackaging Service](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-transcoding/c-psdk-dhls-1.4-ad-transcoding.md)         
+      + [Ad fallback for VAST and VMAP ads](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/c-psdk-dhls-1.4-ad-fallback.md)
       + Custom ads {#custom-ads}
-         + [Custom ads overview](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/c-psdk-dhls-1.4-custom-ads.md)
-         + [Custom ad requirements](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/c-psdk-dhls-1.4-custom-ads-req.md)
+        + [Custom ad requirements](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/c-psdk-dhls-1.4-custom-ads-req.md)
          + [Custom ad events](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/r-psdk-dhls-1.4-custom-ad-events.md)
          + [Display linear VPAID ads in an ad break](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/t-psdk-dhls-1.4-display-linear-vpaid-ads.md)
       + Add custom ad markers {#add-markers}
-         + [Add custom ad markers overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/c-psdk-dhls-1.4-ad-markers-add-custom.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/c-psdk-dhls-1.4-ad-markers-add-custom.md)
          + [TimeRange class](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/r-psdk-dhls-1.4-timerange-class.md)
          + [MediaPlayer and MediaResource classes](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/r-psdk-dhls-1.4-mediaplayer-mediaresource-classes.md)
          + [TimeRangeCollection class](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/r-psdk-dhls-1.4-timerangecollection-class.md)
          + [Place TimeRange ad markers on the timeline](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/t-psdk-dhls-1.4-timerange-markers-on-timeline.md)
          + [Control playback behavior for seeking over custom ad markers](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/t-psdk-dhls-1.4-ad-markers-control-seek.md)
       + Updating ad creative selection rules {#updating-ad-rules}
-         + [Updating ad creative selection rules overview](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/c-psdk-dhls-1.4-updating-rules.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/c-psdk-dhls-1.4-updating-rules.md)
          + [Priority rules](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-priority-rule.md)
          + [Normalize rules](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-normalize-rule.md)
          + [Sample creative selection rules](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-sample-rule-files.md)
          + [Applying creative selection rules](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/c-psdk-dhls-1.4-how-tvsdk-applies-csr.md)
-   + Opportunity detectors and content resolvers {#opportunity-detectors}
-      + Customize opportunity detectors and content resolvers {#customize-opportunities}
-         + [Customize opportunity detectors and content resolvers](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver.md)
-         + [Opportunity generators and content resolvers](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver-about.md)
-         + [Implement a custom opportunity detector](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/t-psdk-dhls-1.4-opp-detector-impl.md)
-         + [Implement a custom content resolver](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/t-psdk-dhls-1.4-content-resolver-implement.md)
+   + Customize opportunity detectors and content resolvers {#customize-opportunities}
+     + [Overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver.md)
+     + [Opportunity generators and content resolvers](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver-about.md)
+     + [Implement a custom opportunity detector](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/t-psdk-dhls-1.4-opp-detector-impl.md)
+     + [Implement a custom content resolver](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/t-psdk-dhls-1.4-content-resolver-implement.md)
    + Delete and replace ads in VOD streams {#delete-replace-vod-streams}
       + Custom time range operations {#custom-time-range}
-         + [Custom time range operations overview](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-custom-time-range-ops.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-custom-time-range-ops.md)
          + [Opportunity Generator](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-opportunity-generator.md)
          + [Ad resolvers](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-ad-resolvers.md)
          + [Signaling mode and time range](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-signalmode-timerange-combos.md)
@@ -950,9 +938,7 @@ user-guide-title: Primetime Programming Help
          + [Replace time ranges with an Adobe Primetime ad decisioning ad](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-replace-ranges-with-aud-ad.md)
          + [Delete ranges with Primetime ad decisioning ad](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-delete-ranges-with-aud-ad.md)
          + [Special Use Cases](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-special-use-cases.md)
-      + Ad deletion and replacement error handing {#ad-deletion-error}
-         + [Ad deletion and replacement error handling overview](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-error-handling/c-psdk-dhls-1.4-ad-delete-replace-error-handling.md)
-         + [Time range error examples](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-error-handling/c-psdk-dhls-1.4-timerange-error-examples.md)
+      + [Ad deletion and replacement error handling](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-error-handling/c-psdk-dhls-1.4-ad-delete-replace-error-handling.md)
       + [Ad deletion and replacement API changes](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/c-psdk-dhls-1.4-ad-deletion-replacement-api-changes.md)
    + Blackouts in live streams {#blackouts}
       + Handle blackouts in live streams {#handle-live-streams}
@@ -984,7 +970,7 @@ user-guide-title: Primetime Programming Help
       + [Implementing Primetime DRM in a TSVDK application](tvsdk-1.4-for-desktop-hls/drm-content-security/c-psdk-dhls-1.4-tvsdk-drm-workflow.md)
    + Notification system {#notification-system}
       + Notifications for player status, activity, errors, and logging {#notifications}
-         + [Notifications overview](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/c-psdk-dhls-1.4-notification-system.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/c-psdk-dhls-1.4-notification-system.md)
          + [Notification content](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/c-psdk-dhls-1.4-notification-content.md)
          + [Set up your notification system](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-notification-setup.md)
          + [Add real-time logging and debugging](tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-notification-realtime-logging-debugging.md)
@@ -1025,9 +1011,9 @@ user-guide-title: Primetime Programming Help
       + [Timeline resolvers classes](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-timeline-resolvers.md)
       + [Utility classes](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-utility.md)
       + [Video Analytics classes](tvsdk-1.4-for-desktop-hls/primetime-player-classes-summary/r-psdk-dhls-1.4-classes-video-analytics.md)
-   + Events and notifications {#events-and-notifications}      
+   + Events and notifications {#events-and-notifications} 
       + Notification codes {#notification-codes}
-         + [Notification codes overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/c-psdk-dhls-1.4-notification-codes.md)
+         + [Overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/c-psdk-dhls-1.4-notification-codes.md)
          + [ERROR notification codes](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/r-psdk-dhls-1.4-notifications-errors.md)
          + [WARNING notification codes](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/r-psdk-dhls-1.4-notification-warnings.md)
          + [INFO notification codes](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/r-psdk-dhls-1.4-notification-info.md)

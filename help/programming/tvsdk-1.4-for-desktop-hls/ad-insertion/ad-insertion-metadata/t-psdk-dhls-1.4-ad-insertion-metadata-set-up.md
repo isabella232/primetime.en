@@ -63,4 +63,5 @@ Advertising metadata is in the `MediaResource.metadata` property. When starting 
 
    After the ads have been resolved and placed on the timeline, the `MediaPlayer` transitions to the PREPARED state.
 1. Call `MediaPlayer.play` to start the playback.
->TVSDK now includes ads when your media plays. 
+
+TVSDK now includes ads when your media plays.

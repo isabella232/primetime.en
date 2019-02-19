@@ -27,7 +27,8 @@ To use TVSDK, ensure that your hardware, operating system, and application versi
 
 * For Windows: 
 
-<table frame="all" colsep="1" rowsep="1" id="table_886A9EB58B044C6D809B012E5E2A8657"> 
+  <table frame="all" colsep="1" rowsep="1" 
+  id="table_886A9EB58B044C6D809B012E5E2A8657"> 
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"> Operating system </td> 

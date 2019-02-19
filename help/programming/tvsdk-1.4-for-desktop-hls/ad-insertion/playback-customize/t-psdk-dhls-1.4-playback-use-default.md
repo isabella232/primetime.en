@@ -10,7 +10,7 @@ uuid: 7139384c-167a-4cab-816a-c02fb723a5cb
 
 You can choose to use default ad behaviors.
 
-1. To use default behaviors:
+  To use default behaviors:
 
     * If you implement your own `ContentFactory` class, return a new instance of `DefaultAdPolicySelector` in your implementation of `doRetrieveAdPolicySelector`.     
     
@@ -32,4 +32,3 @@ You can choose to use default ad behaviors.
       ```
 
     * If you do not have a custom implementation for the `ContentFactory` class, TVSDK uses `DefaultAdPolicySelector`.
-

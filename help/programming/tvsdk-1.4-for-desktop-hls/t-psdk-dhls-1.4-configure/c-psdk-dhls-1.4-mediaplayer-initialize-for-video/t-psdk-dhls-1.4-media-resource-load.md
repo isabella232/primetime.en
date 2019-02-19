@@ -25,20 +25,22 @@ Load a resource by directly instantiating a MediaResource and loading the video 
 1. When the state of the media player changes to INITIALIZED, you can call `MediaPlayer.prepareToPlay`
 
    The INITIALIZED state indicates that the media has been successfully loaded. Calling `prepareToPlay` starts the advertising resolution and placement process, if any.
+
 1. When the media player status changes to PREPARED, the media stream has successfully loaded and is prepared for playback.
 
    When the media stream is loaded, a `MediaPlayerItem` is created.
->If a failure occurs, the MediaPlayer switches to the ERROR status. It also notifies your application by dispatching the `STATUS_CHANGED` event to your `MediaPlayerStatusChangeEvent` callback. 
->
->This passes several parameters: >
->* A `type` parameter of type string with the value `ERROR`. 
->
->* A `MediaError` parameter that you can use to get a notification that contains diagnostic information about the error event. 
->
+
+If a failure occurs, the MediaPlayer switches to the ERROR status. It also notifies your application by dispatching the `STATUS_CHANGED` event to your `MediaPlayerStatusChangeEvent` callback. 
+
+This passes several parameters: >
+* A `type` parameter of type string with the value `ERROR`. 
+
+* A `MediaError` parameter that you can use to get a notification that contains diagnostic information about the error event. 
+
 
 ><!--<a id="example_3774607C6F08473282CF0CB7F3D82373"></a>-->
 
->The following simplified sample code illustrates the process of loading a media resource: 
+The following simplified sample code illustrates the process of loading a media resource: 
 >
 >```>
 >>// mediaResource is a properly configured MediaResource instance 
@@ -74,4 +76,4 @@ Load a resource by directly instantiating a MediaResource and loading the video 
 >        ... 
 >    } 
 >}
->```>
+>```

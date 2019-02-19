@@ -6,7 +6,9 @@ title: Create a media resource
 uuid: 3d03d92f-69b3-4da8-9b16-25a264115ae5
 ---
 
-# Create a media resource{#create-a-media-resource}
+# Create a media resource {#create-a-media-resource}
+
+For each new video content, initialize a MediaResource instance with information about the video content and load the media resource.
 
 The MediaResource class represents the content to be loaded by the MediaPlayer instance.
 

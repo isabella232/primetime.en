@@ -6,7 +6,7 @@ title: Buffering time policies
 uuid: 8d3ce9be-cca4-485e-ba66-d2f2aa6822dd
 ---
 
-# Buffering time policies{#buffering-time-policies}
+# Buffering time policies {#buffering-time-policies}
 
 To provide a smoother viewing experience, TVSDK sometimes buffers the video stream. You can configure the way the player buffers.
 

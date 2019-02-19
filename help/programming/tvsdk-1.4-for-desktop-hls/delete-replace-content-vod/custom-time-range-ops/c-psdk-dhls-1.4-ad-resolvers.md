@@ -6,7 +6,7 @@ title: Ad resolvers
 uuid: 705df232-4adc-4f3a-b4aa-dafbd2b8fe4c
 ---
 
-# Ad resolvers{#ad-resolvers}
+# Ad resolvers {#ad-resolvers}
 
 ```
 if (resource.metadata != null) { 
@@ -25,4 +25,3 @@ if (resource.metadata != null) {
     } 
 }
 ```
-
