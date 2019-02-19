@@ -6,7 +6,7 @@ title: Wait for a valid state
 uuid: 918ab021-3685-424a-b84e-683da0357724
 ---
 
-# Wait for a valid state{#wait-for-a-valid-state}
+# Wait for a valid state {#wait-for-a-valid-state}
 
 Before you can use most of the TVSDK player methods, the player must be in a valid status.
 
@@ -23,4 +23,3 @@ The required status is usually PREPARED.
    ```
    function getstatus():String;
    ```
-

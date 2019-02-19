@@ -6,7 +6,7 @@ title: Content and manifest requirements
 uuid: 53cc570a-be33-4488-95e8-43f91b559b13
 ---
 
-# Content and manifest requirements{#content-and-manifest-requirements}
+# Content and manifest requirements {#content-and-manifest-requirements}
 
 Check the restrictions and requirements for streams and playlists (manifests), including DRM encryption keys.
 
@@ -14,4 +14,3 @@ Check the restrictions and requirements for streams and playlists (manifests), i
 |---|
 |  If the DRM-protected stream is multiple bit rate (MBR), the DRM encryption key used for the MBR should be the same as the key used in all the bit-rate streams.  |
 |  Must have the same bit-rate renditions as the renditions of the main content.  |
-

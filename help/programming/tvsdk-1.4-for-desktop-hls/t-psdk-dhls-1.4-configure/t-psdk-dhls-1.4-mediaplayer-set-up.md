@@ -48,4 +48,4 @@ TVSDK provides a single implementation of the `MediaPlayer` interface: the Defau
    container.addChild(view)
    ```
 
->The `MediaPlayer` instance is now available and properly configured to display video content on the device screen. 
+The `MediaPlayer` instance is now available and properly configured to display video content on the device screen.

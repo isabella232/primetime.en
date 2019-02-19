@@ -6,7 +6,7 @@ title: Implement chapter support
 uuid: 85d14b83-7910-4f5d-9ef2-511de916abd6
 ---
 
-# Implement chapter support{#implement-chapter-support}
+# Implement chapter support {#implement-chapter-support}
 
 You can define and track chapters for video tracking in a TVSDK-based application in the following ways:
 
@@ -15,7 +15,7 @@ You can define and track chapters for video tracking in a TVSDK-based applicatio
   A chapter is defined as the time between each ad break. For example, the time between a pre-roll ad break and the first mid-roll is defined as the first chapter. 
 * Custom chapters, which are managed by the application and are based on CMS data or another way that the application uses to define chapters.
 
-1. Define and track default or custom chapters.
+  Define and track default or custom chapters.
 
    ```
    // First, enable chapter tracking by setting the boolean 'enableChapterTracking' to true: 

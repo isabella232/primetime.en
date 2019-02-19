@@ -10,7 +10,7 @@ uuid: efd36a2f-db61-434a-bc2a-50a866f44b33
 
 Remove TimeRanges between begin and end in localTime from the timeline.
 
-1. Delete ranges with an  Phrase ad.
+  Delete ranges with an  Phrase ad.
 
    ```
    {   

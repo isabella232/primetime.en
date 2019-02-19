@@ -6,7 +6,7 @@ title: Listen for Primetime Player events
 uuid: e72782bf-9d26-4285-85e4-fd4d803c1bbe
 ---
 
-# Listen for Primetime Player events{#listen-for-primetime-player-events}
+# Overview {#listen-for-primetime-player-events-overview}
 
 Events from TVSDK indicate the state of the player, errors that occur, the completion of actions that you have requested, such as a video starting to play, or actions that occur implicitly, such as an ad completing.
 

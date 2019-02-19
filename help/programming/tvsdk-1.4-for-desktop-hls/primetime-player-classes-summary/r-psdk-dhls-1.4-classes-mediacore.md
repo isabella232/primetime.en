@@ -10,7 +10,9 @@ uuid: f43d6968-cb08-4a8e-aebd-7934763df680
 
 You can use the Primetime Player API to customize the behavior of the player. These classes describe your media player and its resource.
 
-To see the complete API documentation for TVSDK, go to the [Adobe Primetime API references](https://help.adobe.com/en_US/primetime/api/index.html). 
+To see the complete API documentation for TVSDK, go to the [Adobe Primetime API references](https://help.adobe.com/en_US/primetime/api/index.html).
+
+These classes describe your media player and its resources.
 Package: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/package-detail.html) 
 
 <table frame="all" colsep="1" rowsep="1" id="table_2801E01282A948E6917910CA2FD1E05C"> 

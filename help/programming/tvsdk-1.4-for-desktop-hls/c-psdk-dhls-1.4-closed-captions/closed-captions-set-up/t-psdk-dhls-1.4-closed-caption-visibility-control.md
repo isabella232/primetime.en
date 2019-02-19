@@ -22,7 +22,7 @@ You can control the visibility of closed captions. When visibility is on, the cu
 >public static const VISIBLE:String = visible;
 >```>
 
-1. Wait for the `MediaPlayer` to have at least the PREPARED status (see  ui-state-prepared-wait-for ).
+1. Wait for the `MediaPlayer` to have at least the PREPARED status (see [Wait for a valid state](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)).
 1. To get the current visibility setting for closed captions, use the getter method in `MediaPlayer`, which returns a visibility value.
 
    ```

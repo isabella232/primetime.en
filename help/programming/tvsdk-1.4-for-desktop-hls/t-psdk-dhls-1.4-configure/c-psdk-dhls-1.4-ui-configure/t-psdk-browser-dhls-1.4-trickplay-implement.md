@@ -63,6 +63,8 @@ Use the following API elements to change play rates:
 |  1.0  | Switches to normal play mode (calling `play` is the same as setting the rate property to 1.0)  |
 |  0.0  | Pauses (calling `pause` is the same as setting the rate property to 0.0)  |
 
+# Limitations and behavior for trick play {#limitations-behavior-trick-play}
+
 Here are the limitations for trick play mode:
 
 * The master playlist must contain I-frame-only segments. Only the key frames from the I-frame track are displayed on the screen. 

@@ -52,5 +52,4 @@ You can monitor timed metadata by listening for the following events, which noti
                            onTimedMetadataAvailable);
    ```
 
-ID3 metadata are dispatched through the same `TimedMetadataEvent.TIMED_METADATA_AVAILABLE`. This should not cause any confusion, however, because you can use a TimedMetadata objtec's `type` property to differentiate between TAG and ID3. For more information about ID3 tags, see [Get ID3 tags](../../../tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-id3-metadata-retrieve.md).
-
+ID3 metadata are dispatched through the same `TimedMetadataEvent.TIMED_METADATA_AVAILABLE`. This should not cause any confusion, however, because you can use a TimedMetadata objtec's `type` property to differentiate between TAG and ID3. For more information about ID3 tags, see [ID3 tags](../../../tvsdk-1.4-for-desktop-hls/r-psdk-dhls-1.4-notification-system/notification-system/t-psdk-dhls-1.4-id3-metadata-retrieve.md).

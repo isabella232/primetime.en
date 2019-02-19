@@ -6,11 +6,12 @@ title: Timeline advertising classes
 uuid: f424fa13-778b-458d-bc82-389441a8a56a
 ---
 
-# Timeline advertising classes{#timeline-advertising-classes}
+# Timeline advertising classes {#timeline-advertising-classes}
 
 These classes provide information about ads that occur within a timeline.
 
- Package: [com.adobe.mediacore.timeline.advertising](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/package-detail.html)  Package: [com.adobe.mediacore.timeline.advertising.policy](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/package-detail.html) 
+ Package: [com.adobe.mediacore.timeline.advertising](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/package-detail.html)
+ Package: [com.adobe.mediacore.timeline.advertising.policy](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/package-detail.html) 
 
 |  Name  | Description  |
 |---|---|

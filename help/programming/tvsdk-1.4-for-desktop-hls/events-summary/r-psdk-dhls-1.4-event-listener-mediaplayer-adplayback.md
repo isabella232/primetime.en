@@ -14,7 +14,7 @@ TVSDK dispatches ad-playback events in response to ad-related operations such as
 
 >[!TIP]
 >
->When ads are inserted into or removed from the media, TVSDK dispatches the playback event `TimelineEvent. [TIMELINE_UPDATED](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimelineEvent.html#TIMELINE_UPDATED)`.
+>When ads are inserted into or removed from the media, TVSDK dispatches the playback event TimelineEvent.[TIMELINE_UPDATED](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimelineEvent.html#TIMELINE_UPDATED).
 
 |  Event  | Meaning  |
 |---|---|

@@ -14,7 +14,7 @@ This guide provides information about how to develop video player applications b
 
 TVSDK includes API descriptions and code samples to help you to integrate advanced video functionality, content protection, and advertising features into your player. You use ActionScript to create a video player user interface. TVSDK helps you connect that user interface to its media player. This allows you to play videos and advertising based on media manifests. You can also use TVSDK to retrieve information about the video, handle security, and control and monitor playback.
 
-For specific hardware and software requirements for using TVSDK, see  requirements
+For specific hardware and software requirements for using TVSDK, see [Requirements](../../c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/r-psdk-dhls-1.4-requirements-system.md).
 
 ## Audience {#section_527860B373734D3BA89FCF5EC1F6DC37}
 

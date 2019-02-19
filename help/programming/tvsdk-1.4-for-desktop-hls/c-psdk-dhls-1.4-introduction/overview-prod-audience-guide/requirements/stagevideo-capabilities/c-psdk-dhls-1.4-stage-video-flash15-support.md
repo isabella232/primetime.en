@@ -21,7 +21,7 @@ Consider the following information about the Flash 15 StageVideo fallback to sof
 
   If your Flash 14 application needs to use a new Flash 15 API, you must dynamically call the API with a cast to the Object type, so that the application does not fail in Flash Player 14 at runtime.
 
-**HTML Overlays **
+## HTML Overlays {#html-overlays}
 
 In Flash 15 and later, you can maintain a seamless display of HTML overlays when hardware StageVideo becomes unavailable and falls back to software StageVideo. To enable this feature, set `wmode=opaque`.
 
