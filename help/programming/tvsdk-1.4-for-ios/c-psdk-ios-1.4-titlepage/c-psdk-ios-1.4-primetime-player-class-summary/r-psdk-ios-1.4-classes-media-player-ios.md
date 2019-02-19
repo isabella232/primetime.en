@@ -6,7 +6,9 @@ title: Media player classes
 uuid: 6b59dcff-9722-4a84-9049-f6f10f7b3e82
 ---
 
-# Media player classes{#media-player-classes}
+# Media player classes {#media-player-classes}
+
+You can use the Primetime Player Objective-C API to customize the behavior of the player.
 
 These classes describe your media player and its resources.
 

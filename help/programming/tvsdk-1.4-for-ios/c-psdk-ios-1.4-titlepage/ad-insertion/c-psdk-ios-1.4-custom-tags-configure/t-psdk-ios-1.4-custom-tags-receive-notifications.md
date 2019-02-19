@@ -6,7 +6,7 @@ title: Add listeners for timed metadata notifications
 uuid: dcd1bd92-0617-4eab-8b06-7301aaff42f3
 ---
 
-# Add listeners for timed metadata notifications{#add-listeners-for-timed-metadata-notifications}
+# Add listeners for timed metadata notifications {#add-listeners-for-timed-metadata-notifications}
 
 To receive notifications about tags in the manifest, implement the appropriate notification listener(s).
 
@@ -20,7 +20,7 @@ You can monitor timed metadata by listening for the following events, which noti
 
   This event notifies your application when this happens.
 
-1. Retrieve the timed metadata in one of the following ways.
+   Retrieve the timed metadata in one of the following ways.
 
     * Set your application to add itself as a listener to the `PTTimedMetadataChangedNotification` notification and fetch the object using `PTTimedMetadataKey`.     
     

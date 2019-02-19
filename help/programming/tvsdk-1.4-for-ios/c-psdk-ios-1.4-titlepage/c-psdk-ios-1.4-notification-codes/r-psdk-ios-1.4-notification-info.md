@@ -10,8 +10,6 @@ uuid: 10145ce6-9eb0-4829-85dd-1acfe97b07e8
 
 This table provides detailed information about INFO type notifications.
 
-## Section Title {#section_ED4302E363AE48CBA2C3E0B71AE612D8}
-
 Most informational notifications contain relevant metadata, for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad. 
 
 <table frame="all" colsep="1" rowsep="1" id="table_503463046E764A87B10EB5D8B294EB23"> 

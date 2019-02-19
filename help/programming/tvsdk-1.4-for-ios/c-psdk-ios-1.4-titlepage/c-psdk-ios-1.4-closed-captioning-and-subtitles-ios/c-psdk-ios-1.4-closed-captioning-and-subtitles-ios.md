@@ -6,7 +6,7 @@ title: Subtitles and closed captions
 uuid: 91daf0be-087a-4be5-86c2-f8b83da43a8f
 ---
 
-# Subtitles and closed captions{#subtitles-and-closed-captions}
+# Overview {#subtitles-and-closed-captions-overview}
 
 Closed captions and subtitles have some unique differences, and you enable them in different ways.
 

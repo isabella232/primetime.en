@@ -6,7 +6,7 @@ title: Primetime ad server metadata
 uuid: 314f14c0-4da4-4da6-96f9-5a5ffea22a99
 ---
 
-# Primetime ad server metadata{#primetime-ad-server-metadata}
+# Overview {#primetime-ad-server-metadata-overview}
 
 TVSDK supports resolving and inserting ads for VOD and live/linear streams.
 

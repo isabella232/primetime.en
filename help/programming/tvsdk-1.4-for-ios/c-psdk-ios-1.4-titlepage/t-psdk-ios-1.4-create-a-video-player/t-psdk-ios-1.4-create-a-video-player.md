@@ -6,8 +6,8 @@ title: Content playback options
 uuid: f93d67d4-4685-442f-a5f0-fbbf41da0bf7
 ---
 
-# Content playback options{#content-playback-options}
+# Overview {#content-playback-options-overview}
 
 TVSDK provides tools for creating an advanced video player application (your Primetime player), which you can integrate with other Primetime components.
 
- Use your platform's tools to create a player and connect it to the media player view in TVSDK, which has methods to play and manage videos. For example, TVSDK provides play and pause methods. You can create user interface buttons on your platform and set the buttons to call those TVSDK methods. 
+ Use your platform's tools to create a player and connect it to the media player view in TVSDK, which has methods to play and manage videos. For example, TVSDK provides play and pause methods. You can create user interface buttons on your platform and set the buttons to call those TVSDK methods.

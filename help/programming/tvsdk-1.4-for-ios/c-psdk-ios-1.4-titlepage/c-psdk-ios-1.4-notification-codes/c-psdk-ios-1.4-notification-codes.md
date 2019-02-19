@@ -6,7 +6,7 @@ title: Notification codes
 uuid: 8a332057-8fda-4497-9264-a2caac92e900
 ---
 
-# Notification codes{#notification-codes}
+# Overview {#notification-codes-overview}
 
 The TVSDK notification system produces various error, warning, and informational notices that provide diagnostic metadata.
 

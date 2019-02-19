@@ -6,28 +6,22 @@ title: Implement blackout handling
 uuid: 38a78a57-b641-439a-a7d8-da571a0902e4
 ---
 
-# Implement blackout handling{#implement-blackout-handling}
+# Implement blackout handling {#implement-blackout-handling}
 
 The TVSDK provides APIs and sample code for handling blackout periods.
 
-To implement blackout handling and provide alternate content during the blackout: 
+To implement blackout handling and provide alternate content during the blackout:
 
-1. Set up your app to subscribe to blackout tags in a live stream manifest. 
+1. Set up your app to subscribe to blackout tags in a live stream manifest.
 
-   <!-- 
-
-Q: The "for example" comment in the following doesn't exactly match the code. What's correct?
-
- -->
-
-   ```
-   - (void) createMediaPlayer:(PTMediaPlayerItem *)item 
+  ```
+   - (void) createMediaPlayer:(PTMediaPlayerItem *)item
    { 
-       [PTSDKConfig setSubscribedTags:[NSArray arrayWithObject:<INSERT-BLACKOUT-TAG>]]; 
+       [PTSDKConfig setSubscribedTags:[NSArray arrayWithObject:<INSERT-BLACKOUT-TAG>]];
        // For example:  
-       // [PTSDKConfig setSubscribedTags:[NSArray arrayWithObject:@"#EXT-OATCLS-SCTE35"]]; 
+       // [PTSDKConfig setSubscribedTags:[NSArray arrayWithObject:@"#EXT-OATCLS-SCTE35"]];
    }
-   ```
+  ```
 
 1. Add a notification listener for `PTTimedMetadataChangedNotification`.
 
@@ -255,4 +249,3 @@ Q: The "for example" comment in the following doesn't exactly match the code. Wh
        [currMetadata setMetadata:blackoutMetadata forKey:PTBlackoutMetadataKey] 
    }
    ```
-
