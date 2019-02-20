@@ -6,7 +6,7 @@ title: QoS classes
 uuid: c1f0218d-4a79-4141-9a74-e70ac4f70aa5
 ---
 
-# QoS classes{#qos-classes}
+# QoS classes {#qos-classes}
 
 These classes provide information that help you to determine how well the player is performing.
 

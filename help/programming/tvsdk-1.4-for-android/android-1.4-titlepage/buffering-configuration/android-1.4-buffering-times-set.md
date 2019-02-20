@@ -6,13 +6,15 @@ title: Set buffering times
 uuid: 5a3945a4-1935-4797-b19d-84989850a487
 ---
 
-# Set buffering times{#set-buffering-times}
+# Buffering {#buffering}
 
 To provide a smoother viewing experience, TVSDK sometimes buffers the video stream. You can configure the way the player buffers.
 
 TVSDK defines a playback buffer length of at least 30 seconds and an initial buffer time within that, before the media starts playing, of at least 2 seconds. After the application calls `play` but before playback begins, TVSDK buffers the media up to the initial time to give a smooth start when it actually starts playing.
 
 You can alter the buffer times by defining new buffering policies and you can alter when the initial buffering occurs by using instant-on.
+
+## Set buffering times {#set-buffering-times}
 
 The `MediaPlayer` provides methods to set and get the initial buffering time and playback buffering time.
 
@@ -67,4 +69,4 @@ For example, to set the initial buffer to 2 seconds and the playback buffer time
 mediaPlayer.setBufferControlParameters(BufferControlParameters.createDual(2000, 30000));
 ```
 
-The Primetime reference implementation demonstrates this feature; use the application's settings to set the buffer values. 
+The Primetime reference implementation demonstrates this feature; use the application's settings to set the buffer values.

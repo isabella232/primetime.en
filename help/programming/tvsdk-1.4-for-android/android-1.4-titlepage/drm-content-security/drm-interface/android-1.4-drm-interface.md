@@ -6,7 +6,7 @@ title: Primetime DRM interface overview
 uuid: 71479464-8356-4732-9774-da9f6084e6ad
 ---
 
-# Primetime DRM interface overview{#primetime-drm-interface-overview}
+# Overview {#primetime-drm-interface-overview}
 
 You can use the features of the Primetime Digital Rights Management (DRM) system to provide secure access to your video content. Alternatively, you can use third-party DRM solutions as an alternative to Adobe's integrated Primetime DRM solution.
 
@@ -104,4 +104,4 @@ Comment Type: draft
 -->
 <!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
 
-For more information about DRM, see the [Adobe Primetime DRM documentation](https://helpx.adobe.com/primetime/user-guide.html). 
+For more information about DRM, see the [Adobe Primetime DRM documentation](https://helpx.adobe.com/primetime/user-guide.html).

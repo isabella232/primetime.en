@@ -6,7 +6,7 @@ title: Set up the MediaPlayer
 uuid: 492b4693-acdf-4213-98e5-d6f0f1ae086d
 ---
 
-# Set up the MediaPlayer{#set-up-the-mediaplayer}
+# Set up the MediaPlayer {#set-up-the-mediaplayer}
 
 The MediaPlayer interface for Android encapsulates the functionality and behavior of a media player.
 
@@ -38,4 +38,4 @@ TVSDK provides one implementation of the `MediaPlayer` interface, the `DefaultMe
    
    ```
 
->The `MediaPlayer` instance is now available and properly configured to display video content on the device screen. 
+The `MediaPlayer` instance is now available and properly configured to display video content on the device screen.

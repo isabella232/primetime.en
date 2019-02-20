@@ -14,7 +14,7 @@ You can remove TimeRanges between begin and end in localTime from the timeline.
 >
 >If you only want to remove certain ranges from the content, and the ad map must be used as defined by the ad server, create a `CustomRangeMetadata` instance and specify the type as a DELETE operation with the defined custom ranges.
 
-1. Delete ranges with an Adobe Primetime ad decisioning ad.
+ Delete ranges with an Adobe Primetime ad decisioning ad.
 
    ```
    {   

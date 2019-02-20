@@ -6,7 +6,7 @@ title: Live/linear ad resolving and insertion
 uuid: a63c97c3-00c5-4dee-a42c-30b70e432b93
 ---
 
-# Live/linear ad resolving and insertion{#live-linear-ad-resolving-and-insertion}
+# Live/linear ad resolving and insertion {#live-linear-ad-resolving-and-insertion}
 
 For live/linear content, TVSDK replaces a chunk of the main stream content with an ad break of the same duration, so that the timeline duration remains the same.
 

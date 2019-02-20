@@ -6,7 +6,7 @@ title: Implement an early ad break return
 uuid: 41b70ee1-290b-4732-899e-32b234ec1d9a
 ---
 
-# Implement an early ad break return{#implement-an-early-ad-break-return}
+# Implement an early ad break return {#implement-an-early-ad-break-return}
 
 For live stream ad insertion, you might need to exit from an ad break before all the ads in the break are played to completion.
 
@@ -14,7 +14,7 @@ For example, the duration of the ad break in certain sports events might not be 
 
 1. Subscribe to the splice out/in ad markers ( `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN`, and `#EXT-X-CUE`).
 
-   For more information about to how to splice out/in ad markers, see  content-resolver-about  
+   For more information about to how to splice out/in ad markers, see [Opportunity generators and content resolvers](../../../../tvsdk-1.4-for-android\android-1.4-titlepage\content-resolver\android-1.4-content-resolver-about.md). 
 1. Use a custom `ContentFactory`.
 1. In `retrieveGenerators()`, use the `SpliceInPlacementOpportunityGenerator`.
 
@@ -28,7 +28,7 @@ For example, the duration of the ad break in certain sports events might not be 
    }
    ```
 
-   For more information about using a custom `ContentFactory`, see step 1 in  opp-detector-impl-android . 
+   For more information about using a custom `ContentFactory`, see step 1 in [Implement a custom opportunity detector](../../../../tvsdk-1.4-for-android/android-1.4-titlepage/content-resolver/android-1.4-opp-detector-impl.md) . 
 
 1. On the same custom `ContentFactory`, implement `retrieveResolvers` and include `AuditudeResolver` and `SpliceInCustomResolver`.
 

@@ -47,7 +47,7 @@ You can use the following when implementing a blackout solution in your player.
 
   This allows you to set non seekable ranges (an array of `TimeRanges`) on TVSDK. TVSDK checks for these ranges every time the user seeks. If it is set and the user seeks into a nonseekable range, TVSDK forces the viewer to the end of the nonseekable range. 
 
-* **START HERE NEXT****AdvertisingMetadata** Enable or disable preroll on a live stream by setting `enableLivePreroll` to true or false. If false, TVSDK does not make an explicit ad server call for pre-roll ads before the content playback and so does not play the pre-roll. This has no impact on the mid-rolls. The default is true. 
+* **START HERE NEXT AdvertisingMetadata** Enable or disable preroll on a live stream by setting `enableLivePreroll` to true or false. If false, TVSDK does not make an explicit ad server call for pre-roll ads before the content playback and so does not play the pre-roll. This has no impact on the mid-rolls. The default is true. 
 
 * **MediaPlayer.BlackoutsEventListener**
 
@@ -62,4 +62,3 @@ You can use the following when implementing a blackout solution in your player.
         * Code: 204000 
         * Type: Warning 
         * Error in background manifest download.
-

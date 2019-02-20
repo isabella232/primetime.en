@@ -10,7 +10,7 @@ uuid: a8fec392-3a71-4086-abf1-23522d023680
 
 When a user clicks an ad, your application should pause playback of the main video content.
 
-1. Override the `onPause` and `onResume` from the Android Activity.
+   Override the `onPause` and `onResume` from the Android Activity.
 
    ```java
    @Override 

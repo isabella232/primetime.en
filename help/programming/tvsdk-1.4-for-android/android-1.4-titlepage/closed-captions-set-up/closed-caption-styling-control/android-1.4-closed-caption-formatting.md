@@ -6,7 +6,7 @@ title: Examples  Caption formatting
 uuid: 59c23ee5-73df-408f-ad71-4541f39e1961
 ---
 
-# Examples: Caption formatting{#examples-caption-formatting}
+# Examples: Caption formatting {#examples-caption-formatting}
 
 You can specify closed-caption formatting.
 

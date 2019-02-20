@@ -25,7 +25,7 @@ When checking whether the current playback time matches any `TimedMetadata` obje
    For example:
 
    ```java
-   _playbackClockEventListener = new Clock.ClockEventListener() {
+    _playbackClockEventListener = new Clock.ClockEventListener() {
        @Override
        public void onTick(String name) {
            getActivity().runOnUiThread(new Runnable() {
