@@ -22,5 +22,5 @@ To expose closed captions:
 
    >[!NOTE]
    >
-   >`closedCaptionDisplayEnabled` property is deprecated. Use `subtitlesOptions` property of `PTMediaPlayerItem`. See [Expose subtitles](../../../tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios/t-psdk-ios-1.4-subtitles-exposing-ios.md#t_psdk_ios_exposing-subtitles) to use closed captions.
+   >`closedCaptionDisplayEnabled` property is deprecated. Use `subtitlesOptions` property of `PTMediaPlayerItem`. See [Expose subtitles](../../../tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-closed-captioning-and-subtitles-ios/t-psdk-ios-1.4-subtitles-exposing-ios.md) to use closed captions.
 

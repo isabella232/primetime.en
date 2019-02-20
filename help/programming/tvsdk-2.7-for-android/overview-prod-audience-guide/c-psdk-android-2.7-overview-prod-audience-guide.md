@@ -12,8 +12,8 @@ This guide provides information about how to develop video player applications b
 
 <!--<a id="section_FC24E86A2E6442B8A3769160769BBDFA"></a>-->
 
-* For a list of the features that are supported by TVSDK, see [Primetime TVSDK features](../../tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-of-the-player.md#c_psdk_overview-of-the-player-features). 
-* For specific hardware and software requirements for using TVSDK, see [Requirements](../../tvsdk-2.7-for-android/c-psdk-android-2.7-requirements.md#c_psdk_requirements). 
+* For a list of the features that are supported by TVSDK, see [Primetime TVSDK features](../../tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-of-the-player.md). 
+* For specific hardware and software requirements for using TVSDK, see [Requirements](../../tvsdk-2.7-for-android/c-psdk-android-2.7-requirements.md). 
 * For a list of available APIs, see [TVSDK Android APIs](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/).
 
 ## Product overview {#section_9664959F25C948878F2F7EF3D360CA95}

@@ -16,7 +16,7 @@ TVSDK provides a single implementation of the `MediaPlayer` interface: the Defau
 >
 >Interact with the `DefaultMediaPlayer` instance only with the methods exposed by the `MediaPlayer` interface.
 
-1. Instantiate a `MediaPlayerContext` using the application-loaded `authorizedFeatures` instance (see [Load your signed token](../../tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-get-signed-token.md#get-signed-token)).
+1. Instantiate a `MediaPlayerContext` using the application-loaded `authorizedFeatures` instance (see [Load your signed token](../../tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/t-psdk-dhls-1.4-get-signed-token.md)).
 
    ```
    var context:MediaPlayerContext =  

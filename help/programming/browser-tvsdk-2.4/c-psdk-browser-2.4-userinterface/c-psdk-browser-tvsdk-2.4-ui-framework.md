@@ -72,9 +72,9 @@ You can configure the player behavior in one of the following ways:
 
   Please refer View Configuration objects structure section below for the structure of the configuration object. 
 
-* **Access to AdobePSDK.MediaPlayer** You can use `videoPlayer.getMediaPlayer` in certain advanced use cases where you need access to Browser TVSDK's MediaPlayer. 
+* **Access to AdobePSDK.MediaPlayer** You can use `videoPlayer.getMediaPlayer` in certain advanced use cases where you need access to Browser TVSDK's MediaPlayer.
 
-* **Configuring the skinning of the player** For more information about skinning the player, see [Skinning the player](../../browser-tvsdk-2.4/c-psdk-browser-2.4-userinterface/c-psdk-browser-tvsdk-2.4-skin-the-player.md#concept_EE9A981AA25C4C4480C3CA63A0E6669E).
+* **Configuring the skinning of the player** For more information about skinning the player, see [Skinning the player](../../browser-tvsdk-2.4/c-psdk-browser-2.4-userinterface/c-psdk-browser-tvsdk-2.4-skin-the-player.md).
 
 ## Modifying a default behavior {#section_D5D692638FFF4BEF81F7BE70E438CCE9}
 

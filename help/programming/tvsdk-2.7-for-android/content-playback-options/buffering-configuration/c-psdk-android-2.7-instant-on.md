@@ -12,13 +12,13 @@ Enabling instant on means that one or more channels are preloaded. When users se
 
 Without Instant On, TVSDK initializes the media to be played but does not start buffering the stream until the application calls `play`. The user sees no content until buffering is complete. With Instant On, you can launch multiple media player (or media-player item loader) instances, and TVSDK starts buffering the streams immediately. When a user changes the channel and the stream has buffered properly, calling `play` on the new channel starts playback immediately.
 
-Although there are no limits to the number of `MediaPlayer` and `MediaPlayerItemLoader` instances that TVSDK can run, running more instances consumes more resources. Application performance can be affected by the number of instances that are running. For more information about `MediaPlayerItemLoader`, see [Load a media resource in the media player](../../../tvsdk-2.7-for-android/content-playback-options/mediaplayer-initialize-for-video/t-psdk-android-2.7-media-resource-load.md#load-a-media-resource).
+Although there are no limits to the number of `MediaPlayer` and `MediaPlayerItemLoader` instances that TVSDK can run, running more instances consumes more resources. Application performance can be affected by the number of instances that are running. For more information about `MediaPlayerItemLoader`, see [Load a media resource in the media player](../../../tvsdk-2.7-for-android/content-playback-options/mediaplayer-initialize-for-video/t-psdk-android-2.7-media-resource-load.md).
 
 >[!IMPORTANT]
 >
 >TVSDK does not support a single `QoSProvider` to work with both `itemLoader` and `MediaPlayer`. If the customer uses Instant On, the application needs to maintain two QoS instances and manage both instances for the information.
 
-For more information about `MediaPlayerItemLoader`, see [Load a media resource using MediaPlayerItemLoader](../../../tvsdk-2.7-for-android/content-playback-options/mediaplayer-initialize-for-video/t-psdk-android-2.7-media-resource-load-using-mediaplayeritemloader.md#use-mediaplayeritemloader).
+For more information about `MediaPlayerItemLoader`, see [Load a media resource using MediaPlayerItemLoader](../../../tvsdk-2.7-for-android/content-playback-options/mediaplayer-initialize-for-video/t-psdk-android-2.7-media-resource-load-using-mediaplayeritemloader.md).
 
 ## Add a QoS Provider instance to mediaPlayerItemLoader {#section_2F9F24C7BFAD49599D043D64F767F9A0}
 
