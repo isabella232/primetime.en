@@ -44,6 +44,6 @@ Adobe provides the Primetime DRM SDK on DVD:
        >
        >32-bit and 64-bit versions of these libaries are available. You should only use the 64-bit version if you have a 64-bit OS and you run the 64-bit version of Java.
 
-1. (Optional) For functionality related to Adobe Flash Media Rights Management Server (FMRMS) 1.x compatibility, copy [!DNL [DRM DVD]/SDK/adobe-flashaccess-lcrm.jar] to your development system:
+1. (Optional) For functionality related to Adobe Flash Media Rights Management Server (FMRMS) 1.x compatibility, copy `[DRM DVD]/SDK/adobe-flashaccess-lcrm.jar]` to your development system:
 
    Deploy this only if you previously deployed FMRMS 1.x and do not want to re-package your FMRMS-protected content. In this case, you must add this support to your license server so it can manage old content and clients.

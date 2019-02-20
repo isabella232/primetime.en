@@ -17,4 +17,3 @@ uuid: 42fe7d55-7b8e-4f44-8714-ddae6c086d6a
       >[!NOTE]
       >
       >The Java source files demonstrate how to use the Primetime DRM SDK APIs. To build and run the samples, run the [!DNL build-samples.xml] Ant script in [!DNL samples/].
-

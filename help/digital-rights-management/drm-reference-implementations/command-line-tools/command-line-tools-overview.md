@@ -17,4 +17,3 @@ The Primetime DRM reference implementation includes the following command-line t
 * AIR Publisher ID - Computes the Publisher ID for an AIR application 
 * Utility License Generator - Generates licenses locally (without a license request to a server) 
 * License Embedder - Embeds pre-generated licenses into content
-

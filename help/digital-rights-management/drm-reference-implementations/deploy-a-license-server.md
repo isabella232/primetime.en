@@ -76,8 +76,7 @@ uuid: bee7ead1-ed13-4894-80f9-5196bf2f818f
    You will likely want to initially run `log4j` in debug mode. In [!DNL log4j.xml], set `debug` to true: 
 
    ```
-   <log4j:configuration xmlns:log4j="https://jakarta.apache.org/log4j/"  
-<b>debug="true"</b>> 
+   <log4j:configuration xmlns:log4j="https://jakarta.apache.org/log4j/"<b>debug="true"</b>>
    ... 
    
    ```
@@ -95,4 +94,3 @@ uuid: bee7ead1-ed13-4894-80f9-5196bf2f818f
    ```
    catalina.bat start
    ```
-

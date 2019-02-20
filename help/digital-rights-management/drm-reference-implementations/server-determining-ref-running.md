@@ -36,27 +36,24 @@ The following procedure describes this process:
 
 1. Type the following command to package a segment of the content: 
 
-```xml
+```
        java -jar libs\AdobePackager.jar  
-<i class="+ topic ph hi-d="" i "="">
-  test_input_FLV  
- <i class="+ topic ph hi-d="" i "="">
-   output_file  
+       <i class="+ topic ph hi-d="" i "="">
+         test_input_FLV  
+        <i class="+ topic ph hi-d="" i "="">
+       output_file  
                -p policy_test.pol 
- </i class="+ topic> 
-</i class="+ topic>
+       </i class="+ topic> 
+       </i class="+ topic>
 ```
 
 1. Copy the two generated files to the [!DNL webapps\ROOT\Content] folder on the Tomcat server. 
 1. Go to the [!DNL Reference Implementation\Sample Video Players\Desktop\Flash Player\Release] directory and copy the contents to the [!DNL webapps\ROOT\SVP\] folder on the Tomcat server. 
 
 1. Install Flash Player version 10.1 or later. 
-1. Open a web browser and go to the following URL:
+1. Open a web browser and go to the following URL: [!DNL        https:// localhost:8080/SVP/player.html]
 
-[!DNL https:// localhost:8080/SVP/player.html] 
-1. Go to the following URL and then click **[!UICONTROL Play]**:
-
-[!DNL https:// localhost:8080/Content/] *`your_encrypted_FLV`*. 
+1. Go to the following URL and then click **[!UICONTROL Play]**: [!DNL https:// localhost:8080/Content/] *`your_encrypted_FLV`*. 
 
 1. If the video fails to play, check if any error codes are displayed in the logging pane of the Sample Video Player or added to the [!DNL AdobeFlashAccess.log] file.
 

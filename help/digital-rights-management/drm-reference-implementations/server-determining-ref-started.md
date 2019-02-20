@@ -13,5 +13,4 @@ uuid: a6a034c9-b3c4-4e26-b901-d2c132c00c52
 
    This is where the Reference Implementation license server writes log information. The location of this log file is indicated by your [!DNL log4j.xml] file and can be modified to point to any location. By default, the log file is copied to the working directory where you run your `catalina` Tomcat script.
 1. Go to the following URL, and verify that the text "License Server is setup correctly" is displayed:
-
-[!DNL ht<span></span>tps://localhost:8080/flashaccess/license/v4]
+    [!DNL ht<span></span>tps://localhost:8080/flashaccess/license/v4]
