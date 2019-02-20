@@ -17,4 +17,3 @@ You must modify settings in the following sections of [!DNL flashaccesstools.pro
 * **Policy Manager Properties** - (for [!DNL AdobePolicyManager.jar]) 
 
 * **License Generator Properties** - (for [!DNL AdobeLicenseGenerator.jar])
-

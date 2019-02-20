@@ -15,7 +15,7 @@ java -jar AdobePolicyManager.jar
 </i class="+ topic>
 ```
 
-## Commands:
+**Table 1: Commands**
 
 |  Command  | Description  |
 |---|---|
@@ -23,7 +23,7 @@ java -jar AdobePolicyManager.jar
 |  `detail`  | Describes an existing DRM policy  |
 |  `update`  | Updates an existing DRM policy  |
 
-### Options:
+**Table 2: Options**
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_q5h_cpy_n4">  
  <thead class="- topic/thead "> 
@@ -161,4 +161,3 @@ To create a policy that allows anonymous access to your content, using your own 
 ```
 java -jar libs\AdobePolicyManager.jar new policy_test.pol -x -c my_configuration.properties
 ```
-
