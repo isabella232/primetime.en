@@ -6,7 +6,7 @@ title: Implement chapter support
 uuid: 5b39e494-85ad-43bb-ab56-a55797aa4ef7
 ---
 
-# Implement chapter support{#implement-chapter-support}
+# Implement chapter support {#implement-chapter-support}
 
 You can define and track chapters for video tracking in a TVSDK-based application in the following ways:
 
@@ -42,4 +42,3 @@ You can define and track chapters for video tracking in a TVSDK-based applicatio
    // and simply enable chapters to be tracked by setting  
    // the boolean value as defined above.
    ```
-

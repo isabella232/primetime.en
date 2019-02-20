@@ -8,11 +8,11 @@ uuid: 7b4b4a76-f813-4f6c-ac41-36ca08bb8173
 
 # Sample creative selection rules{#sample-creative-selection-rules}
 
-In the AdobeTVSDKConfig.json you can specify default rules as well as rules for specific zones.
+In the `AdobeTVSDKConfig.json` you can specify default rules as well as rules for specific zones.
 
 ## Sample default rules {#section_xy4_3fx_hz}
 
-The following is an example of an [!DNL AdobeTVSDKConfig.json] file that defines only default rules:
+The following is an example of an `AdobeTVSDKConfig.json` file that defines only default rules:
 
 ```
 {

@@ -11,7 +11,7 @@ uuid: 6aa5822a-a3c0-49b2-b25b-0308a784e405
 
 The priority rule defines the priority order of the ad creatives that will be selected for playback from a VAST/VMAP response.
 
-## A Priority rule has the following attributes and possible values:
+**Table 1: A Priority rule has the following attributes and possible values:**
 
 <table id="table_ljp_tgx_hz">  
  <thead> 

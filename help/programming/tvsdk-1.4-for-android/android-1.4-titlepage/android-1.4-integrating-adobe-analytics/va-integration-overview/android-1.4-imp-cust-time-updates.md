@@ -14,7 +14,7 @@ In some analytics implementations, the client application might want to provide 
 >
 >Override this method only if you want to provide a playhead position other than the default position.
 
-1. To override the default playhead position:
+   To override the default playhead position:
 
    ```java
    vaMetadata.setCurrentTimeUpdateBlock(new VideoAnalyticsMetadata.CurrentTimeUpdateBlock() { 
@@ -30,4 +30,3 @@ In some analytics implementations, the client application might want to provide 
    >[!IMPORTANT]
    >
    >The values in this code snippet are only samples. You need to use different values for your custom playhead position.
-

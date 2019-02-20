@@ -6,7 +6,7 @@ title: VPAID 2.0 ad support
 uuid: 7168a6e4-9c5e-4d3a-8710-867cf98e4445
 ---
 
-# VPAID 2.0 ad support{#vpaid-ad-support}
+# VPAID 2.0 ad support {#vpaid-ad-support}
 
 Video Player Ad-Serving Interface Definition (VPAID) 2.0 provides a common interface to play video ads. It provides a rich media experience for users and allows publishers to better target ads, track ad impressions, and monetize video content.
 
@@ -56,3 +56,21 @@ While the VPAID ad is playing:
 
   The ad duration and total ad break duration that are defined by the ad server response might not be accurate.
 
+## Implement VPAID 2.0 integration {#implement-vpaid-integration}
+
+To add VPAID 2.0 support, add a custom ad view and appropriate listeners.
+
+To add VPAID 2.0 support: 
+
+1. Add the custom ad view to the player interface.
+
+   ```java
+   _playerFrame.addView(mediaPlayer.createCustomAdView());
+   ```
+
+1. Add a listener for custom ad events.
+
+   ```java
+   mediaplayer.addEventListener(MediaPlayer.Event.CUSTOM_AD,  
+     _customAdEventListener);
+   ```

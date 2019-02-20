@@ -7,7 +7,7 @@ title: Updating ad creative selection rules
 uuid: 84cc13d1-21a3-456b-95c8-200bfec7b453
 ---
 
-# Updating ad creative selection rules{#updating-ad-creative-selection-rules}
+# Overview {#updating-ad-creative-selection-rules-overview}
 
 You can use the TVSDK configuration file (AdobeTVSDKConfig.json) to update the priorities for ad creative selection on VAST/VMAP responses. You can also use this configuration file to define the source URL transformation rules for ad creatives.
 
@@ -21,9 +21,7 @@ When your video player makes a request to an ad server, the VAST/VMAP response u
 
 You can specify two types of rules in [!DNL AdobeTVSDKConfig.json]: *Priority* rules and *Normalize* rules.
 
-**[!UICONTROL]**
-
-**[!UICONTROL Disabling Pre-Roll]**
+## Disabling Pre-Roll {#disabling-preroll}
 
 To disable pre-roll you will need to change the default opportunity generators to not make the pre-roll call. By default, TVSDK uses the following opportunity generators:
 

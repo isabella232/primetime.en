@@ -6,7 +6,7 @@ title: Ad signaling mode
 uuid: 7d2f61bc-ea66-4ac4-ae71-ffee69ef0036
 ---
 
-# Ad signaling mode{#ad-signaling-mode}
+# Ad signaling mode {#ad-signaling-mode}
 
 The ad signaling mode specifies where the video stream should get advertising information.
 

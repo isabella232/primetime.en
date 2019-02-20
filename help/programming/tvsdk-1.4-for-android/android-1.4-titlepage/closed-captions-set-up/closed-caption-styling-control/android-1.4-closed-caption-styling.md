@@ -6,7 +6,7 @@ title: Control closed-caption styling
 uuid: 331b0833-3e8a-482e-a3df-5e92b69d0a94
 ---
 
-# Control closed-caption styling{#control-closed-caption-styling}
+# Overview {#control-closed-caption-styling-overview}
 
 You can provide styling information for closed-caption tracks using the TextFormat class. This sets the style for any closed captions that are displayed by your player.
 
