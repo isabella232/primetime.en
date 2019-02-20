@@ -6,7 +6,7 @@ title: Adaptive bit rates (ABR) for video quality
 uuid: 1de26f34-4eac-4c9c-8f59-8c34d69a2d01
 ---
 
-# Adaptive bit rates (ABR) for video quality{#adaptive-bit-rates-abr-for-video-quality}
+# Overview {#adaptive-bit-rates-abr-for-video-quality-overview}
 
 HLS and DASH streams provide different bit rate encodings (profiles) for the same short burst of video. TVSDK can select the quality level for each burst based on the available bandwidth.
 

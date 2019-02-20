@@ -16,7 +16,7 @@ In this case, `TimeRanges` between the `begin` and `end` in `localTime` are remo
 >
 >You should always provide a specific replacement-duration for custom ranges. If no ads are intended to replace this custom range, provide a replacement-duration of 0.
 
-1. Replace ranges with Primetime ad decisioning ads.
+ Replace ranges with Primetime ad decisioning ads.
 
    ```
    {   

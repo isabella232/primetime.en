@@ -6,7 +6,7 @@ title: DRM authentication during playback
 uuid: a1a63e3e-be34-49e1-96c4-ae266003b3d1
 ---
 
-# DRM authentication during playback{#drm-authentication-during-playback}
+# DRM authentication during playback {#drm-authentication-during-playback}
 
 When the DRM metadata for a video is included in the media stream, perform authentication during playback.
 
@@ -88,4 +88,3 @@ DRMMetadataInfoEventListener drmMetadataInfoEventListener =
     } 
 };
 ```
-

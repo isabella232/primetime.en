@@ -31,12 +31,9 @@ Load a resource by directly instantiating a MediaResource and loading the video 
 >* A `state` parameter of type `MediaPlayer.PlayerState` with the value of `MediaPlayer.PlayerState.ERROR`. 
 >
 >* A `notification` parameter of type `MediaPlayerNotification` that contains diagnostic information about the error event. 
->
 
-><!--<a id="example_3774607C6F08473282CF0CB7F3D82373"></a>-->
+The following simplified sample code illustrates the process of loading a media resource: 
 
->The following simplified sample code illustrates the process of loading a media resource: 
->
 >```java>
 >// mediaResource is a properly configured MediaResource instance 
 >// mediaPlayer is a MediaPlayer instance 

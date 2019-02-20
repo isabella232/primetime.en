@@ -6,7 +6,7 @@ title: Partial Ad break insertion
 uuid: 296a9b6a-9e9f-4ca7-ab8a-c8cbc98fb9af
 ---
 
-# Partial Ad break insertion{#partial-ad-break-insertion}
+# Partial Ad break insertion {#partial-ad-break-insertion}
 
 You can enable a TV-like experience of being able to join in the middle of an ad, in live streams.
 

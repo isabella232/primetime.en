@@ -39,18 +39,18 @@ When this is the case, use `DRMHelper` methods to download the contents of the D
 
    ```java
    public interface  
-<b>DRMLoadMetadataListener</b> { 
+    <b>DRMLoadMetadataListener</b> { 
     public void  
-<b>onLoadMetadataUrlStart</b>(); 
+    <b>onLoadMetadataUrlStart</b>(); 
     /** 
      * @param authNeeded 
      * whether DRM authentication is needed. 
      * @param drmMetadata 
      * the parsed DRMMetadata obtained.    */ 
     public void  
-<b>onLoadMetadataUrlComplete</b>(boolean authNeeded, DRMMetadata drmMetadata); 
+    <b>onLoadMetadataUrlComplete</b>(boolean authNeeded, DRMMetadata drmMetadata); 
     public void  
-<b>onLoadMetadataUrlError</b>(); 
+    <b>onLoadMetadataUrlError</b>(); 
    }
    ```
 
@@ -61,8 +61,7 @@ When this is the case, use `DRMHelper` methods to download the contents of the D
 1. When loading completes, inspect the `DRMMetadata` object to see whether DRM authentication is needed.
 
    ```java
-   public static boolean  
-<b>isAuthNeeded</b>(DRMMetadata drmMetadata);
+   public static boolean <b>isAuthNeeded</b>(DRMMetadata drmMetadata);
    ```
 
    For example:
@@ -168,5 +167,5 @@ When this is the case, use `DRMHelper` methods to download the contents of the D
 1. If authentication is successful, start playback.
 1. If authentication is not successful, notify the user and do not start playback.
 
-   Your application must handle any authentication errors. Failing to successfully authenticate before playing places TVSDK into an error state. That is, it changes its state to ERROR, an error is generated containing the error code from the DRM library, and the playback stops. Your application must resolve the issue, reset the player, and reload the resource. 
+Your application must handle any authentication errors. Failing to successfully authenticate before playing places TVSDK into an error state. That is, it changes its state to ERROR, an error is generated containing the error code from the DRM library, and the playback stops. Your application must resolve the issue, reset the player, and reload the resource. 
 

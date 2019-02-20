@@ -6,7 +6,7 @@ title: Save the video position and resume later
 uuid: 322f780d-09ba-44b0-b2e5-46288bf58fda
 ---
 
-# Save the video position and resume later{#save-the-video-position-and-resume-later}
+# Save the video position and resume later {#save-the-video-position-and-resume-later}
 
 You can save the current playback position in a video and resume playing at the same position in a future session.
 

@@ -6,7 +6,7 @@ title: Set closed-caption styles
 uuid: ab99428b-0c23-48a1-a099-78213b180339
 ---
 
-# Set closed-caption styles{#set-closed-caption-styles}
+# Set closed-caption styles {#set-closed-caption-styles}
 
 You can style the closed-caption text with TVSDK methods.
 

@@ -6,7 +6,7 @@ title: Ad insertion metadata
 uuid: f40ed53b-eba1-4f70-a29c-90cac51e8a9a
 ---
 
-# Ad insertion metadata{#ad-insertion-metadata}
+# Overview {#ad-insertion-metadata}
 
 To allow the ad resolver to work, ad providers, such as Adobe Primetime ad decisioning, require configuration values to enable your connection to the provider.
 
@@ -31,4 +31,3 @@ TVSDK includes the Primetime ad decisioning library. For your content to include
 * Other targeting parameters.
 
   You can include these parameters depending on your needs and the needs of the ad provider.
-
