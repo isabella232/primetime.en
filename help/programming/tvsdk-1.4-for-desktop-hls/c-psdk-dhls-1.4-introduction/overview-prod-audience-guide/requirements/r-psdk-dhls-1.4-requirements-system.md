@@ -33,5 +33,5 @@ To use TVSDK, ensure that your hardware, operating system, and application versi
   | Flash Player  | <li>14 or later (for using wildcards in signed tokens)</li><li>15 or later (for seamless fallback from Hardware StageVideo to Software StageVideo)</li> |
   | CPU | 2.33 GHz or faster x86-compatible processor, or Intel Atom 1.6GHz or faster processor for Netbooks  |
   | RAM | 512 MB (1 GB recommended for Netbooks) |
-    GPU | 128MB graphics memory |
+  | GPU | 128MB graphics memory |
   | SWF | Your compiled application must use at least swf version 22  |
