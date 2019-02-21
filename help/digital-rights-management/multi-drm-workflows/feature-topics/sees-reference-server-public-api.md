@@ -17,6 +17,7 @@ The HTTPS URI scheme ( [https://tools.ietf.org/html/rfc7230#section-2.7.2](https
 The body of the entitlement request will be a JSON object defined as shown below.
 
 **JSON entitlement request object definition**
+
 ```
 
 { 
