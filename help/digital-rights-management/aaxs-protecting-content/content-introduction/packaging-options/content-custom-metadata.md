@@ -4,7 +4,7 @@ title: Custom metadata
 uuid: 9433fd74-730d-4306-8ff3-a6857745a039
 ---
 
-# Custom metadata{#custom-metadata}
+# Custom metadata {#custom-metadata}
 
 **Specify custom key/value to add to content metadata that can be interpreted by the server application.**
 

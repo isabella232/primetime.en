@@ -39,16 +39,16 @@ The FairPlay license token interface provides production and test services. This
   https://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
   ```
 
-# Request Query Parameters {#section_73B0BF44A37D46328E43E0DC25BB8B16}
+**Request Query Parameters**
 
-## Token Query Parameters
+**Table 3: Token Query Parameters**
 
 |Query Parameter|Description|Required?|
 |--- |--- |--- |
 |customerAuthenticator Customer authenticator as query parameter customerAuthenticator FairPlay|This is your customer API key, one each for your production and test environments. You can find this on the ExpressPlay Admin Dashboard tab.|Yes|
 |errorFormat|Either html or json. If html  (the default) an HTML representation of any errors is provided in the entity body of the response. If json is specified, a structured response in JSON format is returned. See [JSON Errors](https://www.expressplay.com/developer/restapi/#json-errors) for details. The mime type of the response is either text/uri-list on success, text/html for HTML error format, or application/json for JSON error format.|No|
 
-### License Query Parameters
+**Table 4: License Query Parameters**
 
 |  **Query Parameter** | **Description** | **Required?** |
 |---|---|---|
@@ -61,7 +61,7 @@ The FairPlay license token interface provides production and test services. This
 |  `rentalDuration`  | Duration of the rental in seconds (default - 0)  | No  |
 |  `fpExtension`  | A short form wrapping `extensionType` and `extensionPayload`, as a comma separated string. For example: […] `&fpExtension=wudo,AAAAAA==&`[…]  | No, any number can be used  |
 
-#### Token Restriction Query Parameters
+**Table 5: Token Restriction Query Parameters**
 
 <table id="table_ar3_lsx_pv">  
  <thead> 
@@ -80,15 +80,15 @@ The FairPlay license token interface provides production and test services. This
  </tbody> 
 </table>
 
-#### Correlation Query Parameters
+**Table 6: Correlation Query Parameters**
 
 |  **Query Parameter** | **Description** | **Required?** |
 |---|---|---|
 |  `cookie`   | An arbitrary string up to 32 characters long, carried in the token and logged by the token redemption server. This can be used to correlate log entries at the redemption server and those at the service provider's servers.  | No  |
 
-# Response {#section_435D5B65374A4C36A5FDCFFEEA9D1868}
+**Response**
 
-## HTTP Responses
+**Table 7: HTTP Responses**
 
 |  **HTTP Status Code** | **Description** | **Content-Type** | **Entity Body Contains** |
 |---|---|---|---|
@@ -98,7 +98,7 @@ The FairPlay license token interface provides production and test services. This
 |  `404 Not found`  | Bad URL  | `text/html` or `application/json`  | Error description  |
 |  `50x Server Error`  | Server error  | `text/html` or `application/json`  | Error description  |
 
-### Event Error Codes
+**Table 8: Event Error Codes**
 
 <table id="table_i2c_zsx_pv">  
  <thead> 
@@ -270,4 +270,3 @@ The FairPlay license token interface provides production and test services. This
   </tr> 
  </tbody> 
 </table>
-

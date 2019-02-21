@@ -12,7 +12,7 @@ Work with the SEES to see how to enable a time-based entitlement service using E
 
 The SEES receives an Entitlement Request (see Public API section) from the client. The SEES server looks up the CEK and IV based on the `contentID`, adds the `expirationTime`, and forwards the request to the ExpressPlay server. The final ExpressPlay token is time-bound. See the Time Based Entitlement sequence diagram below. ![](assets/fees-time-based.png)
 
-## License Parameters sent by client
+**Table 1: License Parameters sent by client**
 
 |  Query Parameter  | Description  | Required  |
 |---|---|---|
@@ -20,7 +20,7 @@ The SEES receives an Entitlement Request (see Public API section) from the clien
 | `iv`  | A 16 byte hexadecimal string representation of the content encryption IV  | Yes  |
 | `rentalDuration`  | Duration of the rental in seconds (default = 0)  | No  |
 
-### Token Restriction Parameters added by SEES Server
+**Table 2: Token Restriction Parameters added by SEES Server**
 
 <table id="table_E979FAD7A61A4832A46667301939FAEB">  
  <thead> 

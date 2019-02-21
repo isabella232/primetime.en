@@ -6,9 +6,27 @@ title: Setting up the development environment
 uuid: 1f192783-9c9a-4342-909a-4881248a85ad
 ---
 
-# Setting up the development environment {#setting-up-the-development-environment}
+# Setting up the SDK {#setting-up-the-sdk}
 
 To set up the Adobe® Access™ for use, copy files from the DVD. These files include JAR files containing code, certificates, and third-party classes. In addition, request a certificate from Adobe Systems Incorporated. You will be issued multiple credentials used to protect the integrity of packaged content, licenses, and communication between the client and server.
+
+The Adobe Access SDK is available in two types:
+* Adobe Access Core SDK
+* Adobe Access Professional SDK
+
+The following table shows a basic comparison of Adobe Access SDKs:
+
+| Feature |Adobe Access Core SDK |Adobe Access Professional SDK|
+|---|---|---|
+| Flash Access 2.0 features |Available |Available |
+| Key rotation |- |Available |
+| Domain Support |Available |Available |
+| Enhanced License Chaining |Available |Available |
+| Synchronization Messages  |Available |Available |
+| License Pre-Generation  |Available |Available |
+| Embedded Licenses |Available |Available |
+
+## Setting up the development environment {#setting-up-the-development-environment}
 
 From the DVD, copy the following SDK files for use in your development environment and your Java classpath:
 

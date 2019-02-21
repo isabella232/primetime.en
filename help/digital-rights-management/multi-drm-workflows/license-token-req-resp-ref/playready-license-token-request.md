@@ -6,11 +6,9 @@ title: PlayReady license token request / response
 uuid: 20ebd582-ebb9-4716-8c1e-df3e58d6ec14
 ---
 
-# PlayReady license token request / response{#playready-license-token-request-response}
+# PlayReady license token request / response {#playready-license-token-request-response}
 
 The PlayReady license token interface provides production and test services.
-
-<!--<a id="section_068F7F87F37E4B77846CA77CD175797A"></a>-->
 
 This HTTP request returns a token that can be redeemed for a PlayReady license.
 
@@ -48,7 +46,7 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
 
 ## Request Query Parameters {#section_26F8856641A64A46A3290DBE61ACFAD2}
 
-### Token Query Parameters
+**Table 9: Token Query Parameters**
 
 <table id="table_zxg_dyr_pv">  
  <thead> 
@@ -72,7 +70,7 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
  </tbody> 
 </table>
 
-### License Query Parameters
+**Table 10: License Query Parameters**
 
 <table id="table_f1l_fyr_pv">  
  <thead> 
@@ -173,7 +171,7 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
 
 ## Responses {#section_0079C31B4AF14DBBB6277CF251FB90E3}
 
-### HTTP Responses
+**Table 11: HTTP Responses**
 
 | **HTTP Status Code** |**Description** |**Content-Type** |**Entity Body Contains** |
 |---|---|---|---|
@@ -183,7 +181,7 @@ This HTTP request returns a token that can be redeemed for a PlayReady license.
 | `404 Not found`  | Bad URL  | `text/html` or `application/json`  | Error description  |
 | `50x Server Error`  | Server error  | `text/html` or `application/json`  | Error description  |
 
-### Event Error Codes
+**Table 12: Event Error Codes**
 
 <table id="table_lqb_ycs_pv">  
  <thead> 

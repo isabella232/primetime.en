@@ -6,7 +6,7 @@ title: SEES Public API
 uuid: f3a17d61-04ee-4bdb-9d64-a98066c6d1c8
 ---
 
-# SEES Public API{#sees-public-api}
+# SEES Public API {#sees-public-api}
 
 The entitlement request and response are passed via a mutually authenticated SSL connection between the license server and the customer's entitlement service.
 
@@ -16,7 +16,10 @@ The HTTPS URI scheme ( [https://tools.ietf.org/html/rfc7230#section-2.7.2](https
 
 The body of the entitlement request will be a JSON object defined as shown below.
 
+**JSON entitlement request object definition**
+
 ```
+
 { 
  "title" : "Entitlement Request", 
  "type" : "object", 
@@ -49,6 +52,8 @@ The body of the entitlement request will be a JSON object defined as shown below
 ## Entitlement Response {#section_F15A9FD6BAD946B3B4C5C14612F90154}
 
 The body of the entitlement response is a JSON object.
+
+**JSON entitlement response object definition**
 
 ```
 { 
@@ -86,4 +91,3 @@ The body of the entitlement response is a JSON object.
   "required" : ["messageID", "version", "isAllowed", "epTokenURL"] 
 }
 ```
-

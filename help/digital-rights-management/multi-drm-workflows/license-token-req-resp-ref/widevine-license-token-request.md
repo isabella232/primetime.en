@@ -6,11 +6,9 @@ title: Widevine license token request / response
 uuid: a3522422-7075-49a7-bc55-137ef84ee430
 ---
 
-# Widevine license token request / response{#widevine-license-token-request-response}
+# Widevine license token request / response {#widevine-license-token-request-response}
 
 The Widevine license token interface provides production and test services.
-
-<!--<a id="section_8BFECB6984F74B80B6FC5B4B7459D8B5"></a>-->
 
 This HTTP request returns a token that can be redeemed for a Widevine license.
 
@@ -37,7 +35,7 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 
 <!--<a id="section_1E22012EE4B94BB2974D3B16DE8812D9"></a>-->
 
-## Token Query Parameters
+**Table 13: Token Query Parameters**
 
 <table id="table_ww1_hcs_pv">  
  <thead> 
@@ -61,7 +59,7 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
  </tbody> 
 </table>
 
-### License Query Parameters
+**Table 14: License Query Parameters**
 
 | Query Parameter | Description | Required? |
 |--- |--- |--- |
@@ -75,15 +73,16 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 |`hdcpOutputControl`|Allowed values are 0, 1, 2. <ul><li>0 = `HDCP_NONE` </li><li> 1 = `HDCP_V1` </li><li> 2 = `HDCP_V2`</li></ul>|Yes|
 |`licenseDuration` * |Duration of the license in seconds. If not provided, it indicates that there is no limit to the duration. Please check the note below for detailed information.|No|
 |`wvExtension`|A short form wrapping extensionType and extensionPayload, as a comma separated string. See format below. Example: `…&wvExtension=wudo,AAAAAA==&…`|No, any number can be used|
-| * About `licenseDuration`: <ol><li> Playback will stop `licenseDuration` seconds after beginning of playback. </li><li> To allow playback to be stopped/resumed for an unlimited amount of time, omit `licenseDuration` (it will default to infinite). Otherwise specify the amount of time during which end-users should be able to enjoy the stream. </li></ol>|
 
-#### Token Restriction Query Parameters
+About `licenseDuration`: <ol><li> Playback will stop `licenseDuration` seconds after beginning of playback. </li><li> To allow playback to be stopped/resumed for an unlimited amount of time, omit `licenseDuration` (it will default to infinite). Otherwise specify the amount of time during which end-users should be able to enjoy the stream. </li></ol>
+
+**Table 15: Token Restriction Query Parameters**
 
 | Query Parameter | Description | Required? |
 |--- |--- |--- |
 |`expirationTime`|Expiration time of this token. This value MUST a string in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) date/time format in the ‘Z' zone designator ("Zulu time"), or an integer preceded by a + sign. An example of an RFC 3339 date/time is 2006-04-14T12:01:10Z. <br> If the value is a string in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) date/time format, then it represents an absolute expiration date/time for the token. If the value is an integer preceded by a + sign, then it is interpreted as a relative number of seconds, from issuance, that the token is valid. For example, `+60` specifies one minute. <br> The maximum and default (if not specified) token lifetime is 30 days.|No|
 
-#### Correlation Query Parameters
+**Table 16: Correlation Query Parameters**
 
 |  **Query Parameter** | **Description** | **Required?** |
 |---|---|---|
@@ -91,7 +90,7 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 
 <!--<a id="section_6BFBD314C77C40C4B172ABBDD2D8D80E"></a>-->
 
-#### HTTP Response
+**Table 17: HTTP Response**
 
 |  **HTTP Status Code** | **Description** | **Content-Type** | **Entity Body Contains** |
 |---|---|---|---|
@@ -101,7 +100,7 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
 |  `404 Not found`  | Bad URL  | `text/html` or `application/json`  | Error description  |
 |  `50x Server Error`  | Server error  | `text/html` or `application/json`  | Error description  |
 
-#### Event Error Codes
+**Table 18: Event Error Codes**
 
 <table id="table_agj_gqx_pv">  
  <thead> 
@@ -269,4 +268,3 @@ This HTTP request returns a token that can be redeemed for a Widevine license.
   </tr> 
  </tbody> 
 </table>
-
