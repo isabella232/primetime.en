@@ -14,7 +14,7 @@ For example, the duration of the ad break in certain sports events might not be 
 
 1. Subscribe to the splice out/in ad markers ( `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN`, and `#EXT-X-CUE`).
 
-   For more information about to how to splice out/in ad markers, see [Opportunity generators and content resolvers](../../../../tvsdk-1.4-for-android\android-1.4-titlepage\content-resolver\android-1.4-content-resolver-about.md). 
+   For more information about to how to splice out/in ad markers, see [Opportunity generators and content resolvers](../../../../tvsdk-1.4-for-android/android-1.4-titlepage/content-resolver/android-1.4-content-resolver-about.md). 
 1. Use a custom `ContentFactory`.
 1. In `retrieveGenerators()`, use the `SpliceInPlacementOpportunityGenerator`.
 

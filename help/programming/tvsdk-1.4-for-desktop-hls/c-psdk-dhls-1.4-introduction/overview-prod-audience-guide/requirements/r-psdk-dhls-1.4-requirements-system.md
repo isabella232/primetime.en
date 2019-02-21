@@ -34,29 +34,17 @@ To use TVSDK, ensure that your hardware, operating system, and application versi
    <td colname="1"> Operating system </td> 
    <td colname="2"> <p> 
      <ul id="ul_8B1330D103F34152A839D17BDEE07AEE"> 
-      <li id="li_39BBE1D3E1964647B9F853DFA26470D0">Microsoft
-       <tm tmtype="tm" /> Windows
-       <tm tmtype="reg" /> XP (32 bit) </li> 
-      <li id="li_1553000C4BB34518AB81CB096C2EA002">Microsoft
-       <tm tmtype="tm" /> Windows
-       <tm tmtype="reg" /> 7 (32 bit and 64 bit) </li> 
-      <li id="li_23681A4A434B41C68130C75D9C4D6BD5">Microsoft
-       <tm tmtype="tm" /> Windows
-       <tm tmtype="reg" /> 8.1 (64 bit) </li> 
-      <li id="li_9EC38CE889BE41B3A938F0B34507F576">Microsoft
-       <tm tmtype="tm" /> Windows
-       <tm tmtype="reg" /> 10 (64 bit) </li> 
+      <li id="li_39BBE1D3E1964647B9F853DFA26470D0">Microsoft Windows XP (32 bit)</li> 
+      <li id="li_1553000C4BB34518AB81CB096C2EA002">Microsoft Windows 7 (32 bit and 64 bit)</li> 
+      <li id="li_23681A4A434B41C68130C75D9C4D6BD5">Microsoft Windows 8.1 (64 bit)</li> 
+      <li id="li_9EC38CE889BE41B3A938F0B34507F576">Microsoft Windows 10 (64 bit)</li> 
      </ul> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Browsers </td> 
    <td colname="2"> <p> 
      <ul id="ul_50BDB3B8FCDE4C078B0B9D959B733B37"> 
-      <li id="li_C2F4A6AFBC80423482A36197590646A7">Latest version of Microsoft
-       <tm tmtype="tm" /> Internet Explorer, Microsoft
-       <tm tmtype="tm" /> Edge, Mozilla
-       <tm tmtype="reg" /> Firefox, or Google
-       <tm tmtype="reg" /> Chrome </li> 
+      <li id="li_C2F4A6AFBC80423482A36197590646A7">Latest version of Microsoft Internet Explorer, Microsoft Edge, Mozilla Firefox, or Google Chrome</li> 
      </ul> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -69,9 +57,7 @@ To use TVSDK, ensure that your hardware, operating system, and application versi
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> CPU </td> 
-   <td colname="2">2.33 GHz or faster x86-compatible processor, or Intel
-    <tm tmtype="reg" /> Atom
-    <tm tmtype="tm" /> 1.6GHz or faster processor for Netbooks </td> 
+   <td colname="2">2.33 GHz or faster x86-compatible processor, or Intel Atom 1.6GHz or faster processor for Netbooks </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> RAM </td> 
