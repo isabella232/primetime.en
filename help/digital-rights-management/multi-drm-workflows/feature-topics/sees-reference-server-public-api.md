@@ -18,6 +18,7 @@ The body of the entitlement request will be a JSON object defined as shown below
 
 **JSON entitlement request object definition**
 ```
+
 { 
  "title" : "Entitlement Request", 
  "type" : "object", 
@@ -52,6 +53,7 @@ The body of the entitlement request will be a JSON object defined as shown below
 The body of the entitlement response is a JSON object.
 
 **JSON entitlement response object definition**
+
 ```
 { 
   "title" : "Entitlement Response", 
