@@ -6,9 +6,11 @@ title: Multi-DRM overview
 uuid: 1705a338-baeb-4fcd-ae16-08963da55ab8
 ---
 
-# Multi-DRM overview {#multi-drm-overview}
+# Multi-DRM Workflows {#multi-drm-workflows}
 
 You can implement multiple DRM solutions for your TVSDK apps using Primetime DRM Cloud, powered by ExpressPlay. DRM solutions include Apple's FairPlay, Google's Widevine, Microsoft's PlayReady, and Primetime Access from Adobe.
+
+## Multi-DRM overview {#multi-drm-overview}
 
 Adobe TVSDK supports DRM protection using multiple DRM schemes. Adobe offers *Primetime DRM Cloud, powered by ExpressPlay* to provide packaging, licensing, and playback of your video content on multiple platforms.
 
@@ -18,4 +20,4 @@ TVSDK supports DRM licenses issued by any license server using these protocols. 
 
 To use *Primetime DRM Cloud, powered by ExpressPlay* for implementing your DRM needs in TVSDK apps, you must first obtain an [ExpressPlay.com](https://www.expressplay.com) account. ExpressPlay provides the licensing capability for several different DRM protection schemes, and also provides other services including packaging and key management.
 
-Your Adobe representative will initially set up your ExpressPlay account. You can then configure your account and obtain the *customer authenticators* that you will use in license token requests to the ExpressPlay servers. 
+Your Adobe representative will initially set up your ExpressPlay account. You can then configure your account and obtain the *customer authenticators* that you will use in license token requests to the ExpressPlay servers.

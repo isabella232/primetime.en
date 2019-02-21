@@ -4,9 +4,9 @@ title: Output protection controls
 uuid: 1f4cc617-7f14-4952-8e61-6acbdf01d10e
 ---
 
-# Output protection controls{#output-protection-controls}
+# Output protection controls {#output-protection-controls}
 
-** Control whether output to external rendering devices is protected. Specify analog and digital outputs independently.**
+**Control whether output to external rendering devices is protected. Specify analog and digital outputs independently.**
 
 Controls whether output to external rendering devices should be restricted. An external device is defined as any video or audio device that is not embedded in the computer. The list of external devices excludes integrated displays, such as in notebook computers. Analog and digital output restrictions can be specified independently.
 
