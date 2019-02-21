@@ -27,10 +27,10 @@ To use TVSDK, ensure that your hardware, operating system, and application versi
 
 * For Windows: 
 
-  | Operating system  | <li>Microsoft Windows XP (32 bit)</li><li>Microsoft Windows 7 (32 bit and 64 bit)</li><li>Microsoft Windows 8.1 (64 bit)</li><li>Microsoft Windows 10 (64 bit)</li>  |
+  | Operating system  | <ul><li>Microsoft Windows XP (32 bit)</li><li>Microsoft Windows 7 (32 bit and 64 bit)</li><li>Microsoft Windows 8.1 (64 bit)</li><li>Microsoft Windows 10 (64 bit)</li></ul>  |
   |---|---|
   | Browser |  Latest version of Microsoft Internet Explorer, Microsoft Edge, Mozilla Firefox, or Google Chrome  |
-  | Flash Player  | <li>14 or later (for using wildcards in signed tokens)</li><li>15 or later (for seamless fallback from Hardware StageVideo to Software StageVideo)</li> |
+  | Flash Player  | <ul><li>14 or later (for using wildcards in signed tokens)</li><li>15 or later (for seamless fallback from Hardware StageVideo to Software StageVideo)</li></ul> |
   | CPU | 2.33 GHz or faster x86-compatible processor, or Intel Atom 1.6GHz or faster processor for Netbooks  |
   | RAM | 512 MB (1 GB recommended for Netbooks) |
   | GPU | 128MB graphics memory |
