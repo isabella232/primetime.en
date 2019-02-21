@@ -474,7 +474,6 @@ user-guide-title: Primetime DRM Help
     + [Device capabilities required to play protected content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-device-capabilities.md)
     + [Jailbreak Enforcement (requires Adobe Primetime)](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-jailbreak-enforcement.md)
   + [Other policy options] {#content-other-policy-options}
-    + [Custom usage rules](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-custom-usage-rules.md)
     + [Enhanced license chaining](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-enhanced-license-chaining.md)
     + [Multiple play rights](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-multiple-play-rights.md)
     + [Remote and Local iOS Key Delivery](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-remote-key-delivery.md)

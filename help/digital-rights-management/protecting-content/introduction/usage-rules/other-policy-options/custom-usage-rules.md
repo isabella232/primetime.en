@@ -4,7 +4,7 @@ title: Custom usage rules
 uuid: ab2c7ac5-bd78-46bd-a7be-8a3651f24ae5
 ---
 
-# Custom usage rules{#custom-usage-rules}
+# Custom usage rules {#custom-usage-rules}
 
 You can include custom data in any licenses that the License Server issues. The interpretation or handling of this data is determined by the implementation of the client application and the license server.
 

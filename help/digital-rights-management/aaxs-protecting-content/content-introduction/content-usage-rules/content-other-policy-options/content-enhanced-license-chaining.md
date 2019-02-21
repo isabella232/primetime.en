@@ -4,7 +4,7 @@ title: Enhanced license chaining
 uuid: d11b0631-5dfb-42b8-b7ba-cfeb1da488be
 ---
 
-# Enhanced license chaining{#enhanced-license-chaining}
+# Enhanced license chaining {#enhanced-license-chaining}
 
 Allows a license to be updated using a parent root license for batch updating of licenses.
 
