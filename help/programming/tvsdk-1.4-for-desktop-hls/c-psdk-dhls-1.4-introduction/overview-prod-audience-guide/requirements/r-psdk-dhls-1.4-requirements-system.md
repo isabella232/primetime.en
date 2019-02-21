@@ -27,50 +27,11 @@ To use TVSDK, ensure that your hardware, operating system, and application versi
 
 * For Windows: 
 
-  <table frame="all" colsep="1" rowsep="1" 
-  id="table_886A9EB58B044C6D809B012E5E2A8657"> 
- <tbody> 
-  <tr rowsep="1"> 
-   <td colname="1"> Operating system </td> 
-   <td colname="2"> <p> 
-     <ul id="ul_8B1330D103F34152A839D17BDEE07AEE"> 
-      <li id="li_39BBE1D3E1964647B9F853DFA26470D0">Microsoft Windows XP (32 bit)</li> 
-      <li id="li_1553000C4BB34518AB81CB096C2EA002">Microsoft Windows 7 (32 bit and 64 bit)</li> 
-      <li id="li_23681A4A434B41C68130C75D9C4D6BD5">Microsoft Windows 8.1 (64 bit)</li> 
-      <li id="li_9EC38CE889BE41B3A938F0B34507F576">Microsoft Windows 10 (64 bit)</li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr rowsep="1"> 
-   <td colname="1"> Browsers </td> 
-   <td colname="2"> <p> 
-     <ul id="ul_50BDB3B8FCDE4C078B0B9D959B733B37"> 
-      <li id="li_C2F4A6AFBC80423482A36197590646A7">Latest version of Microsoft Internet Explorer, Microsoft Edge, Mozilla Firefox, or Google Chrome</li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr rowsep="1"> 
-   <td colname="1"> Flash Player </td> 
-   <td colname="2"> <p> 
-     <ul id="ul_FED8BC15489E4C2881D9397D56C3DB9E"> 
-      <li id="li_9E2E8AFFD5D04432992FF7A2E31BAF7A">14 or later (for using wildcards in signed tokens) </li> 
-      <li id="li_2D0CE0E0C22E4C8D9C1836D4B9770B46">15 or later (for seamless fallback from Hardware StageVideo to Software StageVideo) </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr rowsep="1"> 
-   <td colname="1"> CPU </td> 
-   <td colname="2">2.33 GHz or faster x86-compatible processor, or Intel Atom 1.6GHz or faster processor for Netbooks </td> 
-  </tr> 
-  <tr rowsep="1"> 
-   <td colname="1"> RAM </td> 
-   <td colname="2"> 512 MB (1 GB recommended for Netbooks) </td> 
-  </tr> 
-  <tr rowsep="1"> 
-   <td colname="1"> GPU </td> 
-   <td colname="2"> 128MB graphics memory </td> 
-  </tr> 
-  <tr rowsep="0"> 
-   <td colname="1"> swf </td> 
-   <td colname="2"> Your compiled application must use at least swf version 22 </td> 
-  </tr> 
- </tbody> 
-</table>
-
+  | Operating system  | <li>Microsoft Windows XP (32 bit)</li><li>Microsoft Windows 7 (32 bit and 64 bit)</li><li>Microsoft Windows 8.1 (64 bit)</li><li>Microsoft Windows 10 (64 bit)</li>  |
+  |---|---|
+  | Browser |  Latest version of Microsoft Internet Explorer, Microsoft Edge, Mozilla Firefox, or Google Chrome  |
+  | Flash Player  | <li>14 or later (for using wildcards in signed tokens)</li><li>15 or later (for seamless fallback from Hardware StageVideo to Software StageVideo)</li> |
+  | CPU | 2.33 GHz or faster x86-compatible processor, or Intel Atom 1.6GHz or faster processor for Netbooks  |
+  | RAM | 512 MB (1 GB recommended for Netbooks) |
+    GPU | 128MB graphics memory |
+  | SWF | Your compiled application must use at least swf version 22  |
