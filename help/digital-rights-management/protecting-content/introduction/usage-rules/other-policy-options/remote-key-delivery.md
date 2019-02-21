@@ -4,7 +4,7 @@ title: Remote and local iOS key delivery
 uuid: 90f672e7-9301-4e14-adca-db2a8f951a83
 ---
 
-# Remote and local iOS key delivery{#remote-and-local-ios-key-delivery}
+# Remote and local iOS key delivery {#remote-and-local-ios-key-delivery}
 
 Adobe Primetime supports the following options for key delivery to iOS clients:
 

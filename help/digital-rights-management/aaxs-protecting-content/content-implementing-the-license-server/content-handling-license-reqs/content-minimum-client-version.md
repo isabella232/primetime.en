@@ -4,7 +4,7 @@ title: Minimum Client Version
 uuid: 9f39e4e7-64eb-43ea-b194-b744838a411e
 ---
 
-# Minimum Client Version{#minimum-client-version}
+# Minimum Client Version {#minimum-client-version}
 
 Adobe Access 2.0.2 and higher introduce some new usage rules, which are not understood by Adobe Access 2.0 clients. By setting the minimum supported client version ( `HandlerConfiguration.setMinSupportedClientVersion()`), the license server can control how older clients will behave when they encounter licenses with these usage rules. Based on this setting, the server can indicate whether older clients can ignore the usage rules they do not understand or whether older clients will not be able to consume licenses with those usage rules.
 
