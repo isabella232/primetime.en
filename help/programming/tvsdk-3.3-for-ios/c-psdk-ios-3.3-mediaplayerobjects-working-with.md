@@ -88,4 +88,3 @@ The following table provides additional details:
 >[!TIP]
 >
 >You can use the status to provide feedback on the process (for example, a spinner while waiting for the next status change) or to take the next step in playing the media, such as waiting for the appropriate status before calling the next method.
-

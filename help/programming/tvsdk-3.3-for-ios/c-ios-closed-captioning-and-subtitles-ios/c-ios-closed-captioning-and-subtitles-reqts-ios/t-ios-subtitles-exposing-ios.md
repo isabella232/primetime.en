@@ -32,5 +32,4 @@ To expose subtitles:
    }
    ```
 
-   For information about alternate audio tracks, see  [Alternate Audio](../../alternate-audio/c-psdk-ios-3.3-alternate-audio-in-playlist.md).
-
+   For information about alternate audio tracks, see  [Alternate Audio](../../alternate-audio/c-psdk-ios-3.3-alternate-audio.md).

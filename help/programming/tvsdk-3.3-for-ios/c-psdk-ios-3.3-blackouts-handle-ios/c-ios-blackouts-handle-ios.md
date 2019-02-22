@@ -6,7 +6,7 @@ title: Handle blackouts
 uuid: 00b6f204-6ba4-4245-9028-6f7c392e9275
 ---
 
-# Handle blackouts{#handle-blackouts}
+# Handle blackouts {#handle-blackouts}
 
 TVSDK handles blackouts in live video streams and provides alternate content during a blackout.
 

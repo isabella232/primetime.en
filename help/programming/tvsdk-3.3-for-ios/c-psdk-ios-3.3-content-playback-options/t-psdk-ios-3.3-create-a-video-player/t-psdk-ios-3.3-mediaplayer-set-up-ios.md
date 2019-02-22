@@ -8,6 +8,10 @@ uuid: 698034d3-1260-416f-83b0-6b7d058750a0
 
 # Set up the PTMediaPlayer {#set-up-the-ptmediaplayer}
 
+TVSDK provides tools for creating an advanced video player application (your Primetime player), which you can integrate with other Primetime components.
+
+Use your platform's tools to create a player and connect it to the media player view in TVSDK, which has methods to play and manage videos. For example, TVSDK provides play and pause methods. You can create user interface buttons on your platform and set the buttons to call those TVSDK methods.
+
 The PTMediaPlayer interface encapsulates the functionality and behavior of a media player object.
 
 To set up your `PTMediaPlayer`: 
@@ -81,4 +85,3 @@ To set up your `PTMediaPlayer`:
    ```
    [player play];
    ```
-
