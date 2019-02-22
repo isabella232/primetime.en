@@ -93,8 +93,9 @@ The ability to exit from an ad break early is identified through a custom tag in
    [!TIP]
    
    The following code assumes that the app has an implementation for the `isCueInOpportunity` method. 
-       
-``` 
+
+```
+
    - (PTPlacementOpportunity *)preparePlacementOpportunity:(PTTimedMetadata *)timedMetadata 
    { 
          if ([self isCueInOpportunity:timedMetadata]) 
