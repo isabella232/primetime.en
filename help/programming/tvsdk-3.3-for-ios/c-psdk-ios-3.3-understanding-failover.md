@@ -31,4 +31,3 @@ Failover occurs only at the M3U8 level, which means:
 >[!TIP]
 >
 >TVSDK, rather than the Apple AV Foundation player, provides failover handling.
-

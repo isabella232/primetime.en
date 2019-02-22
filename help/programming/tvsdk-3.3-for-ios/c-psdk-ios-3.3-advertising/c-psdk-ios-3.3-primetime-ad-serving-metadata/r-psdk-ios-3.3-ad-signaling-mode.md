@@ -59,4 +59,3 @@ The following table describes the effect of `AdSignalingMode` values for various
   </tr> 
  </tbody> 
 </table>
-

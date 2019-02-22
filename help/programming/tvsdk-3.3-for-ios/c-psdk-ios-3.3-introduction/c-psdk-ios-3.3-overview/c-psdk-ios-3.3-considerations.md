@@ -6,7 +6,7 @@ title: Considerations and best practices
 uuid: d99c77a7-cd6d-449b-8cea-92b3f3ddf473
 ---
 
-# Considerations and best practices{#considerations-and-best-practices}
+# Considerations and best practices {#considerations-and-best-practices}
 
 To use TVSDK most effectively, you should consider certain details of its operation and follow certain best practices.
 
@@ -45,4 +45,3 @@ Here are recommended practices for TVSDK:
   >[!IMPORTANT]
   >
   >Requests to third-party domains such as Ad Tracking pixels, Content and Ad URLs, and similar requests are not modified. It is the responsibility of the content providers and ad servers to provide URLs that are supported through HTTPS.
-

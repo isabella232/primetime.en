@@ -14,14 +14,14 @@ In some analytics implementations, the client application might want to provide 
 >
 >Override this method only if you want to provide a playhead position that is different from the default position.
 
-1. To override the default playhead position:
+To override the default playhead position:
 
-   ```
-   vaTrackingMetadata.currentTimeUpdateBlock = ^CMTime () { 
-       NSInteger random = arc4random() % 500;  
-       return CMTimeMakeWithSeconds(random, 1); 
-   };
-   ```
+```
+vaTrackingMetadata.currentTimeUpdateBlock = ^CMTime () { 
+    NSInteger random = arc4random() % 500;  
+    return CMTimeMakeWithSeconds(random, 1); 
+};
+```
 
    >[!IMPORTANT]
    >

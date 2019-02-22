@@ -6,7 +6,7 @@ title: Understanding customized logging
 uuid: f056d7d7-ec3a-4cf1-997f-72a89bbc9447
 ---
 
-# Understanding customized logging {#understanding-customized-logging}
+# Customized logging {#customized-logging}
 
 You can implement your own logging system.
 
@@ -21,3 +21,87 @@ There are two implementations for `PTLogFactory`:
 * For listening to logs. 
 * For adding logs to a `PTLogFactory`.
 
+## Listen to logs {#listen-to-logs}
+
+ To register for listening to logs: 
+1. Implement a custom class that follows the protocol `PTLogger`:
+
+   ```
+   @implementation PTConsoleLogger 
+    
+   + (PTConsoleLogger *) consoleLogger { 
+       return [[[PTConsoleLogger alloc] init] autorelease]; 
+   } 
+    
+   - (void)logEntry:(PTLogEntry *)entry { 
+       //Log the message to the console using NSLog  
+       NSLog(@"[%@] %@", entry.tag, entry.message); 
+   } 
+    
+   @end
+   ```
+
+1. To register the instance to receive logging entries, add an instance of the `PTLogger` to the `PTLoggerFactory`:
+
+   ```
+   PTConsoleLogger *logger = [PTConsoleLogger consoleLogger]; 
+   // Either use the addLogger method: 
+   [[PTLogFactory sharedInstance] addLogger:(logger)] 
+    
+   //Or replace the preceding line with this macro for ease of use 
+   //PTLogAddLogger(logger); 
+   
+   ```
+
+<!--<a id="example_3738B5A8B4C048D28695E62297CF39E3"></a>-->
+
+Here is an example of filtering logs by using the `PTLogEntry` type: 
+
+```
+@implementation PTConsoleLogger 
+ 
++ (PTConsoleLogger *) consoleLogger { 
+    return [[[PTConsoleLogger alloc] init] autorelease]; 
+} 
+ 
+- (id) init { 
+    self = [super init]; 
+ 
+    if (self) { 
+        self.logLevel = PTLogEntryTypeInfo; 
+    } 
+ 
+    return self; 
+} 
+ 
+- (void)logEntry:(PTLogEntry *) entry { 
+    //Filtering the entry by log level  
+    if (entry.type < _logLevel) { 
+        return; 
+    } 
+ 
+    //Log the message to the console using NSLog NSLog(@"[%@] %@", entry.tag, entry.message); 
+} 
+ 
+@end
+```
+
+## Add new log messages {#add-new-log-messages}
+
+ To register to listen to logs: 
+
+   Create a new `PTLogEntry` and add it to `thePTLogFactory`:
+
+   You can manually instantiate a `PTLogEntry` and add it to the `PTLogFactory` shared instance or use one of the macros to accomplish the same task.
+
+   Here is an example of logging using the `PTLogDebug` macro:
+
+<!--<a id="example_F014436E1686468F941F4EBD1A21B18E"></a>-->
+
+```
+// The following line creates an instance of PTLogEntry with type PTLogEntryDebug, 
+// tag "DEBUG_PLAYBACK", and message "Playback has started". 
+// Then the PTLogEntry is automatically added to the PTLogFactory  
+ 
+PTLogDebug(@"[DEBUG_PLAYBACK] Playback has started");
+```

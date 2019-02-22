@@ -7,7 +7,7 @@ title: Primetime DRM interface overview
 uuid: 5e794147-cc58-448c-b8ec-065e80ef01fd
 ---
 
-# Primetime DRM interface overview{#primetime-drm-interface-overview}
+# Primetime DRM interface overview {#primetime-drm-interface-overview}
 
 You can use the features of the Primetime Digital Rights Management (DRM) system to provide secure access to your video content. Alternatively, you can use third-party DRM solutions as an alternative to Adobe's integrated Primetime DRM solution.
 
@@ -39,12 +39,20 @@ TVSDK issues a `PTMediaPlayerItemDRMMetadataChanged` notification when the DRM m
 
 If the DRM-protected stream is multiple bit-rate (MBR) encoded, the DRM metadata that is used for the variant playlist should be the same as the metadata that is used in all the bit-rate streams.
 
->[!TIP] {importance="high"}
->
->When referencing DRM-protected asset URLs in your iOS app, the query string parameter `?faxs=1` must be appended to the (MBR) set-level M3U8 URL. For example: >
->```>
->https://your.domain.com/hls/[...]/index.m3u8?faxs=1
->```>
->The `faxs=1` query string parameter signals that the content is DRM protected, and triggers the DRM decryption workflow accordingly in the iOS TVSDK. You can also append the `faxs=1` tag on DRM-protected HLS asset URLs that are destined for other platforms; it is observed as required on iOS or treated as a non-op in players on other platforms.
+[!TIP] {importance="high"}
 
-<!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
+When referencing DRM-protected asset URLs in your iOS app, the query string parameter `?faxs=1` must be appended to the (MBR) set-level M3U8 URL. For example:
+
+```
+https://your.domain.com/hls/[...]/index.m3u8?faxs=1
+```
+
+The `faxs=1` query string parameter signals that the content is DRM protected, and triggers the DRM decryption workflow accordingly in the iOS TVSDK. You can also append the `faxs=1` tag on DRM-protected HLS asset URLs that are destined for other platforms; it is observed as required on iOS or treated as a non-op in players on other platforms.
+
+## Implement Primetime DRM in a TSVDK application {#implement-primetime-drm-in-a-tsvdk-application}
+
+Primetime DRM is integrated into TVSDK, which simplifies implementing content protection in a TVSDK application.
+
+For an overview and details on using Primetime DRM to implement content protection in a TVSDK application, see:
+
+* [Adobe Primetime TVSDK-DRM Workflow (PDF)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_tvsdk_drm_workflow.pdf)

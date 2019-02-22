@@ -58,4 +58,3 @@ It also provides information about the device, such as the model, operating syst
    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self  
       selector:@selector(printPlaybackInfoLog) userInfo:nil repeats:YES];
    ```
-
