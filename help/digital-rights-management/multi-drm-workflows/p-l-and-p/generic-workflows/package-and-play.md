@@ -61,6 +61,6 @@ You can use ExpressPlay's Bento4 packager to prepare content for any of the DRM 
     The client should include a call to your storefront server. Adobe recommends that the client call the storefront after the user selects some content, and after the user is authenticated. Then, pass the token returned from ExpressPlay to your player to use for license requests. Introductions to implementing the DRM component of your players are here:
 
     * Browser TVSDK for HTML5
-    * [iOS](../../../../programming/tvsdk-3.3-for-ios/c-psdk-ios-3.3-drm-content-security/c-psdk-ios-3.3-apple-fairplay-tvsdk.md)
+    * [iOS](../../../../programming/tvsdk-3.4-for-ios/ios-3.4-drm-content-security/ios-3.4-apple-fairplay-tvsdk.md)
 
 1. With the license token in hand, the client can now derive the request URL from the token and make the license request to ExpressPlay, and then play the selected, protected content for the user.

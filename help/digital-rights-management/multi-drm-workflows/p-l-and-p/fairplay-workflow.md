@@ -168,7 +168,7 @@ Adobe provides a Sample ExpressPlay Entitlement Server (SEES) that shows how to 
 
 Licensing and playback of FairPlay-protected content requires swapping of URL schemes, between the scheme used in the video manifest file (skd:) and the one used in ExpressPlay token requests (https:).
 
-Instructions for implementing licensing and playback from an iOS TVSDK client are here: [Enable Apple FairPlay in TVSDK applications](../../../programming/tvsdk-3.3-for-ios/c-psdk-ios-3.3-drm-content-security/c-psdk-ios-3.3-apple-fairplay-tvsdk.md). You can also optionally implement offline playback and license rotation for FairPlay.
+Instructions for implementing licensing and playback from an iOS TVSDK client are here: [Enable Apple FairPlay in TVSDK applications](../../../programming/tvsdk-3.4-for-ios/ios-3.4-drm-content-security/ios-3.4-apple-fairplay-tvsdk.md). You can also optionally implement offline playback and license rotation for FairPlay.
 
 ## HLS Offline with FairPlay {#section_047A05D1E3B64883858BC601CFC8F759}
 
