@@ -1,8 +1,8 @@
 ---
 title: TVSDK 3.3 for Android Release Notes
 seo-title: TVSDK 3.3 for Android Release Notes
-description: TVSDK 3.3 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.0
-seo-description: TVSDK 3.3 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.0
+description: TVSDK 3.3 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.3
+seo-description: TVSDK 3.3 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.3
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
@@ -11,7 +11,7 @@ discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 
 # TVSDK 3.3 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.3 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.0
+TVSDK 3.3 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.3
 
 ## TVSDK Android 3.2 {#tvsdk-android}
 
