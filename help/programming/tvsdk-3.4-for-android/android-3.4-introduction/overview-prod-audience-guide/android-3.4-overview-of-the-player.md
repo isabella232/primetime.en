@@ -8,7 +8,7 @@ uuid: 6e26c09c-2858-47d1-80e8-1d7c6a468b86
 
 # Primetime TVSDK features {#primetime-tvsdk-features}
 
-TVSDK for iOS includes a variety of features that you can implement in your players.
+TVSDK for Android 3.4 includes a variety of features that you can implement in your players.
 
 TVSDK capabilities:
 

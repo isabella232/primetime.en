@@ -4,7 +4,7 @@ title: Enhanced License Chaining
 uuid: dc0e0a46-d3cd-44e8-a45d-3e22787be44e
 ---
 
-# Enhanced License Chaining{#enhanced-license-chaining}
+# Enhanced License Chaining {#enhanced-license-chaining}
 
 With enhanced license chaining in Adobe Access 3.0, it is recommended to issue both a Leaf and a Root the first time the user requests a license for a particular machine. If the user already has the Root license, the server may issue only a Leaf (call `LicenseRequestMessage.clientHasEnhancedRootForPolicy()` to determine if the client already has a 3.0 Enhanced Root). For subsequent license requests, the client will indicate that it already has a Leaf and a Root, so the server should issue a new Root license. When the enhanced license chaining is used, `setRootKeyRetrievalInfo()` must be called to provide the credentials needed to decrypt the root encryption key in the policy.
 
