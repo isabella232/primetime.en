@@ -6,7 +6,7 @@ title: Set up ad insertion metadata
 uuid: 5c807fad-4927-4547-b58c-f37e505e651c
 ---
 
-# Set up ad insertion metadata{#set-up-ad-insertion-metadata}
+# Set up ad insertion metadata {#set-up-ad-insertion-metadata}
 
 Use the helper class AuditudeSettings, which extends the MetadataNode class, to set up Adobe Primetime ad decisioning metadata.
 

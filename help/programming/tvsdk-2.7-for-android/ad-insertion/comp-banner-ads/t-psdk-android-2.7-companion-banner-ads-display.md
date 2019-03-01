@@ -6,7 +6,7 @@ title: Display banner ads
 uuid: 7246dfab-860f-4b55-9554-49738a483406
 ---
 
-# Display banner ads{#display-banner-ads}
+# Display banner ads {#display-banner-ads}
 
 To display banner ads, you need to create banner instances and allow TVSDK to listen for ad-related events.
 

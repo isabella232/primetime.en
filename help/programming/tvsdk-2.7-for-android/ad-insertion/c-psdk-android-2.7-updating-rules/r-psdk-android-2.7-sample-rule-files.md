@@ -6,7 +6,7 @@ title: Sample creative selection rules
 uuid: 58e6637e-9f5c-471a-8bc8-d217b36e5f9d
 ---
 
-# Sample creative selection rules{#sample-creative-selection-rules}
+# Sample creative selection rules {#sample-creative-selection-rules}
 
 In the AdobeTVSDKConfig.json you can specify default rules as well as rules for specific zones.
 

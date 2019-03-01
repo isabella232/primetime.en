@@ -6,7 +6,7 @@ title: Identify whether the content is live or VOD
 uuid: d49315ee-8cec-4b79-adbd-a49c2a527424
 ---
 
-# Identify whether the content is live or VOD{#identify-whether-the-content-is-live-or-vod}
+# Identify whether the content is live or VOD {#identify-whether-the-content-is-live-or-vod}
 
 You might need to know whether the media content is live or video on demand (VOD).
 
@@ -16,4 +16,3 @@ You might need to know whether the media content is live or video on demand (VOD
    ```java
    boolean isLive();
    ```
-

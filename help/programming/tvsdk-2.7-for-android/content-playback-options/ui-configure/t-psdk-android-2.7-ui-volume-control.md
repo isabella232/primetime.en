@@ -6,7 +6,7 @@ title: Provide volume control
 uuid: f1e959e0-1817-4ccb-8adc-3eba09c91887
 ---
 
-# Provide volume control{#provide-volume-control}
+# Provide volume control {#provide-volume-control}
 
 You can set up a user interface control to adjust the volume for the video.
 

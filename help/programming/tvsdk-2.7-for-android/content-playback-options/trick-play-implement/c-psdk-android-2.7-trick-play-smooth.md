@@ -6,7 +6,7 @@ title: Smoother trick play operations
 uuid: 4749bfa0-17bf-4444-a167-987249945325
 ---
 
-# Smoother trick play operations{#smoother-trick-play-operations}
+# Smoother trick play operations {#smoother-trick-play-operations}
 
 If your system has access to hardware-assisted decoding, you can achieve smoother trick play than with the pure software TVSDK implementation by using iFrame format.
 

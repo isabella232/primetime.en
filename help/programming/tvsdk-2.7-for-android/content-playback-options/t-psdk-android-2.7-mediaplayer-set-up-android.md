@@ -8,6 +8,8 @@ uuid: 49c3edb9-b6e2-49f8-b4aa-f230af7de6b0
 
 # Set up the MediaPlayer {#set-up-the-mediaplayer}
 
+TVSDK provides tools for creating an advanced video player application (your Primetime player), that you can integrate with other Primetime components. It also provides a number of features designed to maximize the quality of video playback.
+
 Instantiate a MediaPlayer and place a view of it into a frame layout.
 
 1. Instantiate `MediaPlayer`, passing an `android.content.Context` object to the constructor:

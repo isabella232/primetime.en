@@ -6,7 +6,7 @@ title: Content resolvers for ad deletion / replacement
 uuid: ed168c52-ab7b-4fe6-8775-eb18018dc249
 ---
 
-# Content resolvers for ad deletion / replacement {#content-resolvers-for-ad-deletion-replacement}
+# Content resolvers for ad deletion / replacement  {#content-resolvers-for-ad-deletion-replacement}
 
 You can use multiple content resolvers to handle different timeline operations.
 

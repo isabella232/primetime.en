@@ -54,7 +54,7 @@ user-guide-title: Primetime Programming Help
          + [Allow users to change the caption track](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/closed-captions-set-up/closed-caption-visibility-control/android-3.4-closed-caption-change.md)
          + [Control closed-caption styling](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/closed-captions-set-up/android-3.4-closed-caption-styling.md)
       + Alternate audio {#alternate-audio}
-         + [Alternate audio](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/alternate-audio/android-3.4-alternate-audio.md)
+         + [Overview](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/alternate-audio/android-3.4-alternate-audio.md)
          + [AC-3 5.1 format](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/alternate-audio/android-3.4-ac-3-5.1-format.md)
          + [Alternate audio tracks in the playlist](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/alternate-audio/android-3.4-alternate-audio-in-playlist.md)
          + [Access alternate audio tracks](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/alternate-audio/android-3.4-alternate-audio-implement.md)
@@ -65,7 +65,7 @@ user-guide-title: Primetime Programming Help
          + [Instant On](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/buffering-configuration/android-3.4-instant-on.md)
       + [Parallel downloads](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/android-3.4-parallel-downloads.md)
       + Adaptive bit rates (ABR) for video quality {#adaptive-bit-rates}
-         + [Adaptive bit rates (ABR) for video quality](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/abr-control-quality/android-3.4-abr-control-quality.md)
+         + [Overview](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/abr-control-quality/android-3.4-abr-control-quality.md)
          + [Configure adaptive bit rates using ABRControlParameters](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/abr-control-quality/android-3.4-abr-set-using-abrparameters.md)
       + [Quality of service statistics](tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/android-3.4-qos-statistics-monitor.md)
       + Playback and failover {#playback-failover}
@@ -123,7 +123,7 @@ user-guide-title: Primetime Programming Help
       + VPAID 2.0 ad support {#vpaid-ad-support}
         + [Overview](tvsdk-3.4-for-android/android-3.4-advertising/ad-insertion/vpaid-2.0-ads/android-3.4-vpaid-2.0-ads.md)
         + [Implement VPAID 2.0 integration](tvsdk-3.4-for-android/android-3.4-advertising/ad-insertion/vpaid-2.0-ads/android-3.4-include-vpaid20-support.md)
-        + [Ad measurements from Moat](tvsdk-3.4-for-android/android-3.4-advertising/ad-insertion/android-3.4-ad-measurements-from-moat.md)
+      + [Ad measurements from Moat](tvsdk-3.4-for-android/android-3.4-advertising/ad-insertion/android-3.4-ad-measurements-from-moat.md)
       + Add custom ad markers {#add-custom-ad}
         + [Overview](tvsdk-3.4-for-android/android-3.4-advertising/ad-insertion/ad-markers-add-custom/android-3.4-ad-markers-add-custom.md)
         + [TimeRange class](tvsdk-3.4-for-android/android-3.4-advertising/ad-insertion/ad-markers-add-custom/android-3.4-timerange-class.md)
@@ -281,33 +281,31 @@ user-guide-title: Primetime Programming Help
 + TVSDK 2.7 for Android {#tvsdk-2.7-for-android}
    + Product overview, audience, and this guide {#overview}
       + [Product overview, audience, and this guide overview](tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-prod-audience-guide.md)
-      + [Considerations and best practices](tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-considerations.md)
       + [Primetime TVSDK features](tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-of-the-player.md)
-   + [Requirements](tvsdk-2.7-for-android/c-psdk-android-2.7-requirements.md)
+      + [Considerations and best practices](tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-considerations.md)      
+      + [Requirements](tvsdk-2.7-for-android/c-psdk-android-2.7-requirements.md)
    + Content playback options
-      + [Overview](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-content-playback-options-android2.md)
       + [Set up the MediaPlayer](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-mediaplayer-set-up-android.md)
       + Work with MediaPlayer objects {#work-with-mediaplayer-objects}
-         + [Overview](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayerobjects-working-with.md)
-         + [About the MediaPlayerItem class](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayeritem-class-about.md)
-         + [Lifecycle and statuses of the MediaPlayer object](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-object-lifecycle-states.md)
-         + [MediaPlayerItem methods for accessing MediaResource   information](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/r-psdk-android-2.7-mediaplayeritem-methods-for-accessing-mediaresource.md)
-         + [Reuse or remove a MediaPlayer instance](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-reuse-or-remove.md)
-         + [Inspect the playback timeline](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/t-psdk-android-2.7-timeline-inspect-playback.md)
-         + [Suspend and Restore MediaPlayer](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-suspend-and-restore.md)
-      + [Listen for Primetime Player events](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-events-listen-for.md)
-      + [Implement event listeners and callbacks](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-event-listeners-implement.md)
+        + [About the MediaPlayerItem class](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayeritem-class-about.md)
+        + [Lifecycle and statuses of the MediaPlayer object](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-object-lifecycle-states.md)
+        + [MediaPlayerItem methods for accessing MediaResource   information](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/r-psdk-android-2.7-mediaplayeritem-methods-for-accessing-mediaresource.md)
+        + [Reuse or remove a MediaPlayer instance](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-reuse-or-remove.md)
+        + [Inspect the playback timeline](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/t-psdk-android-2.7-timeline-inspect-playback.md)
+        + [Suspend and Restore MediaPlayer](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-suspend-and-restore.md)
+      + Listen for Primetime Player events   {listen-primetime-player-events}
+        + [Overview](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-events-listen-for.md)
+        + [Implement event listeners and callbacks](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-event-listeners-implement.md)
       + [Set up error handling](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-error-handling-set-up.md)
       + Configure the player user interface {#configure-user-interface}
-         + [Overview](tvsdk-2.7-for-android/content-playback-options/ui-configure/c-psdk-android-2.7-ui-configure.md)
-         + [Wait for a valid status](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-state-prepared-wait-for.md)
-         + [Play and pause a video](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-pause-play-implement.md)
-         + [Identify whether the content is live or VOD](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-content-live-vod-identify.md)
-         + [Provide volume control](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-volume-control.md)
-         + [Display the duration, current time, and remaining time of the video](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-duration-time-display.md)
-         + [Display a seek scrub bar with the current playback position](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-seek-scrub-bar-display.md)
-         + [Construct a control bar enhanced for DVR](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-ctrl-bar-for-dvr-construct.md)
-         + [Enter a stream at a specific time](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-stream-entry-control.md)
+        + [Wait for a valid status](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-state-prepared-wait-for.md)
+        + [Play and pause a video](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-pause-play-implement.md)
+        + [Identify whether the content is live or VOD](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-content-live-vod-identify.md)
+        + [Provide volume control](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-volume-control.md)
+        + [Display the duration, current time, and remaining time of the video](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-duration-time-display.md)
+        + [Display a seek scrub bar with the current playback position](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-seek-scrub-bar-display.md)
+        + [Construct a control bar enhanced for DVR](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-ctrl-bar-for-dvr-construct.md)
+        + [Enter a stream at a specific time](tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-stream-entry-control.md)
       + Initialize the media player for a specific video {#initialize-specific-video}
          + [Create a media resource](tvsdk-2.7-for-android/content-playback-options/mediaplayer-initialize-for-video/t-psdk-android-2.7-media-resource-create.md)
          + [Load a media resource in the media player](tvsdk-2.7-for-android/content-playback-options/mediaplayer-initialize-for-video/t-psdk-android-2.7-media-resource-load.md)
@@ -320,7 +318,7 @@ user-guide-title: Primetime Programming Help
       + [HTTP 302 redirect optimization](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-302-redirect-overview.md)
       + [Work with cookies](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-cookies-work-with.md)
       + Work with closed captions {#closed-captions}
-         + [Work with closed captions overview](tvsdk-2.7-for-android/content-playback-options/closed-captions-set-up/c-psdk-android-2.7-closed-captions-set-up.md)
+         + [Overview](tvsdk-2.7-for-android/content-playback-options/closed-captions-set-up/c-psdk-android-2.7-closed-captions-set-up.md)
          + [Select a current caption track from among available tracks](tvsdk-2.7-for-android/content-playback-options/closed-captions-set-up/t-psdk-android-2.7-closed-caption-available-current.md)
          + Control closed-caption visibility {#control-visibility}
             + [Overview](tvsdk-2.7-for-android/content-playback-options/closed-captions-set-up/closed-caption-visibility-control/t-psdk-android-2.7-closed-caption-visibility-control.md)
@@ -346,21 +344,20 @@ user-guide-title: Primetime Programming Help
          + [Media playback and failover](tvsdk-2.7-for-android/content-playback-options/failover-for-playback/c-psdk-android-2.7-failover-media-playback.md)
          + [Advertising insertion and failover for VOD](tvsdk-2.7-for-android/content-playback-options/failover-for-playback/c-psdk-android-2.7-failover-ad-insertion-for-vod.md)
    + Advertising {#advertising}
-      + [Overview](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-ad-insertion.md)
+      + [Advertisimg amd its requirements](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-ad-insertion.md)
       + Insert ads {#insert-ads}
          + [Overview](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-ad-insertion-about.md)
-         + [Resolve and insert VOD ad](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-ad-resolving-client-vod.md)
-         + [Resolve and insert Live/linear ad](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-ad-resolving-client-live-linear.md)
+         + [Resolve and insert VOD ads](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-ad-resolving-client-vod.md)
+         + [Resolve and insert Live/linear ads](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-ad-resolving-client-live-linear.md)
          + [Implement an early ad break return](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/t-psdk-android-2.7-early-ad-break-return.md)
          + [Track client ad](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-ad-tracking-client.md)
          + [Client error handling for broken VMAP](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-broken-vmap-error.md)
          + [Secure Ad loading over HTTPS](tvsdk-2.7-for-android/ad-insertion/ad-insertion-about/c-psdk-android-2.7-secure-ad-loading.md)
-      + [Default and customized playback behavior with ads](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-playback-post1.2.md)
+         + [Default and customized playback behavior with ads](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-playback-post1.2.md)
       + Customize playback with ads {#customize-playback}
          + [Overview](tvsdk-2.7-for-android/ad-insertion/playback-customize/c-psdk-android-2.7-playback-customize.md)
          + [API elements for ad playback](tvsdk-2.7-for-android/ad-insertion/playback-customize/c-psdk-android-2.7-playback-ad-custom-elements.md)
          + [Use the default playback behavior](tvsdk-2.7-for-android/ad-insertion/playback-customize/t-psdk-android-2.7-playback-use-default.md)
-         + [Set up customized playback](tvsdk-2.7-for-android/ad-insertion/playback-customize/t-psdk-android-2.7-playback-customize.md)
          + [Skip ad breaks for a period of time](tvsdk-2.7-for-android/ad-insertion/playback-customize/t-psdk-android-2.7-playback-skip-breaks.md)
          + [Save the video position and resume later](tvsdk-2.7-for-android/ad-insertion/playback-customize/t-psdk-android-2.7-playback-save-position.md)
          + [Partial Ad break insertion](tvsdk-2.7-for-android/ad-insertion/playback-customize/c-psdk-android-2.7-partial-ad-break-insertion.md)
@@ -377,7 +374,6 @@ user-guide-title: Primetime Programming Help
          + [Companion banner data](tvsdk-2.7-for-android/ad-insertion/comp-banner-ads/r-psdk-android-2.7-companion-banner-data.md)
          + [Display banner ads](tvsdk-2.7-for-android/ad-insertion/comp-banner-ads/t-psdk-android-2.7-companion-banner-ads-display.md)
       + Clickable ads {#clickable-ads}
-         + [Overview](tvsdk-2.7-for-android/ad-insertion/clickable-ads/c-psdk-android-2.7-clickable-ads.md)
          + [Respond to clicks on ads](tvsdk-2.7-for-android/ad-insertion/clickable-ads/t-psdk-android-2.7-respond-to-ad-clicks.md)
          + [Separate the clickable ad process](tvsdk-2.7-for-android/ad-insertion/clickable-ads/t-psdk-android-2.7-separate-clickable-ad-process.md)
          + [Pause and resume playback](tvsdk-2.7-for-android/ad-insertion/clickable-ads/t-psdk-android-2.7-pausing-resuming-playback.md)

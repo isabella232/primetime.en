@@ -8,6 +8,8 @@ uuid: 2d37f358-d158-481b-81d5-27546e9c2e0e
 
 # About the MediaPlayerItem class {#about-the-mediaplayeritem-class}
 
+The MediaPlayer object represents your media player. A MediaPlayerItem represents audio or video on your player.
+
 After you successfully load the MediaResource object, TVSDK creates an instance of the MediaPlayerItem class to provide access to that resource.
 
 The `MediaResource` represents a request that is issued by the application layer to the `MediaPlayer` instance to load content.

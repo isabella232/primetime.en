@@ -6,7 +6,7 @@ title: Limitations and behavior for trick play
 uuid: 5b947075-eba0-45de-82d0-50b193f1ac83
 ---
 
-# Limitations and behavior for trick play{#limitations-and-behavior-for-trick-play}
+# Limitations and behavior for trick play {#limitations-and-behavior-for-trick-play}
 
 <!--<a id="section_2BC43539C5C142E085D06A7E35C76726"></a>-->
 
