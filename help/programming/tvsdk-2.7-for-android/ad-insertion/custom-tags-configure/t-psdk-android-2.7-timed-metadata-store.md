@@ -6,7 +6,7 @@ title: Store timed metadata objects as they are dispatched
 uuid: 0d0ddfea-6f32-467d-91bc-f18ceadcd842
 ---
 
-# Store timed metadata objects as they are dispatched{#store-timed-metadata-objects-as-they-are-dispatched}
+# Store timed metadata objects as they are dispatched {#store-timed-metadata-objects-as-they-are-dispatched}
 
 Your application must use the appropriate TimedMetadata objects at the appropriate times.
 

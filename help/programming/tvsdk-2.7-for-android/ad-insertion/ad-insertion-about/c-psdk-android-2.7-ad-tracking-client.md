@@ -6,7 +6,7 @@ title: Track client ad
 uuid: e095fbd5-656d-4c34-bf7d-ae43fa998a2a
 ---
 
-# Track client ad{#track-client-ad}
+# Track client ad {#track-client-ad}
 
 TVSDK automatically tracks ads for VOD and live/linear streaming.
 

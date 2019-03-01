@@ -7,7 +7,7 @@ title: Normalize rules
 uuid: ae0364d2-23e2-48d6-b9b6-869cd163080d
 ---
 
-# Normalize rules{#normalize-rules}
+# Normalize rules {#normalize-rules}
 
 The normalize rule defines a URL transformation to apply to a source creative URL obtained from a VAST/VMAP response.
 

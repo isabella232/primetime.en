@@ -6,7 +6,7 @@ title: Initialize and configure video analytics
 uuid: 98017a20-4997-42f7-9b03-fd9c4b6ccd92
 ---
 
-# Initialize and configure video analytics{#initialize-and-configure-video-analytics}
+# Initialize and configure video analytics {#initialize-and-configure-video-analytics}
 
 You can configure your player to track and analyze video use. 
 Before activating video tracking (video heartbeats), ensure that you have the following:

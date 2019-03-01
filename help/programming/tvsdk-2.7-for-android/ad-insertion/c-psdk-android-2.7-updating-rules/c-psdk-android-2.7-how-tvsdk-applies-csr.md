@@ -7,7 +7,7 @@ title: Apply creative selection rules
 uuid: 75109483-ea60-43a8-92e7-4bcba48986bc
 ---
 
-# Apply creative selection rules{#apply-creative-selection-rules}
+# Apply creative selection rules {#apply-creative-selection-rules}
 
 TVSDK applies creative selection rules in the following ways:
 

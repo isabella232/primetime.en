@@ -6,7 +6,7 @@ title: Rate-change API elements
 uuid: 3554bf45-9419-4740-8a0e-484fc14c7436
 ---
 
-# Rate-change API elements{#rate-change-api-elements}
+# Rate-change API elements {#rate-change-api-elements}
 
 TVSDK includes methods, properties, and events to determine valid rates, current rates, whether trick play is supported, and other functionality that are related to fast forward and rewind.
 

@@ -6,7 +6,7 @@ title: Resolve and insert VOD ad
 uuid: 69853c16-e252-472e-b33a-7a0e0c4b95dd
 ---
 
-# Resolve and insert VOD ad{#resolve-and-insert-vod-ad}
+# Resolve and insert VOD ads {#resolve-and-insert-vod-ad}
 
 For video-on-demand (VOD) content, TVSDK inserts ad breaks by splicing the ads in the main content so that the timeline duration increases.
 

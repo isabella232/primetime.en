@@ -6,7 +6,7 @@ title: Configure adaptive bit rates using ABRControlParameters
 uuid: 7084e954-196b-492e-846f-f8b36bed13a9
 ---
 
-# Configure adaptive bit rates using ABRControlParameters{#configure-adaptive-bit-rates-using-abrcontrolparameters}
+# Configure adaptive bit rates using ABRControlParameters {#configure-adaptive-bit-rates-using-abrcontrolparameters}
 
 You can set ABR control values only with ABRControlParameters, but you can construct a new one at any time.
 

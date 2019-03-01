@@ -6,7 +6,7 @@ title: Notifications and events for player status, activity, errors, and logging
 uuid: ec840f14-38d1-4f43-b119-e1326515fc63
 ---
 
-# Notifications and events for player status, activity, errors, and logging{#notifications-and-events-for-player-status-activity-errors-and-logging}
+# Notifications and events for player status, activity, errors, and logging {#notifications-and-events-for-player-status-activity-errors-and-logging}
 
 Events and notifications help you manage the asynchronous aspects of the video application.
 

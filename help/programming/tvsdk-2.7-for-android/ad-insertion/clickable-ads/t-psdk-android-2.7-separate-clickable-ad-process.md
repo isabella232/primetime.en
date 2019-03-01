@@ -6,7 +6,7 @@ title: Separate the clickable ad process
 uuid: c37f5916-eb25-41ec-b5f4-efb82ec56371
 ---
 
-# Separate the clickable ad process{#separate-the-clickable-ad-process}
+# Separate the clickable ad process {#separate-the-clickable-ad-process}
 
 You should separate your player's UI logic from the process that manages ad clicks. One way to do this is to implement multiple fragments for an activity.
 
