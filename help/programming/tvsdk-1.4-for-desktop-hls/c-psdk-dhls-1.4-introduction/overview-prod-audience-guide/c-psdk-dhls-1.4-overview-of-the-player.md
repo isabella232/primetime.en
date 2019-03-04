@@ -44,11 +44,10 @@ TVSDK for Desktop HLS includes a variety of features and provides the following 
 * Video and ad tracking
 
     * QoS event tracking 
-    * Notifications that help TVSDK and your application to communicate asynchronously about the status of videos, advertisements, and other elements, and also that log activity 
+    * Notifications that help TVSDK and your application to communicate asynchronously about the status of videos, advertisements, and other elements, and also that log activity.
     * Integration with Adobe Analytics and heartbeat support
 
 * Logging
 
-    * Debug logging 
-    * Tracking support for fragment duration, size, and time-to-download
-
+    * Debug logging.
+    * Tracking support for fragment duration, size, and time-to-download.

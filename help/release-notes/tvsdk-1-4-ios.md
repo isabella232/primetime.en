@@ -85,7 +85,7 @@ The PTSDKConfig class provides methods to enforce SSL on requests made to Adobe 
 
 Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. 
 
-For more information about VPAID 2.0, see [VPAID ad support](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-vpaid-2.0-ads.md).
+For more information about VPAID 2.0, see [VPAID ad support](../programming/tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-vpaid-2.0-ads.md).
 
 **Version 1.4.17**
 
@@ -121,7 +121,7 @@ For more information about VPAID 2.0, see [VPAID ad support](../programming/tvsd
 
 For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. 
 
-For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/ad-insertion/c-psdk-ios-1.4-ad-fallback.md).
+For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-fallback.md).
 
 
 **Version 1.4.9**
@@ -160,12 +160,6 @@ DRM Policies can now specify the highest resolution permitted, depending on the 
 
   * The TVSDK now supports sending mTVR and MDPR ID3 beacons to the Nielsen SDK without any custom integration. In order to get started, download the 3.1.2.19 Nielsen iOS App SDK.
   
-  <!-- 
-
-   Comment Type: draft
-  and follow the instructions found here in the [iOS Programmers Guide](http://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-Use_Nielsen_Analytics).
-  -->
-
 **Version 1.4.0**
 
 * **Blackout Signaling With Alternate Content Replacement**
@@ -464,7 +458,7 @@ The issue was resolved by placing the tag at the beginning of the playlist.
 
 * (ZD# 24528) Implement TVSDK Usage Metrics for Billing
 
-For more information, see [Billing Metrics](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-titlepage/c-psdk-ios-1.4-billing/t-psdk-ios-1.4-billing-config.md).
+For more information, see [Billing Metrics](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-billing/c-psdk-ios-1.4-billing.md).
 
 * (ZD# 24642) Picture-in-Picture support for  TVSDK
 
@@ -799,7 +793,7 @@ This issue was resolved by updating the PTMediaPlayer.drmManager API implementat
 
 This issue was resolved by allowing the applications to set their own  playhead  value.
 
-* Zendesk #18518 - If the video name is not specified, the TVSDK's name defaults to * PSDK-based  player.*
+* Zendesk #18518 - If the video name is not specified, the TVSDK's name defaults to *PSDK-based  player.*
 
 This issue was resolved by removing the default value for the player's name.
 
