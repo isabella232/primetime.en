@@ -53,7 +53,7 @@ In this release, this feature is not supported in Apple Safari and Mozilla Firef
 
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)** For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
 
-For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-1.4-for-android/android-1.4-titlepage/ad-insertion/ad-fallback/android-1.4-ad-fallback.md).
+For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-1.4-for-android/ad-insertion/ad-fallback/android-1.4-ad-fallback.md).
 
 **1.4.8**
 
