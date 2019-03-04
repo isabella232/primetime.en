@@ -160,12 +160,6 @@ DRM Policies can now specify the highest resolution permitted, depending on the 
 
   * The TVSDK now supports sending mTVR and MDPR ID3 beacons to the Nielsen SDK without any custom integration. In order to get started, download the 3.1.2.19 Nielsen iOS App SDK.
   
-  <!-- 
-
-   Comment Type: draft
-  and follow the instructions found here in the [iOS Programmers Guide](http://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-Use_Nielsen_Analytics).
-  -->
-
 **Version 1.4.0**
 
 * **Blackout Signaling With Alternate Content Replacement**
@@ -464,7 +458,7 @@ The issue was resolved by placing the tag at the beginning of the playlist.
 
 * (ZD# 24528) Implement TVSDK Usage Metrics for Billing
 
-For more information, see [Billing Metrics](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-billing/t-psdk-ios-1.4-billing-config.md).
+For more information, see [Billing Metrics](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-billing/c-psdk-ios-1.4-billing.md).
 
 * (ZD# 24642) Picture-in-Picture support for  TVSDK
 

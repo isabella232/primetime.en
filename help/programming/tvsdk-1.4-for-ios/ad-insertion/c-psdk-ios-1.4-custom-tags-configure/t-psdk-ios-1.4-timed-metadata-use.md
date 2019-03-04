@@ -10,7 +10,7 @@ uuid: 9bbdaefa-4ac5-4e08-92b4-15ebe5c46864
 
 You can use TimedMetadata when the current playback time matches the start time.
 
-To use these saved `PTTimedMetadata` objects during playback, use the saved  dictionary  from [Store timed-metadata objects as they are dispatched](../../tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-store.md). 
+To use these saved `PTTimedMetadata` objects during playback, use the saved  dictionary  from [Store timed-metadata objects as they are dispatched](../../../tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-store.md).
 
 1. Extract and update the current playback time from this notification and find all of the `PTTimedMetadata` objects with start times that match the current playback time.
 
