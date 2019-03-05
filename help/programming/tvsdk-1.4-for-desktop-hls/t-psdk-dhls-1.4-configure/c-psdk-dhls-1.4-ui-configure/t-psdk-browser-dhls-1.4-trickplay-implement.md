@@ -6,7 +6,7 @@ title: Implement fast forward and rewind
 uuid: bd190534-c871-4673-b79d-1413277f480f
 ---
 
-# Implement fast forward and rewind{#implement-fast-forward-and-rewind}
+# Implement fast forward and rewind {#implement-fast-forward-and-rewind}
 
 When users fast forward or fast rewind through the media, they are in the trick play mode. To enter trick play mode, you need to set the MediaPlayer playback rate to a value other than 1.
 
@@ -38,14 +38,18 @@ To switch the speed, you must set one value.
 
 1. You can optionally listen for rate-change events, which let you know when you requested a rate change and when a rate change actually happens.
 
-       TVSDK dispatches the following events related to trick play:
+    TVSDK dispatches the following events related to trick play:
 
     * `mediacore.events.PlaybackRateEvent.RATE_SELECTED` when the `rate` value changes to a different value. 
     
     * `mediacore.events.PlaybackRateEvent.RATE_PLAYING` when playback resumes at the selected rate.
 
-       TVSDK dispatches both of these events when the player returns from trick-play mode to normal play mode. 
-    
+    TVSDK dispatches both of these events when the player returns from trick-play mode to normal play mode.
+
+##Rate-change API elements {#rate-change-api}
+
+TVSDK includes methods, properties, and events to determine valid rates, current rates, whether trick play is supported, and other functionality related to fast forward and rewind.
+
 Use the following API elements to change play rates:
 
 * `MediaPlayer.rate` property with setter and getter functions 
@@ -63,7 +67,7 @@ Use the following API elements to change play rates:
 |  1.0  | Switches to normal play mode (calling `play` is the same as setting the rate property to 1.0)  |
 |  0.0  | Pauses (calling `pause` is the same as setting the rate property to 0.0)  |
 
-# Limitations and behavior for trick play {#limitations-behavior-trick-play}
+## Limitations and behavior for trick play {#limitations-behavior-trick-play}
 
 Here are the limitations for trick play mode:
 
@@ -85,4 +89,3 @@ Here are the limitations for trick play mode:
     * Exiting trick play invokes the same ad playback policy as when exiting seek.
 
       Therefore, as in seeking, the behavior depends on whether your application's playback policy is different from the default. The default is that the last skipped ad break is played at the point where you come out of trick play.
-

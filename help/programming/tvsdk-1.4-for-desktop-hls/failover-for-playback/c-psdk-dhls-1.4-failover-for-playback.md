@@ -6,7 +6,7 @@ title: Playback and failover
 uuid: 731c087d-9e14-4c7a-a856-c3962b9d7608
 ---
 
-# Playback and failover{#playback-and-failover}
+# Overview {#playback-and-failover-overview}
 
 Streaming over the Internet requires a constant and stable connection to play a stream from a remote server. However, the variability of a viewer's Internet connection or streaming playback means that remote playback might not have the quality of media played locally.
 
