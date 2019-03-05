@@ -17,7 +17,7 @@ Ensure you have the following:
   The sample app must be able to play FairPlay-protected content with the licensing handled through Primetime DRM powered by ExpressPlay. 
 * Sample HLS content (an M3U8 manifest) packaged with FairPlay protection.
 
-To make full use of the information here, learn about Multi-DRM Workflows starting with the sub-section [Reference Server: Sample ExpressPlay Entitlement Server (SEES)](../../../digital-rights-management/multi-drm-workflows/feature-topics/sees-reference-server.md) in the Multi-DRM Workflows guide. First read that documentation on how to set up your entitlement and key server, and the information below will be much more useful.
+To make full use of the information here, learn about Multi-DRM Workflows starting with the sub-section [Reference Server: Sample ExpressPlay Entitlement Server (SEES)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_multi_drm_workflows.pdf) in the Multi-DRM Workflows guide. First read that documentation on how to set up your entitlement and key server, and the information below will be much more useful.
 You need the following items:
 
 * Your *production* Customer Authenticator from ExpressPlay 
