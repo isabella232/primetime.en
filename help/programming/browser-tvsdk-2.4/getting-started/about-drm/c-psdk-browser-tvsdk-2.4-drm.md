@@ -14,9 +14,10 @@ You can listen to the `AdobePSDK.DRMMetadataInfoEvent` event to handle DRM workf
 
 ```js
 ... 
-player.addEventListener(AdobePSDK.PSDKEventType.DRM_METADATA_INFO_AVAILABLE, onDRMMetadataInfoAvailable); 
+player.addEventListener(AdobePSDK.PSDKEventType.DRM_METADATA_INFO_AVAILABLE, onDRMMetadataInfoAvailable);
 ...
 ```
+
 ## Add Digital Rights Management {#add-digital-rights-management}
 
 1. Add the `DRMMetadataInfoAvailableEvent` to get the `DRMMetadata`.

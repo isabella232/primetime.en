@@ -46,7 +46,7 @@ To switch the speed, you must set one value.
 
     TVSDK dispatches both of these events when the player returns from trick-play mode to normal play mode.
 
-##Rate-change API elements {#rate-change-api}
+## Rate-change API elements {#rate-change-api}
 
 TVSDK includes methods, properties, and events to determine valid rates, current rates, whether trick play is supported, and other functionality related to fast forward and rewind.
 
