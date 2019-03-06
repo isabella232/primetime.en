@@ -197,6 +197,7 @@ user-guide-title: Primetime Programming Help
    + [Instant-on](tvsdk-3.4-for-ios/ios-3.4-instant-on-ios.md)
    + Advertising {#advertising}
       + [Advertising requirements](tvsdk-3.4-for-ios/ios-3.4-advertising/ios-3.4-advertising-requirements.md)
+      + [Ad Timeout](tvsdk-3.4-for-ios/ios-3.4-advertising/ios-3.4-ad-timeout.md)
       + [Partial ad-break insertion](tvsdk-3.4-for-ios/ios-3.4-advertising/ios-3.4-partialad-break-insertion.md)
       + [Insert ads](tvsdk-3.4-for-ios/ios-3.4-advertising/ios-3.4-ad-insertion-about.md)
       + [Default and customized playback behavior with ads](tvsdk-3.4-for-ios/ios-3.4-advertising/ios-3.4-playback-post1.2.md)
@@ -277,7 +278,8 @@ user-guide-title: Primetime Programming Help
       + [TVSDK notification system](tvsdk-3.4-for-ios/ios-3.4-notification-codes/c-ios-notification-codes/c-ios-notification-codes.md)
       + [ERROR notification codes](tvsdk-3.4-for-ios/ios-3.4-notification-codes/c-ios-notification-codes/ios-3.4-notifications-errors.md)
       + [WARNING notification codes](tvsdk-3.4-for-ios/ios-3.4-notification-codes/c-ios-notification-codes/ios-3.4-notification-warnings.md)
-      + [INFO notification codes](tvsdk-3.4-for-ios/ios-3.4-notification-codes/c-ios-notification-codes/ios-3.4-notification-info.md)
+      + [INFO notification codes](tvsdk-3.4-for-ios/ios-3.4-notification-codes/c-ios-notification-codes/ios-3.4-notification-info.md)      
+      + [REVENUE Optimization code](tvsdk-3.4-for-ios/ios-3.4-notification-codes/c-ios-notification-codes/ios-3.4-revenue-optimization.md)
 + TVSDK 2.7 for Android {#tvsdk-2.7-for-android}
    + Product overview, audience, and this guide {#overview}
       + [Product overview, audience, and this guide overview](tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-prod-audience-guide.md)
