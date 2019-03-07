@@ -1,6 +1,6 @@
 ---
 title: Primetime Programming Help
-seo-title: Adobe PPrimetime Programming Help
+seo-title: Adobe Primetime Programming Help
 description: null
 seo-description: null
 ---
@@ -10,7 +10,9 @@ seo-description: null
 
 Welcome to the Android & iOS Programming guides. The documents listed in the left navigation teach you how to develop applications and video players using Java on Android devices and Objective-C on iOS devices.
 
-    [!Tip] Use the left navigation bar to browse the documentation, the Search bar in the top-right to look for something specific, or the links below to access some key highlights.
+>[!TIP]
+>
+>Use the left navigation bar to browse the documentation, the Search bar in the top-right to look for something specific, or the links below to access some key highlights.
 
 ## Key articles in the newest version 3.4
 
@@ -32,5 +34,6 @@ Check out for more information about the [current released version](tvsdk-3.4-fo
 
 ## Key Primetime resources
 
-* [link text](/help/dynamic-ad-insertion/introduction.md)
-* [link text](/help/dynamic-ad-insertion/introduction.md)
+* [Get to know Adobe Primetime](https://www.adobe.com/in/marketing/primetime.html)
+* [Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)
+* [Primetime Authentication](https://tve.helpdocsonline.com/home)
