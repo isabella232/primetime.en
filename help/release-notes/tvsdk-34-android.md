@@ -1,17 +1,17 @@
 ---
-title: TVSDK 3.3 for Android Release Notes
-seo-title: TVSDK 3.3 for Android Release Notes
-description: TVSDK 3.3 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.3
-seo-description: TVSDK 3.3 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.3
+title: TVSDK 3.4 for Android Release Notes
+seo-title: TVSDK 3.4 for Android Release Notes
+description: TVSDK 3.4 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.4
+seo-description: TVSDK 3.4 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.4
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 ---
 
-# TVSDK 3.3 for Android Release Notes {#tvsdk-for-android-release-notes}
+# TVSDK 3.4 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.3 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.3
+TVSDK 3.4 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.4
 
 ## TVSDK Android 3.2 {#tvsdk-android}
 
@@ -31,15 +31,19 @@ TVSDK for Android provides many performance improvements over earlier versions. 
 
 The comprehensive set of features supported and not supported are presented in the [Features Matrix](#feature-matrix) section of these release notes.
 
-### What's New in TVSDK 3.2 {#what-s-new-in-tvsdk}
+### What's New in TVSDK 3.4 {#what-s-new-in-tvsdk}
+
+* TVSDK now supports CMAF streams playback for CBC encrypted and plain streams.
+
+
+#### New features in the previous releases
+
+**Version 3.3**
 
 * **API changes**
 
   * A new API is added to `NetworkConfiguration::setNumOfTimesManifestRetryBeforeError(n)*` to handle network errors and timeouts.
     * where (n) is the number of retries.
-
-
-#### New features in the previous releases
 
 **Version 3.2**
 
@@ -322,7 +326,16 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 ## Resolved issues {#resolved-issues}
 
-### Android TVSDK 3.3 {#android-tvsdk}
+### Android TVSDK 3.4 {#android-tvsdk}
+
+* ZD#37996 - Fixed an issue about choppy playback issue for linear    and VOD CMAF HEVC streams.
+* ZD#37706 - Fixed an issue about garbled captions.
+* ZD#37622 - Fixed an issue about fatal URISyntaxErrors for           specific ads.
+* ZD#36938 - Fixed an issue about bitrate switching down to the       middle bitrate and then picking up to the highest bitrate after     exiting out of trick plays.
+
+#### Resolved issues in the previous releases
+
+**Version 3.3**
 
 * ZD#37394 - CMAF asset fast forward causes artifacts after the speed changes.
   * Fixed an issue which occurs with a profile change during trick play.
@@ -336,8 +349,6 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
   * Fixed an issue about stream playback crash when customer Android app is served ads that contain an un-encoded %
 * ZD#37631 - Master manifest retry mechanism for Android TVSDK.
   * Added new API in the network configuration for handling this enhancement. If this API is not used, then manifest is not retried. If it is used then manifest will be retried for handling network errors and timeouts.
-
-#### Resolved issues in the previous releases
 
 **Version 3.2**
 
@@ -528,11 +539,16 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
+**Android TVSDK 3.4**
+
+* ID3, Closed Captions, Late Binding Audio support has not been       verified for the CMAF (CBC) stream.
+* On some devices, a low reproducibility issue exists due to which    video distortion can appear on the top during trick play on CMAF    streams.
+
+### Known issues and limitations in the previous releases
+
 **Android TVSDK 3.3**
 
 * clcp:c608 captions are not supported for CMAF stream playback.
-
-### Known issues and limitations in the previous releases
 
 **Android TVSDK 3.2**
 
@@ -588,10 +604,10 @@ This version of TVSDK has the following issues:
 
 ## Helpful resources {#helpful-resources}
 
-* [System Requirements](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.0.pdf#page=6)
-* [TVSDK 3.0 for Android Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.0.pdf)
-* [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.2/index.html)
-* [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.2/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
+* [System Requirements](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.4.pdf#page=6)
+* [TVSDK 3.4 for Android Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.4.pdf)
+* [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.4/index.html)
+* [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.4/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
 * [TVSDK 1.4 to 2.5 for Android (Java) Migration Guide](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-25-android.html)
 * For handling screen on/off scenarios, see the `Application_Changes_for_Screen_On_Off.pdf` file included in the build.
 * See complete help documentation at [Adobe Primetime User Guide](https://helpx.adobe.com/primetime/user-guide.html).
