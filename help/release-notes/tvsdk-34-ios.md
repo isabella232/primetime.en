@@ -1082,7 +1082,7 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 * It might experience that License rotation video does not play on iOS 11 and it will play fine on iOS 9.x and iOS 10.x.
 * In VPAID 2.0 support, if the playback is active over AirPlay, VPAID ads are skipped.
 * The drmNativeInterface.framework does not link correctly when the minimum target is set to iOS7 (or later).
-  Workaround: Explicitly specify the libstdc++6.dylib library as follows: Go to Target->Build Phases->Link Binary With Libraries and add libstdc++.6.dylib.
+  Workaround: Explicitly specify the libstdc++.6.dylib library as follows: Go to Target->Build Phases->Link Binary With Libraries and add libstdc++.6.dylib.
 * Post-Roll Ad not getting inserted for replace API.
 * Seeking in an ad break (without coming out of it) issues a duplicate ad start and ad break notification
 * Setting currentTimeUpdateInterval does not have any effect.
