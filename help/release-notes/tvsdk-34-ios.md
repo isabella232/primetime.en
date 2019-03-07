@@ -1,31 +1,43 @@
 ---
-title: TVSDK 3.1 for iOS Release Notes
-seo-title: TVSDK 3.1 for iOS Release Notes
-description: TVSDK 3.1 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.1
-seo-description: TVSDK 3.1 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.1
+title: TVSDK 3.4 for iOS Release Notes
+seo-title: TVSDK 3.4 for iOS Release Notes
+description: TVSDK 3.4 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.4
+seo-description: TVSDK 3.4 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.4
 uuid: e8305fdb-78a8-4c0b-b216-807f745a0769
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: c470c84d-03e7-4f5b-b36a-d8866394ec8f
 ---
 
-# TVSDK 3.3 for iOS Release Notes {#tvsdk-for-ios-release-notes}
+# TVSDK 3.4 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
-TVSDK 3.3 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.3.
+TVSDK 3.4 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.4.
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.3, ensure your hardware, operating system, and application versions meet the following requirements listed below:
+Before you download iOS 3.4, ensure your hardware, operating system, and application versions meet the following requirements listed below:
 
 Operating System: iOS 7.0 or later
 
 ## New features {#new-features}
 
-### What's New in iOS TVSDK 3.3 {#what-s-new-in-ios-tvsdk}
+### What's New in iOS TVSDK 3.4 {#what-s-new-in-ios-tvsdk}
 
-* TVSDK 3.3 is now compliant with iOS 11 SDK. All the deprecated APIs have been replaced with suitable alternatives.
+**Ad Resolution Timeout**
+
+* With TVSDK 3.4, users can now set the timeout value for overall ad resolution and manifest downloads. If within a given timeout some ads are not    resolved, TVSDK will play the remaining ads.
+* PTAdMetadata:: adRequestTimeout API has been deprecated and will be removed. The default value has been set to 35 seconds.
+* Two new alternate APIs have been introduced in the PTAdMetadataClass: adResolutionTimeout  - timeout for overall ad resolution calls                adManifestTimeout – timeout for ad manifest downloads.
+
+**Revenue Optimization**
+
+* Enabled TVSDK to identify problem areas related to ad insertion workflows to report to an analytics end-point of choice.
 
 ### New features in the previous releases {whats-new-previous}
+
+**Version 3.3**
+
+* TVSDK 3.3 is now compliant with iOS 11 SDK. All the deprecated APIs have been replaced with suitable alternatives.
 
 **Version 3.2**
 
@@ -233,11 +245,15 @@ Comment Type: draft
 
  -->
 
-### iOS TVSDK 3.3 {#ios-tvsdk}
+### iOS TVSDK 3.4 {#ios-tvsdk}
 
-* (ZD#37820) - Added whitelisting for custom header HS-Id, HS-SSAI-TAG.
+* No new issues in this release.
 
 #### Resolved issues in the previous releases {#resolved-issues-previous}
+
+**Version 3.3**
+
+* (ZD#37820) - Added whitelisting for custom header HS-Id, HS-SSAI-TAG.
 
 **Version 3.2**
 
@@ -1061,34 +1077,32 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-* With JIT enabled and tolerance set to 10 seconds, no VAST call is seen for the first midroll ad break in case of VMAP`->`VAST redirect ads.
-* Detailed Error notifications are not available when Just in Time Ad resolving is enabled.
-* Error notifications are logged as per ad resolution time and not as per ad sequence.
-* HEVC support has following limitations in this release:
-
-  * DRM not supported
-  * CC (CEA 608/708) support not available as it is not supported in CMAF.
-  * 4K support is not yet present
-  * ID3 tags support not available as it is not supported in CMAF
-  * Unmuxed  Live HEVC streams not verified
-  * HEVC Ads support not verified.
-
-* In iOS  TVSDK , all ads are stitched into the content manifest. Ad behaviors are implemented by seeking based on the duration of the content and ad segments. So if segment durations are not accurate, seeking may not always end at the exact frame of the beginning or end of the ad break. Even if durations are to the frame, there is a tolerance that the platform itself imposes on seeking and there may be a few frames or ad or content displayed. This is a limitation of the platform and the way ad insertion works with TVSDK on iOS.
-* The decision to skip happens on the seek event in this case. However, since the ad segment durations in the manifest do not accurately represent the actual duration of the ad, the seek is not frame accurate. Hence, you see a few frames of the ad when the ad policies are applied.
+* In iOS TVSDK, all ads are stitched into the content manifest. Ad behaviors are implemented by seeking based on the duration of the content and ad segments. So if segment durations are not accurate, seeking may not always end at the exact frame of the beginning or end of ad break. Even if durations are to the frame, there is a tolerance that the platform itself imposes on seeking and there may be a few frames or ad or content displayed. This is a limitation of the platform and the way ad insertion works with TVSDK on iOS.
+* The decision to skip happens on the seek event in this case. However, since the ad segment durations in the manifest do not accurately represent the actual duration of the ad, the seek is not frame accurate. Hence, you see a few frames of ad when the ad policies are applied.
 * It might experience that License rotation video does not play on iOS 11 and it will play fine on iOS 9.x and iOS 10.x.
 * In VPAID 2.0 support, if the playback is active over AirPlay, VPAID ads are skipped.
-* The drmNativeInterface.framework does not link correctly when the minimum target is set to iOS7 (or later).  
-  Workaround: Explicitly specify the `libstdc++6`.  dylib  library as follows: Go to Target`->`Build Phases`->`Link Binary With Libraries and add `libstdc++.6.dylib`.
-
-* Post-Roll Ad not getting inserted for replacing API.
-* Seeking in an ad break (without coming out of it) issues a duplicate  ad  start an ad break notification
-* Setting currentTimeUpdateInterval does not have any effect.  
-  Note: In certain iOS versions, the OS doesn't load the resources inside the PSDKLibrary.framework automatically. It is important to manually copy the `PSDKResources.bundle` to the application's bundle resources: Go to "Build Phases" and copy bundle resources.
+* The drmNativeInterface.framework does not link correctly when the minimum target is set to iOS7 (or later).
+  Workaround: Explicitly specify the libstdc++.6.dylib library as follows: Go to Target->Build Phases->Link Binary With Libraries and add libstdc++.6.dylib.
+* Post-Roll Ad not getting inserted for replace API.
+* Seeking in an ad break (without coming out of it) issues a duplicate ad start and ad break notification
+* Setting currentTimeUpdateInterval does not have any effect.
+  Note: In certain iOS versions, the OS doesn't load the resources inside the PSDKLibrary.framework automatically. It is important to manually copy the PSDKResources.bundle to the application's bundle resources: Go to "Build Phases" and copy bundle resources.
 * The Reference App cannot be built using Xcode 8 or lower versions. iOS TVSDK version 1.4.41 onwards, use Xcode 9 to compile.
 * VPAID ads do not honor the delayAdLoadingTolerance value.
 * 24077- For certain HLS contents with subtitles, player crashes on Stop or Reset method.
+* Detailed Error notifications are not available in case when Just in Time Ad resolving is enabled.
+* Error notifications are logged as per ad resolution time and not as per ad sequence.
+* HEVC support has following limitations in this release
+    * DRM not supported
+    * CC (CEA 608/708) support not available as it is not supported in CMAF.
+    * 4K support is not yet present
+    * ID3 tags support not available as it is not supported in CMAF
+    * Unmuxed Live HEVC streams not verified
+    * HEVC Ads support not verified
+* With JIT enabled and tolerance set to 10 seconds, no VAST call is seen for the first midroll ad break in case of VMAP->VAST redirect ads.
+* For Ad resolution time out to work properly, each time the playlist is updated during live stream playback, the player expects a stitched playlist within 20 sec. If it does not receive a stitched playlist within the said interval, an internal error is thrown and the player stops. 
 
 ## Helpful resources {#helpful-resources}
 
-* [TVSDK 3.3 for iOS Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_ios_3.3.pdf)
-* [TVSDK iOS 3.3 API reference](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v33/index.html)
+* [TVSDK 3.4 for iOS Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_ios_3.4.pdf)
+* [TVSDK iOS 3.4 API reference](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v34/index.html)
