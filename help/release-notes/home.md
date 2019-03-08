@@ -7,35 +7,30 @@ seo-description: null
 
 # Primetime Release Notes
 
-Description of Primetime and user guide.
+Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
-## Key articles
+## New features in the Release Notes for TVSDK 3.4 for iOS & Android
 
-+ [TVSDK 3.4 for iOS Release Notes](tvsdk-34-ios.md)
-+ [TVSDK 3.4 for Android Release Notes](tvsdk-34-android.md)
-+ [TVSDK 2.4.1 for Android Release Notes](tvsdk-24-android.md)
-+ [TVSDK 1.4 for Desktop HLS Release Notes](tvsdk-1-4-desktop-hls.md)
-+ [Primetime Offline Packager 2.x releases](offline-packager-2x-release-note.md)
-+ [Browser TVSDK 2.4 Release Notes](tvsdk-24-browser.md)
-+ [Primetime Streaming Server 1.x releases](primetime-streaming-server-1x.md)
-+ [TVSDK 2.1 PlayStation 4 Release Notes](tvsdk-21-ps4.md)
-+ [DRM 5.3.1 Release Notes](drm-531-release-notes.md)
-+ [TVSDK 2.7 for Android Release Notes](tvsdk-27-android.md)
-+ [TVSDK 1.4 for Android Release Notes](tvsdk-1-4-android.md)
-+ [TVSDK 1.4 for iOS Release Notes](tvsdk-1-4-ios.md)
+* [Ad Resolution Timeout](../release-notes/tvsdk-34-ios.md#what-s-new-in-ios-tvsdk)
+* [Revenue Optimization](../release-notes/tvsdk-34-ios.md#what-s-new-in-ios-tvsdk)
+* [CMAF Streams](../release-notes/tvsdk-34-android.md##tvsdk-for-android-release-notes)
 
-## Primetime user guides
+Check out for more information about the current released version for [iOS](../release-notes/tvsdk-34-ios.md) and [Android](../release-notes/tvsdk-34-android.md).
+
+## See also
 
 | User Guide | Description |
 |--- |--- |
-| [Primetime Video Playback Help](/help/android-1.4-reference-implementation/home.md) | Description |
-| [Primetime DRM Help](/help/digital-rights-management/home.md) | Description |
-| [Dynamic Ad Insertion Help](/help/dynamic-ad-insertion/home.md) | Description |
-| [Primetime Migration Help](/help/migration-guides/home.md) | Description |
-| [Primetime Programming Help](/help/programming/home.md) | Description |
-| [Primetime Release Notes](/help/release-notes/home.md) | Description |
+| [Primetime Programming Help](help\programming\home.md)  | Allows you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices. |
+| [Primetime Migration & Conversion Help](/help/migration-guides/home.md) | Explains the conversion and migration process to move from your existing Primetime TVSDK Suite to the next-generation suite.   |
+| [Reference Implementation](/help/android-1.4-reference-implementation/home.md) | Helps understand the TVSDK and modify the feature managers to customize your personal player. |
+| [Dynamic Ad Insertion Help](/help/dynamic-ad-insertion/home.md) | Explains how to monetize content by inserting user-targeted dynamic ads on the server and engage audience with personalized ads. |
+| [Primetime API references](help\api-references.md) | Provides detailed information about TVSDK functions, data structures and other programming constructs. |
 
-## Key Primetime resources
+## Helpful resources
 
-+ [link text](/help/dynamic-ad-insertion/introduction.md)
-+ [link text](/help/dynamic-ad-insertion/introduction.md)
++ [Get to Know Adobe Primetime](https://www.adobe.com/in/marketing/primetime.html)
++ [Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)
++ [Primetime Authentication](https://tve.helpdocsonline.com/home)
++ [Adobe Primetime DRM Forums](https://forums.adobe.com/community/adobe_access)
++ [Adobe Primetime Developer Resources](https://www.adobe.com/devnet/primetime.html)
