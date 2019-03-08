@@ -21,11 +21,11 @@ Check out for more information about the current released version for [iOS](../r
 
 | User Guide | Description |
 |--- |--- |
-| [Primetime Programming Help](help\programming\home.md)  | Allows you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices. |
+| [Primetime Programming Help](/help/programming/home.md)  | Allows you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices. |
 | [Primetime Migration & Conversion Help](/help/migration-guides/home.md) | Explains the conversion and migration process to move from your existing Primetime TVSDK Suite to the next-generation suite.   |
 | [Reference Implementation](/help/android-1.4-reference-implementation/home.md) | Helps understand the TVSDK and modify the feature managers to customize your personal player. |
 | [Dynamic Ad Insertion Help](/help/dynamic-ad-insertion/home.md) | Explains how to monetize content by inserting user-targeted dynamic ads on the server and engage audience with personalized ads. |
-| [Primetime API references](help\api-references.md) | Provides detailed information about TVSDK functions, data structures and other programming constructs. |
+| [Primetime API references](/help/api-references.md) | Provides detailed information about TVSDK functions, data structures and other programming constructs. |
 
 ## Helpful resources
 
