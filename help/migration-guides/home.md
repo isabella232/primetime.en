@@ -21,8 +21,12 @@ Welcome to the Migration and Conversion help for Adobe Primetime. The documents 
 
 ## Helpful resources
 
-+ [Get to Know Adobe Primetime](https://www.adobe.com/in/marketing/primetime.html)
-+ [Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)
-+ [Primetime Authentication](https://tve.helpdocsonline.com/home)
-+ [Adobe Primetime DRM Forums](https://forums.adobe.com/community/adobe_access)
-+ [Adobe Primetime Developer Resources](https://www.adobe.com/devnet/primetime.html)
+* [Get to Know Adobe Primetime](https://www.adobe.com/in/marketing/primetime.html)
+
+* [Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)
+
+* [Primetime Authentication](https://tve.helpdocsonline.com/home)
+
+* [Adobe Primetime DRM Forums](https://forums.adobe.com/community/adobe_access)
+
+* [Adobe Primetime Developer Resources](https://www.adobe.com/devnet/primetime.html)
