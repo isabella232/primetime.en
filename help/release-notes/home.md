@@ -13,7 +13,7 @@ Welcome to the Adobe Primetime Release Notes. The documents listed in the left n
 
 * [Ad Resolution Timeout](../release-notes/tvsdk-34-ios.md#what-s-new-in-ios-tvsdk)
 * [Revenue Optimization](../release-notes/tvsdk-34-ios.md#what-s-new-in-ios-tvsdk)
-* [CMAF Streams](../release-notes/tvsdk-34-android.md##tvsdk-for-android-release-notes)
+* [CMAF Streams](../release-notes/tvsdk-34-android.md#what-s-new-in-tvsdk)
 
 Check out for more information about the current released version for [iOS](../release-notes/tvsdk-34-ios.md) and [Android](../release-notes/tvsdk-34-android.md).
 
