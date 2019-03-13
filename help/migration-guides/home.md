@@ -17,6 +17,7 @@ Welcome to the Migration and Conversion help for Adobe Primetime. The documents 
 | [Primetime Programming Help](/help/programming/home.md)  | Allows you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices. |
 | [Reference Implementation](/help/android-1.4-reference-implementation/home.md) | Helps understand the TVSDK and modify the feature managers to customize your personal player. |
 | [Dynamic Ad Insertion Help](/help/dynamic-ad-insertion/home.md) | Explains how to monetize content by inserting user-targeted dynamic ads on the server and engage audience with personalized ads. |
+| [Digital Rights Management](/help/digital-rights-management/home.md) | Helps you learn more about various user scenarios in Digital Rights Management (DRM) |
 | [Primetime API references](/help/api-references.md) | Provides detailed information about TVSDK functions, data structures and other programming constructs. |
 
 ## Helpful resources

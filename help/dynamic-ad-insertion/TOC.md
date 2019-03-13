@@ -8,7 +8,6 @@ user-guide-title: Dynamic Ad Insertion Help
 # Dynamic Ad Insertion Help {#ad-insertion}
 
 + [Dynamic Ad Insertion Overview](home.md)
-+ [Introduction](introduction.md)
 + [Manifest Server Debugging Tool](manifest-server-debugging-tool.md)
 + Manifest Server API for Ad Insertion {#manifest-server}
    + [Overview of Manifest Server interactions](msapi-topics/ms-overview.md)
