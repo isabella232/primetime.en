@@ -35,3 +35,5 @@ The DRM Client errors are a subset of the TVSDK client-side errors, with the DRM
         <li>Check whether the issue is specific to certain content
         and repackage.</li></ul></li></ul>
     </tr>
+ </tbody>
+ </table>
