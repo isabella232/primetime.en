@@ -33,86 +33,8 @@ The DRM Client errors are a subset of the TVSDK client-side errors, with the DRM
 <li>What the distributor should do:
         <ul><li>If retries are unsuccessful on configurations other than Chrome with Flash less than version 11.6, a failure might have occurred in the packaging</li>
         <li>Check whether the issue is specific to certain content
-        and repackage.</li></ul></li></ul>
-  <tr>
-    <td>3301</td>
-    <td align="center">AuthenticationFailed</td>
-      <td>
-      <ul>
-        <li>The server failed to authenticate or authorize the client.
-           <ul><li>The distributor’s software should take any action necessary to re-establish the user’s credentials or guide the user to acquire access to the content.</li>
-           <li>The distributor should confirm that its authorization and authentication mechanism is working correctly. If the distributors are not planning to use the authentication or authorization features, they should check whether the policy of the offending content requires authentication, and see Diagnosing policy / license discrepancies.</ul></li></ul>
-           For more information about this error code, see <a href="https://forums.adobe.com/thread/1277149">DRM Error 3301 causes and resolution.</a>
-           </tr>
-        <tr>
-        <td>3302</td>
-        <td align="center">RequireSSL</td>
-      <td>
-      For Primetime DRM 4.0 and above, this error is thrown on iOS when the remote key URL does not use HTTPS as the scheme. HTTPS is required.
-      <ul><li>If distributor is using a version older than Primetime DRM version 4, or at least version 4 but the platform is not iOS, the distributor's software should log the error. This error is thrown only on iOS</li>
-      <li>If the distributor's software is at least Primetime DRM version 4, and the platform is iOS, distributors must change the remote key server URL that they are using to HTTPS. If they were only using HTTP, distributors might have to set up an HTTPS server. Otherwise, the distributors need to submit the logged information to Adobe and escalate the issue.</li></ul></tr>
-      <tr>
-      <td>3303</td>
-      <td align="center">ContentExpired</td>
-      <td>The content you are viewing has expired according to the rules set by the content provider. subErrorId contains a client-specific error or line error.
-      <ul><li>The distributor's software should attempt to reacquire a license from the server once to determine whether a new non-expired license is available. If no license is available or the license has expired, allow the user to acquire a new license, or inform the user that the content cannot be watched.</li></ul>
-      If the content has been packaged with a policy that has a lapsed expiration/end date, and the license server logs report
-a PolicyEvaluationException, state that the Policy End Date has lapsed (Server Error code 303). Check the server's log files to verify.
-
-If possible, customers should check the policy that they used during
-packaging to see whether it has expired. The Java command line tool is:
-
-java -jar libs/AdobePolicyManager.jar
- detail demo.pol
- <ul><li>The distributor should confirm whether license expiration dates are configured as intended.</li></ul>
- For more information about this error code, see <a href="https://forums.adobe.com/thread/1300813">3303 (Content Expired)
-with AMS/FMS using a Live Stream?</a></td></tr>
-<tr>
-<td>3304</td>
-<td>AuthorizationFailed</td>
-<td>The current user is not authorized to view content. Login as a different user.
-
-For more information about this error code, see Error code 3301.</td></tr>
-<tr>
-<td>3305</td>
-<td>ServerConnectionFailed</td>
-<td>The connection to the license or domain servers timed out, either due to network delay or the client being offline. NormallysubErrorId contains the HTTP return code.
-<ul><li>The distributor's software should attempt a network connection to a known good server. If the attempt fails, prompt the user to reconnect to the network. If the attempt is successful, log it.</li>
-<li>The distributor should verify that any license and domain servers in use are online and visible from the client's network.</li>
-</ul>
-For more information about this error code, see <a href:"https://forums.adobe.com/thread/1284947">DRM 3305
-[ServerConnectionFailed] causes and resolution.</a></td>
-</tr>
-<tr>
-<td>3306</td>
-<td>ClientUpdateRequired</td>
-<td>The current client cannot complete the requested action, but an updated client might be able to complete the request.
-This can have several causes:
-<ul><li>A shared domain was used that is not available on this client. This is likely the case when playback works on Chrome, but not any other browser and vice versa.</li>
-<b>Note:</b>Chrome uses a different PHDS/PHLS key than the other browsers use.
-<li>The application is trying to add multiple DRMSessions when running on an iOS version that is earlier than 5.0.</li>
-<li>The metadata has a version of 3 or higher when only version 2 is
-supported.</li>
-<li>The distributor's software should alert the user and abort the
-operation. If the software has a way of determining whether an
-upgrade is available, direct the user to that upgrade in the
-appropriate manner for the platform.</li>
-<li>If the issue occurs because of a shared domain, the distributor
-will need to check with Adobe for an updated runtime or library.
-In the case of Flash runtime, the distributor can force the
-upgrade in their application directly. In the case of a library, the
-distributor will need to obtain an updated library, rebuild their
-application and deploy it to their users.</li></ul>
-If the issue occurs because of multiple DRMSessions, the distributor will need to update their application to check the iOS version number prior to adding multiple DRMSessions. Or they can restrict distribution of their application to iOS version 5 and above.
-
-If the issue occurs because the metadata version is higher than version 2, the issue is probably corrupted metadata. They can try rebuilding the metadata and looking at the results. If they continue to see the problem, log the issue and escalate to Adobe.
-
-For more information about this error code, see <a href="https://forums.adobe.com/thread/1266675">How to remedy a 3306
-DRMErrorEvent Error code.</a>
+        and repackage.</li></ul></li></ul>  
 </td>
 </tr>
-<tr>
-<td>
-</tr>
- </tbody>
- </table>
+</tbody>
+</table>
