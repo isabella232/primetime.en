@@ -427,7 +427,7 @@ user-guide-title: Primetime Digital Rights Management Help
    + [License preview](tvsdk-drm-workflow/license-preview.md)
    + [Delivering content](tvsdk-drm-workflow/delivering-content.md)
 + Adobe Primetime DRM Client Error Message Reference {#client-error-message}
-  + [DRM Client Error Message Reference](client-error-message\client-error-message-reference.md)
+  + [DRM Client Error Message Reference](client-error-message/client-error-message-reference.md)
 + Using Adobe Access DRM With an External Key Management System {#external-cek}
   + [Adobe Access DRM External CEK Overview](aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md)
    + [Standard AAXS DRM Workflow](aaxs-drm-xkey-mgmt/aaxs-drm-standard-workflow.md)
