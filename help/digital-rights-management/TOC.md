@@ -8,181 +8,6 @@ user-guide-title: Primetime Digital Rights Management Help
 # Digital Rights Management Help {#drm}
 
 + [DRM Overview](home.md)
-+ Adobe Primetime DRM Secure Deployment Guidelines {#guidelines}
-   + Introduction to Network Topology {#introduction}
-      + [Network topology overview](secure-deployment-guidelines/overview/network-topology.md)
-      + [Network layer security](secure-deployment-guidelines/overview/network-topology-network-layer-sec.md)
-      + [Firewall rules](secure-deployment-guidelines/overview/network-topology-firewall-rules.md)
-      + [Adobe Primetime DRM network protocols](secure-deployment-guidelines/overview/network-topology-nw-protocols.md)
-      + [Ports for application servers](secure-deployment-guidelines/overview/network-topology-ports-for-app-srvs.md)
-      + [Configuring SSL](secure-deployment-guidelines/overview/network-topology-configuring-ssl.md)
-   + [Vendor-specific security information](secure-deployment-guidelines/vendor-specific-sec-info.md)
-   + [Physical security and access](secure-deployment-guidelines/physical-sec-and-access.md)
-   + Packaging and protecting content {#pkging-and-protecting-content}
-      + [Securing the server](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-the-server.md)
-      + [Securely packaging content](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-pkging.md)
-      + [Securely storing policies](secure-deployment-guidelines/pkging-and-protecting-content/pkging-protecting-content-secure-storing-policies.md)
-      + [Asymmetric key encryption](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ake.md)
-      + [Ensuring compatibility with Flash Media Rights Management Server 1.x](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-fmrms.md)
-   + Issue and protect the License Server {#issuing-licenses}
-      + [Protecting the License Server](secure-deployment-guidelines/issuing-licenses/issuing-licenses-protect-license-server.md)
-      + [Consuming locally generated CRLs](secure-deployment-guidelines/issuing-licenses/consume-local-crls.md)
-      + [Consuming CRLs published by Adobe](secure-deployment-guidelines/issuing-licenses/consume-crls-by-adobe.md)
-      + [Generating CRLs to supplement those published by Adobe](secure-deployment-guidelines/issuing-licenses/gen-crls-adobe.md)
-      + [Rollback detection](secure-deployment-guidelines/issuing-licenses/rollback-detection.md)
-      + [Machine count when issuing licenses](secure-deployment-guidelines/issuing-licenses/rollback-detection-machine-count.md)
-      + [Replay protection](secure-deployment-guidelines/issuing-licenses/replay-detection.md)
-      + [Maintain a whitelist of trusted content packagers](secure-deployment-guidelines/issuing-licenses/maintain-whitelist.md)
-      + [Timeout for authentication tokens](secure-deployment-guidelines/issuing-licenses/timeout-for-authn-tokens.md)
-      + [Overriding policy options](secure-deployment-guidelines/issuing-licenses/override-policy-options.md)
-      + [Pre-generating licenses](secure-deployment-guidelines/issuing-licenses/issuing-licenses-pre-gen.md)
-      + [Managing Domains](secure-deployment-guidelines/issuing-licenses/issuing-licenses-domains.md)
-+ Adobe Primetime TVSDK-DRM Workflow {#workflow}
-   + [TVSDK-DRM client-side workflow overview](tvsdk-drm-workflow/overview.md)
-   + [Primetime DRM content protection options](tvsdk-drm-workflow/content-protection-options.md)
-   + [Primetime DRM on the client](tvsdk-drm-workflow/drm-on-client.md)
-   + [Primetime DRM license server](tvsdk-drm-workflow/license-server.md)
-   + [License acquisition process overview](tvsdk-drm-workflow/content-protection-process-overview.md)
-   + [License acquisition process details](tvsdk-drm-workflow/content-protection-process-details.md)
-   + Pre-loading licenses for offline playback {#preloading-licenses}
-      + [Pre-loading licenses for offline playback overview](tvsdk-drm-workflow/preloading-licenses/preloading-licenses-overview.md)
-      + [Using DRMContentData to pre-load licenses](tvsdk-drm-workflow/preloading-licenses/drmcontentdata-preload.md)
-   + Using the DRMStatusEvent class {#using-drmstatusevent}
-      + [Using the DRMStatusEvent class overview](tvsdk-drm-workflow/using-drmstatusevent/using-drmstatusevent-overview.md)
-      + [Create a DRMStatusEvent handler](tvsdk-drm-workflow/using-drmstatusevent/create-drmstatusevent-handler.md)
-   + Using the DRMAuthenticateEvent class{#using-drmauthenticateevent.}
-      + [Create a DRMAuthenticateEvent handler](tvsdk-drm-workflow/using-drmauthenticateevent/create-drmauthnevent-handler.md)
-      + [Create an authentication UI](tvsdk-drm-workflow/using-drmauthenticateevent/create-an-authn-ui.md)
-   + Using the DRMErrorEvent class {#using-drmerrorevent.md}
-      + [Using the DRMErrorEvent class overview](tvsdk-drm-workflow/using-drmerrorevent/using-drmerrorevent-overview.md)
-      + [Create a DRMErrorEvent handler](tvsdk-drm-workflow/using-drmerrorevent/create-drmerrorevent-handler.md)
-   + Using the DRMManager class {#using-drmmanager.md}
-      + [Using the DRMManager class overview](tvsdk-drm-workflow/using-drmmanager/using-drmmanager-overview.md)
-      + [Handling DRMStatus Events](tvsdk-drm-workflow/using-drmmanager/drmstatus-events.md)
-      + [Handling DRMAuthenticationComplete Events](tvsdk-drm-workflow/using-drmmanager/drmauthenticationcomplete-events.md)
-      + [Handling DRMAuthenticationError events](tvsdk-drm-workflow/using-drmmanager/drmauthenticationerror-events.md)
-   + [Using the DRMContentData class](tvsdk-drm-workflow/using-drmcontentdata.md)
-   + Out-of-band licenses {#out-of-band-licenses}
-      + [Out-of-band licenses overview](tvsdk-drm-workflow/about-out-of-band-licenses/about-out-of-band-licenses-overview.md)
-      + [About device registration](tvsdk-drm-workflow/about-out-of-band-licenses/about-device-registration.md)
-      + [Register a device](tvsdk-drm-workflow/about-out-of-band-licenses/register-a-device.md)
-      + [DRM factory reset](tvsdk-drm-workflow/about-out-of-band-licenses/drm-factory-reset.md)
-   + Device domain support {#device-domain-support}
-      + [Play encrypted content using domain support](tvsdk-drm-workflow/device-domain-support/play-encrypted-content-domain-support.md)
-   + [License preview](tvsdk-drm-workflow/license-preview.md)
-   + [Delivering content](tvsdk-drm-workflow/delivering-content.md)
-+ Using Adobe Access DRM With an External Key Management System {#external-cek}
-   + [Adobe Access DRM External CEK Overview](aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md)
-   + [Standard AAXS DRM Workflow](aaxs-drm-xkey-mgmt/aaxs-drm-standard-workflow.md)
-   + [AAXS DRM External CEK Workflow](aaxs-drm-xkey-mgmt/aaxs-drm-external-cek-workflow.md)
-   + [Using External CEK to Vend and Package Licenses](aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek.md)
-+ Adobe Primetime DRM On Premises Individualization Server Guide {#individualization-server}
-   + Introduction {#introduction}
-      + [Software Requirements](on-premises-i15n-server/title-page/sw-requirements.md)
-      + [Code Delivery / Package Contents](on-premises-i15n-server/title-page/code-delivery.md)
-      + [Obtain Individualization Server Certificates](on-premises-i15n-server/title-page/obtain-server-certs.md)
-   + Server Configuration {#configuration}
-      + Server Properties {#properties}
-         + [Apply properties to server environments](on-premises-i15n-server/server-configuration-section/server-properties/apply-props-to-envs.md)
-         + [Encrypt Passwords](on-premises-i15n-server/server-configuration-section/server-properties/encrypt-passwords.md)
-         + [Server Properties Reference](on-premises-i15n-server/server-configuration-section/server-properties/server-properties-ref.md)
-         + [Create Individualization CA CRL](on-premises-i15n-server/server-configuration-section/server-properties/create-i15n-ca-crl.md)
-         + [Configure the Path and Classpath](on-premises-i15n-server/server-configuration-section/server-properties/configure-path-classpath.md)
-         + [Configure Tomcat](on-premises-i15n-server/server-configuration-section/server-properties/configure-tomcat.md)
-         + [Deploy the WAR files](on-premises-i15n-server/server-configuration-section/server-properties/deploy-war-files.md)
-         + [Firewall Rules](on-premises-i15n-server/server-configuration-section/server-properties/firewall-rules.md)
-         + [About CRL Files](on-premises-i15n-server/server-configuration-section/server-properties/about-crl-files.md)
-         + [About ECI Files](on-premises-i15n-server/server-configuration-section/server-properties/about-ecl-files.md)
-      + [Monitoring](on-premises-i15n-server/server-configuration-section/monitoring.md)
-      + [Update the License Server WAR File](on-premises-i15n-server/server-configuration-section/update-license-server-war-file.md)
-      + [Generate the On Premises DRM Metadata](on-premises-i15n-server/server-configuration-section/gen-on-prem-drm-metadata.md)
-      + [Client Integration](on-premises-i15n-server/server-configuration-section/client-integration.md)
-      + [Sample Client Requests](on-premises-i15n-server/server-configuration-section/sample-client-requests.md)
-      + [FAQ](on-premises-i15n-server/server-configuration-section/faq.md)
-+ Using the Adobe Primetime DRM Key Server {#using-key-server}
-   + [Introduction](using-the-drm-key-server/overview.md)
-   + [Requirements for using Primetime DRM Key Server](using-the-drm-key-server/requirements.md)
-   + Deploy the Primetime DRM Key Server {#deploy}
-      + [Deploying the Primetime DRM Key Server](using-the-drm-key-server/deployment/deployment-overview.md)
-      + [SSL configuration](using-the-drm-key-server/deployment/ssl-configuration.md)
-      + [Java system properties](using-the-drm-key-server/deployment/java-system-properties.md)
-      + [Primetime DRM credentials](using-the-drm-key-server/deployment/credentials.md)
-      + [Key Server configuration files](using-the-drm-key-server/deployment/configuration-files.md)
-      + [Configuration directory structure](using-the-drm-key-server/deployment/configuration-directory-structure.md)
-      + [Global configuration file](using-the-drm-key-server/deployment/global-configuration-file.md)
-      + [Tenant configuration files](using-the-drm-key-server/deployment/tenant-configuration-files.md)
-      + [Log files](using-the-drm-key-server/deployment/log-files.md)
-      + [Starting the Key Server](using-the-drm-key-server/deployment/starting.md)
-   + [Packaging content](using-the-drm-key-server/packaging-content.md)
-+ Resolution-Based Output Protection 5.3.1 {#resolution-based-output-protection}
-   + Introduction to Resolution-based Output Protection {#introduction}
-      + [RBOP Overview](RBOP/introduction/about-rbop.md)
-      + [RBOP Concepts](RBOP/introduction/output-protection-concepts.md)
-      + [RBOP Client Support](RBOP/introduction/client-support.md)
-      + [Sample RBOP Configuration](RBOP/introduction/sample-output-protection-config.md)
-      + [RBOP Grammar](RBOP/introduction/output-protection-grammar.md)
-      + [RBOP FAQ](RBOP/introduction/output-protection-faq.md)
-+ Primetime DRM Server for Protected Streaming 5.3.1 {#server-for-protected-streaming}
-   + [About Adobe Primetime DRM Server for Protected Streaming](protected-streaming/about-drm-for-protected-streaming.md)
-   + [About usage rules](protected-streaming/usage-rules.md)
-   + [Requirements](protected-streaming/requirements.md)
-   + Understanding Deployment {#understanding-deployment}
-      + [Deploying the Adobe Primetime DRM Server for   Protected Streaming](protected-streaming/understanding-deployment/deplying-drm-for-protected-streaming.md)
-      + [Java system properties](protected-streaming/understanding-deployment/java-system-properties.md)
-      + [About Adobe Primetime DRM credentials](protected-streaming/understanding-deployment/drm-credentials.md)
-      + [HSM configuration](protected-streaming/understanding-deployment/hsm-configuration.md)
-      + Setting up the License server configuration files {#configuration-files}
-         + [License server configuration files](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-license-server-config-files.md)
-         + [Configuration Directory Structure](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-configuration-directory-structure.md)
-         + [Global configuration file](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-global-configuration-file.md)
-         + [Tenant configuration file](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-tenant-configuration-file.md)
-      + [Crossdomain DRM policy file](protected-streaming/understanding-deployment/drm-crossdomain-policy-file.md)
-      + [Custom authorization extensions](protected-streaming/understanding-deployment/custom-authorization-extensions.md)
-      + Performance tuning {#performance-tuning}
-         + [Global configuration file](protected-streaming/understanding-deployment/performance-tuning/global-configuration-file.md)
-      + [Upgrading the Adobe Primetime DRM Server for Protected Streaming](protected-streaming/understanding-deployment/upgrading-the-license-server.md)
-      + Setting up the DRM Server for Protected Streaming {#setting-the-license-server}
-         + [Running the DRM Server for Protected Streaming](protected-streaming/understanding-deployment/setting-the-license-server/running-the-license-server.md)
-         + [Log files](protected-streaming/understanding-deployment/setting-the-license-server/log-files.md)
-         + [Updating configuration files](protected-streaming/understanding-deployment/setting-the-license-server/updating-configuration-files.md)
-      + [Packaging content](protected-streaming/understanding-deployment/packaging-content.md)
-      + DRM Server for Protected Streaming utilities {#drm-for-protected-streaming-utilities}
-         + [Configuration validator](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/configuration-validator.md)
-         + [Password scrambler](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/password-scrambler.md)
-         + [SWF hash calculator](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/swf-hash-calculator.md)
-+ Use the Adobe Access Server for Protected Streaming {#adobe-access-server}
-   + [About Adobe Access Server for Protected Streaming](aaxs-protected-streaming/about-aaxs-protect-stream.md)
-   + [Usage rules](aaxs-protected-streaming/usage-rules.md)
-   + [Requirements](aaxs-protected-streaming/requirements.md)
-   + Deploying the Adobe Access Server for Protected  Streaming {#deploying-aaxs-protect-stream}
-      + [Deploying the Adobe Access Server for Protected   Streaming overview](aaxs-protected-streaming/deplying-aaxs-protect-stream/deplying-aaxs-protect-stream-overview.md)
-      + [Java system properties](aaxs-protected-streaming/deplying-aaxs-protect-stream/java-system-properties.md)
-      + [Adobe Access credentials](aaxs-protected-streaming/deplying-aaxs-protect-stream/aaxs-credentials.md)
-      + [HSM configuration](aaxs-protected-streaming/deplying-aaxs-protect-stream/hsm-configuration.md)
-   + License server configuration files {#aaxs-license-server-config-files}
-      + [Configuration Directory Structure](aaxs-protected-streaming/aaxs-license-server-config-files/aaxs-configuration-directory-structure.md)
-      + [Global configuration file](aaxs-protected-streaming/aaxs-license-server-config-files/aaxs-global-configuration-file.md)
-      + [Tenant configuration file](aaxs-protected-streaming/aaxs-license-server-config-files/aaxs-tenant-configuration-file.md)
-   + [Crossdomain policy file](aaxs-protected-streaming/aaxs-crossdomain-policy-file.md)
-   + [Custom authorization extensions](aaxs-protected-streaming/custom-authorization-extensions.md)
-   + Performance tuning {#performance-tuning}
-      + [Global Configuration File](aaxs-protected-streaming/performance-tuning/global-configuration-file.md)
-   + Upgrading the Adobe Access Server for Protected Streaming {#upgrading-the-license-server}
-      + [Running the Adobe Access Server for Protected   Streaming](aaxs-protected-streaming/upgrading-the-license-server/running-the-license-server.md)
-      + [Log files](aaxs-protected-streaming/upgrading-the-license-server/log-files.md)
-      + [Log directory structure](aaxs-protected-streaming/upgrading-the-license-server/log-directory-structure.md)
-      + [Global Log File](aaxs-protected-streaming/upgrading-the-license-server/global-log-file.md)
-      + [Partition Log File](aaxs-protected-streaming/upgrading-the-license-server/partition-log-file.md)
-      + [Tenant Log File](aaxs-protected-streaming/upgrading-the-license-server/tenant-log-file.md)
-   + Updating configuration files {#updating-configuration-files}
-      + [Updating configuration files overview](aaxs-protected-streaming/updating-configuration-files/updating-configuration-files-overview.md)
-      + [Updating the Global Configuration File](aaxs-protected-streaming/updating-configuration-files/updating-global-configuration.md)
-      + [Updating the Tenant Configuration File](aaxs-protected-streaming/updating-configuration-files/updating-tenant-configuration.md)
-   + [Packaging content](aaxs-protected-streaming/packaging-content.md)
-   + Adobe Access Server for Protected Streaming utilities {#aaxs-protected-streaming-utilities}
-      + [Configuration Validator](aaxs-protected-streaming/aaxs-protected-streaming-utilities/configuration-validator.md)
-      + [Password Scrambler](aaxs-protected-streaming/aaxs-protected-streaming-utilities/password-scrambler.md)
-      + [SWF Hash Calculator](aaxs-protected-streaming/aaxs-protected-streaming-utilities/swf-hash-calculator.md)
 + Certificate Enrollment Guide
    + Certificate Enrollment Guide {#certificate-enrollment-guide}
       + [About certificates](certificate-enrollment-guide/about-certs.md)
@@ -202,6 +27,47 @@ user-guide-title: Primetime Digital Rights Management Help
          + [Deploy certificates](certificate-enrollment-guide/deploy-certs/deploying-certs.md)
       + [Store keys](certificate-enrollment-guide/storing-keys.md)
       + [Renew certificates](certificate-enrollment-guide/renewing-certs.md)
++ Adobe Primetime DRM SDK 5.3.1 {#drm-sdk-5-3-1}
+   + [Adobe Primetime DRM SDK - An overview](drm-sdk-overview/overview.md)
+   + [About Adobe Primetime DRM](drm-sdk-overview/about-adobe-access.md)
+   + [Key features](drm-sdk-overview/key-features.md)
+   + [Terminology and core concepts](drm-sdk-overview/terminology-and-core-concepts.md)
+   + Content distribution workflow {#content-distribution-workflow}
+      + [Content preparation](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
+      + [Content acquisition](drm-sdk-overview/content-distribution-workflow/content-acquisition.md)
+   + Adobe Primetime DRM components {#adobe-access-components}
+      + [Java SDK, Flash Player and Adobe AIR   client](drm-sdk-overview/adobe-access-components/adobe-access-sdk.md)
+      + [Java APIs for managing device group   domains](drm-sdk-overview/adobe-access-components/java-apis-for-managing-domains.md)
+      + [Java APIs for protecting content](drm-sdk-overview/adobe-access-components/java-apis-for-protecting-content.md)
+      + [Java APIs for issuing licenses](drm-sdk-overview/adobe-access-components/java-apis-for-issuing-licenses.md)
+      + [Reference implementation](drm-sdk-overview/adobe-access-components/reference-implementation.md)
+      + [Adobe Primetime DRM Server for Protected Streaming](drm-sdk-overview/adobe-access-components/protected-streaming.md)
+      + [Adobe Flash Player](drm-sdk-overview/adobe-access-components/adobe-flash-player.md)
+      + [Adobe AIR](drm-sdk-overview/adobe-access-components/adobe-air.md)
+      + [Native iOS and Android Applications](drm-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
+      + Deploy Adobe Primetime DRM {#deploy-adobe-access}
+         + [Configure Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/deploy-adobe-access/configure-adobe-access.md)
+         + [Deploying on a 64-bit operating system](drm-sdk-overview/adobe-access-components/deploy-adobe-access/deploying-on-a-64-bit-os.md)
+         + [Install Adobe Primetime DRM SDK](drm-sdk-overview/adobe-access-components/deploy-adobe-access/install-adobe-access-sdk.md)
+         + [Implement a License Server](drm-sdk-overview/adobe-access-components/deploy-adobe-access/install-a-license-server.md)
+         + [Create content packaging and policy management   tools](drm-sdk-overview/adobe-access-components/deploy-adobe-access/create-content-pkgng-policy-mgmt-tools.md)
+         + [Create policies and package content](drm-sdk-overview/adobe-access-components/deploy-adobe-access/create-policies-and-package-content.md)
+         + [Develop applications for video playback](drm-sdk-overview/adobe-access-components/deploy-adobe-access/develop-apps-for-video-playback.md)
+      + Additional Deployment Scenarios {#additional-deployment-scenarios}
+         + [UltraViolet media and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
+         + [Adobe Primetime authentication and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
++ DRM Quick-Start Guide {#drm-quick-start}
+   + Introduction {#introduction}
+      + [Getting Started](quick-start/title-page/getting-started.md)
+      + [Prerequisites](quick-start/title-page/prerequisites.md)
+      + [Obtain Certificates](quick-start/title-page/obtain-certifcates.md)
+   + [Install Tomcat](quick-start/install-tomcat.md)
+   + [Set up and deploy the server for Protected Streaming](quick-start/setup-deploy-drm-server-ps.md)
+   + [Package encrypted content](quick-start/package-content.md)
+   + [Install Flash Player and playback test content](quick-start/install-fp-playback-test.md)
+   + [Play back a locally packaged video](quick-start/playback-locally-pkgd-video.md)
+   + [Next Steps](quick-start/next-steps.md)
+
 + Adobe Primetime Cloud DRM Quick-Start Guide
    + [What is included with Primetime Cloud DRM](cloud-quick-start/whats-included.md)
    + [What is NOT supported by Primetime Cloud DRM](cloud-quick-start/not-supported.md)
@@ -235,6 +101,141 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Set the XSTS token in your player](cloud-quick-start/streaming-to-xbox360/set-xsts-token.md)
       + [Xbox Live XSTS token validation](cloud-quick-start/streaming-to-xbox360/xsts-token-validation.md)
       + [Create JKS for an XSTS validator](cloud-quick-start/streaming-to-xbox360/jks-for-xsts-token-validator.md)
+
++ Using the Adobe Primetime DRM Key Server {#using-key-server}
+   + [Introduction](using-the-drm-key-server/overview.md)
+   + [Requirements for using Primetime DRM Key Server](using-the-drm-key-server/requirements.md)
+   + Deploy the Primetime DRM Key Server {#deploy}
+      + [Deploying the Primetime DRM Key Server](using-the-drm-key-server/deployment/deployment-overview.md)
+      + [SSL configuration](using-the-drm-key-server/deployment/ssl-configuration.md)
+      + [Java system properties](using-the-drm-key-server/deployment/java-system-properties.md)
+      + [Primetime DRM credentials](using-the-drm-key-server/deployment/credentials.md)
+      + [Key Server configuration files](using-the-drm-key-server/deployment/configuration-files.md)
+      + [Configuration directory structure](using-the-drm-key-server/deployment/configuration-directory-structure.md)
+      + [Global configuration file](using-the-drm-key-server/deployment/global-configuration-file.md)
+      + [Tenant configuration files](using-the-drm-key-server/deployment/tenant-configuration-files.md)
+      + [Log files](using-the-drm-key-server/deployment/log-files.md)
+      + [Starting the Key Server](using-the-drm-key-server/deployment/starting.md)
+   + [Packaging content](using-the-drm-key-server/packaging-content.md)
++ Adobe Primetime DRM Secure Deployment Guidelines {#guidelines}
+   + Introduction to Network Topology {#introduction}
+      + [Network topology overview](secure-deployment-guidelines/overview/network-topology.md)
+      + [Network layer security](secure-deployment-guidelines/overview/network-topology-network-layer-sec.md)
+      + [Firewall rules](secure-deployment-guidelines/overview/network-topology-firewall-rules.md)
+      + [Adobe Primetime DRM network protocols](secure-deployment-guidelines/overview/network-topology-nw-protocols.md)
+      + [Ports for application servers](secure-deployment-guidelines/overview/network-topology-ports-for-app-srvs.md)
+      + [Configuring SSL](secure-deployment-guidelines/overview/network-topology-configuring-ssl.md)
+   + [Vendor-specific security information](secure-deployment-guidelines/vendor-specific-sec-info.md)
+   + [Physical security and access](secure-deployment-guidelines/physical-sec-and-access.md)
+   + Packaging and protecting content {#pkging-and-protecting-content}
+      + [Securing the server](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-the-server.md)
+      + [Securely packaging content](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-pkging.md)
+      + [Securely storing policies](secure-deployment-guidelines/pkging-and-protecting-content/pkging-protecting-content-secure-storing-policies.md)
+      + [Asymmetric key encryption](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ake.md)
+      + [Ensuring compatibility with Flash Media Rights Management Server 1.x](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-fmrms.md)
+   + Issue and protect the License Server {#issuing-licenses}
+      + [Protecting the License Server](secure-deployment-guidelines/issuing-licenses/issuing-licenses-protect-license-server.md)
+      + [Consuming locally generated CRLs](secure-deployment-guidelines/issuing-licenses/consume-local-crls.md)
+      + [Consuming CRLs published by Adobe](secure-deployment-guidelines/issuing-licenses/consume-crls-by-adobe.md)
+      + [Generating CRLs to supplement those published by Adobe](secure-deployment-guidelines/issuing-licenses/gen-crls-adobe.md)
+      + [Rollback detection](secure-deployment-guidelines/issuing-licenses/rollback-detection.md)
+      + [Machine count when issuing licenses](secure-deployment-guidelines/issuing-licenses/rollback-detection-machine-count.md)
+      + [Replay protection](secure-deployment-guidelines/issuing-licenses/replay-detection.md)
+      + [Maintain a whitelist of trusted content packagers](secure-deployment-guidelines/issuing-licenses/maintain-whitelist.md)
+      + [Timeout for authentication tokens](secure-deployment-guidelines/issuing-licenses/timeout-for-authn-tokens.md)
+      + [Overriding policy options](secure-deployment-guidelines/issuing-licenses/override-policy-options.md)
+      + [Pre-generating licenses](secure-deployment-guidelines/issuing-licenses/issuing-licenses-pre-gen.md)
+      + [Managing Domains](secure-deployment-guidelines/issuing-licenses/issuing-licenses-domains.md)
+
++ Multi-DRM Workflows {#multi-drm-workflows}
+   + [Multi-DRM Workflows](multi-drm-workflows/title-page/overview.md)
+   + Primetime DRM Cloud Quick-start {#quick-start}
+      + [Overview](multi-drm-workflows/quick-start/quick-overview.md)
+      + [Get Provisioned (Accounts, etc.)](multi-drm-workflows/quick-start/get-provisioned.md)
+      + [Keys, IDs, and Authenticators](multi-drm-workflows/quick-start/keys-ids-and-authenticators.md)
+      + [Package Your Content](multi-drm-workflows/quick-start/package-your-content.md)
+      + [Setting policies](multi-drm-workflows/quick-start/what-about-policies.md)
+      + [Licensing](multi-drm-workflows/quick-start/handle-the-licensing.md)
+      + [Playback your protected content](multi-drm-workflows/quick-start/playback-protected-content.md)
+      + [Troubleshooting your quick-start](multi-drm-workflows/quick-start/troubleshoot-quickstart.md)
+   + Workflows: Package, License, and Play {#package-license-play}
+      + [Multi-DRM Workflow for FairPlay](multi-drm-workflows/p-l-and-p/fairplay-workflow.md)
+      + [Multi-DRM Workflow for Widevine and PlayReady](multi-drm-workflows/p-l-and-p/widevine-workflow.md)
+      + [Package your content with Bento4](multi-drm-workflows/p-l-and-p/package-for-widevine/package-for-widevine-with-bento.md)
+      + [Package your content with Adobe Offline Packager](multi-drm-workflows/p-l-and-p/package-for-widevine/package-for-widevine-with-aop.md)
+      + [Using Output Protection Policies](multi-drm-workflows/p-l-and-p/setting-policies-widevine.md)
+      + [Client Key Request workflow overview](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-overview.md)
+      + [Expressplay tokens](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-expressplay-tokens.md)
+      + [Key request workflow on Android PSDK](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-android-psdk.md)
+      + [Key request workflow on HTML5 TVSDK](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-html5-tvsdk.md)
+      + [Device Binding](multi-drm-workflows/p-l-and-p/licensing-widevine-client-device-binding.md)
+   + Generic Workflows {#generic-workflows}
+     + [Primetime Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/plp-1.md)
+     + [ExpressPlay Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/package-and-play.md)
+   + Feature Topics {feature-topics}
+     + [Reference Server: Sample ExpressPlay Entitlement Server (SEES)](multi-drm-workflows/feature-topics/sees-reference-server.md)
+     + [Reference Service: Time-based Entitlement](multi-drm-workflows/feature-topics/sees-reference-server-time-entitlement.md)
+     + [Reference Service: Device-Binding Entitlement](multi-drm-workflows/feature-topics/sees-reference-server-binding-entitlement.md)
+     + [SEES Public API](multi-drm-workflows/feature-topics/sees-reference-server-public-api.md)
+   + ExpressPlay license token request / response reference {#license-token-req-resp-ref}
+      + [Overview](multi-drm-workflows/license-token-req-resp-ref/license-req-resp-overview.md)
+      + [FairPlay license token request / response](multi-drm-workflows/license-token-req-resp-ref/fairplay-license-token-request.md)
+      + [PlayReady license token request / response](multi-drm-workflows/license-token-req-resp-ref/playready-license-token-request.md)
+      + [Widevine license token request / response](multi-drm-workflows/license-token-req-resp-ref/widevine-license-token-request.md)
+   + [Migrating from Access to Multi-DRM](multi-drm-workflows/access-vs-multi.md)
+   + [Glossary](multi-drm-workflows/glossary/glossary-cek.md)
+
++ Adobe Primetime DRM On Premises Individualization Server Guide {#individualization-server}
+   + Introduction {#introduction}
+      + [Software Requirements](on-premises-i15n-server/title-page/sw-requirements.md)
+      + [Code Delivery / Package Contents](on-premises-i15n-server/title-page/code-delivery.md)
+      + [Obtain Individualization Server Certificates](on-premises-i15n-server/title-page/obtain-server-certs.md)
+   + Server Configuration {#configuration}
+      + Server Properties {#properties}
+         + [Apply properties to server environments](on-premises-i15n-server/server-configuration-section/server-properties/apply-props-to-envs.md)
+         + [Encrypt Passwords](on-premises-i15n-server/server-configuration-section/server-properties/encrypt-passwords.md)
+         + [Server Properties Reference](on-premises-i15n-server/server-configuration-section/server-properties/server-properties-ref.md)
+         + [Create Individualization CA CRL](on-premises-i15n-server/server-configuration-section/server-properties/create-i15n-ca-crl.md)
+         + [Configure the Path and Classpath](on-premises-i15n-server/server-configuration-section/server-properties/configure-path-classpath.md)
+         + [Configure Tomcat](on-premises-i15n-server/server-configuration-section/server-properties/configure-tomcat.md)
+         + [Deploy the WAR files](on-premises-i15n-server/server-configuration-section/server-properties/deploy-war-files.md)
+         + [Firewall Rules](on-premises-i15n-server/server-configuration-section/server-properties/firewall-rules.md)
+         + [About CRL Files](on-premises-i15n-server/server-configuration-section/server-properties/about-crl-files.md)
+         + [About ECI Files](on-premises-i15n-server/server-configuration-section/server-properties/about-ecl-files.md)
+      + [Monitoring](on-premises-i15n-server/server-configuration-section/monitoring.md)
+      + [Update the License Server WAR File](on-premises-i15n-server/server-configuration-section/update-license-server-war-file.md)
+      + [Generate the On Premises DRM Metadata](on-premises-i15n-server/server-configuration-section/gen-on-prem-drm-metadata.md)
+      + [Client Integration](on-premises-i15n-server/server-configuration-section/client-integration.md)
+      + [Sample Client Requests](on-premises-i15n-server/server-configuration-section/sample-client-requests.md)
+      + [FAQ](on-premises-i15n-server/server-configuration-section/faq.md)
++ Primetime DRM Server for Protected Streaming 5.3.1 {#server-for-protected-streaming}
+   + [About Adobe Primetime DRM Server for Protected Streaming](protected-streaming/about-drm-for-protected-streaming.md)
+   + [About usage rules](protected-streaming/usage-rules.md)
+   + [Requirements](protected-streaming/requirements.md)
+   + Understanding Deployment {#understanding-deployment}
+      + [Deploying the Adobe Primetime DRM Server for   Protected Streaming](protected-streaming/understanding-deployment/deplying-drm-for-protected-streaming.md)
+      + [Java system properties](protected-streaming/understanding-deployment/java-system-properties.md)
+      + [About Adobe Primetime DRM credentials](protected-streaming/understanding-deployment/drm-credentials.md)
+      + [HSM configuration](protected-streaming/understanding-deployment/hsm-configuration.md)
+      + Setting up the License server configuration files {#configuration-files}
+         + [License server configuration files](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-license-server-config-files.md)
+         + [Configuration Directory Structure](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-configuration-directory-structure.md)
+         + [Global configuration file](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-global-configuration-file.md)
+         + [Tenant configuration file](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-tenant-configuration-file.md)
+      + [Crossdomain DRM policy file](protected-streaming/understanding-deployment/drm-crossdomain-policy-file.md)
+      + [Custom authorization extensions](protected-streaming/understanding-deployment/custom-authorization-extensions.md)
+      + Performance tuning {#performance-tuning}
+         + [Global configuration file](protected-streaming/understanding-deployment/performance-tuning/global-configuration-file.md)
+      + [Upgrading the Adobe Primetime DRM Server for Protected Streaming](protected-streaming/understanding-deployment/upgrading-the-license-server.md)
+      + Setting up the DRM Server for Protected Streaming {#setting-the-license-server}
+         + [Running the DRM Server for Protected Streaming](protected-streaming/understanding-deployment/setting-the-license-server/running-the-license-server.md)
+         + [Log files](protected-streaming/understanding-deployment/setting-the-license-server/log-files.md)
+         + [Updating configuration files](protected-streaming/understanding-deployment/setting-the-license-server/updating-configuration-files.md)
+      + [Packaging content](protected-streaming/understanding-deployment/packaging-content.md)
+      + DRM Server for Protected Streaming utilities {#drm-for-protected-streaming-utilities}
+         + [Configuration validator](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/configuration-validator.md)
+         + [Password scrambler](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/password-scrambler.md)
+         + [SWF hash calculator](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/swf-hash-calculator.md)
 + Using the Adobe Primetime DRM SDK for Protecting Content - 5.3.1 {#using-drm-sdk}
    + Introduction {#introduction}
       + [What is new in Adobe Primetime DRM](protecting-content/introduction/whats-new.md)
@@ -330,35 +331,15 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Revoking DRM client and runtime credentials](protecting-content/revoking-client-creds/revoking-drm-client-and-runtime-creds.md)
       + [Revoking machine credentials](protecting-content/revoking-client-creds/revoking-machine-creds.md)
    + [Create video players](protecting-content/creating-video-players.md)
-+ Adobe Primetime DRM SDK 5.3.1 {#drm-sdk-5-3-1}
-   + [Adobe Primetime DRM SDK - An overview](drm-sdk-overview/overview.md)
-   + [About Adobe Primetime DRM](drm-sdk-overview/about-adobe-access.md)
-   + [Key features](drm-sdk-overview/key-features.md)
-   + [Terminology and core concepts](drm-sdk-overview/terminology-and-core-concepts.md)
-   + Content distribution workflow {#content-distribution-workflow}
-      + [Content preparation](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
-      + [Content acquisition](drm-sdk-overview/content-distribution-workflow/content-acquisition.md)
-   + Adobe Primetime DRM components {#adobe-access-components}
-      + [Java SDK, Flash Player and Adobe AIR   client](drm-sdk-overview/adobe-access-components/adobe-access-sdk.md)
-      + [Java APIs for managing device group   domains](drm-sdk-overview/adobe-access-components/java-apis-for-managing-domains.md)
-      + [Java APIs for protecting content](drm-sdk-overview/adobe-access-components/java-apis-for-protecting-content.md)
-      + [Java APIs for issuing licenses](drm-sdk-overview/adobe-access-components/java-apis-for-issuing-licenses.md)
-      + [Reference implementation](drm-sdk-overview/adobe-access-components/reference-implementation.md)
-      + [Adobe Primetime DRM Server for Protected Streaming](drm-sdk-overview/adobe-access-components/protected-streaming.md)
-      + [Adobe Flash Player](drm-sdk-overview/adobe-access-components/adobe-flash-player.md)
-      + [Adobe AIR](drm-sdk-overview/adobe-access-components/adobe-air.md)
-      + [Native iOS and Android Applications](drm-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
-      + Deploy Adobe Primetime DRM {#deploy-adobe-access}
-         + [Configure Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/deploy-adobe-access/configure-adobe-access.md)
-         + [Deploying on a 64-bit operating system](drm-sdk-overview/adobe-access-components/deploy-adobe-access/deploying-on-a-64-bit-os.md)
-         + [Install Adobe Primetime DRM SDK](drm-sdk-overview/adobe-access-components/deploy-adobe-access/install-adobe-access-sdk.md)
-         + [Implement a License Server](drm-sdk-overview/adobe-access-components/deploy-adobe-access/install-a-license-server.md)
-         + [Create content packaging and policy management   tools](drm-sdk-overview/adobe-access-components/deploy-adobe-access/create-content-pkgng-policy-mgmt-tools.md)
-         + [Create policies and package content](drm-sdk-overview/adobe-access-components/deploy-adobe-access/create-policies-and-package-content.md)
-         + [Develop applications for video playback](drm-sdk-overview/adobe-access-components/deploy-adobe-access/develop-apps-for-video-playback.md)
-      + Additional Deployment Scenarios {#additional-deployment-scenarios}
-         + [UltraViolet media and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
-         + [Adobe Primetime authentication and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
++ Resolution-Based Output Protection 5.3.1 {#resolution-based-output-protection}
+   + Introduction to Resolution-based Output Protection {#introduction}
+      + [RBOP Overview](RBOP/introduction/about-rbop.md)
+      + [RBOP Concepts](RBOP/introduction/output-protection-concepts.md)
+      + [RBOP Client Support](RBOP/introduction/client-support.md)
+      + [Sample RBOP Configuration](RBOP/introduction/sample-output-protection-config.md)
+      + [RBOP Grammar](RBOP/introduction/output-protection-grammar.md)
+      + [RBOP FAQ](RBOP/introduction/output-protection-faq.md)
+
 + Adobe Primetime DRM Reference Implementations 5.3.1 {#drm-reference-implementation-5-3-1}
    + [About the reference implementations](drm-reference-implementations/overview.md)
    + [Typical workflow](drm-reference-implementations/typical-scenario.md)
@@ -367,7 +348,7 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Command-line tools requirements](drm-reference-implementations/command-line-tools/requirements.md)
       + [Install the command-line tools](drm-reference-implementations/command-line-tools/install-command-line-tools.md)
    + Configure and run the command-line tools {#configure-and-run}
-      + [Overview](drm-reference-implementations/command-line-tools/configure-command-line-tools/configure-command-line-tools.md)        
+      + [Overview](drm-reference-implementations/command-line-tools/configure-command-line-tools/configure-command-line-tools.md)
       + [About command-line tools configuration files](drm-reference-implementations/command-line-tools/configure-command-line-tools/config-file.md)
       + [DRM Policy Manager](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-overview.md)
       + [Policy Manager Command-line usage](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-command-line-usage.md)
@@ -411,54 +392,138 @@ user-guide-title: Primetime Digital Rights Management Help
    + Upgrade existing deployments {#upgrade-existing-deploys}
       + [Upgrade existing deployments overview](drm-reference-implementations/upgrading-existing-deplys/upgrading-existing-deplys.md)
       + [Set up a domain server](drm-reference-implementations/upgrading-existing-deplys/upgrading-existing-deplys-setup-ds.md)
-+ DRM Quick-Start Guide {#drm-quick-start}
-   + Introduction {#introduction}
-      + [Getting Started](quick-start/title-page/getting-started.md)
-      + [Prerequisites](quick-start/title-page/prerequisites.md)
-      + [Obtain Certificates](quick-start/title-page/obtain-certifcates.md)
-   + [Install Tomcat](quick-start/install-tomcat.md)
-   + [Set up and deploy the server for Protected Streaming](quick-start/setup-deploy-drm-server-ps.md)
-   + [Package encrypted content](quick-start/package-content.md)
-   + [Install Flash Player and playback test content](quick-start/install-fp-playback-test.md)
-   + [Play back a locally packaged video](quick-start/playback-locally-pkgd-video.md)
-   + [Next Steps](quick-start/next-steps.md)
-+ Multi-DRM Workflows {#multi-drm-workflows}
-   + [Multi-DRM Workflows](multi-drm-workflows/title-page/overview.md)
-   + Primetime DRM Cloud Quick-start {#quick-start}
-      + [Overview](multi-drm-workflows/quick-start/quick-overview.md)
-      + [Get Provisioned (Accounts, etc.)](multi-drm-workflows/quick-start/get-provisioned.md)
-      + [Keys, IDs, and Authenticators](multi-drm-workflows/quick-start/keys-ids-and-authenticators.md)
-      + [Package Your Content](multi-drm-workflows/quick-start/package-your-content.md)
-      + [Setting policies](multi-drm-workflows/quick-start/what-about-policies.md)
-      + [Licensing](multi-drm-workflows/quick-start/handle-the-licensing.md)
-      + [Playback your protected content](multi-drm-workflows/quick-start/playback-protected-content.md)
-      + [Troubleshooting your quick-start](multi-drm-workflows/quick-start/troubleshoot-quickstart.md)
-   + Workflows: Package, License, and Play {#package-license-play}
-      + [Multi-DRM Workflow for FairPlay](multi-drm-workflows/p-l-and-p/fairplay-workflow.md)
-      + [Multi-DRM Workflow for Widevine and PlayReady](multi-drm-workflows/p-l-and-p/widevine-workflow.md)
-      + [Package your content with Bento4](multi-drm-workflows/p-l-and-p/package-for-widevine/package-for-widevine-with-bento.md)
-      + [Package your content with Adobe Offline Packager](multi-drm-workflows/p-l-and-p/package-for-widevine/package-for-widevine-with-aop.md)
-      + [Using Output Protection Policies](multi-drm-workflows/p-l-and-p/setting-policies-widevine.md)
-      + [Client Key Request workflow overview](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-overview.md)
-      + [Expressplay tokens](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-expressplay-tokens.md)
-      + [Key request workflow on Android PSDK](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-android-psdk.md)
-      + [Key request workflow on HTML5 TVSDK](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-html5-tvsdk.md)
-      + [Device Binding](multi-drm-workflows/p-l-and-p/licensing-widevine-client-device-binding.md)
-   + Generic Workflows {#generic-workflows}
-     + [Primetime Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/plp-1.md)
-     + [ExpressPlay Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/package-and-play.md)
-   + Feature Topics {feature-topics}
-     + [Reference Server: Sample ExpressPlay Entitlement Server (SEES)](multi-drm-workflows/feature-topics/sees-reference-server.md)
-     + [Reference Service: Time-based Entitlement](multi-drm-workflows/feature-topics/sees-reference-server-time-entitlement.md)
-     + [Reference Service: Device-Binding Entitlement](multi-drm-workflows/feature-topics/sees-reference-server-binding-entitlement.md)
-     + [SEES Public API](multi-drm-workflows/feature-topics/sees-reference-server-public-api.md)
-   + ExpressPlay license token request / response reference {#license-token-req-resp-ref}
-      + [Overview](multi-drm-workflows/license-token-req-resp-ref/license-req-resp-overview.md)
-      + [FairPlay license token request / response](multi-drm-workflows/license-token-req-resp-ref/fairplay-license-token-request.md)
-      + [PlayReady license token request / response](multi-drm-workflows/license-token-req-resp-ref/playready-license-token-request.md)
-      + [Widevine license token request / response](multi-drm-workflows/license-token-req-resp-ref/widevine-license-token-request.md)
-   + [Migrating from Access to Multi-DRM](multi-drm-workflows/access-vs-multi.md)
-   + [Glossary](multi-drm-workflows/glossary/glossary-cek.md)
++ Adobe Primetime TVSDK-DRM Workflow {#workflow}
+   + [TVSDK-DRM client-side workflow overview](tvsdk-drm-workflow/overview.md)
+   + [Primetime DRM content protection options](tvsdk-drm-workflow/content-protection-options.md)
+   + [Primetime DRM on the client](tvsdk-drm-workflow/drm-on-client.md)
+   + [Primetime DRM license server](tvsdk-drm-workflow/license-server.md)
+   + [License acquisition process overview](tvsdk-drm-workflow/content-protection-process-overview.md)
+   + [License acquisition process details](tvsdk-drm-workflow/content-protection-process-details.md)
+   + Pre-loading licenses for offline playback {#preloading-licenses}
+      + [Pre-loading licenses for offline playback overview](tvsdk-drm-workflow/preloading-licenses/preloading-licenses-overview.md)
+      + [Using DRMContentData to pre-load licenses](tvsdk-drm-workflow/preloading-licenses/drmcontentdata-preload.md)
+   + Using the DRMStatusEvent class {#using-drmstatusevent}
+      + [Using the DRMStatusEvent class overview](tvsdk-drm-workflow/using-drmstatusevent/using-drmstatusevent-overview.md)
+      + [Create a DRMStatusEvent handler](tvsdk-drm-workflow/using-drmstatusevent/create-drmstatusevent-handler.md)
+   + Using the DRMAuthenticateEvent class{#using-drmauthenticateevent.}
+      + [Create a DRMAuthenticateEvent handler](tvsdk-drm-workflow/using-drmauthenticateevent/create-drmauthnevent-handler.md)
+      + [Create an authentication UI](tvsdk-drm-workflow/using-drmauthenticateevent/create-an-authn-ui.md)
+   + Using the DRMErrorEvent class {#using-drmerrorevent.md}
+      + [Using the DRMErrorEvent class overview](tvsdk-drm-workflow/using-drmerrorevent/using-drmerrorevent-overview.md)
+      + [Create a DRMErrorEvent handler](tvsdk-drm-workflow/using-drmerrorevent/create-drmerrorevent-handler.md)
+   + Using the DRMManager class {#using-drmmanager.md}
+      + [Using the DRMManager class overview](tvsdk-drm-workflow/using-drmmanager/using-drmmanager-overview.md)
+      + [Handling DRMStatus Events](tvsdk-drm-workflow/using-drmmanager/drmstatus-events.md)
+      + [Handling DRMAuthenticationComplete Events](tvsdk-drm-workflow/using-drmmanager/drmauthenticationcomplete-events.md)
+      + [Handling DRMAuthenticationError events](tvsdk-drm-workflow/using-drmmanager/drmauthenticationerror-events.md)
+   + [Using the DRMContentData class](tvsdk-drm-workflow/using-drmcontentdata.md)
+   + Out-of-band licenses {#out-of-band-licenses}
+      + [Out-of-band licenses overview](tvsdk-drm-workflow/about-out-of-band-licenses/about-out-of-band-licenses-overview.md)
+      + [About device registration](tvsdk-drm-workflow/about-out-of-band-licenses/about-device-registration.md)
+      + [Register a device](tvsdk-drm-workflow/about-out-of-band-licenses/register-a-device.md)
+      + [DRM factory reset](tvsdk-drm-workflow/about-out-of-band-licenses/drm-factory-reset.md)
+   + Device domain support {#device-domain-support}
+     + [Play encrypted content using domain support](tvsdk-drm-workflow/device-domain-support/play-encrypted-content-domain-support.md)
+   + [License preview](tvsdk-drm-workflow/license-preview.md)
+   + [Delivering content](tvsdk-drm-workflow/delivering-content.md)
++ Adobe Primetime DRM Client Error Message Reference {#client-error-message}
+  + [DRM Client Error Message Reference](client-error-message\client-error-message-reference.md)
++ Using Adobe Access DRM With an External Key Management System {#external-cek}
+  + [Adobe Access DRM External CEK Overview](aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md)
+   + [Standard AAXS DRM Workflow](aaxs-drm-xkey-mgmt/aaxs-drm-standard-workflow.md)
+   + [AAXS DRM External CEK Workflow](aaxs-drm-xkey-mgmt/aaxs-drm-external-cek-workflow.md)
+   + [Using External CEK to Vend and Package Licenses](aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek.md)
++ Use the Adobe Access Server for Protected Streaming {#adobe-access-server}
+   + [About Adobe Access Server for Protected Streaming](aaxs-protected-streaming/about-aaxs-protect-stream.md)
+   + [Usage rules](aaxs-protected-streaming/usage-rules.md)
+   + [Requirements](aaxs-protected-streaming/requirements.md)
+   + Deploying the Adobe Access Server for Protected  Streaming {#deploying-aaxs-protect-stream}
+      + [Deploying the Adobe Access Server for Protected   Streaming overview](aaxs-protected-streaming/deplying-aaxs-protect-stream/deplying-aaxs-protect-stream-overview.md)
+      + [Java system properties](aaxs-protected-streaming/deplying-aaxs-protect-stream/java-system-properties.md)
+      + [Adobe Access credentials](aaxs-protected-streaming/deplying-aaxs-protect-stream/aaxs-credentials.md)
+      + [HSM configuration](aaxs-protected-streaming/deplying-aaxs-protect-stream/hsm-configuration.md)
+   + License server configuration files {#aaxs-license-server-config-files}
+      + [Configuration Directory Structure](aaxs-protected-streaming/aaxs-license-server-config-files/aaxs-configuration-directory-structure.md)
+      + [Global configuration file](aaxs-protected-streaming/aaxs-license-server-config-files/aaxs-global-configuration-file.md)
+      + [Tenant configuration file](aaxs-protected-streaming/aaxs-license-server-config-files/aaxs-tenant-configuration-file.md)
+   + [Crossdomain policy file](aaxs-protected-streaming/aaxs-crossdomain-policy-file.md)
+   + [Custom authorization extensions](aaxs-protected-streaming/custom-authorization-extensions.md)
+   + Performance tuning {#performance-tuning}
+      + [Global Configuration File](aaxs-protected-streaming/performance-tuning/global-configuration-file.md)
+   + Upgrading the Adobe Access Server for Protected Streaming {#upgrading-the-license-server}
+      + [Running the Adobe Access Server for Protected   Streaming](aaxs-protected-streaming/upgrading-the-license-server/running-the-license-server.md)
+      + [Log files](aaxs-protected-streaming/upgrading-the-license-server/log-files.md)
+      + [Log directory structure](aaxs-protected-streaming/upgrading-the-license-server/log-directory-structure.md)
+      + [Global Log File](aaxs-protected-streaming/upgrading-the-license-server/global-log-file.md)
+      + [Partition Log File](aaxs-protected-streaming/upgrading-the-license-server/partition-log-file.md)
+      + [Tenant Log File](aaxs-protected-streaming/upgrading-the-license-server/tenant-log-file.md)
+   + Updating configuration files {#updating-configuration-files}
+      + [Updating configuration files overview](aaxs-protected-streaming/updating-configuration-files/updating-configuration-files-overview.md)
+      + [Updating the Global Configuration File](aaxs-protected-streaming/updating-configuration-files/updating-global-configuration.md)
+      + [Updating the Tenant Configuration File](aaxs-protected-streaming/updating-configuration-files/updating-tenant-configuration.md)
+   + [Packaging content](aaxs-protected-streaming/packaging-content.md)
+   + Adobe Access Server for Protected Streaming utilities {#aaxs-protected-streaming-utilities}
+      + [Configuration Validator](aaxs-protected-streaming/aaxs-protected-streaming-utilities/configuration-validator.md)
+      + [Password Scrambler](aaxs-protected-streaming/aaxs-protected-streaming-utilities/password-scrambler.md)
+      + [SWF Hash Calculator](aaxs-protected-streaming/aaxs-protected-streaming-utilities/swf-hash-calculator.md)
++ Adobe Access Secure Deployment Guidelines
+   + Introduction to Network Topology {#overview}
+      + [Network topology overview](aaxs-secure-deployment-guidelines/overview/network-topology.md)
+      + [Network layer security](aaxs-secure-deployment-guidelines/overview/network-topology-network-layer-sec.md)
+      + [Firewall rules](aaxs-secure-deployment-guidelines/overview/network-topology-firewall-rules.md)
+      + [Network protocols used by Adobe Access](aaxs-secure-deployment-guidelines/overview/network-topology-nw-protocols.md)
+      + [Ports for application servers](aaxs-secure-deployment-guidelines/overview/network-topology-ports-for-app-srvs.md)
+      + [Configuring SSL](aaxs-secure-deployment-guidelines/overview/network-topology-configuring-ssl.md)
+   + [Vendor-specific security information](aaxs-secure-deployment-guidelines/vendor-specific-sec-info.md)
+   + [Physical security and access](aaxs-secure-deployment-guidelines/physical-sec-and-access.md)
+   + Packaging and protecting content {#packaging}
+      + [Securing the server](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-the-server.md)
+      + [Securely packaging content](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-pkging.md)
+      + [Securely storing policies](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-storing-policies.md)
+      + [Asymmetric key encryption](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ake.md)
+      + [Ensuring compatibility with Flash Media Rights   Management Server 1.x](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ensure-compat-fmrms.md)
+   + Protect and issue licenses {#issuing-licenses}
+      + [Consuming locally generated CRLs](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-consume-local-crls.md)
+      + [Consuming CRLs published by Adobe](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-consume-crls-by-adobe.md)
+      + [Generating CRLs to supplement those published   by Adobe](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-gen-crls-to-supplement-adobe.md)
+      + [Rollback detection](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-rollback-detection.md)
+      + [Machine count when issuing licenses](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-rollback-detection-machine-count.md)
+      + [Replay protection](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-replay-detection.md)
+      + [Maintain a whitelist of trusted content   packagers](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-maintain-whitelist.md)
+      + [Timeout for authentication tokens](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-timeout-for-authn-tokens.md)
+      + [Overriding policy options](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-override-policy-options.md)
+      + [Pre-generating licenses](aaxs-secure-deployment-guidelines/issuing-licenses/pre-gen-licenses.md)
+      + [Managing Domains](aaxs-secure-deployment-guidelines/issuing-licenses/managing-domains.md)
+
++ An Overview of Adobe Access SDK
+   + [An overview of Adobe Access SDK](aaxs-sdk-overview/overview.md)
+   + [About Adobe Access](aaxs-sdk-overview/about-adobe-access.md)
+   + [Key features](aaxs-sdk-overview/key-features.md)
+   + [Terminology and core concepts](aaxs-sdk-overview/terminology-and-core-concepts.md)
+   + Content distribution workflow {#content-distribution-workflow}
+      + [Content preparation](aaxs-sdk-overview/content-distribution-workflow/content-preparation.md)
+      + [Content acquisition](aaxs-sdk-overview/content-distribution-workflow/content-acquisition.md)
+   + Adobe Access components {#adobe-access-components}
+      + [Java SDK, Flash Player and Adobe AIR   client](aaxs-sdk-overview/adobe-access-components/adobe-access-sdk.md)
+      + [Java APIs for managing device group   domains](aaxs-sdk-overview/adobe-access-components/java-apis-for-managing-domains.md)
+      + [Java APIs for protecting content](aaxs-sdk-overview/adobe-access-components/java-apis-for-protecting-content.md)
+      + [Java APIs for issuing licenses](aaxs-sdk-overview/adobe-access-components/java-apis-for-issuing-licenses.md)
+      + [Reference implementation](aaxs-sdk-overview/adobe-access-components/reference-implementation.md)
+      + [Adobe Access Server for Protected   Streaming](aaxs-sdk-overview/adobe-access-components/adobe-access-server-for-protected-streaming.md)
+      + [Adobe Flash Player](aaxs-sdk-overview/adobe-access-components/adobe-flash-player.md)
+      + [Adobe AIR](aaxs-sdk-overview/adobe-access-components/adobe-air.md)
+      + [Native iOS and Android Applications](aaxs-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
+   + Deploy Adobe Access {#deploying-adobe-access}
+      + [Configure Adobe Access](aaxs-sdk-overview/deploying-adobe-access/configure-adobe-access.md)
+      + [Deploying on a 64-bit operating system](aaxs-sdk-overview/deploying-adobe-access/deploying-on-a-64-bit-os.md)
+      + [Install Adobe Access SDK](aaxs-sdk-overview/deploying-adobe-access/install-adobe-access-sdk.md)
+      + [Implement a License Server](aaxs-sdk-overview/deploying-adobe-access/install-a-license-server.md)
+      + [Create content packaging and policy management   tools](aaxs-sdk-overview/deploying-adobe-access/create-content-pkgng-policy-mgmt-tools.md)
+      + [Create policies and package content](aaxs-sdk-overview/deploying-adobe-access/create-policies-and-package-content.md)
+      + [Develop applications for video playback](aaxs-sdk-overview/deploying-adobe-access/develop-apps-for-video-playback.md)
+      + Additional Deployment Scenarios {#additional-scenarios}
+         + [UltraViolet media and Adobe Access](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
+         + [Adobe Pass and Adobe Access](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
 + Using the Adobe Access SDK for Protecting Content {#using-adobe-access-sdk}
   + [Introduction](aaxs-protecting-content/content-introduction/content-whats-new.md)
   + [User authentication](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)
@@ -629,60 +694,3 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Policy update list](aaxs-reference-implementations/fam-air-app-usage/initial-fam-usage-policy-update-list.md)
       + [Package media](aaxs-reference-implementations/fam-air-app-usage/initial-fam-usage-pkg-media.md)
       + [Watched Folders](aaxs-reference-implementations/fam-air-app-usage/initial-fam-usage-watched-folders.md)
-+ An Overview of Adobe Access SDK
-   + [An overview of Adobe Access SDK](aaxs-sdk-overview/overview.md)
-   + [About Adobe Access](aaxs-sdk-overview/about-adobe-access.md)
-   + [Key features](aaxs-sdk-overview/key-features.md)
-   + [Terminology and core concepts](aaxs-sdk-overview/terminology-and-core-concepts.md)
-   + Content distribution workflow {#content-distribution-workflow}
-      + [Content preparation](aaxs-sdk-overview/content-distribution-workflow/content-preparation.md)
-      + [Content acquisition](aaxs-sdk-overview/content-distribution-workflow/content-acquisition.md)
-   + Adobe Access components {#adobe-access-components}
-      + [Java SDK, Flash Player and Adobe AIR   client](aaxs-sdk-overview/adobe-access-components/adobe-access-sdk.md)
-      + [Java APIs for managing device group   domains](aaxs-sdk-overview/adobe-access-components/java-apis-for-managing-domains.md)
-      + [Java APIs for protecting content](aaxs-sdk-overview/adobe-access-components/java-apis-for-protecting-content.md)
-      + [Java APIs for issuing licenses](aaxs-sdk-overview/adobe-access-components/java-apis-for-issuing-licenses.md)
-      + [Reference implementation](aaxs-sdk-overview/adobe-access-components/reference-implementation.md)
-      + [Adobe Access Server for Protected   Streaming](aaxs-sdk-overview/adobe-access-components/adobe-access-server-for-protected-streaming.md)
-      + [Adobe Flash Player](aaxs-sdk-overview/adobe-access-components/adobe-flash-player.md)
-      + [Adobe AIR](aaxs-sdk-overview/adobe-access-components/adobe-air.md)
-      + [Native iOS and Android Applications](aaxs-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
-   + Deploy Adobe Access {#deploying-adobe-access}
-      + [Configure Adobe Access](aaxs-sdk-overview/deploying-adobe-access/configure-adobe-access.md)
-      + [Deploying on a 64-bit operating system](aaxs-sdk-overview/deploying-adobe-access/deploying-on-a-64-bit-os.md)
-      + [Install Adobe Access SDK](aaxs-sdk-overview/deploying-adobe-access/install-adobe-access-sdk.md)
-      + [Implement a License Server](aaxs-sdk-overview/deploying-adobe-access/install-a-license-server.md)
-      + [Create content packaging and policy management   tools](aaxs-sdk-overview/deploying-adobe-access/create-content-pkgng-policy-mgmt-tools.md)
-      + [Create policies and package content](aaxs-sdk-overview/deploying-adobe-access/create-policies-and-package-content.md)
-      + [Develop applications for video playback](aaxs-sdk-overview/deploying-adobe-access/develop-apps-for-video-playback.md)
-      + Additional Deployment Scenarios {#additional-scenarios}
-         + [UltraViolet media and Adobe Access](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
-         + [Adobe Pass and Adobe Access](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
-+ Adobe Access Secure Deployment Guidelines
-   + Introduction to Network Topology {#overview}
-      + [Network topology overview](aaxs-secure-deployment-guidelines/overview/network-topology.md)
-      + [Network layer security](aaxs-secure-deployment-guidelines/overview/network-topology-network-layer-sec.md)
-      + [Firewall rules](aaxs-secure-deployment-guidelines/overview/network-topology-firewall-rules.md)
-      + [Network protocols used by Adobe Access](aaxs-secure-deployment-guidelines/overview/network-topology-nw-protocols.md)
-      + [Ports for application servers](aaxs-secure-deployment-guidelines/overview/network-topology-ports-for-app-srvs.md)
-      + [Configuring SSL](aaxs-secure-deployment-guidelines/overview/network-topology-configuring-ssl.md)
-   + [Vendor-specific security information](aaxs-secure-deployment-guidelines/vendor-specific-sec-info.md)
-   + [Physical security and access](aaxs-secure-deployment-guidelines/physical-sec-and-access.md)
-   + Packaging and protecting content {#packaging}
-      + [Securing the server](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-the-server.md)
-      + [Securely packaging content](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-pkging.md)
-      + [Securely storing policies](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-storing-policies.md)
-      + [Asymmetric key encryption](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ake.md)
-      + [Ensuring compatibility with Flash Media Rights   Management Server 1.x](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ensure-compat-fmrms.md)
-   + Protect and issue licenses {#issuing-licenses}
-      + [Consuming locally generated CRLs](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-consume-local-crls.md)
-      + [Consuming CRLs published by Adobe](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-consume-crls-by-adobe.md)
-      + [Generating CRLs to supplement those published   by Adobe](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-gen-crls-to-supplement-adobe.md)
-      + [Rollback detection](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-rollback-detection.md)
-      + [Machine count when issuing licenses](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-rollback-detection-machine-count.md)
-      + [Replay protection](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-replay-detection.md)
-      + [Maintain a whitelist of trusted content   packagers](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-maintain-whitelist.md)
-      + [Timeout for authentication tokens](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-timeout-for-authn-tokens.md)
-      + [Overriding policy options](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-override-policy-options.md)
-      + [Pre-generating licenses](aaxs-secure-deployment-guidelines/issuing-licenses/pre-gen-licenses.md)
-      + [Managing Domains](aaxs-secure-deployment-guidelines/issuing-licenses/managing-domains.md)
