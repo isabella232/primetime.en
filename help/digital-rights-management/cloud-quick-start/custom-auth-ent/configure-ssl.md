@@ -4,7 +4,7 @@ title: Configure SSL on your BEES server
 uuid: 041a106e-8b21-4018-815d-b7ea48c3de03
 ---
 
-# Configure SSL on your BEES server{#configure-ssl-on-your-bees-server}
+# Configure SSL on your BEES server {#configure-ssl-on-your-bees-server}
 
 1. Provide your server SSL certificate to your Adobe contact who supplied this software.
 

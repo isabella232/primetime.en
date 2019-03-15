@@ -8,114 +8,79 @@ user-guide-title: Primetime Digital Rights Management Help
 # Digital Rights Management Help {#drm}
 
 + [DRM Overview](home.md)
-+ Certificate Enrollment Guide
-   + Certificate Enrollment Guide {#certificate-enrollment-guide}
-      + [About certificates](certificate-enrollment-guide/about-certs.md)
-      + [Prerequisites](certificate-enrollment-guide/prerequisites.md)
-      + [About certificate enrollment roles](certificate-enrollment-guide/about-cert-enrollment.md)
-      + [Add Requesters](certificate-enrollment-guide/add-requesters.md)
-      + [Create a Secondary Administrator](certificate-enrollment-guide/add-secondary-admin.md)
-      + Request certificates {#request-certs}
-         + [Request certificates](certificate-enrollment-guide/request-certs/request-certs-overview.md)
-         + [Generate a Certificate Signing Request](certificate-enrollment-guide/request-certs/gen-cert-signing-req.md)
-         + [Request a certificate](certificate-enrollment-guide/request-certs/request-a-cert.md)
-         + [Approve a certificate](certificate-enrollment-guide/request-certs/approve-a-cert.md)
-         + [Obtain Domain CA certificates](certificate-enrollment-guide/request-certs/obtain-domain-ca-certs.md)
-      + Deploy certificates {#deploy-certs}
-         + [Deploy certificates](certificate-enrollment-guide/deploy-certs/deploy-certs-overview.md)
-         + [Convert files](certificate-enrollment-guide/deploy-certs/convert-files.md)
-         + [Deploy certificates](certificate-enrollment-guide/deploy-certs/deploying-certs.md)
-      + [Store keys](certificate-enrollment-guide/storing-keys.md)
-      + [Renew certificates](certificate-enrollment-guide/renewing-certs.md)
++ Certificate Enrollment Guide {#certificate-enrollment-guide}
+  + [About certificates](certificate-enrollment-guide/about-certs.md)
+  + [Prerequisites](certificate-enrollment-guide/prerequisites.md)
+  + [About certificate enrollment roles](certificate-enrollment-guide/about-cert-enrollment.md)
+  + [Add Requesters](certificate-enrollment-guide/add-requesters.md)
+  + [Create a Secondary Administrator](certificate-enrollment-guide/add-secondary-admin.md)
+  + Request certificates {#request-certs}
+    + [Overview](certificate-enrollment-guide/request-certs/request-certs-overview.md)
+    + [Generate a Certificate Signing Request](certificate-enrollment-guide/request-certs/gen-cert-signing-req.md)
+    + [Request a certificate](certificate-enrollment-guide/request-certs/request-a-cert.md)
+    + [Approve a certificate](certificate-enrollment-guide/request-certs/approve-a-cert.md)
+    + [Obtain Domain CA certificates](certificate-enrollment-guide/request-certs/obtain-domain-ca-certs.md)
+  + Deploy certificates {#deploy-certs}
+    + [Overview](certificate-enrollment-guide/deploy-certs/deploy-certs-overview.md)
+    + [Convert files](certificate-enrollment-guide/deploy-certs/convert-files.md)
+    + [Deploy certificates](certificate-enrollment-guide/deploy-certs/deploying-certs.md)
+  + [Store keys](certificate-enrollment-guide/storing-keys.md)
+  + [Renew certificates](certificate-enrollment-guide/renewing-certs.md)
 + Adobe Primetime DRM SDK 5.3.1 {#drm-sdk-5-3-1}
    + [Adobe Primetime DRM SDK - An overview](drm-sdk-overview/overview.md)
    + [About Adobe Primetime DRM](drm-sdk-overview/about-adobe-access.md)
    + [Key features](drm-sdk-overview/key-features.md)
    + [Terminology and core concepts](drm-sdk-overview/terminology-and-core-concepts.md)
    + Content distribution workflow {#content-distribution-workflow}
-      + [Content preparation](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
-      + [Content acquisition](drm-sdk-overview/content-distribution-workflow/content-acquisition.md)
+     + [Content preparation](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
+     + [Content acquisition](drm-sdk-overview/content-distribution-workflow/content-acquisition.md)
    + Adobe Primetime DRM components {#adobe-access-components}
-      + [Java SDK, Flash Player and Adobe AIR   client](drm-sdk-overview/adobe-access-components/adobe-access-sdk.md)
-      + [Java APIs for managing device group   domains](drm-sdk-overview/adobe-access-components/java-apis-for-managing-domains.md)
-      + [Java APIs for protecting content](drm-sdk-overview/adobe-access-components/java-apis-for-protecting-content.md)
-      + [Java APIs for issuing licenses](drm-sdk-overview/adobe-access-components/java-apis-for-issuing-licenses.md)
-      + [Reference implementation](drm-sdk-overview/adobe-access-components/reference-implementation.md)
-      + [Adobe Primetime DRM Server for Protected Streaming](drm-sdk-overview/adobe-access-components/protected-streaming.md)
-      + [Adobe Flash Player](drm-sdk-overview/adobe-access-components/adobe-flash-player.md)
-      + [Adobe AIR](drm-sdk-overview/adobe-access-components/adobe-air.md)
-      + [Native iOS and Android Applications](drm-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
-      + Deploy Adobe Primetime DRM {#deploy-adobe-access}
-         + [Configure Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/deploy-adobe-access/configure-adobe-access.md)
-         + [Deploying on a 64-bit operating system](drm-sdk-overview/adobe-access-components/deploy-adobe-access/deploying-on-a-64-bit-os.md)
-         + [Install Adobe Primetime DRM SDK](drm-sdk-overview/adobe-access-components/deploy-adobe-access/install-adobe-access-sdk.md)
-         + [Implement a License Server](drm-sdk-overview/adobe-access-components/deploy-adobe-access/install-a-license-server.md)
-         + [Create content packaging and policy management   tools](drm-sdk-overview/adobe-access-components/deploy-adobe-access/create-content-pkgng-policy-mgmt-tools.md)
-         + [Create policies and package content](drm-sdk-overview/adobe-access-components/deploy-adobe-access/create-policies-and-package-content.md)
-         + [Develop applications for video playback](drm-sdk-overview/adobe-access-components/deploy-adobe-access/develop-apps-for-video-playback.md)
-      + Additional Deployment Scenarios {#additional-deployment-scenarios}
-         + [UltraViolet media and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
-         + [Adobe Primetime authentication and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
+     + [Overview](drm-sdk-overview/adobe-access-components/adobe-access-sdk.md)
+     + [Adobe Primetime DRM SDK](drm-sdk-overview/adobe-access-components/drm-sdk.md)
+     + [Adobe Primetime DRM Server for Protected Streaming](drm-sdk-overview/adobe-access-components/protected-streaming.md)
+     + [Adobe Flash Player](drm-sdk-overview/adobe-access-components/adobe-flash-player.md)
+     + [Adobe AIR](drm-sdk-overview/adobe-access-components/adobe-air.md)
+     + [Native iOS and Android Applications](drm-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
+   + [Deploy Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/deploy-adobe-access/configure-adobe-access.md)
+   + Additional Deployment Scenarios {#additional-deployment-scenarios}
+     + [UltraViolet media and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
+     + [Adobe Primetime authentication and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
 + DRM Quick-Start Guide {#drm-quick-start}
-   + Introduction {#introduction}
-      + [Getting Started](quick-start/title-page/getting-started.md)
-      + [Prerequisites](quick-start/title-page/prerequisites.md)
-      + [Obtain Certificates](quick-start/title-page/obtain-certifcates.md)
-   + [Install Tomcat](quick-start/install-tomcat.md)
-   + [Set up and deploy the server for Protected Streaming](quick-start/setup-deploy-drm-server-ps.md)
-   + [Package encrypted content](quick-start/package-content.md)
-   + [Install Flash Player and playback test content](quick-start/install-fp-playback-test.md)
-   + [Play back a locally packaged video](quick-start/playback-locally-pkgd-video.md)
-   + [Next Steps](quick-start/next-steps.md)
-
+  + Introduction {#introduction}
+    + [Getting Started](quick-start/title-page/getting-started.md)
+    + [Prerequisites](quick-start/title-page/prerequisites.md)
+    + [Obtain Certificates](quick-start/title-page/obtain-certifcates.md)
+  + [Install Tomcat](quick-start/install-tomcat.md)
+  + [Set up and deploy the server for Protected Streaming](quick-start/setup-deploy-drm-server-ps.md)
+  + [Package encrypted content](quick-start/package-content.md)
+  + [Install Flash Player and playback test content](quick-start/install-fp-playback-test.md)
+  + [Play back a locally packaged video](quick-start/playback-locally-pkgd-video.md)
+  + [Next Steps](quick-start/next-steps.md)
 + Adobe Primetime Cloud DRM Quick-Start Guide
    + [What is included with Primetime Cloud DRM](cloud-quick-start/whats-included.md)
    + [What is NOT supported by Primetime Cloud DRM](cloud-quick-start/not-supported.md)
    + [Prerequisites](cloud-quick-start/prerequisites.md)
-   + Packaging options {#packaging-options.md}
+   + Packaging options {#packaging-options}
       + [Use the included Primetime Offline Packager](cloud-quick-start/packaging-options/use-offline-packager.md)
       + [Use a third-party encoder](cloud-quick-start/packaging-options/use-third-party-encoder.md)
       + [Use Adobe Media Server](cloud-quick-start/packaging-options/use-adobe-media-server.md)
    + [Test the packaged content](cloud-quick-start/test-packaged-content.md)
-   + Triaging errors {#triaging-errors}
-      + [Client error triaging](cloud-quick-start/triaging-errors/client-error-triaging.md)
+   + [Triaging errors](cloud-quick-start/triaging-errors/client-error-triaging.md)
    + Custom authentication/entitlement {#custom-auth-ent}
       + [Custom authentication/entitlement (Optional)](cloud-quick-start/custom-auth-ent/custom-overview.md)
       + [BEES Overview](cloud-quick-start/custom-auth-ent/overview.md)
-      + BEES Workflow {#workflow-summary}
-         + [Policy workflow details](cloud-quick-start/custom-auth-ent/workflow-summary/policy-workflow.md)
-         + [Packaging workflow details](cloud-quick-start/custom-auth-ent/workflow-summary/packaging-workflow.md)
-         + [Authentication workflow details](cloud-quick-start/custom-auth-ent/workflow-summary/authn-workflow.md)
-         + [Licensing workflow details](cloud-quick-start/custom-auth-ent/workflow-summary/licensing-workflow.md)
-         + [Entitlement request and response details](cloud-quick-start/custom-auth-ent/workflow-summary/entitlement-req-rsp.md)
+      + [BEES Workflow](cloud-quick-start/custom-auth-ent/workflow-summary/policy-workflow.md)
       + [BEES Error codes](cloud-quick-start/custom-auth-ent/error-codes.md)
       + [Build the BEES reference implementation](cloud-quick-start/custom-auth-ent/build-ref-impl.md)
       + [Deploy the BEES reference implementation](cloud-quick-start/custom-auth-ent/deploy-ref-impl.md)
       + [Configure SSL on your BEES server](cloud-quick-start/custom-auth-ent/configure-ssl.md)
    + [Adobe Primetime authentication (Optional)](cloud-quick-start/primetime-authentication.md)
-   + Creating custom DRM policies {#creating-custom-drm}
-      + [Creating custom DRM policies (Optional) overview](cloud-quick-start/creating-custom-drm-policies/creating-custom-drm-policies.md)
-      + [Creating Policies Dynamically for Custom Auth/Entitlement](cloud-quick-start/creating-custom-drm-policies/creating-polices-dynamically.md)
+   + [Creating custom DRM policies (Optional)](cloud-quick-start/creating-custom-drm-policies/creating-custom-drm-policies.md)
    + [Update existing DRM content to use Cloud DRM (Optional)](cloud-quick-start/update-existing-drm-to-cloud.md)
-   + Streaming to Xbox360 (Optional) {#streaming-to-xbox360}
-      + [Set the XSTS token in your player](cloud-quick-start/streaming-to-xbox360/set-xsts-token.md)
-      + [Xbox Live XSTS token validation](cloud-quick-start/streaming-to-xbox360/xsts-token-validation.md)
-      + [Create JKS for an XSTS validator](cloud-quick-start/streaming-to-xbox360/jks-for-xsts-token-validator.md)
-
+   + [Streaming to Xbox360 (Optional)](cloud-quick-start/streaming-to-xbox360.md)
 + Using the Adobe Primetime DRM Key Server {#using-key-server}
-   + [Introduction](using-the-drm-key-server/overview.md)
    + [Requirements for using Primetime DRM Key Server](using-the-drm-key-server/requirements.md)
-   + Deploy the Primetime DRM Key Server {#deploy}
-      + [Deploying the Primetime DRM Key Server](using-the-drm-key-server/deployment/deployment-overview.md)
-      + [SSL configuration](using-the-drm-key-server/deployment/ssl-configuration.md)
-      + [Java system properties](using-the-drm-key-server/deployment/java-system-properties.md)
-      + [Primetime DRM credentials](using-the-drm-key-server/deployment/credentials.md)
-      + [Key Server configuration files](using-the-drm-key-server/deployment/configuration-files.md)
-      + [Configuration directory structure](using-the-drm-key-server/deployment/configuration-directory-structure.md)
-      + [Global configuration file](using-the-drm-key-server/deployment/global-configuration-file.md)
-      + [Tenant configuration files](using-the-drm-key-server/deployment/tenant-configuration-files.md)
-      + [Log files](using-the-drm-key-server/deployment/log-files.md)
-      + [Starting the Key Server](using-the-drm-key-server/deployment/starting.md)
+   + [Deploy the Primetime DRM Key Server](using-the-drm-key-server/deployment/deployment-overview.md)
    + [Packaging content](using-the-drm-key-server/packaging-content.md)
 + Adobe Primetime DRM Secure Deployment Guidelines {#guidelines}
    + Introduction to Network Topology {#introduction}
