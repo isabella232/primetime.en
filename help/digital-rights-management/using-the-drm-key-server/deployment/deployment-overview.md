@@ -81,7 +81,7 @@ JAVA_OPTS=-DKeyServer.ConfigRoot=”absolute-path-to-config-folder”
 
 To process key requests from Primetime DRM iOS and Xbox 360 clients, the Primetime DRM Key Server must be configured with a set of credentials issued by Adobe. These credentials can either be stored in PKCS#12 ( [!DNL .pfx]) files or on an HSM.
 
-The [!DNL .pfx] files can be located anywhere, but for ease of configuration, Adobe recommends placing the [!DNL .pfx] files in the tenant's configuration directory. For more information, see [Key Server configuration files.](../../using-the-drm-key-server/deployment/configuration-files.md).
+The [!DNL .pfx] files can be located anywhere, but for ease of configuration, Adobe recommends placing the [!DNL .pfx] files in the tenant's configuration directory. For more information, see [Key Server configuration files](#key-server-configuration-files).
 
 ### HSM configuration {#section_13A19E3E32934C5FA00AEF621F369877}
 
