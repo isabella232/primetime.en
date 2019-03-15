@@ -183,7 +183,7 @@ For more information about this error code, see <a href="https://forums.adobe.co
             <td>WriteMicrosafeFailed</td>
             <td>This issue occurs when the system cannot write to the file system. subErrorIdcontains a client-specific error or line error.
 
-	    On Microsoft Windows, error 3313 might be thrown by Active X or NPAPI plug flash player when the encrypted content has a licenseID or a policyID that is too long. This is because of the maximum path length in Windows. (Pepper plugin doesn't have this problem).
+                On Microsoft Windows, error 3313 might be thrown by Active X or NPAPI plug flash player when the encrypted content has a licenseID or a policyID that is too long. This is because of the maximum path length in Windows. (Pepper plugin doesn't have this problem).
    <ul>  
                   <li>The distributor's software should prompt the user to confirm that their user directory is not locked nor on a volume that is full or locked.</li>
                   <li>If the distributor is using AIR, rather than Flash, the issue might be caused by a path length limitation. Distributors should shorten the name of their AIR application to something reasonable</li>
