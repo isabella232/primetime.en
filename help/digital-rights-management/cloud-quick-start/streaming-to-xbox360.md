@@ -33,7 +33,7 @@ for a decryption key.
 >To pass an XSTS token from the Xbox360 client, set the token >synchronously in response to the MediaPlayer.RequestKeyAttribute >event – described in further detail here: **Set the XSTS token in your player.** A sample Back-End Authentication/Entitlement server >is included with the software release in the Custom Authentication >and Entitlement directory.Validation of XSTS tokens is discussed >in further detail here: **Xbox Live XSTS token validation.**
 
 
-##Set the XSTS token in your player {#set-the-xsts-token-in-your-player}
+## Set the XSTS token in your player {#set-the-xsts-token-in-your-player}
 
 In Xbox360, you set the token asynchronously in response to the `MediaPlayer.RequestKeyAttribute` event. 
 

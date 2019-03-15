@@ -60,8 +60,7 @@ The DRM Client errors are a subset of the TVSDK client-side errors, with the DRM
           <ul>
               <li>If distributor is using a version older than Primetime DRM version 4, or at least version 4 but the platform is not iOS, the distributor's software should log the error. This error is thrown only on iOS</li>
               <li>If the distributor's software is at least Primetime DRM version 4, and the platform is iOS, distributors must change the remote key server URL that they are using to HTTPS. If they were only using HTTP, distributors might have to set up an HTTPS server. Otherwise, the distributors need to submit the logged information to Adobe and escalate the issue.</li>
-          </ul>
-      	    </td>
+          </ul></td>
     </tr>
     <tr>
           <td>3303</td>
@@ -185,7 +184,7 @@ For more information about this error code, see <a href="https://forums.adobe.co
             <td>This issue occurs when the system cannot write to the file system. subErrorIdcontains a client-specific error or line error.
 
 	    On Microsoft Windows, error 3313 might be thrown by Active X or NPAPI plug flash player when the encrypted content has a licenseID or a policyID that is too long. This is because of the maximum path length in Windows. (Pepper plugin doesn't have this problem).
-<ul>  
+   <ul>  
                   <li>The distributor's software should prompt the user to confirm that their user directory is not locked nor on a volume that is full or locked.</li>
                   <li>If the distributor is using AIR, rather than Flash, the issue might be caused by a path length limitation. Distributors should shorten the name of their AIR application to something reasonable</li>
           </ul>
