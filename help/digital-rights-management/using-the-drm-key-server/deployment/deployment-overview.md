@@ -64,7 +64,7 @@ Copy [!DNL server.cer], and [!DNL server.key] to the Tomcat directory. Specify t
 
 You have the option to set the following two Java system properties to modify the location of configuration and log files for the Primetime DRM Key Server:
 
-* `KeyServer.ConfigRoot` - This directory contains all of the configuration files for the Primetime DRM Key Server. For details on the contents of these files, see [Key Server configuration files](../../using-the-drm-key-server/deployment/configuration-files.md). If not set, the default is [!DNL CATALINA_BASE/keyserver]. 
+* `KeyServer.ConfigRoot` - This directory contains all of the configuration files for the Primetime DRM Key Server. For details on the contents of these files, see [Key Server configuration files](#key-server-configuration-files). If not set, the default is [!DNL CATALINA_BASE/keyserver]. 
 
 * `KeyServer.LogRoot` - This is a log directory that contains iOS Key Server application logs. If not set, the default is the same as `KeyServer.ConfigRoot` 
 
