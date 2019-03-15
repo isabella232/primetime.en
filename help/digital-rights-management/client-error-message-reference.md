@@ -18,12 +18,12 @@ The DRM Client errors are a subset of the TVSDK client-side errors, with the DRM
   <tbody>
      <tr>
          <th>Error Code</th>
-         <th> align="center">Mnemonic</th>
-         <th> align="center">Remedy</th>
+         <th>Mnemonic</th>
+         <th>Remedy</th>
       </tr>
       <tr>
           <td>3300</td>
-          <td align="center">InvalidVoucher</td>
+          <td>InvalidVoucher</td>
           <td>
               <ul>
                    <li>What the distributor's software should do:
@@ -40,7 +40,18 @@ The DRM Client errors are a subset of the TVSDK client-side errors, with the DRM
                     </li>
               </ul> 
             </td>
-        </tr>   
+        </tr>  
+    </tr>   
+       <tr>
+            <td>3301</td>
+            <td>AuthenticationFailed</td>
+            <td>The server failed to authenticate or authorize the client.
+               <ul>
+                        <li>The distributor’s software should take any action necessary to re-establish the user’s credentials or guide the user to acquire access to the content.</li>
+                        <li>The distributor should confirm that its authorization and authentication mechanism is working correctly. If the distributors are not planning to use the authentication or authorization features, they should check whether the policy of the offending content requires authentication, and see Diagnosing policy / license discrepancies.</li>
+                </ul>
+        For more information about this error code, see <a href="https://forums.adobe.com/thread/1277149">DRM Error 3301 causes and resolution.</a>
+            </td>
+      </tr>    
     </tbody>
 </table>
-
