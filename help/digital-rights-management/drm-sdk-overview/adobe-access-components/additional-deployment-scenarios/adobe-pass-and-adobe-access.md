@@ -4,7 +4,7 @@ title: Adobe Primetime authentication and Adobe Primetime DRM
 uuid: 44fe3956-efb5-4fc5-97e2-37abb6554322
 ---
 
-# Adobe Primetime authentication and Adobe Primetime DRM{#adobe-primetime-authentication-and-adobe-primetime-drm}
+# Adobe Primetime authentication and Adobe Primetime DRM {#adobe-primetime-authentication-and-adobe-primetime-drm}
 
 Adobe Primetime authentication ( [https://www.adobe.com/products/adobepass/](https://www.adobe.com/products/adobepass/)) provides user/device authentication and authorization across multiple content providers. The user must have a valid cable TV or satellite TV subscription. 
 
@@ -22,4 +22,4 @@ The video player can trigger the process by calling `getAuthorization` on the *A
 
 Adobe Primetime authentication provides a media token validator Java library that can be deployed to a server. When using the Primetime DRM server for content protection, you can integrate the media token validator with a Primetime DRM server-side plug-in to automatically issue a generic license after successfully validating the media token. The content is then streamed from the CDN servers to the client. To acquire a content license, the short-lived media token can be submitted to the Primetime DRM server, where the validity of the token is verified and a license can be issued.
 
-The long-lived AuthN token is used generally by the *Access Enabler* across all content developers to represent the AuthN for that MVPD subscriber. In addition, the Primetime DRM Server and Token Verifier can be operated by the CDN or a service provider on behalf of the content provider. 
+The long-lived AuthN token is used generally by the *Access Enabler* across all content developers to represent the AuthN for that MVPD subscriber. In addition, the Primetime DRM Server and Token Verifier can be operated by the CDN or a service provider on behalf of the content provider.

@@ -4,7 +4,7 @@ title: UltraViolet media and Adobe Primetime DRM
 uuid: 7076c0f9-e092-48e4-9118-8a414bd03c7a
 ---
 
-# UltraViolet media and Adobe Primetime DRM{#ultraviolet-media-and-adobe-primetime-drm}
+# UltraViolet media and Adobe Primetime DRM {#ultraviolet-media-and-adobe-primetime-drm}
 
 Adobe Primetime DRM can be used with other third-party content streaming solutions to set up a complete and secure DRM-based media distribution ecosystem.
 
@@ -28,4 +28,3 @@ It is easy to set up an UltraViolet system along with Adobe Primetime DRM. The f
 
    The content license is bound to the domain. The client application can insert the license into the CFF file. Content can now be played back in the application, with all protection and usage rule enforcement handled by the Primetime DRM component in the runtime. 
 1. Other devices and applications owned by the same end user can be registered with the co-ordinator. The content can now be loaded in other Primetime DRM devices without requiring any external transaction.
-

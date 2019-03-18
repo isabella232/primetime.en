@@ -4,7 +4,7 @@ title: Use Adobe Media Server
 uuid: 272b9919-6ae4-4adb-aab5-28b1f92aa9fe
 ---
 
-# Use Adobe Media Server{#use-adobe-media-server}
+# Use Adobe Media Server {#use-adobe-media-server}
 
 Some customers may already be using Adobe Media Server and want to maintain that content delivery model. If this is the case, the required Primetime Cloud DRM-specific data can be harvested from either of the configuration files included in this kit to populate the JIT (Just In Time) XML configuration for AMS.
 
