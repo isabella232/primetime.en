@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Primetime Video Playback Help
 ---
 
-# PSDK 1.4 for Android Reference Implementation {#psdk-1.4-reference-implementation}
+# PSDK 1.4 for Android Reference Implementation {#reference-implementation}
 
 + [Android Reference Implementation Overview](home.md)
 + Primetime reference implementation {#reference}

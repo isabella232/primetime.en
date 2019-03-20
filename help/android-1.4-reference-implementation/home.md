@@ -18,7 +18,7 @@ Welcome to the Reference Implementatin help for Adobe Primetime. The documents l
 | [Primetime Migration & Conversion Help](/help/migration-guides/home.md) | Explains the conversion and migration process to move from your existing Primetime TVSDK Suite to the next-generation suite.   |
 | [Dynamic Ad Insertion Help](/help/dynamic-ad-insertion/home.md) | Explains how to monetize content by inserting user-targeted dynamic ads on the server and engage audience with personalized ads. |
 | [Digital Rights Management](/help/digital-rights-management/home.md) | Helps you learn more about various user scenarios in Digital Rights Management (DRM) |
-| [Primetime API references](/help/api-references.md) | Provides detailed information about TVSDK functions, data structures and other programming constructs. |
+| [Primetime API references](/help/reference/api-references.md) | Provides detailed information about TVSDK functions, data structures and other programming constructs. |
 
 ## Helpful resources
 
