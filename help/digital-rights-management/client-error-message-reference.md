@@ -83,7 +83,7 @@ The DRM Client errors are a subset of the TVSDK client-side errors, with the DRM
 | 3373 | DisplayResolutionLargerThanConstrain | The content's resolution is larger than the resolution that is specified by the currently active output-protection constraint.<br>If the distributor's operations team sees this error in their logs, they should review the resolution-based output protection policy, and if necessary, repackage the content.<br>For more information about resolution-based output protection,see About Resolution-Based Output Protection.|
 | 3374 | ClientCommProcessFailed | Failed during client-side communication processing, for example, request generation, response processing, bad auth token, and so on.|
 
-## 3328 Sub-error Code Mapping {#3328 Sub-error Code Mapping}
+## Sub-error Code Mapping for 3328 {#Sub-error Code Mapping for 3328}
 
 | SubError | Description |
 |---|---|
