@@ -27,24 +27,24 @@ user-guide-title: Primetime Digital Rights Management Help
   + [Store keys](certificate-enrollment-guide/storing-keys.md)
   + [Renew certificates](certificate-enrollment-guide/renewing-certs.md)
 + Adobe Primetime DRM SDK 5.3.1 {#drm-sdk-5-3-1}
-   + [Adobe Primetime DRM SDK - An overview](drm-sdk-overview/overview.md)
-   + [About Adobe Primetime DRM](drm-sdk-overview/about-adobe-access.md)
-   + [Key features](drm-sdk-overview/key-features.md)
-   + [Terminology and core concepts](drm-sdk-overview/terminology-and-core-concepts.md)
-   + Content distribution workflow {#content-distribution-workflow}
-     + [Content preparation](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
-     + [Content acquisition](drm-sdk-overview/content-distribution-workflow/content-acquisition.md)
-   + Adobe Primetime DRM components {#adobe-access-components}
-     + [Overview](drm-sdk-overview/adobe-access-components/adobe-access-sdk.md)
-     + [Adobe Primetime DRM SDK](drm-sdk-overview/adobe-access-components/drm-sdk.md)
-     + [Adobe Primetime DRM Server for Protected Streaming](drm-sdk-overview/adobe-access-components/protected-streaming.md)
-     + [Adobe Flash Player](drm-sdk-overview/adobe-access-components/adobe-flash-player.md)
-     + [Adobe AIR](drm-sdk-overview/adobe-access-components/adobe-air.md)
-     + [Native iOS and Android Applications](drm-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
-   + [Deploy Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/deploy-adobe-access/configure-adobe-access.md)
-   + Additional Deployment Scenarios {#additional-deployment-scenarios}
-     + [UltraViolet media and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
-     + [Adobe Primetime authentication and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
+  + [Adobe Primetime DRM SDK - An overview](drm-sdk-overview/overview.md)
+  + [About Adobe Primetime DRM](drm-sdk-overview/about-adobe-access.md)
+  + [Key features](drm-sdk-overview/key-features.md)
+  + [Terminology and core concepts](drm-sdk-overview/terminology-and-core-concepts.md)
+  + Content distribution workflow {#content-distribution-workflow}
+    + [Content preparation](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
+    + [Content acquisition](drm-sdk-overview/content-distribution-workflow/content-acquisition.md)
+  + Adobe Primetime DRM components {#adobe-access-components}
+    + [Overview](drm-sdk-overview/adobe-access-components/adobe-access-sdk.md)
+    + [Adobe Primetime DRM SDK](drm-sdk-overview/adobe-access-components/drm-sdk.md)
+    + [Adobe Primetime DRM Server for Protected Streaming](drm-sdk-overview/adobe-access-components/protected-streaming.md)
+    + [Adobe Flash Player](drm-sdk-overview/adobe-access-components/adobe-flash-player.md)
+    + [Adobe AIR](drm-sdk-overview/adobe-access-components/adobe-air.md)
+    + [Native iOS and Android Applications](drm-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
+  + [Deploy Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/deploy-adobe-access/configure-adobe-access.md)
+  + Additional Deployment Scenarios {#additional-deployment-scenarios}
+    + [UltraViolet media and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
+    + [Adobe Primetime authentication and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
 + DRM Quick-Start Guide {#drm-quick-start}
   + Introduction {#introduction}
     + [Getting Started](quick-start/title-page/getting-started.md)
@@ -57,47 +57,47 @@ user-guide-title: Primetime Digital Rights Management Help
   + [Play back a locally packaged video](quick-start/playback-locally-pkgd-video.md)
   + [Next Steps](quick-start/next-steps.md)
 + Adobe Primetime Cloud DRM Quick-Start Guide
-   + [What is included with Primetime Cloud DRM](cloud-quick-start/whats-included.md)
-   + [What is NOT supported by Primetime Cloud DRM](cloud-quick-start/not-supported.md)
-   + [Prerequisites](cloud-quick-start/prerequisites.md)
-   + Packaging options {#packaging-options}
-      + [Use the included Primetime Offline Packager](cloud-quick-start/packaging-options/use-offline-packager.md)
-      + [Use a third-party encoder](cloud-quick-start/packaging-options/use-third-party-encoder.md)
-      + [Use Adobe Media Server](cloud-quick-start/packaging-options/use-adobe-media-server.md)
-   + [Test the packaged content](cloud-quick-start/test-packaged-content.md)
-   + [Triaging errors](cloud-quick-start/triaging-errors/client-error-triaging.md)
-   + Custom authentication/entitlement {#custom-auth-ent}
-      + [Custom authentication/entitlement (Optional)](cloud-quick-start/custom-auth-ent/custom-overview.md)
-      + [BEES Overview](cloud-quick-start/custom-auth-ent/overview.md)
-      + [BEES Workflow](cloud-quick-start/custom-auth-ent/workflow-summary/policy-workflow.md)
-      + [BEES Error codes](cloud-quick-start/custom-auth-ent/error-codes.md)
-      + [Build the BEES reference implementation](cloud-quick-start/custom-auth-ent/build-ref-impl.md)
+  + [What is included with Primetime Cloud DRM](cloud-quick-start/whats-included.md)
+  + [What is NOT supported by Primetime Cloud DRM](cloud-quick-start/not-supported.md)
+  + [Prerequisites](cloud-quick-start/prerequisites.md)
+  + Packaging options {#packaging-options}
+    + [Use the included Primetime Offline Packager](cloud-quick-start/packaging-options/use-offline-packager.md)
+    + [Use a third-party encoder](cloud-quick-start/packaging-options/use-third-party-encoder.md)
+    + [Use Adobe Media Server](cloud-quick-start/packaging-options/use-adobe-media-server.md)
+  + [Test the packaged content](cloud-quick-start/test-packaged-content.md)
+  + [Triaging errors](cloud-quick-start/triaging-errors/client-error-triaging.md)
+  + Custom authentication/entitlement {#custom-auth-ent}
+    + [Custom authentication/entitlement (Optional)](cloud-quick-start/custom-auth-ent/custom-overview.md)
+    + [BEES Overview](cloud-quick-start/custom-auth-ent/overview.md)
+    + [BEES Workflow](cloud-quick-start/custom-auth-ent/workflow-summary/policy-workflow.md)
+    + [BEES Error codes](cloud-quick-start/custom-auth-ent/error-codes.md)
+    + [Build the BEES reference implementation](cloud-quick-start/custom-auth-ent/build-ref-impl.md)
       + [Deploy the BEES reference implementation](cloud-quick-start/custom-auth-ent/deploy-ref-impl.md)
       + [Configure SSL on your BEES server](cloud-quick-start/custom-auth-ent/configure-ssl.md)
-   + [Adobe Primetime authentication (Optional)](cloud-quick-start/primetime-authentication.md)
-   + [Creating custom DRM policies (Optional)](cloud-quick-start/creating-custom-drm-policies/creating-custom-drm-policies.md)
-   + [Update existing DRM content to use Cloud DRM (Optional)](cloud-quick-start/update-existing-drm-to-cloud.md)
-   + [Streaming to Xbox360 (Optional)](cloud-quick-start/streaming-to-xbox360.md)
+  + [Adobe Primetime authentication (Optional)](cloud-quick-start/primetime-authentication.md)
+  + [Creating custom DRM policies (Optional)](cloud-quick-start/creating-custom-drm-policies/creating-custom-drm-policies.md)
+  + [Update existing DRM content to use Cloud DRM (Optional)](cloud-quick-start/update-existing-drm-to-cloud.md)
+  + [Streaming to Xbox360 (Optional)](cloud-quick-start/streaming-to-xbox360.md)
 + Using the Adobe Primetime DRM Key Server {#using-key-server}
-   + [Requirements for using Primetime DRM Key Server](using-the-drm-key-server/requirements.md)
-   + [Deploy the Primetime DRM Key Server](using-the-drm-key-server/deployment/deployment-overview.md)
-   + [Packaging content](using-the-drm-key-server/packaging-content.md)
+  + [Requirements for using Primetime DRM Key Server](using-the-drm-key-server/requirements.md)
+  + [Deploy the Primetime DRM Key Server](using-the-drm-key-server/deployment/deployment-overview.md)
+  + [Packaging content](using-the-drm-key-server/packaging-content.md)
 + Adobe Primetime DRM Secure Deployment Guidelines {#guidelines}
-   + Introduction to Network Topology {#introduction}
-      + [Network topology overview](secure-deployment-guidelines/overview/network-topology.md)
-      + [Network layer security](secure-deployment-guidelines/overview/network-topology-network-layer-sec.md)
-      + [Firewall rules](secure-deployment-guidelines/overview/network-topology-firewall-rules.md)
-      + [Adobe Primetime DRM network protocols](secure-deployment-guidelines/overview/network-topology-nw-protocols.md)
-      + [Ports for application servers](secure-deployment-guidelines/overview/network-topology-ports-for-app-srvs.md)
-      + [Configuring SSL](secure-deployment-guidelines/overview/network-topology-configuring-ssl.md)
-   + [Vendor-specific security information](secure-deployment-guidelines/vendor-specific-sec-info.md)
-   + [Physical security and access](secure-deployment-guidelines/physical-sec-and-access.md)
-   + Packaging and protecting content {#pkging-and-protecting-content}
-      + [Securing the server](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-the-server.md)
-      + [Securely packaging content](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-pkging.md)
-      + [Securely storing policies](secure-deployment-guidelines/pkging-and-protecting-content/pkging-protecting-content-secure-storing-policies.md)
-      + [Asymmetric key encryption](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ake.md)
-      + [Ensuring compatibility with Flash Media Rights Management Server 1.x](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-fmrms.md)
+  + Introduction to Network Topology {#introduction}
+    + [Network topology overview](secure-deployment-guidelines/overview/network-topology.md)
+    + [Network layer security](secure-deployment-guidelines/overview/network-topology-network-layer-sec.md)
+    + [Firewall rules](secure-deployment-guidelines/overview/network-topology-firewall-rules.md)
+    + [Adobe Primetime DRM network protocols](secure-deployment-guidelines/overview/network-topology-nw-protocols.md)
+    + [Ports for application servers](secure-deployment-guidelines/overview/network-topology-ports-for-app-srvs.md)
+    + [Configuring SSL](secure-deployment-guidelines/overview/network-topology-configuring-ssl.md)
+  + [Vendor-specific security information](secure-deployment-guidelines/vendor-specific-sec-info.md)
+  + [Physical security and access](secure-deployment-guidelines/physical-sec-and-access.md)
+  + Packaging and protecting content {#pkging-and-protecting-content}
+    + [Securing the server](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-the-server.md)
+    + [Securely packaging content](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-pkging.md)
+    + [Securely storing policies](secure-deployment-guidelines/pkging-and-protecting-content/pkging-protecting-content-secure-storing-policies.md)
+    + [Asymmetric key encryption](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ake.md)
+    + [Ensuring compatibility with Flash Media Rights Management Server 1.x](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-fmrms.md)
    + Issue and protect the License Server {#issuing-licenses}
       + [Protecting the License Server](secure-deployment-guidelines/issuing-licenses/issuing-licenses-protect-license-server.md)
       + [Pre-generating licenses](secure-deployment-guidelines/issuing-licenses/issuing-licenses-pre-gen.md)
@@ -255,7 +255,7 @@ user-guide-title: Primetime Digital Rights Management Help
       + License chaining {#license-chaining}
          + [Enhanced License Chaining](protecting-content/implementing-the-license-server/license-chaining/gen-enhanced-license-chaining.md)
       + [Handle synchronization requests](protecting-content/implementing-the-license-server/handling-synch-reqs.md)
-      + [Handle FMRMS compatibility](protecting-content/implementing-the-license-server/handling-fmrms-compatibility.md)__
+      + [Handle FMRMS compatibility](protecting-content/implementing-the-license-server/handling-fmrms-compatibility.md)
       + [Handling certificate updates when Adobe-issued certificates expire](protecting-content/implementing-the-license-server/handling-cert-updates.md)
       + [Performance tuning](protecting-content/implementing-the-license-server/performance-tuning.md)
    + Revoke client credentials {#revoking-client-creds}
