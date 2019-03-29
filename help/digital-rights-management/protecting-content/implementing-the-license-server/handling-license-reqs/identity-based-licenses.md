@@ -8,7 +8,7 @@ uuid: 32323f59-184e-4a70-bf33-ad1c34e54fd2
 
 If identity-based licensing is used, the server checks for a valid authentication token before issuing a license.
 
-See [User authentication](../../../protecting-content/implementing-the-license-server/licenses-user-authentication.md) for details on handling authentication tokens.
+See [User authentication](../../../protecting-content/implementing-the-license-server/processing-drm-requests.md#user-authentication) for details on handling authentication tokens.
 
 >[!NOTE] {class="- topic/note "}
 >

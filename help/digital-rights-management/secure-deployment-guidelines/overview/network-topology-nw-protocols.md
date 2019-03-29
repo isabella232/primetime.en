@@ -26,8 +26,19 @@ When you configure a secure network architecture, the following network protocol
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">HTTPS (Optional) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player, Adobe AIR, and Adobe Primetime clients can use HTTPS to communicate with Primetime DRM; HTTPS (SSL) is not required unless you support FMRMS 1.x clients. For more information, see <a href="../../secure-deployment-guidelines/overview/network-topology-firewall-rules.md" format="dita" scope="local"> Incoming URLs </a> and <a href="../../secure-deployment-guidelines/overview/network-topology-configuring-ssl.md"> Configuring SSL </a>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player, Adobe AIR, and Adobe Primetime clients can use HTTPS to communicate with Primetime DRM; HTTPS (SSL) is not required unless you support FMRMS 1.x clients. For more information, see <a href="../../secure-deployment-guidelines/overview/network-topology-firewall-rules.md" format="dita" scope="local"> Incoming URLs </a> and Configuring SSL. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
+## Ports for application servers {#ports-for-application-servers}
+
+You can configure the Adobe Primetime DRM license server to use any network port.
+
+These ports must be enabled or disabled on the inner firewall, depending on the network functionality that you want to allow for clients that connect to the application server that runs Primetime DRM.
+
+## Configuring SSL {#configuring-ssl}
+
+The Secure Sockets Layer (SSL) is necessary only if you require support for Flash Media Rights Management Server 1.x clients.
+
+SSL with client authentication is required for the Adobe Primetime DRM Key Server. For more information, see [Using the Adobe Primetime DRM Key Server](../../using-the-drm-key-server/requirements.md).

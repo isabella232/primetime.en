@@ -4,7 +4,7 @@ title: Encrypting tracks
 uuid: 75444553-cb55-4beb-b486-c6c615b54ca0
 ---
 
-# Encrypting tracks{#encrypting-tracks}
+# Encrypting tracks {#encrypting-tracks}
 
 This packaging option specifies which parts of the content you want to encrypt: audio, video, or both.
 

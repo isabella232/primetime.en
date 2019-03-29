@@ -4,7 +4,7 @@ title: Multiple DRM policies
 uuid: d1159b53-fa96-430b-aaf0-50800fb22bcb
 ---
 
-# Multiple DRM policies{#multiple-drm-policies}
+# Multiple DRM policies {#multiple-drm-policies}
 
 You can specify multiple Primetime DRM policies to associate with a single section of content. The license server determines which policy is used.
 

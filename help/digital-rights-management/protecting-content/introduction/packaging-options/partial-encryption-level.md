@@ -4,7 +4,7 @@ title: Partial encryption level
 uuid: dbd9ce92-c829-4cad-9ac4-c57bd4f70345
 ---
 
-# Partial encryption level{#partial-encryption-level}
+# Partial encryption level {#partial-encryption-level}
 
 This packaging option specifies whether all frames, or only a subset of frames, should be encrypted. There are three levels of encryption: low, medium and high.
 
