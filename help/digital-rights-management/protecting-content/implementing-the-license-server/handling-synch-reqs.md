@@ -6,7 +6,7 @@ uuid: e2623afb-7a57-402d-a8a1-07bcf6324d41
 
 # Handle synchronization requests {#handle-synchronization-requests}
 
-If a license specifies synchronization requirements ( [Requirements for Synchronization,](../../protecting-content/introduction/usage-rules/authentication\user-authentication.md#requirements-for-synchronization)) the client periodically sends synchronization requests to the server, based on the frequency specified in the license. To enable synchronization messages, set `SyncFrequencyRequirements` in a PlayRight.
+If a license specifies synchronization requirements  [Requirements for Synchronization,](../../protecting-content/introduction/usage-rules/authentication/synchronization.md) the client periodically sends synchronization requests to the server, based on the frequency specified in the license. To enable synchronization messages, set `SyncFrequencyRequirements` in a PlayRight.
 
 * The request handler class is `com.adobe.flashaccess.sdk.protocol.sync.SynchronizationHandler` 
 * The request message class is `com.adobe.flashaccess.sdk.protocol.sync.SynchronizationRequestMessage` 

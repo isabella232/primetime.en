@@ -255,7 +255,7 @@ user-guide-title: Primetime Digital Rights Management Help
       + License chaining {#license-chaining}
          + [Enhanced License Chaining](protecting-content/implementing-the-license-server/license-chaining/gen-enhanced-license-chaining.md)
       + [Handle synchronization requests](protecting-content/implementing-the-license-server/handling-synch-reqs.md)
-      + [Handle FMRMS compatibility](protecting-content/implementing-the-license-server/handling-fmrms-compatibility.md)
+      + [Handle FMRMS compatibility](protecting-content/implementing-the-license-server/handling-fmrms-compatibility.md)__
       + [Handling certificate updates when Adobe-issued certificates expire](protecting-content/implementing-the-license-server/handling-cert-updates.md)
       + [Performance tuning](protecting-content/implementing-the-license-server/performance-tuning.md)
    + Revoke client credentials {#revoking-client-creds}
