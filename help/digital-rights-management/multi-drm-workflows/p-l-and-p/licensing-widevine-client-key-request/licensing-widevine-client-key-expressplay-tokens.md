@@ -21,15 +21,15 @@ token?customerAuthenticator=<your expressplay customer authenticator>
 &hdcpOutputControl=0
 ```
 
-The content encryption key storage ID or CEKSID given to the `kid` parameter and the content encryption key or CEK given to the `contentKey` parameter must match the content encryption key storage ID and content encryption key used for packaging. The following text is an example of the token server response: 
+The content encryption key storage ID or CEKSID given to the `kid` parameter and the content encryption key or CEK given to the `contentKey` parameter must match the content encryption key storage ID and content encryption key used for packaging. The following text is an example of the token server response:
 
 ```
 https://wv.service.expressplay.com/hms/wv/rights/
 ?ExpressPlayToken=AQAAABIDKbgAAABQbt68jktab0YRY-r9mo6VP
  VqDDvkHq78x4V9_AyBUTtcNFHw5JtNKlKrMt-4HBdJ3Fopr7fqFSBp
  SJ4o-d8teAkUZUtW3Od5V-SHsCLnAlbFW84K71h2xNUiMAvRcUFBG3bjxMQ
- ```
- 
+```
+
 You can then either
 
 * use the returned URL and query as the license server URL, or 
