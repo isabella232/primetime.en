@@ -6,7 +6,7 @@ title: Key Rotation
 uuid: 6ac3b828-2cd1-42df-b9ee-4daa8e553d5e
 ---
 
-# Key Rotation{#key-rotation}
+# Key Rotation {#key-rotation}
 
 You can select the following encryption options when you create a package. However, you cannot modify the encryption options during license acquisition:
 
@@ -19,4 +19,3 @@ The packager implementation can control the Content Encryption Key and Rotation 
 >[!NOTE]
 >
 >Content packaged using key rotation can only be played on Primetime DRM clients version 3.0 or later. Older clients may need to upgrade to play this content.
-

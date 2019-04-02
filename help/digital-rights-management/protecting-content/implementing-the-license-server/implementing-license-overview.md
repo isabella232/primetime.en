@@ -4,7 +4,7 @@ title: License server overview
 uuid: 8c62376b-b159-4297-9322-75d62947e84e
 ---
 
-# License server overview{#license-server-overview}
+# Overview {#license-server-overview}
 
 Before you can issue licenses to clients, you must deploy an Adobe Primetime DRM license server. The license server uses the Primetime DRM SDK to perform a number of tasks.
 

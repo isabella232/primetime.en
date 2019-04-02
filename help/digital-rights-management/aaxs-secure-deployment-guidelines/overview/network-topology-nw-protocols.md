@@ -22,8 +22,7 @@ When you configure a secure network architecture, the network protocols in the f
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">HTTPS (Optional) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player, Adobe AIR, and Adobe Primetime clients can use HTTPS for communication with Adobe Access, however, HTTPS (SSL) is not required unless you need support for FMRMS 1.x clients. See the notes in the table <a href="network-topology-firewall-rules.md" format="dita" scope="local"> Incoming URLs</a> and <a href="network-topology-configuring-ssl.md"> Configuring SSL</a>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player, Adobe AIR, and Adobe Primetime clients can use HTTPS for communication with Adobe Access, however, HTTPS (SSL) is not required unless you need support for FMRMS 1.x clients. See the notes in the table <a href="network-topology-firewall-rules.md" format="dita" scope="local"> Incoming URLs</a> and <a href="network-topology-nw-protocols.md"> Configuring SSL</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-

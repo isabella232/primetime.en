@@ -4,7 +4,7 @@ title: Packaging media files overview
 uuid: 9509bcdc-ee4d-4025-9bb6-9b8ac439b926
 ---
 
-# Packaging media files overview {#packaging-media-files-overview}
+# Overview {#packaging-media-files-overview}
 
  Packaging refers to the process of encrypting and applying a DRM policy to video content. You can use the media packaging APIs to package files. The Primetime DRM Java SDK can only package progressive-download content, such as MP4.
 

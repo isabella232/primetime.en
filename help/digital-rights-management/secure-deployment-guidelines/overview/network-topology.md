@@ -4,7 +4,7 @@ title: Network topology overview
 uuid: b8b072dc-8dc0-46ba-bb01-1e9b58af2681
 ---
 
-# Network topology overview{#network-topology-overview}
+# Overview {#network-topology-overview}
 
 After you successfully deploy Adobe Primetime DRM, you must maintain the security of the Primetime DRM production server.
 
@@ -17,4 +17,3 @@ You can use a *reverse proxy* to ensure that different sets of URLs for Primetim
 <!--<a id="fig_8083A8C794B646CD87985EC891B60663"></a>-->
 
 ![](assets/AdobeAccess_4_SecureDeployment.png)
-
