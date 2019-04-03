@@ -320,8 +320,8 @@ user-guide-title: Primetime Digital Rights Management Help
    + [Primetime DRM license server](tvsdk-drm-workflow/license-server.md)
    + [License acquisition process overview](tvsdk-drm-workflow/content-protection-process-overview.md)
    + [License acquisition process details](tvsdk-drm-workflow/content-protection-process-details.md)
-   + [Pre-loading licenses for offline playback](tvsdk-drm-workflow/preloading-licenses.md)
-   + [Using the DRMStatusEvent class](tvsdk-drm-workflow/using-drmstatusevent.md)
+   + [Pre-loading licenses for offline playback](tvsdk-drm-workflow/preloading-licenses/preloading-licenses.md)
+   + [Using the DRMStatusEvent class](tvsdk-drm-workflow/using-drmstatusevent/using-drmstatusevent.md)
    + Using the DRMAuthenticateEvent class{#using-drmauthenticateevent.}
       + [Create a DRMAuthenticateEvent handler](tvsdk-drm-workflow/using-drmauthenticateevent/create-drmauthnevent-handler.md)
       + [Create an authentication UI](tvsdk-drm-workflow/using-drmauthenticateevent/create-an-authn-ui.md)

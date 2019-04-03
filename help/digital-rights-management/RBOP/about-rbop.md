@@ -16,8 +16,8 @@ To ease the process of specifying your output protection requirements, Adobe pro
 
 Sections in this guide:
 
-* [RBOP Concepts](../../RBOP/introduction/output-protection-concepts.md) provides a conceptual overview of the configuration, options, and meanings associated with output protection. 
-* [RBOP Client Support](../../RBOP/introduction/client-support.md) describes the features available with different versions of Flash Player and TVSDK. 
-* [Sample RBOP Configuration](../../RBOP/introduction/sample-output-protection-config.md) presents a sample configuration that illustrates the concepts and form of the configuration. 
-* [RBOP Grammar](../../RBOP/introduction/output-protection-grammar.md) covers the grammar of the configuration input, emphasizing valid and invalid input options, and explaining how omitted optional fields are interpreted.
+* [RBOP Concepts](../RBOP/output-protection-concepts.md) provides a conceptual overview of the configuration, options, and meanings associated with output protection. 
+* [RBOP Client Support](../RBOP/client-support.md) describes the features available with different versions of Flash Player and TVSDK. 
+* [Sample RBOP Configuration](../RBOP/sample-output-protection-config.md) presents a sample configuration that illustrates the concepts and form of the configuration. 
+* [RBOP Grammar](../RBOP/output-protection-grammar.md) covers the grammar of the configuration input, emphasizing valid and invalid input options, and explaining how omitted optional fields are interpreted.
 
