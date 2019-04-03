@@ -8,6 +8,7 @@ getting-started-url: https://www.adobe.com/devnet/primetime.html
 tutorials-title: Tutorials
 tutorials-url: https://www.adobe.com/devnet/primetime.html
 git-repo: https://git.corp.adobe.com/AdobeDocs/primetime.en
+index: n
 ---
 
 # Metadata for internal use
