@@ -46,10 +46,7 @@ user-guide-title: Primetime Digital Rights Management Help
      + [UltraViolet media and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
      + [Adobe Primetime authentication and Adobe Primetime DRM](drm-sdk-overview/adobe-access-components/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
 + DRM Quick-Start Guide {#drm-quick-start}
-  + Introduction {#introduction}
-    + [Getting Started](quick-start/title-page/getting-started.md)
-    + [Prerequisites](quick-start/title-page/prerequisites.md)
-    + [Obtain Certificates](quick-start/title-page/obtain-certifcates.md)
+  + [Getting Started](quick-start/getting-started.md)
   + [Install Tomcat](quick-start/install-tomcat.md)
   + [Set up and deploy the server for Protected Streaming](quick-start/setup-deploy-drm-server-ps.md)
   + [Package encrypted content](quick-start/package-content.md)
@@ -80,11 +77,11 @@ user-guide-title: Primetime Digital Rights Management Help
    + [Streaming to Xbox360 (Optional)](cloud-quick-start/streaming-to-xbox360.md)
 + Using the Adobe Primetime DRM Key Server {#using-key-server}
    + [Requirements for using Primetime DRM Key Server](using-the-drm-key-server/requirements.md)
-   + [Deploy the Primetime DRM Key Server](using-the-drm-key-server/deployment/deployment-overview.md)
+   + [Deploy the Primetime DRM Key Server](using-the-drm-key-server/deployment-overview.md)
    + [Packaging content](using-the-drm-key-server/packaging-content.md)
 + Adobe Primetime DRM Secure Deployment Guidelines {#guidelines}
    + Introduction to Network Topology {#introduction}
-      + [Network topology overview](secure-deployment-guidelines/overview/network-topology.md)
+      + [Overview](secure-deployment-guidelines/overview/network-topology.md)
       + [Network layer security](secure-deployment-guidelines/overview/network-topology-network-layer-sec.md)
       + [Firewall rules](secure-deployment-guidelines/overview/network-topology-firewall-rules.md)
       + [Adobe Primetime DRM network protocols](secure-deployment-guidelines/overview/network-topology-nw-protocols.md)
@@ -92,12 +89,8 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Configuring SSL](secure-deployment-guidelines/overview/network-topology-configuring-ssl.md)
    + [Vendor-specific security information](secure-deployment-guidelines/vendor-specific-sec-info.md)
    + [Physical security and access](secure-deployment-guidelines/physical-sec-and-access.md)
-   + Packaging and protecting content {#pkging-and-protecting-content}
-      + [Securing the server](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-the-server.md)
-      + [Securely packaging content](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-pkging.md)
-      + [Securely storing policies](secure-deployment-guidelines/pkging-and-protecting-content/pkging-protecting-content-secure-storing-policies.md)
-      + [Asymmetric key encryption](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ake.md)
-      + [Ensuring compatibility with Flash Media Rights Management Server 1.x](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-fmrms.md)
+   + [Packaging and protecting content](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content.md)
+   + [Ensuring compatibility with Flash Media Rights Management Server 1.x](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-fmrms.md)
    + Issue and protect the License Server {#issuing-licenses}
       + [Protecting the License Server](secure-deployment-guidelines/issuing-licenses/issuing-licenses-protect-license-server.md)
       + [Pre-generating licenses](secure-deployment-guidelines/issuing-licenses/issuing-licenses-pre-gen.md)
@@ -183,11 +176,11 @@ user-guide-title: Primetime Digital Rights Management Help
         + [Password scrambler](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/password-scrambler.md)
         + [SWF hash calculator](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/swf-hash-calculator.md)
 + Using the Adobe Primetime DRM SDK for Protecting Content - 5.3.1 {#using-drm-sdk}
-  + Introduction {#introduction}
-    + [What is new in Adobe Primetime DRM](protecting-content/introduction/whats-new.md)
-  + [Usage rules and Authentication](protecting-content/introduction/usage-rules/authentication/user-authentication.md)
-  + [Time-based rules](protecting-content/introduction/usage-rules/authentication/time-based-rules.md)
-  + [Requirements for Synchronization](protecting-content/introduction/usage-rules/authentication/synchronization.md)
+  + [What is new in Adobe Primetime DRM](protecting-content/introduction/whats-new.md)
+  + Usage rules and Authentication {#usage-rules-authentication}
+    + [Usage rules and Authentication](protecting-content/introduction/usage-rules/authentication/user-authentication.md)
+    + [Time-based rules](protecting-content/introduction/usage-rules/authentication/time-based-rules.md)
+    + [Requirements for Synchronization](protecting-content/introduction/usage-rules/authentication/synchronization.md)
   + Runtime and application restrictions {#runtime-application-restrictions}
     + [Whitelist for Primetime DRM applications   allowed to play protected content...](protecting-content/introduction/usage-rules/runtime-application-restrictions/whitelist-air.md)
     + [Whitelist for Adobe® Flash® Player SWFs](protecting-content/introduction/usage-rules/runtime-application-restrictions/whitelist-flash.md)
@@ -222,9 +215,7 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Creating a DRM policy with the Java API](protecting-content/working-policies-overview/creating-policy-using-java-api.md)
       + [Updating a DRM policy with the Java API](protecting-content/working-policies-overview/updating-policy-using-java-api.md)
       + [DRM policy criticality](protecting-content/working-policies-overview/policy-criticality.md)
-      + DRM policy update lists {#policy-update-lists}
-         + [Working with DRM Policy Update Lists](protecting-content/working-policies-overview/policy-update-lists/working-with-policy-update-lists.md)
-         + [Update Policy Update Lists](protecting-content/working-policies-overview/policy-update-lists/update-policy-update-lists.md)
+      + [Working with DRM Policy Update Lists](protecting-content/working-policies-overview/policy-update-lists/working-with-policy-update-lists.md)
    + Package media files {#packaging-media}
       + [Overview](protecting-content/packaging-media-overview/packaging-media-files.md)
       + [Packaging Options](protecting-content/packaging-media-overview/content-packaging-options.md)
@@ -264,14 +255,12 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Revoking machine credentials](protecting-content/revoking-client-creds/revoking-machine-creds.md)
    + [Create video players](protecting-content/creating-video-players.md)
 + Resolution-Based Output Protection 5.3.1 {#resolution-based-output-protection}
-   + Introduction to Resolution-based Output Protection {#introduction}
-      + [RBOP Overview](RBOP/introduction/about-rbop.md)
-      + [RBOP Concepts](RBOP/introduction/output-protection-concepts.md)
-      + [RBOP Client Support](RBOP/introduction/client-support.md)
-      + [Sample RBOP Configuration](RBOP/introduction/sample-output-protection-config.md)
-      + [RBOP Grammar](RBOP/introduction/output-protection-grammar.md)
-      + [RBOP FAQ](RBOP/introduction/output-protection-faq.md)
-
+  + [RBOP Overview](RBOP/about-rbop.md)
+  + [RBOP Concepts](RBOP/output-protection-concepts.md)
+  + [RBOP Client Support](RBOP/client-support.md)
+  + [Sample RBOP Configuration](RBOP/sample-output-protection-config.md)
+  + [RBOP Grammar](RBOP/output-protection-grammar.md)
+  + [RBOP FAQ](RBOP/output-protection-faq.md)
 + Adobe Primetime DRM Reference Implementations 5.3.1 {#drm-reference-implementation-5-3-1}
    + [About the reference implementations](drm-reference-implementations/overview.md)
    + [Typical workflow](drm-reference-implementations/typical-scenario.md)
@@ -331,31 +320,16 @@ user-guide-title: Primetime Digital Rights Management Help
    + [Primetime DRM license server](tvsdk-drm-workflow/license-server.md)
    + [License acquisition process overview](tvsdk-drm-workflow/content-protection-process-overview.md)
    + [License acquisition process details](tvsdk-drm-workflow/content-protection-process-details.md)
-   + Pre-loading licenses for offline playback {#preloading-licenses}
-      + [Pre-loading licenses for offline playback overview](tvsdk-drm-workflow/preloading-licenses/preloading-licenses-overview.md)
-      + [Using DRMContentData to pre-load licenses](tvsdk-drm-workflow/preloading-licenses/drmcontentdata-preload.md)
-   + Using the DRMStatusEvent class {#using-drmstatusevent}
-      + [Using the DRMStatusEvent class overview](tvsdk-drm-workflow/using-drmstatusevent/using-drmstatusevent-overview.md)
-      + [Create a DRMStatusEvent handler](tvsdk-drm-workflow/using-drmstatusevent/create-drmstatusevent-handler.md)
+   + [Pre-loading licenses for offline playback](tvsdk-drm-workflow/preloading-licenses.md)
+   + [Using the DRMStatusEvent class](tvsdk-drm-workflow/using-drmstatusevent.md)
    + Using the DRMAuthenticateEvent class{#using-drmauthenticateevent.}
       + [Create a DRMAuthenticateEvent handler](tvsdk-drm-workflow/using-drmauthenticateevent/create-drmauthnevent-handler.md)
       + [Create an authentication UI](tvsdk-drm-workflow/using-drmauthenticateevent/create-an-authn-ui.md)
-   + Using the DRMErrorEvent class {#using-drmerrorevent.md}
-      + [Using the DRMErrorEvent class overview](tvsdk-drm-workflow/using-drmerrorevent/using-drmerrorevent-overview.md)
-      + [Create a DRMErrorEvent handler](tvsdk-drm-workflow/using-drmerrorevent/create-drmerrorevent-handler.md)
-   + Using the DRMManager class {#using-drmmanager.md}
-      + [Using the DRMManager class overview](tvsdk-drm-workflow/using-drmmanager/using-drmmanager-overview.md)
-      + [Handling DRMStatus Events](tvsdk-drm-workflow/using-drmmanager/drmstatus-events.md)
-      + [Handling DRMAuthenticationComplete Events](tvsdk-drm-workflow/using-drmmanager/drmauthenticationcomplete-events.md)
-      + [Handling DRMAuthenticationError events](tvsdk-drm-workflow/using-drmmanager/drmauthenticationerror-events.md)
+   + [Using the DRMErrorEvent class](tvsdk-drm-workflow/using-drmerrorevent.md)
+   + [Using the DRMManager class](tvsdk-drm-workflow/using-drmmanager/using-drmmanager-overview.md)
    + [Using the DRMContentData class](tvsdk-drm-workflow/using-drmcontentdata.md)
-   + Out-of-band licenses {#out-of-band-licenses}
-      + [Out-of-band licenses overview](tvsdk-drm-workflow/about-out-of-band-licenses/about-out-of-band-licenses-overview.md)
-      + [About device registration](tvsdk-drm-workflow/about-out-of-band-licenses/about-device-registration.md)
-      + [Register a device](tvsdk-drm-workflow/about-out-of-band-licenses/register-a-device.md)
-      + [DRM factory reset](tvsdk-drm-workflow/about-out-of-band-licenses/drm-factory-reset.md)
-   + Device domain support {#device-domain-support}
-     + [Play encrypted content using domain support](tvsdk-drm-workflow/device-domain-support/play-encrypted-content-domain-support.md)
+   + [Out-of-band licenses](tvsdk-drm-workflow/about-out-of-band-licenses.md)
+   + [Device domain support](tvsdk-drm-workflow/device-domain-support.md)
    + [License preview](tvsdk-drm-workflow/license-preview.md)
    + [Delivering content](tvsdk-drm-workflow/delivering-content.md)
 + [DRM Client Error Message Reference](client-error-message-reference.md)
@@ -425,7 +399,6 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Overriding policy options](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-override-policy-options.md)
       + [Pre-generating licenses](aaxs-secure-deployment-guidelines/issuing-licenses/pre-gen-licenses.md)
       + [Managing Domains](aaxs-secure-deployment-guidelines/issuing-licenses/managing-domains.md)
-
 + An Overview of Adobe Access SDK
    + [An overview of Adobe Access SDK](aaxs-sdk-overview/overview.md)
    + [About Adobe Access](aaxs-sdk-overview/about-adobe-access.md)
@@ -434,27 +407,11 @@ user-guide-title: Primetime Digital Rights Management Help
    + Content distribution workflow {#content-distribution-workflow}
       + [Content preparation](aaxs-sdk-overview/content-distribution-workflow/content-preparation.md)
       + [Content acquisition](aaxs-sdk-overview/content-distribution-workflow/content-acquisition.md)
-   + Adobe Access components {#adobe-access-components}
-      + [Java SDK, Flash Player and Adobe AIR   client](aaxs-sdk-overview/adobe-access-components/adobe-access-sdk.md)
-      + [Java APIs for managing device group   domains](aaxs-sdk-overview/adobe-access-components/java-apis-for-managing-domains.md)
-      + [Java APIs for protecting content](aaxs-sdk-overview/adobe-access-components/java-apis-for-protecting-content.md)
-      + [Java APIs for issuing licenses](aaxs-sdk-overview/adobe-access-components/java-apis-for-issuing-licenses.md)
-      + [Reference implementation](aaxs-sdk-overview/adobe-access-components/reference-implementation.md)
-      + [Adobe Access Server for Protected   Streaming](aaxs-sdk-overview/adobe-access-components/adobe-access-server-for-protected-streaming.md)
-      + [Adobe Flash Player](aaxs-sdk-overview/adobe-access-components/adobe-flash-player.md)
-      + [Adobe AIR](aaxs-sdk-overview/adobe-access-components/adobe-air.md)
-      + [Native iOS and Android Applications](aaxs-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
-   + Deploy Adobe Access {#deploying-adobe-access}
-      + [Configure Adobe Access](aaxs-sdk-overview/deploying-adobe-access/configure-adobe-access.md)
-      + [Deploying on a 64-bit operating system](aaxs-sdk-overview/deploying-adobe-access/deploying-on-a-64-bit-os.md)
-      + [Install Adobe Access SDK](aaxs-sdk-overview/deploying-adobe-access/install-adobe-access-sdk.md)
-      + [Implement a License Server](aaxs-sdk-overview/deploying-adobe-access/install-a-license-server.md)
-      + [Create content packaging and policy management   tools](aaxs-sdk-overview/deploying-adobe-access/create-content-pkgng-policy-mgmt-tools.md)
-      + [Create policies and package content](aaxs-sdk-overview/deploying-adobe-access/create-policies-and-package-content.md)
-      + [Develop applications for video playback](aaxs-sdk-overview/deploying-adobe-access/develop-apps-for-video-playback.md)
-      + Additional Deployment Scenarios {#additional-scenarios}
-         + [UltraViolet media and Adobe Access](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
-         + [Adobe Pass and Adobe Access](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
+   + [Adobe Access components](aaxs-sdk-overview/adobe-access-components/adobe-access-sdk.md)
+   + [Deploy Adobe Access](aaxs-sdk-overview/deploying-adobe-access/configure-adobe-access.md)
+   + Additional Deployment Scenarios {#additional-scenarios}
+     + [UltraViolet media and Adobe Access](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
+     + [Adobe Pass and Adobe Access](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
 + Using the Adobe Access SDK for Protecting Content {#using-adobe-access-sdk}
   + [Introduction](aaxs-protecting-content/content-introduction/content-whats-new.md)
   + [User authentication](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)
@@ -544,37 +501,33 @@ user-guide-title: Primetime Digital Rights Management Help
    + [Creating video players](aaxs-protecting-content/content-creating-video-players.md)
 + Adobe Access Reference Implementations
    + [Overview - Using the reference implementations](aaxs-reference-implementations/overview.md)
-   + Command line tools {#command-line-tools}
-      + [Command line tools overview](aaxs-reference-implementations/command-line-tools/aaxs-ref-impl-command-line-overview.md)
-      + [Command line tool requirements](aaxs-reference-implementations/command-line-tools/requirements.md)
-      + [Command line configuration file](aaxs-reference-implementations/command-line-tools/config-file.md)
-      + [Installing the command line tools](aaxs-reference-implementations/command-line-tools/installing-the-command-line-tools.md)
-      + Policy Manager {#policy-manager}
-         + [Using Policy Manager](aaxs-reference-implementations/command-line-tools/policy-manager/using-aaxs-policy-manager.md)
-         + [Configuration file properties](aaxs-reference-implementations/command-line-tools/policy-manager/config-file-properties.md)
-         + [Command line usage](aaxs-reference-implementations/command-line-tools/policy-manager/command-line-usage.md)
-      + Media Packager {#media-packager}
-         + [Using Media Packager](aaxs-reference-implementations/command-line-tools/media-packager/using-aaxs-media-packager.md)
-         + [Configuration file properties](aaxs-reference-implementations/command-line-tools/media-packager/media-packager-config-file-props.md)
-         + [Command line usage](aaxs-reference-implementations/command-line-tools/media-packager/media-packager-command-line-usage.md)
-      + Policy Update List Manager {#policy-update-list-manager}
-         + [Policy Update List Manager overview](aaxs-reference-implementations/command-line-tools/policy-update-list-manager/policy-update-list-manager-overview.md)
-         + [Configuration file properties](aaxs-reference-implementations/command-line-tools/policy-update-list-manager/policy-update-config-file-props.md)
-         + [Command line usage](aaxs-reference-implementations/command-line-tools/policy-update-list-manager/policy-update-command-line-usage.md)
-      + Revocation List Manager {#policy-revocation-list-manager}
-         + [Revocation List Manager overview](aaxs-reference-implementations/command-line-tools/policy-revocation-list-manager/policy-revocation-list-manager-overview.md)
-         + [Configuration file properties](aaxs-reference-implementations/command-line-tools/policy-revocation-list-manager/revocation-config-file-props.md)
-         + [Command line usage](aaxs-reference-implementations/command-line-tools/policy-revocation-list-manager/revocation-command-line-usage.md)
-      + AIR Publisher ID utility {#air-publisher-id-utility}
-         + [AIR Publisher ID utility overview](aaxs-reference-implementations/command-line-tools/air-publisher-id-utility/air-publisher-id-utility-overview.md)
-         + [Command line usage](aaxs-reference-implementations/command-line-tools/air-publisher-id-utility/air-publisher-command-line-usage.md)
-      + License Generator {#license-generator}
-         + [License Generator overview](aaxs-reference-implementations/command-line-tools/license-generator/license-generator-overview.md)
-         + [Configuration File Properties](aaxs-reference-implementations/command-line-tools/license-generator/license-generator-config-file-props.md)
-         + [Command line usage](aaxs-reference-implementations/command-line-tools/license-generator/license-generator-command-line-usage.md)
-      + License Embedder {#license-embedder}
-         + [License Embedder overview](aaxs-reference-implementations/command-line-tools/license-embedder/license-embedder-overview.md)
-         + [Command line usage](aaxs-reference-implementations/command-line-tools/license-embedder/license-embedder-command-line-usage.md)
+   + [Command line tools for packaging content and creating revocations lists ](aaxs-reference-implementations/command-line-tools/aaxs-ref-impl-command-line-overview.md)
+   + Policy Manager {#policy-manager}
+     + [Using Policy Manager](aaxs-reference-implementations/command-line-tools/policy-manager/using-aaxs-policy-manager.md)
+     + [Configuration file properties](aaxs-reference-implementations/command-line-tools/policy-manager/config-file-properties.md)
+     + [Command line usage](aaxs-reference-implementations/command-line-tools/policy-manager/command-line-usage.md)
+   + Media Packager {#media-packager}
+      + [Using Media Packager](aaxs-reference-implementations/command-line-tools/media-packager/using-aaxs-media-packager.md)
+      + [Configuration file properties](aaxs-reference-implementations/command-line-tools/media-packager/media-packager-config-file-props.md)
+      + [Command line usage](aaxs-reference-implementations/command-line-tools/media-packager/media-packager-command-line-usage.md)
+   + Policy Update List Manager {#policy-update-list-manager}
+      + [Policy Update List Manager overview](aaxs-reference-implementations/command-line-tools/policy-update-list-manager/policy-update-list-manager-overview.md)
+      + [Configuration file properties](aaxs-reference-implementations/command-line-tools/policy-update-list-manager/policy-update-config-file-props.md)
+      + [Command line usage](aaxs-reference-implementations/command-line-tools/policy-update-list-manager/policy-update-command-line-usage.md)
+   + Revocation List Manager {#policy-revocation-list-manager}
+      + [Revocation List Manager overview](aaxs-reference-implementations/command-line-tools/policy-revocation-list-manager/policy-revocation-list-manager-overview.md)
+      + [Configuration file properties](aaxs-reference-implementations/command-line-tools/policy-revocation-list-manager/revocation-config-file-props.md)
+      + [Command line usage](aaxs-reference-implementations/command-line-tools/policy-revocation-list-manager/revocation-command-line-usage.md)
+   + AIR Publisher ID utility {#air-publisher-id-utility}
+      + [AIR Publisher ID utility overview](aaxs-reference-implementations/command-line-tools/air-publisher-id-utility/air-publisher-id-utility-overview.md)
+      + [Command line usage](aaxs-reference-implementations/command-line-tools/air-publisher-id-utility/air-publisher-command-line-usage.md)
+   + License Generator {#license-generator}
+      + [License Generator overview](aaxs-reference-implementations/command-line-tools/license-generator/license-generator-overview.md)
+      + [Configuration File Properties](aaxs-reference-implementations/command-line-tools/license-generator/license-generator-config-file-props.md)
+      + [Command line usage](aaxs-reference-implementations/command-line-tools/license-generator/license-generator-command-line-usage.md)
+   + License Embedder {#license-embedder}
+      + [License Embedder overview](aaxs-reference-implementations/command-line-tools/license-embedder/license-embedder-overview.md)
+      + [Command line usage](aaxs-reference-implementations/command-line-tools/license-embedder/license-embedder-command-line-usage.md)
    + License server and watched folder packager{#license-server-and-wfp}
       + [License server and watched folder packager overview](aaxs-reference-implementations/license-server-and-wfp/license-server-wfp-overview.md)
       + [Requirements](aaxs-reference-implementations/license-server-and-wfp/license-server-and-wfp-reqs.md)

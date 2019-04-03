@@ -6,7 +6,7 @@ title: RBOP Overview
 uuid: 57219331-d949-443c-88b3-6f714ab6c82e
 ---
 
-# RBOP Overview{#rbop-overview}
+# RBOP Overview {#rbop-overview}
 
 Resolution-based output protection (RBOP) is a mechanism that provides output protection based on the vertical pixel count of the content.
 

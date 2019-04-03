@@ -4,7 +4,7 @@ title: Delivering content
 uuid: b277d369-fee3-4a20-9dd8-27b3a8a82a9e
 ---
 
-# Delivering content{#delivering-content}
+# Delivering content {#delivering-content}
 
 Primetime DRM is agnostic to the delivery mechanism of the content as the runtime abstracts out the networking layer and simply provides the protected content to the Primetime DRM subsystem. Hence, content can be delivered through HTTP, HTTP Dynamic Streaming, RTMP, or RTMPE, HLS, etc.
 
