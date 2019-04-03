@@ -15,4 +15,3 @@ The Adobe Access product comes with a reference implementation for the following
 >[!NOTE] {class="- topic/note "}
 >
 >You should deploy either the Adobe Access Server for Protected Streaming, the reference implementation, or your own license server.
-

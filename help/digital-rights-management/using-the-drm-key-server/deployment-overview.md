@@ -6,7 +6,7 @@ uuid: 86630675-c15d-4f32-8212-d7343f4f92e0
 
 # Deploy the Primetime DRM Key Server {#deploy-the-primetime-drm-key-server}
 
-Before deploying the Primetime DRM Key Server, make sure that you have installed the required versions of Java and Tomcat. See, [DRM Key Server Requirements](../../../digital-rights-management/using-the-drm-key-server/requirements.md).
+Before deploying the Primetime DRM Key Server, make sure that you have installed the required versions of Java and Tomcat. See, [DRM Key Server Requirements](../../digital-rights-management/using-the-drm-key-server/requirements.md).
 
 The Primetime DRM Key Server download includes [!DNL faxsks.war]. To deploy this WAR file, copy the file to Tomcat's [!DNL webapps] directory. If you have previously deployed the WAR file, you may need to manually delete the unpacked WAR directory, [!DNL faxsks] in Tomcat's [!DNL webapps] directory). To prevent Tomcat from unpacking WAR files, edit the [!DNL server.xml] file in Tomcat's [!DNL conf] directory and set the `unpackWARs` attribute to `false`.
 
@@ -105,7 +105,7 @@ The Primetime DRM Key Server requires two types of configuration files:
 
 If changes are made to the configuration files, the server must be restarted for the changes to take effect.
 
-To avoid making passwords available in clear text in the configuration files, all passwords specified in the global and tenant configuration files must be encrypted. For more information on encrypting passwords, see [*Password Scrambler* in *Using the Primetime DRM Server for Protected Streaming*](../../protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/password-scrambler.md).
+To avoid making passwords available in clear text in the configuration files, all passwords specified in the global and tenant configuration files must be encrypted. For more information on encrypting passwords, see [*Password Scrambler* in *Using the Primetime DRM Server for Protected Streaming*](../protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/password-scrambler.md).
 
 ## Configuration directory structure {#configuration-directory-structure}
 

@@ -6,13 +6,15 @@ title: Play encrypted content using domain support
 uuid: 8854cc0f-9bfc-4833-82d7-a3f46ac88e06
 ---
 
-# Play encrypted content using domain support{#play-encrypted-content-using-domain-support}
+# Device domain support {#device-domain-support}
 
 Typically, all Primetime DRM licenses, at creation time, are bound to a unique device. This binding prevents users from sharing licenses across different devices without authorization. In addition to per-device binding, Primetime DRM provides the ability to bind licenses to a Device Domain, or group of devices.
 
- If the content metadata specifies that device domain registration is required, the application can invoke an API to join a device group. This action triggers a domain registration request to be sent to the domain server. Once a license is issued to a device group, the license can be exported and shared with other devices that have joined the device group.
+If the content metadata specifies that device domain registration is required, the application can invoke an API to join a device group. This action triggers a domain registration request to be sent to the domain server. Once a license is issued to a device group, the license can be exported and shared with other devices that have joined the device group.
 
 The device group information is then used in the `DRMContentData` `VoucherAccessInfo` object, which will then be used to present the information that is required to successfully retrieve and consume a license.
+
+## Play encrypted content using domain support {#play-encrypted-content-using-domain-support}
 
 To play encrypted content using Primetime DRM , perform the following steps: 
 

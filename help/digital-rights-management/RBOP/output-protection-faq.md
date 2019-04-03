@@ -6,7 +6,7 @@ title: RBOP FAQ
 uuid: 7dcd337c-369a-474c-8768-409c48b5cee5
 ---
 
-# RBOP FAQ{#rbop-faq}
+# RBOP FAQ {#rbop-faq}
 
 Frequently asked questions about using resolution-based output protection.
 

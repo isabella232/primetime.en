@@ -4,7 +4,7 @@ title: Create an authentication UI
 uuid: 4744bac0-c36e-4b0a-b3fb-d81c7f2e7617
 ---
 
-# Create an authentication UI{#create-an-authentication-ui}
+# Create an authentication UI {#create-an-authentication-ui}
 
 1. Create a user interface to retrieve the user's authentication credentials.
 

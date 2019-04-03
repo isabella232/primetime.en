@@ -16,7 +16,7 @@ There are several ways to determine whether your server has started correctly. V
 
 Another way to test if your server is running correctly is to package a piece of test content, set up a sample video player, and play it. The following procedure describes this process:
 
-1. Navigate to the [!DNL \Reference Implementation\Command Line Tools] folder. For information on installing the command line tools, see [Installing the command line tools](../aaxs-reference-implementations/command-line-tools/installing-the-command-line-tools.md).
+1. Navigate to the [!DNL \Reference Implementation\Command Line Tools] folder. For information on installing the command line tools, see [Installing the command line tools](../aaxs-reference-implementations/command-line-tools/aaxs-ref-impl-command-line-overview.md#installing-the-command-line-tools).
 
 1. Create a simple anonymous policy by using the following command: 
 

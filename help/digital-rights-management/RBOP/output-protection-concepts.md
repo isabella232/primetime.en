@@ -6,7 +6,7 @@ title: RBOP Concepts
 uuid: fc19c3c9-39a1-4b62-b763-101e5454a01f
 ---
 
-# RBOP Concepts{#rbop-concepts}
+# RBOP Concepts {#rbop-concepts}
 
 This section provides a conceptual overview of the configuration, options, and meanings associated with output protection.
 

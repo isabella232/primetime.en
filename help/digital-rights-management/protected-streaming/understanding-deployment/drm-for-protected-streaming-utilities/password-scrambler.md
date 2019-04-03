@@ -42,4 +42,3 @@ All passwords that you have specified in the [!DNL flashaccess-global.xml] and [
 >[!NOTE] {class="- topic/note "}
 >
 >The Password Scrambler utility in the Primetime DRM Server for Protected Streaming is not interchangeable with the scrambler that is provided with the Reference Implementation License Server.
-

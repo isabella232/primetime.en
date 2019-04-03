@@ -4,7 +4,7 @@ title: Set up and deploy the server for Protected Streaming
 uuid: 300a1b63-0bf0-48a8-977d-212563025c19
 ---
 
-# Set up and deploy the server for Protected Streaming{#set-up-and-deploy-the-server-for-protected-streaming}
+# Set up and deploy the server for Protected Streaming {#set-up-and-deploy-the-server-for-protected-streaming}
 
 1. Set up the configuration folder on the Primetime DRM DVD:
 

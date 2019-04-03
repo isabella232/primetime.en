@@ -4,7 +4,7 @@ title: Working with DRM policies overview
 uuid: 32423448-013c-4183-bea8-e14b6690abdb
 ---
 
-# Working with DRM policies overview {#working-with-drm-policies-overview}
+# Overview {#working-with-drm-policies-overview}
 
 Content providers can apply DRM policies to media files using the Primetime DRM SDK. Administrators can then create, view details of, and update DRM policies using policy management APIs.
 
