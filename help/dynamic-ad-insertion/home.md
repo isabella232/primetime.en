@@ -16,7 +16,7 @@ Welcome to the Dynamic Ad Insertion for Adobe Primetime. The documents listed in
 | [Primetime Release Notes](/help/release-notes/home.md) | Provides release-specific information, system requirements, limitations, fixed issues, and known issues. |
 | [Primetime Programming Help](/help/programming/home.md)  | Allows you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices. |
 | [Primetime Migration & Conversion Help](/help/migration-guides/home.md) | Explains the conversion and migration process to move from your existing Primetime TVSDK Suite to the next-generation suite.   |
-| [Reference Implementation](/help/android-1.4-reference-implementation/home.md) | Helps understand the TVSDK and modify the feature managers to customize your personal player. |
+| [Reference Implementation](/help/android-reference-implementation/home.md) | Helps understand the TVSDK and modify the feature managers to customize your personal player. |
 | [Digital Rights Management](/help/digital-rights-management/home.md) | Helps you learn more about various user scenarios in Digital Rights Management (DRM) |
 | [Primetime API references](/help/reference/api-references.md) | Provides detailed information about TVSDK functions, data structures and other programming constructs. |
 | Archives | Download PDFs of the archived documentation. |
