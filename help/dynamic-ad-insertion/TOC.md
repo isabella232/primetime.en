@@ -39,7 +39,7 @@ user-guide-title: Dynamic Ad Insertion Help
       + [JSON formats for tracking URLs](msapi-topics/ms-list-file-formats/notvsdk-csat-sidecar.md)
       + [VMAP format for tracking URLs](msapi-topics/ms-list-file-formats/notvsdk-csat-vmap.md)
    + [Video player requirements](msapi-topics/ms-player-req.md)
-+ Primetime Creative Repackaging Service (CRS)
++ Primetime Creative Repackaging Service {#crs}
    + [Overview of CRS](creative-repackaging-service/crs-overview.md)
    + [Main Uses of CRS](creative-repackaging-service/jit-async-hls-conv.md)
    + [Multi CDN support](creative-repackaging-service/multi-cdn-supportt.md)

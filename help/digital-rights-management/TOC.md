@@ -53,7 +53,7 @@ user-guide-title: Primetime Digital Rights Management Help
   + [Install Flash Player and playback test content](quick-start/install-fp-playback-test.md)
   + [Play back a locally packaged video](quick-start/playback-locally-pkgd-video.md)
   + [Next Steps](quick-start/next-steps.md)
-+ Adobe Primetime Cloud DRM Quick-Start Guide
++ Adobe Primetime Cloud DRM Quick-Start Guide {#cloud-drm-quickstart}
    + [What is included with Primetime Cloud DRM](cloud-quick-start/whats-included.md)
    + [What is NOT supported by Primetime Cloud DRM](cloud-quick-start/not-supported.md)
    + [Prerequisites](cloud-quick-start/prerequisites.md)
@@ -120,7 +120,7 @@ user-guide-title: Primetime Digital Rights Management Help
    + Generic Workflows {#generic-workflows}
      + [Primetime Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/plp-1.md)
      + [ExpressPlay Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/package-and-play.md)
-   + Feature Topics {feature-topics}
+   + Feature Topics {#feature-topics}
      + [Reference Server: Sample ExpressPlay Entitlement Server (SEES)](multi-drm-workflows/feature-topics/sees-reference-server.md)
      + [Reference Service: Time-based Entitlement](multi-drm-workflows/feature-topics/sees-reference-server-time-entitlement.md)
      + [Reference Service: Device-Binding Entitlement](multi-drm-workflows/feature-topics/sees-reference-server-binding-entitlement.md)
@@ -322,7 +322,7 @@ user-guide-title: Primetime Digital Rights Management Help
    + [License acquisition process details](tvsdk-drm-workflow/content-protection-process-details.md)
    + [Pre-loading licenses for offline playback](tvsdk-drm-workflow/preloading-licenses/preloading-licenses.md)
    + [Using the DRMStatusEvent class](tvsdk-drm-workflow/using-drmstatusevent/using-drmstatusevent.md)
-   + Using the DRMAuthenticateEvent class{#using-drmauthenticateevent.}
+   + Using the DRMAuthenticateEvent class{#using-drmauthenticateevent}
       + [Create a DRMAuthenticateEvent handler](tvsdk-drm-workflow/using-drmauthenticateevent/create-drmauthnevent-handler.md)
       + [Create an authentication UI](tvsdk-drm-workflow/using-drmauthenticateevent/create-an-authn-ui.md)
    + [Using the DRMErrorEvent class](tvsdk-drm-workflow/using-drmerrorevent.md)
@@ -399,7 +399,7 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Overriding policy options](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-override-policy-options.md)
       + [Pre-generating licenses](aaxs-secure-deployment-guidelines/issuing-licenses/pre-gen-licenses.md)
       + [Managing Domains](aaxs-secure-deployment-guidelines/issuing-licenses/managing-domains.md)
-+ An Overview of Adobe Access SDK
++ An Overview of Adobe Access SDK {#overview}
    + [An overview of Adobe Access SDK](aaxs-sdk-overview/overview.md)
    + [About Adobe Access](aaxs-sdk-overview/about-adobe-access.md)
    + [Key features](aaxs-sdk-overview/key-features.md)
@@ -416,7 +416,7 @@ user-guide-title: Primetime Digital Rights Management Help
   + [Introduction](aaxs-protecting-content/content-introduction/content-whats-new.md)
   + [User authentication](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)
   + [Time-based rules](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-time-based-rules-defining.md)
-  + [Runtime and application restrictions] {#runtime-and-application-restrictions}
+  + Runtime and application restrictions {#runtime-and-application-restrictions}
     + [White-list for Adobe® Primetime applications allowed to play   protected content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-whitelist-air.md)
     + [White-list for Adobe® Flash® Player SWFs allowed to play protected   content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-whitelist-flash.md)
     + [Black-list of DRM Clients restricted from accessing protected   content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blacklist-drm-clients.md)
@@ -424,13 +424,13 @@ user-guide-title: Primetime Digital Rights Management Help
     + [Minimum security level for DRM and runtimes](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-min-sec-level-for-drm.md)
     + [Device capabilities required to play protected content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-device-capabilities.md)
     + [Jailbreak Enforcement (requires Adobe Primetime)](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-jailbreak-enforcement.md)
-  + [Other policy options] {#content-other-policy-options}
+  + Other policy options {#content-other-policy-options}
     + [Enhanced license chaining](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-enhanced-license-chaining.md)
     + [Multiple play rights](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-multiple-play-rights.md)
     + [Remote and Local iOS Key Delivery](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-remote-key-delivery.md)
     + [Device Group Domain Registration](aaxs-protecting-content/content-introduction/content-usage-rules/content-domain-registration.md)
   + [Output protection controls](aaxs-protecting-content/content-introduction/content-usage-rules/output-protection/output-protection-controls.md)
-  + [Packaging Options] {#packaging-option}
+  + Packaging Options {#packaging-option}
     + [Key Rotation](aaxs-protecting-content/content-introduction/packaging-options/content-key-rotation.md)
     + [Out-of-band Licenses](aaxs-protecting-content/content-introduction/packaging-options/content-out-of-band-licenses.md)
     + [Encrypting tracks](aaxs-protecting-content/content-introduction/packaging-options/content-encrypting-tracks.md)
@@ -439,30 +439,30 @@ user-guide-title: Primetime Digital Rights Management Help
     + [Initial portion of content in the clear](aaxs-protecting-content/content-introduction/packaging-options/content-initial-portion-content-clear.md)
     + [Custom metadata](aaxs-protecting-content/content-introduction/packaging-options/content-custom-metadata.md)
     + [Multiple policies](aaxs-protecting-content/content-introduction/packaging-options/content-multiple-policies.md)
-  + [Setting up the SDK] {#setting-up-the-sdk}
+  + Setting up the SDK {#setting-up-the-sdk}
     + [Setting up the development environment](aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md)
     + [Adobe Access credentials](aaxs-protecting-content/content-setting-up-the-sdk/content-aaxs-credentials.md)
     + [Requesting certificates](aaxs-protecting-content/content-setting-up-the-sdk/content-requesting-certs.md)
     + [Storing credentials](aaxs-protecting-content/content-setting-up-the-sdk/content-storing-credentials.md)
-   + [Working with policies] {#working-with-policies}
+   + Working with policies {#working-with-policies}
       + [Working with policies](aaxs-protecting-content/content-working-with-policies/content-working-with-policies-overview.md)
       + [Creating a policy using the Java API](aaxs-protecting-content/content-working-with-policies/content-creating-policy-using-java-api.md)
       + [Updating a policy using the Java API](aaxs-protecting-content/content-working-with-policies/content-updating-policy-using-java-api.md)
       + [Policy criticality](aaxs-protecting-content/content-working-with-policies/content-policy-criticality.md)
       + [Policy update lists](aaxs-protecting-content/content-working-with-policies/protecting-content-policy-update-lists.md)
       + [Working with Policy Update Lists](aaxs-protecting-content/content-working-with-policies/content-working-with-policy-update-lists.md)
-  + [Packaging media files] {#packaging-media-files}
+  + Packaging media files {#packaging-media-files}
     + [Packaging media files](aaxs-protecting-content/content-packaging-media-files/content-packaging-media-files-overview.md)
     + [Encrypting content](aaxs-protecting-content/content-packaging-media-files/content-encrypting-content.md)
     + [Examining encrypted file content](aaxs-protecting-content/content-packaging-media-files/content-examining-encrypted-file-content.md)
-  + [Pre-generating and embedding licenses] {#pre-generating-and-embedding-liceses}
+  + Pre-generating and embedding licenses {#pre-generating-and-embedding-liceses}
     + [Pre-generating and embedding licenses](aaxs-protecting-content/content-pre-generating-and-embedded-licenses/content-pre-generating-embedded-licenses-overview.md)
     + [Pre-generating licenses](aaxs-protecting-content/content-pre-generating-and-embedded-licenses/content-pre-generating-licenses.md)
     + [Embedding licenses](aaxs-protecting-content/content-pre-generating-and-embedded-licenses/content-embedding-licenses.md)
-  + [Implementing the License Server] {#implementing-license-server}
+  + Implementing the License Server {#implementing-license-server}
     + [Implementing the License Server](aaxs-protecting-content/content-implementing-the-license-server/content-implementing-license-server-overview.md)
     + [License Server deployment options](aaxs-protecting-content/content-implementing-the-license-server/content-license-server-deployment-options.md)
-  + [Processing Adobe Access requests] {#processing-adobe-access-requests}
+  + Processing Adobe Access requests {#processing-adobe-access-requests}
     + [Processing Adobe Access requests](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-processing-aaxs-requests-overview.md)
     + [Using machine identifiers](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-using-machine-ids.md)
     + [User authentication](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-licenses-user-authentication.md)
@@ -484,10 +484,13 @@ user-guide-title: Primetime Digital Rights Management Help
     + [Issuing licenses for remote key delivery to iOS clients (requires   Adobe Primetime)](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-issuing-licenses-remote-ios.md)
     + [Minimum Client Version](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-minimum-client-version.md)
     + [License preview](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-license-preview.md)
-    + [Identity-based licenses](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-identity-based-licenses.md)
+    + Identity-based licenses {#licenses}
+      + Identity-based licenses overview
+         + [ID-based licenses overview](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-identity-based-licenses.md)
          + [Updating policies](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-updating-policies.md)
       + [Handling synchronization requests](aaxs-protecting-content/content-implementing-the-license-server/content-handling-synch-reqs.md)
-      + [Handling FMRMS compatibility](aaxs-protecting-content/content-implementing-the-license-server/content-handling-fmrms-compatibility/content-handling-fmrms-compatibility.md)
+      + Handling FMRMS compatibility
+         + [Handling FMRMS compatibility overview](aaxs-protecting-content/content-implementing-the-license-server/content-handling-fmrms-compatibility/content-handling-fmrms-compatibility.md)
          + [Handling FMRMS compatibility](aaxs-protecting-content/content-implementing-the-license-server/content-handling-fmrms-compatibility/content-handling-fmrms-compatibility-overview.md)
          + [Upgrading clients](aaxs-protecting-content/content-implementing-the-license-server/content-handling-fmrms-compatibility/content-upgrading-clients.md)
          + [Upgrading metadata](aaxs-protecting-content/content-implementing-the-license-server/content-handling-fmrms-compatibility/content-upgrading-metadata.md)
@@ -499,7 +502,7 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Revoking DRM client and runtime credentials](aaxs-protecting-content/content-revoking-client-creds/content-revoking-drm-client-and-runtime-creds.md)
       + [Revoking machine credentials](aaxs-protecting-content/content-revoking-client-creds/content-revoking-machine-creds.md)
    + [Creating video players](aaxs-protecting-content/content-creating-video-players.md)
-+ Adobe Access Reference Implementations
++ Adobe Access Reference Implementations {#reference-implementation}
    + [Overview - Using the reference implementations](aaxs-reference-implementations/overview.md)
    + [Command line tools for packaging content and creating revocations lists ](aaxs-reference-implementations/command-line-tools/aaxs-ref-impl-command-line-overview.md)
    + Policy Manager {#policy-manager}
@@ -558,7 +561,7 @@ user-guide-title: Primetime Digital Rights Management Help
    + [Migrating from FMRMS 1.0 or 1.5 to Adobe Access   2.0 and above](aaxs-reference-implementations/license-server-migrating-fmrms-aaxs.md)
    + [Upgrading existing deployments](aaxs-reference-implementations/license-server-upgrading-existing-deplys.md)
    + [Set up a domain server](aaxs-reference-implementations/license-server-upgrading-existing-deplys-setup-ds.md)
-   + [Flash Access Manager AIR application usage] {#flash-access-manager-air-app-usage}
+   + Flash Access Manager AIR application usage {#flash-access-manager-air-app-usage}
       + Flash Access Manager components {#flash-manager-components}
          + [Building the Packager Server and AIR   Application](aaxs-reference-implementations/fam-air-app-usage/build-fam-air-app-usage/fam-air-app-usage-overview.md)
          + [Building the Packager Server](aaxs-reference-implementations/fam-air-app-usage/build-fam-air-app-usage/fam-air-app-usage-bld-pkg-srv.md)
