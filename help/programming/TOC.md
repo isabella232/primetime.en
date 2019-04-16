@@ -8,7 +8,8 @@ user-guide-title: Primetime Programming Help
 # Primetime Programming Help {#programming}
 
 + [Programming Overview](home.md)
-+ TVSDK 3.4 for Android {#tvsdk-3.5-for-android}
+
++ TVSDK 3.5 for Android {#tvsdk-3.5-for-android}
    + Introduction {#introduction}
       + [Product overview, audience, and this guide](tvsdk-3.5-for-android/android-3.5-introduction/overview-prod-audience-guide/android-3.5-overview-prod-audience-guide.md)      
       + [Primetime TVSDK features](tvsdk-3.5-for-android/android-3.5-introduction/overview-prod-audience-guide/android-3.5-overview-of-the-player.md)
@@ -176,7 +177,8 @@ user-guide-title: Primetime Programming Help
       + [Billing metrics](tvsdk-3.5-for-android/android-3.5-billing-title/billing/android-3.5-billing.md)
       + [Configure billing metrics](tvsdk-3.5-for-android/android-3.5-billing-title/billing/android-3.5-billing-config.md)
       + [Transmit billing metrics](tvsdk-3.5-for-android/android-3.5-billing-title/billing/android-3.5-billing-data-format.md)
-+ TVSDK 3.4 for iOS {#tvsdk-3.4-for-ios}
+
++ TVSDK 3.4 for iOS {#tvsdk-3-4-for-ios}
    + Introduction {#introduction}
       + [Overview](tvsdk-3.4-for-ios/ios-3.4-introduction/ios-3.4-overview/ios-3.4-overview.md)
       + [Primetime TVSDK features](tvsdk-3.4-for-ios/ios-3.4-introduction/ios-3.4-overview/ios-3.4-overview-of-the-player.md)
@@ -234,10 +236,10 @@ user-guide-title: Primetime Programming Help
    + Customize opportunity detectors and content resolvers {#customize-content-resolvers}
       + [Opportunity generators and content resolvers](tvsdk-3.4-for-ios/ios-3.4-content-resolver/ios-3.4-content-resolver-about.md)
       + [Implement a custom opportunity/content resolver](tvsdk-3.4-for-ios/ios-3.4-content-resolver/ios-3.4-content-resolver-implement-ios.md)
-   + Delete and replace ads in VOD streams {delete-replace-content-vod}
+   + Delete and replace ads in VOD streams {#delete-replace-content-vod}
       + [Ad deletion and replacement API changes](tvsdk-3.4-for-ios/ios-3.4-delete-replace-content-vod/ios-3.4-ad-deletion-replacement-api-changes-ios.md)
       + [Use cases to delete and replace ads](tvsdk-3.4-for-ios/ios-3.4-delete-replace-content-vod/ios-3.4-ad-delete-replace-use-cases/ios-3.4-mark-ranges-ios.md)
-   + Handle blackouts in live streams {handle-blackouts-in-live-streams}
+   + Handle blackouts in live streams {#handle-blackouts-in-live-streams}
       + [Handle blackouts](tvsdk-3.4-for-ios/ios-3.4-blackouts-handle-ios/c-ios-blackouts-handle-ios.md)
       + [Blackout API elements](tvsdk-3.4-for-ios/ios-3.4-blackouts-handle-ios/c-ios-blackout-apis.md)
       + [Implement blackout handling](tvsdk-3.4-for-ios/ios-3.4-blackouts-handle-ios/ios-3.4-blackouts-implement-handling-ios.md)
@@ -281,7 +283,7 @@ user-guide-title: Primetime Programming Help
       + [WARNING notification codes](tvsdk-3.4-for-ios/ios-3.4-notification-codes/c-ios-notification-codes/ios-3.4-notification-warnings.md)
       + [INFO notification codes](tvsdk-3.4-for-ios/ios-3.4-notification-codes/c-ios-notification-codes/ios-3.4-notification-info.md)      
       + [REVENUE Optimization code](tvsdk-3.4-for-ios/ios-3.4-notification-codes/c-ios-notification-codes/ios-3.4-revenue-optimization.md)
-+ TVSDK 2.7 for Android {#tvsdk-2.7-for-android}
++ TVSDK 2.7 for Android {#tvsdk-2-7-for-android}
    + Product overview, audience, and this guide {#overview}
       + [Product overview, audience, and this guide overview](tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-prod-audience-guide.md)
       + [Primetime TVSDK features](tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-of-the-player.md)
@@ -296,7 +298,7 @@ user-guide-title: Primetime Programming Help
         + [Reuse or remove a MediaPlayer instance](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-reuse-or-remove.md)
         + [Inspect the playback timeline](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/t-psdk-android-2.7-timeline-inspect-playback.md)
         + [Suspend and Restore MediaPlayer](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-suspend-and-restore.md)
-      + Listen for Primetime Player events   {listen-primetime-player-events}
+      + Listen for Primetime Player events   {#listen-primetime-player-events}
         + [Overview](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-events-listen-for.md)
         + [Implement event listeners and callbacks](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-event-listeners-implement.md)
       + [Set up error handling](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-error-handling-set-up.md)
@@ -451,8 +453,8 @@ user-guide-title: Primetime Programming Help
         + [Overview](tvsdk-2.7-for-android/billing/c-psdk-android-2.7-billing.md)
         + [Configure billing metrics](tvsdk-2.7-for-android/billing/t-psdk-android-2.7-billing-config.md)
         + [Transmit billing metrics](tvsdk-2.7-for-android/billing/r-psdk-android-2.7-billing-data-format.md)
-+ TVSDK 1.4 for Android {tvsdk-1.4-for-android}
-  + Introduction
++ TVSDK 1.4 for Android {#tvsdk-1-4-for-android}
+  + Introduction {#introduction}
     + [Product overview, audience, and this guide](tvsdk-1.4-for-android/android-1.4-introduction/overview-prod-audience-guide/android-1.4-overview-prod-audience-guide.md)
     + [Primetime TVSDK features](tvsdk-1.4-for-android/android-1.4-introduction/overview-prod-audience-guide/android-1.4-overview-of-the-player.md)
     + [Considerations and best practices](tvsdk-1.4-for-android/android-1.4-introduction/overview-prod-audience-guide/android-1.4-considerations.md)
@@ -483,7 +485,7 @@ user-guide-title: Primetime Programming Help
       + [Create a media resource](tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-create.md)
       + [Load a media resource in the MediaPlayer](tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-load.md)
       + [Load a media resource using MediaPlayerItemLoader](tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-mediaplayeritemloader.md)
-    + Quality of service statistics {qos-statistics}
+    + Quality of service statistics {#qos-statistics}
       + [Track at the fragment level using load information](tvsdk-1.4-for-android/qos-statistics-monitor/android-1.4-qos-fragment-tracking.md)
       + [Read QOS playback, buffering, and device statistics](tvsdk-1.4-for-android/qos-statistics-monitor/android-1.4-qos-stats-read.md)
     + [Work with cookies](tvsdk-1.4-for-android/android-1.4-cookies-work-with.md)
@@ -592,7 +594,7 @@ user-guide-title: Primetime Programming Help
       + [Set up video analytics reporting on the server side](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-server-side-set-up.md)
       + [Access video analytics reports](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-reports-access.md)
     + Content protection {#content-protection}
-      + Primetime DRM interface {drm-interface}
+      + Primetime DRM interface {#drm-interface}
         + [Overview](tvsdk-1.4-for-android/drm-content-security/drm-interface/android-1.4-drm-interface.md)
         + [DRM authentication before playback](tvsdk-1.4-for-android/drm-content-security/drm-interface/android-1.4-drm-auth-before-playback.md)
         + [DRM authentication during playback](tvsdk-1.4-for-android/drm-content-security/drm-interface/android-1.4-drm-auth-during-playback.md)
@@ -632,7 +634,7 @@ user-guide-title: Primetime Programming Help
       + [Details for the NATIVE_ERROR notification](tvsdk-1.4-for-android/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-native-error-summary.md)
       + [NATIVE_ERROR: Video playback values](tvsdk-1.4-for-android/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-notifications-video-playback.md)
       + [NATIVE_ERROR: Crypto values](tvsdk-1.4-for-android/android-1.4-tvsdk-notification/notification-codes/native-error-summary/android-1.4-notifications-crypto-errors.md)
-+ TVSDK 1.4 for iOS {#tvsdk-1.4-for-ios}
++ TVSDK 1.4 for iOS {#tvsdk-1-4-for-ios}
   + Introduction {#introduction}
     + [Overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-overview.md)
     + [Primetime Player TVSDK features](tvsdk-1.4-for-ios/c-psdk-ios-1.4-overview/c-psdk-ios-1.4-overview-of-the-player.md)
@@ -658,7 +660,7 @@ user-guide-title: Primetime Programming Help
     + [Insert ads](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-insertion-about.md)
     + [Default and customized playback behavior with ads](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-playback-post1.2.md)
     + [Customize playback with ads](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-playback-customize.md)
-  + Primetime ad server metdata {ad-server-metadata}
+  + Primetime ad server metdata {#ad-server-metadata}
     + [Overview](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-primetime-ad-serving-metadata/c-psdk-ios-1.4-primetime-ad-serving-metadata.md)
     + [Ad signaling mode](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-primetime-ad-serving-metadata/r-psdk-ios-1.4-ad-signaling-mode.md)
   + [Companion banner ads](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-companion-banner-ads/c-psdk-ios-1.4-companion-banner-ads.md)
@@ -733,7 +735,7 @@ user-guide-title: Primetime Programming Help
     + [ERROR notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-notification-codes/r-psdk-ios-1.4-notifications-errors.md)
     + [WARNING notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-notification-codes/r-psdk-ios-1.4-notification-warnings.md)
     + [INFO notification codes](tvsdk-1.4-for-ios/c-psdk-ios-1.4-notification-codes/r-psdk-ios-1.4-notification-info.md)
-+ TVSDK 1.4 for DesktopHLS {#tvsdk-1.4-for-desktop-hls}
++ TVSDK 1.4 for DesktopHLS {#tvsdk-1-4-for-desktop-hls}
    + Introduction {#introduction}
       + [Overview](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/c-psdk-dhls-1.4-overview-prod-audience-guide.md)
       + [Primetime TVSDK features](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/c-psdk-dhls-1.4-overview-of-the-player.md)
@@ -785,7 +787,7 @@ user-guide-title: Primetime Programming Help
       + [About the MediaPlayerItem class](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/c-psdk-dhls-1.4-mediaplayeritem-class-about.md)
       + [MediaPlayer object lifecycle](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/c-psdk-dhls-1.4-mediaplayer-object-lifecycle-states.md)
       + [MediaPlayer methods for accessing MediaResource information](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/r-psdk-dhls-1.4-mediaplayer-methods-for-accessing-mediaresource.md)
-      + Reuse or remove a MediaPlayer instance]{#reuse-or-remove-mediaplayer}
+      + Reuse or remove a MediaPlayer instance {#reuse-or-remove-mediaplayer}
          + [Reset or reuse a MediaPlayer instance](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/t-psdk-dhls-1.4-mediaplayer-reset-reuse-instance.md)
          + [Release a MediaPlayer instance and resources](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/t-psdk-dhls-1.4-mediaplayer-release-instance.md)
       + [Inspect the playback timeline](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/t-psdk-dhls-1.4-timeline-inspect-playback.md)
@@ -933,7 +935,7 @@ user-guide-title: Primetime Programming Help
      + [Details for the NATIVE_ERROR notification](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/c-psdk-dhls-1.4-native-error-summary.md)
      + [NATIVE_ERROR: Video playback values](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/r-psdk-dhls-1.4-notifications-video-playback-errors.md)
      + [NATIVE_ERROR: Crypto values](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-events-and-notifications/notification-codes/r-psdk-dhls-1.4-notifications-crypto-errors.md)
-+ Browser-TVSDK-2.4 {#browser-tvsdk-2.4}
++ Browser-TVSDK-2.4 {#browser-tvsdk-2-4}
    + Introduction {#introduction}
       + [Product overview and audience](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/c-psdk-browser-tvsdk-2.4-overview-prod-audience-guide.md)
       + Supported features {#supported-features}
@@ -988,7 +990,7 @@ user-guide-title: Primetime Programming Help
          + [Notification system](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/c-psdk-browser-tvsdk-2.4-notification-system.md)
       + [Set up error handling](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/t-psdk-browser-tvsdk-2.4-error-handling-set-up.md)
       + [Implement fast forward and rewind](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/t-psdk-browser-tvsdk-2.4-trick-play-implement.md)
-      + Adaptive bit rates (ABR) for video quality {abr-video-quality}
+      + Adaptive bit rates (ABR) for video quality {#abr-video-quality}
          + [Overview](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/abr-control-quality/c-psdk-browser-tvsdk-2.4-abr-control-quality.md)
          + [Configure adaptive bit rates using ABRControlParameters](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/abr-control-quality/t-psdk-browser-tvsdk-2.4-abr-set-using-abrparameters.md)
       + Configure the player user interface {#configure-ui}
@@ -1003,7 +1005,7 @@ user-guide-title: Primetime Programming Help
         + [Control the position and size of the video view](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/ui-configure/t-psdk-browser-tvsdk-2.4-control-video-view.md)
       + [Quality of service statistics](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/qos-statistics-monitor/c-psdk-browser-tvsdk-2.4-qos-statistics-monitor.md)
       + [HTTP 302 redirect optimization](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/302-redirect-overview/c-psdk-browser-tvsdk-2.4-302-redirect-overview.md)
-      + Work with MediaPlayer objects {mediaplayer-objects}
+      + Work with MediaPlayer objects {#mediaplayer-objects}
         + [About the MediaPlayerItem class](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayeritem-class-about.md)
         + [Life cycle and states of the MediaPlayer object](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayer-object-lifecycle-states.md)
         + [MediaPlayer attributes to access MediaResource information](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/r-psdk-browser-tvsdk-2.4-mediaplayer-methods-for-accessing-mediaresource.md)
