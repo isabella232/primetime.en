@@ -68,7 +68,6 @@ user-guide-title: Primetime Programming Help
       + Adaptive bit rates (ABR) for video quality {#adaptive-bit-rates}
          + [Overview](tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/abr-control-quality/android-3.5-abr-control-quality.md)
          + [Configure adaptive bit rates using ABRControlParameters](tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/abr-control-quality/android-3.5-abr-set-using-abrparameters.md)
-      + [Quality of service statistics](tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/android-3.5-qos-statistics-monitor.md)
       + Playback and failover {#playback-failover}
          + [Overview](tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/failover-for-playback/android-3.5-failover-for-playback.md)
          + [Media playback and failover](tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/failover-for-playback/android-3.5-failover-media-playback.md)
