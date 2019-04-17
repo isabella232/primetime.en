@@ -3,7 +3,6 @@ description: New APIs have been introduced that will instruct TVSDK to ignore ne
 seo-description: New APIs have been introduced that will instruct TVSDK to ignore network connectivity state when downloading manifests. 
 seo-title: Offline Playback with Android
 title: Offline Playback with Android
-uuid: 18f880f7-97f4-4f8e-81d1-68bbd1c41d0c
 ---
 
 # Offline Playback with Android {#offline-playback-with-android}
