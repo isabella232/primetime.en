@@ -12,7 +12,7 @@ user-guide-title: Primetime Release Notes
   + [TVSDK 3.4 for iOS Release Notes](tvsdk-34-ios.md)
   + [TVSDK 1.4 for iOS Release Notes](tvsdk-1-4-ios.md)
 + TVSDK for Android {#tvsdk-android}
-  + [TVSDK 3.4 for Android Release Notes](tvsdk-34-android.md)
+  + [TVSDK 3.5 for Android Release Notes](tvsdk-35-android.md)
   + [TVSDK 2.7 for Android Release Notes](tvsdk-27-android.md)
   + [TVSDK 2.4.1 for Android Release Notes](tvsdk-24-android.md)  
   + [TVSDK 1.4 for Android Release Notes](tvsdk-1-4-android.md)

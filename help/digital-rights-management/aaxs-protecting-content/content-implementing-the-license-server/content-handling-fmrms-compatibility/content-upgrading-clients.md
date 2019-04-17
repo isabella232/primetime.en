@@ -12,4 +12,3 @@ If an FMRMS 1.x client contacts a Adobe Access server, the server needs to promp
 * The request URL is "*Base URL from 1.x content*" + "/edcws/services/urn:EDCLicenseService"
 
   Unlike other Adobe Access request handlers, this handler does not provide access to any request information or require any response data to be set. Create an instance of the `FMRMSv1RequestHandler`, and then call `close()`
-

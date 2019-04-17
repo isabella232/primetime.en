@@ -371,7 +371,7 @@ user-guide-title: Primetime Digital Rights Management Help
       + [Configuration Validator](aaxs-protected-streaming/aaxs-protected-streaming-utilities/configuration-validator.md)
       + [Password Scrambler](aaxs-protected-streaming/aaxs-protected-streaming-utilities/password-scrambler.md)
       + [SWF Hash Calculator](aaxs-protected-streaming/aaxs-protected-streaming-utilities/swf-hash-calculator.md)
-+ Adobe Access Secure Deployment Guidelines
++ Adobe Access Secure Deployment Guidelines {#adobe-access-secure-deployment-guidelines}
    + Introduction to Network Topology {#overview}
       + [Network topology overview](aaxs-secure-deployment-guidelines/overview/network-topology.md)
       + [Network layer security](aaxs-secure-deployment-guidelines/overview/network-topology-network-layer-sec.md)
@@ -485,13 +485,11 @@ user-guide-title: Primetime Digital Rights Management Help
     + [Minimum Client Version](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-minimum-client-version.md)
     + [License preview](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-license-preview.md)
     + Identity-based licenses {#licenses}
-      + Identity-based licenses overview
-         + [ID-based licenses overview](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-identity-based-licenses.md)
-         + [Updating policies](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-updating-policies.md)
+      + [ID-based licenses overview](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-identity-based-licenses.md)
+      + [Updating policies](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-updating-policies.md)
       + [Handling synchronization requests](aaxs-protecting-content/content-implementing-the-license-server/content-handling-synch-reqs.md)
-      + Handling FMRMS compatibility
-         + [Handling FMRMS compatibility overview](aaxs-protecting-content/content-implementing-the-license-server/content-handling-fmrms-compatibility/content-handling-fmrms-compatibility.md)
-         + [Handling FMRMS compatibility](aaxs-protecting-content/content-implementing-the-license-server/content-handling-fmrms-compatibility/content-handling-fmrms-compatibility-overview.md)
+      + Handling FMRMS compatibility {#handling-fmrms-compatibility}
+         + [Overview](aaxs-protecting-content/content-implementing-the-license-server/content-handling-fmrms-compatibility/content-handling-fmrms-compatibility-overview.md)
          + [Upgrading clients](aaxs-protecting-content/content-implementing-the-license-server/content-handling-fmrms-compatibility/content-upgrading-clients.md)
          + [Upgrading metadata](aaxs-protecting-content/content-implementing-the-license-server/content-handling-fmrms-compatibility/content-upgrading-metadata.md)
       + [Handling certificate updates when your Adobe-issued certifcates     expire](aaxs-protecting-content/content-implementing-the-license-server/content-handling-cert-updates.md)

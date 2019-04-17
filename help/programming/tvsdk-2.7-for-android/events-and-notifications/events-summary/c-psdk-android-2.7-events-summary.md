@@ -10,7 +10,7 @@ uuid: ed3be4c2-8df3-4d96-a30b-74c196262798
 
 Your application can monitor the activity in your player and the changing status of the player by listening for the events that are dispatched by TVSDK.
 
-# Events {#events}
+## Events {#events}
 
 TVSDK notifies you when events, to which your application must respond, occur. Each event corresponds to a listener class, with a callback method that you must implement.
 

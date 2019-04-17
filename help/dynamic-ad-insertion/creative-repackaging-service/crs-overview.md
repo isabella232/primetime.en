@@ -14,7 +14,7 @@ The creative repackaging service (CRS) ensures that a non-HLS ad creative can pl
 >
 >By default, CRS is disabled. To enable CRS for your account, contact your Adobe technical account manager. 
 >
->For information on enabling CRS within TVSDK apps, see the *Enable CRS in TVSDK applications* topic in the Programmer's Guide for your platform. For example, for Android 3.4, see [Enable CRS in TVSDK applications](../../programming/tvsdk-3.4-for-android/android-3.4-advertising/ad-insertion/ad-transcoding/android-3.4-ad-transcoding.md)
+>For information on enabling CRS within TVSDK apps, see the *Enable CRS in TVSDK applications* topic in the Programmer's Guide for your platform. For example, for Android 3.4, see [Enable CRS in TVSDK applications](../../programming/tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/ad-transcoding/android-3.5-ad-transcoding.md)
 
 CRS prepares HTTP Live Streaming (HLS) ad creatives for the content stream and injects ID3 packets for client-side ad tracking. It transcodes MP4, FLV, and WebM files received from third-party ad servers, ad networks, and agency servers into HLS format.
 
