@@ -26,7 +26,7 @@ To activate this optional CRS feature, contact your Adobe representative.
 
 For more information about CRS, see [Creative Packaging Service (CRS)](../../../../../dynamic-ad-insertion/creative-repackaging-service/crs-overview.md).
 
-# Enable CRS in TVSDK applications {#enable-crs-in-tvsdk-applications}
+## Enable CRS in TVSDK applications {#enable-crs-in-tvsdk-applications}
 
 To enable CRS in your TVSDK applications, you must set the following information in your Auditude settings:
 

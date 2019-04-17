@@ -164,7 +164,7 @@ Adobe provides a Sample ExpressPlay Entitlement Server (SEES) that shows how to 
 * [Reference Service: Time-based Entitlement](../../multi-drm-workflows/feature-topics/sees-reference-server-time-entitlement.md)
 * [Reference Service: Device-Binding Entitlement](../../multi-drm-workflows/feature-topics/sees-reference-server-binding-entitlement.md)
 
-# Licensing and playback for FairPlay {#licensing-and-playback-for-fairplay}
+## Licensing and playback for FairPlay {#licensing-and-playback-for-fairplay}
 
 Licensing and playback of FairPlay-protected content requires swapping of URL schemes, between the scheme used in the video manifest file (skd:) and the one used in ExpressPlay token requests (https:).
 

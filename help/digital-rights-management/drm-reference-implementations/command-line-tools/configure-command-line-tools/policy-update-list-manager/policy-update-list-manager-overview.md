@@ -14,7 +14,7 @@ Before you run the Policy Update List Manager command-line tool, you must set pr
 >
 >You can also specify all Policy Update List Manager properties from the command line.
 
-# Policy Update List Manager command-line usage {#policy-update-list-manager-command-line-usage}
+## Policy Update List Manager command-line usage {#policy-update-list-manager-command-line-usage}
 
 **Create a policy update list:** 
 

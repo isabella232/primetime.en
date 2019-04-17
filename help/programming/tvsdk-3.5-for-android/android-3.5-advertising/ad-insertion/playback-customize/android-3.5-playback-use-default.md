@@ -16,7 +16,7 @@ You can choose to use default ad behaviors.
     
     * If you do not have a custom implementation for the `AdvertisingFactory` class, TVSDK uses a default ad policy selector.
 
-# Set up customized playback {#set-up-customized-playback}
+## Set up customized playback {#set-up-customized-playback}
 
 You can customize or override ad behaviors.
 

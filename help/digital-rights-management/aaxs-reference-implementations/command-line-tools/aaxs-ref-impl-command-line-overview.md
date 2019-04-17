@@ -27,7 +27,7 @@ The requirements for using the command line tools available in the reference imp
 >
 >Because of a Java bug, arguments that are used on the command line (such as file names, policy names, or descriptions) must use only characters from the operating system's default character set.
 
-# Configuration file {#configuration-file}
+## Configuration file {#configuration-file}
 
 Several of the command-line tools require a configuration file that contains information for the tools to use for applying policies and encrypting files.
 
