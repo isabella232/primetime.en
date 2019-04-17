@@ -15,4 +15,4 @@ A MediaResource represents the content that is about to be loaded by the MediaPl
 TVSDK provides the means to load and prepare content for playback by using the `replaceCurrentResource` method in `MediaPlayer`. This method takes two arguments, an instance of `MediaPlayerResource` and, optionally, an instance of `MediaPlayerItemConfig`, which you can use to pass application-defined custom parameters.
 
 * For more details see [Reuse or remove a MediaPlayer instance](../../../../tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/mediaplayerobjects-working-with/android-3.5-mediaplayer-reuse-or-remove.md). 
-* For details of `MediaPlayerResource`, see [Create a media resource](../../../../tvsdk-3.4-for-android/android-3.5-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.5-media-resource-create.md).
+* For details of `MediaPlayerResource`, see [Create a media resource](../../../../tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.5-media-resource-create.md).
