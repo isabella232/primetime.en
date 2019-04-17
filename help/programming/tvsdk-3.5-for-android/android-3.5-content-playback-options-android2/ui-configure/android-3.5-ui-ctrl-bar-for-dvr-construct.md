@@ -25,7 +25,7 @@ You can implement a control bar with DVR support for VOD and live streaming. DVR
 
 ![](assets/dvr-window.PNG){width="684"}
 
-1. To implement a control bar with DVR support, follow the steps in [Display a seek scrub bar with the current playback position.](../../../tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/ui-configure/android-3.4-ui-seek-scrub-bar-display.md) with the following differences:
+1. To implement a control bar with DVR support, follow the steps in [Display a seek scrub bar with the current playback position.](../../../tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/ui-configure/android-3.5-ui-seek-scrub-bar-display.md) with the following differences:
 
     * You can implement a control bar that is mapped only for the seekable range instead of for the playback range.
 

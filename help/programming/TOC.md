@@ -73,6 +73,7 @@ user-guide-title: Primetime Programming Help
          + [Overview](tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/failover-for-playback/android-3.5-failover-for-playback.md)
          + [Media playback and failover](tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/failover-for-playback/android-3.5-failover-media-playback.md)
          + [Advertising insertion and failover for VOD](tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/failover-for-playback/android-3.5-failover-ad-insertion-for-vod.md)
+      + [Offline Playback with Android](tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/android-3.5-offline-playback-with-Android.md)
    + Advertising {#advertising}
       + [Advertising and its requirements](tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/android-3.5-ad-insertion.md)
       + Insert ads {#insert-ads}

@@ -39,7 +39,7 @@ The MediaResource class represents the content to be loaded by the MediaPlayer i
    </tr> 
    <tr> 
       <td colname="col1"> <span class="codeph"> metadata </span> </td> 
-      <td colname="col2"> An instance of the <span class="codeph"> Metadata </span> class (a dictionary-like structure), which might contain additional information about the content that is about to be loaded, such as alternate or ad content to place inside the main content. If using advertising, set up <span class="codeph"> AuditudeSettings </span> before using this constructor (see href=Ad insertion metadata](../../android-3.4-advertising/ad-insertion/ad-insertion-metadata/android-3.4-ad-insertion-metadata.md). </td> 
+      <td colname="col2"> An instance of the <span class="codeph"> Metadata </span> class (a dictionary-like structure), which might contain additional information about the content that is about to be loaded, such as alternate or ad content to place inside the main content. If using advertising, set up <span class="codeph"> AuditudeSettings </span> before using this constructor (see href=Ad insertion metadata](../../android-3.5-advertising/ad-insertion/ad-insertion-metadata/android-3.5-ad-insertion-metadata.md). </td> 
    </tr> 
    </tbody> 
    </table>
@@ -65,7 +65,7 @@ The MediaResource class represents the content to be loaded by the MediaPlayer i
 1. Load the media resource using one of the following options:
 
    * The MediaPlayer instance. 
-   * `MediaPlayerItemLoader` For more information, see [Load a media resource using MediaPlayerItemLoader](../../../tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.4-media-resource-mediaplayeritemloader.md).
+   * `MediaPlayerItemLoader` For more information, see [Load a media resource using MediaPlayerItemLoader](../../../tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/mediaplayer-initialize-for-video/android-3.5-media-resource-mediaplayeritemloader.md).
 
    >[!IMPORTANT]
    >

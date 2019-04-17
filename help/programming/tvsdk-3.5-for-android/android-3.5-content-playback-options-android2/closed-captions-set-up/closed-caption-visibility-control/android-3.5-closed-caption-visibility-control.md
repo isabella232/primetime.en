@@ -22,7 +22,7 @@ You can control the visibility of closed captions. When visibility has been enab
 >}
 >```>
 
-1. Wait for the `MediaPlayer` to be in at least the PREPARED status. For more information, see [Wait for a valid status](../../../../tvsdk-3.4-for-android/android-3.4-content-playback-options-android2/ui-configure/android-3.4-ui-state-prepared-wait-for.md).
+1. Wait for the `MediaPlayer` to be in at least the PREPARED status. For more information, see [Wait for a valid status](../../../../tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/ui-configure/android-3.5-ui-state-prepared-wait-for.md).
 
 1. To get the current visibility setting for closed captions, use the getter method in `MediaPlayer`, which returns a visibility value.
 

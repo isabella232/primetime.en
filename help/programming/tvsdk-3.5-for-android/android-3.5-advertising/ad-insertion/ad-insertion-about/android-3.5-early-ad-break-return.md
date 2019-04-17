@@ -13,7 +13,7 @@ For live stream ad insertion, you might need to exit from an ad break before all
 For example, the duration of the ad break in certain sports events might not be known before the break starts. TVSDK provides a default duration, but if the game resumes before the break finishes, the ad break must be exited. Another example is an emergency signal during an ad break in a live stream. 
 
 1. Subscribe to `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN`, and `#EXT-X-CUE`, which are the splice out/splice in markers.
-   For more information about to how to splice out/in ad markers, see [Opportunity generators and content resolvers](../../ad-insertion/content-resolver/android-3.4-content-resolver.md).
+   For more information about to how to splice out/in ad markers, see [Opportunity generators and content resolvers](../../ad-insertion/content-resolver/android-3.5-content-resolver.md).
 1. Use a custom `ContentFactory`.
 1. In `retrieveGenerators`, use the `SpliceInPlacementOpportunityGenerator`.
 
@@ -27,7 +27,7 @@ For example, the duration of the ad break in certain sports events might not be 
    }
    ```
 
-   For more information about using a custom `ContentFactory`, see step 1 in [Implement a custom opportunity gerenator](../../ad-insertion/content-resolver/android-3.4-opp-detector-impl-android.md). 
+   For more information about using a custom `ContentFactory`, see step 1 in [Implement a custom opportunity gerenator](../../ad-insertion/content-resolver/android-3.5-opp-detector-impl-android.md). 
 
 1. On the same custom `ContentFactory`, implement `retrieveResolvers` and include `AuditudeResolver` and `SpliceInCustomResolver`.
 

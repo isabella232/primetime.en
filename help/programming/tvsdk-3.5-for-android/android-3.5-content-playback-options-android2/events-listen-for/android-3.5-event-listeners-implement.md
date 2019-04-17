@@ -24,11 +24,11 @@ Your application must implement event listeners for any TVSDK events that affect
       >
       >Listen for the status change event, which occurs when the player's status changes in ways that you need to know. The information it provides includes errors that might affect what your player can do next.
 
-    * For other events, depending on your application, see  [Primetime player events summary](../../android-3.4-events-notifications/events-summary/android-3.4-events-summary.md).
+    * For other events, depending on your application, see  [Primetime player events summary](../../android-3.5-events-notifications/events-summary/android-3.5-events-summary.md).
 
 1. Implement and add an event listener for each event. 
 
-   For most events TVSDK passes arguments to the event listeners. Such values provide information about the event that can help you decide what to do next. The `MediaPlayerEvent` enumeration lists all the events that `MediaPlayer` dispatches. For more information, see  [Primetime player events summary](../../android-3.4-events-notifications/events-summary/android-3.4-events-summary.md).
+   For most events TVSDK passes arguments to the event listeners. Such values provide information about the event that can help you decide what to do next. The `MediaPlayerEvent` enumeration lists all the events that `MediaPlayer` dispatches. For more information, see  [Primetime player events summary](../../android-3.5-events-notifications/events-summary/android-3.5-events-summary.md).
 
    For example, if `mPlayer` is an instance of `MediaPlayer`, here is how you might add and structure an event listener:
 
