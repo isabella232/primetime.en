@@ -9,13 +9,11 @@ seo-description: null
 
 Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
-## New features in the Release Notes for TVSDK 3.4 for iOS & Android
+## New features in the Release Notes for TVSDK 3.5 for Android
 
-* [Ad Resolution Timeout](../release-notes/tvsdk-34-ios.md#what-s-new-in-ios-tvsdk)
-* [Revenue Optimization](../release-notes/tvsdk-34-ios.md#what-s-new-in-ios-tvsdk)
-* [CMAF Streams](../release-notes/tvsdk-34-android.md#what-s-new-in-tvsdk)
+* [Offline Playback with Android](../release-notes/tvsdk-35-android.md#what-s-new-in-tvsdk)
 
-Check out for more information about the current released version for [iOS](../release-notes/tvsdk-34-ios.md) and [Android](../release-notes/tvsdk-34-android.md).
+Check out for more information about the current released version for [Android](../release-notes/tvsdk-35-android.md).
 
 ## See also
 

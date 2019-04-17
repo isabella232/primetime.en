@@ -95,7 +95,7 @@ user-guide-title: Primetime Programming Help
       + Just-in-Time Ad Resolving {#just-in-time}
         + [Overview](tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/c-lazy-ad-resolving/c-lazy-ad-resolving.md)
         + [Enable lazy ad resolving](tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/c-lazy-ad-resolving/t-enable-lazy-ad-resolving.md)
-        + [Upgrading from 2.7.x Lazy Ad Resolving to 3.x Lazy Ad Resolving  (API/Workflow changes)](tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/t-upgrade-to-3.4.md)
+        + [Upgrading from 2.7.x Lazy Ad Resolving to 3.x Lazy Ad Resolving  (API/Workflow changes)](tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/t-upgrade-to-3.5.md)
       + Ad insertion metadata {#ad-insertion-metadata}
         + [Overview](tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/ad-insertion-metadata/android-3.5-ad-insertion-metadata.md)
         + [Set up ad insertion metadata](tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/ad-insertion-metadata/android-3.5-ad-insertion-metadata-set-up.md)
@@ -289,7 +289,7 @@ user-guide-title: Primetime Programming Help
       + [Primetime TVSDK features](tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-of-the-player.md)
       + [Considerations and best practices](tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-considerations.md)      
       + [Requirements](tvsdk-2.7-for-android/c-psdk-android-2.7-requirements.md)
-   + Content playback options
+   + Content playback options {#content-playback-options}
       + [Set up the MediaPlayer](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-mediaplayer-set-up-android.md)
       + Work with MediaPlayer objects {#work-with-mediaplayer-objects}
         + [About the MediaPlayerItem class](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayeritem-class-about.md)
