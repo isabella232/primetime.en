@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: primetime
 audience: end-user
-user-guide-title: Primetime Video Playback Help
+user-guide-title: Primetime Reference Implementation Help
 ---
 
 # PSDK 1.4 for Android Reference Implementation {#reference-implementation}
