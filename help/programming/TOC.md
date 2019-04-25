@@ -8,10 +8,9 @@ user-guide-title: Primetime Programming Help
 # Primetime Programming Help {#programming}
 
 + [Programming Overview](home.md)
-
-+ TVSDK 3.5 for Android {#tvsdk-3.5-for-android}
++ TVSDK 3.5 for Android {#tvsdk-3-5-for-android}
    + Introduction {#introduction}
-      + [Product overview, audience, and this guide](tvsdk-3.5-for-android/android-3.5-introduction/overview-prod-audience-guide/android-3.5-overview-prod-audience-guide.md)      
+      + [Product overview, audience, and this guide](tvsdk-3.5-for-android/android-3.5-introduction/overview-prod-audience-guide/android-3.5-overview-prod-audience-guide.md)    
       + [Primetime TVSDK features](tvsdk-3.5-for-android/android-3.5-introduction/overview-prod-audience-guide/android-3.5-overview-of-the-player.md)
       + [Considerations and best practices](tvsdk-3.5-for-android/android-3.5-introduction/overview-prod-audience-guide/android-3.5-considerations.md)
       + [Requirements](tvsdk-3.5-for-android/android-3.5-introduction/android-3.5-requirements.md)
