@@ -26,7 +26,7 @@ Check out for more information about the [current released version](tvsdk-3.4-fo
 | [Dynamic Ad Insertion Help](/help/dynamic-ad-insertion/home.md) | Explains how to monetize content by inserting user-targeted dynamic ads on the server and engage audience with personalized ads. |
 | [Digital Rights Management](/help/digital-rights-management/home.md) | Helps you learn more about various user scenarios in Digital Rights Management (DRM) |
 | [Primetime API references](/help/reference/api-references.md) | Provides detailed information about TVSDK functions, data structures and other programming constructs. |
-| Archives | Download PDFs of the archived documentation. |
+| [Archives](https://helpx.adobe.com/primetime/archives.html) | Download PDFs of the archived documentation. |
 
 ## Helpful resources
 
