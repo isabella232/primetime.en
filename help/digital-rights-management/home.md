@@ -19,7 +19,7 @@ Welcome to the Digital Rights Management help for Adobe Primetime. The documents
 | [Reference Implementation](/help/android-reference-implementation/home.md) | Helps understand the TVSDK and modify the feature managers to customize your personal player. |
 | [Dynamic Ad Insertion Help](/help/dynamic-ad-insertion/home.md) | Explains how to monetize content by inserting user-targeted dynamic ads on the server and engage audience with personalized ads. |
 | [Primetime API references](/help/reference/api-references.md) | Provides detailed information about TVSDK functions, data structures and other programming constructs. |
-| Archives | Download PDFs of the archived documentation. |
+| [Archives](https://helpx.adobe.com/primetime/archives.html) | Download PDFs of the archived documentation. |
 
 ## Helpful resources
 
