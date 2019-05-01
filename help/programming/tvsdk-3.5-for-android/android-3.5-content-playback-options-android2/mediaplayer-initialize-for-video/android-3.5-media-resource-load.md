@@ -26,35 +26,36 @@ Load a resource by directly instantiating a MediaResource and loading the video 
 1. When the status of the media player changes to `INITIALIZED`, you can call `MediaPlayer.prepareToPlay()`.
 
    This status indicates that the media has been successfully loaded. The new `MediaPlayerItem` is ready for playback. Calling `prepareToPlay()` starts the advertising resolution and placement process, if any.
->If a failure occurs, the media player switches to the `ERROR` status. 
 
->The following simplified sample code illustrates the process of loading a media resource: 
->
->```java>
->// mediaResource is a properly configured MediaResource instance 
->// mediaPlayer is a MediaPlayer instance 
->// register a PlaybackEventListener implementation with the MediaPlayer instance 
->mediaPlayer.addEventListener(MediaPlayerEvent.STATUS_CHANGED,  
->  new StatusChangeEventListener() { 
->    @Override 
->    public void onStatusChanged(MediaPlayerStatus status) { 
->        if(event.getStatus() == MediaPlayerStatus.PREPARED) { 
->            // The resource is successfully loaded and available. The  
->            // MediaPlayer is ready to start the playback and can 
->            // provide a reference to the current playable item 
->            MediaPlayerItem playerItem = mediaPlayer.getCurrentItem(); 
->            if (playerItem != null) { 
->                // We can look at the properties of the loaded stream 
->            } 
->        } 
->        else if (event.getStatus() == MediaPlayerStatus.ERROR) { 
->            //Something bad happened - the resource cannot be loaded. 
->            // The Metadata object in the event provides details. 
->        } 
->        else if (status == MediaPlayerStatus.INITIALIZED) { 
->            mediaPlayer.prepareToPlay(); 
->        } 
->    } 
->} 
->
->```>
+If a failure occurs, the media player switches to the `ERROR` status. 
+
+The following simplified sample code illustrates the process of loading a media resource: 
+
+```java>
+// mediaResource is a properly configured MediaResource instance 
+// mediaPlayer is a MediaPlayer instance 
+// register a PlaybackEventListener implementation with the MediaPlayer instance 
+mediaPlayer.addEventListener(MediaPlayerEvent.STATUS_CHANGED,  
+  new StatusChangeEventListener() { 
+    @Override 
+    public void onStatusChanged(MediaPlayerStatus status) { 
+        if(event.getStatus() == MediaPlayerStatus.PREPARED) { 
+            // The resource is successfully loaded and available. The  
+            // MediaPlayer is ready to start the playback and can 
+            // provide a reference to the current playable item 
+            MediaPlayerItem playerItem = mediaPlayer.getCurrentItem(); 
+            if (playerItem != null) { 
+                // We can look at the properties of the loaded stream 
+            } 
+        } 
+        else if (event.getStatus() == MediaPlayerStatus.ERROR) { 
+            //Something bad happened - the resource cannot be loaded. 
+            // The Metadata object in the event provides details. 
+        } 
+        else if (status == MediaPlayerStatus.INITIALIZED) { 
+            mediaPlayer.prepareToPlay(); 
+        } 
+    } 
+} 
+
+```
