@@ -495,6 +495,7 @@ user-guide-title: Primetime Programming Help
       + [MediaPlayer methods for accessing MediaResource information](tvsdk-1.4-for-android/mediaplayerobjects-working-with/android-1.4-mediaplayer-mediaresource.md)
       + [Reset, reuse or remove a MediaPlayer instance](tvsdk-1.4-for-android/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/android-1.4-mediaplayer-reset-reuse-instance.md)
       + [Inspect the playback timeline](tvsdk-1.4-for-android/mediaplayerobjects-working-with/android-1.4-timeline-inspect-playback.md)
+    + [ID3 tags](tvsdk-1.4-for-android/notification-system/android-1.4-id3-metadata-retrieve.md)
     + [Buffering](tvsdk-1.4-for-android/buffering-configuration/android-1.4-buffering-times-set.md)
     + [Instant on](tvsdk-1.4-for-android/buffering-configuration/instant-on/android-1.4-instant-on.md)
     + Advertising {#advertising}
