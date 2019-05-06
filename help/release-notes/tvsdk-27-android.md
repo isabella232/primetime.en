@@ -170,7 +170,7 @@ The important new features released in Android 2.5.1.
 
     frameHeight = e.getHeight();
 
-    frameWidth = e.getWidth()/SAR;
+    frameWidth = e.getWidth()/SAR;    
     ```
 
 * **Cookies**

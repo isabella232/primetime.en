@@ -12,7 +12,7 @@ discoiquuid: e4437a26-9454-4da1-ae87-0fce664aac3d
 
 # TVSDK 1.4 for Desktop HLS Release Notes {#tvsdk-for-desktop-hls-release-notes}
 
-TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolved and known issues in TVSDK DHLS.
+TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolved, and known issues in TVSDK DHLS.
 
 ## New features {#new-features}
 
