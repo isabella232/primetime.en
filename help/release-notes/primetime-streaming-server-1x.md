@@ -60,7 +60,7 @@ Version 1.3.1 refers to the hotfix. Following enhancements make it a recommended
 
 * 3759167 - Not all SCTE35 cues make it to the output manifest due to timestamp anomaly while packaging. Apply pts_adjustment on the SpliceTime in the TimeSignal of SpliceInfoSection in SCTE35 message.
 
-## Known issues in release 1.3.1 {#known-issues-in-release}
+### Known issues in release 1.3.1 {#known-issues-in-release}
 
 * 3717039 - When the packager is configured to produce DPI simple mode cues, it really should be looking for specific signal types, such as splice insert or placement opportunity, and converting only those to simple mode cues. It should ignore other types of signals such as program start, network start etc.
 
@@ -317,3 +317,7 @@ To install Offline Packager, follow these steps:
 1. Extract the Adobe Primetime - Offline Packager 1.4 archive file, `Primetime- OfflinePackager-1-4-0-b206-12042014.zip`, to your disk.
 
 Refer the Primetime Offline Packager Getting Started document for the configuration details available [here](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html).
+
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

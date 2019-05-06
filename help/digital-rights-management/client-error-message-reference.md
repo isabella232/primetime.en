@@ -9,6 +9,8 @@ title: DRM Client Error Message Reference
 
 The DRM Client errors are a subset of the TVSDK client-side errors, with the DRM-related errors codes ranging from 3300 to 3399.
 
+## DRM Client Errors {#drm-client-errors}
+
 | Error Code | Mnemonic | Remedy |
 |---|---|---|
 | 3300 | Invalid Voucher | What the distributor's software should do: <ul><li> If you are using Google Chrome, and you are in Incognito mode, and your Flash Player version is lower than 11.6, this error might occur. We recommend that the player check the browser's version number and advise the user to exit Incognito mode.</li><li> Request the license again. If the request is successful, you do not need to log or escalate. If the request is unsuccessful, log the content that caused the error. `subErrorId` contains a line error if present.</li></ul> What the distributor should do: <ul><li> If retries are unsuccessful on configurations other than Chrome with Flash less than version 11.6, a failure might have occurred in the packaging.</li><li>Check whether the issue is specific to certain content and repackage.</li></ul>|

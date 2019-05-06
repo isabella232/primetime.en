@@ -424,3 +424,7 @@ The manifest server generates records of this kind when it receives a signal abo
 >[!NOTE]
 >
 >The last four fields are optional.
+
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

@@ -21,7 +21,7 @@ Operating System: iOS 7.0 or later
 
 ## New features {#new-features}
 
-### What's New in iOS TVSDK 3.4 {#what-s-new-in-ios-tvsdk}
+**iOS TVSDK 3.4**
 
 **Ad Resolution Timeout**
 
@@ -224,6 +224,8 @@ Now, no additional prep work is needed to dynamically insert new ads into video-
 
 ## Resolved issues {#resolved-issues}
 
+Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx.
+
 <!-- 
 
 Comment Type: draft
@@ -245,11 +247,11 @@ Comment Type: draft
 
  -->
 
-### iOS TVSDK 3.4 {#ios-tvsdk}
+**iOS TVSDK 3.4**
 
 * No new issues in this release.
 
-#### Resolved issues in the previous releases {#resolved-issues-previous}
+### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **Version 3.3**
 
@@ -1104,5 +1106,6 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
 ## Helpful resources {#helpful-resources}
 
-* [TVSDK 3.4 for iOS Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_ios_3.4.pdf)
+* [TVSDK 3.4 for iOS Programmer's Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3-4-for-ios/introduction/ios-3_4-overview.html)
 * [TVSDK iOS 3.4 API reference](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v34/index.html)
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

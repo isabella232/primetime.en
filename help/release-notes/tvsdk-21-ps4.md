@@ -18,10 +18,10 @@ TVSDK 2.1 for PlayStation 4 Release Notes describe the supported features and th
 
 Here are the resolved issues for TVSDK 2.1 for PlayStation 4:
 
-### Version 2.1.0.638
+**Version 2.1.0.638**
 
 * **PTPLAY-10439:**
-  When the VMAP wrapper ad link was broken the player was getting stuck in Preparing state (it was not sending `onComplete` to its caller). 
+  When the VMAP wrapper ad link was broken the player was getting stuck in Preparing state (it was not sending `onComplete` to its caller).
 
 * **PTPLAY-10179:**
   `creativeRepackaging` and `fallbackOnInvalidCreative` values are now off by default. Also, when the `creativeRepackaging` flag was set but no `creativeRepackaging` format was provided, the `onRepackagingComplete` was getting called as many times as there were ads in the ad break, causing ad breaks to be created multiple times. 
@@ -137,3 +137,7 @@ The following features are supported in TVSDK 2.1 for PlayStation 4:
 * Instant on with custom start position
 * Trick play with fast forward and fast rewind
 * 302 redirect
+
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

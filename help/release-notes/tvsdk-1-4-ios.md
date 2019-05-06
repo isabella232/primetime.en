@@ -15,7 +15,7 @@ TVSDK 1.4 for iOS Release Notes describe what is new or changed, the resolved an
 
 ## New features {#new-features}
 
-### Version 1.4.45
+**Version 1.4.45**
 
 * In order to comply with Xcode10, TVSDK has moved from “`libstdc++`” to “`libc++`”, and as a result the minimum supported version is iOS 7. Earlier it was iOS 6.
 
@@ -123,7 +123,6 @@ For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad 
 
 For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-fallback.md).
 
-
 **Version 1.4.9**
 
 * **Blackout Signaling With Alternate Content Replacement**
@@ -179,7 +178,7 @@ DRM Policies can now specify the highest resolution permitted, depending on the 
 >* Slow motion, on any platform or version.
 >* Live trick play.
 
-### Version 1.4.43
+**Version 1.4.43**
 
 * TVSDK 1.4.43 is certified for iOS 11.
 
@@ -231,7 +230,7 @@ Comment Type: draft
 
  -->
 
-### Version 1.4.45 {#ios-tvsdk}
+**Version 1.4.45 {#ios-tvsdk}**
 
 * Ticket #36294 - iOS TVSDK not functional with Xcode 10
 
@@ -988,3 +987,7 @@ Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad bre
 * Setting currentTimeUpdateInterval does not have any effect.  
   Note: In certain iOS versions, the OS doesn't load the resources inside the PSDKLibrary.framework automatically. It is important to manually copy the PSDKResources.bundle to the application's bundle resources: Go to "Build Phases" and copy bundle resources.
 * The Reference App cannot be built using Xcode 8 or lower versions. iOS TVSDK version 1.4.41 onwards, use Xcode 9 to compile.
+
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

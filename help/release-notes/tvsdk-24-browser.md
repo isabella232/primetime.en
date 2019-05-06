@@ -44,15 +44,11 @@ This release includes the following information:
 
 This release of Browser TVSDK provides new features that you can use to enhance your video applications.
 
-### New in 2.4.12 Update (Build 204) {#new-in-update-build}
+**New in 2.4.12 Update (Build 204)**
 
 The following addition is available as part of Browser TVSDK 2.4.12 Update (Build 204):
 
 * Implementation of volume API of AdobePSDK.MediaPlayer is changed to allow autoplay on iOS when playback is muted.
-
-#### New in 2.4.12 {#new-in}
-
-The following addition is available as part of Browser TVSDK 2.4.12 release:
 
 • A new API, `auditudeSettings.ignoreVPAIDAds`, is added to allow ignoring VPAID ads received from the Auditude server. The API does not work for Flash Fallback.
 
@@ -94,7 +90,7 @@ AdobePSDK.ForceHttpsAdConfiguration class.
 
 • A new API, AdobePSDK.optimizeFlashCalls, is now available to optimize the calls to improve HLS playback experience in Flash fallback mode. This is disabled by default.
 
-#### New in 2.4.8 Update (Build 6002) {#new-in-update-build-1}
+**New in 2.4.8 Update (Build 6002)**
 
 This update contains fixes for critical customer issues. See *Fixed Issues*, for the list.
 
@@ -130,7 +126,7 @@ Various features, including advertisingMetadata, advertisingFactory, adSignaling
 
 In the UI Framework, the way of passing network configurations through the player configuration has been modified.
 
-#### Version 2.4.6 {#version}
+**Version 2.4.6**
 
 `var player = ptp.videoPlayer(‘#videoHolder', {`
 
@@ -142,7 +138,7 @@ In the UI Framework, the way of passing network configurations through the playe
 
 `};`
 
-#### Version 2.4.7 {#version-1}
+**Version 2.4.7**
 
 `var player = ptp.videoPlayer(‘#videoHolder', {`
 
@@ -276,7 +272,7 @@ Media streams can carry additional metadata in the form of tags in the playlist/
 
 This release supports showing ad markers on the player timeline for both VOD and Live content. You can see this behavior in the reference player.
 
-#### Supported in 2.4 {#supported-in}
+**Supported in 2.4**
 
 The following features were available in version 2.4:
 
@@ -321,7 +317,7 @@ Browser TVSDK has specific requirements for the levels of platforms and software
     * Chrome 33+
     * Firefox 38+
 
-**Mobile Web configurations**
+### Mobile Web configurations {#mobile-web-configurations}
 
 * Android 4.4
 
@@ -347,7 +343,7 @@ Browser TVSDK has specific requirements for the levels of platforms and software
     * Safari 9+
     * Chrome 33+
 
-• Google Chromecast (second-generation; for DASH playback only)
+**Google Chromecast (second-generation; for DASH playback only)**
 
 <table> 
  <tbody> 
@@ -424,7 +420,7 @@ Here is a list of the supported and unsupported features for this release:
 
 ### MP3 Audio Features {#mp-audio-features}
 
-#### Table 1: Core Playback {#table-core-playback}
+**Table 1: Core Playback {#table-core-playback}**
 
 |Category|Content Type|Feature|Flash|HTML5: FF, IE, Chrome, Android Chrome|HTML5: Safari, iOS Safari|
 |--- |--- |--- |--- |--- |--- |
@@ -436,13 +432,13 @@ Here is a list of the supported and unsupported features for this release:
 
 ### MP4 Audio Features {#mp-audio-features-1}
 
-#### Table 2: Core Playback {#table-core-playback-1}
+**Table 2: Core Playback**
 
 |Category|Content Type|Feature|Flash|HTML5: FF, IE, Chrome, Android Chrome|HTML5: Safari, iOS Safari|
 |--- |--- |--- |--- |--- |--- |
 |Playback|MP4 VOD|General Playback (Play, Pause, Seek)|Not Supported|Y|Y|
 
-#### Table 3: Core Ad Insertion {#table-core-ad-insertion}
+**Table 3: Core Ad Insertion**
 
 |Category|Content Type|Feature|Flash|HTML5: FF, IE, Chrome, Android Chrome|HTML5: Safari, iOS Safari|
 |--- |--- |--- |--- |--- |--- |
@@ -470,7 +466,7 @@ Here is the feature matrix for the HLS features in Browser TVSDK.
 
 The following features are supported:
 
-#### Table 4: HLS Core playback {#table-hls-core-playback}
+**Table 4: HLS Core playback**
 
 <table> 
  <tbody> 
@@ -597,7 +593,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### Table 5: HLS advanced playback features {#table-hls-advanced-playback-features}
+**Table 5: HLS advanced playback features**
 
 <table> 
  <tbody> 
@@ -676,7 +672,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### Table 6: HLS Content protection features {#table-hls-content-protection-features}
+**Table 6: HLS Content protection features**
 
 <table> 
  <tbody> 
@@ -715,7 +711,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### Table 7: HLS Core ad insertion features {#table-hls-core-ad-insertion-features}
+**Table 7: HLS Core ad insertion features**
 
 <table> 
  <tbody> 
@@ -794,7 +790,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### Table 8: HLS Advanced ad insertion features {#table-hls-advanced-ad-insertion-features}
+**Table 8: HLS Advanced ad insertion features**
 
 <table> 
  <tbody> 
@@ -865,7 +861,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### Table 9: HLS Integrations {#table-hls-integrations}
+**Table 9: HLS Integrations {#table-hls-integrations}**
 
 <table> 
  <tbody> 
@@ -912,7 +908,7 @@ Here is the feature matrix for the DASH features in Browser TVSDK.
 
 The following features are supported:
 
-#### Table 10: DASH Core playback features {#table-dash-core-playback-features}
+**Table 10: DASH Core playback features**
 
 <table> 
  <tbody> 
@@ -1003,7 +999,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### Table 11: DASH Advanced playback features {#table-dash-advanced-playback-features}
+**Table 11: DASH Advanced playback features**
 
 <table> 
  <tbody> 
@@ -1064,7 +1060,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### Table 12: DASH Content protection features {#table-dash-content-protection-features}
+**Table 12: DASH Content protection features**
 
 <table> 
  <tbody> 
@@ -1095,7 +1091,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### Table 13: DASH Core ad insertion features {#table-dash-core-ad-insertion-features}
+**Table 13: DASH Core ad insertion features**
 
 <table> 
  <tbody> 
@@ -1156,7 +1152,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### Table 14: DASH Advanced ad insertion features {#table-dash-advanced-ad-insertion-features}
+**Table 14: DASH Advanced ad insertion features**
 
 <table> 
  <tbody> 
@@ -1211,7 +1207,7 @@ The following features are supported:
  </tbody> 
 </table>
 
-#### Table 15: DASH Integrations {#table-dash-integrations}
+**Table 15: DASH Integrations**
 
 <table> 
  <tbody> 
@@ -1232,15 +1228,11 @@ The following features are supported:
 
 ## Issues fixed {#issues-fixed}
 
-### Issues fixed in version 2.4.12 Update (Build 204) {#issues-fixed-in-version-update-build}
+**Issues fixed in 2.4.12 Update (Build 204)**
 
 The following issues are fixed in Browser TVSDK verison 2.4.12 Update (Build 204):
 
 • **21647**- TVSDK should allow automatic video playback on iOS devices when audio is muted.
-
-#### Issues fixed in version 2.4.12 {#issues-fixed-in-version}
-
-The following issues are fixed in Browser TVSDK verison 2.4.12:
 
 • **21465**- Error Key System Access Denied is received when playing a DRM-protected DASH stream after a DASH Live stream is played.
 
@@ -1248,11 +1240,11 @@ The following issues are fixed in Browser TVSDK verison 2.4.12:
 
 • **21240**- Provided API to filter VPAID ads parsed from Auditude/VMAP.
 
-#### Issues fixed in version 2.4.11 {#issues-fixed-in-version-1}
+**Issues fixed in version 2.4.11**
 
 The following issues are fixed in Browser TVSDK verison 2.4.11:
 
-#### Core playback features: {#core-playback-features}
+**Core playback features:**
 
 • **19192**: TVSDK now implements TextFormat:bottomInset and TextFormat:safeArea. Due to these enhancements, closed captions can be re-positioned if the control bar is displayed on the screen.
 
@@ -1264,7 +1256,7 @@ The following issues are fixed in Browser TVSDK verison 2.4.11:
 
 • **21363**: 608/708 closed captions are going out of sync after ad insertion for DASH streams.
 
-#### Ad insertion features: {#ad-insertion-features}
+**Ad insertion features:**
 
 • **21179**: Mid-roll related issues (long pauses, black frames) with VOD content are now resolved by correctly setting the ad.primaryAsset.adParameters property.
 
@@ -1272,11 +1264,11 @@ The following issues are fixed in Browser TVSDK verison 2.4.11:
 
 • **21361**: TVSDK now passes ad system and creative ID from the VAST response as query parameters in the creative packaging request in order to support additional normalization rules.
 
-#### Issues fixed in version 2.4.10 {#issues-fixed-in-version-2}
+**Issues fixed in version 2.4.10**
 
 The following issues are fixed in Browser TVSDK verison 2.4.10:
 
-#### Core playback features: {#core-playback-features-1}
+**Core playback features:**
 
 • **21060**: Invalid codec error thrown with HLS streams that contain discontinuity and the ISO BMFF boxes run to end of stream.
 
@@ -1292,11 +1284,11 @@ The following issues are fixed in Browser TVSDK verison 2.4.10:
 
 • **19316**: Skip segments that fail decryption in case of HLS AES-128 streams.
 
-#### Issues fixed in version 2.4.9 {#issues-fixed-in-version-3}
+**Issues fixed in version 2.4.9**
 
 The following issues are fixed in Browser TVSDK verison 2.4.9:
 
-#### Core playback features: {#core-playback-features-2}
+**Core playback features:**
 
 • **13407**: DASH streams may stall if Firefox stops sending "ontimeupdate" event during playback.
 
@@ -1328,7 +1320,7 @@ The following issues are fixed in Browser TVSDK verison 2.4.9:
 
 • **20613**: Closed captions boxes overlap with each other making them illegible.
 
-#### Core Ad Insertion (CSAI) features: {#core-ad-insertion-csai-features}
+**Core Ad Insertion (CSAI) features:**
 
 • **20043**: Missing Ad impression and Ad tracking calls with multiple ads and third party redirects.
 
@@ -1336,7 +1328,7 @@ The following issues are fixed in Browser TVSDK verison 2.4.9:
 
 • **20097**: Ad playback is skipped and main content resumes immediately rather than wait for timeout of 20 seconds if ad manifest is not available.
 
-#### Issues fixed in version 2.4.8 Update (Build 6002) {#issues-fixed-in-version-update-build-1}
+**Issues fixed in version 2.4.8 Update (Build 6002)**
 
 The following issues are fixed in Browser TVSDK verison 2.4.8 Update (Build 6002):
 
@@ -1358,7 +1350,7 @@ The following issues are fixed in Browser TVSDK verison 2.4.8 Update (Build 6002
 
 • **19916:** DRM playback on UI-Framework was broken. Now, it invokes acquireLicense even if there is no policy in the metadata.
 
-#### Issues fixed in version 2.4.8 {#issues-fixed-in-version-4}
+**Issues fixed in version 2.4.8**
 
 The following issues are fixed in Browser TVSDK 2.4.8 release:
 
@@ -1388,7 +1380,7 @@ The following issues are fixed in Browser TVSDK 2.4.8 release:
 
 • **19762**: acquireLicense used to be called before setAuthenticationToken because of which a valid license was returned irrespective of the token validity. This is fixed now and acquireLicense is called only after setAuthenticationToken response.
 
-#### Issues fixed in version 2.4.7 {#issues-fixed-in-version-5}
+**Issues fixed in version 2.4.7**
 
 The following issues were fixed in version 2.4.7:
 
@@ -1400,13 +1392,13 @@ The following issues were fixed in version 2.4.7:
 
 • **19085**: MediaPlayer Params such as volume, abrControlParameters, and ccStyle are not set to Defaults on Resetting the Player.
 
-#### Issues fixed in version 2.4.6 {#issues-fixed-in-version-6}
+**Issues fixed in version 2.4.6**
 
 The following issue was fixed in version 2.4.6:
 
 • **18093**: TimedMetadata for the tag next to the subscribed tag is returned when you use Flash Player version 24 in Flash Fallback mode.
 
-#### Issues fixed in version 2.4.4 {#issues-fixed-in-version-7}
+**Issues fixed in version 2.4.4**
 
 The following issues were fixed in version 2.4.4:
 
@@ -1430,7 +1422,7 @@ The following issues were fixed in version 2.4.4:
 
 The limitations and known issues in Browser TVSDK are mentioned below.
 
-### Table 16: Core Playback Features {#table-core-playback-features}
+**Table 16: Core Playback Features**
 
 <table> 
  <tbody> 
@@ -1541,7 +1533,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
  </tbody> 
 </table>
 
-#### Table 17: Advanced Playback Features {#table-advanced-playback-features}
+**Table 17: Advanced Playback Features**
 
 <table> 
  <tbody> 
@@ -1588,7 +1580,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
  </tbody> 
 </table>
 
-#### Table 18: Content Protection Features {#table-content-protection-features}
+**Table 18: Content Protection Features**
 
 <table> 
  <tbody> 
@@ -1619,7 +1611,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
  </tbody> 
 </table>
 
-#### Table 19: Core Ad Insertion Features (CSAI) {#table-core-ad-insertion-features-csai}
+**Table 19: Core Ad Insertion Features (CSAI)**
 
 <table> 
  <tbody> 
@@ -1677,7 +1669,7 @@ The limitations and known issues in Browser TVSDK are mentioned below.
  </tbody> 
 </table>
 
-#### Table 20: Advanced Ad Insertion Features (CSAI) {#table-advanced-ad-insertion-features-csai}
+**Table 20: Advanced Ad Insertion Features (CSAI)**
 
 <table> 
  <tbody> 
@@ -1725,9 +1717,12 @@ The limitations and known issues in Browser TVSDK are mentioned below.
  </tbody> 
 </table>
 
-#### Table 21: Integrations {#table-integrations}
+**Table 21: Integrations**
 
 | **Content Type** |**Feature** |**Flash** |**HTML5 in Firefox, IE, Chrome, Android Chrome** |**HTML5 in Safari, iOS Safari** |**Chromecast (DASH playback only)** |
 |---|---|---|---|---|---|
 | VOD + Live |Adobe Analytics VHL integration |  |19004: Video Analytics tracking is not available through UI Configurator Tool. |  |  |
 
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

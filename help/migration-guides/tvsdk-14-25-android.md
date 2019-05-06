@@ -237,7 +237,7 @@ The following event codes are new in 2.5:
 
 A new way of constructing `MediaPlayer` and changes to some of the methods.
 
-### Changes to the MediaPlayer class {#changes-to-the-mediaplayer-class}
+**Changes to the MediaPlayer class**
 
 Here are the changes to `MediaPlayer` class:
 
@@ -341,7 +341,7 @@ mediaPlayer.replaceCurrentItem(itemLoader.getItem());
 
 You can use this to switch between pre-initialized MediaPlayer instances, as in the case of blackouts.
 
-#### Constructors replace static create() methods {#constructors-replace-static-create-methods}
+**Constructors replace static create() methods**
 
 You can use constructors in TVSDK v2.5, instead of using `create()` methods of TVSDK v1.4. All the classes with names beginning with Default, such as `DefaultMediaPlayer`, `DefaultNetworkConfig`, `DefaultContentFactory`, are not available in v2.5.
 
@@ -395,7 +395,7 @@ try { mediaPlayer.replaceCurrentResource(playerResource,_mediaPlayerItemConfig);
 
 Some classes (for example, `ContentFactory`) are abstract classes with no publicly available default implementation (for example, `DefaultContentFactory`). In these cases you can provide a default implementation via a convenience function, for example: `mediaPlayerItemConfig.getDefaultContentFactory()`
 
-#### Changes in closed captioning {#changes-in-closed-captioning}
+**Changes in closed captioning**
 
 The following changes affect classes related to closed captioning:
 
@@ -450,13 +450,13 @@ View.VISIBLE/*Visible*/);
 
 There are several ad-related changes in version 2.5.
 
-### Changes to advertising behavior {#changes-to-advertising-behavior}
+**Changes to advertising behavior**
 
 The default behavior of the ad playback when a user performs a seek beyond an Ad pod changes slightly in v2.5. If the ad break is not watched then the ad is played back after a seek forward. When the app is using the default ad policy, the ad break is removed after playback is completed. Using TVSDK v2.5, if a user seeks behind an Ad pod on the timeline and the ad break is not watched, then no ad is played back.
 
 However, in TVSDK v1.4, by default, an ad is played back in case of a seek backward. For example if you seek backward between the third and fourth ad break, the default behavior for TVSDK v1.4 is to play the third ad break.
 
-### Ad Rules change {#ad-rules-change}
+**Ad Rules change**
 
 The Ad rules are specified using a JSON file. The format of the JSON file remains the same in both versions of the TVSDK. However, in TVSDK v2.5, the Ad rules JSON file must be hosted on a location accessible via a HTTP URL. The application can use an instance of AuditudeSettings.
 
@@ -468,7 +468,7 @@ AuditudeSettings result = new AuditudeSettings(); result.setCRSRulesJsonURL(<htt
 
 In TVSDK version 1.4, this file is placed below the assets folder in the application and TVSDK loads the file.
 
-### Ad factory renaming {#ad-factory-renaming}
+**Ad factory renaming**
 
 `AdvertisingFactory` is now named `ContentFactory`. With `ContentFactory` you can create customized advertising workflows by overriding some of its methods. Use return null to keep the default behaviors, as in the following:
 
@@ -490,13 +490,13 @@ public List<CustomAdHandler> retrieveCustomAdPlaybackHandlers(MediaPlayerItem it
 };
 ```
 
-### Zero length Ad breaks {#zero-length-ad-breaks}
+**Zero length Ad breaks**
 
 TVSDK 2.5 inserts zero length ad breaks as place holders when advertising server does not return any ads.
 
 The zero length ad breaks can be determined by detecting the count of ads to be zero in the ad break using the onAdBreakStarted event and application has to handle these ad breaks accordingly.
 
-### Metadata changes {#metadata-changes}
+**Metadata changes**
 
 The Metadata class provides a more capable replacement for the former MetadataNode class.
 
@@ -598,7 +598,7 @@ MediaPlayerItemConfig mediaItemConfig = new MediaPlayerItemConfig(context);
 NetworkConfiguration mediaNetworkConfiguration = mediaItemConfig.getNetworkConfiguration();
 ```
 
-### Changes to TimedMetadata parsing {#changes-to-timedmetadata-parsing}
+**Changes to TimedMetadata parsing**
 
 The parsing of `TimedMetadata` has changed in 2.5 with respect to the datatypes for parsing ID3 tag.
 
@@ -667,7 +667,7 @@ if (timedMetadata.getName().equalsIgnoreCase("#EXT-OATCLS-SCTE35")) { PMPDemoApp
 }
 ```
 
-### Other changes {#other-changes}
+**Other changes**
 
 The following additional changes are available in version 2.5:
 
@@ -840,7 +840,7 @@ The static `DRMManager` instance that was available in 1.4 after mediaplayer is 
 
 ## Adaptive Bitrate (ABR) related changes {#adaptive-bitrate-abr-related-changes}
 
-### Changes in constants {#changes-in-constants}
+**Changes in constants**
 
 Many constants have changed type from `String` to `int`. For example: `MediaResourceType`, `ABRControlParameters`, and `MediaPlayerStatusChangeEvent`.
 
@@ -899,7 +899,7 @@ _mediaPlayer.setABRControlParameters(abrBuilder.toABRControlParameters());
 }
 ```
 
-### Changes to the ABRControlParameters constructor {#changes-to-the-abrcontrolparameters-constructor}
+**Changes to the ABRControlParameters constructor**
 
 Some parameters have been added, some renamed, and some moved. The following are the constructor signature in v1.4 and the new signature in 2.5:
 
@@ -919,7 +919,7 @@ int nMaxTrickPlayBandwidthUsage, double dMaxPlayoutRate)
 
 ## Error events and handling {#error-events-and-handling}
 
-### Changes in error handling {#changes-in-error-handling}
+**Changes in error handling**
 
 The `MediaError` class has been replaced with the `Notification` class. The only difference between the classes `MediaError` and `Notification` is that the latter does not contain a description attribute. The TVSDK 1.4 error codes with values 101xxx, 102xxx,104xxx,106xxx,107xxx,109xxx do not exist in TVSDK 2.5. For the playback codes in TVSDK 2.5, see [Native Error- video playback values](assets/psdk_android_2.5.pdf).
 
@@ -1045,7 +1045,7 @@ showToast(sb.toString()); PMPDemoApp.logger.d(LOG_TAG, sb.toString());
 };
 ```
 
-### New exceptions {#new-exceptions}
+**New exceptions**
 
 While TVSDK v1.4 used a combination of nulls, error returns, and a variety of exceptions ( `MediaPlayerException`, `IllegalStateException`, and `IllegalArgumentException`), TVSDK v2.5 `generatesMediaPlayerException` for all errors.
 
@@ -1236,3 +1236,7 @@ LOG_TAG + "::LoadInformationEventListener#onLoadInfomation()", "Url: " + loadInf
 }
 };
 ```
+
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.
