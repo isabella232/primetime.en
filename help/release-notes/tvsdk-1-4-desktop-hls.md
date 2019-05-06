@@ -746,6 +746,7 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
   _playbackManager.pause();  
   }
   ```
+  
 * **Version 1.4.13** PTPLAY-8501 - When VMAP returns two direct MP4 non transcoded ads, the same fall back ad plays twice.
 
 * **Version 1.4.2** In the Flash Player version 16 release, an issue was identified with the ABR "switching down" logic, after the player gets into an empty buffering event. The issue prevents the bitrate from switching down in bad bandwidth environments once the player gets into a buffering state. To work around the issue, have your app set the `BufferControlParameters.initialBufferTime` to be the same as `BufferControlParameters.playbackBufferTime` temporarily during the buffering state (that is, on a `BufferEvent.BUFFERING_BEGIN` event) then reset it back to the set values on `BufferEvent.BUFFERING_END` event. The fix for this issue will be available in the next patch release of Flash Player verison 16.
