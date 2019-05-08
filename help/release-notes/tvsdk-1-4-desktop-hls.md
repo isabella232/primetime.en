@@ -738,14 +738,12 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 * Stream integrity is slightly slower in Google Chrome because of Chrome sandbox restrictions.
 * In TVSDK 1.4, if you disable autoPlay, a DRM error might occur when the player remains idle for at least a minute. To work around this issue, when you disable autoPlay but preload assets, modify `ReferenceCore.as` by changing the contents of `onPlaybackManagerPrepared`:
 
-```
-    if (_playbackManager.autoPlay) {
-    _playbackManager.play();
-    } else {
-    _playbackManager.play();
-    _playbackManager.pause();
-    }
-```
+>if (_playbackManager.autoPlay) {
+>_playbackManager.play();
+>} else {
+>_playbackManager.play();
+>_playbackManager.pause();
+>}
   
 * **Version 1.4.13** PTPLAY-8501 - When VMAP returns two direct MP4 non transcoded ads, the same fall back ad plays twice.
 
