@@ -17,7 +17,7 @@ TVSDK 2.4.1 for Android Release Notes describe the new and supported features an
 
 Adobe is releasing TVSDK 2.4.1 for Android.
 
-To use this version of TVSDK, ensure that your system meets the requirements described at [System Requirements.](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_2.5.pdf#page=6)
+To use this version of TVSDK, ensure that your system meets the requirements described at [System Requirements](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_2.5.pdf#page=6).
 
 Here is where you can find documentation:
 
@@ -25,11 +25,9 @@ Here is where you can find documentation:
 
 • [Javadocs TVSDK 2.4 for Android Java API](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/index.html)
 
-
 The Javadocs are the ultimate authority, because they are automatically generated directly from the TVSDK source code.
 
 • [C++ API documentation TVSDK 2.4 for Android C++ API](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.4/namespaces.html)
-
 
 Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so consult the C++ documentation for a deeper understanding of the Java API.
 
@@ -73,13 +71,10 @@ Here are the key new features in version 2.4.1:
 * Advertising/alternate content and monetization features
 
     * **Tracking for server-side-inserted ads.** TVSDK can track ads inserted by the Adobe Cloud ad insertion service. It supports linear ads in VAST2, VAST3, and VMAP formats for VOD and live/linear streams. 
-    * **Custom HLS tags.** TVSDK uses its `MediaPlayerConfig` class to enable notifying the player application when custom HLS tags appear in the stream. 
-    
+    * **Custom HLS tags.** TVSDK uses its `MediaPlayerConfig` class to enable notifying the player application when custom HLS tags appear in the stream.
     * **Client side ad insertion.** The Auditude ad insertion library works with Adobe Auditude servers to resolve ads for insertion dynamically into live, linear, and VOD content, at pre-roll, mid-roll, or post-roll positions. 
-    * **Custom ad resolvers.** The `ContentResolver, OpportunityGenerator,` and `MediaPlayerClientFactory` interfaces enable you to implement a custom ad/alternate content resolver and register a custom opportunity detector to work with TVSDK. The `TestAdResolver` and `AuditudeResolver` classes provide C++ examples of implementing a content resolver. You can find a Javascript example at `samples/jspsdk/testapp/psdk.js`. 
-    
+    * **Custom ad resolvers.** The `ContentResolver, OpportunityGenerator,` and `MediaPlayerClientFactory` interfaces enable you to implement a custom ad/alternate content resolver and register a custom opportunity detector to work with TVSDK. The `TestAdResolver` and `AuditudeResolver` classes provide C++ examples of implementing a content resolver. You can find a Javascript example at `samples/jspsdk/testapp/psdk.js`.
     * **Consistent ad behavior.** Use the `AdPolicySelector` interface to enable consistent behavior across all players for operations like seek and trick play when ads are present in the content. If you don't implement your own, TVSDK uses `DefaultAdPolicySelector`.
-    
     * **Remove/replace C3 ads.** Use the appropriate TVSDK API to remove custom content ranges and dynamically insert new ads without additional prep work. This is handy when live/linear content is broadcast, then immediately made available on demand without cleanup.
 
 Here are the key new features version 2.4:
@@ -405,4 +400,8 @@ This version of TVSDK has the following issues:
 * Pre-roll ad plays even when adBreakPolicy SKIP is chosen. 
 * After going into Complete state player goes back to Playing state with SKIP adBreakPolicy for Post-roll ads.
 
-Without video, there is no viewport dimension, and without a viewport dimension, you cannot display any graphics for captions. 
+Without video, there is no viewport dimension, and without a viewport dimension, you cannot display any graphics for captions.
+
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

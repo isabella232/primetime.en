@@ -12,7 +12,7 @@ discoiquuid: e4437a26-9454-4da1-ae87-0fce664aac3d
 
 # TVSDK 1.4 for Desktop HLS Release Notes {#tvsdk-for-desktop-hls-release-notes}
 
-TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolved and known issues in TVSDK DHLS.
+TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolved, and known issues in TVSDK DHLS.
 
 ## New features {#new-features}
 
@@ -23,7 +23,7 @@ TVSDK for Desktop HLS Release Notes describe what is new or changed, the resolve
   * By default, all transcoded assets will be hosted on Adobe-owned CDN on Akamai. With the latest release, Adobe Creative Repackaging Service (CRS) provides the ability to upload the transcoded creatives to multiple CDNs as specified by the customer.
   * New APIs are added to TVSDK to enable specifying the final CRS creative url when the default URL is not used. Please refer to the documentation to learn how to use these new APIs.
 
-## New features in the previous releases {#new-features-previous}
+### New features in the previous releases {#new-features-previous}
 
 **1.4.30**
 
@@ -102,7 +102,7 @@ Sample-based AES encryption is now supported.
 
   Updating the localhost token for PMP demo on DHLS.
 
-## Resolved issues in the previous releases {#resolved-issues-previous}
+### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **Version 1.4.38** (891)
 
@@ -738,17 +738,13 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
 * Stream integrity is slightly slower in Google Chrome because of Chrome sandbox restrictions.
 * In TVSDK 1.4, if you disable autoPlay, a DRM error might occur when the player remains idle for at least a minute. To work around this issue, when you disable autoPlay but preload assets, modify `ReferenceCore.as` by changing the contents of `onPlaybackManagerPrepared`:
 
-  ```
-  if (_playbackManager.autoPlay) {  
-  _playbackManager.play();  
-  } else {  
-  _playbackManager.play();  
-  _playbackManager.pause();  
-  }
-  ```
-
-### Known issues
-
+>if (_playbackManager.autoPlay) {
+>_playbackManager.play();
+>} else {
+>_playbackManager.play();
+>_playbackManager.pause();
+>}
+  
 * **Version 1.4.13** PTPLAY-8501 - When VMAP returns two direct MP4 non transcoded ads, the same fall back ad plays twice.
 
 * **Version 1.4.2** In the Flash Player version 16 release, an issue was identified with the ABR "switching down" logic, after the player gets into an empty buffering event. The issue prevents the bitrate from switching down in bad bandwidth environments once the player gets into a buffering state. To work around the issue, have your app set the `BufferControlParameters.initialBufferTime` to be the same as `BufferControlParameters.playbackBufferTime` temporarily during the buffering state (that is, on a `BufferEvent.BUFFERING_BEGIN` event) then reset it back to the set values on `BufferEvent.BUFFERING_END` event. The fix for this issue will be available in the next patch release of Flash Player verison 16.
@@ -765,7 +761,6 @@ mime types for HLS format had been case sensitive, this was incorrect and has be
     * Bug #3779889 - The complete call is not made when reaching the end in trick play in Video Analytics
     * Bug #VA-779 - The bit-rate change event heartbeat is not sent for Enhanced Video Analytics with Heartbeat Support Reference Implementation - Trick play is not implemented in the sample application.
 
->[!MORE_LIKE_THIS]
->
->* [All release notes of Adobe Primetime](https://helpx.adobe.com/primetime/user-guide.html)
->* [Adobe Primetime documentation](https://helpx.adobe.com/primetime/user-guide.html)
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

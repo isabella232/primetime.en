@@ -13,9 +13,7 @@ products: SG_PRIMETIME
 
 DRM 5.3.1 Release Notes describe the new features and the known issues in DRM 5.3.1.
 
-## New Features {#new-features}
-
-### Version 5.3 {#version}
+## New Features in Version 5.3 {#new-features}
 
 * **Secure Stop -** You can specify whether playback stops or continues at the end of a playback window.
 * **Resolution Based Output Protection (RBOP) -** You can specify the output constraints based on pixel resolutions.
@@ -32,9 +30,7 @@ This change is backwards-compatible with non-CDM platforms, such as Flash Player
 
 * **RBOP downscaling -** Specific to the HTML5 space, RBOP contains automatic downscaling capability, where if a bitrate that exceeds the allowable bitrate specified in the DRM policy, the content will be downscaled to the max allowable resolution. For example, if a 1080p stream is streamed to a client that is displaying the content on a non-HDCP compliant monitor, the DRM policy may indicate that the max resolution should be 720p. Primetime DRM will decode the 1080p stream and then downscale it to 720p before rendering it onscreen. If the browser playing the video is then dragged over to a monitor that does support HDCP, Primetime DRM will then stop downscaling the content and allow it to play back at 1080.
 
-## Known Issues {#known-issues}
-
-### Version 5.3 {#version-1}
+## Known Issues in Version 5.3 {#known-issues}
 
 * `Hasher.bat (flashaccess-hasher.jar)` outputs log messages to `flashaccess-global.log.`You must ensure that the `flashaccess-global.log` file is in the same directory with Hasher.bat.
 
@@ -52,3 +48,7 @@ The Xbox key server should not accept policies that are outside of the validity 
 * Returned value of some JSON structures are not formatted correctly for Resolution based Output Protection related classes.
 
 Several classes implement a toJSON() method that should return a JSON compliant representation of that object as a String, but currently the returned value is not fully JSON compliant.
+
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

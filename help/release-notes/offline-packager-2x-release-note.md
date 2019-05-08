@@ -95,11 +95,11 @@ Following issues were also fixed in this release.
 
 ### Minimum system requirements {#minimum-system-requirements-1}
 
-Supported operating systems
+**Supported operating systems**
 
 * Linux CentOS 6.3 64 bit
 
-Hardware requirements
+**Hardware requirements**
 
 * 3.2GHz Intel® Pentium® 4 processor (dual Intel Xeon® or faster recommended)
 
@@ -113,7 +113,7 @@ Hardware requirements
   * (Disk-SSD): 400MBps read/write speed
   * (NAS): 1 GB dedicated link
 
-Software requirements
+**Software requirements**
 
 * Oracle Java SE 1.8 or higher
 
@@ -125,3 +125,7 @@ Software requirements
 ### Configuring the Offline Packager 2.1 {#configuring-the-offline-packager-1}
 
 Refer the Primetime Offline Packager Getting Started document for the configuration details available here [https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html)
+
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

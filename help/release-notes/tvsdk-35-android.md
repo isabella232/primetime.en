@@ -13,8 +13,6 @@ discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 
 TVSDK 3.5 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.5
 
-## TVSDK Android 3.5 {#tvsdk-android}
-
 The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README.md file explains how to build the reference player.
 
 >[!NOTE]
@@ -25,19 +23,18 @@ The Android reference player is included with Android TVSDK in the samples/ dire
 >1. Extract VideoHeartbeat.jar into the libs/ folder.
 >
 
-## New features {#new-features}
-
 TVSDK for Android provides many performance improvements over earlier versions. It provides a high quality viewing experience and carries over all of the features of version 1.4, with the exception of Multi-CDN support.
 
 The comprehensive set of features supported and not supported are presented in the [Features Matrix](#feature-matrix) section of these release notes.
 
-### What's New in TVSDK 3.5 {#what-s-new-in-tvsdk}
+## New features {#new-features}
+
+**Android TVSDK 3.5**
 
 * **Just In Time Ad Resolution** - TVSDK 3.5 removes support of the played ads from the timeline.
 * **Enabled support for offline playback** - With offline playback, users can now download video content to their devices and watch it when they are not connected. For detailed information, refer to "[Offline Playback with Android](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.5.pdf)."
 
-
-#### New features in the previous releases
+### New features in the previous releases
 
 **Version 3.4**
 
@@ -331,11 +328,15 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 ## Resolved issues {#resolved-issues}
 
-### Android TVSDK 3.5 {#android-tvsdk}
+Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx.
+
+**Android TVSDK 3.5**
+
+This section provides a summary of the issue resolved in the release of TVSDK 3.5.
 
 * ZD#37503 - JSON responses for the CRS rules are cached to avoid the duplicate requests.
 
-#### Resolved issues in the previous releases
+### Resolved issues in the previous releases
 
 **Version 3.4**
 
@@ -617,10 +618,10 @@ This version of TVSDK has the following issues:
 
 ## Helpful resources {#helpful-resources}
 
-* [System Requirements](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.4.pdf#page=6)
-* [TVSDK 3.4 for Android Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.4.pdf)
-* [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.4/index.html)
-* [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.4/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
+* [System Requirements](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3-5-for-android/introduction/android-3_5-requirements.html)
+* [TVSDK 3.5 for Android Programmer's Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3-5-for-android/introduction/android-3_5-overview-prod-audience-guide.html)
+* [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.5/index.html)
+* [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.5/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
 * [TVSDK 1.4 to 2.5 for Android (Java) Migration Guide](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-25-android.html)
 * For handling screen on/off scenarios, see the `Application_Changes_for_Screen_On_Off.pdf` file included in the build.
-* See complete help documentation at [Adobe Primetime User Guide](https://helpx.adobe.com/primetime/user-guide.html).
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

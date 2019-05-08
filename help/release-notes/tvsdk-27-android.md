@@ -29,11 +29,13 @@ The Android reference player is included with Android TVSDK in the samples/ dire
 
 TVSDK 2.7 for Android includes all features of version 1.4 except the features not supported listed under [Feature Matrix](#feature-matrix).
 
-### What's New in TVSDK 2.7 {#what-s-new-in-tvsdk}
+**Android TVSDK 2.7**
 
 * **Parallel Ad Resolution Support**
 
 TVSDK 2.7 supports the concurrent resolution of all the Ad requests in an Ad break, instead of sequential resolution.
+
+### New features in the previous releases {new-features-previous-releases}
 
 **Version 2.5.6**
 
@@ -168,7 +170,7 @@ The important new features released in Android 2.5.1.
 
     frameHeight = e.getHeight();
 
-    frameWidth = e.getWidth()/SAR;
+    frameWidth = e.getWidth()/SAR;    
     ```
 
 * **Cookies**
@@ -260,7 +262,11 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 ## Resolved issues {#resolved-issues}
 
-### Android TVSDK 2.7 {#android-tvsdk-resolved}
+Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx
+
+**Android TVSDK 2.7**
+
+This section provides a summary of the issue resolved in the release of TVSDK 2.7.
 
 * ZD#37166 - Error tracking call gets fired even when the ad is played fine.
 * ZD#37134 - Wrong Ad IDs are returned, in case, wrapper(3P) Ad is present with multiple ads in VMAP response.
@@ -375,11 +381,13 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-### Android TVSDK 2.7 {#android-tvsdk-issues}
+**Android TVSDK 2.7**
 
 * TVSDK 2.7 supports concurrent resolution up to 5 Ads.
 * In the case of VMAP response, Ad calls in a single Ad break go concurrently, and the Ad breaks are resolved sequentially. 
 * In the case of FER, Ad calls in each opportunity are resolved concurrently.
+
+### Known issues and limitations in the previous releases{#known-issues-limitations-previous-releases}
 
 **Android TVSDK 2.5.6**
 
@@ -415,10 +423,10 @@ This version of TVSDK has the following issues:
 
 ## Helpful resources {#helpful-resources}
 
-* [System Requirements](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_2.7.pdf#page=6)
-* [TVSDK 2.7 for Android Programmer's Guide](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_2.7.pdf)
+* [System Requirements](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-2-7-for-android/overview/c-psdk-android-2_7-requirements.html)
+* [TVSDK 2.7 for Android Programmer's Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-2-7-for-android/overview/c-psdk-android-2_7-overview-prod-audience-guide.html)
 * [TVSDK Android Javadoc for API Reference](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/index.html)
 * [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
 * [TVSDK 1.4 to 2.5 for Android (Java) Migration Guide](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-25-android.html)
 * For handling screen on/off scenarios, see the `Application_Changes_for_Screen_On_Off.pdf` file included in the build.
-* See complete help documentation at [Adobe Primetime User Guide](https://helpx.adobe.com/primetime/user-guide.html).
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

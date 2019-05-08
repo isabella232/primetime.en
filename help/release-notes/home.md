@@ -11,7 +11,7 @@ Welcome to the Adobe Primetime Release Notes. The documents listed in the left n
 
 ## New features in the Release Notes for TVSDK 3.5 for Android
 
-* [Offline Playback with Android](../release-notes/tvsdk-35-android.md#what-s-new-in-tvsdk)
+* [Offline playback with Android](../release-notes/tvsdk-35-android.md#new-features)
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-35-android.md).
 

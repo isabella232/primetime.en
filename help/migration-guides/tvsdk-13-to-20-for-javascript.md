@@ -1361,3 +1361,7 @@ Tables in this topic:
   </tr> 
  </tbody> 
 </table>
+
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

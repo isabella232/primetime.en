@@ -860,3 +860,7 @@ The Media Player incorrectly sends out MediaPlayer PlayerState.Complete during t
 |Samsung Galaxy Tab 1 v10.1|Tegra 2|MBR transition might take up to three seconds.|As a fix for MBR crashes, we restart the decoder for every stream switch, which can take up to three seconds.||
 |Samsung Galaxy Y||Can't install SampleMediaPlayer app.|Uses ARM v6 instead of the more common ARM v7 chipset. FP/AIR does not support this device.||
 |Xoom|Tegra|A few frames are dropped for switching. The decoder is not restarted.|OMXAL limitation.||
+
+## Helpful resources {#helpful-resources}
+
+* See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.
