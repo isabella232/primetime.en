@@ -1,17 +1,17 @@
 ---
-title: TVSDK 3.5 for Android Release Notes
-seo-title: TVSDK 3.5 for Android Release Notes
-description: TVSDK 3.5 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.5
-seo-description: TVSDK 3.5 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.5
+title: TVSDK 3.6 for Android Release Notes
+seo-title: TVSDK 3.6 for Android Release Notes
+description: TVSDK 3.6 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.6
+seo-description: TVSDK 3.6 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.6
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 ---
 
-# TVSDK 3.5 for Android Release Notes {#tvsdk-for-android-release-notes}
+# TVSDK 3.6 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.5 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.5
+TVSDK 3.6 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.6
 
 The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README.md file explains how to build the reference player.
 
@@ -29,12 +29,16 @@ The comprehensive set of features supported and not supported are presented in t
 
 ## New features {#new-features}
 
-**Android TVSDK 3.5**
+**Android TVSDK 3.6**
+
+* **Enhance your apps for the 64-bit requirement** - The native library `(libAVEAndroid.so)` is now upgraded and made available in two versions. Existing armeabi (32 bit) native library location has been changed from `/framework/Player to /framework/Player/armeabi` and an additional arm64-v8a (64 bit) library is introduced in `/framework/Player/arm64-v8a.`
+
+### New features in the previous releases
+
+**Version 3.5**
 
 * **Just In Time Ad Resolution** - TVSDK 3.5 removes support of the played ads from the timeline.
 * **Enabled support for offline playback** - With offline playback, users can now download video content to their devices and watch it when they are not connected. For detailed information, refer to "[Offline Playback with Android](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.5.pdf)."
-
-### New features in the previous releases
 
 **Version 3.4**
 
@@ -330,13 +334,17 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx.
 
-**Android TVSDK 3.5**
+**Android TVSDK 3.6**
 
-This section provides a summary of the issue resolved in the release of TVSDK 3.5.
+This section provides a summary of the issue resolved in the release of TVSDK 3.6.
 
-* ZD#37503 - JSON responses for the CRS rules are cached to avoid the duplicate requests.
+* No new issues added.
 
 ### Resolved issues in the previous releases
+
+**Version 3.5**
+
+* ZD#37503 - JSON responses for the CRS rules are cached to avoid the duplicate requests.
 
 **Version 3.4**
 
@@ -549,11 +557,15 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-**Android TVSDK 3.5**
+**Android TVSDK 3.6**
 
 * No new limitations added.
 
 ### Known issues and limitations in the previous releases
+
+**Android TVSDK 3.5**
+
+* No new limitation added.
 
 **Android TVSDK 3.4**
 
