@@ -10,7 +10,7 @@ user-guide-title: Primetime Programming Help
 + [Programming Overview](home.md)
 + TVSDK 3x for Android {#tvsdk-3x-android-prog}
    + Introduction {#introduction}
-      + [Product overview, audience, and this guide](tvsdk-3x-for-android/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-prod-audience-guide.md)    
+      + [Product overview, audience, and this guide](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-prod-audience-guide.md)    
       + [Primetime TVSDK features](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-of-the-player.md)
       + [Considerations and best practices](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-considerations.md)
       + [Requirements](tvsdk-3x-android-prog/android-3x-introduction/android-3x-requirements.md)
@@ -150,11 +150,11 @@ user-guide-title: Primetime Programming Help
         + [Ad deletion and replacement error handling](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-error-handling/android-3x-ad-delete-replace-error-handling.md)
         + [Time range error examples](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/delete-replace-content-vod/ad-delete-replace-error-handling/android-3x-timerange-error-examples-dhls.md)
       + Update ad creative selection rules {#update-ad}
-        + [Overview](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-3x-updating-rules/android-3x-updating-rules.md)
-        + [Priority rules](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-3x-updating-rules/android-3x-priority-rule.md)
-        + [Normalize rules](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-3x-updating-rules/android-3x-normalize-rule.md)
-        + [Sample creative selection rules](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-3x-updating-rules/android-3x-sample-rule-files.md)
-        + [Apply creative selection rules](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-3x-updating-rules/android-3x-how-tvsdk-applies-csr.md)
+        + [Overview](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-updating-rules.md)
+        + [Priority rules](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-priority-rule.md)
+        + [Normalize rules](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-normalize-rule.md)
+        + [Sample creative selection rules](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-sample-rule-files.md)
+        + [Apply creative selection rules](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-how-tvsdk-applies-csr.md)
    + Content protection {#content-protection}
      + [Widevine DRM](tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md)
      + [Primetime DRM interface overview](tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-interface.md)

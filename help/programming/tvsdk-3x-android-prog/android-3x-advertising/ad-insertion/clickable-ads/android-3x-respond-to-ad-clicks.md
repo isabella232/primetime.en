@@ -22,7 +22,7 @@ When a user clicks on an ad or a related button, your application must respond. 
 1. To retrieve the click-through URL and related information, use the getter methods for the `AdClickEvent` instance.
 1. Pause the video.
 
-   For more information about pausing the video, see  [Pause and resume playback](../../ad-insertion/clickable-ads/android-3.5-pausing-resuming-playback.md).
+   For more information about pausing the video, see  [Pause and resume playback](../../ad-insertion/clickable-ads/android-3x-pausing-resuming-playback.md).
 1. Use the click-through information to display the ad click-through URL and the related information. You can, for example, display the information in one of the following ways:
 
     * In your application, by opening the click-through URL in a browser.

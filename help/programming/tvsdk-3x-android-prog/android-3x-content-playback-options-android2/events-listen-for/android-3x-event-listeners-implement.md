@@ -24,7 +24,7 @@ Your application must implement event listeners for any TVSDK events that affect
       >
       >Listen for the status change event, which occurs when the player's status changes in ways that you need to know. The information it provides includes errors that might affect what your player can do next.
 
-    * For other events, depending on your application, see  [Primetime player events summary](../../android-3.5-events-notifications/events-summary/android-3.5-events-summary.md).
+    * For other events, depending on your application, see  [Primetime player events summary](../../android-3x-events-notifications/events-summary/android-3x-events-summary.md).
 
 1. Implement and add an event listener for each event. 
 
