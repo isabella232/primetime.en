@@ -26,6 +26,6 @@ TVSDK also includes default content resolvers:
 
 You can override the default opportunity generators and content resolvers to customize the advertising workflow in ways such as the following:
 
-* Recognize custom tags for ad insertion. For more information, see [Customize opportunity generators and content resolvers](../../../../tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/content-resolver/android-3.5-content-resolver.md).
+* Recognize custom tags for ad insertion. For more information, see [Customize opportunity generators and content resolvers](../../../../tvsdk-3x-for-android/android-3x-advertising/ad-insertion/content-resolver/android-3x-content-resolver.md).
 * Create a customized ad provider.
 * Black out content.

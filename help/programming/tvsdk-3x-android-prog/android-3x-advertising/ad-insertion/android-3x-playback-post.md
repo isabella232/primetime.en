@@ -83,7 +83,7 @@ The following table describes how TVSDK handles ads and ad breaks during playbac
   <tr> 
    <td colname="col1"> Your application seeks forward over ads that were inserted using custom ad markers. </td> 
    <td colname="col2"> Skips to the user-selected seek position. </td> 
-   <td colname="col3">For more information, see <a href="../../../tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/ui-configure/android-3.5-ui-seek-scrub-bar-display.md" format="dita" scope="local"> Display a seek scrub bar with the current playback position</a>. </td> 
+   <td colname="col3">For more information, see <a href="../../../tvsdk-3x-for-android/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-seek-scrub-bar-display.md" format="dita" scope="local"> Display a seek scrub bar with the current playback position</a>. </td> 
   </tr> 
  </tbody> 
 </table>

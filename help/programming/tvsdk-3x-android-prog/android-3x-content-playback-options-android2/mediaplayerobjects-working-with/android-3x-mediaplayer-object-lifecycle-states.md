@@ -74,7 +74,7 @@ The following table provides details about the lifecycle and statuses of the med
   </tr> 
   <tr> 
    <td colname="col1"> ERROR </td> 
-   <td colname="col2"> <p>An error occurred during the process. An error also might affect what the application can do next. For more information, see <a href="../../../tvsdk-3.5-for-android/android-3.5-content-playback-options-android2/android-3.5-error-handling-set-up.md" format="dita" scope="local"> Set up error handling </a>. </p> </td> 
+   <td colname="col2"> <p>An error occurred during the process. An error also might affect what the application can do next. For more information, see <a href="../../../tvsdk-3x-for-android/android-3.5-content-playback-options-android2/android-3x-error-handling-set-up.md" format="dita" scope="local"> Set up error handling </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -25,7 +25,7 @@ When TVSDK detects ID3 metadata, it issues a notification with the following dat
 
    >[!TIP]
    >
-   >Custom ad cues use the same `onTimedMetadata` event to indicate detection of a new tag. This should not cause any confusion because custom ad cues are detected at the manifest level, and ID3 tags are embedded in the stream. For more information, see [Custom tags](../../tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/custom-tags-configure/android-3.5-custom-tags-configure.md).
+   >Custom ad cues use the same `onTimedMetadata` event to indicate detection of a new tag. This should not cause any confusion because custom ad cues are detected at the manifest level, and ID3 tags are embedded in the stream. For more information, see [Custom tags](../../tvsdk-3x-for-android/android-3x-advertising/ad-insertion/custom-tags-configure/android-3x-custom-tags-configure.md).
 
 1. Retrieve the metadata.
 
