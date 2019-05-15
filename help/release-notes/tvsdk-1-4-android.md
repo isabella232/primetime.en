@@ -94,7 +94,7 @@ Bug fix for Content Skip on Android.
 * New APIs are added to  TVSDK  to enable specifying the final CRS creative  url  when the default  url  is not used. Please refer to the documentation to learn how to use these new APIs.
 
 **Version 1.4.18**
-Primetime Android TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. For more information about VPAID 2.0, see [VPAID ad support](../programming/tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/vpaid-2.0-ads/android-3.5-vpaid-2.0-ads.md).
+Primetime Android TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich interactive in-stream ad experience. For more information about VPAID 2.0, see [VPAID ad support](../programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/vpaid-ads/android-3x-vpaid-ads.md).
 
 **Version 1.4.17**
 
@@ -104,7 +104,7 @@ AC-3 5.1 is supported only on Amazon FireTV.
 
 * **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103** For VAST ads (creatives) with the fallback rule enabled, TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior.
 
-For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-3.5-for-android/android-3.5-advertising/ad-insertion/ad-fallback/android-3.5-ad-fallback.md).
+For more information, see [Ad fallback for VAST and VMAP ads](../programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-fallback/android-3x-ad-fallback.md).
 
 * **Video Heartbeats Library (VHL) updated to version 1.5**
   * Ability to send metadata with video start and/or video/ad/chapter start as context data
