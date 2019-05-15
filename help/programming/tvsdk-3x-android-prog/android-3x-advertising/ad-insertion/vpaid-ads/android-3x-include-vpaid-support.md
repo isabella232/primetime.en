@@ -27,7 +27,7 @@ To add VPAID 2.0 support, add a custom ad view and appropriate listeners.
        _playerFrame.addView(view);
    ```
 
-1. Create listeners and process the events described in [Events](../../../../tvsdk-3.5-for-android/android-3.5-events-notifications/events-summary/android-3.5-events-summary.md).
+1. Create listeners and process the events described in [Events](../../../../tvsdk-3x-android-prog/android-3x-events-notifications/events-summary/android-3x-events-summary.md).
 
    >[!IMPORTANT]
    >

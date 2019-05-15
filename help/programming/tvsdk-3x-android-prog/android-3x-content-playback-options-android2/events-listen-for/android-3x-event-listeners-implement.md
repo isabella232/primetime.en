@@ -28,7 +28,7 @@ Your application must implement event listeners for any TVSDK events that affect
 
 1. Implement and add an event listener for each event. 
 
-   For most events TVSDK passes arguments to the event listeners. Such values provide information about the event that can help you decide what to do next. The `MediaPlayerEvent` enumeration lists all the events that `MediaPlayer` dispatches. For more information, see  [Primetime player events summary](../../android-3.5-events-notifications/events-summary/android-3.5-events-summary.md).
+   For most events TVSDK passes arguments to the event listeners. Such values provide information about the event that can help you decide what to do next. The `MediaPlayerEvent` enumeration lists all the events that `MediaPlayer` dispatches. For more information, see  [Primetime player events summary](../../android-3x-events-notifications/events-summary/android-3x-events-summary.md).
 
    For example, if `mPlayer` is an instance of `MediaPlayer`, here is how you might add and structure an event listener:
 
