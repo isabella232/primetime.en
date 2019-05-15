@@ -35,4 +35,4 @@ You can monitor timed metadata by listening for `onTimedMetadata`, which notify 
    
    ```
 
-ID3 metadata uses the same `onTimedMetadata` listener to indicate the presence of an ID3 tag. This should not cause any confusion, however, because you can use the `TimedMetadata` `type` property to differentiate between TAG and ID3. For more information about ID3 tags, see [ID3 tags](../../../../tvsdk-3x-for-android/android-3x-content-playback-options-android2/android-3x-id3-metadata-retrieve.md).
+ID3 metadata uses the same `onTimedMetadata` listener to indicate the presence of an ID3 tag. This should not cause any confusion, however, because you can use the `TimedMetadata` `type` property to differentiate between TAG and ID3. For more information about ID3 tags, see [ID3 tags](../../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-id3-metadata-retrieve.md).

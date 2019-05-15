@@ -65,7 +65,7 @@ The MediaResource class represents the content to be loaded by the MediaPlayer i
 1. Load the media resource using one of the following options:
 
    * The MediaPlayer instance. 
-   * `MediaPlayerItemLoader` For more information, see [Load a media resource using MediaPlayerItemLoader](../../../tvsdk-3x-for-android/android-3x-content-playback-options-android2/mediaplayer-initialize-for-video/android-3x-media-resource-mediaplayeritemloader.md).
+   * `MediaPlayerItemLoader` For more information, see [Load a media resource using MediaPlayerItemLoader](../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayer-initialize-for-video/android-3x-media-resource-mediaplayeritemloader.md).
 
    >[!IMPORTANT]
    >
