@@ -9,9 +9,9 @@ seo-description: null
 
 Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
-## New features in the Release Notes for TVSDK 3.6 for Android
+## [New features in the Release Notes for TVSDK 3.6 for Android](../release-notes/tvsdk-3x-android.md)
 
-* [Enhance your apps for the 64-bit requirement](../release-notes/tvsdk-3x-android.md#newfeatures)
+* **Enhance your apps for the 64-bit requirement**
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
