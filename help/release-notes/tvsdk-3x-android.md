@@ -27,7 +27,7 @@ TVSDK for Android provides many performance improvements over earlier versions. 
 
 The comprehensive set of features supported and not supported are presented in the [Features Matrix](#feature-matrix) section of these release notes.
 
-## New features {#newfeatures}
+## New features {#new-features}
 
 **Android TVSDK 3.6**
 
