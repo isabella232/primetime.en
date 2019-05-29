@@ -23,7 +23,7 @@ Operating System: iOS 7.0 or later
 
 * This release has a fix for the application crashes that occur in an ad failover scenario.
 
-## iOS TVSDK 3.4 {ios-tvsdk-34}
+## iOS TVSDK 3.4 {#ios-tvsdk-34}
 
 **Ad Resolution Timeout**
 
