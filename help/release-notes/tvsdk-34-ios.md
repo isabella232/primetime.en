@@ -19,11 +19,13 @@ Before you download iOS 3.4, ensure your hardware, operating system, and applica
 
 Operating System: iOS 7.0 or later
 
-## iOS TVSDK 3.4.019 (Hotfix) {#hotfix-34-019}
+## New features {#new-features}
+
+**iOS TVSDK 3.4.019 (Hotfix)**
 
 * This release has a fix for the application crashes that occur in an ad failover scenario.
 
-## iOS TVSDK 3.4 {#ios-tvsdk-34}
+**iOS TVSDK 3.4**
 
 **Ad Resolution Timeout**
 
