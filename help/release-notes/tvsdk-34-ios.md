@@ -21,6 +21,10 @@ Operating System: iOS 7.0 or later
 
 ## New features {#new-features}
 
+**iOS TVSDK 3.4.019 (Hotfix)**
+
+* This release has a fix for the application crashes that occur in an ad failover scenario.
+
 **iOS TVSDK 3.4**
 
 **Ad Resolution Timeout**
@@ -33,7 +37,7 @@ Operating System: iOS 7.0 or later
 
 * Enabled TVSDK to identify problem areas related to ad insertion workflows to report to an analytics end-point of choice.
 
-### New features in the previous releases {whats-new-previous}
+### New features and fixes in the previous releases {whats-new-previous}
 
 **Version 3.3**
 
