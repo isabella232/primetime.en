@@ -21,7 +21,7 @@ Operating System: iOS 7.0 or later
 
 ## New features {#new-features}
 
-**iOS TVSDK 3.4.019 (Hotfix)**
+**iOS TVSDK 3.4.0.19 (Hotfix)**
 
 * This release has a fix for the application crashes that occur in an ad failover scenario.
 

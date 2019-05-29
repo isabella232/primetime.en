@@ -11,7 +11,7 @@ Welcome to the Adobe Primetime Release Notes. The documents listed in the left n
 
 ## New features in the Release Notes for TVSDK 3.4 for iOS
 
-* [**Hotfix release for iOS TVSDK 3.4.019**](../release-notes/tvsdk-34-ios.md)
+* [**Hotfix release for iOS TVSDK 3.4.0.19**](../release-notes/tvsdk-34-ios.md)
 
 ## New features in the Release Notes for TVSDK 3.6 for Android
 
