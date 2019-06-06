@@ -9,7 +9,7 @@ title: REVENUE Optimization code
 
 This table provides detailed information about REVENUE OPTIMIZATION notifications.
 
-## Enable Revenue Optimization Reporting {enable-revenue-optimization-reporting}
+## Enable Revenue Optimization Reporting {#enable-revenue-optimization-reporting}
 
 To enable this reporting, use PTMediaPlayer api: `[mediaPlayer
 setRevenueOptimizationReportingLevel:PTNotificationTypeInfo]`.
