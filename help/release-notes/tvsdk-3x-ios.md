@@ -29,7 +29,7 @@ Operating System: iOS 7.0 or later
 
 To enable this feature, we need to set the new API `audioPlaybackInBackground` added in the PTMediaPlayer class. With this API enabled, your app is ready to play background audio.
 
-### New features and fixes in the previous releases {whats-new-previous}
+### New features and fixes in the previous releases {#whats-new-previous}
 
 **iOS TVSDK 3.4.0.19 (Hotfix)**
 

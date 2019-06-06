@@ -6,7 +6,7 @@ title: Mark ranges
 uuid: ca544f64-ef83-4c08-8ec5-1bc07fdba3c4
 ---
 
-# Use cases to delete and replace ads {use-cases-delete-replace-ads}
+# Use cases to delete and replace ads {#use-cases-delete-replace-ads}
 
 Here are the use cases to delete and replace ads:
 

@@ -35,7 +35,7 @@ TVSDK 2.7 for Android includes all features of version 1.4 except the features n
 
 TVSDK 2.7 supports the concurrent resolution of all the Ad requests in an Ad break, instead of sequential resolution.
 
-### New features in the previous releases {new-features-previous-releases}
+### New features in the previous releases {#new-features-previous-releases}
 
 **Version 2.5.6**
 
