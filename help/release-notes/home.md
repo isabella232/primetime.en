@@ -9,9 +9,9 @@ seo-description: null
 
 Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
-## New features in the Release Notes for TVSDK 3.4 for iOS
+## New features in the Release Notes for TVSDK 3.5 for iOS
 
-* [**Hotfix release for iOS TVSDK 3.4.0.19**](../release-notes/tvsdk-34-ios.md)
+* [**Enabling Background Audio**](../release-notes/tvsdk-3x-ios.md#new-features)
 
 ## New features in the Release Notes for TVSDK 3.6 for Android
 
