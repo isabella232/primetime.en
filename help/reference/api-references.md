@@ -8,6 +8,9 @@ topic-tags: API-references
 
 # Adobe Primetime API references {#api-references}
 
++ TVSDK 3.5 {#tvsdk-35}
+  + [TVSDK 3.5 for iOS](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v35/index.html)
+
 + TVSDK 3.4 {#tvsdk-34}
   + [TVSDK 3.4 for Android](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.4/index.html)
   + [TVSDK 3.4 for Android C++](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.4/namespaces.html)
