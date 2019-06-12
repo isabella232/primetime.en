@@ -7,7 +7,7 @@ seo-description: null
 
 # Primetime Reference Implementation
 
-Welcome to the Reference Implementatin help for Adobe Primetime. The documents listed in the left navigation help understand the TVSDK and modify the feature managers to customize your personal player.
+Welcome to the Reference Implementation help for Adobe Primetime. The documents listed in the left navigation help understand the TVSDK and modify the feature managers to customize your personal player.
 
 ## See also
 
