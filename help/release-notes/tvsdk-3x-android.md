@@ -37,7 +37,6 @@ The comprehensive set of features supported and not supported are presented in t
 
 * Fixed AppCrash error for not handling `MediaPlayerEvent.ITEM_UPDATED` in C++ layer (Android 64 bit).
 
-
 ### New features in the previous releases
 
 **Android TVSDK 3.6**
