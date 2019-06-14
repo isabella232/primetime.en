@@ -1,17 +1,17 @@
 ---
-title: TVSDK 3.6 for Android Release Notes
-seo-title: TVSDK 3.6 for Android Release Notes
-description: TVSDK 3.6 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.6
-seo-description: TVSDK 3.6 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.6
+title: TVSDK 3.7 for Android Release Notes
+seo-title: TVSDK 3.7 for Android Release Notes
+description: TVSDK 3.7 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.7
+seo-description: TVSDK 3.7 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.7
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 ---
 
-# TVSDK 3.6 for Android Release Notes {#tvsdk-for-android-release-notes}
+# TVSDK 3.7 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.6 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.6
+TVSDK 3.7 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.7.
 
 The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README.md file explains how to build the reference player.
 
@@ -29,11 +29,19 @@ The comprehensive set of features supported and not supported are presented in t
 
 ## New features {#new-features}
 
+**Android TVSDK 3.7**
+
+* For Widevine test content, a new API `setMediaDrmCallback` in DRMManager class is exposed to override the default implementation of MediaDrmCallback interface.
+
+    `public static void setMediaDrmCallback(MediaDrmCallback callback)`
+
+* Fixed AppCrash error for not handling `MediaPlayerEvent.ITEM_UPDATED` in C++ layer (Android 64 bit).
+
+### New features in the previous releases
+
 **Android TVSDK 3.6**
 
 * **Enhance your apps for the 64-bit requirement** - The native library `(libAVEAndroid.so)` is now upgraded and made available in two versions. Existing armeabi (32 bit) native library location has been changed from `/framework/Player to /framework/Player/armeabi` and an additional arm64-v8a (64 bit) library is introduced in `/framework/Player/arm64-v8a.`
-
-### New features in the previous releases
 
 **Version 3.5**
 
@@ -334,13 +342,17 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx.
 
-**Android TVSDK 3.6**
+**Android TVSDK 3.7**
 
-This section provides a summary of the issue resolved in the release of TVSDK 3.6.
+This section provides a summary of the issue resolved in the release of TVSDK 3.7.
 
 * No new issues added.
 
 ### Resolved issues in the previous releases
+
+**Android TVSDK 3.6**
+
+* No new issues added.
 
 **Version 3.5**
 
@@ -557,11 +569,15 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-**Android TVSDK 3.6**
+**Android TVSDK 3.7**
 
 * No new limitations added.
 
 ### Known issues and limitations in the previous releases
+
+*Android TVSDK 3.6**
+
+* No new limitations added.
 
 **Android TVSDK 3.5**
 
