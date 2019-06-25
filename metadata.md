@@ -7,7 +7,7 @@ getting-started-title: Getting Started
 getting-started-url: https://www.adobe.com/devnet/primetime.html
 tutorials-title: Tutorials
 tutorials-url: https://www.adobe.com/devnet/primetime.html
-git-repo: https://git.corp.adobe.com/AdobeDocs/primetime.en
+git-repo: https://github.com/AdobeDocs/primetime.en
 index: y
 ---
 
