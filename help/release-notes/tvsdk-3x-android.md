@@ -357,22 +357,12 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx.
 
-<<<<<<< Updated upstream
-**Android TVSDK 3.6**
-
-This section provides a summary of the issue resolved in the release of TVSDK 3.6.
-=======
 **Android TVSDK 3.8**
 
 This section provides a summary of the issue resolved in the release of TVSDK 3.8.
->>>>>>> Stashed changes
-
-* 
 
 ### Resolved issues in the previous releases
 
-<<<<<<< Updated upstream
-=======
 **Android TVSDK 3.7**
 
 This section provides a summary of the issue resolved in the release of TVSDK 3.7.
@@ -381,7 +371,6 @@ This section provides a summary of the issue resolved in the release of TVSDK 3.
 
 * No new issues added.
 
->>>>>>> Stashed changes
 **Version 3.5**
 
 * ZD#37503 - JSON responses for the CRS rules are cached to avoid the duplicate requests.
