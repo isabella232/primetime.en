@@ -33,7 +33,7 @@ The comprehensive set of features supported and not supported are presented in t
 
 * **Pre-Roll support with Partial Ad-Break feature** - With this enhancement, TVSDK removes the pre-roll disabling requirement.
 
-The new behavior works when a pre-roll ad is played with the live content and then followed by the partial mid-roll ad.
+    The new behavior works when a pre-roll ad is played with the live content and then followed by the partial mid-roll ad.
 
 ### New features in the previous releases
 
