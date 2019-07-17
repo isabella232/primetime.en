@@ -1,17 +1,24 @@
 ---
+<<<<<<< Updated upstream
 title: TVSDK 3.6 for Android Release Notes
 seo-title: TVSDK 3.6 for Android Release Notes
 description: TVSDK 3.6 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.6
 seo-description: TVSDK 3.6 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.6
+=======
+title: TVSDK 3.8 for Android Release Notes
+seo-title: TVSDK 3.8 for Android Release Notes
+description: TVSDK 3.8 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.8
+seo-description: TVSDK 3.8 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.8
+>>>>>>> Stashed changes
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 ---
 
-# TVSDK 3.6 for Android Release Notes {#tvsdk-for-android-release-notes}
+# TVSDK 3.8 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.6 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.6
+TVSDK 3.8 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.8.
 
 The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README.md file explains how to build the reference player.
 
@@ -28,6 +35,22 @@ TVSDK for Android provides many performance improvements over earlier versions. 
 The comprehensive set of features supported and not supported are presented in the [Features Matrix](#feature-matrix) section of these release notes.
 
 ## New features {#new-features}
+
+**Android TVSDK 3.8**
+
+* **Pre-Roll support with Partial Ad-Break feature** - With this enhancement, TVSDK removes the pre-roll disabling requirement.
+
+The new behavior works when a pre-roll ad is played with the live content and then followed by the partial mid-roll ad.
+
+### New features in the previous releases
+
+**Android TVSDK 3.7**
+
+* For Widevine test content, a new API `setMediaDrmCallback` in DRMManager class is exposed to override the default implementation of MediaDrmCallback interface.
+
+    `public static void setMediaDrmCallback(MediaDrmCallback callback)`
+
+* Fixed AppCrash error for not handling `MediaPlayerEvent.ITEM_UPDATED` in C++ layer (Android 64 bit).
 
 **Android TVSDK 3.6**
 
@@ -334,14 +357,31 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx.
 
+<<<<<<< Updated upstream
 **Android TVSDK 3.6**
 
 This section provides a summary of the issue resolved in the release of TVSDK 3.6.
+=======
+**Android TVSDK 3.8**
 
-* No new issues added.
+This section provides a summary of the issue resolved in the release of TVSDK 3.8.
+>>>>>>> Stashed changes
+
+* 
 
 ### Resolved issues in the previous releases
 
+<<<<<<< Updated upstream
+=======
+**Android TVSDK 3.7**
+
+This section provides a summary of the issue resolved in the release of TVSDK 3.7.
+
+**Android TVSDK 3.6**
+
+* No new issues added.
+
+>>>>>>> Stashed changes
 **Version 3.5**
 
 * ZD#37503 - JSON responses for the CRS rules are cached to avoid the duplicate requests.
@@ -557,12 +597,27 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
+<<<<<<< Updated upstream
 **Android TVSDK 3.6**
+=======
+**Android TVSDK 3.8**
+>>>>>>> Stashed changes
 
 * No new limitations added.
 
 ### Known issues and limitations in the previous releases
 
+<<<<<<< Updated upstream
+=======
+**Android TVSDK 3.7**
+
+* No new limitations added.
+
+**Android TVSDK 3.6**
+
+* No new limitations added.
+
+>>>>>>> Stashed changes
 **Android TVSDK 3.5**
 
 * No new limitation added.
