@@ -1,15 +1,8 @@
 ---
-<<<<<<< Updated upstream
-title: TVSDK 3.6 for Android Release Notes
-seo-title: TVSDK 3.6 for Android Release Notes
-description: TVSDK 3.6 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.6
-seo-description: TVSDK 3.6 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.6
-=======
 title: TVSDK 3.8 for Android Release Notes
 seo-title: TVSDK 3.8 for Android Release Notes
 description: TVSDK 3.8 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.8
 seo-description: TVSDK 3.8 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.8
->>>>>>> Stashed changes
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
@@ -586,18 +579,12 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-<<<<<<< Updated upstream
-**Android TVSDK 3.6**
-=======
 **Android TVSDK 3.8**
->>>>>>> Stashed changes
 
 * No new limitations added.
 
 ### Known issues and limitations in the previous releases
 
-<<<<<<< Updated upstream
-=======
 **Android TVSDK 3.7**
 
 * No new limitations added.
@@ -606,7 +593,6 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 * No new limitations added.
 
->>>>>>> Stashed changes
 **Android TVSDK 3.5**
 
 * No new limitation added.
