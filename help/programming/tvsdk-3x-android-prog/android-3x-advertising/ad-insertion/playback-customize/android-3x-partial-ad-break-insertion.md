@@ -15,18 +15,4 @@ For example, If a user joins in the middle of a 90-second ad break (three 30-sec
 * The second ad is played for the remaining duration (20 sec) followed by the third ad. 
 * Ad trackers for the partially played ad (the second ad) are not fired. Only the tracker for the third ad is fired.
 
-This behavior is not enabled by default. To enable this feature work in your app, do the following:
-
-1. Disable the live prerolls, using AdvertisingMetadata class's method setEnableLivePreroll. 
-
-   ```
-   advertisingMetadata.setLivePreroll(false)  
-   advertisingMetadata.setPreroll(false)
-   ```
-
-1. Switch ON the preference for Partial Ad-break Insertion. Use the new method setPartialAdBreakPref in MediaPlayer interface to switch this feature ON. Use getPartialAdBreakPref method to find the current state of this preference. 
-
-   ```
-   MediaPlayer mediaPlayer = new MediaPlayer(getActivity().getApplicationContext()); 
-    mediaPlayer.setPartialAdBreakPref(true);
-   ```
+This behavior works when a pre-roll ad is played with the live content and then followed by the partial mid-roll ad. The pre-roll will override the partial mid-roll equal to its duration.
