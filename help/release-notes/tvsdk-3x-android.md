@@ -49,8 +49,6 @@ The comprehensive set of features supported and not supported are presented in t
 
 * **Enhance your apps for the 64-bit requirement** - The native library `(libAVEAndroid.so)` is now upgraded and made available in two versions. Existing armeabi (32 bit) native library location has been changed from `/framework/Player to /framework/Player/armeabi` and an additional arm64-v8a (64 bit) library is introduced in `/framework/Player/arm64-v8a.`
 
-### New features in the previous releases
-
 **Version 3.5**
 
 * **Just In Time Ad Resolution** - TVSDK 3.5 removes support of the played ads from the timeline.
@@ -354,11 +352,13 @@ Where resolution is associated with a reported issue, a Zendesk reference is dis
 
 This section provides a summary of the issue resolved in the release of TVSDK 3.8.
 
+* No new issues added.
+
 ### Resolved issues in the previous releases
 
 **Android TVSDK 3.7**
 
-This section provides a summary of the issue resolved in the release of TVSDK 3.7.
+* No new issues added.
 
 **Android TVSDK 3.6**
 
