@@ -15,4 +15,4 @@ For example, If a user joins in the middle of a 90-second ad break (three 30-sec
 * The second ad is played for the remaining duration (20 sec) followed by the third ad. 
 * Ad trackers for the partially played ad (the second ad) are not fired. Only the tracker for the third ad is fired.
 
-This behavior works when a pre-roll ad is played with the live content and then followed by the partial mid-roll ad. The pre-roll will override the partial mid-roll equal to its duration.
+The pre-roll ad, if available, is played, and then the content plays from the live point emulating the experience of live television.

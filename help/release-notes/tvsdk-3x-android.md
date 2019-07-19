@@ -31,9 +31,9 @@ The comprehensive set of features supported and not supported are presented in t
 
 **Android TVSDK 3.8**
 
-* **Pre-Roll support with Partial Ad-Break feature** - With this enhancement, TVSDK removes the pre-roll disabling requirement.
+* **Pre-Roll support with Partial Ad-Break feature** - With this enhancement, TVSDK 3.8 supports pre-roll ads with Partial Ad-Break feature (PABI).
 
-    The new behavior works when a pre-roll ad is played with the live content and then followed by the partial mid-roll ad.
+    The pre-roll ad, if available, is played, and then the content plays from the live point emulating the experience of live television.
 
 ### New features in the previous releases
 
