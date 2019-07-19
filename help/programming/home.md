@@ -9,12 +9,11 @@ seo-description: null
 
 Welcome to the Android and iOS Programming help for Adobe Primetime. The documents listed in the left navigation allow you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices.
 
-## New topics in the Programming help for TVSDK 3.4 for iOS
+## New topics in the Programming help for TVSDK 3.8 for Android
 
-* [Ad Timeout](tvsdk-3.4-for-ios/ios-3.4-advertising/ios-3.4-ad-timeout.md)
-* [Revenue Optimization code](tvsdk-3.4-for-ios/ios-3.4-notification-codes/c-ios-notification-codes/ios-3.4-revenue-optimization.md)
+* [Partial Ad-break insertion](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion\playback-customize/android-3x-partial-ad-break-insertion.md) 
 
-Check out for more information about the [current released version](tvsdk-3.4-for-ios/ios-3.4-introduction/ios-3.4-overview/ios-3.4-overview.md).
+Check out for more information about the [current released version](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-prod-audience-guide.md).
 
 ## See also
 

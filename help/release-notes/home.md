@@ -9,13 +9,9 @@ seo-description: null
 
 Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
-## New features in the Release Notes for TVSDK 3.5 for iOS
+## New features in the Release Notes for TVSDK 3.8 for Android
 
-* [**Enabling Background Audio**](../release-notes/tvsdk-3x-ios.md#new-features)
-
-## New features in the Release Notes for TVSDK 3.6 for Android
-
-* [**Enhance your apps for the 64-bit requirement**](../release-notes/tvsdk-3x-android.md#new-features)
+* [**Pre-Roll support with Partial Ad-Break feature**](../release-notes/tvsdk-3x-android.md#new-features)
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
