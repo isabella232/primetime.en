@@ -11,9 +11,9 @@ Welcome to the Android and iOS Programming help for Adobe Primetime. The documen
 
 ## New topics in the Programming help for TVSDK 3.8 for Android
 
-* [Partial Ad-break insertion](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion\playback-customize/android-3x-partial-ad-break-insertion.md) 
+* [Partial Ad-break insertion](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/playback-customize/android-3x-partial-ad-break-insertion.md) 
 
-Check out for more information about the [current released version](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-prod-audience-guide.md).
+Check out for more information about the [current released version](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-prod-audience-guide.md)
 
 ## See also
 
