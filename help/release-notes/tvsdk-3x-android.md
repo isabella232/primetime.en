@@ -1,17 +1,17 @@
 ---
-title: TVSDK 3.7 for Android Release Notes
-seo-title: TVSDK 3.7 for Android Release Notes
-description: TVSDK 3.7 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.7
-seo-description: TVSDK 3.7 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.7
+title: TVSDK 3.8 for Android Release Notes
+seo-title: TVSDK 3.8 for Android Release Notes
+description: TVSDK 3.8 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.8
+seo-description: TVSDK 3.8 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.8
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 ---
 
-# TVSDK 3.7 for Android Release Notes {#tvsdk-for-android-release-notes}
+# TVSDK 3.8 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.7 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.7.
+TVSDK 3.8 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.8.
 
 The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README.md file explains how to build the reference player.
 
@@ -29,6 +29,14 @@ The comprehensive set of features supported and not supported are presented in t
 
 ## New features {#new-features}
 
+**Android TVSDK 3.8**
+
+* **Pre-Roll support with Partial Ad-Break feature** - With this enhancement, TVSDK 3.8 supports pre-roll ads with Partial Ad-Break feature (PABI).
+
+    The pre-roll ad, if available, is played, and then the content plays from the live point emulating the experience of live television.
+
+### New features in the previous releases
+
 **Android TVSDK 3.7**
 
 * For Widevine test content, a new API `setMediaDrmCallback` in DRMManager class is exposed to override the default implementation of MediaDrmCallback interface.
@@ -36,8 +44,6 @@ The comprehensive set of features supported and not supported are presented in t
     `public static void setMediaDrmCallback(MediaDrmCallback callback)`
 
 * Fixed AppCrash error for not handling `MediaPlayerEvent.ITEM_UPDATED` in C++ layer (Android 64 bit).
-
-### New features in the previous releases
 
 **Android TVSDK 3.6**
 
@@ -342,13 +348,17 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx.
 
-**Android TVSDK 3.7**
+**Android TVSDK 3.8**
 
-This section provides a summary of the issue resolved in the release of TVSDK 3.7.
+This section provides a summary of the issue resolved in the release of TVSDK 3.8.
 
 * No new issues added.
 
 ### Resolved issues in the previous releases
+
+**Android TVSDK 3.7**
+
+* No new issues added.
 
 **Android TVSDK 3.6**
 
@@ -569,13 +579,17 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-**Android TVSDK 3.7**
+**Android TVSDK 3.8**
 
 * No new limitations added.
 
 ### Known issues and limitations in the previous releases
 
-*Android TVSDK 3.6**
+**Android TVSDK 3.7**
+
+* No new limitations added.
+
+**Android TVSDK 3.6**
 
 * No new limitations added.
 
@@ -647,7 +661,7 @@ This version of TVSDK has the following issues:
 ## Helpful resources {#helpful-resources}
 
 * [System Requirements](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-android-prog/introduction/android-3x-requirements.html)
-* [TVSDK 3.6 for Android Programmer's Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-android-prog/introduction/android-3x-overview-prod-audience-guide.html)
+* [TVSDK 3.8 for Android Programmer's Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-android-prog/introduction/android-3x-overview-prod-audience-guide.html)
 * [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.5/index.html)
 * [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.5/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
 * [TVSDK 1.4 to 2.5 for Android (Java) Migration Guide](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-25-android.html)
