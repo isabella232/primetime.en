@@ -17,18 +17,11 @@ For example, If a user joins in the middle of a 90-second ad break (three 30-sec
 
 This behavior is not enabled by default. To enable this feature work in your app, do the following:
 
-1. Disable the live prerolls, using AdvertisingMetadata class's method setEnableLivePreroll.
+Switch ON the preference for Partial Ad-break Insertion. Use the new method `setPartialAdBreakPref` in MediaPlayer interface to switch this feature ON. Use `getPartialAdBreakPref` method to find the current state of this preference.
 
-    ```
-    advertisingMetadata.setLivePreroll(false)  
-    advertisingMetadata.setPreroll(false)
-    ```
-
-1. Switch ON the preference for Partial Ad-break Insertion. Use the new method setPartialAdBreakPref in MediaPlayer interface to switch this feature ON. Use getPartialAdBreakPref method to find the current state of this preference.
-
-    ```
-    MediaPlayer mediaPlayer = new MediaPlayer(getActivity() .getApplicationContext()); 
+```
+    MediaPlayer mediaPlayer = new MediaPlayer(getActivity(). getApplicationContext()); 
     mediaPlayer.setPartialAdBreakPref(true);
-    ```
+```
 
 The pre-roll ad, if available, is played, and then the content plays from the live point emulating the experience of live television.
