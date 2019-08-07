@@ -324,75 +324,75 @@ Records of this type log responses to requests the manifest server makes for WEB
 
 Records of this type enable the manifest server to log events and information not otherwise planned for when it ingests ads. The field beyond TRACE_MISC consists of a message string. Messages that might appear include the following:
 
-• Ad ignored :AdPlacement `[adManifestURL=https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . . .m3u8, durationSeconds=15.0, ignore=false, redirectAd=false, priority=1]`
-• AdPlacement adManifestURL=*adManifestURL*, durationSeconds=*seconds*, ignore=*ignore*, redirectAd=*redirectAd*, priority=*priority*
-• Ad placement returned null.
-• Ad successfully stitched.
-• Ad call failed : *error message*.
-• Adding User-Agent to fetch raw manifest: *user-agent*.
-• Adding cookie to fetch raw manifest: [cookie]
-• Bad URL *requested URL error message*. (Failed to parse variant URL)
-• Called url: URL *got return: response code*. ( Live URL)
-• Called url: URL *return code: response code*. ( VOD URL)
-• Conflict found while resolving ads: either one of - mid-roll start or mid-roll end falls within pre-roll or pre-roll contained in mid-roll (VOD).
-• Detected unhandled exception thrown by the handler for URI: *request URL*.
-• Done generating variant manifest. (Variant)
-• Done generating variant manifest.
-• Exception in handling VAST redirect *redirect URL *error: *error message*.
-• Failed to fetch ad's playlist for *ad manifest URL*.
-• Failed to generate targeted manifest. (HLSManifestResolver)
-• Failed to parse first ad call response: *error message*.
-• Failed to process *GET|POST *request for path: *request URL*. (Live/VOD)
-• Failed to process live manifest request: *request URL*. (Live)
-• Failed to return a variant manifest: *error message*.
-• Failed to validate group ID: *group ID*.
-• Fetching raw manifest: *content URL*. (Live)
-• Following VAST redirect: *redirect URL*.
-• Found empty avails. (VOD)
-• Found *number *ads. (VOD)
-• HTTP request received. (Very first message)
-• Ignoring ad because difference between ad response duration (*ad response duration *sec) and actual ad duration (*actual duration *sec) is larger than the limit. (HLSManifestResolver)
-• Ignoring avail that provided no ID value. (GroupAdResolver.java)
-• Ignoring avail that provided invalid time value: *time *for availId = *avail ID*.
-• Ignoring avail that provided invalid duration value: *duration *for availId = *avail ID*.
-• Initialize new session. (Variant)
-• Invalid HTTP method. It must be a GET. (VOD)
-• Invalid HTTP method. Tracking request must be a GET. (Live)
-• Invalid URL *requested URL error message*. (Variant)
-• Invalid group. (HLSManifestResolver)
-• Invalid request. Caption is not a valid tracking request. (VOD)
-• Invalid request. Caption request must be made after session is established. (VOD)
-• Invalid request. Tracking request must be made after session is established. (VOD)
-• Invalid server instance for overload group ID: *group ID*. (Live)
-• Limit of VAST redirects reached - *number*.
-• Making ad call: *ad call URL*.
-• No manifest found for: *content URL*. (Live)
-• No matching avail found for avail ID: *avail ID*. (HLSManifestResolver)
-• No playback session found. (HLSManifestResolver)
-• Processing VOD request for manifest *content URL*.
-• Processing variant.
-• Processing caption request for manifest *content URL*.
-• Processing tracking request. (VOD)
-• Redirect ad response empty. ( VASTStAX)
-• Requesting: *URL*.
-• Returning error response for GET request because no playback session was found. (VOD)
-• Returning error response for GET request because of an internal server error.
-• Returning error response for GET request specifying an invalid asset: *ad request ID*. (VOD)
-• Returning error response for GET request specifying an invalid or empty group ID: *group ID*. (VOD)
-• Returning error response for GET request specifying an invalid tracking position value. (VOD)
-• Returning error response for GET request with invalid syntax - *request URL*. (Live/VOD)
-• Returning error response for request with unsupported HTTP method: *GET|POST*. (Live/VOD)
-• Returning manifest from cache. (VOD)
-• Server is overloaded. Proceed without ad stitch request. (Variant)
-• Start generating targeted manifest. (HLSManifestResolver)
-• Start generating variant manifest from: *content URL*. (Variant)
-• Start stitching ads into manifest. (VODHLSResolver)
-• Trying to stitch ad at *HH:MM:SS*: AdPlacement [adManifestURL=*ad Manifest URL*, durationSeconds=*seconds*, ignore=*ignore*, redirectAd=*redirect ad*, priority=*priority*. (HLSManifestResolver)
-• Unable to get ads because of invalid pttimeline - returned the content without ads. (VOD)
-• Unable to get ads - returned the content without ads. (VOD)
-• Unable to get ad query and no content URL was given. (VOD)
-• Valid URL received. (VOD/Variant)
-• Variant M3U8 not found. (Variant)
+* Ad ignored :AdPlacement `[adManifestURL=https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . . .m3u8, durationSeconds=15.0, ignore=false, redirectAd=false, priority=1]`
+* AdPlacement adManifestURL=*adManifestURL*, durationSeconds=*seconds*, ignore=*ignore*, redirectAd=*redirectAd*, priority=*priority*
+* Ad placement returned null.
+* Ad successfully stitched.
+* Ad call failed : *error message*.
+* Adding User-Agent to fetch raw manifest: *user-agent*.
+* Adding cookie to fetch raw manifest: [cookie]
+* Bad URL *requested URL error message*. (Failed to parse variant URL)
+* Called url: URL *got return: response code*. ( Live URL)
+* Called url: URL *return code: response code*. ( VOD URL)
+* Conflict found while resolving ads: either one of - mid-roll start or mid-roll end falls within pre-roll or pre-roll contained in mid-roll (VOD).
+* Detected unhandled exception thrown by the handler for URI: *request URL*.
+* Done generating variant manifest. (Variant)
+* Done generating variant manifest.
+* Exception in handling VAST redirect *redirect URL *error: *error message*.
+* Failed to fetch ad's playlist for *ad manifest URL*.
+* Failed to generate targeted manifest. (HLSManifestResolver)
+* Failed to parse first ad call response: *error message*.
+* Failed to process *GET|POST *request for path: *request URL*. (Live/VOD)
+* Failed to process live manifest request: *request URL*. (Live)
+* Failed to return a variant manifest: *error message*.
+* Failed to validate group ID: *group ID*.
+* Fetching raw manifest: *content URL*. (Live)
+* Following VAST redirect: *redirect URL*.
+* Found empty avails. (VOD)
+* Found *number *ads. (VOD)
+* HTTP request received. (Very first message)
+* Ignoring ad because difference between ad response duration (*ad response duration *sec) and actual ad duration (*actual duration *sec) is larger than the limit. (HLSManifestResolver)
+* Ignoring avail that provided no ID value. (GroupAdResolver.java)
+* Ignoring avail that provided invalid time value: *time *for availId = *avail ID*.
+* Ignoring avail that provided invalid duration value: *duration *for availId = *avail ID*.
+* Initialize new session. (Variant)
+* Invalid HTTP method. It must be a GET. (VOD)
+* Invalid HTTP method. Tracking request must be a GET. (Live)
+* Invalid URL *requested URL error message*. (Variant)
+* Invalid group. (HLSManifestResolver)
+* Invalid request. Caption is not a valid tracking request. (VOD)
+* Invalid request. Caption request must be made after session is established. (VOD)
+* Invalid request. Tracking request must be made after session is established. (VOD)
+* Invalid server instance for overload group ID: *group ID*. (Live)
+* Limit of VAST redirects reached - *number*.
+* Making ad call: *ad call URL*.
+* No manifest found for: *content URL*. (Live)
+* No matching avail found for avail ID: *avail ID*. (HLSManifestResolver)
+* No playback session found. (HLSManifestResolver)
+* Processing VOD request for manifest *content URL*.
+* Processing variant.
+* Processing caption request for manifest *content URL*.
+* Processing tracking request. (VOD)
+* Redirect ad response empty. ( VASTStAX)
+* Requesting: *URL*.
+* Returning error response for GET request because no playback session was found. (VOD)
+* Returning error response for GET request because of an internal server error.
+* Returning error response for GET request specifying an invalid asset: *ad request ID*. (VOD)
+* Returning error response for GET request specifying an invalid or empty group ID: *group ID*. (VOD)
+* Returning error response for GET request specifying an invalid tracking position value. (VOD)
+* Returning error response for GET request with invalid syntax - *request URL*. (Live/VOD)
+* Returning error response for request with unsupported HTTP method: *GET|POST*. (Live/VOD)
+* Returning manifest from cache. (VOD)
+* Server is overloaded. Proceed without ad stitch request. (Variant)
+* Start generating targeted manifest. (HLSManifestResolver)
+* Start generating variant manifest from: *content URL*. (Variant)
+* Start stitching ads into manifest. (VODHLSResolver)
+* Trying to stitch ad at *HH:MM:SS*: AdPlacement [adManifestURL=*ad Manifest URL*, durationSeconds=*seconds*, ignore=*ignore*, redirectAd=*redirect ad*, priority=*priority*. (HLSManifestResolver)
+* Unable to get ads because of invalid pttimeline - returned the content without ads. (VOD)
+* Unable to get ads - returned the content without ads. (VOD)
+* Unable to get ad query and no content URL was given. (VOD)
+* Valid URL received. (VOD/Variant)
+* Variant M3U8 not found. (Variant)
 
 ### TRACE_TRACKING_URL records {#trace-tracking-url-records-1}
 
