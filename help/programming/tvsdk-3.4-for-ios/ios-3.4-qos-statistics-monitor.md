@@ -1,4 +1,4 @@
-help\programming\tvsdk-3.4-for-ios\ios-3.4-pip.md---
+---
 description: Quality of service (QoS) offers a detailed view into how the video engine is performing. TVSDK provides detailed statistics about playback, buffering, and devices.
 seo-description: Quality of service (QoS) offers a detailed view into how the video engine is performing. TVSDK provides detailed statistics about playback, buffering, and devices.
 seo-title: Quality of service statistics
