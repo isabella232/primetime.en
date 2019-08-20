@@ -194,6 +194,7 @@ user-guide-title: Primetime Programming Help
       + [Display the current time and remaining time](tvsdk-3.4-for-ios/ios-3.4-content-playback-options/ios-3.4-create-a-video-player/ios-3.4-configure-ui/ios-3.4-display-current-remaining-time.md)
       + [Display a seek scrub bar with the current playback time position](tvsdk-3.4-for-ios/ios-3.4-content-playback-options/ios-3.4-create-a-video-player/ios-3.4-configure-ui/ios-3.4-display-seek-scrub-bar.md)
       + [Adaptive bit rates (ABR) for video quality](tvsdk-3.4-for-ios/ios-3.4-content-playback-options/ios-3.4-create-a-video-player/ios-3.4-configure-ui/ios-3.4-abr-control-quality.md)
+   + [Picture-in-Picture (PiP)](tvsdk-3.4-for-ios/ios-3.4-pip.md)
    + [Quality of service statistics](tvsdk-3.4-for-ios/ios-3.4-qos-statistics-monitor.md)
    + [Work with MediaPlayer objects](tvsdk-3.4-for-ios/ios-3.4-mediaplayerobjects-working-with.md)
    + [Instant-on](tvsdk-3.4-for-ios/ios-3.4-instant-on-ios.md)
