@@ -11,9 +11,9 @@ Welcome to the Adobe Primetime Release Notes. The documents listed in the left n
 
 ## New features in the Release Notes for TVSDK 3.6 for iOS
 
-* [**Introducing magical experience with Picture-in-Picture (PiP)    mode**](../release-notes/tvsdk-3x-iOS.md#new-features)
+* [**Introducing magical experience with Picture-in-Picture (PiP)    mode**](../release-notes/tvsdk-3x-ios.md#new-features)
 
-Check out for more information about the current released version for [iOS](../release-notes/tvsdk-3x-iOS.md).
+Check out for more information about the current released version for [iOS](../release-notes/tvsdk-3x-ios.md).
 
 ## See also
 
