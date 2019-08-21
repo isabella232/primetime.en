@@ -23,4 +23,4 @@ See `policy.allowedAIRApplication.n` in *Configuration properties* for details.
 
 >[!NOTE]
 >
->Whitelisting an iOS application requires you a special approach. See [Whitelist your iOS application](../../../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-whitelist-your-ios-applicatvsdtion.md) in the *TVSDK for iOS Programmer's Guide*.
+>Whitelisting an iOS application requires you a special approach. See [Whitelist your iOS application](../../../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-whitelist-your-ios-application.md) in the *TVSDK for iOS Programmer's Guide*.
