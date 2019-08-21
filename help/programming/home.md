@@ -11,9 +11,9 @@ Welcome to the Android and iOS Programming help for Adobe Primetime. The documen
 
 ## New topics in the Programming help for TVSDK 3.6 for iOS
 
-* [Picture-in-Picture (PiP)](tvsdk-3.4-for-ios/ios-3.4-pip.md) 
+* [Picture-in-Picture (PiP)](tvsdk-3x-ios-prog/ios-3x-pip.md) 
 
-Check out for more information about the [current released version](tvsdk-3.4-for-ios/ios-3.4-introduction/ios-3.4-overview/ios-3.4-overview.md)
+Check out for more information about the [current released version](tvsdk-3x-ios-prog/ios-3x-introduction/ios-3x-overview/ios-3x-overview.md)
 
 ## See also
 
