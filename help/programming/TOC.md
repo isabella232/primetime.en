@@ -177,7 +177,7 @@ user-guide-title: Primetime Programming Help
       + [Configure billing metrics](tvsdk-3x-android-prog/android-3x-billing-title/billing/android-3x-billing-config.md)
       + [Transmit billing metrics](tvsdk-3x-android-prog/android-3x-billing-title/billing/android-3x-billing-data-format.md)
 	  
-+ TVSDK 3.4 for iOS {#tvsdk-3-4-for-ios}
++ TVSDK 3x for iOS {#tvsdk-3x-ios-prog}
    + Introduction {#introduction}
       + [Overview](tvsdk-3x-ios-prog/ios-3x-introduction/ios-3x-overview/ios-3x-overview.md)
       + [Primetime TVSDK features](tvsdk-3x-ios-prog/ios-3x-introduction/ios-3x-overview/ios-3x-overview-of-the-player.md)
