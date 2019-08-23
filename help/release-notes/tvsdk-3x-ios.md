@@ -1,35 +1,47 @@
 ---
-title: TVSDK 3.5 for iOS Release Notes
-seo-title: TVSDK 3.5 for iOS Release Notes
-description: TVSDK 3.5 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.5
-seo-description: TVSDK 3.5 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.5
+title: TVSDK 3.6 for iOS Release Notes
+seo-title: TVSDK 3.6 for iOS Release Notes
+description: TVSDK 3.6 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.6
+seo-description: TVSDK 3.6 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.6
 uuid: e8305fdb-78a8-4c0b-b216-807f745a0769
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: c470c84d-03e7-4f5b-b36a-d8866394ec8f
 ---
 
-# TVSDK 3.5 for iOS Release Notes {#tvsdk-for-ios-release-notes}
+# TVSDK 3.6 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
-TVSDK 3.5 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.5.
+TVSDK 3.6 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.6.
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.5, ensure your hardware, operating system, and application versions meet the following requirements listed below:
+Before you download iOS 3.6, ensure your hardware, operating system, and application versions meet the following requirements listed below:
 
-Operating System: iOS 7.0 or later
+Operating System: iOS 7.0 or later.
 
 ## New features {#new-features}
 
-**iOS TVSDK 3.5**
+**iOS TVSDK 3.6**
 
-**Enabling Background Audio**
+* **Introducing magical experience with Picture-in-Picture (PiP)    mode**
 
-*Configure your app to continue playing audio when it goes into the background.*
+    iOS 3.6 allows users to continue content in a small overlay window.  With this feature enabled, new content is reloaded in the PiP window itself if the content was previously playing in PiP mode. You can continue playback while using other apps on your device.
 
-To enable this feature, we need to set the new API `audioPlaybackInBackground` added in the PTMediaPlayer class. With this API enabled, your app is ready to play background audio.
+    By default, the system does not automatically support PIP. To get this working, check the latest version for [iOS 3.6 Programming Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-ios-prog/ios-3x-pip.html).
+
+* **Fixes in vastXML property of class `PTNetworkAdInfo`**
+
+    The vastXML property was not being set properly and was returning a nil value.
 
 ### New features and fixes in the previous releases {#whats-new-previous}
+
+**iOS TVSDK 3.5**
+
+* **Enabling Background Audio**
+
+    *Configure your app to continue playing audio when it goes into the background.*
+
+    To enable this feature, we need to set the new API `audioPlaybackInBackground` added in the PTMediaPlayer class. With this API enabled, your app is ready to play background audio.
 
 **iOS TVSDK 3.4.0.19 (Hotfix)**
 
@@ -1122,6 +1134,6 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
 ## Helpful resources {#helpful-resources}
 
-* [TVSDK 3.4 for iOS Programmer's Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3-4-for-ios/introduction/ios-3_4-overview.html)
+* [TVSDK 3.4 for iOS Programmer's Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-for-ios/introduction/ios-3x-overview.html)
 * [TVSDK iOS 3.4 API reference](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v34/index.html)
 * See complete help documentation at [Adobe Primetime Learn & Support](https://helpx.adobe.com/support/primetime.html) page.

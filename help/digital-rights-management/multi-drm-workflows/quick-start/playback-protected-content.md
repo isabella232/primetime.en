@@ -80,7 +80,7 @@ To test your DRM solution, you need a video application that can process the par
 
     >[!NOTE] {importance="high"}
     >
-    >The preceding information applies only to the testing of your FairPlay setup. It may not apply to your production setup, depending upon how you configure your FairPlay handler. See [Enable Apple FairPlay in iOS applications](../../../programming/tvsdk-3.4-for-ios/ios-3.4-drm-content-security/ios-3.4-apple-fairplay-tvsdk.md) for details.
+    >The preceding information applies only to the testing of your FairPlay setup. It may not apply to your production setup, depending upon how you configure your FairPlay handler. See [Enable Apple FairPlay in iOS applications](../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md) for details.
 
 If your video plays, you've successfully packaged and licensed your content. If your video does not play, check the troubleshooting page for some possible solutions to your troubles. 
 

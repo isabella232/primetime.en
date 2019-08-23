@@ -9,11 +9,11 @@ seo-description: null
 
 Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
-## New features in the Release Notes for TVSDK 3.8 for Android
+## New features in the Release Notes for TVSDK 3.6 for iOS
 
-* [**Pre-Roll support with Partial Ad-Break feature**](../release-notes/tvsdk-3x-android.md#new-features)
+* [**Introducing magical experience with Picture-in-Picture (PiP)    mode**](../release-notes/tvsdk-3x-ios.md#new-features)
 
-Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
+Check out for more information about the current released version for [iOS](../release-notes/tvsdk-3x-ios.md).
 
 ## See also
 
