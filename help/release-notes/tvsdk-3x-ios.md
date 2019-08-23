@@ -25,9 +25,9 @@ Operating System: iOS 7.0 or later.
 
 * **Introducing magical experience with Picture-in-Picture (PiP)    mode**
 
-    iOS 3.6 allows the player to add new content to the playlist while continuing to playback the current content as the running content goes into Picture-in-Picture (PIP) mode. With this feature enabled, you can continue playback while using other apps on your device.
+    iOS 3.6 allows users to continue content in a small overlay window.  With this feature enabled, new content is reloaded in the PiP window itself if the content was previously playing in PiP mode. You can continue playback while using other apps on your device.
 
-    By default, the system does not automatically support PIP. To get this working, check the current released version for iOS.
+    By default, the system does not automatically support PIP. To get this working, check the latest version for [iOS 3.6 Programming Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-ios-prog/ios-3x-pip.html).
 
 * **Fixes in vastXML property of class `PTNetworkAdInfo`**
 
