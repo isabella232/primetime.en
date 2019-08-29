@@ -21,14 +21,6 @@ Operating System: iOS 7.0 or later.
 
 ## New features {#new-features}
 
-**iOS TVSDK 3.6**
-
-* **Introducing magical experience with Picture-in-Picture (PiP)    mode**
-
-    iOS 3.6 allows users to continue content in a small overlay window.  With this feature enabled, new content is reloaded in the PiP window itself if the content was previously playing in PiP mode. You can continue playback while using other apps on your device.
-
-    By default, the system does not automatically support PIP. To get this working, check the latest version for [iOS 3.6 Programming Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-ios-prog/ios-3x-pip.html).
-
 * **Fixes in vastXML property of class `PTNetworkAdInfo`**
 
     The vastXML property was not being set properly and was returning a nil value.
@@ -1107,6 +1099,8 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
+* In case multiple contents are configured to be played in Picture-in-Picture (PiP) after one content completes playback, new content doesn’t play in the PiP window itself.
+**Environment**: iOS 12.3 onwards
 * In iOS TVSDK, all ads are stitched into the content manifest. Ad behaviors are implemented by seeking based on the duration of the content and ad segments. So if segment durations are not accurate, seeking may not always end at the exact frame of the beginning or end of ad break. Even if durations are to the frame, there is a tolerance that the platform itself imposes on seeking and there may be a few frames or ad or content displayed. This is a limitation of the platform and the way ad insertion works with TVSDK on iOS.
 * The decision to skip happens on the seek event in this case. However, since the ad segment durations in the manifest do not accurately represent the actual duration of the ad, the seek is not frame accurate. Hence, you see a few frames of ad when the ad policies are applied.
 * It might experience that License rotation video does not play on iOS 11 and it will play fine on iOS 9.x and iOS 10.x.
