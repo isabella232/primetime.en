@@ -203,6 +203,7 @@ user-guide-title: Primetime Programming Help
       + [Partial ad-break insertion](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-partialad-break-insertion.md)
       + [Insert ads](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-insertion-about.md)
       + [Default and customized playback behavior with ads](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-playback-post1.2.md)
+      + [Picture-in-Picture (PiP)](tvsdk-3x-ios-prog/ios-3x-pip.md)
       + [Customize playback with ads](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-playback-customize.md)
       + [Just-in-Time ad resolving](tvsdk-3x-ios-prog/ios-3x-advertising/c-ios-lazy-ad-resolving.md)
    + Primetime ad server metdata {#ad-server-metadata}
