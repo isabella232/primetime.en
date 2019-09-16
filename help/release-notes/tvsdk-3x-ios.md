@@ -1,31 +1,35 @@
 ---
-title: TVSDK 3.6 for iOS Release Notes
-seo-title: TVSDK 3.6 for iOS Release Notes
-description: TVSDK 3.6 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.6
-seo-description: TVSDK 3.6 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.6
+title: TVSDK 3.7 for iOS Release Notes
+seo-title: TVSDK 3.7 for iOS Release Notes
+description: TVSDK 3.7 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.7
+seo-description: TVSDK 3.7 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.7
 uuid: e8305fdb-78a8-4c0b-b216-807f745a0769
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: c470c84d-03e7-4f5b-b36a-d8866394ec8f
 ---
 
-# TVSDK 3.6 for iOS Release Notes {#tvsdk-for-ios-release-notes}
+# TVSDK 3.7 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
-TVSDK 3.6 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.6.
+TVSDK 3.7 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.7.
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.6, ensure your hardware, operating system, and application versions meet the following requirements listed below:
+Before you download iOS 3.7, ensure your hardware, operating system, and application versions meet the following requirements listed below:
 
 Operating System: iOS 7.0 or later.
 
 ## New features {#new-features}
 
+* Fixed a scenario where playback stops when a large number of ad resolution requests are made simltaneously.
+
+### New features and fixes in the previous releases {#whats-new-previous}
+
+**iOS TVSDK 3.6**
+
 * **Fixes in vastXML property of class `PTNetworkAdInfo`**
 
     The vastXML property was not being set properly and was returning a nil value.
-
-### New features and fixes in the previous releases {#whats-new-previous}
 
 **iOS TVSDK 3.5**
 
@@ -263,11 +267,15 @@ Comment Type: draft
 
  -->
 
-**iOS TVSDK 3.5**
+**iOS TVSDK 3.7**
 
 * No new issues in this release.
 
 ### Resolved issues in the previous releases {#resolved-issues-previous}
+
+**iOS TVSDK 3.6**
+
+* No new issues in this release.
 
 **iOS TVSDK 3.5**
 

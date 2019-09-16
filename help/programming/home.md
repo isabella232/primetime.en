@@ -9,7 +9,7 @@ seo-description: null
 
 Welcome to the Android and iOS Programming help for Adobe Primetime. The documents listed in the left navigation allow you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices.
 
-Check out for more information about the [current released version](tvsdk-3x-ios-prog/ios-3x-introduction/ios-3x-overview/ios-3x-overview.md)
+Check out for more information about the [current released version](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-secure-delivery.md)
 
 ## See also
 
