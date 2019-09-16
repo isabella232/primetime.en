@@ -31,7 +31,7 @@ The comprehensive set of features supported and not supported are presented in t
 
 **Android TVSDK 3.9**
 
-* **Secure Delivery over HTTPS** - TVSDK 3.9 introduces secure delivery via HTTPS.
+* **Secure Delivery over HTTPS** - Android TVSDK 3.9 introduces the secure delivery capabilities via HTTPS to deliver content securely with unparalleled scale and performance.
 
 ### New features in the previous releases
 

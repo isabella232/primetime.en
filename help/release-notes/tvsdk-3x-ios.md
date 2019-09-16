@@ -21,7 +21,7 @@ Operating System: iOS 7.0 or later.
 
 ## New features {#new-features}
 
-* Fixed a scenario where playback stopped when a large number of ad resolution requests were made simltaneously.
+* Fixed a scenario where playback stops when a large number of ad resolution requests are made simltaneously.
 
 ### New features and fixes in the previous releases {#whats-new-previous}
 

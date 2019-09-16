@@ -7,17 +7,17 @@ title: Secure Delivery over HTTPS
 
 # Secure Delivery over HTTPS {#secure-delivery-https}
 
-Adobe Primetime TVSDK provides an option to enable all the calls originating from TVSDK to be requested over HTTPS, which include 
+Adobe Primetime TVSDK provides support for HTTPS delivery for all the calls originating from TVSDK, which include
 
 * Auditude Ad Server Calls
 * CRS requests
-* DRM licence calls
+* DRM license calls
 * Video Analytics Pings
 * Billing Pings
 
-In order to use this feature, ensure that the servers configured for serving the above requests should support HTTPS.
+In order to use this feature, ensure that the servers configured for serving the above requests support HTTPS.
 
-This feature is not enabled by default. Use the following to enable secure delivery before call to `MediaPlayer.replaceCurrentResource()`
+This new behavior is not enabled by default. Use the following to enable secure delivery before call to `MediaPlayer.replaceCurrentResource()`
 
 ```java
 MediaPlayerItemConfig config = new MediaPlayerItemConfig(context);
