@@ -43,20 +43,38 @@ To work with cookies:
 
    TVSDK queries this `cookieManager` at runtime, checks whether there are any cookies associated with the URL, and automatically uses those cookies.
 
-**Get string value for cookie when cookies are updated**
+If the cookies need to be updated in the application during playback, do not use `networkConfiguration.setCookieHeaders` API as the update will happen in JAVA cookie store.
 
-The event MediaPlayerEvent.COOKIES_UPDATED is called when C++ cookies are updated. This cookiesUpdatedEvent has a method getCookieString() that returns a string value for the cookie.
+`networkConfiguration.setCookieHeaders` API sets the cookies to TVSDK's C++ CookieStore.
 
-A sample code snippet is below: 
+When using JAVA cookies and sharing them between Application and TVSDK, use JAVA CookieStore to manage the cookies solely.
+
+Before playback is initialized, set the cookies to CookieStore using Cookie Manager as stated above.
+
+The cookie stored in CookieStore will be automatically picked up by TVSDK.
+
+If a cookie value needs to be updated later during playback, call the same add method of CookieStore with the same key and a new value field.
+
+Also set 
+`networkConfiguration.setReadSetCookieHeader`(false)
+before calling
+`config.setNetworkConfiguration(networkConfiguration)`
+
+>[!NOTE]
+>
+After setting this 'setReadSetCookieHeader' to false, set the cookies for the key requests using JAVA cookie manager.
+>
+
+`onCookiesUpdated(CookiesUpdatedEvent cookiesUpdatedEvent)`
+This callback API will be fired whenever there is an update in C++ cookies (cookies which come from http response). Application needs to listen to this callback and can update their JAVA CookieStore accordingly so that their Network calls in JAVA can utilize the cookies as below:
 
 ```
-private final CookiesUpdatedEventListener cookiesUpdatedEventListener = new CookiesUpdatedEventListener()  
-{ 
-@Override 
-public void onCookiesUpdated(CookiesUpdatedEvent cookiesUpdatedEvent) 
- { 
- String cookieStr = cookiesUpdatedEvent.getCookieString();  
- logger.i(LOG_TAG + "::MediaPlayer.CookiesUpdatedEventListener#onCookiesUpdated()", "cookieStr " + cookieStr);  
- }  
-};
+ private final CookiesUpdatedEventListener cookiesUpdatedEventListener = new CookiesUpdatedEventListener() {
+@Override
+public void onCookiesUpdated(CookiesUpdatedEvent cookiesUpdatedEvent) {
+List<HttpCookie> cookies = cookiesUpdatedEvent.getHttpCookies();
+for(int i = 0; i < cookies.size(); i++)
+{ HttpCookie c = cookies.get(i); // To set this cookie on to the cookie store //c.setValue("newValue"); //If you want to modify the value of the cookie URI myuri = URI.create(cookiesUpdatedEvent.getDomainString()); cookieManager.getCookieStore().add(myuri,c); }
+}
+}
 ```
