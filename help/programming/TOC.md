@@ -14,7 +14,7 @@ user-guide-title: Primetime Programming Help
       + [Primetime TVSDK features](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-of-the-player.md)
       + [Considerations and best practices](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-considerations.md)
       + [Requirements](tvsdk-3x-android-prog/android-3x-introduction/android-3x-requirements.md)
-   + Content playback options {#content-playback-options}
+   + Content playback options {#content-playback-options}      
       + [Set up the Media player](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-mediaplayer-set-up-android.md)
       + Work with MediaPlayer objects {#work-with-media-player-objects}
          + [About the MediaPlayerItem class](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-mediaplayeritem-class-about.md)
@@ -73,6 +73,7 @@ user-guide-title: Primetime Programming Help
          + [Media playback and failover](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/failover-for-playback/android-3x-failover-media-playback.md)
          + [Advertising insertion and failover for VOD](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/failover-for-playback/android-3x-failover-ad-insertion-for-vod.md)
       + [Offline Playback with Android](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-offline-playback-with-android.md)
+      + [Secure Delivery over HTTPS](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-secure-delivery.md)
    + Advertising {#advertising}
       + [Advertising and its requirements](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-3x-ad-insertion.md)
       + Insert ads {#insert-ads}
