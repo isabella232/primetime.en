@@ -19,7 +19,7 @@ Before you download iOS 3.7, ensure your hardware, operating system, and applica
 
 Operating System: iOS 7.0 or later.
 
-## New features {#new-features}
+## iOS TVSDK 3.7 (Hotfix) {#hotfix}
 
 * Fixed a scenario where playback stops when a large number of ad resolution requests are made simltaneously.
 
