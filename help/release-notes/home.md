@@ -11,7 +11,7 @@ Welcome to the Adobe Primetime Release Notes. The documents listed in the left n
 
 ## Enhancements in TVSDK 3.9 Android
 
-* Introduced the secure delivery capabilities via HTTPS.
+* Introduced the Secure Delivery (HTTPS) support for all calls originating from TVSDK.
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
