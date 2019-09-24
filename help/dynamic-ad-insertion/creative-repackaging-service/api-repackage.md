@@ -18,7 +18,7 @@ This request requires a username and password. You can obtain these from your Ad
 
 To submit a transcoding request to CRS, send an HTTP message as follows:
 
-* **URL -** [https://id3.auditude.com/repackage]()
+* **URL -** [https://id3.auditude.com/repackage](https://id3.auditude.com/repackage)
 
 * **Method -** `POST` 
 
