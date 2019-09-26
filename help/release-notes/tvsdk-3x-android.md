@@ -33,10 +33,9 @@ The comprehensive set of features supported and not supported are presented in t
 
 * **Secure Delivery over HTTPS** - Android TVSDK 3.9 introduces the secure delivery capabilities via HTTPS to deliver content securely with unparalleled scale and performance.
 
-    To enable secure delivery over HTTPS, a new API is introduced in NetworkConfiguration class.
+    To enable secure delivery over HTTPS, a new API is introduced in `NetworkConfiguration` class.
 
-    `public void setForceHTTPS (boolean value)
-    public boolean getIsForceHTTPS()`
+    `public void setForceHTTPS (boolean value)`<br />  `public boolean getIsForceHTTPS()`
 
 
 ### New features in the previous releases
