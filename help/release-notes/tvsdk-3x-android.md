@@ -35,7 +35,7 @@ The comprehensive set of features supported and not supported are presented in t
 
     To enable secure delivery over HTTPS, a new API is introduced in `NetworkConfiguration` class.
 
-    `public void setForceHTTPS (boolean value)`<br />  `public boolean getIsForceHTTPS()`
+    `public void setForceHTTPS (boolean value)`<br />          `public boolean getIsForceHTTPS()`
 
 
 ### New features in the previous releases
