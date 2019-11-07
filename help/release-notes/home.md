@@ -9,9 +9,15 @@ seo-description: null
 
 Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
+## Enhancements in PTAI 19.11.1
+
+Focused on maintenance updates.
+
+For more information about the current released version of Dynamic Ad Insertion, see [PTAI release notes](ptai-19x-release-notes.md).
+
 ## Enhancements in TVSDK 3.9 Android
 
-* Introduced the Secure Delivery (HTTPS) support for all calls originating from TVSDK.
+Introduced the Secure Delivery (HTTPS) support for all calls originating from TVSDK.
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
