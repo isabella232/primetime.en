@@ -62,6 +62,8 @@ Fixed a bug in which Chromecast players unexpectedly exited playback when ad seg
 
 ### Version 19.7.1
 
+**When:** Wednesday, July 10
+
 * SSAI: For ptcueformat values that support EXT-X-CUE-OUT ad break signaling in live streams, added a generic macro to pass data from attributes in the EXT-X-ASSET tag Example: Tag that accompanies the #EXT-X-CUE-OUT tag: #EXT-X-ASSET:CAID=75BCD15,GENRE=News,Program=NewsAt10 Macros: # can be used to pass News (from the GENRE attribute) to an ad call URL # can be used to pass NewsAt10 (from the Program attribute) to an ad call URL Exception: For backwards compatibility, # and # have the same functionality. Both macros can be used to pass the value of the CAID attribute, after converting the value from hex to long The long value is 123456789 for the hex value, 75BCD15, in the above example. Both macros would be used to pass 123456789 to an ad call URL The macro always starts with #. The macro is case-sensitive, but the attribute in the EXT-X-ASSET tag is not. That is, PROGRAM and Program are both allowed in the EXT-X-ASSET tag
 * SSAI: Configuration changes for a specific customer for the following:
   * Sliding window (live playlist) length of four minutes
