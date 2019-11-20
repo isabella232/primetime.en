@@ -10,6 +10,7 @@ user-guide-title: Primetime Dynamic Ad Insertion Help
 + [Dynamic Ad Insertion Overview](home.md)
 + [Dynamic Ad Insertion Release Notes](https://docs.adobe.com/content/help/en/primetime/release-notes/ptai/ptai-19x-release-notes.html)
 + [Manifest Server Debugging Tool](manifest-server-debugging-tool.md)
++ [Server Side Ad Insertion debugging dashboard](ssai-debugging-dashboard.md)
 + Manifest Server API for Ad Insertion {#manifest-server}
   + [Overview of Manifest Server interactions](msapi-topics/ms-overview.md)
   + Get started with Manifest Server {#get-started}
