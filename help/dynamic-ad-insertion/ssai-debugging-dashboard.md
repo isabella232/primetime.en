@@ -48,3 +48,4 @@ Select the **[!UICONTROL Download as Excel]** button to export the SSAI Session 
 >[!See Also]
 >
 >* [Manifest Server debugging tool](manifest-server-debugging-tool.md)
+>* [Overview of Manifest Server interactions](msapi-topics/ms-overview.md)
