@@ -26,6 +26,7 @@ This self help guide explains how to monetize content by inserting user-targeted
 |[Overview of Creative Repackaging Service](creative-repackaging-service/crs-overview.md)| Explains how CRS ensures that non-HLS ad creative play back properly in HLS streams. |
 
 ## Key Primetime user guides {#other-primetime-helps}
+
 |User Guide|Description|
 |---|---|
 | [Primetime Programming Help](../programming/home.md)  | Allows you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices. |
