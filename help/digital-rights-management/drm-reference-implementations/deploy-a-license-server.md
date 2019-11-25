@@ -67,8 +67,7 @@ uuid: bee7ead1-ed13-4894-80f9-5196bf2f818f
 
    ```
    <log4j:configuration xmlns:log4j="https://jakarta.apache.org/log4j/"<b>debug="true"</b>>
-   ... 
-   
+   ...
    ```
 
 1. From the Tomcat [!DNL bin] directory, start your server.
@@ -84,4 +83,3 @@ uuid: bee7ead1-ed13-4894-80f9-5196bf2f818f
    ```
    catalina.bat start
    ```
-   

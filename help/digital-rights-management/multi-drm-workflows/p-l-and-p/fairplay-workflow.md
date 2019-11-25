@@ -109,8 +109,8 @@ Packagers prepare the video for playback (e.g., fragmenting the original file an
 
 1. Package your content.
 
-   Here is a packaging example using Adobe Offline Packager. The Packager uses a configuration file (e.g., [!DNL fairplay.xml]), which looks something like this:     
-    
+   Here is a packaging example using Adobe Offline Packager. The Packager uses a configuration file (e.g., [!DNL fairplay.xml]), which looks something like this:
+
    ```    
    <config>
    <in_path>mp4_file_path</in_path>
@@ -146,8 +146,8 @@ Packagers prepare the video for playback (e.g., fragmenting the original file an
    -key_url "user_provided_value"
    ```
 
-   The generated M3U8 file has an `EXT-X-KEY` attribute that appears as follows:     
-    
+   The generated M3U8 file has an `EXT-X-KEY` attribute that appears as follows:
+
    ```    
    #EXT-X-KEY:METHOD=SAMPLE-AES,URI="user_provided_value",​
    KEYFORMAT="com.apple.streamingkeydelivery",KEYFORMATVERSIONS="1" 
@@ -207,7 +207,7 @@ To add license rotation, do the following:
 
   Following is a sample M3U8 with key rotation:
 
-```
+  ```
   #EXTM3U
   #EXT-X-TARGETDURATION:10
   #EXT-X-VERSION:5
@@ -239,4 +239,4 @@ To add license rotation, do the following:
   #EXTINF:10,
   fileSequence8.ts
   #EXTINF:10,
-```
+  ```
