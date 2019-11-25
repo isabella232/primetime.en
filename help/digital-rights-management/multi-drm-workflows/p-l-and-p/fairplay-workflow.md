@@ -29,24 +29,24 @@ Follow these steps to enable ExpressPlay service for FairPlay content protection
    Once your request is approved, Apple will send you a *FairPlay Streaming Deployment Package*.
 1. Generate a Certificate Signing Request.
 
-       You can use [!DNL openssl] to generate your public/private key pair, and your certificate signed request (CSR).
+   You can use [!DNL openssl] to generate your public/private key pair, and your certificate signed request (CSR).
 
-    1. Generate your key pair.     
+   1. Generate your key pair.
     
-       ```    
-       openssl genrsa -aes256 -out privatekey.pem 1024 
-       ```    
+      ```    
+      openssl genrsa -aes256 -out privatekey.pem 1024 
+      ```
     
-    1. Generate your CSR.     
+   1. Generate your CSR.
     
-       ```    
-       openssl req -new -sha1 -key privatekey.pem -out certreq.csr  
-         -subj "/CN=SubjectName /OU=OrganizationalUnit /O=Organization /C=US"
-       ```
+      ```    
+      openssl req -new -sha1 -key privatekey.pem -out certreq.csr  
+        -subj "/CN=SubjectName /OU=OrganizationalUnit /O=Organization /C=US"
+      ```
 
-       >[!NOTE]
-       >
-       >The instructions for this step are located in your *FairPlay Streaming Deployment Package*, but are included here for your convenience. If you have issues with this part of the process, check the instructions in *FairPlayCertificateCreation.pdf* (in your deployment package).
+      >[!NOTE]
+      >
+      >The instructions for this step are located in your *FairPlay Streaming Deployment Package*, but are included here for your convenience. If you have issues with this part of the process, check the instructions in *FairPlayCertificateCreation.pdf* (in your deployment package).
 
 1. Upload your CSR through the Apple developer portal.
    1. The Team Agent for your development team must log into [!DNL developer.apple.com/account].
@@ -67,14 +67,14 @@ Follow these steps to enable ExpressPlay service for FairPlay content protection
 
    1. Download your FPS Certificate.
    
-      Be sure to save a backup copy of your private key (from Step 2.a.) and your public key (the FPS Certificate you downloaded in this step) in a safe place.   
+      Be sure to save a backup copy of your private key (from Step 2.a.) and your public key (the FPS Certificate you downloaded in this step) in a safe place.
 1. Set up your ExpressPlay account with your FairPlay credentials.
    1. Let's say the certificate name you downloaded in Step 3.h. is [!DNL fairplay.cer].
    1. Open the [!DNL fairplay.cer] file with the Apple Keychain Access utility.
    1. Filter your many certificates by entering " `fairplay`" in the search field located up on the top right.
    1. Identify your company's FairPlay certificate.
    
-      Your company name should be associated with the certificate issued by Apple.   
+      Your company name should be associated with the certificate issued by Apple.
    1. Expand the certificate by selecting the expand arrow, and right-click on your private key.
    1. Select **[!UICONTROL Export "Your Company Name"]** and save the [!DNL .p12] file.
    
@@ -88,9 +88,11 @@ Follow these steps to enable ExpressPlay service for FairPlay content protection
        1. Enter the PKCS12 file password from Step 4.f. 
        1. Click the Upload button.
 
->Now you can create iOS applications or HTML5 pages with FairPlay content protection along with your [!DNL fairplay.cer] certificate using the ExpressPlay service for FairPlay. >
-><!--<a id="fig_sjr_2pn_sv"></a>-->
->![](assets/multi_drm_expressplay_drm_services_web.png)
+Now you can create iOS applications or HTML5 pages with FairPlay content protection along with your [!DNL fairplay.cer] certificate using the ExpressPlay service for FairPlay.
+
+<!--<a id="fig_sjr_2pn_sv"></a>-->
+
+![](assets/multi_drm_expressplay_drm_services_web.png)
 
 ### Package your content for FairPlay {#package-your-content-for-fairplay}
 
@@ -107,51 +109,49 @@ Packagers prepare the video for playback (e.g., fragmenting the original file an
 
 1. Package your content.
 
-       Here is a packaging example using Adobe Offline Packager. The Packager uses a configuration file (e.g., [!DNL fairplay.xml]), which looks something like this:     
+   Here is a packaging example using Adobe Offline Packager. The Packager uses a configuration file (e.g., [!DNL fairplay.xml]), which looks something like this:     
     
-       ```    
-       <config>
-       <in_path>mp4_file_path</in_path>
-       <out_type>hls</out_type>
-       <out_path>out_file_path</out_path>
-       <drm/>
-       <drm_sys>FAIRPLAY</drm_sys>
-       <frag_dur>4</frag_dur>
-       <target_dur>6</target_dur>
-       <key_file_path>creds/fairplay.bin</key_file_path>
-       <iv_file_path>creds/iv.bin</iv_file_path>
-       <key_url>user_provided_value</key_url>
-       <content_id>_default_</content_id>
-       </config>
-       ```
+   ```    
+   <config>
+   <in_path>mp4_file_path</in_path>
+   <out_type>hls</out_type>
+   <out_path>out_file_path</out_path>
+   <drm/>
+   <drm_sys>FAIRPLAY</drm_sys>
+   <frag_dur>4</frag_dur>
+   <target_dur>6</target_dur>
+   <key_file_path>creds/fairplay.bin</key_file_path>
+   <iv_file_path>creds/iv.bin</iv_file_path>
+   <key_url>user_provided_value</key_url>
+   <content_id>_default_</content_id>
+   </config>
+   ```
 
-    * `in_path` - This entry points to the location of the source video on your local packaging machine. 
-    * `out_type` - This entry describes the type of the packaged output, in this case HLS for FairPlay. 
-    * `out_path` - The location on the local machine where you want your output to go. 
-    * `drm_sys` - The DRM solution you are packaging for. This is `FAIRPLAY` in this case. 
+   * `in_path` - This entry points to the location of the source video on your local packaging machine. 
+   * `out_type` - This entry describes the type of the packaged output, in this case HLS for FairPlay. 
+   * `out_path` - The location on the local machine where you want your output to go. 
+   * `drm_sys` - The DRM solution you are packaging for. This is `FAIRPLAY` in this case. 
+   * `frag_dur` - Fragment duration in seconds. 
+   * `target_dur` - The target duration for HLS output. 
+   * `key_file_path` - This is the location of the license file on your packaging machine that serves as your Content Encryption Key (CEK). It is a Base-64 encoded 16-byte hex string. 
+   * `iv_file_path` - This is the location of the IV file on your packaging machine. 
+   * `key_url` - The URI parameter of the `EXT-X-KEY` tag of the [!DNL .m3u8] file. 
+   * `content_id` - Default value.
+
+   As stated in the [Packager documentation](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=7), "As a best practice, create a configuration file that contains the common options that you want to use for generating the outputs. Then, create the output by providing specific options as a command-line argument."
+
+   ```    
+   java -jar OfflinePackager.jar -in_path sample.mp4 -out_type hls 
+   -out_path out_file_path -drm -drm_sys FAIRPLAY -key_file_path "creds/fairplay.bin" 
+   -key_url "user_provided_value"
+   ```
+
+   The generated M3U8 file has an `EXT-X-KEY` attribute that appears as follows:     
     
-    * `frag_dur` - Fragment duration in seconds. 
-    * `target_dur` - The target duration for HLS output. 
-    * `key_file_path` - This is the location of the license file on your packaging machine that serves as your Content Encryption Key (CEK). It is a Base-64 encoded 16-byte hex string. 
-    * `iv_file_path` - This is the location of the IV file on your packaging machine. 
-    * `key_url` - The URI parameter of the `EXT-X-KEY` tag of the [!DNL .m3u8] file. 
-    
-    * `content_id` - Default value.
-
-       As stated in the [Packager documentation](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=7), "As a best practice, create a configuration file that contains the common options that you want to use for generating the outputs. Then, create the output by providing specific options as a command-line argument."
-
-       ```    
-       java -jar OfflinePackager.jar -in_path sample.mp4 -out_type hls 
-       -out_path out_file_path -drm -drm_sys FAIRPLAY -key_file_path "creds/fairplay.bin" 
-       -key_url "user_provided_value"
-       ```
-
-       The generated M3U8 file has an `EXT-X-KEY` attribute that appears as follows:     
-    
-       ```    
-       #EXT-X-KEY:METHOD=SAMPLE-AES,URI="user_provided_value",​
-       KEYFORMAT="com.apple.streamingkeydelivery",KEYFORMATVERSIONS="1" 
-       ```
+   ```    
+   #EXT-X-KEY:METHOD=SAMPLE-AES,URI="user_provided_value",​
+   KEYFORMAT="com.apple.streamingkeydelivery",KEYFORMATVERSIONS="1" 
+   ```
 
 ### Setting policies for FairPlay {#setting-policies-for-fairplay}
 
@@ -207,7 +207,7 @@ To add license rotation, do the following:
 
   Following is a sample M3U8 with key rotation:
 
-  ```
+```
   #EXTM3U
   #EXT-X-TARGETDURATION:10
   #EXT-X-VERSION:5
@@ -239,5 +239,4 @@ To add license rotation, do the following:
   #EXTINF:10,
   fileSequence8.ts
   #EXTINF:10,
-
 ```
