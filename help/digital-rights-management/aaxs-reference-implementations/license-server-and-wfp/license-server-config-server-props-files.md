@@ -18,14 +18,14 @@ To properly prepare your credential's password:
 1. From the command prompt, enter the command: 
 
    ```
-       java -classpath  
-<i class="+ topic ph hi-d="" i "="">
-  path_to_adobe-flashaccess-sdk.jar.; 
+   java -classpath  
+   <i class="+ topic ph hi-d="" i "="">
+   path_to_adobe-flashaccess-sdk.jar.; 
         com.adobe.flashaccess.refimpl.util.ScrambleUtil " 
- <i class="+ topic ph hi-d="" i "="">
+   <i class="+ topic ph hi-d="" i "="">
    your_pfx_password" 
- </i class="+ topic> 
-</i class="+ topic>
+   </i class="+ topic> 
+   </i class="+ topic>
    ```
 
 >[!NOTE] {class="- topic/note "}
