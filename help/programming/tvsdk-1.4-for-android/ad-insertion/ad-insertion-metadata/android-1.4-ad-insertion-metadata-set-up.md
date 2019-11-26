@@ -41,7 +41,7 @@ Advertising metadata is in the `MediaResource.Metadata` property. When starting 
    >[!TIP]
    >
    >The media ID is consumed by TVSDK as a string, that is converted to an md5 value, and is used for the `u` value in the Primetime ad decisioning URL request. For example:
-
+   >
    >```
    >https://ad.auditude.com/adserver?
    >u=c76d04ee31c91c4ce5c8cee41006c97d

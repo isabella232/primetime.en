@@ -67,11 +67,12 @@ To create a basic player using the UI Framework:
    ```
 
 The object returned from calling `ptp.videoPlayer()` provides a behavior that wraps the TVSDK media player API and allows for programmatic control of playback. When you make calls on the media player instance the user interface updates itself based on events fired by the media player: 
->```js>
-><script> 
->    (function(){ 
->        var player = ptp.videoPlayer('#video1'); 
->        player.loadResource( 'sample.mp4' ); 
->    })(); 
-></script>
->```>
+
+```js
+<script> 
+    (function(){ 
+        var player = ptp.videoPlayer('#video1'); 
+        player.loadResource( 'sample.mp4' ); 
+    })(); 
+</script>
+```
