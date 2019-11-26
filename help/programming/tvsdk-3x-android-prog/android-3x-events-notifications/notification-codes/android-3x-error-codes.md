@@ -5,7 +5,7 @@ description: Information about various error codes, warnings, and native error c
 
 # PSDK Error Codes {#psdk-error-codes}
 
-Read on to know abot PSDK error codes, warnings, and native error codes.
+Read on to know about PSDK error codes, warnings, and native error codes.
 
 ## Errors
 
