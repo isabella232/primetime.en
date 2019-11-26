@@ -5,9 +5,11 @@ description: Information about various error codes, warnings, and native error c
 
 # PSDK Error Codes {#psdk-error-codes}
 
-The following tables give details about various errors, warnings, and native error codes.
+Read on to know about PSDK error codes, warnings, and native error codes.
 
 ## Errors
+
+The following table provides detailed information about ERROR type notifications. Most errors contain relevant metadata; for example, URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
 
 | | ERROR NAME | CODE |
 |---|---|---|
@@ -37,6 +39,9 @@ The following tables give details about various errors, warnings, and native err
 
 ## Warnings
 
+The following table provides detailed information about WARN type notifications.
+Most warnings contain relevant metadata; for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
+
 | | Error Name | Code |
 |---|---|---|
 | 1 | PLAYBACK_OPERATION_FAILED | 200 |
@@ -52,6 +57,8 @@ The following tables give details about various errors, warnings, and native err
 | 1 | REVENUE_OPTIMIZATION_REPORTING | 300 |
 
 ## Native Error Codes
+
+The Video Encoder interface of the AVE returns these video playback notifications in the NATIVE_ERROR metadata object.
 
 | | Native Error Name | Native Error Code | Description |
 |---|---|---|---|
