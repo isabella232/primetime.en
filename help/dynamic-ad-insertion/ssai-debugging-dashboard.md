@@ -18,6 +18,24 @@ Publishers can look up the following activities for an SSAI session, after speci
 
 ![SSAI Session Statistics](assets/SSAI-Session-Stats.png)
 
+| Debug Event | Corresponding Fields |
+|---|---|
+| TRACE_AD_CALL | hostname, timestamp, request_id, session_id, zone, event, status,delay, queryURL, adSystemId, availID, availDuration, ad_server_response_base64 |
+| TRACE_AD_REDIRECT/TRACE_AD_RESOLVE/TRACE_AD_INSERT | hostnametimestamprequest_idsession_idzoneeventstatusavailIdadTypeadDurationSecondsadContentURLadContentURLActualadSystemIdadIdcreativeIdadRequesIddelta |
+| TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE | hostnametimestamprequest_idsession_idzoneeventqAdId |
+| TRACE_TRANSCODING_REQUESTED | hostnametimestamprequest_idsession_idzoneeventqAdIdadManifestURLcreativeTypeflagstargetDurationcdn |
+| TRACKING_URL | hostnametimestamprequest_idsession_idzoneeventstatus_linestatusevent_urlheaders |
+| | |
+
+| Debug Event | Corresponding Fields |
+|---|---|
+| TRACE_AD_CALL | <ul><li>hostname</li><li>timestamp</li><li>request_id</li><li>session_id</li><li>zone</li><li>event</li><li>status</li><li>delay</li><li>queryURL</li><li>adSystemId</li><li>availID</li><li>availDuration</li><li>ad_server_response_base64</li></ul> |
+| TRACE_AD_REDIRECT/TRACE_AD_RESOLVE/TRACE_AD_INSERT | hostnametimestamprequest_idsession_idzoneeventstatusavailIdadTypeadDurationSecondsadContentURLadContentURLActualadSystemIdadIdcreativeIdadRequesIddelta |
+| TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE | hostnametimestamprequest_idsession_idzoneeventqAdId |
+| TRACE_TRANSCODING_REQUESTED | hostnametimestamprequest_idsession_idzoneeventqAdIdadManifestURLcreativeTypeflagstargetDurationcdn |
+| TRACKING_URL | hostnametimestamprequest_idsession_idzoneeventstatus_linestatusevent_urlheaders |
+| | |
+
 Publishers can look up the SSAI activity as the following event types:
 | Debug Event | Corresponding Fields |
 |---|---|
