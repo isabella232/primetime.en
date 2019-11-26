@@ -33,12 +33,12 @@ The reference implementation license server includes all of the license server s
 
 1. Modify the Ant build script to specify the locations of your Primetime DRM SDK, Tomcat, MySQL, and Log4J.
 
-       Open the [!DNL build-refimpl.xml] file in a text editor and set these property values:
+   Open the [!DNL build-refimpl.xml] file in a text editor and set these property values:
 
-    * `sdkdir` 
-    * `tomcatdir` 
-    * `mysqldir` 
-    * `log4jdir`
+   * `sdkdir` 
+   * `tomcatdir` 
+   * `mysqldir` 
+   * `log4jdir`
 
 1. Run the Ant build script with the `all` property, in the directory where the Ant build script is located.
 

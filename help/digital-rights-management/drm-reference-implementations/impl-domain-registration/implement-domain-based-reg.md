@@ -12,8 +12,7 @@ uuid: 4a71b2e0-d1a2-4d63-9cbd-980a292774ab
    In your [!DNL .properties] file, set: 
 
    ```
-   policy.domain.url=https://[ 
-<i>server:port</i>] 
+   policy.domain.url=https://[server:port] 
    ```
 
 1. Make authentication with a username and password mandatory.
@@ -23,4 +22,3 @@ uuid: 4a71b2e0-d1a2-4d63-9cbd-980a292774ab
    ```
    policy.domain.anonymous=false 
    ```
-
