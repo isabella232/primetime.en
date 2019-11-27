@@ -11,7 +11,6 @@ Read on to know about PSDK error codes, warnings, and native error codes.
 
 The following table provides detailed information about ERROR type notifications. Most errors contain relevant metadata; for example, URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
 
-{:class="table table-bordered"}
 || PSDK Error Name | PSDK Error Code | Description |
 |----|---|---|---|
 | 1 | SUCCESS | 0 | Operation performed by underlying API is successful. |
@@ -37,7 +36,6 @@ The following table provides detailed information about ERROR type notifications
 | 21 | PRE_ROLL_DISABLED | 20 | The preroll has been disabled via AdvertisingMetadata. |
 | 22 | PLAYBACK_NOT_AUTHORIZED | 57 | HLS playback has not been enabled in the Flash Player. See AuthorizedFeatures.enableMediaPlayerHLSPlayback(). |
 | 23 | NETWORK_TIMEOUT | 58 | Network Timed out while fetching a resource/connecting server. |
-{:class="table table-bordered"}
 
 ## Warnings
 
