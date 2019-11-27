@@ -11,50 +11,52 @@ Read on to know about PSDK error codes, warnings, and native error codes.
 
 The following table provides detailed information about ERROR type notifications. Most errors contain relevant metadata; for example, URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
 
-| | ERROR NAME | CODE |
-|---|---|---|
-| 1 | SUCCESS | 0 |
-| 2 | INVALID_ARGUMENT | 1 |
-| 3 | NULL_POINTER | 2 |
-| 4 | ILLEGAL_STATE | 3 |
-| 5 | INTERFACE_NOT_FOUND | 4 |
-| 6 | CREATION_FAILED | 5 |
-| 7 | UNSUPPORTED_OPERATION | 6 |
-| 8 | DATA_NOT_AVAILABLE | 7 |
-| 9 | SEEK_ERROR | 8 |
-| 10 | UNSUPPORTED_FEATURE | 9 |
-| 11 | RANGE_ERROR | 10 |
-| 12 | CODEC_NOT_SUPPORTED | 11 |
-| 13 | MEDIA_ERROR | 12 |
-| 14 | NETWORK_ERROR | 13 |
-| 15 | GENERIC_ERROR | 14 |
-| 16 | INVALID_SEEK_TIME | 15 |
-| 17 | AUDIO_TRACK_ERROR | 16 |
-| 18 | ACCESS_FROM_DIFFERENT_THREAD | 17 |
-| 19 | ELEMENT_NOT_FOUND | 18 |
-| 20 | NOT_IMPLEMENTED | 19 |
-| 21 | PRE_ROLL_DISABLED | 20 |
-| 22 | PLAYBACK_NOT_AUTHORIZED | 57 |
-| 23 | NETWORK_TIMEOUT | 58 |
+{:class="table table-bordered"}
+|| PSDK Error Name | PSDK Error Code | Description |
+|----|---|---|---|
+| 1 | SUCCESS | 0 | Operation performed by underlying API is successful. |
+| 2 | INVALID_ARGUMENT | 1 | Data or format of argument provided to underlying API is invalid. |
+| 3 | NULL_POINTER | 2 | One of the argument passed in is NULL Or one of the internal members was not initialized. |
+| 4 | ILLEGAL_STATE | 3 | The operation is not supported in current player state. |
+| 5 | INTERFACE_NOT_FOUND | 4 | The interfaceCast method throws this error when the requested interface is not implemented/inherited by this. |
+| 6 | CREATION_FAILED | 5 | Creation of one of the internal resources failed. |
+| 7 | UNSUPPORTED_OPERATION | 6 | The requested operation is currently not supported. |
+| 8 | DATA_NOT_AVAILABLE | 7 | The requested data is currently not available. |
+| 9 | SEEK_ERROR | 8 | An error has occurred while performing a seek operation. |
+| 10 | UNSUPPORTED_FEATURE | 9 | This feature/function is not supported. |
+| 11 | RANGE_ERROR | 10 | Specified value is out of range. |
+| 12 | CODEC_NOT_SUPPORTED | 11 | Given stream's Audio/Video Codec is not supported by TVSDK or by underlying device. |
+| 13 | MEDIA_ERROR | 12 | The specified media is not found. |
+| 14 | NETWORK_ERROR | 13 | An Error has occurred while downloading a fragment or segment(both video and audio). |
+| 15 | GENERIC_ERROR | 14 | Generic error event. Not actually issued by TVSDK. This is only a marker for the end of the range of numerical codes corresponding to TVSDK error events. |
+| 16 | INVALID_SEEK_TIME | 15 | The seek time provided is invalid. |
+| 17 | AUDIO_TRACK_ERROR | 16 | An error related to an audio track occurred (Alternate Audio) |
+| 18 | ACCESS_FROM_DIFFERENT_THREAD | 17 | PSDK API is called from different thread than the thread in which PSDK was initialized. |
+| 19 | ELEMENT_NOT_FOUND | 18 | The element is not found. |
+| 20 | NOT_IMPLEMENTED | 19 | Feature not implemented. |
+| 21 | PRE_ROLL_DISABLED | 20 | The preroll has been disabled via AdvertisingMetadata. |
+| 22 | PLAYBACK_NOT_AUTHORIZED | 57 | HLS playback has not been enabled in the Flash Player. See AuthorizedFeatures.enableMediaPlayerHLSPlayback(). |
+| 23 | NETWORK_TIMEOUT | 58 | Network Timed out while fetching a resource/connecting server. |
+{:class="table table-bordered"}
 
 ## Warnings
 
 The following table provides detailed information about WARN type notifications.
 Most warnings contain relevant metadata; for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
 
-| | Error Name | Code |
-|---|---|---|
-| 1 | PLAYBACK_OPERATION_FAILED | 200 |
-| 2 | NATIVE_WARNING | 201 |
-| 3 | AD_RESOLVER_FAILED | 202 |
-| 4 | AD_MANIFEST_LOAD_FAILED | 203 |
-| 5 | AD_RESOLUTION_IN_PROGRESS | 204 |
+| | Error Name | Code | Description |
+| --- | --- | --- | --- |
+| 1 | PLAYBACK_OPERATION_FAILED | 200 | There was an error during playback operation. A playback-related operation has failed | but playback may continue." |
+| 2 | NATIVE_WARNING | 201 | The low-level AVE library issued an error. | |
+| 3 | AD_RESOLVER_FAILED | 202 | Ad plugin failed to resolve ads. | |
+| 4 | AD_MANIFEST_LOAD_FAILED | 203 | Failed to load the Ad manifest. | |
+| 5 | AD_RESOLUTION_IN_PROGRESS | 204 | Operation for Resolving Ads is in progress. | |
 
 ## Info
 
-| | Error Name | Code |
-|---|---|---|
-| 1 | REVENUE_OPTIMIZATION_REPORTING | 300 |
+| | Error Name | Code | Description |
+| --- | --- | --- | --- |
+| 1 | REVENUE_OPTIMIZATION_REPORTING | 300 | TVSDK detailed Notifications for further reporting and analysis. |
 
 ## Native Error Codes
 
@@ -119,7 +121,7 @@ The Video Encoder interface of the AVE returns these video playback notification
 | 55 | PERIOD_HOLD | 53 | The media reader is unable to read further because it has reached the time set by setHoldAt API. |
 | 56 | LIVE_HOLD | 54 | The media reader is unable to load segments because it has reached the end of the live window. Segment loading will resume when the server ads new media to the live window. This state is usually reached if:<ul><li>The bufferTime is too high (equal to or higher than the live window duration). </li><li>A combination of one or more of insert/ erase API replaced more media than it added.</li><li>The next period is a live period with a pending media replacement (due to InsertBy API call)</li></ul> |
 | 57 | BAD_MEDIA_INTERLEAVING | 55 | The audio and video interleaving in the media is not done properly. This is a packaging error. The warning is dispatched when the difference exceeds two seconds. |
-| 58 | DRM_NOT_AVAILABLE | 56 |  |
+| 58 | DRM_NOT_AVAILABLE | 56 | |
 | 59 | PLAYBACK_NOT_AUTHORIZED | 57 | HLS playback has not been enabled in the Flash Player. See AuthorizedFeatures.enableHLSPlayback. |
 | 60 | BAD_MEDIA_SAMPLE_FOUND | 58 | The decoder received a bad sample that cannot be decoded. This is usually not a fatal error but indicates that there may be glitches in the audio/video. Too many instances of this error indicate a bad encoding or bad file. |
 | 61 | RANGE_SPANS_READ_HEAD | 59 | After playback has started, the Insert/Replace range should not contain the read head. |
