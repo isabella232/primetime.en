@@ -18,32 +18,15 @@ Publishers can look up the following activities for an SSAI session, after speci
 
 ![SSAI Session Statistics](assets/SSAI-Session-Stats.png)
 
+Publishers can look up the SSAI activity as the following event types:
+
 | Debug Event | Corresponding Fields |
 |---|---|
 | TRACE_AD_CALL | hostname, timestamp, request_id, session_id, zone, event, status,delay, queryURL, adSystemId, availID, availDuration, ad_server_response_base64 |
-| TRACE_AD_REDIRECT/TRACE_AD_RESOLVE/TRACE_AD_INSERT | hostnametimestamprequest_idsession_idzoneeventstatusavailIdadTypeadDurationSecondsadContentURLadContentURLActualadSystemIdadIdcreativeIdadRequesIddelta |
-| TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE | hostnametimestamprequest_idsession_idzoneeventqAdId |
-| TRACE_TRANSCODING_REQUESTED | hostnametimestamprequest_idsession_idzoneeventqAdIdadManifestURLcreativeTypeflagstargetDurationcdn |
-| TRACKING_URL | hostnametimestamprequest_idsession_idzoneeventstatus_linestatusevent_urlheaders |
-| | |
-
-| Debug Event | Corresponding Fields |
-|---|---|
-| TRACE_AD_CALL | <ul><li>hostname</li><li>timestamp</li><li>request_id</li><li>session_id</li><li>zone</li><li>event</li><li>status</li><li>delay</li><li>queryURL</li><li>adSystemId</li><li>availID</li><li>availDuration</li><li>ad_server_response_base64</li></ul> |
-| TRACE_AD_REDIRECT/TRACE_AD_RESOLVE/TRACE_AD_INSERT | hostnametimestamprequest_idsession_idzoneeventstatusavailIdadTypeadDurationSecondsadContentURLadContentURLActualadSystemIdadIdcreativeIdadRequesIddelta |
-| TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE | hostnametimestamprequest_idsession_idzoneeventqAdId |
-| TRACE_TRANSCODING_REQUESTED | hostnametimestamprequest_idsession_idzoneeventqAdIdadManifestURLcreativeTypeflagstargetDurationcdn |
-| TRACKING_URL | hostnametimestamprequest_idsession_idzoneeventstatus_linestatusevent_urlheaders |
-| | |
-
-Publishers can look up the SSAI activity as the following event types:
-| Debug Event | Corresponding Fields |
-|---|---|
-| TRACE_AD_CALL | <ul><li>hostname</li><li>timestamp</li><li>request_id</li><li>session_id</li><li>zone</li><li>event</li><li>status</li><li>delay</li><li>queryURL</li><li>adSystemId</li><li>availID</li><li>availDuration</li><li>ad_server_response_base64</li></ul> |
-| TRACE_AD_REDIRECT/TRACE_AD_RESOLVE/TRACE_AD_INSERT | <ul><li>hostname</li><li>timestamp</li><li>request_id</li><li>session_id</li><li>zone</li><li>event</li><li>status</li><li>availId</li><li>adType</li><li>adDurationSeconds</li><li>adContentURL</li><li>adContentURLActual</li><li>adSystemId</li><li>adId</li><li>creativeId</li><li>adRequesId</li><li>delta</li></ul> |
-| TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE | <ul><li>hostname</li><li>timestamp</li><li>request_id</li><li>session_id</li><li>zone</li><li>event</li><li>qAdId</li></ul> |
-| TRACE_TRANSCODING_REQUESTED | <ul><li>hostname</li> <li>timestamp</li><li>request_id</li><li>session_id</li><li>zone</li><li>event</li><li>qAdId</li><li>adManifestURL</li><li>creativeType</li><li>flags</li><li>targetDuration</li><li>cdn</li></ul> |
-| TRACKING_URL |<ul><li>hostname</li><li>timestamp</li><li>request_id</li><li>session_id</li><li>zone</li><li>event</li><li>status_line</li><li>status</li><li>event_url</li><li>headers</li></ul>|
+| TRACE_AD_REDIRECT/TRACE_AD_RESOLVE/TRACE_AD_INSERT | hostname, timestamp, request_id, session_id, zone, event, status, availId, adType, adDurationSeconds, adContentURL, adContentURLActual, adSystemId, adId, creativeId, adRequesId, delta |
+| TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE | hostname, timestamp, request_id, session_id, zone, event, qAdId |
+| TRACE_TRANSCODING_REQUESTED | hostname, timestamp, request_id, session_id, zone, event, qAdId, adManifestURL, creativeType, flags, targetDuration, cdn |
+| TRACKING_URL | hostname, timestamp, request_id, session_id, zone, event, status_line, status, event_url, headers |
 
 ![Session events](assets/Stats.png)
 

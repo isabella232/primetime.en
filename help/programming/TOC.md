@@ -171,7 +171,7 @@ user-guide-title: Primetime Programming Help
   + Events and notifications {#events-and-notifications}
     + [Notifications and events for player status, activity, errors, and logging](tvsdk-3x-android-prog/android-3x-events-notifications/android-3x-notification-system.md)
     + [Notification codes](tvsdk-3x-android-prog/android-3x-events-notifications/notification-codes/android-3x-notification-codes.md)
-    + [Error codes](tvsdk-3x-android-prog/android-3x-events-notifications/notification-codes/android-3x-error-codes.md)
+    + [PSDK Error Codes](tvsdk-3x-android-prog/android-3x-events-notifications/notification-codes/android-3x-error-codes.md)
     + [Details for the NATIVE_ERROR notification](tvsdk-3x-android-prog/android-3x-events-notifications/notification-codes/android-3x-native-error-summary.md)
     + [Primetime player events summary](tvsdk-3x-android-prog/android-3x-events-notifications/events-summary/android-3x-events-summary.md)
   + Billing {#billing}
