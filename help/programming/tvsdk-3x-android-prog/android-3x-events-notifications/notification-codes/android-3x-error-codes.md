@@ -11,7 +11,7 @@ Read on to know about PSDK error codes, warnings, and native error codes.
 
 The following table provides detailed information about ERROR type notifications. Most errors contain relevant metadata; for example, URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
 
-| S.No. | <div style="width:250px">PSDK Error Name</div> | PSDK Error Code | Description |
+| S.No. | PSDK Error Name | PSDK Error Code | Description |
 | :---: | --- | :---: | --- |
 | 1 | SUCCESS | 0 | Operation performed by underlying API is successful. |
 | 2 | INVALID_ARGUMENT | 1 | Data or format of argument provided to underlying API is invalid. |
@@ -30,11 +30,11 @@ The following table provides detailed information about ERROR type notifications
 | 15 | GENERIC_ERROR | 14 | Generic error event. Not actually issued by TVSDK. This is only a marker for the end of the range of numerical codes corresponding to TVSDK error events. |
 | 16 | INVALID_SEEK_TIME | 15 | The seek time provided is invalid. |
 | 17 | AUDIO_TRACK_ERROR | 16 | An error related to an audio track occurred (Alternate Audio) |
-| 18 | ACCESS_FROM_DIFFERENT_THREAD | 17 | PSDK API is called from different thread than the thread in which PSDK was initialized. |
+| 18 | ACCESS_FROM_<br>DIFFERENT_THREAD | 17 | PSDK API is called from different thread than the thread in which PSDK was initialized. |
 | 19 | ELEMENT_NOT_FOUND | 18 | The element is not found. |
 | 20 | NOT_IMPLEMENTED | 19 | Feature not implemented. |
 | 21 | PRE_ROLL_DISABLED | 20 | The preroll has been disabled via AdvertisingMetadata. |
-| 22 | PLAYBACK_NOT_AUTHORIZED | 57 | HLS playback has not been enabled in the Flash Player. See AuthorizedFeatures.enableMediaPlayerHLSPlayback(). |
+| 22 | PLAYBACK_NOT<br>_AUTHORIZED | 57 | HLS playback has not been enabled in the Flash Player. See AuthorizedFeatures.enableMediaPlayerHLSPlayback(). |
 | 23 | NETWORK_TIMEOUT | 58 | Network Timed out while fetching a resource/connecting server. |
 
 ## Warnings
@@ -42,25 +42,25 @@ The following table provides detailed information about ERROR type notifications
 The following table provides detailed information about WARN type notifications.
 Most warnings contain relevant metadata; for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
 
-| S.No. | <div style="width:250px">Error Name</div> | Code | Description |
+| S.No. | Error Name | Code | Description |
 | :---: | --- | :---: | --- |
-| 1 | PLAYBACK_OPERATION_FAILED | 200 | There was an error during playback operation. A playback-related operation has failed | but playback may continue." |
+| 1 | PLAYBACK_OPERATION<br>_FAILED | 200 | There was an error during playback operation. A playback-related operation has failed | but playback may continue." |
 | 2 | NATIVE_WARNING | 201 | The low-level AVE library issued an error. | |
-| 3 | AD_RESOLVER_FAILED | 202 | Ad plugin failed to resolve ads. | |
-| 4 | AD_MANIFEST_LOAD_FAILED | 203 | Failed to load the Ad manifest. | |
-| 5 | AD_RESOLUTION_IN_PROGRESS | 204 | Operation for Resolving Ads is in progress. | |
+| 3 | AD_RESOLVER<br>_FAILED | 202 | Ad plugin failed to resolve ads. | |
+| 4 | AD_MANIFEST<br>_LOAD_FAILED | 203 | Failed to load the Ad manifest. | |
+| 5 | AD_RESOLUTION<br>_IN_PROGRESS | 204 | Operation for Resolving Ads is in progress. | |
 
 ## Info
 
-| S.No. | <div style="width:250px">Error Name</div> | Code | Description |
+| S.No. | Error Name | Code | Description |
 | :---: | --- | :---: | --- |
-| 1 | REVENUE_OPTIMIZATION_REPORTING | 300 | TVSDK detailed Notifications for further reporting and analysis. |
+| 1 | REVENUE_OPTIMIZATION<br>_REPORTING | 300 | TVSDK detailed Notifications for further reporting and analysis. |
 
 ## Native Error Codes
 
 The Video Encoder interface of the AVE returns these video playback notifications in the NATIVE_ERROR metadata object.
 
-| S.No. | <div style="width:250px">Native Error Name</div> | Native Error Code | Description |
+| S.No. | Native Error Name | Native Error Code | Description |
 | :---: | --- | :---: | --- |
 | 1 | END_OF_PERIOD | -1 | End of period. |
 | 2 | SUCCESS | 0 | Operation successful. |
