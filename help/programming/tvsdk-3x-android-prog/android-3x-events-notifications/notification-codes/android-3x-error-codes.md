@@ -30,11 +30,11 @@ The following table provides detailed information about ERROR type notifications
 | 15 | GENERIC_ERROR | 14 | Generic error event. Not actually issued by TVSDK. This is only a marker for the end of the range of numerical codes corresponding to TVSDK error events. |
 | 16 | INVALID_SEEK_TIME | 15 | The seek time provided is invalid. |
 | 17 | AUDIO_TRACK_ERROR | 16 | An error related to an audio track occurred (Alternate Audio) |
-| 18 | ACCESS_FROM_<br>DIFFERENT_THREAD | 17 | PSDK API is called from different thread than the thread in which PSDK was initialized. |
+| 18 | ACCESS_FROM_DIFFERENT_THREAD | 17 | PSDK API is called from different thread than the thread in which PSDK was initialized. |
 | 19 | ELEMENT_NOT_FOUND | 18 | The element is not found. |
 | 20 | NOT_IMPLEMENTED | 19 | Feature not implemented. |
 | 21 | PRE_ROLL_DISABLED | 20 | The preroll has been disabled via AdvertisingMetadata. |
-| 22 | PLAYBACK_NOT<br>_AUTHORIZED | 57 | HLS playback has not been enabled in the Flash Player. See AuthorizedFeatures.enableMediaPlayerHLSPlayback(). |
+| 22 | PLAYBACK_NOT_AUTHORIZED | 57 | HLS playback has not been enabled in the Flash Player. See AuthorizedFeatures.enableMediaPlayerHLSPlayback(). |
 | 23 | NETWORK_TIMEOUT | 58 | Network Timed out while fetching a resource/connecting server. |
 
 ## Warnings
