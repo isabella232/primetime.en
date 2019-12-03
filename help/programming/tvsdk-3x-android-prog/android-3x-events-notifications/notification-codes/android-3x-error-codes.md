@@ -11,7 +11,7 @@ Read on to know about PSDK error codes, warnings, and native error codes.
 
 The following table provides detailed information about ERROR type notifications. Most errors contain relevant metadata; for example, URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
 
-| S.No. | PSDK Error Name | PSDK Error Code | Description |
+| S.No. | <div style="width:250px">PSDK Error Name</div> | PSDK Error Code | Description |
 | :---: | --- | :---: | --- |
 | 1 | SUCCESS | 0 | Operation performed by underlying API is successful. |
 | 2 | INVALID_ARGUMENT | 1 | Data or format of argument provided to underlying API is invalid. |
@@ -42,7 +42,7 @@ The following table provides detailed information about ERROR type notifications
 The following table provides detailed information about WARN type notifications.
 Most warnings contain relevant metadata; for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
 
-| S.No. | Error Name | Code | Description |
+| S.No. | <div style="width:250px">Error Name</div> | Code | Description |
 | :---: | --- | :---: | --- |
 | 1 | PLAYBACK_OPERATION_FAILED | 200 | There was an error during playback operation. A playback-related operation has failed | but playback may continue." |
 | 2 | NATIVE_WARNING | 201 | The low-level AVE library issued an error. | |
@@ -52,7 +52,7 @@ Most warnings contain relevant metadata; for example, the URL of the resource th
 
 ## Info
 
-| S.No. | Error Name | Code | Description |
+| S.No. | <div style="width:250px">Error Name</div> | Code | Description |
 | :---: | --- | :---: | --- |
 | 1 | REVENUE_OPTIMIZATION_REPORTING | 300 | TVSDK detailed Notifications for further reporting and analysis. |
 
@@ -60,7 +60,7 @@ Most warnings contain relevant metadata; for example, the URL of the resource th
 
 The Video Encoder interface of the AVE returns these video playback notifications in the NATIVE_ERROR metadata object.
 
-| S.No. | Native Error Name | Native Error Code | Description |
+| S.No. | <div style="width:250px">Native Error Name</div> | Native Error Code | Description |
 | :---: | --- | :---: | --- |
 | 1 | END_OF_PERIOD | -1 | End of period. |
 | 2 | SUCCESS | 0 | Operation successful. |
