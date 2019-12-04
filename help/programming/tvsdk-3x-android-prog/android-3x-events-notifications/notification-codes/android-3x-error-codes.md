@@ -13,10 +13,10 @@ The following table provides detailed information about ERROR type notifications
 
 <table frame="all" colsep="1" rowsep="1">
   <tr> 
-   <th class="entry" width="15%"><b>S.No.</b></th>
-   <th class="entry" width="30%"><b>PSDK Error Name</b></th>
-   <th class="entry" width="15%"><b>PSDK Error Code</b></th>
-   <th class="entry" width="40%"><b>Description</b></th>
+   <th><b>S.No.</b></th>
+   <th><b>PSDK Error Name</b></th>
+   <th><b>PSDK Error Code</b></th>
+   <th><b>Description</b></th>
   </tr>
   <tr>
     <td>1</td>
@@ -165,10 +165,10 @@ Most warnings contain relevant metadata; for example, the URL of the resource th
 
 <table frame="all" colsep="1" rowsep="1">
   <tr> 
-    <th class="entry" width="15%"><b>S.No.</b></th>
-    <th class="entry" width="30%"><b>Error Name</b></th>
-    <th class="entry" width="15%"><b>Code</b></th>
-    <th class="entry" width="40%"><b>Description</b></th>
+    <th><b>S.No.</b></th>
+    <th><b>Error Name</b></th>
+    <th><b>Code</b></th>
+    <th><b>Description</b></th>
   </tr>
   <tr>
     <td>1</td>
@@ -206,10 +206,10 @@ Most warnings contain relevant metadata; for example, the URL of the resource th
 
 <table frame="all" colsep="1" rowsep="1">
   <tr> 
-    <th class="entry" width="15%"><b>S.No.</b></th>
-    <th class="entry" width="30%"><b>Error Name</b></th>
-    <th class="entry" width="15%"><b>Code</b></th>
-    <th class="entry" width="40%"><b>Description</b></th>
+    <th><b>S.No.</b></th>
+    <th><b>Error Name</b></th>
+    <th><b>Code</b></th>
+    <th><b>Description</b></th>
   </tr>
   <tr>
     <td>1</td>
@@ -225,10 +225,10 @@ The Video Encoder interface of the AVE returns these video playback notification
 
 <table frame="all" colsep="1" rowsep="1">
   <tr> 
-    <th class="entry" width="15%"><b>S.No.</b></th>
-    <th class="entry" width="30%"><b>Error Name</b></th>
-    <th class="entry" width="15%"><b>Code</b></th>
-    <th class="entry" width="40%"><b>Description</b></th>
+    <th><b>S.No.</b></th>
+    <th><b>Error Name</b></th>
+    <th><b>Code</b></th>
+    <th><b>Description</b></th>
   </tr>
   <tr>
     <td>1</td>
