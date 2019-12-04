@@ -11,12 +11,12 @@ Read on to know about PSDK error codes, warnings, and native error codes.
 
 The following table provides detailed information about ERROR type notifications. Most errors contain relevant metadata; for example, URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
 
-<table>
-  <tr>
-    <th>S.No.</th>
-    <th>PSDK Error Name</th>
-    <th>PSDK Error Code</th>
-    <th>Description</th>
+<table frame="all" colsep="1" rowsep="1">
+  <tr> 
+   <th width="15%"><b>S.No.</b></th>
+   <th width="30%"><b>PSDK Error Name</b></th>
+   <th width="15%"><b>PSDK Error Code</b></th>
+   <th width="40%"><b>Description</b></th>
   </tr>
   <tr>
     <td>1</td>
@@ -163,12 +163,12 @@ The following table provides detailed information about ERROR type notifications
 The following table provides detailed information about WARN type notifications.
 Most warnings contain relevant metadata; for example, the URL of the resource that failed to download. Some notifications contain metadata to specify whether the problem occurred in the main video content, in the alternate audio content, or in an ad.
 
-<table>
-  <tr>
-    <th>S.No.</th>
-    <th>Error Name</th>
-    <th>Code</th>
-    <th>Description</th>
+<table frame="all" colsep="1" rowsep="1">
+  <tr> 
+    <th width="15%"><b>S.No.</b></th>
+    <th width="30%"><b>Error Name</b></th>
+    <th width="15%"><b>Code</b></th>
+    <th width="40%"><b>Description</b></th>
   </tr>
   <tr>
     <td>1</td>
@@ -204,12 +204,12 @@ Most warnings contain relevant metadata; for example, the URL of the resource th
 
 ## Info
 
-<table>
-  <tr>
-    <th>S.No.</th>
-    <th>Error Name</th>
-    <th>Code</th>
-    <th>Description</th>
+<table frame="all" colsep="1" rowsep="1">
+  <tr> 
+    <th width="15%"><b>S.No.</b></th>
+    <th width="30%"><b>Error Name</b></th>
+    <th width="15%"><b>Code</b></th>
+    <th width="40%"><b>Description</b></th>
   </tr>
   <tr>
     <td>1</td>
@@ -223,12 +223,12 @@ Most warnings contain relevant metadata; for example, the URL of the resource th
 
 The Video Encoder interface of the AVE returns these video playback notifications in the NATIVE_ERROR metadata object.
 
-<table>
-  <tr>
-    <th>S.No.</th>
-    <th>Native Error Name</th>
-    <th>Native Error Code</th>
-    <th>Description</th>
+<table frame="all" colsep="1" rowsep="1">
+  <tr> 
+    <th width="15%"><b>S.No.</b></th>
+    <th width="30%"><b>Error Name</b></th>
+    <th width="15%"><b>Code</b></th>
+    <th width="40%"><b>Description</b></th>
   </tr>
   <tr>
     <td>1</td>
