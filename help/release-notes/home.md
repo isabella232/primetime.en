@@ -21,7 +21,7 @@ Introduced the Secure Delivery (HTTPS) support for all calls originating from TV
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
-## Fixes in TVSDK 3.7 iOS Release Notes
+## Fixes in TVSDK 3.8 iOS Release Notes
 
 Check out for more information about the current released version for [iOS](../release-notes/tvsdk-3x-ios.md).
 
