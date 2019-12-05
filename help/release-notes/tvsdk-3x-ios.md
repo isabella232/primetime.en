@@ -9,21 +9,21 @@ topic-tags: release-notes
 discoiquuid: c470c84d-03e7-4f5b-b36a-d8866394ec8f
 ---
 
-# TVSDK 3.7 for iOS Release Notes {#tvsdk-for-ios-release-notes}
+# TVSDK 3.8 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
-TVSDK 3.7 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.7.
+TVSDK 3.8 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.8.
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.7, ensure your hardware, operating system, and application versions meet the following requirements listed below:
+Before you download iOS 3.8, ensure your hardware, operating system, and application versions meet the following requirements listed below:
 
 Operating System: iOS 7.0 or later.
 
-## iOS TVSDK 3.7 (Hotfix) {#hotfix}
-
-* Fixed a scenario where playback stops when a large number of ad resolution requests are made simltaneously.
-
 ### New features and fixes in the previous releases {#whats-new-previous}
+
+**iOS TVSDK 3.7**
+
+* Hotfix for a scenario where playback stopped when a large number of ad resolution requests were made simltaneously.
 
 **iOS TVSDK 3.6**
 
@@ -1107,8 +1107,13 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
+* Due to deprecation of iOS UIWebView class, iOS TVSDK 3.6 onwards:
+  * VPAID ads will not play as expected in iPad 13.
+  * Companion ads (EPV) will not play as expected.
+
 * In case multiple contents are configured to be played in Picture-in-Picture (PiP) after one content completes playback, new content doesn’t play in the PiP window itself.
 **Environment**: iOS 12.3 onwards
+
 * In iOS TVSDK, all ads are stitched into the content manifest. Ad behaviors are implemented by seeking based on the duration of the content and ad segments. So if segment durations are not accurate, seeking may not always end at the exact frame of the beginning or end of ad break. Even if durations are to the frame, there is a tolerance that the platform itself imposes on seeking and there may be a few frames or ad or content displayed. This is a limitation of the platform and the way ad insertion works with TVSDK on iOS.
 * The decision to skip happens on the seek event in this case. However, since the ad segment durations in the manifest do not accurately represent the actual duration of the ad, the seek is not frame accurate. Hence, you see a few frames of ad when the ad policies are applied.
 * It might experience that License rotation video does not play on iOS 11 and it will play fine on iOS 9.x and iOS 10.x.
