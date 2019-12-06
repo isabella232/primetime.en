@@ -1,8 +1,8 @@
 ---
-title: TVSDK 3.7 for iOS Release Notes
-seo-title: TVSDK 3.7 for iOS Release Notes
-description: TVSDK 3.7 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.7
-seo-description: TVSDK 3.7 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.7
+title: TVSDK 3.8 for iOS Release Notes
+seo-title: TVSDK 3.8 for iOS Release Notes
+description: TVSDK 3.8 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.8
+seo-description: TVSDK 3.8 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.8
 uuid: e8305fdb-78a8-4c0b-b216-807f745a0769
 products: SG_PRIMETIME
 topic-tags: release-notes
@@ -17,7 +17,17 @@ TVSDK 3.8 for iOS Release Notes describe what is new or changed, the resolved an
 
 Before you download iOS 3.8, ensure your hardware, operating system, and application versions meet the following requirements listed below:
 
-Operating System: iOS 7.0 or later.
+Operating System: iOS 8.0 or later.
+
+## iOS TVSDK 3.8
+
+This release focuses on:
+
+* iOS 13 compliance.
+* handling issues related to iOS 13 UIWebView deprecation.
+* iPAD version 13 compliance.
+
+For fixes in the current release see [customer issues fixed](#resolved-issues), and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
 
 ### New features and fixes in the previous releases {#whats-new-previous}
 
@@ -266,12 +276,18 @@ Comment Type: draft
 </note>
 
  -->
+**iOS TVSDK 3.8**
+
+* (ZD#40087) - iOS crashes with player error for expired VOD content.
+* (ZD#40083) - Pre-Roll ads do not play for livestream with `OpportunityGenerator`, and player gives error.
+* (ZD#39828) - `CurrentItem` property is missing the nullability annotation, causing player crash when the player status contained in the notification is `PTMediaPlayerStatusStopped`.
+* (ZD#37640) - 
+ 
+### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.7**
 
 * No new issues in this release.
-
-### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.6**
 

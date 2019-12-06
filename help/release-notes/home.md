@@ -9,6 +9,10 @@ seo-description: null
 
 Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
+## Fixes in TVSDK 3.8 iOS Release Notes
+
+Check out for more information about the current released version for [iOS](../release-notes/tvsdk-3x-ios.md).
+
 ## Enhancements in PTAI 19.11.1
 
 Focused on maintenance updates.
@@ -20,10 +24,6 @@ For more information about the current released version of Dynamic Ad Insertion,
 Introduced the Secure Delivery (HTTPS) support for all calls originating from TVSDK.
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
-
-## Fixes in TVSDK 3.8 iOS Release Notes
-
-Check out for more information about the current released version for [iOS](../release-notes/tvsdk-3x-ios.md).
 
 ## See also
 
