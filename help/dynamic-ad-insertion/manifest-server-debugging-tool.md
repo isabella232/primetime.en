@@ -30,7 +30,7 @@ To support all of these cases, the tool does not require or use player publisher
 
 When you initiate a manifest server session, you can set a parameter on the request URL to ask it to log debugging information. Using different values of that parameter, you can also ask the manifest server to return specified pieces of debugging information in HTTP headers, but headers can contain only a limited amount of information. You can obtain credentials from Adobe to access complete log files, which the manifest server saves periodically (for example, hourly) on an archive server. Once you have credentials for that server, you can access it directly at any time.
 
-You can also see the [server side event tracking captured in the SSAI dashboard](ssai-debugging-dashboard.md).
+<!-- You can also see the [server side event tracking captured in the SSAI dashboard](ssai-debugging-dashboard.md).-->
 
 ## Debugging tool options {#debugging-tool-options}
 

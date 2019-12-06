@@ -22,8 +22,7 @@ This self help guide explains how to monetize content by inserting user-targeted
 | [Dynamic Ad Insertion Release Notes](../release-notes/ptai-19x-release-notes.md) | Provides release-specific information, system requirements, limitations, fixed issues, and known issues. |
 |[Overview of Manifest Server interactions](msapi-topics/ms-overview.md)| Gives an overview about the Manifest Server and how does it coordinate the various systems. |
 |[Manifest Server Debugging Tool](manifest-server-debugging-tool.md)| Gives an insight into Manifest Server debugging tool and debugging information it provides to investigate ad insertion problems. |
-|[Manifest Server Debugging Dashboard](ssai-debugging-dashboard.md)| Helps understand the debugging UI that exposes the debug events related to ad insertions.|
-|[Overview of Creative Repackaging Service](creative-repackaging-service/crs-overview.md)| Explains how CRS ensures that non-HLS ad creative play back properly in HLS streams. |
+|[Overview of Creative Repackaging Service](creative-repackaging-service/crs-overview.md)| Explains how CRS ensures that non-HLS ad creative play back properly in HLS streams.|
 
 ## Key Primetime user guides {#other-primetime-helps}
 
