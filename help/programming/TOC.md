@@ -10,7 +10,7 @@ user-guide-title: Primetime Programming Help
 + [Programming Overview](home.md)
 + TVSDK 3x for Android {#tvsdk-3x-android-prog}
   + Introduction {#introduction}
-    + [Product overview, audience, and this guide](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-prod-audience-guide.md)    
+    + [Product overview, audience, and this guide](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-prod-audience-guide.md)
     + [Primetime TVSDK features](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-of-the-player.md)
     + [Considerations and best practices](tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-considerations.md)
     + [Requirements](tvsdk-3x-android-prog/android-3x-introduction/android-3x-requirements.md)
