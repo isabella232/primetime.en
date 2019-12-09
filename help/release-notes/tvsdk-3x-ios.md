@@ -9,7 +9,7 @@ TVSDK 3.8 for iOS Release Notes describe what is new or changed, the resolved an
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.8, ensure your hardware, operating system, and application versions meet the following requirements listed below:
+Before you download iOS 3.8, ensure your hardware, operating system, and application versions meet the following requirements:
 
 Operating System: iOS 8.0 or later.
 
