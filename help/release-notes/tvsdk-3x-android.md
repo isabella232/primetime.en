@@ -597,11 +597,15 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-**Android TVSDK 3.8**
+**Android TVSDK 3.10**
 
 * No new limitations added.
 
 ### Known issues and limitations in the previous releases
+
+**Android TVSDK 3.8**
+
+* No new limitations added.
 
 **Android TVSDK 3.7**
 
