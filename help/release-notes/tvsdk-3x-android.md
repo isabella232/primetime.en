@@ -1,17 +1,17 @@
 ---
-title: TVSDK 3.9 for Android Release Notes
-seo-title: TVSDK 3.9 for Android Release Notes
-description: TVSDK 3.9 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.9
-seo-description: TVSDK 3.9 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.9
+title: TVSDK 3.10 for Android Release Notes
+seo-title: TVSDK 3.10 for Android Release Notes
+description: TVSDK 3.10 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.10
+seo-description: TVSDK 3.10 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.10
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 ---
 
-# TVSDK 3.9 for Android Release Notes {#tvsdk-for-android-release-notes}
+# TVSDK 3.10 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.9 for Android Release Notes describe what is new or changed,the resolved and known issues and the device issues in TVSDK Android 3.9.
+TVSDK 3.10 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.10.
 
 The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README.md file explains how to build the reference player.
 
@@ -23,24 +23,27 @@ The Android reference player is included with Android TVSDK in the samples/ dire
 >1. Extract VideoHeartbeat.jar into the libs/ folder.
 >
 
-TVSDK for Android provides many performance improvements over earlier versions. It provides a high quality viewing experience and carries over all of the features of version 1.4, with the exception of Multi-CDN support.
+TVSDK for Android provides many performance improvements over previous versions. It provides a high quality viewing experience and carries all the features of version 1.4, with the exception of Multi-CDN support.
 
-The comprehensive set of features supported and not supported are presented in the [Features Matrix](#feature-matrix) section of these release notes.
+The comprehensive set of features supported and not supported are presented in the [Features Matrix](#feature-matrix) section of the release notes.
 
-## New features {#new-features}
+<!-- ## New features {#new-features} -->
+
+## Android TVSDK 3.10
+
+The current release focuses on fixing top customer issues as mentioned in [resolved issues](#resolved-issues) section.
+
+### New features in the previous releases
 
 **Android TVSDK 3.9**
 
 * **Secure Delivery over HTTPS** - Android TVSDK 3.9 introduces the secure delivery capabilities via HTTPS to deliver content securely with unparalleled scale and performance.
 
-    To enable secure delivery over HTTPS, a new API is introduced in `NetworkConfiguration` class.
+    To enable secure delivery over HTTPS, new API is introduced in `NetworkConfiguration` class.
 
     `public void setForceHTTPS (boolean value)`
-    
+
     `public boolean getIsForceHTTPS()`
-
-
-### New features in the previous releases
 
 **Android TVSDK 3.8**
 
@@ -121,7 +124,7 @@ The comprehensive set of features supported and not supported are presented in t
 * **Update `targetSdkVersion` to latest Version  
   **Update `targetSdkVersion` from 19 to 27 for smooth functioning.
 
-* **Placement.Type getPlacementType() is now a method on interface TimelineMarker** 
+* **Placement.Type getPlacementType() is now a method on interface TimelineMarker**
 
   This method will return a placement type of Placement.Type.PRE_ROLL, Placement.Type.MID_ROLL or Placement.Type.POST_ROLL. If an ad break is unresolved, the getDuration() method on the TimelineMarker interface will return 0.
 
@@ -359,13 +362,17 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx.
 
-**Android TVSDK 3.8**
+**Android TVSDK 3.10**
 
-This section provides a summary of the issue resolved in the release of TVSDK 3.8.
+This section provides a summary of the issue resolved in TVSDK 3.10 Android release.
 
-* No new issues added.
+* ZD#40340 - Application crashes with "App Not Responding" error on attempting playback after blacklisting all the TS (TypeScript) files.
 
 ### Resolved issues in the previous releases
+
+**Android TVSDK 3.8**
+
+* No new issues added.
 
 **Android TVSDK 3.7**
 

@@ -272,7 +272,7 @@ Comment Type: draft
 **iOS TVSDK 3.8**
 
 * (ZD#40087) - iOS crashes with player error for expired VOD content.
-* (ZD#40083) - Pre-Roll ads do not play for livestream with `OpportunityGenerator`, and player gives error.
+* (ZD#40083) - Pre-Roll ads do not play for livestream with `OpportunityGenerator` and player gives error.
 * (ZD#39828) - `CurrentItem` property is missing the nullability annotation, causing player crash when the player status contained in the notification is `PTMediaPlayerStatusStopped`.
 
 ### Resolved issues in the previous releases {#resolved-issues-previous}
