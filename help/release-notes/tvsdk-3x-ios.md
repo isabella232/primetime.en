@@ -21,7 +21,7 @@ Operating System: iOS 8.0 or later.
 
 ## iOS TVSDK 3.8
 
-This release focuses on:
+The current release focuses on:
 
 * iOS 13 compliance.
 * handling issues related to iOS 13 UIWebView deprecation.
@@ -281,8 +281,7 @@ Comment Type: draft
 * (ZD#40087) - iOS crashes with player error for expired VOD content.
 * (ZD#40083) - Pre-Roll ads do not play for livestream with `OpportunityGenerator`, and player gives error.
 * (ZD#39828) - `CurrentItem` property is missing the nullability annotation, causing player crash when the player status contained in the notification is `PTMediaPlayerStatusStopped`.
-* (ZD#37640) - 
- 
+
 ### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.7**
