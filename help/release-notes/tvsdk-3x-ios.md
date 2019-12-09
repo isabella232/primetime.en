@@ -1,12 +1,6 @@
 ---
 title: TVSDK 3.8 for iOS Release Notes
-seo-title: TVSDK 3.8 for iOS Release Notes
 description: TVSDK 3.8 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.8
-seo-description: TVSDK 3.8 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.8
-uuid: e8305fdb-78a8-4c0b-b216-807f745a0769
-products: SG_PRIMETIME
-topic-tags: release-notes
-discoiquuid: c470c84d-03e7-4f5b-b36a-d8866394ec8f
 ---
 
 # TVSDK 3.8 for iOS Release Notes {#tvsdk-for-ios-release-notes}
@@ -15,17 +9,16 @@ TVSDK 3.8 for iOS Release Notes describe what is new or changed, the resolved an
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.8, ensure your hardware, operating system, and application versions meet the following requirements listed below:
+Before you download iOS 3.8, ensure your hardware, operating system, and application versions meet the following requirements:
 
 Operating System: iOS 8.0 or later.
 
 ## iOS TVSDK 3.8
 
-This release focuses on:
+The current release focuses on:
 
 * iOS 13 compliance.
 * handling issues related to iOS 13 UIWebView deprecation.
-* iPAD version 13 compliance.
 
 For fixes in the current release see [customer issues fixed](#resolved-issues), and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
 
@@ -281,13 +274,12 @@ Comment Type: draft
 * (ZD#40087) - iOS crashes with player error for expired VOD content.
 * (ZD#40083) - Pre-Roll ads do not play for livestream with `OpportunityGenerator`, and player gives error.
 * (ZD#39828) - `CurrentItem` property is missing the nullability annotation, causing player crash when the player status contained in the notification is `PTMediaPlayerStatusStopped`.
-* (ZD#37640) - 
- 
+
 ### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.7**
 
-* No new issues in this release.
+* (ZD#38961) - Content fails to play in the Picture-in-Picture (PiP) window after one content completes playback, when multiple contents are configured to be played in the PiP.
 
 **iOS TVSDK 3.6**
 
@@ -1090,7 +1082,6 @@ Support for pinging empty ad break tracking URLs,  TVSDK  will now verify ad bre
 >
 >* Slow motion, on any platform or version.
 >* Live trick play.
->
 
 **Version 1.4.43**
 
@@ -1118,17 +1109,14 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
   **Note**: Remember the following compilation guidelines:
 
-    * TVSDK tvOs support is limited to non-Adobe DRM encrypted streams. You must remove the reference to drmNativeInterface.framework in your tvOS build settings. AES encrypted streams are still supported.
-    * Apple requires all Apple TV applications to be  bitcode  enabled, so you must turn this flag on in your project settings.
+  * TVSDK tvOs support is limited to non-Adobe DRM encrypted streams. You must remove the reference to drmNativeInterface.framework in your tvOS build settings. AES encrypted streams are still supported.
+  * Apple requires all Apple TV applications to be  bitcode  enabled, so you must turn this flag on in your project settings.
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-* Due to deprecation of iOS UIWebView class, iOS TVSDK 3.6 onwards:
+* Due to deprecation of iOS UIWebView class, in iOS TVSDK 3.6 onwards:
   * VPAID ads will not play as expected in iPad 13.
-  * Companion ads (EPV) will not play as expected.
-
-* In case multiple contents are configured to be played in Picture-in-Picture (PiP) after one content completes playback, new content doesn’t play in the PiP window itself.
-**Environment**: iOS 12.3 onwards
+  * Companion ads will not play as expected.
 
 * In iOS TVSDK, all ads are stitched into the content manifest. Ad behaviors are implemented by seeking based on the duration of the content and ad segments. So if segment durations are not accurate, seeking may not always end at the exact frame of the beginning or end of ad break. Even if durations are to the frame, there is a tolerance that the platform itself imposes on seeking and there may be a few frames or ad or content displayed. This is a limitation of the platform and the way ad insertion works with TVSDK on iOS.
 * The decision to skip happens on the seek event in this case. However, since the ad segment durations in the manifest do not accurately represent the actual duration of the ad, the seek is not frame accurate. Hence, you see a few frames of ad when the ad policies are applied.
@@ -1146,12 +1134,12 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 * Detailed Error notifications are not available in case when Just in Time Ad resolving is enabled.
 * Error notifications are logged as per ad resolution time and not as per ad sequence.
 * HEVC support has following limitations in this release
-    * DRM not supported
-    * CC (CEA 608/708) support not available as it is not supported in CMAF.
-    * 4K support is not yet present
-    * ID3 tags support not available as it is not supported in CMAF
-    * Unmuxed Live HEVC streams not verified
-    * HEVC Ads support not verified
+  * DRM not supported
+  * CC (CEA 608/708) support not available as it is not supported in CMAF.
+  * 4K support is not yet present.
+  * ID3 tags support not available as it is not supported in CMAF.
+  * Unmuxed Live HEVC streams not verified.
+  * HEVC Ads support not verified.
 * With JIT enabled and tolerance set to 10 seconds, no VAST call is seen for the first midroll ad break in case of VMAP->VAST redirect ads.
 * For Ad resolution time out to work properly, each time the playlist is updated during live stream playback, the player expects a stitched playlist within 20 sec. If it does not receive a stitched playlist within the said interval, an internal error is thrown and the player stops. 
 

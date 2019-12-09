@@ -23,9 +23,9 @@ user-guide-title: Primetime Release Notes
 + TVSDK for Desktop HLS {tvsdk-desktop-hls}
   + [TVSDK 1.4 for Desktop HLS Release Notes](tvsdk-1-4-desktop-hls.md)
 + Primetime Offline Packager {#offline-packager}
-  + [Primetime Offline Packager 2.x releases](offline-packager-2x-release-note.md)
+  + [Primetime Offline Packager version 2 releases](offline-packager-2x-release-note.md)
 + Primetime Streaming Server {#streaming-server}
-  + [Primetime Streaming Server 1.x releases](primetime-streaming-server-1x.md)
+  + [Primetime Streaming Server version 1 releases](primetime-streaming-server-1x.md)
 + TVSDK for Playstation 4 {#tvsdk-playstation}
   + [TVSDK 2.1 PlayStation 4 Release Notes](tvsdk-21-ps4.md)
 + Digital Rights Management {#drm}
