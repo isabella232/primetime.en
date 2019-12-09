@@ -11,21 +11,21 @@ Welcome to the Adobe Primetime Release Notes. The documents listed in the left n
 
 ## Fixes in TVSDK 3.8 iOS Release Notes
 
-Focused on iOS 13 compliance and handling iOS 13 UIWebView API deprecation.
+The release focused on iOS 13 compliance and handling iOS 13 UIWebView API deprecation.
 
 Check out for more information about the current released version for [iOS](../release-notes/tvsdk-3x-ios.md).
+
+## Enhancements in TVSDK 3.10 Android
+
+The release focused on resolving top customer issues.
+
+Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
 ## Enhancements in PTAI 19.11.1
 
 Focused on maintenance updates.
 
 For more information about the current released version of Dynamic Ad Insertion, see [PTAI release notes](ptai-19x-release-notes.md).
-
-## Enhancements in TVSDK 3.9 Android
-
-Introduced the Secure Delivery (HTTPS) support for all calls originating from TVSDK.
-
-Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
 ## See also
 
