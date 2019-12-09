@@ -279,7 +279,7 @@ Comment Type: draft
 
 **iOS TVSDK 3.7**
 
-* No new issues in this release.
+* (ZD#38961) - Content fails to play in the Picture-in-Picture (PiP) window after one content completes playback, when multiple contents are configured to be played in the PiP.
 
 **iOS TVSDK 3.6**
 
@@ -1114,7 +1114,7 @@ This version of the  TVSDK  has been certified with the FairPlay Support for iOS
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-* Due to deprecation of iOS UIWebView class, iOS TVSDK 3.6 onwards:
+* Due to deprecation of iOS UIWebView class, in iOS TVSDK 3.6 onwards:
   * VPAID ads will not play as expected in iPad 13.
   * Companion ads will not play as expected.
 
