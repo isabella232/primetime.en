@@ -21,7 +21,7 @@ These classes describe your media player and its resources.
 | PTMediaPlayerItem | Represents a specific audio-video media. |
 | PTMediaPlayerView | Manages the view component of the Primetime Player framework. |
 | PTMediaProfile | Represents the profile of a single stream in the variant playlist. |
-| PTMediaSelectionOption | Represents an audiovisual media resource to accommodate different language preferences, accessibility requirements, or custom application configurations. Valid option types:<ul><li>Subtitles (PTMediaSelectionOptionTypeSubtitle)</li><li>Alternate audio (PTMediaSelectionOptionTypeAudio)</li><li>Undefined (PTMediaSelectionOptionTypeUndefined)</li><li>Closed captions (PTMediaSelectionOptionTypeCC)</li></ul> |
+| PTMediaSelectionOption | Represents an audiovisual media resource to accommodate different language preferences, accessibility requirements, or custom application configurations. Valid option types:<ul><li>Subtitles (PTMediaSelectionOptionTypeSubtitle)</li><li>Alternate audio (PTMediaSelectionOptionTypeAudio)</li><li>Closed captions (PTMediaSelectionOptionTypeCC)</li><li>Undefined (PTMediaSelectionOptionTypeUndefined)</li></ul> |
 | PTOpportunityResolver class,PTOpportunityResolver protocol | Class used for processing in-manifest cues that will be used as placements for the Adobe Primetime ad decisioning process. |
 | PTOpportunityResolverDelegate | Protocol that describes the methods that the custom opportunity resolver ( PTOpportunityResolver ) should use to communicate to the delegate the status of the resolving of the opportunity. |
 | PTSDK | Describes the version of the TVSDK and its capabilities. |
