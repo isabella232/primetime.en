@@ -597,11 +597,15 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-**Android TVSDK 3.8**
+**Android TVSDK 3.10**
 
 * No new limitations added.
 
 ### Known issues and limitations in the previous releases
+
+**Android TVSDK 3.8**
+
+* No new limitations added.
 
 **Android TVSDK 3.7**
 
@@ -679,7 +683,7 @@ This version of TVSDK has the following issues:
 ## Helpful resources {#helpful-resources}
 
 * [System Requirements](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-android-prog/introduction/android-3x-requirements.html)
-* [TVSDK 3.8 for Android Programmer's Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-android-prog/introduction/android-3x-overview-prod-audience-guide.html)
+* [TVSDK 3.10 for Android Programmer's Guide](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-android-prog/introduction/android-3x-overview-prod-audience-guide.html)
 * [TVSDK Android Javadoc for API Reference]( https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.5/index.html)
 * [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.5/namespaces.html) - Each Java class has a corresponding C++ class, and the C++ documentation contains more explanatory material than the Javadocs, so refer the C++ documentation for a deeper understanding of the Java API.
 * [TVSDK 1.4 to 2.5 for Android (Java) Migration Guide](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-25-android.html)
