@@ -33,7 +33,7 @@ The comprehensive set of features supported and not supported are presented in t
 
 The current release focuses on fixing top customer issues as mentioned in [resolved issues](#resolved-issues) section.
 
-### New features in the previous releases
+### New features and enhancements in the previous releases
 
 **Android TVSDK 3.9**
 
