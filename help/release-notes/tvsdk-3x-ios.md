@@ -1,26 +1,23 @@
 ---
-title: TVSDK 3.8 for iOS Release Notes
-description: TVSDK 3.8 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.8
+title: TVSDK 3.9 for iOS Release Notes
+description: TVSDK 3.9 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.9.
 ---
 
-# TVSDK 3.8 for iOS Release Notes {#tvsdk-for-ios-release-notes}
+# TVSDK 3.9 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
-TVSDK 3.8 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.8.
+TVSDK 3.9 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.9.
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.8, ensure your hardware, operating system, and application versions meet the following requirements:
+Before you download iOS 3.9, ensure your hardware, operating system, and application versions meet the following requirements:
 
 Operating System: iOS 8.0 or later.
 
-## iOS TVSDK 3.8
+## iOS TVSDK 3.9
 
-The current release focuses on:
+The current release focuses on top customer requests and fixing customer issues.
 
-* iOS 13 compliance.
-* handling issues related to iOS 13 UIWebView deprecation.
-
-For fixes in the current release see [customer issues fixed](#resolved-issues), and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
+For fixes in the current release see [customer issues fixed](#resolved-issues) and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
 
 ### New features and fixes in the previous releases {#whats-new-previous}
 
@@ -260,22 +257,25 @@ Comment Type: draft
 
  -->
 
-<!-- 
-
+<!--
 Comment Type: draft
 
 <note type="note"> 
  <p>TVSDK versions earlier than version 1.4.28 sometimes exhibit a long delay in the startup time when ad-enabled content is played on devices that are running on iOS 10. To resolve this issue, upgrade to version 1.4.28 or later. Version 1.4.28 was released on August 31, 2016, and iOS 10 was released on September 13, 2016.</p> 
 </note>
-
  -->
+
+**iOS TVSDK 3.9**
+
+* (ZD#40272) - iOS TVSDK fails to play VTT subtitles with 101001 error and leads to app freeze.
+
+### Resolved issues in the previous releases {#resolved-issues-previous}
+
 **iOS TVSDK 3.8**
 
 * (ZD#40087) - iOS crashes with player error for expired VOD content.
 * (ZD#40083) - Pre-Roll ads do not play for livestream with `OpportunityGenerator` and player gives error.
 * (ZD#39828) - `CurrentItem` property is missing the nullability annotation, causing player crash when the player status contained in the notification is `PTMediaPlayerStatusStopped`.
-
-### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.7**
 
