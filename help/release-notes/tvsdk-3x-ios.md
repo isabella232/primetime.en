@@ -15,7 +15,7 @@ Operating System: iOS 8.0 or later.
 
 ## iOS TVSDK 3.9
 
-The current release focuses on top customer requests and fixing customer issues.
+The current release fixes an issue where VTT subtitles fail to playback causing app freeze. 
 
 For fixes in the current release see [customer issues fixed](#resolved-issues) and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
 
