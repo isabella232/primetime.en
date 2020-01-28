@@ -21,6 +21,10 @@ For fixes in the current release see [customer issues fixed](#resolved-issues) a
 
 ### New features and fixes in the previous releases {#whats-new-previous}
 
+**iOS TVSDK 3.8**
+
+* iOS 13 compliance and handled iOS 13 UIWebView API deprecation.
+
 **iOS TVSDK 3.7**
 
 * Hotfix for a scenario where playback stopped when a large number of ad resolution requests were made simltaneously.
