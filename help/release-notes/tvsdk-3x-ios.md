@@ -15,11 +15,17 @@ Operating System: iOS 8.0 or later.
 
 ## iOS TVSDK 3.9
 
-Fixed an issue where VTT subtitles fail to playback causing app freeze.
+* Fixed an issue where VTT subtitles fail to playback causing app freeze.
+
+* iOS TVSDK 3.9 has the updated individualization transport certificate.
 
 For fixes in the current release see [customer issues fixed](#resolved-issues) and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
 
 ### New features and fixes in the previous releases {#whats-new-previous}
+
+**iOS TVSDK 3.8.0.83 Hotfix**
+
+* The hotfix has the updated individualization transport certificate.
 
 **iOS TVSDK 3.8**
 
