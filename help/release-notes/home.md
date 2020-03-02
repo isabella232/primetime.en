@@ -9,7 +9,7 @@ seo-description: null
 
 Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
-## Enhancements and Fixes in TVSDK 3.9 iOS Release Notes
+## Enhancements and Fixes in TVSDK 3.10 iOS Release Notes
 
 The release focused on resolving top customer issues and updating individualization transport certificate.
 

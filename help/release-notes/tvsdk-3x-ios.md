@@ -1,96 +1,103 @@
 ---
-title: TVSDK 3.9 for iOS Release Notes
-description: TVSDK 3.9 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.9.
+title: TVSDK 3.10 for iOS Release Notes
+description: TVSDK 3.10 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.10.
 ---
 
-# TVSDK 3.9 for iOS Release Notes {#tvsdk-for-ios-release-notes}
+# TVSDK 3.10 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
-TVSDK 3.9 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.9.
+TVSDK 3.10 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.10.
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.9, ensure your hardware, operating system, and application versions meet the following requirements:
+Before you download iOS 3.10, ensure your hardware, operating system, and application versions meet the following requirements:
 
 Operating System: iOS 8.0 or later.
 
-## iOS TVSDK 3.9
+## iOS TVSDK 3.10
 
-* Fixed an issue where VTT subtitles fail to playback causing app freeze.
-
-* iOS TVSDK 3.9 has the updated individualization transport certificate.
+Fixed an issue where TVSDK player does not fire PTMediaPlayerStatusError notification when network is unavailable.
 
 For fixes in the current release see [customer issues fixed](#resolved-issues) and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
 
 ### New features and fixes in the previous releases {#whats-new-previous}
 
+**iOS TVSDK 3.9**
+
+* Fixed an issue where VTT subtitles fail to playback causing app freeze.
+
+* iOS TVSDK 3.9 included the updated individualization transport certificate.
+
 **iOS TVSDK 3.8.0.83 Hotfix**
 
-* The hotfix has the updated individualization transport certificate.
+The hotfix had the updated individualization transport certificate.
 
 **iOS TVSDK 3.8**
 
-* iOS 13 compliance and handled iOS 13 UIWebView API deprecation.
+iOS 13 compliance and handled iOS 13 UIWebView API deprecation.
 
 **iOS TVSDK 3.7**
 
-* Hotfix for a scenario where playback stopped when a large number of ad resolution requests were made simltaneously.
+Hotfix for a scenario where playback stopped when a large number of ad resolution requests were made simltaneously.
 
 **iOS TVSDK 3.6**
 
-* **Fixes in vastXML property of class `PTNetworkAdInfo`**
+**Fixes in vastXML property of class `PTNetworkAdInfo`**
 
-    The vastXML property was not being set properly and was returning a nil value.
+The vastXML property was not being set properly and was returning a nil value.
 
 **iOS TVSDK 3.5**
 
-* **Enabling Background Audio**
+**Enabling Background Audio**
 
-    *Configure your app to continue playing audio when it goes into the background.*
+*Configure your app to continue playing audio when it goes into the background.*
 
-    To enable this feature, we need to set the new API `audioPlaybackInBackground` added in the PTMediaPlayer class. With this API enabled, your app is ready to play background audio.
+To enable this feature, we need to set the new API `audioPlaybackInBackground` added in the PTMediaPlayer class. With this API enabled, your app is ready to play background audio.
 
 **iOS TVSDK 3.4.0.19 (Hotfix)**
 
-* This release has a fix for the application crashes that occur in an ad failover scenario.
+This release has a fix for the application crashes that occur in an ad failover scenario.
 
 **iOS TVSDK 3.4**
 
 **Ad Resolution Timeout**
 
 * With TVSDK 3.4, users can now set the timeout value for overall ad resolution and manifest downloads. If within a given timeout some ads are not    resolved, TVSDK will play the remaining ads.
-* PTAdMetadata:: adRequestTimeout API has been deprecated and will be removed. The default value has been set to 35 seconds.
+
+* PTAdMetadata: adRequestTimeout API has been deprecated and will be removed. The default value has been set to 35 seconds.
+
 * Two new alternate APIs have been introduced in the PTAdMetadataClass: adResolutionTimeout  - timeout for overall ad resolution calls                adManifestTimeout – timeout for ad manifest downloads.
 
 **Revenue Optimization**
 
-* Enabled TVSDK to identify problem areas related to ad insertion workflows to report to an analytics end-point of choice.
+Enabled TVSDK to identify problem areas related to ad insertion workflows to report to an analytics end-point of choice.
 
 **Version 3.3**
 
-* TVSDK 3.3 is now compliant with iOS 11 SDK. All the deprecated APIs have been replaced with suitable alternatives.
+TVSDK 3.3 is now compliant with iOS 11 SDK. All the deprecated APIs have been replaced with suitable alternatives.
 
 **Version 3.2**
 
-* **Additional Logging Support (Phase 2)**
+**Additional Logging Support (Phase 2)**
 
-  * Added support for error notifications, in case of 
-    * HLS version of ad uses higher level than content.
-    * Audio-only variant is excluded.
-    * VAST/VMAP request is failed.
+Added support for error notifications, in case of:
+
+* HLS version of ad uses higher level than content.
+
+* Audio-only variant is excluded.
+
+* VAST/VMAP request is failed.
 
 **Version 3.1**
 
 * **Additional Logging Support**
-
-  * Added support for descriptive notifications in case of Ad playback failures.
+Added support for descriptive notifications in case of Ad playback failures.
 
 * **Added Fairplay Encrypted CMAF stream support**
-
-  * Fairplay Encrypted CMAF streams with AVC codec playback is now supported.
+Fairplay Encrypted CMAF streams with AVC codec playback is now supported.
 
 **Version 3.0.1**
 
-* No new feature or enhancements in this release.
+No new feature or enhancements in this release.
 
 **Version 3.0**
 
@@ -104,11 +111,11 @@ With this property enabled, TVSDK resolves each ad breaks prior to its position 
 
 **Version 1.4.45**
 
-* In order to comply with Xcode10, TVSDK has moved from “`libstdc++`” to “`libc++`”, and as a result the minimum supported version is iOS 7. Earlier it was iOS 6.
+To comply with Xcode10, TVSDK has moved from “`libstdc++`” to “`libc++`”, and as a result the minimum supported version is iOS 7. Earlier it was iOS 6.
 
 **Version 1.4.44**
 
-* No new feature or enhancements in this release.
+No new feature or enhancements in this release.
 
 **Version 1.4.43**
 
@@ -130,6 +137,7 @@ No new features are added in this release. For a list of issues fixed, see [Reso
 API changes:
 
 * **isSecure**: A new API is introduced isSecure to secure the player from recording and throwing an error. The default value is true.
+
 * **allowExternalRecording**: A new API is introduced to allow airplay mirroring for a secure content. Airplay mirroring is treated as recording therefore `allowExternalRecording` value must be set to `True`, to allow airplay mirroring or set to `False` to stop the airplay mirroring for secure content. By default, `value` is true.
 
 **Version 1.4.40**
@@ -139,7 +147,9 @@ No new features.
 **Version 1.4.39**
 
 * iOS  TVSDK  is certified with VHL 2.0.1 and with VHL 2.0.1 with Nielsen.
+
 * iOS  TVSDK  is updated to make CRS requests from new Akamai host `primetime-a.akamaihd.net`.
+
 * New hostname configuration provides CRS asset delivery via both HTTP and HTTPS (SSL) at greater scale.
 
 **Version 1.4.36**
@@ -148,9 +158,9 @@ Integrate and certify VHL 2.0 in iOS  TVSDK : Reduce the barrier in the `VideoHe
 
 **Version 1.4.34**
 
-* Network Ad Information
+**Network Ad Information**
 
-  TVSDK APIs now provide additional information on third party VAST responses. Ad ID, Ad System  and  VAST Ad Extensions are provided in `PTNetworkAdInfo` class accessible through  `networkAdInfo`  property on an Ad Asset. This information can be used for integrating with other Ad Analytics platforms such as **Moat Analytics**.
+TVSDK APIs now provide additional information on third party VAST responses. Ad ID, Ad System  and  VAST Ad Extensions are provided in `PTNetworkAdInfo` class accessible through  `networkAdInfo`  property on an Ad Asset. This information can be used for integrating with other Ad Analytics platforms such as **Moat Analytics**.
 
 **Version 1.4.31**
 
@@ -166,7 +176,9 @@ In the `PTSDKConfig` class, the forceHTTPS API has been added.
 
 The `PTSDKConfig` class provides methods to enforce SSL on requests made to Adobe Primetime ad decisioning, DRM, and Video Analytics servers. For more information, see the `forceHTTPS` and `isForcingHTTPS` methods on this class. If a manifest is loaded over HTTPS, TVSDK preserves the content use of HTTPS and respects this usage when loading any relative URLs from that manifest.
 
-**Note**: Requests to third-party domains such as Ad Tracking pixels, Content and Ad URLs, and similar requests are not modified, and it is the responsibility of the content providers and ad servers to provide URLs that are supported through HTTPS.
+>
+> [!NOTE] Requests to third-party domains such as Ad Tracking pixels, Content and Ad URLs, and similar requests are not modified, and it is the responsibility of the content providers and ad servers to provide URLs that are supported through HTTPS.
+>
 
 **Version 1.4.18**
 
@@ -200,24 +212,27 @@ Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich
 
 **Version 1.4.13**
 
-**Note**: The Nielsen module has been removed from the TVSDK build, the  TVSDK  will be updated in the near future with a new Nielsen integration module.
+>
+> [!NOTE] The Nielsen module has been removed from the TVSDK build, the  TVSDK  will be updated in the near future with a new Nielsen integration module.
+>
 
-* **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**
+**Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**
 
 For VAST ads (creatives) with the fallback rule enabled, the TVSDK treats an ad with an invalid MIME type as an empty ad and attempts to use fallback ads in its place. You can configure some aspects of fallback behavior. For more information, see Ad fallback for VAST and VMAP ads.
 
 **Version 1.4.9**
 
-* **Blackout Signaling With Alternate Content Replacement**
+**Blackout Signaling With Alternate Content Replacement**
 
 As part of the 1.4 TVSDK update we also now support going into and returning from regional blackouts against linear content. The TVSDK can now process two manifest files in parallel, main and alternate, to monitor for blackout signals even when alternate programming is being shown in place of the original programming.
 
 **Version 1.4.8**
 
-* **Video Heartbeats Library (VHL) updated to version 1.5**
+**Video Heartbeats Library (VHL) updated to version 1.5**
 
-  * Ability to send metadata with video start and/or video/ad/chapter start as context data
-  * Less network traffic - Heartbeats are fewer on average and smaller in size
+* Ability to send metadata with video start and/or video/ad/chapter start as context data.
+
+* Less network traffic - Heartbeats are fewer on average and smaller in size.
 
 **Version 1.4.7**
 
@@ -275,16 +290,22 @@ Comment Type: draft
 </note>
  -->
 
-**iOS TVSDK 3.9**
+**iOS TVSDK 3.10**
 
-* (ZD#40272) - iOS TVSDK fails to play VTT subtitles with 101001 error and leads to app freeze.
+(ZD#40943) - TVSDK player does not fire PTMediaPlayerStatusError notification when network is unavailable.
 
 ### Resolved issues in the previous releases {#resolved-issues-previous}
+
+**iOS TVSDK 3.9**
+
+(ZD#40272) - iOS TVSDK fails to play VTT subtitles with 101001 error and leads to app freeze.
 
 **iOS TVSDK 3.8**
 
 * (ZD#40087) - iOS crashes with player error for expired VOD content.
+
 * (ZD#40083) - Pre-Roll ads do not play for livestream with `OpportunityGenerator` and player gives error.
+
 * (ZD#39828) - `CurrentItem` property is missing the nullability annotation, causing player crash when the player status contained in the notification is `PTMediaPlayerStatusStopped`.
 
 **iOS TVSDK 3.7**
