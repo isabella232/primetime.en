@@ -1,25 +1,29 @@
 ---
-title: TVSDK 3.10 for iOS Release Notes
-description: TVSDK 3.10 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.10.
+title: TVSDK 3.11 for iOS Release Notes
+description: TVSDK 3.11 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.11.
 ---
 
-# TVSDK 3.10 for iOS Release Notes {#tvsdk-for-ios-release-notes}
+# TVSDK 3.11 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
-TVSDK 3.10 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.10.
+TVSDK 3.11 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.11.
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.10, ensure your hardware, operating system, and application versions meet the following requirements:
+Before you download iOS 3.11, ensure your hardware, operating system, and application versions meet the following requirements:
 
 Operating System: iOS 8.0 or later.
 
-## iOS TVSDK 3.10
+## iOS TVSDK 3.11
 
-Fixed an issue where TVSDK player does not fire PTMediaPlayerStatusError notification when network is unavailable.
+Provided fixes for customer issues where `isFallbackOnInvalidCreativeEnabled` and method `customParams` cause application to crash.
 
 For fixes in the current release see [customer issues fixed](#resolved-issues) and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
 
 ### New features and fixes in the previous releases {#whats-new-previous}
+
+**iOS TVSDK 3.10**
+
+* Fixed an issue where TVSDK player does not fire `PTMediaPlayerStatusError` notification when network is unavailable.
 
 **iOS TVSDK 3.9**
 
@@ -290,11 +294,17 @@ Comment Type: draft
 </note>
  -->
 
+**iOS TVSDK 3.11**
+
+* (ZD#40998) - The `isFallbackOnInvalidCreativeEnabled` causes the application to crash.
+
+* (ZD#41289) - `NSInvalidArgumentException` is observed with the method `customParams` leading to application crash.
+
+### Resolved issues in the previous releases {#resolved-issues-previous}
+
 **iOS TVSDK 3.10**
 
 (ZD#40943) - TVSDK player does not fire PTMediaPlayerStatusError notification when network is unavailable.
-
-### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.9**
 
@@ -310,94 +320,90 @@ Comment Type: draft
 
 **iOS TVSDK 3.7**
 
-* (ZD#38961) - Content fails to play in the Picture-in-Picture (PiP) window after one content completes playback, when multiple contents are configured to be played in the PiP.
+(ZD#38961) - Content fails to play in the Picture-in-Picture (PiP) window after one content completes playback, when multiple contents are configured to be played in the PiP.
 
 **iOS TVSDK 3.6**
 
-* No new issues in this release.
+No new issues in this release.
 
 **iOS TVSDK 3.5**
 
-* No new issues in this release.
+No new issues in this release.
 
 **Version 3.3**
 
-* (ZD#37820) - Added whitelisting for custom header HS-Id, HS-SSAI-TAG.
+(ZD#37820) - Added whitelisting for custom header HS-Id, HS-SSAI-TAG.
 
 **Version 3.2**
 
-**Ticket#36588** - Player crash is observed when the MediaPlayer STOP method is called.
-
+* **Ticket#36588** - Player crash is observed when the MediaPlayer STOP method is called.
 Fixed intermittent crash observed when STOP method is called for a few streams with subtitles.
 
-**Ticket#37080** - Duplicate requests seen for Manifest calls.
-
+* **Ticket#37080** - Duplicate requests seen for Manifest calls.
 Fixed the duplicate requests made for Manifest URLs during playback. TVSDK now makes one call per manifest.
 
-**Ticket#37** - CRS normalization rule fails with eq match type
-
+* **Ticket#37** - CRS normalization rule fails with eq match type
 Fixed a case where the player used to crash when encountered with last normalization rule set for hostnames with an "eq" match type.
 
 **Version 3.1**
 
 **Ticket #36313** - Intermittent unpredictable results during Linear Ad Breaks
-
 Fixed intermittent playback during linear ad breaks in Live stream.
 
 **Version 3.0.1**
 
 **Ticket36948** - CRS - Asset selection order inconsistent on iOS 12
-
 The asset selected for CRS is not always the highest quality variant returned in a VAST or VMAP response.
 
 **Version 3.0**
 
-**Ticket35311** - Player status doesn't become PAUSED during a phone call interruption
-
+* **Ticket35311** - Player status doesn't become PAUSED during a phone call interruption
 Added interrupt handler to stop the player from interrupting. On interruption, the player status becomes PAUSED and, then resume playback on clicking the play button.
 
-**Ticket36685** - Live assets - Time mismatch with player time progress and SCTE marker time
-
+* **Ticket36685** - Live assets - Time mismatch with player time progress and SCTE marker time
 Correct time is calculated for the SCTE markers that are ahead of live point.
 
-**Ticket36492** - `currentTime` and `localTime` aren't updated when seeking to a new position during paused status
-
+* **Ticket36492** - `currentTime` and `localTime` aren't updated when seeking to a new position during paused status
 Player's current time can now be set to zero in case player is in paused state; earlier the current time used to be set to zero only in play state.
 
 **Version 1.4.45**
 
-**Ticket36294** - iOS TVSDK not functional with Xcode 10
-
+* **Ticket36294** - iOS TVSDK not functional with Xcode 10
 Fixed the compilation issues with TVSDK on XCode 10. Due to XCode 10 requirements, apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
 
-**Ticket36321** - Discrepancy observed in seekable range between `PTMediaPlayer` and `AVPlayer` instance in "Playing" state.
-**Ticket36493** - `libstdc++` support on iOS 12
+* **Ticket36321** - Discrepancy observed in seekable range between `PTMediaPlayer` and `AVPlayer` instance in "Playing" state.
 
+* **Ticket36493** - `libstdc++` support on iOS 12
 Fixed the compilation issues with TVSDK on iOS 12. Apps build on TVSDK for iOS 1.4.45 onwards require minimum deployment target as iOS 7.0
 
 **Version 1.4.44**
 
-**Ticket34683** - Ad Playback Progress Time Is Going In Negative
+* **Ticket34683** - Ad Playback Progress Time Is Going In Negative
 
 Additional checks put in to handle the case when there is a mismatch between the duration reported by the ad server and actual ad content.
 
-**Ticket34801** - currentTime and localTime were not getting updated when seeking to a new position during paused status
-
+* **Ticket34801** - currentTime and localTime were not getting updated when seeking to a new position during paused status
 Player's current time can now be set to zero in case player is in paused state; earlier the current time used to be set to zero only in play state.
 
-**Ticket35037** - Playback stalls with bad URL when returning from signal-based ad insertion.
-
+* **Ticket35037** - Playback stalls with bad URL when returning from signal-based ad insertion.
 Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancelled check and exception handling code to make operation queue more robust.
 
 **Version 1.4.43**
 
 * (ZD#32990) - iOS: Content playing instead of ads on some cue-points. `selectedMediaOptionInMediaSelectionGroup` API which was part of AVPlayerItem interface has now moved under AVMediaSelection in iOS 11. The issue got resolved using this new API.
+
 * (ZD#33683) TVSDK removed == suffix from the metadata strings. The issue is fixed in the parsing logic.
+
 * (ZD#33905) - iOS TVSDK making calls to the manifest files with two user agents. The user agent issue has been fixed in first m3u8 call (fresh install case). M3u8's have the same user-agents for all the calls now.
+
 * (ZD#34293) - Pre-rolls inserted on LINEAR streams do not play correctly on iOS11. The issue is fixed for preroll ads.
+
 * (ZD#34684) - When the ad skip policy is applied, Pre-roll ad frames are shown for few seconds. A new API, enableVodPreroll has been introduced to disable preroll playback in vod playback. The default value for this API is 'Yes'. The API ensures skipping of ad content stitching in the main content.
+
 * (ZD#34765) - After calling stop(), few Transport Streams segments still get downloaded. Enhanced the Stop() API to avoid download of the extra segments.
+
 * (ZD#34865) - Pre-roll ads for livestream are truncated on iOS. Related to iOS11, and adding an additional check to confirm if the stream is pre-roll or main-content, addresses this issue.
+
 * (ZD#35093) - Fixed a failover scenario where, if Primary variant of the stream fails at startup (returns 404), playback does not switch to backup stream.
 
 **1.4.42 (1.4.42.118)**
@@ -405,10 +411,13 @@ Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancell
 * (ZD#34385) - Playback stalls with a bad URL when returning from signal-based ad insertion.
 
   Increase the maximum concurrent counts for `CustomAVAssetLoaderOperations`, so that the manifest reads can continue to execute.
+
 * (ZD#34373) - End users are not able to stream to HDMI-connected  devices,  when stream recording is disallowed.
+
 * (ZD#32678) - TVSDK does not collect the correct ad IDs on iOS.
 
   Ad ID of the final Ad creative is now picked up in VHL pings in case of VAST/VMAP redirects.
+
 * (ZD#33904) -  TVSDK  is not Registered for AVFoundation notifications `AVAudioSessionMediaServicesWereLostNotification` and `AVAudioSessionMediaServicesWereResetNotification`.
 
   `PTMediaServicesWereLostNotification` and `PTMediaServicesWereResetNotification` can now be registered on the player App to get the notifications when Media services are reset or lost.
