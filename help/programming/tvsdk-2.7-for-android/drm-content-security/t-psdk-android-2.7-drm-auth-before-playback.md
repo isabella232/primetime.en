@@ -44,8 +44,8 @@ In this example, you can use `DRMHelper` methods to download the contents of the
 
 1. Implement the callbacks in the `DRMLoadMetadataListener`.
 
-   The `loadDRMMetadata` calls these event handlers.     
- 
+   The `loadDRMMetadata` calls these event handlers.
+
    ```java    
    public interface DRMLoadMetadataListener { 
     
