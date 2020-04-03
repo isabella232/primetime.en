@@ -21,9 +21,9 @@ The release focused on resolving top customer issues.
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
-## Enhancements and Fixes in PTAI 19.11.1
+## Enhancements and Fixes in PTAI 20.3.3
 
-Focused on maintenance updates.
+Focused on customer issue fixes.
 
 For more information about the current released version of Dynamic Ad Insertion, see [PTAI release notes](ptai-19x-release-notes.md).
 

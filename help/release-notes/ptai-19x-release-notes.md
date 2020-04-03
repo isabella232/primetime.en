@@ -197,4 +197,3 @@ ZD#37503 - Json responses for the CRS rules are cached to avoid the duplicate re
 **PTAI 19.7.1**
 
 No new limitation added.
-
