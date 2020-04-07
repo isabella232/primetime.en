@@ -11,9 +11,7 @@ uuid: 43930ebb-e936-4f48-990d-7ad19992e326
    If you are packaging content using the Media Packager command line tool, enter: 
 
    ```
-   java -jar AdobeMediaPackager.jar [
-<i>source_file</i>] [
-<i>dest_file</i>] -k RI_UsageModelDemo=true
+   java -jar AdobeMediaPackager.jar [<i>source_file</i>] [<i>dest_file</i>] -k RI_UsageModelDemo=true
    ```
 
 >[!NOTE] {class="- topic/note "}
