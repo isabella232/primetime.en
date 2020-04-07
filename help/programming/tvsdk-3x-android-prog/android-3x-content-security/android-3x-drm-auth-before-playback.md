@@ -44,25 +44,25 @@ In this example, you can use `DRMHelper` methods to download the contents of the
 
 1. Implement the callbacks in the `DRMLoadMetadataListener`.
 
-       The `loadDRMMetadata` calls these event handlers.     
-    
-       ```java    
-       public interface DRMLoadMetadataListener { 
-        
-           public void onLoadMetadataUrlStart(); 
-        
-           /** 
-           * @param authNeeded 
-           * whether DRM authentication is needed. 
-           * @param drmMetadata 
-           * the parsed DRMMetadata obtained.    */ 
-           public void onLoadMetadataUrlComplete(boolean authNeeded, DRMMetadata drmMetadata); 
-           public void onLoadMetadataUrlError(); 
-       } 
-       
-       ```
+   The `loadDRMMetadata` calls these event handlers.
 
-       Here are additional details about the handlers:
+   ```java
+   public interface DRMLoadMetadataListener { 
+    
+       public void onLoadMetadataUrlStart(); 
+    
+       /** 
+       * @param authNeeded 
+       * whether DRM authentication is needed. 
+       * @param drmMetadata 
+       * the parsed DRMMetadata obtained.    */ 
+       public void onLoadMetadataUrlComplete(boolean authNeeded, DRMMetadata drmMetadata); 
+       public void onLoadMetadataUrlError(); 
+   } 
+   
+   ```
+
+   Here are additional details about the handlers:
 
     * `onLoadMetadataUrlStart` detects when the metadata URL loading has begun. 
     * `onLoadMetadataUrlComplete` detects when the metadata URL has finished loading. 
