@@ -17,6 +17,6 @@ keytool -keystore NONE -storetype PKCS11 -providerClass sun.security.pkcs11.SunP
 
 If you see your credentials in the list, the HSM is configured properly and the license server will be able to access the credentials. 
 
-> [!NOTE] 
-> Adobe Access Serverfor protected Streaming does not currently support HSMs on 64-bit Windows OSes.
-
+>[!NOTE]
+>
+>Adobe Access Serverfor protected Streaming does not currently support HSMs on 64-bit Windows OSes.
