@@ -37,9 +37,9 @@ To add VPAID 2.0 support, add a custom ad view and appropriate listeners.
    >In addition, you should only create your custom ad view when your player is in the PREPARED state, 
    >
    >
-   >Only dispose of the custom ad view when reset is called. For example:    >
+   >Only dispose of the custom ad view when reset is called. For example:
    >
-   >```   >
+   >```
    >// on reset 
    >if (_mediaPlayer != null) { 
    >    _mediaPlayer.disposeCustomAdView(); 
@@ -47,8 +47,8 @@ To add VPAID 2.0 support, add a custom ad view and appropriate listeners.
    >} 
    >
    >```
-
-   Finally, before you dispose of your custom ad view, you must remove it from the `FrameLayout`. For example:
+   >
+   >Finally, before you dispose of your custom ad view, you must remove it from the `FrameLayout`. For example:
    >
    >```
    >if (_playerFrame != null) 
