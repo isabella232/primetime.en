@@ -287,16 +287,20 @@ The important new features released in Android 2.5.1.
   * getHeight() and getWidth() methods of SizeAvailableEvent will now return output in height and width respectively. Display aspect ratio can be calculated as follows:
   
   ```java
+
   SizeAvailableEvent e;
   DAR = e.getWidth()/ e.getHeight();
+
   ```
 
   Storage Aspect Ratio in terms of Sar width and Sar height can also be used to calculate Frame width and Frame height:
 
   ```java
+
   SAR = e.getSarWidth()/e.getSarHeight();
   frameHeight = e.getHeight();
   frameWidth = e.getWidth()/SAR;
+  
   ```
 
 * **Cookies**
