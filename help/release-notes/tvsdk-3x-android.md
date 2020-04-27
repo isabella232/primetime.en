@@ -1,17 +1,17 @@
 ---
-title: TVSDK 3.10 for Android Release Notes
-seo-title: TVSDK 3.10 for Android Release Notes
-description: TVSDK 3.10 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.10
-seo-description: TVSDK 3.10 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.10
+title: TVSDK 3.11 for Android Release Notes
+seo-title: TVSDK 3.11 for Android Release Notes
+description: TVSDK 3.11 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.10
+seo-description: TVSDK 3.11 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.11
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 ---
 
-# TVSDK 3.10 for Android Release Notes {#tvsdk-for-android-release-notes}
+# TVSDK 3.11 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.10 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.10.
+TVSDK 3.11 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.11.
 
 The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README.md file explains how to build the reference player.
 
@@ -29,11 +29,20 @@ The comprehensive set of features supported and not supported are presented in t
 
 <!-- ## New features {#new-features} -->
 
-## Android TVSDK 3.10
+## Android TVSDK 3.11
 
-The current release focuses on fixing top customer issues as mentioned in [resolved issues](#resolved-issues) section.
+**Protection System Specific Header (PSSH) Box fetching allowed**
+
+TVSDK now allows fetching of Protection System Specific Header Box associated with current loaded Media Resource. New API `getPSSH()` has been added to `com.adobe.mediacore.drm.DRMManager`.
+For more information, see [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
+
+Top customer issues fixed in the current release are mentioned in [resolved issues](#resolved-issues) section.
 
 ### New features and enhancements in the previous releases
+
+**Android TVSDK 3.10**
+
+This release focused on fixing top customer issues as mentioned in [resolved issues](#resolved-issues) section.
 
 **Android TVSDK 3.9**
 
@@ -197,13 +206,18 @@ Android TVSDK v2.5.3 offers the following updates and API changes.
 * Share cookies between Android Application and TVSDK: Android TVSDK now supports accessing of cookies between JAVA layer (stored in CookieStore of the Android Application) and the C++ TVSDK layer. Now, it's possible to set and/or modify the cookies in native C++ layer as they will be exposed to the Java Cookie Store.
 * API changes:
 
-    * A new Event CookiesUpdatedEvent is added. It gets dispatched by the media player when its cookie is updated.
-    * A new API is added to NetworkConfiguration::set/ getCustomUserAgent() to use custom user agent.
-    * A new API is added to NetworkConfiguration::set/ getEncodedUrlForTracking to force Encoding of Unsafe characters.
-    * A new API is added to NetworkConfiguration::getNetworkDownVerificationUrl() to set a network verification URL in case of a failover.
-    * A new property is added to TextFormat::treatSpaceAsAlphaNum which define whether to treat space as alphanumeric while displaying captions.
+  * A new Event CookiesUpdatedEvent is added. It gets dispatched by the media player when its cookie is updated.
+
+  * A new API is added to NetworkConfiguration::set/ getCustomUserAgent() to use custom user agent.
+
+  * A new API is added to NetworkConfiguration::set/ getEncodedUrlForTracking to force Encoding of Unsafe characters.
+
+  * A new API is added to NetworkConfiguration::getNetworkDownVerificationUrl() to set a network verification URL in case of a failover.
+
+  * A new property is added to TextFormat::treatSpaceAsAlphaNum which define whether to treat space as alphanumeric while displaying captions.
 
 * Changes in SizeAvailableEvent: Previously, getHeight() and getWidth() methods of SizeAvailableEvent in 2.5.2 used to return Frame height and frame width, which was returned by media format. Now it returns output height and output width respectively returned by decoder.
+
 * Changes in Buffering behavior: Buffering behavior is changed. Its left up to App developer on what they want to do in case of buffer empty. 2.5.3 uses play buffer size at buffer empty situation.
 
 **Version 2.5.2**
@@ -216,64 +230,78 @@ The important new features released in Android 2.5.1.
 
 * **Performance Improvements**The new TVSDK 2.5.1 architecture brings a number of performance improvements. Based on statistics from a third party benchmarking study, the new architecture provides a 5x reduction in startup time and 3.8x fewer dropped frames compared to the industry average:
 
-    * **Instant on for VOD and live -** When you enable instant on, the TVSDK initializes and buffers media before playback starts. Because you can launch multiple MediaPlayerItemLoader instances simultaneously in the background, you can buffer multiple streams. When a user changes the channel, and the stream has buffered properly, playback on the new channel starts immediately. TVSDK 2.5.1 also supports the Instant On for **live** streams also. The live streams are re-buffered when the live window moves.
-    * **Improved ABR logic -** The new ABR logic is based on buffer length, rate of change of buffer length, and measured bandwidth. This ensures that the ABR chooses the right bit rate when the bandwidth fluctuates and also optimizes the number of times the bitrate switch actually happens by monitoring the rate at which the buffer length changes.
-    * **Partial Segment Download / Sub-segmentation -** TVSDK further reduces the size of each fragment, in order to start playback as soon as possible. The ts fragment must have a key frame every two seconds.
-    * **Lazy ad resolution -** TVSDK doesn't wait for resolution of non-preroll ads before starting playback, thus decreasing the startup time. APIs like seek and trick-play are still not allowed until all ads are resolved. This is applicable to VOD streams used with CSAI. Operations like seek and fast forward are not permitted till the ad resolution is completed. For live streams this feature cannot be enabled for ad resolution during a live event.
-    * **Persistent network connections -** This feature allows TVSDK to create and store an internal list of persistent network connections. These connections are reused for multiple requests, rather than opening a new connection for each network request and then destroying it afterwards. This increases efficiency and decreases latency in the networking code resulting in faster playback performance.
-      When TVSDK opens a connection it asks the server for a *keep-alive* connection. Some servers may not support this type of connection, in which case TVSDK will fall back to making a connection for each request again. Also, while persistent connections will be on by default, TVSDK now has a configuration option so that apps can turn persistent connections off if desired.
-    * **Parallel download -** Downloading video and audio in parallel rather than in series reduces startup delays. This feature allows HLS Live and VOD files to be played, optimizes the available bandwidth usage from a server, lowers the probability of getting into buffer under-run situations, and minimizes the delay between download and playback.
-    * **Parallel ad downloads -** TVSDK prefetches ads in parallel to the content playback before hitting the ad breaks thus enabling seamless playback of ads and content.
+  * **Instant on for VOD and live -** When you enable instant on, the TVSDK initializes and buffers media before playback starts. Because you can launch multiple MediaPlayerItemLoader instances simultaneously in the background, you can buffer multiple streams. When a user changes the channel, and the stream has buffered properly, playback on the new channel starts immediately. TVSDK 2.5.1 also supports the Instant On for **live** streams also. The live streams are re-buffered when the live window moves.
+
+  * **Improved ABR logic -** The new ABR logic is based on buffer length, rate of change of buffer length, and measured bandwidth. This ensures that the ABR chooses the right bit rate when the bandwidth fluctuates and also optimizes the number of times the bitrate switch actually happens by monitoring the rate at which the buffer length changes.
+  
+  * **Partial Segment Download / Sub-segmentation -** TVSDK further reduces the size of each fragment, in order to start playback as soon as possible. The ts fragment must have a key frame every two seconds.
+
+  * **Lazy ad resolution -** TVSDK doesn't wait for resolution of non-preroll ads before starting playback, thus decreasing the startup time. APIs like seek and trick-play are still not allowed until all ads are resolved. This is applicable to VOD streams used with CSAI. Operations like seek and fast forward are not permitted till the ad resolution is completed. For live streams this feature cannot be enabled for ad resolution during a live event.
+
+  * **Persistent network connections -** This feature allows TVSDK to create and store an internal list of persistent network connections. These connections are reused for multiple requests, rather than opening a new connection for each network request and then destroying it afterwards. This increases efficiency and decreases latency in the networking code resulting in faster playback performance.
+  When TVSDK opens a connection it asks the server for a *keep-alive* connection. Some servers may not support this type of connection, in which case TVSDK will fall back to making a connection for each request again. Also, while persistent connections will be on by default, TVSDK now has a configuration option so that apps can turn persistent connections off if desired.
+
+  * **Parallel download -** Downloading video and audio in parallel rather than in series reduces startup delays. This feature allows HLS Live and VOD files to be played, optimizes the available bandwidth usage from a server, lowers the probability of getting into buffer under-run situations, and minimizes the delay between download and playback.
+
+  * **Parallel ad downloads -** TVSDK prefetches ads in parallel to the content playback before hitting the ad breaks thus enabling seamless playback of ads and content.
 
 * **Playback**
 
-    * **MP4 Content Playback -** MP4 short clips do not need to be re-transcoded to play back within TVSDK.
-      Note: ABR switching, trick play, ad insertion, late audio binding, and sub-segmentation are not supported for MP4 playback.    
-    * **Trick play with adaptive bit rate (ABR) -** This feature allows TVSDK to switch between iFrame streams while in trick play mode. You can use non-iFrame profiles to do trick play at lower speeds.
-    * **Smoother trick play -** These improvements enhance the user experience:
-        * Adaptive bit-rate and frame rate selection during trick play, based on bandwidth and buffer profile
-        * Use of the main stream instead of the IDR stream to get up to 30 fps fast playback.
+  * **MP4 Content Playback -** MP4 short clips do not need to be re-transcoded to play back within TVSDK.
+    > [!NOTE]
+    >
+    > ABR switching, trick play, ad insertion, late audio binding, and sub-segmentation are not supported for MP4 playback.
+
+  * **Trick play with adaptive bit rate (ABR) -** This feature allows TVSDK to switch between iFrame streams while in trick play mode. You can use non-iFrame profiles to do trick play at lower speeds.
+
+  * **Smoother trick play -** These improvements enhance the user experience:
+
+    * Adaptive bit-rate and frame rate selection during trick play, based on bandwidth and buffer profile
+
+    * Use of the main stream instead of the IDR stream to get up to 30 fps fast playback.
 
 * **Content Protection**
 
-    * **Resolution-based output protection -** This feature ties playback restrictions to specific resolutions, providing finer grained DRM controls.
+  * **Resolution-based output protection -** This feature ties playback restrictions to specific resolutions, providing finer grained DRM controls.
 
 * **Workflow Support**
 
-    * **Direct Billing Integration -** This sends billing metrics to the Adobe Analytics backend, which is certified by Adobe Primetime for streams used by the customer.
+  * **Direct Billing Integration -** This sends billing metrics to the Adobe Analytics backend, which is certified by Adobe Primetime for streams used by the customer.
 
-      TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer's own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation. This feature is enabled by default. To turn this feature off, refer to the reference player sample.
-    
-    * **Improved Failover Support -** Additional strategies implemented to continue uninterrupted playback, despite failures of host servers, playlist files, and segments.
+  TVSDK automatically collects metrics, abiding by the customer sales contract to generate periodic usage reports required for billing purposes. On every stream start event, TVSDK uses the Adobe Analytics data insertion API to send billing metrics such as content type, ad insertion enabled flags, and drm enabled flags - based on the duration of the billable stream - to the Adobe Analytics Primetime owned report suite. This does not interfere with or get included in the customer's own Adobe Analytics report suites or server calls. On request, this billing usage report is sent to customers periodically. This is the first phase of the billing feature supporting usage billing only. It can be configured based on the sales contract using the APIs described in the documentation. This feature is enabled by default. To turn this feature off, refer to the reference player sample.
+
+  * **Improved Failover Support -** Additional strategies implemented to continue uninterrupted playback, despite failures of host servers, playlist files, and segments.
 
 * **Advertising**
 
-    * **Moat Integration -** Support for ad viewability measurement from Moat.
-    * **Companion banners -** Companion banners are displayed alongside a linear ad and often continue to be displayed on the view after the ad ends. These banners can be of type html (an HTML snippet) or type iframe (a URL to an iframe page).
+  * **Moat Integration -** Support for ad viewability measurement from Moat.
+  
+  * **Companion banners -** Companion banners are displayed alongside a linear ad and often continue to be displayed on the view after the ad ends. These banners can be of type html (an HTML snippet) or type iframe (a URL to an iframe page).
 
 * **Analytics**
 
-    * **VHL 2.0 -** This is the latest optimized Video Heartbeats Library (VHL) integration for automatic collection of usage data for Adobe Analytics. The complexity of the APIs has been decreased to to ease the implementation. Download the VHL library [v2.0.0 for Android](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) and extract the JAR file in the libs folder.
+  * **VHL 2.0 -** This is the latest optimized Video Heartbeats Library (VHL) integration for automatic collection of usage data for Adobe Analytics. The complexity of the APIs has been decreased to to ease the implementation. Download the VHL library [v2.0.0 for Android](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) and extract the JAR file in the libs folder.
 
 * **SizeAvaliableEventListener**
 
-    * getHeight() and getWidth() methods of SizeAvailableEvent will now return output in height and width respectively. Display aspect ratio can be calculated as follows:
+  * getHeight() and getWidth() methods of SizeAvailableEvent will now return output in height and width respectively. Display aspect ratio can be calculated as follows:
+  
+  ```java
+  SizeAvailableEvent e;
+  DAR = e.getWidth()/ e.getHeight();
+  ```
 
-      SizeAvailableEvent e;
+  Storage Aspect Ratio in terms of Sar width and Sar height can also be used to calculate Frame width and Frame height:
 
-      DAR = e.getWidth()/ e.getHeight();
-
-      Storage Aspect Ratio in terms of Sar width and Sar height can also be used to calculate Frame width and Frame height:
-
-      SAR = e.getSarWidth()/e.getSarHeight();
-
-      frameHeight = e.getHeight();
-
-      frameWidth = e.getWidth()/SAR;
+  ```java
+  SAR = e.getSarWidth()/e.getSarHeight();
+  frameHeight = e.getHeight();
+  frameWidth = e.getWidth()/SAR;
+  ```
 
 * **Cookies**
 
-    * Android TVSDK now supports access to JAVA cookies stored in CookieStore of the Android Application. A Callback API (onCookiesUpdated) is provided to record whenever a new Cookie comes as part of "Set-Cookie" Response header. These cookies are available as a List of HttpCookie(s) used for a different URI/domain by setting these cookie values on that particular URI/domain using CookieStore. Similarly the cookie values in TVSDK are updated using CookieStore add API.
+  * Android TVSDK now supports access to JAVA cookies stored in CookieStore of the Android Application. A Callback API (onCookiesUpdated) is provided to record whenever a new Cookie comes as part of "Set-Cookie" Response header. These cookies are available as a List of HttpCookie(s) used for a different URI/domain by setting these cookie values on that particular URI/domain using CookieStore. Similarly the cookie values in TVSDK are updated using CookieStore add API.
 
 ## Feature matrix {#feature-matrix}
 
@@ -285,7 +313,7 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 |---|---|---|
 | General playback (Play, Pause, Seek) |VOD + Live |Y |
 | FER - General playback (Play, Pause, Seek) |FER VOD |Y |
-| Seek when an ad is playing |VOD + Live |Not supported |
+| Seek when an ad is playing |Live |Not supported |
 | AC3 |VOD + Live |Not supported |
 | MP3 |VOD |Not supported |
 | MP4 Content Playback |VOD |Y |
@@ -350,8 +378,8 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 | Tokenized Streams |VOD + Live |Y |
 | DRM |VOD + Live |Primetime DRM only (Future: Widevine) |
 | External Playback (RBOP) |VOD + Live |Primetime DRM only |
-| License Rotation |VOD + Live |Primetime DRM only |
-| Key Rotation |VOD + Live |Primetime DRM only  |
+| License Rotation | VOD + Live | Primetime DRM only |
+| Key Rotation | VOD + Live |Primetime DRM and Widevine DRM |
 
 | Feature |Content type |HLS |
 |---|---|---|
@@ -362,13 +390,17 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx.
 
-**Android TVSDK 3.10**
+**Android TVSDK 3.11**
 
-This section provides a summary of the issue resolved in TVSDK 3.10 Android release.
+This section provides a summary of the issue resolved in TVSDK 3.11 Android release.
 
-* ZD#40340 - Application crashes with "App Not Responding" error on attempting playback after blacklisting all the TS (TypeScript) files.
+* ZD#     - Korean characters are displayed as missing glyph symbols for HLS manifests with WebVTT in Android TVSDK reference app.
 
 ### Resolved issues in the previous releases
+
+**Android TVSDK 3.10**
+
+* ZD#40340 - Application crashes with "App Not Responding" error on attempting playback after blacklisting all the TS (TypeScript) files.
 
 **Android TVSDK 3.8**
 
@@ -597,11 +629,15 @@ WebViewDebbuging is set to False by default. To enable debugging, set as true vi
 
 ## Known issues and limitations {#known-issues-and-limitations}
 
-**Android TVSDK 3.10**
+**Android TVSDK 3.11**
 
 * No new limitations added.
 
 ### Known issues and limitations in the previous releases
+
+**Android TVSDK 3.10**
+
+* No new limitations added.
 
 **Android TVSDK 3.8**
 

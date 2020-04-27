@@ -9,17 +9,17 @@ seo-description: null
 
 Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
+## Fixes in TVSDK 3.11 Android
+
+The release enhanced support for Widevine DRM and resolved top customer issues.
+
+Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
+
 ## Enhancements and Fixes in TVSDK 3.11 iOS Release Notes
 
 The release focused on resolving top customer issues.
 
 Check out for more information about the current released version for [iOS](../release-notes/tvsdk-3x-ios.md).
-
-## Fixes in TVSDK 3.10 Android
-
-The release focused on resolving top customer issues.
-
-Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
 ## Enhancements and Fixes in PTAI 20.3.3
 
