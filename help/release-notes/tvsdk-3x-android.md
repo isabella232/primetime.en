@@ -40,7 +40,7 @@ TVSDK now allows fetching of Protection System Specific Header Box associated wi
 For more information, see [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
 Top customer issues fixed in the current release are mentioned in [resolved issues](#resolved-issues) section. -->
 
-### New features and enhancements in the previous releases
+## New features and enhancements in the previous releases
 
 **Android TVSDK 3.9**
 
