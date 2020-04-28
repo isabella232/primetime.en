@@ -390,7 +390,7 @@ Where resolution is associated with a reported issue, a Zendesk reference is dis
 
 This section provides a summary of the issue resolved in TVSDK 3.11 Android release.
 
-* Korean characters are displayed as missing glyph symbols for HLS manifests with WebVTT in Android TVSDK reference app.
+* ZD#41252 - Korean characters are displayed as missing glyph symbols for HLS manifests with WebVTT in Android TVSDK reference app.
 
 ### Resolved issues in the previous releases
 
@@ -446,47 +446,47 @@ This section provides a summary of the issue resolved in TVSDK 3.11 Android rele
 
 * ZD#33740 - TVSDK throws an unneeded warning just after creating a MediaPlayer object and calling replaceCurrentResource()
 
-    * Improved the earlier fix by calling restore only when player is in suspended state
+  * Improved the earlier fix by calling restore only when player is in suspended state
 
 * ZD#36442 - Every new playback disconnects remote debugging session making it impossible to debug.
 
-    * Debug not possible by default on web view as debugging is not enabled by default. App should enable debugging if required by calling setWebContentsDebuggingEnabled(true) on object returned from MediaPlayer.getCustomAdView().
+  * Debug not possible by default on web view as debugging is not enabled by default. App should enable debugging if required by calling setWebContentsDebuggingEnabled(true) on object returned from MediaPlayer.getCustomAdView().
 
 * ZD#33688 - Support for Just In Time ad resolving
 
-    * Ad breaks are resolved at a specified interval prior to the position of the ad break.
+  * Ad breaks are resolved at a specified interval prior to the position of the ad break.
 
 * ZD#36441 - Duration of live window keeps increasing beyond 5 minutes causing multiple issues.
 
-    * Fixed an issue where virtualStartTime was getting added twice while calculating virtual live point resulting in this issue.
+  * Fixed an issue where virtualStartTime was getting added twice while calculating virtual live point resulting in this issue.
 
 **Android TVSDK 2.5.6**
 
 * ZD #34992 - Language is empty in Closed Caption.
 
-    * Fixed a case where TVSDK was not parsing #EXT-X-MEDIA:TYPE=CLOSED-CAPTIONS from main manifest to get the caption track details.
+  * Fixed a case where TVSDK was not parsing #EXT-X-MEDIA:TYPE=CLOSED-CAPTIONS from main manifest to get the caption track details.
 
 * ZD #35078 - Android P validation.
 
-    * TVSDK 2..5.6 has been validated with latest Android P beta build(s). No issues found due to the new Android OS.
+  * TVSDK 2..5.6 has been validated with latest Android P beta build(s). No issues found due to the new Android OS.
 
 * ZD #34149 - Player continues to requests manifests even if error is encountered.
 
-    * Fixed the case where TVSDK was making repetitive calls even when all the profiles were down (404 error).
+  * Fixed the case where TVSDK was making repetitive calls even when all the profiles were down (404 error).
 
 * ZD #31533 - Playing audio on Android after the app is sent to background.
 
-    * Added `enableAudioPlaybackInBackground` API of MediaPlayer which should be called with 'True' as argument (when player is in PREPARED state) to enable playback of audio when app is in background.
+  * Added `enableAudioPlaybackInBackground` API of MediaPlayer which should be called with 'True' as argument (when player is in PREPARED state) to enable playback of audio when app is in background.
 
 **Android TVSDK 2.5.5**
 
 * ZD #21647 - Android TVSDK notifies 640x368 when actual video size is 640x360.
 
-    * Due to variable m_nOutputHeight (inside AndroidMCVideoDecoder) getting updated with frame height instead of actual output height. Made relevant changes in function getVideoFrame to calculate m_nOutputHeight correctly.
+  * Due to variable m_nOutputHeight (inside AndroidMCVideoDecoder) getting updated with frame height instead of actual output height. Made relevant changes in function getVideoFrame to calculate m_nOutputHeight correctly.
 
 * ZD #26614 - Urgent --- 3rd party ad serving / programmatic --- failure to serve impressions.
 
-    * Enhanced the earlier fix by handling the case in XML parsing where issue was reproducible when "space" is before the "equal" sign like &lt;VAST version ="2.0"&gt;
+  * Enhanced the earlier fix by handling the case in XML parsing where issue was reproducible when "space" is before the "equal" sign like &lt;VAST version ="2.0"&gt;
 
 * ZD #29296 - Android: Add AdSystem and Creative id to CRS requests.
 
@@ -494,47 +494,47 @@ This section provides a summary of the issue resolved in TVSDK 3.11 Android rele
 
 * ZD #33062 - TVSDK crashes on the occurrence of pipe character in VAST response under CDATA node
 
-    * API setEncodeUrlForTracking in NetworkConfiguration class removed as the unsafe characters in a URL to be encoded
+  * API setEncodeUrlForTracking in NetworkConfiguration class removed as the unsafe characters in a URL to be encoded
 
 * ZD #33063 - CRS file selection logic was broken - TVSDK was not sending CRS request for webm format but sending it for 3gpp files instead.
 
-    * Fixed the logic now. On using media files with webm and 3gpp format, CRS request to be sent for webm. And on using both the media files with 3gpp format, the CRS request to be sent for the highest bitrate 3gpp file.
+  * Fixed the logic now. On using media files with webm and 3gpp format, CRS request to be sent for webm. And on using both the media files with 3gpp format, the CRS request to be sent for the highest bitrate 3gpp file.
 
 * ZD #33125 - Android app crashes with specific DoubleClick tag within the VMAP.
 
-    * Fixed the scenario to avoid the crash.
+  * Fixed the scenario to avoid the crash.
 
 * ZD #32256 - License Rotation & Key Rotation Issue - Adobe Access
 
-    * Fixed the segments initialization with the DRM metadata for SampleAES content. Works fine with AES128 content.
+  * Fixed the segments initialization with the DRM metadata for SampleAES content. Works fine with AES128 content.
 
 * ZD #33619 - Fast-forwarding a growing playlist content stuck in buffering state near live point.
 
-    * Handled the case when crossing the live point in trick play mode
+  * Handled the case when crossing the live point in trick play mode
 
 * ZD #34151 - TimedMetadata objects out of order.
 
-    * Two TimedMetadata events were appearing in random order if they belonged to same time in the timeline. Maintained their original order in manifest.
+  * Two TimedMetadata events were appearing in random order if they belonged to same time in the timeline. Maintained their original order in manifest.
 
 * ZD #34189 - Issue when seeking to beginning of ad break.
 
-    * The issue was with SSAI ads which are stitched using discontinuity. And the cause was a behavior when we seek to the begining of such ads, we search for a keyframe and we don't find it. The reason was the ad's min audio timestamp being before min video timestamp. Hence, we end up searching for a key frame at a wrong fragmentDump data. Fixed now.
+  * The issue was with SSAI ads which are stitched using discontinuity. And the cause was a behavior when we seek to the begining of such ads, we search for a keyframe and we don't find it. The reason was the ad's min audio timestamp being before min video timestamp. Hence, we end up searching for a key frame at a wrong fragmentDump data. Fixed now.
 
 * ZD #34528 - Video resolution not upgrading beyond 640x360 on FireTV 3rd gen dongle.
 
-    * Enhanced the fix to include latest firmware updates
+  * Enhanced the fix to include latest firmware updates
 
 * ZD #34793 - TVSDK 2.5.x used to crash with custom content resolver in some cases when VideoEngine was assuming that the auditudeSettings are available and they were not.
 
-    * The crash was happening due to a function call on a Null shared pointer (auditudeSettings). Added a conditional check within VideoEngineTimeline::placeToSourceTimeline() to make sure auditudeSettings are available before calling anything on that object.
+  * The crash was happening due to a function call on a Null shared pointer (auditudeSettings). Added a conditional check within VideoEngineTimeline::placeToSourceTimeline() to make sure auditudeSettings are available before calling anything on that object.
 
 * ZD #32584 - Not able to access complete information present in the &lt;Extensions&gt; node of a VAST response.
 
-    * Fixed the issue around XML parsing and now NetworkAdInfo provides the complete information present in the &lt;Extensions&gt; node
+  * Fixed the issue around XML parsing and now NetworkAdInfo provides the complete information present in the &lt;Extensions&gt; node
 
 * ZD #35086 - Not getting complete extension data from player in case of specific VMAP responses.
 
-    * The problem was specific to extension xml as XML parsing did not work if extension xml had double quotes within the attribute value. Fixed the issue.
+  * The problem was specific to extension xml as XML parsing did not work if extension xml had double quotes within the attribute value. Fixed the issue.
 
 **Android TVSDK 2.5.4**
 
