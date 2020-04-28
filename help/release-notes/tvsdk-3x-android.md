@@ -390,7 +390,7 @@ Where resolution is associated with a reported issue, a Zendesk reference is dis
 
 This section provides a summary of the issue resolved in TVSDK 3.11 Android release.
 
-* ZD#     - Korean characters are displayed as missing glyph symbols for HLS manifests with WebVTT in Android TVSDK reference app.
+* Korean characters are displayed as missing glyph symbols for HLS manifests with WebVTT in Android TVSDK reference app.
 
 ### Resolved issues in the previous releases
 
