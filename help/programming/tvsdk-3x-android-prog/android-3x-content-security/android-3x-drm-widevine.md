@@ -64,7 +64,7 @@ MediaDrmCallback callback)
 
 * `callback` - custom implementation of MediaDrmCallback to use instead of the default `com.adobe.mediacore.drm.WidevineMediaDrmCallback`.
 
-For details, see 3.11 API Reference.
+For details, see [Android TVSDK 3.11 API documentation](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.11/index.html).
 
 ## Fetch PSSH Box of current loaded MediaPlayer resource {#pssh-box-mediaplayer-resoource}
 
