@@ -130,8 +130,9 @@ This release focused on fixing top customer issues as mentioned in [resolved iss
   
   For more information, see TVSDK 3.0 for Android Programmer's Guide on API and event changes.
 
-* **Update `targetSdkVersion` to latest Version  
-  **Update `targetSdkVersion` from 19 to 27 for smooth functioning.
+* **Update `targetSdkVersion` to latest Version**  
+  
+  Update `targetSdkVersion` from 19 to 27 for smooth functioning.
 
 * **Placement.Type getPlacementType() is now a method on interface TimelineMarker**
 
