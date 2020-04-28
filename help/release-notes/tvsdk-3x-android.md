@@ -1,5 +1,5 @@
 ---
-title: TVSDK 3.11 for Android Release Notes
+title: TVSDK 3.10 for Android Release Notes
 seo-title: TVSDK 3.11 for Android Release Notes
 description: TVSDK 3.11 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.10
 seo-description: TVSDK 3.11 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.11
@@ -9,9 +9,9 @@ topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 ---
 
-# TVSDK 3.11 for Android Release Notes {#tvsdk-for-android-release-notes}
+# TVSDK 3.10 for Android Release Notes {#tvsdk-for-android-release-notes}
 
-TVSDK 3.11 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.11.
+TVSDK 3.10 for Android Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK Android 3.10.
 
 The Android reference player is included with Android TVSDK in the samples/ directory of your distribution. The accompanying README.md file explains how to build the reference player.
 
@@ -27,22 +27,20 @@ TVSDK for Android provides many performance improvements over previous versions.
 
 The comprehensive set of features supported and not supported are presented in the [Features Matrix](#feature-matrix) section of the release notes.
 
-<!-- ## New features {#new-features} -->
-
-## Android TVSDK 3.11
-
-**Protection System Specific Header (PSSH) Box fetching allowed**
-
-TVSDK now allows fetching of Protection System Specific Header Box associated with current loaded Media Resource. New API `getPSSH()` has been added to `com.adobe.mediacore.drm.DRMManager`.
-For more information, see [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
-
-Top customer issues fixed in the current release are mentioned in [resolved issues](#resolved-issues) section.
-
-### New features and enhancements in the previous releases
-
 **Android TVSDK 3.10**
 
 This release focused on fixing top customer issues as mentioned in [resolved issues](#resolved-issues) section.
+
+<!-- ## New features {#new-features} -->
+
+<!--
+## Android TVSDK 3.11
+**Protection System Specific Header (PSSH) Box fetching allowed**
+TVSDK now allows fetching of Protection System Specific Header Box associated with current loaded Media Resource. New API `getPSSH()` has been added to `com.adobe.mediacore.drm.DRMManager`.
+For more information, see [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
+Top customer issues fixed in the current release are mentioned in [resolved issues](#resolved-issues) section. -->
+
+### New features and enhancements in the previous releases
 
 **Android TVSDK 3.9**
 
@@ -387,17 +385,15 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 
 Where resolution is associated with a reported issue, a Zendesk reference is displayed, for example ZD#xxxxx.
 
-**Android TVSDK 3.11**
-
-This section provides a summary of the issue resolved in TVSDK 3.11 Android release.
-
-* ZD#41252 - Korean characters are displayed as missing glyph symbols for HLS manifests with WebVTT in Android TVSDK reference app.
-
-### Resolved issues in the previous releases
-
 **Android TVSDK 3.10**
 
 * ZD#40340 - Application crashes with "App Not Responding" error on attempting playback after blacklisting all the TS (TypeScript) files.
+
+<!-- **Android TVSDK 3.11**
+This section provides a summary of the issue resolved in TVSDK 3.11 Android release.
+* ZD#41252 - Korean characters are displayed as missing glyph symbols for HLS manifests with WebVTT in Android TVSDK reference app. -->
+
+### Resolved issues in the previous releases
 
 **Android TVSDK 3.8**
 
