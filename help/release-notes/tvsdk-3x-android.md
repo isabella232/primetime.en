@@ -27,8 +27,6 @@ TVSDK for Android provides many performance improvements over previous versions.
 
 The comprehensive set of features supported and not supported are presented in the [Features Matrix](#feature-matrix) section of the release notes.
 
-<!-- ## New features {#new-features} -->
-
 ## Android TVSDK 3.11
 
 **Protection System Specific Header (PSSH) Box fetching allowed**
