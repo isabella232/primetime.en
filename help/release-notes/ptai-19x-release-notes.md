@@ -44,6 +44,7 @@ Fixed a bug in which Chromecast players unexpectedly exited playback when ad seg
 **When:** Wednesday, August 21, 2019 2:00 AM to 3:00 AM Eastern Time
 
 * SSAI Dashboard: Session Stats section. You can export the session events via Download CSV option.
+
 * Maintenance updates
 
 ### Version 19.8.1
