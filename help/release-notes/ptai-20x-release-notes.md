@@ -11,7 +11,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 **When:** Tuesday, May 5, 2020 from 04:00 AM to 05:00 AM EASTERN
 
-* Fixed an issue to ensure the correct CORS headers are provided when If-Modified-Since headers are sent.
+* Fixed an issue to ensure that correct CORS headers are provided when If-Modified-Since headers are sent.
 
 * Bug fixes on the CRS dashboard.
 
@@ -23,7 +23,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 **When:** Wednesday, April 1, 2020 from 03:00 AM to 04:00 AM EASTERN
 
-* Fixed an issue that caused subtitles to go out of sync after ad insertion in VOD/WebVTT.
+* Fixed an issue that caused subtitles to go out of sync after ad insertion in VOD/ WebVTT.
 
 * Security updates.
 
@@ -44,15 +44,15 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 * **VMAP with FER support for "nbc" CueFormat**
   Convert cues from FER stream into FW timeline override params, when ptcueformat=nbc is used and the stream is a VOD stream with in-manifest cues and baked-in ads.
 
-* Sanitize user-agent field in HTTP Header before forwarding to 3rd party Ad providers/CDN.
+* Sanitize user-agent field in HTTP Header before forwarding to 3rd party Ad providers/ CDN.
 
-* Filter out control/non-printable characters (ascii code < 32) from "user-agent" HTTP headers before sending to Auditude and other ad-providers,CDNs. Auditude Ad-Call used to fail for such invalid headers.
+* Filter out control/non-printable characters (ASCII code < 32) from "user-agent" HTTP headers before sending to Auditude and other ad-providers, CDNs. Auditude Ad-Call used to fail for such invalid headers.
 
 * Purge old V1 Objects from NetStorage Groups to keep object count within safe limits of Akamai.
 
 ## Resolved issues
 
-Where resolution is associated with a reported issue, a Zendesk reference is displayed. For example ZD#xxxxx.
+Where resolution is associated with a reported issue, a Zendesk reference is displayed. For example, ZD#xxxxx.
 
 **PTAI 20.3.3**
 
