@@ -324,82 +324,82 @@ TVSDK for Android supports a number of features that you can implement to add fu
 
 In the feature tables below, a 'Y' indicates that the feature is supported in the current release.
 
-| Feature |Content type |HLS |
+| Feature | Content type | HLS |
 |---|---|---|
-| General playback (Play, Pause, Seek) |VOD + Live |Y |
-| FER - General playback (Play, Pause, Seek) |FER VOD |Y |
-| Seek when an ad is playing |Live |Not supported |
-| AC3 |VOD + Live |Not supported |
-| MP3 |VOD |Not supported |
-| MP4 Content Playback |VOD |Y |
-| Adaptive Bit Rate Switching Logic |VOD + Live |Y |
-| Audio Only Playback |VOD + Live |Y |
-| Multi CDN Support |VOD + Live |Not supported |
-| Playback of ads with audio-only media |VOD + Live |Not supported |
-| Closed Captions - 608/708 |VOD + Live |Y |
-| Closed Captions - WebVTT |VOD + Live |Y |
-| Manifest Failover |VOD + Live |Y |
-| Advanced Failover |VOD + Live |Y |
-| QoS and player notifications |VOD + Live |Y |
-| Support for cookie headers |VOD + Live |Y |
-| Support for custom HTTP headers |VOD + Live |Y (Whitelisting required) |
-| Set buffer control parameters |VOD + Live |Y |
-| Set adaptive bit-rate controls |VOD + Live |Y |
-| Custom Manifest Tags |VOD + Live |Y |
-| Late Audio Binding |VOD + Live |Y |
-| 302 Redirect |VOD + Live |Y |
-| Playback With Offset |VOD + Live |Y |
-| Audio Only Playback |VOD + Live |Y |
-| Trick Play |VOD + Live |Y |
-| Slow Motion in Trick Play |VOD + Live |Not supported |
-| Smooth Trick Play (with ABR) |VOD + Live |Y |
-| ID3 Parsing |VOD + Live |Y |
-| Blackout of ads |VOD + Live |Not supported |
-| Instant On |VOD + Live |Not supported |
-| Discontinuity marker support |VOD + Live |Y |
-| 302 Redirect Stickiness |VOD + Live |Y  |
+| General playback (Play, Pause, Seek) | VOD + Live | Y |
+| FER - General playback (Play, Pause, Seek) | FER VOD | Y |
+| Seek when an ad is playing | VOD + Live | Not supported |
+| AC3 | VOD + Live | Not supported |
+| MP3 | VOD | Not supported |
+| MP4 Content Playback | VOD | Y |
+| Adaptive Bit Rate Switching Logic | VOD + Live | Y |
+| Audio Only Playback | VOD + Live | Y |
+| Multi CDN Support | VOD + Live | Not supported |
+| Playback of ads with audio-only media | VOD + Live | Not supported |
+| Closed Captions - 608/708 | VOD + Live | Y |
+| Closed Captions - WebVTT | VOD + Live | Y |
+| Manifest Failover | VOD + Live | Y |
+| Advanced Failover | VOD + Live | Y |
+| QoS and player notifications | VOD + Live | Y |
+| Support for cookie headers | VOD + Live | Y |
+| Support for custom HTTP headers | VOD + Live | Y (Whitelisting required) |
+| Set buffer control parameters | VOD + Live | Y |
+| Set adaptive bit-rate controls | VOD + Live | Y |
+| Custom Manifest Tags | VOD + Live | Y |
+| Late Audio Binding | VOD + Live | Y |
+| 302 Redirect | VOD + Live | Y |
+| Playback With Offset | VOD + Live | Y |
+| Audio Only Playback | VOD + Live | Y |
+| Trick Play | VOD + Live | Y |
+| Slow Motion in Trick Play | VOD + Live | Not supported |
+| Smooth Trick Play (with ABR) | VOD + Live | Y |
+| ID3 Parsing | VOD + Live | Y |
+| Blackout of ads | VOD + Live | Not supported |
+| Instant On | VOD + Live | Not supported |
+| Discontinuity marker support | VOD + Live | Y |
+| 302 Redirect Stickiness | VOD + Live |Y  |
 
-| Feature |Content type |HLS |
+| Feature | Content type | HLS |
 |---|---|---|
-| General playback, ads enabled |VOD + Live |Y |
-| FER content with ads enabled |VOD |Y |
-| Default Ad Behaviors |VOD + Live |Y |
-| VAST 2.0/3.0 |VOD + Live |Y |
-| VMAP 1.0 |VOD + Live |Y |
-| MP4 Ads |VOD + Live |Y (from CRS) |
-| Trick Play with Ads Enabled |VOD + Live |Y |
-| Ad only |VOD |Y |
-| Targeting Parameters |VOD + Live |Y |
-| Custom Parameters |VOD + Live |Y |
-| Custom Ad Behaviors |VOD + Live |Y |
-| Custom Ad Tags |Live |Y |
-| Custom Ad Resolvers |VOD + Live |Y |
-| Freewheel Custom Ad Resolver |VOD |Y |
-| C3 |VOD + Live |Not supported |
-| Lazy Ad Resolve |VOD |Y |
-| Discontinuity marker support - SSAI |VOD + Live |Y |
-| Companion Ads, Banner Ads, and Clickable Ads |VOD + Live |Y |
-| VPAID 2.0 |VOD + Live |Y (JS) |
-| Early Ad Exit |Live |Y |
-| Rules-based Creative Prioritization |VOD + Live |Y |
-| CRS Rules |VOD + Live |Y |
-| JSON Ad Resolver |VOD + Live |Not supported |
-| Moat Integration |VOD + Live |Y  |
+| General playback, ads enabled | VOD + Live | Y |
+| FER content with ads enabled | VOD | Y |
+| Default Ad Behaviors | VOD + Live | Y |
+| VAST 2.0/3.0 | VOD + Live | Y |
+| VMAP 1.0 | VOD + Live | Y |
+| MP4 Ads | VOD + Live | Y (from CRS) |
+| Trick Play with Ads Enabled | VOD + Live | Y |
+| Ad only | VOD | Y |
+| Targeting Parameters | VOD + Live | Y |
+| Custom Parameters | VOD + Live | Y |
+| Custom Ad Behaviors | VOD + Live | Y |
+| Custom Ad Tags | Live | Y |
+| Custom Ad Resolvers | VOD + Live | Y |
+| Freewheel Custom Ad Resolver | VOD | Y |
+| C3 | VOD + Live | Not supported |
+| Lazy Ad Resolve | VOD | Y |
+| Discontinuity marker support - SSAI | VOD + Live | Y |
+| Companion Ads, Banner Ads, and Clickable Ads | VOD + Live | Y |
+| VPAID 2.0 | VOD + Live | Y (JS) |
+| Early Ad Exit | Live | Y |
+| Rules-based Creative Prioritization | VOD + Live | Y |
+| CRS Rules | VOD + Live | Y |
+| JSON Ad Resolver | VOD + Live | Not supported |
+| Moat Integration | VOD + Live | Y  |
 
-| Feature |Content type |HLS |
+| Feature | Content type | HLS |
 |---|---|---|
-| AES Encryption |VOD + Live |Y |
-| Sample AES Encryption |VOD + Live |Y |
-| Tokenized Streams |VOD + Live |Y |
-| DRM |VOD + Live |Primetime DRM only (Future: Widevine) |
-| External Playback (RBOP) |VOD + Live |Primetime DRM only |
+| AES Encryption | VOD + Live | Y |
+| Sample AES Encryption | VOD + Live | Y |
+| Tokenized Streams | VOD + Live | Y |
+| DRM | VOD + Live | Primetime DRM only (Future: Widevine) |
+| External Playback (RBOP) | VOD + Live | Primetime DRM only |
 | License Rotation | VOD + Live | Primetime DRM only |
-| Key Rotation | VOD + Live |Primetime DRM and Widevine DRM |
+| Key Rotation | VOD + Live | Primetime DRM only |
 
-| Feature |Content type |HLS |
+| Feature | Content type |HLS |
 |---|---|---|
-| Adobe Analytics VHL integration |VOD + Live |Y |
-| Billing |VOD + Live |Y  |
+| Adobe Analytics VHL integration | VOD + Live | Y |
+| Billing | VOD + Live | Y |
 
 ## Resolved issues {#resolved-issues}
 
@@ -409,7 +409,7 @@ Where resolution is associated with a reported issue, a Zendesk reference is dis
 
 This section provides a summary of the issue resolved in TVSDK 3.11 Android release.
 
-* ZD#41252 - Korean characters are displayed as missing glyph symbols for HLS manifests with WebVTT in Android TVSDK reference app.
+* ZD#41252 - Korean characters in WebVTT broken after Android 7.1.
 
 ### Resolved issues in the previous releases
 
