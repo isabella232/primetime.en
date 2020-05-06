@@ -1,5 +1,5 @@
 ---
-title:  PTAI 20.3.3 release notes
+title:  PTAI 20.5.1 release notes
 description: PTAI 20.5.1 release notes describe what is new or changed, the resolved and known issues in Primetime Dynamic Ad Insertion in the year 2020.
 ---
 
@@ -11,7 +11,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 **When:** Tuesday, May 5, 2020 from 04:00 AM to 05:00 AM EASTERN
 
-* Fixed an issue to ensure the correct CORS headers are provided when If-Modified-Since headers are sent.
+* Fixed an issue to ensure that correct CORS headers are provided when If-Modified-Since headers are sent.
 
 * Bug fixes on the CRS dashboard.
 
@@ -23,7 +23,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 **When:** Wednesday, April 1, 2020 from 03:00 AM to 04:00 AM EASTERN
 
-* Fixed an issue that caused subtitles to go out of sync after ad insertion in VOD/WebVTT.
+* Fixed an issue that caused subtitles to go out of sync after ad insertion in VOD/ WebVTT.
 
 * Security updates.
 
@@ -31,7 +31,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 **When:** Thursday, March 26, 2020 from 03:00am to 04:00am EASTERN
 
-* SSAI 4XX and 5XX responses now correctly supply CORS-related headers, allowing cross-domain javascript/webview clients to successfully read error responses.
+* SSAI 4XX and 5XX responses now correctly supply CORS-related headers, allowing cross-domain javascript/ webview clients to successfully read error responses.
 
 * Fixed an issue with X-Forwarded-For headers, where IPv6 addresses were not correctly URL encoded when passed to the ad servers.
 
@@ -41,18 +41,19 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 **When:** Tuesday, January 28, 2020 from 2:00am to 03:00am EASTERN
 
-* **VMAP with FER support for "nbc" CueFormat**
-  Convert cues from FER stream into FW timeline override params, when ptcueformat=nbc is used and the stream is a VOD stream with in-manifest cues and baked-in ads.
+* **VMAP with FER support for nbc CueFormat**
 
-* Sanitize user-agent field in HTTP Header before forwarding to 3rd party Ad providers/CDN.
+  Convert cues from FER stream into FW timeline override params, when `ptcueformat=nbc` is used and the stream is a VOD stream with in-manifest cues and baked-in ads.
 
-* Filter out control/non-printable characters (ascii code < 32) from "user-agent" HTTP headers before sending to Auditude and other ad-providers,CDNs. Auditude Ad-Call used to fail for such invalid headers.
+* Sanitize user-agent field in HTTP Header before forwarding to third-party Ad providers/ CDN.
+
+* Filter out control/non-printable characters (ASCII code < 32) from user-agent HTTP headers before sending to Auditude and other ad-providers, CDNs. Auditude Ad-Call used to fail for such invalid headers.
 
 * Purge old V1 Objects from NetStorage Groups to keep object count within safe limits of Akamai.
 
 ## Resolved issues
 
-Where resolution is associated with a reported issue, a Zendesk reference is displayed. For example ZD#xxxxx.
+Where resolution is associated with a reported issue, a Zendesk reference is displayed. For example, ZD#xxxxx.
 
 **PTAI 20.3.3**
 
