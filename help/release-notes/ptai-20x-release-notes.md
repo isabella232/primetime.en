@@ -31,7 +31,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 **When:** Thursday, March 26, 2020 from 03:00am to 04:00am EASTERN
 
-* SSAI 4XX and 5XX responses now correctly supply CORS-related headers, allowing cross-domain javascript/webview clients to successfully read error responses.
+* SSAI 4XX and 5XX responses now correctly supply CORS-related headers, allowing cross-domain javascript/ webview clients to successfully read error responses.
 
 * Fixed an issue with X-Forwarded-For headers, where IPv6 addresses were not correctly URL encoded when passed to the ad servers.
 
@@ -41,12 +41,13 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 **When:** Tuesday, January 28, 2020 from 2:00am to 03:00am EASTERN
 
-* **VMAP with FER support for "nbc" CueFormat**
-  Convert cues from FER stream into FW timeline override params, when ptcueformat=nbc is used and the stream is a VOD stream with in-manifest cues and baked-in ads.
+* **VMAP with FER support for nbc CueFormat**
 
-* Sanitize user-agent field in HTTP Header before forwarding to third party Ad providers/ CDN.
+  Convert cues from FER stream into FW timeline override params, when `ptcueformat=nbc` is used and the stream is a VOD stream with in-manifest cues and baked-in ads.
 
-* Filter out control/non-printable characters (ASCII code < 32) from "user-agent" HTTP headers before sending to Auditude and other ad-providers, CDNs. Auditude Ad-Call used to fail for such invalid headers.
+* Sanitize user-agent field in HTTP Header before forwarding to third-party Ad providers/ CDN.
+
+* Filter out control/non-printable characters (ASCII code < 32) from user-agent HTTP headers before sending to Auditude and other ad-providers, CDNs. Auditude Ad-Call used to fail for such invalid headers.
 
 * Purge old V1 Objects from NetStorage Groups to keep object count within safe limits of Akamai.
 
