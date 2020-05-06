@@ -44,7 +44,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 * **VMAP with FER support for "nbc" CueFormat**
   Convert cues from FER stream into FW timeline override params, when ptcueformat=nbc is used and the stream is a VOD stream with in-manifest cues and baked-in ads.
 
-* Sanitize user-agent field in HTTP Header before forwarding to 3rd party Ad providers/ CDN.
+* Sanitize user-agent field in HTTP Header before forwarding to third party Ad providers/ CDN.
 
 * Filter out control/non-printable characters (ASCII code < 32) from "user-agent" HTTP headers before sending to Auditude and other ad-providers, CDNs. Auditude Ad-Call used to fail for such invalid headers.
 
