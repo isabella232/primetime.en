@@ -9,7 +9,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 ## What's new in PTAI 20.5.1
 
-**When:** Tuesday, May 5, 2020 from 04:00 AM to 05:00 AM EASTERN
+**When:** Tuesday, May 5, 2020 from 04:00 AM to 05:00 AM Eastern Time
 
 * Fixed an issue to ensure that correct CORS headers are provided when If-Modified-Since headers are sent.
 
@@ -21,7 +21,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 ### Version 20.3.4
 
-**When:** Wednesday, April 1, 2020 from 03:00 AM to 04:00 AM EASTERN
+**When:** Wednesday, April 1, 2020 from 03:00 AM to 04:00 AM Eastern Time
 
 * Fixed an issue that caused subtitles to go out of sync after ad insertion in VOD/ WebVTT.
 
@@ -29,7 +29,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 ### Version 20.3.3
 
-**When:** Thursday, March 26, 2020 from 03:00am to 04:00am EASTERN
+**When:** Thursday, March 26, 2020 from 03:00 AM to 04:00 AM Eastern Time
 
 * SSAI 4XX and 5XX responses now correctly supply CORS-related headers, allowing cross-domain javascript/ webview clients to successfully read error responses.
 
@@ -37,9 +37,16 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 * Fixed an issue with CMAF/demuxed audio streams, where in certain scenarios EXT-X-MEDIA-SEQUENCE numbers would increment incorrectly.
 
+### Version 20.2.1
+
+**When:** Thursday, February 13, 2020 from 04:30 AM to 05:30 AM Eastern Time
+
+* Added support for stitching ad assets that contain multiple audio-only streams based on language/codec/bitrate.
+* Minor performance enhancements and maintenance updates.
+
 ### Version 20.1.3
 
-**When:** Tuesday, January 28, 2020 from 2:00am to 03:00am EASTERN
+**When:** Tuesday, January 28, 2020 from 2:00 AM to 03:00 AM Eastern Time
 
 * **VMAP with FER support for nbc CueFormat**
 
@@ -50,6 +57,22 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 * Filter out control/non-printable characters (ASCII code < 32) from user-agent HTTP headers before sending to Auditude and other ad-providers, CDNs. Auditude Ad-Call used to fail for such invalid headers.
 
 * Purge old V1 Objects from NetStorage Groups to keep object count within safe limits of Akamai.
+
+### Version 20.1.2 [Hotfix]
+
+**When:** Monday, January 20, 2020 from 02:00 AM to 03:00 AM Eastern Time
+
+* Maintenance updates.
+
+### Version 20.1.1
+
+**When:** Wednesday, January 15, 2020 from 04:00 AM to 05:00 AM Eastern Time
+
+* The Creative Repackaging Service now delivers quicker ad insertion by automatically blacklisting malformed creatives.
+
+* Added phase 1 support for new SCTE 35 cue format in server-side ad insertion.
+
+* Maintenance upgrades.
 
 ## Resolved issues
 
