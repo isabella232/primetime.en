@@ -1,5 +1,5 @@
 ---
-title:  PTAI 20.5.1 release notes
+title: PTAI 20.5.1 release notes
 description: PTAI 20.5.1 release notes describe what is new or changed, the resolved and known issues in Primetime Dynamic Ad Insertion in the year 2020.
 ---
 
