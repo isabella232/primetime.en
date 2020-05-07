@@ -37,6 +37,26 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 * Fixed an issue with CMAF/demuxed audio streams, where in certain scenarios EXT-X-MEDIA-SEQUENCE numbers would increment incorrectly.
 
+### Version 20.3.2
+
+**When:** Wednesday, March 11, 2020 from 05:30 AM to 07:00 AM Eastern Time
+
+* Improvements to SCTE35 signal handling.
+
+* Maintenance updates.
+
+### Version 20.3.1
+
+**When:** Thursday, March 05, 2020 from 02:30 AM to 04:30 AM Eastern Time
+
+* Performance improvements:
+
+  * Added cache support for both master/media m3u8 manifests. These manifests now respond to Cache-Control: public and Max-Age headers, which can often improve video start performance.
+  
+  * Added support for forcing https creatives to be fetched over http, which can also improve video start performance.
+  
+* Security and maintenance fixes.
+
 ### Version 20.2.1
 
 **When:** Thursday, February 13, 2020 from 04:30 AM to 05:30 AM Eastern Time
