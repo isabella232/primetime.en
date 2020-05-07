@@ -98,6 +98,16 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 Where resolution is associated with a reported issue, a Zendesk reference is displayed. For example, ZD#xxxxx.
 
+**PTAI 20.5.1**
+
+* Issues with CORS headers when If-Modified-Since headers are sent.
+
+* Issues in CRS dashboard.
+
+**PTAI 20.3.4**
+
+* Issue that caused subtitles to go out of sync after ad insertion in VOD/ WebVTT.
+
 **PTAI 20.3.3**
 
 * Issue with X-Forwarded-For headers, where IPv6 addresses were not correctly URL encoded when passed to the ad servers.
