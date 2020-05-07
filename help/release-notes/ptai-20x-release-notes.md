@@ -9,7 +9,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 ## What's new in PTAI 20.5.1
 
-**When:** Tuesday, May 5, 2020 from 04:00 AM to 05:00 AM EASTERN
+**When:** Tuesday, May 5, 2020 from 04:00 AM to 05:00 AM Eastern Time
 
 * Fixed an issue to ensure that correct CORS headers are provided when If-Modified-Since headers are sent.
 
@@ -21,7 +21,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 ### Version 20.3.4
 
-**When:** Wednesday, April 1, 2020 from 03:00 AM to 04:00 AM EASTERN
+**When:** Wednesday, April 1, 2020 from 03:00 AM to 04:00 AM Eastern Time
 
 * Fixed an issue that caused subtitles to go out of sync after ad insertion in VOD/ WebVTT.
 
@@ -29,7 +29,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 ### Version 20.3.3
 
-**When:** Thursday, March 26, 2020 from 03:00am to 04:00am EASTERN
+**When:** Thursday, March 26, 2020 from 03:00am to 04:00am Eastern Time
 
 * SSAI 4XX and 5XX responses now correctly supply CORS-related headers, allowing cross-domain javascript/ webview clients to successfully read error responses.
 
@@ -39,7 +39,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 ### Version 20.1.3
 
-**When:** Tuesday, January 28, 2020 from 2:00am to 03:00am EASTERN
+**When:** Tuesday, January 28, 2020 from 2:00am to 03:00am Eastern Time
 
 * **VMAP with FER support for nbc CueFormat**
 
