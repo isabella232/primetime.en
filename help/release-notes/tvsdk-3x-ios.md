@@ -15,7 +15,7 @@ Operating System: iOS 8.0 or later.
 
 ## iOS TVSDK 3.12
 
-
+Fixed an issue where live stream fails after 15 minutes of playback. 
 
 For fixes in the current release see [customer issues fixed](#resolved-issues) and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
 
@@ -293,14 +293,17 @@ Comment Type: draft
  <p>TVSDK versions earlier than version 1.4.28 sometimes exhibit a long delay in the startup time when ad-enabled content is played on devices that are running on iOS 10. To resolve this issue, upgrade to version 1.4.28 or later. Version 1.4.28 was released on August 31, 2016, and iOS 10 was released on September 13, 2016.</p> 
 </note>
  -->
+**iOS TVSDK 3.12**
+
+* Live stream fails after 15 minutes of playback when using TVSDK for iOS 3.10.
+
+### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.11**
 
 * (ZD#40998) - The `isFallbackOnInvalidCreativeEnabled` causes the application to crash.
 
 * (ZD#41289) - `NSInvalidArgumentException` is observed with the method `customParams` leading to application crash.
-
-### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.10**
 
