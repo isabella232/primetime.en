@@ -1,25 +1,29 @@
 ---
-title: TVSDK 3.11 for iOS Release Notes
-description: TVSDK 3.11 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.11.
+title: TVSDK 3.12 for iOS Release Notes
+description: TVSDK 3.12 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.12.
 ---
 
-# TVSDK 3.11 for iOS Release Notes {#tvsdk-for-ios-release-notes}
+# TVSDK 3.12 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
-TVSDK 3.11 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.11.
+TVSDK 3.12 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.12.
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.11, ensure your hardware, operating system, and application versions meet the following requirements:
+Before you download iOS 3.12, ensure your hardware, operating system, and application versions meet the following requirements:
 
 Operating System: iOS 8.0 or later.
 
-## iOS TVSDK 3.11
+## iOS TVSDK 3.12
 
-Provided fixes for customer issues where `isFallbackOnInvalidCreativeEnabled` and method `customParams` cause application to crash.
+
 
 For fixes in the current release see [customer issues fixed](#resolved-issues) and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
 
 ### New features and fixes in the previous releases {#whats-new-previous}
+
+**iOS TVSDK 3.11**
+
+Provided fixes for customer issues where `isFallbackOnInvalidCreativeEnabled` and method `customParams` cause application to crash.
 
 **iOS TVSDK 3.10**
 
