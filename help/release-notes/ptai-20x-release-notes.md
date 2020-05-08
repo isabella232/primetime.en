@@ -1,5 +1,5 @@
 ---
-title: PTAI 20.5.1 release notes
+title:  PTAI 20.5.1 release notes
 description: PTAI 20.5.1 release notes describe what is new or changed, the resolved and known issues in Primetime Dynamic Ad Insertion in the year 2020.
 ---
 
@@ -31,7 +31,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 **When:** Thursday, March 26, 2020 from 03:00 AM to 04:00 AM Eastern Time
 
-* SSAI 4XX and 5XX responses now correctly supply CORS-related headers, allowing cross-domain javascript/ webview clients to successfully read error responses.
+* SSAI 4XX and 5XX responses now correctly supply CORS-related headers, allowing cross-domain javascript webview clients to successfully read error responses.
 
 * Fixed an issue with X-Forwarded-For headers, where IPv6 addresses were not correctly URL encoded when passed to the ad servers.
 
@@ -78,7 +78,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 * Purge old V1 Objects from NetStorage Groups to keep object count within safe limits of Akamai.
 
-### Version 20.1.2 [Hotfix]
+### Version 20.1.2 (Hotfix)
 
 **When:** Monday, January 20, 2020 from 02:00 AM to 03:00 AM Eastern Time
 
@@ -96,7 +96,7 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 
 ## Resolved issues
 
-Where resolution is associated with a reported issue, a Zendesk reference is displayed. For example, ZD#xxxxx.
+Where resolution is associated with a reported issue, a Zendesk reference is displayed. For example, `ZD#xxxxx`
 
 **PTAI 20.5.1**
 
