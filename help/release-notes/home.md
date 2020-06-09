@@ -7,19 +7,19 @@ seo-description: null
 
 # Primetime Release Notes
 
-Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues
+Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
+
+## Enhancements and Fixes in PTAI 20.6.1
+
+The release focused on features such as Manifest manipulation and improving APIs to maintain session keep-alive with long form VOD assets. The release also incorporates fixes to top customer issues.
+
+For more information about the current released version of Dynamic Ad Insertion, see [PTAI release notes](ptai-20x-release-notes.md).
 
 ## Enhancements and Fixes in TVSDK 3.12 iOS Release Notes
 
 The release focused on resolving top customer issues.
 
 Check out for more information about the current released version for [iOS](../release-notes/tvsdk-3x-ios.md).
-
-## Enhancements and Fixes in PTAI 20.5.1
-
-Focused on fixing top customer issues.
-
-For more information about the current released version of Dynamic Ad Insertion, see [PTAI release notes](ptai-20x-release-notes.md).
 
 ## Fixes in TVSDK 3.11 Android
 
