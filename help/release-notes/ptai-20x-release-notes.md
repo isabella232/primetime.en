@@ -1,13 +1,33 @@
 ---
-title:  PTAI 20.5.1 release notes
-description: PTAI 20.5.1 release notes describe what is new or changed, the resolved and known issues in Primetime Dynamic Ad Insertion in the year 2020.
+title:  PTAI 20.6.1 release notes
+description: PTAI 20.6.1 release notes describe what is new or changed, the resolved and known issues in Primetime Dynamic Ad Insertion in the year 2020.
 ---
 
-# Primetime Dynamic Ad Insertion 20.5.1 Release Notes
+# Primetime Dynamic Ad Insertion 20.6.1 Release Notes
 
-Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issues resolved and known issues in Primetime Dynamic Ad Insertion in the year 2020.
+Dynamic Ad Insertion 20.6.1 release notes describe what is new or changed, issues resolved and known issues in Primetime Dynamic Ad Insertion in the year 2020.
 
-## What's new in PTAI 20.5.1
+## What's new in PTAI 20.6.1
+
+**When:** Tuesday, June 2, 2020 from 03:00 AM to 05:00 AM Eastern Time
+
+**New Features**
+
+Contact Adobe Support to enable the following new features via server-side configuration:
+
+* Manifest Manipulation: HLS segment and resource URLs can now be transformed between HTTP and HTTPS to increase performance by reducing TLS handshakes on back-end requests. It can also be used to unify ad/content fragments onto the same CDNs.
+
+* Long Form VOD: Improved APIs to maintain session keep-alive with long form VOD assets.
+
+**Bug Fixes**
+
+* Fixed an issue where WebVTT fragments were always requested under http protocol regardless of the original protocol requested.
+
+* Fixed an issue where EXT-X-DISCONTINUITY tags were removed from the top of the playlist when switching from ads back to content. Contact Adobe Support to enable this fix.
+
+## What changed in previous releases
+
+### Version 20.5.1
 
 **When:** Tuesday, May 5, 2020 from 04:00 AM to 05:00 AM Eastern Time
 
@@ -16,8 +36,6 @@ Dynamic Ad Insertion 20.5.1 release notes describe what is new or changed, issue
 * Bug fixes on the CRS dashboard.
 
 * Maintenance updates.
-
-## What changed in previous releases
 
 ### Version 20.3.4
 
