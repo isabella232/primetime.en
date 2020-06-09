@@ -15,14 +15,15 @@ Dynamic Ad Insertion 20.6.1 release notes describe what is new or changed, issue
 
 Contact Adobe Support to enable the following new features via server-side configuration:
 
-*	Manifest Manipulation: HLS segment and resource URLs can now be transformed between HTTP and HTTPS to increase performance by reducing TLS handshakes on back-end requests. It can also be used to unify ad/content fragments onto the same CDNs.
+* Manifest Manipulation: HLS segment and resource URLs can now be transformed between HTTP and HTTPS to increase performance by reducing TLS handshakes on back-end requests. It can also be used to unify ad/content fragments onto the same CDNs.
 
-* Long Form VOD: Improved APIs to maintain session keep-alive with long form VOD assets. 
+* Long Form VOD: Improved APIs to maintain session keep-alive with long form VOD assets.
 
 **Bug Fixes**
 
-*	Fixed an issue where WebVTT fragments were always requested under http protocol regardless of the original protocol requested. 
-*	Fixed an issue where EXT-X-DISCONTINUITY tags were removed from the top of the playlist when switching from ads back to content. Contact Adobe Support to enable this fix.
+* Fixed an issue where WebVTT fragments were always requested under http protocol regardless of the original protocol requested.
+
+* Fixed an issue where EXT-X-DISCONTINUITY tags were removed from the top of the playlist when switching from ads back to content. Contact Adobe Support to enable this fix.
 
 ## What changed in previous releases
 
