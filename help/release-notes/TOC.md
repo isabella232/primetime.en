@@ -9,13 +9,13 @@ user-guide-title: Primetime Release Notes
 
 + [Release Notes Overview](home.md)
 + Primetime Dynamic Ad Insertion {#ptai}
-  + [PTAI 20.3.3 Release Notes](ptai-20x-release-notes.md)
+  + [PTAI 20.6.1 Release Notes](ptai-20x-release-notes.md)
   + [PTAI 19.11.1 Release Notes](ptai-19x-release-notes.md)
 + TVSDK for iOS {#tvsdk-ios}
-  + [TVSDK 3.11 for iOS Release Notes](tvsdk-3x-ios.md)
+  + [TVSDK 3.12 for iOS Release Notes](tvsdk-3x-ios.md)
   + [TVSDK 1.4 for iOS Release Notes](tvsdk-1-4-ios.md)
 + TVSDK for Android {#tvsdk-android}
-  + [TVSDK 3.10 for Android Release Notes](tvsdk-3x-android.md)
+  + [TVSDK 3.11 for Android Release Notes](tvsdk-3x-android.md)
   + [TVSDK 2.7 for Android Release Notes](tvsdk-27-android.md)
   + [TVSDK 2.4.1 for Android Release Notes](tvsdk-24-android.md)  
   + [TVSDK 1.4 for Android Release Notes](tvsdk-1-4-android.md)

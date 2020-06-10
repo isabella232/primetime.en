@@ -62,8 +62,7 @@ To work with cookies:
 
     >[!NOTE]
     >
-    After setting this 'setReadSetCookieHeader' to false, set the cookies for the key requests using JAVA cookie manager.
-    >
+    >After setting this 'setReadSetCookieHeader' to false, set the cookies for the key requests using JAVA cookie manager.
 
     `onCookiesUpdated(CookiesUpdatedEvent cookiesUpdatedEvent)`
     This callback API will be fired whenever there is an update in C++ cookies (cookies which come from http response). Application needs to listen to this callback and can update their JAVA CookieStore accordingly so that their Network calls in JAVA can utilize the cookies as below:

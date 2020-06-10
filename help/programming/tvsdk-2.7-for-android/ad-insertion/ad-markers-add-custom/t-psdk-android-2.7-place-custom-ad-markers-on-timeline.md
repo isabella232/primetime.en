@@ -33,43 +33,43 @@ Here is the result of completing the tasks in this example: >
 
 The following code snippet places three time ranges on the timeline as custom ad-markers. 
 
->```java>
->// Assume that the 3 time ranges are obtained through external means 
->// Use them to populate the ReplaceTimeRange instance 
->List<ReplaceTimeRange> timeRanges = new ArrayList<ReplaceTimeRange>(); 
->timeRanges.add(new ReplaceTimeRange(0,10000, 0)); 
->timeRanges.add(new ReplaceTimeRange(15000,20000, 0)); 
->timeRanges.add(new ReplaceTimeRange(25000,30000, 0)); 
-> 
->CustomRangeMetadata customRangeMetadata = new CustomRangeMetadata(); 
->customRangeMetadata.setTimeRangeList(timeRanges); 
->customRangeMetadata.setType(CustomRangeMetadata.CustomRangeType.MARK_RANGE); 
-> 
->//Create a MediaResource instance 
->MediaResource mediaResource = MediaResource.createFromUrl( 
->        "www.example.com/video/test_video.m3u8", timeRanges.toMedatada(null)); 
-> 
->// Create a MediaPlayerItemConfig instance 
->MediaPlayerItemConfig config =  
->  new MediaPlayerItemConfig(getActivity().getApplicationContext()); 
-> 
->// Set customRangeMetadata 
->config.setCustomRangeMetadata(customRangeMetadata); 
-> 
->// Prepare the content for playback by calling replaceCurrentResource 
->// NOTE: mediaPlayer is an instance of a properly configured MediaPlayer  
->mediaPlayer.replaceCurrentResource(mediaResource, config); 
-> 
->// wait for TVSDK to reach the PREPARED state 
->mediaPlayer.addEventListener(MediaPlayerEvent.STATE_CHANGED,  
->  new StatusChangeEventListener() { 
->    @Override 
->    public void onStatusChanged(MediaPlayerStatusChangeEvent event) { 
-> 
->    if( event.getStatus() == MediaPlayerStatus.PREPARED ) { 
->        // TVSDK is in the PREPARED state, so start the playback  
->        mediaPlayer.play(); 
->    } 
->    ... 
->}
->```
+```java
+// Assume that the 3 time ranges are obtained through external means 
+// Use them to populate the ReplaceTimeRange instance 
+List<ReplaceTimeRange> timeRanges = new ArrayList<ReplaceTimeRange>(); 
+timeRanges.add(new ReplaceTimeRange(0,10000, 0)); 
+timeRanges.add(new ReplaceTimeRange(15000,20000, 0)); 
+timeRanges.add(new ReplaceTimeRange(25000,30000, 0)); 
+ 
+CustomRangeMetadata customRangeMetadata = new CustomRangeMetadata(); 
+customRangeMetadata.setTimeRangeList(timeRanges); 
+customRangeMetadata.setType(CustomRangeMetadata.CustomRangeType.MARK_RANGE); 
+ 
+//Create a MediaResource instance 
+MediaResource mediaResource = MediaResource.createFromUrl( 
+        "www.example.com/video/test_video.m3u8", timeRanges.toMedatada(null)); 
+ 
+// Create a MediaPlayerItemConfig instance 
+MediaPlayerItemConfig config =  
+  new MediaPlayerItemConfig(getActivity().getApplicationContext()); 
+ 
+// Set customRangeMetadata 
+config.setCustomRangeMetadata(customRangeMetadata); 
+ 
+// Prepare the content for playback by calling replaceCurrentResource 
+// NOTE: mediaPlayer is an instance of a properly configured MediaPlayer  
+mediaPlayer.replaceCurrentResource(mediaResource, config); 
+ 
+// wait for TVSDK to reach the PREPARED state 
+mediaPlayer.addEventListener(MediaPlayerEvent.STATE_CHANGED,  
+  new StatusChangeEventListener() { 
+    @Override 
+    public void onStatusChanged(MediaPlayerStatusChangeEvent event) { 
+ 
+    if( event.getStatus() == MediaPlayerStatus.PREPARED ) { 
+        // TVSDK is in the PREPARED state, so start the playback  
+        mediaPlayer.play(); 
+    } 
+    ... 
+}
+```

@@ -9,29 +9,29 @@ seo-description: null
 
 Welcome to the Adobe Primetime Release Notes. The documents listed in the left navigation provide release-specific information, system requirements, limitations, fixed issues, and known issues.
 
-## Enhancements and Fixes in TVSDK 3.11 iOS Release Notes
+## Enhancements and Fixes in PTAI 20.6.1
+
+The release focused on features such as Manifest manipulation and improving APIs to maintain session keep-alive with long form VOD assets. The release also incorporates fixes to top customer issues.
+
+For more information about the current released version of Dynamic Ad Insertion, see [PTAI release notes](ptai-20x-release-notes.md).
+
+## Enhancements and Fixes in TVSDK 3.12 iOS Release Notes
 
 The release focused on resolving top customer issues.
 
 Check out for more information about the current released version for [iOS](../release-notes/tvsdk-3x-ios.md).
 
-## Fixes in TVSDK 3.10 Android
+## Fixes in TVSDK 3.11 Android
 
-The release focused on resolving top customer issues.
+The release enhanced support for Widevine DRM and resolved top customer issues.
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
-
-## Enhancements and Fixes in PTAI 20.3.3
-
-Focused on customer issue fixes.
-
-For more information about the current released version of Dynamic Ad Insertion, see [PTAI release notes](ptai-19x-release-notes.md).
 
 ## See also
 
 | User Guide | Description |
 |--- |--- |
-| [Primetime Programming Help](/help/programming/home.md)  | Allows you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices. |
+| [Primetime Programming Help](/help/programming/home.md) | Allows you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices. |
 | [Primetime Migration & Conversion Help](/help/migration-guides/home.md) | Explains the conversion and migration process to move from your existing Primetime TVSDK Suite to the next-generation suite. |
 | [Reference Implementation](/help/android-reference-implementation/home.md) | Helps understand the TVSDK and modify the feature managers to customize your personal player. |
 | [Primetime API references](/help/reference/api-references.md) | Provides detailed information about TVSDK functions, data structures and other programming constructs. |

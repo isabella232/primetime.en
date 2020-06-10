@@ -1,25 +1,29 @@
 ---
-title: TVSDK 3.11 for iOS Release Notes
-description: TVSDK 3.11 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.11.
+title: TVSDK 3.12 for iOS Release Notes
+description: TVSDK 3.12 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.12.
 ---
 
-# TVSDK 3.11 for iOS Release Notes {#tvsdk-for-ios-release-notes}
+# TVSDK 3.12 for iOS Release Notes {#tvsdk-for-ios-release-notes}
 
-TVSDK 3.11 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.11.
+TVSDK 3.12 for iOS Release Notes describe what is new or changed, the resolved and known issues and the device issues in TVSDK iOS 3.12.
 
 ## System and software requirements {#system-software-requirements}
 
-Before you download iOS 3.11, ensure your hardware, operating system, and application versions meet the following requirements:
+Before you download iOS 3.12, ensure your hardware, operating system, and application versions meet the following requirements:
 
 Operating System: iOS 8.0 or later.
 
-## iOS TVSDK 3.11
+## iOS TVSDK 3.12
 
-Provided fixes for customer issues where `isFallbackOnInvalidCreativeEnabled` and method `customParams` cause application to crash.
+Fixed an issue where live stream fails after 15 minutes of playback. 
 
 For fixes in the current release see [customer issues fixed](#resolved-issues) and for limitations see [known issues and limitations](#known-issues-and-limitations) section.
 
 ### New features and fixes in the previous releases {#whats-new-previous}
+
+**iOS TVSDK 3.11**
+
+Provided fixes for customer issues where `isFallbackOnInvalidCreativeEnabled` and method `customParams` cause application to crash.
 
 **iOS TVSDK 3.10**
 
@@ -180,9 +184,7 @@ In the `PTSDKConfig` class, the forceHTTPS API has been added.
 
 The `PTSDKConfig` class provides methods to enforce SSL on requests made to Adobe Primetime ad decisioning, DRM, and Video Analytics servers. For more information, see the `forceHTTPS` and `isForcingHTTPS` methods on this class. If a manifest is loaded over HTTPS, TVSDK preserves the content use of HTTPS and respects this usage when loading any relative URLs from that manifest.
 
->
-> [!NOTE] Requests to third-party domains such as Ad Tracking pixels, Content and Ad URLs, and similar requests are not modified, and it is the responsibility of the content providers and ad servers to provide URLs that are supported through HTTPS.
->
+>[!NOTE] Requests to third-party domains such as Ad Tracking pixels, Content and Ad URLs, and similar requests are not modified, and it is the responsibility of the content providers and ad servers to provide URLs that are supported through HTTPS.
 
 **Version 1.4.18**
 
@@ -216,9 +218,7 @@ Primetime iOS TVSDK now supports VPAID 2.0 Javascript creatives to enable a rich
 
 **Version 1.4.13**
 
->
-> [!NOTE] The Nielsen module has been removed from the TVSDK build, the  TVSDK  will be updated in the near future with a new Nielsen integration module.
->
+>[!NOTE] The Nielsen module has been removed from the TVSDK build, the  TVSDK  will be updated in the near future with a new Nielsen integration module.
 
 **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**
 
@@ -293,14 +293,17 @@ Comment Type: draft
  <p>TVSDK versions earlier than version 1.4.28 sometimes exhibit a long delay in the startup time when ad-enabled content is played on devices that are running on iOS 10. To resolve this issue, upgrade to version 1.4.28 or later. Version 1.4.28 was released on August 31, 2016, and iOS 10 was released on September 13, 2016.</p> 
 </note>
  -->
+**iOS TVSDK 3.12**
+
+* Live stream fails after 15 minutes of playback when using TVSDK for iOS 3.10.
+
+### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.11**
 
 * (ZD#40998) - The `isFallbackOnInvalidCreativeEnabled` causes the application to crash.
 
 * (ZD#41289) - `NSInvalidArgumentException` is observed with the method `customParams` leading to application crash.
-
-### Resolved issues in the previous releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.10**
 
