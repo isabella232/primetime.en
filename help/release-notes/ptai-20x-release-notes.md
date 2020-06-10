@@ -25,8 +25,6 @@ Contact Adobe Support to enable the following new features via server-side confi
 
 * Fixed an issue where EXT-X-DISCONTINUITY tags were removed from the top of the playlist when switching from ads back to content. Contact Adobe Support to enable this fix.
 
-## What changed in previous releases
-
 ### Version 20.5.1
 
 **When:** Tuesday, May 5, 2020 from 04:00 AM to 05:00 AM Eastern Time
