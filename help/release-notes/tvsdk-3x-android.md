@@ -306,7 +306,7 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 | Custom Manifest Tags | VOD + Live | Y |
 | Late Audio Binding | VOD + Live | Y |
 | 302 Redirect | VOD + Live | Y |
-| Playback With Offset | VOD + Live | Y |
+| Playback with Offset | VOD + Live | Y |
 | Trick Play | VOD + Live | Y |
 | Slow Motion in Trick Play | VOD + Live | Not supported |
 | Smooth Trick Play (with ABR) | VOD + Live | Y |
