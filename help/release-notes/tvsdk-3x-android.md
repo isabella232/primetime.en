@@ -281,40 +281,40 @@ TVSDK for Android supports a number of features that you can implement to add fu
 
 In the feature tables below, a 'Y' indicates that the feature is supported in the current release. 
 
-| Feature |Content type |HLS |
+| Feature | Content type | HLS |
 |---|---|---|
-| General playback (Play, Pause, Seek) |VOD + Live |Y |
-| FER - General playback (Play, Pause, Seek) |FER VOD |Y |
-| Seek when an ad is playing |VOD + Live |Not supported |
-| AC3 |VOD + Live |Not supported |
-| MP3 |VOD |Not supported |
-| MP4 Content Playback |VOD |Y |
-| Adaptive Bit Rate Switching Logic |VOD + Live |Y |
-| Audio Only Playback |VOD + Live |Y |
-| Multi CDN Support |VOD + Live |Not supported |
-| Playback of ads with audio-only media |VOD + Live |Not supported |
-| Closed Captions - 608/708 |VOD + Live |Y |
-| Closed Captions - WebVTT |VOD + Live |Y |
-| Manifest Failover |VOD + Live |Y |
-| Advanced Failover |VOD + Live |Y |
-| QoS and player notifications |VOD + Live |Y |
-| Support for cookie headers |VOD + Live |Y |
-| Support for custom HTTP headers |VOD + Live |Y (Whitelisting required) |
-| Set buffer control parameters |VOD + Live |Y |
-| Set adaptive bit-rate controls |VOD + Live |Y |
-| Custom Manifest Tags |VOD + Live |Y |
-| Late Audio Binding |VOD + Live |Y |
-| 302 Redirect |VOD + Live |Y |
-| Playback With Offset |VOD + Live |Y |
-| Audio Only Playback |VOD + Live |Y |
-| Trick Play |VOD + Live |Y |
-| Slow Motion in Trick Play |VOD + Live |Not supported |
-| Smooth Trick Play (with ABR) |VOD + Live |Y |
-| ID3 Parsing |VOD + Live |Y |
-| Blackout of ads |VOD + Live |Not supported |
-| Instant On |VOD + Live |Not supported |
-| Discontinuity marker support |VOD + Live |Y |
-| 302 Redirect Stickiness |VOD + Live |Y  |
+| General playback (Play, Pause, Seek) | VOD + Live | Y |
+| FER - General playback (Play, Pause, Seek) | FER VOD | Y |
+| Seek when an ad is playing | VOD + Live | Not supported |
+| HEVC Playback | VOD + Live | fMP4 container only |
+| AC3 and EAC3 | VOD + Live | Not supported |
+| MP3 | VOD | Not supported |
+| MP4 Content Playback | VOD | Y |
+| Adaptive Bit Rate Switching Logic | VOD + Live | Y |
+| Audio Only Playback | VOD + Live | Y |
+| Multi CDN Support | VOD + Live | Not supported |
+| Playback of ads with audio-only media | VOD + Live | Not supported |
+| Closed Captions - 608/708 | VOD + Live | Y |
+| Closed Captions - WebVTT | VOD + Live | Y |
+| Manifest Failover | VOD + Live | Y |
+| Advanced Failover | VOD + Live | Y |
+| QoS and player notifications | VOD + Live | Y |
+| Support for cookie headers | VOD + Live | Y |
+| Support for custom HTTP headers | VOD + Live | Y (Whitelisting required) |
+| Set buffer control parameters | VOD + Live | Y |
+| Set adaptive bit-rate controls | VOD + Live | Y |
+| Custom Manifest Tags | VOD + Live | Y |
+| Late Audio Binding | VOD + Live | Y |
+| 302 Redirect | VOD + Live | Y |
+| Playback With Offset | VOD + Live | Y |
+| Trick Play | VOD + Live | Y |
+| Slow Motion in Trick Play | VOD + Live | Not supported |
+| Smooth Trick Play (with ABR) | VOD + Live | Y |
+| ID3 Parsing | VOD + Live | Y |
+| Blackout of ads | VOD + Live | Not supported |
+| Instant On | VOD + Live | Not supported |
+| Discontinuity marker support | VOD + Live | Y |
+| 302 Redirect Stickiness | VOD + Live | Y |
 
 | Feature |Content type |HLS |
 |---|---|---|
@@ -336,19 +336,21 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 | Lazy Ad Resolve |VOD |Y |
 | Discontinuity marker support - SSAI |VOD + Live |Y |
 | Companion Ads, Banner Ads, and Clickable Ads |VOD + Live |Y |
-| VPAID 2.0 |VOD + Live |Y (JS) |
-| Early Ad Exit |Live |Y |
-| Rules-based Creative Prioritization |VOD + Live |Y |
-| CRS Rules |VOD + Live |Y |
-| JSON Ad Resolver |VOD + Live |Not supported |
-| Moat Integration |VOD + Live |Y  |
+| VPAID 2.0 | VOD + Live | Y (JS) |
+| Early Ad Exit | Live | Y |
+| Rules-based Creative Prioritization | VOD + Live | Y |
+| CRS Rules | VOD + Live | Y |
+| JSON Ad Resolver | VOD + Live | Not supported |
+| Moat Integration | VOD + Live | Y |
+| Partial Ad Break Insertion | Live | Y |
 
-| Feature |Content type |HLS |
+| Feature | Content type | HLS |
 |---|---|---|
-| AES Encryption |VOD + Live |Y |
-| Sample AES Encryption |VOD + Live |Y |
-| Tokenized Streams |VOD + Live |Y |
-| DRM |VOD + Live |Primetime DRM only (Future: Widevine) |
+| AES Encryption | VOD + Live | Y |
+| Sample AES Encryption | VOD + Live | Y |
+| Tokenized Streams | VOD + Live | Y |
+| Widevine DRM | VOD + Live | fMP4 container only |
+| Primetime DRM | VOD + Live | Y |
 | External Playback (RBOP) |VOD + Live |Primetime DRM only |
 | License Rotation |VOD + Live |Primetime DRM only |
 | Key Rotation |VOD + Live |Primetime DRM only  |
