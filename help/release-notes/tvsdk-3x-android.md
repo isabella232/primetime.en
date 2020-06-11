@@ -29,7 +29,8 @@ The comprehensive set of features supported and not supported are presented in t
 
 ## Android TVSDK 3.12
 
-Primetime Reference application’s gradle version is now updated to version 5.6.4.
+Primetime Reference application’s gradle version is now updated to version 5.6.4. 
+
 To setup and run Reference app using Android Studio follow the instructions from ReadMe file available with TVSDK zip at `TVSDK_Android_x.x.x.x/samples/PrimetimeReference/src/README.md`.
 
 Top customer issues fixed in the current release are mentioned in [resolved issues](#resolved-issues) section.
