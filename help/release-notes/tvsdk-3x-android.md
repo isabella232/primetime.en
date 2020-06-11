@@ -39,7 +39,7 @@ Top customer issues fixed in the current release are mentioned in [resolved issu
 
 **Android TVSDK 3.11**
 
-**Protection System Specific Header (PSSH) Box fetching allowed** - TVSDK allows fetching of Protection System Specific Header Box associated with current loaded Media Resource. New API `getPSSH()` added to `com.adobe.mediacore.drm.DRMManager`.
+* **Protection System Specific Header (PSSH) Box fetching allowed** - TVSDK allows fetching of Protection System Specific Header Box associated with current loaded Media Resource. New API `getPSSH()` added to `com.adobe.mediacore.drm.DRMManager`.
 
 For more information, see [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
 
@@ -49,7 +49,7 @@ The release focused on fixing top customer issues as mentioned in [resolved issu
 
 **Android TVSDK 3.9**
 
-**Secure Delivery over HTTPS** - Android TVSDK 3.9 introduced the secure delivery capabilities via HTTPS to deliver content securely with unparalleled scale and performance.
+* **Secure Delivery over HTTPS** - Android TVSDK 3.9 introduced the secure delivery capabilities via HTTPS to deliver content securely with unparalleled scale and performance.
 
     To enable secure delivery over HTTPS, new API introduced in `NetworkConfiguration` class.
 
@@ -59,9 +59,9 @@ The release focused on fixing top customer issues as mentioned in [resolved issu
 
 **Android TVSDK 3.8**
 
-**Pre-Roll support with Partial Ad-Break feature** - With this enhancement, TVSDK 3.8 supports pre-roll ads with Partial Ad-Break feature (PABI).
+* **Pre-Roll support with Partial Ad-Break feature** - With this enhancement, TVSDK 3.8 supports pre-roll ads with Partial Ad-Break feature (PABI).
 
-    The pre-roll ad, if available, is played, and then the content plays from the live point emulating the experience of live television.
+The pre-roll ad, if available, is played, and then the content plays from the live point emulating the experience of live television.
 
 **Android TVSDK 3.7**
 
@@ -78,6 +78,7 @@ The release focused on fixing top customer issues as mentioned in [resolved issu
 **Version 3.5**
 
 * **Just In Time Ad Resolution** - TVSDK 3.5 removes support of the played ads from the timeline.
+
 * **Enabled support for offline playback** - With offline playback, users can now download video content to their devices and watch it when they are not connected. For detailed information, refer to "[Offline Playback with Android](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.5.pdf)."
 
 **Version 3.4**
