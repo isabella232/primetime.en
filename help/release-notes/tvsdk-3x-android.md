@@ -49,7 +49,7 @@ The release focused on fixing top customer issues as mentioned in [resolved issu
 
 **Android TVSDK 3.9**
 
-* **Secure Delivery over HTTPS** - Android TVSDK 3.9 introduced the secure delivery capabilities via HTTPS to deliver content securely with unparalleled scale and performance.
+**Secure Delivery over HTTPS** - Android TVSDK 3.9 introduced the secure delivery capabilities via HTTPS to deliver content securely with unparalleled scale and performance.
 
     To enable secure delivery over HTTPS, new API introduced in `NetworkConfiguration` class.
 
@@ -59,7 +59,7 @@ The release focused on fixing top customer issues as mentioned in [resolved issu
 
 **Android TVSDK 3.8**
 
-* **Pre-Roll support with Partial Ad-Break feature** - With this enhancement, TVSDK 3.8 supports pre-roll ads with Partial Ad-Break feature (PABI).
+**Pre-Roll support with Partial Ad-Break feature** - With this enhancement, TVSDK 3.8 supports pre-roll ads with Partial Ad-Break feature (PABI).
 
     The pre-roll ad, if available, is played, and then the content plays from the live point emulating the experience of live television.
 
