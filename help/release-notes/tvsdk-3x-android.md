@@ -29,9 +29,10 @@ The comprehensive set of features supported and not supported are presented in t
 
 ## Android TVSDK 3.12
 
-Reference player Gradle version updated to 5.6.4 (November 2019 release). For prerequisites and build steps, refer to README accompanying the sample.
+Primetime Reference application’s gradle version is now updated to version 5.6.4.
+To setup and run Reference app using Android Studio follow the instructions from ReadMe file available with TVSDK zip at `TVSDK_Android_x.x.x.x/samples/PrimetimeReference/src/README.md`.
 
-Top customer issues fixed in all the releases are mentioned in [resolved issues](#resolved-issues) section.
+Top customer issues fixed in the current release are mentioned in [resolved issues](#resolved-issues) section.
 
 ### New features and enhancements in the previous releases
 
@@ -434,9 +435,9 @@ Where resolution is associated with a reported issue, a Zendesk reference is dis
 
 **Android TVSDK 3.12**
 
-<!-- This section provides a summary of the issue resolved in TVSDK 3.11 Android release.-->
+This section provides a summary of the issue resolved in TVSDK 3.12 Android release.
 
-* No new issues added.
+* ZD#40584 - Primetime Reference app does not build with latest gradle version. 
 
 ### Resolved issues in the previous releases
 
