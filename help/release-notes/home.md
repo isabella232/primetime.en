@@ -11,7 +11,7 @@ Welcome to the Adobe Primetime Release Notes. The documents listed in the left n
 
 ## Fixes in TVSDK 3.12 Android
 
-Reference player Gradle version updated to 5.6.4 (November 2019 release).
+The release focused on updating Primetime Reference application’s gradle version to version 5.6.4.
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
