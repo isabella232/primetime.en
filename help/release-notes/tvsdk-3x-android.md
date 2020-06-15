@@ -365,28 +365,6 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 | Discontinuity marker support | VOD + Live | Y |
 | 302 Redirect Stickiness | VOD + Live | Y |
 
-| Feature |Content type |HLS |
-|---|---|---|
-| General playback, ads enabled |VOD + Live |Y |
-| FER content with ads enabled |VOD |Y |
-| Default Ad Behaviors |VOD + Live |Y |
-| VAST 2.0/3.0 |VOD + Live |Y |
-| VMAP 1.0 |VOD + Live |Y |
-| MP4 Ads |VOD + Live |Y (from CRS) |
-| Trick Play with Ads Enabled |VOD + Live |Y |
-| Ad only |VOD |Y |
-| Targeting Parameters |VOD + Live |Y |
-| Custom Parameters |VOD + Live |Y |
-| Custom Ad Behaviors |VOD + Live |Y |
-| Custom Ad Tags |Live |Y |
-| Custom Ad Resolvers |VOD + Live |Y |
-| Freewheel Custom Ad Resolver |VOD |Y |
-| C3 |VOD + Live |Not supported |
-| Lazy Ad Resolve |VOD |Y |
-| Discontinuity marker support - SSAI |VOD + Live |Y |
-| Companion Ads, Banner Ads, and Clickable Ads |VOD + Live |Y |
-| 302 Redirect Stickiness | VOD + Live |Y  |
-
 | Feature | Content type | HLS |
 |---|---|---|
 | General playback, ads enabled | VOD + Live | Y |
