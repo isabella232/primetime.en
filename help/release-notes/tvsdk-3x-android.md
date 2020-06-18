@@ -349,7 +349,7 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 | Advanced Failover | VOD + Live | Y |
 | QoS and player notifications | VOD + Live | Y |
 | Support for cookie headers | VOD + Live | Y |
-| Support for custom HTTP headers | VOD + Live | Y (Whitelisting required) |
+| Support for custom HTTP headers | VOD + Live | Y (allow listing required) |
 | Set buffer control parameters | VOD + Live | Y |
 | Set adaptive bit-rate controls | VOD + Live | Y |
 | Custom Manifest Tags | VOD + Live | Y |
@@ -460,7 +460,7 @@ This section provides a summary of the issue resolved in TVSDK 3.12 Android rele
   * Fixed a specific case around ad tracking events.
 * ZD#37491 - HTTP status code with error meta is not present.
   * Worked on propagating network errors higher in the stack.
-* ZD#37808 - Whitelist New Custom Header.
+* ZD#37808 - Allow list New Custom Header.
   * SSAI_TAG support added as part of this fix.
 * ZD#37622 - URISyntax Errors from Specific Ad Pods.
   * Fixed an issue about stream playback crash when customer Android app is served ads that contain an un-encoded %

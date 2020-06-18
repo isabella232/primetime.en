@@ -306,9 +306,9 @@ Comment Type: draft
 * (ZD#31979) - Does not compile/run when it is iOS 10 or later for iPhone 7/iPhone7+
 
   Fixed Compiling IB documents for earlier than iOS 7 is no longer supported
-* (ZD#32920) - white blank screen within an Ad break and no Ad break completion
+* (ZD#32920) - Blank screen within an Ad break and no Ad break completion
 
-  When an Ad break is presenting Ad instances and after an ad instance is finished, a white blank screen is shown
+  When an Ad break is presenting Ad instances and after an ad instance is finished, a blank screen is shown
 * (ZD#32509) - Disable iOS 11 screen  recoding Disable screen recording on iOS 11
 
 * (ZD#33179) - Intermittent event failure on iOS11
@@ -324,7 +324,7 @@ Comment Type: draft
 * (ZD #31951) - TVSDK Error during License Rotations.
 
   Fixed the license rotation issue.
-* (ZD #31951) - White blank screen within an Ad break and no Ad break completion.
+* (ZD #31951) - Blank screen within an Ad break and no Ad break completion.
 
   Handled an issue where Facebook VPAID ads were often returning multiple CDATA blocks in a single \&lt;AdParameters\&gt; VAST node.
 * (ZD #33336) - [iOS] TVSDK - Ad pods not being filled, despite enough ads being returned by Freewheel.
@@ -484,9 +484,9 @@ This issue was resolved by providing a workaround for streams that do not have a
 
 The following issues were resolved for TVSDK in this release:
 
-* (ZD# 24180) Add a custom header to white-list
+* (ZD# 24180) Add a custom header to allow list
 
-A new custom header has been added to the TVSDK white-list.
+A new custom header has been added to the TVSDK allow list.
 
 * (ZD# 25016) Failover stream is selected randomly when ABR control parameters are set
 

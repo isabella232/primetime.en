@@ -201,7 +201,7 @@ In the feature tables below, a 'Y' indicates that the feature is supported in th
 | Advanced Failover |VOD + Live |Y |
 | QoS and player notifications |VOD + Live |Y |
 | Support for cookie headers |VOD + Live |Y |
-| Support for custom HTTP headers |VOD + Live |Y (Whitelisting required) |
+| Support for custom HTTP headers |VOD + Live |Y (allow listing required) |
 | Set buffer control parameters |VOD + Live |Y |
 | Set adaptive bit-rate controls |VOD + Live |Y |
 | Custom Manifest Tags |VOD + Live |Y |

@@ -262,7 +262,7 @@ user-guide-title: Primetime Programming Help
    + Content protection {#content-protection}
       + [Primetime DRM interface overview](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-drm-interface.md)
       + [Apple FairPlay in TVSDK applications](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md)
-      + [Whitelist your iOS application](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-whitelist-your-ios-application.md)
+      + [Allow list your iOS application](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-allowlist-your-ios-application.md)
    + [Notifications for player status, activity, errors, and logs](tvsdk-3x-ios-prog/ios-3x-notification-system/ios-3x-notification-content.md)
    + [Customized logging](tvsdk-3x-ios-prog/ios-3x-customized-logging/c-ios-customized-logging/c-ios-customized-logging.md)
    + [Failover](tvsdk-3x-ios-prog/ios-3x-understanding-failover.md)
@@ -716,7 +716,7 @@ user-guide-title: Primetime Programming Help
   + Content protection {#content-protection}
     + [Primetime DRM interface overview](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/r-psdk-ios-1.4-drm-interface.md)
     + [Apple FairPlay in TVSDK applications](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)
-    + [Whitelist your iOS application](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/t-psdk-ios-1.4-whitelist-your-ios-application.md)
+    + [Allow list your iOS application](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/t-psdk-ios-1.4-allowlist-your-ios-application.md)
   + [Notification for player status, activity, errors, and logs ](tvsdk-1.4-for-ios/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-system.md)
   + [Customized logging](tvsdk-1.4-for-ios/c-psdk-ios-1.4-customized-logging/c-psdk-ios-1.4-customized-logging.md)
   + [Failover](tvsdk-1.4-for-ios/c-psdk-ios-1.4-understanding-failover.md)

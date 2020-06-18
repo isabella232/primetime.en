@@ -1,32 +1,32 @@
 ---
-description: You can whitelist your iOS apps by using Adobe's machotools tool.
-seo-description: You can whitelist your iOS apps by using Adobe's machotools tool.
-seo-title: Whitelist your iOS application
-title: Whitelist your iOS application
-uuid: bc558f5f-d4e6-4c1c-81eb-f8bd61c63016
+description: You can allow list your iOS apps by using Adobe's machotools tool.
+seo-description: You can allow list your iOS apps by using Adobe's machotools tool.
+seo-title: Allow list your iOS application
+title: Allow list your iOS application
+uuid: 52ce1dd7-5f10-418e-9916-cec60eae874e
 ---
 
-# Whitelist your iOS application {#whitelist-your-ios-application}
+# Allow list your iOS application {#allowlist-your-ios-application}
 
-You can whitelist your iOS apps by using Adobe's machotools tool.
+You can allow list your iOS apps by using Adobe's machotools tool.
 
-Generally, when you complete a TVSDK application, you can use Adobe Primetime DRM command-line tools to whitelist your app. 
+Generally, when you complete a TVSDK application, you can use Adobe Primetime DRM command-line tools to allow list your app.
 
 >[!TIP]
 >
 >You can also use these tools to create DRM policies and encrypt content.
 
-Whitelisting your app ensures that protected content can only be played in your video player. However, whitelisting an iOS application requires you to complete special procedure that works with Apple's application submission policies.
+Allow listing your app ensures that protected content can only be played in your video player. However, allow listing an iOS application requires you to complete special procedure that works with Apple's application submission policies.
 
-Before submitting an iOS app, you need to sign it and publish it to Apple. 
+Before submitting an iOS app, you need to sign it and publish it to Apple.
 
 >[!NOTE]
 >
 >Apple strips your developer's signature and re-signs the application with their own certificate.
 
-Because of the re-signing, the whitelisting information that you generated before you submitted to the Apple App Store is not useable.
+Because of the re-signing, the allow listing information that you generated before you submitted to the Apple App Store is not useable.
 
-To work with this submission policy, Adobe has created a `machotools` tool that will fingerprint your iOS application to create a digest value, sign this value, and inject this value in your iOS application. After you fingerprint your iOS app, you can submit the app to the Apple App Store. When a user runs your app from the App Store, Primetime DRM does a runtime calculation of the application fingerprint and confirms it with the digest value that was previously injected in the application. If the fingerprint matches, the app is confirmed as being whitelisted, and protected content is allowed to play.
+To work with this submission policy, Adobe has created a `machotools` tool that will fingerprint your iOS application to create a digest value, sign this value, and inject this value in your iOS application. After you fingerprint your iOS app, you can submit the app to the Apple App Store. When a user runs your app from the App Store, Primetime DRM does a runtime calculation of the application fingerprint and confirms it with the digest value that was previously injected in the application. If the fingerprint matches, the app is confirmed as being allow listed, and protected content is allowed to play.
 
 The Adobe `machotools` tool is included in the iOS TVSDK SDK, in the [!DNL [...]/tools/DRM] folder.
 
@@ -99,4 +99,4 @@ To use `machotools`:
    java -jar libs/AdobePolicyManager.jar new app_whitelist.pol
    ```
 
-1. Package the content by using the new DRM policy and confirm the playback of the whitelisted content in your iOS app.
+1. Package the content by using the new DRM policy and confirm the playback of the allow listed content in your iOS app.

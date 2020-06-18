@@ -335,11 +335,12 @@ No new issues in this release.
 
 **Version 3.3**
 
-(ZD#37820) - Added whitelisting for custom header HS-Id, HS-SSAI-TAG.
+(ZD#37820) - Added allow listing for custom header HS-Id, HS-SSAI-TAG.
 
 **Version 3.2**
 
 * **Ticket#36588** - Player crash is observed when the MediaPlayer STOP method is called.
+
 Fixed intermittent crash observed when STOP method is called for a few streams with subtitles.
 
 * **Ticket#37080** - Duplicate requests seen for Manifest calls.
@@ -442,24 +443,29 @@ Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancell
   Fixed the Error when attempting to playback content on Apple TV, which  prevent  playback completely
 * (ZD #32146)- No `PTMediaPlayerStatusError` is received for HLS Live content on blocking iOS 11 dev beta
 
-  No `PTMediaPlayerStatusError` is received for HLS Live and VOD content on blocking using Charles (Drop connection and 403)
-* (ZD #29242) - Airplay Video Playback Fails with Ads Enabled
+  No `PTMediaPlayerStatusError` is received for HLS Live and VOD content on blocking using Charles (Drop connection and 403).
+  
+* (ZD #29242) - Airplay Video Playback Fails with Ads Enabled.
 
-  When ads are enabled and AirPlay is enabled starting playing a video, video playback never starts and no error is shown
-* (ZD#33341) - `DRMInterface.h` triggers build warnings in Xcode 9
+  When ads are enabled and AirPlay is enabled starting playing a video, video playback never starts and no error is shown.
 
-  Fixed two block prototypes in `DRMInterface.h` which were missing the word 'void' in their parameter lists
-* (ZD#31979) - Does not compile/run when it is iOS 10 or later for iPhone 7/iPhone7+
+* (ZD#33341) - `DRMInterface.h` triggers build warnings in Xcode 9.
 
-  Fixed Compiling IB documents for earlier than iOS 7 is no longer supported
-* (ZD#32920) - white blank screen within an Ad break and no Ad break completion
+  Fixed two block prototypes in `DRMInterface.h` which were missing the word 'void' in their parameter lists.
 
-  When an Ad break is presenting Ad instances and after an ad instance is finished, a white blank screen is shown
-* (ZD#32509) - Disable iOS 11 screen  recoding Disable screen recording on iOS 11
+* (ZD#31979) - Does not compile/run when it is iOS 10 or later for iPhone 7/iPhone7+.
 
-* (ZD#33179) - Intermittent event failure on iOS11
+  Fixed Compiling IB documents for earlier than iOS 7 is no longer supported.
 
-  Fixed the event failure on iOS 11
+* (ZD#32920) - Blank screen within an Ad break and no Ad break completion.
+
+  When an Ad break is presenting Ad instances and after an ad instance is finished, a blank screen is shown.
+
+* (ZD#32509) - Disable iOS 11 screen  recoding Disable screen recording on iOS 11.
+
+* (ZD#33179) - Intermittent event failure on iOS11.
+
+  Fixed the event failure on iOS 11.
 
 **Version 1.4.40** (1.4.40.72)
 
@@ -470,7 +476,7 @@ Improved fix provided for closed issue #34385 in 1.4.42 release. Added isCancell
 * (ZD #31951) - TVSDK Error during License Rotations.
 
   Fixed the license rotation issue.
-* (ZD #31951) - White blank screen within an Ad break and no Ad break completion.
+* (ZD #31951) - Blank screen within an Ad break and no Ad break completion.
 
   Handled an issue where Facebook VPAID ads were often returning multiple CDATA blocks in a single `<AdParameters>` VAST node.
 * (ZD #33336) - iOS TVSDK - Ad pods not being filled, despite enough ads being returned by Freewheel.
@@ -629,9 +635,9 @@ This issue was resolved by providing a workaround for streams that do not have a
 
 The following issues were resolved for TVSDK in this release:
 
-* (ZD# 24180) Add a custom header to white-list
+* (ZD# 24180) Add a custom header to allow list.
 
-A new custom header has been added to the TVSDK white-list.
+A new custom header has been added to the TVSDK allow list.
 
 * (ZD# 25016) Failover stream is selected randomly when ABR control parameters are set
 

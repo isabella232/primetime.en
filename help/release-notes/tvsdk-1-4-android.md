@@ -195,7 +195,7 @@ return opportunityDetectors;
 
 TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 and 8.1 (Oreo).
 
-* **Version 1.4.23:** 
+* **Version 1.4.23:**
 
   * TVSDK 1.4.23 has been certified for Android Devices with Android N.
 
@@ -244,7 +244,7 @@ TVSDK 1.4.43 has been certified with Android Devices having Android 6.0.1/ 7.0 a
 
 * Zendesk #33068 - Amazon lip sync issue on  new  device. Lip sync issue is fixed in this releases.
 * Zendesk #32215 - Android TVSDK 1.4.38 Security Issues `[Hotlist]`. Updated to the latest OpenSSL-1.1.0 and curl-7.55.1.
-* Zendesk #32920 - white blank screen within an Ad break and no Ad break completion. Fixed an issue where a VPAID container could get into a hung state and handled an issue where Facebook VPAID ads were often returning multiple CDATA blocks in a single \&lt;AdParameters\&gt; VAST node.
+* Zendesk #32920 - Blank screen within an Ad break and no Ad break completion. Fixed an issue where a VPAID container could get into a hung state and handled an issue where Facebook VPAID ads were often returning multiple CDATA blocks in a single \&lt;AdParameters\&gt; VAST node.
 
 **Version 1.4.39 (1744)**
 
@@ -344,7 +344,7 @@ The OpenSSL library has been updated with the OpenSSL version 1.0.2j.
     This is happening because objects were not cleaned correctly, and events were called after the objects were destroyed. The issue was resolved by adding checks to prevent null exceptions.
 
 * Zendesk #25352 - Set custom HTTP header
-    This issue was resolved by adding a new custom header to the whitelist on TVSDK.
+    This issue was resolved by adding a new custom header to the allow list on TVSDK.
 
 * Zendesk #25617 - Live stream PTS rollover causing player discontinuity and memory crash
     This issue was resolved by adding a PTS rollover handling in FragmentedHTTPStreamer when a rollover occurs in the middle of a segment.
@@ -638,13 +638,13 @@ The RENDITION_TIMEOUT_THRESHOLD was set to 100ms, but it found to be insufficien
 **Version 1.4.11 (1363)**
 
 * Zendesk #2076 - Frequent stutter when playing video on Motorola Xoom with Android 4.0.3
-    Added devices to whitelist to prevent them from trying to play high profile content.
+    Added devices to allow list to prevent them from trying to play high profile content.
 
 * Zendesk #2197 - `[Ads]` Tracking ad errors
-    dispatch OperationFailedEvent with warning notification. 
+    dispatch OperationFailedEvent with warning notification.
 
 * Zendesk #3304 - VAST 3.0 `[ERRORCODE]` macro not being populated
-    * error code 400 will be exposed if inline ad has bad creative. 
+    * error code 400 will be exposed if inline ad has bad creative.
     * `[ERRORCODE]` macro will be URL encoded
 
 **Version 1.4.10 (1354)**
@@ -652,7 +652,7 @@ The RENDITION_TIMEOUT_THRESHOLD was set to 100ms, but it found to be insufficien
 * Zendesk #2941 - Live assets don't have "0" in seekable range
     Previously there was a 3 segment buffer when seeking to the beginning of a Live stream, now it is possible to seek to the very beginning of a live stream (i.e. the start of the first segment).
 
-* Zendesk #3169 - Update reference player with Adobe Analytics integrationThe reference player has been updated with the Adobe Analytics library as an example implantation.  
+* Zendesk #3169 - Update reference player with Adobe Analytics integrationThe reference player has been updated with the Adobe Analytics library as an example implantation. 
 * Zendesk #3299 - Unexplainable trick play behaviour
     * Fixed a bug where returning to play state after stopping trick play could take several seconds (sometimes 25+ seconds). 
     * Fixed a bug where invoking trick play a second time on the same media, can cause the stream to freeze at the current time.
