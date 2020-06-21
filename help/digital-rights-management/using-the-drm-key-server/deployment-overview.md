@@ -149,7 +149,7 @@ The **Xbox 360** tenant configuration file includes:
 
 * XSTS Credential - Specifies the application developer's credential used to decrypt XSTS tokens 
 * XSTS Signing Certificate - Specifies the certificate used to verify the signature on XSTS tokens. 
-* Packager Whitelist - Packager certificates that are trusted by the Key Server. If there are no packager certificates contained in the list, then all packager certificates will be trusted.
+* Packager Allow list - Packager certificates that are trusted by the Key Server. If there are no packager certificates contained in the list, then all packager certificates will be trusted.
 
 ## Log files {#log-files}
 

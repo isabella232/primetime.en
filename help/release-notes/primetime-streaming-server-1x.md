@@ -27,7 +27,7 @@ What's new in Primetime Streaming Server 1.3 and 1.4 releases.
 
 * HLS AES encryption is available for Live and VOD workflows. Primetime Origin can Just in Time apply HLS AES encryption to incoming HLS streams or MP4 files.
 * It can also apply JIT HLS AES encryption when it is used to convert incoming HDS streams to HLS streams.
-* Primetime Origin now supports SWF whitelisting for PHLS streams. Earlier it was supported only for PHDS streams
+* Primetime Origin now supports SWF allow listing for PHLS streams. Earlier it was supported only for PHDS streams
 
 **Primetime Live Packager**
 

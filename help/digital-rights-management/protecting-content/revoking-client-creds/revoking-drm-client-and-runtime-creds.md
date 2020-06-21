@@ -8,7 +8,7 @@ uuid: 8e36536a-8eed-4d27-8a5f-8d3219817e57
 
 DRM/Runtime versions are identified by security level, version number, and other attributes including Operating System and runtime. To restrict the DRM/Runtime versions allowed, set the module restrictions in a DRM policy or in a `HandlerConfiguration`. Module restrictions may include a minimum security level and list of module versions that are not permitted to be issued a license.
 
-See [Blacklist of DRM Clients restricted from accessing protected content](../../protecting-content/introduction/usage-rules/runtime-application-restrictions/blacklist-drm-clients.md) for details on the attributes used to identify a DRM/Runtime module.
+See [Block list of DRM Clients restricted from accessing protected content](../../protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-drm-clients.md) for details on the attributes used to identify a DRM/Runtime module.
 
 If the minimum security level is set, the version on the client (specified in the machine token), must be greater than or equal to the specified value.
 
@@ -20,6 +20,6 @@ If you require a newer version of the Adobe Flash Player/Adobe AIR Runtime or th
 
 See [Updating a policy using the Java API](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md).
 
-Then you need to create a DRM Policy Update List or set restrictions in `HandlerConfiguration` by invoking `HandlerConfiguration.setRuntimeModuleRequirements()` or `HandlerConfiguration.setDRMModuleRequirements()`. When a user requests a new license with the specified blacklists enabled, you need to install the latest runtimes and libraries before a license can be issued.
+Then you need to create a DRM Policy Update List or set restrictions in `HandlerConfiguration` by invoking `HandlerConfiguration.setRuntimeModuleRequirements()` or `HandlerConfiguration.setDRMModuleRequirements()`. When a user requests a new license with the specified block lists enabled, you need to install the latest runtimes and libraries before a license can be issued.
 
-See the sample code in [Updating a policy using the Java API For an example on blacklisting DRM and runtime versions](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md) for an example on blacklisting DRM and runtime versions.
+See the sample code in [Updating a policy using the Java API For an example on block listing DRM and runtime versions](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md) for an example on block listing DRM and runtime versions.

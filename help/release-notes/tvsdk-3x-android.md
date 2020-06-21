@@ -427,7 +427,7 @@ This section provides a summary of the issue resolved in TVSDK 3.12 Android rele
 
 **Android TVSDK 3.10**
 
-* ZD#40340 - Application crashes with "App Not Responding" error on attempting playback after blacklisting all the TS (TypeScript) files.
+* ZD#40340 - Application crashes with "App Not Responding" error on attempting playback after block listing all the TS (TypeScript) files.
 
 **Android TVSDK 3.8**
 

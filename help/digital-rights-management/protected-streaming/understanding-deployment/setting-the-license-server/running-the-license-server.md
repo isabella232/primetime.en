@@ -77,4 +77,4 @@ You can modify the HSM password in [!DNL flashaccess-global.xml] at any time. Th
 
 ### Updating the tenant configuration file {#section_71624DB8DF28480F84F34F0FF7FD4365}
 
-You can modify all values that are specified in the [!DNL flashaccess-tenant.xml] file at any time. The changes take effect the next time that the server reloads the configuration file. Also, the server checks for any modifications in all credential ( [!DNL .pfx]) files and packager whitelist certificate files that are referenced in the tenant configuration file.
+You can modify all values that are specified in the [!DNL flashaccess-tenant.xml] file at any time. The changes take effect the next time that the server reloads the configuration file. Also, the server checks for any modifications in all credential ( [!DNL .pfx]) files and packager allow list certificate files that are referenced in the tenant configuration file.

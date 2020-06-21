@@ -1,14 +1,14 @@
 ---
 description: null
 seo-description: null
-seo-title: Blacklist of DRM Clients restricted from accessing protected content
-title: Blacklist of DRM Clients restricted from accessing protected content
+seo-title: Block list of DRM Clients restricted from accessing protected content
+title: Block list of DRM Clients restricted from accessing protected content
 uuid: 38bc024e-0c5b-4c1c-8d4b-94b9e0fec67e
 ---
 
-# Blacklist of DRM Clients restricted from accessing protected content {#blacklist-of-drm-clients-restricted-from-accessing-protected-content}
+# Block list of DRM Clients restricted from accessing protected content {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
 
-This blacklist specifies the Primetime DRM clients that cannot access protected content. You blacklist clients by client version and platform.
+This block list specifies the Primetime DRM clients that cannot access protected content. You block list clients by client version and platform.
 
 Example use case: In the event of a security breach, a newer version of the Primetime DRM client can be specified as the minimum version required for license acquisition and content playback. The license server checks that the Primetime DRM client making the license request meets the version requirements before issuing a license. The Primetime DRM client also checks the version in the license before playing content. This client check is required in the case of domains where a license may be transferred to another machine.
 
@@ -27,5 +27,5 @@ A Primetime DRM client version may be identified by the attributes specified in 
 
 >[!NOTE] {class="- topic/note "}
 >
->When specifying an entry in the blacklist, you can set values for one or more of the attributes mentioned in the previous table. Any attribute that is not specified is treated as a wildcard. If the Primetime DRM client matches all the values specified in a blacklist entry, protected content may not be accessed by that client.
+>When specifying an entry in the block list, you can set values for one or more of the attributes mentioned in the previous table. Any attribute that is not specified is treated as a wildcard. If the Primetime DRM client matches all the values specified in a block list entry, protected content may not be accessed by that client.
 

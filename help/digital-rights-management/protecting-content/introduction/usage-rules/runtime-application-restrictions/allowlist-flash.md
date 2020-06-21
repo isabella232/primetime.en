@@ -1,14 +1,14 @@
 ---
 description: null
 seo-description: null
-seo-title: Whitelist for Adobe® Flash® Player SWFs
-title: Whitelist for Adobe® Flash® Player SWFs
+seo-title: Allow list for Adobe® Flash® Player SWFs
+title: Allow list for Adobe® Flash® Player SWFs
 uuid: 670d8ccf-5145-499f-a6e3-d5d89562291e
 ---
 
-# Whitelist for Adobe® Flash® Player SWFs{#whitelist-for-adobe-flash-player-swfs}
+# Allow list for Adobe® Flash® Player SWFs{#allowlist-for-adobe-flash-player-swfs}
 
-This whitelist specifies the SWF files that are allowed to play content.
+This allow list specifies the SWF files that are allowed to play content.
 
 Specify the SWF file with a SWF URL or a SHA-256 digest computed using the contents of the SWF. If you use the SHA-256 digest, this usage rule also specifies the maximum amount of time to allow for the client to download and verify the SWF.
 

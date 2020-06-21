@@ -10,7 +10,7 @@ The output protection controls parameter controls whether output to external ren
 
 Controls whether output to external rendering devices should be restricted. An external device is defined as any video or audio device that is not embedded in the computer. Integrated displays, such as in notebook computers, are not considered external in the output protection controls scenario.
 
-Over the air (OTA) connection types are all blacklisted by default but can be whitelisted explicitly if needed. The supported OTA connections include: Miracast, AirPlay, DLNA, and WIDI.
+Over the air (OTA) connection types are all block listed by default but can be allow listed explicitly if needed. The supported OTA connections include: Miracast, AirPlay, DLNA, and WIDI.
 
 **Resolution-based output protection: (Available from version 5.3 forward.) ** This provides output protection based on the vertical pixel count of the content, enabling a variety of protection requirements to be specified based on vertical pixel counts.
 

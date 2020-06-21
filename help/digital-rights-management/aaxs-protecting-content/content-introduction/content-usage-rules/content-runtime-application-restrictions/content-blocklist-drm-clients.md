@@ -1,10 +1,10 @@
 ---
-seo-title: Black-list of DRM Clients restricted from accessing protected content
-title: Black-list of DRM Clients restricted from accessing protected content
+seo-title: Block list of DRM Clients restricted from accessing protected content
+title: Block list of DRM Clients restricted from accessing protected content
 uuid: c05aa6f8-32d9-42aa-a9c5-0d0629d49778
 ---
 
-# Black-list of DRM Clients restricted from accessing protected content {#black-list-of-drm-clients-restricted-from-accessing-protected-content}
+# Block list of DRM Clients restricted from accessing protected content {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
 
 **Adobe Access DRM module versions restricted from accessing protected content.**
 
@@ -27,5 +27,5 @@ A DRM client version may be identified by the attributes specified in the follow
 
 >[!NOTE] {class="- topic/note "}
 >
->When specifying an entry in the blacklist, values may be set for one or more of the attributes mentioned in the previous table. Any attribute that is not specified is treated as a wildcard. If the DRM client matches all the values specified in a blacklist entry, protected content may not be accessed by that client.
+>When specifying an entry in the block list, values may be set for one or more of the attributes mentioned in the previous table. Any attribute that is not specified is treated as a wildcard. If the DRM client matches all the values specified in a block list entry, protected content may not be accessed by that client.
 
