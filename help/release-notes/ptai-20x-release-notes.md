@@ -104,7 +104,7 @@ Contact Adobe Support to enable the following new features via server-side confi
 
 **When:** Wednesday, January 15, 2020 from 04:00 AM to 05:00 AM Eastern Time
 
-* The Creative Repackaging Service now delivers quicker ad insertion by automatically blacklisting malformed creatives.
+* The Creative Repackaging Service now delivers quicker ad insertion by automatically block listing malformed creatives.
 
 * Added phase 1 support for new SCTE 35 cue format in server-side ad insertion.
 

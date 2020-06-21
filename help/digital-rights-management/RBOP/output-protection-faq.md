@@ -41,7 +41,7 @@ Frequently asked questions about using resolution-based output protection.
 
     * 240, 480: Both are <= 480; no OP shall be required and streams will load with or without HDCP present.
     * 600, 720: Both are <= 720; HDCP is required for playback 
-    * 1080: > 720; the stream is blacklisted (error returned) as it is not found in the rules above.
+    * 1080: > 720; the stream is block listed (error returned) as it is not found in the rules above.
 
 * **Q.** On some of my Android devices, the pixel count restrictions I have defined are not being applied exactly as defined. What is happening?
 

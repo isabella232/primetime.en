@@ -41,13 +41,13 @@ The tenant configuration file includes:
     * *Play Right* — A minimum of one right must be specified. If you specify multiple rights, then the client uses the first right that meets all the requirements.
 
         * *Output Protection* — Controls whether output to external rendering devices should be protected. 
-        * *AIR and SWF Application Restrictions* — Optional whitelist of SWF and AIR applications that may play the content (for example, only the applications specified are permitted). SWF applications are identified by a URL or by the digest of the SWF and the maximum time to allow for download and verification of the digest.
+        * *AIR and SWF Application Restrictions* — Optional allow list of SWF and AIR applications that may play the content (for example, only the applications specified are permitted). SWF applications are identified by a URL or by the digest of the SWF and the maximum time to allow for download and verification of the digest.
 
           See *SWF Hash Calculator* for information on how to calculate the SWF digest.
 
           A publisher ID and optional application ID, minimum version, and maximum version identify AIR and iOS applications. If you do not specify any application restrictions, then any SWF or AIR application can play the content. 
         
-        * *DRM and Runtime Module Restrictions* — Specifies the minimum security level required for the DRM/Runtime module. Optionally includes a blacklist of versions that are not permitted to play the content. Module versions are identified by attributes, such as operating system and/or a version number.
+        * *DRM and Runtime Module Restrictions* — Specifies the minimum security level required for the DRM/Runtime module. Optionally includes a block list of versions that are not permitted to play the content. Module versions are identified by attributes, such as operating system and/or a version number.
 
           DRM Module Restrictions and Runtime Module Restrictions now support the following additional attributes:
 

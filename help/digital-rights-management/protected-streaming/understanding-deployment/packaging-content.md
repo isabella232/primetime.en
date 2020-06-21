@@ -24,4 +24,4 @@ https://mylicenseserver.com:8080/flashaccessserver/tenant1
 
 If each tenant uses a different License Server and Transport Credential, make sure that you specify the correct tenant's certificate in the packager.
 
-If you want to make sure that the server issues licenses only to content from known packagers, you need to include the packager's certificate in the packager whitelist of the tenant configuration file. 
+If you want to make sure that the server issues licenses only to content from known packagers, you need to include the packager's certificate in the packager allow list of the tenant configuration file. 
