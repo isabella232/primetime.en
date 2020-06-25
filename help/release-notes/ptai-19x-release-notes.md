@@ -168,13 +168,13 @@ Fixed a bug in which Chromecast players unexpectedly exited playback when ad seg
   * Old lookup-key structure: Zone, Ad System, Ad ID, Creative ID, Creative URL, and format parameters (target duration, output format, destination CDN)
   * The lookup-keys for existing CRS assets will be updated to match the new structure prior to the production release, but please note that new assets transcoded between the lookup-keys update and production release could get missed. If so, they would initiate a new CRS request the next time they are encountered after the release
 
-* CRS: Added the ability to blocklist/allowlist CRS requests from specific ad systems, ad IDs, creative IDs, creative URLs, and/or creative format
+* CRS: Added the ability to block list/allow list CRS requests from specific ad systems, ad IDs, creative IDs, creative URLs, and/or creative format
 
   >Note
   >
-  >Adobe will add blocklist rules when ad providers with dynamic values (e.g., dynamic parameter in URL) for the same ad are found. Such blocklist rules will be disabled after the dynamic component is resolved, either by the provider or through a normalization rule.
+  >Adobe will add block list rules when ad providers with dynamic values (e.g., dynamic parameter in URL) for the same ad are found. Such block list rules will be disabled after the dynamic component is resolved, either by the provider or through a normalization rule.
 
-  * If you would like to add a blocklist or allowlist rule for your zone, please speak with your Technical Account Manager for assistance.
+  * If you would like to add a block list or allow list rule for your zone, please speak with your Technical Account Manager for assistance.
 
 ### Version 19.1.1
 
