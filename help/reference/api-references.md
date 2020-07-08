@@ -8,6 +8,9 @@ topic-tags: API-references
 
 # Adobe Primetime API references {#api-references}
 
++ TVSDK 3.12 {#tvsdk-312}
+  + [TVSDK 3.12 for Android](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.12/index.html)
+
 + TVSDK 3.11 {#tvsdk-311}
   + [TVSDK 3.11 for Android](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.11/index.html)
 
