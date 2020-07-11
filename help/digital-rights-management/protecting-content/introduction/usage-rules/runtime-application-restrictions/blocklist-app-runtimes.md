@@ -6,7 +6,7 @@ title: Block list of application runtimes
 uuid: fc3c9bd6-b1e6-4534-b29c-cd9a35b80928
 ---
 
-# Block list of application runtimes{#blocklist-of-application-runtimes}
+# Block list of application runtimes {#blocklist-of-application-runtimes}
 
 Block list of application runtimes specifies the version of the Primetime client or Flash Runtime that cannot access content. Specify the restricted runtime (Flash Player, AIR, or iOS), platform, and version.
 

@@ -83,11 +83,11 @@ uuid: 216921d1-a9c1-4650-9dce-c025836986e5
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.drmVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -drmBlacklist</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>DRM clients that are restricted from accessing protected content. This option specifies a list of versions of DRM modules that may not be used (blocklist). </p> <p>The value consists of comma separated <span class="codeph"> name=value</span> pairs in the following format: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|vendor|env|screen=value</span> </p> <p class="- topic/p ">Additional name/value pairs must be comma-separated. For example, <span class="codeph"> os=Win,release=2.0,arch=32</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>DRM clients that are restricted from accessing protected content. This option specifies a list of versions of DRM modules that may not be used (block list). </p> <p>The value consists of comma separated <span class="codeph"> name=value</span> pairs in the following format: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|vendor|env|screen=value</span> </p> <p class="- topic/p ">Additional name/value pairs must be comma-separated. For example, <span class="codeph"> os=Win,release=2.0,arch=32</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.runtimeVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -runtimeBlacklsit</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>Application runtimes are restricted from accessing protected content. This option specifies a list of versions of runtime modules that may not be used (blocklist). </p> <p>The value consists of comma-separated <span class="codeph"> name=value</span> pairs in the following format: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|application|arch|model|vendor|env|screen=value</span> </p> <p class="- topic/p ">Additional name/value pairs must be comma-separated. For example, <span class="codeph"> os=Win,application=AIR</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Application runtimes are restricted from accessing protected content. This option specifies a list of versions of runtime modules that may not be used (block list). </p> <p>The value consists of comma-separated <span class="codeph"> name=value</span> pairs in the following format: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|application|arch|model|vendor|env|screen=value</span> </p> <p class="- topic/p ">Additional name/value pairs must be comma-separated. For example, <span class="codeph"> os=Win,application=AIR</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.v1DeviceCapabilities</span> <p class="- topic/p "><span class="codeph"> -devCapabilitiesV1</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
@@ -196,4 +196,3 @@ uuid: 216921d1-a9c1-4650-9dce-c025836986e5
   </tr> 
  </tbody> 
 </table>
-

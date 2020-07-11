@@ -14,5 +14,4 @@ The application runtime may be identified by any of the attributes supported for
 
 | **Attribute** |**Supported Values** |**Match Criteria** |**Description** |
 |---|---|---|---|
-|  Application  | “FlashPlayer”, “AIR”, "DRM_Library", "AVE"  | Exact Match  | Identifies the name of the application runtime.  |
-
+|  Application  | “FlashPlayer”, “AIR”, "DRM_Library", "AVE"  | Exact Match  | Identifies the name of the application runtime. |

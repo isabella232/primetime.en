@@ -1,10 +1,10 @@
 ---
-seo-title: SWF Application Allow listing
-title: SWF Application Allow listing
+seo-title: SWF application allow listing
+title: SWF application allow listing
 uuid: e3021ae9-54f4-4bcf-a274-515ae765f74b
 ---
 
-# SWF Application Allow listing{#swf-application-allowlisting}
+# SWF application allow listing {#swf-application-allowlisting}
 
 To allow list a SWF application, you can follow one of these two strategies:
 
