@@ -15,9 +15,9 @@ The release focused on updating Primetime Reference application’s gradle versi
 
 Check out for more information about the current released version for [Android](../release-notes/tvsdk-3x-android.md).
 
-## Enhancements and Fixes in PTAI 20.6.1
+## Enhancements and Fixes in PTAI 20.7.1
 
-The release focused on features such as Manifest manipulation and improving APIs to maintain session keep-alive with long form VOD assets. The release also incorporates fixes to top customer issues.
+The release focused on SCTE35 enhancement, addition of more information in X-ADBE-AI-X1 HTTP response headers, improved metrics aggregation, and "Session Stats" panel.
 
 For more information about the current released version of Dynamic Ad Insertion, see [PTAI release notes](ptai-20x-release-notes.md).
 
